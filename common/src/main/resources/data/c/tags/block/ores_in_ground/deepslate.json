@@ -1,0 +1,16 @@
+{
+  "values": [
+    "seamlessores:tuff_coal_ore",
+    "seamlessores:tuff_iron_ore",
+    "seamlessores:tuff_copper_ore",
+    "seamlessores:tuff_gold_ore",
+    "seamlessores:tuff_lapis_ore",
+    "seamlessores:tuff_diamond_ore",
+    "seamlessores:tuff_emerald_ore",
+    "seamlessores:tuff_redstone_ore",
+    {
+      "id": "seamlessores:tuff_zinc_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    "seamlessores:granite_iron_ore",
+    "seamlessores:granite_copper_ore",
+    "seamlessores:granite_lapis_ore",
+    "seamlessores:diorite_iron_ore",
+    "seamlessores:diorite_copper_ore",
+    "seamlessores:diorite_lapis_ore",
+    "seamlessores:andesite_iron_ore",
+    "seamlessores:andesite_copper_ore",
+    "seamlessores:andesite_lapis_ore",
+    "seamlessores:tuff_iron_ore",
+    "seamlessores:tuff_copper_ore",
+    "seamlessores:tuff_lapis_ore"
+  ]
+}

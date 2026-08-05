@@ -1,0 +1,22 @@
+# Build output
+build/
+*/build/
+build-logic/build/
+.gradle/
+run/
+*/run/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.eclipse/
+bin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Internal notes, never published. Store page copy, wiki copy, working notes.
+DESCRIPTION.md
+WIKI.md
