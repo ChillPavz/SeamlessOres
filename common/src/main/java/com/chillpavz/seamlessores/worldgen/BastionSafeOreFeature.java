@@ -53,6 +53,10 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
     private static final ResourceKey<Structure> BASTION_REMNANT =
             ResourceKey.create(Registries.STRUCTURE, Identifier.fromNamespaceAndPath("minecraft", "bastion_remnant"));
 
+    /** Guards the one time diagnostic in {@link #place}. */
+    private static final java.util.concurrent.atomic.AtomicBoolean REPORTED =
+            new java.util.concurrent.atomic.AtomicBoolean();
+
     /** Set once at registration so the injector can build ConfiguredFeatures against it. */
     private static BastionSafeOreFeature instance;
 
@@ -91,6 +95,14 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
         if (vanillaOnly.isEmpty() || vanillaOnly.size() == config.targetStates.size()) {
             return Feature.ORE.place(context);
         }
+
+        // One line the first time this fires, because "the guard matched everything" is otherwise a
+        // completely silent failure: no variants generate and nothing is logged. If this appears the
+        // moment you enter the Nether, at a position nowhere near a bastion, the check is wrong.
+        if (REPORTED.compareAndSet(false, true)) {
+            Constants.LOG.info("Bastion protection: first vein redirected at {} (expected only inside"
+                    + " a bastion remnant)", context.origin());
+        }
         return Feature.ORE.place(new FeaturePlaceContext<>(
                 Optional.empty(), context.level(), context.chunkGenerator(), context.random(),
                 context.origin(),
@@ -107,8 +119,13 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
             if (context.level() instanceof net.minecraft.server.level.WorldGenRegion region) {
                 structures = structures.forWorldGenRegion(region);
             }
+            // MUST be isValid(), NOT a null check. getStructureWithPieceAt returns
+            // StructureStart.INVALID_START when nothing matches and never returns null, so `!= null`
+            // is always true. That shipped once and silently disabled every nether variant in the
+            // world: each vein was treated as being inside a bastion and fell back to vanilla's
+            // targets, so no basalt or blackstone ore generated anywhere, with nothing in the log.
             return structures.getStructureWithPieceAt(
-                    context.origin(), holder -> holder.is(BASTION_REMNANT)) != null;
+                    context.origin(), holder -> holder.is(BASTION_REMNANT)).isValid();
         } catch (RuntimeException failure) {
             // A structure lookup must never take worldgen down with it. Failing open just means the
             // old behaviour for this one vein.
