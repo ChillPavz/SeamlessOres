@@ -25,48 +25,66 @@ import java.util.Set;
 @Config(name = Constants.MOD_ID)
 public class SeamlessOresConfigData implements ConfigData {
 
+    @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip
     public boolean granite = true;
 
+    @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip
     public boolean diorite = true;
 
+    @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip
     public boolean andesite = true;
 
+    @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip
     public boolean tuff = true;
 
     /** Adds gold and quartz where vanilla has none — see the tooltip. */
+    @ConfigEntry.Category("nether")
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean basalt = true;
 
     /** Adds gold and quartz where vanilla has none — see the tooltip. */
+    @ConfigEntry.Category("nether")
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean blackstone = true;
 
+    @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean oreVeins = true;
 
+    @ConfigEntry.Category("create")
     @ConfigEntry.Gui.Tooltip
     public boolean createZinc = true;
 
+    @ConfigEntry.Category("create")
     @ConfigEntry.Gui.Tooltip(count = 3)
     @ConfigEntry.BoundedDiscrete(min = 2, max = 12)
     public int zincVeinSize = 6;
 
+    @ConfigEntry.Category("nether")
     @ConfigEntry.Gui.Tooltip(count = 3)
     public boolean bastionSafeNether = true;
 
+    @ConfigEntry.Category("mythic_upgrades")
     @ConfigEntry.Gui.Tooltip
     public boolean mythicUpgrades = true;
 
+    @ConfigEntry.Category("nether")
     @ConfigEntry.Gui.Tooltip(count = 3)
     @ConfigEntry.BoundedDiscrete(min = 1, max = 10)
-    public int netherOreRarity = 5;
+    public int netherOreRarity = 8;
 
+    @ConfigEntry.Category("mythic_upgrades")
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean netherGems = true;
+
+    @ConfigEntry.Category("mythic_upgrades")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    @ConfigEntry.BoundedDiscrete(min = 1, max = 5)
+    public int netherGemDensity = 2;
 
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
@@ -88,6 +106,6 @@ public class SeamlessOresConfigData implements ConfigData {
         if (!tuff) disabled.add("tuff");
         if (!basalt) disabled.add("basalt");
         if (!blackstone) disabled.add("blackstone");
-        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades, netherOreRarity, netherGems);
+        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades, netherOreRarity, netherGems, netherGemDensity);
     }
 }

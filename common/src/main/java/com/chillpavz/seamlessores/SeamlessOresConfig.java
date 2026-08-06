@@ -103,8 +103,14 @@ public final class SeamlessOresConfig {
      *
      * <p>Deliberately reduces the NUMBER of veins rather than their size: a vein you find is then
      * still worth mining out.
+     *
+     * <p>Default raised from 5 to 8 after testing. The ore concentrates BELOW the lava sea because
+     * that is where a delta is solid: above it the biome is mostly open air and lava, so most vein
+     * attempts there place little or nothing, while every attempt in the solid rock below succeeds.
+     * Digging is therefore exactly where the density is felt. At 8 a chunk holds roughly 25 gold and
+     * 56 quartz against 130 at rarity 5.
      */
-    public static int netherOreRarity = 5;
+    public static int netherOreRarity = 8;
 
     /**
      * Whether ruby and sapphire generate in basalt deltas.
@@ -121,10 +127,19 @@ public final class SeamlessOresConfig {
      */
     public static boolean netherGems = true;
 
+    /**
+     * How much ruby and sapphire a delta chunk gets: {@code 3 x} this many blocks per attempt.
+     *
+     * <p>1 is ancient debris' own size of 3. {@code scattered_ore} places that many INDIVIDUAL
+     * blocks spread around the origin rather than a blob, so raising this makes finds both larger
+     * and more frequent, the way stumbling on two or three debris does.
+     */
+    public static int netherGemDensity = 2;
+
     /** Called by each loader's config layer whenever the config loads or is saved. */
     public static void apply(Set<String> newDisabledHosts, boolean newOreVeins, boolean newCreateZinc,
                              int newZincVeinSize, boolean newBastionSafeNether,
-                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems) {
+                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems, int newNetherGemDensity) {
         disabledHosts = Set.copyOf(newDisabledHosts);
         oreVeins = newOreVeins;
         createZinc = newCreateZinc;
@@ -133,6 +148,7 @@ public final class SeamlessOresConfig {
         mythicUpgrades = newMythicUpgrades;
         netherOreRarity = newNetherOreRarity;
         netherGems = newNetherGems;
+        netherGemDensity = newNetherGemDensity;
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}",
                 disabledHosts, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades);

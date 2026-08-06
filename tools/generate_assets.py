@@ -278,6 +278,13 @@ def generate_json():
     lang.update({
         f"text.autoconfig.{MOD_ID}.title": "Seamless Ores",
 
+        # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
+        # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
+        f"text.autoconfig.{MOD_ID}.category.nether": "Nether",
+        f"text.autoconfig.{MOD_ID}.category.create": "Create",
+        f"text.autoconfig.{MOD_ID}.category.mythic_upgrades": "Mythic Upgrades",
+
         f"text.autoconfig.{MOD_ID}.option.granite": "Granite variants",
         f"text.autoconfig.{MOD_ID}.option.granite.@Tooltip":
             "Generate granite-backed ore where granite would already contain ore.",
@@ -329,6 +336,12 @@ def generate_json():
             "Scatter Mythic Upgrades ruby and sapphire through basalt deltas, as rarely as",
         f"text.autoconfig.{MOD_ID}.option.netherGems.@Tooltip[1]":
             "ancient debris. Ruby sits around Y 28, sapphire around Y 12, never surface exposed.",
+
+        f"text.autoconfig.{MOD_ID}.option.netherGemDensity": "Ruby and sapphire amount",
+        f"text.autoconfig.{MOD_ID}.option.netherGemDensity.@Tooltip[0]":
+            "How many gems each find holds. 1 matches ancient debris exactly.",
+        f"text.autoconfig.{MOD_ID}.option.netherGemDensity.@Tooltip[1]":
+            "Higher values make finds both larger and more frequent.",
 
         f"text.autoconfig.{MOD_ID}.option.netherOreRarity": "Nether ore rarity",
         f"text.autoconfig.{MOD_ID}.option.netherOreRarity.@Tooltip[0]":
