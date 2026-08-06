@@ -87,7 +87,10 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
     public boolean place(FeaturePlaceContext<OreConfiguration> context) {
         final OreConfiguration config = context.config();
 
-        if (!SeamlessOresConfig.bastionSafeNether || !insideBastion(context)) {
+        final boolean blocked =
+                (SeamlessOresConfig.bastionSafeNether && insideBastion(context))
+                        || !rarityAllows(context, config);
+        if (!blocked) {
             return Feature.ORE.place(context);
         }
 
@@ -107,6 +110,46 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
                 Optional.empty(), context.level(), context.chunkGenerator(), context.random(),
                 context.origin(),
                 new OreConfiguration(vanillaOnly, config.size, config.discardChanceOnAirExposure)));
+    }
+
+    /**
+     * Whether this vein is one of the {@code 1 in netherOreRarity} that actually converts.
+     *
+     * <h2>Why the roll is hashed from the position rather than taken from the RandomSource</h2>
+     * {@code context.random()} is the same stream {@code OreFeature} then uses to shape the vein.
+     * Drawing a number from it would shift every subsequent value and move vanilla's own netherrack
+     * gold and quartz, quietly breaking the one property we still hold in the Nether. Hashing the
+     * origin instead is deterministic, stable for a given seed, and leaves the stream untouched.
+     *
+     * <h2>Why ruby and sapphire are exempt</h2>
+     * They get their own, far rarer placement. Stacking this on top would put them near 1 in 100
+     * chunks, which stops being rare and starts being invisible.
+     */
+    private static boolean rarityAllows(FeaturePlaceContext<OreConfiguration> context,
+                                        OreConfiguration config) {
+        final int rarity = SeamlessOresConfig.netherOreRarity;
+        if (rarity <= 1 || !subjectToRarity(config)) {
+            return true;
+        }
+        long hash = context.origin().asLong() * 0x9E3779B97F4A7C15L;
+        hash ^= hash >>> 32;
+        return Math.floorMod(hash, rarity) == 0L;
+    }
+
+    /** Only the gold and quartz variants are thinned; anything else placed here passes through. */
+    private static boolean subjectToRarity(OreConfiguration config) {
+        final Set<Block> ours = Set.copyOf(SeamlessOresContent.blocks().values());
+        for (OreConfiguration.TargetBlockState target : config.targetStates) {
+            final Block block = target.state.getBlock();
+            if (!ours.contains(block)) {
+                continue;
+            }
+            final Identifier id = net.minecraft.core.registries.BuiltInRegistries.BLOCK.getKey(block);
+            if (id != null && (id.getPath().endsWith("_gold_ore") || id.getPath().endsWith("_quartz_ore"))) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private static boolean insideBastion(FeaturePlaceContext<OreConfiguration> context) {

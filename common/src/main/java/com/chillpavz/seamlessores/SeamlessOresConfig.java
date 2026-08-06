@@ -87,16 +87,36 @@ public final class SeamlessOresConfig {
      */
     public static boolean bastionSafeNether = true;
 
+    /**
+     * How many basalt/blackstone vein attempts produce ore: one in this many. 1 converts every
+     * vein, which is what shipped in 1.0.0.
+     *
+     * <p>Basalt deltas use denser features than the rest of the Nether - {@code ore_gold_deltas} is
+     * count 20 against {@code ore_gold_nether}'s 10, and quartz is 32 against 16 - and a delta is
+     * almost entirely basalt and blackstone, so nearly all 52 attempts per chunk converted. Against
+     * ancient debris at 2 attempts of about 5 blocks, that is roughly a hundredfold difference, and
+     * it read as scenery rather than as a find.
+     *
+     * <p>Declining a vein places NOTHING, because vanilla's targets are netherrack-only and a delta
+     * has no netherrack. That is precisely vanilla's own behaviour there, so this dial only ever
+     * removes ore WE added and never touches netherrack gold or quartz anywhere in the Nether.
+     *
+     * <p>Deliberately reduces the NUMBER of veins rather than their size: a vein you find is then
+     * still worth mining out.
+     */
+    public static int netherOreRarity = 5;
+
     /** Called by each loader's config layer whenever the config loads or is saved. */
     public static void apply(Set<String> newDisabledHosts, boolean newOreVeins, boolean newCreateZinc,
                              int newZincVeinSize, boolean newBastionSafeNether,
-                             boolean newMythicUpgrades) {
+                             boolean newMythicUpgrades, int newNetherOreRarity) {
         disabledHosts = Set.copyOf(newDisabledHosts);
         oreVeins = newOreVeins;
         createZinc = newCreateZinc;
         zincVeinSize = newZincVeinSize;
         bastionSafeNether = newBastionSafeNether;
         mythicUpgrades = newMythicUpgrades;
+        netherOreRarity = newNetherOreRarity;
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}",
                 disabledHosts, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades);

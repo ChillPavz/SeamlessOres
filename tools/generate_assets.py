@@ -324,6 +324,14 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.zincVeinSize.@Tooltip[2]":
             "Set this to 12 to leave Create's generation completely untouched.",
 
+        f"text.autoconfig.{MOD_ID}.option.netherOreRarity": "Nether ore rarity",
+        f"text.autoconfig.{MOD_ID}.option.netherOreRarity.@Tooltip[0]":
+            "One in this many basalt or blackstone veins becomes ore. 1 converts every vein.",
+        f"text.autoconfig.{MOD_ID}.option.netherOreRarity.@Tooltip[1]":
+            "Basalt deltas run twice the usual gold and quartz, and are almost all basalt,",
+        f"text.autoconfig.{MOD_ID}.option.netherOreRarity.@Tooltip[2]":
+            "so without this nearly every vein there converted. Vanilla ore is unaffected.",
+
         f"text.autoconfig.{MOD_ID}.option.bastionSafeNether": "Protect bastion remnants",
         f"text.autoconfig.{MOD_ID}.option.bastionSafeNether.@Tooltip[0]":
             "Keep basalt and blackstone ore out of bastion remnants.",
