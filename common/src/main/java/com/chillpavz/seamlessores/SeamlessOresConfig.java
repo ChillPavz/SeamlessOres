@@ -145,9 +145,10 @@ public final class SeamlessOresConfig {
      *
      * <p>Expressed as the REAL size rather than a multiplier, so the numbers mean something: 3 is
      * ancient debris' own value exactly, and 6 is double it. Tested at 6 and it was far too much,
-     * so the default is debris parity with room to go up.
+     * so the default sits just above debris parity — 4 reads as "a little better than debris",
+     * which is what a rarer, deeper gem should feel like.
      */
-    public static int netherGemSize = 3;
+    public static int netherGemSize = 4;
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
     public static void apply(Set<String> newDisabledHosts, boolean newOreVeins, boolean newCreateZinc,

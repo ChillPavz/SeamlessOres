@@ -89,7 +89,7 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("mythic_upgrades")
     @ConfigEntry.Gui.Tooltip(count = 2)
     @ConfigEntry.BoundedDiscrete(min = 3, max = 6)
-    public int netherGemSize = 3;
+    public int netherGemSize = 4;
 
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
