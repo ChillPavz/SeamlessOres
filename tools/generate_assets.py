@@ -324,6 +324,12 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.zincVeinSize.@Tooltip[2]":
             "Set this to 12 to leave Create's generation completely untouched.",
 
+        f"text.autoconfig.{MOD_ID}.option.netherGems": "Ruby and sapphire in deltas",
+        f"text.autoconfig.{MOD_ID}.option.netherGems.@Tooltip[0]":
+            "Scatter Mythic Upgrades ruby and sapphire through basalt deltas, as rarely as",
+        f"text.autoconfig.{MOD_ID}.option.netherGems.@Tooltip[1]":
+            "ancient debris. Ruby sits around Y 28, sapphire around Y 12, never surface exposed.",
+
         f"text.autoconfig.{MOD_ID}.option.netherOreRarity": "Nether ore rarity",
         f"text.autoconfig.{MOD_ID}.option.netherOreRarity.@Tooltip[0]":
             "One in this many basalt or blackstone veins becomes ore. 1 converts every vein.",

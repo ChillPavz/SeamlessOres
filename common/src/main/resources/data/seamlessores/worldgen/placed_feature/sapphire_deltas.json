@@ -1,0 +1,39 @@
+{
+  "feature": "seamlessores:sapphire_deltas",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 0
+        },
+        "max_inclusive": {
+          "absolute": 24
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:basalt_sapphire_ore",
+        "seamlessores:blackstone_sapphire_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythicupgrades"
+    }
+  ]
+}

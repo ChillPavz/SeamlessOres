@@ -4,6 +4,7 @@ import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigScreen;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
+import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
 import com.chillpavz.seamlessores.worldgen.OreTargetInjector;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
@@ -62,6 +63,8 @@ public class SeamlessOresNeoForge {
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
         event.register(Registries.FEATURE,
                 helper -> BastionSafeOreFeature.register(helper::register));
+        event.register(Registries.FEATURE,
+                helper -> NetherGemFeature.register(helper::register));
     }
 
     private void onBuildCreativeTabs(BuildCreativeModeTabContentsEvent event) {

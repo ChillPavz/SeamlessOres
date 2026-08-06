@@ -65,6 +65,9 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.BoundedDiscrete(min = 1, max = 10)
     public int netherOreRarity = 5;
 
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean netherGems = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -85,6 +88,6 @@ public class SeamlessOresConfigData implements ConfigData {
         if (!tuff) disabled.add("tuff");
         if (!basalt) disabled.add("basalt");
         if (!blackstone) disabled.add("blackstone");
-        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades, netherOreRarity);
+        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades, netherOreRarity, netherGems);
     }
 }

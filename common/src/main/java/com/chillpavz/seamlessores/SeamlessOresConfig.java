@@ -106,10 +106,25 @@ public final class SeamlessOresConfig {
      */
     public static int netherOreRarity = 5;
 
+    /**
+     * Whether ruby and sapphire generate in basalt deltas.
+     *
+     * <p><b>This is the only thing in the mod that adds generation with no existing feature to
+     * extend.</b> Mythic Upgrades restricts ruby and sapphire ore to its own {@code mythic_rifts}
+     * biome, so without this our basalt and blackstone variants have nowhere to appear at all. It is
+     * defensible because that mod already puts its ruby and sapphire GEODES in every Nether biome,
+     * so this extends its intent rather than contradicting it - but it is still an addition, and it
+     * gets its own switch for that reason.
+     *
+     * <p>Checked inside {@code NetherGemFeature}, not by the injector, because the feature arrives
+     * through biome injection which the injector never sees.
+     */
+    public static boolean netherGems = true;
+
     /** Called by each loader's config layer whenever the config loads or is saved. */
     public static void apply(Set<String> newDisabledHosts, boolean newOreVeins, boolean newCreateZinc,
                              int newZincVeinSize, boolean newBastionSafeNether,
-                             boolean newMythicUpgrades, int newNetherOreRarity) {
+                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems) {
         disabledHosts = Set.copyOf(newDisabledHosts);
         oreVeins = newOreVeins;
         createZinc = newCreateZinc;
@@ -117,6 +132,7 @@ public final class SeamlessOresConfig {
         bastionSafeNether = newBastionSafeNether;
         mythicUpgrades = newMythicUpgrades;
         netherOreRarity = newNetherOreRarity;
+        netherGems = newNetherGems;
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}",
                 disabledHosts, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades);
