@@ -82,8 +82,49 @@ public record OreType(String name, String overlay, String requiredModId,
             Identifier.fromNamespaceAndPath("create", "deepslate_zinc_ore"),
             null, ConstantInt.of(0), false);
 
+    /**
+     * Mythic Upgrades (mod id {@code mythicupgrades}, MIT). All facts verified against
+     * mythicupgrades-fabric-26.2-5.1.0.jar rather than assumed:
+     * <ul>
+     *   <li>The five overworld ores target the SAME {@code stone_ore_replaceables} /
+     *       {@code deepslate_ore_replaceables} tags as vanilla, so injecting them is a pure restyle
+     *       at zero balance cost, exactly like Create's zinc.</li>
+     *   <li>Ruby and sapphire are {@code block_match minecraft:netherrack} only, so their
+     *       basalt/blackstone variants ADD ore, the same caveat as our nether gold and quartz. They
+     *       ride the same host toggles and the same bastion protection.</li>
+     *   <li>Ametrine and jade are deliberately absent: they are {@code block_match end_stone}, and
+     *       the End has no second stone type, so there is nothing to be seamless with.</li>
+     *   <li>All twelve are {@code needs_iron_tool}, drop one item with the {@code ore_drops} fortune
+     *       formula, and return the block on Silk Touch.</li>
+     * </ul>
+     */
+    private static OreType mythic(String name, IntProvider xp) {
+        return new OreType(name, name, "mythicupgrades",
+                Identifier.fromNamespaceAndPath("mythicupgrades", name + "_ore"),
+                Identifier.fromNamespaceAndPath("mythicupgrades", "deepslate_" + name + "_ore"),
+                null, xp, false);
+    }
+
+    private static OreType mythicNether(String name, IntProvider xp) {
+        return new OreType(name, name, "mythicupgrades", null, null,
+                Identifier.fromNamespaceAndPath("mythicupgrades", name + "_ore"), xp, false);
+    }
+
+    // XP read out of MythicBlocks: the four gems are UniformInt.of(6, 14), ruby and sapphire are
+    // UniformInt.of(4, 10), and necoium has NO experience provider at all - it drops raw_necoium and
+    // is a metal, so zero, matching the vanilla raw-metal convention.
+    public static final OreType AQUAMARINE = mythic("aquamarine", UniformInt.of(6, 14));
+    public static final OreType CITRINE = mythic("citrine", UniformInt.of(6, 14));
+    public static final OreType PERIDOT = mythic("peridot", UniformInt.of(6, 14));
+    public static final OreType TOPAZ = mythic("topaz", UniformInt.of(6, 14));
+    public static final OreType NECOIUM = mythic("necoium", ConstantInt.of(0));
+    public static final OreType RUBY = mythicNether("ruby", UniformInt.of(4, 10));
+    public static final OreType SAPPHIRE = mythicNether("sapphire", UniformInt.of(4, 10));
+
     public static final List<OreType> ALL =
-            List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ, ZINC);
+            List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
+                    ZINC,
+                    AQUAMARINE, CITRINE, PERIDOT, TOPAZ, NECOIUM, RUBY, SAPPHIRE);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
     public Identifier vanillaFor(HostStone host) {

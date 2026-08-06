@@ -11,6 +11,26 @@
     {
       "id": "seamlessores:tuff_zinc_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:tuff_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_necoium_ore",
+      "required": false
     }
   ]
 }

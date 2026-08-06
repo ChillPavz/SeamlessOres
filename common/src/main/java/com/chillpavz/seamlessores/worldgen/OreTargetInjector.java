@@ -98,9 +98,11 @@ public final class OreTargetInjector {
                 if (!SeamlessOresConfig.isHostEnabled(variant.host().name())) {
                     continue;
                 }
-                // Zinc is a pure restyle (Create's feature uses the same replaceables tags as
-                // vanilla), but it still gets its own toggle.
-                if (variant.ore().requiredModId() != null && !SeamlessOresConfig.createZinc) {
+                // Each third-party ore has its own toggle. This was hardcoded to the zinc one
+                // while zinc was the only modded ore, which would have silently put Mythic Upgrades
+                // under a setting labelled "Create".
+                if (variant.ore().requiredModId() != null
+                        && !SeamlessOresConfig.isModOreEnabled(variant.ore().requiredModId())) {
                     continue;
                 }
                 // Only patch features that actually place the ore this variant stands in for. That

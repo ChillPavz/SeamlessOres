@@ -12,6 +12,26 @@
       "id": "seamlessores:granite_zinc_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_necoium_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -24,6 +44,26 @@
       "id": "seamlessores:diorite_zinc_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_necoium_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -34,6 +74,26 @@
     "seamlessores:andesite_redstone_ore",
     {
       "id": "seamlessores:andesite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_necoium_ore",
       "required": false
     }
   ]

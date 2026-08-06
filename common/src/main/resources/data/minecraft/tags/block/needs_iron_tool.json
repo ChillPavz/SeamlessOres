@@ -8,12 +8,52 @@
       "id": "seamlessores:granite_zinc_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_necoium_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
     "seamlessores:diorite_redstone_ore",
     {
       "id": "seamlessores:diorite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_necoium_ore",
       "required": false
     },
     "seamlessores:andesite_gold_ore",
@@ -24,12 +64,68 @@
       "id": "seamlessores:andesite_zinc_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_necoium_ore",
+      "required": false
+    },
     "seamlessores:tuff_gold_ore",
     "seamlessores:tuff_diamond_ore",
     "seamlessores:tuff_emerald_ore",
     "seamlessores:tuff_redstone_ore",
     {
       "id": "seamlessores:tuff_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_sapphire_ore",
       "required": false
     }
   ]

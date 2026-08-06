@@ -58,6 +58,9 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 3)
     public boolean bastionSafeNether = true;
 
+    @ConfigEntry.Gui.Tooltip
+    public boolean mythicUpgrades = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -78,6 +81,6 @@ public class SeamlessOresConfigData implements ConfigData {
         if (!tuff) disabled.add("tuff");
         if (!basalt) disabled.add("basalt");
         if (!blackstone) disabled.add("blackstone");
-        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether);
+        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades);
     }
 }

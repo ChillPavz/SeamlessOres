@@ -54,6 +54,19 @@ CREATE_JAR = os.environ.get(
     ),
 )
 
+# Mythic Upgrades (mod id 'mythicupgrades', MIT, 26.2 on all four loaders). Source of its ore
+# textures and the facts behind the entries below. Override with MYTHIC_UPGRADES_JAR.
+MYTHIC_UPGRADES_JAR = os.environ.get(
+    "MYTHIC_UPGRADES_JAR",
+    os.path.expanduser(
+        "~/AppData/Roaming/ModrinthApp/profiles/Dev Testing 26.2/mods/mythicupgrades-fabric-26.2-5.1.0.jar"
+    ),
+)
+
+# Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
+# a warning rather than an error: the JSON still generates, only the texture step is skipped.
+MOD_JARS = {"create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR}
+
 # Host stones that receive ore but have no matching ore texture in vanilla.
 # KEEP IN SYNC WITH HostStone.java.
 #   tier - which vanilla ore this stone stands in for
@@ -111,6 +124,34 @@ ORE_DEFS = [
     {"name": "zinc",     "overlay": "zinc",        "source": "zinc_ore",          "base": "stone",
      "mod": "create", "raw_drop": "create:raw_zinc",
      "tiers": {"stone": "zinc_ore", "deepslate": "deepslate_zinc_ore"}},
+    # Mythic Upgrades. All verified from its jar: every one is needs_iron_tool, drops a single item
+    # with the ore_drops fortune formula, and returns the block on Silk Touch. The five overworld
+    # ores target the same replaceables tags as vanilla, so injecting them is balance-neutral.
+    # Ruby and sapphire are netherrack-only, so their basalt/blackstone variants ADD ore, exactly
+    # like our nether gold and quartz, and ride the same host toggles and bastion protection.
+    # Ametrine and jade are deliberately absent: end_stone only, and the End has no second stone.
+    {"name": "aquamarine", "overlay": "aquamarine", "source": "aquamarine_ore", "base": "stone",
+     "mod": "mythicupgrades", "raw_drop": "mythicupgrades:aquamarine",
+     "tiers": {"stone": "aquamarine_ore", "deepslate": "deepslate_aquamarine_ore"}},
+    {"name": "citrine",    "overlay": "citrine",    "source": "citrine_ore",    "base": "stone",
+     "mod": "mythicupgrades", "raw_drop": "mythicupgrades:citrine",
+     "tiers": {"stone": "citrine_ore", "deepslate": "deepslate_citrine_ore"}},
+    {"name": "peridot",    "overlay": "peridot",    "source": "peridot_ore",    "base": "stone",
+     "mod": "mythicupgrades", "raw_drop": "mythicupgrades:peridot",
+     "tiers": {"stone": "peridot_ore", "deepslate": "deepslate_peridot_ore"}},
+    {"name": "topaz",      "overlay": "topaz",      "source": "topaz_ore",      "base": "stone",
+     "mod": "mythicupgrades", "raw_drop": "mythicupgrades:topaz",
+     "tiers": {"stone": "topaz_ore", "deepslate": "deepslate_topaz_ore"}},
+    # Necoium is the odd one: a METAL, so it drops raw_necoium and gives no XP, unlike the gems.
+    {"name": "necoium",    "overlay": "necoium",    "source": "necoium_ore",    "base": "stone",
+     "mod": "mythicupgrades", "raw_drop": "mythicupgrades:raw_necoium",
+     "tiers": {"stone": "necoium_ore", "deepslate": "deepslate_necoium_ore"}},
+    {"name": "ruby",       "overlay": "ruby",       "source": "ruby_ore",       "base": "netherrack",
+     "mod": "mythicupgrades", "raw_drop": "mythicupgrades:ruby",
+     "tiers": {"nether": "ruby_ore"}},
+    {"name": "sapphire",   "overlay": "sapphire",   "source": "sapphire_ore",   "base": "netherrack",
+     "mod": "mythicupgrades", "raw_drop": "mythicupgrades:sapphire",
+     "tiers": {"nether": "sapphire_ore"}},
 ]
 
 FACES = ["down", "up", "north", "south", "west", "east"]
@@ -271,6 +312,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.createZinc.@Tooltip":
             "Generate host-matched zinc ore. Does nothing unless Create is installed.",
 
+        f"text.autoconfig.{MOD_ID}.option.mythicUpgrades": "Mythic Upgrades: variants",
+        f"text.autoconfig.{MOD_ID}.option.mythicUpgrades.@Tooltip":
+            "Generate host-matched Mythic Upgrades ore. Does nothing unless the mod is installed.",
+
         f"text.autoconfig.{MOD_ID}.option.zincVeinSize": "Create: zinc vein size",
         f"text.autoconfig.{MOD_ID}.option.zincVeinSize.@Tooltip[0]":
             "How large each zinc vein is. Create's own value is 12; lower means less zinc.",
@@ -320,20 +365,26 @@ def generate_data():
                 vanilla_tool_tags[tag] = set(json.load(handle)["values"])
 
         # Modded ores' tool tags come from THEIR jar - zinc is needs_iron_tool via Create's own
-        # data, and hardcoding would have guessed stone-tool wrong.
+        # data, and hardcoding would have guessed stone-tool wrong. Read every mod we cover, not
+        # just Create: the entries merge, and each mod only ever names its own blocks.
         modded_tool_tags = {}
-        if os.path.exists(CREATE_JAR):
-            with zipfile.ZipFile(CREATE_JAR) as create_jar:
+        for mod_id, mod_jar in MOD_JARS.items():
+            if not os.path.exists(mod_jar):
+                print(f"  !! {mod_id} jar not found ({mod_jar}) - its tool tags fall back to needs_iron_tool")
+                for ore in ORE_DEFS:
+                    if ore.get("mod") != mod_id:
+                        continue
+                    for tier_ore in ore["tiers"].values():
+                        modded_tool_tags.setdefault("needs_iron_tool", set()).add(f"{mod_id}:{tier_ore}")
+                continue
+            with zipfile.ZipFile(mod_jar) as mod_jar_zip:
                 for tag in TOOL_TAGS:
                     try:
-                        with create_jar.open(f"data/minecraft/tags/block/{tag}.json") as handle:
-                            modded_tool_tags[tag] = set(json.load(handle)["values"])
+                        with mod_jar_zip.open(f"data/minecraft/tags/block/{tag}.json") as handle:
+                            values = {str(v) for v in json.load(handle)["values"]}
                     except KeyError:
-                        modded_tool_tags[tag] = set()
-        else:
-            print(f"  !! CREATE_JAR not found ({CREATE_JAR}) - zinc tool tags fall back to needs_iron_tool")
-            modded_tool_tags = {"needs_iron_tool": {"create:zinc_ore", "create:deepslate_zinc_ore"}}
-
+                        continue
+                    modded_tool_tags.setdefault(tag, set()).update(values)
         for host, host_cfg, ore, vanilla in variants():
                 name = variant_name(host, ore["name"])
                 our_id = f"{MOD_ID}:{name}"
@@ -457,8 +508,8 @@ def generate_textures():
     # texture that hides the host stone entirely. Modded ore textures come from THEIR jar.
     needed = {}
     for ore in ORE_DEFS:
-        if ore.get("mod") and not os.path.exists(CREATE_JAR):
-            print(f"  !! CREATE_JAR not found - skipping {ore['overlay']}_overlay extraction")
+        if ore.get("mod") and not os.path.exists(MOD_JARS.get(ore["mod"], "")):
+            print(f"  !! {ore['mod']} jar not found - skipping {ore['overlay']}_overlay extraction")
             continue
         needed[ore["overlay"]] = (ore["source"], ore["base"], ore.get("mod"))
 
@@ -470,9 +521,11 @@ def generate_textures():
                 with jar.open(member) as src, open(os.path.join(tmp, filename), "wb") as dst:
                     dst.write(src.read())
         modded_sources = {f"{s}.png": m for s, _, m in needed.values() if m}
-        if modded_sources and os.path.exists(CREATE_JAR):
-            with zipfile.ZipFile(CREATE_JAR) as create_jar:
-                for filename, mod in modded_sources.items():
+        for needed_mod in sorted({m for m in modded_sources.values()}):
+            if not os.path.exists(MOD_JARS.get(needed_mod, "")):
+                continue
+            with zipfile.ZipFile(MOD_JARS[needed_mod]) as create_jar:
+                for filename, mod in ((f, m) for f, m in modded_sources.items() if m == needed_mod):
                     member = f"assets/{mod}/textures/block/{filename}"
                     with create_jar.open(member) as src, open(os.path.join(tmp, filename), "wb") as dst:
                         dst.write(src.read())

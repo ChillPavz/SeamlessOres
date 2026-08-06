@@ -34,6 +34,27 @@ public final class SeamlessOresConfig {
     /** Whether Create's zinc variants generate. */
     public static boolean createZinc = true;
 
+    /** Whether Mythic Upgrades variants generate. */
+    public static boolean mythicUpgrades = true;
+
+    /**
+     * Whether a third-party ore's variants may be injected into worldgen.
+     *
+     * <p>Keyed on mod id rather than a single flag, because the injector used to gate EVERY modded
+     * ore on the zinc toggle, which was fine while zinc was the only one and silently wrong the
+     * moment a second mod arrived. A mod with no toggle of its own defaults to enabled.
+     *
+     * <p>This gates GENERATION only. Registration stays derived from the loaded mod set, so a client
+     * and a server always register the same blocks whatever their configs say.
+     */
+    public static boolean isModOreEnabled(String modId) {
+        return switch (modId) {
+            case "create" -> createZinc;
+            case "mythicupgrades" -> mythicUpgrades;
+            default -> true;
+        };
+    }
+
     /** Create's own value for its zinc feature; {@link #zincVeinSize} of this means "unchanged". */
     public static final int CREATE_ZINC_VEIN_SIZE = 12;
 
@@ -68,15 +89,17 @@ public final class SeamlessOresConfig {
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
     public static void apply(Set<String> newDisabledHosts, boolean newOreVeins, boolean newCreateZinc,
-                             int newZincVeinSize, boolean newBastionSafeNether) {
+                             int newZincVeinSize, boolean newBastionSafeNether,
+                             boolean newMythicUpgrades) {
         disabledHosts = Set.copyOf(newDisabledHosts);
         oreVeins = newOreVeins;
         createZinc = newCreateZinc;
         zincVeinSize = newZincVeinSize;
         bastionSafeNether = newBastionSafeNether;
+        mythicUpgrades = newMythicUpgrades;
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
-                        + "zincVeinSize={}, bastionSafeNether={}",
-                disabledHosts, oreVeins, createZinc, zincVeinSize, bastionSafeNether);
+                        + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}",
+                disabledHosts, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades);
     }
 
     public static boolean isHostEnabled(String hostName) {
