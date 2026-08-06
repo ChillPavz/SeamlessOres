@@ -17,6 +17,7 @@ bin/
 .DS_Store
 Thumbs.db
 
-# Internal notes, never published. Store page copy, wiki copy, working notes.
+# Internal notes, never published. Store page copy, wiki copy, per-loader changelog copy.
 DESCRIPTION.md
 WIKI.md
+CHANGELOG-*.md
