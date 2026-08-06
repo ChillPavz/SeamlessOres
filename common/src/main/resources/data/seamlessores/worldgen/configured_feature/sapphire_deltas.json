@@ -21,6 +21,15 @@
         "state": {
           "Name": "seamlessores:blackstone_sapphire_ore"
         }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:netherrack"
+        },
+        "state": {
+          "Name": "mythicupgrades:sapphire_ore"
+        }
       }
     ]
   },

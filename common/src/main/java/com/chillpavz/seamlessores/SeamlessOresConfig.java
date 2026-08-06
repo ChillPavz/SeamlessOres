@@ -73,7 +73,7 @@ public final class SeamlessOresConfig {
      * feature already targets the same replaceables tags we do), so the amount of zinc with our mod
      * installed is identical to Create alone. Only its appearance is more varied.
      */
-    public static int zincVeinSize = CREATE_ZINC_VEIN_SIZE;
+    public static int zincVeinSize = 9;
 
     /**
      * Keep the nether variants out of bastion remnants.
@@ -86,6 +86,19 @@ public final class SeamlessOresConfig {
      * features match {@code netherrack} only.
      */
     public static boolean bastionSafeNether = true;
+
+    /**
+     * Vein size for the nether ore features we patch, as a percentage of vanilla's own value.
+     *
+     * <p>Separate from {@link #netherOreRarity}, which controls HOW MANY veins convert. This one
+     * controls how big each one is: gold is size 10 and quartz 14 in vanilla, so 60 gives 6 and 8.
+     *
+     * <p><b>Unlike the rarity dial, this one does touch vanilla ore.</b> A delta is netherrack below
+     * its thin basalt crust, so a good share of what you dig through down there is vanilla's own
+     * netherrack gold and quartz, and size is a property of the whole feature rather than of our
+     * added targets. 100 leaves everything exactly as vanilla.
+     */
+    public static int netherVeinSize = 60;
 
     /**
      * How many basalt/blackstone vein attempts produce ore: one in this many. 1 converts every
@@ -139,7 +152,7 @@ public final class SeamlessOresConfig {
     /** Called by each loader's config layer whenever the config loads or is saved. */
     public static void apply(Set<String> newDisabledHosts, boolean newOreVeins, boolean newCreateZinc,
                              int newZincVeinSize, boolean newBastionSafeNether,
-                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems, int newNetherGemDensity) {
+                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems, int newNetherGemDensity, int newNetherVeinSize) {
         disabledHosts = Set.copyOf(newDisabledHosts);
         oreVeins = newOreVeins;
         createZinc = newCreateZinc;
@@ -149,6 +162,7 @@ public final class SeamlessOresConfig {
         netherOreRarity = newNetherOreRarity;
         netherGems = newNetherGems;
         netherGemDensity = newNetherGemDensity;
+        netherVeinSize = newNetherVeinSize;
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}",
                 disabledHosts, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades);

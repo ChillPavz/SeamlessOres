@@ -21,6 +21,15 @@
         "state": {
           "Name": "seamlessores:blackstone_ruby_ore"
         }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:netherrack"
+        },
+        "state": {
+          "Name": "mythicupgrades:ruby_ore"
+        }
       }
     ]
   },

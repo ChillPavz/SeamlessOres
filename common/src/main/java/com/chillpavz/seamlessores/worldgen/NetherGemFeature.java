@@ -44,6 +44,8 @@ public class NetherGemFeature extends Feature<OreConfiguration> {
     public static final Identifier ID =
             Identifier.fromNamespaceAndPath(Constants.MOD_ID, "nether_gem");
 
+    private static final String MOD_NAMESPACE = Constants.MOD_ID;
+
     private static NetherGemFeature instance;
 
     public NetherGemFeature() {
@@ -73,7 +75,12 @@ public class NetherGemFeature extends Feature<OreConfiguration> {
             if (id == null) {
                 continue;
             }
-            final String host = id.getPath().startsWith("blackstone_") ? "blackstone"
+            // Only OUR blocks carry a host prefix. The netherrack target is Mythic Upgrades' own
+            // block, so it has no host toggle and always stays in - that entry is what gives these
+            // the same coverage as ancient debris, which targets the whole base_stone_nether tag.
+            final boolean mine = MOD_NAMESPACE.equals(id.getNamespace());
+            final String host = !mine ? null
+                    : id.getPath().startsWith("blackstone_") ? "blackstone"
                     : id.getPath().startsWith("basalt_") ? "basalt" : null;
             if (host == null || SeamlessOresConfig.isHostEnabled(host)) {
                 enabled.add(target);

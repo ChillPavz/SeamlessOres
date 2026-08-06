@@ -119,7 +119,12 @@ public final class OreTargetInjector {
 
             // Zinc vein size is independent of everything above: it applies even when the zinc
             // RESTYLE is switched off, because it is about how much zinc exists, not how it looks.
-            final int size = resizedIfZinc(ore);
+            int size = resizedIfZinc(ore);
+            // Nether veins get scaled by a percentage of vanilla's own size. Applied only to the
+            // features that gained a basalt/blackstone target, so it cannot touch the overworld.
+            if (placesNetherHost(extra) && SeamlessOresConfig.netherVeinSize < 100) {
+                size = Math.max(1, Math.round(size * SeamlessOresConfig.netherVeinSize / 100.0f));
+            }
 
             if (extra.isEmpty() && size == ore.size) {
                 continue;

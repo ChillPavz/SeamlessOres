@@ -61,8 +61,8 @@ public class SeamlessOresConfigData implements ConfigData {
 
     @ConfigEntry.Category("create")
     @ConfigEntry.Gui.Tooltip(count = 3)
-    @ConfigEntry.BoundedDiscrete(min = 2, max = 12)
-    public int zincVeinSize = 6;
+    @ConfigEntry.BoundedDiscrete(min = 6, max = 12)
+    public int zincVeinSize = 9;
 
     @ConfigEntry.Category("nether")
     @ConfigEntry.Gui.Tooltip(count = 3)
@@ -76,6 +76,11 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 3)
     @ConfigEntry.BoundedDiscrete(min = 1, max = 10)
     public int netherOreRarity = 8;
+
+    @ConfigEntry.Category("nether")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
+    public int netherVeinSize = 60;
 
     @ConfigEntry.Category("mythic_upgrades")
     @ConfigEntry.Gui.Tooltip(count = 2)
@@ -106,6 +111,6 @@ public class SeamlessOresConfigData implements ConfigData {
         if (!tuff) disabled.add("tuff");
         if (!basalt) disabled.add("basalt");
         if (!blackstone) disabled.add("blackstone");
-        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades, netherOreRarity, netherGems, netherGemDensity);
+        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades, netherOreRarity, netherGems, netherGemDensity, netherVeinSize);
     }
 }

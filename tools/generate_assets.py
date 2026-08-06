@@ -343,6 +343,14 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.netherGemDensity.@Tooltip[1]":
             "Higher values make finds both larger and more frequent.",
 
+        f"text.autoconfig.{MOD_ID}.option.netherVeinSize": "Nether vein size",
+        f"text.autoconfig.{MOD_ID}.option.netherVeinSize.@Tooltip[0]":
+            "How big each nether gold or quartz vein is, as a percent of vanilla. 100 is vanilla.",
+        f"text.autoconfig.{MOD_ID}.option.netherVeinSize.@Tooltip[1]":
+            "Below its thin basalt crust a delta is netherrack, so some of what you dig through",
+        f"text.autoconfig.{MOD_ID}.option.netherVeinSize.@Tooltip[2]":
+            "there is vanilla's own ore. Unlike the rarity setting, this affects that too.",
+
         f"text.autoconfig.{MOD_ID}.option.netherOreRarity": "Nether ore rarity",
         f"text.autoconfig.{MOD_ID}.option.netherOreRarity.@Tooltip[0]":
             "One in this many basalt or blackstone veins becomes ore. 1 converts every vein.",
