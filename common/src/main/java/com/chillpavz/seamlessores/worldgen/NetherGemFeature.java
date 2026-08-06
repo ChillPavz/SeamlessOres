@@ -89,10 +89,9 @@ public class NetherGemFeature extends Feature<OreConfiguration> {
         if (enabled.isEmpty()) {
             return false;
         }
-        // size is how many individual blocks scattered_ore scatters around the origin, so scaling it
-        // makes finds both bigger and more frequent at once - which is what "sometimes two or three,
-        // like ancient debris" actually means.
-        final int size = context.config().size * Math.max(1, SeamlessOresConfig.netherGemDensity);
+        // The configured size is the real scattered_ore size: how many separate blocks land around
+        // the origin. 3 is ancient debris' own value.
+        final int size = Math.max(1, SeamlessOresConfig.netherGemSize);
         if (enabled.size() == context.config().targetStates.size() && size == context.config().size) {
             return Feature.SCATTERED_ORE.place(context);
         }

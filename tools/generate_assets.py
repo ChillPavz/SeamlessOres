@@ -337,11 +337,11 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.netherGems.@Tooltip[1]":
             "ancient debris. Ruby sits around Y 28, sapphire around Y 12, never surface exposed.",
 
-        f"text.autoconfig.{MOD_ID}.option.netherGemDensity": "Ruby and sapphire amount",
-        f"text.autoconfig.{MOD_ID}.option.netherGemDensity.@Tooltip[0]":
-            "How many gems each find holds. 1 matches ancient debris exactly.",
-        f"text.autoconfig.{MOD_ID}.option.netherGemDensity.@Tooltip[1]":
-            "Higher values make finds both larger and more frequent.",
+        f"text.autoconfig.{MOD_ID}.option.netherGemSize": "Ruby and sapphire amount",
+        f"text.autoconfig.{MOD_ID}.option.netherGemSize.@Tooltip[0]":
+            "How many gems each find holds. 3 matches ancient debris exactly, 6 is double.",
+        f"text.autoconfig.{MOD_ID}.option.netherGemSize.@Tooltip[1]":
+            "Higher values make finds both larger and easier to come across.",
 
         f"text.autoconfig.{MOD_ID}.option.netherVeinSize": "Nether vein size",
         f"text.autoconfig.{MOD_ID}.option.netherVeinSize.@Tooltip[0]":

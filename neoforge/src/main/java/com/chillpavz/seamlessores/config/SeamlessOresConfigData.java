@@ -88,8 +88,8 @@ public class SeamlessOresConfigData implements ConfigData {
 
     @ConfigEntry.Category("mythic_upgrades")
     @ConfigEntry.Gui.Tooltip(count = 2)
-    @ConfigEntry.BoundedDiscrete(min = 1, max = 5)
-    public int netherGemDensity = 2;
+    @ConfigEntry.BoundedDiscrete(min = 3, max = 6)
+    public int netherGemSize = 3;
 
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
@@ -111,6 +111,6 @@ public class SeamlessOresConfigData implements ConfigData {
         if (!tuff) disabled.add("tuff");
         if (!basalt) disabled.add("basalt");
         if (!blackstone) disabled.add("blackstone");
-        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades, netherOreRarity, netherGems, netherGemDensity, netherVeinSize);
+        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades, netherOreRarity, netherGems, netherGemSize, netherVeinSize);
     }
 }

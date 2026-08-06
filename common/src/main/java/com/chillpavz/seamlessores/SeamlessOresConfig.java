@@ -141,18 +141,18 @@ public final class SeamlessOresConfig {
     public static boolean netherGems = true;
 
     /**
-     * How much ruby and sapphire a delta chunk gets: {@code 3 x} this many blocks per attempt.
+     * How many ruby or sapphire blocks {@code scattered_ore} scatters per attempt.
      *
-     * <p>1 is ancient debris' own size of 3. {@code scattered_ore} places that many INDIVIDUAL
-     * blocks spread around the origin rather than a blob, so raising this makes finds both larger
-     * and more frequent, the way stumbling on two or three debris does.
+     * <p>Expressed as the REAL size rather than a multiplier, so the numbers mean something: 3 is
+     * ancient debris' own value exactly, and 6 is double it. Tested at 6 and it was far too much,
+     * so the default is debris parity with room to go up.
      */
-    public static int netherGemDensity = 2;
+    public static int netherGemSize = 3;
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
     public static void apply(Set<String> newDisabledHosts, boolean newOreVeins, boolean newCreateZinc,
                              int newZincVeinSize, boolean newBastionSafeNether,
-                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems, int newNetherGemDensity, int newNetherVeinSize) {
+                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems, int newNetherGemSize, int newNetherVeinSize) {
         disabledHosts = Set.copyOf(newDisabledHosts);
         oreVeins = newOreVeins;
         createZinc = newCreateZinc;
@@ -161,7 +161,7 @@ public final class SeamlessOresConfig {
         mythicUpgrades = newMythicUpgrades;
         netherOreRarity = newNetherOreRarity;
         netherGems = newNetherGems;
-        netherGemDensity = newNetherGemDensity;
+        netherGemSize = newNetherGemSize;
         netherVeinSize = newNetherVeinSize;
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}",
