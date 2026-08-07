@@ -62,7 +62,7 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("create")
     @ConfigEntry.Gui.Tooltip(count = 3)
     @ConfigEntry.BoundedDiscrete(min = 6, max = 12)
-    public int zincVeinSize = 9;
+    public int zincVeinSize = 10;
 
     @ConfigEntry.Category("nether")
     @ConfigEntry.Gui.Tooltip(count = 3)
@@ -75,12 +75,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("nether")
     @ConfigEntry.Gui.Tooltip(count = 3)
     @ConfigEntry.BoundedDiscrete(min = 1, max = 10)
-    public int netherOreRarity = 8;
+    public int netherOreRarity = 2;
 
     @ConfigEntry.Category("nether")
     @ConfigEntry.Gui.Tooltip(count = 3)
     @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
-    public int netherVeinSize = 60;
+    public int netherVeinSize = 80;
 
     @ConfigEntry.Category("mythic_upgrades")
     @ConfigEntry.Gui.Tooltip(count = 2)

@@ -73,7 +73,7 @@ public final class SeamlessOresConfig {
      * feature already targets the same replaceables tags we do), so the amount of zinc with our mod
      * installed is identical to Create alone. Only its appearance is more varied.
      */
-    public static int zincVeinSize = 9;
+    public static int zincVeinSize = 10;
 
     /**
      * Keep the nether variants out of bastion remnants.
@@ -98,7 +98,7 @@ public final class SeamlessOresConfig {
      * netherrack gold and quartz, and size is a property of the whole feature rather than of our
      * added targets. 100 leaves everything exactly as vanilla.
      */
-    public static int netherVeinSize = 60;
+    public static int netherVeinSize = 80;
 
     /**
      * How many basalt/blackstone vein attempts produce ore: one in this many. 1 converts every
@@ -123,7 +123,7 @@ public final class SeamlessOresConfig {
      * Digging is therefore exactly where the density is felt. At 8 a chunk holds roughly 25 gold and
      * 56 quartz against 130 at rarity 5.
      */
-    public static int netherOreRarity = 8;
+    public static int netherOreRarity = 2;
 
     /**
      * Whether ruby and sapphire generate in basalt deltas.
