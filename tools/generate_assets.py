@@ -37,8 +37,11 @@ MOD_ID = "seamlessores"
 # 0 keeps 141/256 px for iron and hazes over granite; 60 keeps 76 and looks right; 90 eats real blobs.
 THRESHOLD = 60
 
+# This branch targets 26.1.x. Verified Aug 2026: regenerating everything against the 26.1.2 jar and
+# diffing produced ZERO content changes against the 26.2 output, so vanilla's ore loot tables and
+# tags are identical across the two and the generated assets are shared between branches unchanged.
 CLIENT_JAR = os.path.expanduser(
-    "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.2_client.jar"
+    "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.1.2_client.jar"
 )
 
 # Create (Create Fly, mod id 'create') jar - source of the zinc loot table shape and the zinc ore

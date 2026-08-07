@@ -9,7 +9,7 @@ surroundings. The Nether variants are the one exception, and they are config gat
 
 | | |
 |---|---|
-| Minecraft | 26.2 |
+| Minecraft | 26.1, 26.1.1 and 26.1.2, from one jar per loader |
 | Loaders | Fabric, NeoForge, Quilt (untested) |
 | Wiki | https://chillpavz.com/seamless-ores |
 | Licence | PolyForm Shield 1.0.0, see `LICENSE` |
@@ -66,10 +66,15 @@ touching ore of the same type across different host stones.
 | Ruby | `basalt_ruby_ore` | `blackstone_ruby_ore` |
 | Sapphire | `basalt_sapphire_ore` | `blackstone_sapphire_ore` |
 
-The modded variants are not registered when their mod is absent, so the counts are 60 without Create
-(which is Fabric only at 26.2), 40 without Mythic Upgrades, and 36 with neither. The registered block
-set is derived from which mods are loaded rather than from config, so a client and a server running
-the same mods always agree and nobody is kicked on join.
+The modded variants are not registered when their mod is absent, so the counts are 60 without Create,
+40 without Mythic Upgrades, and 36 with neither. The registered block set is derived from which mods
+are loaded rather than from config, so a client and a server running the same mods always agree and
+nobody is kicked on join.
+
+**On 26.1.x that means 40 blocks in practice.** Mythic Upgrades has no 26.1.x build at all, so its 24
+never register there; Create does, as Create Fly on Fabric, so the four zinc blocks do. Every data
+file for the absent mod is condition gated and simply never loads. Nothing here is 26.1 specific: the
+same source produces 64 blocks on 26.2 because the mods exist there.
 
 Mythic Upgrades' ametrine and jade are deliberately absent: they are `block_match end_stone`, and the
 End has no second stone type, so there is nothing to be seamless with.
