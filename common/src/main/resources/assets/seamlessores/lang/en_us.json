@@ -64,6 +64,8 @@
   "block.seamlessores.blackstone_ruby_ore": "Blackstone Ruby Ore",
   "block.seamlessores.blackstone_sapphire_ore": "Blackstone Sapphire Ore",
   "text.autoconfig.seamlessores.title": "Seamless Ores",
+  "gui.seamlessores.reset": "Reset",
+  "gui.seamlessores.reset_all": "Reset all",
   "text.autoconfig.seamlessores.category.overworld": "Overworld",
   "text.autoconfig.seamlessores.category.nether": "Nether",
   "text.autoconfig.seamlessores.category.create": "Create",

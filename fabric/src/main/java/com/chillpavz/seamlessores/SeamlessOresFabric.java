@@ -14,7 +14,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
 import com.chillpavz.seamlessores.worldgen.OreTargetInjector;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -54,9 +54,11 @@ public class SeamlessOresFabric implements ModInitializer {
         }
 
         // CreativeModeTab.Output is protected, so items cannot be added via displayItems from outside
-        // vanilla - each loader has its own event for this. On 26.x the Fabric API class is
-        // CreativeModeTabEvents; the older ItemGroupEvents is gone.
-        CreativeModeTabEvents.modifyOutputEvent(SeamlessOresContent.NATURAL_BLOCKS).register(output -> {
+        // vanilla - each loader has its own event for this. This is the ONE Fabric API rename between
+        // 1.21.11 and 26.x: the itemgroup.v1.ItemGroupEvents / modifyEntriesEvent pair here becomes
+        // creativetab.v1.CreativeModeTabEvents / modifyOutputEvent at 26.1+. FabricItemGroupEntries
+        // implements CreativeModeTab.Output, so the body is unchanged.
+        ItemGroupEvents.modifyEntriesEvent(SeamlessOresContent.NATURAL_BLOCKS).register(output -> {
             for (var item : SeamlessOresContent.creativeTabItems()) {
                 output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             }

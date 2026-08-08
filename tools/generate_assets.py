@@ -33,12 +33,18 @@ import zipfile
 
 MOD_ID = "seamlessores"
 
+# Classic Forge's datapack condition key. SINGULAR, and it takes ONE object rather than an array -
+# it is ICondition.DEFAULT_FIELD, read out of forge-1.21.11-61.0.1 as literally "forge:condition".
+# Spelled differently again on 1.20.x Forge (unnamespaced "conditions", array), so re-verify against
+# the real jar before carrying this to an older branch. Only the 1.21.11 branch has a Forge module.
+FORGE_CONDITION_KEY = "forge:condition"
+
 # Colour-distance (summed per-channel) above which a pixel counts as ore rather than shaded stone.
 # 0 keeps 141/256 px for iron and hazes over granite; 60 keeps 76 and looks right; 90 eats real blobs.
 THRESHOLD = 60
 
 CLIENT_JAR = os.path.expanduser(
-    "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.2_client.jar"
+    "~/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.11_client.jar"
 )
 
 # Create (Create Fly, mod id 'create') jar - source of the zinc loot table shape and the zinc ore
@@ -50,12 +56,18 @@ CLIENT_JAR = os.path.expanduser(
 CREATE_JAR = os.environ.get(
     "CREATE_JAR",
     os.path.expanduser(
-        "~/AppData/Roaming/ModrinthApp/profiles/Dev Testing 26.2/mods/create-fly-26.2-rc-2-6.0.9-1.jar"
+        "~/AppData/Roaming/ModrinthApp/profiles/Dev Test 1.21.11 (Fabric/mods/create-fly-1.21.11-6.0.9-5.jar"
     ),
 )
 
-# Mythic Upgrades (mod id 'mythicupgrades', MIT, 26.2 on all four loaders). Source of its ore
-# textures and the facts behind the entries below. Override with MYTHIC_UPGRADES_JAR.
+# Mythic Upgrades (mod id 'mythicupgrades', MIT). Source of its ore textures and the facts behind
+# the entries below. Override with MYTHIC_UPGRADES_JAR.
+#
+# NOTE FOR THIS BRANCH: Mythic Upgrades has NO 1.21.11 build at all - it goes 1.21.1 straight to
+# 26.2 - so its 24 variants never register here and the path below points at the 26.2 jar purely so
+# the (condition-gated, inert) data files stay byte-identical with main. Nothing reads it at
+# runtime. If Mythic Upgrades ever ships 1.21.11, the derived registration lights them up with no
+# code change.
 MYTHIC_UPGRADES_JAR = os.environ.get(
     "MYTHIC_UPGRADES_JAR",
     os.path.expanduser(
@@ -278,6 +290,12 @@ def generate_json():
     lang.update({
         f"text.autoconfig.{MOD_ID}.title": "Seamless Ores",
 
+        # Forge only. Cloth draws its own reset buttons from its own lang file, but the hand-written
+        # Forge screen has to supply these two itself. Everything else it shows reuses the
+        # text.autoconfig.* keys below, so all three loaders read identically.
+        f"gui.{MOD_ID}.reset": "Reset",
+        f"gui.{MOD_ID}.reset_all": "Reset all",
+
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
@@ -446,8 +464,8 @@ def generate_data():
                 else:
                     # Third-party ore: build OUR OWN table in the vanilla iron_ore shape (verified
                     # identical to Create's own zinc table) rather than transforming their file.
-                    # Both loaders' conditions keep it inert when the mod is absent; each loader
-                    # ignores the other's key. NEVER neoforge:item_exists - removed at 26.2.
+                    # All three loaders' conditions keep it inert when the mod is absent; each
+                    # loader ignores the other two keys. NEVER neoforge:item_exists - removed at 26.2.
                     table = {
                         "fabric:load_conditions": [
                             {"condition": "fabric:registry_contains",
@@ -456,6 +474,12 @@ def generate_data():
                         "neoforge:conditions": [
                             {"type": "neoforge:mod_loaded", "modid": mod}
                         ],
+                        # Classic Forge is SINGULAR and takes ONE object, not an array - the key is
+                        # ICondition.DEFAULT_FIELD, verified as "forge:condition" in forge 61.0.1.
+                        # Forge 61 honours it on datapack registries (its RegistryDataLoader patch
+                        # wraps every decoder in ConditionCodec), which is what a loot table is at
+                        # 1.21+. Without it, Forge parses a table naming an item nothing provides.
+                        FORGE_CONDITION_KEY: {"type": "forge:mod_loaded", "modid": mod},
                         "type": "minecraft:block",
                         "pools": [{
                             "rolls": 1.0,

@@ -4,13 +4,18 @@ Ore blocks whose background matches the stone they generate in. Granite, diorite
 variants for every overworld ore, plus basalt and blackstone in the Nether, Create's zinc, and Mythic
 Upgrades' gems.
 
+This is the **1.21.11** branch. Mythic Upgrades has no 1.21.11 build (it goes from 1.21.1 straight to
+26.2), so its blocks stay unregistered here and the block list below tops out at 40 rather than 64.
+Everything about them is still shipped and condition gated, so they appear on their own if that mod
+ever releases for this version.
+
 **In the Overworld it adds no ore.** The same veins, in the same places, drawn to fit their
 surroundings. The Nether variants are the one exception, and they are config gated.
 
 | | |
 |---|---|
-| Minecraft | 26.2 |
-| Loaders | Fabric, NeoForge, Quilt (untested) |
+| Minecraft | 1.21.11 |
+| Loaders | Fabric, NeoForge, Forge, Quilt (untested) |
 | Wiki | https://chillpavz.com/seamless-ores |
 | Licence | PolyForm Shield 1.0.0, see `LICENSE` |
 
@@ -23,7 +28,8 @@ touching ore of the same type across different host stones.
 
 ## Block list
 
-64 blocks in the `seamlessores` namespace.
+Up to 40 blocks in the `seamlessores` namespace on this version. The Mythic Upgrades table below
+is listed for completeness and is inert at 1.21.11.
 
 **Vanilla, Overworld**
 
@@ -66,18 +72,19 @@ touching ore of the same type across different host stones.
 | Ruby | `basalt_ruby_ore` | `blackstone_ruby_ore` |
 | Sapphire | `basalt_sapphire_ore` | `blackstone_sapphire_ore` |
 
-The modded variants are not registered when their mod is absent, so the counts are 60 without Create
-(which is Fabric only at 26.2), 40 without Mythic Upgrades, and 36 with neither. The registered block
-set is derived from which mods are loaded rather than from config, so a client and a server running
-the same mods always agree and nobody is kicked on join.
+The modded variants are not registered when their mod is absent. At 1.21.11 that means **40 blocks on
+Fabric** (Create ships there as Create Fly) and **36 on NeoForge and Forge**, where Create has no
+build. Mythic Upgrades' 24 are unregistered on every loader here. The registered block set is derived
+from which mods are loaded rather than from config, so a client and a server running the same mods
+always agree and nobody is kicked on join.
 
 Mythic Upgrades' ametrine and jade are deliberately absent: they are `block_match end_stone`, and the
 End has no second stone type, so there is nothing to be seamless with.
 
 ## For resource pack authors
 
-Every variant of one ore shares a single overlay texture, so supporting all 64 blocks takes **18 PNG
-files**:
+Every variant of one ore shares a single overlay texture, so covering every block this mod can add
+takes **18 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -93,15 +100,17 @@ automatically.
 
 ## Building
 
-Requires JDK 25.
+Requires **JDK 24**, not 25. The Forge module needs ForgeGradle 6, which caps out at Gradle 8, and
+Gradle 8.14.3 cannot run on JDK 25. The compiled output still targets Java 21, which is what
+Minecraft 1.21.11 requires.
 
 ```
 ./gradlew build
 ```
 
-Jars land in `fabric/build/libs` and `neoforge/build/libs`. Take the plain jar, not the `-sources` or
-`-javadoc` one. Fabric Loader rejects the sources jar, because its metadata still holds unexpanded
-build placeholders.
+Jars land in `fabric/build/libs`, `neoforge/build/libs` and `forge/build/libs`. Take the plain jar,
+not the `-sources` or `-javadoc` one. Fabric Loader rejects the sources jar, because its metadata
+still holds unexpanded build placeholders.
 
 Assets, loot tables and tags are generated rather than hand written:
 
@@ -118,10 +127,15 @@ cleaned overlays.
 |---|---|
 | `common/` | Everything shared: content registration, worldgen injection, config holder |
 | `fabric/`, `neoforge/` | Loader entry points and the Cloth Config data class |
+| `forge/` | Loader entry point, a ForgeConfigSpec model and a hand written config screen |
 | `tools/generate_assets.py` | Generates blockstates, models, lang, loot tables and tags |
 
-The two loader config classes are duplicated on purpose and must stay identical. Cloth Config cannot
-live in `common`, because loader dependencies are not on its classpath.
+The three loader config classes are duplicated on purpose and must stay identical. Cloth Config
+cannot live in `common`, because loader dependencies are not on its classpath.
+
+Cloth Config has no Forge build past 1.21.3, so the Forge module uses Forge's own `ForgeConfigSpec`
+and a hand written screen with four category tabs. It reuses the Cloth lang keys, so all three
+loaders show the same wording from one set of strings.
 
 ## How it works, briefly
 

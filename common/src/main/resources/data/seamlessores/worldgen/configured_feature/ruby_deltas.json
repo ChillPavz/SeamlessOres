@@ -48,5 +48,9 @@
       "type": "neoforge:mod_loaded",
       "modid": "mythicupgrades"
     }
-  ]
+  ],
+  "forge:condition": {
+    "type": "forge:mod_loaded",
+    "modid": "mythicupgrades"
+  }
 }

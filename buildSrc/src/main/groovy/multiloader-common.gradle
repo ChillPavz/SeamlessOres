@@ -7,30 +7,75 @@ base {
     archivesName = "${mod_id}-${project.name}-${minecraft_version}"
 }
 
-repositories {
-    maven {
-        name = 'Shedaniel'          // Cloth Config
-        url = uri('https://maven.shedaniel.me/')
-    }
-    maven {
-        name = 'TerraformersMC'     // Mod Menu
-        url = uri('https://maven.terraformersmc.com/')
-    }
-}
-
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(java_version)
     withSourcesJar()
     withJavadocJar()
 }
 
-tasks.withType(Jar).configureEach {
+repositories {
+    mavenCentral()
+    // https://docs.gradle.org/current/userguide/declaring_repositories.html#declaring_content_exclusively_found_in_one_repository
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = 'Sponge'
+                url = 'https://repo.spongepowered.org/repository/maven-public'
+            }
+        }
+        filter { includeGroupAndSubgroups('org.spongepowered') }
+    }
+    exclusiveContent {
+        forRepositories(
+                maven {
+                    name = 'ParchmentMC'
+                    url = 'https://maven.parchmentmc.org/'
+                },
+                maven {
+                    name = "NeoForge"
+                    url = 'https://maven.neoforged.net/releases'
+                }
+        )
+        filter { includeGroup('org.parchmentmc.data') }
+    }
+    maven {
+        name = 'BlameJared'
+        url = 'https://maven.blamejared.com'
+    }
+    maven {
+        name = 'Shedaniel'          // Cloth Config
+        url = 'https://maven.shedaniel.me/'
+    }
+    maven {
+        name = 'TerraformersMC'     // Mod Menu
+        url = 'https://maven.terraformersmc.com/'
+    }
+}
+
+// Declare capabilities on the outgoing configurations.
+// Read more about capabilities here: https://docs.gradle.org/current/userguide/component_capabilities.html#sec:declaring-additional-capabilities-for-a-local-component
+['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements'].each { variant ->
+    configurations."$variant".outgoing {
+        capability("$group:${project.name}:$version")
+        capability("$group:${base.archivesName.get()}:$version")
+        capability("$group:$mod_id-${project.name}-${minecraft_version}:$version")
+        capability("$group:$mod_id:$version")
+    }
+    publishing.publications.configureEach {
+        suppressPomMetadataWarningsFor(variant)
+    }
+}
+
+sourcesJar {
     from(rootProject.file('LICENSE')) {
         rename { "${it}_${mod_name}" }
     }
 }
 
 jar {
+    from(rootProject.file('LICENSE')) {
+        rename { "${it}_${mod_name}" }
+    }
 
     manifest {
         attributes([
@@ -52,7 +97,6 @@ processResources {
             'minecraft_version'            : minecraft_version,
             'minecraft_version_range'      : minecraft_version_range,
             'fabric_minecraft_version_range': fabric_minecraft_version_range,
-            'neoforge_version_range'       : neoforge_version_range,
             'fabric_version'               : fabric_version,
             'fabric_loader_version'        : fabric_loader_version,
             'cloth_config_version'         : cloth_config_version,
@@ -63,14 +107,20 @@ processResources {
             'license'                      : license,
             'description'                  : project.description,
             'neoforge_version'             : neoforge_version,
+            'neoforge_version_range'       : neoforge_version_range,
             'neoforge_loader_version_range': neoforge_loader_version_range,
+            "forge_version": forge_version,
+            "forge_version_range": forge_version_range,
+            "forge_loader_version_range": forge_loader_version_range,
             'credits'                      : credits,
             'java_version'                 : java_version
     ]
 
     var jsonExpandProps = expandProps.collectEntries {
-        // A single escaped backslash: Properties turns the "\n" in description= into a REAL newline, which is
-        // illegal inside a JSON string. '\\\\n' would emit TWO backslashes and show a literal \n in the mod list.
+        // A single escaped backslash: Properties turns the "\n" in description= into a REAL newline,
+        // which is illegal inside a JSON string. The template's '\\\\n' emits TWO backslashes and
+        // shows a literal \n in the mod list. An invalid fabric.mod.json still loads in game but
+        // stops Modrinth auto-detecting the loader and game versions on upload.
         key, value -> [(key): value instanceof String ? value.replace('\n', '\\n') : value]
     }
 

@@ -1,7 +1,8 @@
 # Build output
 build/
 */build/
-build-logic/build/
+buildSrc/build/
+buildSrc/.gradle/
 .gradle/
 run/
 */run/
