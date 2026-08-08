@@ -252,13 +252,25 @@ def generate_json():
 
             # Two-layer block model, following vanilla's own grass_block pattern: two coincident
             # full cubes. The base is opaque so it lands on the SOLID layer; the overlay has alpha
-            # so 26.2 derives CUTOUT for it automatically from the texture (see SpriteContents
-            # .computeTransparency). SOLID draws before CUTOUT, so the overlay wins the depth tie.
-            # No render_type field is needed, and none exists on either loader at this version.
+            # and must land on CUTOUT, or its transparent pixels are drawn opaque.
+            #
+            # THE RENDER TYPE MUST BE DECLARED AT 1.21.11. This is the one place this branch really
+            # diverges from 26.x. At 26.1+ the chunk layer is DERIVED from the texture's own alpha
+            # (NativeImage.computeTransparency + ChunkSectionLayer.byTransparency) and no per-loader
+            # API exists at all. Neither of those exists here: 1.21.11 still has
+            # ItemBlockRenderTypes, whose TYPE_BY_BLOCK map is private and defaults to SOLID, so an
+            # undeclared block renders its alpha as opaque garbage with NOTHING logged.
+            #
+            # "render_type" covers NeoForge and Forge only - both read it off the block model JSON
+            # (NeoForgeModelProperties.deserializeRenderType / ForgeHooksClient, both resolving
+            # "minecraft:cutout" to ChunkSectionLayer.CUTOUT). Vanilla and Fabric ignore the key,
+            # so FABRIC IS HANDLED IN CODE instead, by SeamlessOresFabricClient calling
+            # BlockRenderLayerMap.putBlocks. Both halves are needed; neither covers the other.
             write_json(
                 os.path.join(root, "models", "block", f"{name}.json"),
                 {
                     "parent": "minecraft:block/block",
+                    "render_type": "minecraft:cutout",
                     "textures": {
                         "particle": host_cfg["side"],
                         "side": host_cfg["side"],

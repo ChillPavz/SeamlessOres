@@ -19,6 +19,9 @@
         "main": [
             "com.chillpavz.seamlessores.SeamlessOresFabric"
         ],
+        "client": [
+            "com.chillpavz.seamlessores.SeamlessOresFabricClient"
+        ],
         "modmenu": [
             "com.chillpavz.seamlessores.config.SeamlessOresModMenu"
         ]
