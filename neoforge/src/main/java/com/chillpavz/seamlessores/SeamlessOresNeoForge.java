@@ -30,8 +30,9 @@ public class SeamlessOresNeoForge {
         SeamlessOresConfigData.register();
 
         // The config SCREEN is client-only and lives in its own class, so the server never loads a
-        // class that references GUI types. FMLEnvironment.getDist() is a METHOD on 26.x, not a field.
-        if (FMLEnvironment.getDist() == Dist.CLIENT) {
+        // class that references GUI types. FMLEnvironment.dist is a FIELD at 21.1; NeoForge 26.x
+        // turned it into the method getDist().
+        if (FMLEnvironment.dist == Dist.CLIENT) {
             SeamlessOresConfigScreen.register(container);
         }
 

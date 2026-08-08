@@ -9,7 +9,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -69,15 +69,15 @@ public final class OreTargetInjector {
             return;
         }
 
-        final Registry<ConfiguredFeature<?, ?>> features = registries.lookupOrThrow(Registries.CONFIGURED_FEATURE);
+        final Registry<ConfiguredFeature<?, ?>> features = registries.registryOrThrow(Registries.CONFIGURED_FEATURE);
         int patchedFeatures = 0;
         int addedTargets = 0;
         int resizedFeatures = 0;
 
-        // listElements() gives Holder.Reference rather than the bare value, which is what lets us
+        // holders() gives Holder.Reference rather than the bare value, which is what lets us
         // swap the entry. Collected first: we rebind while iterating, and streaming lazily over a
         // registry we are mutating is asking for trouble.
-        for (Holder.Reference<ConfiguredFeature<?, ?>> holder : features.listElements().toList()) {
+        for (Holder.Reference<ConfiguredFeature<?, ?>> holder : features.holders().toList()) {
 
             final ConfiguredFeature<?, ?> feature = holder.value();
             if (!(feature.config() instanceof OreConfiguration ore)) {
@@ -165,7 +165,7 @@ public final class OreTargetInjector {
             return ore.size;                                    // configured to Create's own value
         }
         for (OreConfiguration.TargetBlockState target : ore.targetStates) {
-            final Identifier id = BuiltInRegistries.BLOCK.getKey(target.state.getBlock());
+            final ResourceLocation id = BuiltInRegistries.BLOCK.getKey(target.state.getBlock());
             if (id != null && "create".equals(id.getNamespace()) && id.getPath().endsWith("zinc_ore")) {
                 return SeamlessOresConfig.zincVeinSize;
             }
@@ -176,7 +176,7 @@ public final class OreTargetInjector {
     /** Whether any of the targets we are adding sits in a nether host, i.e. basalt or blackstone. */
     private static boolean placesNetherHost(List<OreConfiguration.TargetBlockState> extra) {
         for (OreConfiguration.TargetBlockState target : extra) {
-            final Identifier id = BuiltInRegistries.BLOCK.getKey(target.state.getBlock());
+            final ResourceLocation id = BuiltInRegistries.BLOCK.getKey(target.state.getBlock());
             if (id != null && (id.getPath().startsWith("basalt_") || id.getPath().startsWith("blackstone_"))) {
                 return true;
             }

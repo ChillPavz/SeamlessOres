@@ -6,7 +6,7 @@ import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.biome.Biomes;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -14,7 +14,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
 import com.chillpavz.seamlessores.worldgen.OreTargetInjector;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -46,7 +46,7 @@ public class SeamlessOresFabric implements ModInitializer {
         if (net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("mythicupgrades")) {
             for (String gem : new String[]{"ruby", "sapphire"}) {
                 ResourceKey<PlacedFeature> key = ResourceKey.create(Registries.PLACED_FEATURE,
-                        Identifier.fromNamespaceAndPath(Constants.MOD_ID, gem + "_deltas"));
+                        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, gem + "_deltas"));
                 BiomeModifications.addFeature(
                         BiomeSelectors.includeByKey(Biomes.BASALT_DELTAS),
                         GenerationStep.Decoration.UNDERGROUND_ORES, key);
@@ -54,9 +54,11 @@ public class SeamlessOresFabric implements ModInitializer {
         }
 
         // CreativeModeTab.Output is protected, so items cannot be added via displayItems from outside
-        // vanilla - each loader has its own event for this. On 26.x the Fabric API class is
-        // CreativeModeTabEvents; the older ItemGroupEvents is gone.
-        CreativeModeTabEvents.modifyOutputEvent(SeamlessOresContent.NATURAL_BLOCKS).register(output -> {
+        // vanilla - each loader has its own event for this. itemgroup.v1.ItemGroupEvents /
+        // modifyEntriesEvent is the pre-26.1 spelling; it became creativetab.v1.CreativeModeTabEvents
+        // / modifyOutputEvent at 26.1. FabricItemGroupEntries implements CreativeModeTab.Output, so
+        // the body is unchanged.
+        ItemGroupEvents.modifyEntriesEvent(SeamlessOresContent.NATURAL_BLOCKS).register(output -> {
             for (var item : SeamlessOresContent.creativeTabItems()) {
                 output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             }

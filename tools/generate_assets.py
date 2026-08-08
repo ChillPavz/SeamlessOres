@@ -33,12 +33,18 @@ import zipfile
 
 MOD_ID = "seamlessores"
 
+# Classic Forge's datapack condition key. SINGULAR, and it takes ONE object rather than an array -
+# it is ICondition.DEFAULT_FIELD, verified as "forge:condition" in forge 52 and 61 alike. Spelled
+# differently again on 1.20.x Forge (unnamespaced "conditions", array), so re-verify against the
+# real jar before carrying this to an older branch.
+FORGE_CONDITION_KEY = "forge:condition"
+
 # Colour-distance (summed per-channel) above which a pixel counts as ore rather than shaded stone.
 # 0 keeps 141/256 px for iron and hazes over granite; 60 keeps 76 and looks right; 90 eats real blobs.
 THRESHOLD = 60
 
 CLIENT_JAR = os.path.expanduser(
-    "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.2_client.jar"
+    "~/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar"
 )
 
 # Create (Create Fly, mod id 'create') jar - source of the zinc loot table shape and the zinc ore
@@ -50,7 +56,7 @@ CLIENT_JAR = os.path.expanduser(
 CREATE_JAR = os.environ.get(
     "CREATE_JAR",
     os.path.expanduser(
-        "~/AppData/Roaming/ModrinthApp/profiles/Dev Testing 26.2/mods/create-fly-26.2-rc-2-6.0.9-1.jar"
+        "~/AppData/Roaming/ModrinthApp/profiles/NeoForge 1.21.1/mods/create-1.21.1-6.0.10.jar"
     ),
 )
 
@@ -59,7 +65,7 @@ CREATE_JAR = os.environ.get(
 MYTHIC_UPGRADES_JAR = os.environ.get(
     "MYTHIC_UPGRADES_JAR",
     os.path.expanduser(
-        "~/AppData/Roaming/ModrinthApp/profiles/Dev Testing 26.2/mods/mythicupgrades-fabric-26.2-5.1.0.jar"
+        "~/AppData/Roaming/ModrinthApp/profiles/Fabric 1.21.1/mods/mythicupgrades-fabric-1.21.1-5.1.0.jar"
     ),
 )
 
@@ -239,14 +245,23 @@ def generate_json():
             )
 
             # Two-layer block model, following vanilla's own grass_block pattern: two coincident
-            # full cubes. The base is opaque so it lands on the SOLID layer; the overlay has alpha
-            # so 26.2 derives CUTOUT for it automatically from the texture (see SpriteContents
-            # .computeTransparency). SOLID draws before CUTOUT, so the overlay wins the depth tie.
-            # No render_type field is needed, and none exists on either loader at this version.
+            # full cubes. The base is opaque so it lands on the solid layer; the overlay has alpha
+            # and must land on cutout, or its transparent pixels are drawn opaque.
+            #
+            # THE RENDER TYPE MUST BE DECLARED BELOW 26.1. From 26.1 the chunk layer is DERIVED from
+            # the texture's alpha and no per-loader API exists at all; here 1.21.1 still routes
+            # through ItemBlockRenderTypes, whose map is private and whose default is solid, so an
+            # undeclared block renders as opaque garbage with NOTHING logged.
+            #
+            # "render_type" covers NeoForge and Forge only - both read it off the block model JSON
+            # (ExtendedBlockModelDeserializer on each, verified in neoforge 21.1.80 and forge 52).
+            # Vanilla and Fabric ignore the key, so FABRIC IS HANDLED IN CODE by
+            # SeamlessOresFabricClient calling BlockRenderLayerMap. Both halves are needed.
             write_json(
                 os.path.join(root, "models", "block", f"{name}.json"),
                 {
                     "parent": "minecraft:block/block",
+                    "render_type": "minecraft:cutout",
                     "textures": {
                         "particle": host_cfg["side"],
                         "side": host_cfg["side"],
@@ -260,11 +275,12 @@ def generate_json():
                 },
             )
 
-            # Item model definition (the 1.21.4+ layer). Vanilla ships NO models/item/ file for a
-            # block item -- this points straight at the block model, so we do the same.
+            # Item model. The assets/<ns>/items/ DEFINITION layer only arrives at 1.21.4, so at
+            # 1.21/1.21.1 a block item is given its look the old way: a models/item/ file that
+            # simply parents the block model. Writing an items/ file here would be read by nothing.
             write_json(
-                os.path.join(root, "items", f"{name}.json"),
-                {"model": {"type": "minecraft:model", "model": f"{MOD_ID}:block/{name}"}},
+                os.path.join(root, "models", "item", f"{name}.json"),
+                {"parent": f"{MOD_ID}:block/{name}"},
             )
             count += 1
 
@@ -369,7 +385,7 @@ def generate_json():
     })
     write_json(os.path.join(root, "lang", "en_us.json"), lang)
 
-    print(f"  {count} blockstates, {count} block models, {count} item definitions")
+    print(f"  {count} blockstates, {count} block models, {count} item models")
     print(f"  {len(lang)} lang entries")
 
 
@@ -456,6 +472,9 @@ def generate_data():
                         "neoforge:conditions": [
                             {"type": "neoforge:mod_loaded", "modid": mod}
                         ],
+                        # Classic Forge is SINGULAR and takes ONE object. Forge honours it on
+                        # datapack registries, which is what a loot table is from 1.21 onward.
+                        FORGE_CONDITION_KEY: {"type": "forge:mod_loaded", "modid": mod},
                         "type": "minecraft:block",
                         "pools": [{
                             "rolls": 1.0,

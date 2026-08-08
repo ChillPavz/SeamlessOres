@@ -1,4 +1,4 @@
-accessWidener v2 official
+accessWidener v2 named
 
 # The header MUST be the very first line - a comment above it fails with
 #   Invalid access widener file header. Expected: 'classTweaker <version> <namespace>'

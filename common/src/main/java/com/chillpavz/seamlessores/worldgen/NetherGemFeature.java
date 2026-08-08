@@ -3,7 +3,7 @@ package com.chillpavz.seamlessores.worldgen;
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
@@ -41,8 +41,8 @@ import java.util.function.BiConsumer;
  */
 public class NetherGemFeature extends Feature<OreConfiguration> {
 
-    public static final Identifier ID =
-            Identifier.fromNamespaceAndPath(Constants.MOD_ID, "nether_gem");
+    public static final ResourceLocation ID =
+            ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "nether_gem");
 
     private static final String MOD_NAMESPACE = Constants.MOD_ID;
 
@@ -53,7 +53,7 @@ public class NetherGemFeature extends Feature<OreConfiguration> {
     }
 
     /** Registered through the caller's own registry path, exactly like the blocks and items. */
-    public static void register(BiConsumer<Identifier, Feature<?>> sink) {
+    public static void register(BiConsumer<ResourceLocation, Feature<?>> sink) {
         if (instance == null) {
             instance = new NetherGemFeature();
             sink.accept(ID, instance);
@@ -71,7 +71,7 @@ public class NetherGemFeature extends Feature<OreConfiguration> {
         // in the injector, which never sees this feature.
         final List<OreConfiguration.TargetBlockState> enabled = new ArrayList<>();
         for (OreConfiguration.TargetBlockState target : context.config().targetStates) {
-            final Identifier id = BuiltInRegistries.BLOCK.getKey(target.state.getBlock());
+            final ResourceLocation id = BuiltInRegistries.BLOCK.getKey(target.state.getBlock());
             if (id == null) {
                 continue;
             }

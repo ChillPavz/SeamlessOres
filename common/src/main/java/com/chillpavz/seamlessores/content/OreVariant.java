@@ -3,7 +3,7 @@ package com.chillpavz.seamlessores.content;
 import com.chillpavz.seamlessores.Constants;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -16,8 +16,8 @@ public record OreVariant(HostStone host, OreType ore) {
         return host.name() + "_" + ore.name() + "_ore";
     }
 
-    public Identifier id() {
-        return Identifier.fromNamespaceAndPath(Constants.MOD_ID, path());
+    public ResourceLocation id() {
+        return ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, path());
     }
 
     public ResourceKey<Block> blockKey() {
@@ -29,8 +29,8 @@ public record OreVariant(HostStone host, OreType ore) {
     }
 
     /** The id of the ore this variant stands in for. Never null for a variant that exists. */
-    public Identifier vanillaEquivalentId() {
-        final Identifier id = ore.vanillaFor(host);
+    public ResourceLocation vanillaEquivalentId() {
+        final ResourceLocation id = ore.vanillaFor(host);
         if (id == null) {
             throw new IllegalStateException("No vanilla equivalent for " + path());
         }

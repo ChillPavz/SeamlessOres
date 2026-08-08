@@ -4,7 +4,7 @@ import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -51,7 +51,7 @@ public final class SeamlessOresContent {
      * {@code private}, so it cannot be used from outside vanilla.
      */
     public static final ResourceKey<CreativeModeTab> NATURAL_BLOCKS =
-            ResourceKey.create(Registries.CREATIVE_MODE_TAB, Identifier.withDefaultNamespace("natural_blocks"));
+            ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.withDefaultNamespace("natural_blocks"));
 
     private static List<OreVariant> buildVariants() {
         final List<OreVariant> variants = new ArrayList<>();
@@ -89,7 +89,7 @@ public final class SeamlessOresContent {
      * block built with {@code setId} but never actually registered leaves an unregistered intrusive
      * holder, which crashes NeoForge. Building lazily keeps construction and registration together.
      */
-    public static void registerBlocks(BiConsumer<Identifier, Block> sink) {
+    public static void registerBlocks(BiConsumer<ResourceLocation, Block> sink) {
 
         for (OreVariant variant : VARIANTS) {
             final Block block = createBlock(variant);
@@ -100,7 +100,7 @@ public final class SeamlessOresContent {
     }
 
     /** Must run after {@link #registerBlocks}; each block needs its paired item to exist in-inventory. */
-    public static void registerItems(BiConsumer<Identifier, Item> sink) {
+    public static void registerItems(BiConsumer<ResourceLocation, Item> sink) {
 
         // Fail loudly rather than silently registering nothing. NeoForge dispatches RegisterEvent once
         // per registry, so if ITEM were ever handled before BLOCK we would produce zero items, the ores
@@ -111,8 +111,10 @@ public final class SeamlessOresContent {
         }
 
         BLOCKS.forEach((variant, block) -> {
-            final Item item = new BlockItem(block,
-                    new Item.Properties().useBlockDescriptionPrefix().setId(variant.itemKey()));
+            // No useBlockDescriptionPrefix()/setId() at 1.21.1: neither exists on Item.Properties
+            // yet. A BlockItem already takes its description id from its block, and the id comes
+            // from the registry call below rather than from the properties.
+            final Item item = new BlockItem(block, new Item.Properties());
             ITEMS.put(variant, item);
             sink.accept(variant.id(), item);
         });
@@ -131,7 +133,7 @@ public final class SeamlessOresContent {
             // ofLegacyCopy carries hardness, blast resistance and the correct-tool flag straight off
             // the ore we stand in for, so mining behaviour cannot drift from parity.
             properties = BlockBehaviour.Properties.ofLegacyCopy(
-                    BuiltInRegistries.BLOCK.getValue(variant.vanillaEquivalentId()));
+                    BuiltInRegistries.BLOCK.get(variant.vanillaEquivalentId()));
         } else {
             // Modded equivalent: its block may not be registered yet - registration order between
             // unrelated mods is deliberately not relied on. Bake the vanilla ore convention by tier
@@ -144,8 +146,7 @@ public final class SeamlessOresContent {
         // Only map colour and sound follow the HOST stone - vanilla varies those by host rock too
         // (deepslate ores use MapColor.DEEPSLATE), and they have no balance effect.
         properties.mapColor(variant.host().mapColor())
-                .sound(variant.host().sound())
-                .setId(variant.blockKey());
+                .sound(variant.host().sound());
 
         return variant.ore().redstoneLike()
                 ? new RedStoneOreBlock(properties)

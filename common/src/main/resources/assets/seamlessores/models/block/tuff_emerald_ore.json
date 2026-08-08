@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout",
   "textures": {
     "particle": "minecraft:block/tuff",
     "side": "minecraft:block/tuff",

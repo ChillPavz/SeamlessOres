@@ -5,7 +5,7 @@ import com.chillpavz.seamlessores.SeamlessOresConfig;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -48,10 +48,10 @@ import java.util.Set;
 public class BastionSafeOreFeature extends Feature<OreConfiguration> {
 
     /** Registered under our own namespace; see {@link #register}. */
-    public static final Identifier ID = Identifier.fromNamespaceAndPath(Constants.MOD_ID, "bastion_safe_ore");
+    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "bastion_safe_ore");
 
     private static final ResourceKey<Structure> BASTION_REMNANT =
-            ResourceKey.create(Registries.STRUCTURE, Identifier.fromNamespaceAndPath("minecraft", "bastion_remnant"));
+            ResourceKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("minecraft", "bastion_remnant"));
 
     /** Guards the one time diagnostic in {@link #place}. */
     private static final java.util.concurrent.atomic.AtomicBoolean REPORTED =
@@ -72,7 +72,7 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
      * <p>It uses {@code OreConfiguration.CODEC}, so a ConfiguredFeature built on it serialises and
      * deserialises exactly like a vanilla ore feature.
      */
-    public static void register(java.util.function.BiConsumer<Identifier, Feature<?>> sink) {
+    public static void register(java.util.function.BiConsumer<ResourceLocation, Feature<?>> sink) {
         if (instance == null) {
             instance = new BastionSafeOreFeature();
             sink.accept(ID, instance);
@@ -144,7 +144,7 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
             if (!ours.contains(block)) {
                 continue;
             }
-            final Identifier id = net.minecraft.core.registries.BuiltInRegistries.BLOCK.getKey(block);
+            final ResourceLocation id = net.minecraft.core.registries.BuiltInRegistries.BLOCK.getKey(block);
             if (id != null && (id.getPath().endsWith("_gold_ore") || id.getPath().endsWith("_quartz_ore"))) {
                 return true;
             }

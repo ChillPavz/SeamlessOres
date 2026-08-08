@@ -1,6 +1,6 @@
 package com.chillpavz.seamlessores.content;
 
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * An ore we produce host-matched variants of.
  *
- * <p>Ores are declared by <b>Identifier, not Block reference</b>, so third-party ores can be
+ * <p>Ores are declared by <b>ResourceLocation, not Block reference</b>, so third-party ores can be
  * declared without compiling against their mod. The ids resolve at two different times:
  * <ul>
  *   <li><b>Registration</b> (before other mods may have registered): vanilla ids are resolved for
@@ -36,11 +36,11 @@ import java.util.List;
  *                      plain {@code DropExperienceBlock}, and handles its own xp internally
  */
 public record OreType(String name, String overlay, String requiredModId,
-                      Identifier stoneOre, Identifier deepslateOre, Identifier netherOre,
+                      ResourceLocation stoneOre, ResourceLocation deepslateOre, ResourceLocation netherOre,
                       IntProvider xp, boolean redstoneLike) {
 
-    private static Identifier mc(String path) {
-        return Identifier.withDefaultNamespace(path);
+    private static ResourceLocation mc(String path) {
+        return ResourceLocation.withDefaultNamespace(path);
     }
 
     private static OreType overworld(String name, IntProvider xp) {
@@ -78,8 +78,8 @@ public record OreType(String name, String overlay, String requiredModId,
      * {@code needs_iron_tool} (NOT stone, unlike iron/copper). XP 0 by raw-metal convention.
      */
     public static final OreType ZINC = new OreType("zinc", "zinc", "create",
-            Identifier.fromNamespaceAndPath("create", "zinc_ore"),
-            Identifier.fromNamespaceAndPath("create", "deepslate_zinc_ore"),
+            ResourceLocation.fromNamespaceAndPath("create", "zinc_ore"),
+            ResourceLocation.fromNamespaceAndPath("create", "deepslate_zinc_ore"),
             null, ConstantInt.of(0), false);
 
     /**
@@ -100,14 +100,14 @@ public record OreType(String name, String overlay, String requiredModId,
      */
     private static OreType mythic(String name, IntProvider xp) {
         return new OreType(name, name, "mythicupgrades",
-                Identifier.fromNamespaceAndPath("mythicupgrades", name + "_ore"),
-                Identifier.fromNamespaceAndPath("mythicupgrades", "deepslate_" + name + "_ore"),
+                ResourceLocation.fromNamespaceAndPath("mythicupgrades", name + "_ore"),
+                ResourceLocation.fromNamespaceAndPath("mythicupgrades", "deepslate_" + name + "_ore"),
                 null, xp, false);
     }
 
     private static OreType mythicNether(String name, IntProvider xp) {
         return new OreType(name, name, "mythicupgrades", null, null,
-                Identifier.fromNamespaceAndPath("mythicupgrades", name + "_ore"), xp, false);
+                ResourceLocation.fromNamespaceAndPath("mythicupgrades", name + "_ore"), xp, false);
     }
 
     // XP read out of MythicBlocks: the four gems are UniformInt.of(6, 14), ruby and sapphire are
@@ -127,7 +127,7 @@ public record OreType(String name, String overlay, String requiredModId,
                     AQUAMARINE, CITRINE, PERIDOT, TOPAZ, NECOIUM, RUBY, SAPPHIRE);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
-    public Identifier vanillaFor(HostStone host) {
+    public ResourceLocation vanillaFor(HostStone host) {
         return switch (host.tier()) {
             case STONE -> stoneOre;
             case DEEPSLATE -> deepslateOre;
