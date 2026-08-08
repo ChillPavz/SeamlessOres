@@ -69,9 +69,19 @@ MYTHIC_UPGRADES_JAR = os.environ.get(
     ),
 )
 
+# Mythic Metals (mod id 'mythicmetals', MIT). Fabric only on every version it has ever shipped, so
+# its variants only ever register there. Source of its ore textures, loot tables and tool tags.
+MYTHIC_METALS_JAR = os.environ.get(
+    "MYTHIC_METALS_JAR",
+    os.path.expanduser(
+        "~/AppData/Roaming/ModrinthApp/profiles/Fabric 1.21.1/mods/mythicmetals-0.24.6+1.21.jar"
+    ),
+)
+
 # Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
 # a warning rather than an error: the JSON still generates, only the texture step is skipped.
-MOD_JARS = {"create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR}
+MOD_JARS = {"create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
+            "mythicmetals": MYTHIC_METALS_JAR}
 
 # Host stones that receive ore but have no matching ore texture in vanilla.
 # KEEP IN SYNC WITH HostStone.java.
@@ -99,6 +109,20 @@ HOSTS = {
 #   source  - vanilla texture the overlay is extracted from
 #   base    - vanilla texture it is diffed AGAINST (stone for overworld, netherrack for nether)
 # Note tuff uses the LIGHT stone overlay, not the deepslate one.
+# Animated overlays. An ore whose source texture animates needs its overlay to animate in step, or
+# our variant sits still next to a pulsing one. Values are copied from the SOURCE MOD'S OWN mcmeta
+# rather than chosen, so the two stay synchronised.
+#
+# Only two Mythic Metals ore blocks animate (every mcmeta in the jar was checked): stormyx on both
+# its hosts, and the DEEPSLATE unobtainium ore while its stone one is a still image.
+#
+# This is the safe vanilla path: a plain N-frame vertical strip on an ordinary sprite. It is NOT the
+# same as animating a Fusion connecting sheet, which crashes the game on load - see the maintainer notes.
+ANIMATED_OVERLAYS = {
+    "stormyx": {"frametime": 20, "interpolate": True},              # 5 frames, matches stormyx_ore
+    "unobtainium_deepslate": {"frametime": 60, "interpolate": True},  # 4 frames, deepslate ore only
+}
+
 ORE_DEFS = [
     {"name": "coal",     "overlay": "coal",     "source": "coal_ore",     "base": "stone",
      "tiers": {"stone": "coal_ore", "deepslate": "deepslate_coal_ore"}},
@@ -158,6 +182,78 @@ ORE_DEFS = [
     {"name": "sapphire",   "overlay": "sapphire",   "source": "sapphire_ore",   "base": "netherrack",
      "mod": "mythicupgrades", "raw_drop": "mythicupgrades:sapphire",
      "tiers": {"nether": "sapphire_ore"}},
+
+    # --- Mythic Metals (mod id mythicmetals, MIT, Fabric only on every version) ------------------
+    # KEEP IN SYNC WITH OreType.java. Hosts derived from the real jar's configured features; the
+    # full table is in the maintainer notes.
+    #
+    # THE RULE THAT STOPS US INVENTING ORE: the "stone tier only" block below targets
+    # stone_ore_replaceables ONLY, so those ores generate in granite, diorite and andesite but NEVER
+    # in tuff, which lives in deepslate_ore_replaceables. No deepslate tier means no tuff variant.
+    #
+    # Loot comes from transforming Mythic Metals' own tables, NOT the vanilla iron shape: theirs use
+    # set_count 1-2 plus rare secondary drops, so a hand-built table would halve the yield.
+    {"name": "adamantite", "overlay": "adamantite", "source": "adamantite_ore", "base": "stone",
+     "mod": "mythicmetals",
+     "tiers": {"stone": "adamantite_ore", "deepslate": "deepslate_adamantite_ore"}},
+    {"name": "carmot", "overlay": "carmot", "source": "carmot_ore", "base": "stone",
+     "mod": "mythicmetals",
+     "tiers": {"stone": "carmot_ore", "deepslate": "deepslate_carmot_ore"}},
+    {"name": "morkite", "overlay": "morkite", "source": "morkite_ore", "base": "stone",
+     "mod": "mythicmetals",
+     "tiers": {"stone": "morkite_ore", "deepslate": "deepslate_morkite_ore"}},
+    {"name": "mythril", "overlay": "mythril", "source": "mythril_ore", "base": "stone",
+     "mod": "mythicmetals",
+     "tiers": {"stone": "mythril_ore", "deepslate": "deepslate_mythril_ore"}},
+    {"name": "prometheum", "overlay": "prometheum", "source": "prometheum_ore", "base": "stone",
+     "mod": "mythicmetals",
+     "tiers": {"stone": "prometheum_ore", "deepslate": "deepslate_prometheum_ore"}},
+    {"name": "runite", "overlay": "runite", "source": "runite_ore", "base": "stone",
+     "mod": "mythicmetals",
+     "tiers": {"stone": "runite_ore", "deepslate": "deepslate_runite_ore"}},
+    # Unobtainium's DEEPSLATE ore is animated (4 frames) and its stone one is not, so the tuff
+    # variant needs its own overlay. This is the only ore that needs deepslate_overlay.
+    {"name": "unobtainium", "overlay": "unobtainium", "deepslate_overlay": "unobtainium_deepslate",
+     "source": "unobtainium_ore", "base": "stone", "mod": "mythicmetals",
+     "tiers": {"stone": "unobtainium_ore", "deepslate": "deepslate_unobtainium_ore"}},
+    # Stone tier only: three hosts each, never tuff.
+    {"name": "aquarium", "overlay": "aquarium", "source": "aquarium_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "aquarium_ore"}},
+    {"name": "banglum", "overlay": "banglum", "source": "banglum_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "banglum_ore"}},
+    {"name": "kyber", "overlay": "kyber", "source": "kyber_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "kyber_ore"}},
+    {"name": "manganese", "overlay": "manganese", "source": "manganese_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "manganese_ore"}},
+    {"name": "osmium", "overlay": "osmium", "source": "osmium_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "osmium_ore"}},
+    {"name": "platinum", "overlay": "platinum", "source": "platinum_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "platinum_ore"}},
+    {"name": "quadrillum", "overlay": "quadrillum", "source": "quadrillum_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "quadrillum_ore"}},
+    {"name": "silver", "overlay": "silver", "source": "silver_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "silver_ore"}},
+    {"name": "starrite", "overlay": "starrite", "source": "starrite_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "starrite_ore"}},
+    {"name": "tin", "overlay": "tin", "source": "tin_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "tin_ore"}},
+    # Mythic Metals ships its own tuff_orichalcum_ore through an explicit block_match
+    # target ahead of its deepslate tag entry, so tuff is already seamless there.
+    {"name": "orichalcum", "overlay": "orichalcum", "source": "orichalcum_ore", "base": "stone",
+     "mod": "mythicmetals", "tiers": {"stone": "orichalcum_ore"}},
+    # Nether. Like our own gold and quartz these ADD ore, so they ride the basalt and blackstone
+    # host toggles and the bastion protection. Banglum's nether form reuses the plain name for the
+    # same reason nether gold does: the host already disambiguates.
+    {"name": "banglum", "overlay": "nether_banglum", "source": "nether_banglum_ore", "base": "netherrack",
+     "mod": "mythicmetals", "tiers": {"nether": "nether_banglum_ore"}},
+    {"name": "midas_gold", "overlay": "midas_gold", "source": "midas_gold_ore", "base": "netherrack",
+     "mod": "mythicmetals", "tiers": {"nether": "midas_gold_ore"}},
+    {"name": "palladium", "overlay": "palladium", "source": "palladium_ore", "base": "netherrack",
+     "mod": "mythicmetals", "tiers": {"nether": "palladium_ore"}},
+    # Mythic Metals already ships blackstone_stormyx_ore, so we only add the basalt one. Its
+    # overlay is animated (5 frames), matching their own stormyx_ore.
+    {"name": "stormyx", "overlay": "stormyx", "source": "stormyx_ore", "base": "netherrack",
+     "mod": "mythicmetals", "skip_hosts": ["blackstone"], "tiers": {"nether": "stormyx_ore"}},
 ]
 
 FACES = ["down", "up", "north", "south", "west", "east"]
@@ -211,9 +307,20 @@ def variants():
     """
     for host, host_cfg in HOSTS.items():
         for ore in ORE_DEFS:
+            # skip_hosts: the ore's own mod already ships a seamless variant for that stone, so ours
+            # would take the host over (the injector prepends). Mirrors OreType.skipHosts.
+            if host in ore.get("skip_hosts", ()):
+                continue
             vanilla = ore["tiers"].get(host_cfg["tier"])
             if vanilla is not None:
                 yield host, host_cfg, ore, vanilla
+
+
+def overlay_for(ore, host_cfg):
+    """Overlay key for this host, honouring a per-tier override. Mirrors OreType.overlayFor."""
+    if host_cfg["tier"] == "deepslate" and ore.get("deepslate_overlay"):
+        return ore["deepslate_overlay"]
+    return ore["overlay"]
 
 
 def write_json(path, data):
@@ -285,7 +392,7 @@ def generate_json():
                         "particle": host_cfg["side"],
                         "side": host_cfg["side"],
                         "end": host_cfg["end"],
-                        "overlay": f"{MOD_ID}:block/{ore['overlay']}_overlay",
+                        "overlay": f"{MOD_ID}:block/{overlay_for(ore, host_cfg)}_overlay",
                     },
                     "elements": [
                         {"from": [0, 0, 0], "to": [16, 16, 16], "faces": cube_faces("#side", "#end")},
@@ -319,6 +426,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.nether": "Nether",
         f"text.autoconfig.{MOD_ID}.category.create": "Create",
         f"text.autoconfig.{MOD_ID}.category.mythic_upgrades": "Mythic Upgrades",
+        f"text.autoconfig.{MOD_ID}.category.mythic_metals": "Mythic Metals",
 
         f"text.autoconfig.{MOD_ID}.option.granite": "Granite variants",
         f"text.autoconfig.{MOD_ID}.option.granite.@Tooltip":
@@ -355,6 +463,9 @@ def generate_json():
             "Generate host-matched zinc ore. Does nothing unless Create is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.mythicUpgrades": "Mythic Upgrades: variants",
+        f"text.autoconfig.{MOD_ID}.option.mythicMetals": "Mythic Metals: variants",
+        f"text.autoconfig.{MOD_ID}.option.mythicMetals.@Tooltip":
+            "Generate host-matched Mythic Metals ore. Does nothing unless the mod is installed.",
         f"text.autoconfig.{MOD_ID}.option.mythicUpgrades.@Tooltip":
             "Generate host-matched Mythic Upgrades ore. Does nothing unless the mod is installed.",
 
@@ -404,7 +515,17 @@ def generate_json():
     })
     write_json(os.path.join(root, "lang", "en_us.json"), lang)
 
-    print(f"  {count} blockstates, {count} block models, {count} item models")
+    # Animation metadata for the overlays that need it. Written next to the texture, which is where
+    # the vanilla sprite loader looks; nothing else has to know.
+    textures = os.path.join(root, "textures", "block")
+    for overlay, animation in ANIMATED_OVERLAYS.items():
+        texture = os.path.join(textures, f"{overlay}_overlay.png")
+        if not os.path.exists(texture):
+            print(f"  !! {overlay}_overlay.png is missing, so its animation metadata was skipped")
+            continue
+        write_json(texture + ".mcmeta", {"animation": animation})
+    print(f"  {count} blockstates, {count} block models, {count} item models, "
+          f"{len(ANIMATED_OVERLAYS)} animated overlays")
     print(f"  {len(lang)} lang entries")
 
 
@@ -479,48 +600,54 @@ def generate_data():
                                     child["name"] = our_id
                     table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
                 else:
-                    # Third-party ore: build OUR OWN table in the vanilla iron_ore shape (verified
-                    # identical to Create's own zinc table) rather than transforming their file.
-                    # Both loaders' conditions keep it inert when the mod is absent; each loader
-                    # ignores the other's key. NEVER neoforge:item_exists - removed at 26.2.
-                    table = {
+                    # Third-party ore: TRANSFORM THAT MOD'S OWN TABLE, exactly as we do for vanilla.
+                    #
+                    # This replaced "write our own in the vanilla iron_ore shape", which was correct
+                    # only while zinc was the only modded ore, because Create's zinc table IS that
+                    # shape. Mythic Metals' are not: set_count uniform 1-2 on the raw drop (so our
+                    # own table would give HALF the yield), bonus_rolls, and rare secondary drops
+                    # behind their own mythicmetals:random_chance_with_luck condition. Writing our
+                    # own would be a visible balance break across every variant. All three mods we
+                    # cover are MIT, and we credit them.
+                    #
+                    # Hard error rather than a fallback if the jar is missing: silently shipping a
+                    # table with the wrong yield is exactly the class of bug this project keeps
+                    # finding, and a generator run is a dev-time step where failing loudly is free.
+                    mod_jar_path = MOD_JARS.get(mod)
+                    if not mod_jar_path or not os.path.exists(mod_jar_path):
+                        raise SystemExit(
+                            f"  !! cannot generate the loot table for {name}: the {mod} jar is "
+                            f"required to transform its own table and was not found at "
+                            f"{mod_jar_path}. Set the matching *_JAR environment variable."
+                        )
+                    with zipfile.ZipFile(mod_jar_path) as mod_zip:
+                        loot_path = f"data/{mod}/loot_table/blocks/{vanilla}.json"
+                        try:
+                            with mod_zip.open(loot_path) as handle:
+                                table = json.load(handle)
+                        except KeyError:
+                            raise SystemExit(f"  !! {mod} jar has no {loot_path} (needed by {name})")
+                    for pool in table.get("pools", []):
+                        for entry in pool.get("entries", []):
+                            for child in entry.get("children", []):
+                                if any(
+                                    cond.get("condition") == "minecraft:match_tool"
+                                    for cond in child.get("conditions", [])
+                                ):
+                                    # Silk-touch branch drops the block itself - ours.
+                                    child["name"] = our_id
+                    table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
+                    # All three loaders' conditions keep it inert when the mod is absent; each
+                    # loader ignores the other two keys. NEVER neoforge:item_exists - removed at 26.2.
+                    conditions = {
                         "fabric:load_conditions": [
                             {"condition": "fabric:registry_contains",
-                             "registry": "minecraft:item", "values": [ore["raw_drop"]]}
+                             "registry": "minecraft:block", "values": [vanilla_id]}
                         ],
-                        "neoforge:conditions": [
-                            {"type": "neoforge:mod_loaded", "modid": mod}
-                        ],
-                        # Classic Forge is SINGULAR and takes ONE object. Forge honours it on
-                        # datapack registries, which is what a loot table is from 1.21 onward.
+                        "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": mod}],
                         FORGE_CONDITION_KEY: {"type": "forge:mod_loaded", "modid": mod},
-                        "type": "minecraft:block",
-                        "pools": [{
-                            "rolls": 1.0,
-                            "entries": [{
-                                "type": "minecraft:alternatives",
-                                "children": [
-                                    {"type": "minecraft:item",
-                                     "conditions": [{
-                                         "condition": "minecraft:match_tool",
-                                         "predicate": {"predicates": {"minecraft:enchantments": [
-                                             {"enchantments": "minecraft:silk_touch",
-                                              "levels": {"min": 1}}]}}
-                                     }],
-                                     "name": our_id},
-                                    {"type": "minecraft:item",
-                                     "functions": [
-                                         {"enchantment": "minecraft:fortune",
-                                          "formula": "minecraft:ore_drops",
-                                          "function": "minecraft:apply_bonus"},
-                                         {"function": "minecraft:explosion_decay"}
-                                     ],
-                                     "name": ore["raw_drop"]}
-                                ]
-                            }]
-                        }],
-                        "random_sequence": f"{MOD_ID}:blocks/{name}",
                     }
+                    table = {**conditions, **table}
 
                 if mod:
                     # Conditional table: goes to the loaders that can host that mod, not to common.

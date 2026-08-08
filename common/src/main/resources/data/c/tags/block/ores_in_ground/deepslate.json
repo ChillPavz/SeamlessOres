@@ -31,6 +31,34 @@
     {
       "id": "seamlessores:tuff_necoium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:tuff_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_unobtainium_ore",
+      "required": false
     }
   ]
 }

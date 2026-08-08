@@ -2,9 +2,9 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:registry_contains",
-      "registry": "minecraft:item",
+      "registry": "minecraft:block",
       "values": [
-        "mythicupgrades:raw_necoium"
+        "mythicupgrades:deepslate_necoium_ore"
       ]
     }
   ],
@@ -21,7 +21,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -63,7 +63,8 @@
             }
           ]
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "seamlessores:blocks/tuff_necoium_ore"

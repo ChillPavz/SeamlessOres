@@ -72,6 +72,10 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean mythicUpgrades = true;
 
+    @ConfigEntry.Category("mythic_metals")
+    @ConfigEntry.Gui.Tooltip
+    public boolean mythicMetals = true;
+
     @ConfigEntry.Category("nether")
     @ConfigEntry.Gui.Tooltip(count = 3)
     @ConfigEntry.BoundedDiscrete(min = 1, max = 10)
@@ -111,6 +115,8 @@ public class SeamlessOresConfigData implements ConfigData {
         if (!tuff) disabled.add("tuff");
         if (!basalt) disabled.add("basalt");
         if (!blackstone) disabled.add("blackstone");
-        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades, netherOreRarity, netherGems, netherGemSize, netherVeinSize);
+        SeamlessOresConfig.apply(disabled, oreVeins, createZinc, zincVeinSize, bastionSafeNether,
+                mythicUpgrades, netherOreRarity, netherGems, netherGemSize, netherVeinSize,
+                mythicMetals);
     }
 }

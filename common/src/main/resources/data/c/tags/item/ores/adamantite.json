@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_adamantite_ore",
+      "required": false
+    }
+  ]
+}

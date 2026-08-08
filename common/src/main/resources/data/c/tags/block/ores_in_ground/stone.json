@@ -32,6 +32,78 @@
       "id": "seamlessores:granite_necoium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_orichalcum_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -64,6 +136,78 @@
       "id": "seamlessores:diorite_necoium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_orichalcum_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -94,6 +238,78 @@
     },
     {
       "id": "seamlessores:andesite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_orichalcum_ore",
       "required": false
     }
   ]

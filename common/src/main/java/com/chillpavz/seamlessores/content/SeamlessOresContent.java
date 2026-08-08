@@ -150,6 +150,6 @@ public final class SeamlessOresContent {
 
         return variant.ore().redstoneLike()
                 ? new RedStoneOreBlock(properties)
-                : new DropExperienceBlock(variant.ore().xp(), properties);
+                : new DropExperienceBlock(variant.ore().xpFor(variant.host()), properties);
     }
 }

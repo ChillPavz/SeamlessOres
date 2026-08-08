@@ -37,6 +37,9 @@ public final class SeamlessOresConfig {
     /** Whether Mythic Upgrades variants generate. */
     public static boolean mythicUpgrades = true;
 
+    /** Whether Mythic Metals variants generate. */
+    public static boolean mythicMetals = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -51,6 +54,7 @@ public final class SeamlessOresConfig {
         return switch (modId) {
             case "create" -> createZinc;
             case "mythicupgrades" -> mythicUpgrades;
+            case "mythicmetals" -> mythicMetals;
             default -> true;
         };
     }
@@ -153,7 +157,8 @@ public final class SeamlessOresConfig {
     /** Called by each loader's config layer whenever the config loads or is saved. */
     public static void apply(Set<String> newDisabledHosts, boolean newOreVeins, boolean newCreateZinc,
                              int newZincVeinSize, boolean newBastionSafeNether,
-                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems, int newNetherGemSize, int newNetherVeinSize) {
+                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems,
+                             int newNetherGemSize, int newNetherVeinSize, boolean newMythicMetals) {
         disabledHosts = Set.copyOf(newDisabledHosts);
         oreVeins = newOreVeins;
         createZinc = newCreateZinc;
@@ -164,6 +169,7 @@ public final class SeamlessOresConfig {
         netherGems = newNetherGems;
         netherGemSize = newNetherGemSize;
         netherVeinSize = newNetherVeinSize;
+        mythicMetals = newMythicMetals;
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}",
                 disabledHosts, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades);
