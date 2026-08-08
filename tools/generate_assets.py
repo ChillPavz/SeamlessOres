@@ -176,6 +176,25 @@ def resources_dir():
     return os.path.join(repo_root(), "common", "src", "main", "resources")
 
 
+# Loader modules that can actually host a third-party ore on THIS Minecraft version.
+#
+# WHY THIS EXISTS, AND WHY ONLY ON THIS BRANCH: at Forge 52 a loot table is loaded by
+# LootDataType.deserialize, which calls codec.parse directly with NO ConditionCodec wrapper, so
+# "forge:condition" is simply ignored there. (Forge DOES honour it on datapack registries such as
+# worldgen - that path is patched, this one is not.) A conditional loot table naming an absent mod's
+# item therefore logs "Couldn't parse element ... Unknown registry key" on every world load.
+#
+# It is dead weight anyway: neither Create nor Mythic Upgrades has a Forge build at 1.21 or 1.21.1
+# (checked on the Modrinth API), so those blocks can never register on Forge here. Writing the
+# conditional tables into the loader modules that CAN use them keeps the Forge jar clean instead of
+# shipping 28 files that only ever produce errors. Re-check the loader matrix on any version bump.
+CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
+
+
+def conditional_data_dir(module, namespace):
+    return os.path.join(repo_root(), module, "src", "main", "resources", "data", namespace)
+
+
 def assets_dir():
     return os.path.join(resources_dir(), "assets", MOD_ID)
 
@@ -503,7 +522,13 @@ def generate_data():
                         "random_sequence": f"{MOD_ID}:blocks/{name}",
                     }
 
-                write_json(os.path.join(ours, "loot_table", "blocks", f"{name}.json"), table)
+                if mod:
+                    # Conditional table: goes to the loaders that can host that mod, not to common.
+                    for module in CONDITIONAL_LOOT_MODULES:
+                        write_json(os.path.join(conditional_data_dir(module, MOD_ID),
+                                                "loot_table", "blocks", f"{name}.json"), table)
+                else:
+                    write_json(os.path.join(ours, "loot_table", "blocks", f"{name}.json"), table)
 
                 # --- tags -------------------------------------------------------------------
                 # A modded variant's block only exists when its mod is loaded, so its tag entries
