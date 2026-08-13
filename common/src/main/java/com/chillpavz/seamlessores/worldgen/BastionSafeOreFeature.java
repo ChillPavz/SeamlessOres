@@ -2,12 +2,13 @@ package com.chillpavz.seamlessores.worldgen;
 
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
+import com.chillpavz.seamlessores.content.OreTier;
+import com.chillpavz.seamlessores.content.OreVariant;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
@@ -16,7 +17,6 @@ import net.minecraft.world.level.levelgen.structure.Structure;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 /**
  * A drop-in stand-in for {@code minecraft:ore} that declines to convert blocks inside a bastion.
@@ -127,8 +127,8 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
      */
     private static boolean rarityAllows(FeaturePlaceContext<OreConfiguration> context,
                                         OreConfiguration config) {
-        final int rarity = SeamlessOresConfig.netherOreRarity;
-        if (rarity <= 1 || !subjectToRarity(config)) {
+        final int rarity = rarityFor(config);
+        if (rarity <= 1) {
             return true;
         }
         long hash = context.origin().asLong() * 0x9E3779B97F4A7C15L;
@@ -136,20 +136,29 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
         return Math.floorMod(hash, rarity) == 0L;
     }
 
-    /** Only the gold and quartz variants are thinned; anything else placed here passes through. */
-    private static boolean subjectToRarity(OreConfiguration config) {
-        final Set<Block> ours = Set.copyOf(SeamlessOresContent.blocks().values());
+    /**
+     * The rarity dial that governs this feature: the strictest one applying to any of our nether
+     * blocks in its target list, or 1 (no thinning) if none applies.
+     *
+     * <p>Which dial that is depends on who owns the ore — our own gold and quartz answer to
+     * {@code netherOreRarity}, Silent's Gems' nether gems to their own copy of it, and everything
+     * else is exempt. See {@link SeamlessOresConfig#netherRarityFor}.
+     *
+     * <p>Resolved through the variant rather than by testing the block id for a {@code _gold_ore} /
+     * {@code _quartz_ore} suffix, which is what this used to do. The suffix test could not tell our
+     * gold from Mythic Metals' {@code basalt_midas_gold_ore}, which also ends in {@code _gold_ore}
+     * and is meant to be exempt — so it was already thinning a mod it was never meant to touch.
+     */
+    private static int rarityFor(OreConfiguration config) {
+        int rarity = 1;
         for (OreConfiguration.TargetBlockState target : config.targetStates) {
-            final Block block = target.state.getBlock();
-            if (!ours.contains(block)) {
-                continue;
+            final OreVariant variant = SeamlessOresContent.variantOf(target.state.getBlock());
+            if (variant == null || variant.host().tier() != OreTier.NETHER) {
+                continue;   // not ours, or an overworld host: never thinned
             }
-            final ResourceLocation id = net.minecraft.core.registries.BuiltInRegistries.BLOCK.getKey(block);
-            if (id != null && (id.getPath().endsWith("_gold_ore") || id.getPath().endsWith("_quartz_ore"))) {
-                return true;
-            }
+            rarity = Math.max(rarity, SeamlessOresConfig.netherRarityFor(variant.ore().requiredModId()));
         }
-        return false;
+        return rarity;
     }
 
     private static boolean insideBastion(FeaturePlaceContext<OreConfiguration> context) {
@@ -181,10 +190,9 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
     private static List<OreConfiguration.TargetBlockState> withoutOurTargets(
             List<OreConfiguration.TargetBlockState> targets) {
 
-        final Set<Block> ours = Set.copyOf(SeamlessOresContent.blocks().values());
         final List<OreConfiguration.TargetBlockState> kept = new ArrayList<>(targets.size());
         for (OreConfiguration.TargetBlockState target : targets) {
-            if (!ours.contains(target.state.getBlock())) {
+            if (SeamlessOresContent.variantOf(target.state.getBlock()) == null) {
                 kept.add(target);
             }
         }

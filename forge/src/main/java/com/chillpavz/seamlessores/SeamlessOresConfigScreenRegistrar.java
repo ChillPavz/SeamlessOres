@@ -1,7 +1,6 @@
 package com.chillpavz.seamlessores;
 
-import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
-import me.shedaniel.autoconfig.AutoConfig;
+import com.chillpavz.seamlessores.config.SeamlessOresConfigScreenFactory;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -23,6 +22,6 @@ final class SeamlessOresConfigScreenRegistrar {
     static void register() {
         ModLoadingContext.get().registerExtensionPoint(ConfigScreenHandler.ConfigScreenFactory.class,
                 () -> new ConfigScreenHandler.ConfigScreenFactory(
-                        (Screen parent) -> AutoConfig.getConfigScreen(SeamlessOresConfigData.class, parent).get()));
+                        (Screen parent) -> SeamlessOresConfigScreenFactory.create(parent)));
     }
 }

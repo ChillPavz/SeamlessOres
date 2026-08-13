@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_tanzanite_ore",
+      "required": false
+    }
+  ]
+}

@@ -71,6 +71,10 @@ MYTHIC_UPGRADES_JAR = os.environ.get(
 
 # Mythic Metals (mod id 'mythicmetals', MIT). Fabric only on every version it has ever shipped, so
 # its variants only ever register there. Source of its ore textures, loot tables and tool tags.
+SILENT_GEMS_JAR = os.environ.get(
+    "SILENT_GEMS_JAR",
+    "../jars/silentgems-26.1.2-neoforge-5.1.4.jar")
+
 MYTHIC_METALS_JAR = os.environ.get(
     "MYTHIC_METALS_JAR",
     os.path.expanduser(
@@ -80,7 +84,29 @@ MYTHIC_METALS_JAR = os.environ.get(
 
 # Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
 # a warning rather than an error: the JSON still generates, only the texture step is skipped.
-MOD_JARS = {"create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
+DENSEMEKANISM_JAR = os.environ.get("DENSEMEKANISM_JAR", "../jars/densemekanism-1.21.1-1.2.jar")
+
+POWAH_JAR = os.environ.get("POWAH_JAR", "../jars/Powah-7.0.4-alpha.jar")
+
+TFMG_JAR = os.environ.get("TFMG_JAR", "../jars/tfmg-1.2.2.jar")
+
+ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../jars/energizedpower-3.0.0+26.2.x-neoforge.jar")
+
+THINGS_JAR = os.environ.get("THINGS_JAR", "../jars/things-0.4.2+1.21.jar")
+
+SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../jars/silent-gear-26.1.2-neoforge-4.2.2.jar")
+
+CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../jars/create-new-age-1.2.0+neoforge-mc1.21.1.jar")
+
+MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
+            "silentgear": SILENTGEAR_JAR,
+            "things": THINGS_JAR,
+            "energizedpower": ENERGIZEDPOWER_JAR,
+            "tfmg": TFMG_JAR,
+            "powah": POWAH_JAR,
+            "densemekanism": DENSEMEKANISM_JAR,
+            "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
+            "silentgems": SILENT_GEMS_JAR,
             "mythicmetals": MYTHIC_METALS_JAR}
 
 # Host stones that receive ore but have no matching ore texture in vanilla.
@@ -254,6 +280,162 @@ ORE_DEFS = [
     # overlay is animated (5 frames), matching their own stormyx_ore.
     {"name": "stormyx", "overlay": "stormyx", "source": "stormyx_ore", "base": "netherrack",
      "mod": "mythicmetals", "skip_hosts": ["blackstone"], "tiers": {"nether": "stormyx_ore"}},
+
+    # --- Silent's Gems (mod id silentgems, MIT) -------------------------------------------------
+    # Every gem targets BOTH replaceables tags, so all four hosts apply and the restyle is
+    # balance-neutral. Loot is the plain vanilla shape, so the tables transform directly.
+    # KEEP IN SYNC WITH OreType.java, INCLUDING the silents_ prefixes: aquamarine, citrine,
+    # peridot, topaz and silver would otherwise produce a block id we already register for
+    # Mythic Upgrades or Mythic Metals. Ruby and sapphire need no prefix, because Mythic Upgrades
+    # puts those in netherrack only while ours are overworld, so the ids never meet.
+    {"name": "alexandrite",             "overlay": "alexandrite",             "source": "alexandrite_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:alexandrite",
+     "tiers": {"stone": "alexandrite_ore", "deepslate": "deepslate_alexandrite_ore"}},
+    {"name": "ammolite",                "overlay": "ammolite",                "source": "ammolite_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:ammolite",
+     "tiers": {"stone": "ammolite_ore", "deepslate": "deepslate_ammolite_ore"}},
+    {"name": "black_diamond",           "overlay": "black_diamond",           "source": "black_diamond_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:black_diamond",
+     "tiers": {"stone": "black_diamond_ore", "deepslate": "deepslate_black_diamond_ore"}},
+    {"name": "carnelian",               "overlay": "carnelian",               "source": "carnelian_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:carnelian",
+     "tiers": {"stone": "carnelian_ore", "deepslate": "deepslate_carnelian_ore"}},
+    {"name": "chaos",                   "overlay": "chaos",                   "source": "chaos_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:chaos_essence",
+     "tiers": {"stone": "chaos_ore", "deepslate": "deepslate_chaos_ore"}},
+    {"name": "garnet",                  "overlay": "garnet",                  "source": "garnet_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:garnet",
+     "tiers": {"stone": "garnet_ore", "deepslate": "deepslate_garnet_ore"}},
+    {"name": "heliodor",                "overlay": "heliodor",                "source": "heliodor_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:heliodor",
+     "tiers": {"stone": "heliodor_ore", "deepslate": "deepslate_heliodor_ore"}},
+    {"name": "iolite",                  "overlay": "iolite",                  "source": "iolite_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:iolite",
+     "tiers": {"stone": "iolite_ore", "deepslate": "deepslate_iolite_ore"}},
+    {"name": "kyanite",                 "overlay": "kyanite",                 "source": "kyanite_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:kyanite",
+     "tiers": {"stone": "kyanite_ore", "deepslate": "deepslate_kyanite_ore"}},
+    {"name": "moldavite",               "overlay": "moldavite",               "source": "moldavite_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:moldavite",
+     "tiers": {"stone": "moldavite_ore", "deepslate": "deepslate_moldavite_ore"}},
+    {"name": "pearl",                   "overlay": "pearl",                   "source": "pearl_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:pearl",
+     "tiers": {"stone": "pearl_ore", "deepslate": "deepslate_pearl_ore"}},
+    {"name": "rose_quartz",             "overlay": "rose_quartz",             "source": "rose_quartz_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:rose_quartz",
+     "tiers": {"stone": "rose_quartz_ore", "deepslate": "deepslate_rose_quartz_ore"}},
+    {"name": "ruby",                    "overlay": "ruby",                    "source": "ruby_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:ruby",
+     "tiers": {"stone": "ruby_ore", "deepslate": "deepslate_ruby_ore"}},
+    {"name": "sapphire",                "overlay": "sapphire",                "source": "sapphire_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:sapphire",
+     "tiers": {"stone": "sapphire_ore", "deepslate": "deepslate_sapphire_ore"}},
+    {"name": "tanzanite",               "overlay": "tanzanite",               "source": "tanzanite_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:tanzanite",
+     "tiers": {"stone": "tanzanite_ore", "deepslate": "deepslate_tanzanite_ore"}},
+    {"name": "turquoise",               "overlay": "turquoise",               "source": "turquoise_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:turquoise",
+     "tiers": {"stone": "turquoise_ore", "deepslate": "deepslate_turquoise_ore"}},
+    {"name": "white_diamond",           "overlay": "white_diamond",           "source": "white_diamond_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:white_diamond",
+     "tiers": {"stone": "white_diamond_ore", "deepslate": "deepslate_white_diamond_ore"}},
+    {"name": "silents_aquamarine",      "overlay": "silents_aquamarine",      "source": "aquamarine_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:aquamarine",
+     "tiers": {"stone": "aquamarine_ore", "deepslate": "deepslate_aquamarine_ore"}},
+    {"name": "silents_citrine",         "overlay": "silents_citrine",         "source": "citrine_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:citrine",
+     "tiers": {"stone": "citrine_ore", "deepslate": "deepslate_citrine_ore"}},
+    {"name": "silents_peridot",         "overlay": "silents_peridot",         "source": "peridot_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:peridot",
+     "tiers": {"stone": "peridot_ore", "deepslate": "deepslate_peridot_ore"}},
+    {"name": "silents_topaz",           "overlay": "silents_topaz",           "source": "topaz_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:topaz",
+     "tiers": {"stone": "topaz_ore", "deepslate": "deepslate_topaz_ore"}},
+    {"name": "silents_silver",          "overlay": "silents_silver",          "source": "silver_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:raw_silver",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+
+    # --- Seven more third-party mods -------------------------------------------------------
+    # NO raw_drop on any of these, deliberately: their loot is TRANSFORMED from the mod's own
+    # tables. Dense Mekanism and Powah both use set_count, so a hand-built vanilla-shape table
+    # would change their yields, exactly as it would have for Mythic Metals.
+    # energized_tin is prefixed because plain tin is already Mythic Metals'.
+    {"name": "dense_fluorite", "overlay": "dense_fluorite", "source": "dense_fluorite_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_fluorite_ore", "deepslate": "dense_deepslate_fluorite_ore"}},
+    {"name": "dense_lead", "overlay": "dense_lead", "source": "dense_lead_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_lead_ore", "deepslate": "dense_deepslate_lead_ore"}},
+    {"name": "dense_osmium", "overlay": "dense_osmium", "source": "dense_osmium_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_osmium_ore", "deepslate": "dense_deepslate_osmium_ore"}},
+    {"name": "dense_tin", "overlay": "dense_tin", "source": "dense_tin_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_tin_ore", "deepslate": "dense_deepslate_tin_ore"}},
+    {"name": "dense_uranium", "overlay": "dense_uranium", "source": "dense_uranium_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_uranium_ore", "deepslate": "dense_deepslate_uranium_ore"}},
+    {"name": "uraninite", "overlay": "uraninite", "source": "uraninite_ore", "base": "stone",
+     "mod": "powah",
+     "tiers": {"stone": "uraninite_ore", "deepslate": "deepslate_uraninite_ore"}},
+    {"name": "uraninite_poor", "overlay": "uraninite_poor", "source": "uraninite_ore_poor", "base": "stone",
+     "mod": "powah",
+     "tiers": {"stone": "uraninite_ore_poor", "deepslate": "deepslate_uraninite_ore_poor"}},
+    {"name": "uraninite_dense", "overlay": "uraninite_dense", "source": "uraninite_ore_dense", "base": "stone",
+     "mod": "powah",
+     "tiers": {"stone": "uraninite_ore_dense", "deepslate": "deepslate_uraninite_ore_dense"}},
+    {"name": "lead", "overlay": "lead", "source": "lead_ore", "base": "stone",
+     "mod": "tfmg",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "lithium", "overlay": "lithium", "source": "lithium_ore", "base": "stone",
+     "mod": "tfmg",
+     "tiers": {"stone": "lithium_ore", "deepslate": "deepslate_lithium_ore"}},
+    {"name": "nickel", "overlay": "nickel", "source": "nickel_ore", "base": "stone",
+     "mod": "tfmg",
+     "tiers": {"stone": "nickel_ore", "deepslate": "deepslate_nickel_ore"}},
+    {"name": "energized_tin", "overlay": "energized_tin", "source": "tin_ore", "base": "stone",
+     "mod": "energizedpower",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    {"name": "gleaming", "overlay": "gleaming", "source": "gleaming_ore", "base": "stone",
+     "mod": "things",
+     "tiers": {"stone": "gleaming_ore", "deepslate": "deepslate_gleaming_ore"}},
+    {"name": "bort", "overlay": "bort", "source": "bort_ore", "base": "stone",
+     "mod": "silentgear",
+     "tiers": {"stone": "bort_ore", "deepslate": "deepslate_bort_ore"}},
+    {"name": "thorium", "overlay": "thorium", "source": "thorium_ore", "base": "stone",
+     "mod": "create_new_age",
+     "tiers": {"stone": "thorium_ore"}},
+
+    # Silent's Gems in the NETHER. ONLY the eight that actually generate: the other thirteen have
+    # count 0 AND size 0 in their placed features, so they are registered but place nothing, and a
+    # variant would invent ore. These ADD ore (the mod targets c:netherracks only), so they ride the
+    # host toggles, the nether dials and bastion protection, exactly like our gold and quartz.
+    # They reuse the overworld overlay: measured against the mod’s own nether textures it lands
+    # 96-100% on the gem pixels, because the same blobs are drawn on netherrack as on stone.
+    {"name": "alexandrite", "overlay": "alexandrite", "source": "nether_alexandrite_ore", "base": "netherrack",
+     "mod": "silentgems",
+     "tiers": {"nether": "nether_alexandrite_ore"}},
+    {"name": "black_diamond", "overlay": "black_diamond", "source": "nether_black_diamond_ore", "base": "netherrack",
+     "mod": "silentgems",
+     "tiers": {"nether": "nether_black_diamond_ore"}},
+    {"name": "carnelian", "overlay": "carnelian", "source": "nether_carnelian_ore", "base": "netherrack",
+     "mod": "silentgems",
+     "tiers": {"nether": "nether_carnelian_ore"}},
+    {"name": "silents_citrine", "overlay": "silents_citrine", "source": "nether_citrine_ore", "base": "netherrack",
+     "mod": "silentgems",
+     "tiers": {"nether": "nether_citrine_ore"}},
+    {"name": "iolite", "overlay": "iolite", "source": "nether_iolite_ore", "base": "netherrack",
+     "mod": "silentgems",
+     "tiers": {"nether": "nether_iolite_ore"}},
+    {"name": "moldavite", "overlay": "moldavite", "source": "nether_moldavite_ore", "base": "netherrack",
+     "mod": "silentgems",
+     "tiers": {"nether": "nether_moldavite_ore"}},
+    {"name": "pearl", "overlay": "pearl", "source": "nether_pearl_ore", "base": "netherrack",
+     "mod": "silentgems",
+     "tiers": {"nether": "nether_pearl_ore"}},
+    {"name": "tanzanite", "overlay": "tanzanite", "source": "nether_tanzanite_ore", "base": "netherrack",
+     "mod": "silentgems",
+     "tiers": {"nether": "nether_tanzanite_ore"}},
 ]
 
 FACES = ["down", "up", "north", "south", "west", "east"]
@@ -284,7 +466,44 @@ def resources_dir():
 # (checked on the Modrinth API), so those blocks can never register on Forge here. Writing the
 # conditional tables into the loader modules that CAN use them keeps the Forge jar clean instead of
 # shipping 28 files that only ever produce errors. Re-check the loader matrix on any version bump.
-CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
+# PER MOD, because the loader matrix is not the same for all of them. Getting this wrong is silent
+# and serious in BOTH directions: a table written to a loader the mod cannot run on is harmless
+# noise, but a table MISSING from a loader the mod CAN run on means our variants register there and
+# drop NOTHING when broken.
+#
+# Verified on the Modrinth API for this branch (1.21 / 1.21.1):
+#   create         neoforge only          (Create Fabric does not exist here)
+#   mythicupgrades fabric + neoforge
+#   mythicmetals   fabric only
+#   silentgems     forge + neoforge       <- the one that forced this to be per mod
+#
+# Silent's Gems is also the case where the Forge caveat above actually bites: its tables MUST ship
+# in the Forge jar or its 88 variants drop nothing there, and Forge 52 will log a parse error per
+# table on instances that do not have the mod. A noisy log beats blocks that drop nothing.
+CONDITIONAL_LOOT_MODULES_BY_MOD = {
+    # VERIFIED PER MINECRAFT VERSION, not from the project-level "loaders" array. That array is the
+    # UNION across every file a project has ever shipped, so a mod with a Forge build at 1.20.1
+    # still reports "forge" when its 1.21.1 file is NeoForge only. Trusting it put 143 conditional
+    # loot tables into the Forge jar that can never fire, and Forge 52 ignores loot conditions, so
+    # each would have logged a parse error on every world load.
+    #
+    # Query per version instead:
+    #   /v2/project/<slug>/version?game_versions=["1.21.1"]  -> union of that file set's loaders
+    #
+    # At 1.21.1 NOTHING we gate on ships for Forge, so the Forge jar carries only vanilla tables.
+    "create": ("neoforge",),
+    "mythicupgrades": ("fabric", "neoforge"),
+    "mythicmetals": ("fabric",),
+    "silentgems": ("neoforge",),
+    "densemekanism": ("neoforge",),   # no 1.21.1 file on Modrinth at all; the jar is neoforge.mods.toml
+    "powah": ("neoforge",),
+    "tfmg": ("neoforge",),
+    "energizedpower": ("fabric", "neoforge"),
+    "things": ("fabric",),
+    "silentgear": ("neoforge",),
+    "create_new_age": ("neoforge",),
+}
+DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
 
 def conditional_data_dir(module, namespace):
@@ -418,6 +637,8 @@ def generate_json():
     # text.autoconfig.<modid>.title / .option.<field> / .option.<field>.@Tooltip
     # A @Tooltip(count = n) needs n indexed keys instead of the bare one.
     lang.update({
+        # Our own creative tab, so 295 variants stop burying vanilla's Natural Blocks.
+        f"itemGroup.{MOD_ID}.ores": "Seamless Ores",
         f"text.autoconfig.{MOD_ID}.title": "Seamless Ores",
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
@@ -427,6 +648,16 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.create": "Create",
         f"text.autoconfig.{MOD_ID}.category.mythic_upgrades": "Mythic Upgrades",
         f"text.autoconfig.{MOD_ID}.category.mythic_metals": "Mythic Metals",
+        # One category per supported mod, even where it holds a single switch. Finer control can
+        # then be added later without moving anybody's existing setting to a different screen.
+        f"text.autoconfig.{MOD_ID}.category.silents_gems": "Silent's Gems",
+        f"text.autoconfig.{MOD_ID}.category.dense_mekanism": "Dense Mekanism",
+        f"text.autoconfig.{MOD_ID}.category.powah": "Powah",
+        f"text.autoconfig.{MOD_ID}.category.tfmg": "Create: TFMG",
+        f"text.autoconfig.{MOD_ID}.category.energized_power": "Energized Power",
+        f"text.autoconfig.{MOD_ID}.category.things": "Things",
+        f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
+        f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
 
         f"text.autoconfig.{MOD_ID}.option.granite": "Granite variants",
         f"text.autoconfig.{MOD_ID}.option.granite.@Tooltip":
@@ -512,6 +743,68 @@ def generate_json():
             "Bastions are built from those blocks, so without this their walls can",
         f"text.autoconfig.{MOD_ID}.option.bastionSafeNether.@Tooltip[2]":
             "turn into ore and invite you to mine the structure apart.",
+
+        # Silent's Gems is the one mod with more than a single switch. Its overworld gems restyle
+        # ore that already generates; its eight generating nether gems target netherrack only, so
+        # our basalt and blackstone variants ADD ore exactly as our own gold and quartz do - and so
+        # they get their own copies of the same two dials.
+        f"text.autoconfig.{MOD_ID}.option.silentGems": "Silent's Gems: overworld variants",
+        f"text.autoconfig.{MOD_ID}.option.silentGems.@Tooltip[0]":
+            "Generate host-matched Silent's Gems ore. Does nothing unless the mod is installed.",
+        f"text.autoconfig.{MOD_ID}.option.silentGems.@Tooltip[1]":
+            "Purely a restyle: the amount of gem ore is identical either way.",
+
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNether": "Silent's Gems: nether variants (adds ore)",
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNether.@Tooltip[0]":
+            "Puts Silent's Gems nether gems in basalt and blackstone. That mod generates them in",
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNether.@Tooltip[1]":
+            "netherrack only, so this ADDS ore, most noticeably in basalt deltas.",
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNether.@Tooltip[2]":
+            "Turn off to leave the Nether exactly as Silent's Gems generates it.",
+
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNetherRarity": "Silent's Gems: nether rarity",
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNetherRarity.@Tooltip[0]":
+            "One in this many basalt or blackstone gem veins becomes ore. 1 converts every vein.",
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNetherRarity.@Tooltip[1]":
+            "Separate from the Nether page's dial, so gems and gold can be balanced apart.",
+
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNetherVeinSize": "Silent's Gems: nether vein size",
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNetherVeinSize.@Tooltip[0]":
+            "How big each nether gem vein is, as a percent of the mod's own value. 100 is untouched.",
+        f"text.autoconfig.{MOD_ID}.option.silentGemsNetherVeinSize.@Tooltip[1]":
+            "As on the Nether page, this also shrinks the mod's own netherrack veins.",
+
+        # One switch per remaining mod. All of these are pure restyles - the mod's ore already
+        # generates in these host stones, so only its appearance changes.
+        f"text.autoconfig.{MOD_ID}.option.denseMekanism": "Dense Mekanism: variants",
+        f"text.autoconfig.{MOD_ID}.option.denseMekanism.@Tooltip[0]":
+            "Generate host-matched Dense Mekanism ore. Does nothing unless the mod is installed.",
+        f"text.autoconfig.{MOD_ID}.option.denseMekanism.@Tooltip[1]":
+            "Mekanism's own ore is not covered: it uses a feature type this mod cannot extend.",
+
+        f"text.autoconfig.{MOD_ID}.option.powah": "Powah: variants",
+        f"text.autoconfig.{MOD_ID}.option.powah.@Tooltip":
+            "Generate host-matched uraninite ore. Does nothing unless Powah is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.tfmg": "Create: TFMG variants",
+        f"text.autoconfig.{MOD_ID}.option.tfmg.@Tooltip":
+            "Generate host-matched TFMG ore. Does nothing unless the mod is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.energizedPower": "Energized Power: variants",
+        f"text.autoconfig.{MOD_ID}.option.energizedPower.@Tooltip":
+            "Generate host-matched tin ore. Does nothing unless Energized Power is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.things": "Things: variants",
+        f"text.autoconfig.{MOD_ID}.option.things.@Tooltip":
+            "Generate host-matched gleaming ore. Does nothing unless Things is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.silentGear": "Silent Gear: variants",
+        f"text.autoconfig.{MOD_ID}.option.silentGear.@Tooltip":
+            "Generate host-matched bort ore. Does nothing unless Silent Gear is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.createNewAge": "Create: New Age variants",
+        f"text.autoconfig.{MOD_ID}.option.createNewAge.@Tooltip":
+            "Generate host-matched thorium ore. Does nothing unless the mod is installed.",
     })
     write_json(os.path.join(root, "lang", "en_us.json"), lang)
 
@@ -651,7 +944,8 @@ def generate_data():
 
                 if mod:
                     # Conditional table: goes to the loaders that can host that mod, not to common.
-                    for module in CONDITIONAL_LOOT_MODULES:
+                    for module in CONDITIONAL_LOOT_MODULES_BY_MOD.get(
+                            mod, DEFAULT_CONDITIONAL_LOOT_MODULES):
                         write_json(os.path.join(conditional_data_dir(module, MOD_ID),
                                                 "loot_table", "blocks", f"{name}.json"), table)
                 else:

@@ -3,18 +3,21 @@ package com.chillpavz.seamlessores.content;
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.RedStoneOreBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,15 +46,6 @@ public final class SeamlessOresContent {
 
     /** Populated during registration; iteration order is the creative tab order. */
     private static final Map<OreVariant, Item> ITEMS = new LinkedHashMap<>();
-
-    /**
-     * The vanilla "Natural Blocks" tab, where players already look for ores.
-     * <p>
-     * Built by id rather than referenced directly: {@code CreativeModeTabs.NATURAL_BLOCKS} is
-     * {@code private}, so it cannot be used from outside vanilla.
-     */
-    public static final ResourceKey<CreativeModeTab> NATURAL_BLOCKS =
-            ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.withDefaultNamespace("natural_blocks"));
 
     private static List<OreVariant> buildVariants() {
         final List<OreVariant> variants = new ArrayList<>();
@@ -83,6 +77,21 @@ public final class SeamlessOresContent {
     }
 
     /**
+     * Reverse of {@link #BLOCKS}, built once at the end of registration.
+     *
+     * <p>Worldgen asks "is this one of ours, and if so which variant" for every target of every ore
+     * feature placement, on several threads at once. Scanning {@link #BLOCKS} for that was fine at
+     * 40 blocks and is not at 295, and {@link #blocks()} copies the whole map on each call. Built
+     * eagerly rather than lazily so there is no publication race to reason about.
+     */
+    private static Map<Block, OreVariant> byBlock = Map.of();
+
+    /** The variant a block belongs to, or null if the block is not ours. */
+    public static OreVariant variantOf(Block block) {
+        return byBlock.get(block);
+    }
+
+    /**
      * Builds each block and hands it to the loader to register.
      *
      * <p>Blocks are constructed inside this call rather than in a static initialiser on purpose: a
@@ -96,6 +105,9 @@ public final class SeamlessOresContent {
             BLOCKS.put(variant, block);
             sink.accept(variant.id(), block);
         }
+        final Map<Block, OreVariant> reverse = new java.util.IdentityHashMap<>(BLOCKS.size());
+        BLOCKS.forEach((variant, block) -> reverse.put(block, variant));
+        byBlock = Map.copyOf(reverse);
         Constants.LOG.info("Registered {} ore variants", BLOCKS.size());
     }
 
@@ -120,9 +132,65 @@ public final class SeamlessOresContent {
         });
     }
 
-    /** Items in creative-tab order. Empty until {@link #registerItems} has run. */
+    /**
+     * Our own creative tab, so 295 ore variants stop burying vanilla's Natural Blocks.
+     *
+     * <p>Deliberately built with NO {@code displayItems} generator. {@code CreativeModeTab.Output}
+     * is protected, so it cannot be populated from outside vanilla; instead each loader's existing
+     * "modify tab contents" event fills it, which is the same code that used to target Natural
+     * Blocks and is already proven on all three loaders.
+     *
+     * <p>Icon is basalt gold ore: a block only this mod adds, so the tab is recognisable at a
+     * glance and never looks like a vanilla group.
+     */
+    public static final ResourceKey<CreativeModeTab> TAB =
+            ResourceKey.create(Registries.CREATIVE_MODE_TAB,
+                    ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "ores"));
+
+    public static void registerCreativeTab(BiConsumer<ResourceLocation, CreativeModeTab> sink) {
+        final CreativeModeTab tab = CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
+                .title(Component.translatable("itemGroup." + Constants.MOD_ID + ".ores"))
+                .icon(SeamlessOresContent::tabIcon)
+                .build();
+        sink.accept(TAB.location(), tab);
+    }
+
+    private static ItemStack tabIcon() {
+        for (Map.Entry<OreVariant, Item> e : ITEMS.entrySet()) {
+            final OreVariant v = e.getKey();
+            if (v.host() == HostStone.BASALT && v.ore() == OreType.NETHER_GOLD) {
+                return new ItemStack(e.getValue());
+            }
+        }
+        // Basalt gold only exists if the basalt host is registered, which it always is, but a tab
+        // with no icon would be an invisible failure - fall back to whatever we do have.
+        return ITEMS.isEmpty() ? ItemStack.EMPTY : new ItemStack(ITEMS.values().iterator().next());
+    }
+
+    /**
+     * Items in creative-tab order, <b>grouped by the mod they belong to</b>.
+     *
+     * <p>Registration order is host-major, which interleaves every mod's ores and makes 295 items
+     * unreadable. Here vanilla comes first, then each mod's ores together in one run, so it is
+     * obvious at a glance which ore came from where. Sorting only the display order leaves
+     * registration untouched.
+     */
     public static List<Item> creativeTabItems() {
-        return List.copyOf(ITEMS.values());
+        final List<Map.Entry<OreVariant, Item>> entries = new ArrayList<>(ITEMS.entrySet());
+        final List<OreType> oreOrder = OreType.ALL;
+        final List<HostStone> hostOrder = HostStone.ALL;
+        entries.sort(Comparator
+                // vanilla first (no required mod), then mods alphabetically
+                .<Map.Entry<OreVariant, Item>, String>comparing(
+                        e -> e.getKey().ore().requiredModId() == null
+                                ? "" : e.getKey().ore().requiredModId())
+                .thenComparingInt(e -> oreOrder.indexOf(e.getKey().ore()))
+                .thenComparingInt(e -> hostOrder.indexOf(e.getKey().host())));
+        final List<Item> items = new ArrayList<>(entries.size());
+        for (Map.Entry<OreVariant, Item> e : entries) {
+            items.add(e.getValue());
+        }
+        return items;
     }
 
     private static Block createBlock(OreVariant variant) {

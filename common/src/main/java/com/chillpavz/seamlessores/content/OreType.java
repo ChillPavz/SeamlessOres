@@ -199,6 +199,157 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType STORMYX =
             mmNether("stormyx", "stormyx", "stormyx_ore", UniformInt.of(2, 4), Set.of("blackstone"));
 
+    // --- Silent's Gems (mod id silentgems, MIT) -------------------------------------------------
+    // Every gem targets BOTH replaceables tags, so all four host stones apply and injecting them is
+    // a pure restyle. Loot is the plain vanilla shape (silk touch returns the block, otherwise the
+    // gem with the ore_drops fortune formula), so the generator transforms their tables directly.
+    //
+    // XP was read out of the jar rather than assumed, and generalising would have been wrong twice:
+    // GemOreBlock's constructor hardcodes UniformInt.of(1, 5) for the twenty gems, but silver is
+    // ConstantInt.of(0) and chaos is UniformInt.of(3, 7), each built by its own factory method.
+    //
+    // NAME PREFIXES ARE LOAD BEARING. Our block id is <host>_<name>_ore, and five of these ores
+    // share a name with one we already ship: aquamarine, citrine, peridot and topaz collide with
+    // Mythic Upgrades, and silver with Mythic Metals. With both mods installed the same id would be
+    // registered twice. Those five carry a `silents_` prefix; the rest keep the plain name.
+    // Ruby and sapphire need NO prefix even though Mythic Upgrades has both: theirs are netherrack
+    // only, so they produce basalt_ruby_ore while these produce granite_ruby_ore. Different hosts,
+    // no clash. The overlay key follows the name, so the prefixed five need their own art files.
+    private static OreType silentGem(String name, IntProvider xp) {
+        final String plain = name.startsWith("silents_") ? name.substring("silents_".length()) : name;
+        return new OreType(name, name, null, "silentgems",
+                of("silentgems", plain + "_ore"), of("silentgems", "deepslate_" + plain + "_ore"),
+                null, xp, null, false, Set.of());
+    }
+
+    private static final IntProvider GEM_XP = UniformInt.of(1, 5);
+
+    public static final OreType SG_ALEXANDRITE = silentGem("alexandrite", GEM_XP);
+    public static final OreType SG_AMMOLITE = silentGem("ammolite", GEM_XP);
+    public static final OreType SG_BLACK_DIAMOND = silentGem("black_diamond", GEM_XP);
+    public static final OreType SG_CARNELIAN = silentGem("carnelian", GEM_XP);
+    public static final OreType SG_GARNET = silentGem("garnet", GEM_XP);
+    public static final OreType SG_HELIODOR = silentGem("heliodor", GEM_XP);
+    public static final OreType SG_IOLITE = silentGem("iolite", GEM_XP);
+    public static final OreType SG_KYANITE = silentGem("kyanite", GEM_XP);
+    public static final OreType SG_MOLDAVITE = silentGem("moldavite", GEM_XP);
+    public static final OreType SG_PEARL = silentGem("pearl", GEM_XP);
+    public static final OreType SG_ROSE_QUARTZ = silentGem("rose_quartz", GEM_XP);
+    public static final OreType SG_RUBY = silentGem("ruby", GEM_XP);
+    public static final OreType SG_SAPPHIRE = silentGem("sapphire", GEM_XP);
+    public static final OreType SG_TANZANITE = silentGem("tanzanite", GEM_XP);
+    public static final OreType SG_TURQUOISE = silentGem("turquoise", GEM_XP);
+    public static final OreType SG_WHITE_DIAMOND = silentGem("white_diamond", GEM_XP);
+    // Prefixed to avoid a block id clash, see above.
+    public static final OreType SG_AQUAMARINE = silentGem("silents_aquamarine", GEM_XP);
+    public static final OreType SG_CITRINE = silentGem("silents_citrine", GEM_XP);
+    public static final OreType SG_PERIDOT = silentGem("silents_peridot", GEM_XP);
+    public static final OreType SG_TOPAZ = silentGem("silents_topaz", GEM_XP);
+    /** A metal, not a gem: drops raw_silver and gives no experience. */
+    public static final OreType SG_SILVER = silentGem("silents_silver", NONE);
+    /** Chaos drops chaos_essence and is the only one of these with its own experience range. */
+    public static final OreType SG_CHAOS = silentGem("chaos", UniformInt.of(3, 7));
+
+    // --- Seven more third-party mods ------------------------------------------------------------
+    // All target both replaceables tags (so all four hosts) except Create: New Age's thorium, which
+    // is stone tier only. XP was read from each jar rather than assumed, and "it is a metal so it
+    // gives nothing" would have been wrong for two of them:
+    //   Dense Mekanism  fluorite UniformInt(1, 4), the other four nothing
+    //   Powah           all three uraninite grades ConstantInt(0)
+    //   Energized Power ConstantInt(0)
+    //   TFMG, Things, Create: New Age  no DropExperienceBlock anywhere in the jar, so nothing
+    //   Silent Gear     bort UniformInt(3, 7)  <- INFERRED, not proven; see the maintainer notes
+    //
+    // Loot is TRANSFORMED from each mod's own tables (the generator entries carry no raw_drop),
+    // because Dense Mekanism and Powah both use set_count and a hand-built vanilla-shape table
+    // would change their yields. Same call as Mythic Metals.
+    private static OreType modded(String name, String modId, String namespace, String plain,
+                                  IntProvider xp) {
+        return new OreType(name, name, null, modId,
+                of(namespace, plain + "_ore"), of(namespace, "deepslate_" + plain + "_ore"),
+                null, xp, null, false, Set.of());
+    }
+
+    // Dense Mekanism. Its blocks are dense_<ore>_ore / dense_deepslate_<ore>_ore, so the plain name
+    // does not follow the usual pattern and each is spelled out.
+    private static OreType dmek(String ore, IntProvider xp) {
+        return new OreType("dense_" + ore, "dense_" + ore, null, "densemekanism",
+                of("densemekanism", "dense_" + ore + "_ore"),
+                of("densemekanism", "dense_deepslate_" + ore + "_ore"),
+                null, xp, null, false, Set.of());
+    }
+
+    public static final OreType DENSE_FLUORITE = dmek("fluorite", UniformInt.of(1, 4));
+    public static final OreType DENSE_LEAD = dmek("lead", NONE);
+    public static final OreType DENSE_OSMIUM = dmek("osmium", NONE);
+    public static final OreType DENSE_TIN = dmek("tin", NONE);
+    public static final OreType DENSE_URANIUM = dmek("uranium", NONE);
+
+    // Powah. Three grades of the same ore, named uraninite_ore_poor / _dense in the mod.
+    private static OreType powah(String name, String plain) {
+        return new OreType(name, name, null, "powah",
+                of("powah", plain), of("powah", "deepslate_" + plain), null, NONE, null, false, Set.of());
+    }
+
+    public static final OreType URANINITE = powah("uraninite", "uraninite_ore");
+    public static final OreType URANINITE_POOR = powah("uraninite_poor", "uraninite_ore_poor");
+    public static final OreType URANINITE_DENSE = powah("uraninite_dense", "uraninite_ore_dense");
+
+    // Create: The Factory Must Grow. Its bauxite, galena, lignite and fireclay are NOT ores, they
+    // are striated deposit blocks placed by create:layered_ore, so only these three apply.
+    public static final OreType TFMG_LEAD = modded("lead", "tfmg", "tfmg", "lead", NONE);
+    public static final OreType TFMG_LITHIUM = modded("lithium", "tfmg", "tfmg", "lithium", NONE);
+    public static final OreType TFMG_NICKEL = modded("nickel", "tfmg", "tfmg", "nickel", NONE);
+
+    /** Prefixed: plain {@code tin} is already Mythic Metals', and both are stone-tier hosts. */
+    public static final OreType ENERGIZED_TIN =
+            modded("energized_tin", "energizedpower", "energizedpower", "tin", NONE);
+
+    public static final OreType GLEAMING = modded("gleaming", "things", "things", "gleaming", NONE);
+    public static final OreType BORT =
+            modded("bort", "silentgear", "silentgear", "bort", UniformInt.of(3, 7));
+
+    /**
+     * Create: New Age targets {@code stone_ore_replaceables} only, so thorium generates in granite,
+     * diorite and andesite but never tuff. Its magnetite_block is excluded: a whole-block deposit at
+     * 15 veins per chunk, not an ore with blobs on a host stone.
+     */
+    public static final OreType THORIUM = new OreType("thorium", "thorium", null, "create_new_age",
+            of("create_new_age", "thorium_ore"), null, null, NONE, null, false, Set.of());
+
+    // Silent's Gems in the NETHER. Like our own gold and quartz these ADD ore, because the mod
+    // targets c:netherracks only, so they ride the basalt and blackstone host toggles, the nether
+    // rarity and vein-size dials, and the bastion protection.
+    //
+    // ONLY EIGHT OF THE TWENTY-ONE NETHER GEMS ARE HERE, and that is the whole point: the other
+    // thirteen (ammolite, aquamarine, garnet, heliodor, kyanite, opal, peridot, rose_quartz, ruby,
+    // sapphire, topaz, turquoise, white_diamond) have count 0 AND size 0 in their placed features,
+    // so they are registered but place nothing. Giving those a variant would invent ore outright.
+    // A feature can target the right tag and still be inert - check the placement counts too.
+    //
+    // These reuse the overworld overlay rather than needing new art: measured against the mod's own
+    // nether textures, the existing masks land 96-100% on the gem pixels, because Silent's Gems
+    // draws the same blobs on netherrack that it draws on stone.
+    //
+    // Air exposure is INHERITED from the mod's feature (discard 0.0, so they do show on exposed
+    // faces). That is deliberate: we extend their target list rather than adding a feature, and a
+    // gem visible in a netherrack wall should still be visible when the wall is basalt. Contrast
+    // Mythic Upgrades' ruby and sapphire, which are genuinely new veins through NetherGemFeature at
+    // discard 1.0, copied from ancient debris.
+    private static OreType silentNether(String name, String plain) {
+        return new OreType(name, name, null, "silentgems", null, null,
+                of("silentgems", "nether_" + plain + "_ore"), GEM_XP, null, false, Set.of());
+    }
+
+    public static final OreType SG_N_ALEXANDRITE = silentNether("alexandrite", "alexandrite");
+    public static final OreType SG_N_BLACK_DIAMOND = silentNether("black_diamond", "black_diamond");
+    public static final OreType SG_N_CARNELIAN = silentNether("carnelian", "carnelian");
+    public static final OreType SG_N_CITRINE = silentNether("silents_citrine", "citrine");
+    public static final OreType SG_N_IOLITE = silentNether("iolite", "iolite");
+    public static final OreType SG_N_MOLDAVITE = silentNether("moldavite", "moldavite");
+    public static final OreType SG_N_PEARL = silentNether("pearl", "pearl");
+    public static final OreType SG_N_TANZANITE = silentNether("tanzanite", "tanzanite");
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -206,7 +357,17 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     ADAMANTITE, CARMOT, MORKITE, MYTHRIL, PROMETHEUM, RUNITE, UNOBTAINIUM,
                     AQUARIUM, BANGLUM, KYBER, MANGANESE, OSMIUM, PLATINUM, QUADRILLUM, SILVER,
                     STARRITE, TIN, ORICHALCUM,
-                    NETHER_BANGLUM, MIDAS_GOLD, PALLADIUM, STORMYX);
+                    NETHER_BANGLUM, MIDAS_GOLD, PALLADIUM, STORMYX,
+                    SG_ALEXANDRITE, SG_AMMOLITE, SG_BLACK_DIAMOND, SG_CARNELIAN, SG_GARNET,
+                    SG_HELIODOR, SG_IOLITE, SG_KYANITE, SG_MOLDAVITE, SG_PEARL, SG_ROSE_QUARTZ,
+                    SG_RUBY, SG_SAPPHIRE, SG_TANZANITE, SG_TURQUOISE, SG_WHITE_DIAMOND,
+                    SG_AQUAMARINE, SG_CITRINE, SG_PERIDOT, SG_TOPAZ, SG_SILVER, SG_CHAOS,
+                    DENSE_FLUORITE, DENSE_LEAD, DENSE_OSMIUM, DENSE_TIN, DENSE_URANIUM,
+                    URANINITE, URANINITE_POOR, URANINITE_DENSE,
+                    TFMG_LEAD, TFMG_LITHIUM, TFMG_NICKEL,
+                    ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
+                    SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
+                    SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
     public ResourceLocation vanillaFor(HostStone host) {
