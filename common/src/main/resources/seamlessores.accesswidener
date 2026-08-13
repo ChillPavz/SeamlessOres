@@ -1,19 +1,26 @@
 accessWidener v2 named
 
 # The header MUST be the very first line - a comment above it fails with
-#   Invalid access widener file header. Expected: 'classTweaker <version> <namespace>'
-# and the namespace MUST be 'official', not 'named': since 26.1 Minecraft ships de-obfuscated with
-# no mappings layer, so Loom rejects 'named' with
-#   Expected official namespace for access widener entry, found: named
+#   Invalid access widener file header. Expected: 'accessWidener <version> <namespace>'
+#
+# The namespace is 'named' HERE and that is version-dependent, so do not copy it either way between
+# branches. 1.20.1 is still obfuscated and Loom applies a mappings layer (officialMojangMappings +
+# parchment), so widener entries are written in NAMED mappings. From 26.1 onward Minecraft ships
+# de-obfuscated with no mappings layer at all, and those branches must say 'official' instead -
+# 'named' is rejected there with "Expected official namespace for access widener entry".
 #
 # Fabric counterpart of META-INF/accesstransformer.cfg - keep the two in sync.
 # Holder.Reference#bindValue is protected; we need it to swap the value of an already-loaded
 # CONFIGURED_FEATURE entry. See OreTargetInjector.
 accessible	method	net/minecraft/core/Holder$Reference	bindValue	(Ljava/lang/Object;)V
 
-# RegistrySetBuilder$LazyHolder is the only subclass that overrides bindValue. It must be widened
-# too: a protected override of a now-public method is an illegal weaker override.
-accessible	method	net/minecraft/core/RegistrySetBuilder$LazyHolder	bindValue	(Ljava/lang/Object;)V
+# NO companion entry for a subclass here. On the newer branches RegistrySetBuilder$LazyHolder also
+# has to be widened, because a protected override of a now-public method is an illegal weaker
+# override - but that class does not exist at 1.20.1 and nothing else overrides bindValue. Loom
+# checks this and fails the build with "Could not find method (bindValue(Ljava/lang/Object;)V) in
+# class (net/minecraft/core/RegistrySetBuilder$LazyHolder)", so a stale entry copied down from a
+# newer branch cannot slip through unnoticed. ModDevGradle reports the same thing for the access
+# transformer, but only with validateAccessTransformers = true.
 
 # OreVeinifier.VeinType holds the ore block for the large copper/iron veins. Those veins are built
 # during NOISE generation, not by any configured feature, so the registry injection cannot reach

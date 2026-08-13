@@ -48,7 +48,7 @@ public class SeamlessOresFabric implements ModInitializer {
         if (net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("mythicupgrades")) {
             for (String gem : new String[]{"ruby", "sapphire"}) {
                 ResourceKey<PlacedFeature> key = ResourceKey.create(Registries.PLACED_FEATURE,
-                        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, gem + "_deltas"));
+                        new ResourceLocation(Constants.MOD_ID, gem + "_deltas"));
                 BiomeModifications.addFeature(
                         BiomeSelectors.includeByKey(Biomes.BASALT_DELTAS),
                         GenerationStep.Decoration.UNDERGROUND_ORES, key);

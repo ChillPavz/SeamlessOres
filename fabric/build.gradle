@@ -2,6 +2,11 @@ plugins {
     id 'multiloader-loader'
     id 'fabric-loom'
 }
+repositories {
+    maven { url = 'https://maven.shedaniel.me/' }
+    maven { url = 'https://maven.terraformersmc.com/' }
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
     mappings loom.layered {
@@ -10,8 +15,11 @@ dependencies {
     }
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+    implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
+    implementation project(":common")
 
-    // Cloth Config (AutoConfig) + Mod Menu (adds the config button). Cloth is a required dependency.
+    // Cloth Config (AutoConfig) + Mod Menu (adds the config button). Cloth is a required dependency;
+    // 11.1.136 covers both 1.20 and 1.20.1. Mod Menu is optional and unpinned for users.
     modImplementation("me.shedaniel.cloth:cloth-config-fabric:${cloth_config_version}") {
         exclude(group: 'net.fabricmc.fabric-api')
     }
@@ -20,31 +28,22 @@ dependencies {
     }
 }
 
-repositories {
-    maven { url = 'https://maven.shedaniel.me/' }
-    maven { url = 'https://maven.terraformersmc.com/' }
-}
-
 loom {
-    def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")
-    if (aw.exists()) {
-        accessWidenerPath.set(aw)
-    }
-    mixin {
-        defaultRefmapName.set("${mod_id}.refmap.json")
+    if (project(":common").file("src/main/resources/${mod_id}.accesswidener").exists()) {
+        accessWidenerPath.set(project(":common").file("src/main/resources/${mod_id}.accesswidener"))
     }
     runs {
         client {
             client()
-            setConfigName('Fabric Client')
+            setConfigName("Fabric Client")
             ideConfigGenerated(true)
-            runDir('runs/client')
+            runDir("run")
         }
         server {
             server()
-            setConfigName('Fabric Server')
+            setConfigName("Fabric Server")
             ideConfigGenerated(true)
-            runDir('runs/server')
+            runDir("run")
         }
     }
 }

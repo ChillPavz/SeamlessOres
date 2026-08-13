@@ -55,11 +55,11 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     private static final IntProvider NONE = ConstantInt.of(0);
 
     private static ResourceLocation mc(String path) {
-        return ResourceLocation.withDefaultNamespace(path);
+        return new ResourceLocation(path);
     }
 
     private static ResourceLocation of(String namespace, String path) {
-        return ResourceLocation.fromNamespaceAndPath(namespace, path);
+        return new ResourceLocation(namespace, path);
     }
 
     private static OreType overworld(String name, IntProvider xp) {

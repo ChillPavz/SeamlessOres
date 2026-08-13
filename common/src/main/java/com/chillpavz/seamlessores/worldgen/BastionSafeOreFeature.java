@@ -48,10 +48,10 @@ import java.util.Optional;
 public class BastionSafeOreFeature extends Feature<OreConfiguration> {
 
     /** Registered under our own namespace; see {@link #register}. */
-    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "bastion_safe_ore");
+    public static final ResourceLocation ID = new ResourceLocation(Constants.MOD_ID, "bastion_safe_ore");
 
     private static final ResourceKey<Structure> BASTION_REMNANT =
-            ResourceKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("minecraft", "bastion_remnant"));
+            ResourceKey.create(Registries.STRUCTURE, new ResourceLocation("minecraft", "bastion_remnant"));
 
     /** Guards the one time diagnostic in {@link #place}. */
     private static final java.util.concurrent.atomic.AtomicBoolean REPORTED =
@@ -176,8 +176,9 @@ public class BastionSafeOreFeature extends Feature<OreConfiguration> {
             // is always true. That shipped once and silently disabled every nether variant in the
             // world: each vein was treated as being inside a bastion and fell back to vanilla's
             // targets, so no basalt or blackstone ore generated anywhere, with nothing in the log.
-            return structures.getStructureWithPieceAt(
-                    context.origin(), holder -> holder.is(BASTION_REMNANT)).isValid();
+            // 1.20.1 has a direct ResourceKey overload; the Predicate<Holder<Structure>> form the
+            // newer branches use does not exist here. Same lookup, same semantics.
+            return structures.getStructureWithPieceAt(context.origin(), BASTION_REMNANT).isValid();
         } catch (RuntimeException failure) {
             // A structure lookup must never take worldgen down with it. Failing open just means the
             // old behaviour for this one vein.

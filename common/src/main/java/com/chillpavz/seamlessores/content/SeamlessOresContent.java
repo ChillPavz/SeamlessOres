@@ -145,7 +145,7 @@ public final class SeamlessOresContent {
      */
     public static final ResourceKey<CreativeModeTab> TAB =
             ResourceKey.create(Registries.CREATIVE_MODE_TAB,
-                    ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "ores"));
+                    new ResourceLocation(Constants.MOD_ID, "ores"));
 
     public static void registerCreativeTab(BiConsumer<ResourceLocation, CreativeModeTab> sink) {
         final CreativeModeTab tab = CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
@@ -198,9 +198,9 @@ public final class SeamlessOresContent {
         final BlockBehaviour.Properties properties;
         if (variant.ore().requiredModId() == null) {
             // Vanilla equivalent: safe to resolve here (vanilla registers before any mod), and
-            // ofLegacyCopy carries hardness, blast resistance and the correct-tool flag straight off
+            // copy() carries hardness, blast resistance and the correct-tool flag straight off
             // the ore we stand in for, so mining behaviour cannot drift from parity.
-            properties = BlockBehaviour.Properties.ofLegacyCopy(
+            properties = BlockBehaviour.Properties.copy(
                     BuiltInRegistries.BLOCK.get(variant.vanillaEquivalentId()));
         } else {
             // Modded equivalent: its block may not be registered yet - registration order between
@@ -216,8 +216,11 @@ public final class SeamlessOresContent {
         properties.mapColor(variant.host().mapColor())
                 .sound(variant.host().sound());
 
+        // NOTE the argument ORDER: at 1.20.1 DropExperienceBlock takes (Properties, IntProvider),
+        // and from 1.21 it is (IntProvider, Properties). Both compile in their own version and the
+        // pair is easy to transpose when moving code between branches.
         return variant.ore().redstoneLike()
                 ? new RedStoneOreBlock(properties)
-                : new DropExperienceBlock(variant.ore().xpFor(variant.host()), properties);
+                : new DropExperienceBlock(properties, variant.ore().xpFor(variant.host()));
     }
 }

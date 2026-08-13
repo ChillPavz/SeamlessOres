@@ -42,7 +42,7 @@ import java.util.function.BiConsumer;
 public class NetherGemFeature extends Feature<OreConfiguration> {
 
     public static final ResourceLocation ID =
-            ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "nether_gem");
+            new ResourceLocation(Constants.MOD_ID, "nether_gem");
 
     private static final String MOD_NAMESPACE = Constants.MOD_ID;
 
