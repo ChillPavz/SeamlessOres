@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_lead_ore",
+      "required": false
+    }
+  ]
+}

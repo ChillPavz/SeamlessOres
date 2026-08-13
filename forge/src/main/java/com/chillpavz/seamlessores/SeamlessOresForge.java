@@ -45,6 +45,10 @@ public class SeamlessOresForge {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         modBus.addListener(SeamlessOresForge::onRegister);
         modBus.addListener(SeamlessOresForge::onBuildTabContents);
+        // Forge 1.20.1 cannot gate a loot table on a mod being present, so each supported mod's
+        // tables ship as their own built-in datapack and are offered only when it is loaded.
+        // See SeamlessOresDataPacks. Mod bus: AddPackFindersEvent implements IModBusEvent.
+        modBus.addListener(SeamlessOresDataPacks::addPackFinders);
 
         // Game bus: worldgen registries are datapack-loaded per world, so this is the point where
         // they exist and no chunk has been generated yet.

@@ -37,14 +37,29 @@ MOD_ID = "seamlessores"
 # it is ICondition.DEFAULT_FIELD, verified as "forge:condition" in forge 52 and 61 alike. Spelled
 # differently again on 1.20.x Forge (unnamespaced "conditions", array), so re-verify against the
 # real jar before carrying this to an older branch.
-FORGE_CONDITION_KEY = "forge:condition"
+FORGE_CONDITION_KEY = "conditions"
+
+# 1.20.x DATA FOLDER NAMES. These are PLURAL here and singular from 1.21 onward. Read out of the
+# real client jar rather than remembered: data/minecraft/{loot_tables,tags/blocks,tags/items}/.
+# 1.20.1's data pack_format, read from the client jar. 1.20.1 knows ONLY pack_format;
+# supported_formats arrives at 1.21.1 and min_format/max_format at 1.21.11.
+PACK_FORMAT = 15
+
+LOOT_DIR = "loot_tables"
+TAG_BLOCK_DIR = ("tags", "blocks")
+TAG_ITEM_DIR = ("tags", "items")
+
+# Common-tag namespaces. At 1.20.x the ecosystem is SPLIT - Fabric uses `c:` and Forge uses
+# `forge:` - where 1.21+ settled on `c:` for both. Both are written: the one a given loader does
+# not read is simply a tag nobody queries, which costs nothing and keeps one data tree for both.
+CONVENTION_NAMESPACES = ("c", "forge")
 
 # Colour-distance (summed per-channel) above which a pixel counts as ore rather than shaded stone.
 # 0 keeps 141/256 px for iron and hazes over granite; 60 keeps 76 and looks right; 90 eats real blobs.
 THRESHOLD = 60
 
 CLIENT_JAR = os.path.expanduser(
-    "~/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar"
+    "~/.gradle/caches/neoformruntime/artifacts/minecraft_1.20.1_client.jar"
 )
 
 # Create (Create Fly, mod id 'create') jar - source of the zinc loot table shape and the zinc ore
@@ -53,50 +68,42 @@ CLIENT_JAR = os.path.expanduser(
 # fine; keep the attribution line in the README. When the jar is missing, zinc JSON still generates
 # (the loot shape is baked below, verified identical to vanilla iron_ore's) but the texture step
 # skips zinc.
-CREATE_JAR = os.environ.get(
-    "CREATE_JAR",
-    os.path.expanduser(
-        "~/AppData/Roaming/ModrinthApp/profiles/NeoForge 1.21.1/mods/create-1.21.1-6.0.10.jar"
-    ),
-)
+CREATE_JAR = os.environ.get("CREATE_JAR", "../jars/1.20.1-create-1.20.1-6.0.8.jar")
 
 # Mythic Upgrades (mod id 'mythicupgrades', MIT, 26.2 on all four loaders). Source of its ore
 # textures and the facts behind the entries below. Override with MYTHIC_UPGRADES_JAR.
 MYTHIC_UPGRADES_JAR = os.environ.get(
-    "MYTHIC_UPGRADES_JAR",
-    os.path.expanduser(
-        "~/AppData/Roaming/ModrinthApp/profiles/Fabric 1.21.1/mods/mythicupgrades-fabric-1.21.1-5.1.0.jar"
-    ),
-)
+    "MYTHIC_UPGRADES_JAR", "../jars/1.20.1-mythicupgrades-forge-1.20.1-5.1.0.jar")
 
 # Mythic Metals (mod id 'mythicmetals', MIT). Fabric only on every version it has ever shipped, so
 # its variants only ever register there. Source of its ore textures, loot tables and tool tags.
 SILENT_GEMS_JAR = os.environ.get(
     "SILENT_GEMS_JAR",
-    "../jars/silentgems-26.1.2-neoforge-5.1.4.jar")
+    "../jars/1.20.1-silents-gems-1.20.1-4.7.0.jar")
 
 MYTHIC_METALS_JAR = os.environ.get(
-    "MYTHIC_METALS_JAR",
-    os.path.expanduser(
-        "~/AppData/Roaming/ModrinthApp/profiles/Fabric 1.21.1/mods/mythicmetals-0.24.6+1.21.jar"
-    ),
-)
+    "MYTHIC_METALS_JAR", "../jars/1.20.1-mythicmetals-0.19.12+1.20.1.jar")
+
+# EVERY jar above is the 1.20.1 build of that mod, not a newer one. That matters: the generator
+# TRANSFORMS each mod's own loot table, so reading a 1.21-era jar would bake a 1.21-shaped table
+# into a 1.20.1 datapack. Fetch them per version from the Modrinth API rather than reusing whatever
+# happens to be in a test profile.
 
 # Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
 # a warning rather than an error: the JSON still generates, only the texture step is skipped.
-DENSEMEKANISM_JAR = os.environ.get("DENSEMEKANISM_JAR", "../jars/densemekanism-1.21.1-1.2.jar")
+DENSEMEKANISM_JAR = os.environ.get("DENSEMEKANISM_JAR", "../jars/1.20.1-DOES-NOT-EXIST.jar")
 
-POWAH_JAR = os.environ.get("POWAH_JAR", "../jars/Powah-7.0.4-alpha.jar")
+POWAH_JAR = os.environ.get("POWAH_JAR", "../jars/1.20.1-Powah-5.0.11.jar")
 
-TFMG_JAR = os.environ.get("TFMG_JAR", "../jars/tfmg-1.2.2.jar")
+TFMG_JAR = os.environ.get("TFMG_JAR", "../jars/1.20.1-tfmg-1.0.2f.jar")
 
-ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../jars/energizedpower-3.0.0+26.2.x-neoforge.jar")
+ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../jars/1.20.1-energizedpower-1.20.1-2.15.22-forge.jar")
 
-THINGS_JAR = os.environ.get("THINGS_JAR", "../jars/things-0.4.2+1.21.jar")
+THINGS_JAR = os.environ.get("THINGS_JAR", "../jars/1.20.1-things-0.3.3+1.20.jar")
 
-SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../jars/silent-gear-26.1.2-neoforge-4.2.2.jar")
+SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../jars/1.20.1-silent-gear-1.20.1-3.6.7.jar")
 
-CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../jars/create-new-age-1.2.0+neoforge-mc1.21.1.jar")
+CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../jars/1.20.1-create-new-age-1.2.0+forge-mc1.20.1.jar")
 
 MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "silentgear": SILENTGEAR_JAR,
@@ -520,29 +527,53 @@ def resources_dir():
 # in the Forge jar or its 88 variants drop nothing there, and Forge 52 will log a parse error per
 # table on instances that do not have the mod. A noisy log beats blocks that drop nothing.
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
-    # VERIFIED PER MINECRAFT VERSION, not from the project-level "loaders" array. That array is the
-    # UNION across every file a project has ever shipped, so a mod with a Forge build at 1.20.1
-    # still reports "forge" when its 1.21.1 file is NeoForge only. Trusting it put 143 conditional
-    # loot tables into the Forge jar that can never fire, and Forge 52 ignores loot conditions, so
-    # each would have logged a parse error on every world load.
+    # RE-QUERIED PER GAME VERSION for 1.20.1, never carried over from another branch. That array on
+    # a project page is the UNION across every file it has ever shipped, so it lies about any single
+    # version. Query instead:
+    #   /v2/project/<slug>/version?game_versions=["1.20.1"]  -> union of THAT file set's loaders
     #
-    # Query per version instead:
-    #   /v2/project/<slug>/version?game_versions=["1.21.1"]  -> union of that file set's loaders
+    # There are only two modules here, because 1.20.1 has no separate NeoForge module: NeoForge
+    # 47.1.x provides the `forge` mod id, so a mod tagged neoforge OR forge counts as "forge".
     #
-    # At 1.21.1 NOTHING we gate on ships for Forge, so the Forge jar carries only vanilla tables.
-    "create": ("neoforge",),
-    "mythicupgrades": ("fabric", "neoforge"),
+    # DENSE MEKANISM IS ABSENT ENTIRELY - it stops at 1.19.2 - so it gets no modules at all and its
+    # twenty variants can never register here. Its assets still ship and are inert, and its config
+    # category hides itself because the mod is never loaded.
+    "create": ("fabric", "forge"),        # forge/neoforge direct, fabric via the Create Fabric port
+    "create_new_age": ("fabric", "forge"),
+    "tfmg": ("forge",),                   # slug is create-tfmg, forge only at 1.20.1
+    "densemekanism": (),                  # no 1.20.x build exists
+    "energizedpower": ("fabric", "forge"),
     "mythicmetals": ("fabric",),
-    "silentgems": ("neoforge",),
-    "densemekanism": ("neoforge",),   # no 1.21.1 file on Modrinth at all; the jar is neoforge.mods.toml
-    "powah": ("neoforge",),
-    "tfmg": ("neoforge",),
-    "energizedpower": ("fabric", "neoforge"),
+    "mythicupgrades": ("fabric", "forge"),
+    "powah": ("fabric", "forge"),
+    "silentgear": ("forge",),
+    "silentgems": ("forge",),
     "things": ("fabric",),
-    "silentgear": ("neoforge",),
-    "create_new_age": ("neoforge",),
 }
-DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
+
+# Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
+#
+# Forge 1.20.1 cannot gate a loot table or a worldgen file on a mod being present: grepping Forge
+# 47's own sources, CraftingHelper.processConditions is called from RecipeManager, ConditionalRecipe
+# and ConditionalAdvancement and nowhere else. An absent mod would mean 167 "Couldn't parse element"
+# errors per world load, and for the worldgen files an outright crash on unbound registry values.
+#
+# So those files go to forge/src/main/resources/packs/<mod>/ instead, each with its own pack.mcmeta,
+# and SeamlessOresDataPacks offers each pack only when ModList says that mod is loaded.
+# Keep this in step with SeamlessOresDataPacks.PACKED_MODS.
+FORGE_PACK_MODS = tuple(
+    mod for mod, modules in CONDITIONAL_LOOT_MODULES_BY_MOD.items() if "forge" in modules)
+
+DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "forge")
+
+
+def forge_pack_dir(mod):
+    """Root of the built-in datapack that carries `mod`'s Forge-side data. See FORGE_PACK_MODS."""
+    return os.path.join(repo_root(), "forge", "src", "main", "resources", "packs", mod)
+
+
+def forge_pack_data_dir(mod, namespace):
+    return os.path.join(forge_pack_dir(mod), "data", namespace)
 
 
 def conditional_data_dir(module, namespace):
@@ -861,6 +892,11 @@ def generate_json():
     print(f"  {len(lang)} lang entries")
 
 
+# Filled in by generate_data(): modded ores whose source loot table is not in that mod's build for
+# this Minecraft version, so no variant data is written for them. Reported at the end of the run.
+ABSENT_AT_THIS_VERSION = {}
+
+
 def generate_data():
     """Loot tables and tags. Loot is TRANSFORMED from vanilla's own tables, never reconstructed."""
 
@@ -869,7 +905,6 @@ def generate_data():
 
     ours = data_dir(MOD_ID)
     mc = data_dir("minecraft")
-    conv = data_dir("c")
 
     mineable = []
     tool_tags = {}
@@ -884,7 +919,7 @@ def generate_data():
         # nether_gold_ore is in none of them (wooden pickaxe), and coal is in none either.
         vanilla_tool_tags = {}
         for tag in TOOL_TAGS:
-            with jar.open(f"data/minecraft/tags/block/{tag}.json") as handle:
+            with jar.open(f"data/minecraft/tags/blocks/{tag}.json") as handle:
                 vanilla_tool_tags[tag] = set(json.load(handle)["values"])
 
         # Modded ores' tool tags come from THEIR jar - zinc is needs_iron_tool via Create's own
@@ -903,7 +938,7 @@ def generate_data():
             with zipfile.ZipFile(mod_jar) as mod_jar_zip:
                 for tag in TOOL_TAGS:
                     try:
-                        with mod_jar_zip.open(f"data/minecraft/tags/block/{tag}.json") as handle:
+                        with mod_jar_zip.open(f"data/minecraft/tags/blocks/{tag}.json") as handle:
                             values = {str(v) for v in json.load(handle)["values"]}
                     except KeyError:
                         continue
@@ -919,7 +954,7 @@ def generate_data():
                     # Read vanilla's table and swap only the identity bits. Ore loot is NOT uniform:
                     # copper is uniform 2-5, lapis 4-9, redstone 4-5 with uniform_bonus_count rather
                     # than ore_drops. Copying the real table is the only way to guarantee parity.
-                    with jar.open(f"data/minecraft/loot_table/blocks/{vanilla}.json") as handle:
+                    with jar.open(f"data/minecraft/{LOOT_DIR}/blocks/{vanilla}.json") as handle:
                         table = json.load(handle)
                     for pool in table.get("pools", []):
                         for entry in pool.get("entries", []):
@@ -930,7 +965,8 @@ def generate_data():
                                 ):
                                     # Silk-touch branch drops the block itself - ours.
                                     child["name"] = our_id
-                    table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
+                    # No random_sequence: 1.20.1's own tables do not have that field yet
+                    # (checked against data/minecraft/loot_tables/blocks/iron_ore.json).
                 else:
                     # Third-party ore: TRANSFORM THAT MOD'S OWN TABLE, exactly as we do for vanilla.
                     #
@@ -945,6 +981,13 @@ def generate_data():
                     # Hard error rather than a fallback if the jar is missing: silently shipping a
                     # table with the wrong yield is exactly the class of bug this project keeps
                     # finding, and a generator run is a dev-time step where failing loudly is free.
+                    modules = CONDITIONAL_LOOT_MODULES_BY_MOD.get(
+                        mod, DEFAULT_CONDITIONAL_LOOT_MODULES)
+                    if not modules:
+                        # No build on any loader at this Minecraft version, so the variant can
+                        # never register and no loot table is wanted anywhere. Skip before
+                        # demanding a jar that would only be needed to transform a dead file.
+                        continue
                     mod_jar_path = MOD_JARS.get(mod)
                     if not mod_jar_path or not os.path.exists(mod_jar_path):
                         raise SystemExit(
@@ -953,12 +996,22 @@ def generate_data():
                             f"{mod_jar_path}. Set the matching *_JAR environment variable."
                         )
                     with zipfile.ZipFile(mod_jar_path) as mod_zip:
-                        loot_path = f"data/{mod}/loot_table/blocks/{vanilla}.json"
+                        loot_path = f"data/{mod}/{LOOT_DIR}/blocks/{vanilla}.json"
                         try:
                             with mod_zip.open(loot_path) as handle:
                                 table = json.load(handle)
                         except KeyError:
-                            raise SystemExit(f"  !! {mod} jar has no {loot_path} (needed by {name})")
+                            # The ore does not exist in THAT mod's build for THIS Minecraft
+                            # version. Skip it and report, rather than failing the whole run or
+                            # silently writing a table for a block nobody has.
+                            #
+                            # This is not hypothetical: Silent's Gems 4.7.0 (1.20.1) has no chaos,
+                            # garnet, pearl, tanzanite or aquamarine ore at all, and it names its
+                            # nether ores <gem>_nether_ore where the newer builds use
+                            # nether_<gem>_ore. An ore def is shared across branches, so per
+                            # version it has to be checked against that version's jar.
+                            ABSENT_AT_THIS_VERSION.setdefault(mod, []).append(f"{name} ({vanilla})")
+                            continue
                     for pool in table.get("pools", []):
                         for entry in pool.get("entries", []):
                             for child in entry.get("children", []):
@@ -968,27 +1021,32 @@ def generate_data():
                                 ):
                                     # Silk-touch branch drops the block itself - ours.
                                     child["name"] = our_id
-                    table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
-                    # All three loaders' conditions keep it inert when the mod is absent; each
-                    # loader ignores the other two keys. NEVER neoforge:item_exists - removed at 26.2.
-                    conditions = {
+                    # Fabric's conditions keep it inert when the mod is absent. There is NO
+                    # Forge key here, and that is not an oversight: Forge 1.20.1 does not honour
+                    # conditions on loot tables at all, so the Forge copy is gated by shipping it
+                    # in a per-mod built-in datapack instead. See FORGE_PACK_MODS.
+                    fabric_table = {
                         "fabric:load_conditions": [
                             {"condition": "fabric:registry_contains",
                              "registry": "minecraft:block", "values": [vanilla_id]}
                         ],
-                        "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": mod}],
-                        FORGE_CONDITION_KEY: {"type": "forge:mod_loaded", "modid": mod},
+                        **table,
                     }
-                    table = {**conditions, **table}
 
                 if mod:
-                    # Conditional table: goes to the loaders that can host that mod, not to common.
-                    for module in CONDITIONAL_LOOT_MODULES_BY_MOD.get(
-                            mod, DEFAULT_CONDITIONAL_LOOT_MODULES):
-                        write_json(os.path.join(conditional_data_dir(module, MOD_ID),
-                                                "loot_table", "blocks", f"{name}.json"), table)
+                    # Conditional table: goes only to the loaders that can host that mod at this
+                    # Minecraft version, never to common.
+                    if "fabric" in modules:
+                        write_json(os.path.join(conditional_data_dir("fabric", MOD_ID),
+                                                LOOT_DIR, "blocks", f"{name}.json"), fabric_table)
+                    if "forge" in modules:
+                        # Into that mod's own built-in datapack, with no condition keys: the pack is
+                        # only offered to the game when the mod is loaded, so the file is never read
+                        # otherwise. Forge 1.20.1 cannot gate it any other way.
+                        write_json(os.path.join(forge_pack_data_dir(mod, MOD_ID),
+                                                LOOT_DIR, "blocks", f"{name}.json"), table)
                 else:
-                    write_json(os.path.join(ours, "loot_table", "blocks", f"{name}.json"), table)
+                    write_json(os.path.join(ours, LOOT_DIR, "blocks", f"{name}.json"), table)
 
                 # --- tags -------------------------------------------------------------------
                 # A modded variant's block only exists when its mod is loaded, so its tag entries
@@ -1008,26 +1066,59 @@ def generate_data():
 
     # Tags MERGE with vanilla's by default (no "replace": true), so these add to the existing lists
     # rather than clobbering them. Getting this wrong would unregister 417 vanilla pickaxe entries.
-    write_json(os.path.join(mc, "tags", "block", "mineable", "pickaxe.json"), {"values": mineable})
+    write_json(os.path.join(mc, *TAG_BLOCK_DIR, "mineable", "pickaxe.json"), {"values": mineable})
     for tag, values in tool_tags.items():
-        write_json(os.path.join(mc, "tags", "block", f"{tag}.json"), {"values": values})
+        write_json(os.path.join(mc, *TAG_BLOCK_DIR, f"{tag}.json"), {"values": values})
 
     all_ids = sorted(mineable, key=lambda e: e["id"] if isinstance(e, dict) else e)
-    write_json(os.path.join(conv, "tags", "block", "ores.json"), {"values": all_ids})
-    write_json(os.path.join(conv, "tags", "item", "ores.json"), {"values": all_ids})
-    for ore, values in conv_block.items():
-        write_json(os.path.join(conv, "tags", "block", "ores", f"{ore}.json"), {"values": values})
-    for ore, values in conv_item.items():
-        write_json(os.path.join(conv, "tags", "item", "ores", f"{ore}.json"), {"values": values})
-    for ground, values in ores_in_ground.items():
-        write_json(
-            os.path.join(conv, "tags", "block", "ores_in_ground", f"{ground}.json"),
-            {"values": values},
-        )
+    # Written into BOTH common-tag namespaces, because 1.20.x is the era where the ecosystem is
+    # split: Fabric mods read c:ores, Forge mods read forge:ores. The copy a given loader ignores
+    # is just a tag nobody queries.
+    for namespace in CONVENTION_NAMESPACES:
+        conv = data_dir(namespace)
+        write_json(os.path.join(conv, *TAG_BLOCK_DIR, "ores.json"), {"values": all_ids})
+        write_json(os.path.join(conv, *TAG_ITEM_DIR, "ores.json"), {"values": all_ids})
+        for ore, values in conv_block.items():
+            write_json(os.path.join(conv, *TAG_BLOCK_DIR, "ores", f"{ore}.json"), {"values": values})
+        for ore, values in conv_item.items():
+            write_json(os.path.join(conv, *TAG_ITEM_DIR, "ores", f"{ore}.json"), {"values": values})
+        for ground, values in ores_in_ground.items():
+            write_json(
+                os.path.join(conv, *TAG_BLOCK_DIR, "ores_in_ground", f"{ground}.json"),
+                {"values": values},
+            )
+
+    # A pack.mcmeta per built-in datapack. Without it Pack.readMetaAndCreate returns null and the
+    # pack is silently skipped, which would look exactly like the loot tables never being written.
+    #
+    # pack_format 15 is 1.20.1's data format. NO supported_formats / min_format / max_format here:
+    # 1.20.1 knows only pack_format (grepped from the client jar - supported_formats arrives at
+    # 1.21.1 and min_format/max_format at 1.21.11), and an unknown key in a pack it is about to
+    # load is not worth the risk for a pack that only ever ships beside this one jar.
+    for mod in FORGE_PACK_MODS:
+        root = forge_pack_dir(mod)
+        if not os.path.isdir(os.path.join(root, "data")):
+            continue                    # nothing landed here, so do not leave a stray pack.mcmeta
+        write_json(os.path.join(root, "pack.mcmeta"), {
+            "pack": {
+                "description": f"Seamless Ores ore variants for {MODS[mod]['display']}",
+                "pack_format": PACK_FORMAT,
+            }
+        })
+    print(f"  forge built-in datapacks: "
+          f"{', '.join(m for m in FORGE_PACK_MODS if os.path.isdir(os.path.join(forge_pack_dir(m), 'data'))) or 'none'}")
+
+    if ABSENT_AT_THIS_VERSION:
+        print("  !! NOT PRESENT in these mods' 1.20.1 builds, so no variant data was written:")
+        for mod, items in sorted(ABSENT_AT_THIS_VERSION.items()):
+            print(f"     {mod}: {len(items)} - {', '.join(sorted(items))}")
+        print("     Remove them from ORE_DEFS and OreType.java for this branch, or they register "
+              "as blocks that can never generate.")
 
     print(f"  {len(mineable)} loot tables")
     print(f"  tags: mineable/pickaxe, {', '.join(sorted(tool_tags))}, "
-          f"c:ores (+{len(conv_block)} per-ore), c:ores_in_ground ({', '.join(sorted(ores_in_ground))})")
+          f"{'/'.join(CONVENTION_NAMESPACES)}:ores (+{len(conv_block)} per-ore), "
+          f"ores_in_ground ({', '.join(sorted(ores_in_ground))})")
 
 
 def generate_textures():

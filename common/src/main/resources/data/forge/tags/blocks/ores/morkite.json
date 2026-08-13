@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_morkite_ore",
+      "required": false
+    }
+  ]
+}

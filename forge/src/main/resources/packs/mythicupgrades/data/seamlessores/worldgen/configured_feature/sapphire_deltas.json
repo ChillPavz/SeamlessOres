@@ -1,0 +1,36 @@
+{
+  "type": "seamlessores:nether_gem",
+  "config": {
+    "size": 3,
+    "discard_chance_on_air_exposure": 1.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:basalt"
+        },
+        "state": {
+          "Name": "seamlessores:basalt_sapphire_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:blackstone"
+        },
+        "state": {
+          "Name": "seamlessores:blackstone_sapphire_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:netherrack"
+        },
+        "state": {
+          "Name": "mythicupgrades:sapphire_ore"
+        }
+      }
+    ]
+  }
+}

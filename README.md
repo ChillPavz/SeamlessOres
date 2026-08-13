@@ -197,9 +197,9 @@ Minecraft version:
 
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
-| Fabric | 136 | Energized Power, Mythic Metals, Mythic Upgrades, Things |
-| NeoForge | 223 | Create, Create: New Age, Create: TFMG, Dense Mekanism, Energized Power, Mythic Upgrades, Powah, Silent Gear, Silent's Gems |
-| Forge | 36 | none at this Minecraft version |
+| Fabric | 155 | Create, Create: New Age, Energized Power, Mythic Metals, Mythic Upgrades, Powah, Things |
+| NeoForge | 36 | none at this Minecraft version |
+| Forge | 203 | Create, Create: New Age, Create: TFMG, Energized Power, Mythic Upgrades, Powah, Silent Gear, Silent's Gems |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.

@@ -1,0 +1,46 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "mythicupgrades:ruby_ore",
+        "mythicupgrades:sapphire_ore"
+      ]
+    }
+  ],
+  "type": "seamlessores:nether_gem",
+  "config": {
+    "size": 3,
+    "discard_chance_on_air_exposure": 1.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:basalt"
+        },
+        "state": {
+          "Name": "seamlessores:basalt_ruby_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:blackstone"
+        },
+        "state": {
+          "Name": "seamlessores:blackstone_ruby_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:netherrack"
+        },
+        "state": {
+          "Name": "mythicupgrades:ruby_ore"
+        }
+      }
+    ]
+  }
+}
