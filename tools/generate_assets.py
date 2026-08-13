@@ -149,6 +149,45 @@ ANIMATED_OVERLAYS = {
     "unobtainium_deepslate": {"frametime": 60, "interpolate": True},  # 4 frames, deepslate ore only
 }
 
+# Third-party mods whose ores get variants.
+#
+# KEEP IN SYNC with OreType.java's requiredModId values and with
+# SeamlessOresConfigScreenFactory.MOD_CATEGORIES. generate_readme() cross-checks this against the
+# mod ids actually used in ORE_DEFS and fails if the two disagree, so drift is caught at build time
+# rather than showing up as a mod missing from the README's credits.
+#
+#   display  - the mod's own name for itself; also the config category label
+#   category - config category key, which differs from the mod id wherever the name does
+#   licence  - READ FROM THE JAR'S OWN METADATA, never from the platform listing
+#   author   - as the jar declares it; blank where it declares none. Do not guess one.
+#
+# The licences matter here rather than being decoration: the overlay for each of these is DERIVED
+# from that mod's own ore texture, so attribution is an obligation, not a courtesy.
+MODS = {
+    "create":         {"display": "Create",            "category": "create",
+                       "licence": "MIT",          "author": ""},
+    "create_new_age": {"display": "Create: New Age",   "category": "create_new_age",
+                       "licence": "BSD-3-Clause", "author": "Antarctic Gardens"},
+    "tfmg":           {"display": "Create: TFMG",      "category": "tfmg",
+                       "licence": "MIT",          "author": "DrMangoTea, Pepa, Luna"},
+    "densemekanism":  {"display": "Dense Mekanism",    "category": "dense_mekanism",
+                       "licence": "MIT",          "author": ""},
+    "energizedpower": {"display": "Energized Power",   "category": "energized_power",
+                       "licence": "MIT",          "author": "JDDev0"},
+    "mythicmetals":   {"display": "Mythic Metals",     "category": "mythic_metals",
+                       "licence": "MIT",          "author": "Noaaan"},
+    "mythicupgrades": {"display": "Mythic Upgrades",   "category": "mythic_upgrades",
+                       "licence": "MIT",          "author": "TriQue"},
+    "powah":          {"display": "Powah",             "category": "powah",
+                       "licence": "LGPL-3.0",     "author": "owmii, Technici4n, shartte"},
+    "silentgear":     {"display": "Silent Gear",       "category": "silent_gear",
+                       "licence": "MIT",          "author": "SilentChaos512"},
+    "silentgems":     {"display": "Silent's Gems",     "category": "silents_gems",
+                       "licence": "MIT",          "author": "SilentChaos512"},
+    "things":         {"display": "Things",            "category": "things",
+                       "licence": "MIT",          "author": "glisco"},
+}
+
 ORE_DEFS = [
     {"name": "coal",     "overlay": "coal",     "source": "coal_ore",     "base": "stone",
      "tiers": {"stone": "coal_ore", "deepslate": "deepslate_coal_ore"}},
@@ -1052,6 +1091,176 @@ def generate_textures():
                   f"  (from {source} over {base_name})")
 
 
+OVERWORLD_HOSTS = ["granite", "diorite", "andesite", "tuff"]
+NETHER_HOSTS = ["basalt", "blackstone"]
+
+
+def _table(hosts, rows):
+    """A markdown table: one column per host, one row per (label, {host: block id})."""
+    out = ["| | " + " | ".join(hosts) + " |",
+           "|---|" + "---|" * len(hosts)]
+    for label, ids in rows:
+        cells = [f"`{ids[h]}`" if h in ids else " " for h in hosts]
+        out.append(f"| {label} | " + " | ".join(cells) + " |")
+    return out
+
+
+def _block_list():
+    """The full block list, grouped by the mod that owns the ore.
+
+    GENERATED rather than hand written, and that is the point. The list ran to 295 ids across twelve
+    sources while the README still said 64, because nothing forced the two to agree. Anything here
+    that a human would have to retype when an ore is added belongs in this function instead.
+    """
+    # source mod id (None = vanilla) -> list of (ore def, {host: block id}), in ORE_DEFS order
+    grouped = {}
+    for host, host_cfg, ore, _vanilla in variants():
+        entry = grouped.setdefault(ore.get("mod"), {}).setdefault(id(ore), (ore, {}))
+        entry[1][host] = variant_name(host, ore["name"])
+
+    order = [None] + [m for m in MODS if m in grouped]
+    unknown = [m for m in grouped if m is not None and m not in MODS]
+    if unknown:
+        raise SystemExit(f"ORE_DEFS names mod(s) missing from MODS: {sorted(unknown)}")
+
+    lines = [f"**{len(list(variants()))} blocks** in the `{MOD_ID}` namespace.", ""]
+    for mod in order:
+        if mod not in grouped:
+            continue
+        entries = list(grouped[mod].values())
+        if mod is None:
+            heading, note = "Vanilla", ""
+        else:
+            heading = MODS[mod]["display"]
+            note = f", requires `{mod}`"
+
+        for hosts, suffix in ((OVERWORLD_HOSTS, "Overworld"), (NETHER_HOSTS, "Nether")):
+            rows = [(title(ore["name"]), {h: i for h, i in ids.items() if h in hosts})
+                    for ore, ids in entries]
+            rows = [r for r in rows if r[1]]
+            if not rows:
+                continue
+            used = [h for h in hosts if any(h in ids for _l, ids in rows)]
+            lines.append(f"**{heading}, {suffix}{note}**")
+            lines.append("")
+            lines += _table(used, rows)
+            lines.append("")
+    return lines + _loader_counts()
+
+
+def _loader_counts():
+    """How many blocks each loader can actually reach, from the same per-version mod/loader matrix
+    that decides where the conditional loot tables ship.
+
+    Derived rather than written down because it is the single most version-specific fact in this
+    README: which mods have a build for a given loader flips between Minecraft versions, and a
+    number copied forward from another branch is wrong without looking wrong.
+    """
+    per_mod = {}
+    for _host, _cfg, ore, _v in variants():
+        per_mod[ore.get("mod")] = per_mod.get(ore.get("mod"), 0) + 1
+    vanilla = per_mod.pop(None, 0)
+
+    rows = []
+    for loader in ("fabric", "neoforge", "forge"):
+        total = vanilla
+        available = []
+        for mod, count in per_mod.items():
+            modules = CONDITIONAL_LOOT_MODULES_BY_MOD.get(mod, DEFAULT_CONDITIONAL_LOOT_MODULES)
+            if loader in modules:
+                total += count
+                available.append(MODS[mod]["display"])
+        rows.append((loader, total, sorted(available)))
+
+    lines = [
+        "A variant is registered only when the mod that owns its ore is installed, so how many of",
+        "these you can actually see depends on which mods have a build for your loader at this",
+        "Minecraft version:",
+        "",
+        "| Loader | Blocks | Supported mods available here |",
+        "|---|---|---|",
+    ]
+    # Spelled out rather than capitalize()d: that would give "Neoforge".
+    display = {"fabric": "Fabric", "neoforge": "NeoForge", "forge": "Forge"}
+    for loader, total, available in rows:
+        names = ", ".join(available) if available else "none at this Minecraft version"
+        lines.append(f"| {display[loader]} | {total} | {names} |")
+    return lines + [
+        "",
+        "The registered block set is derived from which mods are loaded rather than from config, so",
+        "a client and a server running the same mods always agree and nobody is kicked on join.",
+        "",
+    ]
+
+
+def _overlay_list():
+    """Every overlay texture a resource pack would need to replace, and how many there are."""
+    overlays = sorted({overlay_for(ore, host_cfg) for _h, host_cfg, ore, _v in variants()})
+    return [
+        f"Every variant of one ore shares a single overlay texture, so covering all "
+        f"{len(list(variants()))} blocks takes **{len(overlays)} PNG files**:",
+        "",
+        "```",
+        f"assets/{MOD_ID}/textures/block/<ore>_overlay.png",
+        "```",
+        "",
+        "where `<ore>` is one of:",
+        "",
+    ] + ["".join(f"`{o}` " for o in overlays).strip(), ""]
+
+
+def _credits():
+    """Attribution for the derived overlay art, per mod, with the licence read from its own jar."""
+    used = {ore.get("mod") for ore in ORE_DEFS} - {None}
+    lines = [
+        "The vanilla ore overlays are derived from Minecraft's own textures and remain Mojang's",
+        "property. Each supported mod's overlay is derived from that mod's own ore texture, so it",
+        "is theirs and is used under the licence shown:",
+        "",
+        "| Mod | Author | Licence |",
+        "|---|---|---|",
+    ]
+    for mod in MODS:
+        if mod not in used:
+            continue
+        info = MODS[mod]
+        # A bare "-" for an unstated author. A dash is normally banned from public-facing text, but
+        # a column rule / not-applicable marker inside a markdown table is the documented exception.
+        lines.append(f"| {info['display']} | {info['author'] or '-'} | {info['licence']} |")
+    return lines + [""]
+
+
+def generate_readme():
+    """Rewrites the generated sections of README.md in place, leaving the prose alone.
+
+    Only the regions between the markers are touched, so hand-written explanation survives. A
+    marker that goes missing is an error rather than a silent no-op: the failure mode otherwise is
+    a README that quietly stops being updated, which is exactly how it came to claim 64 blocks.
+    """
+    path = os.path.join(repo_root(), "README.md")
+    with open(path, encoding="utf-8") as handle:
+        text = handle.read()
+
+    sections = {
+        "block-list": _block_list(),
+        "overlay-list": _overlay_list(),
+        "credits": _credits(),
+    }
+    for name, lines in sections.items():
+        begin, end = f"<!-- BEGIN GENERATED {name} -->", f"<!-- END GENERATED {name} -->"
+        if begin not in text or end not in text:
+            raise SystemExit(f"README.md is missing the '{name}' markers")
+        head, rest = text.split(begin, 1)
+        _stale, tail = rest.split(end, 1)
+        text = head + begin + "\n" + "\n".join(lines).rstrip() + "\n" + end + tail
+
+    with open(path, "w", encoding="utf-8", newline="") as handle:
+        handle.write(text)
+    print(f"  README.md: {len(list(variants()))} blocks, "
+          f"{len({overlay_for(o, c) for _h, c, o, _v in variants()})} overlays, "
+          f"{len({o.get('mod') for o in ORE_DEFS} - {None})} mods credited")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -1065,6 +1274,8 @@ def main():
     generate_json()
     print("Generating loot tables and tags...")
     generate_data()
+    print("Updating README...")
+    generate_readme()
 
     if args.textures:
         print("Extracting overlay textures...")
