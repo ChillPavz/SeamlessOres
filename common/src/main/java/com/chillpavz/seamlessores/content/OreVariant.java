@@ -17,7 +17,7 @@ public record OreVariant(HostStone host, OreType ore) {
     }
 
     public ResourceLocation id() {
-        return ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, path());
+        return new ResourceLocation(Constants.MOD_ID, path());
     }
 
     public ResourceKey<Block> blockKey() {

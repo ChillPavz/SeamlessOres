@@ -1,12 +1,18 @@
 plugins {
     id 'multiloader-common'
-    id 'net.neoforged.moddev'
+    id 'net.neoforged.moddev.legacyforge'
 }
 
-neoForge {
-    neoFormVersion = neo_form_version
-    // Automatically enable AccessTransformers if the file exists
-    def at = file('src/main/resources/META-INF/accesstransformer.cfg')
+legacyForge {
+    mcpVersion = minecraft_version
+    // Use accessTransformers.from(...), NOT "accessTransformers = [...]". The assignment form was
+    // inherited from a project that has no access transformer, so it was never exercised there; it
+    // configures nothing, and the symptom is not a build error but an ordinary compile failure like
+    // "bindValue(T) is not public in Reference", i.e. exactly what an AT that matched nothing would
+    // look like. Confirmed by javap on the produced jar: bindValue stayed package-private.
+    validateAccessTransformers = true
+
+    def at = file("src/main/resources/META-INF/accesstransformer.cfg")
     if (at.exists()) {
         accessTransformers.from(at.absolutePath)
     }
@@ -17,10 +23,7 @@ neoForge {
 }
 
 dependencies {
-    compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
-    // fabric and neoforge both bundle mixinextras, so it is safe to use it in common
-    compileOnly group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
-    annotationProcessor group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
+    implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
 }
 
 configurations {
@@ -38,4 +41,3 @@ artifacts {
     commonJava sourceSets.main.java.sourceDirectories.singleFile
     commonResources sourceSets.main.resources.sourceDirectories.singleFile
 }
-
