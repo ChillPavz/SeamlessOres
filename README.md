@@ -24,7 +24,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**295 blocks** in the `seamlessores` namespace.
+**271 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -153,20 +153,15 @@ touching ore of the same type across different host stones.
 | Ammolite | `granite_ammolite_ore` | `diorite_ammolite_ore` | `andesite_ammolite_ore` | `tuff_ammolite_ore` |
 | Black Diamond | `granite_black_diamond_ore` | `diorite_black_diamond_ore` | `andesite_black_diamond_ore` | `tuff_black_diamond_ore` |
 | Carnelian | `granite_carnelian_ore` | `diorite_carnelian_ore` | `andesite_carnelian_ore` | `tuff_carnelian_ore` |
-| Chaos | `granite_chaos_ore` | `diorite_chaos_ore` | `andesite_chaos_ore` | `tuff_chaos_ore` |
-| Garnet | `granite_garnet_ore` | `diorite_garnet_ore` | `andesite_garnet_ore` | `tuff_garnet_ore` |
 | Heliodor | `granite_heliodor_ore` | `diorite_heliodor_ore` | `andesite_heliodor_ore` | `tuff_heliodor_ore` |
 | Iolite | `granite_iolite_ore` | `diorite_iolite_ore` | `andesite_iolite_ore` | `tuff_iolite_ore` |
 | Kyanite | `granite_kyanite_ore` | `diorite_kyanite_ore` | `andesite_kyanite_ore` | `tuff_kyanite_ore` |
 | Moldavite | `granite_moldavite_ore` | `diorite_moldavite_ore` | `andesite_moldavite_ore` | `tuff_moldavite_ore` |
-| Pearl | `granite_pearl_ore` | `diorite_pearl_ore` | `andesite_pearl_ore` | `tuff_pearl_ore` |
 | Rose Quartz | `granite_rose_quartz_ore` | `diorite_rose_quartz_ore` | `andesite_rose_quartz_ore` | `tuff_rose_quartz_ore` |
 | Ruby | `granite_ruby_ore` | `diorite_ruby_ore` | `andesite_ruby_ore` | `tuff_ruby_ore` |
 | Sapphire | `granite_sapphire_ore` | `diorite_sapphire_ore` | `andesite_sapphire_ore` | `tuff_sapphire_ore` |
-| Tanzanite | `granite_tanzanite_ore` | `diorite_tanzanite_ore` | `andesite_tanzanite_ore` | `tuff_tanzanite_ore` |
 | Turquoise | `granite_turquoise_ore` | `diorite_turquoise_ore` | `andesite_turquoise_ore` | `tuff_turquoise_ore` |
 | White Diamond | `granite_white_diamond_ore` | `diorite_white_diamond_ore` | `andesite_white_diamond_ore` | `tuff_white_diamond_ore` |
-| Silents Aquamarine | `granite_silents_aquamarine_ore` | `diorite_silents_aquamarine_ore` | `andesite_silents_aquamarine_ore` | `tuff_silents_aquamarine_ore` |
 | Silents Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` |
 | Silents Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` |
 | Silents Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` |
@@ -182,8 +177,6 @@ touching ore of the same type across different host stones.
 | Silents Citrine | `basalt_silents_citrine_ore` | `blackstone_silents_citrine_ore` |
 | Iolite | `basalt_iolite_ore` | `blackstone_iolite_ore` |
 | Moldavite | `basalt_moldavite_ore` | `blackstone_moldavite_ore` |
-| Pearl | `basalt_pearl_ore` | `blackstone_pearl_ore` |
-| Tanzanite | `basalt_tanzanite_ore` | `blackstone_tanzanite_ore` |
 
 **Things, Overworld, requires `things`**
 
@@ -199,7 +192,7 @@ Minecraft version:
 |---|---|---|
 | Fabric | 155 | Create, Create: New Age, Energized Power, Mythic Metals, Mythic Upgrades, Powah, Things |
 | NeoForge | 36 | none at this Minecraft version |
-| Forge | 203 | Create, Create: New Age, Create: TFMG, Energized Power, Mythic Upgrades, Powah, Silent Gear, Silent's Gems |
+| Forge | 179 | Create, Create: New Age, Create: TFMG, Energized Power, Mythic Upgrades, Powah, Silent Gear, Silent's Gems |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -232,7 +225,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 295 blocks takes **76 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 271 blocks takes **71 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -240,7 +233,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `garnet` `gleaming` `gold` `heliodor` `iolite` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `tanzanite` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `gleaming` `gold` `heliodor` `iolite` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_citrine` `silents_peridot` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is referenced straight from

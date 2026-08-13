@@ -826,6 +826,30 @@
       "id": "seamlessores:basalt_stormyx_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_silents_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_moldavite_ore",
+      "required": false
+    },
     "seamlessores:blackstone_gold_ore",
     "seamlessores:blackstone_quartz_ore",
     {
@@ -846,6 +870,30 @@
     },
     {
       "id": "seamlessores:blackstone_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silents_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_moldavite_ore",
       "required": false
     }
   ]

@@ -15,6 +15,14 @@
     {
       "id": "seamlessores:tuff_black_diamond_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:basalt_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_black_diamond_ore",
+      "required": false
     }
   ]
 }

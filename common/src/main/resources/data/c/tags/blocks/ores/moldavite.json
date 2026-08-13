@@ -15,6 +15,14 @@
     {
       "id": "seamlessores:tuff_moldavite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:basalt_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_moldavite_ore",
+      "required": false
     }
   ]
 }

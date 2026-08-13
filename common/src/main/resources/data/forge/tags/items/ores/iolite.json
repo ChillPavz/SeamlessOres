@@ -15,6 +15,14 @@
     {
       "id": "seamlessores:tuff_iolite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:basalt_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_iolite_ore",
+      "required": false
     }
   ]
 }
