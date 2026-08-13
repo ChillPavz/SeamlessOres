@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_pearl_ore",
+      "required": false
+    }
+  ]
+}

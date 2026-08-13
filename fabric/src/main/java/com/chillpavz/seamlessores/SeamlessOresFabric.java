@@ -33,6 +33,8 @@ public class SeamlessOresFabric implements ModInitializer {
 
         SeamlessOresContent.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
         SeamlessOresContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
+        SeamlessOresContent.registerCreativeTab(
+                (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
         BastionSafeOreFeature.register((id, feature) ->
                 Registry.register(BuiltInRegistries.FEATURE, id, feature));
@@ -58,7 +60,7 @@ public class SeamlessOresFabric implements ModInitializer {
         // modifyEntriesEvent is the pre-26.1 spelling; it became creativetab.v1.CreativeModeTabEvents
         // / modifyOutputEvent at 26.1. FabricItemGroupEntries implements CreativeModeTab.Output, so
         // the body is unchanged.
-        ItemGroupEvents.modifyEntriesEvent(SeamlessOresContent.NATURAL_BLOCKS).register(output -> {
+        ItemGroupEvents.modifyEntriesEvent(SeamlessOresContent.TAB).register(output -> {
             for (var item : SeamlessOresContent.creativeTabItems()) {
                 output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             }
