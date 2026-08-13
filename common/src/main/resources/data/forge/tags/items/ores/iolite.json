@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iolite_ore",
+      "required": false
+    }
+  ]
+}

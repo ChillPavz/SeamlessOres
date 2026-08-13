@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:basalt_deltas",
+  "features": [
+    "seamlessores:ruby_deltas",
+    "seamlessores:sapphire_deltas"
+  ],
+  "step": "underground_ores"
+}

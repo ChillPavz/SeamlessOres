@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_carnelian_ore",
+      "required": false
+    }
+  ]
+}

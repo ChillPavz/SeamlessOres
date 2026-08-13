@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_moldavite_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_black_diamond_ore",
+      "required": false
+    }
+  ]
+}
