@@ -256,7 +256,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     //   Silent Gear     bort UniformInt(3, 7)  <- INFERRED, not proven; see the maintainer notes
     //
     // Loot is TRANSFORMED from each mod's own tables (the generator entries carry no raw_drop),
-    // because Dense Mekanism and Powah both use set_count and a hand-built vanilla-shape table
+    // because Powah uses set_count and a hand-built vanilla-shape table
     // would change their yields. Same call as Mythic Metals.
     private static OreType modded(String name, String modId, String namespace, String plain,
                                   IntProvider xp) {
@@ -265,20 +265,10 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                 null, xp, null, false, Set.of());
     }
 
-    // Dense Mekanism. Its blocks are dense_<ore>_ore / dense_deepslate_<ore>_ore, so the plain name
-    // does not follow the usual pattern and each is spelled out.
-    private static OreType dmek(String ore, IntProvider xp) {
-        return new OreType("dense_" + ore, "dense_" + ore, null, "densemekanism",
-                of("densemekanism", "dense_" + ore + "_ore"),
-                of("densemekanism", "dense_deepslate_" + ore + "_ore"),
-                null, xp, null, false, Set.of());
-    }
+    // NO Dense Mekanism here, unlike the newer branches: that mod stops at 1.19.2, so its ores
+    // cannot exist at 1.20.x and a definition for them would register blocks that can never
+    // generate. Re-check on any backport - which mods exist is a per-version question.
 
-    public static final OreType DENSE_FLUORITE = dmek("fluorite", UniformInt.of(1, 4));
-    public static final OreType DENSE_LEAD = dmek("lead", NONE);
-    public static final OreType DENSE_OSMIUM = dmek("osmium", NONE);
-    public static final OreType DENSE_TIN = dmek("tin", NONE);
-    public static final OreType DENSE_URANIUM = dmek("uranium", NONE);
 
     // Powah. Three grades of the same ore, named uraninite_ore_poor / _dense in the mod.
     private static OreType powah(String name, String plain) {
@@ -353,8 +343,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     NETHER_BANGLUM, MIDAS_GOLD, PALLADIUM, STORMYX,
                     SG_ALEXANDRITE, SG_AMMOLITE, SG_BLACK_DIAMOND, SG_CARNELIAN, SG_HELIODOR, SG_IOLITE, SG_KYANITE, SG_MOLDAVITE, SG_ROSE_QUARTZ,
                     SG_RUBY, SG_SAPPHIRE, SG_TURQUOISE, SG_WHITE_DIAMOND,
-                    SG_CITRINE, SG_PERIDOT, SG_TOPAZ, SG_SILVER, DENSE_FLUORITE, DENSE_LEAD, DENSE_OSMIUM, DENSE_TIN, DENSE_URANIUM,
-                    URANINITE, URANINITE_POOR, URANINITE_DENSE,
+                    SG_CITRINE, SG_PERIDOT, SG_TOPAZ, SG_SILVER, URANINITE, URANINITE_POOR, URANINITE_DENSE,
                     TFMG_LEAD, TFMG_LITHIUM, TFMG_NICKEL,
                     ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,

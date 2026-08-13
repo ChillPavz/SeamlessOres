@@ -91,7 +91,6 @@ MYTHIC_METALS_JAR = os.environ.get(
 
 # Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
 # a warning rather than an error: the JSON still generates, only the texture step is skipped.
-DENSEMEKANISM_JAR = os.environ.get("DENSEMEKANISM_JAR", "../jars/1.20.1-DOES-NOT-EXIST.jar")
 
 POWAH_JAR = os.environ.get("POWAH_JAR", "../jars/1.20.1-Powah-5.0.11.jar")
 
@@ -111,7 +110,6 @@ MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "energizedpower": ENERGIZEDPOWER_JAR,
             "tfmg": TFMG_JAR,
             "powah": POWAH_JAR,
-            "densemekanism": DENSEMEKANISM_JAR,
             "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
             "silentgems": SILENT_GEMS_JAR,
             "mythicmetals": MYTHIC_METALS_JAR}
@@ -177,8 +175,6 @@ MODS = {
                        "licence": "BSD-3-Clause", "author": "Antarctic Gardens"},
     "tfmg":           {"display": "Create: TFMG",      "category": "tfmg",
                        "licence": "MIT",          "author": "DrMangoTea, Pepa, Luna"},
-    "densemekanism":  {"display": "Dense Mekanism",    "category": "dense_mekanism",
-                       "licence": "MIT",          "author": ""},
     "energizedpower": {"display": "Energized Power",   "category": "energized_power",
                        "licence": "MIT",          "author": "JDDev0"},
     "mythicmetals":   {"display": "Mythic Metals",     "category": "mythic_metals",
@@ -391,21 +387,6 @@ ORE_DEFS = [
     # tables. Dense Mekanism and Powah both use set_count, so a hand-built vanilla-shape table
     # would change their yields, exactly as it would have for Mythic Metals.
     # energized_tin is prefixed because plain tin is already Mythic Metals'.
-    {"name": "dense_fluorite", "overlay": "dense_fluorite", "source": "dense_fluorite_ore", "base": "stone",
-     "mod": "densemekanism",
-     "tiers": {"stone": "dense_fluorite_ore", "deepslate": "dense_deepslate_fluorite_ore"}},
-    {"name": "dense_lead", "overlay": "dense_lead", "source": "dense_lead_ore", "base": "stone",
-     "mod": "densemekanism",
-     "tiers": {"stone": "dense_lead_ore", "deepslate": "dense_deepslate_lead_ore"}},
-    {"name": "dense_osmium", "overlay": "dense_osmium", "source": "dense_osmium_ore", "base": "stone",
-     "mod": "densemekanism",
-     "tiers": {"stone": "dense_osmium_ore", "deepslate": "dense_deepslate_osmium_ore"}},
-    {"name": "dense_tin", "overlay": "dense_tin", "source": "dense_tin_ore", "base": "stone",
-     "mod": "densemekanism",
-     "tiers": {"stone": "dense_tin_ore", "deepslate": "dense_deepslate_tin_ore"}},
-    {"name": "dense_uranium", "overlay": "dense_uranium", "source": "dense_uranium_ore", "base": "stone",
-     "mod": "densemekanism",
-     "tiers": {"stone": "dense_uranium_ore", "deepslate": "dense_deepslate_uranium_ore"}},
     {"name": "uraninite", "overlay": "uraninite", "source": "uraninite_ore", "base": "stone",
      "mod": "powah",
      "tiers": {"stone": "uraninite_ore", "deepslate": "deepslate_uraninite_ore"}},
@@ -520,7 +501,6 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "create": ("fabric", "forge"),        # forge/neoforge direct, fabric via the Create Fabric port
     "create_new_age": ("fabric", "forge"),
     "tfmg": ("forge",),                   # slug is create-tfmg, forge only at 1.20.1
-    "densemekanism": (),                  # no 1.20.x build exists
     "energizedpower": ("fabric", "forge"),
     "mythicmetals": ("fabric",),
     "mythicupgrades": ("fabric", "forge"),

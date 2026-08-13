@@ -24,7 +24,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**271 blocks** in the `seamlessores` namespace.
+**251 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -65,16 +65,6 @@ touching ore of the same type across different host stones.
 | Lead | `granite_lead_ore` | `diorite_lead_ore` | `andesite_lead_ore` | `tuff_lead_ore` |
 | Lithium | `granite_lithium_ore` | `diorite_lithium_ore` | `andesite_lithium_ore` | `tuff_lithium_ore` |
 | Nickel | `granite_nickel_ore` | `diorite_nickel_ore` | `andesite_nickel_ore` | `tuff_nickel_ore` |
-
-**Dense Mekanism, Overworld, requires `densemekanism`**
-
-| | granite | diorite | andesite | tuff |
-|---|---|---|---|---|
-| Dense Fluorite | `granite_dense_fluorite_ore` | `diorite_dense_fluorite_ore` | `andesite_dense_fluorite_ore` | `tuff_dense_fluorite_ore` |
-| Dense Lead | `granite_dense_lead_ore` | `diorite_dense_lead_ore` | `andesite_dense_lead_ore` | `tuff_dense_lead_ore` |
-| Dense Osmium | `granite_dense_osmium_ore` | `diorite_dense_osmium_ore` | `andesite_dense_osmium_ore` | `tuff_dense_osmium_ore` |
-| Dense Tin | `granite_dense_tin_ore` | `diorite_dense_tin_ore` | `andesite_dense_tin_ore` | `tuff_dense_tin_ore` |
-| Dense Uranium | `granite_dense_uranium_ore` | `diorite_dense_uranium_ore` | `andesite_dense_uranium_ore` | `tuff_dense_uranium_ore` |
 
 **Energized Power, Overworld, requires `energizedpower`**
 
@@ -225,7 +215,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 271 blocks takes **71 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 251 blocks takes **66 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -233,7 +223,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `gleaming` `gold` `heliodor` `iolite` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_citrine` `silents_peridot` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `citrine` `coal` `copper` `diamond` `emerald` `energized_tin` `gleaming` `gold` `heliodor` `iolite` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_citrine` `silents_peridot` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is referenced straight from
@@ -302,7 +292,6 @@ is theirs and is used under the licence shown:
 | Create | - | MIT |
 | Create: New Age | Antarctic Gardens | BSD-3-Clause |
 | Create: TFMG | DrMangoTea, Pepa, Luna | MIT |
-| Dense Mekanism | - | MIT |
 | Energized Power | JDDev0 | MIT |
 | Mythic Metals | Noaaan | MIT |
 | Mythic Upgrades | TriQue | MIT |
