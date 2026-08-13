@@ -15,6 +15,14 @@
     {
       "id": "seamlessores:tuff_alexandrite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:basalt_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_alexandrite_ore",
+      "required": false
     }
   ]
 }

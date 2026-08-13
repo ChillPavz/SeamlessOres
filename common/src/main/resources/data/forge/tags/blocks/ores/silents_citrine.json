@@ -15,6 +15,14 @@
     {
       "id": "seamlessores:tuff_silents_citrine_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:basalt_silents_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silents_citrine_ore",
+      "required": false
     }
   ]
 }

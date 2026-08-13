@@ -228,27 +228,22 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_AMMOLITE = silentGem("ammolite", GEM_XP);
     public static final OreType SG_BLACK_DIAMOND = silentGem("black_diamond", GEM_XP);
     public static final OreType SG_CARNELIAN = silentGem("carnelian", GEM_XP);
-    public static final OreType SG_GARNET = silentGem("garnet", GEM_XP);
     public static final OreType SG_HELIODOR = silentGem("heliodor", GEM_XP);
     public static final OreType SG_IOLITE = silentGem("iolite", GEM_XP);
     public static final OreType SG_KYANITE = silentGem("kyanite", GEM_XP);
     public static final OreType SG_MOLDAVITE = silentGem("moldavite", GEM_XP);
-    public static final OreType SG_PEARL = silentGem("pearl", GEM_XP);
     public static final OreType SG_ROSE_QUARTZ = silentGem("rose_quartz", GEM_XP);
     public static final OreType SG_RUBY = silentGem("ruby", GEM_XP);
     public static final OreType SG_SAPPHIRE = silentGem("sapphire", GEM_XP);
-    public static final OreType SG_TANZANITE = silentGem("tanzanite", GEM_XP);
     public static final OreType SG_TURQUOISE = silentGem("turquoise", GEM_XP);
     public static final OreType SG_WHITE_DIAMOND = silentGem("white_diamond", GEM_XP);
     // Prefixed to avoid a block id clash, see above.
-    public static final OreType SG_AQUAMARINE = silentGem("silents_aquamarine", GEM_XP);
     public static final OreType SG_CITRINE = silentGem("silents_citrine", GEM_XP);
     public static final OreType SG_PERIDOT = silentGem("silents_peridot", GEM_XP);
     public static final OreType SG_TOPAZ = silentGem("silents_topaz", GEM_XP);
     /** A metal, not a gem: drops raw_silver and gives no experience. */
     public static final OreType SG_SILVER = silentGem("silents_silver", NONE);
     /** Chaos drops chaos_essence and is the only one of these with its own experience range. */
-    public static final OreType SG_CHAOS = silentGem("chaos", UniformInt.of(3, 7));
 
     // --- Seven more third-party mods ------------------------------------------------------------
     // All target both replaceables tags (so all four hosts) except Create: New Age's thorium, which
@@ -338,7 +333,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     // discard 1.0, copied from ancient debris.
     private static OreType silentNether(String name, String plain) {
         return new OreType(name, name, null, "silentgems", null, null,
-                of("silentgems", "nether_" + plain + "_ore"), GEM_XP, null, false, Set.of());
+                of("silentgems", plain + "_nether_ore"), GEM_XP, null, false, Set.of());
     }
 
     public static final OreType SG_N_ALEXANDRITE = silentNether("alexandrite", "alexandrite");
@@ -347,8 +342,6 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_N_CITRINE = silentNether("silents_citrine", "citrine");
     public static final OreType SG_N_IOLITE = silentNether("iolite", "iolite");
     public static final OreType SG_N_MOLDAVITE = silentNether("moldavite", "moldavite");
-    public static final OreType SG_N_PEARL = silentNether("pearl", "pearl");
-    public static final OreType SG_N_TANZANITE = silentNether("tanzanite", "tanzanite");
 
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
@@ -358,16 +351,14 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     AQUARIUM, BANGLUM, KYBER, MANGANESE, OSMIUM, PLATINUM, QUADRILLUM, SILVER,
                     STARRITE, TIN, ORICHALCUM,
                     NETHER_BANGLUM, MIDAS_GOLD, PALLADIUM, STORMYX,
-                    SG_ALEXANDRITE, SG_AMMOLITE, SG_BLACK_DIAMOND, SG_CARNELIAN, SG_GARNET,
-                    SG_HELIODOR, SG_IOLITE, SG_KYANITE, SG_MOLDAVITE, SG_PEARL, SG_ROSE_QUARTZ,
-                    SG_RUBY, SG_SAPPHIRE, SG_TANZANITE, SG_TURQUOISE, SG_WHITE_DIAMOND,
-                    SG_AQUAMARINE, SG_CITRINE, SG_PERIDOT, SG_TOPAZ, SG_SILVER, SG_CHAOS,
-                    DENSE_FLUORITE, DENSE_LEAD, DENSE_OSMIUM, DENSE_TIN, DENSE_URANIUM,
+                    SG_ALEXANDRITE, SG_AMMOLITE, SG_BLACK_DIAMOND, SG_CARNELIAN, SG_HELIODOR, SG_IOLITE, SG_KYANITE, SG_MOLDAVITE, SG_ROSE_QUARTZ,
+                    SG_RUBY, SG_SAPPHIRE, SG_TURQUOISE, SG_WHITE_DIAMOND,
+                    SG_CITRINE, SG_PERIDOT, SG_TOPAZ, SG_SILVER, DENSE_FLUORITE, DENSE_LEAD, DENSE_OSMIUM, DENSE_TIN, DENSE_URANIUM,
                     URANINITE, URANINITE_POOR, URANINITE_DENSE,
                     TFMG_LEAD, TFMG_LITHIUM, TFMG_NICKEL,
                     ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
-                    SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE);
+                    SG_N_IOLITE, SG_N_MOLDAVITE);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
     public ResourceLocation vanillaFor(HostStone host) {

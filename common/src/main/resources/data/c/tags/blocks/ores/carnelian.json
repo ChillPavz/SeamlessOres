@@ -15,6 +15,14 @@
     {
       "id": "seamlessores:tuff_carnelian_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:basalt_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_carnelian_ore",
+      "required": false
     }
   ]
 }
