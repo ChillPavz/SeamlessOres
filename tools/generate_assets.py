@@ -152,7 +152,7 @@ HOSTS = {
 # its hosts, and the DEEPSLATE unobtainium ore while its stone one is a still image.
 #
 # This is the safe vanilla path: a plain N-frame vertical strip on an ordinary sprite. It is NOT the
-# same as animating a Fusion connecting sheet, which crashes the game on load - see the maintainer notes.
+# same as animating a Fusion connecting sheet, which crashes the game on load.
 ANIMATED_OVERLAYS = {
     "stormyx": {"frametime": 20, "interpolate": True},              # 5 frames, matches stormyx_ore
     "unobtainium_deepslate": {"frametime": 60, "interpolate": True},  # 4 frames, deepslate ore only
@@ -608,6 +608,28 @@ def overlay_for(ore, host_cfg):
     return ore["overlay"]
 
 
+# House style: this project does not use U+2014 EM DASH or U+2013 EN DASH in player-facing text.
+# Ordinary hyphens are fine.
+DASHES = ("\u2014", "\u2013")
+
+
+def assert_no_dashes(strings, what):
+    """Fails the run if any generated string carries an em or en dash.
+
+    Everything this generator writes is read by a player: the config screen's labels and tooltips,
+    every block name, and the README. Checking by eye does not scale to a few hundred lang entries
+    and would have to be redone on every branch, so it is asserted instead. Ordinary hyphens are
+    fine and untouched; the rule is only about the two long dashes.
+    """
+    bad = [(key, text) for key, text in strings if any(d in text for d in DASHES)]
+    if bad:
+        report = "\n".join("    {}\n      {}".format(k, t) for k, t in bad)
+        raise SystemExit(
+            "  !! {} {} contain an em or en dash, which must not reach players:\n{}\n"
+            "     Replace them with a comma, a colon, a full stop, brackets or a plain hyphen."
+            .format(len(bad), what, report))
+
+
 def write_json(path, data):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as handle:
@@ -900,6 +922,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.createNewAge.@Tooltip":
             "Generate host-matched thorium ore. Does nothing unless the mod is installed.",
     })
+    assert_no_dashes(lang.items(), "lang entries")
     write_json(os.path.join(root, "lang", "en_us.json"), lang)
 
     # Animation metadata for the overlays that need it. Written next to the texture, which is where
@@ -1367,6 +1390,8 @@ def generate_readme():
         "overlay-list": _overlay_list(),
         "credits": _credits(),
     }
+    assert_no_dashes(((name, line) for name, lines in sections.items() for line in lines),
+                     "README lines")
     for name, lines in sections.items():
         begin, end = f"<!-- BEGIN GENERATED {name} -->", f"<!-- END GENERATED {name} -->"
         if begin not in text or end not in text:
