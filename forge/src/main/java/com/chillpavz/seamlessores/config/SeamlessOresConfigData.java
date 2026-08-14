@@ -72,7 +72,7 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip(count = 3)
     @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
-    public int dripstoneCopper = 25;
+    public int dripstoneCopper = 50;
 
     // --- Nether ---------------------------------------------------------------------------------
 

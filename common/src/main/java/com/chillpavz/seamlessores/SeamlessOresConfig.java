@@ -57,7 +57,7 @@ public final class SeamlessOresConfig {
      * <p>0 removes the large veins entirely, leaving dripstone caves with exactly the same copper as
      * every other biome. 100 leaves vanilla untouched.
      */
-    public static int dripstoneCopper = 25;
+    public static int dripstoneCopper = 50;
 
     /** Whether Create's zinc variants generate. */
     public static boolean createZinc = true;
@@ -301,7 +301,7 @@ public final class SeamlessOresConfig {
         public boolean netherGems = true;
         public int netherGemSize = 4;
         public int overworldCopper = 75;
-        public int dripstoneCopper = 25;
+        public int dripstoneCopper = 50;
         public boolean createZinc = true;
         public int zincVeinSize = 10;
         public boolean mythicUpgrades = true;
