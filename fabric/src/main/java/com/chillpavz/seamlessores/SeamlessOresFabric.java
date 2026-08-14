@@ -33,6 +33,8 @@ public class SeamlessOresFabric implements ModInitializer {
 
         SeamlessOresContent.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
         SeamlessOresContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
+        SeamlessOresContent.registerCreativeTab(
+                (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
         BastionSafeOreFeature.register((id, feature) ->
                 Registry.register(BuiltInRegistries.FEATURE, id, feature));
