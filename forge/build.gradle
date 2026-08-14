@@ -93,8 +93,21 @@ minecraft {
 
 sourceSets.main.resources.srcDir 'src/generated/resources'
 
+repositories {
+    // Cloth Config's Forge build for this Minecraft version is the unofficial cloth-config-forge
+    // port, which is published on Modrinth rather than on shedaniel's maven (official cloth stops
+    // shipping Forge builds after 1.21.3). Same mod id, 'cloth_config', and the same version number.
+    exclusiveContent {
+        forRepository { maven { url = 'https://api.modrinth.com/maven' } }
+        filter { includeGroup('maven.modrinth') }
+    }
+}
+
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    // Cloth Config (AutoConfig), so all three loaders share one annotated config class.
+    implementation("maven.modrinth:cloth-config-forge:${cloth_config_version}")
 }
 
 publishing {

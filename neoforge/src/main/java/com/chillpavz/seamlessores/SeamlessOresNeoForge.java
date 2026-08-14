@@ -60,6 +60,8 @@ public class SeamlessOresNeoForge {
                 helper -> SeamlessOresContent.registerBlocks(helper::register));
         event.register(Registries.ITEM,
                 helper -> SeamlessOresContent.registerItems(helper::register));
+        event.register(Registries.CREATIVE_MODE_TAB,
+                helper -> SeamlessOresContent.registerCreativeTab(helper::register));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
         event.register(Registries.FEATURE,
                 helper -> BastionSafeOreFeature.register(helper::register));
@@ -69,7 +71,7 @@ public class SeamlessOresNeoForge {
 
     private void onBuildCreativeTabs(BuildCreativeModeTabContentsEvent event) {
 
-        if (!event.getTabKey().equals(SeamlessOresContent.NATURAL_BLOCKS)) {
+        if (!event.getTabKey().equals(SeamlessOresContent.TAB)) {
             return;
         }
         for (var item : SeamlessOresContent.creativeTabItems()) {

@@ -14,8 +14,6 @@ import net.minecraftforge.event.server.ServerAboutToStartEvent;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.config.ModConfigEvent;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.registries.RegisterEvent;
 
@@ -29,7 +27,7 @@ import net.minecraftforge.registries.RegisterEvent;
  * {@code BUS} field. Tell the two apart by whether the event implements {@code IModBusEvent};
  * getting it wrong fails SILENTLY at runtime.
  *
- * <p>{@link RegisterEvent} and {@link ModConfigEvent} are mod bus; {@link ServerAboutToStartEvent}
+ * <p>{@link RegisterEvent} is mod bus; {@link ServerAboutToStartEvent}
  * and {@link BuildCreativeModeTabContentsEvent} are game bus.
  */
 @Mod(Constants.MOD_ID)
@@ -40,13 +38,13 @@ public class SeamlessOresForge {
         SeamlessOres.init();
 
         ModLoadingContext context = ModLoadingContext.get();
-        context.registerConfig(ModConfig.Type.COMMON, SeamlessOresConfigData.SPEC);
+        // Cloth Config, exactly as on Fabric and NeoForge. Forge used to run its own
+        // ForgeConfigSpec here because official cloth has no Forge build at this version; the
+        // unofficial cloth-config-forge port does, so all three loaders now share one annotated
+        // data class and one generated screen instead of a hand written one.
+        SeamlessOresConfigData.register();
 
         BusGroup modBus = context.getActiveContainer().getModBusGroup();
-        // Nothing here is needed before registration - every option gates worldgen, which runs at
-        // server start - so Forge's missing STARTUP config type costs this mod nothing.
-        ModConfigEvent.Loading.getBus(modBus).addListener(event -> applyIfOurs(event.getConfig()));
-        ModConfigEvent.Reloading.getBus(modBus).addListener(event -> applyIfOurs(event.getConfig()));
         RegisterEvent.getBus(modBus).addListener(SeamlessOresForge::onRegister);
 
         BuildCreativeModeTabContentsEvent.BUS.addListener(SeamlessOresForge::onBuildTabContents);
@@ -59,12 +57,6 @@ public class SeamlessOresForge {
         // classic Forge; NeoForge 26.x made it the method getDist().
         if (FMLEnvironment.dist == Dist.CLIENT) {
             SeamlessOresConfigScreenRegistrar.register();
-        }
-    }
-
-    private static void applyIfOurs(ModConfig config) {
-        if (config.getSpec() == SeamlessOresConfigData.SPEC) {
-            SeamlessOresConfigData.applyToRuntime();
         }
     }
 
@@ -82,6 +74,8 @@ public class SeamlessOresForge {
                 helper -> SeamlessOresContent.registerBlocks(helper::register));
         event.register(Registries.ITEM,
                 helper -> SeamlessOresContent.registerItems(helper::register));
+        event.register(Registries.CREATIVE_MODE_TAB,
+                helper -> SeamlessOresContent.registerCreativeTab(helper::register));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
         event.register(Registries.FEATURE,
                 helper -> BastionSafeOreFeature.register(helper::register));
@@ -91,7 +85,7 @@ public class SeamlessOresForge {
 
     private static void onBuildTabContents(BuildCreativeModeTabContentsEvent event) {
 
-        if (!event.getTabKey().equals(SeamlessOresContent.NATURAL_BLOCKS)) {
+        if (!event.getTabKey().equals(SeamlessOresContent.TAB)) {
             return;
         }
         for (var item : SeamlessOresContent.creativeTabItems()) {

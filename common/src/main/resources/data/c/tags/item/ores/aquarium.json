@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_aquarium_ore",
+      "required": false
+    }
+  ]
+}

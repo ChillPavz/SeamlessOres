@@ -13,9 +13,6 @@ credits = "${credits}" #optional
 authors = "${mod_author}" #optional
 description = '''${description}''' #mandatory (Supports multiline text)
 
-# There is deliberately NO cloth_config dependency here. Cloth Config has no Forge build past
-# 1.21.3, so this module uses Forge's own ForgeConfigSpec plus a hand-written screen instead.
-
 # NOTE: classic Forge uses `mandatory = true/false` here. `type = "required"` is NeoForge's syntax and
 # makes Forge reject the jar outright with "Missing required field mandatory in dependency".
 [[dependencies.${mod_id}]]
@@ -30,4 +27,15 @@ modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
+side = "BOTH"
+
+# Cloth Config. Official cloth ships no Forge build at this Minecraft version, so Forge players need
+# the unofficial cloth-config-forge port, which carries the same mod id and the same version number.
+# Name it on the store page: the launcher cannot auto install it from this dependency alone, because
+# the two are separate projects on Modrinth.
+[[dependencies.${mod_id}]]
+modId = "cloth_config"
+mandatory = true
+versionRange = "[${cloth_config_version},)"
+ordering = "AFTER"
 side = "BOTH"

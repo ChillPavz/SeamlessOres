@@ -22,3 +22,4 @@ accessible	method	net/minecraft/core/RegistrySetBuilder$LazyHolder	bindValue	(Lj
 accessible	class	net/minecraft/world/level/levelgen/OreVeinifier$VeinType
 accessible	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	ore	Lnet/minecraft/world/level/block/state/BlockState;
 mutable	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	ore	Lnet/minecraft/world/level/block/state/BlockState;
+accessible	field	net/minecraft/world/level/levelgen/placement/CountPlacement	count	Lnet/minecraft/util/valueproviders/IntProvider;

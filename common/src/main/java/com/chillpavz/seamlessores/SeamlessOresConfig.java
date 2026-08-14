@@ -31,11 +31,77 @@ public final class SeamlessOresConfig {
      */
     public static boolean oreVeins = true;
 
+    /**
+     * Ordinary overworld copper, as a percentage of vanilla's vein count.
+     *
+     * <p>Vanilla runs {@code ore_copper} at 16 attempts per chunk of size 10, in every biome. This
+     * scales the COUNT rather than the size, on the same reasoning as {@link #netherOreRarity}: a
+     * vein you find should still be worth mining out, so it is better to have fewer of them than to
+     * make every one small.
+     *
+     * <p><b>This changes VANILLA generation and is not a restyle</b> - the first setting in the mod
+     * that touches overworld ore amounts, so it has to be disclosed on the store page exactly like
+     * {@link #netherVeinSize}. 100 leaves vanilla completely untouched.
+     */
+    public static int overworldCopper = 75;
+
+    /**
+     * Dripstone-cave copper, as a percentage of vanilla's vein count.
+     *
+     * <p>Separate from {@link #overworldCopper} because it is a different feature and a much bigger
+     * outlier. {@code ore_copper_large} is 16 attempts per chunk at size 20 and appears in
+     * <b>dripstone caves and nowhere else</b> - one biome of 64 - on top of the ordinary copper
+     * every biome gets. That is roughly three times the copper of anywhere else, which is why
+     * dripstone caves read as solid copper.
+     *
+     * <p>0 removes the large veins entirely, leaving dripstone caves with exactly the same copper as
+     * every other biome. 100 leaves vanilla untouched.
+     */
+    public static int dripstoneCopper = 50;
+
     /** Whether Create's zinc variants generate. */
     public static boolean createZinc = true;
 
     /** Whether Mythic Upgrades variants generate. */
     public static boolean mythicUpgrades = true;
+
+    /** Whether Mythic Metals variants generate. */
+    public static boolean mythicMetals = true;
+
+    /** Whether Silent's Gems OVERWORLD variants generate. Balance-neutral: a pure restyle. */
+    public static boolean silentGems = true;
+
+    /**
+     * Whether Silent's Gems NETHER variants generate — a separate switch from {@link #silentGems}
+     * because the two are not the same kind of change.
+     *
+     * <p>Silent's Gems targets {@code c:netherracks} only, so its eight generating nether gems never
+     * appear in basalt or blackstone in that mod alone. Our variants therefore <b>ADD</b> ore there,
+     * exactly as our own gold and quartz do, while the overworld gems are a pure restyle of ore that
+     * already generates. Two different balance stories deserve two different switches.
+     */
+    public static boolean silentGemsNether = true;
+
+    /** Whether Dense Mekanism variants generate. Pure restyle. */
+    public static boolean denseMekanism = true;
+
+    /** Whether Powah variants generate. Pure restyle. */
+    public static boolean powah = true;
+
+    /** Whether Create: The Factory Must Grow variants generate. Pure restyle. */
+    public static boolean tfmg = true;
+
+    /** Whether Energized Power variants generate. Pure restyle. */
+    public static boolean energizedPower = true;
+
+    /** Whether Things variants generate. Pure restyle. */
+    public static boolean things = true;
+
+    /** Whether Silent Gear variants generate. Pure restyle. */
+    public static boolean silentGear = true;
+
+    /** Whether Create: New Age variants generate. Pure restyle. */
+    public static boolean createNewAge = true;
 
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
@@ -44,13 +110,28 @@ public final class SeamlessOresConfig {
      * ore on the zinc toggle, which was fine while zinc was the only one and silently wrong the
      * moment a second mod arrived. A mod with no toggle of its own defaults to enabled.
      *
+     * <p><b>{@code netherHost} exists for Silent's Gems alone</b>, which is the one mod whose
+     * overworld and nether variants differ in kind: the overworld ones restyle ore that already
+     * generates, the nether ones add ore that does not. Every other mod ignores the flag. Passing it
+     * rather than splitting the mod id keeps {@code OreType} free of a distinction only the config
+     * cares about.
+     *
      * <p>This gates GENERATION only. Registration stays derived from the loaded mod set, so a client
      * and a server always register the same blocks whatever their configs say.
      */
-    public static boolean isModOreEnabled(String modId) {
+    public static boolean isModOreEnabled(String modId, boolean netherHost) {
         return switch (modId) {
             case "create" -> createZinc;
             case "mythicupgrades" -> mythicUpgrades;
+            case "mythicmetals" -> mythicMetals;
+            case "silentgems" -> netherHost ? silentGemsNether : silentGems;
+            case "densemekanism" -> denseMekanism;
+            case "powah" -> powah;
+            case "tfmg" -> tfmg;
+            case "energizedpower" -> energizedPower;
+            case "things" -> things;
+            case "silentgear" -> silentGear;
+            case "create_new_age" -> createNewAge;
             default -> true;
         };
     }
@@ -150,23 +231,127 @@ public final class SeamlessOresConfig {
      */
     public static int netherGemSize = 4;
 
+    /**
+     * {@link #netherOreRarity}, but for Silent's Gems' nether gems.
+     *
+     * <p>They add ore on exactly the same terms as our gold and quartz, so they get the same dial —
+     * but a separate copy of it, because eight gems and two common ores are not worth balancing
+     * together. Defaults to the same value as the global one so the shipped behaviour is consistent
+     * rather than arbitrary.
+     */
+    public static int silentGemsNetherRarity = 2;
+
+    /** {@link #netherVeinSize}, but for Silent's Gems' nether gems. See {@link #silentGemsNetherRarity}. */
+    public static int silentGemsNetherVeinSize = 80;
+
+    /**
+     * Which rarity dial governs a nether variant, by the mod that owns the ore.
+     *
+     * @param modId owning mod id, or {@code null} for a vanilla ore (gold and quartz)
+     * @return one in this many veins converts; 1 means every vein, i.e. no thinning
+     */
+    public static int netherRarityFor(String modId) {
+        if (modId == null) {
+            return netherOreRarity;                 // our own gold and quartz
+        }
+        if ("silentgems".equals(modId)) {
+            return silentGemsNetherRarity;
+        }
+        // Everything else - Mythic Upgrades' ruby and sapphire, Mythic Metals' four - is exempt.
+        // Ruby and sapphire already have their own far rarer placement through NetherGemFeature, and
+        // stacking a second thinning on top of that puts them near one in a hundred chunks.
+        return 1;
+    }
+
+    /** Which vein-size dial governs a nether feature, as a percentage of the feature's own size. */
+    public static int netherVeinSizeFor(String modId) {
+        return "silentgems".equals(modId) ? silentGemsNetherVeinSize : netherVeinSize;
+    }
+
+    /**
+     * Every value a loader's config layer pushes in, by NAME.
+     *
+     * <p>This replaced a positional {@code apply(...)}. With eleven settings that was merely ugly;
+     * at twenty-four it is a bug waiting to happen, because any two adjacent parameters of the same
+     * type can be swapped and still compile — and the symptom would be a silently wrong worldgen
+     * dial, which is the hardest class of bug to notice in this mod.
+     *
+     * <p>The host booleans live here rather than being turned into a {@code Set} by each loader, so
+     * that derivation exists once instead of being copy-pasted into all three modules.
+     */
+    public static final class Values {
+        public boolean granite = true;
+        public boolean diorite = true;
+        public boolean andesite = true;
+        public boolean tuff = true;
+        public boolean basalt = true;
+        public boolean blackstone = true;
+        public boolean oreVeins = true;
+        public boolean bastionSafeNether = true;
+        public int netherOreRarity = 2;
+        public int netherVeinSize = 80;
+        public boolean netherGems = true;
+        public int netherGemSize = 4;
+        public int overworldCopper = 75;
+        public int dripstoneCopper = 50;
+        public boolean createZinc = true;
+        public int zincVeinSize = 10;
+        public boolean mythicUpgrades = true;
+        public boolean mythicMetals = true;
+        public boolean silentGems = true;
+        public boolean silentGemsNether = true;
+        public int silentGemsNetherRarity = 2;
+        public int silentGemsNetherVeinSize = 80;
+        public boolean denseMekanism = true;
+        public boolean powah = true;
+        public boolean tfmg = true;
+        public boolean energizedPower = true;
+        public boolean things = true;
+        public boolean silentGear = true;
+        public boolean createNewAge = true;
+    }
+
     /** Called by each loader's config layer whenever the config loads or is saved. */
-    public static void apply(Set<String> newDisabledHosts, boolean newOreVeins, boolean newCreateZinc,
-                             int newZincVeinSize, boolean newBastionSafeNether,
-                             boolean newMythicUpgrades, int newNetherOreRarity, boolean newNetherGems, int newNetherGemSize, int newNetherVeinSize) {
-        disabledHosts = Set.copyOf(newDisabledHosts);
-        oreVeins = newOreVeins;
-        createZinc = newCreateZinc;
-        zincVeinSize = newZincVeinSize;
-        bastionSafeNether = newBastionSafeNether;
-        mythicUpgrades = newMythicUpgrades;
-        netherOreRarity = newNetherOreRarity;
-        netherGems = newNetherGems;
-        netherGemSize = newNetherGemSize;
-        netherVeinSize = newNetherVeinSize;
+    public static void apply(Values values) {
+        final Set<String> disabled = new java.util.HashSet<>();
+        if (!values.granite) disabled.add("granite");
+        if (!values.diorite) disabled.add("diorite");
+        if (!values.andesite) disabled.add("andesite");
+        if (!values.tuff) disabled.add("tuff");
+        if (!values.basalt) disabled.add("basalt");
+        if (!values.blackstone) disabled.add("blackstone");
+        disabledHosts = Set.copyOf(disabled);
+
+        oreVeins = values.oreVeins;
+        bastionSafeNether = values.bastionSafeNether;
+        netherOreRarity = values.netherOreRarity;
+        netherVeinSize = values.netherVeinSize;
+        netherGems = values.netherGems;
+        netherGemSize = values.netherGemSize;
+        overworldCopper = values.overworldCopper;
+        dripstoneCopper = values.dripstoneCopper;
+        createZinc = values.createZinc;
+        zincVeinSize = values.zincVeinSize;
+        mythicUpgrades = values.mythicUpgrades;
+        mythicMetals = values.mythicMetals;
+        silentGems = values.silentGems;
+        silentGemsNether = values.silentGemsNether;
+        silentGemsNetherRarity = values.silentGemsNetherRarity;
+        silentGemsNetherVeinSize = values.silentGemsNetherVeinSize;
+        denseMekanism = values.denseMekanism;
+        powah = values.powah;
+        tfmg = values.tfmg;
+        energizedPower = values.energizedPower;
+        things = values.things;
+        silentGear = values.silentGear;
+        createNewAge = values.createNewAge;
+
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
-                        + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}",
-                disabledHosts, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades);
+                        + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "
+                        + "silentGems={}/{} (rarity {}, vein {}%)",
+                disabledHosts, oreVeins, createZinc, zincVeinSize, bastionSafeNether, mythicUpgrades,
+                mythicMetals, silentGems, silentGemsNether, silentGemsNetherRarity,
+                silentGemsNetherVeinSize);
     }
 
     public static boolean isHostEnabled(String hostName) {
