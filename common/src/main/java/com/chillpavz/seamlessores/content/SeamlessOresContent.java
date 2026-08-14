@@ -123,10 +123,11 @@ public final class SeamlessOresContent {
         }
 
         BLOCKS.forEach((variant, block) -> {
-            // No useBlockDescriptionPrefix()/setId() at 1.21.1: neither exists on Item.Properties
-            // yet. A BlockItem already takes its description id from its block, and the id comes
-            // from the registry call below rather than from the properties.
-            final Item item = new BlockItem(block, new Item.Properties());
+            // From 1.21.2 an Item Properties also carries an id that must be set before construction,
+            // exactly as the block does above. It matches the registry id used below, and the item
+            // is registered immediately, so no intrusive holder is left unregistered.
+            final Item item = new BlockItem(block, new Item.Properties()
+                    .setId(ResourceKey.create(Registries.ITEM, variant.id())));
             ITEMS.put(variant, item);
             sink.accept(variant.id(), item);
         });
@@ -215,6 +216,12 @@ public final class SeamlessOresContent {
         // (deepslate ores use MapColor.DEEPSLATE), and they have no balance effect.
         properties.mapColor(variant.host().mapColor())
                 .sound(variant.host().sound());
+
+        // From 1.21.2 a block Properties carries an id that MUST be set before construction, or the
+        // constructor throws "Block id not set" (an NPE). It matches the registry id used below.
+        // Safe here because every block built in this loop is registered immediately, so no
+        // unregistered intrusive holder is ever left behind.
+        properties.setId(ResourceKey.create(Registries.BLOCK, variant.id()));
 
         return variant.ore().redstoneLike()
                 ? new RedStoneOreBlock(properties)
