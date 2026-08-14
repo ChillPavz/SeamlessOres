@@ -44,7 +44,7 @@ FORGE_CONDITION_KEY = "forge:condition"
 THRESHOLD = 60
 
 CLIENT_JAR = os.path.expanduser(
-    "~/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar"
+    "~/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.4_client.jar"
 )
 
 # Create (Create Fly, mod id 'create') jar - source of the zinc loot table shape and the zinc ore
@@ -77,9 +77,9 @@ SILENT_GEMS_JAR = os.environ.get(
 
 MYTHIC_METALS_JAR = os.environ.get(
     "MYTHIC_METALS_JAR",
-    os.path.expanduser(
-        "~/AppData/Roaming/ModrinthApp/profiles/Fabric 1.21.1/mods/mythicmetals-0.24.6+1.21.jar"
-    ),
+    # The in-range build. Mythic Metals ships Fabric only and stops at 1.21.4; its ore set, loot
+    # tables and textures are byte-identical to the 0.24.6+1.21 build the other branches read.
+    "../jars/mythicmetals-0.25.3+1.21.4.jar",
 )
 
 # Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
@@ -495,46 +495,34 @@ def resources_dir():
 
 # Loader modules that can actually host a third-party ore on THIS Minecraft version.
 #
-# WHY THIS EXISTS, AND WHY ONLY ON THIS BRANCH: at Forge 52 a loot table is loaded by
-# LootDataType.deserialize, which calls codec.parse directly with NO ConditionCodec wrapper, so
-# "forge:condition" is simply ignored there. (Forge DOES honour it on datapack registries such as
-# worldgen - that path is patched, this one is not.) A conditional loot table naming an absent mod's
-# item therefore logs "Couldn't parse element ... Unknown registry key" on every world load.
+# THIS BRANCH IS FABRIC + NEOFORGE ONLY. Classic Forge is dropped for 1.21.4-1.21.10: Forge has a
+# hard binary wall inside the range (eventbus 6 -> 7, FMLJavaModLoadingContext -> BusGroup, at
+# 1.21.5/1.21.6), so one Forge jar cannot span it. There is no forge module, so no table is ever
+# written to one.
 #
-# It is dead weight anyway: neither Create nor Mythic Upgrades has a Forge build at 1.21 or 1.21.1
-# (checked on the Modrinth API), so those blocks can never register on Forge here. Writing the
-# conditional tables into the loader modules that CAN use them keeps the Forge jar clean instead of
-# shipping 28 files that only ever produce errors. Re-check the loader matrix on any version bump.
-# PER MOD, because the loader matrix is not the same for all of them. Getting this wrong is silent
-# and serious in BOTH directions: a table written to a loader the mod cannot run on is harmless
-# noise, but a table MISSING from a loader the mod CAN run on means our variants register there and
-# drop NOTHING when broken.
+# The map still matters for Fabric vs NeoForge. A conditional loot table naming an absent mod's item
+# is inert (the load condition fails and the table is skipped), so a table written to a loader the
+# mod cannot run on is harmless. But a table MISSING from a loader the mod CAN run on means our
+# variants register there and drop NOTHING - silent and serious. So route each mod's conditional
+# loot to exactly the loader(s) it ships for in-range.
 #
-# Verified on the Modrinth API for this branch (1.21 / 1.21.1):
-#   create         neoforge only          (Create Fabric does not exist here)
-#   mythicupgrades fabric + neoforge
-#   mythicmetals   fabric only
-#   silentgems     forge + neoforge       <- the one that forced this to be per mod
+# VERIFIED PER MINECRAFT VERSION on the Modrinth API for 1.21.4-1.21.10, not from the project-level
+# "loaders" array (that is the union across every file a project ever shipped and lies per version):
+#   create         fabric only    (Create Fly, mod id 'create', fabric/quilt at 1.21.8 and 1.21.10)
+#   mythicmetals   fabric only    (0.25.3+1.21.4; MM stops at 1.21.4 and is Fabric-only always)
+#   energizedpower fabric + neoforge   (the whole range)
 #
-# Silent's Gems is also the case where the Forge caveat above actually bites: its tables MUST ship
-# in the Forge jar or its 88 variants drop nothing there, and Forge 52 will log a parse error per
-# table on instances that do not have the mod. A noisy log beats blocks that drop nothing.
+# Every OTHER mod below has NO fabric/neoforge build anywhere in 1.21.4-1.21.10 (most jumped from
+# 1.21.1 to 1.21.11+ or to 26.x). Their variants therefore never register on this range and their
+# data is inert. They are kept, with their 1.21.1-era loader routing, purely so the derived
+# registration lights them up with no code change if any of them ever ships an in-range build; the
+# routing is only reached if that happens. Re-query per version on any bump.
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
-    # VERIFIED PER MINECRAFT VERSION, not from the project-level "loaders" array. That array is the
-    # UNION across every file a project has ever shipped, so a mod with a Forge build at 1.20.1
-    # still reports "forge" when its 1.21.1 file is NeoForge only. Trusting it put 143 conditional
-    # loot tables into the Forge jar that can never fire, and Forge 52 ignores loot conditions, so
-    # each would have logged a parse error on every world load.
-    #
-    # Query per version instead:
-    #   /v2/project/<slug>/version?game_versions=["1.21.1"]  -> union of that file set's loaders
-    #
-    # At 1.21.1 NOTHING we gate on ships for Forge, so the Forge jar carries only vanilla tables.
-    "create": ("neoforge",),
+    "create": ("fabric",),            # Create Fly is Fabric here, not NeoForge as at 1.21.1
     "mythicupgrades": ("fabric", "neoforge"),
     "mythicmetals": ("fabric",),
     "silentgems": ("neoforge",),
-    "densemekanism": ("neoforge",),   # no 1.21.1 file on Modrinth at all; the jar is neoforge.mods.toml
+    "densemekanism": ("neoforge",),
     "powah": ("neoforge",),
     "tfmg": ("neoforge",),
     "energizedpower": ("fabric", "neoforge"),
@@ -543,6 +531,17 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "create_new_age": ("neoforge",),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
+
+# Which supported mods a player can ACTUALLY see on this range, and on which loader. Only three of
+# the eleven have any Fabric/NeoForge build in 1.21.4-1.21.10; the rest are inert here (see the note
+# on CONDITIONAL_LOOT_MODULES_BY_MOD above). This drives the README's honest per-loader block count
+# and "supported mods available here" list, so it must reflect real availability, not the inert
+# routing. Verified on the Modrinth API, per version. Re-query on any bump.
+IN_RANGE_AVAILABILITY = {
+    "create": ("fabric",),                    # Create Fly, 1.21.8 and 1.21.10
+    "mythicmetals": ("fabric",),              # 0.25.3, 1.21.4 only
+    "energizedpower": ("fabric", "neoforge"),  # the whole range
+}
 
 
 def conditional_data_dir(module, namespace):
@@ -681,12 +680,13 @@ def generate_json():
                 },
             )
 
-            # Item model. The assets/<ns>/items/ DEFINITION layer only arrives at 1.21.4, so at
-            # 1.21/1.21.1 a block item is given its look the old way: a models/item/ file that
-            # simply parents the block model. Writing an items/ file here would be read by nothing.
+            # Item model definition. The assets/<ns>/items/ DEFINITION layer arrives at 1.21.4, so
+            # a block item is given its look with an items/ file pointing straight at the block
+            # model. Vanilla ships no models/item/ file for a block item, so neither do we; writing
+            # one here would be dead weight.
             write_json(
-                os.path.join(root, "models", "item", f"{name}.json"),
-                {"parent": f"{MOD_ID}:block/{name}"},
+                os.path.join(root, "items", f"{name}.json"),
+                {"model": {"type": "minecraft:model", "model": f"{MOD_ID}:block/{name}"}},
             )
             count += 1
 
@@ -1201,12 +1201,13 @@ def _loader_counts():
     vanilla = per_mod.pop(None, 0)
 
     rows = []
-    for loader in ("fabric", "neoforge", "forge"):
+    for loader in ("fabric", "neoforge"):
         total = vanilla
         available = []
         for mod, count in per_mod.items():
-            modules = CONDITIONAL_LOOT_MODULES_BY_MOD.get(mod, DEFAULT_CONDITIONAL_LOOT_MODULES)
-            if loader in modules:
+            # Honest availability, not the inert loot routing: a mod with no in-range build on this
+            # loader contributes no blocks a player can see, even though its (gated) data ships.
+            if loader in IN_RANGE_AVAILABILITY.get(mod, ()):
                 total += count
                 available.append(MODS[mod]["display"])
         rows.append((loader, total, sorted(available)))

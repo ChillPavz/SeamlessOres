@@ -201,7 +201,7 @@ public final class SeamlessOresContent {
             // ofLegacyCopy carries hardness, blast resistance and the correct-tool flag straight off
             // the ore we stand in for, so mining behaviour cannot drift from parity.
             properties = BlockBehaviour.Properties.ofLegacyCopy(
-                    BuiltInRegistries.BLOCK.get(variant.vanillaEquivalentId()));
+                    BuiltInRegistries.BLOCK.getValue(variant.vanillaEquivalentId()));
         } else {
             // Modded equivalent: its block may not be registered yet - registration order between
             // unrelated mods is deliberately not relied on. Bake the vanilla ore convention by tier

@@ -9,12 +9,18 @@ surroundings. The Nether variants are the one exception, and they are config gat
 
 | | |
 |---|---|
-| Minecraft | 1.21 and 1.21.1, one jar per loader |
-| Loaders | Fabric, NeoForge, Forge, Quilt (untested) |
+| Minecraft | 1.21.4 through 1.21.10, one jar per loader |
+| Loaders | Fabric, NeoForge, Quilt (untested) |
 | Wiki | https://chillpavz.com/seamless-ores |
 | Licence | PolyForm Shield 1.0.0, see `LICENSE` |
 
 An original mod. Not a fork or a port of any other project.
+
+Classic Forge is not built for this range. Forge has a hard binary break inside 1.21.4 to 1.21.10
+(the event bus is rewritten at 1.21.6), so no single Forge jar can span it; Fabric and NeoForge each
+cover the whole range from one jar. Most of the third-party mods below also skipped these Minecraft
+versions, so their variants are inert here until such a build appears. The block table further down
+lists, per loader, which of them a player can actually see.
 
 ## Companion resource pack
 
@@ -197,9 +203,8 @@ Minecraft version:
 
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
-| Fabric | 136 | Energized Power, Mythic Metals, Mythic Upgrades, Things |
-| NeoForge | 223 | Create, Create: New Age, Create: TFMG, Dense Mekanism, Energized Power, Mythic Upgrades, Powah, Silent Gear, Silent's Gems |
-| Forge | 36 | none at this Minecraft version |
+| Fabric | 112 | Create, Energized Power, Mythic Metals |
+| NeoForge | 40 | Energized Power |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -249,13 +254,13 @@ automatically.
 
 ## Building
 
-Requires JDK 22. Gradle 8.10 and ForgeGradle 6 cannot run on a newer one.
+Requires JDK 22, because Gradle 8.10 cannot run on a newer one.
 
 ```
 ./gradlew build
 ```
 
-Jars land in `fabric/build/libs`, `neoforge/build/libs` and `forge/build/libs`. Take the plain jar,
+Jars land in `fabric/build/libs` and `neoforge/build/libs`. Take the plain jar,
 not the `-sources` or `-javadoc` one. Fabric Loader rejects the sources jar, because its metadata
 still holds unexpanded build placeholders.
 
@@ -273,10 +278,10 @@ cleaned overlays.
 | Path | What it holds |
 |---|---|
 | `common/` | Everything shared: content registration, worldgen injection, config holder |
-| `fabric/`, `neoforge/`, `forge/` | Loader entry points, the Cloth Config data class and screen |
+| `fabric/`, `neoforge/` | Loader entry points, the Cloth Config data class and screen |
 | `tools/generate_assets.py` | Generates blockstates, models, lang, loot tables, tags and the block list above |
 
-The Cloth Config classes are duplicated across the three loader modules on purpose and must stay
+The Cloth Config classes are duplicated across both loader modules on purpose and must stay
 identical. They cannot live in `common`, because loader dependencies are not on its classpath.
 
 ## How it works, briefly
