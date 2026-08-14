@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_nickel_ore",
+      "required": false
+    }
+  ]
+}

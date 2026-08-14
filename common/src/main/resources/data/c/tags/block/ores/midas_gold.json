@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:basalt_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_midas_gold_ore",
+      "required": false
+    }
+  ]
+}

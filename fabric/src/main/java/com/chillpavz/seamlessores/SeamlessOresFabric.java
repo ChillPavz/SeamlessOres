@@ -56,7 +56,7 @@ public class SeamlessOresFabric implements ModInitializer {
         // CreativeModeTab.Output is protected, so items cannot be added via displayItems from outside
         // vanilla - each loader has its own event for this. On 26.x the Fabric API class is
         // CreativeModeTabEvents; the older ItemGroupEvents is gone.
-        CreativeModeTabEvents.modifyOutputEvent(SeamlessOresContent.NATURAL_BLOCKS).register(output -> {
+        CreativeModeTabEvents.modifyOutputEvent(SeamlessOresContent.TAB).register(output -> {
             for (var item : SeamlessOresContent.creativeTabItems()) {
                 output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             }

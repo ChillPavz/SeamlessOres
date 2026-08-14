@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_runite_ore",
+      "required": false
+    }
+  ]
+}

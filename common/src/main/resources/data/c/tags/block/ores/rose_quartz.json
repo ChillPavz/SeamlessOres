@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_rose_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_rose_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_rose_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_rose_quartz_ore",
+      "required": false
+    }
+  ]
+}
