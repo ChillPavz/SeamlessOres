@@ -206,7 +206,7 @@ Minecraft version:
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
 | Fabric | 44 | Create, Energized Power |
-| NeoForge | 160 | Create: TFMG, Energized Power, Silent Gear, Silent's Gems |
+| NeoForge | 148 | Energized Power, Silent Gear, Silent's Gems |
 | Forge | 36 | none at this Minecraft version |
 
 The registered block set is derived from which mods are loaded rather than from config, so

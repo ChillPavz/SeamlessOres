@@ -529,15 +529,22 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
-# Which supported mods a player can ACTUALLY see at 1.21.11, and on which loader. Only five of the
-# eleven have a build here; the rest are inert (see the note above). This drives the README's honest
-# per-loader block count and its "supported mods available here" list, so it must reflect real
-# availability rather than the inert routing. Verified on the Modrinth API. Re-query on any bump.
+# Which supported mods a player can ACTUALLY see at 1.21.11, and on which loader. This drives the
+# README's honest per-loader block count and its "supported mods available here" list, so it must
+# reflect real availability rather than the inert loot routing above. Verified on the Modrinth API.
+# Re-query on any bump.
+#
+# AN ADD-ON'S AVAILABILITY IS THE INTERSECTION OF ITS OWN BUILD AND ITS REQUIRED PARENT'S, so a
+# per-mod query is not enough on its own. TFMG is the case here: it ships a NeoForge 1.21.11 build,
+# but its own neoforge.mods.toml declares create [6.0.6,) as REQUIRED, and the only Create at
+# 1.21.11 is Create Fly, which is Fabric and Quilt only. So TFMG cannot load on NeoForge here and
+# its twelve variants are unreachable, however its own listing reads. Its conditional loot tables
+# still ship (gated on tfmg being loaded, therefore inert) so that it lights up on its own if a
+# NeoForge Create ever appears.
 IN_RANGE_AVAILABILITY = {
     "create": ("fabric",),
     "silentgems": ("neoforge",),
     "silentgear": ("neoforge",),
-    "tfmg": ("neoforge",),
     "energizedpower": ("fabric", "neoforge"),
 }
 
