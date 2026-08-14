@@ -153,7 +153,11 @@ public final class OreTargetInjector {
             addedTargets += extra.size();
             if (size != ore.size) {
                 resizedFeatures++;
-                Constants.LOG.info("Worldgen: zinc vein size {} -> {}", ore.size, size);
+                // Say WHICH dial did it. Two independent settings reach this line (the zinc dial
+                // above and the nether one), so a fixed "zinc" label misreports every nether resize
+                // as zinc - obvious on an instance without Create, where zinc cannot exist at all.
+                Constants.LOG.info("Worldgen: {} vein size {} -> {}",
+                        netherAdded != null ? "nether" : "zinc", ore.size, size);
             }
         }
 
