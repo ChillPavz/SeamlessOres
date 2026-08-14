@@ -70,15 +70,15 @@ public final class OreTargetInjector {
             return;
         }
 
-        final Registry<ConfiguredFeature<?, ?>> features = registries.registryOrThrow(Registries.CONFIGURED_FEATURE);
+        final Registry<ConfiguredFeature<?, ?>> features = registries.lookupOrThrow(Registries.CONFIGURED_FEATURE);
         int patchedFeatures = 0;
         int addedTargets = 0;
         int resizedFeatures = 0;
 
-        // holders() gives Holder.Reference rather than the bare value, which is what lets us
+        // listElements() gives Holder.Reference rather than the bare value, which is what lets us
         // swap the entry. Collected first: we rebind while iterating, and streaming lazily over a
         // registry we are mutating is asking for trouble.
-        for (Holder.Reference<ConfiguredFeature<?, ?>> holder : features.holders().toList()) {
+        for (Holder.Reference<ConfiguredFeature<?, ?>> holder : features.listElements().toList()) {
 
             final ConfiguredFeature<?, ?> feature = holder.value();
             if (!(feature.config() instanceof OreConfiguration ore)) {

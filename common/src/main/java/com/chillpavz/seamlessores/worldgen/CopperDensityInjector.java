@@ -65,10 +65,10 @@ public final class CopperDensityInjector {
     /** Runs at server start, alongside the ore target injection, before any chunk is generated. */
     public static void inject(RegistryAccess registries) {
 
-        final Registry<PlacedFeature> placed = registries.registryOrThrow(Registries.PLACED_FEATURE);
+        final Registry<PlacedFeature> placed = registries.lookupOrThrow(Registries.PLACED_FEATURE);
         int changed = 0;
 
-        for (Holder.Reference<PlacedFeature> holder : placed.holders().toList()) {
+        for (Holder.Reference<PlacedFeature> holder : placed.listElements().toList()) {
             final ResourceLocation id = holder.key().location();
             if (!"minecraft".equals(id.getNamespace())) {
                 continue;
