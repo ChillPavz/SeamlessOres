@@ -126,7 +126,13 @@ public final class SeamlessOresContent {
             // From 1.21.2 an Item Properties also carries an id that must be set before construction,
             // exactly as the block does above. It matches the registry id used below, and the item
             // is registered immediately, so no intrusive holder is left unregistered.
+            //
+            // useBlockDescriptionPrefix() is REQUIRED alongside it: from 1.21.2 the translation key
+            // comes from the Properties and defaults to "item.<namespace>.<path>", where BlockItem
+            // used to delegate to its block. Without this the tooltip shows the raw key
+            // "item.seamlessores.granite_iron_ore", because our generated lang has "block." keys.
             final Item item = new BlockItem(block, new Item.Properties()
+                    .useBlockDescriptionPrefix()
                     .setId(ResourceKey.create(Registries.ITEM, variant.id())));
             ITEMS.put(variant, item);
             sink.accept(variant.id(), item);
