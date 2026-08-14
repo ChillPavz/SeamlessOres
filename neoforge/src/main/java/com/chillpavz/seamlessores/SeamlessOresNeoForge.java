@@ -30,9 +30,8 @@ public class SeamlessOresNeoForge {
         SeamlessOresConfigData.register();
 
         // The config SCREEN is client-only and lives in its own class, so the server never loads a
-        // class that references GUI types. FMLEnvironment.dist is a FIELD at 21.1; NeoForge 26.x
-        // turned it into the method getDist().
-        if (FMLEnvironment.dist == Dist.CLIENT) {
+        // class that references GUI types.
+        if (isClientDist()) {
             SeamlessOresConfigScreen.register(container);
         }
 
@@ -46,6 +45,26 @@ public class SeamlessOresNeoForge {
         // registries are datapack-loaded per world, so this is the point where they exist and no
         // chunk has been generated yet.
         NeoForge.EVENT_BUS.addListener(this::onServerAboutToStart);
+    }
+
+    /**
+     * Client dist, resolved reflectively. {@code FMLEnvironment.dist} is a public static FIELD at
+     * NeoForge 21.4 (FML 6) but a static METHOD {@code getDist()} at 21.10 (FML 10), a binary break
+     * inside this branch's range. Reading it by reflection lets one jar span both. Falls back to
+     * "not client" if neither shape is present, which keeps GUI classes off a dedicated server.
+     */
+    private static boolean isClientDist() {
+        try {
+            Dist dist;
+            try {
+                dist = (Dist) FMLEnvironment.class.getField("dist").get(null);
+            } catch (NoSuchFieldException noField) {
+                dist = (Dist) FMLEnvironment.class.getMethod("getDist").invoke(null);
+            }
+            return dist == Dist.CLIENT;
+        } catch (Throwable t) {
+            return false;
+        }
     }
 
     private void onServerAboutToStart(ServerAboutToStartEvent event) {
