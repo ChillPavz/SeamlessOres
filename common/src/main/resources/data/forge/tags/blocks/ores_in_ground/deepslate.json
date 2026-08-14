@@ -163,6 +163,14 @@
     {
       "id": "seamlessores:tuff_bort_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_experience_ore",
+      "required": false
     }
   ]
 }

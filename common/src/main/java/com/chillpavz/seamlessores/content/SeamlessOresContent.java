@@ -111,6 +111,24 @@ public final class SeamlessOresContent {
         Constants.LOG.info("Registered {} ore variants", BLOCKS.size());
     }
 
+    /**
+     * Blast resistance for a modded variant, which is 3.0 for almost everything.
+     *
+     * <p>The tier defaults exist because a modded block may not be registered when we build ours,
+     * so its real properties cannot be read - see the caller. That convention is right for every
+     * mod here except one: <b>Exp Ores builds its blocks at resistance 1200</b>, roughly obsidian,
+     * clearly on purpose for an ore whose whole value is the experience it pays out. A variant at
+     * 3.0 could be blown up where the original cannot, which is a straightforward exploit rather
+     * than a cosmetic difference, so it is matched explicitly.
+     *
+     * <p>Read from that mod's own jar, never guessed. If another mod turns out to be unusual, add
+     * it here rather than moving everything onto a general property-copy: the reason the defaults
+     * exist has not changed.
+     */
+    private static float blastResistanceFor(String modId) {
+        return "expores".equals(modId) ? 1200.0F : 3.0F;
+    }
+
     /** Must run after {@link #registerBlocks}; each block needs its paired item to exist in-inventory. */
     public static void registerItems(BiConsumer<ResourceLocation, Item> sink) {
 
@@ -209,7 +227,7 @@ public final class SeamlessOresContent {
             final float hardness = variant.host().tier() == OreTier.DEEPSLATE ? 4.5F : 3.0F;
             properties = BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
-                    .strength(hardness, 3.0F);
+                    .strength(hardness, blastResistanceFor(variant.ore().requiredModId()));
         }
         // Only map colour and sound follow the HOST stone - vanilla varies those by host rock too
         // (deepslate ores use MapColor.DEEPSLATE), and they have no balance effect.

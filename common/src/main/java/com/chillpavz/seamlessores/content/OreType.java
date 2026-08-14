@@ -333,6 +333,41 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_N_IOLITE = silentNether("iolite", "iolite");
     public static final OreType SG_N_MOLDAVITE = silentNether("moldavite", "moldavite");
 
+    // --- Ice and Fire (mod id iceandfire, LGPL-3.0). Forge only at 1.20.1 ---------------------
+    // Both ids are PREFIXED because Silent's Gems ships its own sapphire and silver and both mods
+    // are Forge here, so they coexist and the unprefixed ids would collide. Block ids are a one-way
+    // door; the newcomer takes the prefix.
+    //
+    // Sapphire has NO deepslate tier: its feature targets stone_ore_replaceables only, so there is
+    // no tuff variant and one would be inventing ore. Silver gives no XP (metal convention, and it
+    // is built with the one-argument DropExperienceBlock constructor); sapphire is a gem at 3-7,
+    // read out of IafBlockRegistry rather than assumed.
+    public static final OreType IAF_SAPPHIRE = new OreType(
+            "iceandfire_sapphire", "iceandfire_sapphire", null, "iceandfire",
+            of("iceandfire", "sapphire_ore"), null, null,
+            UniformInt.of(3, 7), null, false, Set.of());
+    public static final OreType IAF_SILVER = new OreType(
+            "iceandfire_silver", "iceandfire_silver", null, "iceandfire",
+            of("iceandfire", "silver_ore"), of("iceandfire", "deepslate_silver_ore"), null,
+            NONE, null, false, Set.of());
+
+    // --- Exp Ores (mod id expores, MIT). Fabric only at 1.20.1 --------------------------------
+    // Pays in experience alone: its loot table drops minecraft:air, and the block carries
+    // UniformInt(96, 128), read from EXPBlocks. That is far above any vanilla ore and is the whole
+    // point of the mod, so it is copied rather than normalised.
+    //
+    // The nether one is a PURE RESTYLE: expores:nether_experience_ore targets the base_stone_nether
+    // TAG, so it already generates in basalt and blackstone. Unlike our gold and quartz it adds
+    // nothing, which is why it carries no rarity dial and no "adds ore" caveat.
+    public static final OreType EXPERIENCE = new OreType(
+            "experience", "experience", null, "expores",
+            of("expores", "experience_ore"), of("expores", "deepslate_experience_ore"), null,
+            UniformInt.of(96, 128), null, false, Set.of());
+    public static final OreType NETHER_EXPERIENCE = new OreType(
+            "experience", "nether_experience", null, "expores",
+            null, null, of("expores", "nether_experience_ore"),
+            UniformInt.of(96, 128), null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -347,7 +382,8 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     TFMG_LEAD, TFMG_LITHIUM, TFMG_NICKEL,
                     ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
-                    SG_N_IOLITE, SG_N_MOLDAVITE);
+                    SG_N_IOLITE, SG_N_MOLDAVITE,
+                    IAF_SAPPHIRE, IAF_SILVER, EXPERIENCE, NETHER_EXPERIENCE);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
     public ResourceLocation vanillaFor(HostStone host) {

@@ -122,6 +122,18 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean energizedPower = true;
 
+    // --- Exp Ores -------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("exp_ores")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean expOres = true;
+
+    // --- Ice and Fire ---------------------------------------------------------------------------
+
+    @ConfigEntry.Category("ice_and_fire")
+    @ConfigEntry.Gui.Tooltip
+    public boolean iceAndFire = true;
+
     // --- Mythic Metals --------------------------------------------------------------------------
 
     @ConfigEntry.Category("mythic_metals")
@@ -239,6 +251,8 @@ public class SeamlessOresConfigData implements ConfigData {
         values.powah = powah;
         values.tfmg = tfmg;
         values.energizedPower = energizedPower;
+        values.expOres = expOres;
+        values.iceAndFire = iceAndFire;
         values.things = things;
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;

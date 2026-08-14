@@ -96,6 +96,14 @@
       "id": "seamlessores:granite_thorium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_experience_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -190,6 +198,14 @@
     },
     {
       "id": "seamlessores:diorite_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_experience_ore",
       "required": false
     },
     "seamlessores:andesite_gold_ore",
@@ -288,6 +304,14 @@
       "id": "seamlessores:andesite_thorium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_experience_ore",
+      "required": false
+    },
     "seamlessores:tuff_gold_ore",
     "seamlessores:tuff_diamond_ore",
     "seamlessores:tuff_emerald_ore",
@@ -381,6 +405,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_experience_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_ruby_ore",
       "required": false
     },
@@ -389,11 +417,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_experience_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_ruby_ore",
       "required": false
     },
     {
       "id": "seamlessores:blackstone_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_experience_ore",
       "required": false
     }
   ]

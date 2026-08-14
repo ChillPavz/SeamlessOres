@@ -50,6 +50,10 @@
       "id": "seamlessores:basalt_moldavite_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_experience_ore",
+      "required": false
+    },
     "seamlessores:blackstone_gold_ore",
     "seamlessores:blackstone_quartz_ore",
     {
@@ -94,6 +98,10 @@
     },
     {
       "id": "seamlessores:blackstone_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_experience_ore",
       "required": false
     }
   ]
