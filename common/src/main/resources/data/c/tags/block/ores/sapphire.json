@@ -1,6 +1,22 @@
 {
   "values": [
     {
+      "id": "seamlessores:granite_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_sapphire_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_sapphire_ore",
       "required": false
     },

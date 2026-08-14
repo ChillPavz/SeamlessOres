@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_carmot_ore",
+      "required": false
+    }
+  ]
+}

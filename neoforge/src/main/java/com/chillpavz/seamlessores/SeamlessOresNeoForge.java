@@ -69,7 +69,7 @@ public class SeamlessOresNeoForge {
 
     private void onBuildCreativeTabs(BuildCreativeModeTabContentsEvent event) {
 
-        if (!event.getTabKey().equals(SeamlessOresContent.NATURAL_BLOCKS)) {
+        if (!event.getTabKey().equals(SeamlessOresContent.TAB)) {
             return;
         }
         for (var item : SeamlessOresContent.creativeTabItems()) {

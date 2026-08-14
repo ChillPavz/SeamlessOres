@@ -2,6 +2,7 @@ package com.chillpavz.seamlessores.worldgen;
 
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
+import com.chillpavz.seamlessores.content.OreTier;
 import com.chillpavz.seamlessores.content.OreVariant;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import net.minecraft.core.Holder;
@@ -85,6 +86,7 @@ public final class OreTargetInjector {
             }
 
             final List<OreConfiguration.TargetBlockState> extra = new ArrayList<>();
+            final List<OreVariant> extraVariants = new ArrayList<>();
             for (Map.Entry<OreVariant, Block> entry : ours.entrySet()) {
                 final OreVariant variant = entry.getKey();
                 final Block ourBlock = entry.getValue();
@@ -100,9 +102,12 @@ public final class OreTargetInjector {
                 }
                 // Each third-party ore has its own toggle. This was hardcoded to the zinc one
                 // while zinc was the only modded ore, which would have silently put Mythic Upgrades
-                // under a setting labelled "Create".
+                // under a setting labelled "Create". The host tier is passed because Silent's Gems
+                // splits in two: its overworld gems restyle ore that already generates, its nether
+                // gems ADD ore, so the two sit behind separate switches.
                 if (variant.ore().requiredModId() != null
-                        && !SeamlessOresConfig.isModOreEnabled(variant.ore().requiredModId())) {
+                        && !SeamlessOresConfig.isModOreEnabled(
+                                variant.ore().requiredModId(), variant.host().tier() == OreTier.NETHER)) {
                     continue;
                 }
                 // Only patch features that actually place the ore this variant stands in for. That
@@ -115,15 +120,22 @@ public final class OreTargetInjector {
                 }
                 extra.add(OreConfiguration.target(
                         new BlockMatchTest(variant.host().block()), ourBlock.defaultBlockState()));
+                extraVariants.add(variant);
             }
 
             // Zinc vein size is independent of everything above: it applies even when the zinc
             // RESTYLE is switched off, because it is about how much zinc exists, not how it looks.
             int size = resizedIfZinc(ore);
-            // Nether veins get scaled by a percentage of vanilla's own size. Applied only to the
+            // Nether veins get scaled by a percentage of the feature's own size. Applied only to the
             // features that gained a basalt/blackstone target, so it cannot touch the overworld.
-            if (placesNetherHost(extra) && SeamlessOresConfig.netherVeinSize < 100) {
-                size = Math.max(1, Math.round(size * SeamlessOresConfig.netherVeinSize / 100.0f));
+            // Which dial applies depends on who owns the ore - Silent's Gems' nether gems have their
+            // own, so eight gems and two common ores can be balanced independently.
+            final OreVariant netherAdded = firstNetherVariant(extraVariants);
+            if (netherAdded != null) {
+                final int percent = SeamlessOresConfig.netherVeinSizeFor(netherAdded.ore().requiredModId());
+                if (percent < 100) {
+                    size = Math.max(1, Math.round(size * percent / 100.0f));
+                }
             }
 
             if (extra.isEmpty() && size == ore.size) {
@@ -135,18 +147,27 @@ public final class OreTargetInjector {
             merged.addAll(ore.targetStates);
 
             rebind(holder, feature, new OreConfiguration(
-                    List.copyOf(merged), size, ore.discardChanceOnAirExposure), placesNetherHost(extra));
+                    List.copyOf(merged), size, ore.discardChanceOnAirExposure), netherAdded != null);
 
             patchedFeatures++;
             addedTargets += extra.size();
             if (size != ore.size) {
                 resizedFeatures++;
-                Constants.LOG.info("Worldgen: zinc vein size {} -> {}", ore.size, size);
+                // Say WHICH dial did it. Two independent settings reach this line (the zinc dial
+                // above and the nether one), so a fixed "zinc" label misreports every nether resize
+                // as zinc - visible on any instance without Create, where zinc cannot exist at all.
+                Constants.LOG.info("Worldgen: {} vein size {} -> {}",
+                        netherAdded != null ? "nether" : "zinc", ore.size, size);
             }
         }
 
         Constants.LOG.info("Worldgen: added {} ore targets across {} features ({} resized)",
                 addedTargets, patchedFeatures, resizedFeatures);
+
+        // Copper is thinned separately: it edits placement COUNTS on placed features rather
+        // than target lists on configured ones, and it is the only overworld setting that
+        // changes ore amounts rather than appearance. See CopperDensityInjector.
+        CopperDensityInjector.inject(registries);
 
         // Configured features are only half the story - the large copper/iron veins come from
         // OreVeinifier during noise generation and are invisible to this registry pass.
@@ -173,15 +194,25 @@ public final class OreTargetInjector {
         return ore.size;
     }
 
-    /** Whether any of the targets we are adding sits in a nether host, i.e. basalt or blackstone. */
-    private static boolean placesNetherHost(List<OreConfiguration.TargetBlockState> extra) {
-        for (OreConfiguration.TargetBlockState target : extra) {
-            final Identifier id = BuiltInRegistries.BLOCK.getKey(target.state.getBlock());
-            if (id != null && (id.getPath().startsWith("basalt_") || id.getPath().startsWith("blackstone_"))) {
-                return true;
+    /**
+     * The first variant we are adding that sits in a nether host, or null if none does.
+     *
+     * <p>Read off the variant's own {@link OreTier} rather than by testing the block id for a
+     * {@code basalt_}/{@code blackstone_} prefix, which is what this used to do. The metadata is
+     * the actual fact; the prefix merely correlates with it, and it would start lying the moment an
+     * ore's own name began with a host stone's name.
+     *
+     * <p>Returning the variant rather than a boolean is what lets the caller ask WHOSE nether ore
+     * this is and pick the matching dial. A single feature places a single ore, so every nether
+     * target added to one feature comes from the same mod and the first is representative.
+     */
+    private static OreVariant firstNetherVariant(List<OreVariant> added) {
+        for (OreVariant variant : added) {
+            if (variant.host().tier() == OreTier.NETHER) {
+                return variant;
             }
         }
-        return false;
+        return null;
     }
 
     private static boolean containsBlock(List<OreConfiguration.TargetBlockState> targets, Block block) {

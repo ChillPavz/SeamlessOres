@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mythril_ore",
+      "required": false
+    }
+  ]
+}
