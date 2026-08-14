@@ -31,6 +31,34 @@ public final class SeamlessOresConfig {
      */
     public static boolean oreVeins = true;
 
+    /**
+     * Ordinary overworld copper, as a percentage of vanilla's vein count.
+     *
+     * <p>Vanilla runs {@code ore_copper} at 16 attempts per chunk of size 10, in every biome. This
+     * scales the COUNT rather than the size, on the same reasoning as {@link #netherOreRarity}: a
+     * vein you find should still be worth mining out, so it is better to have fewer of them than to
+     * make every one small.
+     *
+     * <p><b>This changes VANILLA generation and is not a restyle</b> - the first setting in the mod
+     * that touches overworld ore amounts, so it has to be disclosed on the store page exactly like
+     * {@link #netherVeinSize}. 100 leaves vanilla completely untouched.
+     */
+    public static int overworldCopper = 75;
+
+    /**
+     * Dripstone-cave copper, as a percentage of vanilla's vein count.
+     *
+     * <p>Separate from {@link #overworldCopper} because it is a different feature and a much bigger
+     * outlier. {@code ore_copper_large} is 16 attempts per chunk at size 20 and appears in
+     * <b>dripstone caves and nowhere else</b> - one biome of 64 - on top of the ordinary copper
+     * every biome gets. That is roughly three times the copper of anywhere else, which is why
+     * dripstone caves read as solid copper.
+     *
+     * <p>0 removes the large veins entirely, leaving dripstone caves with exactly the same copper as
+     * every other biome. 100 leaves vanilla untouched.
+     */
+    public static int dripstoneCopper = 50;
+
     /** Whether Create's zinc variants generate. */
     public static boolean createZinc = true;
 
@@ -264,6 +292,8 @@ public final class SeamlessOresConfig {
         public int netherVeinSize = 80;
         public boolean netherGems = true;
         public int netherGemSize = 4;
+        public int overworldCopper = 75;
+        public int dripstoneCopper = 50;
         public boolean createZinc = true;
         public int zincVeinSize = 10;
         public boolean mythicUpgrades = true;
@@ -298,6 +328,8 @@ public final class SeamlessOresConfig {
         netherVeinSize = values.netherVeinSize;
         netherGems = values.netherGems;
         netherGemSize = values.netherGemSize;
+        overworldCopper = values.overworldCopper;
+        dripstoneCopper = values.dripstoneCopper;
         createZinc = values.createZinc;
         zincVeinSize = values.zincVeinSize;
         mythicUpgrades = values.mythicUpgrades;
