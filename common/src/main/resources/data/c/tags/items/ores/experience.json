@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_experience_ore",
+      "required": false
+    }
+  ]
+}

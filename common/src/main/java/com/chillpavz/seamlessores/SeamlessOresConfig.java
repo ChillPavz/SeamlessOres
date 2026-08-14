@@ -66,6 +66,12 @@ public final class SeamlessOresConfig {
     /** Whether Energized Power variants generate. Pure restyle. */
     public static boolean energizedPower = true;
 
+    /** Whether Exp Ores variants generate. Pure restyle, in the Nether too. */
+    public static boolean expOres = true;
+
+    /** Whether Ice and Fire variants generate. Pure restyle. */
+    public static boolean iceAndFire = true;
+
     /** Whether Things variants generate. Pure restyle. */
     public static boolean things = true;
 
@@ -101,6 +107,8 @@ public final class SeamlessOresConfig {
             case "powah" -> powah;
             case "tfmg" -> tfmg;
             case "energizedpower" -> energizedPower;
+            case "expores" -> expOres;
+            case "iceandfire" -> iceAndFire;
             case "things" -> things;
             case "silentgear" -> silentGear;
             case "create_new_age" -> createNewAge;
@@ -276,6 +284,8 @@ public final class SeamlessOresConfig {
         public boolean powah = true;
         public boolean tfmg = true;
         public boolean energizedPower = true;
+        public boolean expOres = true;
+        public boolean iceAndFire = true;
         public boolean things = true;
         public boolean silentGear = true;
         public boolean createNewAge = true;
@@ -310,6 +320,8 @@ public final class SeamlessOresConfig {
         powah = values.powah;
         tfmg = values.tfmg;
         energizedPower = values.energizedPower;
+        expOres = values.expOres;
+        iceAndFire = values.iceAndFire;
         things = values.things;
         silentGear = values.silentGear;
         createNewAge = values.createNewAge;

@@ -19,6 +19,10 @@
       "id": "seamlessores:granite_energized_tin_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_iceandfire_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
@@ -36,6 +40,10 @@
     },
     {
       "id": "seamlessores:diorite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iceandfire_silver_ore",
       "required": false
     },
     "seamlessores:andesite_iron_ore",
@@ -57,6 +65,10 @@
       "id": "seamlessores:andesite_energized_tin_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_iceandfire_silver_ore",
+      "required": false
+    },
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
     "seamlessores:tuff_lapis_ore",
@@ -74,6 +86,10 @@
     },
     {
       "id": "seamlessores:tuff_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iceandfire_silver_ore",
       "required": false
     }
   ]

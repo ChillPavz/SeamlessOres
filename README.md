@@ -24,7 +24,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**251 blocks** in the `seamlessores` namespace.
+**264 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -168,6 +168,25 @@ touching ore of the same type across different host stones.
 | Iolite | `basalt_iolite_ore` | `blackstone_iolite_ore` |
 | Moldavite | `basalt_moldavite_ore` | `blackstone_moldavite_ore` |
 
+**Ice and Fire, Overworld, requires `iceandfire`**
+
+| | granite | diorite | andesite | tuff |
+|---|---|---|---|---|
+| Iceandfire Sapphire | `granite_iceandfire_sapphire_ore` | `diorite_iceandfire_sapphire_ore` | `andesite_iceandfire_sapphire_ore` |   |
+| Iceandfire Silver | `granite_iceandfire_silver_ore` | `diorite_iceandfire_silver_ore` | `andesite_iceandfire_silver_ore` | `tuff_iceandfire_silver_ore` |
+
+**Exp Ores, Overworld, requires `expores`**
+
+| | granite | diorite | andesite | tuff |
+|---|---|---|---|---|
+| Experience | `granite_experience_ore` | `diorite_experience_ore` | `andesite_experience_ore` | `tuff_experience_ore` |
+
+**Exp Ores, Nether, requires `expores`**
+
+| | basalt | blackstone |
+|---|---|---|
+| Experience | `basalt_experience_ore` | `blackstone_experience_ore` |
+
 **Things, Overworld, requires `things`**
 
 | | granite | diorite | andesite | tuff |
@@ -180,9 +199,9 @@ Minecraft version:
 
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
-| Fabric | 155 | Create, Create: New Age, Energized Power, Mythic Metals, Mythic Upgrades, Powah, Things |
+| Fabric | 161 | Create, Create: New Age, Energized Power, Exp Ores, Mythic Metals, Mythic Upgrades, Powah, Things |
 | NeoForge | 36 | none at this Minecraft version |
-| Forge | 179 | Create, Create: New Age, Create: TFMG, Energized Power, Mythic Upgrades, Powah, Silent Gear, Silent's Gems |
+| Forge | 186 | Create, Create: New Age, Create: TFMG, Energized Power, Ice and Fire, Mythic Upgrades, Powah, Silent Gear, Silent's Gems |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -215,7 +234,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 251 blocks takes **66 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 264 blocks takes **70 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -223,7 +242,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `citrine` `coal` `copper` `diamond` `emerald` `energized_tin` `gleaming` `gold` `heliodor` `iolite` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_citrine` `silents_peridot` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `citrine` `coal` `copper` `diamond` `emerald` `energized_tin` `experience` `gleaming` `gold` `heliodor` `iceandfire_sapphire` `iceandfire_silver` `iolite` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_experience` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_citrine` `silents_peridot` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is referenced straight from
@@ -298,6 +317,8 @@ is theirs and is used under the licence shown:
 | Powah | owmii, Technici4n, shartte | LGPL-3.0 |
 | Silent Gear | SilentChaos512 | MIT |
 | Silent's Gems | SilentChaos512 | MIT |
+| Ice and Fire | Alexthe666, TheBv | LGPL-3.0 |
+| Exp Ores | TriQue | MIT |
 | Things | glisco | MIT |
 <!-- END GENERATED credits -->
 

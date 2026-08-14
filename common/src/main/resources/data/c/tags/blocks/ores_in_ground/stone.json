@@ -212,6 +212,18 @@
       "id": "seamlessores:granite_thorium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_experience_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -424,6 +436,18 @@
       "id": "seamlessores:diorite_thorium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_experience_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -634,6 +658,18 @@
     },
     {
       "id": "seamlessores:andesite_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_experience_ore",
       "required": false
     }
   ]

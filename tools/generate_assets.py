@@ -98,6 +98,8 @@ TFMG_JAR = os.environ.get("TFMG_JAR", "../jars/1.20.1-tfmg-1.0.2f.jar")
 
 ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../jars/1.20.1-energizedpower-1.20.1-2.15.22-forge.jar")
 
+ICEANDFIRE_JAR = os.environ.get("ICEANDFIRE_JAR", "../jars/iceandfire-2.1.13-1.20.1-beta-5.jar")
+EXPORES_JAR = os.environ.get("EXPORES_JAR", "../jars/1.20.1-expores-1.0.0+mc1.20.1.jar")
 THINGS_JAR = os.environ.get("THINGS_JAR", "../jars/1.20.1-things-0.3.3+1.20.jar")
 
 SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../jars/1.20.1-silent-gear-1.20.1-3.6.7.jar")
@@ -107,6 +109,8 @@ CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../jars/1.20.1-create
 MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "silentgear": SILENTGEAR_JAR,
             "things": THINGS_JAR,
+            "iceandfire": ICEANDFIRE_JAR,
+            "expores": EXPORES_JAR,
             "energizedpower": ENERGIZEDPOWER_JAR,
             "tfmg": TFMG_JAR,
             "powah": POWAH_JAR,
@@ -187,6 +191,10 @@ MODS = {
                        "licence": "MIT",          "author": "SilentChaos512"},
     "silentgems":     {"display": "Silent's Gems",     "category": "silents_gems",
                        "licence": "MIT",          "author": "SilentChaos512"},
+    "iceandfire":     {"display": "Ice and Fire",      "category": "ice_and_fire",
+                       "licence": "LGPL-3.0",     "author": "Alexthe666, TheBv"},
+    "expores":        {"display": "Exp Ores",          "category": "exp_ores",
+                       "licence": "MIT",          "author": "TriQue"},
     "things":         {"display": "Things",            "category": "things",
                        "licence": "MIT",          "author": "glisco"},
 }
@@ -442,6 +450,32 @@ ORE_DEFS = [
     {"name": "moldavite", "overlay": "moldavite", "source": "moldavite_nether_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "moldavite_nether_ore"}},
+    # --- Ice and Fire (mod id iceandfire, LGPL-3.0) --------------------------------------------
+    # Forge only at 1.20.1, and this mod exists on no other branch we ship.
+    # Both ids are PREFIXED: Silent's Gems has its own sapphire and silver, and at 1.20.1 both mods
+    # are Forge, so they genuinely coexist and <host>_sapphire_ore would collide. Block ids are a
+    # one-way door, so the newcomer takes the prefix.
+    # sapphire targets stone_ore_replaceables ONLY - no deepslate tier, so no tuff variant. A tuff
+    # one would invent ore, exactly like the ten Mythic Metals ores in the same position.
+    {"name": "iceandfire_sapphire", "overlay": "iceandfire_sapphire", "source": "sapphire_ore",
+     "base": "stone", "mod": "iceandfire",
+     "tiers": {"stone": "sapphire_ore"}},
+    {"name": "iceandfire_silver", "overlay": "iceandfire_silver", "source": "silver_ore",
+     "base": "stone", "mod": "iceandfire",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+
+    # --- Exp Ores (mod id expores, MIT) ---------------------------------------------------------
+    # Fabric only at 1.20.1. Its ore drops minecraft:air and pays in experience alone -
+    # UniformInt(96, 128), read from EXPBlocks - so the transformed table correctly drops nothing.
+    {"name": "experience", "overlay": "experience", "source": "experience_ore", "base": "stone",
+     "mod": "expores",
+     "tiers": {"stone": "experience_ore", "deepslate": "deepslate_experience_ore"}},
+    # The nether one targets the base_stone_nether TAG, so it ALREADY generates in basalt and
+    # blackstone. That makes these two a pure restyle at zero balance cost - unlike our own gold and
+    # quartz, which add ore - so they ride no rarity dial and need no "adds ore" caveat.
+    {"name": "experience", "overlay": "nether_experience", "source": "nether_experience_ore",
+     "base": "netherrack", "mod": "expores",
+     "tiers": {"nether": "nether_experience_ore"}},
 ]
 
 FACES = ["down", "up", "north", "south", "west", "east"]
@@ -508,6 +542,9 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "silentgear": ("forge",),
     "silentgems": ("forge",),
     "things": ("fabric",),
+    # Both of these exist at 1.20.x and on no other branch we ship.
+    "iceandfire": ("forge",),
+    "expores": ("fabric",),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -684,6 +721,8 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.powah": "Powah",
         f"text.autoconfig.{MOD_ID}.category.tfmg": "Create: TFMG",
         f"text.autoconfig.{MOD_ID}.category.energized_power": "Energized Power",
+        f"text.autoconfig.{MOD_ID}.category.exp_ores": "Exp Ores",
+        f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.things": "Things",
         f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
@@ -818,6 +857,16 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.tfmg": "Create: TFMG variants",
         f"text.autoconfig.{MOD_ID}.option.tfmg.@Tooltip":
             "Generate host-matched TFMG ore. Does nothing unless the mod is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.expOres": "Exp Ores: variants",
+        f"text.autoconfig.{MOD_ID}.option.expOres.@Tooltip[0]":
+            "Generate host-matched experience ore. Does nothing unless Exp Ores is installed.",
+        f"text.autoconfig.{MOD_ID}.option.expOres.@Tooltip[1]":
+            "Includes basalt and blackstone, where that mod already generates it. Adds no ore.",
+
+        f"text.autoconfig.{MOD_ID}.option.iceAndFire": "Ice and Fire: variants",
+        f"text.autoconfig.{MOD_ID}.option.iceAndFire.@Tooltip":
+            "Generate host-matched sapphire and silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.energizedPower": "Energized Power: variants",
         f"text.autoconfig.{MOD_ID}.option.energizedPower.@Tooltip":
@@ -1120,6 +1169,12 @@ def generate_textures():
                         dst.write(src.read())
 
         for overlay_name, (source, base_name, _mod) in sorted(needed.items()):
+            # NEVER overwrite an overlay that already exists. Most of them have been hand cleaned
+            # after extraction, and silently replacing that work with a fresh machine diff is a
+            # one-way loss - the old behaviour made --textures a destructive flag nobody could run
+            # safely. Delete the PNG to force a re-extraction of that one.
+            if os.path.exists(os.path.join(out_dir, f"{overlay_name}_overlay.png")):
+                continue
             base = Image.open(os.path.join(tmp, f"{base_name}.png")).convert("RGBA")
             ore_img = Image.open(os.path.join(tmp, f"{source}.png")).convert("RGBA")
             if ore_img.size != base.size:
@@ -1316,7 +1371,7 @@ def main():
     parser.add_argument(
         "--textures",
         action="store_true",
-        help="also re-extract the overlay PNGs (DESTRUCTIVE: overwrites hand-cleaned art)",
+        help="extract overlay PNGs that do not exist yet (existing ones are never overwritten)",
     )
     args = parser.parse_args()
 
@@ -1331,7 +1386,7 @@ def main():
         print("Extracting overlay textures...")
         generate_textures()
     else:
-        print("Skipped textures (pass --textures to regenerate; it overwrites hand edits).")
+        print("Skipped textures (pass --textures to extract any that are missing).")
 
 
 if __name__ == "__main__":

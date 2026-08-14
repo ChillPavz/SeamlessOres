@@ -53,12 +53,24 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_experience_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_gleaming_ore",
       "required": false
     },
     "seamlessores:andesite_gold_ore",
     {
       "id": "seamlessores:andesite_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -228,6 +240,10 @@
       "id": "seamlessores:basalt_carnelian_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_experience_ore",
+      "required": false
+    },
     "seamlessores:basalt_gold_ore",
     {
       "id": "seamlessores:basalt_iolite_ore",
@@ -276,6 +292,10 @@
     },
     {
       "id": "seamlessores:blackstone_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_experience_ore",
       "required": false
     },
     "seamlessores:blackstone_gold_ore",
@@ -361,12 +381,24 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_experience_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_gleaming_ore",
       "required": false
     },
     "seamlessores:diorite_gold_ore",
     {
       "id": "seamlessores:diorite_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -573,12 +605,24 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_experience_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_gleaming_ore",
       "required": false
     },
     "seamlessores:granite_gold_ore",
     {
       "id": "seamlessores:granite_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -777,12 +821,20 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_experience_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_gleaming_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
     {
       "id": "seamlessores:tuff_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iceandfire_silver_ore",
       "required": false
     },
     {

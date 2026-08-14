@@ -73,6 +73,8 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("tfmg", "tfmg");
         MOD_CATEGORIES.put("densemekanism", "dense_mekanism");
         MOD_CATEGORIES.put("energizedpower", "energized_power");
+        MOD_CATEGORIES.put("expores", "exp_ores");
+        MOD_CATEGORIES.put("iceandfire", "ice_and_fire");
         MOD_CATEGORIES.put("mythicmetals", "mythic_metals");
         MOD_CATEGORIES.put("mythicupgrades", "mythic_upgrades");
         MOD_CATEGORIES.put("powah", "powah");
