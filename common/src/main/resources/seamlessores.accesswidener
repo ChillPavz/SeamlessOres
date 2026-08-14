@@ -28,3 +28,7 @@ accessible	method	net/minecraft/core/Holder$Reference	bindValue	(Ljava/lang/Obje
 accessible	class	net/minecraft/world/level/levelgen/OreVeinifier$VeinType
 accessible	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	ore	Lnet/minecraft/world/level/block/state/BlockState;
 mutable	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	ore	Lnet/minecraft/world/level/block/state/BlockState;
+
+# CountPlacement.count - see the note in META-INF/accesstransformer.cfg. Read only; the placed
+# feature is rebuilt around a new CountPlacement rather than this field being written.
+accessible	field	net/minecraft/world/level/levelgen/placement/CountPlacement	count	Lnet/minecraft/util/valueproviders/IntProvider;

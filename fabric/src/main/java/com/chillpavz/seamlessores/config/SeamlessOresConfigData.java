@@ -61,6 +61,19 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean oreVeins = true;
 
+
+    // Copper. The ONLY overworld settings that change how much ore there is rather than how it
+    // looks - see SeamlessOresConfig and the store page. 100 is vanilla exactly.
+    @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
+    public int overworldCopper = 75;
+
+    @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+    public int dripstoneCopper = 25;
+
     // --- Nether ---------------------------------------------------------------------------------
 
     /** Adds gold and quartz where vanilla has none - see the tooltip. */
@@ -233,6 +246,8 @@ public class SeamlessOresConfigData implements ConfigData {
         values.netherOreRarity = netherOreRarity;
         values.netherVeinSize = netherVeinSize;
 
+        values.overworldCopper = overworldCopper;
+        values.dripstoneCopper = dripstoneCopper;
         values.createZinc = createZinc;
         values.zincVeinSize = zincVeinSize;
 

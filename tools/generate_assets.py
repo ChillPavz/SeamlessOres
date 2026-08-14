@@ -751,6 +751,22 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.blackstone.@Tooltip[1]":
             "so this ADDS ore. Turn off for vanilla amounts.",
 
+        f"text.autoconfig.{MOD_ID}.option.overworldCopper": "Copper amount",
+        f"text.autoconfig.{MOD_ID}.option.overworldCopper.@Tooltip[0]":
+            "How much copper generates, as a percent of vanilla. 100 leaves vanilla untouched.",
+        f"text.autoconfig.{MOD_ID}.option.overworldCopper.@Tooltip[1]":
+            "Reduces the NUMBER of veins rather than their size, so a vein you find is still",
+        f"text.autoconfig.{MOD_ID}.option.overworldCopper.@Tooltip[2]":
+            "worth mining out. This changes vanilla generation, unlike everything else here.",
+
+        f"text.autoconfig.{MOD_ID}.option.dripstoneCopper": "Copper amount in dripstone caves",
+        f"text.autoconfig.{MOD_ID}.option.dripstoneCopper.@Tooltip[0]":
+            "Dripstone caves get a second, larger copper vein on top of the usual one, and no",
+        f"text.autoconfig.{MOD_ID}.option.dripstoneCopper.@Tooltip[1]":
+            "other biome does - roughly three times the copper anywhere else, in vanilla.",
+        f"text.autoconfig.{MOD_ID}.option.dripstoneCopper.@Tooltip[2]":
+            "0 gives dripstone caves exactly the same copper as every other biome.",
+
         f"text.autoconfig.{MOD_ID}.option.oreVeins": "Restyle large ore veins",
         f"text.autoconfig.{MOD_ID}.option.oreVeins.@Tooltip[0]":
             "The big copper and iron veins are packed with granite and tuff. This makes their ore",
