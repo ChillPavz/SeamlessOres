@@ -30,7 +30,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**295 blocks** in the `seamlessores` namespace.
+**333 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -197,13 +197,34 @@ touching ore of the same type across different host stones.
 |---|---|---|---|---|
 | Gleaming | `granite_gleaming_ore` | `diorite_gleaming_ore` | `andesite_gleaming_ore` | `tuff_gleaming_ore` |
 
+**Tech Reborn, Overworld, requires `techreborn`**
+
+| | granite | diorite | andesite | tuff |
+|---|---|---|---|---|
+| Tech Reborn Bauxite | `granite_techreborn_bauxite_ore` | `diorite_techreborn_bauxite_ore` | `andesite_techreborn_bauxite_ore` | `tuff_techreborn_bauxite_ore` |
+| Galena | `granite_galena_ore` | `diorite_galena_ore` | `andesite_galena_ore` | `tuff_galena_ore` |
+| Iridium | `granite_iridium_ore` | `diorite_iridium_ore` | `andesite_iridium_ore` | `tuff_iridium_ore` |
+| Tech Reborn Lead | `granite_techreborn_lead_ore` | `diorite_techreborn_lead_ore` | `andesite_techreborn_lead_ore` | `tuff_techreborn_lead_ore` |
+| Tech Reborn Ruby | `granite_techreborn_ruby_ore` | `diorite_techreborn_ruby_ore` | `andesite_techreborn_ruby_ore` | `tuff_techreborn_ruby_ore` |
+| Tech Reborn Sapphire | `granite_techreborn_sapphire_ore` | `diorite_techreborn_sapphire_ore` | `andesite_techreborn_sapphire_ore` | `tuff_techreborn_sapphire_ore` |
+| Tech Reborn Silver | `granite_techreborn_silver_ore` | `diorite_techreborn_silver_ore` | `andesite_techreborn_silver_ore` | `tuff_techreborn_silver_ore` |
+| Tech Reborn Tin | `granite_techreborn_tin_ore` | `diorite_techreborn_tin_ore` | `andesite_techreborn_tin_ore` | `tuff_techreborn_tin_ore` |
+
+**Tech Reborn, Nether, requires `techreborn`**
+
+| | basalt | blackstone |
+|---|---|---|
+| Cinnabar | `basalt_cinnabar_ore` | `blackstone_cinnabar_ore` |
+| Pyrite | `basalt_pyrite_ore` | `blackstone_pyrite_ore` |
+| Sphalerite | `basalt_sphalerite_ore` | `blackstone_sphalerite_ore` |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
 Minecraft version:
 
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
-| Fabric | 112 | Create, Energized Power, Mythic Metals |
+| Fabric | 150 | Create, Energized Power, Mythic Metals, Tech Reborn |
 | NeoForge | 40 | Energized Power |
 
 The registered block set is derived from which mods are loaded rather than from config, so
@@ -237,7 +258,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 295 blocks takes **76 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 333 blocks takes **89 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -245,7 +266,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `garnet` `gleaming` `gold` `heliodor` `iolite` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `tanzanite` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is referenced straight from
@@ -322,6 +343,7 @@ is theirs and is used under the licence shown:
 | Silent Gear | SilentChaos512 | MIT |
 | Silent's Gems | SilentChaos512 | MIT |
 | Things | glisco | MIT |
+| Tech Reborn | Team Reborn, modmuss50, drcrazy | MIT |
 <!-- END GENERATED credits -->
 
 Built on [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template) by jaredlll08.

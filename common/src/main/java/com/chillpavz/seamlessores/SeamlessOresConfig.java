@@ -94,6 +94,16 @@ public final class SeamlessOresConfig {
     /** Whether Energized Power variants generate. Pure restyle. */
     public static boolean energizedPower = true;
 
+    /** Whether Tech Reborn variants generate. Pure restyle. */
+    public static boolean techReborn = true;
+
+    /**
+     * Whether Tech Reborn's nether ores get basalt and blackstone variants. They generate in netherrack
+     * only, so this ADDS ore, where its overworld variants are a pure restyle. Two balance stories,
+     * two switches, as with Silent's Gems.
+     */
+    public static boolean techRebornNether = true;
+
     /** Whether Things variants generate. Pure restyle. */
     public static boolean things = true;
 
@@ -129,6 +139,7 @@ public final class SeamlessOresConfig {
             case "powah" -> powah;
             case "tfmg" -> tfmg;
             case "energizedpower" -> energizedPower;
+            case "techreborn" -> netherHost ? techRebornNether : techReborn;
             case "things" -> things;
             case "silentgear" -> silentGear;
             case "create_new_age" -> createNewAge;
@@ -198,11 +209,11 @@ public final class SeamlessOresConfig {
      * <p>Deliberately reduces the NUMBER of veins rather than their size: a vein you find is then
      * still worth mining out.
      *
-     * <p>Default raised from 5 to 8 after testing. The ore concentrates BELOW the lava sea because
-     * that is where a delta is solid: above it the biome is mostly open air and lava, so most vein
-     * attempts there place little or nothing, while every attempt in the solid rock below succeeds.
-     * Digging is therefore exactly where the density is felt. At 8 a chunk holds roughly 25 gold and
-     * 56 quartz against 130 at rarity 5.
+     * <p>Default history: 5, raised to 8 after testing (the ore concentrates below the lava sea,
+     * where a delta is solid, so digging is where density is felt; 8 gave roughly 25 gold and 56
+     * quartz a chunk against 130 at rarity 5), then lowered to 2 with netherVeinSize 60 to 80 because
+     * the Nether felt empty at 8 in play. AutoConfig keeps a value saved by an older version, so a
+     * player updating from one keeps that number until they change it.
      */
     public static int netherOreRarity = 2;
 
@@ -257,6 +268,10 @@ public final class SeamlessOresConfig {
         if ("silentgems".equals(modId)) {
             return silentGemsNetherRarity;
         }
+        // Plain netherrack ore features, placed exactly like our own gold and quartz: the same dial.
+        if ("techreborn".equals(modId)) {
+            return netherOreRarity;
+        }
         // Everything else - Mythic Upgrades' ruby and sapphire, Mythic Metals' four - is exempt.
         // Ruby and sapphire already have their own far rarer placement through NetherGemFeature, and
         // stacking a second thinning on top of that puts them near one in a hundred chunks.
@@ -306,6 +321,8 @@ public final class SeamlessOresConfig {
         public boolean powah = true;
         public boolean tfmg = true;
         public boolean energizedPower = true;
+        public boolean techReborn = true;
+        public boolean techRebornNether = true;
         public boolean things = true;
         public boolean silentGear = true;
         public boolean createNewAge = true;
@@ -342,6 +359,8 @@ public final class SeamlessOresConfig {
         powah = values.powah;
         tfmg = values.tfmg;
         energizedPower = values.energizedPower;
+        techReborn = values.techReborn;
+        techRebornNether = values.techRebornNether;
         things = values.things;
         silentGear = values.silentGear;
         createNewAge = values.createNewAge;

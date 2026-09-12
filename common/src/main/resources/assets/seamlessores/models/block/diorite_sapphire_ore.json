@@ -5,7 +5,7 @@
     "particle": "minecraft:block/diorite",
     "side": "minecraft:block/diorite",
     "end": "minecraft:block/diorite",
-    "overlay": "seamlessores:block/sapphire_overlay"
+    "overlay": "seamlessores:block/silents_sapphire_overlay"
   },
   "elements": [
     {

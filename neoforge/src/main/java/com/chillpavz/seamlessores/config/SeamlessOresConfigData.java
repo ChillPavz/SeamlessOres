@@ -194,6 +194,16 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
     public int silentGemsNetherVeinSize = 80;
 
+    // --- Tech Reborn ----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("tech_reborn")
+    @ConfigEntry.Gui.Tooltip
+    public boolean techReborn = true;
+
+    @ConfigEntry.Category("tech_reborn")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean techRebornNether = true;
+
     // --- Things ---------------------------------------------------------------------------------
 
     @ConfigEntry.Category("things")
@@ -254,6 +264,8 @@ public class SeamlessOresConfigData implements ConfigData {
         values.powah = powah;
         values.tfmg = tfmg;
         values.energizedPower = energizedPower;
+        values.techReborn = techReborn;
+        values.techRebornNether = techRebornNether;
         values.things = things;
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;
