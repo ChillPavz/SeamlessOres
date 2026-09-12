@@ -2,7 +2,7 @@
 
 Ore blocks whose background matches the stone they generate in. Granite, diorite, andesite and tuff
 variants for every overworld ore, basalt and blackstone in the Nether, and the same treatment for the
-ores of eleven other mods.
+ores of seventeen other mods.
 
 **In the Overworld it adds no ore.** The same veins, in the same places, drawn to fit their
 surroundings. The Nether variants are the one exception, and they are config gated.
@@ -373,10 +373,11 @@ Patching the live registry rather than shipping replacement JSON files is delibe
 with worldgen overhauls and ore datapacks instead of overwriting them.
 
 The exceptions, all config gated and all stated on the store page: basalt and blackstone gold and
-quartz add ore, because vanilla's Nether features match netherrack only; Silent's Gems' nether gems
-do the same, because that mod targets netherrack only as well; and Mythic Upgrades' ruby and sapphire
-in basalt deltas are placed by a feature this mod adds, because Mythic Upgrades restricts its own ore
-to a single biome and there was nothing to extend.
+quartz add ore, because vanilla's Nether features match netherrack only; Silent's Gems' nether gems,
+Tech Reborn's cinnabar, pyrite and sphalerite, Extreme Reactors' benitoite and Cobblemon's nether
+fire stone do the same, because those mods target netherrack only as well; and Mythic Upgrades' ruby
+and sapphire in basalt deltas are placed by a feature this mod adds, because Mythic Upgrades
+restricts its own ore to a single biome and there was nothing to extend.
 
 Full detail is on the wiki.
 
