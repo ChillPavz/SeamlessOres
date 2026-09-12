@@ -129,6 +129,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_uraninite_ore",
       "required": false
     },

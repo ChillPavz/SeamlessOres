@@ -173,6 +173,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_dense_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_uraninite_ore",
       "required": false
     },
@@ -526,6 +546,26 @@
     },
     {
       "id": "seamlessores:diorite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_uranium_ore",
       "required": false
     },
     {
@@ -885,6 +925,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_uraninite_ore",
       "required": false
     },
@@ -1194,6 +1254,26 @@
     },
     {
       "id": "seamlessores:tuff_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_uranium_ore",
       "required": false
     },
     {

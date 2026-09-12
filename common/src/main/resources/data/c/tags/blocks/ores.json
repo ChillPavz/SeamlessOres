@@ -54,6 +54,26 @@
       "id": "seamlessores:andesite_dawn_stone_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_uranium_ore",
+      "required": false
+    },
     "seamlessores:andesite_diamond_ore",
     {
       "id": "seamlessores:andesite_dusk_stone_ore",
@@ -554,6 +574,26 @@
       "id": "seamlessores:diorite_dawn_stone_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_uranium_ore",
+      "required": false
+    },
     "seamlessores:diorite_diamond_ore",
     {
       "id": "seamlessores:diorite_dusk_stone_ore",
@@ -910,6 +950,26 @@
       "id": "seamlessores:granite_dawn_stone_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_dense_uranium_ore",
+      "required": false
+    },
     "seamlessores:granite_diamond_ore",
     {
       "id": "seamlessores:granite_dusk_stone_ore",
@@ -1256,6 +1316,26 @@
     "seamlessores:tuff_copper_ore",
     {
       "id": "seamlessores:tuff_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_uranium_ore",
       "required": false
     },
     "seamlessores:tuff_diamond_ore",

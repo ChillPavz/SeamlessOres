@@ -93,6 +93,8 @@ MYTHIC_METALS_JAR = os.environ.get(
 # Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
 # a warning rather than an error: the JSON still generates, only the texture step is skipped.
 
+# Dense Mekanism 1.1.0 is on CurseForge only (Modrinth stops at 1.19.2), fetched from its CDN.
+DENSEMEKANISM_JAR = os.environ.get("DENSEMEKANISM_JAR", "../references/jars/1.20.1-densemekanism-1.20.1-1.1.0.jar")
 POWAH_JAR = os.environ.get("POWAH_JAR", "../references/jars/1.20.1-Powah-5.0.11.jar")
 
 TFMG_JAR = os.environ.get("TFMG_JAR", "../references/jars/1.20.1-tfmg-1.0.2f.jar")
@@ -133,6 +135,7 @@ MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "energizedpower": ENERGIZEDPOWER_JAR,
             "tfmg": TFMG_JAR,
             "powah": POWAH_JAR,
+            "densemekanism": DENSEMEKANISM_JAR,
             "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
             "silentgems": SILENT_GEMS_JAR,
             "mythicmetals": MYTHIC_METALS_JAR}
@@ -206,6 +209,8 @@ MODS = {
                        "licence": "BSD-3-Clause", "author": "Antarctic Gardens"},
     "tfmg":           {"display": "Create: TFMG",      "category": "tfmg",
                        "licence": "MIT",          "author": "DrMangoTea, Pepa, Luna"},
+    "densemekanism":  {"display": "Dense Mekanism",    "category": "dense_mekanism",
+                       "licence": "MIT",          "author": ""},
     "energizedpower": {"display": "Energized Power",   "category": "energized_power",
                        "licence": "MIT",          "author": "JDDev0"},
     "mythicmetals":   {"display": "Mythic Metals",     "category": "mythic_metals",
@@ -437,6 +442,21 @@ ORE_DEFS = [
     # tables. Dense Mekanism and Powah both use set_count, so a hand-built vanilla-shape table
     # would change their yields, exactly as it would have for Mythic Metals.
     # energized_tin is prefixed because plain tin is already Mythic Metals'.
+    {"name": "dense_fluorite", "overlay": "dense_fluorite", "source": "dense_fluorite_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_fluorite_ore", "deepslate": "dense_deepslate_fluorite_ore"}},
+    {"name": "dense_lead", "overlay": "dense_lead", "source": "dense_lead_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_lead_ore", "deepslate": "dense_deepslate_lead_ore"}},
+    {"name": "dense_osmium", "overlay": "dense_osmium", "source": "dense_osmium_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_osmium_ore", "deepslate": "dense_deepslate_osmium_ore"}},
+    {"name": "dense_tin", "overlay": "dense_tin", "source": "dense_tin_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_tin_ore", "deepslate": "dense_deepslate_tin_ore"}},
+    {"name": "dense_uranium", "overlay": "dense_uranium", "source": "dense_uranium_ore", "base": "stone",
+     "mod": "densemekanism",
+     "tiers": {"stone": "dense_uranium_ore", "deepslate": "dense_deepslate_uranium_ore"}},
     {"name": "uraninite", "overlay": "uraninite", "source": "uraninite_ore", "base": "stone",
      "mod": "powah",
      "tiers": {"stone": "uraninite_ore", "deepslate": "deepslate_uraninite_ore"}},
@@ -711,9 +731,9 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     # There are only two modules here, because 1.20.1 has no separate NeoForge module: NeoForge
     # 47.1.x provides the `forge` mod id, so a mod tagged neoforge OR forge counts as "forge".
     #
-    # DENSE MEKANISM IS ABSENT ENTIRELY - it stops at 1.19.2 - so it gets no modules at all and its
-    # twenty variants can never register here. Its assets still ship and are inert, and its config
-    # category hides itself because the mod is never loaded.
+    # Dense Mekanism: its 1.20.1 build (1.1.0) is Forge only and on CurseForge only, which the
+    # Modrinth-only query above missed. Requires Mekanism.
+    "densemekanism": ("forge",),
     "create": ("fabric", "forge"),        # forge/neoforge direct, fabric via the Create Fabric port
     "create_new_age": ("fabric", "forge"),
     "tfmg": ("forge",),                   # slug is create-tfmg, forge only at 1.20.1
