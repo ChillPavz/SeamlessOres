@@ -156,6 +156,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.BoundedDiscrete(min = 3, max = 6)
     public int netherGemSize = 4;
 
+    // --- Occultism ------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("occultism")
+    @ConfigEntry.Gui.Tooltip
+    public boolean occultism = true;
+
     // --- Powah ----------------------------------------------------------------------------------
 
     @ConfigEntry.Category("powah")
@@ -193,6 +199,16 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 2)
     @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
     public int silentGemsNetherVeinSize = 80;
+
+    // --- Tech Reborn ----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("tech_reborn")
+    @ConfigEntry.Gui.Tooltip
+    public boolean techReborn = true;
+
+    @ConfigEntry.Category("tech_reborn")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean techRebornNether = true;
 
     // --- Things ---------------------------------------------------------------------------------
 
@@ -254,6 +270,9 @@ public class SeamlessOresConfigData implements ConfigData {
         values.powah = powah;
         values.tfmg = tfmg;
         values.energizedPower = energizedPower;
+        values.techReborn = techReborn;
+        values.techRebornNether = techRebornNether;
+        values.occultism = occultism;
         values.things = things;
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;

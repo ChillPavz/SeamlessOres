@@ -5,11 +5,59 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_occultism_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_silver_ore",
       "required": false
     },
     {
+      "id": "seamlessores:diorite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_occultism_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_occultism_silver_ore",
       "required": false
     }
   ]

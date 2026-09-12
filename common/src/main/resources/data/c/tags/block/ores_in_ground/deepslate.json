@@ -203,6 +203,46 @@
     {
       "id": "seamlessores:tuff_bort_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_occultism_silver_ore",
+      "required": false
     }
   ]
 }

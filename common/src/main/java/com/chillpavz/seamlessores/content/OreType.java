@@ -235,8 +235,12 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_MOLDAVITE = silentGem("moldavite", GEM_XP);
     public static final OreType SG_PEARL = silentGem("pearl", GEM_XP);
     public static final OreType SG_ROSE_QUARTZ = silentGem("rose_quartz", GEM_XP);
-    public static final OreType SG_RUBY = silentGem("ruby", GEM_XP);
-    public static final OreType SG_SAPPHIRE = silentGem("sapphire", GEM_XP);
+    // Same block names as Mythic Upgrades' nether ruby and sapphire, but their own art: the overlay
+    // key differs, or both mods' variants would share one texture.
+    public static final OreType SG_RUBY = new OreType("ruby", "silents_ruby", null, "silentgems",
+            of("silentgems", "ruby_ore"), of("silentgems", "deepslate_ruby_ore"), null, GEM_XP, null, false, Set.of());
+    public static final OreType SG_SAPPHIRE = new OreType("sapphire", "silents_sapphire", null, "silentgems",
+            of("silentgems", "sapphire_ore"), of("silentgems", "deepslate_sapphire_ore"), null, GEM_XP, null, false, Set.of());
     public static final OreType SG_TANZANITE = silentGem("tanzanite", GEM_XP);
     public static final OreType SG_TURQUOISE = silentGem("turquoise", GEM_XP);
     public static final OreType SG_WHITE_DIAMOND = silentGem("white_diamond", GEM_XP);
@@ -350,6 +354,44 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_N_PEARL = silentNether("pearl", "pearl");
     public static final OreType SG_N_TANZANITE = silentNether("tanzanite", "tanzanite");
 
+    // --- Tech Reborn (Fabric only at 26.2) ---------------------------------------------------------
+    // XP read from TR's OreDistribution enum, which hands each ore block its range: ruby and sapphire
+    // 2-6, every other overworld ore 0, uranium included. Prefixed where the plain name is taken, and
+    // bauxite and uranium because Modern Industrialization has both on the branches that carry it.
+    // Block ids are a one-way door, so these names match every other branch.
+    public static final OreType TR_BAUXITE = modded("techreborn_bauxite", "techreborn", "techreborn", "bauxite", NONE);
+    public static final OreType TR_GALENA = modded("galena", "techreborn", "techreborn", "galena", NONE);
+    public static final OreType TR_IRIDIUM = modded("iridium", "techreborn", "techreborn", "iridium", NONE);
+    public static final OreType TR_LEAD = modded("techreborn_lead", "techreborn", "techreborn", "lead", NONE);
+    public static final OreType TR_RUBY =
+            modded("techreborn_ruby", "techreborn", "techreborn", "ruby", UniformInt.of(2, 6));
+    public static final OreType TR_SAPPHIRE =
+            modded("techreborn_sapphire", "techreborn", "techreborn", "sapphire", UniformInt.of(2, 6));
+    public static final OreType TR_SILVER = modded("techreborn_silver", "techreborn", "techreborn", "silver", NONE);
+    public static final OreType TR_TIN = modded("techreborn_tin", "techreborn", "techreborn", "tin", NONE);
+    public static final OreType TR_URANIUM = modded("techreborn_uranium", "techreborn", "techreborn", "uranium", NONE);
+
+    /**
+     * Occultism puts the tier word LAST ({@code silver_ore_deepslate}), so this cannot use
+     * {@link #modded}. Its silver ore is a plain {@code Block}: no experience.
+     */
+    public static final OreType OCCULTISM_SILVER = new OreType("occultism_silver", "occultism_silver", null,
+            "occultism", of("occultism", "silver_ore"), of("occultism", "silver_ore_deepslate"),
+            null, NONE, null, false, Set.of());
+
+    // --- Nether ores that ADD ore (Sept 2026) -----------------------------------------------------
+    // Each targets netherrack only, so basalt and blackstone variants put ore where the mod places
+    // none. Behind the owning mod's own nether switch and thinned by netherOreRarity, like our gold
+    // and quartz.
+    private static OreType netherOnlyModded(String name, String modId, String oreId, IntProvider xp) {
+        return new OreType(name, name, null, modId, null, null, of(modId, oreId), xp, null, false, Set.of());
+    }
+
+    /** Tech Reborn's three: OreDistribution passes them no experience. */
+    public static final OreType TR_CINNABAR = netherOnlyModded("cinnabar", "techreborn", "cinnabar_ore", NONE);
+    public static final OreType TR_PYRITE = netherOnlyModded("pyrite", "techreborn", "pyrite_ore", NONE);
+    public static final OreType TR_SPHALERITE = netherOnlyModded("sphalerite", "techreborn", "sphalerite_ore", NONE);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -367,7 +409,10 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     TFMG_LEAD, TFMG_LITHIUM, TFMG_NICKEL,
                     ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
-                    SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE);
+                    SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE,
+                    TR_BAUXITE, TR_GALENA, TR_IRIDIUM, TR_LEAD, TR_RUBY, TR_SAPPHIRE, TR_SILVER, TR_TIN,
+                    TR_URANIUM, OCCULTISM_SILVER,
+                    TR_CINNABAR, TR_PYRITE, TR_SPHALERITE);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
     public Identifier vanillaFor(HostStone host) {
