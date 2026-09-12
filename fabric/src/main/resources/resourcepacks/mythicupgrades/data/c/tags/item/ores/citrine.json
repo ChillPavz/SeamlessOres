@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_citrine_ore",
+      "required": false
+    }
+  ]
+}
