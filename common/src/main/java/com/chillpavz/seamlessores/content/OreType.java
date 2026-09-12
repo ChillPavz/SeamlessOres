@@ -233,8 +233,12 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_KYANITE = silentGem("kyanite", GEM_XP);
     public static final OreType SG_MOLDAVITE = silentGem("moldavite", GEM_XP);
     public static final OreType SG_ROSE_QUARTZ = silentGem("rose_quartz", GEM_XP);
-    public static final OreType SG_RUBY = silentGem("ruby", GEM_XP);
-    public static final OreType SG_SAPPHIRE = silentGem("sapphire", GEM_XP);
+    // Same block names as Mythic Upgrades' nether ruby and sapphire, but their own art: the overlay
+    // key differs, or both mods' variants would share one texture.
+    public static final OreType SG_RUBY = new OreType("ruby", "silents_ruby", null, "silentgems",
+            of("silentgems", "ruby_ore"), of("silentgems", "deepslate_ruby_ore"), null, GEM_XP, null, false, Set.of());
+    public static final OreType SG_SAPPHIRE = new OreType("sapphire", "silents_sapphire", null, "silentgems",
+            of("silentgems", "sapphire_ore"), of("silentgems", "deepslate_sapphire_ore"), null, GEM_XP, null, false, Set.of());
     public static final OreType SG_TURQUOISE = silentGem("turquoise", GEM_XP);
     public static final OreType SG_WHITE_DIAMOND = silentGem("white_diamond", GEM_XP);
     // Prefixed to avoid a block id clash, see above.
@@ -368,6 +372,100 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
             null, null, of("expores", "nether_experience_ore"),
             UniformInt.of(96, 128), null, false, Set.of());
 
+    // --- Tech Reborn (Fabric only at 1.20.1) ------------------------------------------------------
+    // XP read from TR 5.8.15's OreDistribution enum: ruby and sapphire 2-6, every other ore 0. No
+    // uranium at 1.20.1. Prefixed where the plain name is taken; block ids are a one-way door, so
+    // these names match every other branch.
+    public static final OreType TR_BAUXITE = modded("techreborn_bauxite", "techreborn", "techreborn", "bauxite", NONE);
+    public static final OreType TR_GALENA = modded("galena", "techreborn", "techreborn", "galena", NONE);
+    public static final OreType TR_IRIDIUM = modded("iridium", "techreborn", "techreborn", "iridium", NONE);
+    public static final OreType TR_LEAD = modded("techreborn_lead", "techreborn", "techreborn", "lead", NONE);
+    public static final OreType TR_RUBY =
+            modded("techreborn_ruby", "techreborn", "techreborn", "ruby", UniformInt.of(2, 6));
+    public static final OreType TR_SAPPHIRE =
+            modded("techreborn_sapphire", "techreborn", "techreborn", "sapphire", UniformInt.of(2, 6));
+    public static final OreType TR_SILVER = modded("techreborn_silver", "techreborn", "techreborn", "silver", NONE);
+    public static final OreType TR_TIN = modded("techreborn_tin", "techreborn", "techreborn", "tin", NONE);
+
+    // --- Modern Industrialization (Fabric only at 1.20.1; the loader flips to NeoForge at 1.21.1) --
+    // XP read from MIMaterials (1.8.6): bauxite and monazite 1-4, salt 1-3, lignite coal 0-2. The rest
+    // take OrePart's default, UniformInt.of(0, 0). IRIDIUM GENERATES HERE, unlike 1.21.1, on both
+    // tiers, and is prefixed: Tech Reborn's plain "iridium" is also Fabric at 1.20.1.
+    private static OreType mi(String name, String plain, IntProvider xp) {
+        return modded(name, "modern_industrialization", "modern_industrialization", plain, xp);
+    }
+
+    public static final OreType MI_ANTIMONY = mi("antimony", "antimony", NONE);
+    public static final OreType MI_BAUXITE = mi("mi_bauxite", "bauxite", UniformInt.of(1, 4));
+    public static final OreType MI_IRIDIUM = mi("mi_iridium", "iridium", NONE);
+    public static final OreType MI_LEAD = mi("mi_lead", "lead", NONE);
+    public static final OreType MI_LIGNITE_COAL = mi("lignite_coal", "lignite_coal", UniformInt.of(0, 2));
+    public static final OreType MI_MONAZITE = mi("monazite", "monazite", UniformInt.of(1, 4));
+    public static final OreType MI_NICKEL = mi("mi_nickel", "nickel", NONE);
+    public static final OreType MI_SALT = mi("salt", "salt", UniformInt.of(1, 3));
+    public static final OreType MI_TIN = mi("mi_tin", "tin", NONE);
+    public static final OreType MI_TUNGSTEN = mi("tungsten", "tungsten", NONE);
+    public static final OreType MI_URANIUM = mi("uranium", "uranium", NONE);
+
+    /**
+     * Occultism puts the tier word LAST ({@code silver_ore_deepslate}), so this cannot use
+     * {@link #modded}. Its silver ore is a plain {@code Block}: no experience (read at 1.20.1).
+     */
+    public static final OreType OCCULTISM_SILVER = new OreType("occultism_silver", "occultism_silver", null,
+            "occultism", of("occultism", "silver_ore"), of("occultism", "silver_ore_deepslate"),
+            null, NONE, null, false, Set.of());
+
+    /** Extreme Reactors registers yellorite with an xp range of 0, 0. Its overlay animates. */
+    public static final OreType YELLORITE = modded("yellorite", "bigreactors", "bigreactors", "yellorite", NONE);
+
+    /** Mystical Agriculture: Cucumber's BaseOreBlock with 2-5 on both tiers (read at 1.20.1). */
+    public static final OreType INFERIUM =
+            modded("inferium", "mysticalagriculture", "mysticalagriculture", "inferium", UniformInt.of(2, 5));
+    public static final OreType PROSPERITY =
+            modded("prosperity", "mysticalagriculture", "mysticalagriculture", "prosperity", UniformInt.of(2, 5));
+
+    // --- Nether ores that ADD ore (Sept 2026) -----------------------------------------------------
+    // Each targets netherrack only, so basalt and blackstone variants put ore where the mod places
+    // none. Behind the owning mod's own nether switch and thinned by netherOreRarity, like our gold
+    // and quartz.
+    private static OreType netherOnlyModded(String name, String modId, String oreId, IntProvider xp) {
+        return new OreType(name, name, null, modId, null, null, of(modId, oreId), xp, null, false, Set.of());
+    }
+
+    /** Tech Reborn's three: OreDistribution passes them no experience. */
+    public static final OreType TR_CINNABAR = netherOnlyModded("cinnabar", "techreborn", "cinnabar_ore", NONE);
+    public static final OreType TR_PYRITE = netherOnlyModded("pyrite", "techreborn", "pyrite_ore", NONE);
+    public static final OreType TR_SPHALERITE = netherOnlyModded("sphalerite", "techreborn", "sphalerite_ore", NONE);
+
+    /** Extreme Reactors registers benitoite through the two-argument registerOreBlock, which passes 3, 5. */
+    public static final OreType BENITOITE =
+            netherOnlyModded("benitoite", "bigreactors", "benitoite_ore", UniformInt.of(3, 5));
+
+    // --- Cobblemon (Fabric and Forge at 1.20.1, version 1.5.2) --------------------------------------
+    // Every evolution stone ore comes from Cobblemon's evolutionStoneOre helpers: a DropExperienceBlock
+    // with UniformInt.of(1, 2), stone and deepslate alike, and the nether fire stone the same. Fire
+    // stone is the one type carrying all three tiers, because its nether ore shares the art. Unlike
+    // the 1.21.1 build, 1.5.2's helpers set NO light level on any ore (checked), so there is no light
+    // table on this branch.
+    private static final IntProvider COBBLEMON_XP = UniformInt.of(1, 2);
+
+    private static OreType cobblemon(String plain) {
+        return modded(plain, "cobblemon", "cobblemon", plain, COBBLEMON_XP);
+    }
+
+    public static final OreType CB_DAWN_STONE = cobblemon("dawn_stone");
+    public static final OreType CB_DUSK_STONE = cobblemon("dusk_stone");
+    public static final OreType CB_ICE_STONE = cobblemon("ice_stone");
+    public static final OreType CB_LEAF_STONE = cobblemon("leaf_stone");
+    public static final OreType CB_MOON_STONE = cobblemon("moon_stone");
+    public static final OreType CB_SHINY_STONE = cobblemon("shiny_stone");
+    public static final OreType CB_SUN_STONE = cobblemon("sun_stone");
+    public static final OreType CB_THUNDER_STONE = cobblemon("thunder_stone");
+    public static final OreType CB_WATER_STONE = cobblemon("water_stone");
+    public static final OreType CB_FIRE_STONE = new OreType("fire_stone", "fire_stone", null, "cobblemon",
+            of("cobblemon", "fire_stone_ore"), of("cobblemon", "deepslate_fire_stone_ore"),
+            of("cobblemon", "nether_fire_stone_ore"), COBBLEMON_XP, null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -383,7 +481,14 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
                     SG_N_IOLITE, SG_N_MOLDAVITE,
-                    IAF_SAPPHIRE, IAF_SILVER, EXPERIENCE, NETHER_EXPERIENCE);
+                    IAF_SAPPHIRE, IAF_SILVER, EXPERIENCE, NETHER_EXPERIENCE,
+                    TR_BAUXITE, TR_GALENA, TR_IRIDIUM, TR_LEAD, TR_RUBY, TR_SAPPHIRE, TR_SILVER, TR_TIN,
+                    MI_ANTIMONY, MI_BAUXITE, MI_IRIDIUM, MI_LEAD, MI_LIGNITE_COAL, MI_MONAZITE, MI_NICKEL,
+                    MI_SALT, MI_TIN, MI_TUNGSTEN, MI_URANIUM,
+                    OCCULTISM_SILVER, YELLORITE, INFERIUM, PROSPERITY,
+                    TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, BENITOITE,
+                    CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE,
+                    CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
     public ResourceLocation vanillaFor(HostStone host) {

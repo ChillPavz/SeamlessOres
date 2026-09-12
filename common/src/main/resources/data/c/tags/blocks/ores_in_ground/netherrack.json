@@ -54,6 +54,26 @@
       "id": "seamlessores:basalt_experience_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_benitoite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_fire_stone_ore",
+      "required": false
+    },
     "seamlessores:blackstone_gold_ore",
     "seamlessores:blackstone_quartz_ore",
     {
@@ -102,6 +122,26 @@
     },
     {
       "id": "seamlessores:blackstone_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_benitoite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_fire_stone_ore",
       "required": false
     }
   ]

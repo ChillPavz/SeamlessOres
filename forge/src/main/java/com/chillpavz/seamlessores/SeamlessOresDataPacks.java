@@ -63,7 +63,8 @@ public final class SeamlessOresDataPacks {
      */
     private static final List<String> PACKED_MODS = List.of(
             "create", "create_new_age", "tfmg", "energizedpower",
-            "mythicupgrades", "powah", "silentgear", "silentgems", "iceandfire");
+            "mythicupgrades", "powah", "silentgear", "silentgems", "iceandfire",
+            "occultism", "bigreactors", "mysticalagriculture", "cobblemon");
 
     public static void addPackFinders(AddPackFindersEvent event) {
         if (event.getPackType() != PackType.SERVER_DATA) {

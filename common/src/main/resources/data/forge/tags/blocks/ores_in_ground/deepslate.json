@@ -171,6 +171,138 @@
     {
       "id": "seamlessores:tuff_experience_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_water_stone_ore",
+      "required": false
     }
   ]
 }

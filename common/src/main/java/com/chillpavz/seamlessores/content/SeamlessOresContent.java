@@ -116,7 +116,7 @@ public final class SeamlessOresContent {
      *
      * <p>The tier defaults exist because a modded block may not be registered when we build ours,
      * so its real properties cannot be read - see the caller. That convention is right for every
-     * mod here except one: <b>Exp Ores builds its blocks at resistance 1200</b>, roughly obsidian,
+     * mod here except one: <b>Exp Ores builds its blocks at resistance 1200</b>, far past any ore,
      * clearly on purpose for an ore whose whole value is the experience it pays out. A variant at
      * 3.0 could be blown up where the original cannot, which is a straightforward exploit rather
      * than a cosmetic difference, so it is matched explicitly.

@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dusk_stone_ore",
+      "required": false
+    }
+  ]
+}

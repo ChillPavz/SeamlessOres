@@ -26,6 +26,7 @@ ownership of them in the README or on any store page.
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -68,21 +69,21 @@ CLIENT_JAR = os.path.expanduser(
 # fine; keep the attribution line in the README. When the jar is missing, zinc JSON still generates
 # (the loot shape is baked below, verified identical to vanilla iron_ore's) but the texture step
 # skips zinc.
-CREATE_JAR = os.environ.get("CREATE_JAR", "../jars/1.20.1-create-1.20.1-6.0.8.jar")
+CREATE_JAR = os.environ.get("CREATE_JAR", "../references/jars/1.20.1-create-1.20.1-6.0.8.jar")
 
 # Mythic Upgrades (mod id 'mythicupgrades', MIT, 26.2 on all four loaders). Source of its ore
 # textures and the facts behind the entries below. Override with MYTHIC_UPGRADES_JAR.
 MYTHIC_UPGRADES_JAR = os.environ.get(
-    "MYTHIC_UPGRADES_JAR", "../jars/1.20.1-mythicupgrades-forge-1.20.1-5.1.0.jar")
+    "MYTHIC_UPGRADES_JAR", "../references/jars/1.20.1-mythicupgrades-forge-1.20.1-5.1.0.jar")
 
 # Mythic Metals (mod id 'mythicmetals', MIT). Fabric only on every version it has ever shipped, so
 # its variants only ever register there. Source of its ore textures, loot tables and tool tags.
 SILENT_GEMS_JAR = os.environ.get(
     "SILENT_GEMS_JAR",
-    "../jars/1.20.1-silents-gems-1.20.1-4.7.0.jar")
+    "../references/jars/1.20.1-silents-gems-1.20.1-4.7.0.jar")
 
 MYTHIC_METALS_JAR = os.environ.get(
-    "MYTHIC_METALS_JAR", "../jars/1.20.1-mythicmetals-0.19.12+1.20.1.jar")
+    "MYTHIC_METALS_JAR", "../references/jars/1.20.1-mythicmetals-0.19.12+1.20.1.jar")
 
 # EVERY jar above is the 1.20.1 build of that mod, not a newer one. That matters: the generator
 # TRANSFORMS each mod's own loot table, so reading a 1.21-era jar would bake a 1.21-shaped table
@@ -92,21 +93,39 @@ MYTHIC_METALS_JAR = os.environ.get(
 # Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
 # a warning rather than an error: the JSON still generates, only the texture step is skipped.
 
-POWAH_JAR = os.environ.get("POWAH_JAR", "../jars/1.20.1-Powah-5.0.11.jar")
+POWAH_JAR = os.environ.get("POWAH_JAR", "../references/jars/1.20.1-Powah-5.0.11.jar")
 
-TFMG_JAR = os.environ.get("TFMG_JAR", "../jars/1.20.1-tfmg-1.0.2f.jar")
+TFMG_JAR = os.environ.get("TFMG_JAR", "../references/jars/1.20.1-tfmg-1.0.2f.jar")
 
-ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../jars/1.20.1-energizedpower-1.20.1-2.15.22-forge.jar")
+ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../references/jars/1.20.1-energizedpower-1.20.1-2.15.22-forge.jar")
 
-ICEANDFIRE_JAR = os.environ.get("ICEANDFIRE_JAR", "../jars/iceandfire-2.1.13-1.20.1-beta-5.jar")
-EXPORES_JAR = os.environ.get("EXPORES_JAR", "../jars/1.20.1-expores-1.0.0+mc1.20.1.jar")
-THINGS_JAR = os.environ.get("THINGS_JAR", "../jars/1.20.1-things-0.3.3+1.20.jar")
+ICEANDFIRE_JAR = os.environ.get("ICEANDFIRE_JAR", "../references/jars/iceandfire-2.1.13-1.20.1-beta-5.jar")
+EXPORES_JAR = os.environ.get("EXPORES_JAR", "../references/jars/1.20.1-expores-1.0.0+mc1.20.1.jar")
+THINGS_JAR = os.environ.get("THINGS_JAR", "../references/jars/1.20.1-things-0.3.3+1.20.jar")
 
-SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../jars/1.20.1-silent-gear-1.20.1-3.6.7.jar")
+SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../references/jars/1.20.1-silent-gear-1.20.1-3.6.7.jar")
 
-CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../jars/1.20.1-create-new-age-1.2.0+forge-mc1.20.1.jar")
+CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../references/jars/1.20.1-create-new-age-1.2.0+forge-mc1.20.1.jar")
+
+# Sept 2026 wave: every one of the six has a 1.20.1 build, each fetched for 1.20.1 and SHA-512 checked.
+# Cobblemon's Fabric and Forge 1.5.2 jars ship byte-identical loot tables, so either one serves.
+TECHREBORN_JAR = os.environ.get("TECHREBORN_JAR", "../references/jars/1.20.1-TechReborn-5.8.15.jar")
+MODERN_INDUSTRIALIZATION_JAR = os.environ.get("MODERN_INDUSTRIALIZATION_JAR",
+                                              "../references/jars/1.20.1-Modern-Industrialization-1.8.6.jar")
+OCCULTISM_JAR = os.environ.get("OCCULTISM_JAR", "../references/jars/1.20.1-occultism-1.20.1-1.158.0.jar")
+EXTREME_REACTORS_JAR = os.environ.get("EXTREME_REACTORS_JAR",
+                                      "../references/jars/1.20.1-ExtremeReactors2-1.20.1-2.0.84.jar")
+MYSTICAL_AGRICULTURE_JAR = os.environ.get("MYSTICAL_AGRICULTURE_JAR",
+                                          "../references/jars/1.20.1-MysticalAgriculture-1.20.1-7.0.24.jar")
+COBBLEMON_JAR = os.environ.get("COBBLEMON_JAR", "../references/jars/1.20.1-Cobblemon-forge-1.5.2+1.20.1.jar")
 
 MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
+            "techreborn": TECHREBORN_JAR,
+            "modern_industrialization": MODERN_INDUSTRIALIZATION_JAR,
+            "occultism": OCCULTISM_JAR,
+            "bigreactors": EXTREME_REACTORS_JAR,
+            "mysticalagriculture": MYSTICAL_AGRICULTURE_JAR,
+            "cobblemon": COBBLEMON_JAR,
             "silentgear": SILENTGEAR_JAR,
             "things": THINGS_JAR,
             "iceandfire": ICEANDFIRE_JAR,
@@ -156,6 +175,14 @@ HOSTS = {
 ANIMATED_OVERLAYS = {
     "stormyx": {"frametime": 20, "interpolate": True},              # 5 frames, matches stormyx_ore
     "unobtainium_deepslate": {"frametime": 60, "interpolate": True},  # 4 frames, deepslate ore only
+    # Extreme Reactors' yellorite: 6 frames played in a custom order (a pulse, then a long rest),
+    # copied verbatim from its own yellorite_ore.png.mcmeta. The frame list IS the animation here,
+    # so frametime alone would play the pulse back to back with no rest.
+    "yellorite": {"frametime": 2, "frames": [0, 1, 2, 3, 4, 5, 5, 5, 4, 3, 2, 1,
+                                             0, 0, 0, 0, 0, 0, 0, 0, 0]},
+    # Extreme Reactors' benitoite: 10 frames, same pulse-and-rest shape, from its own mcmeta.
+    "benitoite": {"frametime": 2, "frames": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 8, 7, 6, 5, 4, 3, 2, 1,
+                                             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]},
 }
 
 # Third-party mods whose ores get variants.
@@ -197,6 +224,18 @@ MODS = {
                        "licence": "MIT",          "author": "TriQue"},
     "things":         {"display": "Things",            "category": "things",
                        "licence": "MIT",          "author": "glisco"},
+    "techreborn":     {"display": "Tech Reborn",       "category": "tech_reborn",
+                       "licence": "MIT",          "author": "Team Reborn, modmuss50, drcrazy"},
+    "modern_industrialization": {"display": "Modern Industrialization", "category": "modern_industrialization",
+                       "licence": "MIT",          "author": "Azerococo, Technici4n"},
+    "occultism":      {"display": "Occultism",         "category": "occultism",
+                       "licence": "MIT",          "author": "Kli Kli"},
+    "bigreactors":    {"display": "Extreme Reactors",  "category": "extreme_reactors",
+                       "licence": "MIT",          "author": "ZeroNoRyouki"},
+    "mysticalagriculture": {"display": "Mystical Agriculture", "category": "mystical_agriculture",
+                       "licence": "MIT",          "author": "BlakeBr0"},
+    "cobblemon":      {"display": "Cobblemon",         "category": "cobblemon",
+                       "licence": "MPL-2.0",      "author": "The Cobblemon Team"},
 }
 
 ORE_DEFS = [
@@ -365,10 +404,13 @@ ORE_DEFS = [
     {"name": "rose_quartz",             "overlay": "rose_quartz",             "source": "rose_quartz_ore", "base": "stone",
      "mod": "silentgems", "raw_drop": "silentgems:rose_quartz",
      "tiers": {"stone": "rose_quartz_ore", "deepslate": "deepslate_rose_quartz_ore"}},
-    {"name": "ruby",                    "overlay": "ruby",                    "source": "ruby_ore", "base": "stone",
+    # Ruby and sapphire share a block NAME with Mythic Upgrades' nether ruby and sapphire (the hosts never
+    # overlap), but NOT the art. The overlay key is separate, or both write ruby_overlay.png and one mod's
+    # variants wear the other's art: exactly what happened until Sept 2026 (87-89 px apart).
+    {"name": "ruby",                    "overlay": "silents_ruby",            "source": "ruby_ore", "base": "stone",
      "mod": "silentgems", "raw_drop": "silentgems:ruby",
      "tiers": {"stone": "ruby_ore", "deepslate": "deepslate_ruby_ore"}},
-    {"name": "sapphire",                "overlay": "sapphire",                "source": "sapphire_ore", "base": "stone",
+    {"name": "sapphire",                "overlay": "silents_sapphire",        "source": "sapphire_ore", "base": "stone",
      "mod": "silentgems", "raw_drop": "silentgems:sapphire",
      "tiers": {"stone": "sapphire_ore", "deepslate": "deepslate_sapphire_ore"}},
     {"name": "turquoise",               "overlay": "turquoise",               "source": "turquoise_ore", "base": "stone",
@@ -476,7 +518,147 @@ ORE_DEFS = [
     {"name": "experience", "overlay": "nether_experience", "source": "nether_experience_ore",
      "base": "netherrack", "mod": "expores",
      "tiers": {"nether": "nether_experience_ore"}},
+
+    # --- Sept 2026 wave. Every one of these has a 1.20.1 build; facts read from those jars. ------
+    # Tech Reborn (Fabric only at 1.20.1). Its eight overworld ores all target the vanilla
+    # replaceables tags: a pure restyle. No uranium at 1.20.1. Prefixed where the plain name is taken.
+    {"name": "techreborn_bauxite", "overlay": "techreborn_bauxite", "source": "bauxite_ore", "base": "stone",
+     "mod": "techreborn",
+     "tiers": {"stone": "bauxite_ore", "deepslate": "deepslate_bauxite_ore"}},
+    {"name": "galena", "overlay": "galena", "source": "galena_ore", "base": "stone",
+     "mod": "techreborn",
+     "tiers": {"stone": "galena_ore", "deepslate": "deepslate_galena_ore"}},
+    {"name": "iridium", "overlay": "iridium", "source": "iridium_ore", "base": "stone",
+     "mod": "techreborn",
+     "tiers": {"stone": "iridium_ore", "deepslate": "deepslate_iridium_ore"}},
+    {"name": "techreborn_lead", "overlay": "techreborn_lead", "source": "lead_ore", "base": "stone",
+     "mod": "techreborn",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "techreborn_ruby", "overlay": "techreborn_ruby", "source": "ruby_ore", "base": "stone",
+     "mod": "techreborn",
+     "tiers": {"stone": "ruby_ore", "deepslate": "deepslate_ruby_ore"}},
+    {"name": "techreborn_sapphire", "overlay": "techreborn_sapphire", "source": "sapphire_ore", "base": "stone",
+     "mod": "techreborn",
+     "tiers": {"stone": "sapphire_ore", "deepslate": "deepslate_sapphire_ore"}},
+    {"name": "techreborn_silver", "overlay": "techreborn_silver", "source": "silver_ore", "base": "stone",
+     "mod": "techreborn",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    {"name": "techreborn_tin", "overlay": "techreborn_tin", "source": "tin_ore", "base": "stone",
+     "mod": "techreborn",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    # Modern Industrialization (Fabric only at 1.20.1; NeoForge from 1.21.1). Eleven ores here, each
+    # with a stone-tag and a deepslate-tag feature. IRIDIUM GENERATES AT 1.20.1 (nothing places it
+    # from 1.21.1) and is prefixed, because Tech Reborn's plain iridium is Fabric here too.
+    {"name": "antimony", "overlay": "antimony", "source": "antimony_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "antimony_ore", "deepslate": "deepslate_antimony_ore"}},
+    {"name": "mi_bauxite", "overlay": "mi_bauxite", "source": "bauxite_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "bauxite_ore", "deepslate": "deepslate_bauxite_ore"}},
+    {"name": "mi_iridium", "overlay": "mi_iridium", "source": "iridium_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "iridium_ore", "deepslate": "deepslate_iridium_ore"}},
+    {"name": "mi_lead", "overlay": "mi_lead", "source": "lead_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "lignite_coal", "overlay": "lignite_coal", "source": "lignite_coal_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "lignite_coal_ore", "deepslate": "deepslate_lignite_coal_ore"}},
+    {"name": "monazite", "overlay": "monazite", "source": "monazite_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "monazite_ore", "deepslate": "deepslate_monazite_ore"}},
+    {"name": "mi_nickel", "overlay": "mi_nickel", "source": "nickel_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "nickel_ore", "deepslate": "deepslate_nickel_ore"}},
+    {"name": "salt", "overlay": "salt", "source": "salt_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "salt_ore", "deepslate": "deepslate_salt_ore"}},
+    {"name": "mi_tin", "overlay": "mi_tin", "source": "tin_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    {"name": "tungsten", "overlay": "tungsten", "source": "tungsten_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "tungsten_ore", "deepslate": "deepslate_tungsten_ore"}},
+    {"name": "uranium", "overlay": "uranium", "source": "uranium_ore", "base": "stone",
+     "mod": "modern_industrialization",
+     "tiers": {"stone": "uranium_ore", "deepslate": "deepslate_uranium_ore"}},
+    # Occultism (Forge at 1.20.1): silver only. Its tier word comes LAST (silver_ore_deepslate).
+    {"name": "occultism_silver", "overlay": "occultism_silver", "source": "silver_ore", "base": "stone",
+     "mod": "occultism",
+     "tiers": {"stone": "silver_ore", "deepslate": "silver_ore_deepslate"}},
+    # Extreme Reactors (Forge at 1.20.1): yellorite, animated (see ANIMATED_OVERLAYS).
+    {"name": "yellorite", "overlay": "yellorite", "source": "yellorite_ore", "base": "stone",
+     "mod": "bigreactors",
+     "tiers": {"stone": "yellorite_ore", "deepslate": "deepslate_yellorite_ore"}},
+    # Mystical Agriculture (Forge at 1.20.1): inferium and prosperity. Soulium sits on its own soulstone.
+    {"name": "inferium", "overlay": "inferium", "source": "inferium_ore", "base": "stone",
+     "mod": "mysticalagriculture",
+     "tiers": {"stone": "inferium_ore", "deepslate": "deepslate_inferium_ore"}},
+    {"name": "prosperity", "overlay": "prosperity", "source": "prosperity_ore", "base": "stone",
+     "mod": "mysticalagriculture",
+     "tiers": {"stone": "prosperity_ore", "deepslate": "deepslate_prosperity_ore"}},
+    # Nether ores that ADD ore: each targets netherrack only (benitoite through forge:netherrack, which
+    # holds netherrack alone), so basalt and blackstone variants put ore where the mod places none.
+    # Behind that mod's own nether switch, and thinned by the same netherOreRarity / netherVeinSize
+    # dials as our gold and quartz.
+    {"name": "cinnabar", "overlay": "cinnabar", "source": "cinnabar_ore", "base": "netherrack",
+     "mod": "techreborn",
+     "tiers": {"nether": "cinnabar_ore"}},
+    {"name": "pyrite", "overlay": "pyrite", "source": "pyrite_ore", "base": "netherrack",
+     "mod": "techreborn",
+     "tiers": {"nether": "pyrite_ore"}},
+    {"name": "sphalerite", "overlay": "sphalerite", "source": "sphalerite_ore", "base": "netherrack",
+     "mod": "techreborn",
+     "tiers": {"nether": "sphalerite_ore"}},
+    {"name": "benitoite", "overlay": "benitoite", "source": "benitoite_ore", "base": "netherrack",
+     "mod": "bigreactors",
+     "tiers": {"nether": "benitoite_ore"}},
+    # Cobblemon (Fabric and Forge at 1.20.1, 1.5.2). Each stone has a TRANSLUCENT edge ring over the
+    # rock, so every host gets its own precomposited overlay (host_overlays, set below the table); the
+    # 1.5.2 textures are byte-identical to the 1.8.0 art those were solved from. Fire stone also has a
+    # netherrack-only ore that shares the same art, so it is one entry carrying all three tiers.
+    {"name": "dawn_stone", "overlay": "dawn_stone", "source": "dawn_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "dawn_stone_ore", "deepslate": "deepslate_dawn_stone_ore"}},
+    {"name": "dusk_stone", "overlay": "dusk_stone", "source": "dusk_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "dusk_stone_ore", "deepslate": "deepslate_dusk_stone_ore"}},
+    {"name": "fire_stone", "overlay": "fire_stone", "source": "fire_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "fire_stone_ore", "deepslate": "deepslate_fire_stone_ore", "nether": "nether_fire_stone_ore"}},
+    {"name": "ice_stone", "overlay": "ice_stone", "source": "ice_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "ice_stone_ore", "deepslate": "deepslate_ice_stone_ore"}},
+    {"name": "leaf_stone", "overlay": "leaf_stone", "source": "leaf_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "leaf_stone_ore", "deepslate": "deepslate_leaf_stone_ore"}},
+    {"name": "moon_stone", "overlay": "moon_stone", "source": "moon_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "moon_stone_ore", "deepslate": "deepslate_moon_stone_ore"}},
+    {"name": "shiny_stone", "overlay": "shiny_stone", "source": "shiny_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "shiny_stone_ore", "deepslate": "deepslate_shiny_stone_ore"}},
+    {"name": "sun_stone", "overlay": "sun_stone", "source": "sun_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "sun_stone_ore", "deepslate": "deepslate_sun_stone_ore"}},
+    {"name": "thunder_stone", "overlay": "thunder_stone", "source": "thunder_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "thunder_stone_ore", "deepslate": "deepslate_thunder_stone_ore"}},
+    {"name": "water_stone", "overlay": "water_stone", "source": "water_stone_ore", "base": "stone",
+     "mod": "cobblemon",
+     "tiers": {"stone": "water_stone_ore", "deepslate": "deepslate_water_stone_ore"}},
 ]
+
+# Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
+# solve_cobblemon_translucency.py). Basalt and blackstone draw a different texture on their end faces,
+# and the ring blends into whatever is behind it, so those two take a (side, end) pair.
+for _ore in ORE_DEFS:
+    if _ore.get("mod") == "cobblemon":
+        _stone = _ore["name"]
+        _ore["host_overlays"] = {h: f"{_stone}_{h}" for h in ("granite", "diorite", "andesite", "tuff")}
+        if "nether" in _ore["tiers"]:
+            _ore["host_overlays"].update(basalt=(f"{_stone}_basalt_side", f"{_stone}_basalt_top"),
+                                         blackstone=(f"{_stone}_blackstone", f"{_stone}_blackstone_top"))
 
 FACES = ["down", "up", "north", "south", "west", "east"]
 
@@ -545,6 +727,13 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     # Both of these exist at 1.20.x and on no other branch we ship.
     "iceandfire": ("forge",),
     "expores": ("fabric",),
+    # Sept 2026 wave, each queried per version for 1.20.1 on the Modrinth API:
+    "techreborn": ("fabric",),
+    "modern_industrialization": ("fabric",),   # NeoForge from 1.21.1; the loader flips
+    "occultism": ("forge",),
+    "bigreactors": ("forge",),
+    "mysticalagriculture": ("forge",),
+    "cobblemon": ("fabric", "forge"),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -601,11 +790,26 @@ def variants():
                 yield host, host_cfg, ore, vanilla
 
 
-def overlay_for(ore, host_cfg):
+def overlay_for(ore, host_cfg, face="side"):
     """Overlay key for this host, honouring a per-tier override. Mirrors OreType.overlayFor."""
+    # host_overlays: a TRANSLUCENT ore (Silent's Gems' opal, Cobblemon) takes the colour of the rock
+    # behind it, so each host needs its own precomposited overlay; ours render CUTOUT, which cannot do
+    # partial alpha. A (side, end) pair serves a host whose end faces use another texture. Generator
+    # only, because the Java side never reads overlay keys: the models carry them.
+    host = next((h for h, c in HOSTS.items() if c is host_cfg), None)
+    if host in ore.get("host_overlays", {}):
+        chosen = ore["host_overlays"][host]
+        if isinstance(chosen, tuple):
+            return chosen[0] if face == "side" else chosen[1]
+        return chosen
     if host_cfg["tier"] == "deepslate" and ore.get("deepslate_overlay"):
         return ore["deepslate_overlay"]
     return ore["overlay"]
+
+
+def all_overlay_keys():
+    """Every overlay texture key a model references, end-face overlays included."""
+    return sorted({overlay_for(o, c, face) for _h, c, o, _v in variants() for face in ("side", "end")})
 
 
 # House style: this project does not use U+2014 EM DASH or U+2013 EN DASH in player-facing text.
@@ -645,7 +849,8 @@ def variant_name(host, ore):
 # block "Lapis Lazuli Ore" (id lapis_ore) - "Granite Lapis Ore" would be the exact naming
 # inconsistency users reported on the incumbent. Quartz stays "Quartz" (no "Nether" prefix: that
 # prefix distinguishes an overworld quartz that does not exist, and ours is already host-prefixed).
-DISPLAY_NAMES = {"lapis": "Lapis Lazuli"}
+# Prefixes that disambiguate a clashing ore name read as the mod, not as a made-up word.
+DISPLAY_NAMES = {"lapis": "Lapis Lazuli", "techreborn": "Tech Reborn", "mi": "MI"}
 
 
 def title(name):
@@ -690,20 +895,25 @@ def generate_json():
             # (ExtendedBlockModelDeserializer on each, verified in neoforge 21.1.80 and forge 52).
             # Vanilla and Fabric ignore the key, so FABRIC IS HANDLED IN CODE by
             # SeamlessOresFabricClient calling BlockRenderLayerMap. Both halves are needed.
+            textures = {
+                "particle": host_cfg["side"],
+                "side": host_cfg["side"],
+                "end": host_cfg["end"],
+                "overlay": f"{MOD_ID}:block/{overlay_for(ore, host_cfg)}_overlay",
+            }
+            end_overlay = overlay_for(ore, host_cfg, "end")
+            if end_overlay != overlay_for(ore, host_cfg):
+                textures["overlay_end"] = f"{MOD_ID}:block/{end_overlay}_overlay"
             write_json(
                 os.path.join(root, "models", "block", f"{name}.json"),
                 {
                     "parent": "minecraft:block/block",
                     "render_type": "minecraft:cutout",
-                    "textures": {
-                        "particle": host_cfg["side"],
-                        "side": host_cfg["side"],
-                        "end": host_cfg["end"],
-                        "overlay": f"{MOD_ID}:block/{overlay_for(ore, host_cfg)}_overlay",
-                    },
+                    "textures": textures,
                     "elements": [
                         {"from": [0, 0, 0], "to": [16, 16, 16], "faces": cube_faces("#side", "#end")},
-                        {"from": [0, 0, 0], "to": [16, 16, 16], "faces": cube_faces("#overlay")},
+                        {"from": [0, 0, 0], "to": [16, 16, 16],
+                         "faces": cube_faces("#overlay", "#overlay_end" if "overlay_end" in textures else None)},
                     ],
                 },
             )
@@ -748,6 +958,12 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.things": "Things",
         f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
+        f"text.autoconfig.{MOD_ID}.category.extreme_reactors": "Extreme Reactors",
+        f"text.autoconfig.{MOD_ID}.category.modern_industrialization": "Modern Industrialization",
+        f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+        f"text.autoconfig.{MOD_ID}.category.occultism": "Occultism",
+        f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
+        f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
 
         f"text.autoconfig.{MOD_ID}.option.granite": "Granite variants",
         f"text.autoconfig.{MOD_ID}.option.granite.@Tooltip":
@@ -921,6 +1137,54 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.createNewAge": "Create: New Age variants",
         f"text.autoconfig.{MOD_ID}.option.createNewAge.@Tooltip":
             "Generate host-matched thorium ore. Does nothing unless the mod is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.extremeReactors": "Extreme Reactors: variants",
+        f"text.autoconfig.{MOD_ID}.option.extremeReactors.@Tooltip":
+            "Generate host-matched yellorite ore. Does nothing unless Extreme Reactors is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.modernIndustrialization": "Modern Industrialization: variants",
+        f"text.autoconfig.{MOD_ID}.option.modernIndustrialization.@Tooltip":
+            "Generate host-matched Modern Industrialization ore. Does nothing unless the mod is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.mysticalAgriculture": "Mystical Agriculture: variants",
+        f"text.autoconfig.{MOD_ID}.option.mysticalAgriculture.@Tooltip":
+            "Generate host-matched inferium and prosperity ore. Does nothing unless the mod is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.occultism": "Occultism: variants",
+        f"text.autoconfig.{MOD_ID}.option.occultism.@Tooltip":
+            "Generate host-matched silver ore. Does nothing unless Occultism is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.techReborn": "Tech Reborn: variants",
+        f"text.autoconfig.{MOD_ID}.option.techReborn.@Tooltip":
+            "Generate host-matched Tech Reborn ore. Does nothing unless Tech Reborn is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.techRebornNether": "Tech Reborn: nether variants (adds ore)",
+        f"text.autoconfig.{MOD_ID}.option.techRebornNether.@Tooltip[0]":
+            "Puts cinnabar, pyrite and sphalerite in basalt and blackstone. Tech Reborn generates them",
+        f"text.autoconfig.{MOD_ID}.option.techRebornNether.@Tooltip[1]":
+            "in netherrack only, so this ADDS ore, thinned by the Nether tab's rarity and vein size.",
+        f"text.autoconfig.{MOD_ID}.option.techRebornNether.@Tooltip[2]":
+            "Turn off to leave the Nether exactly as Tech Reborn generates it.",
+
+        f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether": "Extreme Reactors: nether variants (adds ore)",
+        f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[0]":
+            "Puts benitoite in basalt and blackstone. Extreme Reactors generates it in netherrack",
+        f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[1]":
+            "only, so this ADDS ore, thinned by the Nether tab's rarity and vein size.",
+        f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[2]":
+            "Turn off to leave the Nether exactly as Extreme Reactors generates it.",
+
+        f"text.autoconfig.{MOD_ID}.option.cobblemon": "Cobblemon: variants",
+        f"text.autoconfig.{MOD_ID}.option.cobblemon.@Tooltip":
+            "Generate host-matched evolution stone ore. Does nothing unless Cobblemon is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.cobblemonNether": "Cobblemon: nether variants (adds ore)",
+        f"text.autoconfig.{MOD_ID}.option.cobblemonNether.@Tooltip[0]":
+            "Puts fire stone ore in basalt and blackstone. Cobblemon generates it in netherrack",
+        f"text.autoconfig.{MOD_ID}.option.cobblemonNether.@Tooltip[1]":
+            "only, so this ADDS ore, thinned by the Nether tab's rarity and vein size.",
+        f"text.autoconfig.{MOD_ID}.option.cobblemonNether.@Tooltip[2]":
+            "Turn off to leave the Nether exactly as Cobblemon generates it.",
     })
     assert_no_dashes(lang.items(), "lang entries")
     write_json(os.path.join(root, "lang", "en_us.json"), lang)
@@ -944,6 +1208,49 @@ def generate_json():
 ABSENT_AT_THIS_VERSION = {}
 
 
+def read_mod_ore_tags():
+    """Block and item id -> every common ORE tag it is in, as (namespace, path), from each mod's jar.
+
+    At 1.20.x there are two namespaces and two shapes: Forge mods use forge:ores/<x>, Fabric mods
+    c:<x>_ores (a few also c:ores/<x>). Each is kept exactly as the mod wrote it, so a variant joins
+    the same tags as its counterpart. Nested references are resolved inside the jar. A missing jar
+    contributes nothing; the loot step already fails loudly for that case.
+    """
+    out = {"block": {}, "item": {}}
+    for mod_jar in MOD_JARS.values():
+        if not mod_jar or not os.path.exists(mod_jar):
+            continue
+        with zipfile.ZipFile(mod_jar) as z:
+            for kind in ("block", "item"):
+                tags = {}
+                for n in z.namelist():
+                    m = re.match(rf"^data/([^/]+)/tags/{kind}s?/(.+)\.json$", n)
+                    if not m:
+                        continue
+                    try:
+                        values = json.loads(z.read(n).decode("utf-8-sig")).get("values", [])
+                    except ValueError:
+                        continue
+                    tags[(m.group(1), m.group(2))] = [v["id"] if isinstance(v, dict) else v for v in values]
+
+                def resolve(tag, seen):
+                    members = set()
+                    for value in tags.get(tag, []):
+                        if value.startswith("#"):
+                            ref = tuple(value[1:].split(":", 1))
+                            if ref not in seen:
+                                members |= resolve(ref, seen | {ref})
+                        else:
+                            members.add(value)
+                    return members
+
+                for ns, path in tags:
+                    if ns in CONVENTION_NAMESPACES and (path.startswith("ores/") or path.endswith("_ores")):
+                        for member in resolve((ns, path), {(ns, path)}):
+                            out[kind].setdefault(member, set()).add((ns, path))
+    return out
+
+
 def generate_data():
     """Loot tables and tags. Loot is TRANSFORMED from vanilla's own tables, never reconstructed."""
 
@@ -952,6 +1259,9 @@ def generate_data():
 
     ours = data_dir(MOD_ID)
     mc = data_dir("minecraft")
+    mod_ore_tags = read_mod_ore_tags()
+    parity_block = {}
+    parity_item = {}
 
     mineable = []
     tool_tags = {}
@@ -1106,6 +1416,18 @@ def generate_data():
                         tool_tags.setdefault(tag, []).append(entry)
                 conv_block.setdefault(ore["name"], []).append(entry)
                 conv_item.setdefault(ore["name"], []).append(entry)
+                # TAG PARITY with the ore we stand in for: every common ore tag its counterpart is in,
+                # read from that mod's own jar, in its own namespace and shape (forge:ores/tin,
+                # c:tin_ores). The name-keyed tags above stay, so nothing a published release put into a
+                # tag is ever taken back out, but on their own they were WRONG for every prefixed name:
+                # energized_tin sat in ores/energized_tin and never forge:ores/tin, so a machine matching
+                # the metal refused a silk-touched variant. It also catches ores the source mod lists
+                # twice (Extreme Reactors' yellorite is forge:ores/uranium as well).
+                if mod:
+                    for kind, target in (("block", parity_block), ("item", parity_item)):
+                        for tag in sorted(mod_ore_tags[kind].get(vanilla_id, ())):
+                            if tag[1] != f"ores/{ore['name']}":
+                                target.setdefault(tag, []).append(entry)
                 # c:ores_in_ground/<stone|deepslate|netherrack> - keyed on the ore we stand in for,
                 # so consumers treat a variant exactly like its counterpart.
                 ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[host_cfg["tier"]]
@@ -1121,19 +1443,33 @@ def generate_data():
     # Written into BOTH common-tag namespaces, because 1.20.x is the era where the ecosystem is
     # split: Fabric mods read c:ores, Forge mods read forge:ores. The copy a given loader ignores
     # is just a tag nobody queries.
+    # Keyed (namespace, path) so the parity tags MERGE into a name-keyed tag of the same path (a Forge
+    # mod's forge:ores/silver is also our own ores/silver) instead of one file overwriting the other.
+    block_tags, item_tags = {}, {}
     for namespace in CONVENTION_NAMESPACES:
-        conv = data_dir(namespace)
-        write_json(os.path.join(conv, *TAG_BLOCK_DIR, "ores.json"), {"values": all_ids})
-        write_json(os.path.join(conv, *TAG_ITEM_DIR, "ores.json"), {"values": all_ids})
+        block_tags[(namespace, "ores")] = list(all_ids)
+        item_tags[(namespace, "ores")] = list(all_ids)
         for ore, values in conv_block.items():
-            write_json(os.path.join(conv, *TAG_BLOCK_DIR, "ores", f"{ore}.json"), {"values": values})
+            block_tags[(namespace, f"ores/{ore}")] = list(values)
         for ore, values in conv_item.items():
-            write_json(os.path.join(conv, *TAG_ITEM_DIR, "ores", f"{ore}.json"), {"values": values})
+            item_tags[(namespace, f"ores/{ore}")] = list(values)
+    for tags, parity in ((block_tags, parity_block), (item_tags, parity_item)):
+        for key, values in parity.items():
+            merged = tags.setdefault(key, [])
+            known = {e["id"] if isinstance(e, dict) else e for e in merged}
+            merged += [e for e in values if (e["id"] if isinstance(e, dict) else e) not in known]
+    for (namespace, path), values in block_tags.items():
+        write_json(os.path.join(data_dir(namespace), *TAG_BLOCK_DIR, f"{path}.json"), {"values": values})
+    for (namespace, path), values in item_tags.items():
+        write_json(os.path.join(data_dir(namespace), *TAG_ITEM_DIR, f"{path}.json"), {"values": values})
+    for namespace in CONVENTION_NAMESPACES:
         for ground, values in ores_in_ground.items():
             write_json(
-                os.path.join(conv, *TAG_BLOCK_DIR, "ores_in_ground", f"{ground}.json"),
+                os.path.join(data_dir(namespace), *TAG_BLOCK_DIR, "ores_in_ground", f"{ground}.json"),
                 {"values": values},
             )
+    print(f"  tag parity: {len(parity_block)} counterpart ore tags joined "
+          f"({', '.join(sorted(f'{ns}:{p}' for ns, p in parity_block if not p.startswith('ores/') and p != 'ores'))})")
 
     # A pack.mcmeta per built-in datapack. Without it Pack.readMetaAndCreate returns null and the
     # pack is silently skipped, which would look exactly like the loot tables never being written.
@@ -1339,7 +1675,7 @@ def _loader_counts():
 
 def _overlay_list():
     """Every overlay texture a resource pack would need to replace, and how many there are."""
-    overlays = sorted({overlay_for(ore, host_cfg) for _h, host_cfg, ore, _v in variants()})
+    overlays = all_overlay_keys()
     return [
         f"Every variant of one ore shares a single overlay texture, so covering all "
         f"{len(list(variants()))} blocks takes **{len(overlays)} PNG files**:",
@@ -1403,7 +1739,7 @@ def generate_readme():
     with open(path, "w", encoding="utf-8", newline="") as handle:
         handle.write(text)
     print(f"  README.md: {len(list(variants()))} blocks, "
-          f"{len({overlay_for(o, c) for _h, c, o, _v in variants()})} overlays, "
+          f"{len(all_overlay_keys())} overlays, "
           f"{len({o.get('mod') for o in ORE_DEFS} - {None})} mods credited")
 
 
