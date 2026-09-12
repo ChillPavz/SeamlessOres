@@ -4,7 +4,7 @@
     "particle": "minecraft:block/andesite",
     "side": "minecraft:block/andesite",
     "end": "minecraft:block/andesite",
-    "overlay": "seamlessores:block/ruby_overlay"
+    "overlay": "seamlessores:block/silents_ruby_overlay"
   },
   "elements": [
     {

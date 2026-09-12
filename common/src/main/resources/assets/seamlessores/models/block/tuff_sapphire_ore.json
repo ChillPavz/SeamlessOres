@@ -4,7 +4,7 @@
     "particle": "minecraft:block/tuff",
     "side": "minecraft:block/tuff",
     "end": "minecraft:block/tuff",
-    "overlay": "seamlessores:block/sapphire_overlay"
+    "overlay": "seamlessores:block/silents_sapphire_overlay"
   },
   "elements": [
     {
