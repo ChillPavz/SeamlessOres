@@ -5,7 +5,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_mi_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mi_nickel_ore",
       "required": false
     },
     {
@@ -13,7 +21,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_mi_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_nickel_ore",
       "required": false
     }
   ]

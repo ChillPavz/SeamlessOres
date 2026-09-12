@@ -193,6 +193,26 @@ public final class SeamlessOresContent {
         return items;
     }
 
+    /**
+     * Blast resistance for a modded variant, which is 3.0 for almost everything.
+     *
+     * <p>The tier defaults exist because a modded block may not be registered when we build ours,
+     * so its real properties cannot be read - see the caller. That convention is right for every
+     * mod on this branch except one: <b>Modern Industrialization builds each ore as a full copy of
+     * its host rock</b> ({@code minecraft:stone} or {@code minecraft:deepslate}) and then raises
+     * only the hardness, by 1.5. So its hardness lands on the convention (3.0 and 4.5) while its
+     * blast resistance is the rock's 6.0, and a variant at 3.0 would break in explosions the
+     * original survives.
+     *
+     * <p>This is per version, not per mod: the 1.20.1 build of the same mod sets 3.0 explicitly.
+     * Read from each mod's own jar, never guessed. If another mod turns out to be unusual, add it
+     * here rather than moving everything onto a general property-copy: the reason the defaults
+     * exist has not changed.
+     */
+    private static float blastResistanceFor(String modId) {
+        return "modern_industrialization".equals(modId) ? 6.0F : 3.0F;
+    }
+
     private static Block createBlock(OreVariant variant) {
 
         final BlockBehaviour.Properties properties;
@@ -205,16 +225,23 @@ public final class SeamlessOresContent {
         } else {
             // Modded equivalent: its block may not be registered yet - registration order between
             // unrelated mods is deliberately not relied on. Bake the vanilla ore convention by tier
-            // instead (stone ores 3.0/3.0, deepslate ores 4.5/3.0), which Create's zinc follows.
+            // instead (stone ores 3.0/3.0, deepslate ores 4.5/3.0), which Create's zinc follows,
+            // except where a mod's own jar says otherwise (blastResistanceFor).
             final float hardness = variant.host().tier() == OreTier.DEEPSLATE ? 4.5F : 3.0F;
             properties = BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
-                    .strength(hardness, 3.0F);
+                    .strength(hardness, blastResistanceFor(variant.ore().requiredModId()));
         }
         // Only map colour and sound follow the HOST stone - vanilla varies those by host rock too
         // (deepslate ores use MapColor.DEEPSLATE), and they have no balance effect.
         properties.mapColor(variant.host().mapColor())
                 .sound(variant.host().sound());
+        // Light follows the ORE. A vanilla copy already carries its own; the modded path starts from
+        // nothing, so an ore that glows (Cobblemon's shiny stone, among others) needs it set here.
+        final int light = variant.ore().lightEmission();
+        if (light > 0) {
+            properties.lightLevel(state -> light);
+        }
 
         return variant.ore().redstoneLike()
                 ? new RedStoneOreBlock(properties)

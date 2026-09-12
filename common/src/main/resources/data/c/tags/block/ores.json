@@ -13,6 +13,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_antimony_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_aquamarine_ore",
       "required": false
     },
@@ -51,6 +55,10 @@
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_copper_ore",
     {
+      "id": "seamlessores:andesite_dawn_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_dense_fluorite_ore",
       "required": false
     },
@@ -71,9 +79,21 @@
       "required": false
     },
     "seamlessores:andesite_diamond_ore",
+    {
+      "id": "seamlessores:andesite_dusk_stone_ore",
+      "required": false
+    },
     "seamlessores:andesite_emerald_ore",
     {
       "id": "seamlessores:andesite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_galena_ore",
       "required": false
     },
     {
@@ -90,7 +110,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_iridium_ore",
       "required": false
     },
     "seamlessores:andesite_iron_ore",
@@ -108,6 +140,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_lignite_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_lithium_ore",
       "required": false
     },
@@ -116,7 +156,31 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mi_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mi_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_moon_stone_ore",
       "required": false
     },
     {
@@ -133,6 +197,14 @@
     },
     {
       "id": "seamlessores:andesite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_opal_ore",
       "required": false
     },
     {
@@ -160,6 +232,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_prosperity_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_quadrillum_ore",
       "required": false
     },
@@ -177,7 +253,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_shiny_stone_ore",
       "required": false
     },
     {
@@ -209,11 +293,43 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_sun_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_tanzanite_ore",
       "required": false
     },
     {
+      "id": "seamlessores:andesite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_thunder_stone_ore",
       "required": false
     },
     {
@@ -222,6 +338,10 @@
     },
     {
       "id": "seamlessores:andesite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_tungsten_ore",
       "required": false
     },
     {
@@ -245,7 +365,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_water_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_white_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_yellorite_ore",
       "required": false
     },
     {
@@ -261,11 +393,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_benitoite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_black_diamond_ore",
       "required": false
     },
     {
       "id": "seamlessores:basalt_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_fire_stone_ore",
       "required": false
     },
     "seamlessores:basalt_gold_ore",
@@ -289,6 +433,10 @@
       "id": "seamlessores:basalt_pearl_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_pyrite_ore",
+      "required": false
+    },
     "seamlessores:basalt_quartz_ore",
     {
       "id": "seamlessores:basalt_ruby_ore",
@@ -300,6 +448,10 @@
     },
     {
       "id": "seamlessores:basalt_silents_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_sphalerite_ore",
       "required": false
     },
     {
@@ -319,11 +471,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_benitoite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_black_diamond_ore",
       "required": false
     },
     {
       "id": "seamlessores:blackstone_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_fire_stone_ore",
       "required": false
     },
     "seamlessores:blackstone_gold_ore",
@@ -347,6 +511,10 @@
       "id": "seamlessores:blackstone_pearl_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:blackstone_pyrite_ore",
+      "required": false
+    },
     "seamlessores:blackstone_quartz_ore",
     {
       "id": "seamlessores:blackstone_ruby_ore",
@@ -358,6 +526,10 @@
     },
     {
       "id": "seamlessores:blackstone_silents_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_sphalerite_ore",
       "required": false
     },
     {
@@ -374,6 +546,10 @@
     },
     {
       "id": "seamlessores:diorite_ammolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_antimony_ore",
       "required": false
     },
     {
@@ -415,6 +591,10 @@
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_copper_ore",
     {
+      "id": "seamlessores:diorite_dawn_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_dense_fluorite_ore",
       "required": false
     },
@@ -435,9 +615,21 @@
       "required": false
     },
     "seamlessores:diorite_diamond_ore",
+    {
+      "id": "seamlessores:diorite_dusk_stone_ore",
+      "required": false
+    },
     "seamlessores:diorite_emerald_ore",
     {
       "id": "seamlessores:diorite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_galena_ore",
       "required": false
     },
     {
@@ -454,7 +646,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iridium_ore",
       "required": false
     },
     "seamlessores:diorite_iron_ore",
@@ -472,6 +676,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_lignite_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_lithium_ore",
       "required": false
     },
@@ -480,7 +692,31 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mi_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mi_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_moon_stone_ore",
       "required": false
     },
     {
@@ -497,6 +733,14 @@
     },
     {
       "id": "seamlessores:diorite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_opal_ore",
       "required": false
     },
     {
@@ -524,6 +768,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_prosperity_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_quadrillum_ore",
       "required": false
     },
@@ -541,7 +789,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_shiny_stone_ore",
       "required": false
     },
     {
@@ -573,11 +829,43 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_sun_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_tanzanite_ore",
       "required": false
     },
     {
+      "id": "seamlessores:diorite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_thunder_stone_ore",
       "required": false
     },
     {
@@ -586,6 +874,10 @@
     },
     {
       "id": "seamlessores:diorite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_tungsten_ore",
       "required": false
     },
     {
@@ -609,7 +901,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_water_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_white_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_yellorite_ore",
       "required": false
     },
     {
@@ -626,6 +930,10 @@
     },
     {
       "id": "seamlessores:granite_ammolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_antimony_ore",
       "required": false
     },
     {
@@ -667,6 +975,10 @@
     "seamlessores:granite_coal_ore",
     "seamlessores:granite_copper_ore",
     {
+      "id": "seamlessores:granite_dawn_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_dense_fluorite_ore",
       "required": false
     },
@@ -687,9 +999,21 @@
       "required": false
     },
     "seamlessores:granite_diamond_ore",
+    {
+      "id": "seamlessores:granite_dusk_stone_ore",
+      "required": false
+    },
     "seamlessores:granite_emerald_ore",
     {
       "id": "seamlessores:granite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_galena_ore",
       "required": false
     },
     {
@@ -706,7 +1030,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_iridium_ore",
       "required": false
     },
     "seamlessores:granite_iron_ore",
@@ -724,6 +1060,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_lignite_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_lithium_ore",
       "required": false
     },
@@ -732,7 +1076,31 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mi_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mi_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_moon_stone_ore",
       "required": false
     },
     {
@@ -749,6 +1117,14 @@
     },
     {
       "id": "seamlessores:granite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_opal_ore",
       "required": false
     },
     {
@@ -776,6 +1152,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_prosperity_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_quadrillum_ore",
       "required": false
     },
@@ -793,7 +1173,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_shiny_stone_ore",
       "required": false
     },
     {
@@ -825,11 +1213,43 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_sun_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_tanzanite_ore",
       "required": false
     },
     {
+      "id": "seamlessores:granite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_thunder_stone_ore",
       "required": false
     },
     {
@@ -838,6 +1258,10 @@
     },
     {
       "id": "seamlessores:granite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_tungsten_ore",
       "required": false
     },
     {
@@ -861,7 +1285,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_water_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_white_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_yellorite_ore",
       "required": false
     },
     {
@@ -878,6 +1314,10 @@
     },
     {
       "id": "seamlessores:tuff_ammolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_antimony_ore",
       "required": false
     },
     {
@@ -911,6 +1351,10 @@
     "seamlessores:tuff_coal_ore",
     "seamlessores:tuff_copper_ore",
     {
+      "id": "seamlessores:tuff_dawn_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_dense_fluorite_ore",
       "required": false
     },
@@ -931,9 +1375,21 @@
       "required": false
     },
     "seamlessores:tuff_diamond_ore",
+    {
+      "id": "seamlessores:tuff_dusk_stone_ore",
+      "required": false
+    },
     "seamlessores:tuff_emerald_ore",
     {
       "id": "seamlessores:tuff_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_galena_ore",
       "required": false
     },
     {
@@ -950,7 +1406,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iridium_ore",
       "required": false
     },
     "seamlessores:tuff_iron_ore",
@@ -964,11 +1432,43 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_lignite_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_lithium_ore",
       "required": false
     },
     {
+      "id": "seamlessores:tuff_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_moon_stone_ore",
       "required": false
     },
     {
@@ -988,6 +1488,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_pearl_ore",
       "required": false
     },
@@ -997,6 +1505,10 @@
     },
     {
       "id": "seamlessores:tuff_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_prosperity_ore",
       "required": false
     },
     "seamlessores:tuff_redstone_ore",
@@ -1013,7 +1525,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_shiny_stone_ore",
       "required": false
     },
     {
@@ -1037,11 +1557,47 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_sun_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_tanzanite_ore",
       "required": false
     },
     {
+      "id": "seamlessores:tuff_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_thunder_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_tungsten_ore",
       "required": false
     },
     {
@@ -1065,7 +1621,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_water_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_white_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_yellorite_ore",
       "required": false
     },
     {

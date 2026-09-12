@@ -68,11 +68,17 @@ public final class SeamlessOresConfigScreenFactory {
     private static final Map<String, String> MOD_CATEGORIES = new LinkedHashMap<>();
 
     static {
+        MOD_CATEGORIES.put("cobblemon", "cobblemon");
         MOD_CATEGORIES.put("create", "create");
         MOD_CATEGORIES.put("create_new_age", "create_new_age");
         MOD_CATEGORIES.put("tfmg", "tfmg");
         MOD_CATEGORIES.put("densemekanism", "dense_mekanism");
         MOD_CATEGORIES.put("energizedpower", "energized_power");
+        MOD_CATEGORIES.put("bigreactors", "extreme_reactors");
+        MOD_CATEGORIES.put("modern_industrialization", "modern_industrialization");
+        MOD_CATEGORIES.put("mysticalagriculture", "mystical_agriculture");
+        MOD_CATEGORIES.put("occultism", "occultism");
+        MOD_CATEGORIES.put("techreborn", "tech_reborn");
         MOD_CATEGORIES.put("mythicmetals", "mythic_metals");
         MOD_CATEGORIES.put("mythicupgrades", "mythic_upgrades");
         MOD_CATEGORIES.put("powah", "powah");

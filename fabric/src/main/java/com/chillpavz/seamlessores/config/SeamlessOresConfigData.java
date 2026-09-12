@@ -100,6 +100,16 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
     public int netherVeinSize = 80;
 
+    // --- Cobblemon ------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("cobblemon")
+    @ConfigEntry.Gui.Tooltip
+    public boolean cobblemon = true;
+
+    @ConfigEntry.Category("cobblemon")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean cobblemonNether = true;
+
     // --- Create ---------------------------------------------------------------------------------
 
     @ConfigEntry.Category("create")
@@ -135,6 +145,28 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean energizedPower = true;
 
+    // --- Extreme Reactors -----------------------------------------------------------------------
+
+    @ConfigEntry.Category("extreme_reactors")
+    @ConfigEntry.Gui.Tooltip
+    public boolean extremeReactors = true;
+
+    @ConfigEntry.Category("extreme_reactors")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean extremeReactorsNether = true;
+
+    // --- Modern Industrialization ---------------------------------------------------------------
+
+    @ConfigEntry.Category("modern_industrialization")
+    @ConfigEntry.Gui.Tooltip
+    public boolean modernIndustrialization = true;
+
+    // --- Mystical Agriculture -------------------------------------------------------------------
+
+    @ConfigEntry.Category("mystical_agriculture")
+    @ConfigEntry.Gui.Tooltip
+    public boolean mysticalAgriculture = true;
+
     // --- Mythic Metals --------------------------------------------------------------------------
 
     @ConfigEntry.Category("mythic_metals")
@@ -155,6 +187,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 2)
     @ConfigEntry.BoundedDiscrete(min = 3, max = 6)
     public int netherGemSize = 4;
+
+    // --- Occultism ------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("occultism")
+    @ConfigEntry.Gui.Tooltip
+    public boolean occultism = true;
 
     // --- Powah ----------------------------------------------------------------------------------
 
@@ -193,6 +231,16 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 2)
     @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
     public int silentGemsNetherVeinSize = 80;
+
+    // --- Tech Reborn ----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("tech_reborn")
+    @ConfigEntry.Gui.Tooltip
+    public boolean techReborn = true;
+
+    @ConfigEntry.Category("tech_reborn")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean techRebornNether = true;
 
     // --- Things ---------------------------------------------------------------------------------
 
@@ -254,6 +302,15 @@ public class SeamlessOresConfigData implements ConfigData {
         values.powah = powah;
         values.tfmg = tfmg;
         values.energizedPower = energizedPower;
+        values.techReborn = techReborn;
+        values.techRebornNether = techRebornNether;
+        values.extremeReactorsNether = extremeReactorsNether;
+        values.cobblemon = cobblemon;
+        values.cobblemonNether = cobblemonNether;
+        values.modernIndustrialization = modernIndustrialization;
+        values.occultism = occultism;
+        values.extremeReactors = extremeReactors;
+        values.mysticalAgriculture = mysticalAgriculture;
         values.things = things;
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;

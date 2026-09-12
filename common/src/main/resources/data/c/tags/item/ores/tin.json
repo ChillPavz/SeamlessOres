@@ -5,11 +5,75 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mi_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_tin_ore",
       "required": false
     },
     {
+      "id": "seamlessores:diorite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mi_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_tin_ore",
       "required": false
     }
   ]

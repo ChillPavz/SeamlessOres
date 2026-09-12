@@ -5,7 +5,7 @@
     "particle": "minecraft:block/granite",
     "side": "minecraft:block/granite",
     "end": "minecraft:block/granite",
-    "overlay": "seamlessores:block/ruby_overlay"
+    "overlay": "seamlessores:block/silents_ruby_overlay"
   },
   "elements": [
     {
