@@ -235,8 +235,12 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_MOLDAVITE = silentGem("moldavite", GEM_XP);
     public static final OreType SG_PEARL = silentGem("pearl", GEM_XP);
     public static final OreType SG_ROSE_QUARTZ = silentGem("rose_quartz", GEM_XP);
-    public static final OreType SG_RUBY = silentGem("ruby", GEM_XP);
-    public static final OreType SG_SAPPHIRE = silentGem("sapphire", GEM_XP);
+    // Same block names as Mythic Upgrades' nether ruby and sapphire, but their own art: the overlay
+    // key differs, or both mods' variants would share one texture.
+    public static final OreType SG_RUBY = new OreType("ruby", "silents_ruby", null, "silentgems",
+            of("silentgems", "ruby_ore"), of("silentgems", "deepslate_ruby_ore"), null, GEM_XP, null, false, Set.of());
+    public static final OreType SG_SAPPHIRE = new OreType("sapphire", "silents_sapphire", null, "silentgems",
+            of("silentgems", "sapphire_ore"), of("silentgems", "deepslate_sapphire_ore"), null, GEM_XP, null, false, Set.of());
     public static final OreType SG_TANZANITE = silentGem("tanzanite", GEM_XP);
     public static final OreType SG_TURQUOISE = silentGem("turquoise", GEM_XP);
     public static final OreType SG_WHITE_DIAMOND = silentGem("white_diamond", GEM_XP);
@@ -350,6 +354,14 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_N_PEARL = silentNether("pearl", "pearl");
     public static final OreType SG_N_TANZANITE = silentNether("tanzanite", "tanzanite");
 
+    /**
+     * Silent's Gems' opal: a {@code GemOreBlock} like every other gem, so {@link #GEM_XP}. It is
+     * TRANSLUCENT, painted at partial opacity over each rock, so every host carries its own
+     * precomposited overlay (the generator's {@code host_overlays}). Its nether feature places
+     * nothing (size 0, count 0), so there are no basalt or blackstone variants.
+     */
+    public static final OreType SG_OPAL = silentGem("opal", GEM_XP);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -367,7 +379,8 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     TFMG_LEAD, TFMG_LITHIUM, TFMG_NICKEL,
                     ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
-                    SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE);
+                    SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE,
+                    SG_OPAL);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
     public Identifier vanillaFor(HostStone host) {

@@ -26,6 +26,7 @@ ownership of them in the README or on any store page.
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -55,7 +56,7 @@ CLIENT_JAR = os.path.expanduser(
 # skips zinc.
 CREATE_JAR = os.environ.get(
     "CREATE_JAR",
-    "../jars/1.21.11-create-fly-1.21.11-6.0.9-5.jar",
+    "../references/jars/1.21.11-create-fly-1.21.11-6.0.9-5.jar",
 )
 
 # Mythic Upgrades (mod id 'mythicupgrades', MIT, 26.2 on all four loaders). Source of its ore
@@ -71,30 +72,30 @@ MYTHIC_UPGRADES_JAR = os.environ.get(
 # its variants only ever register there. Source of its ore textures, loot tables and tool tags.
 SILENT_GEMS_JAR = os.environ.get(
     "SILENT_GEMS_JAR",
-    "../jars/1.21.11-silentgems-1.21.11-neoforge-5.1.3.jar")
+    "../references/jars/1.21.11-silentgems-1.21.11-neoforge-5.1.3.jar")
 
 MYTHIC_METALS_JAR = os.environ.get(
     "MYTHIC_METALS_JAR",
     # The in-range build. Mythic Metals ships Fabric only and stops at 1.21.4; its ore set, loot
     # tables and textures are byte-identical to the 0.24.6+1.21 build the other branches read.
-    "../jars/mythicmetals-0.24.6+1.21.jar",
+    "../references/jars/mythicmetals-0.24.6+1.21.jar",
 )
 
 # Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
 # a warning rather than an error: the JSON still generates, only the texture step is skipped.
-DENSEMEKANISM_JAR = os.environ.get("DENSEMEKANISM_JAR", "../jars/densemekanism-1.21.1-1.2.jar")
+DENSEMEKANISM_JAR = os.environ.get("DENSEMEKANISM_JAR", "../references/jars/densemekanism-1.21.1-1.2.jar")
 
-POWAH_JAR = os.environ.get("POWAH_JAR", "../jars/Powah-7.0.4-alpha.jar")
+POWAH_JAR = os.environ.get("POWAH_JAR", "../references/jars/Powah-7.0.4-alpha.jar")
 
-TFMG_JAR = os.environ.get("TFMG_JAR", "../jars/1.21.11-tfmg-1.2.0.jar")
+TFMG_JAR = os.environ.get("TFMG_JAR", "../references/jars/1.21.11-tfmg-1.2.0.jar")
 
-ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../jars/1.21.11-energizedpower-1.21.11-2.15.14-neoforge.jar")
+ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../references/jars/1.21.11-energizedpower-1.21.11-2.15.14-neoforge.jar")
 
-THINGS_JAR = os.environ.get("THINGS_JAR", "../jars/things-0.4.2+1.21.jar")
+THINGS_JAR = os.environ.get("THINGS_JAR", "../references/jars/things-0.4.2+1.21.jar")
 
-SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../jars/1.21.11-silent-gear-1.21.11-neoforge-4.1.6.1.jar")
+SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../references/jars/1.21.11-silent-gear-1.21.11-neoforge-4.1.6.1.jar")
 
-CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../jars/create-new-age-1.2.0+neoforge-mc1.21.1.jar")
+CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../references/jars/create-new-age-1.2.0+neoforge-mc1.21.1.jar")
 
 MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "silentgear": SILENTGEAR_JAR,
@@ -361,10 +362,13 @@ ORE_DEFS = [
     {"name": "rose_quartz",             "overlay": "rose_quartz",             "source": "rose_quartz_ore", "base": "stone",
      "mod": "silentgems", "raw_drop": "silentgems:rose_quartz",
      "tiers": {"stone": "rose_quartz_ore", "deepslate": "deepslate_rose_quartz_ore"}},
-    {"name": "ruby",                    "overlay": "ruby",                    "source": "ruby_ore", "base": "stone",
+    # Ruby and sapphire share a block NAME with Mythic Upgrades' nether ruby and sapphire (the hosts never
+    # overlap), but NOT the art. The overlay key is separate, or both write ruby_overlay.png and one mod's
+    # variants wear the other's art: exactly what happened until Sept 2026 (87-89 px apart).
+    {"name": "ruby",                    "overlay": "silents_ruby",            "source": "ruby_ore", "base": "stone",
      "mod": "silentgems", "raw_drop": "silentgems:ruby",
      "tiers": {"stone": "ruby_ore", "deepslate": "deepslate_ruby_ore"}},
-    {"name": "sapphire",                "overlay": "sapphire",                "source": "sapphire_ore", "base": "stone",
+    {"name": "sapphire",                "overlay": "silents_sapphire",        "source": "sapphire_ore", "base": "stone",
      "mod": "silentgems", "raw_drop": "silentgems:sapphire",
      "tiers": {"stone": "sapphire_ore", "deepslate": "deepslate_sapphire_ore"}},
     {"name": "tanzanite",               "overlay": "tanzanite",               "source": "tanzanite_ore", "base": "stone",
@@ -473,6 +477,13 @@ ORE_DEFS = [
     {"name": "tanzanite", "overlay": "tanzanite", "source": "nether_tanzanite_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_tanzanite_ore"}},
+    # Silent's Gems opal is TRANSLUCENT: painted at partial opacity over each rock, so it takes the
+    # colour of the rock behind it. One overlay per host, precomposited from the solved layer (see
+    # the pack's solve_translucent_ore.py). Its nether feature places nothing (size 0, count 0).
+    {"name": "opal", "overlay": "opal", "source": "opal_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:opal",
+     "host_overlays": {"granite": "opal_granite", "diorite": "opal_diorite", "andesite": "opal_andesite", "tuff": "opal_tuff"},
+     "tiers": {"stone": "opal_ore", "deepslate": "deepslate_opal_ore"}},
 ]
 
 FACES = ["down", "up", "north", "south", "west", "east"]
@@ -578,11 +589,26 @@ def variants():
                 yield host, host_cfg, ore, vanilla
 
 
-def overlay_for(ore, host_cfg):
+def overlay_for(ore, host_cfg, face="side"):
     """Overlay key for this host, honouring a per-tier override. Mirrors OreType.overlayFor."""
+    # host_overlays: a TRANSLUCENT ore (Silent's Gems' opal, Cobblemon) takes the colour of the rock
+    # behind it, so each host needs its own precomposited overlay; ours render CUTOUT, which cannot do
+    # partial alpha. A (side, end) pair serves a host whose end faces use another texture. Generator
+    # only, because the Java side never reads overlay keys: the models carry them.
+    host = next((h for h, c in HOSTS.items() if c is host_cfg), None)
+    if host in ore.get("host_overlays", {}):
+        chosen = ore["host_overlays"][host]
+        if isinstance(chosen, tuple):
+            return chosen[0] if face == "side" else chosen[1]
+        return chosen
     if host_cfg["tier"] == "deepslate" and ore.get("deepslate_overlay"):
         return ore["deepslate_overlay"]
     return ore["overlay"]
+
+
+def all_overlay_keys():
+    """Every overlay texture key a model references, end-face overlays included."""
+    return sorted({overlay_for(o, c, face) for _h, c, o, _v in variants() for face in ("side", "end")})
 
 
 # House style: this project does not use U+2014 EM DASH or U+2013 EN DASH in player-facing text.
@@ -622,7 +648,8 @@ def variant_name(host, ore):
 # block "Lapis Lazuli Ore" (id lapis_ore) - "Granite Lapis Ore" would be the exact naming
 # inconsistency users reported on the incumbent. Quartz stays "Quartz" (no "Nether" prefix: that
 # prefix distinguishes an overworld quartz that does not exist, and ours is already host-prefixed).
-DISPLAY_NAMES = {"lapis": "Lapis Lazuli"}
+# Prefixes that disambiguate a clashing ore name read as the mod, not as a made-up word.
+DISPLAY_NAMES = {"lapis": "Lapis Lazuli", "techreborn": "Tech Reborn", "mi": "MI"}
 
 
 def title(name):
@@ -667,20 +694,25 @@ def generate_json():
             # (ExtendedBlockModelDeserializer on each, verified in neoforge 21.1.80 and forge 52).
             # Vanilla and Fabric ignore the key, so FABRIC IS HANDLED IN CODE by
             # SeamlessOresFabricClient calling BlockRenderLayerMap. Both halves are needed.
+            textures = {
+                "particle": host_cfg["side"],
+                "side": host_cfg["side"],
+                "end": host_cfg["end"],
+                "overlay": f"{MOD_ID}:block/{overlay_for(ore, host_cfg)}_overlay",
+            }
+            end_overlay = overlay_for(ore, host_cfg, "end")
+            if end_overlay != overlay_for(ore, host_cfg):
+                textures["overlay_end"] = f"{MOD_ID}:block/{end_overlay}_overlay"
             write_json(
                 os.path.join(root, "models", "block", f"{name}.json"),
                 {
                     "parent": "minecraft:block/block",
                     "render_type": "minecraft:cutout",
-                    "textures": {
-                        "particle": host_cfg["side"],
-                        "side": host_cfg["side"],
-                        "end": host_cfg["end"],
-                        "overlay": f"{MOD_ID}:block/{overlay_for(ore, host_cfg)}_overlay",
-                    },
+                    "textures": textures,
                     "elements": [
                         {"from": [0, 0, 0], "to": [16, 16, 16], "faces": cube_faces("#side", "#end")},
-                        {"from": [0, 0, 0], "to": [16, 16, 16], "faces": cube_faces("#overlay")},
+                        {"from": [0, 0, 0], "to": [16, 16, 16],
+                         "faces": cube_faces("#overlay", "#overlay_end" if "overlay_end" in textures else None)},
                     ],
                 },
             )
@@ -905,6 +937,44 @@ def generate_json():
     print(f"  {len(lang)} lang entries")
 
 
+def read_mod_ore_tags():
+    """Block and item id -> every c:ores/<x> tag it is in, read from each supported mod's own jar.
+
+    Nested references are resolved inside the jar: Silent's Gems points c:ores/<gem> at its own
+    #silentgems:ores/<gem>. A missing jar contributes nothing; the loot step already fails loudly
+    for that case, so it cannot slip through silently.
+    """
+    out = {"block": {}, "item": {}}
+    for mod_jar in MOD_JARS.values():
+        if not mod_jar or not os.path.exists(mod_jar):
+            continue
+        with zipfile.ZipFile(mod_jar) as z:
+            for kind in ("block", "item"):
+                tags = {}
+                for n in z.namelist():
+                    m = re.match(rf"^data/([^/]+)/tags/{kind}s?/(.+)\.json$", n)
+                    if m:
+                        values = json.loads(z.read(n)).get("values", [])
+                        tags[f"{m.group(1)}:{m.group(2)}"] = [
+                            v["id"] if isinstance(v, dict) else v for v in values]
+
+                def resolve(tag, seen):
+                    members = set()
+                    for value in tags.get(tag, []):
+                        if value.startswith("#"):
+                            if value[1:] not in seen:
+                                members |= resolve(value[1:], seen | {value[1:]})
+                        else:
+                            members.add(value)
+                    return members
+
+                for tag in tags:
+                    if tag.startswith("c:ores/"):
+                        for member in resolve(tag, {tag}):
+                            out[kind].setdefault(member, set()).add(tag[len("c:ores/"):])
+    return out
+
+
 def generate_data():
     """Loot tables and tags. Loot is TRANSFORMED from vanilla's own tables, never reconstructed."""
 
@@ -914,6 +984,7 @@ def generate_data():
     ours = data_dir(MOD_ID)
     mc = data_dir("minecraft")
     conv = data_dir("c")
+    mod_ore_tags = read_mod_ore_tags()
 
     mineable = []
     tool_tags = {}
@@ -1045,6 +1116,17 @@ def generate_data():
                         tool_tags.setdefault(tag, []).append(entry)
                 conv_block.setdefault(ore["name"], []).append(entry)
                 conv_item.setdefault(ore["name"], []).append(entry)
+                # TAG PARITY with the ore we stand in for: every c:ores/<x> tag its counterpart is in,
+                # read from that mod's own jar. The name-keyed tag above stays, so nothing a published
+                # release put into a tag is ever taken back out, but on its own it was WRONG for every
+                # prefixed name: energized_tin sat in c:ores/energized_tin and never c:ores/tin, so a
+                # machine matching c:ores/tin refused a silk-touched variant. It also misses ores the
+                # source mod lists twice (Extreme Reactors' yellorite is c:ores/uranium as well).
+                if mod:
+                    for kind, target in (("block", conv_block), ("item", conv_item)):
+                        for tag_name in sorted(mod_ore_tags[kind].get(vanilla_id, ())):
+                            if tag_name != ore["name"]:
+                                target.setdefault(tag_name, []).append(entry)
                 # c:ores_in_ground/<stone|deepslate|netherrack> - keyed on the ore we stand in for,
                 # so consumers treat a variant exactly like its counterpart.
                 ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[host_cfg["tier"]]
@@ -1240,7 +1322,7 @@ def _loader_counts():
 
 def _overlay_list():
     """Every overlay texture a resource pack would need to replace, and how many there are."""
-    overlays = sorted({overlay_for(ore, host_cfg) for _h, host_cfg, ore, _v in variants()})
+    overlays = all_overlay_keys()
     return [
         f"Every variant of one ore shares a single overlay texture, so covering all "
         f"{len(list(variants()))} blocks takes **{len(overlays)} PNG files**:",
@@ -1304,7 +1386,7 @@ def generate_readme():
     with open(path, "w", encoding="utf-8", newline="") as handle:
         handle.write(text)
     print(f"  README.md: {len(list(variants()))} blocks, "
-          f"{len({overlay_for(o, c) for _h, c, o, _v in variants()})} overlays, "
+          f"{len(all_overlay_keys())} overlays, "
           f"{len({o.get('mod') for o in ORE_DEFS} - {None})} mods credited")
 
 

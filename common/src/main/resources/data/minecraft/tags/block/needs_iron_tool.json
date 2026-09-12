@@ -112,6 +112,10 @@
       "id": "seamlessores:granite_thorium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_opal_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -222,6 +226,10 @@
     },
     {
       "id": "seamlessores:diorite_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_opal_ore",
       "required": false
     },
     "seamlessores:andesite_gold_ore",
@@ -336,6 +344,10 @@
       "id": "seamlessores:andesite_thorium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_opal_ore",
+      "required": false
+    },
     "seamlessores:tuff_gold_ore",
     "seamlessores:tuff_diamond_ore",
     "seamlessores:tuff_emerald_ore",
@@ -442,6 +454,10 @@
     },
     {
       "id": "seamlessores:tuff_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_opal_ore",
       "required": false
     },
     {

@@ -198,11 +198,11 @@ public final class SeamlessOresConfig {
      * <p>Deliberately reduces the NUMBER of veins rather than their size: a vein you find is then
      * still worth mining out.
      *
-     * <p>Default raised from 5 to 8 after testing. The ore concentrates BELOW the lava sea because
-     * that is where a delta is solid: above it the biome is mostly open air and lava, so most vein
-     * attempts there place little or nothing, while every attempt in the solid rock below succeeds.
-     * Digging is therefore exactly where the density is felt. At 8 a chunk holds roughly 25 gold and
-     * 56 quartz against 130 at rarity 5.
+     * <p>Default history: 5, raised to 8 after testing (the ore concentrates below the lava sea,
+     * where a delta is solid, so digging is where density is felt; 8 gave roughly 25 gold and 56
+     * quartz a chunk against 130 at rarity 5), then lowered to 2 with netherVeinSize 60 to 80 because
+     * the Nether felt empty at 8 in play. AutoConfig keeps a value saved by an older version, so a
+     * player updating from one keeps that number until they change it.
      */
     public static int netherOreRarity = 2;
 

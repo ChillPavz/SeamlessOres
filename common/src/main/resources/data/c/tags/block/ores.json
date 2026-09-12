@@ -136,6 +136,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_orichalcum_ore",
       "required": false
     },
@@ -500,6 +504,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_orichalcum_ore",
       "required": false
     },
@@ -752,6 +760,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_orichalcum_ore",
       "required": false
     },
@@ -985,6 +997,10 @@
     },
     {
       "id": "seamlessores:tuff_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_opal_ore",
       "required": false
     },
     {

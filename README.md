@@ -32,7 +32,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**295 blocks** in the `seamlessores` namespace.
+**299 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -179,6 +179,7 @@ touching ore of the same type across different host stones.
 | Silents Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` |
 | Silents Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` |
 | Silents Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` |
+| Opal | `granite_opal_ore` | `diorite_opal_ore` | `andesite_opal_ore` | `tuff_opal_ore` |
 
 **Silent's Gems, Nether, requires `silentgems`**
 
@@ -206,7 +207,7 @@ Minecraft version:
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
 | Fabric | 44 | Create, Energized Power |
-| NeoForge | 148 | Energized Power, Silent Gear, Silent's Gems |
+| NeoForge | 152 | Energized Power, Silent Gear, Silent's Gems |
 | Forge | 36 | none at this Minecraft version |
 
 The registered block set is derived from which mods are loaded rather than from config, so
@@ -240,7 +241,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 295 blocks takes **76 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 299 blocks takes **82 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -248,7 +249,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `garnet` `gleaming` `gold` `heliodor` `iolite` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `tanzanite` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `garnet` `gleaming` `gold` `heliodor` `iolite` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `opal_andesite` `opal_diorite` `opal_granite` `opal_tuff` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `tanzanite` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is referenced straight from
