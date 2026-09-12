@@ -2,15 +2,15 @@
 
 Ore blocks whose background matches the stone they generate in. Granite, diorite, andesite and tuff
 variants for every overworld ore, basalt and blackstone in the Nether, and the same treatment for the
-ores of eleven other mods.
+ores of eighteen other mods.
 
 **In the Overworld it adds no ore.** The same veins, in the same places, drawn to fit their
 surroundings. The Nether variants are the one exception, and they are config gated.
 
 | | |
 |---|---|
-| Minecraft | 1.21 and 1.21.1, one jar per loader |
-| Loaders | Fabric, NeoForge, Forge, Quilt (untested) |
+| Minecraft | 1.20 and 1.20.1, one jar per loader |
+| Loaders | Fabric, Forge (the Forge jar also runs on NeoForge), Quilt (untested) |
 | Wiki | https://chillpavz.com/seamless-ores |
 | Licence | PolyForm Shield 1.0.0, see `LICENSE` |
 
@@ -292,14 +292,14 @@ a client and a server running the same mods always agree and nobody is kicked on
 
 Some ores are deliberately absent rather than overlooked. Mythic Upgrades' ametrine and jade, and
 Silent's Gems' end gems, are `block_match end_stone`: the End has no second stone type, so there is
-nothing to be seamless with. Thirteen of Silent's Gems' nether gems have a placement count of zero,
-so they are registered by that mod but never generate, and a variant would invent ore that does not
-exist. Ten of Mythic Metals' ores never generate in tuff, so they get three host stones rather than
+nothing to be seamless with. Only six of Silent's Gems' nether gems generate
+at this version; the rest have a placement count of zero, so they are registered by that mod but
+never generate, and a variant would invent ore that does not exist. Ten of Mythic Metals' ores never generate in tuff, so they get three host stones rather than
 four.
 
 Mekanism itself is not supported. It registers its own `mekanism:ore` feature type whose
 configuration is not an `OreConfiguration`, so the target list this mod extends is not there to
-extend. Dense Mekanism uses a plain `minecraft:ore` and works normally.
+extend.
 
 ## Configuration
 
@@ -334,13 +334,13 @@ automatically.
 
 ## Building
 
-Requires JDK 22. Gradle 8.10 and ForgeGradle 6 cannot run on a newer one.
+Requires JDK 22.
 
 ```
 ./gradlew build
 ```
 
-Jars land in `fabric/build/libs`, `neoforge/build/libs` and `forge/build/libs`. Take the plain jar,
+Jars land in `fabric/build/libs` and `forge/build/libs`. Take the plain jar,
 not the `-sources` or `-javadoc` one. Fabric Loader rejects the sources jar, because its metadata
 still holds unexpanded build placeholders.
 
@@ -358,10 +358,10 @@ cleaned overlays.
 | Path | What it holds |
 |---|---|
 | `common/` | Everything shared: content registration, worldgen injection, config holder |
-| `fabric/`, `neoforge/`, `forge/` | Loader entry points, the Cloth Config data class and screen |
+| `fabric/`, `forge/` | Loader entry points, the Cloth Config data class and screen |
 | `tools/generate_assets.py` | Generates blockstates, models, lang, loot tables, tags and the block list above |
 
-The Cloth Config classes are duplicated across the three loader modules on purpose and must stay
+The Cloth Config classes are duplicated across both loader modules on purpose and must stay
 identical. They cannot live in `common`, because loader dependencies are not on its classpath.
 
 ## How it works, briefly
@@ -375,10 +375,11 @@ Patching the live registry rather than shipping replacement JSON files is delibe
 with worldgen overhauls and ore datapacks instead of overwriting them.
 
 The exceptions, all config gated and all stated on the store page: basalt and blackstone gold and
-quartz add ore, because vanilla's Nether features match netherrack only; Silent's Gems' nether gems
-do the same, because that mod targets netherrack only as well; and Mythic Upgrades' ruby and sapphire
-in basalt deltas are placed by a feature this mod adds, because Mythic Upgrades restricts its own ore
-to a single biome and there was nothing to extend.
+quartz add ore, because vanilla's Nether features match netherrack only; Silent's Gems' nether gems,
+Tech Reborn's cinnabar, pyrite and sphalerite, Extreme Reactors' benitoite and Cobblemon's nether
+fire stone do the same, because those mods target netherrack only as well; and Mythic Upgrades' ruby
+and sapphire in basalt deltas are placed by a feature this mod adds, because Mythic Upgrades
+restricts its own ore to a single biome and there was nothing to extend.
 
 Full detail is on the wiki.
 
