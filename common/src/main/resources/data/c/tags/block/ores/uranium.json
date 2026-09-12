@@ -5,11 +5,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_dense_uranium_ore",
       "required": false
     },
     {
+      "id": "seamlessores:diorite_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_yellorite_ore",
       "required": false
     },
     {

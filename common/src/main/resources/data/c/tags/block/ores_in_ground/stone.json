@@ -284,6 +284,10 @@
       "id": "seamlessores:granite_techreborn_tin_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_yellorite_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -568,6 +572,10 @@
       "id": "seamlessores:diorite_techreborn_tin_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_yellorite_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -850,6 +858,10 @@
     },
     {
       "id": "seamlessores:andesite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_yellorite_ore",
       "required": false
     }
   ]

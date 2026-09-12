@@ -281,6 +281,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_zinc_ore",
       "required": false
     },
@@ -290,6 +294,10 @@
     },
     {
       "id": "seamlessores:basalt_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_benitoite_ore",
       "required": false
     },
     {
@@ -360,6 +368,10 @@
     },
     {
       "id": "seamlessores:blackstone_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_benitoite_ore",
       "required": false
     },
     {
@@ -701,6 +713,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_zinc_ore",
       "required": false
     },
@@ -985,6 +1001,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_zinc_ore",
       "required": false
     },
@@ -1218,6 +1238,10 @@
     },
     {
       "id": "seamlessores:tuff_white_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_yellorite_ore",
       "required": false
     },
     {

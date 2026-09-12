@@ -135,6 +135,16 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean energizedPower = true;
 
+    // --- Extreme Reactors -----------------------------------------------------------------------
+
+    @ConfigEntry.Category("extreme_reactors")
+    @ConfigEntry.Gui.Tooltip
+    public boolean extremeReactors = true;
+
+    @ConfigEntry.Category("extreme_reactors")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean extremeReactorsNether = true;
+
     // --- Mythic Metals --------------------------------------------------------------------------
 
     @ConfigEntry.Category("mythic_metals")
@@ -266,6 +276,8 @@ public class SeamlessOresConfigData implements ConfigData {
         values.energizedPower = energizedPower;
         values.techReborn = techReborn;
         values.techRebornNether = techRebornNether;
+        values.extremeReactors = extremeReactors;
+        values.extremeReactorsNether = extremeReactorsNether;
         values.things = things;
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;

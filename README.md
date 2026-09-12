@@ -2,7 +2,7 @@
 
 Ore blocks whose background matches the stone they generate in. Granite, diorite, andesite and tuff
 variants for every overworld ore, basalt and blackstone in the Nether, and the same treatment for the
-ores of twelve other mods.
+ores of thirteen other mods.
 
 **In the Overworld it adds no ore.** The same veins, in the same places, drawn to fit their
 surroundings. The Nether variants are the one exception, and they are config gated.
@@ -30,7 +30,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**333 blocks** in the `seamlessores` namespace.
+**339 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -218,6 +218,18 @@ touching ore of the same type across different host stones.
 | Pyrite | `basalt_pyrite_ore` | `blackstone_pyrite_ore` |
 | Sphalerite | `basalt_sphalerite_ore` | `blackstone_sphalerite_ore` |
 
+**Extreme Reactors, Overworld, requires `bigreactors`**
+
+| | granite | diorite | andesite | tuff |
+|---|---|---|---|---|
+| Yellorite | `granite_yellorite_ore` | `diorite_yellorite_ore` | `andesite_yellorite_ore` | `tuff_yellorite_ore` |
+
+**Extreme Reactors, Nether, requires `bigreactors`**
+
+| | basalt | blackstone |
+|---|---|---|
+| Benitoite | `basalt_benitoite_ore` | `blackstone_benitoite_ore` |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
 Minecraft version:
@@ -225,7 +237,7 @@ Minecraft version:
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
 | Fabric | 150 | Create, Energized Power, Mythic Metals, Tech Reborn |
-| NeoForge | 40 | Energized Power |
+| NeoForge | 46 | Energized Power, Extreme Reactors |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -258,7 +270,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 333 blocks takes **89 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 339 blocks takes **91 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -266,7 +278,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `benitoite` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `yellorite` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is referenced straight from
@@ -316,11 +328,11 @@ Patching the live registry rather than shipping replacement JSON files is delibe
 with worldgen overhauls and ore datapacks instead of overwriting them.
 
 The exceptions, all config gated and all stated on the store page: basalt and blackstone gold and
-quartz add ore, because vanilla's Nether features match netherrack only; Silent's Gems' nether gems
-and Tech Reborn's cinnabar, pyrite and sphalerite do the same, because those mods target netherrack
-only as well; and Mythic Upgrades' ruby and sapphire in basalt deltas are placed by a feature this
-mod adds, because Mythic Upgrades restricts its own ore to a single biome and there was nothing to
-extend.
+quartz add ore, because vanilla's Nether features match netherrack only; Silent's Gems' nether gems,
+Tech Reborn's cinnabar, pyrite and sphalerite and Extreme Reactors' benitoite do the same, because
+those mods target netherrack only as well; and Mythic Upgrades' ruby and sapphire in basalt deltas
+are placed by a feature this mod adds, because Mythic Upgrades restricts its own ore to a single
+biome and there was nothing to extend.
 
 Full detail is on the wiki.
 
@@ -345,6 +357,7 @@ is theirs and is used under the licence shown:
 | Silent's Gems | SilentChaos512 | MIT |
 | Things | glisco | MIT |
 | Tech Reborn | Team Reborn, modmuss50, drcrazy | MIT |
+| Extreme Reactors | ZeroNoRyouki | MIT |
 <!-- END GENERATED credits -->
 
 Built on [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template) by jaredlll08.

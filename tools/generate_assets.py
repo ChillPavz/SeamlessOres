@@ -103,9 +103,14 @@ CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../references/jars/cr
 # 1.21.5, 5.14.2 for 1.21.6-1.21.8) ship byte-identical ores, loot, tags, textures and worldgen, and
 # none has uranium, so the 1.21.4 build serves the whole jar.
 TECHREBORN_JAR = os.environ.get("TECHREBORN_JAR", "../references/jars/1.21.4-TechReborn-5.12.9.jar")
+# Extreme Reactors 2.4.20 is its only build in this range: NeoForge, 1.21.4, CurseForge only. Its ores,
+# loot, textures and worldgen are identical to 2.4.9 at 1.21.1; only its c:ores tag gained deepslate
+# yellorite.
+EXTREME_REACTORS_JAR = os.environ.get("EXTREME_REACTORS_JAR", "../references/jars/1.21.4-ExtremeReactors2-1.21.4-2.4.20.jar")
 
 MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "techreborn": TECHREBORN_JAR,
+            "bigreactors": EXTREME_REACTORS_JAR,
             "silentgear": SILENTGEAR_JAR,
             "things": THINGS_JAR,
             "energizedpower": ENERGIZEDPOWER_JAR,
@@ -154,6 +159,14 @@ HOSTS = {
 ANIMATED_OVERLAYS = {
     "stormyx": {"frametime": 20, "interpolate": True},              # 5 frames, matches stormyx_ore
     "unobtainium_deepslate": {"frametime": 60, "interpolate": True},  # 4 frames, deepslate ore only
+    # Extreme Reactors' yellorite: 6 frames played in a custom order (a pulse, then a long rest),
+    # copied verbatim from its own yellorite_ore.png.mcmeta. The frame list IS the animation here,
+    # so frametime alone would play the pulse back to back with no rest.
+    "yellorite": {"frametime": 2, "frames": [0, 1, 2, 3, 4, 5, 5, 5, 4, 3, 2, 1,
+                                             0, 0, 0, 0, 0, 0, 0, 0, 0]},
+    # Extreme Reactors' benitoite: 10 frames, same pulse-and-rest shape, from its own mcmeta.
+    "benitoite": {"frametime": 2, "frames": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 8, 7, 6, 5, 4, 3, 2, 1,
+                                             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]},
 }
 
 # Third-party mods whose ores get variants.
@@ -195,6 +208,8 @@ MODS = {
                        "licence": "MIT",          "author": "glisco"},
     "techreborn":     {"display": "Tech Reborn",       "category": "tech_reborn",
                        "licence": "MIT",          "author": "Team Reborn, modmuss50, drcrazy"},
+    "bigreactors":    {"display": "Extreme Reactors",  "category": "extreme_reactors",
+                       "licence": "MIT",          "author": "ZeroNoRyouki"},
 }
 
 ORE_DEFS = [
@@ -514,6 +529,10 @@ ORE_DEFS = [
     {"name": "techreborn_tin", "overlay": "techreborn_tin", "source": "tin_ore", "base": "stone",
      "mod": "techreborn",
      "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    # Extreme Reactors: yellorite, animated (see ANIMATED_OVERLAYS). Anglesite is end stone.
+    {"name": "yellorite", "overlay": "yellorite", "source": "yellorite_ore", "base": "stone",
+     "mod": "bigreactors",
+     "tiers": {"stone": "yellorite_ore", "deepslate": "deepslate_yellorite_ore"}},
     # Nether ores that ADD ore: each targets netherrack only, so basalt and blackstone variants put
     # ore where the mod places none. Behind that mod's own nether switch, and thinned by the same
     # netherOreRarity / netherVeinSize dials as our gold and quartz.
@@ -526,6 +545,9 @@ ORE_DEFS = [
     {"name": "sphalerite", "overlay": "sphalerite", "source": "sphalerite_ore", "base": "netherrack",
      "mod": "techreborn",
      "tiers": {"nether": "sphalerite_ore"}},
+    {"name": "benitoite", "overlay": "benitoite", "source": "benitoite_ore", "base": "netherrack",
+     "mod": "bigreactors",
+     "tiers": {"nether": "benitoite_ore"}},
 ]
 
 FACES = ["down", "up", "north", "south", "west", "east"]
@@ -583,6 +605,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "silentgear": ("neoforge",),
     "create_new_age": ("neoforge",),
     "techreborn": ("fabric",),
+    "bigreactors": ("neoforge",),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -595,7 +618,8 @@ IN_RANGE_AVAILABILITY = {
     "create": ("fabric",),                    # Create Fly, 1.21.8 and 1.21.10
     "mythicmetals": ("fabric",),              # 0.25.3, 1.21.4 only
     "energizedpower": ("fabric", "neoforge"),  # the whole range
-    "techreborn": ("fabric",),                # 1.21.4 to 1.21.8
+    "techreborn": ("fabric",),                # 1.21.4 to 1.21.8, and 1.21.10 on CurseForge
+    "bigreactors": ("neoforge",),             # 2.4.20, 1.21.4 only, CurseForge only
 }
 
 
@@ -792,6 +816,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.powah": "Powah",
         f"text.autoconfig.{MOD_ID}.category.tfmg": "Create: TFMG",
         f"text.autoconfig.{MOD_ID}.category.energized_power": "Energized Power",
+        f"text.autoconfig.{MOD_ID}.category.extreme_reactors": "Extreme Reactors",
         f"text.autoconfig.{MOD_ID}.category.things": "Things",
         f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
@@ -959,6 +984,18 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.createNewAge": "Create: New Age variants",
         f"text.autoconfig.{MOD_ID}.option.createNewAge.@Tooltip":
             "Generate host-matched thorium ore. Does nothing unless the mod is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.extremeReactors": "Extreme Reactors: variants",
+        f"text.autoconfig.{MOD_ID}.option.extremeReactors.@Tooltip":
+            "Generate host-matched yellorite ore. Does nothing unless Extreme Reactors is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether": "Extreme Reactors: nether variants (adds ore)",
+        f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[0]":
+            "Puts benitoite in basalt and blackstone. Extreme Reactors generates it in netherrack",
+        f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[1]":
+            "only, so this ADDS ore, thinned by the Nether tab's rarity and vein size.",
+        f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[2]":
+            "Turn off to leave the Nether exactly as Extreme Reactors generates it.",
 
         f"text.autoconfig.{MOD_ID}.option.techReborn": "Tech Reborn: variants",
         f"text.autoconfig.{MOD_ID}.option.techReborn.@Tooltip":

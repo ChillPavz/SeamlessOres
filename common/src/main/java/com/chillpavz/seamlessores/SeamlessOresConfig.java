@@ -104,6 +104,16 @@ public final class SeamlessOresConfig {
      */
     public static boolean techRebornNether = true;
 
+    /** Whether Extreme Reactors variants generate. Pure restyle. */
+    public static boolean extremeReactors = true;
+
+    /**
+     * Whether Extreme Reactors's nether ores get basalt and blackstone variants. They generate in netherrack
+     * only, so this ADDS ore, where its overworld variants are a pure restyle. Two balance stories,
+     * two switches, as with Silent's Gems.
+     */
+    public static boolean extremeReactorsNether = true;
+
     /** Whether Things variants generate. Pure restyle. */
     public static boolean things = true;
 
@@ -140,6 +150,7 @@ public final class SeamlessOresConfig {
             case "tfmg" -> tfmg;
             case "energizedpower" -> energizedPower;
             case "techreborn" -> netherHost ? techRebornNether : techReborn;
+            case "bigreactors" -> netherHost ? extremeReactorsNether : extremeReactors;
             case "things" -> things;
             case "silentgear" -> silentGear;
             case "create_new_age" -> createNewAge;
@@ -269,7 +280,7 @@ public final class SeamlessOresConfig {
             return silentGemsNetherRarity;
         }
         // Plain netherrack ore features, placed exactly like our own gold and quartz: the same dial.
-        if ("techreborn".equals(modId)) {
+        if ("techreborn".equals(modId) || "bigreactors".equals(modId)) {
             return netherOreRarity;
         }
         // Everything else - Mythic Upgrades' ruby and sapphire, Mythic Metals' four - is exempt.
@@ -323,6 +334,8 @@ public final class SeamlessOresConfig {
         public boolean energizedPower = true;
         public boolean techReborn = true;
         public boolean techRebornNether = true;
+        public boolean extremeReactors = true;
+        public boolean extremeReactorsNether = true;
         public boolean things = true;
         public boolean silentGear = true;
         public boolean createNewAge = true;
@@ -361,6 +374,8 @@ public final class SeamlessOresConfig {
         energizedPower = values.energizedPower;
         techReborn = values.techReborn;
         techRebornNether = values.techRebornNether;
+        extremeReactors = values.extremeReactors;
+        extremeReactorsNether = values.extremeReactorsNether;
         things = values.things;
         silentGear = values.silentGear;
         createNewAge = values.createNewAge;

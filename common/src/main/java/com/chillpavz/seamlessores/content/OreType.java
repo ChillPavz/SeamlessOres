@@ -383,6 +383,13 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType TR_PYRITE = netherOnlyModded("pyrite", "techreborn", "pyrite_ore", NONE);
     public static final OreType TR_SPHALERITE = netherOnlyModded("sphalerite", "techreborn", "sphalerite_ore", NONE);
 
+    /** Extreme Reactors registers yellorite with an xp range of 0, 0. Its overlay animates. */
+    public static final OreType YELLORITE = modded("yellorite", "bigreactors", "bigreactors", "yellorite", NONE);
+
+    /** Extreme Reactors registers benitoite through the two-argument registerOreBlock, which passes 3, 5. */
+    public static final OreType BENITOITE =
+            netherOnlyModded("benitoite", "bigreactors", "benitoite_ore", UniformInt.of(3, 5));
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -402,7 +409,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
                     SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE,
                     TR_BAUXITE, TR_GALENA, TR_IRIDIUM, TR_LEAD, TR_RUBY, TR_SAPPHIRE, TR_SILVER, TR_TIN,
-                    TR_CINNABAR, TR_PYRITE, TR_SPHALERITE);
+                    TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, YELLORITE, BENITOITE);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
     public ResourceLocation vanillaFor(HostStone host) {

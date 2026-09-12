@@ -235,6 +235,10 @@
     {
       "id": "seamlessores:tuff_techreborn_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:tuff_yellorite_ore",
+      "required": false
     }
   ]
 }
