@@ -205,12 +205,87 @@ public final class SeamlessOresContent {
      * original survives.
      *
      * <p>This is per version, not per mod: the 1.20.1 build of the same mod sets 3.0 explicitly.
-     * Read from each mod's own jar, never guessed. If another mod turns out to be unusual, add it
-     * here rather than moving everything onto a general property-copy: the reason the defaults
-     * exist has not changed.
+     * Read from each mod's own jar, never guessed. A mod whose ores differ one by one belongs in
+     * {@link #STRENGTH_OVERRIDES} instead, which wins over this.
      */
     private static float blastResistanceFor(String modId) {
         return "modern_industrialization".equals(modId) ? 6.0F : 3.0F;
+    }
+
+    /** Hardness and blast resistance on a stone or Nether host, then on a deepslate-tier host. */
+    private record Strength(float hardness, float resistance, float deepHardness, float deepResistance) {
+    }
+
+    /**
+     * Ores whose own mod does not use the vanilla ore strength, with the values that mod sets. Baked
+     * at the convention instead, a variant would mine faster than the block it stands in for, or
+     * break in explosions the original survives. Every value is read from the mod's own jar:
+     * <ul>
+     *   <li>Mythic Metals sets a strength per metal, and most of its deepslate ores are tougher
+     *       again.</li>
+     *   <li>Silent's Gems' Nether gem ores are 4.0 all round; its chaos ore is 5.0, and 6.0 in
+     *       deepslate, both with resistance 3.0.</li>
+     *   <li>Powah's three uraninite ores are 3.0, 3.2 and 4.0 with resistance 8.0 in stone, while
+     *       their deepslate forms follow the convention.</li>
+     *   <li>Silent Gear's bort ore is 4.0 with resistance 10.0 in either rock.</li>
+     *   <li>Create: New Age's thorium ore is 3.5 all round.</li>
+     *   <li>Occultism's deepslate silver ore is a copy of the stone iron ore in its build for this
+     *       version, so it is 3.0 where the convention says 4.5.</li>
+     *   <li>Dense Mekanism copies the rock and then sets its own strength per ore.</li>
+     * </ul>
+     */
+    private static final Map<OreType, Strength> STRENGTH_OVERRIDES = Map.ofEntries(
+            strength(OreType.ADAMANTITE, 4.0F, 5.0F, 6.0F, 12.0F),
+            strength(OreType.CARMOT, 5.5F, 6.5F, 6.5F, 12.0F),
+            strength(OreType.MORKITE, 3.0F, 4.0F, 3.0F, 4.0F),
+            strength(OreType.MYTHRIL, 5.0F, 6.0F, 5.5F, 6.5F),
+            strength(OreType.PROMETHEUM, 5.0F, 6.0F, 6.0F, 7.0F),
+            strength(OreType.RUNITE, 8.0F, 9.0F, 9.0F, 10.0F),
+            strength(OreType.UNOBTAINIUM, 16.0F, 13000.0F, 21.0F, 14000.0F),
+            strength(OreType.AQUARIUM, 4.0F, 5.0F),
+            strength(OreType.BANGLUM, 5.0F, 5.5F),
+            strength(OreType.KYBER, 3.0F, 4.0F),
+            strength(OreType.MANGANESE, 3.0F, 4.0F),
+            strength(OreType.ORICHALCUM, 5.5F, 6.5F),
+            strength(OreType.OSMIUM, 4.0F, 5.0F),
+            strength(OreType.PLATINUM, 3.5F, 4.5F),
+            strength(OreType.QUADRILLUM, 3.5F, 4.5F),
+            strength(OreType.SILVER, 2.5F, 3.5F),
+            strength(OreType.STARRITE, 5.0F, 6.0F),
+            strength(OreType.TIN, 2.0F, 3.0F),
+            strength(OreType.NETHER_BANGLUM, 5.0F, 5.5F),
+            strength(OreType.MIDAS_GOLD, 4.0F, 5.0F),
+            strength(OreType.PALLADIUM, 5.0F, 6.0F),
+            strength(OreType.STORMYX, 5.0F, 6.0F),
+            strength(OreType.SG_CHAOS, 5.0F, 3.0F, 6.0F, 3.0F),
+            strength(OreType.SG_N_ALEXANDRITE, 4.0F, 4.0F),
+            strength(OreType.SG_N_BLACK_DIAMOND, 4.0F, 4.0F),
+            strength(OreType.SG_N_CARNELIAN, 4.0F, 4.0F),
+            strength(OreType.SG_N_CITRINE, 4.0F, 4.0F),
+            strength(OreType.SG_N_IOLITE, 4.0F, 4.0F),
+            strength(OreType.SG_N_MOLDAVITE, 4.0F, 4.0F),
+            strength(OreType.SG_N_PEARL, 4.0F, 4.0F),
+            strength(OreType.SG_N_TANZANITE, 4.0F, 4.0F),
+            strength(OreType.URANINITE_POOR, 3.0F, 8.0F, 4.5F, 3.0F),
+            strength(OreType.URANINITE, 3.2F, 8.0F, 4.5F, 3.0F),
+            strength(OreType.URANINITE_DENSE, 4.0F, 8.0F, 4.5F, 3.0F),
+            strength(OreType.BORT, 4.0F, 10.0F, 4.0F, 10.0F),
+            strength(OreType.THORIUM, 3.5F, 3.5F),
+            strength(OreType.OCCULTISM_SILVER, 3.0F, 3.0F, 3.0F, 3.0F),
+            strength(OreType.DENSE_FLUORITE, 5.0F, 9.0F, 6.0F, 9.0F),
+            strength(OreType.DENSE_LEAD, 5.0F, 9.0F, 6.0F, 9.0F),
+            strength(OreType.DENSE_OSMIUM, 7.5F, 12.0F, 8.5F, 12.0F),
+            strength(OreType.DENSE_TIN, 5.0F, 6.0F, 6.0F, 6.0F),
+            strength(OreType.DENSE_URANIUM, 5.0F, 9.0F, 6.0F, 9.0F));
+
+    private static Map.Entry<OreType, Strength> strength(OreType ore, float hardness, float resistance,
+                                                         float deepHardness, float deepResistance) {
+        return Map.entry(ore, new Strength(hardness, resistance, deepHardness, deepResistance));
+    }
+
+    /** An ore with no deepslate form: stone-tier only, or Nether only. */
+    private static Map.Entry<OreType, Strength> strength(OreType ore, float hardness, float resistance) {
+        return strength(ore, hardness, resistance, hardness, resistance);
     }
 
     private static Block createBlock(OreVariant variant) {
@@ -227,10 +302,14 @@ public final class SeamlessOresContent {
             // unrelated mods is deliberately not relied on. Bake the vanilla ore convention by tier
             // instead (stone ores 3.0/3.0, deepslate ores 4.5/3.0), which Create's zinc follows,
             // except where a mod's own jar says otherwise (blastResistanceFor).
-            final float hardness = variant.host().tier() == OreTier.DEEPSLATE ? 4.5F : 3.0F;
+            final boolean deep = variant.host().tier() == OreTier.DEEPSLATE;
+            final Strength own = STRENGTH_OVERRIDES.get(variant.ore());
+            final float hardness = own == null ? (deep ? 4.5F : 3.0F) : deep ? own.deepHardness() : own.hardness();
+            final float resistance = own == null ? blastResistanceFor(variant.ore().requiredModId())
+                    : deep ? own.deepResistance() : own.resistance();
             properties = BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
-                    .strength(hardness, blastResistanceFor(variant.ore().requiredModId()));
+                    .strength(hardness, resistance);
         }
         // Only map colour and sound follow the HOST stone - vanilla varies those by host rock too
         // (deepslate ores use MapColor.DEEPSLATE), and they have no balance effect.
@@ -243,8 +322,19 @@ public final class SeamlessOresContent {
             properties.lightLevel(state -> light);
         }
 
+        if (SOURCE_BEHAVIOUR.contains(variant.ore())) {
+            return new SourceBehaviourOreBlock(variant.ore().xpFor(variant.host()), properties,
+                    variant.vanillaEquivalentId());
+        }
         return variant.ore().redstoneLike()
                 ? new RedStoneOreBlock(properties)
                 : new DropExperienceBlock(variant.ore().xpFor(variant.host()), properties);
     }
+
+    /**
+     * Ores that do something of their own when mined, which their variants hand to the source block
+     * (see {@link SourceBehaviourOreBlock}): Mythic Metals' banglum, which can blow up.
+     */
+    private static final java.util.Set<OreType> SOURCE_BEHAVIOUR = java.util.Set.of(
+            OreType.BANGLUM, OreType.NETHER_BANGLUM);
 }
