@@ -27,6 +27,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -627,6 +628,53 @@ def conditional_data_dir(module, namespace):
     return os.path.join(repo_root(), module, "src", "main", "resources", "data", namespace)
 
 
+def fabric_pack_data_dir(mod, namespace):
+    """Data folder of the Fabric built-in pack that loads only alongside `mod` (write_material_tags)."""
+    return os.path.join(repo_root(), "fabric", "src", "main", "resources", "resourcepacks", mod, "data", namespace)
+
+
+def write_material_tags(conv, conv_block, conv_item, entry_mod):
+    """Write the per-material c:ores/<x> tags so that none exists in a Fabric world lacking its mods.
+
+    FABRIC'S tags_populated CONDITION ASKS WHETHER A TAG EXISTS, NOT WHETHER ANYTHING IS IN IT:
+    ResourceConditionsImpl.setTags records every tag id the reload built. A c:ores/nickel file whose
+    only entries are optional TFMG variants therefore "populated" c:ores/nickel in a world without
+    TFMG, recipes gated on it loaded with an ingredient that matches nothing, and Alloy Forgery's
+    1.21.4 build crashed on world load reading the first ingredient of one. Fabric applies no resource
+    conditions to tag files, so such a tag simply must not exist there: each mod's entries go in a
+    built-in data pack of their own (fabric/.../resourcepacks/<mod>/), which SeamlessOresFabric
+    registers only when that mod is loaded, and entries for a mod with no Fabric build are left out.
+    NeoForge keeps exactly the file it always had. A material with no modded entries stays shared.
+    """
+    fabric_c = conditional_data_dir("fabric", "c")
+    neoforge_c = conditional_data_dir("neoforge", "c")
+    packs = os.path.join(repo_root(), "fabric", "src", "main", "resources", "resourcepacks")
+    # All three are written only here, so clearing them is what keeps a renamed tag from lingering.
+    for stale in (packs, os.path.join(fabric_c, "tags"), os.path.join(neoforge_c, "tags")):
+        if os.path.isdir(stale):
+            shutil.rmtree(stale)
+    for kind, table in (("block", conv_block), ("item", conv_item)):
+        for ore, values in table.items():
+            rel = os.path.join("tags", kind, "ores", f"{ore}.json")
+            shared = os.path.join(conv, rel)
+            modded = [v for v in values if isinstance(v, dict)]
+            if not modded:
+                write_json(shared, {"values": values})
+                continue
+            if os.path.exists(shared):
+                os.remove(shared)
+            write_json(os.path.join(neoforge_c, rel), {"values": values})
+            plain = [v for v in values if not isinstance(v, dict)]
+            if plain:
+                write_json(os.path.join(fabric_c, rel), {"values": plain})
+            by_mod = {}
+            for v in modded:
+                by_mod.setdefault(entry_mod[v["id"]], []).append(v)
+            for mod, entries in by_mod.items():
+                if "fabric" in CONDITIONAL_LOOT_MODULES_BY_MOD.get(mod, DEFAULT_CONDITIONAL_LOOT_MODULES):
+                    write_json(os.path.join(fabric_pack_data_dir(mod, "c"), rel), {"values": entries})
+
+
 def assets_dir():
     return os.path.join(resources_dir(), "assets", MOD_ID)
 
@@ -1080,6 +1128,7 @@ def generate_data():
     conv_block = {}
     conv_item = {}
     ores_in_ground = {}
+    entry_mod = {}      # a modded tag entry's id -> the mod that variant belongs to
 
     with zipfile.ZipFile(CLIENT_JAR) as jar:
 
@@ -1198,6 +1247,8 @@ def generate_data():
                 # A modded variant's block only exists when its mod is loaded, so its tag entries
                 # are optional objects - a plain string would log a tag error without the mod.
                 entry = {"id": our_id, "required": False} if mod else our_id
+                if mod:
+                    entry_mod[our_id] = mod
                 mineable.append(entry)
                 source_tags = modded_tool_tags if mod else vanilla_tool_tags
                 for tag, members in source_tags.items():
@@ -1230,10 +1281,7 @@ def generate_data():
     all_ids = sorted(mineable, key=lambda e: e["id"] if isinstance(e, dict) else e)
     write_json(os.path.join(conv, "tags", "block", "ores.json"), {"values": all_ids})
     write_json(os.path.join(conv, "tags", "item", "ores.json"), {"values": all_ids})
-    for ore, values in conv_block.items():
-        write_json(os.path.join(conv, "tags", "block", "ores", f"{ore}.json"), {"values": values})
-    for ore, values in conv_item.items():
-        write_json(os.path.join(conv, "tags", "item", "ores", f"{ore}.json"), {"values": values})
+    write_material_tags(conv, conv_block, conv_item, entry_mod)
     for ground, values in ores_in_ground.items():
         write_json(
             os.path.join(conv, "tags", "block", "ores_in_ground", f"{ground}.json"),

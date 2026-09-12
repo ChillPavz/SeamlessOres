@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_topaz_ore",
+      "required": false
+    }
+  ]
+}
