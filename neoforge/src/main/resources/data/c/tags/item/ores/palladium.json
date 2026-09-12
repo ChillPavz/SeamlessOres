@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:basalt_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_palladium_ore",
+      "required": false
+    }
+  ]
+}
