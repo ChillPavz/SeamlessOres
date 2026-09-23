@@ -29,6 +29,34 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_quadrillum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_alexandrite_ore",
       "required": false
     },
@@ -178,6 +206,34 @@
     },
     {
       "id": "seamlessores:diorite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_quadrillum_ore",
       "required": false
     },
     {
@@ -333,6 +389,34 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_quadrillum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_alexandrite_ore",
       "required": false
     },
@@ -485,6 +569,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_runite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_alexandrite_ore",
       "required": false
     },
@@ -613,6 +713,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_stormyx_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_cinnabar_ore",
       "required": false
     },
@@ -630,6 +742,14 @@
     },
     {
       "id": "seamlessores:blackstone_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_midas_gold_ore",
       "required": false
     },
     {

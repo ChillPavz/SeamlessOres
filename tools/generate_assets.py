@@ -77,9 +77,15 @@ SILENT_GEMS_JAR = os.environ.get(
 
 MYTHIC_METALS_JAR = os.environ.get(
     "MYTHIC_METALS_JAR",
-    # The in-range build. Mythic Metals ships Fabric only and stops at 1.21.4; its ore set, loot
-    # tables and textures are byte-identical to the 0.24.6+1.21 build the other branches read.
-    "../references/jars/mythicmetals-0.24.6+1.21.jar",
+    # THE 26.1.2 BUILD, and on this branch it has to be. Mythic Metals shipped 0.26.0+26.1.2 on
+    # 14 Sept 2026; before that the newest in-range build was 0.24.6+1.21, which the other branches
+    # still read. Checked side by side (Sept 2026): the 36 ore blocks, their ids, every configured
+    # feature and every loot table are unchanged between the two, but THE TOOL TAGS ARE NOT.
+    # 0.24.6 put its ores in no needs_<tier>_tool tag at all, so our variants joined none either and
+    # matched it; 0.26.0 fills all three, plus two tags of its own (needs_copper_tools,
+    # needs_netherite_tool) that feed vanilla's incorrect_for_<tool> lists. Read from the old jar,
+    # our variants would be minable a tier or more too cheaply next to the mod's own ore.
+    "../references/jars/26.1.2-mythicmetals-0.26.0+26.1.2.jar",
 )
 
 # Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
@@ -619,7 +625,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
-# Which supported mods a player can ACTUALLY see at 1.21.11, and on which loader. This drives the
+# Which supported mods a player can ACTUALLY see at 26.1.2, and on which loader. This drives the
 # README's honest per-loader block count and its "supported mods available here" list, so it must
 # reflect real availability rather than the inert loot routing above. Verified on the Modrinth API.
 # Re-query on any bump.
@@ -633,6 +639,12 @@ DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 # NeoForge Create ever appears.
 IN_RANGE_AVAILABILITY = {
     "create": ("fabric",),
+    # Mythic Metals shipped 0.26.0+26.1.2 on 14 Sept 2026, its first build in this band, so its 68
+    # variants became reachable here and the mod is advertised from Seamless Ores 4.1.0. Fabric only,
+    # as it has been on every version it has ever shipped. Its data was already in the jar from the
+    # port; what changed in 4.1.0 is that the tool tags are read from THIS build (see
+    # MYTHIC_METALS_JAR) and that the README and the store page now say so.
+    "mythicmetals": ("fabric",),
     "silentgems": ("neoforge",),
     "silentgear": ("neoforge",),
     "powah": ("neoforge",),
@@ -1138,6 +1150,7 @@ def generate_data():
 
     mineable = []
     tool_tags = {}
+    foreign_tool_tags = {}          # a source mod's OWN needs_* tags, mirrored for our variants
     conv_block = {}
     conv_item = {}
     ores_in_ground = {}
@@ -1157,6 +1170,7 @@ def generate_data():
         # data, and hardcoding would have guessed stone-tool wrong. Read every mod we cover, not
         # just Create: the entries merge, and each mod only ever names its own blocks.
         modded_tool_tags = {}
+        mod_own_tool_tags = {}          # (namespace, tag path) -> the blocks that mod lists there
         for mod_id, mod_jar in MOD_JARS.items():
             if not os.path.exists(mod_jar):
                 print(f"  !! {mod_id} jar not found ({mod_jar}) - its tool tags fall back to needs_iron_tool")
@@ -1174,6 +1188,22 @@ def generate_data():
                     except KeyError:
                         continue
                     modded_tool_tags.setdefault(tag, set()).update(values)
+                # A mod can also gate ITS OWN tools with tags in its own namespace and feed those
+                # into vanilla's incorrect_for_<tool> composition, which is a tier requirement by
+                # another route. Mythic Metals 0.26.0 does exactly that: needs_copper_tools carries
+                # five of its ores and needs_netherite_tool two more, so a variant left out of them
+                # is minable a tier too cheaply next to the block it stands in for. Read whatever
+                # the jar has rather than naming the two, and mirror membership the same way.
+                for member in mod_jar_zip.namelist():
+                    match = re.match(r"^data/([^/]+)/tags/block/(needs_[^/]+)\.json$", member)
+                    if not match or match.group(1) == "minecraft":
+                        continue
+                    try:
+                        listed = json.loads(mod_jar_zip.read(member)).get("values", [])
+                    except ValueError:
+                        continue
+                    mod_own_tool_tags.setdefault((match.group(1), match.group(2)), set()).update(
+                        str(v["id"] if isinstance(v, dict) else v) for v in listed)
         for host, host_cfg, ore, vanilla in variants():
                 name = variant_name(host, ore["name"])
                 our_id = f"{MOD_ID}:{name}"
@@ -1267,6 +1297,10 @@ def generate_data():
                 for tag, members in source_tags.items():
                     if vanilla_id in members:
                         tool_tags.setdefault(tag, []).append(entry)
+                if mod:
+                    for tag_key, members in mod_own_tool_tags.items():
+                        if vanilla_id in members:
+                            foreign_tool_tags.setdefault(tag_key, []).append(entry)
                 conv_block.setdefault(ore["name"], []).append(entry)
                 conv_item.setdefault(ore["name"], []).append(entry)
                 # TAG PARITY with the ore we stand in for: every c:ores/<x> tag its counterpart is in,
@@ -1290,6 +1324,11 @@ def generate_data():
     write_json(os.path.join(mc, "tags", "block", "mineable", "pickaxe.json"), {"values": mineable})
     for tag, values in tool_tags.items():
         write_json(os.path.join(mc, "tags", "block", f"{tag}.json"), {"values": values})
+    # The source mods' own tier tags. These merge with that mod's file, and every entry is optional,
+    # so the file is inert on an instance without the mod.
+    for (namespace, tag), values in foreign_tool_tags.items():
+        write_json(os.path.join(data_dir(namespace), "tags", "block", f"{tag}.json"),
+                   {"values": values})
 
     all_ids = sorted(mineable, key=lambda e: e["id"] if isinstance(e, dict) else e)
     write_json(os.path.join(conv, "tags", "block", "ores.json"), {"values": all_ids})
@@ -1301,6 +1340,9 @@ def generate_data():
             {"values": values},
         )
 
+    if foreign_tool_tags:
+        print("  source mods' own tier tags mirrored: "
+              + ", ".join(f"{ns}:{tag} ({len(v)})" for (ns, tag), v in sorted(foreign_tool_tags.items())))
     print(f"  {len(mineable)} loot tables")
     print(f"  tags: mineable/pickaxe, {', '.join(sorted(tool_tags))}, "
           f"c:ores (+{len(conv_block)} per-ore), c:ores_in_ground ({', '.join(sorted(ores_in_ground))})")

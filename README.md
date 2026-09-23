@@ -237,7 +237,7 @@ Minecraft version:
 
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
-| Fabric | 86 | Create, Energized Power, Tech Reborn |
+| Fabric | 154 | Create, Energized Power, Mythic Metals, Tech Reborn |
 | NeoForge | 176 | Energized Power, Mystical Agriculture, Occultism, Powah, Silent Gear, Silent's Gems |
 
 The registered block set is derived from which mods are loaded rather than from config, so

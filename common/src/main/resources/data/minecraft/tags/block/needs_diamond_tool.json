@@ -1,11 +1,43 @@
 {
   "values": [
     {
+      "id": "seamlessores:granite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_orichalcum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_gleaming_ore",
       "required": false
     },
     {
       "id": "seamlessores:granite_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_orichalcum_ore",
       "required": false
     },
     {
@@ -17,6 +49,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_orichalcum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_gleaming_ore",
       "required": false
     },
@@ -25,11 +73,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mythril_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_gleaming_ore",
       "required": false
     },
     {
       "id": "seamlessores:tuff_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_palladium_ore",
       "required": false
     },
     {
@@ -62,6 +122,10 @@
     },
     {
       "id": "seamlessores:basalt_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_palladium_ore",
       "required": false
     },
     {
