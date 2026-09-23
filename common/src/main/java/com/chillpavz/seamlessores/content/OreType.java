@@ -436,6 +436,58 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType PROSPERITY =
             modded("prosperity", "mysticalagriculture", "mysticalagriculture", "prosperity", UniformInt.of(2, 5));
 
+    // --- Immersive Engineering (Forge and NeoForge at 1.20.1) --------------------------------------
+    // Five ores, and every one of its features targets stone_ore_replaceables AND
+    // deepslate_ore_replaceables, so each gets all four overworld hosts and none of them invents ore.
+    //
+    // This cannot use modded(): IE puts the tier word FIRST (ore_lead, deepslate_ore_lead), the
+    // opposite of Occultism's trailing one. Its ore blocks are plain Blocks with no experience
+    // provider, so no XP, and their properties are vanilla's own (3.0/3.0 in stone, 4.5/3.0 in
+    // deepslate), read from IEBlocks$Metals rather than assumed.
+    //
+    // Lead, nickel, silver and uranium are prefixed because those names are already taken on this
+    // branch. Aluminum is free and is prefixed anyway, so that all five line up with the pack's
+    // family keys and with the one overlay file the mod and the pack share. Block ids are a one-way
+    // door, so these names are now fixed.
+    //
+    // ITS FEATURES ARE NOT minecraft:ore. They are immersiveengineering:ie_ore, whose config is IE's
+    // own record rather than an OreConfiguration, which is why OreTargetInjector grew the foreign
+    // config path - see ForeignOreTargets. Art used with BluSunrize's permission (14 Sept 2026);
+    // crediting Immersive Engineering and BluSunrize is a condition of it.
+    private static OreType immersiveEngineering(String name, String metal) {
+        return new OreType(name, name, null, "immersiveengineering",
+                of("immersiveengineering", "ore_" + metal),
+                of("immersiveengineering", "deepslate_ore_" + metal),
+                null, NONE, null, false, Set.of());
+    }
+
+    public static final OreType IE_ALUMINUM = immersiveEngineering("ie_aluminum", "aluminum");
+    public static final OreType IE_LEAD = immersiveEngineering("ie_lead", "lead");
+    public static final OreType IE_NICKEL = immersiveEngineering("ie_nickel", "nickel");
+    public static final OreType IE_SILVER = immersiveEngineering("ie_silver", "silver");
+    public static final OreType IE_URANIUM = immersiveEngineering("ie_uranium", "uranium");
+
+    // Mekanism (MIT, Aidan C. Brady). Five ores, all five on stone_ore_replaceables plus
+    // deepslate_ore_replaceables, so every overworld host is a pure restyle.
+    //
+    // ITS FEATURES ARE NOT minecraft:ore either: mekanism:ore, configured by its own record
+    // ResizableOreFeatureConfig, so it goes through the same ForeignOreTargets path IE needed.
+    // Read from its jar rather than assumed: BlockOre is strength(3, 3) and the deepslate form
+    // 4.5 / 3, which is exactly the convention createBlock bakes, so no STRENGTH_OVERRIDES entry.
+    // Tool tier is stone for all ten blocks. XP is the one place they differ from each other:
+    // OreType carries minExp/maxExp and only FLUORITE passes any, 1 to 4.
+    private static OreType mekanism(String name, String ore, IntProvider xp) {
+        return new OreType(name, name, null, "mekanism",
+                of("mekanism", ore + "_ore"), of("mekanism", "deepslate_" + ore + "_ore"),
+                null, xp, null, false, Set.of());
+    }
+
+    public static final OreType MEK_FLUORITE = mekanism("mek_fluorite", "fluorite", UniformInt.of(1, 4));
+    public static final OreType MEK_LEAD = mekanism("mek_lead", "lead", NONE);
+    public static final OreType MEK_OSMIUM = mekanism("mek_osmium", "osmium", NONE);
+    public static final OreType MEK_TIN = mekanism("mek_tin", "tin", NONE);
+    public static final OreType MEK_URANIUM = mekanism("mek_uranium", "uranium", NONE);
+
     // --- Nether ores that ADD ore (Sept 2026) -----------------------------------------------------
     // Each targets netherrack only, so basalt and blackstone variants put ore where the mod places
     // none. Behind the owning mod's own nether switch and thinned by netherOreRarity, like our gold
@@ -499,6 +551,8 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     MI_ANTIMONY, MI_BAUXITE, MI_IRIDIUM, MI_LEAD, MI_LIGNITE_COAL, MI_MONAZITE, MI_NICKEL,
                     MI_SALT, MI_TIN, MI_TUNGSTEN, MI_URANIUM,
                     OCCULTISM_SILVER, YELLORITE, INFERIUM, PROSPERITY,
+                    IE_ALUMINUM, IE_LEAD, IE_NICKEL, IE_SILVER, IE_URANIUM,
+                    MEK_FLUORITE, MEK_LEAD, MEK_OSMIUM, MEK_TIN, MEK_URANIUM,
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, BENITOITE,
                     CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE,
                     CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE);

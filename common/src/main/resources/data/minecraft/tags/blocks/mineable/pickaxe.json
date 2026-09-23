@@ -337,6 +337,46 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_dawn_stone_ore",
       "required": false
     },
@@ -710,6 +750,46 @@
     },
     {
       "id": "seamlessores:diorite_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_uranium_ore",
       "required": false
     },
     {
@@ -1089,6 +1169,46 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_dawn_stone_ore",
       "required": false
     },
@@ -1410,6 +1530,46 @@
     },
     {
       "id": "seamlessores:tuff_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_uranium_ore",
       "required": false
     },
     {

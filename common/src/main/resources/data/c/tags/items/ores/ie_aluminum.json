@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_aluminum_ore",
+      "required": false
+    }
+  ]
+}

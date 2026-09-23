@@ -5,6 +5,7 @@ import com.chillpavz.seamlessores.SeamlessOresConfig;
 import com.chillpavz.seamlessores.content.OreTier;
 import com.chillpavz.seamlessores.content.OreVariant;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
+import com.chillpavz.seamlessores.platform.Services;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
@@ -14,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 
@@ -74,6 +76,7 @@ public final class OreTargetInjector {
         int patchedFeatures = 0;
         int addedTargets = 0;
         int resizedFeatures = 0;
+        int foreignFeatures = 0;
 
         // holders() gives Holder.Reference rather than the bare value, which is what lets us
         // swap the entry. Collected first: we rebind while iterating, and streaming lazily over a
@@ -81,7 +84,14 @@ public final class OreTargetInjector {
         for (Holder.Reference<ConfiguredFeature<?, ?>> holder : features.holders().toList()) {
 
             final ConfiguredFeature<?, ?> feature = holder.value();
-            if (!(feature.config() instanceof OreConfiguration ore)) {
+            // Vanilla's own config, or a third party's that keeps the same target list inside a
+            // config type of its own. Immersive Engineering is the second case and the reason that
+            // path exists at all; see ForeignOreTargets for what is and is not accepted there.
+            final OreConfiguration ore =
+                    feature.config() instanceof OreConfiguration vanilla ? vanilla : null;
+            final List<OreConfiguration.TargetBlockState> targetStates =
+                    ore != null ? ore.targetStates : ForeignOreTargets.read(feature.config());
+            if (targetStates == null) {
                 continue;
             }
 
@@ -91,7 +101,7 @@ public final class OreTargetInjector {
                 final OreVariant variant = entry.getKey();
                 final Block ourBlock = entry.getValue();
 
-                if (containsBlock(ore.targetStates, ourBlock)) {
+                if (containsBlock(targetStates, ourBlock)) {
                     continue;   // already injected, e.g. a second world load in the same session
                 }
                 // Config gates GENERATION only, never registration - the blocks exist regardless.
@@ -115,7 +125,7 @@ public final class OreTargetInjector {
                 // OreConfiguration. Resolved here, at server start, where every mod's registry
                 // entries exist - a gated variant's equivalent always resolves by construction.
                 final Block equivalent = variant.vanillaEquivalent();
-                if (equivalent == null || !containsBlock(ore.targetStates, equivalent)) {
+                if (equivalent == null || !containsBlock(targetStates, equivalent)) {
                     continue;
                 }
                 extra.add(OreConfiguration.target(
@@ -125,7 +135,11 @@ public final class OreTargetInjector {
 
             // Zinc vein size is independent of everything above: it applies even when the zinc
             // RESTYLE is switched off, because it is about how much zinc exists, not how it looks.
-            int size = resizedIfZinc(ore);
+            // Size dials apply to vanilla's config only. A foreign config computes its own size
+            // (IE reads it from its server config), and neither dial has anything to say about it:
+            // zinc is Create's, and the nether one cannot fire because no foreign ore we support
+            // reaches a nether host.
+            int size = ore == null ? 0 : resizedIfZinc(ore);
             // Nether veins get scaled by a percentage of the feature's own size. Applied only to the
             // features that gained a basalt/blackstone target, so it cannot touch the overworld.
             // Which dial applies depends on who owns the ore - Silent's Gems' nether gems have their
@@ -138,20 +152,30 @@ public final class OreTargetInjector {
                 }
             }
 
-            if (extra.isEmpty() && size == ore.size) {
+            if (extra.isEmpty() && (ore == null || size == ore.size)) {
                 continue;
             }
 
-            // PREPEND - see the class javadoc. Ours first, then vanilla's untouched entries.
+            // PREPEND - see the class javadoc. Ours first, then the feature's untouched entries.
             final List<OreConfiguration.TargetBlockState> merged = new ArrayList<>(extra);
-            merged.addAll(ore.targetStates);
+            merged.addAll(targetStates);
 
-            rebind(holder, feature, new OreConfiguration(
-                    List.copyOf(merged), size, ore.discardChanceOnAirExposure), netherAdded != null);
+            if (ore != null) {
+                rebind(holder, feature, new OreConfiguration(
+                        List.copyOf(merged), size, ore.discardChanceOnAirExposure), netherAdded != null);
+            } else {
+                final FeatureConfiguration replacement =
+                        ForeignOreTargets.withTargets(feature.config(), List.copyOf(merged));
+                if (replacement == null) {
+                    continue;           // logged once in there; the feature is left exactly as it was
+                }
+                rebind(holder, feature, replacement, false);
+                foreignFeatures++;
+            }
 
             patchedFeatures++;
             addedTargets += extra.size();
-            if (size != ore.size) {
+            if (ore != null && size != ore.size) {
                 resizedFeatures++;
                 // Say WHICH dial did it. Two independent settings reach this line (the zinc dial
                 // above and the nether one), so a fixed "zinc" label misreports every nether resize
@@ -161,13 +185,33 @@ public final class OreTargetInjector {
             }
         }
 
-        Constants.LOG.info("Worldgen: added {} ore targets across {} features ({} resized)",
-                addedTargets, patchedFeatures, resizedFeatures);
+        Constants.LOG.info("Worldgen: added {} ore targets across {} features ({} resized, {} not "
+                        + "minecraft:ore)", addedTargets, patchedFeatures, resizedFeatures, foreignFeatures);
+
+        // Immersive Engineering is the only mod whose ore features are not minecraft:ore, and
+        // ForeignOreTargets keys on the name of its config class. If the mod is installed, its
+        // variants are switched on and NOTHING of its was patched, that support has silently stopped
+        // working - an upstream rename would do it - and its blocks would exist but never generate.
+        // Say so once. Sabotage test: take IE's class name out of ForeignOreTargets.SUPPORTED.
+        if (foreignFeatures == 0
+                && Services.PLATFORM.isModLoaded("immersiveengineering")
+                && SeamlessOresConfig.isModOreEnabled("immersiveengineering", false)) {
+            Constants.LOG.warn("Worldgen: Immersive Engineering is installed but none of its ore "
+                    + "features could be extended, so its seamless variants will not generate. "
+                    + "Everything else is unaffected.");
+        }
 
         // Copper is thinned separately: it edits placement COUNTS on placed features rather than
-        // target lists on configured ones, and it is the only overworld setting that changes ore
-        // amounts rather than appearance. See CopperDensityInjector.
-        CopperDensityInjector.inject(registries);
+        // what a feature places, so it is about amounts rather than appearance.
+        //
+        // IT RUNS FROM HERE ON THIS BRANCH, and that is version specific. Thinning rebinds a placed
+        // feature to a new instance, which is only safe before ChunkGenerator's feature-order table
+        // indexes the old one. At 1.20.1 that table is built lazily at the first chunk decoration,
+        // so server start is early enough. The newer branches force it during level load, from
+        // ChunkGenerator.validate(), and there the thinning has to move into a mixin at the head of
+        // that method - a method 1.20.1 does not have at all. See CopperDensityInjector.
+        CopperDensityInjector.thinAtServerStart(registries);
+        CopperDensityInjector.warnIfNeverRan();
 
         // Configured features are only half the story - the large copper/iron veins come from
         // OreVeinifier during noise generation and are invisible to this registry pass.
@@ -235,7 +279,7 @@ public final class OreTargetInjector {
     @SuppressWarnings({"unchecked", "rawtypes"})
     private static void rebind(Holder.Reference<ConfiguredFeature<?, ?>> holder,
                                ConfiguredFeature<?, ?> original,
-                               OreConfiguration replacement,
+                               FeatureConfiguration replacement,
                                boolean needsBastionGuard) {
 
         // Features that gained a basalt/blackstone target get our stand-in feature instead of

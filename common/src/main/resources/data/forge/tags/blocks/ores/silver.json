@@ -25,6 +25,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_ie_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_silents_silver_ore",
       "required": false
     },
@@ -34,6 +38,10 @@
     },
     {
       "id": "seamlessores:diorite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_silver_ore",
       "required": false
     },
     {
@@ -49,6 +57,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_ie_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_silents_silver_ore",
       "required": false
     },
@@ -58,6 +70,10 @@
     },
     {
       "id": "seamlessores:tuff_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_silver_ore",
       "required": false
     }
   ]

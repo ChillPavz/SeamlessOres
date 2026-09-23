@@ -121,7 +121,21 @@ MYSTICAL_AGRICULTURE_JAR = os.environ.get("MYSTICAL_AGRICULTURE_JAR",
                                           "../references/jars/1.20.1-MysticalAgriculture-1.20.1-7.0.24.jar")
 COBBLEMON_JAR = os.environ.get("COBBLEMON_JAR", "../references/jars/1.20.1-Cobblemon-forge-1.5.2+1.20.1.jar")
 
+# Immersive Engineering. IE REDREW nickel and uranium after 1.20.1, so the overlays must come
+# from THIS band's own jar rather than the newest one; the two eras are different art.
+# Its ore art is used with BluSunrize's permission (14 Sept 2026), on the stated condition that
+# Immersive Engineering and BluSunrize are credited. See the README credits table.
+IMMERSIVE_ENGINEERING_JAR = os.environ.get("IMMERSIVE_ENGINEERING_JAR",
+                                          "../references/jars/ImmersiveEngineering-1.20.1-10.2.0-183.jar")
+# Mekanism (MIT, Copyright (c) 2017-2025 Aidan C. Brady, read from the repo's own LICENSE rather
+# than a platform label). Five ores. ITS FEATURE IS NOT minecraft:ore either: mekanism:ore, whose
+# config is its own record, which is the second mod to need the ForeignOreTargets path.
+# Mekanism DRAWS TIN DIFFERENTLY on 1.20.1, so the overlay for that branch is the pack's
+# old_tin_overlay.png; every other overlay is the same drawing on both bands.
+MEKANISM_JAR = os.environ.get("MEKANISM_JAR", "../references/jars/1.20.1-Mekanism-1.20.1-10.4.16.80.jar")
 MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
+            "mekanism": MEKANISM_JAR,
+            "immersiveengineering": IMMERSIVE_ENGINEERING_JAR,
             "techreborn": TECHREBORN_JAR,
             "modern_industrialization": MODERN_INDUSTRIALIZATION_JAR,
             "occultism": OCCULTISM_JAR,
@@ -239,6 +253,13 @@ MODS = {
                        "licence": "MIT",          "author": "ZeroNoRyouki"},
     "mysticalagriculture": {"display": "Mystical Agriculture", "category": "mystical_agriculture",
                        "licence": "MIT",          "author": "BlakeBr0"},
+    "immersiveengineering": {"display": "Immersive Engineering", "category": "immersive_engineering",
+                       "licence": "Blu's License of Common Sense",
+                       "author": "BluSunrize, Damien A.W. Hazard",
+                       "link": "https://modrinth.com/mod/immersiveengineering"},
+    "mekanism":       {"display": "Mekanism",         "category": "mekanism",
+                       "licence": "MIT",          "author": "Aidan C. Brady",
+                       "link": "https://modrinth.com/mod/mekanism"},
     "cobblemon":      {"display": "Cobblemon",         "category": "cobblemon",
                        "licence": "MPL-2.0",      "author": "The Cobblemon Team"},
 }
@@ -617,6 +638,56 @@ ORE_DEFS = [
     {"name": "prosperity", "overlay": "prosperity", "source": "prosperity_ore", "base": "stone",
      "mod": "mysticalagriculture",
      "tiers": {"stone": "prosperity_ore", "deepslate": "deepslate_prosperity_ore"}},
+    # Immersive Engineering (Forge and NeoForge at 1.20.1; our Forge jar serves both). Five ores, and every one of its
+    # features targets stone_ore_replaceables plus deepslate_ore_replaceables, so all four
+    # overworld hosts are a pure restyle and no ore is invented. Read from its own configured
+    # features, which are JSON in the jar even though the feature TYPE is its own.
+    #
+    # Two things here are unlike every other mod we cover: IE puts the tier word FIRST
+    # (ore_lead, deepslate_ore_lead), and its ore textures live in a metal/ subfolder, which is
+    # what texture_dir is for. Lead, nickel, silver and uranium are prefixed because those names
+    # are already taken on this branch. Aluminum is free, but it is prefixed too: the pack's family
+    # keys are ie_<metal> for all five, and the overlay art is ONE file shared by the mod and the
+    # pack, so a bare name would leave the pack's drift check unable to find it.
+    {"name": "ie_aluminum", "overlay": "ie_aluminum", "source": "ore_aluminum", "base": "stone",
+     "mod": "immersiveengineering", "texture_dir": "metal",
+     "tiers": {"stone": "ore_aluminum", "deepslate": "deepslate_ore_aluminum"}},
+    {"name": "ie_lead", "overlay": "ie_lead", "source": "ore_lead", "base": "stone",
+     "mod": "immersiveengineering", "texture_dir": "metal",
+     "tiers": {"stone": "ore_lead", "deepslate": "deepslate_ore_lead"}},
+    {"name": "ie_nickel", "overlay": "ie_nickel", "source": "ore_nickel", "base": "stone",
+     "mod": "immersiveengineering", "texture_dir": "metal",
+     "tiers": {"stone": "ore_nickel", "deepslate": "deepslate_ore_nickel"}},
+    {"name": "ie_silver", "overlay": "ie_silver", "source": "ore_silver", "base": "stone",
+     "mod": "immersiveengineering", "texture_dir": "metal",
+     "tiers": {"stone": "ore_silver", "deepslate": "deepslate_ore_silver"}},
+    {"name": "ie_uranium", "overlay": "ie_uranium", "source": "ore_uranium", "base": "stone",
+     "mod": "immersiveengineering", "texture_dir": "metal",
+     "tiers": {"stone": "ore_uranium", "deepslate": "deepslate_ore_uranium"}},
+    # Mekanism (NeoForge at 1.21.1, Forge and NeoForge at 1.20.1). Five ores, every one of them
+    # targeting stone_ore_replaceables AND deepslate_ore_replaceables, so all four overworld hosts
+    # are a pure restyle and no ore is invented. Prefixed mek_ for all five: osmium, tin, lead and
+    # uranium are names another supported mod already holds, and fluorite is prefixed too so the
+    # family reads as one set and matches the pack's own mek_<ore> keys, which is what lets one
+    # overlay file serve both the mod and the pack.
+    #
+    # NO raw_drop: the loot is transformed from Mekanism's own tables, because fluorite uses
+    # set_count (2 to 4) and a hand-built vanilla-shape table would quietly change its yield.
+    {"name": "mek_fluorite", "overlay": "mek_fluorite", "source": "fluorite_ore", "base": "stone",
+     "mod": "mekanism",
+     "tiers": {"stone": "fluorite_ore", "deepslate": "deepslate_fluorite_ore"}},
+    {"name": "mek_lead", "overlay": "mek_lead", "source": "lead_ore", "base": "stone",
+     "mod": "mekanism",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "mek_osmium", "overlay": "mek_osmium", "source": "osmium_ore", "base": "stone",
+     "mod": "mekanism",
+     "tiers": {"stone": "osmium_ore", "deepslate": "deepslate_osmium_ore"}},
+    {"name": "mek_tin", "overlay": "mek_tin", "source": "tin_ore", "base": "stone",
+     "mod": "mekanism",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    {"name": "mek_uranium", "overlay": "mek_uranium", "source": "uranium_ore", "base": "stone",
+     "mod": "mekanism",
+     "tiers": {"stone": "uranium_ore", "deepslate": "deepslate_uranium_ore"}},
     # Nether ores that ADD ore: each targets netherrack only (benitoite through forge:netherrack, which
     # holds netherrack alone), so basalt and blackstone variants put ore where the mod places none.
     # Behind that mod's own nether switch, and thinned by the same netherOreRarity / netherVeinSize
@@ -753,6 +824,14 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "occultism": ("forge",),
     "bigreactors": ("forge",),
     "mysticalagriculture": ("forge",),
+    # Immersive Engineering, queried per version on the Modrinth API AND on CurseForge:
+    # 1.20.1 Forge and NeoForge, 1.20.4 NeoForge, 1.21.1 NeoForge. Never Fabric, and nothing
+    # above 1.21.1, which is why only two of our six bands carry it at all.
+    "immersiveengineering": ("forge",),
+    # Mekanism, queried per version on the Modrinth API and counted on BOTH platforms (Modrinth
+    # 3.7M, CurseForge 175.4M): 1.20.1 Forge and NeoForge, 1.20.4 NeoForge, 1.21 and 1.21.1
+    # NeoForge. Never Fabric, and nothing above 1.21.1, so the same two bands as IE carry it.
+    "mekanism": ("forge",),
     "cobblemon": ("fabric", "forge"),
 }
 
@@ -870,7 +949,10 @@ def variant_name(host, ore):
 # inconsistency users reported on the incumbent. Quartz stays "Quartz" (no "Nether" prefix: that
 # prefix distinguishes an overworld quartz that does not exist, and ours is already host-prefixed).
 # Prefixes that disambiguate a clashing ore name read as the mod, not as a made-up word.
-DISPLAY_NAMES = {"lapis": "Lapis Lazuli", "techreborn": "Tech Reborn", "mi": "MI"}
+# Word parts that do not capitalise into the name a player should read. "mi" and "ie" are the two
+# mods whose full names are far too long for a block name (Modern Industrialization, Immersive
+# Engineering), so their prefixed ores read as the abbreviation their communities already use.
+DISPLAY_NAMES = {"lapis": "Lapis Lazuli", "techreborn": "Tech Reborn", "mi": "MI", "ie": "IE"}
 
 
 def title(name):
@@ -983,6 +1065,8 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
         f"text.autoconfig.{MOD_ID}.category.occultism": "Occultism",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
+        f"text.autoconfig.{MOD_ID}.category.immersive_engineering": "Immersive Engineering",
+        f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
 
         f"text.autoconfig.{MOD_ID}.option.granite": "Granite variants",
@@ -1122,7 +1206,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.denseMekanism.@Tooltip[0]":
             "Generate host-matched Dense Mekanism ore. Does nothing unless the mod is installed.",
         f"text.autoconfig.{MOD_ID}.option.denseMekanism.@Tooltip[1]":
-            "Mekanism's own ore is not covered: it uses a feature type this mod cannot extend.",
+            "Mekanism's own ore has its own setting, above.",
 
         f"text.autoconfig.{MOD_ID}.option.powah": "Powah: variants",
         f"text.autoconfig.{MOD_ID}.option.powah.@Tooltip":
@@ -1193,6 +1277,15 @@ def generate_json():
             "only, so this ADDS ore, thinned by the Nether tab's rarity and vein size.",
         f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[2]":
             "Turn off to leave the Nether exactly as Extreme Reactors generates it.",
+
+        f"text.autoconfig.{MOD_ID}.option.mekanism": "Mekanism: variants",
+        f"text.autoconfig.{MOD_ID}.option.mekanism.@Tooltip":
+            "Generate host-matched Mekanism ore (osmium, tin, lead, uranium and fluorite). Does"
+            " nothing unless Mekanism is installed.",
+        f"text.autoconfig.{MOD_ID}.option.immersiveEngineering": "Immersive Engineering: variants",
+        f"text.autoconfig.{MOD_ID}.option.immersiveEngineering.@Tooltip":
+            "Generate host-matched aluminum, lead, nickel, silver and uranium ore. Does nothing"
+            " unless Immersive Engineering is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.cobblemon": "Cobblemon: variants",
         f"text.autoconfig.{MOD_ID}.option.cobblemon.@Tooltip":
@@ -1544,34 +1637,55 @@ def generate_textures():
         if ore.get("mod") and not os.path.exists(MOD_JARS.get(ore["mod"], "")):
             print(f"  !! {ore['mod']} jar not found - skipping {ore['overlay']}_overlay extraction")
             continue
-        needed[ore["overlay"]] = (ore["source"], ore["base"], ore.get("mod"))
+        needed[ore["overlay"]] = (ore["source"], ore["base"], ore.get("mod"), ore.get("texture_dir", ""))
+
+    # The scratch file a source texture is written to. NAMESPACED BY MOD, because a source file name
+    # is NOT unique across mods: Tech Reborn and Occultism both ship silver_ore.png, and Tech Reborn
+    # and Modern Industrialization both ship lead_ore.png and tin_ore.png. Keyed on the bare file
+    # name, the second jar read silently overwrote the first and BOTH overlays were then derived
+    # from whichever mod happened to be read last. The basename is taken because a source may carry
+    # a subfolder (Immersive Engineering keeps its ore art under block/metal/).
+    def scratch(source, mod):
+        return f"{mod}__{os.path.basename(source)}.png" if mod else f"{source}.png"
 
     with tempfile.TemporaryDirectory() as tmp:
         with zipfile.ZipFile(CLIENT_JAR) as jar:
-            wanted = {f"{s}.png" for s, _, m in needed.values() if not m} | {f"{b}.png" for _, b, _ in needed.values()}
+            wanted = ({f"{s}.png" for s, _, m, _d in needed.values() if not m}
+                      | {f"{b}.png" for _, b, _, _d in needed.values()})
             for filename in sorted(wanted):
                 member = f"assets/minecraft/textures/block/{filename}"
                 with jar.open(member) as src, open(os.path.join(tmp, filename), "wb") as dst:
                     dst.write(src.read())
-        modded_sources = {f"{s}.png": m for s, _, m in needed.values() if m}
-        for needed_mod in sorted({m for m in modded_sources.values()}):
+        modded_sources = {(s, m, d) for s, _, m, d in needed.values() if m}
+        for needed_mod in sorted({m for _s, m, _d in modded_sources}):
             if not os.path.exists(MOD_JARS.get(needed_mod, "")):
                 continue
             with zipfile.ZipFile(MOD_JARS[needed_mod]) as create_jar:
-                for filename, mod in ((f, m) for f, m in modded_sources.items() if m == needed_mod):
-                    member = f"assets/{mod}/textures/block/{filename}"
-                    with create_jar.open(member) as src, open(os.path.join(tmp, filename), "wb") as dst:
-                        dst.write(src.read())
+                for source, mod, subdir in sorted(e for e in modded_sources if e[1] == needed_mod):
+                    folder = f"{subdir}/" if subdir else ""
+                    member = f"assets/{mod}/textures/block/{folder}{source}.png"
+                    try:
+                        data = create_jar.read(member)
+                    except KeyError:
+                        # Not every source is a plain sprite in its mod's jar. Cobblemon draws its
+                        # evolution stone ores from elsewhere and their overlays are precomposited by
+                        # hand anyway, so a miss here is a skip and a line, not a dead run.
+                        print(f"  !! {member} is not in the {mod} jar - skipped")
+                        continue
+                    with open(os.path.join(tmp, scratch(source, mod)), "wb") as dst:
+                        dst.write(data)
 
-        for overlay_name, (source, base_name, _mod) in sorted(needed.items()):
+        for overlay_name, (source, base_name, _mod, _subdir) in sorted(needed.items()):
             # NEVER overwrite an overlay that already exists. Most of them have been hand cleaned
             # after extraction, and silently replacing that work with a fresh machine diff is a
             # one-way loss - the old behaviour made --textures a destructive flag nobody could run
             # safely. Delete the PNG to force a re-extraction of that one.
             if os.path.exists(os.path.join(out_dir, f"{overlay_name}_overlay.png")):
                 continue
+            if not os.path.exists(os.path.join(tmp, scratch(source, _mod))):
+                continue                    # its source was not in the jar; already reported above
             base = Image.open(os.path.join(tmp, f"{base_name}.png")).convert("RGBA")
-            ore_img = Image.open(os.path.join(tmp, f"{source}.png")).convert("RGBA")
+            ore_img = Image.open(os.path.join(tmp, scratch(source, _mod))).convert("RGBA")
             if ore_img.size != base.size:
                 print(f"  !! {source}.png is {ore_img.size}, {base_name} is {base.size} - skipped")
                 continue
@@ -1726,7 +1840,11 @@ def _credits():
         info = MODS[mod]
         # A bare "-" for an unstated author. A dash is normally banned from public-facing text, but
         # a column rule / not-applicable marker inside a markdown table is the documented exception.
-        lines.append(f"| {info['display']} | {info['author'] or '-'} | {info['licence']} |")
+        # A mod whose permission was given on the condition of a credit WITH A LINK BACK carries
+        # a 'link'; its name is then rendered as one. Immersive Engineering is the case this exists
+        # for, and the condition is binding, so do not drop the link when editing this table.
+        name = f"[{info['display']}]({info['link']})" if info.get("link") else info["display"]
+        lines.append(f"| {name} | {info['author'] or '-'} | {info['licence']} |")
     return lines + [""]
 
 

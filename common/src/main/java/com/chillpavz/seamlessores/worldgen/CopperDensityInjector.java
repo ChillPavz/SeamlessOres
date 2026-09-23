@@ -12,8 +12,11 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.WeakHashMap;
 
 /**
  * Thins vanilla's copper, which is the one place this mod changes overworld ore AMOUNTS.
@@ -62,64 +65,155 @@ public final class CopperDensityInjector {
             "ore_copper", () -> SeamlessOresConfig.overworldCopper,
             "ore_copper_large", () -> SeamlessOresConfig.dripstoneCopper);
 
-    /** Runs at server start, alongside the ore target injection, before any chunk is generated. */
-    public static void inject(RegistryAccess registries) {
+    /**
+     * Placed features already thinned, held weakly and by IDENTITY.
+     *
+     * <p>The pass runs once per world load, so without this a second load in the same session would
+     * read the count it just wrote and thin it again: 16 -> 12 -> 9. Identity rather than equality
+     * because two separate loads legitimately produce equal-valued features that still both need
+     * thinning, and weak because the worldgen registries are rebuilt per world and the old holders
+     * must be collectable.
+     */
+    private static final Set<PlacedFeature> ALREADY_THINNED =
+            Collections.newSetFromMap(new WeakHashMap<>());
+
+    /** True once this has actually rebound something, so a dial that stopped working is visible. */
+    private static volatile boolean ranAtLeastOnce = false;
+
+    /**
+     * Thins copper at server start, from {@link OreTargetInjector#inject}.
+     *
+     * <p><b>Why server start is the right moment AT THIS VERSION, and a mixin is not.</b>
+     * Thinning rebinds a registry entry to a NEW {@code PlacedFeature} instance, which is only safe
+     * while nothing has indexed the old one. What indexes them is {@code FeatureSorter}, through
+     * {@code ChunkGenerator.featuresPerStep}.
+     *
+     * <p>At 1.20.1 that field is a {@code Suppliers.memoize(...)} built in the constructor, and the
+     * ONLY thing that reads it is {@code applyBiomeDecoration}. Read out of the 1.20.1 client jar:
+     * one {@code getfield} of {@code featuresPerStep}, inside that method. So the table is built at
+     * the first chunk decoration, which is always after the server-start hook, and a rebind here is
+     * seen by the table rather than missed by it.
+     *
+     * <p><b>1.20.1 has no {@code ChunkGenerator.validate()} at all.</b> That method, which exists
+     * only to force the supplier during level load, arrives later; on the branches that have it the
+     * table is built BEFORE server start and copper must be thinned from a mixin at its head, or
+     * chunk decoration dies on {@code IndexOutOfBoundsException: Index -1}. Both halves were
+     * measured, not reasoned: 4.0.0 crashes on 1.21.4 and 1.21.1 Fabric and does not crash here,
+     * with 25 freshly decorated chunks in the same harness run. And 4.0.1's mixin, ported down to
+     * this branch, could not apply: its target does not exist, which on Fabric is a hard crash at
+     * launch and on Forge a silent no-op. <b>Do not port that mixin back to this branch.</b> See
+     * the maintainer notes on the copper-thinning crash.
+     */
+    public static void thinAtServerStart(RegistryAccess registries) {
 
         final Registry<PlacedFeature> placed = registries.registryOrThrow(Registries.PLACED_FEATURE);
         int changed = 0;
 
+        // The registry rather than each biome's list: every biome reads its features through these
+        // same holders, so one pass covers every dimension, and a NeoForge biome modifier that
+        // replaced a biome's feature list still reads through to the value rebound here.
         for (Holder.Reference<PlacedFeature> holder : placed.holders().toList()) {
-            final ResourceLocation id = holder.key().location();
-            if (!"minecraft".equals(id.getNamespace())) {
-                continue;
+            if (thin(holder)) {
+                changed++;
             }
-            final java.util.function.IntSupplier dial = SCALED.get(id.getPath());
-            if (dial == null) {
-                continue;
-            }
-            final int percent = dial.getAsInt();
-            if (percent >= 100) {
-                continue;               // exact no-op: nothing is rebound
-            }
-
-            final PlacedFeature feature = holder.value();
-            final List<PlacementModifier> rebuilt = new ArrayList<>(feature.placement().size());
-            boolean scaled = false;
-
-            for (PlacementModifier modifier : feature.placement()) {
-                if (modifier instanceof CountPlacement counted) {
-                    // SCALE what is actually there rather than writing a number of our own: a
-                    // datapack may already have changed vanilla's 16, and overwriting that would
-                    // silently undo it. Both bounds are read so a non-constant provider still
-                    // scales sensibly; vanilla's is a constant, so min == max == 16.
-                    final int before = counted.count.getMaxValue();
-                    final int after = Math.max(0, Math.round(before * percent / 100.0F));
-                    if (after == before) {
-                        rebuilt.add(modifier);
-                        continue;
-                    }
-                    rebuilt.add(CountPlacement.of(after));
-                    scaled = true;
-                    Constants.LOG.info("Worldgen: {} vein count {} -> {} ({}%)",
-                            id.getPath(), before, after, percent);
-                } else {
-                    rebuilt.add(modifier);
-                }
-            }
-
-            if (!scaled) {
-                continue;
-            }
-            // Same mechanism as the ore target injection: rebind the registry entry rather than
-            // mutate a record's final list. Anything already holding this Holder - the biome
-            // feature lists - reads through to the new value.
-            ((Holder.Reference<PlacedFeature>) holder)
-                    .bindValue(new PlacedFeature(feature.feature(), List.copyOf(rebuilt)));
-            changed++;
         }
 
         if (changed > 0) {
+            ranAtLeastOnce = true;
             Constants.LOG.info("Worldgen: thinned {} copper feature(s)", changed);
         }
+    }
+
+    /** Rebinds one holder if it is a copper feature that a dial actually changes. False otherwise. */
+    private static boolean thin(Holder<PlacedFeature> holder) {
+
+        // A biome can hold an inline feature with no registry key; those are not vanilla's copper.
+        if (!(holder instanceof Holder.Reference<PlacedFeature> reference)) {
+            return false;
+        }
+        final ResourceLocation id = reference.key().location();
+        if (!"minecraft".equals(id.getNamespace())) {
+            return false;
+        }
+        final java.util.function.IntSupplier dial = SCALED.get(id.getPath());
+        if (dial == null) {
+            return false;
+        }
+        final int percent = dial.getAsInt();
+        if (percent >= 100) {
+            return false;               // exact no-op: nothing is rebound
+        }
+
+        final PlacedFeature feature = reference.value();
+        synchronized (ALREADY_THINNED) {
+            if (ALREADY_THINNED.contains(feature)) {
+                return false;
+            }
+        }
+
+        final List<PlacementModifier> rebuilt = new ArrayList<>(feature.placement().size());
+        boolean scaled = false;
+
+        for (PlacementModifier modifier : feature.placement()) {
+            if (modifier instanceof CountPlacement counted) {
+                // SCALE what is actually there rather than writing a number of our own: a datapack
+                // may already have changed vanilla's 16, and overwriting that would silently undo
+                // it. Both bounds are read so a non-constant provider still scales sensibly;
+                // vanilla's is a constant, so min == max == 16. getMaxValue became maxInclusive at
+                // 26.x. NOTE THE FIELD ACCESS: on this branch CountPlacement is a plain class
+                // with a private final IntProvider FIELD opened by the access widener /
+                // transformer, and its count(RandomSource, BlockPos) method is something else
+                // entirely. It only becomes a record with a count() accessor at 26.3, so copying
+                // 26.3's call down here does not compile.
+                final int before = counted.count.getMaxValue();
+                final int after = Math.max(0, Math.round(before * percent / 100.0F));
+                if (after == before) {
+                    rebuilt.add(modifier);
+                    continue;
+                }
+                rebuilt.add(CountPlacement.of(after));
+                scaled = true;
+                Constants.LOG.info("Worldgen: {} vein count {} -> {} ({}%)",
+                        id.getPath(), before, after, percent);
+            } else {
+                rebuilt.add(modifier);
+            }
+        }
+
+        if (!scaled) {
+            return false;
+        }
+
+        final PlacedFeature replacement = new PlacedFeature(feature.feature(), List.copyOf(rebuilt));
+        synchronized (ALREADY_THINNED) {
+            ALREADY_THINNED.add(replacement);
+        }
+        // Rebind the registry entry rather than mutate a record's final list. Anything already
+        // holding this Holder - the biome feature lists - reads through to the new value, and at
+        // this version nothing has indexed the old instance yet: the feature-order table is built
+        // lazily at the first chunk decoration, after this runs.
+        ((Holder.Reference<PlacedFeature>) reference).bindValue(replacement);
+        return true;
+    }
+
+    /**
+     * Warns if the thinning never ran, called from the server-start injection.
+     *
+     * <p>A dial that quietly stopped working is invisible: the only symptom would be vanilla copper
+     * density, which nobody would report as a bug. This is the line that makes it visible. Not an
+     * error, because at 100/100 there is genuinely nothing to do. Sabotage test: take the
+     * thinAtServerStart call out of OreTargetInjector and the warning fires on the next world load.
+     */
+    public static void warnIfNeverRan() {
+        if (ranAtLeastOnce) {
+            return;
+        }
+        if (SeamlessOresConfig.overworldCopper >= 100 && SeamlessOresConfig.dripstoneCopper >= 100) {
+            return;                     // both dials off; nothing was supposed to happen
+        }
+        Constants.LOG.warn("Worldgen: the copper dials are set to {}% and {}% but no copper feature"
+                        + " was thinned, so copper is at vanilla density. Everything else in the mod"
+                        + " is unaffected.",
+                SeamlessOresConfig.overworldCopper, SeamlessOresConfig.dripstoneCopper);
     }
 }

@@ -73,6 +73,8 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("create_new_age", "create_new_age");
         MOD_CATEGORIES.put("tfmg", "tfmg");
         MOD_CATEGORIES.put("densemekanism", "dense_mekanism");
+        MOD_CATEGORIES.put("immersiveengineering", "immersive_engineering");
+        MOD_CATEGORIES.put("mekanism", "mekanism");
         MOD_CATEGORIES.put("energizedpower", "energized_power");
         MOD_CATEGORIES.put("expores", "exp_ores");
         MOD_CATEGORIES.put("bigreactors", "extreme_reactors");
