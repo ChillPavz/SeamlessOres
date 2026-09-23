@@ -46,7 +46,7 @@ FORGE_CONDITION_KEY = "forge:condition"
 THRESHOLD = 60
 
 CLIENT_JAR = os.path.expanduser(
-    "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.2_client.jar"
+    "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.3_client.jar"
 )
 
 # Create (Create Fly, mod id 'create') jar - source of the zinc loot table shape and the zinc ore
@@ -88,7 +88,12 @@ POWAH_JAR = os.environ.get("POWAH_JAR", "../references/jars/26.1.2-Powah-7.0.4-a
 
 TFMG_JAR = os.environ.get("TFMG_JAR", "../references/jars/tfmg-1.2.2.jar")
 
-ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../references/jars/energizedpower-3.0.0+26.2.x-neoforge.jar")
+# Energized Power 3.0.1+26.3.x, 20 Sept 2026. Read from the FABRIC file, and that is not arbitrary:
+# the two loader files' tin loot differs only in the NeoForge one carrying a "random_sequence", which
+# this generator rewrites per variant anyway, so either is a correct source. 3.0.0 -> 3.0.1 changed no
+# data file at all, and EPBlocks is byte-identical between the 26.2 and 26.3 NeoForge builds, so tin is
+# still vanilla ore strength (3.0/3.0 stone, 4.5/3.0 deepslate) and needs no STRENGTH_OVERRIDES entry.
+ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../references/jars/energizedpower-3.0.1+26.3.x-fabric.jar")
 
 THINGS_JAR = os.environ.get("THINGS_JAR", "../references/jars/things-0.4.2+1.21.jar")
 
@@ -96,9 +101,23 @@ SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../references/jars/silent-gea
 
 CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../references/jars/create-new-age-1.2.0+neoforge-mc1.21.1.jar")
 
-# Sept 2026 wave: only the two with a 26.2 build. Both re-fetched for 26.2, never carried forward.
-TECHREBORN_JAR = os.environ.get("TECHREBORN_JAR", "../references/jars/26.2-TechReborn-6.1.1.jar")
-OCCULTISM_JAR = os.environ.get("OCCULTISM_JAR", "../references/jars/occultism-26.2-neoforge-1.253.1.jar")
+# Tech Reborn, Energized Power and Occultism are the supported mods with a 26.3 build, all three
+# re-fetched for 26.3 (re-queried on Modrinth 22 Sept 2026). Every other jar here is the newest older
+# build: those mods have no 26.3 build, so their data is generated for completeness and stays inert,
+# and must be re-read once one ships.
+#
+# OCCULTISM went 26.3 on 21 Sept 2026 (1.256.0, NeoForge, release). Its worldgen moved to
+# worldgen/feature/ and its loot was reformatted, so the jar MUST be re-read here: the 26.2 tables are
+# the wrong format. Everything else is unchanged, verified rather than assumed - OccultismBlocks
+# disassembles identically apart from 35 lines of vanilla renames (PushReaction.BLOCK -> IMMOVEABLE,
+# DESTROY -> POPPED, StatePredicate -> StateArgumentPredicate), none of them near silver_ore. So
+# silver_ore is still a plain Block (no XP, hence NONE in OreType) at vanilla ore strength, and
+# ore_silver / ore_silver_deepslate still target minecraft:stone_ore_replaceables and
+# minecraft:deepslate_ore_replaceables, i.e. still a free restyle. Iesnium stays out: it generates
+# looking like plain netherrack and only reveals itself to Occultism's Third Eye, which a variant
+# would break.
+TECHREBORN_JAR = os.environ.get("TECHREBORN_JAR", "../references/jars/26.3-TechReborn-6.2.0.jar")
+OCCULTISM_JAR = os.environ.get("OCCULTISM_JAR", "../references/jars/occultism-26.3-neoforge-1.256.0.jar")
 
 MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "techreborn": TECHREBORN_JAR,
@@ -486,7 +505,7 @@ ORE_DEFS = [
     {"name": "tanzanite", "overlay": "tanzanite", "source": "nether_tanzanite_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_tanzanite_ore"}},
-    # Tech Reborn (Fabric only at 26.2). Its nine overworld ores all target the vanilla replaceables
+    # Tech Reborn (Fabric only at 26.3). Its nine overworld ores all target the vanilla replaceables
     # tags: a pure restyle. Uranium exists from 26.x and is prefixed, because the plain name is Modern
     # Industrialization's on the branches that carry it. The four end stone ores are not covered.
     # Prefixed where the plain name is already taken; the names match every other branch.
@@ -561,21 +580,22 @@ def resources_dir():
 # and drop NOTHING - silent and serious. So route each mod's conditional loot to the loader(s) it
 # actually ships for.
 #
-# VERIFIED PER MINECRAFT VERSION on the Modrinth API for 26.2, never from the project-level
-# "loaders" array (that is the union across every file a project ever shipped and lies per version):
-#   create         fabric only      (Create Fly, mod id 'create')
-#   mythicupgrades fabric + neoforge
-#   energizedpower fabric + neoforge
-#   techreborn     fabric only      (added Sept 2026)
-#   occultism      neoforge only    (added Sept 2026)
+# VERIFIED PER MINECRAFT VERSION on BOTH platforms for 26.3, re-queried 22 Sept 2026, never from the
+# project-level "loaders" array (that is the union across every file a project ever shipped and lies
+# per version):
+#   techreborn     fabric only        (6.2.0, beta)
+#   energizedpower fabric AND neoforge (3.0.1+26.3.x; the Fabric file is a release, the NeoForge one a
+#                                       beta. The NeoForge build that was only "expected" on 16 Sept
+#                                       landed the same day, so this routing is now measured, not a call)
+#   occultism      neoforge only      (26.3-neoforge-1.256.0, release, 21 Sept 2026)
+# Nothing else has a 26.3 build: create and mythicupgrades had one at 26.2 and keep that routing,
+# inert, so their variants light up with no code change once a build appears.
 #
 # There is no forge module on this branch, so nothing is ever written to one.
 #
 # The other eight (mythicmetals, silentgems, silentgear, densemekanism, powah, tfmg, things,
-# create_new_age) have NO 26.2 build. Their variants never register here and their data is inert.
-# They keep their earlier routing so the derived registration lights them up with no code change if
-# a build appears. Note several DO exist at 26.1.2 but not yet at 26.2, so this is not a subset of
-# the older branch and must be re-queried, never carried forward.
+# create_new_age) have NO 26.3 build either. Their variants never register here and their data is
+# inert. Re-query every mod per version; this list is never carried forward.
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "create": ("fabric",),
     "mythicupgrades": ("fabric", "neoforge"),
@@ -606,8 +626,6 @@ DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 # still ship (gated on tfmg being loaded, therefore inert) so that it lights up on its own if a
 # NeoForge Create ever appears.
 IN_RANGE_AVAILABILITY = {
-    "create": ("fabric",),
-    "mythicupgrades": ("fabric", "neoforge"),
     "energizedpower": ("fabric", "neoforge"),
     "techreborn": ("fabric",),
     "occultism": ("neoforge",),
@@ -1091,6 +1109,25 @@ def read_mod_ore_tags():
     return out
 
 
+def is_silk_touch_branch(child):
+    """Whether a loot entry is the silk-touch branch, which drops the block itself.
+
+    Three spellings, and 26.3 introduced two of them. Up to 26.2 an entry carries a "conditions" LIST
+    holding a minecraft:match_tool. From 26.3 it carries a single "condition": vanilla and Energized
+    Power name the shared predicate as a string ("minecraft:tool/can_silk_touch"), Tech Reborn writes
+    the match_tool object inline. Missing any of them silently makes a silk-touched variant drop the
+    source mod's block instead of ours.
+    """
+    if any(cond.get("condition") == "minecraft:match_tool" for cond in child.get("conditions", [])):
+        return True
+    condition = child.get("condition")
+    if isinstance(condition, str):
+        return condition.endswith("can_silk_touch")
+    if isinstance(condition, dict):
+        return condition.get("type") == "minecraft:match_tool"
+    return False
+
+
 def generate_data():
     """Loot tables and tags. Loot is TRANSFORMED from vanilla's own tables, never reconstructed."""
 
@@ -1156,10 +1193,7 @@ def generate_data():
                     for pool in table.get("pools", []):
                         for entry in pool.get("entries", []):
                             for child in entry.get("children", []):
-                                if any(
-                                    cond.get("condition") == "minecraft:match_tool"
-                                    for cond in child.get("conditions", [])
-                                ):
+                                if is_silk_touch_branch(child):
                                     # Silk-touch branch drops the block itself - ours.
                                     child["name"] = our_id
                     table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
@@ -1194,10 +1228,7 @@ def generate_data():
                     for pool in table.get("pools", []):
                         for entry in pool.get("entries", []):
                             for child in entry.get("children", []):
-                                if any(
-                                    cond.get("condition") == "minecraft:match_tool"
-                                    for cond in child.get("conditions", [])
-                                ):
+                                if is_silk_touch_branch(child):
                                     # Silk-touch branch drops the block itself - ours.
                                     child["name"] = our_id
                     table["random_sequence"] = f"{MOD_ID}:blocks/{name}"

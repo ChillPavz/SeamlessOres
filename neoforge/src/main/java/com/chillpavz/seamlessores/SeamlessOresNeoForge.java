@@ -1,19 +1,17 @@
 package com.chillpavz.seamlessores;
 
-import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
-import com.chillpavz.seamlessores.config.SeamlessOresConfigScreen;
+import com.chillpavz.seamlessores.config.ClothConfigBootstrap;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
+import com.chillpavz.seamlessores.platform.Services;
 import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
 import com.chillpavz.seamlessores.worldgen.OreTargetInjector;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
@@ -26,13 +24,16 @@ public class SeamlessOresNeoForge {
 
         SeamlessOres.init();
 
-        // Before worldgen runs, and before anything reads SeamlessOresConfig.
-        SeamlessOresConfigData.register();
-
-        // The config SCREEN is client-only and lives in its own class, so the server never loads a
-        // class that references GUI types. FMLEnvironment.getDist() is a METHOD on 26.x, not a field.
-        if (FMLEnvironment.getDist() == Dist.CLIENT) {
-            SeamlessOresConfigScreen.register(container);
+        // Cloth Config is OPTIONAL on NeoForge (it has no NeoForge build for this Minecraft
+        // version), so every Cloth call is behind this guard and inside ClothConfigBootstrap, which
+        // is the only class here that names a Cloth type. Without it the mod runs on
+        // SeamlessOresConfig's defaults and has no config screen; worldgen is unaffected, because
+        // config gates injection and never registration.
+        if (Services.PLATFORM.isModLoaded(ClothConfigBootstrap.MOD_ID)) {
+            ClothConfigBootstrap.init(container);
+        } else {
+            Constants.LOG.info("Cloth Config is not installed, so Seamless Ores is using its default"
+                    + " settings and has no config screen. Install Cloth Config to change them.");
         }
 
         eventBus.addListener(this::onRegister);
@@ -63,9 +64,10 @@ public class SeamlessOresNeoForge {
         event.register(Registries.CREATIVE_MODE_TAB,
                 helper -> SeamlessOresContent.registerCreativeTab(helper::register));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
-        event.register(Registries.FEATURE,
+        // From 26.3 a feature type is its codec, registered in FEATURE_TYPE.
+        event.register(Registries.FEATURE_TYPE,
                 helper -> BastionSafeOreFeature.register(helper::register));
-        event.register(Registries.FEATURE,
+        event.register(Registries.FEATURE_TYPE,
                 helper -> NetherGemFeature.register(helper::register));
     }
 

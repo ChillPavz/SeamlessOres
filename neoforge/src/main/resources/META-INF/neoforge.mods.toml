@@ -31,9 +31,16 @@ ordering = "NONE"
 side = "BOTH"
 # Cloth's mod id is 'cloth_config'; it PROVIDES 'cloth-config2', which is what fabric.mod.json uses.
 # Swapping the two spellings between loaders makes the mod fail to load.
+#
+# OPTIONAL on NeoForge, and REQUIRED on Fabric, because Cloth ships no NeoForge build for this
+# Minecraft version. Without it the mod runs on SeamlessOresConfig's compiled-in defaults and has no
+# config screen; every cloth-touching call is behind the isModLoaded guard in ClothConfigBootstrap.
+# When a NeoForge build of Cloth lands, this goes back to "required" and the guard stays (it costs
+# nothing and it is what keeps a missing dependency from being a crash).
+# 'ordering = AFTER' still matters when it IS present: the config must be read before worldgen.
 [[dependencies.${mod_id}]]
 modId = "cloth_config"
-type = "required"
+type = "optional"
 versionRange = "[${cloth_config_version},)"
 ordering = "AFTER"
 side = "BOTH"

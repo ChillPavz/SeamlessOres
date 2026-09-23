@@ -45,10 +45,11 @@ public class SeamlessOresFabric implements ModInitializer {
         SeamlessOresContent.registerCreativeTab(
                 (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
-        BastionSafeOreFeature.register((id, feature) ->
-                Registry.register(BuiltInRegistries.FEATURE, id, feature));
-        NetherGemFeature.register((id, feature) ->
-                Registry.register(BuiltInRegistries.FEATURE, id, feature));
+        // From 26.3 a feature type is its codec, registered in FEATURE_TYPE.
+        BastionSafeOreFeature.register((id, codec) ->
+                Registry.register(BuiltInRegistries.FEATURE_TYPE, id, codec));
+        NetherGemFeature.register((id, codec) ->
+                Registry.register(BuiltInRegistries.FEATURE_TYPE, id, codec));
 
         registerModTagPacks();
 

@@ -28,8 +28,9 @@ public record HostStone(String name, Block block, OreTier tier, MapColor mapColo
             new HostStone("diorite", Blocks.DIORITE, OreTier.STONE, MapColor.QUARTZ, SoundType.STONE);
     public static final HostStone ANDESITE =
             new HostStone("andesite", Blocks.ANDESITE, OreTier.STONE, MapColor.STONE, SoundType.STONE);
-    // Tuff sits in deepslate_ore_replaceables, so vanilla currently puts deepslate-textured ore in it.
-    // That is the most visible seam in the game and the clearest single win for this mod.
+    // Vanilla puts deepslate-textured ore in tuff, the most visible seam in the game. From 26.3 tuff is
+    // height specific (deepslate ore below y=8, stone ore above y=0) and natural tuff barely reaches
+    // above 0. The worldgen injection keeps vanilla's own test, so this variant follows the deepslate half.
     public static final HostStone TUFF =
             new HostStone("tuff", Blocks.TUFF, OreTier.DEEPSLATE, MapColor.TERRACOTTA_GRAY, SoundType.TUFF);
 

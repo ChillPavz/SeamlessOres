@@ -9,7 +9,7 @@ surroundings. The Nether variants are the one exception, and they are config gat
 
 | | |
 |---|---|
-| Minecraft | 26.2 |
+| Minecraft | 26.3 |
 | Loaders | Fabric, NeoForge, Quilt (untested) |
 | Wiki | https://chillpavz.com/seamless-ores |
 | Licence | PolyForm Shield 1.0.0, see `LICENSE` |
@@ -229,8 +229,8 @@ Minecraft version:
 
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
-| Fabric | 110 | Create, Energized Power, Mythic Upgrades, Tech Reborn |
-| NeoForge | 68 | Energized Power, Mythic Upgrades, Occultism |
+| Fabric | 82 | Energized Power, Tech Reborn |
+| NeoForge | 44 | Energized Power, Occultism |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.

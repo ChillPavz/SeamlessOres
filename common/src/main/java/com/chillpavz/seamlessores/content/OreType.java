@@ -354,7 +354,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_N_PEARL = silentNether("pearl", "pearl");
     public static final OreType SG_N_TANZANITE = silentNether("tanzanite", "tanzanite");
 
-    // --- Tech Reborn (Fabric only at 26.2) ---------------------------------------------------------
+    // --- Tech Reborn (Fabric only at 26.3) ---------------------------------------------------------
     // XP read from TR's OreDistribution enum, which hands each ore block its range: ruby and sapphire
     // 2-6, every other overworld ore 0, uranium included. Prefixed where the plain name is taken, and
     // bauxite and uranium because Modern Industrialization has both on the branches that carry it.
