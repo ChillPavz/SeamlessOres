@@ -110,6 +110,14 @@ public final class SeamlessOresConfig {
     /** Whether Occultism variants generate. Pure restyle. */
     public static boolean occultism = true;
 
+    /** Whether Immersive Engineering variants generate. Pure restyle: all five sit on the
+     * replaceables tags, so no ore is added anywhere. */
+    public static boolean immersiveEngineering = true;
+
+    /** Whether Mekanism variants generate. Pure restyle: all five sit on the replaceables tags,
+     * so no ore is added anywhere. */
+    public static boolean mekanism = true;
+
     /** Whether Extreme Reactors variants generate. Pure restyle. */
     public static boolean extremeReactors = true;
 
@@ -171,6 +179,8 @@ public final class SeamlessOresConfig {
             case "techreborn" -> netherHost ? techRebornNether : techReborn;
             case "modern_industrialization" -> modernIndustrialization;
             case "occultism" -> occultism;
+            case "immersiveengineering" -> immersiveEngineering;
+            case "mekanism" -> mekanism;
             case "bigreactors" -> netherHost ? extremeReactorsNether : extremeReactors;
             case "cobblemon" -> netherHost ? cobblemonNether : cobblemon;
             case "mysticalagriculture" -> mysticalAgriculture;
@@ -362,6 +372,8 @@ public final class SeamlessOresConfig {
         public boolean cobblemonNether = true;
         public boolean modernIndustrialization = true;
         public boolean occultism = true;
+        public boolean immersiveEngineering = true;
+        public boolean mekanism = true;
         public boolean extremeReactors = true;
         public boolean mysticalAgriculture = true;
         public boolean things = true;
@@ -407,6 +419,8 @@ public final class SeamlessOresConfig {
         cobblemonNether = values.cobblemonNether;
         modernIndustrialization = values.modernIndustrialization;
         occultism = values.occultism;
+        immersiveEngineering = values.immersiveEngineering;
+        mekanism = values.mekanism;
         extremeReactors = values.extremeReactors;
         mysticalAgriculture = values.mysticalAgriculture;
         things = values.things;

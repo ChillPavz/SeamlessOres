@@ -194,6 +194,18 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean occultism = true;
 
+    // --- Immersive Engineering ------------------------------------------------------------------
+
+    @ConfigEntry.Category("immersive_engineering")
+    @ConfigEntry.Gui.Tooltip
+    public boolean immersiveEngineering = true;
+
+    // --- Mekanism -------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("mekanism")
+    @ConfigEntry.Gui.Tooltip
+    public boolean mekanism = true;
+
     // --- Powah ----------------------------------------------------------------------------------
 
     @ConfigEntry.Category("powah")
@@ -309,6 +321,8 @@ public class SeamlessOresConfigData implements ConfigData {
         values.cobblemonNether = cobblemonNether;
         values.modernIndustrialization = modernIndustrialization;
         values.occultism = occultism;
+        values.immersiveEngineering = immersiveEngineering;
+        values.mekanism = mekanism;
         values.extremeReactors = extremeReactors;
         values.mysticalAgriculture = mysticalAgriculture;
         values.things = things;

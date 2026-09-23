@@ -67,6 +67,30 @@
       "id": "seamlessores:granite_inferium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_uranium_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
@@ -132,6 +156,30 @@
     },
     {
       "id": "seamlessores:diorite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_uranium_ore",
       "required": false
     },
     "seamlessores:andesite_iron_ore",
@@ -201,6 +249,30 @@
       "id": "seamlessores:andesite_inferium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_uranium_ore",
+      "required": false
+    },
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
     "seamlessores:tuff_lapis_ore",
@@ -266,6 +338,30 @@
     },
     {
       "id": "seamlessores:tuff_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_uranium_ore",
       "required": false
     }
   ]

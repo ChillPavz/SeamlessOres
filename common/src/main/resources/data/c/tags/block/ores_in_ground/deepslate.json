@@ -293,6 +293,46 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_ie_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_dawn_stone_ore",
       "required": false
     },

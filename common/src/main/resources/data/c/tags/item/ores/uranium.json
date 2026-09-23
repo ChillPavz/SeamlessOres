@@ -13,6 +13,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_dense_uranium_ore",
       "required": false
     },
@@ -22,6 +30,14 @@
     },
     {
       "id": "seamlessores:diorite_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_uranium_ore",
       "required": false
     },
     {
@@ -37,11 +53,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_dense_uranium_ore",
       "required": false
     },
     {
       "id": "seamlessores:tuff_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_uranium_ore",
       "required": false
     }
   ]

@@ -149,6 +149,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_ie_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_dawn_stone_ore",
       "required": false
     },
@@ -338,6 +354,22 @@
     },
     {
       "id": "seamlessores:diorite_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_uranium_ore",
       "required": false
     },
     {
@@ -533,6 +565,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_dawn_stone_ore",
       "required": false
     },
@@ -718,6 +766,22 @@
     },
     {
       "id": "seamlessores:tuff_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_uranium_ore",
       "required": false
     },
     {

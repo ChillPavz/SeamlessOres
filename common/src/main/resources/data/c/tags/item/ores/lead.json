@@ -17,6 +17,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_dense_lead_ore",
       "required": false
     },
@@ -30,6 +38,14 @@
     },
     {
       "id": "seamlessores:diorite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_lead_ore",
       "required": false
     },
     {
@@ -49,6 +65,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_dense_lead_ore",
       "required": false
     },
@@ -62,6 +86,14 @@
     },
     {
       "id": "seamlessores:tuff_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_lead_ore",
       "required": false
     }
   ]

@@ -9,11 +9,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_mek_osmium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_osmium_ore",
       "required": false
     },
     {
       "id": "seamlessores:diorite_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_osmium_ore",
       "required": false
     },
     {
@@ -25,7 +33,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_mek_osmium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_osmium_ore",
       "required": false
     }
   ]
