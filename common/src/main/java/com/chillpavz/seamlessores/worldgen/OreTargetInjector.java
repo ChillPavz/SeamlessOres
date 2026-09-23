@@ -164,10 +164,12 @@ public final class OreTargetInjector {
         Constants.LOG.info("Worldgen: added {} ore targets across {} features ({} resized)",
                 addedTargets, patchedFeatures, resizedFeatures);
 
-        // Copper is thinned separately: it edits placement COUNTS on placed features rather
-        // than target lists on configured ones, and it is the only overworld setting that
-        // changes ore amounts rather than appearance. See CopperDensityInjector.
-        CopperDensityInjector.inject(registries);
+        // Copper is thinned separately, and NOT from here. It edits placement COUNTS by rebinding
+        // a placed feature to a new instance, which has to happen before ChunkGenerator builds its
+        // feature-order table or chunk decoration dies on an index of -1. It therefore runs from
+        // ChunkGeneratorMixin at the head of validate(); this call only reports a thinning that
+        // should have happened and did not. See CopperDensityInjector and ChunkGeneratorMixin.
+        CopperDensityInjector.warnIfNeverRan();
 
         // Configured features are only half the story - the large copper/iron veins come from
         // OreVeinifier during noise generation and are invisible to this registry pass.
