@@ -20,8 +20,24 @@ plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
 }
 
+// One source tree, several Minecraft bands. -Pmc=<band> picks versions/<band>.properties, and its keys
+// become project properties of every project, exactly as if they were in gradle.properties. The band
+// keys are NOT in gradle.properties, so nothing here can be silently shadowed by a stale value there.
+def band = providers.gradleProperty('mc').getOrElse('26.3')
+def bandFile = file("versions/${band}.properties")
+if (!bandFile.exists()) {
+    def known = file('versions').list().findAll { it.endsWith('.properties') }.collect { it - '.properties' }.sort()
+    throw new GradleException("Unknown Minecraft band '${band}' (-Pmc). Known: ${known.join(', ')}")
+}
+def bandProps = new Properties()
+bandFile.withInputStream { bandProps.load(it) }
+gradle.beforeProject { p ->
+    bandProps.each { key, value -> p.ext.set(key as String, value) }
+}
+logger.lifecycle("Seamless Ores, Minecraft band ${band} (${bandProps.minecraft_version}, era ${bandProps.era})")
+
 // This should match the folder name of the project, or else IDEA may complain (see https://youtrack.jetbrains.com/issue/IDEA-317606)
-rootProject.name = 'seamlessores-26.3-multiloader'
+rootProject.name = 'seamlessores-26.x-multiloader'
 includeBuild('build-logic')
 include('common')
 include('fabric')

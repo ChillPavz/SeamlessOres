@@ -3,15 +3,17 @@ package com.chillpavz.seamlessores;
 import com.chillpavz.seamlessores.config.ClothConfigBootstrap;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import com.chillpavz.seamlessores.platform.Services;
-import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
-import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
-import com.chillpavz.seamlessores.worldgen.OreTargetInjector;
+import com.chillpavz.seamlessores.worldgen.Worldgen;
+import com.chillpavz.seamlessores.worldgen.WorldgenEra;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
@@ -46,11 +48,16 @@ public class SeamlessOresNeoForge {
         // registries are datapack-loaded per world, so this is the point where they exist and no
         // chunk has been generated yet.
         NeoForge.EVENT_BUS.addListener(this::onServerAboutToStart);
+
+        // FMLEnvironment.getDist() is a METHOD on 26.x, not a field.
+        if (FMLEnvironment.getDist() == Dist.CLIENT) {
+            SeamlessOresNeoForgeClient.init();
+        }
     }
 
     private void onServerAboutToStart(ServerAboutToStartEvent event) {
 
-        OreTargetInjector.inject(event.getServer().registryAccess());
+        Worldgen.era().injectOreTargets(event.getServer().registryAccess());
     }
 
     private void onRegister(RegisterEvent event) {
@@ -63,12 +70,15 @@ public class SeamlessOresNeoForge {
                 helper -> SeamlessOresContent.registerItems(helper::register));
         event.register(Registries.CREATIVE_MODE_TAB,
                 helper -> SeamlessOresContent.registerCreativeTab(helper::register));
-        // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
-        // From 26.3 a feature type is its codec, registered in FEATURE_TYPE.
-        event.register(Registries.FEATURE_TYPE,
-                helper -> BastionSafeOreFeature.register(helper::register));
-        event.register(Registries.FEATURE_TYPE,
-                helper -> NetherGemFeature.register(helper::register));
+        // Stands in for minecraft:ore on the nether features so bastions keep their own blocks. Up to
+        // 26.2 a feature type is a Feature in FEATURE; from 26.3 it is its codec, in FEATURE_TYPE.
+        registerFeatureTypes(event, Worldgen.era());
+    }
+
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    private static void registerFeatureTypes(RegisterEvent event, WorldgenEra era) {
+        event.register((ResourceKey) era.featureTypeRegistry(),
+                helper -> era.registerFeatureTypes(((RegisterEvent.RegisterHelper<Object>) helper)::register));
     }
 
     private void onBuildCreativeTabs(BuildCreativeModeTabContentsEvent event) {

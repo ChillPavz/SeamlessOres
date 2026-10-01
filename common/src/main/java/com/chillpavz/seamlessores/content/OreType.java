@@ -354,7 +354,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_N_PEARL = silentNether("pearl", "pearl");
     public static final OreType SG_N_TANZANITE = silentNether("tanzanite", "tanzanite");
 
-    // --- Tech Reborn (Fabric only at 26.3) ---------------------------------------------------------
+    // --- Tech Reborn (Fabric only, 26.1 to 26.3) ---------------------------------------------------
     // XP read from TR's OreDistribution enum, which hands each ore block its range: ruby and sapphire
     // 2-6, every other overworld ore 0, uranium included. Prefixed where the plain name is taken, and
     // bauxite and uranium because Modern Industrialization has both on the branches that carry it.
@@ -392,6 +392,20 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType TR_PYRITE = netherOnlyModded("pyrite", "techreborn", "pyrite_ore", NONE);
     public static final OreType TR_SPHALERITE = netherOnlyModded("sphalerite", "techreborn", "sphalerite_ore", NONE);
 
+    /** Mystical Agriculture: Cucumber's BaseOreBlock with 2-5 on both tiers (read at 26.1.2). */
+    public static final OreType INFERIUM =
+            modded("inferium", "mysticalagriculture", "mysticalagriculture", "inferium", UniformInt.of(2, 5));
+    public static final OreType PROSPERITY =
+            modded("prosperity", "mysticalagriculture", "mysticalagriculture", "prosperity", UniformInt.of(2, 5));
+
+    /**
+     * Silent's Gems' opal: a {@code GemOreBlock} like every other gem, so {@link #GEM_XP}. It is
+     * TRANSLUCENT, painted at partial opacity over each rock, so every host carries its own
+     * precomposited overlay (the generator's {@code host_overlays}). Its nether feature places
+     * nothing (size 0, count 0), so there are no basalt or blackstone variants.
+     */
+    public static final OreType SG_OPAL = silentGem("opal", GEM_XP);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -412,7 +426,8 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE,
                     TR_BAUXITE, TR_GALENA, TR_IRIDIUM, TR_LEAD, TR_RUBY, TR_SAPPHIRE, TR_SILVER, TR_TIN,
                     TR_URANIUM, OCCULTISM_SILVER,
-                    TR_CINNABAR, TR_PYRITE, TR_SPHALERITE);
+                    TR_CINNABAR, TR_PYRITE, TR_SPHALERITE,
+                    INFERIUM, PROSPERITY, SG_OPAL);
 
     /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
     public Identifier vanillaFor(HostStone host) {

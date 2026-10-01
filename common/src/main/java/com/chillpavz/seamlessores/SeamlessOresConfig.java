@@ -107,6 +107,9 @@ public final class SeamlessOresConfig {
     /** Whether Occultism variants generate. Pure restyle. */
     public static boolean occultism = true;
 
+    /** Whether Mystical Agriculture variants generate. Pure restyle. */
+    public static boolean mysticalAgriculture = true;
+
     /** Whether Things variants generate. Pure restyle. */
     public static boolean things = true;
 
@@ -144,6 +147,7 @@ public final class SeamlessOresConfig {
             case "energizedpower" -> energizedPower;
             case "techreborn" -> netherHost ? techRebornNether : techReborn;
             case "occultism" -> occultism;
+            case "mysticalagriculture" -> mysticalAgriculture;
             case "things" -> things;
             case "silentgear" -> silentGear;
             case "create_new_age" -> createNewAge;
@@ -328,6 +332,7 @@ public final class SeamlessOresConfig {
         public boolean techReborn = true;
         public boolean techRebornNether = true;
         public boolean occultism = true;
+        public boolean mysticalAgriculture = true;
         public boolean things = true;
         public boolean silentGear = true;
         public boolean createNewAge = true;
@@ -367,6 +372,7 @@ public final class SeamlessOresConfig {
         techReborn = values.techReborn;
         techRebornNether = values.techRebornNether;
         occultism = values.occultism;
+        mysticalAgriculture = values.mysticalAgriculture;
         things = values.things;
         silentGear = values.silentGear;
         createNewAge = values.createNewAge;

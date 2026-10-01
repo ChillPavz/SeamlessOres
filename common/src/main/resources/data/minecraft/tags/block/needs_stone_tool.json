@@ -4,6 +4,10 @@
     "seamlessores:granite_copper_ore",
     "seamlessores:granite_lapis_ore",
     {
+      "id": "seamlessores:granite_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_lead_ore",
       "required": false
     },
@@ -23,9 +27,17 @@
       "id": "seamlessores:granite_techreborn_tin_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_inferium_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
+    {
+      "id": "seamlessores:diorite_tin_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:diorite_lead_ore",
       "required": false
@@ -46,9 +58,17 @@
       "id": "seamlessores:diorite_techreborn_tin_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_inferium_ore",
+      "required": false
+    },
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
     "seamlessores:andesite_lapis_ore",
+    {
+      "id": "seamlessores:andesite_tin_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:andesite_lead_ore",
       "required": false
@@ -67,6 +87,10 @@
     },
     {
       "id": "seamlessores:andesite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_inferium_ore",
       "required": false
     },
     "seamlessores:tuff_iron_ore",
@@ -90,6 +114,10 @@
     },
     {
       "id": "seamlessores:tuff_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_inferium_ore",
       "required": false
     }
   ]

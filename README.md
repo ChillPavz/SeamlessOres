@@ -9,16 +9,16 @@ surroundings. The Nether variants are the one exception, and they are config gat
 
 | | |
 |---|---|
-| Minecraft | 26.3 |
+| Minecraft | 26.1, 26.1.1, 26.1.2, 26.2 and 26.3, one jar per loader |
 | Loaders | Fabric, NeoForge, Quilt (untested) |
 | Wiki | https://chillpavz.com/seamless-ores |
 | Licence | PolyForm Shield 1.0.0, see `LICENSE` |
 
 An original mod. Not a fork or a port of any other project.
 
-Most of the third-party mods below skipped this Minecraft version, so their variants are inert
-here until such a build appears. The block table further down lists, per loader, which of them a
-player can actually see.
+Which third-party mods have a build differs between these Minecraft versions, and a mod's variants
+stay inert until it is installed. The block table further down lists, per version and loader, which
+of them a player can actually see.
 
 ## Companion resource pack
 
@@ -28,7 +28,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**341 blocks** in the `seamlessores` namespace.
+**353 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -175,6 +175,7 @@ touching ore of the same type across different host stones.
 | Silents Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` |
 | Silents Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` |
 | Silents Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` |
+| Opal | `granite_opal_ore` | `diorite_opal_ore` | `andesite_opal_ore` | `tuff_opal_ore` |
 
 **Silent's Gems, Nether, requires `silentgems`**
 
@@ -223,14 +224,25 @@ touching ore of the same type across different host stones.
 |---|---|---|---|---|
 | Occultism Silver | `granite_occultism_silver_ore` | `diorite_occultism_silver_ore` | `andesite_occultism_silver_ore` | `tuff_occultism_silver_ore` |
 
+**Mystical Agriculture, Overworld, requires `mysticalagriculture`**
+
+| | granite | diorite | andesite | tuff |
+|---|---|---|---|---|
+| Inferium | `granite_inferium_ore` | `diorite_inferium_ore` | `andesite_inferium_ore` | `tuff_inferium_ore` |
+| Prosperity | `granite_prosperity_ore` | `diorite_prosperity_ore` | `andesite_prosperity_ore` | `tuff_prosperity_ore` |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
-these you can actually see depends on which mods have a build for your loader at this
+these you can actually see depends on which mods have a build for your loader at your
 Minecraft version:
 
-| Loader | Blocks | Supported mods available here |
-|---|---|---|
-| Fabric | 82 | Energized Power, Tech Reborn |
-| NeoForge | 44 | Energized Power, Occultism |
+| Minecraft | Loader | Blocks | Supported mods available here |
+|---|---|---|---|
+| 26.1 to 26.1.2 | Fabric | 154 | Create, Energized Power, Mythic Metals, Tech Reborn |
+| 26.1 to 26.1.2 | NeoForge | 176 | Energized Power, Mystical Agriculture, Occultism, Powah, Silent Gear, Silent's Gems |
+| 26.2 | Fabric | 110 | Create, Energized Power, Mythic Upgrades, Tech Reborn |
+| 26.2 | NeoForge | 68 | Energized Power, Mythic Upgrades, Occultism |
+| 26.3 | Fabric | 106 | Energized Power, Mythic Upgrades, Tech Reborn |
+| 26.3 | NeoForge | 68 | Energized Power, Mythic Upgrades, Occultism |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -263,7 +275,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 341 blocks takes **91 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 353 blocks takes **97 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -271,7 +283,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `occultism_silver` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `inferium` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `occultism_silver` `opal_andesite` `opal_diorite` `opal_granite` `opal_tuff` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is referenced straight from
@@ -280,15 +292,22 @@ automatically.
 
 ## Building
 
-Requires JDK 25.
+Requires JDK 25 and Python 3.
+
+One jar per loader serves every 26.x version. It is made from two builds, one against the oldest
+version and one against 26.3, joined by a script:
 
 ```
-./gradlew build
+./gradlew build -Pmc=26.3
+./gradlew build -Pmc=26.1.x
+python tools/merge_bands.py
 ```
 
-Jars land in `fabric/build/libs` and `neoforge/build/libs`. Take the plain jar,
-not the `-sources` or `-javadoc` one. Fabric Loader rejects the sources jar, because its metadata
-still holds unexpanded build placeholders.
+`-Pmc` picks a file in `versions/`, which holds everything that changes with the Minecraft version.
+The script leaves `seamlessores-<loader>-26.x-<version>.jar` in `fabric/build/libs` and
+`neoforge/build/libs` and removes the two per-version jars; it stops if the builds differ anywhere
+they should not. Take the plain jar, not the `-sources` or `-javadoc` one. Fabric Loader rejects the
+sources jar, because its metadata still holds unexpanded build placeholders.
 
 Assets, loot tables, tags and this README's block list are generated rather than hand written:
 
@@ -304,8 +323,12 @@ cleaned overlays.
 | Path | What it holds |
 |---|---|
 | `common/` | Everything shared: content registration, worldgen injection, config holder |
+| `common/src/era261`, `common/src/era263` | The worldgen code whose Minecraft API changed at 26.3, one folder per side |
+| `*/src/main/resources/mc26.1`, `mc26.2`, `mc26.3` | Each version's loot tables, as pack overlays chosen by data format |
 | `fabric/`, `neoforge/` | Loader entry points, the Cloth Config data class and screen |
+| `versions/` | Minecraft, loader and dependency versions per build |
 | `tools/generate_assets.py` | Generates blockstates, models, lang, loot tables, tags and the block list above |
+| `tools/merge_bands.py` | Joins the two builds into the one jar per loader |
 
 The Cloth Config classes are duplicated across both loader modules on purpose and must stay
 identical. They cannot live in `common`, because loader dependencies are not on its classpath.
@@ -351,6 +374,7 @@ is theirs and is used under the licence shown:
 | Things | glisco | MIT |
 | Tech Reborn | Team Reborn, modmuss50, drcrazy | MIT |
 | Occultism | Kli Kli | MIT |
+| Mystical Agriculture | BlakeBr0 | MIT |
 <!-- END GENERATED credits -->
 
 Built on [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template) by jaredlll08.

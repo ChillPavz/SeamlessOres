@@ -3,7 +3,8 @@ package com.chillpavz.seamlessores;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
 import com.chillpavz.seamlessores.content.OreType;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
-import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
+import com.chillpavz.seamlessores.worldgen.Worldgen;
+import com.chillpavz.seamlessores.worldgen.WorldgenEra;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.biome.Biomes;
@@ -12,8 +13,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
-import com.chillpavz.seamlessores.worldgen.OreTargetInjector;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
@@ -44,12 +43,9 @@ public class SeamlessOresFabric implements ModInitializer {
         SeamlessOresContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
         SeamlessOresContent.registerCreativeTab(
                 (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
-        // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
-        // From 26.3 a feature type is its codec, registered in FEATURE_TYPE.
-        BastionSafeOreFeature.register((id, codec) ->
-                Registry.register(BuiltInRegistries.FEATURE_TYPE, id, codec));
-        NetherGemFeature.register((id, codec) ->
-                Registry.register(BuiltInRegistries.FEATURE_TYPE, id, codec));
+        // Stands in for minecraft:ore on the nether features so bastions keep their own blocks. Up to
+        // 26.2 a feature type is a Feature in FEATURE; from 26.3 it is its codec, in FEATURE_TYPE.
+        registerFeatureTypes(Worldgen.era());
 
         registerModTagPacks();
 
@@ -79,7 +75,15 @@ public class SeamlessOresFabric implements ModInitializer {
         // Worldgen registries are datapack-loaded per world, so the injection has to happen once the
         // server exists and before any chunk is generated.
         ServerLifecycleEvents.SERVER_STARTING.register(
-                server -> OreTargetInjector.inject(server.registryAccess()));
+                server -> Worldgen.era().injectOreTargets(server.registryAccess()));
+    }
+
+    @SuppressWarnings("unchecked")
+    private static void registerFeatureTypes(WorldgenEra era) {
+        final Registry<Object> registry = (Registry<Object>) era.builtInFeatureTypes();
+        if (registry != null) {
+            era.registerFeatureTypes((id, type) -> Registry.register(registry, id, type));
+        }
     }
 
     /**

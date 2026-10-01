@@ -292,6 +292,18 @@
       "id": "seamlessores:granite_occultism_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_opal_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -582,6 +594,18 @@
     },
     {
       "id": "seamlessores:diorite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_opal_ore",
       "required": false
     },
     "seamlessores:andesite_coal_ore",
@@ -876,6 +900,18 @@
       "id": "seamlessores:andesite_occultism_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_opal_ore",
+      "required": false
+    },
     "seamlessores:tuff_coal_ore",
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
@@ -1118,6 +1154,18 @@
     },
     {
       "id": "seamlessores:tuff_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_opal_ore",
       "required": false
     },
     "seamlessores:basalt_gold_ore",

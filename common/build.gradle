@@ -3,10 +3,21 @@ plugins {
     id 'net.neoforged.moddev'
 }
 
+// The worldgen API changed shape at 26.3 (ore features lost ConfiguredFeature, feature types became
+// codecs). The code that differs lives in one folder per era, src/era261 for 26.1.x and 26.2 and
+// src/era263 for 26.3, with the access widener and transformer; the band file picks one, and
+// tools/merge_bands.py joins the 26.1.x and 26.3 builds into one jar that loads the right era at
+// runtime. Data needs no switch: each version's loot sits in a pack overlay folder that pack.mcmeta
+// enables by data format.
+sourceSets.main {
+    java.srcDir("src/era${era}/java")
+    resources.srcDir("src/era${era}/resources")
+}
+
 neoForge {
     neoFormVersion = neo_form_version
     // Automatically enable AccessTransformers if the file exists
-    def at = file('src/main/resources/META-INF/accesstransformer.cfg')
+    def at = file("src/era${era}/resources/META-INF/accesstransformer.cfg")
     if (at.exists()) {
         accessTransformers.from(at.absolutePath)
     }
@@ -35,8 +46,9 @@ configurations {
 }
 
 artifacts {
-    commonJava sourceSets.main.java.sourceDirectories.singleFile
-    commonResources sourceSets.main.resources.sourceDirectories.singleFile
+    // Every source folder, the era one included: the loaders compile common's sources themselves.
+    sourceSets.main.java.srcDirs.each { commonJava it }
+    sourceSets.main.resources.srcDirs.each { commonResources it }
 }
 
 // Implement mcgradleconventions loader attribute

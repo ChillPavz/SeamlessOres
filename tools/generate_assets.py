@@ -45,92 +45,147 @@ FORGE_CONDITION_KEY = "forge:condition"
 # 0 keeps 141/256 px for iron and hazes over granite; 60 keeps 76 and looks right; 90 eats real blobs.
 THRESHOLD = 60
 
-CLIENT_JAR = os.path.expanduser(
-    "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.3_client.jar"
-)
-
-# Create (Create Fly, mod id 'create') jar - source of the zinc loot table shape and the zinc ore
-# texture the overlay is derived from. Machine-specific default, override with the CREATE_JAR env
-# var. Licence: the jar ships CC0 at root plus the original Create MIT - deriving the overlay is
-# fine; keep the attribution line in the README. When the jar is missing, zinc JSON still generates
-# (the loot shape is baked below, verified identical to vanilla iron_ore's) but the texture step
-# skips zinc.
-CREATE_JAR = os.environ.get(
-    "CREATE_JAR",
-    "../references/jars/26.2-create-fly-26.2-rc-2-6.0.9-1.jar",
-)
-
-# Mythic Upgrades (mod id 'mythicupgrades', MIT, 26.2 on all four loaders). Source of its ore
-# textures and the facts behind the entries below. Override with MYTHIC_UPGRADES_JAR.
-MYTHIC_UPGRADES_JAR = os.environ.get(
-    "MYTHIC_UPGRADES_JAR",
-    "../references/jars/26.2-mythicupgrades-fabric-26.2-5.1.0.jar",
-)
-
-# Mythic Metals (mod id 'mythicmetals', MIT). Fabric only on every version it has ever shipped, so
-# its variants only ever register there. Source of its ore textures, loot tables and tool tags.
-SILENT_GEMS_JAR = os.environ.get(
-    "SILENT_GEMS_JAR",
-    "../references/jars/silentgems-26.1.2-neoforge-5.1.4.jar")
-
-MYTHIC_METALS_JAR = os.environ.get(
-    "MYTHIC_METALS_JAR",
-    # The in-range build. Mythic Metals ships Fabric only and stops at 1.21.4; its ore set, loot
-    # tables and textures are byte-identical to the 0.24.6+1.21 build the other branches read.
-    "../references/jars/mythicmetals-0.24.6+1.21.jar",
-)
-
-# Every third-party jar we read, keyed by the mod id used in the ORES table below. A missing jar is
-# a warning rather than an error: the JSON still generates, only the texture step is skipped.
-DENSEMEKANISM_JAR = os.environ.get("DENSEMEKANISM_JAR", "../references/jars/densemekanism-1.21.1-1.2.jar")
-
-POWAH_JAR = os.environ.get("POWAH_JAR", "../references/jars/26.1.2-Powah-7.0.4-alpha.jar")
-
-TFMG_JAR = os.environ.get("TFMG_JAR", "../references/jars/tfmg-1.2.2.jar")
-
-# Energized Power 3.0.1+26.3.x, 20 Sept 2026. Read from the FABRIC file, and that is not arbitrary:
-# the two loader files' tin loot differs only in the NeoForge one carrying a "random_sequence", which
-# this generator rewrites per variant anyway, so either is a correct source. 3.0.0 -> 3.0.1 changed no
-# data file at all, and EPBlocks is byte-identical between the 26.2 and 26.3 NeoForge builds, so tin is
-# still vanilla ore strength (3.0/3.0 stone, 4.5/3.0 deepslate) and needs no STRENGTH_OVERRIDES entry.
-ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../references/jars/energizedpower-3.0.1+26.3.x-fabric.jar")
-
-THINGS_JAR = os.environ.get("THINGS_JAR", "../references/jars/things-0.4.2+1.21.jar")
-
-SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../references/jars/silent-gear-26.1.2-neoforge-4.2.2.jar")
-
-CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../references/jars/create-new-age-1.2.0+neoforge-mc1.21.1.jar")
-
-# Tech Reborn, Energized Power and Occultism are the supported mods with a 26.3 build, all three
-# re-fetched for 26.3 (re-queried on Modrinth 22 Sept 2026). Every other jar here is the newest older
-# build: those mods have no 26.3 build, so their data is generated for completeness and stays inert,
-# and must be re-read once one ships.
+# ONE JAR SERVES 26.1, 26.1.1, 26.1.2, 26.2 AND 26.3, so every loot table exists once per Minecraft
+# version, read from THAT version's client jar and THAT version's build of each mod, and written into a
+# pack overlay folder that pack.mcmeta enables by data format (mc26.1, mc26.2, mc26.3). Everything else
+# this script writes (blockstates, models, lang, tags) is the same on every version and goes in the base.
+# A profile is one version's jars, plus which mods a player can actually get there.
 #
-# OCCULTISM went 26.3 on 21 Sept 2026 (1.256.0, NeoForge, release). Its worldgen moved to
-# worldgen/feature/ and its loot was reformatted, so the jar MUST be re-read here: the 26.2 tables are
-# the wrong format. Everything else is unchanged, verified rather than assumed - OccultismBlocks
-# disassembles identically apart from 35 lines of vanilla renames (PushReaction.BLOCK -> IMMOVEABLE,
-# DESTROY -> POPPED, StatePredicate -> StateArgumentPredicate), none of them near silver_ore. So
-# silver_ore is still a plain Block (no XP, hence NONE in OreType) at vanilla ore strength, and
-# ore_silver / ore_silver_deepslate still target minecraft:stone_ore_replaceables and
-# minecraft:deepslate_ore_replaceables, i.e. still a free restyle. Iesnium stays out: it generates
-# looking like plain netherrack and only reveals itself to Occultism's Third Eye, which a variant
-# would break.
-TECHREBORN_JAR = os.environ.get("TECHREBORN_JAR", "../references/jars/26.3-TechReborn-6.2.0.jar")
-OCCULTISM_JAR = os.environ.get("OCCULTISM_JAR", "../references/jars/occultism-26.3-neoforge-1.256.0.jar")
+# Machine-specific defaults. A mod with no build at a version keeps the newest older jar: its variants
+# never register there and its tables stay inert behind their conditions, so it lights up with no code
+# change once a build appears (after its jar is re-read here).
+REFS = "../references/jars/"
+CLIENT_JARS = {
+    "26.1": "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.1.2_client.jar",
+    "26.2": "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.2_client.jar",
+    "26.3": "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.3_client.jar",
+}
 
-MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
-            "techreborn": TECHREBORN_JAR,
-            "occultism": OCCULTISM_JAR,
-            "silentgear": SILENTGEAR_JAR,
-            "things": THINGS_JAR,
-            "energizedpower": ENERGIZEDPOWER_JAR,
-            "tfmg": TFMG_JAR,
-            "powah": POWAH_JAR,
-            "densemekanism": DENSEMEKANISM_JAR,
-            "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
-            "silentgems": SILENT_GEMS_JAR,
-            "mythicmetals": MYTHIC_METALS_JAR}
+# Jars that are the same for every version: mods with no 26.x build at all (densemekanism, tfmg, things,
+# create_new_age), and the 26.1.2-only mods (Silent's Gems, Silent Gear, Powah, Mystical Agriculture,
+# Mythic Metals), whose 26.1.2 build is the only one there is.
+#
+# Mythic Metals: THE 26.1.2 BUILD. 0.26.0+26.1.2 (14 Sept 2026) has the same 36 ore blocks, ids,
+# features and loot as 0.24.6+1.21, but NOT the same tool tags: 0.26.0 fills all three vanilla tiers
+# plus two tags of its own (needs_copper_tools, needs_netherite_tool) that feed vanilla's
+# incorrect_for_<tool> lists. Read from the old jar, our variants would be minable a tier or more too
+# cheaply next to the mod's own ore.
+COMMON_JARS = {
+    "densemekanism": REFS + "densemekanism-1.21.1-1.2.jar",
+    "tfmg": REFS + "tfmg-1.2.2.jar",
+    "things": REFS + "things-0.4.2+1.21.jar",
+    "create_new_age": REFS + "create-new-age-1.2.0+neoforge-mc1.21.1.jar",
+    "silentgems": REFS + "silentgems-26.1.2-neoforge-5.1.4.jar",
+    "silentgear": REFS + "silent-gear-26.1.2-neoforge-4.2.2.jar",
+    "powah": REFS + "26.1.2-Powah-7.0.4-alpha.jar",
+    "mysticalagriculture": REFS + "MysticalAgriculture-26.1.2-9.0.9.jar",
+    "mythicmetals": REFS + "26.1.2-mythicmetals-0.26.0+26.1.2.jar",
+}
+
+PROFILES = {
+    # 26.1, 26.1.1 and 26.1.2 (data formats up to 106). Tech Reborn 6.0.5 is one file for all three;
+    # Occultism's 26.1 and 26.1.2 files ship identical silver loot, tags and art. Mythic Upgrades has no
+    # 26.1 build: its 26.2 jar stands in, inert.
+    "26.1": {
+        "overlay": "mc26.1",
+        "formats": (15, 106),
+        "jars": {
+            "create": REFS + "26.1.2-create-fly-26.1.2-6.0.9-4.jar",
+            "mythicupgrades": REFS + "mythicupgrades-fabric-26.2-5.1.1.jar",
+            "energizedpower": REFS + "26.1.2-energizedpower-3.0.0+26.1.x-neoforge.jar",
+            "techreborn": REFS + "26.1.x-TechReborn-6.0.5.jar",
+            "occultism": REFS + "occultism-26.1.2-neoforge-1.251.0.jar",
+        },
+        # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
+        # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
+        # file it ever shipped). Drives the README's honest per-version counts.
+        #
+        # AN ADD-ON'S AVAILABILITY IS THE INTERSECTION OF ITS OWN BUILD AND ITS REQUIRED PARENT'S:
+        # Silent's Gems needs Silent Gear, which needs Silent Lib, and all three are on NeoForge here.
+        "available": {
+            "create": ("fabric",),
+            "mythicmetals": ("fabric",),
+            "silentgems": ("neoforge",),
+            "silentgear": ("neoforge",),
+            "powah": ("neoforge",),
+            "energizedpower": ("fabric", "neoforge"),
+            "techreborn": ("fabric",),
+            "occultism": ("neoforge",),
+            "mysticalagriculture": ("neoforge",),
+        },
+    },
+    # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
+    # themselves on 6.0.5 and fortune-affected dust (silk touch for the ore) here, which is why 26.1 and
+    # 26.2 are two overlays and not one. Mythic Upgrades 5.1.1 carries the same loot as 5.1.0.
+    "26.2": {
+        "overlay": "mc26.2",
+        "formats": (107, 120),
+        "jars": {
+            "create": REFS + "26.2-create-fly-26.2-rc-2-6.0.9-1.jar",
+            "mythicupgrades": REFS + "mythicupgrades-fabric-26.2-5.1.1.jar",
+            "energizedpower": REFS + "energizedpower-3.0.0+26.2.x-neoforge.jar",
+            "techreborn": REFS + "26.2-TechReborn-6.1.1.jar",
+            "occultism": REFS + "occultism-26.2-neoforge-1.253.1.jar",
+        },
+        "available": {
+            "create": ("fabric",),
+            "mythicupgrades": ("fabric", "neoforge"),
+            "energizedpower": ("fabric", "neoforge"),
+            "techreborn": ("fabric",),
+            "occultism": ("neoforge",),
+        },
+    },
+    # 26.3 (data formats 121 and up): a new loot format, silk touch as a single "condition" (see
+    # is_silk_touch_branch). Every mod with a 26.3 build is re-read from it:
+    #   Tech Reborn 6.2.0 (Fabric; worldgen moved to feature/, loot reformatted, XP and strength
+    #     byte-identical to 6.1.1).
+    #   Energized Power 3.0.1+26.3.x, read from the FABRIC file: the two loaders' tin loot differs only
+    #     in the NeoForge one carrying a random_sequence, which this script rewrites per variant anyway.
+    #   Occultism 1.256.0 (NeoForge): worldgen moved to feature/ and loot reformatted; silver is still a
+    #     plain Block at vanilla strength on the vanilla replaceables tags. Iesnium stays out.
+    #   Mythic Upgrades 5.1.1 (28 Sept 2026, Fabric and NeoForge, NeoForge 26.3.0.26+). MythicBlocks
+    #     disassembles identically to the 26.2 build and every ore texture is byte-identical; its loot
+    #     tables are the 26.3 format and identical between the two loader files. Its five overworld
+    #     ores still target the vanilla replaceables tags and ruby and sapphire still block_match
+    #     netherrack, so nothing but the loot changes for us.
+    # Create Fly has no 26.3 build; its 26.2 jar stands in, inert.
+    "26.3": {
+        "overlay": "mc26.3",
+        "formats": (121, 999),
+        "jars": {
+            "create": REFS + "26.2-create-fly-26.2-rc-2-6.0.9-1.jar",
+            "mythicupgrades": REFS + "mythicupgrades-fabric-26.3-5.1.1.jar",
+            "energizedpower": REFS + "energizedpower-3.0.1+26.3.x-fabric.jar",
+            "techreborn": REFS + "26.3-TechReborn-6.2.0.jar",
+            "occultism": REFS + "occultism-26.3-neoforge-1.256.0.jar",
+        },
+        "available": {
+            "mythicupgrades": ("fabric", "neoforge"),
+            "energizedpower": ("fabric", "neoforge"),
+            "techreborn": ("fabric",),
+            "occultism": ("neoforge",),
+        },
+    },
+}
+
+CLIENT_JAR = None
+MOD_JARS = {}
+IN_RANGE_AVAILABILITY = {}
+
+
+def use_profile(version):
+    """Points CLIENT_JAR, MOD_JARS and IN_RANGE_AVAILABILITY at one Minecraft version's jars."""
+    global CLIENT_JAR, MOD_JARS, IN_RANGE_AVAILABILITY
+    profile = PROFILES[version]
+    CLIENT_JAR = os.path.expanduser(CLIENT_JARS[version])
+    MOD_JARS = {**COMMON_JARS, **profile["jars"]}
+    IN_RANGE_AVAILABILITY = profile["available"]
+
+
+# Textures and anything else that is not per version read the 26.1 profile, which carries every ore.
+use_profile("26.1")
+# Source of the zinc overlay texture (Create Fly, mod id 'create'; CC0 plus the original Create MIT).
+CREATE_JAR = MOD_JARS["create"]
 
 # Host stones that receive ore but have no matching ore texture in vanilla.
 # KEEP IN SYNC WITH HostStone.java.
@@ -213,6 +268,8 @@ MODS = {
                        "licence": "MIT",          "author": "Team Reborn, modmuss50, drcrazy"},
     "occultism":      {"display": "Occultism",         "category": "occultism",
                        "licence": "MIT",          "author": "Kli Kli"},
+    "mysticalagriculture": {"display": "Mystical Agriculture", "category": "mystical_agriculture",
+                       "licence": "MIT",          "author": "BlakeBr0"},
 }
 
 ORE_DEFS = [
@@ -505,7 +562,7 @@ ORE_DEFS = [
     {"name": "tanzanite", "overlay": "tanzanite", "source": "nether_tanzanite_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_tanzanite_ore"}},
-    # Tech Reborn (Fabric only at 26.3). Its nine overworld ores all target the vanilla replaceables
+    # Tech Reborn (Fabric only at 26.1.x). Its nine overworld ores all target the vanilla replaceables
     # tags: a pure restyle. Uranium exists from 26.x and is prefixed, because the plain name is Modern
     # Industrialization's on the branches that carry it. The four end stone ores are not covered.
     # Prefixed where the plain name is already taken; the names match every other branch.
@@ -553,6 +610,21 @@ ORE_DEFS = [
     {"name": "sphalerite", "overlay": "sphalerite", "source": "sphalerite_ore", "base": "netherrack",
      "mod": "techreborn",
      "tiers": {"nether": "sphalerite_ore"}},
+    # Mystical Agriculture: inferium and prosperity, both on the replaceables tags. Soulium sits on
+    # its own soulstone.
+    {"name": "inferium", "overlay": "inferium", "source": "inferium_ore", "base": "stone",
+     "mod": "mysticalagriculture",
+     "tiers": {"stone": "inferium_ore", "deepslate": "deepslate_inferium_ore"}},
+    {"name": "prosperity", "overlay": "prosperity", "source": "prosperity_ore", "base": "stone",
+     "mod": "mysticalagriculture",
+     "tiers": {"stone": "prosperity_ore", "deepslate": "deepslate_prosperity_ore"}},
+    # Silent's Gems opal is TRANSLUCENT: painted at partial opacity over each rock, so it takes the
+    # colour of the rock behind it. One overlay per host, precomposited from the solved layer (see
+    # the pack's solve_translucent_ore.py). Its nether feature places nothing (size 0, count 0).
+    {"name": "opal", "overlay": "opal", "source": "opal_ore", "base": "stone",
+     "mod": "silentgems", "raw_drop": "silentgems:opal",
+     "host_overlays": {"granite": "opal_granite", "diorite": "opal_diorite", "andesite": "opal_andesite", "tuff": "opal_tuff"},
+     "tiers": {"stone": "opal_ore", "deepslate": "deepslate_opal_ore"}},
 ]
 
 FACES = ["down", "up", "north", "south", "west", "east"]
@@ -580,22 +652,22 @@ def resources_dir():
 # and drop NOTHING - silent and serious. So route each mod's conditional loot to the loader(s) it
 # actually ships for.
 #
-# VERIFIED PER MINECRAFT VERSION on BOTH platforms for 26.3, re-queried 22 Sept 2026, never from the
-# project-level "loaders" array (that is the union across every file a project ever shipped and lies
-# per version):
-#   techreborn     fabric only        (6.2.0, beta)
-#   energizedpower fabric AND neoforge (3.0.1+26.3.x; the Fabric file is a release, the NeoForge one a
-#                                       beta. The NeoForge build that was only "expected" on 16 Sept
-#                                       landed the same day, so this routing is now measured, not a call)
-#   occultism      neoforge only      (26.3-neoforge-1.256.0, release, 21 Sept 2026)
-# Nothing else has a 26.3 build: create and mythicupgrades had one at 26.2 and keep that routing,
-# inert, so their variants light up with no code change once a build appears.
+# VERIFIED PER MINECRAFT VERSION on the Modrinth API for 26.1.2, never from the project-level
+# "loaders" array (that is the union across every file a project ever shipped and lies per version):
+#   create         fabric only      (Create Fly, mod id 'create')
+#   silentgems     neoforge only    (needs silentgear, which needs silent-lib; both are on neoforge here)
+#   silentgear     neoforge only
+#   powah          neoforge only    (its cloth_config, guideme and jei deps all resolve here)
+#   energizedpower fabric + neoforge
+#   techreborn          fabric only      (added Sept 2026)
+#   occultism           neoforge only    (added Sept 2026)
+#   mysticalagriculture neoforge only    (added Sept 2026; 26.1.2 only, needs Cucumber, also 26.1.2)
 #
 # There is no forge module on this branch, so nothing is ever written to one.
 #
-# The other eight (mythicmetals, silentgems, silentgear, densemekanism, powah, tfmg, things,
-# create_new_age) have NO 26.3 build either. Their variants never register here and their data is
-# inert. Re-query every mod per version; this list is never carried forward.
+# The other six (mythicupgrades, mythicmetals, densemekanism, tfmg, things, create_new_age) have NO
+# 26.1.2 build. Their variants never register here and their data is inert. They keep their earlier
+# routing so the derived registration lights them up with no code change if a build appears.
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "create": ("fabric",),
     "mythicupgrades": ("fabric", "neoforge"),
@@ -610,27 +682,9 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "create_new_age": ("neoforge",),
     "techreborn": ("fabric",),
     "occultism": ("neoforge",),
+    "mysticalagriculture": ("neoforge",),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
-
-# Which supported mods a player can ACTUALLY see at 1.21.11, and on which loader. This drives the
-# README's honest per-loader block count and its "supported mods available here" list, so it must
-# reflect real availability rather than the inert loot routing above. Verified on the Modrinth API.
-# Re-query on any bump.
-#
-# AN ADD-ON'S AVAILABILITY IS THE INTERSECTION OF ITS OWN BUILD AND ITS REQUIRED PARENT'S, so a
-# per-mod query is not enough on its own. TFMG is the case here: it ships a NeoForge 1.21.11 build,
-# but its own neoforge.mods.toml declares create [6.0.6,) as REQUIRED, and the only Create at
-# 1.21.11 is Create Fly, which is Fabric and Quilt only. So TFMG cannot load on NeoForge here and
-# its twelve variants are unreachable, however its own listing reads. Its conditional loot tables
-# still ship (gated on tfmg being loaded, therefore inert) so that it lights up on its own if a
-# NeoForge Create ever appears.
-IN_RANGE_AVAILABILITY = {
-    "energizedpower": ("fabric", "neoforge"),
-    "techreborn": ("fabric",),
-    "occultism": ("neoforge",),
-}
-
 
 def conditional_data_dir(module, namespace):
     return os.path.join(repo_root(), module, "src", "main", "resources", "data", namespace)
@@ -754,7 +808,15 @@ def assert_no_dashes(strings, what):
             .format(len(bad), what, report))
 
 
+# When set, write_json records into this dict instead of writing: main() runs the data step once per
+# Minecraft version and then decides what goes in the base and what into that version's overlay.
+CAPTURE = None
+
+
 def write_json(path, data):
+    if CAPTURE is not None:
+        CAPTURE[os.path.normpath(path)] = data
+        return
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as handle:
         json.dump(data, handle, indent=2)
@@ -874,6 +936,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
         f"text.autoconfig.{MOD_ID}.category.occultism": "Occultism",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
+        f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
 
         f"text.autoconfig.{MOD_ID}.option.granite": "Granite variants",
         f"text.autoconfig.{MOD_ID}.option.granite.@Tooltip":
@@ -1053,6 +1116,10 @@ def generate_json():
             "in netherrack only, so this ADDS ore, thinned by the Nether tab's rarity and vein size.",
         f"text.autoconfig.{MOD_ID}.option.techRebornNether.@Tooltip[2]":
             "Turn off to leave the Nether exactly as Tech Reborn generates it.",
+
+        f"text.autoconfig.{MOD_ID}.option.mysticalAgriculture": "Mystical Agriculture: variants",
+        f"text.autoconfig.{MOD_ID}.option.mysticalAgriculture.@Tooltip":
+            "Generate host-matched inferium and prosperity ore. Does nothing unless the mod is installed.",
     })
     assert_no_dashes(lang.items(), "lang entries")
     write_json(os.path.join(root, "lang", "en_us.json"), lang)
@@ -1113,10 +1180,10 @@ def is_silk_touch_branch(child):
     """Whether a loot entry is the silk-touch branch, which drops the block itself.
 
     Three spellings, and 26.3 introduced two of them. Up to 26.2 an entry carries a "conditions" LIST
-    holding a minecraft:match_tool. From 26.3 it carries a single "condition": vanilla and Energized
-    Power name the shared predicate as a string ("minecraft:tool/can_silk_touch"), Tech Reborn writes
-    the match_tool object inline. Missing any of them silently makes a silk-touched variant drop the
-    source mod's block instead of ours.
+    holding a minecraft:match_tool. From 26.3 it carries a single "condition": vanilla, Energized Power
+    and Mythic Upgrades name the shared predicate as a string ("minecraft:tool/can_silk_touch"), Tech
+    Reborn writes the match_tool object inline. Missing any of them silently makes a silk-touched
+    variant drop the source mod's block instead of ours.
     """
     if any(cond.get("condition") == "minecraft:match_tool" for cond in child.get("conditions", [])):
         return True
@@ -1141,6 +1208,7 @@ def generate_data():
 
     mineable = []
     tool_tags = {}
+    foreign_tool_tags = {}          # a source mod's OWN needs_* tags, mirrored for our variants
     conv_block = {}
     conv_item = {}
     ores_in_ground = {}
@@ -1160,6 +1228,7 @@ def generate_data():
         # data, and hardcoding would have guessed stone-tool wrong. Read every mod we cover, not
         # just Create: the entries merge, and each mod only ever names its own blocks.
         modded_tool_tags = {}
+        mod_own_tool_tags = {}          # (namespace, tag path) -> the blocks that mod lists there
         for mod_id, mod_jar in MOD_JARS.items():
             if not os.path.exists(mod_jar):
                 print(f"  !! {mod_id} jar not found ({mod_jar}) - its tool tags fall back to needs_iron_tool")
@@ -1177,6 +1246,22 @@ def generate_data():
                     except KeyError:
                         continue
                     modded_tool_tags.setdefault(tag, set()).update(values)
+                # A mod can also gate ITS OWN tools with tags in its own namespace and feed those
+                # into vanilla's incorrect_for_<tool> composition, which is a tier requirement by
+                # another route. Mythic Metals 0.26.0 does exactly that: needs_copper_tools carries
+                # five of its ores and needs_netherite_tool two more, so a variant left out of them
+                # is minable a tier too cheaply next to the block it stands in for. Read whatever
+                # the jar has rather than naming the two, and mirror membership the same way.
+                for member in mod_jar_zip.namelist():
+                    match = re.match(r"^data/([^/]+)/tags/block/(needs_[^/]+)\.json$", member)
+                    if not match or match.group(1) == "minecraft":
+                        continue
+                    try:
+                        listed = json.loads(mod_jar_zip.read(member)).get("values", [])
+                    except ValueError:
+                        continue
+                    mod_own_tool_tags.setdefault((match.group(1), match.group(2)), set()).update(
+                        str(v["id"] if isinstance(v, dict) else v) for v in listed)
         for host, host_cfg, ore, vanilla in variants():
                 name = variant_name(host, ore["name"])
                 our_id = f"{MOD_ID}:{name}"
@@ -1216,7 +1301,7 @@ def generate_data():
                         raise SystemExit(
                             f"  !! cannot generate the loot table for {name}: the {mod} jar is "
                             f"required to transform its own table and was not found at "
-                            f"{mod_jar_path}. Set the matching *_JAR environment variable."
+                            f"{mod_jar_path}. Fix its path in PROFILES or COMMON_JARS."
                         )
                     with zipfile.ZipFile(mod_jar_path) as mod_zip:
                         loot_path = f"data/{mod}/loot_table/blocks/{vanilla}.json"
@@ -1264,6 +1349,10 @@ def generate_data():
                 for tag, members in source_tags.items():
                     if vanilla_id in members:
                         tool_tags.setdefault(tag, []).append(entry)
+                if mod:
+                    for tag_key, members in mod_own_tool_tags.items():
+                        if vanilla_id in members:
+                            foreign_tool_tags.setdefault(tag_key, []).append(entry)
                 conv_block.setdefault(ore["name"], []).append(entry)
                 conv_item.setdefault(ore["name"], []).append(entry)
                 # TAG PARITY with the ore we stand in for: every c:ores/<x> tag its counterpart is in,
@@ -1287,6 +1376,11 @@ def generate_data():
     write_json(os.path.join(mc, "tags", "block", "mineable", "pickaxe.json"), {"values": mineable})
     for tag, values in tool_tags.items():
         write_json(os.path.join(mc, "tags", "block", f"{tag}.json"), {"values": values})
+    # The source mods' own tier tags. These merge with that mod's file, and every entry is optional,
+    # so the file is inert on an instance without the mod.
+    for (namespace, tag), values in foreign_tool_tags.items():
+        write_json(os.path.join(data_dir(namespace), "tags", "block", f"{tag}.json"),
+                   {"values": values})
 
     all_ids = sorted(mineable, key=lambda e: e["id"] if isinstance(e, dict) else e)
     write_json(os.path.join(conv, "tags", "block", "ores.json"), {"values": all_ids})
@@ -1298,6 +1392,9 @@ def generate_data():
             {"values": values},
         )
 
+    if foreign_tool_tags:
+        print("  source mods' own tier tags mirrored: "
+              + ", ".join(f"{ns}:{tag} ({len(v)})" for (ns, tag), v in sorted(foreign_tool_tags.items())))
     print(f"  {len(mineable)} loot tables")
     print(f"  tags: mineable/pickaxe, {', '.join(sorted(tool_tags))}, "
           f"c:ores (+{len(conv_block)} per-ore), c:ores_in_ground ({', '.join(sorted(ores_in_ground))})")
@@ -1422,43 +1519,40 @@ def _block_list():
 
 
 def _loader_counts():
-    """How many blocks each loader can actually reach, from the same per-version mod/loader matrix
-    that decides where the conditional loot tables ship.
+    """How many blocks a player can actually reach, per Minecraft version and loader.
 
     Derived rather than written down because it is the single most version-specific fact in this
-    README: which mods have a build for a given loader flips between Minecraft versions, and a
-    number copied forward from another branch is wrong without looking wrong.
+    README: which mods have a build for a given loader flips between Minecraft versions, and a number
+    copied from one version to another is wrong without looking wrong.
     """
     per_mod = {}
     for _host, _cfg, ore, _v in variants():
         per_mod[ore.get("mod")] = per_mod.get(ore.get("mod"), 0) + 1
     vanilla = per_mod.pop(None, 0)
 
-    rows = []
-    for loader in ("fabric", "neoforge"):
-        total = vanilla
-        available = []
-        for mod, count in per_mod.items():
-            # Honest availability, not the inert loot routing: a mod with no in-range build on this
-            # loader contributes no blocks a player can see, even though its (gated) data ships.
-            if loader in IN_RANGE_AVAILABILITY.get(mod, ()):
-                total += count
-                available.append(MODS[mod]["display"])
-        rows.append((loader, total, sorted(available)))
-
     lines = [
         "A variant is registered only when the mod that owns its ore is installed, so how many of",
-        "these you can actually see depends on which mods have a build for your loader at this",
+        "these you can actually see depends on which mods have a build for your loader at your",
         "Minecraft version:",
         "",
-        "| Loader | Blocks | Supported mods available here |",
-        "|---|---|---|",
+        "| Minecraft | Loader | Blocks | Supported mods available here |",
+        "|---|---|---|---|",
     ]
     # Spelled out rather than capitalize()d: that would give "Neoforge".
     display = {"fabric": "Fabric", "neoforge": "NeoForge", "forge": "Forge"}
-    for loader, total, available in rows:
-        names = ", ".join(available) if available else "none at this Minecraft version"
-        lines.append(f"| {display[loader]} | {total} | {names} |")
+    label = {"26.1": "26.1 to 26.1.2", "26.2": "26.2", "26.3": "26.3"}
+    for version, profile in PROFILES.items():
+        for loader in ("fabric", "neoforge"):
+            total = vanilla
+            available = []
+            for mod, count in per_mod.items():
+                # Honest availability, not the inert loot routing: a mod with no build for this
+                # version and loader contributes no blocks a player can see, though its gated data ships.
+                if loader in profile["available"].get(mod, ()):
+                    total += count
+                    available.append(MODS[mod]["display"])
+            names = ", ".join(sorted(available)) if available else "none at this Minecraft version"
+            lines.append(f"| {label[version]} | {display[loader]} | {total} | {names} |")
     return lines + [
         "",
         "The registered block set is derived from which mods are loaded rather than from config, so",
@@ -1537,6 +1631,66 @@ def generate_readme():
           f"{len({o.get('mod') for o in ORE_DEFS} - {None})} mods credited")
 
 
+def overlay_path(path, overlay):
+    """<module>/src/main/resources/data/... -> <module>/src/main/resources/<overlay>/data/..."""
+    marker = os.path.join("src", "main", "resources", "data") + os.sep
+    head, sep, tail = path.partition(marker)
+    assert sep, path
+    return os.path.join(head, "src", "main", "resources", overlay, "data", tail)
+
+
+def is_loot(path):
+    return (os.sep + "loot_table" + os.sep) in path
+
+
+def generate_versioned_data():
+    """Runs the data step once per profile and routes what it wrote.
+
+    Loot tables go into that version's overlay folder, in whichever module the run put them (common
+    for vanilla ores, fabric / neoforge for a mod's conditional tables). Everything else must come out
+    the same for every version, because it goes in the base and every version reads it; the run stops
+    if it does not, rather than let one version's tags silently win.
+    """
+    global CAPTURE
+    runs = {}
+    for version in PROFILES:
+        use_profile(version)
+        print(f"  [{version}] client {os.path.basename(CLIENT_JAR)}")
+        CAPTURE = {}
+        try:
+            generate_data()
+        finally:
+            runs[version], CAPTURE = CAPTURE, None
+    use_profile("26.1")
+
+    base = {}
+    for version, written in runs.items():
+        for path, data in written.items():
+            if is_loot(path):
+                continue
+            if path in base and base[path][1] != data:
+                sys.exit(f"  !! {os.path.relpath(path, repo_root())} differs between {base[path][0]} and "
+                         f"{version}; it cannot go in the base. Route it per version.")
+            base.setdefault(path, (version, data))
+
+    # Clear every loot tree this script owns, base and overlays, so a renamed variant cannot linger.
+    for module in ("common", "fabric", "neoforge"):
+        resources = os.path.join(repo_root(), module, "src", "main", "resources")
+        for folder in [""] + [profile["overlay"] for profile in PROFILES.values()]:
+            loot = os.path.join(resources, folder, "data", MOD_ID, "loot_table")
+            if os.path.isdir(loot):
+                shutil.rmtree(loot)
+
+    for path, (_version, data) in base.items():
+        write_json(path, data)
+    for version, written in runs.items():
+        overlay = PROFILES[version]["overlay"]
+        tables = [p for p in written if is_loot(p)]
+        for path in tables:
+            write_json(overlay_path(path, overlay), written[path])
+        print(f"  [{version}] {len(tables)} loot tables -> {overlay}/")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -1548,8 +1702,8 @@ def main():
 
     print("Generating client assets...")
     generate_json()
-    print("Generating loot tables and tags...")
-    generate_data()
+    print("Generating loot tables and tags, once per Minecraft version...")
+    generate_versioned_data()
     print("Updating README...")
     generate_readme()
 

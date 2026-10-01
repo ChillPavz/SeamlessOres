@@ -243,6 +243,18 @@
     {
       "id": "seamlessores:tuff_occultism_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:tuff_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_opal_ore",
+      "required": false
     }
   ]
 }

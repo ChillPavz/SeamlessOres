@@ -1,9 +1,17 @@
 {
     "pack": {
         "description": "${mod_name}",
-        "pack_format": 97,
+        "pack_format": 84,
         "supported_formats": [15, 999],
         "min_format": 15,
         "max_format": 999
+    },
+    "overlays": {
+        "entries": [
+            {"directory": "era261", "formats": [15, 120], "min_format": 15, "max_format": 120},
+            {"directory": "mc26.1", "formats": [15, 106], "min_format": 15, "max_format": 106},
+            {"directory": "mc26.2", "formats": [107, 120], "min_format": 107, "max_format": 120},
+            {"directory": "mc26.3", "formats": [121, 999], "min_format": 121, "max_format": 999}
+        ]
     }
 }

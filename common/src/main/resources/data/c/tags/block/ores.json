@@ -94,6 +94,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_iolite_ore",
       "required": false
     },
@@ -148,6 +152,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_orichalcum_ore",
       "required": false
     },
@@ -169,6 +177,10 @@
     },
     {
       "id": "seamlessores:andesite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_prosperity_ore",
       "required": false
     },
     {
@@ -522,6 +534,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_iolite_ore",
       "required": false
     },
@@ -576,6 +592,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_orichalcum_ore",
       "required": false
     },
@@ -597,6 +617,10 @@
     },
     {
       "id": "seamlessores:diorite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_prosperity_ore",
       "required": false
     },
     {
@@ -814,6 +838,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_iolite_ore",
       "required": false
     },
@@ -868,6 +896,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_orichalcum_ore",
       "required": false
     },
@@ -889,6 +921,10 @@
     },
     {
       "id": "seamlessores:granite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_prosperity_ore",
       "required": false
     },
     {
@@ -1098,6 +1134,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_iolite_ore",
       "required": false
     },
@@ -1144,6 +1184,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_pearl_ore",
       "required": false
     },
@@ -1153,6 +1197,10 @@
     },
     {
       "id": "seamlessores:tuff_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_prosperity_ore",
       "required": false
     },
     "seamlessores:tuff_redstone_ore",

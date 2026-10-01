@@ -135,6 +135,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean energizedPower = true;
 
+    // --- Mystical Agriculture -------------------------------------------------------------------
+
+    @ConfigEntry.Category("mystical_agriculture")
+    @ConfigEntry.Gui.Tooltip
+    public boolean mysticalAgriculture = true;
+
     // --- Mythic Metals --------------------------------------------------------------------------
 
     @ConfigEntry.Category("mythic_metals")
@@ -273,6 +279,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.techReborn = techReborn;
         values.techRebornNether = techRebornNether;
         values.occultism = occultism;
+        values.mysticalAgriculture = mysticalAgriculture;
         values.things = things;
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;

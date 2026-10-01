@@ -57,7 +57,7 @@ public final class CopperDensityInjector {
      * The two features, by registry key, and the dial that governs each.
      *
      * <p>Matched on the KEY here rather than on what the feature places, which is the opposite of
-     * what {@link OreTargetInjector} does and is deliberate. Both of these place the same block, so
+     * what {@code OreTargetInjector} does and is deliberate. Both of these place the same block, so
      * "what does it place" cannot tell them apart: the only thing that distinguishes ordinary copper
      * from the dripstone-only large veins is which feature it is. They are vanilla features with
      * stable ids, and a pack that re-declares them under its own name is opting out, which is the
@@ -154,8 +154,14 @@ public final class CopperDensityInjector {
                 // may already have changed vanilla's 16, and overwriting that would silently undo
                 // it. Both bounds are read so a non-constant provider still scales sensibly;
                 // vanilla's is a constant, so min == max == 16. getMaxValue became maxInclusive at
-                // 26.x, and CountPlacement is a record with a public count() at 26.3.
-                final int before = counted.count().maxInclusive();
+                // 26.x. How the count is READ differs by era: a widened field up to 26.2, the
+                // record accessor from 26.3. Calling either from here would not link on the other,
+                // so the era class reads it.
+                final int before = Worldgen.era().maxCount(counted);
+                if (before < 0) {
+                    rebuilt.add(modifier);
+                    continue;
+                }
                 final int after = Math.max(0, Math.round(before * percent / 100.0F));
                 if (after == before) {
                     rebuilt.add(modifier);

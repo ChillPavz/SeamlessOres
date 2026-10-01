@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_unobtainium_ore",
+      "required": false
+    }
+  ]
+}

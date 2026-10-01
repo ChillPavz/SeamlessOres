@@ -73,6 +73,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("tfmg", "tfmg");
         MOD_CATEGORIES.put("densemekanism", "dense_mekanism");
         MOD_CATEGORIES.put("energizedpower", "energized_power");
+        MOD_CATEGORIES.put("mysticalagriculture", "mystical_agriculture");
         MOD_CATEGORIES.put("occultism", "occultism");
         MOD_CATEGORIES.put("techreborn", "tech_reborn");
         MOD_CATEGORIES.put("mythicmetals", "mythic_metals");
