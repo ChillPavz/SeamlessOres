@@ -9,8 +9,8 @@
     ],
     "contact": {
         "homepage": "https://modrinth.com/mod/seamless-ores",
-        "sources": "https://github.com/chillpavz/seamless-ores",
-        "issues": "https://github.com/chillpavz/seamless-ores/issues"
+        "sources": "https://github.com/ChillPavz/SeamlessOres",
+        "issues": "https://github.com/ChillPavz/SeamlessOres/issues"
     },
     "license": "${license}",
     "icon": "${mod_id}.png",
