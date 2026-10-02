@@ -252,6 +252,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_oreganized_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_orichalcum_ore",
       "required": false
     },
@@ -812,6 +820,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_oreganized_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_orichalcum_ore",
       "required": false
     },
@@ -1228,6 +1244,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_oreganized_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_orichalcum_ore",
       "required": false
     },
@@ -1621,6 +1645,14 @@
     },
     {
       "id": "seamlessores:tuff_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_silver_ore",
       "required": false
     },
     {

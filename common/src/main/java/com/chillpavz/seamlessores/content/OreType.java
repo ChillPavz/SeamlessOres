@@ -488,6 +488,13 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType MEK_TIN = mekanism("mek_tin", "tin", NONE);
     public static final OreType MEK_URANIUM = mekanism("mek_uranium", "uranium", NONE);
 
+    // --- Oreganized ------------------------------------------------------------------------------
+    // Lead and silver, both on the replaceables tags, so a pure restyle. Its ore blocks copy gold
+    // ore (3/3, 4.5/3 in deepslate) with no experience, which is the convention, so no override.
+    // Prefixed because lead and silver are taken on this branch; the overlay is shared with the pack.
+    public static final OreType OREGANIZED_LEAD = modded("oreganized_lead", "oreganized", "oreganized", "lead", NONE);
+    public static final OreType OREGANIZED_SILVER = modded("oreganized_silver", "oreganized", "oreganized", "silver", NONE);
+
     // --- Nether ores that ADD ore (Sept 2026) -----------------------------------------------------
     // Each targets netherrack only, so basalt and blackstone variants put ore where the mod places
     // none. Behind the owning mod's own nether switch and thinned by netherOreRarity, like our gold
@@ -553,6 +560,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     OCCULTISM_SILVER, YELLORITE, INFERIUM, PROSPERITY,
                     IE_ALUMINUM, IE_LEAD, IE_NICKEL, IE_SILVER, IE_URANIUM,
                     MEK_FLUORITE, MEK_LEAD, MEK_OSMIUM, MEK_TIN, MEK_URANIUM,
+                    OREGANIZED_LEAD, OREGANIZED_SILVER,
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, BENITOITE,
                     CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE,
                     CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE);

@@ -5,7 +5,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_oreganized_lead_ore",
       "required": false
     },
     {
@@ -13,7 +21,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_lead_ore",
       "required": false
     }
   ]

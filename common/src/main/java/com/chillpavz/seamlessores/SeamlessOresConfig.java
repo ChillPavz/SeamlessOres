@@ -124,6 +124,10 @@ public final class SeamlessOresConfig {
      * so no ore is added anywhere. */
     public static boolean mekanism = true;
 
+    /** Whether Oreganized variants generate. Pure restyle: lead and silver sit on the replaceables
+     * tags, so no ore is added anywhere. */
+    public static boolean oreganized = true;
+
     /** Whether Extreme Reactors variants generate. Pure restyle. */
     public static boolean extremeReactors = true;
 
@@ -189,6 +193,7 @@ public final class SeamlessOresConfig {
             case "occultism" -> occultism;
             case "immersiveengineering" -> immersiveEngineering;
             case "mekanism" -> mekanism;
+            case "oreganized" -> oreganized;
             case "bigreactors" -> netherHost ? extremeReactorsNether : extremeReactors;
             case "cobblemon" -> netherHost ? cobblemonNether : cobblemon;
             case "mysticalagriculture" -> mysticalAgriculture;
@@ -381,6 +386,7 @@ public final class SeamlessOresConfig {
         public boolean occultism = true;
         public boolean immersiveEngineering = true;
         public boolean mekanism = true;
+        public boolean oreganized = true;
         public boolean extremeReactors = true;
         public boolean extremeReactorsNether = true;
         public boolean cobblemon = true;
@@ -430,6 +436,7 @@ public final class SeamlessOresConfig {
         occultism = values.occultism;
         immersiveEngineering = values.immersiveEngineering;
         mekanism = values.mekanism;
+        oreganized = values.oreganized;
         extremeReactors = values.extremeReactors;
         extremeReactorsNether = values.extremeReactorsNether;
         cobblemon = values.cobblemon;
