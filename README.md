@@ -281,9 +281,9 @@ where `<ore>` is one of:
 `adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `benitoite` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `yellorite` `zinc`
 <!-- END GENERATED overlay-list -->
 
-Each file is the ore layer only, blobs on transparency. The host stone is referenced straight from
-vanilla, so you do not supply it, and if your pack retextures granite then these blocks pick that up
-automatically.
+Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
+usual path, so you do not supply it. A pack that replaces that texture restyles the stone of these
+blocks too.
 
 ## Building
 
