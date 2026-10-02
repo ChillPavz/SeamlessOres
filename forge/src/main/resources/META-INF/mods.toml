@@ -1,7 +1,7 @@
 modLoader = "javafml" #mandatory
 loaderVersion = "${forge_loader_version_range}" #mandatory
 license = "${license}"
-issueTrackerURL = "https://github.com/chillpavz/seamless-ores/issues"
+issueTrackerURL = "https://github.com/ChillPavz/SeamlessOres/issues"
 
 [[mods]] #mandatory
 modId = "${mod_id}" #mandatory
