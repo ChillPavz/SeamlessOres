@@ -121,7 +121,12 @@ IMMERSIVE_ENGINEERING_JAR = os.environ.get("IMMERSIVE_ENGINEERING_JAR",
 # Mekanism DRAWS TIN DIFFERENTLY on 1.20.1, so the overlay for that branch is the pack's
 # old_tin_overlay.png; every other overlay is the same drawing on both bands.
 MEKANISM_JAR = os.environ.get("MEKANISM_JAR", "../references/jars/Mekanism-1.21.1-10.7.19.85.jar")
-MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
+# Oreganized. Its code is MIT but its LICENSE keeps the assets All Rights Reserved; its ore art is
+# used with the permission of Binome (Team Galena), given 2 Oct 2026. Lead and silver, both plain
+# minecraft:ore on stone_ore_replaceables and deepslate_ore_replaceables, so a pure restyle.
+OREGANIZED_JAR = os.environ.get("OREGANIZED_JAR", "../references/jars/Oreganized-1.21.1-5.3.0.jar")
+MOD_JARS = {"oreganized": OREGANIZED_JAR,
+            "create_new_age": CREATE_NEW_AGE_JAR,
             "mekanism": MEKANISM_JAR,
             "immersiveengineering": IMMERSIVE_ENGINEERING_JAR,
             "cobblemon": COBBLEMON_JAR,
@@ -239,6 +244,10 @@ MODS = {
                        "licence": "Blu's License of Common Sense",
                        "author": "BluSunrize, Damien A.W. Hazard",
                        "link": "https://modrinth.com/mod/immersiveengineering"},
+    "oreganized":     {"display": "Oreganized",        "category": "oreganized",
+                       "licence": "MIT code, assets All Rights Reserved",
+                       "author": "Team Galena",
+                       "link": "https://modrinth.com/mod/oreganized"},
     "mekanism":       {"display": "Mekanism",         "category": "mekanism",
                        "licence": "MIT",          "author": "Aidan C. Brady",
                        "link": "https://modrinth.com/mod/mekanism"},
@@ -662,6 +671,17 @@ ORE_DEFS = [
     {"name": "mek_uranium", "overlay": "mek_uranium", "source": "uranium_ore", "base": "stone",
      "mod": "mekanism",
      "tiers": {"stone": "uranium_ore", "deepslate": "deepslate_uranium_ore"}},
+    # Oreganized (NeoForge at 1.21.1; Forge and Fabric at 1.20.1). Lead and silver, both on the
+    # vanilla replaceables tags, so all four overworld hosts restyle and none invents ore. Its ore
+    # blocks copy gold ore (3/3, 4.5/3 in deepslate) with ConstantInt 0 experience, so the
+    # convention covers them. Prefixed because lead and silver are taken on this branch. The
+    # overlays are the owner's, shared byte for byte with the pack.
+    {"name": "oreganized_lead", "overlay": "oreganized_lead", "source": "lead_ore", "base": "stone",
+     "mod": "oreganized",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "oreganized_silver", "overlay": "oreganized_silver", "source": "silver_ore", "base": "stone",
+     "mod": "oreganized",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
     # Nether ores that ADD ore: each targets netherrack only, so basalt and blackstone variants put
     # ore where the mod places none. Behind that mod's own nether switch, and thinned by the same
     # netherOreRarity / netherVeinSize dials as our gold and quartz.
@@ -809,6 +829,9 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     # Mekanism, queried per version on the Modrinth API and counted on BOTH platforms (Modrinth
     # 3.7M, CurseForge 175.4M): 1.20.1 Forge and NeoForge, 1.20.4 NeoForge, 1.21 and 1.21.1
     # NeoForge. Never Fabric, and nothing above 1.21.1, so the same two bands as IE carry it.
+    # Oreganized, queried per version on the Modrinth API (2 Oct 2026): Forge 1.20.1, Fabric and
+    # Quilt 1.20.1 (Modrinth only), NeoForge 1.21.1. Nothing else from 1.20.2 up.
+    "oreganized": ("neoforge",),
     "mekanism": ("neoforge",),
     "cobblemon": ("fabric", "neoforge"),
 }
@@ -1019,6 +1042,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.occultism": "Occultism",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.immersive_engineering": "Immersive Engineering",
+        f"text.autoconfig.{MOD_ID}.category.oreganized": "Oreganized",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
 
@@ -1221,6 +1245,9 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[2]":
             "Turn off to leave the Nether exactly as Extreme Reactors generates it.",
 
+        f"text.autoconfig.{MOD_ID}.option.oreganized": "Oreganized: variants",
+        f"text.autoconfig.{MOD_ID}.option.oreganized.@Tooltip":
+            "Generate host-matched lead and silver ore. Does nothing unless Oreganized is installed.",
         f"text.autoconfig.{MOD_ID}.option.mekanism": "Mekanism: variants",
         f"text.autoconfig.{MOD_ID}.option.mekanism.@Tooltip":
             "Generate host-matched Mekanism ore (osmium, tin, lead, uranium and fluorite). Does"

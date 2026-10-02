@@ -91,6 +91,10 @@
       "id": "seamlessores:granite_mek_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_oreganized_lead_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
@@ -180,6 +184,10 @@
     },
     {
       "id": "seamlessores:diorite_mek_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_oreganized_lead_ore",
       "required": false
     },
     "seamlessores:andesite_iron_ore",
@@ -273,6 +281,10 @@
       "id": "seamlessores:andesite_mek_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_oreganized_lead_ore",
+      "required": false
+    },
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
     "seamlessores:tuff_lapis_ore",
@@ -362,6 +374,10 @@
     },
     {
       "id": "seamlessores:tuff_mek_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_lead_ore",
       "required": false
     }
   ]

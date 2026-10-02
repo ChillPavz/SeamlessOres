@@ -333,6 +333,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_dawn_stone_ore",
       "required": false
     },
