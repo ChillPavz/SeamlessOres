@@ -50,6 +50,16 @@ public final class SeamlessOresConfig {
      */
     public static boolean sulfurCaves = true;
 
+    /** The top of the cinnabar amount slider; the veins' data counts are the default times this / 100. */
+    public static final int CINNABAR_AMOUNT_MAX = 300;
+
+    /**
+     * How much cinnabar ore forms, in percent of the default (0 to {@link #CINNABAR_AMOUNT_MAX}).
+     * Each cinnabar vein in the data is attempted at three times the default count and kept with
+     * probability amount / 300, so 100 is the default and 0 places none. See {@code CinnabarOreFeature}.
+     */
+    public static int cinnabarAmount = 100;
+
     /**
      * Ordinary overworld copper, as a percentage of vanilla's vein count.
      *
@@ -328,6 +338,7 @@ public final class SeamlessOresConfig {
         public boolean tuff = true;
         public boolean dripstone = true;
         public boolean cinnabar = true;
+        public int cinnabarAmount = 100;
         public boolean lushCaves = true;
         public boolean sulfurCaves = true;
         public boolean basalt = true;
@@ -377,6 +388,7 @@ public final class SeamlessOresConfig {
         oreVeins = values.oreVeins;
         lushCaves = values.lushCaves;
         sulfurCaves = values.sulfurCaves;
+        cinnabarAmount = Math.max(0, Math.min(CINNABAR_AMOUNT_MAX, values.cinnabarAmount));
         bastionSafeNether = values.bastionSafeNether;
         netherOreRarity = values.netherOreRarity;
         netherVeinSize = values.netherVeinSize;

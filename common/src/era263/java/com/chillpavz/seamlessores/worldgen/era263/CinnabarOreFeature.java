@@ -19,7 +19,8 @@ import java.util.function.BiConsumer;
 /**
  * A plain ore vein that places only while the cinnabar host is switched on. See
  * {@code OreTier.CINNABAR}: these veins ADD ore to the Sulfur Caves' cinnabar, so they need a switch,
- * and a data-driven {@code minecraft:ore} cannot read one. Everything else is vanilla's ore feature.
+ * and a data-driven {@code minecraft:ore} cannot read one, nor the amount slider. Everything else is
+ * vanilla's ore feature.
  */
 public class CinnabarOreFeature extends AbstractOreFeature {
 
@@ -50,6 +51,9 @@ public class CinnabarOreFeature extends AbstractOreFeature {
 
     @Override
     public boolean place(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin) {
-        return SeamlessOresConfig.isHostEnabled("cinnabar") && ore.place(level, generator, random, origin);
+        // The data attempts each vein at three times the default count; the slider keeps a share.
+        return SeamlessOresConfig.isHostEnabled("cinnabar")
+                && random.nextInt(SeamlessOresConfig.CINNABAR_AMOUNT_MAX) < SeamlessOresConfig.cinnabarAmount
+                && ore.place(level, generator, random, origin);
     }
 }

@@ -223,11 +223,14 @@ HOSTS = {
 CINNABAR_FAMILY = {"gold", "iron", "redstone", "zinc", "galena", "techreborn_lead", "techreborn_silver",
                    "occultism_silver", "silents_silver", "pyrite", "sphalerite"}
 
-# Per cinnabar vein: (veins per chunk, vein size). Rare on purpose: these ADD ore. Anything not
-# listed uses DEFAULT. Placement attempts outside the Sulfur Caves are dropped by the biome filter.
-CINNABAR_VEINS = {"iron": (4, 8), "gold": (3, 6), "redstone": (3, 6),
-                  "techreborn_silver": (2, 5), "occultism_silver": (2, 5), "silents_silver": (2, 5)}
-CINNABAR_VEIN_DEFAULT = (3, 6)
+# Per cinnabar vein: (attempts per chunk, vein size). The attempts are THREE TIMES the default count:
+# CinnabarOreFeature keeps each with probability cinnabarAmount / 300, so the config slider runs from
+# none (0) through the default (100, e.g. iron 6 veins a chunk) to triple (300). Anything not listed
+# uses DEFAULT. Attempts outside the Sulfur Caves are dropped by the biome filter. The default was
+# raised about 50 percent after the owner's first look in game (3 Oct 2026).
+CINNABAR_VEINS = {"iron": (18, 8), "gold": (14, 6), "redstone": (14, 6),
+                  "techreborn_silver": (9, 5), "occultism_silver": (9, 5), "silents_silver": (9, 5)}
+CINNABAR_VEIN_DEFAULT = (14, 6)
 
 # Ore definitions. KEEP IN SYNC WITH OreType.java.
 #   name    - id suffix, so <host>_<name>_ore
@@ -998,11 +1001,17 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.dripstone": "Dripstone variants",
         f"text.autoconfig.{MOD_ID}.option.dripstone.@Tooltip":
             "Dripstone caves cover their walls in dripstone around the ore. This makes that ore match.",
+        f"text.autoconfig.{MOD_ID}.category.sulfur_caves": "Sulfur Caves",
         f"text.autoconfig.{MOD_ID}.option.cinnabar": "Cinnabar ores (adds ore)",
         f"text.autoconfig.{MOD_ID}.option.cinnabar.@Tooltip[0]":
-            "Rare gold, silver, iron, redstone and sulfide ores inside the Sulfur Caves' cinnabar,",
+            "Gold, silver, iron, redstone and sulfide ores inside the Sulfur Caves' cinnabar,",
         f"text.autoconfig.{MOD_ID}.option.cinnabar.@Tooltip[1]":
-            "where vanilla puts none. Minecraft 26.2 and up.",
+            "where vanilla puts none.",
+        f"text.autoconfig.{MOD_ID}.option.cinnabarAmount": "Cinnabar ore amount (percent)",
+        f"text.autoconfig.{MOD_ID}.option.cinnabarAmount.@Tooltip[0]":
+            "How much cinnabar ore forms, in percent of the default. 0 places none,",
+        f"text.autoconfig.{MOD_ID}.option.cinnabarAmount.@Tooltip[1]":
+            "300 places three times as much. Applies to newly generated chunks.",
         f"text.autoconfig.{MOD_ID}.option.lushCaves": "Lush Caves clay and moss (removes ore)",
         f"text.autoconfig.{MOD_ID}.option.lushCaves.@Tooltip[0]":
             "Ore left bare in a Lush Caves clay floor or moss carpet becomes clay or moss, so a",
@@ -1012,7 +1021,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.sulfurCaves.@Tooltip[0]":
             "No ore in or against the sulfur and cinnabar of the Sulfur Caves, including the large",
         f"text.autoconfig.{MOD_ID}.option.sulfurCaves.@Tooltip[1]":
-            "copper and iron veins there. Minecraft 26.2 and up.",
+            "copper and iron veins there.",
 
         f"text.autoconfig.{MOD_ID}.option.basalt": "Basalt variants (adds ore)",
         f"text.autoconfig.{MOD_ID}.option.basalt.@Tooltip[0]":

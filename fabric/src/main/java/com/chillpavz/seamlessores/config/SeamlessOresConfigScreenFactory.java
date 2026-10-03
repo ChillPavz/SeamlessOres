@@ -1,6 +1,7 @@
 package com.chillpavz.seamlessores.config;
 
 import com.chillpavz.seamlessores.Constants;
+import com.chillpavz.seamlessores.content.HostStone;
 import com.chillpavz.seamlessores.content.OreType;
 import com.chillpavz.seamlessores.platform.Services;
 import me.shedaniel.autoconfig.AutoConfigClient;
@@ -95,6 +96,11 @@ public final class SeamlessOresConfigScreenFactory {
                 // Collapsed it shows a thin strip, which reintroduces the problem this solves.
                 builder.setGlobalizedExpanded(true);
                 hideCategoriesOfAbsentMods(builder);
+                // The Sulfur Caves and their cinnabar exist from 26.2. Where they do not, the tab
+                // would only hold switches for nothing; the values stay in the file either way.
+                if (HostStone.CINNABAR == null) {
+                    builder.removeCategoryIfExists(Component.translatable(CATEGORY_PREFIX + "sulfur_caves"));
+                }
                 return builder.build();
             });
         } else {

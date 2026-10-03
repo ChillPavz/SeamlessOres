@@ -34,6 +34,9 @@ public class CinnabarOreFeature extends Feature<OreConfiguration> {
 
     @Override
     public boolean place(FeaturePlaceContext<OreConfiguration> context) {
-        return SeamlessOresConfig.isHostEnabled("cinnabar") && Feature.ORE.place(context);
+        // The data attempts each vein at three times the default count; the slider keeps a share.
+        return SeamlessOresConfig.isHostEnabled("cinnabar")
+                && context.random().nextInt(SeamlessOresConfig.CINNABAR_AMOUNT_MAX) < SeamlessOresConfig.cinnabarAmount
+                && Feature.ORE.place(context);
     }
 }
