@@ -223,14 +223,31 @@ HOSTS = {
 CINNABAR_FAMILY = {"gold", "iron", "redstone", "zinc", "galena", "techreborn_lead", "techreborn_silver",
                    "occultism_silver", "silents_silver", "pyrite", "sphalerite"}
 
-# Per cinnabar vein: (attempts per chunk, vein size). The attempts are THREE TIMES the default count:
-# CinnabarOreFeature keeps each with probability cinnabarAmount / 300, so the config slider runs from
-# none (0) through the default (100, e.g. iron 6 veins a chunk) to triple (300). Anything not listed
-# uses DEFAULT. Attempts outside the Sulfur Caves are dropped by the biome filter. The default was
-# raised about 50 percent after the owner's first look in game (3 Oct 2026).
-CINNABAR_VEINS = {"iron": (18, 8), "gold": (14, 6), "redstone": (14, 6),
-                  "techreborn_silver": (9, 5), "occultism_silver": (9, 5), "silents_silver": (9, 5)}
-CINNABAR_VEIN_DEFAULT = (14, 6)
+# Each cinnabar ore MIRRORS the features of the ore it stands in for: one cinnabar feature per source
+# feature, with that feature's own vein size, veins per chunk, height range and air exposure, read out
+# of the game or mod jar for each version (generate_cinnabar_worldgen). Only the target (cinnabar), the
+# biome (Sulfur Caves) and the vein count change: the count is TRIPLED, and CinnabarOreFeature keeps
+# each vein with probability cinnabarAmount / 300, so the slider's 100 is exactly the source's count.
+# (owner, 3 Oct 2026: "mirror their original values"). Gold's badlands-only extra feature is left out.
+# KEEP IN SYNC WITH CinnabarVeins.SOURCES. Values: (namespace, [placed feature paths]).
+CINNABAR_SOURCES = {
+    "gold": ("minecraft", ["ore_gold", "ore_gold_lower"]),
+    "iron": ("minecraft", ["ore_iron_upper", "ore_iron_middle", "ore_iron_small"]),
+    "redstone": ("minecraft", ["ore_redstone", "ore_redstone_lower"]),
+    "zinc": ("create", ["zinc_ore"]),
+    "galena": ("techreborn", ["galena_ore"]),
+    "techreborn_lead": ("techreborn", ["lead_ore"]),
+    "techreborn_silver": ("techreborn", ["silver_ore"]),
+    "pyrite": ("techreborn", ["pyrite_ore"]),
+    "sphalerite": ("techreborn", ["sphalerite_ore"]),
+    "occultism_silver": ("occultism", ["ore_silver", "ore_silver_deepslate"]),
+    "silents_silver": ("silentgear", ["silver_ore"]),
+}
+# Silent Gear has no 26.2 or 26.3 build, so its cinnabar silver never loads; it gets this stand in.
+CINNABAR_FALLBACK = {"size": 5, "discard": 0.0, "count": 3,
+                     "height": {"type": "minecraft:uniform", "min_inclusive": {"above_bottom": 0},
+                                "max_inclusive": {"absolute": 96}}}
+CINNABAR_SLIDER_FACTOR = 3
 
 # Ore definitions. KEEP IN SYNC WITH OreType.java.
 #   name    - id suffix, so <host>_<name>_ore
@@ -1739,17 +1756,48 @@ def is_loot(path):
     return (os.sep + "loot_table" + os.sep) in path
 
 
-def generate_cinnabar_worldgen():
-    """One rare vein per cinnabar variant, in the Sulfur Caves only, for 26.2 and 26.3.
+def scaled_count(count, factor):
+    """A placement count provider times factor: a constant, or a uniform range scaled at both ends."""
+    if isinstance(count, int):
+        return count * factor
+    if isinstance(count, dict) and count.get("type") == "minecraft:uniform":
+        return {**count, "min_inclusive": count["min_inclusive"] * factor,
+                "max_inclusive": count["max_inclusive"] * factor}
+    sys.exit(f"  !! cannot scale count provider {count}: add it to scaled_count")
 
-    Every file goes in the mc26.2 and mc26.3 overlays, so 26.1, which has no cinnabar and no Sulfur
-    Caves, never reads one: a worldgen file naming an absent block is a hard crash, not a skip. A
-    modded variant's files carry that mod's load conditions as well. NeoForge attaches them with a
-    biome modifier each; Fabric does it in code (SeamlessOresFabric).
+
+def read_source(version, namespace, path):
+    """(feature size, discard chance, placement list) of one source placed feature, or None."""
+    jar_path = os.path.expanduser(CLIENT_JARS[version]) if namespace == "minecraft" else \
+        {**COMMON_JARS, **PROFILES[version]["jars"]}.get(namespace)
+    if not jar_path or not os.path.exists(jar_path):
+        return None
+    with zipfile.ZipFile(jar_path) as jar:
+        try:
+            placed = json.loads(jar.read(f"data/{namespace}/worldgen/placed_feature/{path}.json"))
+        except KeyError:
+            return None
+        feature_ns, feature_path = placed["feature"].split(":", 1)
+        folder = "feature" if version_key(version) >= version_key("26.3") else "configured_feature"
+        try:
+            feature = json.loads(jar.read(f"data/{feature_ns}/worldgen/{folder}/{feature_path}.json"))
+        except KeyError:
+            return None     # a jar built for another version (Silent Gear: 26.1 only)
+    config = feature.get("config", feature)
+    return config["size"], config.get("discard_chance_on_air_exposure", 0.0), placed["placement"]
+
+
+def generate_cinnabar_worldgen():
+    """Cinnabar veins that mirror each source ore's own features, Sulfur Caves only, 26.2 and 26.3.
+
+    Every file goes in the mc26.2 and mc26.3 overlays, each read from that version's jars, so 26.1,
+    which has no cinnabar and no Sulfur Caves, never reads one: a worldgen file naming an absent block
+    is a hard crash, not a skip. A modded variant's files carry that mod's load conditions as well.
+    NeoForge attaches them with a biome modifier each; Fabric in code, from CinnabarVeins.
     """
     common = os.path.join(repo_root(), "common", "src", "main", "resources")
     neoforge = os.path.join(repo_root(), "neoforge", "src", "main", "resources")
-    overlays = {"mc26.2": "configured_feature", "mc26.3": "feature"}
+    overlays = {"mc26.2": ("26.2", "configured_feature"), "mc26.3": ("26.3", "feature")}
     for overlay in overlays:
         for root, sub in ((common, "worldgen"), (neoforge, "neoforge")):
             folder = os.path.join(root, overlay, "data", MOD_ID, sub)
@@ -1759,12 +1807,11 @@ def generate_cinnabar_worldgen():
                         if f.startswith("cinnabar_"):
                             os.remove(os.path.join(dirpath, f))
     count = 0
+    report = []
     for host, host_cfg, ore, _vanilla in variants():
         if host_cfg["tier"] != "cinnabar":
             continue
         block = f"{MOD_ID}:{variant_name(host, ore['name'])}"
-        key = f"cinnabar_{ore['name']}"
-        veins, size = CINNABAR_VEINS.get(ore["overlay"], CINNABAR_VEIN_DEFAULT)
         mod = ore.get("mod")
         conditions = {}
         if mod:
@@ -1774,33 +1821,57 @@ def generate_cinnabar_worldgen():
                 "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": mod}],
             }
         target = {"predicate_type": "minecraft:block_match", "block": "minecraft:cinnabar"}
-        old = {"type": f"{MOD_ID}:cinnabar_ore",
-               "config": {"size": size, "discard_chance_on_air_exposure": 0.0,
-                          "targets": [{"target": target, "state": {"Name": block}}]}, **conditions}
-        new = {"type": f"{MOD_ID}:cinnabar_ore", "size": size, "discard_chance_on_air_exposure": 0.0,
-               "targets": [{"target": target, "state": block}], **conditions}
-        placed = {"feature": f"{MOD_ID}:{key}",
-                  "placement": [
-                      {"type": "minecraft:count", "count": veins},
-                      {"type": "minecraft:in_square"},
-                      {"type": "minecraft:height_range",
-                       "height": {"type": "minecraft:uniform",
-                                  "min_inclusive": {"above_bottom": 0},
-                                  "max_inclusive": {"absolute": 96}}},
-                      {"type": "minecraft:biome"}],
-                  **conditions}
-        modifier = {"type": "neoforge:add_features", "biomes": "minecraft:sulfur_caves",
-                    "features": f"{MOD_ID}:{key}", "step": "underground_ores"}
-        if mod:
-            modifier["neoforge:conditions"] = conditions["neoforge:conditions"]
-        for overlay, kind in overlays.items():
-            data = os.path.join(common, overlay, "data", MOD_ID, "worldgen")
-            write_json(os.path.join(data, kind, f"{key}.json"), old if kind == "configured_feature" else new)
-            write_json(os.path.join(data, "placed_feature", f"{key}.json"), placed)
-            write_json(os.path.join(neoforge, overlay, "data", MOD_ID, "neoforge", "biome_modifier",
-                                    f"{key}.json"), modifier)
-        count += 1
-    print(f"  cinnabar: {count} veins, Sulfur Caves only, mc26.2 and mc26.3 overlays")
+        namespace, sources = CINNABAR_SOURCES[ore["name"]]
+        for overlay, (version, kind) in overlays.items():
+            for source in sources:
+                key = f"cinnabar_{ore['name']}_{source}"
+                found = read_source(version, namespace, source)
+                if found is None:
+                    if mod is None:
+                        sys.exit(f"  !! {namespace}:{source} not found in the {version} jar")
+                    fb = CINNABAR_FALLBACK
+                    size, discard = fb["size"], fb["discard"]
+                    placement = [{"type": "minecraft:count", "count": fb["count"]},
+                                 {"type": "minecraft:in_square"},
+                                 {"type": "minecraft:height_range", "height": fb["height"]},
+                                 {"type": "minecraft:biome"}]
+                else:
+                    size, discard, placement = found
+                placement = [dict(p) for p in placement]
+                counted = False
+                for p in placement:
+                    if p.get("type") == "minecraft:count":
+                        p["count"] = scaled_count(p["count"], CINNABAR_SLIDER_FACTOR)
+                        counted = True
+                if not counted:
+                    sys.exit(f"  !! {namespace}:{source} has no count modifier to scale")
+                if not any(p.get("type") == "minecraft:biome" for p in placement):
+                    placement.append({"type": "minecraft:biome"})
+                if overlay == "mc26.3":
+                    report.append(f"{key}: size {size}, discard {discard}, "
+                                  + ", ".join(json.dumps(p.get("count", p.get("height")))
+                                              for p in placement if p["type"] in ("minecraft:count", "minecraft:height_range")))
+                feature = ({"type": f"{MOD_ID}:cinnabar_ore",
+                            "config": {"size": size, "discard_chance_on_air_exposure": discard,
+                                       "targets": [{"target": target, "state": {"Name": block}}]}}
+                           if kind == "configured_feature" else
+                           {"type": f"{MOD_ID}:cinnabar_ore", "size": size,
+                            "discard_chance_on_air_exposure": discard,
+                            "targets": [{"target": target, "state": block}]})
+                data = os.path.join(common, overlay, "data", MOD_ID, "worldgen")
+                write_json(os.path.join(data, kind, f"{key}.json"), {**feature, **conditions})
+                write_json(os.path.join(data, "placed_feature", f"{key}.json"),
+                           {"feature": f"{MOD_ID}:{key}", "placement": placement, **conditions})
+                modifier = {"type": "neoforge:add_features", "biomes": "minecraft:sulfur_caves",
+                            "features": f"{MOD_ID}:{key}", "step": "underground_ores"}
+                if mod:
+                    modifier["neoforge:conditions"] = conditions["neoforge:conditions"]
+                write_json(os.path.join(neoforge, overlay, "data", MOD_ID, "neoforge", "biome_modifier",
+                                        f"{key}.json"), modifier)
+                count += 1
+    print(f"  cinnabar: {count} mirrored veins over mc26.2 and mc26.3, Sulfur Caves only")
+    for line in report:
+        print("    " + line)
 
 
 def generate_versioned_data():

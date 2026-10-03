@@ -2,6 +2,7 @@ package com.chillpavz.seamlessores;
 
 import com.chillpavz.seamlessores.content.OreTier;
 import com.chillpavz.seamlessores.content.OreVariant;
+import com.chillpavz.seamlessores.worldgen.CinnabarVeins;
 import com.chillpavz.seamlessores.worldgen.SulfurCaves;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
 import com.chillpavz.seamlessores.content.OreType;
@@ -66,16 +67,18 @@ public class SeamlessOresFabric implements ModInitializer {
             }
         }
 
-        // Cinnabar veins in the Sulfur Caves (26.2 and up), one per cinnabar variant registered here;
+        // Cinnabar veins in the Sulfur Caves (26.2 and up), for each cinnabar variant registered here;
         // on 26.1 there are none. NeoForge attaches the same placed features with biome modifiers.
         for (OreVariant variant : SeamlessOresContent.variants()) {
             if (variant.host().tier() != OreTier.CINNABAR) {
                 continue;
             }
-            ResourceKey<PlacedFeature> key = ResourceKey.create(Registries.PLACED_FEATURE,
-                    Identifier.fromNamespaceAndPath(Constants.MOD_ID, "cinnabar_" + variant.ore().name()));
-            BiomeModifications.addFeature(BiomeSelectors.includeByKey(SulfurCaves.BIOME),
-                    GenerationStep.Decoration.UNDERGROUND_ORES, key);
+            // One per feature of the ore it mirrors; see CinnabarVeins.
+            for (Identifier id : CinnabarVeins.placedFeatures(variant)) {
+                BiomeModifications.addFeature(BiomeSelectors.includeByKey(SulfurCaves.BIOME),
+                        GenerationStep.Decoration.UNDERGROUND_ORES,
+                        ResourceKey.create(Registries.PLACED_FEATURE, id));
+            }
         }
 
         // CreativeModeTab.Output is protected, so items cannot be added via displayItems from outside

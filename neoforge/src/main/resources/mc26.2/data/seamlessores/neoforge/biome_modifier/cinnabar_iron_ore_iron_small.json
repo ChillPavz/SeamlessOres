@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "minecraft:sulfur_caves",
+  "features": "seamlessores:cinnabar_iron_ore_iron_small",
+  "step": "underground_ores"
+}
