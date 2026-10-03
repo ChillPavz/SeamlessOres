@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_inferium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_inferium_ore",
+      "required": false
     }
   ]
 }

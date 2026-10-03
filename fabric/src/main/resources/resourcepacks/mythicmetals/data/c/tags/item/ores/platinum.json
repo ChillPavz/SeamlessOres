@@ -11,6 +11,10 @@
     {
       "id": "seamlessores:andesite_platinum_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_platinum_ore",
+      "required": false
     }
   ]
 }

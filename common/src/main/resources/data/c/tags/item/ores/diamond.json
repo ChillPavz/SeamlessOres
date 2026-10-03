@@ -3,6 +3,7 @@
     "seamlessores:granite_diamond_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:andesite_diamond_ore",
-    "seamlessores:tuff_diamond_ore"
+    "seamlessores:tuff_diamond_ore",
+    "seamlessores:dripstone_diamond_ore"
   ]
 }

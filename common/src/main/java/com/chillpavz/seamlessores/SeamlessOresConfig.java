@@ -32,6 +32,16 @@ public final class SeamlessOresConfig {
     public static boolean oreVeins = true;
 
     /**
+     * Whether ore left standing in a Lush Caves clay or moss patch becomes clay or moss.
+     *
+     * <p><b>This REMOVES a little ore</b>, the one overworld setting besides copper that changes how
+     * much ore there is: the patches are laid after the ores and skip them, so the ore is turned into
+     * the patch's own block instead of being restyled. Worldgen only; bone-mealed moss still leaves
+     * ore alone. See {@code LushCavesInjector}.
+     */
+    public static boolean lushCaves = true;
+
+    /**
      * Ordinary overworld copper, as a percentage of vanilla's vein count.
      *
      * <p>Vanilla runs {@code ore_copper} at 16 attempts per chunk of size 10, in every biome. This
@@ -307,6 +317,8 @@ public final class SeamlessOresConfig {
         public boolean diorite = true;
         public boolean andesite = true;
         public boolean tuff = true;
+        public boolean dripstone = true;
+        public boolean lushCaves = true;
         public boolean basalt = true;
         public boolean blackstone = true;
         public boolean oreVeins = true;
@@ -345,11 +357,13 @@ public final class SeamlessOresConfig {
         if (!values.diorite) disabled.add("diorite");
         if (!values.andesite) disabled.add("andesite");
         if (!values.tuff) disabled.add("tuff");
+        if (!values.dripstone) disabled.add("dripstone");
         if (!values.basalt) disabled.add("basalt");
         if (!values.blackstone) disabled.add("blackstone");
         disabledHosts = Set.copyOf(disabled);
 
         oreVeins = values.oreVeins;
+        lushCaves = values.lushCaves;
         bastionSafeNether = values.bastionSafeNether;
         netherOreRarity = values.netherOreRarity;
         netherVeinSize = values.netherVeinSize;

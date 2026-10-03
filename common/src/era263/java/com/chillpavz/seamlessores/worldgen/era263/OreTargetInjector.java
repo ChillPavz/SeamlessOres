@@ -85,6 +85,12 @@ public final class OreTargetInjector {
             if (!SeamlessOresConfig.isHostEnabled(variant.host().name())) {
                 continue;
             }
+            // Dripstone variants are never a target: ore does not generate in dripstone, and a
+            // block_match on it would put ore into large dripstone columns. DripstoneShell swaps them
+            // in where the cluster wraps an ore that already exists.
+            if (variant.host().tier() == OreTier.DRIPSTONE) {
+                continue;
+            }
             // Each third-party ore has its own toggle, and Silent's Gems' nether gems a separate one,
             // because those ADD ore where its overworld gems only restyle.
             if (variant.ore().requiredModId() != null

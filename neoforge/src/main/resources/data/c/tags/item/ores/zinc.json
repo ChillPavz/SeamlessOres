@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_zinc_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_zinc_ore",
+      "required": false
     }
   ]
 }

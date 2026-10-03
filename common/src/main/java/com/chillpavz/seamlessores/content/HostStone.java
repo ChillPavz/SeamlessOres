@@ -33,6 +33,12 @@ public record HostStone(String name, Block block, OreTier tier, MapColor mapColo
     // above 0. The worldgen injection keeps vanilla's own test, so this variant follows the deepslate half.
     public static final HostStone TUFF =
             new HostStone("tuff", Blocks.TUFF, OreTier.DEEPSLATE, MapColor.TERRACOTTA_GRAY, SoundType.TUFF);
+    // Ore never generates IN dripstone. The dripstone cluster converts the cave shell after the ores
+    // and skips them, so its variants are swapped in there instead of by the ore features. One variant
+    // per ore covers both tiers: the caves straddle y=0, so deepslate ore gets wrapped as well.
+    public static final HostStone DRIPSTONE =
+            new HostStone("dripstone", Blocks.DRIPSTONE_BLOCK, OreTier.DRIPSTONE, MapColor.TERRACOTTA_BROWN,
+                    SoundType.DRIPSTONE_BLOCK);
 
     // Nether hosts. These are the two stones in base_stone_nether besides netherrack itself.
     // Their variants ADD ore - see OreTier.NETHER - so their worldgen injection is config-gated.
@@ -41,5 +47,5 @@ public record HostStone(String name, Block block, OreTier tier, MapColor mapColo
     public static final HostStone BLACKSTONE =
             new HostStone("blackstone", Blocks.BLACKSTONE, OreTier.NETHER, MapColor.COLOR_BLACK, SoundType.STONE);
 
-    public static final List<HostStone> ALL = List.of(GRANITE, DIORITE, ANDESITE, TUFF, BASALT, BLACKSTONE);
+    public static final List<HostStone> ALL = List.of(GRANITE, DIORITE, ANDESITE, TUFF, DRIPSTONE, BASALT, BLACKSTONE);
 }

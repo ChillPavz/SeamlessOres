@@ -75,7 +75,7 @@ public class SeamlessOresFabric implements ModInitializer {
         // Worldgen registries are datapack-loaded per world, so the injection has to happen once the
         // server exists and before any chunk is generated.
         ServerLifecycleEvents.SERVER_STARTING.register(
-                server -> Worldgen.era().injectOreTargets(server.registryAccess()));
+                server -> Worldgen.onServerStarting(server.registryAccess()));
     }
 
     @SuppressWarnings("unchecked")

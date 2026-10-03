@@ -89,6 +89,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_iridium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_palladium_ore",
       "required": false
     },

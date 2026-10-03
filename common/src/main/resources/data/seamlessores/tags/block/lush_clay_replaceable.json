@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#minecraft:lush_ground_replaceable",
+    {
+      "id": "#c:ores",
+      "required": false
+    }
+  ]
+}

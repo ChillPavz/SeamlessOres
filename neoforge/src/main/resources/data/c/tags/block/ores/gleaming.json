@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_gleaming_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_gleaming_ore",
+      "required": false
     }
   ]
 }

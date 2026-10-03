@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_carnelian_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_carnelian_ore",
       "required": false
     },

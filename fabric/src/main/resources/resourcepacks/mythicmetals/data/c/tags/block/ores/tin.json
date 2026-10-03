@@ -11,6 +11,10 @@
     {
       "id": "seamlessores:andesite_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_tin_ore",
+      "required": false
     }
   ]
 }

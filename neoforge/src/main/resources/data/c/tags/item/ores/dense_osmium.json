@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_dense_osmium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_osmium_ore",
+      "required": false
     }
   ]
 }

@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_unobtainium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_unobtainium_ore",
+      "required": false
     }
   ]
 }

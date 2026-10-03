@@ -58,6 +58,15 @@ public class SeamlessOresConfigData implements ConfigData {
     public boolean tuff = true;
 
     @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip
+    public boolean dripstone = true;
+
+    // Removes the ore it touches rather than restyling it; see SeamlessOresConfig.lushCaves.
+    @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean lushCaves = true;
+
+    @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean oreVeins = true;
 
@@ -248,6 +257,8 @@ public class SeamlessOresConfigData implements ConfigData {
         values.diorite = diorite;
         values.andesite = andesite;
         values.tuff = tuff;
+        values.dripstone = dripstone;
+        values.lushCaves = lushCaves;
         values.basalt = basalt;
         values.blackstone = blackstone;
         values.oreVeins = oreVeins;

@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_chaos_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_chaos_ore",
+      "required": false
     }
   ]
 }

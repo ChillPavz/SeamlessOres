@@ -59,6 +59,26 @@
     {
       "id": "seamlessores:andesite_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silver_ore",
+      "required": false
     }
   ]
 }

@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_galena_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_galena_ore",
+      "required": false
     }
   ]
 }

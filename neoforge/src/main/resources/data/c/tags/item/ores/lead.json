@@ -47,6 +47,18 @@
     {
       "id": "seamlessores:tuff_techreborn_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_lead_ore",
+      "required": false
     }
   ]
 }

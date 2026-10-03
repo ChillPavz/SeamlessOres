@@ -95,6 +95,12 @@ public final class OreTargetInjector {
                 if (containsBlock(ore.targetStates, ourBlock)) {
                     continue;   // already injected, e.g. a second world load in the same session
                 }
+                // Dripstone variants are never a target: ore does not generate in dripstone, and a
+                // block_match on it would put ore into large dripstone columns. DripstoneShell swaps
+                // them in where the cluster wraps an ore that already exists.
+                if (variant.host().tier() == OreTier.DRIPSTONE) {
+                    continue;
+                }
                 // Config gates GENERATION only, never registration - the blocks exist regardless.
                 // Note basalt and blackstone are the balance-relevant ones: they ADD ore, because
                 // vanilla's nether features match netherrack only.

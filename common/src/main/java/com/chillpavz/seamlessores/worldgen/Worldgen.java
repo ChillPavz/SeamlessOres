@@ -1,6 +1,7 @@
 package com.chillpavz.seamlessores.worldgen;
 
 import com.chillpavz.seamlessores.Constants;
+import com.google.gson.JsonObject;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.Registries;
@@ -9,6 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
 
 import java.util.function.BiConsumer;
+import java.util.function.UnaryOperator;
 
 /**
  * Picks the {@link WorldgenEra} for the running game, once.
@@ -41,6 +43,16 @@ public final class Worldgen {
             Constants.LOG.info("Worldgen: {}", era.name());
         }
         return era;
+    }
+
+    /**
+     * Everything worldgen patches once the server's registries are loaded and before any chunk is
+     * generated: the ore targets and veins, the dripstone shell swap, and the Lush Caves patches.
+     */
+    public static void onServerStarting(RegistryAccess registries) {
+        era().injectOreTargets(registries);
+        DripstoneShell.prepare();
+        LushCavesInjector.inject(registries, era());
     }
 
     private static boolean hasConfiguredFeatures() {
@@ -81,6 +93,11 @@ public final class Worldgen {
         @Override
         public int maxCount(CountPlacement placement) {
             return -1;
+        }
+
+        @Override
+        public boolean rewriteFeature(RegistryAccess registries, Identifier id, UnaryOperator<JsonObject> edit) {
+            return false;
         }
     }
 }

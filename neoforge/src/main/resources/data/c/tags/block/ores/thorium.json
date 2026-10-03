@@ -11,6 +11,10 @@
     {
       "id": "seamlessores:andesite_thorium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_thorium_ore",
+      "required": false
     }
   ]
 }

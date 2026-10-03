@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_moldavite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_moldavite_ore",
       "required": false
     },

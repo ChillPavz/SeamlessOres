@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_techreborn_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_uranium_ore",
+      "required": false
     }
   ]
 }

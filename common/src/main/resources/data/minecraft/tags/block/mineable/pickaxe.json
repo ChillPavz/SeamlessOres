@@ -1168,6 +1168,309 @@
       "id": "seamlessores:tuff_opal_ore",
       "required": false
     },
+    "seamlessores:dripstone_coal_ore",
+    "seamlessores:dripstone_iron_ore",
+    "seamlessores:dripstone_copper_ore",
+    "seamlessores:dripstone_gold_ore",
+    "seamlessores:dripstone_lapis_ore",
+    "seamlessores:dripstone_diamond_ore",
+    "seamlessores:dripstone_redstone_ore",
+    {
+      "id": "seamlessores:dripstone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_ammolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_kyanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_rose_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_turquoise_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_white_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silents_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silents_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silents_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_opal_ore",
+      "required": false
+    },
     "seamlessores:basalt_gold_ore",
     "seamlessores:basalt_quartz_ore",
     {

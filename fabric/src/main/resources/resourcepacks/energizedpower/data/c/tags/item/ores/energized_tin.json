@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_energized_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_energized_tin_ore",
+      "required": false
     }
   ]
 }

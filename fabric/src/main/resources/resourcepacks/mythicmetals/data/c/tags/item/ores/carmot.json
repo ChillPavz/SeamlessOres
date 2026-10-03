@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_carmot_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_carmot_ore",
+      "required": false
     }
   ]
 }

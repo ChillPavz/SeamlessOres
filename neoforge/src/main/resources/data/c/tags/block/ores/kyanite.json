@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_kyanite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_kyanite_ore",
+      "required": false
     }
   ]
 }

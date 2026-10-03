@@ -80,7 +80,10 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType GOLD = overworld("gold", ConstantInt.of(0));
     public static final OreType LAPIS = overworld("lapis", UniformInt.of(2, 5));
     public static final OreType DIAMOND = overworld("diamond", UniformInt.of(3, 7));
-    public static final OreType EMERALD = overworld("emerald", UniformInt.of(3, 7));
+    // No dripstone emerald: emerald generates only in mountain biomes, which never hold dripstone caves.
+    public static final OreType EMERALD = new OreType("emerald", "emerald", null, null,
+            mc("emerald_ore"), mc("deepslate_emerald_ore"), null, UniformInt.of(3, 7), null, false,
+            Set.of("dripstone"));
     public static final OreType REDSTONE = new OreType("redstone", "redstone", null, null,
             mc("redstone_ore"), mc("deepslate_redstone_ore"), null, ConstantInt.of(0), null, true, Set.of());
 
@@ -438,6 +441,9 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
             case STONE -> stoneOre;
             case DEEPSLATE -> deepslateOre;
             case NETHER -> netherOre;
+            // The ore a dripstone shell wraps is whatever generated there, stone or deepslate; the
+            // variant stands in for the stone one, whose drops and xp the deepslate one shares.
+            case DRIPSTONE -> stoneOre;
         };
     }
 

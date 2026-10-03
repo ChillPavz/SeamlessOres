@@ -3,6 +3,7 @@
     "seamlessores:granite_coal_ore",
     "seamlessores:diorite_coal_ore",
     "seamlessores:andesite_coal_ore",
-    "seamlessores:tuff_coal_ore"
+    "seamlessores:tuff_coal_ore",
+    "seamlessores:dripstone_coal_ore"
   ]
 }

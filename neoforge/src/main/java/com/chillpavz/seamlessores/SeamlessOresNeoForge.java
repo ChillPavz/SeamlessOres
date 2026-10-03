@@ -57,7 +57,7 @@ public class SeamlessOresNeoForge {
 
     private void onServerAboutToStart(ServerAboutToStartEvent event) {
 
-        Worldgen.era().injectOreTargets(event.getServer().registryAccess());
+        Worldgen.onServerStarting(event.getServer().registryAccess());
     }
 
     private void onRegister(RegisterEvent event) {

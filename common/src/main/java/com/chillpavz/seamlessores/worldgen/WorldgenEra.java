@@ -1,5 +1,6 @@
 package com.chillpavz.seamlessores.worldgen;
 
+import com.google.gson.JsonObject;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.resources.Identifier;
@@ -7,6 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
 
 import java.util.function.BiConsumer;
+import java.util.function.UnaryOperator;
 
 /**
  * The worldgen code whose Minecraft API changed shape at 26.3, behind one interface.
@@ -37,4 +39,11 @@ public interface WorldgenEra {
 
     /** The upper bound of a count placement's provider, or -1 when it cannot be read. */
     int maxCount(CountPlacement placement);
+
+    /**
+     * Re-encodes one feature ({@code CONFIGURED_FEATURE} up to 26.2, {@code FEATURE} from 26.3) through
+     * its own codec, hands the JSON to {@code edit}, and decodes and rebinds the result. {@code edit}
+     * returns null to leave the feature as it is. False when the feature is absent or unchanged.
+     */
+    boolean rewriteFeature(RegistryAccess registries, Identifier id, UnaryOperator<JsonObject> edit);
 }
