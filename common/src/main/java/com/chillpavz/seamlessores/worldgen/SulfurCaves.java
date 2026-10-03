@@ -2,27 +2,32 @@ package com.chillpavz.seamlessores.worldgen;
 
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
+import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.SectionPos;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.chunk.LevelChunkSection;
 
+import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 /**
  * Keeps ore out of the Sulfur Caves' sulfur and cinnabar (26.2 and up).
@@ -38,7 +43,11 @@ import java.util.function.Function;
  *       cave: a material-rule condition from 26.3, a hook in the noise fill on 26.2. That test is
  *       per block, so a vein just outside the biome can still meet bands drawn one block inside
  *       it; after each chunk is decorated, vein ore or raw ore touching sulfur or cinnabar
- *       becomes the vein's own filler stone.</li>
+ *       becomes the sulfur or cinnabar it touches most, like the Lush Caves' clay and moss.</li>
+ *   <li><b>Sulfur laid after the ore.</b> A sulfur spring's root column or a sulfur pool's rim is
+ *       written by whichever chunk decorates it, which can be a neighbour that runs after this
+ *       chunk's ores. When worldgen writes sulfur or cinnabar, a known ore on a face of it in the same
+ *       chunk becomes that sulfur or cinnabar.</li>
  *   <li><b>Ore features</b> (every vanilla and modded {@code minecraft:ore} and scattered ore). They
  *       target stone, so they reach the stone sheets and pockets between the bands. An ore block is
  *       now not placed where it would touch a block in {@code #seamlessores:keeps_ore_out}.</li>
@@ -71,9 +80,69 @@ public final class SulfurCaves {
     /** A vein's ore and raw block, to that vein's filler: the edge sweep. */
     private static volatile Map<Block, BlockState> veinFiller = Map.of();
 
+    /** Every ore this mod knows, to the stone it stands in: sulfur laid beside it afterwards. */
+    private static volatile Map<Block, BlockState> oreHost = Map.of();
+
     private static final AtomicBoolean ORE_ANNOUNCED = new AtomicBoolean();
     private static final AtomicBoolean VEIN_ANNOUNCED = new AtomicBoolean();
     private static final AtomicBoolean EDGE_ANNOUNCED = new AtomicBoolean();
+    private static final AtomicBoolean LATE_ANNOUNCED = new AtomicBoolean();
+
+    /**
+     * Set while this class writes a block itself. Without it the sulfur we write would trigger the
+     * write hook again and walk every connected ore block: a stack overflow on a large vein.
+     */
+    private static final ThreadLocal<Boolean> WRITING = ThreadLocal.withInitial(() -> false);
+
+    /** At most this many connected ore blocks become sulfur or cinnabar from one start. */
+    private static final int FLOOD_LIMIT = 64;
+
+    /**
+     * Turns {@code start} and the known ore connected to it, where {@code writable} allows, into
+     * {@code cover}. One block at a time would leave the next ore of the same blob against the new
+     * sulfur.
+     */
+    private static void flood(WorldGenLevel level, BlockPos start, BlockState cover, Predicate<BlockPos> writable) {
+        final ArrayDeque<BlockPos> queue = new ArrayDeque<>();
+        final Set<BlockPos> seen = new HashSet<>();
+        queue.add(start.immutable());
+        seen.add(start.immutable());
+        int done = 0;
+        WRITING.set(true);
+        try {
+            while (!queue.isEmpty() && done < FLOOD_LIMIT) {
+                final BlockPos pos = queue.poll();
+                level.setBlock(pos, cover, 2);
+                done++;
+                for (Direction direction : DIRECTIONS) {
+                    final BlockPos next = pos.relative(direction);
+                    if (writable.test(next)
+                            && next.getY() >= level.getMinY() && next.getY() <= level.getMaxY()
+                            && isKnownOre(level.getBlockState(next).getBlock()) && seen.add(next)) {
+                        queue.add(next);
+                    }
+                }
+            }
+        } finally {
+            WRITING.set(false);
+        }
+    }
+
+    /** Implemented on the worldgen region by a mixin: may this position be written right now. */
+    public interface WriteZone {
+        boolean seamlessores$canWrite(BlockPos pos);
+    }
+
+    /** The sweep's own chunk, which its decoration may always write. */
+    private static Predicate<BlockPos> inChunk(ChunkAccess chunk) {
+        final int cx = chunk.getPos().x();
+        final int cz = chunk.getPos().z();
+        return p -> SectionPos.blockToSectionCoord(p.getX()) == cx && SectionPos.blockToSectionCoord(p.getZ()) == cz;
+    }
+
+    private static boolean isKnownOre(Block block) {
+        return oreHost.containsKey(block) || veinFiller.containsKey(block);
+    }
 
     /** Server start, after the ore targets: on only when the switch is on and the biome exists. */
     public static void prepare(RegistryAccess registries) {
@@ -81,10 +150,82 @@ public final class SulfurCaves {
         active = SeamlessOresConfig.sulfurCaves && biome;
         veinBlocks = Set.of();
         veinFiller = Map.of();
+        oreHost = active ? hosts() : Map.of();
         if (biome) {
             Constants.LOG.info("Worldgen: Sulfur Caves keep ore out of sulfur and cinnabar: {}",
                     active ? "on" : "off (config)");
         }
+    }
+
+    /** Our variants to their host, and each supported ore's stone and deepslate block to that rock. */
+    private static Map<Block, BlockState> hosts() {
+        final Map<Block, BlockState> table = new HashMap<>();
+        SeamlessOresContent.blocks().forEach((variant, block) -> {
+            table.put(block, variant.host().block().defaultBlockState());
+            put(table, variant.ore().stoneOre(), Blocks.STONE.defaultBlockState());
+            put(table, variant.ore().deepslateOre(), Blocks.DEEPSLATE.defaultBlockState());
+        });
+        return Map.copyOf(table);
+    }
+
+    private static void put(Map<Block, BlockState> table, Identifier id, BlockState host) {
+        if (id != null) {
+            BuiltInRegistries.BLOCK.getOptional(id).ifPresent(block -> table.putIfAbsent(block, host));
+        }
+    }
+
+    /**
+     * Worldgen is about to write {@code state} at {@code pos}. If it is sulfur or cinnabar, a known
+     * ore on any face of it that the region may write becomes the same block. The ore is often in the
+     * NEIGHBOURING chunk: the sulfur is the later write, made while decorating the chunk beside it.
+     */
+    public static void beforeWorldgenWrite(WorldGenLevel level, BlockPos pos, BlockState state,
+                                           Predicate<BlockPos> writable) {
+        if (!active || WRITING.get() || !state.is(KEEPS_ORE_OUT)) {
+            return;
+        }
+        final BlockPos.MutableBlockPos neighbour = new BlockPos.MutableBlockPos();
+        for (Direction direction : DIRECTIONS) {
+            neighbour.setWithOffset(pos, direction);
+            if (!writable.test(neighbour)) {
+                continue;
+            }
+            final Block block = level.getBlockState(neighbour).getBlock();
+            if (isKnownOre(block)) {
+                flood(level, neighbour.immutable(), state.getBlock().defaultBlockState(), writable);
+                if (LATE_ANNOUNCED.compareAndSet(false, true)) {
+                    Constants.LOG.info("Worldgen: first ore cleared beside sulfur laid after it at {}",
+                            neighbour.immutable());
+                }
+            }
+        }
+    }
+
+    /**
+     * The sulfur or cinnabar most of this block's faces touch (sulfur on a tie), or null when it
+     * touches neither: what an ore stranded there becomes, so the band reads as one material.
+     */
+    private static BlockState cover(WorldGenLevel level, BlockPos pos) {
+        final BlockPos.MutableBlockPos neighbour = new BlockPos.MutableBlockPos();
+        BlockState best = null;
+        int bestCount = 0;
+        final Map<Block, Integer> counts = new HashMap<>(2);
+        for (Direction direction : DIRECTIONS) {
+            final BlockState state = level.getBlockState(neighbour.setWithOffset(pos, direction));
+            if (!state.is(KEEPS_ORE_OUT)) {
+                continue;
+            }
+            final int count = counts.merge(state.getBlock(), 1, Integer::sum);
+            if (count > bestCount || (count == bestCount && isSulfur(state))) {
+                best = state.getBlock().defaultBlockState();
+                bestCount = count;
+            }
+        }
+        return best;
+    }
+
+    private static boolean isSulfur(BlockState state) {
+        return "sulfur".equals(BuiltInRegistries.BLOCK.getKey(state.getBlock()).getPath());
     }
 
     public static boolean active() {
@@ -126,7 +267,7 @@ public final class SulfurCaves {
 
     /**
      * After a chunk's own decoration: vein ore or raw ore touching sulfur or cinnabar becomes the
-     * vein's filler. Only sections whose biomes include the Sulfur Caves and whose palette holds a
+     * sulfur or cinnabar it touches most. Only sections whose biomes include the Sulfur Caves and whose palette holds a
      * vein ore are read, so every other chunk costs one palette check per section.
      */
     public static void sweepVeinEdges(WorldGenLevel level, ChunkAccess chunk) {
@@ -134,6 +275,9 @@ public final class SulfurCaves {
         if (!active || fillers.isEmpty()) {
             return;
         }
+        // The region's own write zone when there is one: the vein's ore often runs on into the next
+        // chunk, and stopping the flood at the border would leave that part against the new sulfur.
+        final Predicate<BlockPos> writable = level instanceof WriteZone zone ? zone::seamlessores$canWrite : inChunk(chunk);
         final LevelChunkSection[] sections = chunk.getSections();
         final int minX = chunk.getPos().getMinBlockX();
         final int minZ = chunk.getPos().getMinBlockZ();
@@ -149,13 +293,13 @@ public final class SulfurCaves {
             for (int y = 0; y < 16; y++) {
                 for (int z = 0; z < 16; z++) {
                     for (int x = 0; x < 16; x++) {
-                        final BlockState filler = fillers.get(section.getBlockState(x, y, z).getBlock());
-                        if (filler == null) {
+                        if (!fillers.containsKey(section.getBlockState(x, y, z).getBlock())) {
                             continue;
                         }
                         pos.set(minX + x, minY + y, minZ + z);
-                        if (keepsOreOut(level::getBlockState, pos)) {
-                            level.setBlock(pos, filler, 2);
+                        final BlockState cover = cover(level, pos);
+                        if (cover != null) {
+                            flood(level, pos.immutable(), cover, writable);
                             if (EDGE_ANNOUNCED.compareAndSet(false, true)) {
                                 Constants.LOG.info("Worldgen: first vein edge cleared beside sulfur or cinnabar at {}",
                                         pos.immutable());

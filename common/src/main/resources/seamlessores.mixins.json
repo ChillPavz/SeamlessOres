@@ -10,7 +10,8 @@
     "DripstoneUtilsMixin",
     "NoiseBasedChunkGeneratorMixin",
     "OreFeatureMixin",
-    "SpeleothemUtilsMixin"
+    "SpeleothemUtilsMixin",
+    "WorldGenRegionMixin"
   ],
   "client": [],
   "server": [],
