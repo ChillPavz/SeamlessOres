@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "minecraft:sulfur_caves",
+  "features": "seamlessores:cinnabar_silents_silver",
+  "step": "underground_ores",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgems"
+    }
+  ]
+}

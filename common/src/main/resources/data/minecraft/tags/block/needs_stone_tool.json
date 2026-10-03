@@ -150,6 +150,10 @@
     {
       "id": "seamlessores:dripstone_inferium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_iron_ore",
+      "required": false
     }
   ]
 }

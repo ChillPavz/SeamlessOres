@@ -169,13 +169,15 @@ PROFILES = {
 }
 
 CLIENT_JAR = None
+CURRENT_PROFILE = None
 MOD_JARS = {}
 IN_RANGE_AVAILABILITY = {}
 
 
 def use_profile(version):
     """Points CLIENT_JAR, MOD_JARS and IN_RANGE_AVAILABILITY at one Minecraft version's jars."""
-    global CLIENT_JAR, MOD_JARS, IN_RANGE_AVAILABILITY
+    global CLIENT_JAR, MOD_JARS, IN_RANGE_AVAILABILITY, CURRENT_PROFILE
+    CURRENT_PROFILE = version
     profile = PROFILES[version]
     CLIENT_JAR = os.path.expanduser(CLIENT_JARS[version])
     MOD_JARS = {**COMMON_JARS, **profile["jars"]}
@@ -206,9 +208,26 @@ HOSTS = {
     # OreTier.DRIPSTONE and OreType.vanillaFor.
     "dripstone":  {"tier": "dripstone", "ore_tier": "stone",
                    "side": "minecraft:block/dripstone_block", "end": "minecraft:block/dripstone_block"},
+    # Cinnabar (26.2 and up): variants ADD ore, placed by our own rare features in the Sulfur Caves
+    # (generate_cinnabar_worldgen), never by the injectors. Only CINNABAR_FAMILY gets one. "since"
+    # keeps its loot out of the 26.1 profile, where the block does not exist. Mirrors
+    # OreTier.CINNABAR, HostStone.CINNABAR and OreType.vanillaFor.
+    "cinnabar":   {"tier": "cinnabar", "since": "26.2",
+                   "side": "minecraft:block/cinnabar", "end": "minecraft:block/cinnabar"},
     "basalt":     {"tier": "nether",    "side": "minecraft:block/basalt_side", "end": "minecraft:block/basalt_top"},
     "blackstone": {"tier": "nether",    "side": "minecraft:block/blackstone",  "end": "minecraft:block/blackstone_top"},
 }
+
+# The ores that get a cinnabar variant, by OVERLAY key: Nether gold is also named "gold", its overlay
+# is not. KEEP IN SYNC WITH OreType.cinnabarFamily().
+CINNABAR_FAMILY = {"gold", "iron", "redstone", "zinc", "galena", "techreborn_lead", "techreborn_silver",
+                   "occultism_silver", "silents_silver", "pyrite", "sphalerite"}
+
+# Per cinnabar vein: (veins per chunk, vein size). Rare on purpose: these ADD ore. Anything not
+# listed uses DEFAULT. Placement attempts outside the Sulfur Caves are dropped by the biome filter.
+CINNABAR_VEINS = {"iron": (4, 8), "gold": (3, 6), "redstone": (3, 6),
+                  "techreborn_silver": (2, 5), "occultism_silver": (2, 5), "silents_silver": (2, 5)}
+CINNABAR_VEIN_DEFAULT = (3, 6)
 
 # Ore definitions. KEEP IN SYNC WITH OreType.java.
 #   name    - id suffix, so <host>_<name>_ore
@@ -728,7 +747,9 @@ def write_material_tags(conv, conv_block, conv_item, entry_mod):
         for ore, values in table.items():
             rel = os.path.join("tags", kind, "ores", f"{ore}.json")
             shared = os.path.join(conv, rel)
-            modded = [v for v in values if isinstance(v, dict)]
+            # A mod's entries go to that mod's conditional pack; an optional entry that belongs to
+            # no mod (a cinnabar variant, absent on 26.1) is shared like a plain one.
+            modded = [v for v in values if isinstance(v, dict) and v["id"] in entry_mod]
             if not modded:
                 write_json(shared, {"values": values})
                 continue
@@ -736,7 +757,7 @@ def write_material_tags(conv, conv_block, conv_item, entry_mod):
                 os.remove(shared)
             for d in full_c:
                 write_json(os.path.join(d, rel), {"values": values})
-            plain = [v for v in values if not isinstance(v, dict)]
+            plain = [v for v in values if not (isinstance(v, dict) and v["id"] in entry_mod)]
             if plain:
                 write_json(os.path.join(fabric_c, rel), {"values": plain})
             by_mod = {}
@@ -767,7 +788,13 @@ def variants():
             # would take the host over (the injector prepends). Mirrors OreType.skipHosts.
             if host in ore.get("skip_hosts", ()):
                 continue
-            vanilla = ore["tiers"].get(host_cfg.get("ore_tier", host_cfg["tier"]))
+            if host_cfg["tier"] == "cinnabar":
+                if ore["overlay"] not in CINNABAR_FAMILY:
+                    continue
+                # Stands in for the stone ore, or the Nether one where the mod has no other.
+                vanilla = ore["tiers"].get("stone") or ore["tiers"].get("nether")
+            else:
+                vanilla = ore["tiers"].get(host_cfg.get("ore_tier", host_cfg["tier"]))
             if vanilla is not None:
                 yield host, host_cfg, ore, vanilla
 
@@ -829,6 +856,16 @@ def write_json(path, data):
     with open(path, "w", encoding="utf-8") as handle:
         json.dump(data, handle, indent=2)
         handle.write("\n")
+
+
+def version_key(version):
+    return tuple(int(part) for part in version.split("."))
+
+
+def host_exists_in(host_cfg, version):
+    """Whether the host's block exists on that profile's Minecraft version (cinnabar: 26.2 up)."""
+    since = host_cfg.get("since")
+    return since is None or version_key(version) >= version_key(since)
 
 
 def variant_name(host, ore):
@@ -961,6 +998,11 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.dripstone": "Dripstone variants",
         f"text.autoconfig.{MOD_ID}.option.dripstone.@Tooltip":
             "Dripstone caves cover their walls in dripstone around the ore. This makes that ore match.",
+        f"text.autoconfig.{MOD_ID}.option.cinnabar": "Cinnabar ores (adds ore)",
+        f"text.autoconfig.{MOD_ID}.option.cinnabar.@Tooltip[0]":
+            "Rare gold, silver, iron, redstone and sulfide ores inside the Sulfur Caves' cinnabar,",
+        f"text.autoconfig.{MOD_ID}.option.cinnabar.@Tooltip[1]":
+            "where vanilla puts none. Minecraft 26.2 and up.",
         f"text.autoconfig.{MOD_ID}.option.lushCaves": "Lush Caves clay and moss (removes ore)",
         f"text.autoconfig.{MOD_ID}.option.lushCaves.@Tooltip[0]":
             "Ore left bare in a Lush Caves clay floor or moss carpet becomes clay or moss, so a",
@@ -1350,7 +1392,9 @@ def generate_data():
                     }
                     table = {**conditions, **table}
 
-                if mod:
+                if not host_exists_in(host_cfg, CURRENT_PROFILE):
+                    pass    # no such block on this version: a table naming its item would not load
+                elif mod:
                     # Conditional table: goes to the loaders that can host that mod, not to common.
                     for module in CONDITIONAL_LOOT_MODULES_BY_MOD.get(
                             mod, DEFAULT_CONDITIONAL_LOOT_MODULES):
@@ -1362,7 +1406,8 @@ def generate_data():
                 # --- tags -------------------------------------------------------------------
                 # A modded variant's block only exists when its mod is loaded, so its tag entries
                 # are optional objects - a plain string would log a tag error without the mod.
-                entry = {"id": our_id, "required": False} if mod else our_id
+                # Cinnabar variants do not exist on 26.1, so theirs are optional as well.
+                entry = {"id": our_id, "required": False} if mod or host_cfg.get("since") else our_id
                 if mod:
                     entry_mod[our_id] = mod
                 mineable.append(entry)
@@ -1389,9 +1434,11 @@ def generate_data():
                                 target.setdefault(tag_name, []).append(entry)
                 # c:ores_in_ground/<stone|deepslate|netherrack> - keyed on the ore we stand in for,
                 # so consumers treat a variant exactly like its counterpart.
-                ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[
-                    host_cfg.get("ore_tier", host_cfg["tier"])]
-                ores_in_ground.setdefault(ground, []).append(entry)
+                # Cinnabar has no ground tag of its own, and is neither stone nor netherrack.
+                if host_cfg["tier"] != "cinnabar":
+                    ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[
+                        host_cfg.get("ore_tier", host_cfg["tier"])]
+                    ores_in_ground.setdefault(ground, []).append(entry)
 
     # Tags MERGE with vanilla's by default (no "replace": true), so these add to the existing lists
     # rather than clobbering them. Getting this wrong would unregister 417 vanilla pickaxe entries.
@@ -1496,7 +1543,7 @@ def generate_textures():
                   f"  (from {source} over {base_name})")
 
 
-OVERWORLD_HOSTS = ["granite", "diorite", "andesite", "tuff", "dripstone"]
+OVERWORLD_HOSTS = ["granite", "diorite", "andesite", "tuff", "dripstone", "cinnabar"]
 NETHER_HOSTS = ["basalt", "blackstone"]
 
 
@@ -1560,10 +1607,13 @@ def _loader_counts():
     README: which mods have a build for a given loader flips between Minecraft versions, and a number
     copied from one version to another is wrong without looking wrong.
     """
-    per_mod = {}
-    for _host, _cfg, ore, _v in variants():
-        per_mod[ore.get("mod")] = per_mod.get(ore.get("mod"), 0) + 1
-    vanilla = per_mod.pop(None, 0)
+    per_version = {}
+    for version in PROFILES:
+        counts = {}
+        for _host, cfg, ore, _v in variants():
+            if host_exists_in(cfg, version):
+                counts[ore.get("mod")] = counts.get(ore.get("mod"), 0) + 1
+        per_version[version] = counts
 
     lines = [
         "A variant is registered only when the mod that owns its ore is installed, so how many of",
@@ -1577,6 +1627,8 @@ def _loader_counts():
     display = {"fabric": "Fabric", "neoforge": "NeoForge", "forge": "Forge"}
     label = {"26.1": "26.1 to 26.1.2", "26.2": "26.2", "26.3": "26.3"}
     for version, profile in PROFILES.items():
+        per_mod = dict(per_version[version])
+        vanilla = per_mod.pop(None, 0)
         for loader in ("fabric", "neoforge"):
             total = vanilla
             available = []
@@ -1678,6 +1730,70 @@ def is_loot(path):
     return (os.sep + "loot_table" + os.sep) in path
 
 
+def generate_cinnabar_worldgen():
+    """One rare vein per cinnabar variant, in the Sulfur Caves only, for 26.2 and 26.3.
+
+    Every file goes in the mc26.2 and mc26.3 overlays, so 26.1, which has no cinnabar and no Sulfur
+    Caves, never reads one: a worldgen file naming an absent block is a hard crash, not a skip. A
+    modded variant's files carry that mod's load conditions as well. NeoForge attaches them with a
+    biome modifier each; Fabric does it in code (SeamlessOresFabric).
+    """
+    common = os.path.join(repo_root(), "common", "src", "main", "resources")
+    neoforge = os.path.join(repo_root(), "neoforge", "src", "main", "resources")
+    overlays = {"mc26.2": "configured_feature", "mc26.3": "feature"}
+    for overlay in overlays:
+        for root, sub in ((common, "worldgen"), (neoforge, "neoforge")):
+            folder = os.path.join(root, overlay, "data", MOD_ID, sub)
+            if os.path.isdir(folder):
+                for dirpath, _dirs, files in os.walk(folder):
+                    for f in files:
+                        if f.startswith("cinnabar_"):
+                            os.remove(os.path.join(dirpath, f))
+    count = 0
+    for host, host_cfg, ore, _vanilla in variants():
+        if host_cfg["tier"] != "cinnabar":
+            continue
+        block = f"{MOD_ID}:{variant_name(host, ore['name'])}"
+        key = f"cinnabar_{ore['name']}"
+        veins, size = CINNABAR_VEINS.get(ore["overlay"], CINNABAR_VEIN_DEFAULT)
+        mod = ore.get("mod")
+        conditions = {}
+        if mod:
+            conditions = {
+                "fabric:load_conditions": [{"condition": "fabric:registry_contains",
+                                            "registry": "minecraft:block", "values": [block]}],
+                "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": mod}],
+            }
+        target = {"predicate_type": "minecraft:block_match", "block": "minecraft:cinnabar"}
+        old = {"type": f"{MOD_ID}:cinnabar_ore",
+               "config": {"size": size, "discard_chance_on_air_exposure": 0.0,
+                          "targets": [{"target": target, "state": {"Name": block}}]}, **conditions}
+        new = {"type": f"{MOD_ID}:cinnabar_ore", "size": size, "discard_chance_on_air_exposure": 0.0,
+               "targets": [{"target": target, "state": block}], **conditions}
+        placed = {"feature": f"{MOD_ID}:{key}",
+                  "placement": [
+                      {"type": "minecraft:count", "count": veins},
+                      {"type": "minecraft:in_square"},
+                      {"type": "minecraft:height_range",
+                       "height": {"type": "minecraft:uniform",
+                                  "min_inclusive": {"above_bottom": 0},
+                                  "max_inclusive": {"absolute": 96}}},
+                      {"type": "minecraft:biome"}],
+                  **conditions}
+        modifier = {"type": "neoforge:add_features", "biomes": "minecraft:sulfur_caves",
+                    "features": f"{MOD_ID}:{key}", "step": "underground_ores"}
+        if mod:
+            modifier["neoforge:conditions"] = conditions["neoforge:conditions"]
+        for overlay, kind in overlays.items():
+            data = os.path.join(common, overlay, "data", MOD_ID, "worldgen")
+            write_json(os.path.join(data, kind, f"{key}.json"), old if kind == "configured_feature" else new)
+            write_json(os.path.join(data, "placed_feature", f"{key}.json"), placed)
+            write_json(os.path.join(neoforge, overlay, "data", MOD_ID, "neoforge", "biome_modifier",
+                                    f"{key}.json"), modifier)
+        count += 1
+    print(f"  cinnabar: {count} veins, Sulfur Caves only, mc26.2 and mc26.3 overlays")
+
+
 def generate_versioned_data():
     """Runs the data step once per profile and routes what it wrote.
 
@@ -1739,6 +1855,7 @@ def main():
     generate_json()
     print("Generating loot tables and tags, once per Minecraft version...")
     generate_versioned_data()
+    generate_cinnabar_worldgen()
     print("Updating README...")
     generate_readme()
 

@@ -98,7 +98,8 @@ public final class OreTargetInjector {
                 // Dripstone variants are never a target: ore does not generate in dripstone, and a
                 // block_match on it would put ore into large dripstone columns. DripstoneShell swaps
                 // them in where the cluster wraps an ore that already exists.
-                if (variant.host().tier() == OreTier.DRIPSTONE) {
+                // Cinnabar variants are placed by their own rare features in the Sulfur Caves only.
+                if (variant.host().tier() == OreTier.DRIPSTONE || variant.host().tier() == OreTier.CINNABAR) {
                     continue;
                 }
                 // Config gates GENERATION only, never registration - the blocks exist regardless.

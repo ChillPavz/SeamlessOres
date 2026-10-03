@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "seamlessores:cinnabar_pyrite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_pyrite_ore",
       "required": false
     },

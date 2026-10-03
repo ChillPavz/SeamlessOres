@@ -1,0 +1,14 @@
+{
+  "type": "seamlessores:cinnabar_ore",
+  "size": 6,
+  "discard_chance_on_air_exposure": 0.0,
+  "targets": [
+    {
+      "target": {
+        "predicate_type": "minecraft:block_match",
+        "block": "minecraft:cinnabar"
+      },
+      "state": "seamlessores:cinnabar_gold_ore"
+    }
+  ]
+}

@@ -444,7 +444,30 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
             // The ore a dripstone shell wraps is whatever generated there, stone or deepslate; the
             // variant stands in for the stone one, whose drops and xp the deepslate one shares.
             case DRIPSTONE -> stoneOre;
+            // Only the ores that belong in cinnabar; each stands in for its stone ore, or for its
+            // Nether ore where the mod has no other (Tech Reborn's pyrite and sphalerite).
+            case CINNABAR -> cinnabarFamily().contains(this) ? (stoneOre != null ? stoneOre : netherOre) : null;
         };
+    }
+
+    /**
+     * What gets a cinnabar variant: the ores that really form beside cinnabar in hot spring
+     * deposits, gold and silver, iron (as pyrite), the zinc and lead sulfides, and redstone, whose
+     * red the game already pairs with cinnabar. Matched by TYPE, not by name: Nether gold is also
+     * named "gold". Built lazily because it names constants declared above it.
+     */
+    private static Set<OreType> cinnabarFamily;
+
+    private static final Object CINNABAR_LOCK = new Object();
+
+    private static Set<OreType> cinnabarFamily() {
+        synchronized (CINNABAR_LOCK) {
+            if (cinnabarFamily == null) {
+                cinnabarFamily = Set.of(GOLD, IRON, REDSTONE, ZINC, TR_GALENA, TR_LEAD, TR_SILVER,
+                        OCCULTISM_SILVER, SG_SILVER, TR_PYRITE, TR_SPHALERITE);
+            }
+            return cinnabarFamily;
+        }
     }
 
     /** Overlay texture key for this host, honouring a per-tier override. */

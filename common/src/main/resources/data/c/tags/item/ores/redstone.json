@@ -4,6 +4,10 @@
     "seamlessores:diorite_redstone_ore",
     "seamlessores:andesite_redstone_ore",
     "seamlessores:tuff_redstone_ore",
-    "seamlessores:dripstone_redstone_ore"
+    "seamlessores:dripstone_redstone_ore",
+    {
+      "id": "seamlessores:cinnabar_redstone_ore",
+      "required": false
+    }
   ]
 }

@@ -19,6 +19,10 @@
     {
       "id": "seamlessores:dripstone_galena_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_galena_ore",
+      "required": false
     }
   ]
 }

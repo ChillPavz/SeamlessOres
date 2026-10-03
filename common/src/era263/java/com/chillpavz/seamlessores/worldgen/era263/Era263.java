@@ -45,6 +45,7 @@ public final class Era263 implements WorldgenEra {
     public void registerFeatureTypes(BiConsumer<Identifier, Object> sink) {
         BastionSafeOreFeature.register(sink::accept);
         NetherGemFeature.register(sink::accept);
+        CinnabarOreFeature.register(sink::accept);
     }
 
     @Override

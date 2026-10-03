@@ -23,9 +23,10 @@ public abstract class AbstractOreFeatureMixin {
 
     @Inject(method = "canPlaceOre", at = @At("RETURN"), cancellable = true, require = 0)
     private void seamlessores$keepOutOfSulfur(CallbackInfoReturnable<Boolean> cir,
+                                              @Local(argsOnly = true) BlockState replaced,
                                               @Local(argsOnly = true) Function<BlockPos, BlockState> level,
                                               @Local(argsOnly = true) BlockPos.MutableBlockPos pos) {
-        if (cir.getReturnValueZ() && SulfurCaves.keepsOreOut(level, pos)) {
+        if (cir.getReturnValueZ() && SulfurCaves.keepsOreOut(replaced, level, pos)) {
             cir.setReturnValue(false);
         }
     }

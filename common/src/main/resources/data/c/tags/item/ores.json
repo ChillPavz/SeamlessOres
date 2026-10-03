@@ -441,6 +441,50 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_adamantite_ore",
       "required": false
     },

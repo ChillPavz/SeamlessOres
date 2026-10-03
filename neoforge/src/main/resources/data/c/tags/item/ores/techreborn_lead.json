@@ -19,6 +19,10 @@
     {
       "id": "seamlessores:dripstone_techreborn_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_techreborn_lead_ore",
+      "required": false
     }
   ]
 }

@@ -327,6 +327,7 @@ public final class SeamlessOresConfig {
         public boolean andesite = true;
         public boolean tuff = true;
         public boolean dripstone = true;
+        public boolean cinnabar = true;
         public boolean lushCaves = true;
         public boolean sulfurCaves = true;
         public boolean basalt = true;
@@ -368,6 +369,7 @@ public final class SeamlessOresConfig {
         if (!values.andesite) disabled.add("andesite");
         if (!values.tuff) disabled.add("tuff");
         if (!values.dripstone) disabled.add("dripstone");
+        if (!values.cinnabar) disabled.add("cinnabar");
         if (!values.basalt) disabled.add("basalt");
         if (!values.blackstone) disabled.add("blackstone");
         disabledHosts = Set.copyOf(disabled);

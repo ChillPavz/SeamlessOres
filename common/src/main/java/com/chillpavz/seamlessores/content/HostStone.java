@@ -1,11 +1,15 @@
 package com.chillpavz.seamlessores.content;
 
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
 
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Stream;
 
 /**
  * A stone that ore can sit in but which has no matching ore texture in vanilla.
@@ -47,5 +51,21 @@ public record HostStone(String name, Block block, OreTier tier, MapColor mapColo
     public static final HostStone BLACKSTONE =
             new HostStone("blackstone", Blocks.BLACKSTONE, OreTier.NETHER, MapColor.COLOR_BLACK, SoundType.STONE);
 
-    public static final List<HostStone> ALL = List.of(GRANITE, DIORITE, ANDESITE, TUFF, DRIPSTONE, BASALT, BLACKSTONE);
+    // Cinnabar exists from 26.2 only, and this jar also runs on 26.1, where the block (and its sound)
+    // is not in the game. So it is read from the registry by id and is NULL there; ALL leaves it out,
+    // and no cinnabar variant is ever built. Vanilla blocks are registered before any mod loads.
+    // Its variants ADD ore - see OreTier.CINNABAR.
+    public static final HostStone CINNABAR = optional("cinnabar", "cinnabar", OreTier.CINNABAR, MapColor.COLOR_RED);
+
+    public static final List<HostStone> ALL =
+            Stream.of(GRANITE, DIORITE, ANDESITE, TUFF, DRIPSTONE, CINNABAR, BASALT, BLACKSTONE)
+                    .filter(Objects::nonNull)
+                    .toList();
+
+    /** A host whose block only some Minecraft versions have; null where it is absent. */
+    private static HostStone optional(String name, String blockId, OreTier tier, MapColor mapColor) {
+        return BuiltInRegistries.BLOCK.getOptional(Identifier.withDefaultNamespace(blockId))
+                .map(block -> new HostStone(name, block, tier, mapColor, block.defaultBlockState().getSoundType()))
+                .orElse(null);
+    }
 }

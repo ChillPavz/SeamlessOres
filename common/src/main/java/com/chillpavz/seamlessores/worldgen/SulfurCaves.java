@@ -2,6 +2,7 @@ package com.chillpavz.seamlessores.worldgen;
 
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
+import com.chillpavz.seamlessores.content.OreTier;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -161,6 +162,9 @@ public final class SulfurCaves {
     private static Map<Block, BlockState> hosts() {
         final Map<Block, BlockState> table = new HashMap<>();
         SeamlessOresContent.blocks().forEach((variant, block) -> {
+            if (variant.host().tier() == OreTier.CINNABAR) {
+                return;     // ore that belongs in cinnabar is left beside it
+            }
             table.put(block, variant.host().block().defaultBlockState());
             put(table, variant.ore().stoneOre(), Blocks.STONE.defaultBlockState());
             put(table, variant.ore().deepslateOre(), Blocks.DEEPSLATE.defaultBlockState());
@@ -247,12 +251,17 @@ public final class SulfurCaves {
 
     /**
      * True when an ore block about to be placed at {@code pos} would touch sulfur or cinnabar on any
-     * face. Asked only after the feature has already decided to place ore there.
+     * face. Asked only after the feature has already decided to place ore there. An ore that REPLACES
+     * cinnabar is one of our cinnabar features at work, and is let through.
      */
-    public static boolean keepsOreOut(Function<BlockPos, BlockState> level, BlockPos pos) {
-        if (!active) {
+    public static boolean keepsOreOut(BlockState replaced, Function<BlockPos, BlockState> level, BlockPos pos) {
+        if (!active || replaced.is(KEEPS_ORE_OUT)) {
             return false;
         }
+        return touches(level, pos);
+    }
+
+    private static boolean touches(Function<BlockPos, BlockState> level, BlockPos pos) {
         final BlockPos.MutableBlockPos neighbour = new BlockPos.MutableBlockPos();
         for (Direction direction : DIRECTIONS) {
             if (level.apply(neighbour.setWithOffset(pos, direction)).is(KEEPS_ORE_OUT)) {

@@ -61,6 +61,11 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean dripstone = true;
 
+    // ADDS ore, like basalt and blackstone: see OreTier.CINNABAR.
+    @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean cinnabar = true;
+
     // Removes the ore it touches rather than restyling it; see SeamlessOresConfig.lushCaves.
     @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip(count = 2)
@@ -263,6 +268,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.andesite = andesite;
         values.tuff = tuff;
         values.dripstone = dripstone;
+        values.cinnabar = cinnabar;
         values.lushCaves = lushCaves;
         values.sulfurCaves = sulfurCaves;
         values.basalt = basalt;

@@ -5,6 +5,10 @@
     "seamlessores:andesite_gold_ore",
     "seamlessores:tuff_gold_ore",
     "seamlessores:dripstone_gold_ore",
+    {
+      "id": "seamlessores:cinnabar_gold_ore",
+      "required": false
+    },
     "seamlessores:basalt_gold_ore",
     "seamlessores:blackstone_gold_ore"
   ]
