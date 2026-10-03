@@ -267,8 +267,8 @@ public final class SulfurCaves {
 
     /**
      * After a chunk's own decoration: vein ore or raw ore touching sulfur or cinnabar becomes the
-     * sulfur or cinnabar it touches most. Only sections whose biomes include the Sulfur Caves and whose palette holds a
-     * vein ore are read, so every other chunk costs one palette check per section.
+     * sulfur or cinnabar it touches most. Only sections whose palette holds a vein ore are read, so
+     * every other section costs one palette check.
      */
     public static void sweepVeinEdges(WorldGenLevel level, ChunkAccess chunk) {
         final Map<Block, BlockState> fillers = veinFiller;
@@ -284,8 +284,9 @@ public final class SulfurCaves {
         final BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos();
         for (int i = 0; i < sections.length; i++) {
             final LevelChunkSection section = sections[i];
+            // Not gated on the section's own biomes: the bands are drawn through a jittered biome
+            // lookup, so they can reach a section whose biomes never include the Sulfur Caves.
             if (section.hasOnlyAir()
-                    || !section.getBiomes().maybeHas(biome -> biome.is(BIOME))
                     || !section.getStates().maybeHas(state -> fillers.containsKey(state.getBlock()))) {
                 continue;
             }
