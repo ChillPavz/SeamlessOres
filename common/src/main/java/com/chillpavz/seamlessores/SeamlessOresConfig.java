@@ -42,6 +42,15 @@ public final class SeamlessOresConfig {
     public static boolean lushCaves = true;
 
     /**
+     * Whether the Sulfur Caves keep ore out of their sulfur and cinnabar (26.2 and up).
+     *
+     * <p><b>This REMOVES ore</b>, like {@link #lushCaves}: the large copper and iron veins are not
+     * built inside the biome, and no ore feature places a block that would touch sulfur or cinnabar.
+     * See {@code SulfurCaves}.
+     */
+    public static boolean sulfurCaves = true;
+
+    /**
      * Ordinary overworld copper, as a percentage of vanilla's vein count.
      *
      * <p>Vanilla runs {@code ore_copper} at 16 attempts per chunk of size 10, in every biome. This
@@ -319,6 +328,7 @@ public final class SeamlessOresConfig {
         public boolean tuff = true;
         public boolean dripstone = true;
         public boolean lushCaves = true;
+        public boolean sulfurCaves = true;
         public boolean basalt = true;
         public boolean blackstone = true;
         public boolean oreVeins = true;
@@ -364,6 +374,7 @@ public final class SeamlessOresConfig {
 
         oreVeins = values.oreVeins;
         lushCaves = values.lushCaves;
+        sulfurCaves = values.sulfurCaves;
         bastionSafeNether = values.bastionSafeNether;
         netherOreRarity = values.netherOreRarity;
         netherVeinSize = values.netherVeinSize;

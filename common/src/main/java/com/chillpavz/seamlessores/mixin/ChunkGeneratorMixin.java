@@ -1,10 +1,14 @@
 package com.chillpavz.seamlessores.mixin;
 
 import com.chillpavz.seamlessores.worldgen.CopperDensityInjector;
+import com.chillpavz.seamlessores.worldgen.SulfurCaves;
 import net.minecraft.core.Holder;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.BiomeSource;
+import net.minecraft.world.level.StructureManager;
+import net.minecraft.world.level.WorldGenLevel;
+import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -74,6 +78,17 @@ public abstract class ChunkGeneratorMixin {
      * idempotent per placed-feature instance, so the repeats are no-ops rather than compounding
      * thinning; see {@code CopperDensityInjector}.
      */
+    /**
+     * The Sulfur Caves' last pass over the chunk's own vein blocks, after its features. See
+     * {@code SulfurCaves}. Same signature on every 26.x version; {@code require = 0} because a miss
+     * only leaves the odd vein block at the biome's edge.
+     */
+    @Inject(method = "applyBiomeDecoration", at = @At("TAIL"), require = 0)
+    private void seamlessores$sweepSulfurCaveVeinEdges(WorldGenLevel level, ChunkAccess chunk,
+                                                       StructureManager structures, CallbackInfo ci) {
+        SulfurCaves.sweepVeinEdges(level, chunk);
+    }
+
     @Inject(method = "validate", at = @At("HEAD"))
     private void seamlessores$thinCopperBeforeFeatureTable(CallbackInfo ci) {
         CopperDensityInjector.thinBeforeFeatureTable(this.biomeSource, this.generationSettingsGetter);

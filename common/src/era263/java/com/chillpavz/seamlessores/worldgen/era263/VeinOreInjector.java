@@ -4,15 +4,23 @@ import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
 import com.chillpavz.seamlessores.content.OreVariant;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
+import com.chillpavz.seamlessores.worldgen.SulfurCaves;
 import net.minecraft.core.Holder;
+import net.minecraft.core.HolderSet;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.levelgen.material.condition.BiomeCondition;
+import net.minecraft.world.level.levelgen.material.condition.MaterialCondition;
+import net.minecraft.world.level.levelgen.material.condition.NotCondition;
+import net.minecraft.world.level.levelgen.material.rule.ConditionRule;
 import net.minecraft.world.level.levelgen.material.rule.MaterialRule;
 import net.minecraft.world.level.levelgen.material.rule.OreVeinRule;
 
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * Fixes the ore placed in the large copper and iron veins.
@@ -71,6 +79,35 @@ public final class VeinOreInjector {
                     vein.rawOreChance(), vein.density(), vein.richness(), vein.fillerGap()));
             Constants.LOG.info("Worldgen: {} vein ore -> {}", holder.key().identifier(), variant);
         }
+    }
+
+    /**
+     * Wraps every ore vein rule so that it does not apply inside the Sulfur Caves. The overworld
+     * rule runs the veins BEFORE the biome's sulfur and cinnabar bands, so a vein crossing the caves
+     * would otherwise leave its filler, ore and raw blocks standing in them; with the condition the
+     * position falls through to the bands like the rest of the cave. Runs after {@link #inject}, so
+     * it wraps the restyled rule. See {@link SulfurCaves}.
+     */
+    public static void keepOutOfSulfurCaves(RegistryAccess registries) {
+        if (!SulfurCaves.active()) {
+            return;
+        }
+        final Optional<Holder.Reference<Biome>> biome =
+                registries.lookupOrThrow(Registries.BIOME).get(SulfurCaves.BIOME);
+        if (biome.isEmpty()) {
+            return;
+        }
+        final MaterialCondition outside = new NotCondition(new BiomeCondition(HolderSet.direct(biome.get())));
+        int wrapped = 0;
+        for (Holder.Reference<MaterialRule> holder :
+                registries.lookupOrThrow(Registries.MATERIAL_RULE).listElements().toList()) {
+            if (holder.value() instanceof OreVeinRule vein) {
+                rebind(holder, new ConditionRule(outside, vein));
+                SulfurCaves.addVein(vein.oreBlock(), vein.rawOreBlock(), vein.fillerBlock());
+                wrapped++;
+            }
+        }
+        Constants.LOG.info("Worldgen: {} ore vein rules kept out of the Sulfur Caves", wrapped);
     }
 
     /** Our variant for this filler stone that stands in for this ore, or null. */

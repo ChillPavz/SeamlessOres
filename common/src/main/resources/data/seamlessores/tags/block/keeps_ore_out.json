@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "minecraft:sulfur",
+      "required": false
+    },
+    {
+      "id": "minecraft:cinnabar",
+      "required": false
+    }
+  ]
+}

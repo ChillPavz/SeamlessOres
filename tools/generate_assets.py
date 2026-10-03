@@ -966,6 +966,11 @@ def generate_json():
             "Ore left bare in a Lush Caves clay floor or moss carpet becomes clay or moss, so a",
         f"text.autoconfig.{MOD_ID}.option.lushCaves.@Tooltip[1]":
             "little ore is removed there. Bone meal on moss works exactly as in vanilla.",
+        f"text.autoconfig.{MOD_ID}.option.sulfurCaves": "Sulfur Caves stay bare (removes ore)",
+        f"text.autoconfig.{MOD_ID}.option.sulfurCaves.@Tooltip[0]":
+            "No ore in or against the sulfur and cinnabar of the Sulfur Caves, including the large",
+        f"text.autoconfig.{MOD_ID}.option.sulfurCaves.@Tooltip[1]":
+            "copper and iron veins there. Minecraft 26.2 and up.",
 
         f"text.autoconfig.{MOD_ID}.option.basalt": "Basalt variants (adds ore)",
         f"text.autoconfig.{MOD_ID}.option.basalt.@Tooltip[0]":
@@ -1416,6 +1421,11 @@ def generate_data():
                               ("lush_moss_replaceable", "#minecraft:moss_replaceable")):
         write_json(os.path.join(ours, "tags", "block", f"{name}.json"),
                    {"values": [vanilla_tag, {"id": "#c:ores", "required": False}]})
+    # SulfurCaves: no ore feature places a block touching one of these. Both are 26.2+ blocks, so each
+    # entry is optional and the tag is empty on 26.1.x.
+    write_json(os.path.join(ours, "tags", "block", "keeps_ore_out.json"),
+               {"values": [{"id": "minecraft:sulfur", "required": False},
+                           {"id": "minecraft:cinnabar", "required": False}]})
 
     if foreign_tool_tags:
         print("  source mods' own tier tags mirrored: "

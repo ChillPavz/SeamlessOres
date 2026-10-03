@@ -48,8 +48,10 @@ public final class Worldgen {
     /**
      * Everything worldgen patches once the server's registries are loaded and before any chunk is
      * generated: the ore targets and veins, the dripstone shell swap, and the Lush Caves patches.
+     * The Sulfur Caves switch is read first, because the era's vein pass asks it.
      */
     public static void onServerStarting(RegistryAccess registries) {
+        SulfurCaves.prepare(registries);
         era().injectOreTargets(registries);
         DripstoneShell.prepare();
         LushCavesInjector.inject(registries, era());

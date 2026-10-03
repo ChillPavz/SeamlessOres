@@ -8,7 +8,9 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Applies only the dripstone mixin whose target this Minecraft version has.
+ * Applies only the mixins whose targets this Minecraft version has: one of the two dripstone mixins,
+ * one of the two ore placement mixins, and the noise fill vein hook only where the noise fill builds
+ * the veins.
  *
  * <p>One jar serves 26.1.x ({@code DripstoneUtils}) and 26.2 up ({@code SpeleothemUtils}). Both
  * mixins are {@code @Pseudo}, so the absent one is skipped either way, but the loader still tries to
@@ -24,8 +26,15 @@ public final class SeamlessOresMixinPlugin implements IMixinConfigPlugin {
     private static final String DRIPSTONE_UTILS = "net.minecraft.world.level.levelgen.feature.DripstoneUtils";
     private static final String SPELEOTHEM_UTILS = "net.minecraft.world.level.levelgen.feature.SpeleothemUtils";
 
+    private static final String ORE_FEATURE = "net.minecraft.world.level.levelgen.feature.OreFeature";
+    private static final String ABSTRACT_ORE_FEATURE = "net.minecraft.world.level.levelgen.feature.AbstractOreFeature";
+    private static final String NOISE_GENERATOR = "net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator";
+    private static final String ORE_VEINIFIER = "net.minecraft.world.level.levelgen.OreVeinifier";
+
     private boolean hasDripstoneUtils;
     private boolean hasSpeleothemUtils;
+    private boolean hasAbstractOreFeature;
+    private boolean hasOreVeinifier;
 
     @Override
     public void onLoad(String mixinPackage) {
@@ -35,6 +44,10 @@ public final class SeamlessOresMixinPlugin implements IMixinConfigPlugin {
             hasDripstoneUtils = true;
             hasSpeleothemUtils = true;
         }
+        // From 26.3 canPlaceOre lives on AbstractOreFeature and the veins are material rules. If the
+        // lookup finds neither class, the up-to-26.2 pair stays on; require = 0 keeps it harmless.
+        hasAbstractOreFeature = exists(ABSTRACT_ORE_FEATURE);
+        hasOreVeinifier = exists(ORE_VEINIFIER) || !hasAbstractOreFeature;
     }
 
     private static boolean exists(String className) {
@@ -49,6 +62,15 @@ public final class SeamlessOresMixinPlugin implements IMixinConfigPlugin {
         }
         if (SPELEOTHEM_UTILS.equals(targetClassName)) {
             return hasSpeleothemUtils;
+        }
+        if (ORE_FEATURE.equals(targetClassName)) {
+            return !hasAbstractOreFeature;
+        }
+        if (ABSTRACT_ORE_FEATURE.equals(targetClassName)) {
+            return hasAbstractOreFeature;
+        }
+        if (NOISE_GENERATOR.equals(targetClassName)) {
+            return hasOreVeinifier;
         }
         return true;
     }

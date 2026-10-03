@@ -50,6 +50,7 @@ public final class Era263 implements WorldgenEra {
     @Override
     public void injectOreTargets(RegistryAccess registries) {
         OreTargetInjector.inject(registries);
+        VeinOreInjector.keepOutOfSulfurCaves(registries);
     }
 
     @Override

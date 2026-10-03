@@ -8,7 +8,9 @@ walls, basalt and blackstone in the Nether, and the same treatment for the ores 
 surroundings. The Nether variants are the one exception that adds ore, and they are config gated.
 Lush Caves go the other way: ore left bare in a clay floor or a moss carpet becomes clay or moss,
 which removes a little ore there. That is config gated too, and bone meal on moss works exactly as
-in vanilla.
+in vanilla. The Sulfur Caves stay bare the same way: no ore, and none of the large copper and iron
+veins, sits in or against their sulfur and cinnabar, which removes ore there (config gated, 26.2 and
+up).
 
 | | |
 |---|---|
@@ -350,7 +352,8 @@ Dripstone variants are a one for one swap: an ore that a dripstone cave's wall s
 dripstone variant of the same ore, so the amount of ore stays the same.
 
 The exceptions, all config gated and all stated on the store page: Lush Caves clay and moss take the
-ore stranded in them, which removes it; basalt and blackstone gold and
+ore stranded in them, which removes it; the Sulfur Caves keep ore and the large veins out of their
+sulfur and cinnabar, which removes it too; basalt and blackstone gold and
 quartz add ore, because vanilla's Nether features match netherrack only; Silent's Gems' nether gems
 and Tech Reborn's cinnabar, pyrite and sphalerite do the same, because those mods target netherrack
 only as well; and Mythic Upgrades' ruby and sapphire in basalt deltas are placed by a feature this

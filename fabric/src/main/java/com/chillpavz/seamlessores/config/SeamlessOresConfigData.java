@@ -66,6 +66,11 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean lushCaves = true;
 
+    // Removes ore as well; see SeamlessOresConfig.sulfurCaves.
+    @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean sulfurCaves = true;
+
     @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean oreVeins = true;
@@ -259,6 +264,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.tuff = tuff;
         values.dripstone = dripstone;
         values.lushCaves = lushCaves;
+        values.sulfurCaves = sulfurCaves;
         values.basalt = basalt;
         values.blackstone = blackstone;
         values.oreVeins = oreVeins;

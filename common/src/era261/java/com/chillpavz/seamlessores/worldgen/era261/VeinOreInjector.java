@@ -6,6 +6,7 @@ import com.chillpavz.seamlessores.content.HostStone;
 import com.chillpavz.seamlessores.content.OreType;
 import com.chillpavz.seamlessores.content.OreVariant;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
+import com.chillpavz.seamlessores.worldgen.SulfurCaves;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.OreVeinifier;
@@ -54,6 +55,17 @@ public final class VeinOreInjector {
         // inside tuff in an iron vein, so those are the variants that make it seamless.
         patch(OreVeinifier.VeinType.COPPER, HostStone.GRANITE, OreType.COPPER, Blocks.COPPER_ORE);
         patch(OreVeinifier.VeinType.IRON, HostStone.TUFF, OreType.IRON, Blocks.DEEPSLATE_IRON_ORE);
+    }
+
+    /**
+     * Hands the Sulfur Caves every block the veins place, read after {@link #inject()} so a patched
+     * ore is the one listed. The noise fill hook keeps those blocks out of the biome, and the edge
+     * sweep turns what is left against the bands into filler.
+     */
+    public static void shareWithSulfurCaves() {
+        for (OreVeinifier.VeinType vein : OreVeinifier.VeinType.values()) {
+            SulfurCaves.addVein(vein.ore, vein.rawOreBlock, vein.filler);
+        }
     }
 
     private static void patch(OreVeinifier.VeinType vein, HostStone host, OreType ore, Block expectedVanilla) {

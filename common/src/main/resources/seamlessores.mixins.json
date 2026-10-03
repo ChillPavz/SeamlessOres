@@ -5,8 +5,11 @@
   "plugin": "com.chillpavz.seamlessores.mixin.SeamlessOresMixinPlugin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
+    "AbstractOreFeatureMixin",
     "ChunkGeneratorMixin",
     "DripstoneUtilsMixin",
+    "NoiseBasedChunkGeneratorMixin",
+    "OreFeatureMixin",
     "SpeleothemUtilsMixin"
   ],
   "client": [],

@@ -21,4 +21,8 @@ accessible	method	net/minecraft/core/RegistrySetBuilder$LazyHolder	bindValue	(Lj
 accessible	class	net/minecraft/world/level/levelgen/OreVeinifier$VeinType
 accessible	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	ore	Lnet/minecraft/world/level/block/state/BlockState;
 mutable	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	ore	Lnet/minecraft/world/level/block/state/BlockState;
+# Read only: the vein's raw ore block and filler, so the Sulfur Caves can keep the whole vein out.
+# See SulfurCaves.
+accessible	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	rawOreBlock	Lnet/minecraft/world/level/block/state/BlockState;
+accessible	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	filler	Lnet/minecraft/world/level/block/state/BlockState;
 accessible	field	net/minecraft/world/level/levelgen/placement/CountPlacement	count	Lnet/minecraft/util/valueproviders/IntProvider;
