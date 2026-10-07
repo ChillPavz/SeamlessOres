@@ -1,0 +1,79 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = 'Fabric'
+                    url = uri('https://maven.fabricmc.net')
+                }
+            }
+            filter {
+                includeGroup('net.fabricmc')
+                includeGroup('net.fabricmc.unpick')
+                includeGroup('fabric-loom')
+            }
+        }
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = 'Sponge'
+                    url = uri('https://repo.spongepowered.org/repository/maven-public')
+                }
+            }
+            filter {
+                includeGroupAndSubgroups("org.spongepowered")
+            }
+        }
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = 'Forge'
+                    url = uri('https://maven.minecraftforge.net')
+                }
+            }
+            filter {
+                includeGroupAndSubgroups('net.minecraftforge')
+            }
+        }
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+}
+
+// ONE FOLDER, THREE BUILDS. -Pmc picks a file in versions/: everything that changes with
+// Minecraft (versions, ranges, the mod version while the bands still differ, which loaders are
+// built) lives there and nowhere else, so no stale value can shadow it.
+//   ./gradlew build -Pmc=1.21.1    Fabric, NeoForge, Forge 1.21-1.21.1
+//   ./gradlew build -Pmc=1.21.4    Fabric, NeoForge 1.21.4-1.21.10
+//   ./gradlew build -Pmc=1.21.11   Fabric, NeoForge, Forge 1.21.11
+// Era source folders are found by name: src/<era>/ is compiled when <era>, split on '+', names
+// this band (src/1.21.1+1.21.4/ goes into both of those builds). tools/build_all.py runs all three.
+def band = providers.gradleProperty('mc').getOrElse('1.21.11')
+def bandFile = file("versions/${band}.properties")
+if (!bandFile.exists()) {
+    def known = file('versions').list().findAll { it.endsWith('.properties') }.collect { it - '.properties' }.sort()
+    throw new GradleException("Unknown Minecraft band '${band}' (-Pmc). Known: ${known.join(', ')}")
+}
+def bandProps = new Properties()
+bandFile.withInputStream { bandProps.load(it) }
+gradle.beforeProject { p ->
+    p.ext.set('mc_band', band)
+    bandProps.each { key, value ->
+        if (key == 'version') {
+            p.version = value
+        } else {
+            p.ext.set(key as String, value)
+        }
+    }
+}
+logger.lifecycle("Seamless Ores, Minecraft band ${band} (${bandProps.minecraft_version}, " +
+        "version ${bandProps.version}; loaders ${bandProps.loaders})")
+
+// This should match the folder name of the project, or else IDEA may complain (see https://youtrack.jetbrains.com/issue/IDEA-317606)
+rootProject.name = 'seamlessores-1.21'
+include('common')
+bandProps.loaders.split(',').collect { it.trim() }.findAll { it }.each { include(it) }
