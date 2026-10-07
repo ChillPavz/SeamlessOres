@@ -1,0 +1,44 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/mod/seamless-ores",
+        "sources": "https://github.com/ChillPavz/SeamlessOres",
+        "issues": "https://github.com/ChillPavz/SeamlessOres/issues"
+    },
+    "license": "${license}",
+    "icon": "${mod_id}.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.chillpavz.seamlessores.SeamlessOresFabric"
+        ],
+        "client": [
+            "com.chillpavz.seamlessores.SeamlessOresFabricClient"
+        ],
+        "modmenu": [
+            "com.chillpavz.seamlessores.config.SeamlessOresModMenu"
+        ]
+    },
+    "mixins": [
+        "${mod_id}.mixins.json",
+        "${mod_id}.fabric.mixins.json"
+    ],
+    "accessWidener": "${mod_id}.accesswidener",
+    "depends": {
+        "fabricloader": ">=${fabric_loader_version}",
+        "fabric-api": "*",
+        "minecraft": "${fabric_minecraft_version_range}",
+        "java": ">=${java_version}",
+        "cloth-config2": "*"
+    },
+    "suggests": {
+        "modmenu": "*"
+    }
+}

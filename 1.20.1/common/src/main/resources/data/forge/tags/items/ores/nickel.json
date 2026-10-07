@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_nickel_ore",
+      "required": false
+    }
+  ]
+}

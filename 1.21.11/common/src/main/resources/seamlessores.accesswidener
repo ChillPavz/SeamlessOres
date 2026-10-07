@@ -1,0 +1,25 @@
+accessWidener v2 named
+
+# The header MUST be the very first line - a comment above it fails with
+#   Invalid access widener file header. Expected: 'classTweaker <version> <namespace>'
+# The namespace is 'named' here, NOT 'official' as on the 26.x branches: de-obfuscation landed at
+# 26.1, so 1.21.11 still goes through a mappings layer and 'named' is the Mojang-mapped namespace
+# that Loom's officialMojangMappings() produces. Using 'official' on this version fails the build.
+#
+# Fabric counterpart of META-INF/accesstransformer.cfg - keep the two in sync.
+# Holder.Reference#bindValue is protected; we need it to swap the value of an already-loaded
+# CONFIGURED_FEATURE entry. See OreTargetInjector.
+accessible	method	net/minecraft/core/Holder$Reference	bindValue	(Ljava/lang/Object;)V
+
+# RegistrySetBuilder$LazyHolder is the only subclass that overrides bindValue. It must be widened
+# too: a protected override of a now-public method is an illegal weaker override.
+accessible	method	net/minecraft/core/RegistrySetBuilder$LazyHolder	bindValue	(Ljava/lang/Object;)V
+
+# OreVeinifier.VeinType holds the ore block for the large copper/iron veins. Those veins are built
+# during NOISE generation, not by any configured feature, so the registry injection cannot reach
+# them. See VeinOreInjector. The field is package-private and final here (it is private on 26.x),
+# so it still needs both widenings.
+accessible	class	net/minecraft/world/level/levelgen/OreVeinifier$VeinType
+accessible	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	ore	Lnet/minecraft/world/level/block/state/BlockState;
+mutable	field	net/minecraft/world/level/levelgen/OreVeinifier$VeinType	ore	Lnet/minecraft/world/level/block/state/BlockState;
+accessible	field	net/minecraft/world/level/levelgen/placement/CountPlacement	count	Lnet/minecraft/util/valueproviders/IntProvider;

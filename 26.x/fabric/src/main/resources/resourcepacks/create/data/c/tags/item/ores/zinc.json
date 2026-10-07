@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_zinc_ore",
+      "required": false
+    }
+  ]
+}

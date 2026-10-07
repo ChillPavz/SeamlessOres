@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_inferium_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_bauxite_ore",
+      "required": false
+    }
+  ]
+}

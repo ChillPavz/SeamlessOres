@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_bort_ore",
+      "required": false
+    }
+  ]
+}

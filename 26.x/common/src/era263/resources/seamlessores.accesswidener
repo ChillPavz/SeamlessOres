@@ -1,0 +1,16 @@
+accessWidener v2 official
+
+# The header MUST be the very first line - a comment above it fails with
+#   Invalid access widener file header. Expected: 'classTweaker <version> <namespace>'
+# and the namespace MUST be 'official', not 'named': since 26.1 Minecraft ships de-obfuscated with
+# no mappings layer, so Loom rejects 'named' with
+#   Expected official namespace for access widener entry, found: named
+#
+# Fabric counterpart of META-INF/accesstransformer.cfg - keep the two in sync.
+# Holder.Reference#bindValue is protected; we need it to swap the value of an already-loaded
+# worldgen registry entry. See OreTargetInjector.
+accessible	method	net/minecraft/core/Holder$Reference	bindValue	(Ljava/lang/Object;)V
+
+# PatchedRegistry$LazyHolder is the only subclass that overrides bindValue. It must be widened too:
+# a protected override of a now-public method is an illegal weaker override.
+accessible	method	net/minecraft/core/registries/PatchedRegistry$LazyHolder	bindValue	(Ljava/lang/Object;)V

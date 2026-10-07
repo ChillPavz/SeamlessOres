@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_tungsten_ore",
+      "required": false
+    }
+  ]
+}

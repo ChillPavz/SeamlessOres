@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mi_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mi_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mi_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_iridium_ore",
+      "required": false
+    }
+  ]
+}

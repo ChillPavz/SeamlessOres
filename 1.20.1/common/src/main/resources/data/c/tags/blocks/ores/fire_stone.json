@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_fire_stone_ore",
+      "required": false
+    }
+  ]
+}

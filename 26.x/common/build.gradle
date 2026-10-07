@@ -1,0 +1,71 @@
+plugins {
+    id 'multiloader-common'
+    id 'net.neoforged.moddev'
+}
+
+// The worldgen API changed shape at 26.3 (ore features lost ConfiguredFeature, feature types became
+// codecs). The code that differs lives in one folder per era, src/era261 for 26.1.x and 26.2 and
+// src/era263 for 26.3, with the access widener and transformer; the band file picks one, and
+// tools/merge_bands.py joins the 26.1.x and 26.3 builds into one jar that loads the right era at
+// runtime. Data needs no switch: each version's loot sits in a pack overlay folder that pack.mcmeta
+// enables by data format.
+sourceSets.main {
+    java.srcDir("src/era${era}/java")
+    resources.srcDir("src/era${era}/resources")
+}
+
+neoForge {
+    neoFormVersion = neo_form_version
+    // Automatically enable AccessTransformers if the file exists
+    def at = file("src/era${era}/resources/META-INF/accesstransformer.cfg")
+    if (at.exists()) {
+        accessTransformers.from(at.absolutePath)
+    }
+}
+
+dependencies {
+    // Fabric and NeoForge both bundle Fabric Mixin, so it is safe to use it in common
+    // If you need to update, check what version they are using to see what is compatible
+    // https://github.com/neoforged/NeoForge/blob/26.3.x/gradle.properties#L37
+    // https://github.com/FabricMC/fabric-loader/blob/master/gradle.properties#L12
+    compileOnly('net.fabricmc:sponge-mixin:0.17.3+mixin.0.8.7')
+    // Fabric and NeoForge both bundle MixinExtras, so it is safe to use it in common
+    compileOnly(annotationProcessor('io.github.llamalad7:mixinextras-common:0.5.3'))
+
+}
+
+configurations {
+    commonJava {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+    commonResources {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+}
+
+artifacts {
+    // Every source folder, the era one included: the loaders compile common's sources themselves.
+    sourceSets.main.java.srcDirs.each { commonJava it }
+    sourceSets.main.resources.srcDirs.each { commonResources it }
+}
+
+// Implement mcgradleconventions loader attribute
+def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
+['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements'].each { variant ->
+    configurations.named(variant) {
+        attributes {
+            attribute(loaderAttribute, 'common')
+        }
+    }
+}
+sourceSets.configureEach {
+    [it.compileClasspathConfigurationName, it.runtimeClasspathConfigurationName].each { variant->
+        configurations.named(variant) {
+            attributes {
+                attribute(loaderAttribute, 'common')
+            }
+        }
+    }
+}

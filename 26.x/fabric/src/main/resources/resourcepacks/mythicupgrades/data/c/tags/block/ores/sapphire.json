@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:basalt_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_sapphire_ore",
+      "required": false
+    }
+  ]
+}

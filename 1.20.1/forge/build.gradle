@@ -1,0 +1,80 @@
+plugins {
+    id 'multiloader-loader'
+    id 'net.neoforged.moddev.legacyforge'
+}
+
+// No mixin block: this mod has no mixins. Declaring configs that don't exist makes Forge abort at
+// startup with "The specified resource '<id>.mixins.json' was invalid or could not be read".
+
+legacyForge {
+    version = "${minecraft_version}-${forge_version}"
+
+    // OFF here, and ON in common/build.gradle. That split is deliberate.
+    //
+    // On this module the transform runs against FORGE's merged access transformer, which is
+    // hundreds of entries of Forge's own, and several of them already fail validation at 1.20.1
+    // (records widened without their constructor, a MAKEFINAL on an already-non-final field, a
+    // NoiseGeneratorSettings method that no longer exists). Those are not ours and cannot be fixed
+    // from here, so with validation on the Forge build dies in createMinecraftArtifacts with a bare
+    // "finished with non-zero exit value 1" and the real reason buried in
+    // forge/build/tmp/neoformruntime/*/console_output.txt.
+    //
+    // The project this file was lifted from ships with it ON and builds fine, because it has no
+    // access transformer of its own and so never enables the validating step at all.
+    //
+    // Nothing is lost: common/ applies the SAME file against vanilla only, where our entries are
+    // the only ones present, so a mistake in it is still caught there and caught loudly.
+    validateAccessTransformers = false
+
+    // ONE access transformer, common's, in PLAIN names. Unlike the 1.21.11 branch there is no
+    // second SRG-named copy here: that is a ForgeGradle requirement, and this version builds with
+    // ModDevGradle's legacyForge, which works in official Mojang names throughout.
+    //
+    // Point at common's file by absolute path. The template tests common's copy for existence but
+    // then passes a path that resolves against THIS project, so with an AT present it would look
+    // for a forge/ copy that does not exist. Harmless for a mod with no AT, which is why it
+    // survived in the project this was lifted from.
+    def at = project(':common').file('src/main/resources/META-INF/accesstransformer.cfg')
+    if (at.exists()) {
+        accessTransformers.from(at.absolutePath)
+    }
+    parchment {
+        minecraftVersion = parchment_minecraft
+        mappingsVersion = parchment_version
+    }
+    runs {
+        client {
+            client()
+        }
+        data {
+            data()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+        }
+        server {
+            server()
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
+repositories {
+    maven { url = 'https://maven.shedaniel.me/' }
+}
+
+dependencies {
+    compileOnly project(":common")
+
+    // Cloth Config (AutoConfig). 11.1.136 has a Forge build covering both 1.20 and 1.20.1.
+    implementation("me.shedaniel.cloth:cloth-config-forge:${cloth_config_version}")
+}
+
+jar {
+    finalizedBy('reobfJar')
+}

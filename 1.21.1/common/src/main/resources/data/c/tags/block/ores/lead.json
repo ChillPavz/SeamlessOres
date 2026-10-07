@@ -1,0 +1,116 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_lead_ore",
+      "required": false
+    }
+  ]
+}

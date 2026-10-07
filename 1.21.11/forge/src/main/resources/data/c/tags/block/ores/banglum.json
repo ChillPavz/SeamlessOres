@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_banglum_ore",
+      "required": false
+    }
+  ]
+}

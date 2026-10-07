@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_peridot_ore",
+      "required": false
+    }
+  ]
+}

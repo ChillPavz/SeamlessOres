@@ -1,0 +1,589 @@
+package com.chillpavz.seamlessores.content;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.IntProvider;
+import net.minecraft.util.valueproviders.UniformInt;
+
+import java.util.List;
+import java.util.Set;
+
+/**
+ * An ore we produce host-matched variants of.
+ *
+ * <p>Ores are declared by <b>ResourceLocation, not Block reference</b>, so third-party ores can be
+ * declared without compiling against their mod. The ids resolve at two different times:
+ * <ul>
+ *   <li><b>Registration</b> (before other mods may have registered): vanilla ids are resolved for
+ *       {@code ofLegacyCopy}; modded ores never resolve here — their block properties are baked by
+ *       tier instead, because mod load order is not ours to rely on.</li>
+ *   <li><b>Worldgen injection</b> (server start, every registry complete): all ids resolve.</li>
+ * </ul>
+ *
+ * <p>An ore only applies to a host stone if it has a vanilla equivalent for that host's tier, so
+ * quartz never pairs with granite and iron never pairs with basalt. <b>This is also what stops us
+ * inventing ore for third-party mods:</b> an ore that targets only
+ * {@code stone_ore_replaceables} gets a null {@code deepslateOre}, so it produces granite, diorite
+ * and andesite variants but no tuff one, because it never generates in tuff to begin with.
+ *
+ * @param name             id suffix, e.g. {@code iron} -> {@code granite_iron_ore}
+ * @param overlay          texture key, {@code seamlessores:block/<overlay>_overlay}. Separate from
+ *                         {@code name} because overworld and nether gold are different <i>textures</i>
+ * @param deepslateOverlay overlay for DEEPSLATE-tier hosts when the mod draws that tier
+ *                         differently, or null to reuse {@code overlay}. Only Mythic Metals'
+ *                         unobtainium needs it: its deepslate ore is animated and its stone one is not
+ * @param requiredModId    mod that must be loaded for this ore's variants to exist, or null for
+ *                         vanilla. The registered block set stays derived: both sides have the mod or
+ *                         neither, so client and server always agree
+ * @param stoneOre         id of the ore this stands in for in stone-tier hosts, or null
+ * @param deepslateOre     id for deepslate-tier hosts, or null
+ * @param netherOre        id for nether-tier hosts, or null
+ * @param xp               experience dropped on break, for stone and nether tiers
+ * @param deepslateXp      experience for DEEPSLATE-tier hosts, or null to reuse {@code xp}. Only
+ *                         Mythic Metals' morkite needs it: 1-2 in stone but 1-3 in deepslate
+ * @param redstoneLike     redstone ore is a {@code RedStoneOreBlock} (lit state, random ticks), not a
+ *                         plain {@code DropExperienceBlock}, and handles its own xp internally
+ * @param skipHosts        host names to leave alone because the ore's own mod already ships a
+ *                         seamless variant for them. Ours would otherwise take that host over: the
+ *                         injector prepends its targets, so it would win against the mod's own entry
+ */
+public record OreType(String name, String overlay, String deepslateOverlay, String requiredModId,
+                      ResourceLocation stoneOre, ResourceLocation deepslateOre, ResourceLocation netherOre,
+                      IntProvider xp, IntProvider deepslateXp, boolean redstoneLike,
+                      Set<String> skipHosts) {
+
+    private static final IntProvider NONE = ConstantInt.of(0);
+
+    private static ResourceLocation mc(String path) {
+        return new ResourceLocation(path);
+    }
+
+    private static ResourceLocation of(String namespace, String path) {
+        return new ResourceLocation(namespace, path);
+    }
+
+    private static OreType overworld(String name, IntProvider xp) {
+        return new OreType(name, name, null, null,
+                mc(name + "_ore"), mc("deepslate_" + name + "_ore"), null, xp, null, false, Set.of());
+    }
+
+    private static OreType nether(String name, String overlay, String oreId, IntProvider xp) {
+        return new OreType(name, overlay, null, null, null, null, mc(oreId), xp, null, false, Set.of());
+    }
+
+    // XP values verified against Blocks.java in the decompiled source. Vanilla uses the SAME
+    // value for a stone ore and its deepslate counterpart, so host rock never changes xp - do not
+    // "improve" on this without reading the mechanics section of the maintainer notes first.
+    public static final OreType COAL = overworld("coal", UniformInt.of(0, 2));
+    public static final OreType IRON = overworld("iron", ConstantInt.of(0));
+    public static final OreType COPPER = overworld("copper", ConstantInt.of(0));
+    public static final OreType GOLD = overworld("gold", ConstantInt.of(0));
+    public static final OreType LAPIS = overworld("lapis", UniformInt.of(2, 5));
+    public static final OreType DIAMOND = overworld("diamond", UniformInt.of(3, 7));
+    public static final OreType EMERALD = overworld("emerald", UniformInt.of(3, 7));
+    public static final OreType REDSTONE = new OreType("redstone", "redstone", null, null,
+            mc("redstone_ore"), mc("deepslate_redstone_ore"), null, ConstantInt.of(0), null, true, Set.of());
+
+    // Nether. NETHER_GOLD is separate from GOLD despite the same block-name suffix: different
+    // overlay textures (gold over stone vs over netherrack), and they never share a host.
+    public static final OreType NETHER_GOLD = nether("gold", "nether_gold", "nether_gold_ore", UniformInt.of(0, 1));
+    public static final OreType QUARTZ = nether("quartz", "quartz", "nether_quartz_ore", UniformInt.of(2, 5));
+
+    /**
+     * The first modded ore, and the proof of the data-driven design. Facts verified against the real
+     * Create jar (mod id {@code create}): blocks {@code create:zinc_ore} /
+     * {@code create:deepslate_zinc_ore}; loot drops {@code create:raw_zinc} in the vanilla iron
+     * shape; worldgen is a plain {@code minecraft:ore} feature on the SAME two replaceables tags as
+     * vanilla — so our injection restyles existing zinc generation, balance-neutral; tool tier is
+     * {@code needs_iron_tool} (NOT stone, unlike iron/copper). XP 0 by raw-metal convention.
+     */
+    public static final OreType ZINC = new OreType("zinc", "zinc", null, "create",
+            of("create", "zinc_ore"), of("create", "deepslate_zinc_ore"),
+            null, ConstantInt.of(0), null, false, Set.of());
+
+    // --- Mythic Upgrades (mod id mythicupgrades, MIT) -------------------------------------------
+    // The five overworld ores target the SAME replaceables tags as vanilla, so injecting them is a
+    // pure restyle at zero balance cost. Ruby and sapphire are block_match netherrack only, so their
+    // basalt/blackstone variants ADD ore, the same caveat as our nether gold and quartz, and ride
+    // the same host toggles and bastion protection. Ametrine and jade are deliberately absent:
+    // end_stone only, and the End has no second stone type to be seamless with.
+    private static OreType mythic(String name, IntProvider xp) {
+        return new OreType(name, name, null, "mythicupgrades",
+                of("mythicupgrades", name + "_ore"), of("mythicupgrades", "deepslate_" + name + "_ore"),
+                null, xp, null, false, Set.of());
+    }
+
+    private static OreType mythicNether(String name, IntProvider xp) {
+        return new OreType(name, name, null, "mythicupgrades", null, null,
+                of("mythicupgrades", name + "_ore"), xp, null, false, Set.of());
+    }
+
+    public static final OreType AQUAMARINE = mythic("aquamarine", UniformInt.of(6, 14));
+    public static final OreType CITRINE = mythic("citrine", UniformInt.of(6, 14));
+    public static final OreType PERIDOT = mythic("peridot", UniformInt.of(6, 14));
+    public static final OreType TOPAZ = mythic("topaz", UniformInt.of(6, 14));
+    public static final OreType NECOIUM = mythic("necoium", ConstantInt.of(0));
+    public static final OreType RUBY = mythicNether("ruby", UniformInt.of(4, 10));
+    public static final OreType SAPPHIRE = mythicNether("sapphire", UniformInt.of(4, 10));
+
+    // --- Mythic Metals (mod id mythicmetals, MIT) -----------------------------------------------
+    // Every fact here was read out of the real jar; see the mapping table in the maintainer notes.
+    //
+    // THE RULE THAT STOPS US INVENTING ORE: ten of these target stone_ore_replaceables ONLY, so they
+    // generate in granite, diorite and andesite but NEVER in tuff, which lives in
+    // deepslate_ore_replaceables. Those get a null deepslateOre and so produce three variants, not
+    // four. Giving them a tuff variant would add ore that does not exist.
+    //
+    // XP: only morkite, stormyx and unobtainium drop any at all - the rest are registered through
+    // MythicBlocks' createOre overload that takes no experience provider. Morkite is also the reason
+    // deepslateXp exists: 1-2 in stone but 1-3 in deepslate.
+    private static OreType mmBoth(String name, IntProvider xp, IntProvider deepslateXp) {
+        return new OreType(name, name, null, "mythicmetals",
+                of("mythicmetals", name + "_ore"), of("mythicmetals", "deepslate_" + name + "_ore"),
+                null, xp, deepslateXp, false, Set.of());
+    }
+
+    /** Stone tier only: generates in granite, diorite and andesite, never in tuff. */
+    private static OreType mmStone(String name) {
+        return new OreType(name, name, null, "mythicmetals",
+                of("mythicmetals", name + "_ore"), null, null, NONE, null, false, Set.of());
+    }
+
+    private static OreType mmNether(String name, String overlay, String oreId, IntProvider xp,
+                                    Set<String> skipHosts) {
+        return new OreType(name, overlay, null, "mythicmetals", null, null,
+                of("mythicmetals", oreId), xp, null, false, skipHosts);
+    }
+
+    // Both tiers: granite, diorite, andesite and tuff.
+    public static final OreType ADAMANTITE = mmBoth("adamantite", NONE, null);
+    public static final OreType CARMOT = mmBoth("carmot", NONE, null);
+    public static final OreType MORKITE = mmBoth("morkite", UniformInt.of(1, 2), UniformInt.of(1, 3));
+    public static final OreType MYTHRIL = mmBoth("mythril", NONE, null);
+    public static final OreType PROMETHEUM = mmBoth("prometheum", NONE, null);
+    public static final OreType RUNITE = mmBoth("runite", NONE, null);
+    /** Unobtainium's DEEPSLATE ore is animated (4 frames) while its stone one is a still image. */
+    public static final OreType UNOBTAINIUM = new OreType("unobtainium", "unobtainium",
+            "unobtainium_deepslate", "mythicmetals",
+            of("mythicmetals", "unobtainium_ore"), of("mythicmetals", "deepslate_unobtainium_ore"),
+            null, NONE, UniformInt.of(4, 7), false, Set.of());
+
+    // Stone tier only.
+    public static final OreType AQUARIUM = mmStone("aquarium");
+    public static final OreType BANGLUM = mmStone("banglum");
+    public static final OreType KYBER = mmStone("kyber");
+    public static final OreType MANGANESE = mmStone("manganese");
+    public static final OreType OSMIUM = mmStone("osmium");
+    public static final OreType PLATINUM = mmStone("platinum");
+    public static final OreType QUADRILLUM = mmStone("quadrillum");
+    public static final OreType SILVER = mmStone("silver");
+    public static final OreType STARRITE = mmStone("starrite");
+    public static final OreType TIN = mmStone("tin");
+    /**
+     * Orichalcum targets both replaceables tags, but Mythic Metals ships its OWN
+     * {@code tuff_orichalcum_ore} through an explicit {@code block_match tuff} target that sits
+     * ahead of its deepslate tag entry. Tuff is therefore already seamless, and a variant of ours
+     * would take that host away from it, because the injector prepends. Stone tier only.
+     */
+    public static final OreType ORICHALCUM = mmStone("orichalcum");
+
+    // Nether. Like our own gold and quartz these ADD ore, so they ride the basalt and blackstone
+    // host toggles and the bastion protection. BANGLUM's nether form reuses the plain name for the
+    // same reason NETHER_GOLD does: the host already disambiguates, since the overworld form only
+    // pairs with stone-tier hosts and this one only with nether hosts.
+    public static final OreType NETHER_BANGLUM =
+            mmNether("banglum", "nether_banglum", "nether_banglum_ore", NONE, Set.of());
+    public static final OreType MIDAS_GOLD = mmNether("midas_gold", "midas_gold", "midas_gold_ore", NONE, Set.of());
+    public static final OreType PALLADIUM = mmNether("palladium", "palladium", "palladium_ore", NONE, Set.of());
+    /** Mythic Metals already ships {@code blackstone_stormyx_ore}, so we only add the basalt one. */
+    public static final OreType STORMYX =
+            mmNether("stormyx", "stormyx", "stormyx_ore", UniformInt.of(2, 4), Set.of("blackstone"));
+
+    // --- Silent's Gems (mod id silentgems, MIT) -------------------------------------------------
+    // Every gem targets BOTH replaceables tags, so all four host stones apply and injecting them is
+    // a pure restyle. Loot is the plain vanilla shape (silk touch returns the block, otherwise the
+    // gem with the ore_drops fortune formula), so the generator transforms their tables directly.
+    //
+    // XP was read out of the jar rather than assumed, and generalising would have been wrong twice:
+    // GemOreBlock's constructor hardcodes UniformInt.of(1, 5) for the twenty gems, but silver is
+    // ConstantInt.of(0) and chaos is UniformInt.of(3, 7), each built by its own factory method.
+    //
+    // NAME PREFIXES ARE LOAD BEARING. Our block id is <host>_<name>_ore, and five of these ores
+    // share a name with one we already ship: aquamarine, citrine, peridot and topaz collide with
+    // Mythic Upgrades, and silver with Mythic Metals. With both mods installed the same id would be
+    // registered twice. Those five carry a `silents_` prefix; the rest keep the plain name.
+    // Ruby and sapphire need NO prefix even though Mythic Upgrades has both: theirs are netherrack
+    // only, so they produce basalt_ruby_ore while these produce granite_ruby_ore. Different hosts,
+    // no clash. The overlay key follows the name, so the prefixed five need their own art files.
+    private static OreType silentGem(String name, IntProvider xp) {
+        final String plain = name.startsWith("silents_") ? name.substring("silents_".length()) : name;
+        return new OreType(name, name, null, "silentgems",
+                of("silentgems", plain + "_ore"), of("silentgems", "deepslate_" + plain + "_ore"),
+                null, xp, null, false, Set.of());
+    }
+
+    private static final IntProvider GEM_XP = UniformInt.of(1, 5);
+
+    public static final OreType SG_ALEXANDRITE = silentGem("alexandrite", GEM_XP);
+    public static final OreType SG_AMMOLITE = silentGem("ammolite", GEM_XP);
+    public static final OreType SG_BLACK_DIAMOND = silentGem("black_diamond", GEM_XP);
+    public static final OreType SG_CARNELIAN = silentGem("carnelian", GEM_XP);
+    public static final OreType SG_HELIODOR = silentGem("heliodor", GEM_XP);
+    public static final OreType SG_IOLITE = silentGem("iolite", GEM_XP);
+    public static final OreType SG_KYANITE = silentGem("kyanite", GEM_XP);
+    public static final OreType SG_MOLDAVITE = silentGem("moldavite", GEM_XP);
+    public static final OreType SG_ROSE_QUARTZ = silentGem("rose_quartz", GEM_XP);
+    // Same block names as Mythic Upgrades' nether ruby and sapphire, but their own art: the overlay
+    // key differs, or both mods' variants would share one texture.
+    public static final OreType SG_RUBY = new OreType("ruby", "silents_ruby", null, "silentgems",
+            of("silentgems", "ruby_ore"), of("silentgems", "deepslate_ruby_ore"), null, GEM_XP, null, false, Set.of());
+    public static final OreType SG_SAPPHIRE = new OreType("sapphire", "silents_sapphire", null, "silentgems",
+            of("silentgems", "sapphire_ore"), of("silentgems", "deepslate_sapphire_ore"), null, GEM_XP, null, false, Set.of());
+    public static final OreType SG_TURQUOISE = silentGem("turquoise", GEM_XP);
+    public static final OreType SG_WHITE_DIAMOND = silentGem("white_diamond", GEM_XP);
+    // Prefixed to avoid a block id clash, see above.
+    public static final OreType SG_CITRINE = silentGem("silents_citrine", GEM_XP);
+    public static final OreType SG_PERIDOT = silentGem("silents_peridot", GEM_XP);
+    public static final OreType SG_TOPAZ = silentGem("silents_topaz", GEM_XP);
+    /** A metal, not a gem: drops raw_silver and gives no experience. */
+    public static final OreType SG_SILVER = silentGem("silents_silver", NONE);
+    /** Chaos drops chaos_essence and is the only one of these with its own experience range. */
+
+    // --- Seven more third-party mods ------------------------------------------------------------
+    // All target both replaceables tags (so all four hosts) except Create: New Age's thorium, which
+    // is stone tier only. XP was read from each jar rather than assumed, and "it is a metal so it
+    // gives nothing" would have been wrong for two of them:
+    //   Dense Mekanism  fluorite UniformInt(1, 4), the other four nothing
+    //   Powah           all three uraninite grades ConstantInt(0)
+    //   Energized Power ConstantInt(0)
+    //   TFMG, Things, Create: New Age  no DropExperienceBlock anywhere in the jar, so nothing
+    //   Silent Gear     bort UniformInt(3, 7)  <- INFERRED, not proven; see the maintainer notes
+    //
+    // Loot is TRANSFORMED from each mod's own tables (the generator entries carry no raw_drop),
+    // because Dense Mekanism and Powah both use set_count and a hand-built vanilla-shape table
+    // would change their yields. Same call as Mythic Metals.
+    private static OreType modded(String name, String modId, String namespace, String plain,
+                                  IntProvider xp) {
+        return new OreType(name, name, null, modId,
+                of(namespace, plain + "_ore"), of(namespace, "deepslate_" + plain + "_ore"),
+                null, xp, null, false, Set.of());
+    }
+
+    // Dense Mekanism. Its blocks are dense_<ore>_ore / dense_deepslate_<ore>_ore, so the plain name
+    // does not follow the usual pattern and each is spelled out. Its 1.20.1 build (1.1.0) is on
+    // CurseForge only; its strength is not the vanilla one, see SeamlessOresContent.STRENGTH_OVERRIDES.
+    private static OreType dmek(String ore, IntProvider xp) {
+        return new OreType("dense_" + ore, "dense_" + ore, null, "densemekanism",
+                of("densemekanism", "dense_" + ore + "_ore"),
+                of("densemekanism", "dense_deepslate_" + ore + "_ore"),
+                null, xp, null, false, Set.of());
+    }
+
+    public static final OreType DENSE_FLUORITE = dmek("fluorite", UniformInt.of(1, 4));
+    public static final OreType DENSE_LEAD = dmek("lead", NONE);
+    public static final OreType DENSE_OSMIUM = dmek("osmium", NONE);
+    public static final OreType DENSE_TIN = dmek("tin", NONE);
+    public static final OreType DENSE_URANIUM = dmek("uranium", NONE);
+
+
+    // Powah. Three grades of the same ore, named uraninite_ore_poor / _dense in the mod.
+    private static OreType powah(String name, String plain) {
+        return new OreType(name, name, null, "powah",
+                of("powah", plain), of("powah", "deepslate_" + plain), null, NONE, null, false, Set.of());
+    }
+
+    public static final OreType URANINITE = powah("uraninite", "uraninite_ore");
+    public static final OreType URANINITE_POOR = powah("uraninite_poor", "uraninite_ore_poor");
+    public static final OreType URANINITE_DENSE = powah("uraninite_dense", "uraninite_ore_dense");
+
+    // Create: The Factory Must Grow. Its bauxite, galena, lignite and fireclay are NOT ores, they
+    // are striated deposit blocks placed by create:layered_ore, so only these three apply.
+    public static final OreType TFMG_LEAD = modded("lead", "tfmg", "tfmg", "lead", NONE);
+    public static final OreType TFMG_LITHIUM = modded("lithium", "tfmg", "tfmg", "lithium", NONE);
+    public static final OreType TFMG_NICKEL = modded("nickel", "tfmg", "tfmg", "nickel", NONE);
+
+    /** Prefixed: plain {@code tin} is already Mythic Metals', and both are stone-tier hosts. */
+    public static final OreType ENERGIZED_TIN =
+            modded("energized_tin", "energizedpower", "energizedpower", "tin", NONE);
+
+    public static final OreType GLEAMING = modded("gleaming", "things", "things", "gleaming", NONE);
+    public static final OreType BORT =
+            modded("bort", "silentgear", "silentgear", "bort", UniformInt.of(3, 7));
+
+    /**
+     * Create: New Age targets {@code stone_ore_replaceables} only, so thorium generates in granite,
+     * diorite and andesite but never tuff. Its magnetite_block is excluded: a whole-block deposit at
+     * 15 veins per chunk, not an ore with blobs on a host stone.
+     */
+    public static final OreType THORIUM = new OreType("thorium", "thorium", null, "create_new_age",
+            of("create_new_age", "thorium_ore"), null, null, NONE, null, false, Set.of());
+
+    // Silent's Gems in the NETHER. Like our own gold and quartz these ADD ore, because the mod
+    // targets c:netherracks only, so they ride the basalt and blackstone host toggles, the nether
+    // rarity and vein-size dials, and the bastion protection.
+    //
+    // ONLY EIGHT OF THE TWENTY-ONE NETHER GEMS ARE HERE, and that is the whole point: the other
+    // thirteen (ammolite, aquamarine, garnet, heliodor, kyanite, opal, peridot, rose_quartz, ruby,
+    // sapphire, topaz, turquoise, white_diamond) have count 0 AND size 0 in their placed features,
+    // so they are registered but place nothing. Giving those a variant would invent ore outright.
+    // A feature can target the right tag and still be inert - check the placement counts too.
+    //
+    // These reuse the overworld overlay rather than needing new art: measured against the mod's own
+    // nether textures, the existing masks land 96-100% on the gem pixels, because Silent's Gems
+    // draws the same blobs on netherrack that it draws on stone.
+    //
+    // Air exposure is INHERITED from the mod's feature (discard 0.0, so they do show on exposed
+    // faces). That is deliberate: we extend their target list rather than adding a feature, and a
+    // gem visible in a netherrack wall should still be visible when the wall is basalt. Contrast
+    // Mythic Upgrades' ruby and sapphire, which are genuinely new veins through NetherGemFeature at
+    // discard 1.0, copied from ancient debris.
+    private static OreType silentNether(String name, String plain) {
+        return new OreType(name, name, null, "silentgems", null, null,
+                of("silentgems", plain + "_nether_ore"), GEM_XP, null, false, Set.of());
+    }
+
+    public static final OreType SG_N_ALEXANDRITE = silentNether("alexandrite", "alexandrite");
+    public static final OreType SG_N_BLACK_DIAMOND = silentNether("black_diamond", "black_diamond");
+    public static final OreType SG_N_CARNELIAN = silentNether("carnelian", "carnelian");
+    public static final OreType SG_N_CITRINE = silentNether("silents_citrine", "citrine");
+    public static final OreType SG_N_IOLITE = silentNether("iolite", "iolite");
+    public static final OreType SG_N_MOLDAVITE = silentNether("moldavite", "moldavite");
+
+    // --- Ice and Fire (mod id iceandfire, LGPL-3.0). Forge only at 1.20.1 ---------------------
+    // Both ids are PREFIXED because Silent's Gems ships its own sapphire and silver and both mods
+    // are Forge here, so they coexist and the unprefixed ids would collide. Block ids are a one-way
+    // door; the newcomer takes the prefix.
+    //
+    // Sapphire has NO deepslate tier: its feature targets stone_ore_replaceables only, so there is
+    // no tuff variant and one would be inventing ore. Silver gives no XP (metal convention, and it
+    // is built with the one-argument DropExperienceBlock constructor); sapphire is a gem at 3-7,
+    // read out of IafBlockRegistry rather than assumed.
+    public static final OreType IAF_SAPPHIRE = new OreType(
+            "iceandfire_sapphire", "iceandfire_sapphire", null, "iceandfire",
+            of("iceandfire", "sapphire_ore"), null, null,
+            UniformInt.of(3, 7), null, false, Set.of());
+    public static final OreType IAF_SILVER = new OreType(
+            "iceandfire_silver", "iceandfire_silver", null, "iceandfire",
+            of("iceandfire", "silver_ore"), of("iceandfire", "deepslate_silver_ore"), null,
+            NONE, null, false, Set.of());
+
+    // --- Exp Ores (mod id expores, MIT). Fabric only at 1.20.1 --------------------------------
+    // Pays in experience alone: its loot table drops minecraft:air, and the block carries
+    // UniformInt(96, 128), read from EXPBlocks. That is far above any vanilla ore and is the whole
+    // point of the mod, so it is copied rather than normalised.
+    //
+    // The nether one is a PURE RESTYLE: expores:nether_experience_ore targets the base_stone_nether
+    // TAG, so it already generates in basalt and blackstone. Unlike our gold and quartz it adds
+    // nothing, which is why it carries no rarity dial and no "adds ore" caveat.
+    public static final OreType EXPERIENCE = new OreType(
+            "experience", "experience", null, "expores",
+            of("expores", "experience_ore"), of("expores", "deepslate_experience_ore"), null,
+            UniformInt.of(96, 128), null, false, Set.of());
+    public static final OreType NETHER_EXPERIENCE = new OreType(
+            "experience", "nether_experience", null, "expores",
+            null, null, of("expores", "nether_experience_ore"),
+            UniformInt.of(96, 128), null, false, Set.of());
+
+    // --- Tech Reborn (Fabric only at 1.20.1) ------------------------------------------------------
+    // XP read from TR 5.8.15's OreDistribution enum: ruby and sapphire 2-6, every other ore 0. No
+    // uranium at 1.20.1. Prefixed where the plain name is taken; block ids are a one-way door, so
+    // these names match every other branch.
+    public static final OreType TR_BAUXITE = modded("techreborn_bauxite", "techreborn", "techreborn", "bauxite", NONE);
+    public static final OreType TR_GALENA = modded("galena", "techreborn", "techreborn", "galena", NONE);
+    public static final OreType TR_IRIDIUM = modded("iridium", "techreborn", "techreborn", "iridium", NONE);
+    public static final OreType TR_LEAD = modded("techreborn_lead", "techreborn", "techreborn", "lead", NONE);
+    public static final OreType TR_RUBY =
+            modded("techreborn_ruby", "techreborn", "techreborn", "ruby", UniformInt.of(2, 6));
+    public static final OreType TR_SAPPHIRE =
+            modded("techreborn_sapphire", "techreborn", "techreborn", "sapphire", UniformInt.of(2, 6));
+    public static final OreType TR_SILVER = modded("techreborn_silver", "techreborn", "techreborn", "silver", NONE);
+    public static final OreType TR_TIN = modded("techreborn_tin", "techreborn", "techreborn", "tin", NONE);
+
+    // --- Modern Industrialization (Fabric only at 1.20.1; the loader flips to NeoForge at 1.21.1) --
+    // XP read from MIMaterials (1.8.6): bauxite and monazite 1-4, salt 1-3, lignite coal 0-2. The rest
+    // take OrePart's default, UniformInt.of(0, 0). IRIDIUM GENERATES HERE, unlike 1.21.1, on both
+    // tiers, and is prefixed: Tech Reborn's plain "iridium" is also Fabric at 1.20.1.
+    private static OreType mi(String name, String plain, IntProvider xp) {
+        return modded(name, "modern_industrialization", "modern_industrialization", plain, xp);
+    }
+
+    public static final OreType MI_ANTIMONY = mi("antimony", "antimony", NONE);
+    public static final OreType MI_BAUXITE = mi("mi_bauxite", "bauxite", UniformInt.of(1, 4));
+    public static final OreType MI_IRIDIUM = mi("mi_iridium", "iridium", NONE);
+    public static final OreType MI_LEAD = mi("mi_lead", "lead", NONE);
+    public static final OreType MI_LIGNITE_COAL = mi("lignite_coal", "lignite_coal", UniformInt.of(0, 2));
+    public static final OreType MI_MONAZITE = mi("monazite", "monazite", UniformInt.of(1, 4));
+    public static final OreType MI_NICKEL = mi("mi_nickel", "nickel", NONE);
+    public static final OreType MI_SALT = mi("salt", "salt", UniformInt.of(1, 3));
+    public static final OreType MI_TIN = mi("mi_tin", "tin", NONE);
+    public static final OreType MI_TUNGSTEN = mi("tungsten", "tungsten", NONE);
+    public static final OreType MI_URANIUM = mi("uranium", "uranium", NONE);
+
+    /**
+     * Occultism puts the tier word LAST ({@code silver_ore_deepslate}), so this cannot use
+     * {@link #modded}. Its silver ore is a plain {@code Block}: no experience (read at 1.20.1).
+     */
+    public static final OreType OCCULTISM_SILVER = new OreType("occultism_silver", "occultism_silver", null,
+            "occultism", of("occultism", "silver_ore"), of("occultism", "silver_ore_deepslate"),
+            null, NONE, null, false, Set.of());
+
+    /** Extreme Reactors registers yellorite with an xp range of 0, 0. Its overlay animates. */
+    public static final OreType YELLORITE = modded("yellorite", "bigreactors", "bigreactors", "yellorite", NONE);
+
+    /** Mystical Agriculture: Cucumber's BaseOreBlock with 2-5 on both tiers (read at 1.20.1). */
+    public static final OreType INFERIUM =
+            modded("inferium", "mysticalagriculture", "mysticalagriculture", "inferium", UniformInt.of(2, 5));
+    public static final OreType PROSPERITY =
+            modded("prosperity", "mysticalagriculture", "mysticalagriculture", "prosperity", UniformInt.of(2, 5));
+
+    // --- Immersive Engineering (Forge and NeoForge at 1.20.1) --------------------------------------
+    // Five ores, and every one of its features targets stone_ore_replaceables AND
+    // deepslate_ore_replaceables, so each gets all four overworld hosts and none of them invents ore.
+    //
+    // This cannot use modded(): IE puts the tier word FIRST (ore_lead, deepslate_ore_lead), the
+    // opposite of Occultism's trailing one. Its ore blocks are plain Blocks with no experience
+    // provider, so no XP, and their properties are vanilla's own (3.0/3.0 in stone, 4.5/3.0 in
+    // deepslate), read from IEBlocks$Metals rather than assumed.
+    //
+    // Lead, nickel, silver and uranium are prefixed because those names are already taken on this
+    // branch. Aluminum is free and is prefixed anyway, so that all five line up with the pack's
+    // family keys and with the one overlay file the mod and the pack share. Block ids are a one-way
+    // door, so these names are now fixed.
+    //
+    // ITS FEATURES ARE NOT minecraft:ore. They are immersiveengineering:ie_ore, whose config is IE's
+    // own record rather than an OreConfiguration, which is why OreTargetInjector grew the foreign
+    // config path - see ForeignOreTargets. Art used with BluSunrize's permission (14 Sept 2026);
+    // crediting Immersive Engineering and BluSunrize is a condition of it.
+    private static OreType immersiveEngineering(String name, String metal) {
+        return new OreType(name, name, null, "immersiveengineering",
+                of("immersiveengineering", "ore_" + metal),
+                of("immersiveengineering", "deepslate_ore_" + metal),
+                null, NONE, null, false, Set.of());
+    }
+
+    public static final OreType IE_ALUMINUM = immersiveEngineering("ie_aluminum", "aluminum");
+    public static final OreType IE_LEAD = immersiveEngineering("ie_lead", "lead");
+    public static final OreType IE_NICKEL = immersiveEngineering("ie_nickel", "nickel");
+    public static final OreType IE_SILVER = immersiveEngineering("ie_silver", "silver");
+    public static final OreType IE_URANIUM = immersiveEngineering("ie_uranium", "uranium");
+
+    // Mekanism (MIT, Aidan C. Brady). Five ores, all five on stone_ore_replaceables plus
+    // deepslate_ore_replaceables, so every overworld host is a pure restyle.
+    //
+    // ITS FEATURES ARE NOT minecraft:ore either: mekanism:ore, configured by its own record
+    // ResizableOreFeatureConfig, so it goes through the same ForeignOreTargets path IE needed.
+    // Read from its jar rather than assumed: BlockOre is strength(3, 3) and the deepslate form
+    // 4.5 / 3, which is exactly the convention createBlock bakes, so no STRENGTH_OVERRIDES entry.
+    // Tool tier is stone for all ten blocks. XP is the one place they differ from each other:
+    // OreType carries minExp/maxExp and only FLUORITE passes any, 1 to 4.
+    private static OreType mekanism(String name, String ore, IntProvider xp) {
+        return new OreType(name, name, null, "mekanism",
+                of("mekanism", ore + "_ore"), of("mekanism", "deepslate_" + ore + "_ore"),
+                null, xp, null, false, Set.of());
+    }
+
+    public static final OreType MEK_FLUORITE = mekanism("mek_fluorite", "fluorite", UniformInt.of(1, 4));
+    public static final OreType MEK_LEAD = mekanism("mek_lead", "lead", NONE);
+    public static final OreType MEK_OSMIUM = mekanism("mek_osmium", "osmium", NONE);
+    public static final OreType MEK_TIN = mekanism("mek_tin", "tin", NONE);
+    public static final OreType MEK_URANIUM = mekanism("mek_uranium", "uranium", NONE);
+
+    // --- Oreganized ------------------------------------------------------------------------------
+    // Lead and silver, both on the replaceables tags, so a pure restyle. Its ore blocks copy gold
+    // ore (3/3, 4.5/3 in deepslate) with no experience, which is the convention, so no override.
+    // Prefixed because lead and silver are taken on this branch; the overlay is shared with the pack.
+    public static final OreType OREGANIZED_LEAD = modded("oreganized_lead", "oreganized", "oreganized", "lead", NONE);
+    public static final OreType OREGANIZED_SILVER = modded("oreganized_silver", "oreganized", "oreganized", "silver", NONE);
+
+    // --- Nether ores that ADD ore (Sept 2026) -----------------------------------------------------
+    // Each targets netherrack only, so basalt and blackstone variants put ore where the mod places
+    // none. Behind the owning mod's own nether switch and thinned by netherOreRarity, like our gold
+    // and quartz.
+    private static OreType netherOnlyModded(String name, String modId, String oreId, IntProvider xp) {
+        return new OreType(name, name, null, modId, null, null, of(modId, oreId), xp, null, false, Set.of());
+    }
+
+    /** Tech Reborn's three: OreDistribution passes them no experience. */
+    public static final OreType TR_CINNABAR = netherOnlyModded("cinnabar", "techreborn", "cinnabar_ore", NONE);
+    public static final OreType TR_PYRITE = netherOnlyModded("pyrite", "techreborn", "pyrite_ore", NONE);
+    public static final OreType TR_SPHALERITE = netherOnlyModded("sphalerite", "techreborn", "sphalerite_ore", NONE);
+
+    /** Extreme Reactors registers benitoite through the two-argument registerOreBlock, which passes 3, 5. */
+    public static final OreType BENITOITE =
+            netherOnlyModded("benitoite", "bigreactors", "benitoite_ore", UniformInt.of(3, 5));
+
+    // --- Cobblemon (Fabric and Forge at 1.20.1, version 1.5.2) --------------------------------------
+    // Every evolution stone ore comes from Cobblemon's evolutionStoneOre helpers: a DropExperienceBlock
+    // with UniformInt.of(1, 2), stone and deepslate alike, and the nether fire stone the same. Fire
+    // stone is the one type carrying all three tiers, because its nether ore shares the art. Unlike
+    // the 1.21.1 build, 1.5.2's helpers set NO light level on any ore (checked), so there is no light
+    // table on this branch.
+    private static final IntProvider COBBLEMON_XP = UniformInt.of(1, 2);
+
+    private static OreType cobblemon(String plain) {
+        return modded(plain, "cobblemon", "cobblemon", plain, COBBLEMON_XP);
+    }
+
+    public static final OreType CB_DAWN_STONE = cobblemon("dawn_stone");
+    public static final OreType CB_DUSK_STONE = cobblemon("dusk_stone");
+    public static final OreType CB_ICE_STONE = cobblemon("ice_stone");
+    public static final OreType CB_LEAF_STONE = cobblemon("leaf_stone");
+    public static final OreType CB_MOON_STONE = cobblemon("moon_stone");
+    public static final OreType CB_SHINY_STONE = cobblemon("shiny_stone");
+    public static final OreType CB_SUN_STONE = cobblemon("sun_stone");
+    public static final OreType CB_THUNDER_STONE = cobblemon("thunder_stone");
+    public static final OreType CB_WATER_STONE = cobblemon("water_stone");
+    public static final OreType CB_FIRE_STONE = new OreType("fire_stone", "fire_stone", null, "cobblemon",
+            of("cobblemon", "fire_stone_ore"), of("cobblemon", "deepslate_fire_stone_ore"),
+            of("cobblemon", "nether_fire_stone_ore"), COBBLEMON_XP, null, false, Set.of());
+
+    public static final List<OreType> ALL =
+            List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
+                    ZINC,
+                    AQUAMARINE, CITRINE, PERIDOT, TOPAZ, NECOIUM, RUBY, SAPPHIRE,
+                    ADAMANTITE, CARMOT, MORKITE, MYTHRIL, PROMETHEUM, RUNITE, UNOBTAINIUM,
+                    AQUARIUM, BANGLUM, KYBER, MANGANESE, OSMIUM, PLATINUM, QUADRILLUM, SILVER,
+                    STARRITE, TIN, ORICHALCUM,
+                    NETHER_BANGLUM, MIDAS_GOLD, PALLADIUM, STORMYX,
+                    SG_ALEXANDRITE, SG_AMMOLITE, SG_BLACK_DIAMOND, SG_CARNELIAN, SG_HELIODOR, SG_IOLITE, SG_KYANITE, SG_MOLDAVITE, SG_ROSE_QUARTZ,
+                    SG_RUBY, SG_SAPPHIRE, SG_TURQUOISE, SG_WHITE_DIAMOND,
+                    SG_CITRINE, SG_PERIDOT, SG_TOPAZ, SG_SILVER, DENSE_FLUORITE, DENSE_LEAD, DENSE_OSMIUM, DENSE_TIN, DENSE_URANIUM,
+                    URANINITE, URANINITE_POOR, URANINITE_DENSE,
+                    TFMG_LEAD, TFMG_LITHIUM, TFMG_NICKEL,
+                    ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
+                    SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
+                    SG_N_IOLITE, SG_N_MOLDAVITE,
+                    IAF_SAPPHIRE, IAF_SILVER, EXPERIENCE, NETHER_EXPERIENCE,
+                    TR_BAUXITE, TR_GALENA, TR_IRIDIUM, TR_LEAD, TR_RUBY, TR_SAPPHIRE, TR_SILVER, TR_TIN,
+                    MI_ANTIMONY, MI_BAUXITE, MI_IRIDIUM, MI_LEAD, MI_LIGNITE_COAL, MI_MONAZITE, MI_NICKEL,
+                    MI_SALT, MI_TIN, MI_TUNGSTEN, MI_URANIUM,
+                    OCCULTISM_SILVER, YELLORITE, INFERIUM, PROSPERITY,
+                    IE_ALUMINUM, IE_LEAD, IE_NICKEL, IE_SILVER, IE_URANIUM,
+                    MEK_FLUORITE, MEK_LEAD, MEK_OSMIUM, MEK_TIN, MEK_URANIUM,
+                    OREGANIZED_LEAD, OREGANIZED_SILVER,
+                    TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, BENITOITE,
+                    CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE,
+                    CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE);
+
+    /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
+    public ResourceLocation vanillaFor(HostStone host) {
+        if (skipHosts.contains(host.name())) {
+            return null;
+        }
+        return switch (host.tier()) {
+            case STONE -> stoneOre;
+            case DEEPSLATE -> deepslateOre;
+            case NETHER -> netherOre;
+        };
+    }
+
+    /** Overlay texture key for this host, honouring a per-tier override. */
+    public String overlayFor(HostStone host) {
+        return host.tier() == OreTier.DEEPSLATE && deepslateOverlay != null ? deepslateOverlay : overlay;
+    }
+
+    /** Experience for this host, honouring a per-tier override. */
+    public IntProvider xpFor(HostStone host) {
+        return host.tier() == OreTier.DEEPSLATE && deepslateXp != null ? deepslateXp : xp;
+    }
+}

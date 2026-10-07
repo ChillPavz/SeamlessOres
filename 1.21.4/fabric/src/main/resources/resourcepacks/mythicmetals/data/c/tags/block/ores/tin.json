@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_tin_ore",
+      "required": false
+    }
+  ]
+}

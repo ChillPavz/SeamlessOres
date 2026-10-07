@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_gleaming_ore",
+      "required": false
+    }
+  ]
+}
