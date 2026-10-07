@@ -4,6 +4,66 @@
     "seamlessores:diorite_copper_ore",
     "seamlessores:andesite_copper_ore",
     "seamlessores:tuff_copper_ore",
-    "seamlessores:dripstone_copper_ore"
+    "seamlessores:dripstone_copper_ore",
+    {
+      "id": "seamlessores:blockus_bluestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_citrine_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_peridot_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_topaz_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_copper_ore",
+      "required": false
+    }
   ]
 }

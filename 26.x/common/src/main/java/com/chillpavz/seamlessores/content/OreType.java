@@ -80,10 +80,12 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType GOLD = overworld("gold", ConstantInt.of(0));
     public static final OreType LAPIS = overworld("lapis", UniformInt.of(2, 5));
     public static final OreType DIAMOND = overworld("diamond", UniformInt.of(3, 7));
-    // No dripstone emerald: emerald generates only in mountain biomes, which never hold dripstone caves.
+    // Dripstone emerald exists although dripstone caves never reach the mountains where emerald
+    // generates: Create's strata lay dripstone blocks there, and the Matrix ores convert the emerald
+    // they swallow into this block.
     public static final OreType EMERALD = new OreType("emerald", "emerald", null, null,
             mc("emerald_ore"), mc("deepslate_emerald_ore"), null, UniformInt.of(3, 7), null, false,
-            Set.of("dripstone"));
+            Set.of());
     public static final OreType REDSTONE = new OreType("redstone", "redstone", null, null,
             mc("redstone_ore"), mc("deepslate_redstone_ore"), null, ConstantInt.of(0), null, true, Set.of());
 

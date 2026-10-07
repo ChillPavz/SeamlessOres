@@ -32,6 +32,16 @@ public final class SeamlessOresConfig {
     public static boolean oreVeins = true;
 
     /**
+     * Whether an ore that could never form in granite, diorite, andesite or tuff is refused there.
+     *
+     * <p><b>This REMOVES ore</b>, so it is off by default: where the ore feature would have placed a
+     * refused ore, the rock stays rock. Worldgen only; every block stays registered. See
+     * {@code content.OreGeology} for the rule set. The Matrix ores in modded stones follow a fixed
+     * geology rule of their own, whatever this says.
+     */
+    public static boolean geology = false;
+
+    /**
      * Whether ore left standing in a Lush Caves clay or moss patch becomes clay or moss.
      *
      * <p><b>This REMOVES a little ore</b>, the one overworld setting besides copper that changes how
@@ -344,6 +354,7 @@ public final class SeamlessOresConfig {
         public boolean basalt = true;
         public boolean blackstone = true;
         public boolean oreVeins = true;
+        public boolean geology = false;
         public boolean bastionSafeNether = true;
         public int netherOreRarity = 2;
         public int netherVeinSize = 80;
@@ -386,6 +397,7 @@ public final class SeamlessOresConfig {
         disabledHosts = Set.copyOf(disabled);
 
         oreVeins = values.oreVeins;
+        geology = values.geology;
         lushCaves = values.lushCaves;
         sulfurCaves = values.sulfurCaves;
         cinnabarAmount = Math.max(0, Math.min(CINNABAR_AMOUNT_MAX, values.cinnabarAmount));

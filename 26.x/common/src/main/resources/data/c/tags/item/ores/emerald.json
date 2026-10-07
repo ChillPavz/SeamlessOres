@@ -3,6 +3,27 @@
     "seamlessores:granite_emerald_ore",
     "seamlessores:diorite_emerald_ore",
     "seamlessores:andesite_emerald_ore",
-    "seamlessores:tuff_emerald_ore"
+    "seamlessores:tuff_emerald_ore",
+    "seamlessores:dripstone_emerald_ore",
+    {
+      "id": "seamlessores:blockus_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_emerald_ore",
+      "required": false
+    }
   ]
 }

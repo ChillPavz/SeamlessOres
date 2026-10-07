@@ -4,6 +4,22 @@
     "seamlessores:diorite_coal_ore",
     "seamlessores:andesite_coal_ore",
     "seamlessores:tuff_coal_ore",
-    "seamlessores:dripstone_coal_ore"
+    "seamlessores:dripstone_coal_ore",
+    {
+      "id": "seamlessores:blockus_limestone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_coal_ore",
+      "required": false
+    }
   ]
 }

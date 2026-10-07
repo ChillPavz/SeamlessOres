@@ -79,6 +79,186 @@
     {
       "id": "seamlessores:dripstone_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_silver_ore",
+      "required": false
     }
   ]
 }

@@ -918,6 +918,7 @@
     "seamlessores:dripstone_gold_ore",
     "seamlessores:dripstone_lapis_ore",
     "seamlessores:dripstone_diamond_ore",
+    "seamlessores:dripstone_emerald_ore",
     "seamlessores:dripstone_redstone_ore",
     {
       "id": "seamlessores:dripstone_zinc_ore",

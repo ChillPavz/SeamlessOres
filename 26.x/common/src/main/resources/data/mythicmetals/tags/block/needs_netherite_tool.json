@@ -19,6 +19,66 @@
     {
       "id": "seamlessores:dripstone_unobtainium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_unobtainium_ore",
+      "required": false
     }
   ]
 }

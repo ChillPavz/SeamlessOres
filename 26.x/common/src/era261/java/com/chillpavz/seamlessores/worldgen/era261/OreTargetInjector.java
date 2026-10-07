@@ -2,6 +2,7 @@ package com.chillpavz.seamlessores.worldgen.era261;
 
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
+import com.chillpavz.seamlessores.content.OreGeology;
 import com.chillpavz.seamlessores.content.OreTier;
 import com.chillpavz.seamlessores.content.OreVariant;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
@@ -13,6 +14,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
@@ -74,6 +76,7 @@ public final class OreTargetInjector {
         final Registry<ConfiguredFeature<?, ?>> features = registries.lookupOrThrow(Registries.CONFIGURED_FEATURE);
         int patchedFeatures = 0;
         int addedTargets = 0;
+        int refusedTargets = 0;
         int resizedFeatures = 0;
 
         // listElements() gives Holder.Reference rather than the bare value, which is what lets us
@@ -126,8 +129,12 @@ public final class OreTargetInjector {
                 if (equivalent == null || !containsBlock(ore.targetStates, equivalent)) {
                     continue;
                 }
-                extra.add(OreConfiguration.target(
-                        new BlockMatchTest(variant.host().block()), ourBlock.defaultBlockState()));
+                // The geology option may refuse the pair: then the rock stays rock (see OreGeology).
+                final BlockState placed = OreGeology.placed(variant, ourBlock);
+                if (placed.getBlock() != ourBlock) {
+                    refusedTargets++;
+                }
+                extra.add(OreConfiguration.target(new BlockMatchTest(variant.host().block()), placed));
                 extraVariants.add(variant);
             }
 
@@ -171,6 +178,10 @@ public final class OreTargetInjector {
 
         Constants.LOG.info("Worldgen: added {} ore targets across {} features ({} resized)",
                 addedTargets, patchedFeatures, resizedFeatures);
+        if (SeamlessOresConfig.geology) {
+            Constants.LOG.info("Worldgen: geology refuses {} of those ore targets (the rock stays rock)",
+                    refusedTargets);
+        }
 
         // Copper is thinned separately, and NOT from here. It edits placement COUNTS by rebinding
         // a placed feature to a new instance, which has to happen before ChunkGenerator builds its

@@ -2,12 +2,16 @@ package com.chillpavz.seamlessores.config;
 
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
+import com.chillpavz.seamlessores.matrix.MatrixConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.minecraft.world.InteractionResult;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Cloth Config data class.
@@ -70,6 +74,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean oreVeins = true;
 
+    // Removes ore: an ore that could never form in granite, diorite, andesite or tuff stays that
+    // rock instead. Off by default; see SeamlessOresConfig.geology.
+    @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean geology = false;
+
 
     // Copper. The ONLY overworld settings that change how much ore there is rather than how it
     // looks - see SeamlessOresConfig and the store page. 100 is vanilla exactly.
@@ -127,6 +137,104 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 3)
     @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
     public int netherVeinSize = 80;
+
+    // --- Modded Stones ----------------------------------------------------------------------------
+    // One switch per stone that another mod adds (Blockus, Create, Mythic Upgrades and so on), for the
+    // ores that end up inside it. The screen factory hides the switch of a stone whose mod is absent.
+
+    // BEGIN GENERATED matrix switches (tools/matrix/generate_matrix.py, from the Matrix host table)
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean blockusLimestone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean blockusMarble = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean blockusBluestone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean blockusViridite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createAsurine = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createCrimsite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createLimestone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createOchrum = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createScorchia = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createScoria = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createVeridium = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean minecraftCalcite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean minecraftDripstoneBlock = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean minecraftSmoothBasalt = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean forbiddenArcanusDarkstone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean mythicupgradesAquamarineSchist = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean mythicupgradesCitrineSchist = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean mythicupgradesPeridotSchist = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean mythicupgradesTopazSchist = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean mythicupgradesSapphireSchist = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean promenadeAsphalt = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean promenadeBlunite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean wilderwildGabbro = true;
+    // END GENERATED matrix switches
 
     // --- Create ---------------------------------------------------------------------------------
 
@@ -284,6 +392,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.basalt = basalt;
         values.blackstone = blackstone;
         values.oreVeins = oreVeins;
+        values.geology = geology;
 
         values.bastionSafeNether = bastionSafeNether;
         values.netherOreRarity = netherOreRarity;
@@ -318,5 +427,33 @@ public class SeamlessOresConfigData implements ConfigData {
         values.createNewAge = createNewAge;
 
         SeamlessOresConfig.apply(values);
+
+        final Map<String, Boolean> matrix = new HashMap<>();
+        // BEGIN GENERATED matrix push (tools/matrix/generate_matrix.py)
+        matrix.put("blockus_limestone", blockusLimestone);
+        matrix.put("blockus_marble", blockusMarble);
+        matrix.put("blockus_bluestone", blockusBluestone);
+        matrix.put("blockus_viridite", blockusViridite);
+        matrix.put("create_asurine", createAsurine);
+        matrix.put("create_crimsite", createCrimsite);
+        matrix.put("create_limestone", createLimestone);
+        matrix.put("create_ochrum", createOchrum);
+        matrix.put("create_scorchia", createScorchia);
+        matrix.put("create_scoria", createScoria);
+        matrix.put("create_veridium", createVeridium);
+        matrix.put("minecraft_calcite", minecraftCalcite);
+        matrix.put("minecraft_dripstone_block", minecraftDripstoneBlock);
+        matrix.put("minecraft_smooth_basalt", minecraftSmoothBasalt);
+        matrix.put("forbidden_arcanus_darkstone", forbiddenArcanusDarkstone);
+        matrix.put("mythicupgrades_aquamarine_schist", mythicupgradesAquamarineSchist);
+        matrix.put("mythicupgrades_citrine_schist", mythicupgradesCitrineSchist);
+        matrix.put("mythicupgrades_peridot_schist", mythicupgradesPeridotSchist);
+        matrix.put("mythicupgrades_topaz_schist", mythicupgradesTopazSchist);
+        matrix.put("mythicupgrades_sapphire_schist", mythicupgradesSapphireSchist);
+        matrix.put("promenade_asphalt", promenadeAsphalt);
+        matrix.put("promenade_blunite", promenadeBlunite);
+        matrix.put("wilderwild_gabbro", wilderwildGabbro);
+        // END GENERATED matrix push
+        MatrixConfig.apply(matrix);
     }
 }

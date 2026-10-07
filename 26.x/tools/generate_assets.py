@@ -54,7 +54,10 @@ THRESHOLD = 60
 # Machine-specific defaults. A mod with no build at a version keeps the newest older jar: its variants
 # never register there and its tables stay inert behind their conditions, so it lights up with no code
 # change once a build appears (after its jar is re-read here).
-REFS = "../references/jars/"
+# The Seamless Ores project folder's references/jars: this file is
+# <project>/seamlessores-monolith/26.x/tools/generate_assets.py.
+REFS = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))))), "references", "jars") + os.sep
 CLIENT_JARS = {
     "26.1": "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.1.2_client.jar",
     "26.2": "~/.gradle/caches/neoformruntime/artifacts/minecraft_26.2_client.jar",
@@ -329,9 +332,9 @@ ORE_DEFS = [
      "tiers": {"stone": "lapis_ore", "deepslate": "deepslate_lapis_ore"}},
     {"name": "diamond",  "overlay": "diamond",  "source": "diamond_ore",  "base": "stone",
      "tiers": {"stone": "diamond_ore", "deepslate": "deepslate_diamond_ore"}},
-    # No dripstone emerald: emerald generates only in mountain biomes, which never hold dripstone caves.
+    # Dripstone emerald too: Create's strata put dripstone blocks in the mountains, and the Matrix
+    # ores convert the emerald they swallow into it.
     {"name": "emerald",  "overlay": "emerald",  "source": "emerald_ore",  "base": "stone",
-     "skip_hosts": ["dripstone"],
      "tiers": {"stone": "emerald_ore", "deepslate": "deepslate_emerald_ore"}},
     {"name": "redstone", "overlay": "redstone", "source": "redstone_ore", "base": "stone",
      "tiers": {"stone": "redstone_ore", "deepslate": "deepslate_redstone_ore"}},
@@ -979,7 +982,7 @@ def generate_json():
     # A @Tooltip(count = n) needs n indexed keys instead of the bare one.
     lang.update({
         # Our own creative tab, so 295 variants stop burying vanilla's Natural Blocks.
-        f"itemGroup.{MOD_ID}.ores": "Seamless Ores",
+        f"itemGroup.{MOD_ID}.ores": "Seamless Ores: Vanilla Stones",
         f"text.autoconfig.{MOD_ID}.title": "Seamless Ores",
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
@@ -1072,6 +1075,14 @@ def generate_json():
             "The big copper and iron veins are packed with granite and tuff. This makes their ore",
         f"text.autoconfig.{MOD_ID}.option.oreVeins.@Tooltip[1]":
             "match that filler. Cosmetic only - the amount of ore is identical either way.",
+
+        f"text.autoconfig.{MOD_ID}.option.geology": "Geology (removes ore)",
+        f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[0]":
+            "Keeps ores out of rock they could never form in, such as coal in granite or",
+        f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[1]":
+            "diamond in diorite: that ore stays plain rock, so there is less of it. Off by default.",
+        f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[2]":
+            "Applies to newly generated chunks, from the next world load.",
 
         f"text.autoconfig.{MOD_ID}.option.createZinc": "Create: zinc variants",
         f"text.autoconfig.{MOD_ID}.option.createZinc.@Tooltip":
@@ -1944,6 +1955,13 @@ def main():
         generate_textures()
     else:
         print("Skipped textures (pass --textures to regenerate; it overwrites hand edits).")
+
+    # The Matrix ores, in modded stones. Always after the rest: they add to the lang file and to tag
+    # files written above, rather than writing their own.
+    print("Generating the Matrix ores...")
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "matrix"))
+    import generate_matrix
+    generate_matrix.main()
 
 
 if __name__ == "__main__":

@@ -86,6 +86,16 @@ public final class SeamlessOresContent {
      */
     private static Map<Block, OreVariant> byBlock = Map.of();
 
+    /** Our registered block with this id, or null. Valid once {@link #registerBlocks} has run. */
+    public static Block registeredBlock(Identifier id) {
+        for (Map.Entry<OreVariant, Block> e : BLOCKS.entrySet()) {
+            if (e.getKey().id().equals(id)) {
+                return e.getValue();
+            }
+        }
+        return null;
+    }
+
     /** The variant a block belongs to, or null if the block is not ours. */
     public static OreVariant variantOf(Block block) {
         return byBlock.get(block);

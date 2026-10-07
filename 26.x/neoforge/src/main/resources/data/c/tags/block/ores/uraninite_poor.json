@@ -19,6 +19,10 @@
     {
       "id": "seamlessores:dripstone_uraninite_poor_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_poor_ore",
+      "required": false
     }
   ]
 }

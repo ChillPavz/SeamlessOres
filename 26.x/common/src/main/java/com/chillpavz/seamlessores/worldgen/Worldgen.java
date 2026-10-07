@@ -1,6 +1,7 @@
 package com.chillpavz.seamlessores.worldgen;
 
 import com.chillpavz.seamlessores.Constants;
+import com.chillpavz.seamlessores.matrix.worldgen.MatrixWorldgen;
 import com.google.gson.JsonObject;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
@@ -53,6 +54,9 @@ public final class Worldgen {
     public static void onServerStarting(RegistryAccess registries) {
         SulfurCaves.prepare(registries);
         era().injectOreTargets(registries);
+        // The Matrix ores, in modded stones: after ours, so a modded blob that swallows one of our
+        // granite variants finds it registered and in place. Fenced off inside, like every injector.
+        MatrixWorldgen.inject(registries);
         DripstoneShell.prepare();
         LushCavesInjector.inject(registries, era());
     }

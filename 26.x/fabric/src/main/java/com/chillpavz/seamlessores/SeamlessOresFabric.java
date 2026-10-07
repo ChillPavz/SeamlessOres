@@ -1,5 +1,14 @@
 package com.chillpavz.seamlessores;
 
+import com.chillpavz.seamlessores.matrix.MatrixAliases;
+import com.chillpavz.seamlessores.matrix.MatrixPresence;
+import com.chillpavz.seamlessores.matrix.content.MatrixContent;
+import net.fabricmc.fabric.api.event.registry.FabricRegistry;
+import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import com.chillpavz.seamlessores.content.OreTier;
 import com.chillpavz.seamlessores.content.OreVariant;
 import com.chillpavz.seamlessores.worldgen.CinnabarVeins;
@@ -47,6 +56,12 @@ public class SeamlessOresFabric implements ModInitializer {
         SeamlessOresContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
         SeamlessOresContent.registerCreativeTab(
                 (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
+        // The Matrix ores, in modded stones. After ours: the dripstone ones are our own blocks.
+        MatrixContent.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
+        MatrixContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
+        MatrixContent.registerCreativeTab(
+                (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
+        registerMatrixAliases();
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks. Up to
         // 26.2 a feature type is a Feature in FEATURE; from 26.3 it is its codec, in FEATURE_TYPE.
         registerFeatureTypes(Worldgen.era());
@@ -84,8 +99,18 @@ public class SeamlessOresFabric implements ModInitializer {
         // CreativeModeTab.Output is protected, so items cannot be added via displayItems from outside
         // vanilla - each loader has its own event for this. On 26.x the Fabric API class is
         // CreativeModeTabEvents; the older ItemGroupEvents is gone.
+        // Two tabs: vanilla stones (ours, then the Matrix ores in calcite and smooth basalt) and
+        // modded stones (the rest of the Matrix ores).
         CreativeModeTabEvents.modifyOutputEvent(SeamlessOresContent.TAB).register(output -> {
             for (var item : SeamlessOresContent.creativeTabItems()) {
+                output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            }
+            for (var item : MatrixContent.creativeTabItems(true)) {
+                output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            }
+        });
+        CreativeModeTabEvents.modifyOutputEvent(MatrixContent.TAB).register(output -> {
+            for (var item : MatrixContent.creativeTabItems(false)) {
                 output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             }
         });
@@ -94,6 +119,47 @@ public class SeamlessOresFabric implements ModInitializer {
         // server exists and before any chunk is generated.
         ServerLifecycleEvents.SERVER_STARTING.register(
                 server -> Worldgen.onServerStarting(server.registryAccess()));
+    }
+
+    /**
+     * Maps the retired Seamless Ores: Matrix ids to ours, blocks and items, so its blocks in a world or
+     * an inventory convert instead of vanishing. Skipped while that mod is still installed, since an
+     * alias may not shadow a live id. A target from another mod may register after us (Fabric's order
+     * between mods is not fixed), so that alias waits for its block; Fabric only warns about a missing
+     * target, but it would warn once per variant.
+     */
+    private static void registerMatrixAliases() {
+        if (MatrixPresence.oldMatrixInstalled()) {
+            return;
+        }
+        final List<MatrixAliases.Alias> now = new ArrayList<>();
+        final Map<Identifier, List<MatrixAliases.Alias>> later = new HashMap<>();
+        for (MatrixAliases.Alias alias : MatrixAliases.all()) {
+            // Both: a mod may register its blocks well before their items (Create does).
+            if (BuiltInRegistries.BLOCK.containsKey(alias.target()) && BuiltInRegistries.ITEM.containsKey(alias.target())) {
+                now.add(alias);
+            } else {
+                later.computeIfAbsent(alias.target(), id -> new ArrayList<>()).add(alias);
+            }
+        }
+        addMatrixAliases(now);
+        if (!later.isEmpty()) {
+            RegistryEntryAddedCallback.event(BuiltInRegistries.ITEM).register((rawId, id, item) -> {
+                // A block's item registers after the block, so both aliases can go in together.
+                final List<MatrixAliases.Alias> waiting = later.remove(id);
+                if (waiting != null) {
+                    addMatrixAliases(waiting);
+                }
+            });
+        }
+    }
+
+    private static void addMatrixAliases(List<MatrixAliases.Alias> aliases) {
+        if (aliases.isEmpty()) {
+            return;
+        }
+        MatrixAliases.addAll(aliases, ((FabricRegistry) BuiltInRegistries.BLOCK)::addAlias, "blocks");
+        MatrixAliases.addAll(aliases, ((FabricRegistry) BuiltInRegistries.ITEM)::addAlias, "items");
     }
 
     @SuppressWarnings("unchecked")

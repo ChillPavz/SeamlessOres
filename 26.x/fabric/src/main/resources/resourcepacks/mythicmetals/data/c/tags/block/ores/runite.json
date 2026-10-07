@@ -19,6 +19,66 @@
     {
       "id": "seamlessores:dripstone_runite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_runite_ore",
+      "required": false
     }
   ]
 }

@@ -1,5 +1,6 @@
 package com.chillpavz.seamlessores.config;
 
+import com.chillpavz.seamlessores.matrix.content.MatrixContent;
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.content.HostStone;
 import com.chillpavz.seamlessores.content.OreType;
@@ -100,6 +101,10 @@ public final class SeamlessOresConfigScreenFactory {
                 // would only hold switches for nothing; the values stay in the file either way.
                 if (HostStone.CINNABAR == null) {
                     builder.removeCategoryIfExists(Component.translatable(CATEGORY_PREFIX + "sulfur_caves"));
+                }
+                // The Modded Stones tab only matters with a mod installed that adds one of the stones.
+                if (MatrixContent.variants().isEmpty()) {
+                    builder.removeCategoryIfExists(Component.translatable(CATEGORY_PREFIX + "modded_stones"));
                 }
                 return builder.build();
             });
