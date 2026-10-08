@@ -17,7 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * {@link OreConfiguration}.
  *
  * <h2>Why this exists</h2>
- * {@link OreTargetInjector} works by extending the target list of the ore features that already
+ * {@link OreSideInjector} works by extending the target list of the ore features that already
  * exist, which assumes those features carry an {@code OreConfiguration}. Almost every mod's ore
  * does. <b>Immersive Engineering's does not:</b> its features are
  * {@code immersiveengineering:ie_ore}, configured by IE's own record
@@ -35,7 +35,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * mod could pick from it at random, or use it as a filter rather than a substitution table, and our
  * entries would then change how much ore exists. Adding a mod here means reading its feature first.
  * The cost of the allowlist is that a rename upstream silently stops the support working, which is
- * why {@link OreTargetInjector} warns when the mod is present and nothing of its was patched.
+ * why BandWorldgen warns when the mod is present and nothing of its was patched.
  *
  * <p>Everything here is reflection, so no mod is ever on our compile classpath, and everything is
  * guarded: a failure disables the foreign path for that class, logs once, and leaves the feature

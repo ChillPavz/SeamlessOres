@@ -93,6 +93,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_bort_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_thorium_ore",
       "required": false
     },
@@ -246,6 +262,22 @@
     },
     {
       "id": "seamlessores:diorite_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_bort_ore",
       "required": false
     },
     {
@@ -405,6 +437,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_bort_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_thorium_ore",
       "required": false
     },
@@ -558,6 +606,22 @@
     },
     {
       "id": "seamlessores:tuff_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_bort_ore",
       "required": false
     },
     {

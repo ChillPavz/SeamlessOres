@@ -32,6 +32,16 @@ public final class SeamlessOresConfig {
     public static boolean oreVeins = true;
 
     /**
+     * Whether an ore that could never form in granite, diorite, andesite or tuff is refused there.
+     *
+     * <p><b>This REMOVES ore</b>, so it is off by default: where the ore feature would have placed a
+     * refused ore, the rock stays rock. Worldgen only; every block stays registered. See
+     * {@code content.OreGeology} for the rule set. The stones other mods place follow a fixed
+     * geology rule of their own, whatever this says.
+     */
+    public static boolean geology = false;
+
+    /**
      * Ordinary overworld copper, as a percentage of vanilla's vein count.
      *
      * <p>Vanilla runs {@code ore_copper} at 16 attempts per chunk of size 10, in every biome. This

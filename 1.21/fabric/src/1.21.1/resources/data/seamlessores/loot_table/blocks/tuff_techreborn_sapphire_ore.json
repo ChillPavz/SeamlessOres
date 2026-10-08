@@ -135,7 +135,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "techreborn:deepslate_sapphire_ore"
+          "name": "seamlessores:tuff_techreborn_sapphire_ore"
         }
       ],
       "rolls": 1.0

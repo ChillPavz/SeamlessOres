@@ -80,7 +80,7 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Energized Tin | `granite_energized_tin_ore` | `diorite_energized_tin_ore` | `andesite_energized_tin_ore` | `tuff_energized_tin_ore` |
+| Tin | `granite_energized_tin_ore` | `diorite_energized_tin_ore` | `andesite_energized_tin_ore` | `tuff_energized_tin_ore` |
 
 **Mythic Metals, Overworld, requires `mythicmetals`**
 
@@ -162,10 +162,10 @@ touching ore of the same type across different host stones.
 | Sapphire | `granite_sapphire_ore` | `diorite_sapphire_ore` | `andesite_sapphire_ore` | `tuff_sapphire_ore` |
 | Turquoise | `granite_turquoise_ore` | `diorite_turquoise_ore` | `andesite_turquoise_ore` | `tuff_turquoise_ore` |
 | White Diamond | `granite_white_diamond_ore` | `diorite_white_diamond_ore` | `andesite_white_diamond_ore` | `tuff_white_diamond_ore` |
-| Silents Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` |
-| Silents Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` |
-| Silents Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` |
-| Silents Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` |
+| Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` |
+| Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` |
+| Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` |
+| Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` |
 
 **Silent's Gems, Nether, requires `silentgems`**
 
@@ -174,7 +174,7 @@ touching ore of the same type across different host stones.
 | Alexandrite | `basalt_alexandrite_ore` | `blackstone_alexandrite_ore` |
 | Black Diamond | `basalt_black_diamond_ore` | `blackstone_black_diamond_ore` |
 | Carnelian | `basalt_carnelian_ore` | `blackstone_carnelian_ore` |
-| Silents Citrine | `basalt_silents_citrine_ore` | `blackstone_silents_citrine_ore` |
+| Citrine | `basalt_silents_citrine_ore` | `blackstone_silents_citrine_ore` |
 | Iolite | `basalt_iolite_ore` | `blackstone_iolite_ore` |
 | Moldavite | `basalt_moldavite_ore` | `blackstone_moldavite_ore` |
 
@@ -207,14 +207,14 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Tech Reborn Bauxite | `granite_techreborn_bauxite_ore` | `diorite_techreborn_bauxite_ore` | `andesite_techreborn_bauxite_ore` | `tuff_techreborn_bauxite_ore` |
+| Bauxite | `granite_techreborn_bauxite_ore` | `diorite_techreborn_bauxite_ore` | `andesite_techreborn_bauxite_ore` | `tuff_techreborn_bauxite_ore` |
 | Galena | `granite_galena_ore` | `diorite_galena_ore` | `andesite_galena_ore` | `tuff_galena_ore` |
 | Iridium | `granite_iridium_ore` | `diorite_iridium_ore` | `andesite_iridium_ore` | `tuff_iridium_ore` |
-| Tech Reborn Lead | `granite_techreborn_lead_ore` | `diorite_techreborn_lead_ore` | `andesite_techreborn_lead_ore` | `tuff_techreborn_lead_ore` |
-| Tech Reborn Ruby | `granite_techreborn_ruby_ore` | `diorite_techreborn_ruby_ore` | `andesite_techreborn_ruby_ore` | `tuff_techreborn_ruby_ore` |
-| Tech Reborn Sapphire | `granite_techreborn_sapphire_ore` | `diorite_techreborn_sapphire_ore` | `andesite_techreborn_sapphire_ore` | `tuff_techreborn_sapphire_ore` |
-| Tech Reborn Silver | `granite_techreborn_silver_ore` | `diorite_techreborn_silver_ore` | `andesite_techreborn_silver_ore` | `tuff_techreborn_silver_ore` |
-| Tech Reborn Tin | `granite_techreborn_tin_ore` | `diorite_techreborn_tin_ore` | `andesite_techreborn_tin_ore` | `tuff_techreborn_tin_ore` |
+| Lead | `granite_techreborn_lead_ore` | `diorite_techreborn_lead_ore` | `andesite_techreborn_lead_ore` | `tuff_techreborn_lead_ore` |
+| Ruby | `granite_techreborn_ruby_ore` | `diorite_techreborn_ruby_ore` | `andesite_techreborn_ruby_ore` | `tuff_techreborn_ruby_ore` |
+| Sapphire | `granite_techreborn_sapphire_ore` | `diorite_techreborn_sapphire_ore` | `andesite_techreborn_sapphire_ore` | `tuff_techreborn_sapphire_ore` |
+| Silver | `granite_techreborn_silver_ore` | `diorite_techreborn_silver_ore` | `andesite_techreborn_silver_ore` | `tuff_techreborn_silver_ore` |
+| Tin | `granite_techreborn_tin_ore` | `diorite_techreborn_tin_ore` | `andesite_techreborn_tin_ore` | `tuff_techreborn_tin_ore` |
 
 **Tech Reborn, Nether, requires `techreborn`**
 
@@ -229,14 +229,14 @@ touching ore of the same type across different host stones.
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
 | Antimony | `granite_antimony_ore` | `diorite_antimony_ore` | `andesite_antimony_ore` | `tuff_antimony_ore` |
-| MI Bauxite | `granite_mi_bauxite_ore` | `diorite_mi_bauxite_ore` | `andesite_mi_bauxite_ore` | `tuff_mi_bauxite_ore` |
-| MI Iridium | `granite_mi_iridium_ore` | `diorite_mi_iridium_ore` | `andesite_mi_iridium_ore` | `tuff_mi_iridium_ore` |
-| MI Lead | `granite_mi_lead_ore` | `diorite_mi_lead_ore` | `andesite_mi_lead_ore` | `tuff_mi_lead_ore` |
+| Bauxite | `granite_mi_bauxite_ore` | `diorite_mi_bauxite_ore` | `andesite_mi_bauxite_ore` | `tuff_mi_bauxite_ore` |
+| Iridium | `granite_mi_iridium_ore` | `diorite_mi_iridium_ore` | `andesite_mi_iridium_ore` | `tuff_mi_iridium_ore` |
+| Lead | `granite_mi_lead_ore` | `diorite_mi_lead_ore` | `andesite_mi_lead_ore` | `tuff_mi_lead_ore` |
 | Lignite Coal | `granite_lignite_coal_ore` | `diorite_lignite_coal_ore` | `andesite_lignite_coal_ore` | `tuff_lignite_coal_ore` |
 | Monazite | `granite_monazite_ore` | `diorite_monazite_ore` | `andesite_monazite_ore` | `tuff_monazite_ore` |
-| MI Nickel | `granite_mi_nickel_ore` | `diorite_mi_nickel_ore` | `andesite_mi_nickel_ore` | `tuff_mi_nickel_ore` |
+| Nickel | `granite_mi_nickel_ore` | `diorite_mi_nickel_ore` | `andesite_mi_nickel_ore` | `tuff_mi_nickel_ore` |
 | Salt | `granite_salt_ore` | `diorite_salt_ore` | `andesite_salt_ore` | `tuff_salt_ore` |
-| MI Tin | `granite_mi_tin_ore` | `diorite_mi_tin_ore` | `andesite_mi_tin_ore` | `tuff_mi_tin_ore` |
+| Tin | `granite_mi_tin_ore` | `diorite_mi_tin_ore` | `andesite_mi_tin_ore` | `tuff_mi_tin_ore` |
 | Tungsten | `granite_tungsten_ore` | `diorite_tungsten_ore` | `andesite_tungsten_ore` | `tuff_tungsten_ore` |
 | Uranium | `granite_uranium_ore` | `diorite_uranium_ore` | `andesite_uranium_ore` | `tuff_uranium_ore` |
 
@@ -244,7 +244,7 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Occultism Silver | `granite_occultism_silver_ore` | `diorite_occultism_silver_ore` | `andesite_occultism_silver_ore` | `tuff_occultism_silver_ore` |
+| Silver | `granite_occultism_silver_ore` | `diorite_occultism_silver_ore` | `andesite_occultism_silver_ore` | `tuff_occultism_silver_ore` |
 
 **Extreme Reactors, Overworld, requires `bigreactors`**
 
@@ -269,28 +269,28 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| IE Aluminum | `granite_ie_aluminum_ore` | `diorite_ie_aluminum_ore` | `andesite_ie_aluminum_ore` | `tuff_ie_aluminum_ore` |
-| IE Lead | `granite_ie_lead_ore` | `diorite_ie_lead_ore` | `andesite_ie_lead_ore` | `tuff_ie_lead_ore` |
-| IE Nickel | `granite_ie_nickel_ore` | `diorite_ie_nickel_ore` | `andesite_ie_nickel_ore` | `tuff_ie_nickel_ore` |
-| IE Silver | `granite_ie_silver_ore` | `diorite_ie_silver_ore` | `andesite_ie_silver_ore` | `tuff_ie_silver_ore` |
-| IE Uranium | `granite_ie_uranium_ore` | `diorite_ie_uranium_ore` | `andesite_ie_uranium_ore` | `tuff_ie_uranium_ore` |
+| Aluminum | `granite_ie_aluminum_ore` | `diorite_ie_aluminum_ore` | `andesite_ie_aluminum_ore` | `tuff_ie_aluminum_ore` |
+| Lead | `granite_ie_lead_ore` | `diorite_ie_lead_ore` | `andesite_ie_lead_ore` | `tuff_ie_lead_ore` |
+| Nickel | `granite_ie_nickel_ore` | `diorite_ie_nickel_ore` | `andesite_ie_nickel_ore` | `tuff_ie_nickel_ore` |
+| Silver | `granite_ie_silver_ore` | `diorite_ie_silver_ore` | `andesite_ie_silver_ore` | `tuff_ie_silver_ore` |
+| Uranium | `granite_ie_uranium_ore` | `diorite_ie_uranium_ore` | `andesite_ie_uranium_ore` | `tuff_ie_uranium_ore` |
 
 **Oreganized, Overworld, requires `oreganized`**
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Oreganized Lead | `granite_oreganized_lead_ore` | `diorite_oreganized_lead_ore` | `andesite_oreganized_lead_ore` | `tuff_oreganized_lead_ore` |
-| Oreganized Silver | `granite_oreganized_silver_ore` | `diorite_oreganized_silver_ore` | `andesite_oreganized_silver_ore` | `tuff_oreganized_silver_ore` |
+| Lead | `granite_oreganized_lead_ore` | `diorite_oreganized_lead_ore` | `andesite_oreganized_lead_ore` | `tuff_oreganized_lead_ore` |
+| Silver | `granite_oreganized_silver_ore` | `diorite_oreganized_silver_ore` | `andesite_oreganized_silver_ore` | `tuff_oreganized_silver_ore` |
 
 **Mekanism, Overworld, requires `mekanism`**
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Mek Fluorite | `granite_mek_fluorite_ore` | `diorite_mek_fluorite_ore` | `andesite_mek_fluorite_ore` | `tuff_mek_fluorite_ore` |
-| Mek Lead | `granite_mek_lead_ore` | `diorite_mek_lead_ore` | `andesite_mek_lead_ore` | `tuff_mek_lead_ore` |
-| Mek Osmium | `granite_mek_osmium_ore` | `diorite_mek_osmium_ore` | `andesite_mek_osmium_ore` | `tuff_mek_osmium_ore` |
-| Mek Tin | `granite_mek_tin_ore` | `diorite_mek_tin_ore` | `andesite_mek_tin_ore` | `tuff_mek_tin_ore` |
-| Mek Uranium | `granite_mek_uranium_ore` | `diorite_mek_uranium_ore` | `andesite_mek_uranium_ore` | `tuff_mek_uranium_ore` |
+| Fluorite | `granite_mek_fluorite_ore` | `diorite_mek_fluorite_ore` | `andesite_mek_fluorite_ore` | `tuff_mek_fluorite_ore` |
+| Lead | `granite_mek_lead_ore` | `diorite_mek_lead_ore` | `andesite_mek_lead_ore` | `tuff_mek_lead_ore` |
+| Osmium | `granite_mek_osmium_ore` | `diorite_mek_osmium_ore` | `andesite_mek_osmium_ore` | `tuff_mek_osmium_ore` |
+| Tin | `granite_mek_tin_ore` | `diorite_mek_tin_ore` | `andesite_mek_tin_ore` | `tuff_mek_tin_ore` |
+| Uranium | `granite_mek_uranium_ore` | `diorite_mek_uranium_ore` | `andesite_mek_uranium_ore` | `tuff_mek_uranium_ore` |
 
 **Cobblemon, Overworld, requires `cobblemon`**
 

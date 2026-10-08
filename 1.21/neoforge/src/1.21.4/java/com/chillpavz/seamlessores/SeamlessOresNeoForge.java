@@ -5,7 +5,7 @@ import com.chillpavz.seamlessores.config.SeamlessOresConfigScreen;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
-import com.chillpavz.seamlessores.worldgen.OreTargetInjector;
+import com.chillpavz.seamlessores.worldgen.Worldgen;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -69,7 +69,7 @@ public class SeamlessOresNeoForge {
 
     private void onServerAboutToStart(ServerAboutToStartEvent event) {
 
-        OreTargetInjector.inject(event.getServer().registryAccess());
+        Worldgen.onServerStarting(event.getServer().registryAccess());
     }
 
     private void onRegister(RegisterEvent event) {

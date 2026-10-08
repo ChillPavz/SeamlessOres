@@ -89,7 +89,8 @@ public final class OreSideInjector {
                 continue;
             }
             // The geology option may refuse the pair: then the rock stays rock (see OreGeology).
-            final Block placed = OreGeology.placed(variant, entry.getValue()).getBlock();
+            final Block placed = SeamlessOresConfig.geology && OreGeology.optional(host.name(), variant.ore().key())
+                    ? host.block() : entry.getValue();
             pair(byOre, variant.source(),
                     new Pairing(variant, host.block(), placed, tier == OreTier.NETHER, placed != entry.getValue()));
         }

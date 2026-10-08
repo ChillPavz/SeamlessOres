@@ -131,7 +131,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "techreborn:sphalerite_ore"
+          "name": "seamlessores:basalt_sphalerite_ore"
         }
       ],
       "rolls": 1.0

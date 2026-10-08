@@ -135,7 +135,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "techreborn:ruby_ore"
+          "name": "seamlessores:diorite_techreborn_ruby_ore"
         }
       ],
       "rolls": 1.0

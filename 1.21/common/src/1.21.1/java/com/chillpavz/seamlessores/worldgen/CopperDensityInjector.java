@@ -60,7 +60,7 @@ public final class CopperDensityInjector {
      * The two features, by registry key, and the dial that governs each.
      *
      * <p>Matched on the KEY here rather than on what the feature places, which is the opposite of
-     * what {@link OreTargetInjector} does and is deliberate. Both of these place the same block, so
+     * what {@link OreSideInjector} does and is deliberate. Both of these place the same block, so
      * "what does it place" cannot tell them apart: the only thing that distinguishes ordinary copper
      * from the dripstone-only large veins is which feature it is. They are vanilla features with
      * stable ids, and a pack that re-declares them under its own name is opting out, which is the

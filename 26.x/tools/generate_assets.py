@@ -1930,22 +1930,14 @@ def replace_block(text, begin, end, body, where):
 def generate_java():
     """The Java that is data: the measured modded pairs, the geology tables, and the config switches.
 
-    ModdedPairs from modded_pairs.json; OreGeology from geology.py, both tables; and in
+    ModdedPairs from modded_pairs.json; shared/java's OreGeology from geology.py, the rule itself; and in
     SeamlessOresConfigData (cloth-config/java, compiled by both loaders) a switch per stone another mod
     places (the game's own rock has hand-written ones, with their own wording) and the push of every
     host's switch.
     """
     content = os.path.dirname(HOST_TABLE)
-    keys = [o["key"] for o in ORE_DEFS]
-    for table, rule in (("STRICT", geology.STRICT), ("LENIENT", geology.LENIENT)):
-        unknown = sorted(set(rule) - set(keys))
-        if unknown:
-            sys.exit(f"geology.py {table} names unknown ore keys {unknown}")
     placed = [c for c in HOSTS.values() if c["placed_by"]]
-    unknown = sorted((set(h for hosts in geology.STRICT.values() for h in hosts) | set(geology.LORE))
-                     - {c["name"] for c in placed})
-    if unknown:
-        sys.exit(f"geology.py names unknown stones {unknown}")
+    geology.note_absent([o["key"] for o in ORE_DEFS], [c["name"] for c in HOSTS.values()])
 
     cases = []
     for host, pairs in MODDED_PAIRS["hosts"].items():
@@ -1956,8 +1948,7 @@ def generate_java():
     write_text(path, replace_block(text, "        return switch (host) {\n", "            default -> List.of();",
                                    "\n".join(cases) + "\n", path))
 
-    own = [c["name"] for c in HOSTS.values() if not c["placed_by"]]
-    write_text(os.path.join(content, "OreGeology.java"), geology.java([c["name"] for c in placed], own, keys))
+    geology.write_java(write_text)
 
     fields, push = [], []
     for c in placed:
@@ -1973,8 +1964,7 @@ def generate_java():
     text = replace_block(text, "        // BEGIN GENERATED host switches (tools/generate_assets.py, from the host table)\n",
                          "        // END GENERATED host switches", "\n".join(push) + "\n", path)
     write_text(path, text)
-    print(f"  Java: modded pairs for {len(cases)} stones, geology for {len(placed)} + {len(own)} hosts,"
-          f" {len(HOSTS)} host switches")
+    print(f"  Java: modded pairs for {len(cases)} stones, the shared geology rule, {len(HOSTS)} host switches")
 
 
 def main():

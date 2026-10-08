@@ -12,7 +12,7 @@ import net.minecraft.core.registries.Registries;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
-import com.chillpavz.seamlessores.worldgen.OreTargetInjector;
+import com.chillpavz.seamlessores.worldgen.Worldgen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
@@ -69,6 +69,6 @@ public class SeamlessOresFabric implements ModInitializer {
         // Worldgen registries are datapack-loaded per world, so the injection has to happen once the
         // server exists and before any chunk is generated.
         ServerLifecycleEvents.SERVER_STARTING.register(
-                server -> OreTargetInjector.inject(server.registryAccess()));
+                server -> Worldgen.onServerStarting(server.registryAccess()));
     }
 }

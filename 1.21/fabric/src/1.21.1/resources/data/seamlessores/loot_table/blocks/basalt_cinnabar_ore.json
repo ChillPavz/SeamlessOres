@@ -131,7 +131,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "techreborn:cinnabar_ore"
+          "name": "seamlessores:basalt_cinnabar_ore"
         }
       ],
       "rolls": 1.0

@@ -55,7 +55,7 @@ public final class CopperDensityInjector {
      * The two features, by registry key, and the dial that governs each.
      *
      * <p>Matched on the KEY here rather than on what the feature places, which is the opposite of
-     * what {@link OreTargetInjector} does and is deliberate. Both of these place the same block, so
+     * what {@link OreSideInjector} does and is deliberate. Both of these place the same block, so
      * "what does it place" cannot tell them apart: the only thing that distinguishes ordinary copper
      * from the dripstone-only large veins is which feature it is. They are vanilla features with
      * stable ids, and a pack that re-declares them under its own name is opting out, which is the
@@ -81,7 +81,7 @@ public final class CopperDensityInjector {
     private static volatile boolean ranAtLeastOnce = false;
 
     /**
-     * Thins copper at server start, from {@link OreTargetInjector#inject}.
+     * Thins copper at server start, from {@link Worldgen#onServerStarting}.
      *
      * <p><b>Why server start is the right moment AT THIS VERSION, and a mixin is not.</b>
      * Thinning rebinds a registry entry to a NEW {@code PlacedFeature} instance, which is only safe
@@ -202,7 +202,7 @@ public final class CopperDensityInjector {
      * <p>A dial that quietly stopped working is invisible: the only symptom would be vanilla copper
      * density, which nobody would report as a bug. This is the line that makes it visible. Not an
      * error, because at 100/100 there is genuinely nothing to do. Sabotage test: take the
-     * thinAtServerStart call out of OreTargetInjector and the warning fires on the next world load.
+     * thinAtServerStart call out of Worldgen.onServerStarting and the warning fires on the next world load.
      */
     public static void warnIfNeverRan() {
         if (ranAtLeastOnce) {

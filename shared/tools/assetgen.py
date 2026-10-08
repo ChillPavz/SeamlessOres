@@ -21,6 +21,26 @@ MOD_ID = "seamlessores"
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+# Every third-party jar lives in the umbrella folder's jar library, never in a project.
+JARS = os.path.join(os.path.dirname(os.path.dirname(REPO)), "Assets", "Jars")
+
+
+def jar(file_name, env=None):
+    """A jar from the library, or the path in the environment variable `env` when that is set."""
+    override = os.environ.get(env) if env else None
+    return override or os.path.join(JARS, file_name)
+
+
+def era_file(module_dir, band, rel):
+    """The one copy of a source file a band compiles: src/main/<rel>, or src/<era>/<rel> for an era folder
+    whose name, split on '+', holds the band (as multiloader-common.gradle picks them). None if absent."""
+    src = os.path.join(module_dir, "src")
+    folders = ["main"] + sorted(f for f in os.listdir(src) if f != "main" and band in f.split("+"))
+    found = [os.path.join(src, f, rel) for f in folders if os.path.exists(os.path.join(src, f, rel))]
+    if len(found) > 1:
+        sys.exit(f"{rel} exists twice for {band}: {found}")
+    return found[0] if found else None
+
 
 # --- Writing ---------------------------------------------------------------------------------------
 
@@ -77,7 +97,7 @@ def assert_no_dashes(strings, what):
 DISPLAY_NAMES = {"lapis": "Lapis Lazuli"}
 # A block's name never carries a mod's name (owner, 8 Oct 2026): "Granite Aquamarine Ore" whichever
 # mod the aquamarine is from. These prefixes only keep ids apart; tooltips name the mod.
-MOD_PREFIXES = ("silents_", "techreborn_", "energized_", "occultism_")
+MOD_PREFIXES = ("silents_", "techreborn_", "energized_", "occultism_", "mi_", "ie_", "mek_", "oreganized_")
 # A stone whose display name is not its id path, title-cased.
 STONE_NAMES = {"dripstone_block": "Dripstone"}
 

@@ -1,9 +1,18 @@
 package com.chillpavz.seamlessores.content;
 
+import com.chillpavz.seamlessores.Constants;
+import com.chillpavz.seamlessores.platform.Services;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
+import java.util.stream.Stream;
 
 import java.util.List;
 import java.util.Set;
@@ -26,7 +35,13 @@ import java.util.Set;
  * {@code stone_ore_replaceables} gets a null {@code deepslateOre}, so it produces granite, diorite
  * and andesite variants but no tuff one, because it never generates in tuff to begin with.
  *
- * @param name             id suffix, e.g. {@code iron} -> {@code granite_iron_ore}
+ * @param name             id suffix in the game's own rock, e.g. {@code iron} -> {@code granite_iron_ore}.
+ *                         Unique per host only: Nether gold is also {@code gold}, because no such rock
+ *                         takes both
+ * @param key              unique across the table, the id suffix in a stone another mod places (one of
+ *                         those can take both golds: {@code create_scoria_nether_gold_ore}) and the key
+ *                         of the geology rule. The overlay key, except for Silent's Gems' Nether gems,
+ *                         which share their overworld gem's art
  * @param overlay          texture key, {@code seamlessores:block/<overlay>_overlay}. Separate from
  *                         {@code name} because overworld and nether gold are different <i>textures</i>
  * @param deepslateOverlay overlay for DEEPSLATE-tier hosts when the mod draws that tier
@@ -46,13 +61,45 @@ import java.util.Set;
  * @param skipHosts        host names to leave alone because the ore's own mod already ships a
  *                         seamless variant for them. Ours would otherwise take that host over: the
  *                         injector prepends its targets, so it would win against the mod's own entry
+ * @param strength         hardness and blast resistance where the ore's own mod sets them, or null for
+ *                         the vanilla ore convention, which the vanilla block a variant copies carries
  */
-public record OreType(String name, String overlay, String deepslateOverlay, String requiredModId,
+public record OreType(String name, String key, String overlay, String deepslateOverlay, String requiredModId,
                       Identifier stoneOre, Identifier deepslateOre, Identifier netherOre,
                       IntProvider xp, IntProvider deepslateXp, boolean redstoneLike,
-                      Set<String> skipHosts) {
+                      Set<String> skipHosts, Strength strength) {
 
     private static final IntProvider NONE = ConstantInt.of(0);
+
+    /** Hardness and blast resistance in a stone or Nether host, then in a deepslate-tier one. */
+    public record Strength(float hardness, float resistance, float deepHardness, float deepResistance) {}
+
+    /** An ore keyed by its overlay, at the vanilla ore strength. */
+    private static OreType ore(String name, String overlay, String deepslateOverlay, String requiredModId,
+                               Identifier stoneOre, Identifier deepslateOre, Identifier netherOre,
+                               IntProvider xp, IntProvider deepslateXp, boolean redstoneLike,
+                               Set<String> skipHosts) {
+        return new OreType(name, overlay, overlay, deepslateOverlay, requiredModId, stoneOre, deepslateOre,
+                netherOre, xp, deepslateXp, redstoneLike, skipHosts, null);
+    }
+
+    /** The same ore with the strength its own mod sets, read from that mod's jar. */
+    private OreType withStrength(float hardness, float resistance, float deepHardness, float deepResistance) {
+        return new OreType(name, key, overlay, deepslateOverlay, requiredModId, stoneOre, deepslateOre, netherOre,
+                xp, deepslateXp, redstoneLike, skipHosts,
+                new Strength(hardness, resistance, deepHardness, deepResistance));
+    }
+
+    /** An ore with no deepslate form: stone tier only, or Nether only. */
+    private OreType withStrength(float hardness, float resistance) {
+        return withStrength(hardness, resistance, hardness, resistance);
+    }
+
+    /** The same ore under another key. */
+    private OreType withKey(String key) {
+        return new OreType(name, key, overlay, deepslateOverlay, requiredModId, stoneOre, deepslateOre, netherOre,
+                xp, deepslateXp, redstoneLike, skipHosts, strength);
+    }
 
     private static Identifier mc(String path) {
         return Identifier.withDefaultNamespace(path);
@@ -63,12 +110,12 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     }
 
     private static OreType overworld(String name, IntProvider xp) {
-        return new OreType(name, name, null, null,
+        return ore(name, name, null, null,
                 mc(name + "_ore"), mc("deepslate_" + name + "_ore"), null, xp, null, false, Set.of());
     }
 
     private static OreType nether(String name, String overlay, String oreId, IntProvider xp) {
-        return new OreType(name, overlay, null, null, null, null, mc(oreId), xp, null, false, Set.of());
+        return ore(name, overlay, null, null, null, null, mc(oreId), xp, null, false, Set.of());
     }
 
     // XP values verified against Blocks.java in the decompiled source. Vanilla uses the SAME
@@ -81,7 +128,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType LAPIS = overworld("lapis", UniformInt.of(2, 5));
     public static final OreType DIAMOND = overworld("diamond", UniformInt.of(3, 7));
     public static final OreType EMERALD = overworld("emerald", UniformInt.of(3, 7));
-    public static final OreType REDSTONE = new OreType("redstone", "redstone", null, null,
+    public static final OreType REDSTONE = ore("redstone", "redstone", null, null,
             mc("redstone_ore"), mc("deepslate_redstone_ore"), null, ConstantInt.of(0), null, true, Set.of());
 
     // Nether. NETHER_GOLD is separate from GOLD despite the same block-name suffix: different
@@ -97,7 +144,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
      * vanilla — so our injection restyles existing zinc generation, balance-neutral; tool tier is
      * {@code needs_iron_tool} (NOT stone, unlike iron/copper). XP 0 by raw-metal convention.
      */
-    public static final OreType ZINC = new OreType("zinc", "zinc", null, "create",
+    public static final OreType ZINC = ore("zinc", "zinc", null, "create",
             of("create", "zinc_ore"), of("create", "deepslate_zinc_ore"),
             null, ConstantInt.of(0), null, false, Set.of());
 
@@ -108,13 +155,13 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     // the same host toggles and bastion protection. Ametrine and jade are deliberately absent:
     // end_stone only, and the End has no second stone type to be seamless with.
     private static OreType mythic(String name, IntProvider xp) {
-        return new OreType(name, name, null, "mythicupgrades",
+        return ore(name, name, null, "mythicupgrades",
                 of("mythicupgrades", name + "_ore"), of("mythicupgrades", "deepslate_" + name + "_ore"),
                 null, xp, null, false, Set.of());
     }
 
     private static OreType mythicNether(String name, IntProvider xp) {
-        return new OreType(name, name, null, "mythicupgrades", null, null,
+        return ore(name, name, null, "mythicupgrades", null, null,
                 of("mythicupgrades", name + "_ore"), xp, null, false, Set.of());
     }
 
@@ -138,66 +185,88 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     // MythicBlocks' createOre overload that takes no experience provider. Morkite is also the reason
     // deepslateXp exists: 1-2 in stone but 1-3 in deepslate.
     private static OreType mmBoth(String name, IntProvider xp, IntProvider deepslateXp) {
-        return new OreType(name, name, null, "mythicmetals",
+        return ore(name, name, null, "mythicmetals",
                 of("mythicmetals", name + "_ore"), of("mythicmetals", "deepslate_" + name + "_ore"),
                 null, xp, deepslateXp, false, Set.of());
     }
 
     /** Stone tier only: generates in granite, diorite and andesite, never in tuff. */
     private static OreType mmStone(String name) {
-        return new OreType(name, name, null, "mythicmetals",
+        return ore(name, name, null, "mythicmetals",
                 of("mythicmetals", name + "_ore"), null, null, NONE, null, false, Set.of());
     }
 
     private static OreType mmNether(String name, String overlay, String oreId, IntProvider xp,
                                     Set<String> skipHosts) {
-        return new OreType(name, overlay, null, "mythicmetals", null, null,
+        return ore(name, overlay, null, "mythicmetals", null, null,
                 of("mythicmetals", oreId), xp, null, false, skipHosts);
     }
 
     // Both tiers: granite, diorite, andesite and tuff.
-    public static final OreType ADAMANTITE = mmBoth("adamantite", NONE, null);
-    public static final OreType CARMOT = mmBoth("carmot", NONE, null);
-    public static final OreType MORKITE = mmBoth("morkite", UniformInt.of(1, 2), UniformInt.of(1, 3));
-    public static final OreType MYTHRIL = mmBoth("mythril", NONE, null);
-    public static final OreType PROMETHEUM = mmBoth("prometheum", NONE, null);
-    public static final OreType RUNITE = mmBoth("runite", NONE, null);
+    public static final OreType ADAMANTITE = mmBoth("adamantite", NONE, null)
+            .withStrength(4.0F, 5.0F, 6.0F, 12.0F);
+    public static final OreType CARMOT = mmBoth("carmot", NONE, null)
+            .withStrength(5.5F, 6.5F, 6.5F, 12.0F);
+    public static final OreType MORKITE = mmBoth("morkite", UniformInt.of(1, 2), UniformInt.of(1, 3))
+            .withStrength(3.0F, 4.0F, 3.0F, 4.0F);
+    public static final OreType MYTHRIL = mmBoth("mythril", NONE, null)
+            .withStrength(5.0F, 6.0F, 5.5F, 6.5F);
+    public static final OreType PROMETHEUM = mmBoth("prometheum", NONE, null)
+            .withStrength(5.0F, 6.0F, 6.0F, 7.0F);
+    public static final OreType RUNITE = mmBoth("runite", NONE, null)
+            .withStrength(8.0F, 9.0F, 9.0F, 10.0F);
     /** Unobtainium's DEEPSLATE ore is animated (4 frames) while its stone one is a still image. */
-    public static final OreType UNOBTAINIUM = new OreType("unobtainium", "unobtainium",
+    public static final OreType UNOBTAINIUM = ore("unobtainium", "unobtainium",
             "unobtainium_deepslate", "mythicmetals",
             of("mythicmetals", "unobtainium_ore"), of("mythicmetals", "deepslate_unobtainium_ore"),
-            null, NONE, UniformInt.of(4, 7), false, Set.of());
+            null, NONE, UniformInt.of(4, 7), false, Set.of())
+            .withStrength(16.0F, 13000.0F, 21.0F, 14000.0F);
 
     // Stone tier only.
-    public static final OreType AQUARIUM = mmStone("aquarium");
-    public static final OreType BANGLUM = mmStone("banglum");
-    public static final OreType KYBER = mmStone("kyber");
-    public static final OreType MANGANESE = mmStone("manganese");
-    public static final OreType OSMIUM = mmStone("osmium");
-    public static final OreType PLATINUM = mmStone("platinum");
-    public static final OreType QUADRILLUM = mmStone("quadrillum");
-    public static final OreType SILVER = mmStone("silver");
-    public static final OreType STARRITE = mmStone("starrite");
-    public static final OreType TIN = mmStone("tin");
+    public static final OreType AQUARIUM = mmStone("aquarium")
+            .withStrength(4.0F, 5.0F);
+    public static final OreType BANGLUM = mmStone("banglum")
+            .withStrength(5.0F, 5.5F);
+    public static final OreType KYBER = mmStone("kyber")
+            .withStrength(3.0F, 4.0F);
+    public static final OreType MANGANESE = mmStone("manganese")
+            .withStrength(3.0F, 4.0F);
+    public static final OreType OSMIUM = mmStone("osmium")
+            .withStrength(4.0F, 5.0F);
+    public static final OreType PLATINUM = mmStone("platinum")
+            .withStrength(3.5F, 4.5F);
+    public static final OreType QUADRILLUM = mmStone("quadrillum")
+            .withStrength(3.5F, 4.5F);
+    public static final OreType SILVER = mmStone("silver")
+            .withStrength(2.5F, 3.5F);
+    public static final OreType STARRITE = mmStone("starrite")
+            .withStrength(5.0F, 6.0F);
+    public static final OreType TIN = mmStone("tin")
+            .withStrength(2.0F, 3.0F);
     /**
      * Orichalcum targets both replaceables tags, but Mythic Metals ships its OWN
      * {@code tuff_orichalcum_ore} through an explicit {@code block_match tuff} target that sits
      * ahead of its deepslate tag entry. Tuff is therefore already seamless, and a variant of ours
      * would take that host away from it, because the injector prepends. Stone tier only.
      */
-    public static final OreType ORICHALCUM = mmStone("orichalcum");
+    public static final OreType ORICHALCUM = mmStone("orichalcum")
+            .withStrength(5.5F, 6.5F);
 
     // Nether. Like our own gold and quartz these ADD ore, so they ride the basalt and blackstone
     // host toggles and the bastion protection. BANGLUM's nether form reuses the plain name for the
     // same reason NETHER_GOLD does: the host already disambiguates, since the overworld form only
     // pairs with stone-tier hosts and this one only with nether hosts.
     public static final OreType NETHER_BANGLUM =
-            mmNether("banglum", "nether_banglum", "nether_banglum_ore", NONE, Set.of());
-    public static final OreType MIDAS_GOLD = mmNether("midas_gold", "midas_gold", "midas_gold_ore", NONE, Set.of());
-    public static final OreType PALLADIUM = mmNether("palladium", "palladium", "palladium_ore", NONE, Set.of());
+            mmNether("banglum", "nether_banglum", "nether_banglum_ore", NONE, Set.of())
+            .withStrength(5.0F, 5.5F);
+    public static final OreType MIDAS_GOLD = mmNether("midas_gold", "midas_gold", "midas_gold_ore", NONE, Set.of())
+            .withStrength(4.0F, 5.0F);
+    public static final OreType PALLADIUM = mmNether("palladium", "palladium", "palladium_ore", NONE, Set.of())
+            .withStrength(5.0F, 6.0F);
     /** Mythic Metals already ships {@code blackstone_stormyx_ore}, so we only add the basalt one. */
     public static final OreType STORMYX =
-            mmNether("stormyx", "stormyx", "stormyx_ore", UniformInt.of(2, 4), Set.of("blackstone"));
+            mmNether("stormyx", "stormyx", "stormyx_ore", UniformInt.of(2, 4), Set.of("blackstone"))
+            .withStrength(5.0F, 6.0F);
 
     // --- Silent's Gems (mod id silentgems, MIT) -------------------------------------------------
     // Every gem targets BOTH replaceables tags, so all four host stones apply and injecting them is
@@ -217,7 +286,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     // no clash. The overlay key follows the name, so the prefixed five need their own art files.
     private static OreType silentGem(String name, IntProvider xp) {
         final String plain = name.startsWith("silents_") ? name.substring("silents_".length()) : name;
-        return new OreType(name, name, null, "silentgems",
+        return ore(name, name, null, "silentgems",
                 of("silentgems", plain + "_ore"), of("silentgems", "deepslate_" + plain + "_ore"),
                 null, xp, null, false, Set.of());
     }
@@ -237,9 +306,9 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     public static final OreType SG_ROSE_QUARTZ = silentGem("rose_quartz", GEM_XP);
     // Same block names as Mythic Upgrades' nether ruby and sapphire, but their own art: the overlay
     // key differs, or both mods' variants would share one texture.
-    public static final OreType SG_RUBY = new OreType("ruby", "silents_ruby", null, "silentgems",
+    public static final OreType SG_RUBY = ore("ruby", "silents_ruby", null, "silentgems",
             of("silentgems", "ruby_ore"), of("silentgems", "deepslate_ruby_ore"), null, GEM_XP, null, false, Set.of());
-    public static final OreType SG_SAPPHIRE = new OreType("sapphire", "silents_sapphire", null, "silentgems",
+    public static final OreType SG_SAPPHIRE = ore("sapphire", "silents_sapphire", null, "silentgems",
             of("silentgems", "sapphire_ore"), of("silentgems", "deepslate_sapphire_ore"), null, GEM_XP, null, false, Set.of());
     public static final OreType SG_TANZANITE = silentGem("tanzanite", GEM_XP);
     public static final OreType SG_TURQUOISE = silentGem("turquoise", GEM_XP);
@@ -252,7 +321,8 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     /** A metal, not a gem: drops raw_silver and gives no experience. */
     public static final OreType SG_SILVER = silentGem("silents_silver", NONE);
     /** Chaos drops chaos_essence and is the only one of these with its own experience range. */
-    public static final OreType SG_CHAOS = silentGem("chaos", UniformInt.of(3, 7));
+    public static final OreType SG_CHAOS = silentGem("chaos", UniformInt.of(3, 7))
+            .withStrength(5.0F, 3.0F, 6.0F, 3.0F);
 
     // --- Seven more third-party mods ------------------------------------------------------------
     // All target both replaceables tags (so all four hosts) except Create: New Age's thorium, which
@@ -269,7 +339,7 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     // would change their yields. Same call as Mythic Metals.
     private static OreType modded(String name, String modId, String namespace, String plain,
                                   IntProvider xp) {
-        return new OreType(name, name, null, modId,
+        return ore(name, name, null, modId,
                 of(namespace, plain + "_ore"), of(namespace, "deepslate_" + plain + "_ore"),
                 null, xp, null, false, Set.of());
     }
@@ -277,27 +347,35 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     // Dense Mekanism. Its blocks are dense_<ore>_ore / dense_deepslate_<ore>_ore, so the plain name
     // does not follow the usual pattern and each is spelled out.
     private static OreType dmek(String ore, IntProvider xp) {
-        return new OreType("dense_" + ore, "dense_" + ore, null, "densemekanism",
+        return ore("dense_" + ore, "dense_" + ore, null, "densemekanism",
                 of("densemekanism", "dense_" + ore + "_ore"),
                 of("densemekanism", "dense_deepslate_" + ore + "_ore"),
                 null, xp, null, false, Set.of());
     }
 
-    public static final OreType DENSE_FLUORITE = dmek("fluorite", UniformInt.of(1, 4));
-    public static final OreType DENSE_LEAD = dmek("lead", NONE);
-    public static final OreType DENSE_OSMIUM = dmek("osmium", NONE);
-    public static final OreType DENSE_TIN = dmek("tin", NONE);
-    public static final OreType DENSE_URANIUM = dmek("uranium", NONE);
+    public static final OreType DENSE_FLUORITE = dmek("fluorite", UniformInt.of(1, 4))
+            .withStrength(5.0F, 9.0F, 6.0F, 9.0F);
+    public static final OreType DENSE_LEAD = dmek("lead", NONE)
+            .withStrength(5.0F, 9.0F, 6.0F, 9.0F);
+    public static final OreType DENSE_OSMIUM = dmek("osmium", NONE)
+            .withStrength(7.5F, 12.0F, 8.5F, 12.0F);
+    public static final OreType DENSE_TIN = dmek("tin", NONE)
+            .withStrength(5.0F, 6.0F, 6.0F, 6.0F);
+    public static final OreType DENSE_URANIUM = dmek("uranium", NONE)
+            .withStrength(5.0F, 9.0F, 6.0F, 9.0F);
 
     // Powah. Three grades of the same ore, named uraninite_ore_poor / _dense in the mod.
     private static OreType powah(String name, String plain) {
-        return new OreType(name, name, null, "powah",
+        return ore(name, name, null, "powah",
                 of("powah", plain), of("powah", "deepslate_" + plain), null, NONE, null, false, Set.of());
     }
 
-    public static final OreType URANINITE = powah("uraninite", "uraninite_ore");
-    public static final OreType URANINITE_POOR = powah("uraninite_poor", "uraninite_ore_poor");
-    public static final OreType URANINITE_DENSE = powah("uraninite_dense", "uraninite_ore_dense");
+    public static final OreType URANINITE = powah("uraninite", "uraninite_ore")
+            .withStrength(3.2F, 8.0F, 4.5F, 3.0F);
+    public static final OreType URANINITE_POOR = powah("uraninite_poor", "uraninite_ore_poor")
+            .withStrength(3.0F, 8.0F, 4.5F, 3.0F);
+    public static final OreType URANINITE_DENSE = powah("uraninite_dense", "uraninite_ore_dense")
+            .withStrength(4.0F, 8.0F, 4.5F, 3.0F);
 
     // Create: The Factory Must Grow. Its bauxite, galena, lignite and fireclay are NOT ores, they
     // are striated deposit blocks placed by create:layered_ore, so only these three apply.
@@ -311,15 +389,17 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
 
     public static final OreType GLEAMING = modded("gleaming", "things", "things", "gleaming", NONE);
     public static final OreType BORT =
-            modded("bort", "silentgear", "silentgear", "bort", UniformInt.of(3, 7));
+            modded("bort", "silentgear", "silentgear", "bort", UniformInt.of(3, 7))
+            .withStrength(4.0F, 10.0F, 4.0F, 10.0F);
 
     /**
      * Create: New Age targets {@code stone_ore_replaceables} only, so thorium generates in granite,
      * diorite and andesite but never tuff. Its magnetite_block is excluded: a whole-block deposit at
      * 15 veins per chunk, not an ore with blobs on a host stone.
      */
-    public static final OreType THORIUM = new OreType("thorium", "thorium", null, "create_new_age",
-            of("create_new_age", "thorium_ore"), null, null, NONE, null, false, Set.of());
+    public static final OreType THORIUM = ore("thorium", "thorium", null, "create_new_age",
+            of("create_new_age", "thorium_ore"), null, null, NONE, null, false, Set.of())
+            .withStrength(3.5F, 3.5F);
 
     // Silent's Gems in the NETHER. Like our own gold and quartz these ADD ore, because the mod
     // targets c:netherracks only, so they ride the basalt and blackstone host toggles, the nether
@@ -341,18 +421,27 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
     // Mythic Upgrades' ruby and sapphire, which are genuinely new veins through NetherGemFeature at
     // discard 1.0, copied from ancient debris.
     private static OreType silentNether(String name, String plain) {
-        return new OreType(name, name, null, "silentgems", null, null,
-                of("silentgems", "nether_" + plain + "_ore"), GEM_XP, null, false, Set.of());
+        return ore(name, name, null, "silentgems", null, null,
+                of("silentgems", "nether_" + plain + "_ore"), GEM_XP, null, false, Set.of())
+                .withKey("nether_" + name);
     }
 
-    public static final OreType SG_N_ALEXANDRITE = silentNether("alexandrite", "alexandrite");
-    public static final OreType SG_N_BLACK_DIAMOND = silentNether("black_diamond", "black_diamond");
-    public static final OreType SG_N_CARNELIAN = silentNether("carnelian", "carnelian");
-    public static final OreType SG_N_CITRINE = silentNether("silents_citrine", "citrine");
-    public static final OreType SG_N_IOLITE = silentNether("iolite", "iolite");
-    public static final OreType SG_N_MOLDAVITE = silentNether("moldavite", "moldavite");
-    public static final OreType SG_N_PEARL = silentNether("pearl", "pearl");
-    public static final OreType SG_N_TANZANITE = silentNether("tanzanite", "tanzanite");
+    public static final OreType SG_N_ALEXANDRITE = silentNether("alexandrite", "alexandrite")
+            .withStrength(4.0F, 4.0F);
+    public static final OreType SG_N_BLACK_DIAMOND = silentNether("black_diamond", "black_diamond")
+            .withStrength(4.0F, 4.0F);
+    public static final OreType SG_N_CARNELIAN = silentNether("carnelian", "carnelian")
+            .withStrength(4.0F, 4.0F);
+    public static final OreType SG_N_CITRINE = silentNether("silents_citrine", "citrine")
+            .withStrength(4.0F, 4.0F);
+    public static final OreType SG_N_IOLITE = silentNether("iolite", "iolite")
+            .withStrength(4.0F, 4.0F);
+    public static final OreType SG_N_MOLDAVITE = silentNether("moldavite", "moldavite")
+            .withStrength(4.0F, 4.0F);
+    public static final OreType SG_N_PEARL = silentNether("pearl", "pearl")
+            .withStrength(4.0F, 4.0F);
+    public static final OreType SG_N_TANZANITE = silentNether("tanzanite", "tanzanite")
+            .withStrength(4.0F, 4.0F);
 
     /**
      * Silent's Gems' opal: a {@code GemOreBlock} like every other gem, so {@link #GEM_XP}. It is
@@ -382,8 +471,39 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
                     SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE,
                     SG_OPAL);
 
-    /** The id of the ore this type stands in for in the given host, or <b>null</b> if no pairing. */
-    public Identifier vanillaFor(HostStone host) {
+    private static final Map<String, OreType> BY_KEY = byKey();
+
+    private static Map<String, OreType> byKey() {
+        final Map<String, OreType> byKey = new HashMap<>();
+        for (OreType ore : ALL) {
+            // The generator refuses a duplicate key; this only guards a hand edit it never saw.
+            if (byKey.putIfAbsent(ore.key(), ore) != null) {
+                Constants.LOG.error("Two ores share the key {}; the second is left out of the modded stones", ore.key());
+            }
+        }
+        return Map.copyOf(byKey);
+    }
+
+    /** The ore with this {@link #key()}, or null. */
+    public static OreType byKey(String key) {
+        return BY_KEY.get(key);
+    }
+
+    /** Whether this ore exists in this game: always for vanilla's, only with its mod for a modded one. */
+    public boolean isLoaded() {
+        return requiredModId == null || Services.PLATFORM.isModLoaded(requiredModId);
+    }
+
+    /** Every block that IS this ore before a stone swallows it: stone form, deepslate form, Nether form. */
+    public List<Identifier> forms() {
+        return Stream.of(stoneOre, deepslateOre, netherOre).filter(Objects::nonNull).toList();
+    }
+
+    /**
+     * The form of this ore that the game's own rock of the given host's tier receives, which its variant
+     * stands in for; <b>null</b> if that rock takes no such ore, which is what decides the pairing there.
+     */
+    public Identifier formIn(HostStone host) {
         if (skipHosts.contains(host.name())) {
             return null;
         }
@@ -394,10 +514,16 @@ public record OreType(String name, String overlay, String deepslateOverlay, Stri
         };
     }
 
-    /** Overlay texture key for this host, honouring a per-tier override. */
-    public String overlayFor(HostStone host) {
-        return host.tier() == OreTier.DEEPSLATE && deepslateOverlay != null ? deepslateOverlay : overlay;
+    /**
+     * Whether this ore does something of its own while it sits in the world or is mined, which its
+     * variants hand to the block they stand in for (see HostedOreBlock): Mythic Metals' banglum, which
+     * can blow up.
+     */
+    public boolean keepsBehaviour() {
+        return KEEPS_BEHAVIOUR.contains(key);
     }
+
+    private static final Set<String> KEEPS_BEHAVIOUR = Set.of("banglum", "nether_banglum");
 
     /** Experience for this host, honouring a per-tier override. */
     public IntProvider xpFor(HostStone host) {

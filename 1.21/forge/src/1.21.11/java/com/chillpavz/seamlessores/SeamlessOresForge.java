@@ -5,7 +5,7 @@ import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
 import com.chillpavz.seamlessores.worldgen.CopperDensityInjector;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
-import com.chillpavz.seamlessores.worldgen.OreTargetInjector;
+import com.chillpavz.seamlessores.worldgen.Worldgen;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -71,7 +71,7 @@ public class SeamlessOresForge {
         // BEFORE inject(), which ends by warning if no thinning ever happened.
         // See CopperDensityInjector.thinAtServerStart.
         CopperDensityInjector.thinAtServerStart(event.getServer().registryAccess());
-        OreTargetInjector.inject(event.getServer().registryAccess());
+        Worldgen.onServerStarting(event.getServer().registryAccess());
     }
 
     private static void onRegister(RegisterEvent event) {

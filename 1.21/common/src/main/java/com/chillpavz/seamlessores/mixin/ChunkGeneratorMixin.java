@@ -49,7 +49,7 @@ import java.util.function.Function;
  *
  * <p>So the thinning moves to the head of {@code validate()}. The table is then built from the
  * instances we already put in place, and no stale entry can exist. Nothing else this mod does needs
- * it: {@code OreTargetInjector} rebinds {@code Holder<Feature>} values, which leaves the owning
+ * it: {@code OreSideInjector} rebinds {@code Holder<Feature>} values, which leaves the owning
  * {@code PlacedFeature} instance untouched, and {@code VeinOreInjector} works on
  * {@code Registries.MATERIAL_RULE}, which the feature table never sees.
  *

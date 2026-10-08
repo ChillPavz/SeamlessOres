@@ -88,7 +88,7 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Energized Tin | `granite_energized_tin_ore` | `diorite_energized_tin_ore` | `andesite_energized_tin_ore` | `tuff_energized_tin_ore` |
+| Tin | `granite_energized_tin_ore` | `diorite_energized_tin_ore` | `andesite_energized_tin_ore` | `tuff_energized_tin_ore` |
 
 **Mythic Metals, Overworld, requires `mythicmetals`**
 
@@ -174,11 +174,11 @@ touching ore of the same type across different host stones.
 | Tanzanite | `granite_tanzanite_ore` | `diorite_tanzanite_ore` | `andesite_tanzanite_ore` | `tuff_tanzanite_ore` |
 | Turquoise | `granite_turquoise_ore` | `diorite_turquoise_ore` | `andesite_turquoise_ore` | `tuff_turquoise_ore` |
 | White Diamond | `granite_white_diamond_ore` | `diorite_white_diamond_ore` | `andesite_white_diamond_ore` | `tuff_white_diamond_ore` |
-| Silents Aquamarine | `granite_silents_aquamarine_ore` | `diorite_silents_aquamarine_ore` | `andesite_silents_aquamarine_ore` | `tuff_silents_aquamarine_ore` |
-| Silents Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` |
-| Silents Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` |
-| Silents Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` |
-| Silents Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` |
+| Aquamarine | `granite_silents_aquamarine_ore` | `diorite_silents_aquamarine_ore` | `andesite_silents_aquamarine_ore` | `tuff_silents_aquamarine_ore` |
+| Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` |
+| Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` |
+| Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` |
+| Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` |
 | Opal | `granite_opal_ore` | `diorite_opal_ore` | `andesite_opal_ore` | `tuff_opal_ore` |
 
 **Silent's Gems, Nether, requires `silentgems`**
@@ -188,7 +188,7 @@ touching ore of the same type across different host stones.
 | Alexandrite | `basalt_alexandrite_ore` | `blackstone_alexandrite_ore` |
 | Black Diamond | `basalt_black_diamond_ore` | `blackstone_black_diamond_ore` |
 | Carnelian | `basalt_carnelian_ore` | `blackstone_carnelian_ore` |
-| Silents Citrine | `basalt_silents_citrine_ore` | `blackstone_silents_citrine_ore` |
+| Citrine | `basalt_silents_citrine_ore` | `blackstone_silents_citrine_ore` |
 | Iolite | `basalt_iolite_ore` | `blackstone_iolite_ore` |
 | Moldavite | `basalt_moldavite_ore` | `blackstone_moldavite_ore` |
 | Pearl | `basalt_pearl_ore` | `blackstone_pearl_ore` |

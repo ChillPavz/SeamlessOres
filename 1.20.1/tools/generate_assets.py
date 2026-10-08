@@ -34,7 +34,9 @@ import zipfile
 
 # The overlay art lives once, in the repository's shared/textures pool (shared/tools/assetgen.py).
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "shared", "tools"))
-from assetgen import POOL, texture_path, write_texture_json  # noqa: E402
+from assetgen import (POOL, TOOL_TAGS, assert_no_dashes, block_model, era_file, jar, jar_tags,  # noqa: E402
+                      parse_host_table, read_mod_tags, silk_touch_to, stone_name, texture_path, title,
+                      write_json, write_texture_json)
 
 MOD_ID = "seamlessores"
 
@@ -73,21 +75,17 @@ CLIENT_JAR = os.path.expanduser(
 # fine; keep the attribution line in the README. When the jar is missing, zinc JSON still generates
 # (the loot shape is baked below, verified identical to vanilla iron_ore's) but the texture step
 # skips zinc.
-CREATE_JAR = os.environ.get("CREATE_JAR", "../references/jars/1.20.1-create-1.20.1-6.0.8.jar")
+CREATE_JAR = jar("1.20.1-create-1.20.1-6.0.8.jar", "CREATE_JAR")
 
 # Mythic Upgrades (mod id 'mythicupgrades', MIT, 26.2 on all four loaders). Source of its ore
 # textures and the facts behind the entries below. Override with MYTHIC_UPGRADES_JAR.
-MYTHIC_UPGRADES_JAR = os.environ.get(
-    "MYTHIC_UPGRADES_JAR", "../references/jars/1.20.1-mythicupgrades-forge-1.20.1-5.1.0.jar")
+MYTHIC_UPGRADES_JAR = jar("1.20.1-mythicupgrades-forge-1.20.1-5.1.0.jar", "MYTHIC_UPGRADES_JAR")
 
 # Mythic Metals (mod id 'mythicmetals', MIT). Fabric only on every version it has ever shipped, so
 # its variants only ever register there. Source of its ore textures, loot tables and tool tags.
-SILENT_GEMS_JAR = os.environ.get(
-    "SILENT_GEMS_JAR",
-    "../references/jars/1.20.1-silents-gems-1.20.1-4.7.0.jar")
+SILENT_GEMS_JAR = jar("1.20.1-silents-gems-1.20.1-4.7.0.jar", "SILENT_GEMS_JAR")
 
-MYTHIC_METALS_JAR = os.environ.get(
-    "MYTHIC_METALS_JAR", "../references/jars/1.20.1-mythicmetals-0.19.12+1.20.1.jar")
+MYTHIC_METALS_JAR = jar("1.20.1-mythicmetals-0.19.12+1.20.1.jar", "MYTHIC_METALS_JAR")
 
 # EVERY jar above is the 1.20.1 build of that mod, not a newer one. That matters: the generator
 # TRANSFORMS each mod's own loot table, so reading a 1.21-era jar would bake a 1.21-shaped table
@@ -98,53 +96,48 @@ MYTHIC_METALS_JAR = os.environ.get(
 # a warning rather than an error: the JSON still generates, only the texture step is skipped.
 
 # Dense Mekanism 1.1.0 is on CurseForge only (Modrinth stops at 1.19.2), fetched from its CDN.
-DENSEMEKANISM_JAR = os.environ.get("DENSEMEKANISM_JAR", "../references/jars/1.20.1-densemekanism-1.20.1-1.1.0.jar")
-POWAH_JAR = os.environ.get("POWAH_JAR", "../references/jars/1.20.1-Powah-5.0.11.jar")
+DENSEMEKANISM_JAR = jar("1.20.1-densemekanism-1.20.1-1.1.0.jar", "DENSEMEKANISM_JAR")
+POWAH_JAR = jar("1.20.1-Powah-5.0.11.jar", "POWAH_JAR")
 
-TFMG_JAR = os.environ.get("TFMG_JAR", "../references/jars/1.20.1-tfmg-1.0.2f.jar")
+TFMG_JAR = jar("1.20.1-tfmg-1.0.2f.jar", "TFMG_JAR")
 
-ENERGIZEDPOWER_JAR = os.environ.get("ENERGIZEDPOWER_JAR", "../references/jars/1.20.1-energizedpower-1.20.1-2.15.22-forge.jar")
+ENERGIZEDPOWER_JAR = jar("1.20.1-energizedpower-1.20.1-2.15.22-forge.jar", "ENERGIZEDPOWER_JAR")
 
-ICEANDFIRE_JAR = os.environ.get("ICEANDFIRE_JAR", "../references/jars/iceandfire-2.1.13-1.20.1-beta-5.jar")
-EXPORES_JAR = os.environ.get("EXPORES_JAR", "../references/jars/1.20.1-expores-1.0.0+mc1.20.1.jar")
-THINGS_JAR = os.environ.get("THINGS_JAR", "../references/jars/1.20.1-things-0.3.3+1.20.jar")
+ICEANDFIRE_JAR = jar("iceandfire-2.1.13-1.20.1-beta-5.jar", "ICEANDFIRE_JAR")
+EXPORES_JAR = jar("1.20.1-expores-1.0.0+mc1.20.1.jar", "EXPORES_JAR")
+THINGS_JAR = jar("1.20.1-things-0.3.3+1.20.jar", "THINGS_JAR")
 
-SILENTGEAR_JAR = os.environ.get("SILENTGEAR_JAR", "../references/jars/1.20.1-silent-gear-1.20.1-3.6.7.jar")
+SILENTGEAR_JAR = jar("1.20.1-silent-gear-1.20.1-3.6.7.jar", "SILENTGEAR_JAR")
 
-CREATE_NEW_AGE_JAR = os.environ.get("CREATE_NEW_AGE_JAR", "../references/jars/1.20.1-create-new-age-1.2.0+forge-mc1.20.1.jar")
+CREATE_NEW_AGE_JAR = jar("1.20.1-create-new-age-1.2.0+forge-mc1.20.1.jar", "CREATE_NEW_AGE_JAR")
 
 # Sept 2026 wave: every one of the six has a 1.20.1 build, each fetched for 1.20.1 and SHA-512 checked.
 # Cobblemon's Fabric and Forge 1.5.2 jars ship byte-identical loot tables, so either one serves.
-TECHREBORN_JAR = os.environ.get("TECHREBORN_JAR", "../references/jars/1.20.1-TechReborn-5.8.15.jar")
-MODERN_INDUSTRIALIZATION_JAR = os.environ.get("MODERN_INDUSTRIALIZATION_JAR",
-                                              "../references/jars/1.20.1-Modern-Industrialization-1.8.6.jar")
-OCCULTISM_JAR = os.environ.get("OCCULTISM_JAR", "../references/jars/1.20.1-occultism-1.20.1-1.158.0.jar")
-EXTREME_REACTORS_JAR = os.environ.get("EXTREME_REACTORS_JAR",
-                                      "../references/jars/1.20.1-ExtremeReactors2-1.20.1-2.0.84.jar")
-MYSTICAL_AGRICULTURE_JAR = os.environ.get("MYSTICAL_AGRICULTURE_JAR",
-                                          "../references/jars/1.20.1-MysticalAgriculture-1.20.1-7.0.24.jar")
-COBBLEMON_JAR = os.environ.get("COBBLEMON_JAR", "../references/jars/1.20.1-Cobblemon-forge-1.5.2+1.20.1.jar")
+TECHREBORN_JAR = jar("1.20.1-TechReborn-5.8.15.jar", "TECHREBORN_JAR")
+MODERN_INDUSTRIALIZATION_JAR = jar("1.20.1-Modern-Industrialization-1.8.6.jar", "MODERN_INDUSTRIALIZATION_JAR")
+OCCULTISM_JAR = jar("1.20.1-occultism-1.20.1-1.158.0.jar", "OCCULTISM_JAR")
+EXTREME_REACTORS_JAR = jar("1.20.1-ExtremeReactors2-1.20.1-2.0.84.jar", "EXTREME_REACTORS_JAR")
+MYSTICAL_AGRICULTURE_JAR = jar("1.20.1-MysticalAgriculture-1.20.1-7.0.24.jar", "MYSTICAL_AGRICULTURE_JAR")
+COBBLEMON_JAR = jar("1.20.1-Cobblemon-forge-1.5.2+1.20.1.jar", "COBBLEMON_JAR")
 
 # Immersive Engineering. IE REDREW nickel and uranium after 1.20.1, so the overlays must come
 # from THIS band's own jar rather than the newest one; the two eras are different art.
 # Its ore art is used with BluSunrize's permission (14 Sept 2026), on the stated condition that
 # Immersive Engineering and BluSunrize are credited. See the README credits table.
-IMMERSIVE_ENGINEERING_JAR = os.environ.get("IMMERSIVE_ENGINEERING_JAR",
-                                          "../references/jars/ImmersiveEngineering-1.20.1-10.2.0-183.jar")
+IMMERSIVE_ENGINEERING_JAR = jar("ImmersiveEngineering-1.20.1-10.2.0-183.jar", "IMMERSIVE_ENGINEERING_JAR")
 # Mekanism (MIT, Copyright (c) 2017-2025 Aidan C. Brady, read from the repo's own LICENSE rather
 # than a platform label). Five ores. ITS FEATURE IS NOT minecraft:ore either: mekanism:ore, whose
 # config is its own record, which is the second mod to need the ForeignOreTargets path.
 # Mekanism DRAWS TIN DIFFERENTLY on 1.20.1, so the overlay for that branch is the pack's
 # old_tin_overlay.png; every other overlay is the same drawing on both bands.
-MEKANISM_JAR = os.environ.get("MEKANISM_JAR", "../references/jars/1.20.1-Mekanism-1.20.1-10.4.16.80.jar")
+MEKANISM_JAR = jar("1.20.1-Mekanism-1.20.1-10.4.16.80.jar", "MEKANISM_JAR")
 # Oreganized. Its code is MIT but its LICENSE keeps the assets All Rights Reserved; its ore art is
 # used with the permission of Binome (Team Galena), given 2 Oct 2026. Lead and silver, both plain
 # minecraft:ore on stone_ore_replaceables and deepslate_ore_replaceables, so a pure restyle.
-OREGANIZED_JAR = os.environ.get("OREGANIZED_JAR", "../references/jars/1.20.1-Oreganized-4.3.2.jar")
+OREGANIZED_JAR = jar("1.20.1-Oreganized-4.3.2.jar", "OREGANIZED_JAR")
 # Its Fabric build tags the same ores c:lead_ores / c:silver_ores, where the Forge build uses
 # forge:ores/<x>. Read for tags only, so the variants join both shapes; loot is identical in the two.
-OREGANIZED_FABRIC_JAR = os.environ.get("OREGANIZED_FABRIC_JAR",
-                                       "../references/jars/1.20.1-Oreganized-fabric-2.0.3.jar")
+OREGANIZED_FABRIC_JAR = jar("1.20.1-Oreganized-fabric-2.0.3.jar", "OREGANIZED_FABRIC_JAR")
 # Jars read for ore tags only, beside MOD_JARS: a mod whose two loader builds tag differently.
 TAG_ONLY_JARS = [OREGANIZED_FABRIC_JAR]
 MOD_JARS = {"oreganized": OREGANIZED_JAR,
@@ -170,22 +163,25 @@ MOD_JARS = {"oreganized": OREGANIZED_JAR,
             "mythicmetals": MYTHIC_METALS_JAR}
 
 # Host stones that receive ore but have no matching ore texture in vanilla.
-# KEEP IN SYNC WITH HostStone.java.
-#   tier - which vanilla ore this stone stands in for
 #   side / end - the model's base textures for side faces and up/down faces. For most stones they
 #     are the same sprite, but basalt AND blackstone are cube_column blocks in vanilla (side + _top
 #     textures); using the side sprite on all six faces makes our tops visibly mismatch the
 #     neighbouring stone. Values read from the vanilla block models, not guessed.
 # Stone and deepslate are absent (vanilla ships matching ores). Calcite and smooth basalt are absent
 # because they are in no ore replaceables tag, so ore never generates in them at all.
-HOSTS = {
-    "granite":    {"tier": "stone",     "side": "minecraft:block/granite",     "end": "minecraft:block/granite"},
-    "diorite":    {"tier": "stone",     "side": "minecraft:block/diorite",     "end": "minecraft:block/diorite"},
-    "andesite":   {"tier": "stone",     "side": "minecraft:block/andesite",    "end": "minecraft:block/andesite"},
-    "tuff":       {"tier": "deepslate", "side": "minecraft:block/tuff",        "end": "minecraft:block/tuff"},
-    "basalt":     {"tier": "nether",    "side": "minecraft:block/basalt_side", "end": "minecraft:block/basalt_top"},
-    "blackstone": {"tier": "nether",    "side": "minecraft:block/blackstone",  "end": "minecraft:block/blackstone_top"},
+LOOKS = {
+    "granite":    {"side": "minecraft:block/granite",     "end": "minecraft:block/granite"},
+    "diorite":    {"side": "minecraft:block/diorite",     "end": "minecraft:block/diorite"},
+    "andesite":   {"side": "minecraft:block/andesite",    "end": "minecraft:block/andesite"},
+    "tuff":       {"side": "minecraft:block/tuff",        "end": "minecraft:block/tuff"},
+    "basalt":     {"side": "minecraft:block/basalt_side", "end": "minecraft:block/basalt_top"},
+    "blackstone": {"side": "minecraft:block/blackstone",  "end": "minecraft:block/blackstone_top"},
 }
+# The host table itself is READ from HostStone.java (the same parser Seamless Glowing Ores uses), so
+# the blocks the game registers and the ones generated here cannot drift apart.
+HOST_TABLE = era_file(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "common"),
+                      "1.20.1", "java/com/chillpavz/seamlessores/content/HostStone.java")
+HOSTS = {h["name"]: {**h, **LOOKS[h["name"]]} for h in parse_host_table(HOST_TABLE)}
 
 # Ore definitions. KEEP IN SYNC WITH OreType.java.
 #   name    - id suffix, so <host>_<name>_ore
@@ -781,14 +777,6 @@ for _ore in ORE_DEFS:
             _ore["host_overlays"].update(basalt=(f"{_stone}_basalt_side", f"{_stone}_basalt_top"),
                                          blackstone=(f"{_stone}_blackstone", f"{_stone}_blackstone_top"))
 
-FACES = ["down", "up", "north", "south", "west", "east"]
-
-# Tool tags are NOT hardcoded per ore: they are read from the jar and mirrored per variant, keyed on
-# the vanilla equivalent. This matters because it is not uniform by ore - overworld gold_ore is in
-# needs_iron_tool but nether_gold_ore is in NO tool tag (wooden pickaxe), and coal is in none either.
-TOOL_TAGS = ["needs_stone_tool", "needs_iron_tool", "needs_diamond_tool"]
-
-
 def repo_root():
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -944,63 +932,13 @@ def all_overlay_keys():
     return sorted({overlay_for(o, c, face) for _h, c, o, _v in variants() for face in ("side", "end")})
 
 
-# House style: this project does not use U+2014 EM DASH or U+2013 EN DASH in player-facing text.
-# Ordinary hyphens are fine.
-DASHES = ("\u2014", "\u2013")
-
-
-def assert_no_dashes(strings, what):
-    """Fails the run if any generated string carries an em or en dash.
-
-    Everything this generator writes is read by a player: the config screen's labels and tooltips,
-    every block name, and the README. Checking by eye does not scale to a few hundred lang entries
-    and would have to be redone on every branch, so it is asserted instead. Ordinary hyphens are
-    fine and untouched; the rule is only about the two long dashes.
-    """
-    bad = [(key, text) for key, text in strings if any(d in text for d in DASHES)]
-    if bad:
-        report = "\n".join("    {}\n      {}".format(k, t) for k, t in bad)
-        raise SystemExit(
-            "  !! {} {} contain an em or en dash, which must not reach players:\n{}\n"
-            "     Replace them with a comma, a colon, a full stop, brackets or a plain hyphen."
-            .format(len(bad), what, report))
-
-
-def write_json(path, data):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as handle:
-        json.dump(data, handle, indent=2)
-        handle.write("\n")
-
-
 def variant_name(host, ore):
     return f"{host}_{ore}_ore"
 
 
-# Display-name overrides where the id fragment is not the vanilla display word. Vanilla calls the
-# block "Lapis Lazuli Ore" (id lapis_ore) - "Granite Lapis Ore" would be the exact naming
-# inconsistency users reported on the incumbent. Quartz stays "Quartz" (no "Nether" prefix: that
-# prefix distinguishes an overworld quartz that does not exist, and ours is already host-prefixed).
-# Prefixes that disambiguate a clashing ore name read as the mod, not as a made-up word.
-# Word parts that do not capitalise into the name a player should read. "mi" and "ie" are the two
-# mods whose full names are far too long for a block name (Modern Industrialization, Immersive
-# Engineering), so their prefixed ores read as the abbreviation their communities already use.
-DISPLAY_NAMES = {"lapis": "Lapis Lazuli", "techreborn": "Tech Reborn", "mi": "MI", "ie": "IE"}
-
-
-def title(name):
-    words = [DISPLAY_NAMES.get(part, part.capitalize()) for part in name.split("_")]
-    return " ".join(words)
-
-
-def cube_faces(side_ref, end_ref=None):
-    """Full-cube faces: side_ref on the four sides, end_ref (default same) on up/down."""
-    end_ref = end_ref or side_ref
-    face = {}
-    for side in FACES:
-        ref = end_ref if side in ("up", "down") else side_ref
-        face[side] = {"uv": [0, 0, 16, 16], "texture": ref, "cullface": side}
-    return face
+def block_title(host, ore):
+    """e.g. Granite Iron Ore. The stone's own name, then the ore's (never its mod's), then Ore."""
+    return f"{stone_name(HOSTS[host]['path'])} {title(ore['name'])} Ore"
 
 
 def generate_json():
@@ -1030,27 +968,10 @@ def generate_json():
             # (ExtendedBlockModelDeserializer on each, verified in neoforge 21.1.80 and forge 52).
             # Vanilla and Fabric ignore the key, so FABRIC IS HANDLED IN CODE by
             # SeamlessOresFabricClient calling BlockRenderLayerMap. Both halves are needed.
-            textures = {
-                "particle": host_cfg["side"],
-                "side": host_cfg["side"],
-                "end": host_cfg["end"],
-                "overlay": f"{MOD_ID}:block/{overlay_for(ore, host_cfg)}_overlay",
-            }
-            end_overlay = overlay_for(ore, host_cfg, "end")
-            if end_overlay != overlay_for(ore, host_cfg):
-                textures["overlay_end"] = f"{MOD_ID}:block/{end_overlay}_overlay"
             write_json(
                 os.path.join(root, "models", "block", f"{name}.json"),
-                {
-                    "parent": "minecraft:block/block",
-                    "render_type": "minecraft:cutout",
-                    "textures": textures,
-                    "elements": [
-                        {"from": [0, 0, 0], "to": [16, 16, 16], "faces": cube_faces("#side", "#end")},
-                        {"from": [0, 0, 0], "to": [16, 16, 16],
-                         "faces": cube_faces("#overlay", "#overlay_end" if "overlay_end" in textures else None)},
-                    ],
-                },
+                block_model(host_cfg["side"], host_cfg["end"], overlay_for(ore, host_cfg),
+                            overlay_for(ore, host_cfg, "end"), render_type="minecraft:cutout"),
             )
 
             # Item model. The assets/<ns>/items/ DEFINITION layer only arrives at 1.21.4, so at
@@ -1063,7 +984,7 @@ def generate_json():
             count += 1
 
     lang = {
-        f"block.{MOD_ID}.{variant_name(host, ore['name'])}": title(variant_name(host, ore["name"]))
+        f"block.{MOD_ID}.{variant_name(host, ore['name'])}": block_title(host, ore)
         for host, _cfg, ore, _v in variants()
     }
     # Cloth Config / AutoConfig screen strings. The key shapes are fixed by AutoConfig:
@@ -1431,11 +1352,13 @@ def generate_data():
     ours = data_dir(MOD_ID)
     mc = data_dir("minecraft")
     mod_ore_tags = read_mod_ore_tags()
+    _, modded_tool_tags, mod_own_tool_tags = read_mod_tags(MOD_JARS, ORE_DEFS)
     parity_block = {}
     parity_item = {}
 
     mineable = []
     tool_tags = {}
+    foreign_tool_tags = {}          # a source mod's OWN needs_* tags, mirrored for our variants
     conv_block = {}
     conv_item = {}
     ores_in_ground = {}
@@ -1445,32 +1368,10 @@ def generate_data():
         # Read the real vanilla tool tags once, then mirror membership per variant. NOT hardcoded
         # per ore, because it is not uniform by ore: overworld gold_ore is in needs_iron_tool but
         # nether_gold_ore is in none of them (wooden pickaxe), and coal is in none either.
-        vanilla_tool_tags = {}
-        for tag in TOOL_TAGS:
-            with jar.open(f"data/minecraft/tags/blocks/{tag}.json") as handle:
-                vanilla_tool_tags[tag] = set(json.load(handle)["values"])
-
-        # Modded ores' tool tags come from THEIR jar - zinc is needs_iron_tool via Create's own
-        # data, and hardcoding would have guessed stone-tool wrong. Read every mod we cover, not
-        # just Create: the entries merge, and each mod only ever names its own blocks.
-        modded_tool_tags = {}
-        for mod_id, mod_jar in MOD_JARS.items():
-            if not os.path.exists(mod_jar):
-                print(f"  !! {mod_id} jar not found ({mod_jar}) - its tool tags fall back to needs_iron_tool")
-                for ore in ORE_DEFS:
-                    if ore.get("mod") != mod_id:
-                        continue
-                    for tier_ore in ore["tiers"].values():
-                        modded_tool_tags.setdefault("needs_iron_tool", set()).add(f"{mod_id}:{tier_ore}")
-                continue
-            with zipfile.ZipFile(mod_jar) as mod_jar_zip:
-                for tag in TOOL_TAGS:
-                    try:
-                        with mod_jar_zip.open(f"data/minecraft/tags/blocks/{tag}.json") as handle:
-                            values = {str(v) for v in json.load(handle)["values"]}
-                    except KeyError:
-                        continue
-                    modded_tool_tags.setdefault(tag, set()).update(values)
+        # A modded ore's tier comes from ITS jar (read_mod_tags, nested references resolved): zinc is
+        # needs_iron_tool via Create's own data, and Powah lists its tiers as #c:ores/uraninite.
+        vanilla = jar_tags(jar, "block")
+        vanilla_tool_tags = {tag: vanilla.get(f"minecraft:{tag}", set()) for tag in TOOL_TAGS}
         for host, host_cfg, ore, vanilla in variants():
                 name = variant_name(host, ore["name"])
                 our_id = f"{MOD_ID}:{name}"
@@ -1484,15 +1385,7 @@ def generate_data():
                     # than ore_drops. Copying the real table is the only way to guarantee parity.
                     with jar.open(f"data/minecraft/{LOOT_DIR}/blocks/{vanilla}.json") as handle:
                         table = json.load(handle)
-                    for pool in table.get("pools", []):
-                        for entry in pool.get("entries", []):
-                            for child in entry.get("children", []):
-                                if any(
-                                    cond.get("condition") == "minecraft:match_tool"
-                                    for cond in child.get("conditions", [])
-                                ):
-                                    # Silk-touch branch drops the block itself - ours.
-                                    child["name"] = our_id
+                    silk_touch_to(table, vanilla_id, our_id, name, "1.20.1")
                     # No random_sequence: 1.20.1's own tables do not have that field yet
                     # (checked against data/minecraft/loot_tables/blocks/iron_ore.json).
                 else:
@@ -1540,15 +1433,7 @@ def generate_data():
                             # version it has to be checked against that version's jar.
                             ABSENT_AT_THIS_VERSION.setdefault(mod, []).append(f"{name} ({vanilla})")
                             continue
-                    for pool in table.get("pools", []):
-                        for entry in pool.get("entries", []):
-                            for child in entry.get("children", []):
-                                if any(
-                                    cond.get("condition") == "minecraft:match_tool"
-                                    for cond in child.get("conditions", [])
-                                ):
-                                    # Silk-touch branch drops the block itself - ours.
-                                    child["name"] = our_id
+                    silk_touch_to(table, vanilla_id, our_id, name, "1.20.1")
                     # Fabric's conditions keep it inert when the mod is absent. There is NO
                     # Forge key here, and that is not an oversight: Forge 1.20.1 does not honour
                     # conditions on loot tables at all, so the Forge copy is gated by shipping it
@@ -1585,6 +1470,10 @@ def generate_data():
                 for tag, members in source_tags.items():
                     if vanilla_id in members:
                         tool_tags.setdefault(tag, []).append(entry)
+                if mod:
+                    for tag_key, members in mod_own_tool_tags.items():
+                        if vanilla_id in members:
+                            foreign_tool_tags.setdefault(tag_key, []).append(entry)
                 conv_block.setdefault(ore["name"], []).append(entry)
                 conv_item.setdefault(ore["name"], []).append(entry)
                 # TAG PARITY with the ore we stand in for: every common ore tag its counterpart is in,
@@ -1609,6 +1498,11 @@ def generate_data():
     write_json(os.path.join(mc, *TAG_BLOCK_DIR, "mineable", "pickaxe.json"), {"values": mineable})
     for tag, values in tool_tags.items():
         write_json(os.path.join(mc, *TAG_BLOCK_DIR, f"{tag}.json"), {"values": values})
+    # The source mods' own tier tags. These merge with that mod's file, and every entry is optional,
+    # so the file is inert on an instance without the mod.
+    for (namespace, tag), values in foreign_tool_tags.items():
+        write_json(os.path.join(data_dir(namespace), *TAG_BLOCK_DIR, f"{tag}.json"),
+                   {"values": values})
 
     all_ids = sorted(mineable, key=lambda e: e["id"] if isinstance(e, dict) else e)
     # Written into BOTH common-tag namespaces, because 1.20.x is the era where the ecosystem is

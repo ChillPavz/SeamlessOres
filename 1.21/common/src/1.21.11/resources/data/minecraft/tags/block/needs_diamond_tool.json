@@ -1,7 +1,15 @@
 {
   "values": [
     {
+      "id": "seamlessores:granite_chaos_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_chaos_ore",
       "required": false
     },
     {
@@ -9,7 +17,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_chaos_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_chaos_ore",
       "required": false
     },
     {

@@ -135,7 +135,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "techreborn:deepslate_ruby_ore"
+          "name": "seamlessores:tuff_techreborn_ruby_ore"
         }
       ],
       "rolls": 1.0

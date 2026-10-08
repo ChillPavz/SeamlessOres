@@ -25,6 +25,12 @@ dependencies {
     commonResources project(path: ':common', configuration: 'commonResources')
 }
 
+// Cloth Config's classes need the loader classpath but are the same bytes on every loader of a band:
+// one copy, cloth-config/src/<era>/java (eras as in multiloader-common), compiled by each loader.
+bandEraDirs(rootProject.file('cloth-config')).each { era ->
+    sourceSets.main.java.srcDir(new File(era, 'java'))
+}
+
 tasks.named('compileJava', JavaCompile) {
     dependsOn(configurations.commonJava)
     source(configurations.commonJava)
