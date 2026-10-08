@@ -47,6 +47,18 @@
     {
       "id": "seamlessores:tuff_uraninite_dense_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_uraninite_dense_ore",
+      "required": false
     }
   ]
 }

@@ -3,10 +3,16 @@ package com.chillpavz.seamlessores.worldgen;
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
 import com.chillpavz.seamlessores.platform.Services;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.mojang.serialization.JsonOps;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.RegistryOps;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -16,6 +22,8 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.function.UnaryOperator;
 
 /**
  * Minecraft 1.20.1: a feature's ore targets live in its configuration, so the CONFIGURED feature is
@@ -68,6 +76,31 @@ final class BandWorldgen implements WorldgenEra {
     @Override
     public boolean receives(RuleTest original, Block stone) {
         return OreTargets.receives(original, stone);
+    }
+
+    @Override
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    public boolean rewriteFeature(RegistryAccess registries, String path, UnaryOperator<JsonObject> edit) {
+        final Optional<Holder.Reference<ConfiguredFeature<?, ?>>> holder =
+                registries.registryOrThrow(Registries.CONFIGURED_FEATURE)
+                        .getHolder(ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(path)));
+        if (holder.isEmpty()) {
+            return false;
+        }
+        final RegistryOps<JsonElement> ops = RegistryOps.create(JsonOps.INSTANCE, registries);
+        final JsonElement json = ConfiguredFeature.DIRECT_CODEC.encodeStart(ops, holder.get().value()).getOrThrow(false, error -> { });
+        if (!json.isJsonObject()) {
+            return false;
+        }
+        final JsonObject edited = edit.apply(json.getAsJsonObject().deepCopy());
+        if (edited == null) {
+            return false;
+        }
+        final ConfiguredFeature<?, ?> rebuilt = ConfiguredFeature.DIRECT_CODEC.parse(ops, edited).getOrThrow(false, error -> { });
+        // Rebinding the holder rather than the placed feature: the feature-order table indexes placed
+        // feature instances, which stay the same objects, so nothing indexed goes stale.
+        ((Holder.Reference) holder.get()).bindValue(rebuilt);
+        return true;
     }
 
     /**

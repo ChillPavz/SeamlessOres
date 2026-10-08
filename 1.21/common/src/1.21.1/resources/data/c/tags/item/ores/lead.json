@@ -111,6 +111,34 @@
     {
       "id": "seamlessores:tuff_oreganized_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_oreganized_lead_ore",
+      "required": false
     }
   ]
 }

@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_turquoise_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_turquoise_ore",
+      "required": false
     }
   ]
 }

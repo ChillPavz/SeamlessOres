@@ -155,6 +155,45 @@
     {
       "id": "seamlessores:tuff_energized_tin_ore",
       "required": false
+    },
+    "seamlessores:dripstone_iron_ore",
+    "seamlessores:dripstone_copper_ore",
+    "seamlessores:dripstone_lapis_ore",
+    {
+      "id": "seamlessores:dripstone_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_energized_tin_ore",
+      "required": false
     }
   ]
 }

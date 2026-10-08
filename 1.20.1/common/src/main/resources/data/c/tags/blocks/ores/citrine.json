@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_citrine_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_citrine_ore",
+      "required": false
     }
   ]
 }

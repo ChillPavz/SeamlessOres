@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_bort_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_bort_ore",
+      "required": false
     }
   ]
 }

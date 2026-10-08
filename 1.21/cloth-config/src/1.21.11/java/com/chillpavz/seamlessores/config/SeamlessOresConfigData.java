@@ -58,8 +58,23 @@ public class SeamlessOresConfigData implements ConfigData {
     public boolean tuff = true;
 
     @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip
+    public boolean dripstone = true;
+
+    // Removes the ore it touches rather than restyling it; see SeamlessOresConfig.lushCaves.
+    @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean lushCaves = true;
+
+    @ConfigEntry.Category("overworld")
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean oreVeins = true;
+
+    // Removes ore: an ore that could never form in granite, diorite, andesite or tuff stays that
+    // rock instead. Off by default; see SeamlessOresConfig.geology.
+    @ConfigEntry.Category("overworld")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean geology = false;
 
 
     // Copper. The ONLY overworld settings that change how much ore there is rather than how it
@@ -222,13 +237,18 @@ public class SeamlessOresConfigData implements ConfigData {
     public void push() {
         final SeamlessOresConfig.Values values = new SeamlessOresConfig.Values();
 
-        values.granite = granite;
-        values.diorite = diorite;
-        values.andesite = andesite;
-        values.tuff = tuff;
-        values.basalt = basalt;
-        values.blackstone = blackstone;
+        values.lushCaves = lushCaves;
+        // BEGIN GENERATED host switches (tools/generate_assets.py, from the host table)
+        values.hosts.put("granite", granite);
+        values.hosts.put("diorite", diorite);
+        values.hosts.put("andesite", andesite);
+        values.hosts.put("tuff", tuff);
+        values.hosts.put("dripstone", dripstone);
+        values.hosts.put("basalt", basalt);
+        values.hosts.put("blackstone", blackstone);
+        // END GENERATED host switches
         values.oreVeins = oreVeins;
+        values.geology = geology;
 
         values.bastionSafeNether = bastionSafeNether;
         values.netherOreRarity = netherOreRarity;

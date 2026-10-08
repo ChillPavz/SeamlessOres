@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_dawn_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dawn_stone_ore",
+      "required": false
     }
   ]
 }

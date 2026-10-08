@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_oreganized_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_oreganized_lead_ore",
+      "required": false
     }
   ]
 }

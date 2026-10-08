@@ -43,6 +43,18 @@
     {
       "id": "seamlessores:tuff_oreganized_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_oreganized_silver_ore",
+      "required": false
     }
   ]
 }

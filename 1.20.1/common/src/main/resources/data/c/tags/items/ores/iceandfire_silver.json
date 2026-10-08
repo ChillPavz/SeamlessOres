@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_iceandfire_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_iceandfire_silver_ore",
+      "required": false
     }
   ]
 }

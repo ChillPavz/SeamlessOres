@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_yellorite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_yellorite_ore",
+      "required": false
     }
   ]
 }

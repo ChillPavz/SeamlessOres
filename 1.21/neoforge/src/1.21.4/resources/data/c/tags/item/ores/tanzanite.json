@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_tanzanite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_tanzanite_ore",
       "required": false
     },

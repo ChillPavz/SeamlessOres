@@ -33,6 +33,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_sapphire_ore",
       "required": false
     },

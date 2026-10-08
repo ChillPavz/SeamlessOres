@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_runite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_runite_ore",
+      "required": false
     }
   ]
 }

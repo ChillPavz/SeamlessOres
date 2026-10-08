@@ -21,8 +21,8 @@ import java.util.Set;
  * <p>Two kinds of host, and the difference is where their ores come from:
  * <ul>
  *   <li><b>The game's own rock</b> ({@link #placedBy()} null): granite, diorite, andesite and tuff take
- *       the ore that generates in them, by tier (see {@link OreTier}); basalt and blackstone have a
- *       mechanism of their own. Which ores pair is derived from the ore table.</li>
+ *       the ore that generates in them, by tier (see {@link OreTier}); dripstone, basalt and
+ *       blackstone each have a mechanism of their own. Which ores pair is derived from the ore table.</li>
  *   <li><b>A stone another mod places</b>. Such a stone is laid down AFTER the ores (or the ores into
  *       it), so it ends up around ore of every form, the "swallowed" ores. Which ones is measured, not
  *       derived: every ore that reaches the stone's height band in its biome at a rate above the floor.
@@ -50,6 +50,11 @@ public final class HostStone {
     // Tuff sits in deepslate_ore_replaceables, so vanilla currently puts deepslate-textured ore in it.
     // That is the most visible seam in the game and the clearest single win for this mod.
     public static final HostStone TUFF = vanilla("tuff", OreTier.DEEPSLATE, MapColor.TERRACOTTA_GRAY);
+    // Ore never generates IN dripstone. The dripstone cluster converts the cave shell after the ores
+    // and skips them, so its variants are swapped in there instead of by the ore features. One variant
+    // per ore covers both tiers: the caves straddle y=0, so deepslate ore gets wrapped as well.
+    public static final HostStone DRIPSTONE = vanilla("dripstone", "dripstone_block", OreTier.DRIPSTONE,
+            MapColor.TERRACOTTA_BROWN);
     // Nether hosts: the two stones in base_stone_nether besides netherrack itself. Their variants ADD
     // ore, see OreTier.NETHER, so their worldgen injection is config-gated.
     public static final HostStone BASALT = vanilla("basalt", OreTier.NETHER, MapColor.COLOR_BLACK);
@@ -60,7 +65,7 @@ public final class HostStone {
      * config screen lists them.
      */
     public static final List<HostStone> ALL = List.of(
-            GRANITE, DIORITE, ANDESITE, TUFF, BASALT, BLACKSTONE);
+            GRANITE, DIORITE, ANDESITE, TUFF, DRIPSTONE, BASALT, BLACKSTONE);
 
     private final String name;
     private final ResourceLocation id;

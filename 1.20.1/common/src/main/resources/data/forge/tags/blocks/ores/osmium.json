@@ -13,6 +13,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_osmium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_mek_osmium_ore",
       "required": false
     },
@@ -26,6 +30,10 @@
     },
     {
       "id": "seamlessores:tuff_mek_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mek_osmium_ore",
       "required": false
     }
   ]

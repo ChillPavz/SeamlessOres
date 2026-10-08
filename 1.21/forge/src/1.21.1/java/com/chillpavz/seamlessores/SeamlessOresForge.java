@@ -60,13 +60,12 @@ public class SeamlessOresForge {
 
     private static void onServerAboutToStart(ServerAboutToStartEvent event) {
 
-        // COPPER IS THINNED HERE ON THIS LOADER AND NOWHERE ELSE IN IT. ChunkGeneratorMixin does
-        // the job on Fabric and NeoForge, but classic Forge runs on SRG names and this module has
-        // no refmap for that mixin, so its config is not registered and the mixin never applies.
-        // Forge fires this event before the levels exist, which is before the feature-order table
-        // is built, so the rebind is safe from here; that is not true on Fabric. It must come
-        // BEFORE inject(), which ends by warning if no thinning ever happened.
-        // See CopperDensityInjector.thinAtServerStart.
+        // Copper is thinned here as well as by ChunkGeneratorMixin, which this module registers too
+        // (MixinConfigs). Forge fires this event before the levels exist, which is before the
+        // feature-order table is built, so the rebind is safe from here; that is not true on Fabric.
+        // The two passes are idempotent against each other, so copper is thinned once, and this one
+        // still does it if the mixin ever fails to apply. It must come BEFORE onServerStarting(),
+        // which warns if no thinning ever happened. See CopperDensityInjector.thinAtServerStart.
         CopperDensityInjector.thinAtServerStart(event.getServer().registryAccess());
         Worldgen.onServerStarting(event.getServer().registryAccess());
     }

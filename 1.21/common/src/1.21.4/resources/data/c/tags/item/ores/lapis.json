@@ -3,6 +3,7 @@
     "seamlessores:granite_lapis_ore",
     "seamlessores:diorite_lapis_ore",
     "seamlessores:andesite_lapis_ore",
-    "seamlessores:tuff_lapis_ore"
+    "seamlessores:tuff_lapis_ore",
+    "seamlessores:dripstone_lapis_ore"
   ]
 }

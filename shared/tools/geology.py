@@ -84,18 +84,21 @@ _GRANITE = ["granite"]
 LENIENT = {
     # Coal needs a swamp; granite and diorite never had one. Ash falls on coal swamps, so tuff keeps
     # it, and andesite rarely (lava over a coal basin).
-    "coal": _PLUTONIC,
+    "coal": _PLUTONIC, "lignite_coal": _PLUTONIC,
+    # Salt is an evaporite: sedimentary only, so none of the four keeps it.
+    "salt": ["granite", "diorite", "andesite", "tuff"],
     # Diamond needs a kimberlite pipe. Its crater is pyroclastic, so tuff keeps it.
     "diamond": _IGNEOUS, "white_diamond": _IGNEOUS, "black_diamond": _IGNEOUS, "bort": _IGNEOUS,
     # Ammolite is fossil shell; tuff keeps it (found beside ash beds).
     "ammolite": _IGNEOUS,
     # Corundum and olivine never coexist with free quartz.
     "silents_ruby": _GRANITE, "silents_sapphire": _GRANITE,
-    "techreborn_ruby": _GRANITE, "techreborn_sapphire": _GRANITE,
+    "techreborn_ruby": _GRANITE, "techreborn_sapphire": _GRANITE, "iceandfire_sapphire": _GRANITE,
     "peridot": _GRANITE, "silents_peridot": _GRANITE,
     # Nickel and the platinum group are mafic to ultramafic.
-    "nickel": _GRANITE, "platinum": _GRANITE, "iridium": _GRANITE, "osmium": _GRANITE,
-    "dense_osmium": _GRANITE,
+    "nickel": _GRANITE, "mi_nickel": _GRANITE, "ie_nickel": _GRANITE,
+    "platinum": _GRANITE, "iridium": _GRANITE, "mi_iridium": _GRANITE,
+    "osmium": _GRANITE, "dense_osmium": _GRANITE, "mek_osmium": _GRANITE,
 }
 
 

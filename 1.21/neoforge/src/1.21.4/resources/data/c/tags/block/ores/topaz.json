@@ -31,6 +31,14 @@
     {
       "id": "seamlessores:tuff_silents_topaz_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silents_topaz_ore",
+      "required": false
     }
   ]
 }

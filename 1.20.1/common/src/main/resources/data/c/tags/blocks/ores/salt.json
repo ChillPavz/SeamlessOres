@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_salt_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_salt_ore",
+      "required": false
     }
   ]
 }

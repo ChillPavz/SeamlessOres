@@ -13,6 +13,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_silents_silver_ore",
       "required": false
     },
@@ -90,6 +94,26 @@
     },
     {
       "id": "seamlessores:tuff_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_oreganized_silver_ore",
       "required": false
     }
   ]

@@ -24,6 +24,8 @@ legacyForge {
 
 dependencies {
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
+    // The dripstone shell mixin. Fabric and Forge both bundle Mixin at runtime.
+    compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
 }
 
 configurations {

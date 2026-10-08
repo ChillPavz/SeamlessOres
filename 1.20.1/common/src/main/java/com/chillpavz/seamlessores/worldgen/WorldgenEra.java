@@ -1,10 +1,12 @@
 package com.chillpavz.seamlessores.worldgen;
 
+import com.google.gson.JsonObject;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 
 import java.util.List;
+import java.util.function.UnaryOperator;
 
 /**
  * The worldgen code whose Minecraft API differs from band to band, behind one interface, so the two
@@ -21,4 +23,11 @@ public interface WorldgenEra {
      * the original target would have matched that stone anyway.
      */
     boolean receives(RuleTest original, Block stone);
+
+    /**
+     * Rewrites the configured feature {@code minecraft:<path>} through its own codec: encoded to JSON,
+     * handed to {@code edit}, decoded and rebound. False when the feature does not exist or {@code edit}
+     * returns null (nothing to change).
+     */
+    boolean rewriteFeature(RegistryAccess registries, String path, UnaryOperator<JsonObject> edit);
 }

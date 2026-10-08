@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_water_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_water_stone_ore",
+      "required": false
     }
   ]
 }

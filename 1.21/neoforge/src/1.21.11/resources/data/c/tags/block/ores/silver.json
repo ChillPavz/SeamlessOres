@@ -27,6 +27,14 @@
     {
       "id": "seamlessores:tuff_silents_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_silents_silver_ore",
+      "required": false
     }
   ]
 }

@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_ie_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_ie_uranium_ore",
+      "required": false
     }
   ]
 }

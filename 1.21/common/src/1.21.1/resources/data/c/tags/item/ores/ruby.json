@@ -33,6 +33,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_ruby_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_ruby_ore",
       "required": false
     },

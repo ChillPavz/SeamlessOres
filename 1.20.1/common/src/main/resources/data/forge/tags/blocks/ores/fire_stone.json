@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_fire_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_fire_stone_ore",
       "required": false
     },

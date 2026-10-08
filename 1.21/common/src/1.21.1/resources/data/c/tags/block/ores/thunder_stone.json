@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_thunder_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_thunder_stone_ore",
+      "required": false
     }
   ]
 }

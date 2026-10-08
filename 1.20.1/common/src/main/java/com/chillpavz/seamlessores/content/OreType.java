@@ -101,6 +101,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
                 xp, deepslateXp, redstoneLike, skipHosts, strength);
     }
 
+    /** The same ore, given no variant in the named hosts (see {@code skipHosts}). */
+    private OreType skipping(String... hosts) {
+        return new OreType(name, key, overlay, deepslateOverlay, requiredModId, stoneOre, deepslateOre, netherOre,
+                xp, deepslateXp, redstoneLike, Set.of(hosts), strength);
+    }
+
     private static ResourceLocation mc(String path) {
         return new ResourceLocation(path);
     }
@@ -127,7 +133,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
     public static final OreType GOLD = overworld("gold", ConstantInt.of(0));
     public static final OreType LAPIS = overworld("lapis", UniformInt.of(2, 5));
     public static final OreType DIAMOND = overworld("diamond", UniformInt.of(3, 7));
-    public static final OreType EMERALD = overworld("emerald", UniformInt.of(3, 7));
+    // No dripstone emerald: emerald generates in the mountains only, where dripstone caves never reach.
+    public static final OreType EMERALD = overworld("emerald", UniformInt.of(3, 7)).skipping("dripstone");
     public static final OreType REDSTONE = ore("redstone", "redstone", null, null,
             mc("redstone_ore"), mc("deepslate_redstone_ore"), null, ConstantInt.of(0), null, true, Set.of());
 
@@ -623,7 +630,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
     public static final OreType CB_DUSK_STONE = cobblemon("dusk_stone");
     public static final OreType CB_ICE_STONE = cobblemon("ice_stone");
     public static final OreType CB_LEAF_STONE = cobblemon("leaf_stone");
-    public static final OreType CB_MOON_STONE = cobblemon("moon_stone");
+    // Cobblemon ships its own dripstone_moon_stone_ore, so ours would take that host over.
+    public static final OreType CB_MOON_STONE = cobblemon("moon_stone").skipping("dripstone");
     public static final OreType CB_SHINY_STONE = cobblemon("shiny_stone");
     public static final OreType CB_SUN_STONE = cobblemon("sun_stone");
     public static final OreType CB_THUNDER_STONE = cobblemon("thunder_stone");
@@ -700,6 +708,9 @@ public record OreType(String name, String key, String overlay, String deepslateO
             case STONE -> stoneOre;
             case DEEPSLATE -> deepslateOre;
             case NETHER -> netherOre;
+            // The ore a dripstone shell wraps is whatever generated there, stone or deepslate; the
+            // variant stands in for the stone one, whose drops and xp the deepslate one shares.
+            case DRIPSTONE -> stoneOre;
         };
     }
 

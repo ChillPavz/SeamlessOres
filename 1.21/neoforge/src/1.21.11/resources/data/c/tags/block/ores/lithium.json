@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_lithium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_lithium_ore",
+      "required": false
     }
   ]
 }

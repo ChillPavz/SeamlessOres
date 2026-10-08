@@ -65,6 +65,8 @@ public final class OreGeology {
     /** Ore key -> the game's own rocks the geology option refuses it in. */
     private static final Map<String, Set<String>> LENIENT = Map.ofEntries(
             Map.entry("coal", Set.of("granite", "diorite")),
+            Map.entry("lignite_coal", Set.of("granite", "diorite")),
+            Map.entry("salt", Set.of("granite", "diorite", "andesite", "tuff")),
             Map.entry("diamond", Set.of("granite", "diorite", "andesite")),
             Map.entry("white_diamond", Set.of("granite", "diorite", "andesite")),
             Map.entry("black_diamond", Set.of("granite", "diorite", "andesite")),
@@ -74,13 +76,18 @@ public final class OreGeology {
             Map.entry("silents_sapphire", Set.of("granite")),
             Map.entry("techreborn_ruby", Set.of("granite")),
             Map.entry("techreborn_sapphire", Set.of("granite")),
+            Map.entry("iceandfire_sapphire", Set.of("granite")),
             Map.entry("peridot", Set.of("granite")),
             Map.entry("silents_peridot", Set.of("granite")),
             Map.entry("nickel", Set.of("granite")),
+            Map.entry("mi_nickel", Set.of("granite")),
+            Map.entry("ie_nickel", Set.of("granite")),
             Map.entry("platinum", Set.of("granite")),
             Map.entry("iridium", Set.of("granite")),
+            Map.entry("mi_iridium", Set.of("granite")),
             Map.entry("osmium", Set.of("granite")),
-            Map.entry("dense_osmium", Set.of("granite")));
+            Map.entry("dense_osmium", Set.of("granite")),
+            Map.entry("mek_osmium", Set.of("granite")));
 
     /** Whether this ore never forms in this stone another mod places: no variant, worldgen makes it stone. */
     public static boolean fixed(String host, String ore) {

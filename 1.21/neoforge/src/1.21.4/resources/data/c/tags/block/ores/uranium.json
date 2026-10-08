@@ -27,6 +27,14 @@
     {
       "id": "seamlessores:tuff_dense_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_yellorite_ore",
+      "required": false
     }
   ]
 }

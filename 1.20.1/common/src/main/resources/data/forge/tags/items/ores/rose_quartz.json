@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_rose_quartz_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_rose_quartz_ore",
+      "required": false
     }
   ]
 }

@@ -11,6 +11,10 @@
     {
       "id": "seamlessores:andesite_kyber_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_kyber_ore",
+      "required": false
     }
   ]
 }

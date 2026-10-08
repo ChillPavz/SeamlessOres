@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_ie_lead_ore",
       "required": false
     },
@@ -62,6 +66,18 @@
     },
     {
       "id": "seamlessores:tuff_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_oreganized_lead_ore",
       "required": false
     }
   ]

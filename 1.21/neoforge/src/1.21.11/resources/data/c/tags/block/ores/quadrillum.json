@@ -11,6 +11,10 @@
     {
       "id": "seamlessores:andesite_quadrillum_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_quadrillum_ore",
+      "required": false
     }
   ]
 }

@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_occultism_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_occultism_silver_ore",
+      "required": false
     }
   ]
 }

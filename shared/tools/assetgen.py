@@ -380,3 +380,28 @@ def parse_host_table(path):
     if [c.strip() for c in order.split(",")] != [h["const"] for h in hosts]:
         sys.exit("HostStone.ALL must list every host, in declaration order")
     return hosts
+
+
+def replace_block(text, begin, end, body, where):
+    """`text` with what lies between the `begin` and `end` marker lines replaced by `body`."""
+    if begin not in text or end not in text:
+        sys.exit(f"{where} has no '{begin.strip()}' markers")
+    head, rest = text.split(begin, 1)
+    _old, tail = rest.split(end, 1)
+    return f"{head}{begin}{body}{end}{tail}"
+
+
+def camel(name):
+    """A host name as its config field: blockus_limestone -> blockusLimestone."""
+    first, *rest = name.split("_")
+    return first + "".join(word.capitalize() for word in rest)
+
+
+def write_host_switches(config_java, host_names):
+    """The push of every host's switch into SeamlessOresConfig.Values.hosts, in the Cloth Config class,
+    from the host table, so a host added to HostStone.java cannot lack its switch."""
+    text = open(config_java, encoding="utf-8").read()
+    push = "".join(f'        values.hosts.put("{h}", {camel(h)});\n' for h in host_names)
+    write_text(config_java, replace_block(
+        text, "        // BEGIN GENERATED host switches (tools/generate_assets.py, from the host table)\n",
+        "        // END GENERATED host switches", push, config_java))

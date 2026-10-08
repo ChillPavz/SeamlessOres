@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_ice_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_ice_stone_ore",
+      "required": false
     }
   ]
 }

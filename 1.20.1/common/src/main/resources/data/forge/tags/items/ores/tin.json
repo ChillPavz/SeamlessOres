@@ -13,6 +13,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_energized_tin_ore",
       "required": false
     },
@@ -42,6 +46,14 @@
     },
     {
       "id": "seamlessores:tuff_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mek_tin_ore",
       "required": false
     }
   ]

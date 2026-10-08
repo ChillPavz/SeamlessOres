@@ -21,6 +21,10 @@ dependencies {
     commonResources project(path: ':common', configuration: 'commonResources')
 }
 
+// The Cloth Config classes need a loader's classpath (Cloth is a loader dependency) but are the same
+// on both loaders: one copy, cloth-config/java, compiled by each.
+sourceSets.main.java.srcDir(rootProject.file('cloth-config/java'))
+
 tasks.named('compileJava', JavaCompile) {
     dependsOn(configurations.commonJava)
     source(configurations.commonJava)

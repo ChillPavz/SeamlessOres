@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_mi_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mi_tin_ore",
+      "required": false
     }
   ]
 }

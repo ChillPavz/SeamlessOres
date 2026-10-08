@@ -3,8 +3,21 @@ plugins {
     id 'net.neoforged.moddev.legacyforge'
 }
 
-// No mixin block: this mod has no mixins. Declaring configs that don't exist makes Forge abort at
-// startup with "The specified resource '<id>.mixins.json' was invalid or could not be read".
+// Mixin: common's config, with a refmap. Classic Forge 1.20.1 runs on SRG member names, so a mixin
+// written in Mojang names only finds its target through the refmap the annotation processor writes
+// here; the config names it ("refmap" in seamlessores.mixins.json). `config` below only reaches the
+// dev runs: a production jar is loaded through the MixinConfigs manifest entry, without which Forge
+// never applies the config at all and nothing says so. Both are needed.
+mixin {
+    add sourceSets.main, "${mod_id}.refmap.json"
+    config "${mod_id}.mixins.json"
+}
+
+jar {
+    manifest {
+        attributes('MixinConfigs': "${mod_id}.mixins.json")
+    }
+}
 
 legacyForge {
     version = "${minecraft_version}-${forge_version}"
@@ -73,6 +86,8 @@ dependencies {
 
     // Cloth Config (AutoConfig). 11.1.136 has a Forge build covering both 1.20 and 1.20.1.
     implementation("me.shedaniel.cloth:cloth-config-forge:${cloth_config_version}")
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 jar {

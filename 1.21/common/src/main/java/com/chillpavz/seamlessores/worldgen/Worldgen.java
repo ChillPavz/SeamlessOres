@@ -16,7 +16,7 @@ public final class Worldgen {
     private Worldgen() {
     }
 
-    /** The ore targets (both sides) and the large veins. */
+    /** The ore targets (both sides), the large veins, the dripstone shell swap and the Lush Caves patches. */
     public static void onServerStarting(RegistryAccess registries) {
         run(OreSideInjector.NAME, () -> OreSideInjector.inject(registries, ERA));
         run(StoneSideInjector.NAME, () -> StoneSideInjector.inject(registries, ERA));
@@ -29,6 +29,9 @@ public final class Worldgen {
         // The large copper and iron veins come from OreVeinifier during noise generation, invisible to
         // the ore features.
         run("Ore veins", VeinOreInjector::inject);
+        // The dripstone shell swap and the Lush Caves patches run after the ore pass, as on 26.x.
+        run("Dripstone shells", DripstoneShell::prepare);
+        run("Lush Caves", () -> LushCavesInjector.inject(registries, ERA));
     }
 
     /**

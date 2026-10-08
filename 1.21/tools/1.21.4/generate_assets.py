@@ -37,7 +37,7 @@ import zipfile
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "shared", "tools"))
 from assetgen import (POOL, TOOL_TAGS, assert_no_dashes, block_model, era_file, jar, jar_tags,  # noqa: E402
                       parse_host_table, read_mod_tags, silk_touch_to, stone_name, texture_path, title,
-                      write_json, write_texture_json)
+                      write_host_switches, write_json, write_texture_json)
 
 MOD_ID = "seamlessores"
 
@@ -125,6 +125,7 @@ LOOKS = {
     "diorite":    {"side": "minecraft:block/diorite",     "end": "minecraft:block/diorite"},
     "andesite":   {"side": "minecraft:block/andesite",    "end": "minecraft:block/andesite"},
     "tuff":       {"side": "minecraft:block/tuff",        "end": "minecraft:block/tuff"},
+    "dripstone":  {"side": "minecraft:block/dripstone_block", "end": "minecraft:block/dripstone_block"},
     "basalt":     {"side": "minecraft:block/basalt_side", "end": "minecraft:block/basalt_top"},
     "blackstone": {"side": "minecraft:block/blackstone",  "end": "minecraft:block/blackstone_top"},
 }
@@ -133,6 +134,9 @@ LOOKS = {
 HOST_TABLE = era_file(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
                                    "common"), BAND, "java/com/chillpavz/seamlessores/content/HostStone.java")
 HOSTS = {h["name"]: {**h, **LOOKS[h["name"]]} for h in parse_host_table(HOST_TABLE)}
+# The ore form a host's variants stand in for, by host tier: a dripstone variant stands in for the stone
+# ore (the dripstone shell wraps stone and deepslate ore alike). Mirrors OreType.formIn.
+ORE_TIER = {"stone": "stone", "deepslate": "deepslate", "nether": "nether", "dripstone": "stone"}
 
 # Ore definitions. KEEP IN SYNC WITH OreType.java.
 #   name    - id suffix, so <host>_<name>_ore
@@ -220,7 +224,9 @@ ORE_DEFS = [
      "tiers": {"stone": "lapis_ore", "deepslate": "deepslate_lapis_ore"}},
     {"name": "diamond",  "overlay": "diamond",  "source": "diamond_ore",  "base": "stone",
      "tiers": {"stone": "diamond_ore", "deepslate": "deepslate_diamond_ore"}},
+    # No dripstone emerald: emerald generates in the mountains only, where dripstone caves never reach.
     {"name": "emerald",  "overlay": "emerald",  "source": "emerald_ore",  "base": "stone",
+     "skip_hosts": ["dripstone"],
      "tiers": {"stone": "emerald_ore", "deepslate": "deepslate_emerald_ore"}},
     {"name": "redstone", "overlay": "redstone", "source": "redstone_ore", "base": "stone",
      "tiers": {"stone": "redstone_ore", "deepslate": "deepslate_redstone_ore"}},
@@ -688,7 +694,7 @@ def variants():
             # would take the host over (the injector prepends). Mirrors OreType.skipHosts.
             if host in ore.get("skip_hosts", ()):
                 continue
-            vanilla = ore["tiers"].get(host_cfg["tier"])
+            vanilla = ore["tiers"].get(ORE_TIER[host_cfg["tier"]])
             if vanilla is not None:
                 yield host, host_cfg, ore, vanilla
 
@@ -811,6 +817,14 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.tuff": "Tuff variants",
         f"text.autoconfig.{MOD_ID}.option.tuff.@Tooltip":
             "Generate tuff-backed ore instead of the deepslate-textured ore vanilla puts in tuff.",
+        f"text.autoconfig.{MOD_ID}.option.dripstone": "Dripstone variants",
+        f"text.autoconfig.{MOD_ID}.option.dripstone.@Tooltip":
+            "Dripstone caves cover their walls in dripstone around the ore. This makes that ore match.",
+        f"text.autoconfig.{MOD_ID}.option.lushCaves": "Lush Caves clay and moss (removes ore)",
+        f"text.autoconfig.{MOD_ID}.option.lushCaves.@Tooltip[0]":
+            "Ore left bare in a Lush Caves clay floor or moss carpet becomes clay or moss, so a",
+        f"text.autoconfig.{MOD_ID}.option.lushCaves.@Tooltip[1]":
+            "little ore is removed there. Bone meal on moss works exactly as in vanilla.",
 
         f"text.autoconfig.{MOD_ID}.option.basalt": "Basalt variants (adds ore)",
         f"text.autoconfig.{MOD_ID}.option.basalt.@Tooltip[0]":
@@ -844,6 +858,14 @@ def generate_json():
             "The big copper and iron veins are packed with granite and tuff. This makes their ore",
         f"text.autoconfig.{MOD_ID}.option.oreVeins.@Tooltip[1]":
             "match that filler. Cosmetic only - the amount of ore is identical either way.",
+
+        f"text.autoconfig.{MOD_ID}.option.geology": "Geology (removes ore)",
+        f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[0]":
+            "Keeps ores out of rock they could never form in, such as coal in granite or",
+        f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[1]":
+            "diamond in diorite: that ore stays plain rock, so there is less of it. Off by default.",
+        f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[2]":
+            "Applies to newly generated chunks, from the next world load.",
 
         f"text.autoconfig.{MOD_ID}.option.createZinc": "Create: zinc variants",
         f"text.autoconfig.{MOD_ID}.option.createZinc.@Tooltip":
@@ -1126,7 +1148,7 @@ def generate_data():
                                 target.setdefault(tag_name, []).append(entry)
                 # c:ores_in_ground/<stone|deepslate|netherrack> - keyed on the ore we stand in for,
                 # so consumers treat a variant exactly like its counterpart.
-                ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[host_cfg["tier"]]
+                ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[ORE_TIER[host_cfg["tier"]]]
                 ores_in_ground.setdefault(ground, []).append(entry)
 
     # Tags MERGE with vanilla's by default (no "replace": true), so these add to the existing lists
@@ -1149,6 +1171,14 @@ def generate_data():
             os.path.join(conv, "tags", "block", "ores_in_ground", f"{ground}.json"),
             {"values": values},
         )
+    # LushCavesInjector points the Lush Caves clay and moss patches at these: the vanilla tag plus
+    # every ore. The vanilla tags themselves stay untouched, because bone meal on moss reads
+    # #moss_replaceable and must not start eating ore.
+    ours = data_dir(MOD_ID)
+    for name, vanilla_tag in (("lush_clay_replaceable", "#minecraft:lush_ground_replaceable"),
+                              ("lush_moss_replaceable", "#minecraft:moss_replaceable")):
+        write_json(os.path.join(ours, "tags", "block", f"{name}.json"),
+                   {"values": [vanilla_tag, {"id": "#c:ores", "required": False}]})
 
     print(f"  {len(mineable)} loot tables")
     print(f"  tags: mineable/pickaxe, {', '.join(sorted(tool_tags))}, "
@@ -1218,7 +1248,7 @@ def generate_textures():
                   f"  (from {source} over {base_name})")
 
 
-OVERWORLD_HOSTS = ["granite", "diorite", "andesite", "tuff"]
+OVERWORLD_HOSTS = ["granite", "diorite", "andesite", "tuff", "dripstone"]
 NETHER_HOSTS = ["basalt", "blackstone"]
 
 
@@ -1406,6 +1436,10 @@ def main():
     generate_data()
     print("Updating README...")
     generate_readme()
+    print("Writing the config's host switches...")
+    write_host_switches(os.path.join(repo_root(), "cloth-config", "src", BAND, "java", "com", "chillpavz", MOD_ID, "config",
+                     "SeamlessOresConfigData.java"),
+                        list(HOSTS))
 
     if args.textures:
         print("Extracting overlay textures...")

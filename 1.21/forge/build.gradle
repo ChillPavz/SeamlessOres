@@ -8,10 +8,16 @@ base {
     // multiloader-common gives the other modules.
     archivesName = "${mod_id}-forge-${minecraft_version}"
 }
-// The template's mixin plugin, config() declarations and MixinConfigs manifest entry are removed:
-// this mod has no mixins. The empty seamlessores.mixins.json that common ships is deliberately NOT
-// named here - a MixinConfigs manifest entry pointing at a config Forge cannot read makes Mixin
-// abort at startup with "The specified resource '<id>.mixins.json' was invalid or could not be read".
+// Mixin: common's config (the copper validate() hook and the dripstone shell). Forge loads a mixin
+// config only through the MixinConfigs manifest entry. No refmap and no annotation processor: from
+// 1.20.6 Forge runs on Mojang names, the names the mixins are written in (no Forge 1.21.x mod in the
+// jar library ships a refmap either). The copper pass at server start stays as well; both are
+// idempotent against each other.
+jar {
+    manifest {
+        attributes('MixinConfigs': "${mod_id}.mixins.json")
+    }
+}
 
 processResources {
     // TWO files want to be META-INF/accesstransformer.cfg here. common/ ships one in PLAIN member

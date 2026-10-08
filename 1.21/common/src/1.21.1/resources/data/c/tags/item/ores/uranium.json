@@ -75,6 +75,26 @@
     {
       "id": "seamlessores:tuff_mek_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_ie_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mek_uranium_ore",
+      "required": false
     }
   ]
 }

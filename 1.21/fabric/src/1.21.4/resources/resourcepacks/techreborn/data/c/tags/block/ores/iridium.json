@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:tuff_iridium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_iridium_ore",
+      "required": false
     }
   ]
 }

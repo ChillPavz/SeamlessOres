@@ -13,6 +13,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_banglum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_banglum_ore",
       "required": false
     },
