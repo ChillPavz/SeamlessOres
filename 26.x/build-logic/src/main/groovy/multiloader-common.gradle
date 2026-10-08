@@ -24,8 +24,9 @@ java {
     withJavadocJar()
 }
 
+// One LICENSE for the whole repository, at its root (rootProject is this band folder).
 tasks.withType(Jar).configureEach {
-    from(rootProject.file('LICENSE')) {
+    from(rootProject.file('../LICENSE')) {
         rename { "${it}_${mod_name}" }
     }
 }

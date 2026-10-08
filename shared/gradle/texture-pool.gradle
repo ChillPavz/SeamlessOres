@@ -1,0 +1,94 @@
+// The ore overlay pool, applied by every band's common/build.gradle.
+//
+// Every overlay texture lives ONCE, in shared/textures/block/. A band ships only the overlays its own
+// block models name, copied from the pool into a generated resource folder. A band whose art differs
+// keeps its own copy, under the same name, in its own assets/seamlessores/textures/block/: that copy
+// wins. Texture names never change between bands, because the resource pack overrides them by name.
+//
+// The build stops when:
+//   - a model names an overlay that is in neither the pool nor the band,
+//   - a band copy is byte-identical to the pool copy (delete it: the pool already serves it),
+//   - a band copy is not named by any of the band's models (it would ship unused).
+//
+// Applied at the END of common/build.gradle: it publishes the copied overlays to the loaders as one
+// more commonResources folder, and the band's own folders (era folders included) must all be added
+// by then.
+
+import groovy.json.JsonSlurper
+
+def poolDir = file('../../shared/textures/block')
+def pooledOut = layout.buildDirectory.dir('generated/texturePool')
+def ownDirs = { sourceSets.main.resources.srcDirs.findAll { it.exists() } }
+
+def poolTextures = tasks.register('poolTextures') {
+    group = 'build'
+    description = 'Copies the overlays this band\'s models name from shared/textures into the jar.'
+    inputs.dir(poolDir)
+    ownDirs().each { inputs.dir(it) }
+    outputs.dir(pooledOut)
+    doLast {
+        def out = pooledOut.get().asFile
+        project.delete(out)
+        def target = new File(out, 'assets/seamlessores/textures/block')
+        target.mkdirs()
+
+        // Every seamlessores:block/<name> a model's "textures" map names. Model parents are not
+        // textures, and blockstates and item files name models, so only the textures maps are read.
+        def named = new TreeSet<String>()
+        def own = [:]
+        ownDirs().each { root ->
+            def models = new File(root, 'assets/seamlessores/models')
+            if (models.isDirectory()) {
+                models.eachFileRecurse(groovy.io.FileType.FILES) { f ->
+                    if (!f.name.endsWith('.json')) return
+                    def json = new JsonSlurper().parse(f)
+                    (json instanceof Map && json.textures instanceof Map ? json.textures.values() : []).each { v ->
+                        if (v instanceof String && v.startsWith('seamlessores:block/')) {
+                            named << v.substring('seamlessores:block/'.length())
+                        }
+                    }
+                }
+            }
+            def textures = new File(root, 'assets/seamlessores/textures/block')
+            if (textures.isDirectory()) {
+                textures.eachFile(groovy.io.FileType.FILES) { own[it.name] = it }
+            }
+        }
+
+        def problems = []
+        own.each { fileName, f ->
+            def texture = fileName.endsWith('.png.mcmeta') ? fileName - '.png.mcmeta' : fileName - '.png'
+            def pooled = new File(poolDir, fileName)
+            if (!named.contains(texture)) {
+                problems << "${f}: no model of this band names ${texture}; delete it"
+            } else if (pooled.exists() && pooled.bytes == f.bytes) {
+                problems << "${f}: the same bytes as shared/textures/block/${fileName}; delete the band copy"
+            }
+        }
+        def copied = 0
+        named.each { texture ->
+            // Plain Strings: a GString never equals the String key it prints as.
+            [texture + '.png', texture + '.png.mcmeta'].each { String fileName ->
+                if (own.containsKey(fileName)) return
+                def pooled = new File(poolDir, fileName)
+                if (pooled.exists()) {
+                    new File(target, fileName).bytes = pooled.bytes
+                    copied++
+                } else if (fileName.endsWith('.png')) {
+                    problems << "no texture ${fileName} in shared/textures/block or this band"
+                }
+            }
+        }
+        if (problems) {
+            throw new GradleException("Texture pool:\n  " + problems.join('\n  '))
+        }
+        logger.lifecycle("Texture pool: ${named.size()} overlays named, ${copied} files from the pool, " +
+                "${own.size()} band overrides")
+    }
+}
+
+artifacts {
+    commonResources(pooledOut.get().asFile) {
+        builtBy poolTextures
+    }
+}

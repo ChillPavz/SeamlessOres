@@ -32,6 +32,10 @@ import sys
 import tempfile
 import zipfile
 
+# The overlay art lives once, in the repository's shared/textures pool (shared/tools/assetgen.py).
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "shared", "tools"))
+from assetgen import POOL, texture_path, write_texture_json  # noqa: E402
+
 MOD_ID = "seamlessores"
 
 # Classic Forge's datapack condition key. SINGULAR, and it takes ONE object rather than an array -
@@ -1284,11 +1288,10 @@ def generate_json():
     # the vanilla sprite loader looks; nothing else has to know.
     textures = os.path.join(root, "textures", "block")
     for overlay, animation in ANIMATED_OVERLAYS.items():
-        texture = os.path.join(textures, f"{overlay}_overlay.png")
-        if not os.path.exists(texture):
+        if not texture_path(textures, f"{overlay}_overlay.png"):
             print(f"  !! {overlay}_overlay.png is missing, so its animation metadata was skipped")
             continue
-        write_json(texture + ".mcmeta", {"animation": animation})
+        write_texture_json(textures, f"{overlay}_overlay.png.mcmeta", {"animation": animation})
     print(f"  {count} blockstates, {count} block models, {count} item models, "
           f"{len(ANIMATED_OVERLAYS)} animated overlays")
     print(f"  {len(lang)} lang entries")
@@ -1522,7 +1525,9 @@ def generate_textures():
     if not os.path.exists(CLIENT_JAR):
         sys.exit(f"Client jar not found at {CLIENT_JAR}")
 
-    out_dir = os.path.join(assets_dir(), "textures", "block")
+    # Into the shared pool: every band's models read the overlays from there.
+    band_textures = os.path.join(assets_dir(), "textures", "block")
+    out_dir = POOL
     os.makedirs(out_dir, exist_ok=True)
 
     # Each overlay is diffed against its OWN base: overworld ores against stone, nether ores against
@@ -1577,7 +1582,7 @@ def generate_textures():
             # one-way loss - the old behaviour made --textures a destructive flag nobody could run
             # safely. Delete the PNG to force a re-extraction of that one. (Carried over from the
             # 1.20.1 branch, which got this guard first.)
-            if os.path.exists(os.path.join(out_dir, f"{overlay_name}_overlay.png")):
+            if texture_path(band_textures, f"{overlay_name}_overlay.png"):
                 continue
             if not os.path.exists(os.path.join(tmp, scratch(source, _mod))):
                 continue                    # its source was not in the jar; already reported above

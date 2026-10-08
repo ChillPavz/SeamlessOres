@@ -37,7 +37,16 @@ configurations {
     }
 }
 
+// Code and resources that are identical in every band live once, in the repository's shared/
+// folder; every loader takes them alongside this module's own. One artifact per folder: the
+// template's sourceDirectories.singleFile throws once there are two.
+sourceSets.main.java.srcDir('../../shared/java')
+sourceSets.main.resources.srcDir('../../shared/resources')
+
 artifacts {
-    commonJava sourceSets.main.java.sourceDirectories.singleFile
-    commonResources sourceSets.main.resources.sourceDirectories.singleFile
+    sourceSets.main.java.srcDirs.each { commonJava it }
+    sourceSets.main.resources.srcDirs.each { commonResources it }
 }
+
+// The ore overlays, from shared/textures: only those this band's models name.
+apply from: '../../shared/gradle/texture-pool.gradle'

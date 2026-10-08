@@ -34,12 +34,19 @@ configurations {
     }
 }
 
-// Every source folder is published on its own: src/main and this band's era folders. The
+// Code and resources that are identical in every band live once, in the repository's shared/ folder.
+sourceSets.main.java.srcDir('../../shared/java')
+sourceSets.main.resources.srcDir('../../shared/resources')
+
+// Every source folder is published on its own: src/main, this band's era folders and shared/. The
 // template's sourceDirectories.singleFile throws once there is more than one.
 artifacts {
     sourceSets.main.java.srcDirs.findAll { it.exists() }.each { commonJava it }
     sourceSets.main.resources.srcDirs.findAll { it.exists() }.each { commonResources it }
 }
+
+// The ore overlays, from shared/textures: only those this band's models name.
+apply from: '../../shared/gradle/texture-pool.gradle'
 
 // Implement mcgradleconventions loader attribute
 def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
