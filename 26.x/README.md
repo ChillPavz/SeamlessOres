@@ -573,13 +573,14 @@ cleaned overlays.
 | `common/` | Everything shared: content registration, worldgen injection, config holder |
 | `common/src/era261`, `common/src/era263` | The worldgen code whose Minecraft API changed at 26.3, one folder per side |
 | `*/src/main/resources/mc26.1`, `mc26.2`, `mc26.3` | Each version's loot tables, as pack overlays chosen by data format |
-| `fabric/`, `neoforge/` | Loader entry points, the Cloth Config data class and screen |
+| `fabric/`, `neoforge/` | Loader entry points |
+| `cloth-config/` | The Cloth Config data class and screen, one copy compiled by both loaders |
 | `versions/` | Minecraft, loader and dependency versions per build |
 | `tools/generate_assets.py` | Generates blockstates, models, lang, loot tables, tags and the block list above |
 | `tools/merge_bands.py` | Joins the two builds into the one jar per loader |
 
-The Cloth Config classes are duplicated across both loader modules on purpose and must stay
-identical. They cannot live in `common`, because loader dependencies are not on its classpath.
+The Cloth Config classes sit in `cloth-config/`, outside `common`, because loader dependencies are not
+on its classpath; both loader modules compile that one copy.
 
 ## How it works, briefly
 

@@ -11,6 +11,10 @@ configurations {
     }
 }
 
+// The Cloth Config classes: they need the loader's classpath (Cloth is a loader dependency) but are the
+// same on every loader, so each loader module compiles the one copy.
+sourceSets.main.java.srcDir(rootProject.file('cloth-config/java'))
+
 dependencies {
     compileOnly(project(':common')) {
         def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)

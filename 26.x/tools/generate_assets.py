@@ -1930,10 +1930,10 @@ def replace_block(text, begin, end, body, where):
 def generate_java():
     """The Java that is data: the measured modded pairs, the geology tables, and the config switches.
 
-    ModdedPairs from modded_pairs.json; OreGeology from geology.py, both tables; and in each loader's
-    SeamlessOresConfigData a switch per stone another mod places (the game's own rock has hand-written
-    ones, with their own wording) and the push of every host's switch. The two config copies must stay
-    identical.
+    ModdedPairs from modded_pairs.json; OreGeology from geology.py, both tables; and in
+    SeamlessOresConfigData (cloth-config/java, compiled by both loaders) a switch per stone another mod
+    places (the game's own rock has hand-written ones, with their own wording) and the push of every
+    host's switch.
     """
     content = os.path.dirname(HOST_TABLE)
     keys = [o["key"] for o in ORE_DEFS]
@@ -1965,20 +1965,14 @@ def generate_java():
                    f"    public boolean {camel(c['name'])} = true;", ""]
     for c in HOSTS.values():
         push.append(f'        values.hosts.put("{c["name"]}", {camel(c["name"])});')
-    texts = []
-    for loader in ("fabric", "neoforge"):
-        path = os.path.join(repo_root(), loader, "src", "main", "java", "com", "chillpavz", MOD_ID, "config",
-                            "SeamlessOresConfigData.java")
-        text = open(path, encoding="utf-8").read()
-        text = replace_block(text, "    // BEGIN GENERATED modded stone switches (tools/generate_assets.py, from the host table)\n",
-                             "    // END GENERATED modded stone switches", "\n".join(fields), path)
-        text = replace_block(text, "        // BEGIN GENERATED host switches (tools/generate_assets.py, from the host table)\n",
-                             "        // END GENERATED host switches", "\n".join(push) + "\n", path)
-        texts.append((path, text))
-    if texts[0][1] != texts[1][1]:
-        sys.exit("the two SeamlessOresConfigData copies differ outside the generated blocks; make them identical")
-    for path, text in texts:
-        write_text(path, text)
+    path = os.path.join(repo_root(), "cloth-config", "java", "com", "chillpavz", MOD_ID, "config",
+                        "SeamlessOresConfigData.java")
+    text = open(path, encoding="utf-8").read()
+    text = replace_block(text, "    // BEGIN GENERATED modded stone switches (tools/generate_assets.py, from the host table)\n",
+                         "    // END GENERATED modded stone switches", "\n".join(fields), path)
+    text = replace_block(text, "        // BEGIN GENERATED host switches (tools/generate_assets.py, from the host table)\n",
+                         "        // END GENERATED host switches", "\n".join(push) + "\n", path)
+    write_text(path, text)
     print(f"  Java: modded pairs for {len(cases)} stones, geology for {len(placed)} + {len(own)} hosts,"
           f" {len(HOSTS)} host switches")
 

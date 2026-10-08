@@ -18,8 +18,8 @@ import java.util.function.Supplier;
 /**
  * Builds the config screen: cloth's SIDEBAR layout, showing only the mods actually installed.
  *
- * <p><b>This file is triplicated VERBATIM in the fabric, neoforge and forge modules, and all three
- * must stay byte-identical.</b> It cannot live in {@code common} because cloth-config is a loader
+ * <p><b>One copy for both loaders, in cloth-config/java, which each loader module compiles.</b>
+ * It cannot live in {@code common} because cloth-config is a loader
  * dependency. It is also <b>client-only</b> — it names {@code Screen}, which does not exist on a
  * dedicated server — so it must only ever be reached from a client-guarded hook, exactly like
  * NeoForge's {@code SeamlessOresConfigScreen}.

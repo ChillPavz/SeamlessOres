@@ -3,9 +3,9 @@ package com.chillpavz.seamlessores;
 import com.chillpavz.seamlessores.content.MatrixAliases;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.neoforged.bus.api.EventPriority;
-import com.chillpavz.seamlessores.config.ClothConfigBootstrap;
+import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
+import com.chillpavz.seamlessores.config.SeamlessOresConfigScreen;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
-import com.chillpavz.seamlessores.platform.Services;
 import com.chillpavz.seamlessores.worldgen.Worldgen;
 import com.chillpavz.seamlessores.worldgen.WorldgenEra;
 import net.minecraft.core.registries.Registries;
@@ -29,16 +29,13 @@ public class SeamlessOresNeoForge {
 
         SeamlessOres.init();
 
-        // Cloth Config is OPTIONAL on NeoForge (it has no NeoForge build for this Minecraft
-        // version), so every Cloth call is behind this guard and inside ClothConfigBootstrap, which
-        // is the only class here that names a Cloth type. Without it the mod runs on
-        // SeamlessOresConfig's defaults and has no config screen; worldgen is unaffected, because
-        // config gates injection and never registration.
-        if (Services.PLATFORM.isModLoaded(ClothConfigBootstrap.MOD_ID)) {
-            ClothConfigBootstrap.init(container);
-        } else {
-            Constants.LOG.info("Cloth Config is not installed, so Seamless Ores is using its default"
-                    + " settings and has no config screen. Install Cloth Config to change them.");
+        // Before worldgen runs, and before anything reads SeamlessOresConfig. Cloth Config is a
+        // required dependency on both loaders, so this is the same call as on Fabric.
+        SeamlessOresConfigData.register();
+        // The Config button is client-only and lives in its own class, so a dedicated server never
+        // loads a class that references screen types.
+        if (FMLEnvironment.getDist() == Dist.CLIENT) {
+            SeamlessOresConfigScreen.register(container);
         }
 
         eventBus.addListener(this::onRegister);

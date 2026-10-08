@@ -13,8 +13,8 @@ import net.minecraft.world.InteractionResult;
 /**
  * Cloth Config data class.
  *
- * <p><b>This file is triplicated VERBATIM in the fabric, neoforge and forge modules, and all three
- * must stay byte-identical.</b> It cannot live in {@code common} because cloth-config is a loader
+ * <p><b>One copy for both loaders, in cloth-config/java, which each loader module compiles.</b>
+ * It cannot live in {@code common} because cloth-config is a loader
  * dependency and common compiles against vanilla only. The values are pushed into
  * {@link SeamlessOresConfig}, which is where the worldgen code reads them.
  *
