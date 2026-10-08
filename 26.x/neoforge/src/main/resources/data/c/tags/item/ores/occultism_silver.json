@@ -23,6 +23,14 @@
     {
       "id": "seamlessores:cinnabar_occultism_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_occultism_silver_ore",
+      "required": false
     }
   ]
 }

@@ -162,10 +162,11 @@ public final class SulfurCaves {
     private static Map<Block, BlockState> hosts() {
         final Map<Block, BlockState> table = new HashMap<>();
         SeamlessOresContent.blocks().forEach((variant, block) -> {
-            if (variant.host().tier() == OreTier.CINNABAR) {
+            final Block host = variant.host().block();
+            if (variant.host().tier() == OreTier.CINNABAR || host == null) {
                 return;     // ore that belongs in cinnabar is left beside it
             }
-            table.put(block, variant.host().block().defaultBlockState());
+            table.put(block, host.defaultBlockState());
             put(table, variant.ore().stoneOre(), Blocks.STONE.defaultBlockState());
             put(table, variant.ore().deepslateOre(), Blocks.DEEPSLATE.defaultBlockState());
         });

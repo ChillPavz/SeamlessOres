@@ -9,6 +9,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
@@ -25,7 +26,7 @@ import java.util.Optional;
 /**
  * Fixes the ore placed in the large copper and iron veins.
  *
- * <h2>Why this exists as a separate thing from {@link OreTargetInjector}</h2>
+ * <h2>Why this exists as a separate thing from {@code OreSideInjector}</h2>
  * There are two ore systems in Minecraft. Features are the familiar one. The other builds the big
  * copper and iron veins during noise generation, before any feature runs. From 26.3 those veins are
  * DATA: {@code worldgen/material_rule/overworld/copper_ore_vein.json} and {@code iron_ore_vein.json},
@@ -114,7 +115,7 @@ public final class VeinOreInjector {
     private static Block variantFor(Map<OreVariant, Block> ours, Block filler, Block ore) {
         for (Map.Entry<OreVariant, Block> entry : ours.entrySet()) {
             final OreVariant variant = entry.getKey();
-            if (variant.host().block() == filler && variant.vanillaEquivalent() == ore) {
+            if (variant.host().block() == filler && variant.source().equals(BuiltInRegistries.BLOCK.getKey(ore))) {
                 return entry.getValue();
             }
         }

@@ -10,15 +10,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_redstone_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_marble_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_redstone_ore",
       "required": false
     },
     {
@@ -50,15 +50,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_calcite_redstone_ore",
       "required": false
     },
     {
       "id": "seamlessores:minecraft_smooth_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
       "required": false
     },
     {

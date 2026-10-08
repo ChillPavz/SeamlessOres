@@ -1,9 +1,9 @@
 package com.chillpavz.seamlessores.config;
 
-import com.chillpavz.seamlessores.matrix.content.MatrixContent;
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.content.HostStone;
 import com.chillpavz.seamlessores.content.OreType;
+import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import com.chillpavz.seamlessores.platform.Services;
 import me.shedaniel.autoconfig.AutoConfigClient;
 import me.shedaniel.autoconfig.gui.ConfigScreenProvider;
@@ -99,11 +99,11 @@ public final class SeamlessOresConfigScreenFactory {
                 hideCategoriesOfAbsentMods(builder);
                 // The Sulfur Caves and their cinnabar exist from 26.2. Where they do not, the tab
                 // would only hold switches for nothing; the values stay in the file either way.
-                if (HostStone.CINNABAR == null) {
+                if (!HostStone.CINNABAR.present()) {
                     builder.removeCategoryIfExists(Component.translatable(CATEGORY_PREFIX + "sulfur_caves"));
                 }
-                // The Modded Stones tab only matters with a mod installed that adds one of the stones.
-                if (MatrixContent.variants().isEmpty()) {
+                // The Modded Stones tab only matters with a mod installed that places one of the stones.
+                if (SeamlessOresContent.variants().stream().allMatch(v -> v.host().placedBy() == null)) {
                     builder.removeCategoryIfExists(Component.translatable(CATEGORY_PREFIX + "modded_stones"));
                 }
                 return builder.build();

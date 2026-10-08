@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "densemekanism:dense_uranium_ore"
+        "seamlessores:granite_dense_uranium_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "densemekanism"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "densemekanism"
-  },
   "type": "minecraft:block",
   "pools": [
     {

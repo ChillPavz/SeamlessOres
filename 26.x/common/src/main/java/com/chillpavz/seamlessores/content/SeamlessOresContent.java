@@ -1,7 +1,6 @@
 package com.chillpavz.seamlessores.content;
 
 import com.chillpavz.seamlessores.Constants;
-import com.chillpavz.seamlessores.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
@@ -12,8 +11,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.RedStoneOreBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.ArrayList;
@@ -22,6 +19,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
+import java.util.function.Supplier;
 
 /**
  * The declaration table and the block/item factories built from it.
@@ -50,19 +48,17 @@ public final class SeamlessOresContent {
     private static List<OreVariant> buildVariants() {
         final List<OreVariant> variants = new ArrayList<>();
         for (HostStone host : HostStone.ALL) {
-            for (OreType ore : OreType.ALL) {
-                // A pairing only exists if the ore has a vanilla equivalent for this host's tier -
-                // that is what keeps granite quartz and basalt iron from being invented.
-                if (ore.vanillaFor(host) == null) {
-                    continue;
-                }
+            // A mod's stone exists while the mod that places it is installed; cinnabar from 26.2.
+            if (!host.present()) {
+                continue;
+            }
+            for (OreType ore : host.ores()) {
                 // Modded ores exist only when their mod is loaded. This is the settled derived-
                 // registration design: both sides have the mod or neither, so the block sets always
                 // agree and a mismatch kick is structurally impossible. NEVER gate this on config.
-                if (ore.requiredModId() != null && !Services.PLATFORM.isModLoaded(ore.requiredModId())) {
-                    continue;
+                if (ore.isLoaded()) {
+                    variants.add(new OreVariant(host, ore));
                 }
-                variants.add(new OreVariant(host, ore));
             }
         }
         return List.copyOf(variants);
@@ -86,16 +82,6 @@ public final class SeamlessOresContent {
      */
     private static Map<Block, OreVariant> byBlock = Map.of();
 
-    /** Our registered block with this id, or null. Valid once {@link #registerBlocks} has run. */
-    public static Block registeredBlock(Identifier id) {
-        for (Map.Entry<OreVariant, Block> e : BLOCKS.entrySet()) {
-            if (e.getKey().id().equals(id)) {
-                return e.getValue();
-            }
-        }
-        return null;
-    }
-
     /** The variant a block belongs to, or null if the block is not ours. */
     public static OreVariant variantOf(Block block) {
         return byBlock.get(block);
@@ -118,7 +104,8 @@ public final class SeamlessOresContent {
         final Map<Block, OreVariant> reverse = new java.util.IdentityHashMap<>(BLOCKS.size());
         BLOCKS.forEach((variant, block) -> reverse.put(block, variant));
         byBlock = Map.copyOf(reverse);
-        Constants.LOG.info("Registered {} ore variants", BLOCKS.size());
+        Constants.LOG.info("Registered {} ore variants on {} host stones", BLOCKS.size(),
+                VARIANTS.stream().map(OreVariant::host).distinct().count());
     }
 
     /** Must run after {@link #registerBlocks}; each block needs its paired item to exist in-inventory. */
@@ -150,26 +137,44 @@ public final class SeamlessOresContent {
     }
 
     /**
-     * Our own creative tab, so 295 ore variants stop burying vanilla's Natural Blocks.
+     * Our two creative tabs, so several hundred variants stop burying vanilla's Natural Blocks: the
+     * game's own rock (calcite included, where Create lays it down) and the stones other mods add.
      *
      * <p>Deliberately built with NO {@code displayItems} generator. {@code CreativeModeTab.Output}
      * is protected, so it cannot be populated from outside vanilla; instead each loader's existing
      * "modify tab contents" event fills it, which is the same code that used to target Natural
      * Blocks and is already proven on all three loaders.
      *
-     * <p>Icon is basalt gold ore: a block only this mod adds, so the tab is recognisable at a
-     * glance and never looks like a vanilla group.
+     * <p>The Vanilla Stones icon is basalt gold ore: a block only this mod adds, so the tab is
+     * recognisable at a glance and never looks like a vanilla group.
      */
     public static final ResourceKey<CreativeModeTab> TAB =
             ResourceKey.create(Registries.CREATIVE_MODE_TAB,
                     Identifier.fromNamespaceAndPath(Constants.MOD_ID, "ores"));
 
-    public static void registerCreativeTab(BiConsumer<Identifier, CreativeModeTab> sink) {
-        final CreativeModeTab tab = CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
-                .title(Component.translatable("itemGroup." + Constants.MOD_ID + ".ores"))
-                .icon(SeamlessOresContent::tabIcon)
+    public static final ResourceKey<CreativeModeTab> MODDED_TAB =
+            ResourceKey.create(Registries.CREATIVE_MODE_TAB,
+                    Identifier.fromNamespaceAndPath(Constants.MOD_ID, "modded_stones"));
+
+    /**
+     * Registers the Vanilla Stones tab, and the Modded Stones one while a stone mod is installed: decided
+     * by the mod set alone, so client and server agree.
+     */
+    public static void registerCreativeTabs(BiConsumer<Identifier, CreativeModeTab> sink) {
+        sink.accept(TAB.identifier(), tab("ores", SeamlessOresContent::tabIcon));
+        if (VARIANTS.stream().anyMatch(variant -> !variant.host().vanillaRock())) {
+            sink.accept(MODDED_TAB.identifier(), tab("modded_stones", () -> {
+                final List<Item> items = creativeTabItems(MODDED_TAB);
+                return items.isEmpty() ? ItemStack.EMPTY : new ItemStack(items.getFirst());
+            }));
+        }
+    }
+
+    private static CreativeModeTab tab(String name, Supplier<ItemStack> icon) {
+        return CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
+                .title(Component.translatable("itemGroup." + Constants.MOD_ID + "." + name))
+                .icon(icon)
                 .build();
-        sink.accept(TAB.identifier(), tab);
     }
 
     private static ItemStack tabIcon() {
@@ -185,15 +190,21 @@ public final class SeamlessOresContent {
     }
 
     /**
-     * Items in creative-tab order, <b>grouped by the mod they belong to</b>.
+     * One tab's items in creative-tab order, <b>grouped by the mod the ore belongs to</b>.
      *
-     * <p>Registration order is host-major, which interleaves every mod's ores and makes 295 items
-     * unreadable. Here vanilla comes first, then each mod's ores together in one run, so it is
+     * <p>Registration order is host-major, which interleaves every mod's ores and makes hundreds of
+     * items unreadable. Here vanilla comes first, then each mod's ores together in one run, so it is
      * obvious at a glance which ore came from where. Sorting only the display order leaves
      * registration untouched.
      */
-    public static List<Item> creativeTabItems() {
-        final List<Map.Entry<OreVariant, Item>> entries = new ArrayList<>(ITEMS.entrySet());
+    public static List<Item> creativeTabItems(ResourceKey<CreativeModeTab> tab) {
+        final boolean vanillaRock = tab.equals(TAB);
+        final List<Map.Entry<OreVariant, Item>> entries = new ArrayList<>();
+        for (Map.Entry<OreVariant, Item> e : ITEMS.entrySet()) {
+            if (e.getKey().host().vanillaRock() == vanillaRock) {
+                entries.add(e);
+            }
+        }
         final List<OreType> oreOrder = OreType.ALL;
         final List<HostStone> hostOrder = HostStone.ALL;
         entries.sort(Comparator
@@ -210,114 +221,31 @@ public final class SeamlessOresContent {
         return items;
     }
 
-    /** Hardness and blast resistance on a stone or Nether host, then on a deepslate-tier host. */
-    private record Strength(float hardness, float resistance, float deepHardness, float deepResistance) {
-    }
-
-    /**
-     * Ores whose own mod does not use the vanilla ore strength, with the values that mod sets. Baked
-     * at the convention instead, a variant would mine faster than the block it stands in for, or
-     * break in explosions the original survives. Every value is read from the mod's own jar:
-     * <ul>
-     *   <li>Mythic Metals sets a strength per metal, and most of its deepslate ores are tougher
-     *       again.</li>
-     *   <li>Silent's Gems' Nether gem ores are 4.0 all round; its chaos ore is 5.0, and 6.0 in
-     *       deepslate, both with resistance 3.0.</li>
-     *   <li>Powah's three uraninite ores are 3.0, 3.2 and 4.0 with resistance 8.0 in stone, while
-     *       their deepslate forms follow the convention.</li>
-     *   <li>Silent Gear's bort ore is 4.0 with resistance 10.0 in either rock.</li>
-     *   <li>Create: New Age's thorium ore is 3.5 all round.</li>
-     *   <li>Dense Mekanism copies the rock and then sets its own strength per ore.</li>
-     * </ul>
-     */
-    private static final Map<OreType, Strength> STRENGTH_OVERRIDES = Map.ofEntries(
-            strength(OreType.ADAMANTITE, 4.0F, 5.0F, 6.0F, 12.0F),
-            strength(OreType.CARMOT, 5.5F, 6.5F, 6.5F, 12.0F),
-            strength(OreType.MORKITE, 3.0F, 4.0F, 3.0F, 4.0F),
-            strength(OreType.MYTHRIL, 5.0F, 6.0F, 5.5F, 6.5F),
-            strength(OreType.PROMETHEUM, 5.0F, 6.0F, 6.0F, 7.0F),
-            strength(OreType.RUNITE, 8.0F, 9.0F, 9.0F, 10.0F),
-            strength(OreType.UNOBTAINIUM, 16.0F, 13000.0F, 21.0F, 14000.0F),
-            strength(OreType.AQUARIUM, 4.0F, 5.0F),
-            strength(OreType.BANGLUM, 5.0F, 5.5F),
-            strength(OreType.KYBER, 3.0F, 4.0F),
-            strength(OreType.MANGANESE, 3.0F, 4.0F),
-            strength(OreType.ORICHALCUM, 5.5F, 6.5F),
-            strength(OreType.OSMIUM, 4.0F, 5.0F),
-            strength(OreType.PLATINUM, 3.5F, 4.5F),
-            strength(OreType.QUADRILLUM, 3.5F, 4.5F),
-            strength(OreType.SILVER, 2.5F, 3.5F),
-            strength(OreType.STARRITE, 5.0F, 6.0F),
-            strength(OreType.TIN, 2.0F, 3.0F),
-            strength(OreType.NETHER_BANGLUM, 5.0F, 5.5F),
-            strength(OreType.MIDAS_GOLD, 4.0F, 5.0F),
-            strength(OreType.PALLADIUM, 5.0F, 6.0F),
-            strength(OreType.STORMYX, 5.0F, 6.0F),
-            strength(OreType.SG_CHAOS, 5.0F, 3.0F, 6.0F, 3.0F),
-            strength(OreType.SG_N_ALEXANDRITE, 4.0F, 4.0F),
-            strength(OreType.SG_N_BLACK_DIAMOND, 4.0F, 4.0F),
-            strength(OreType.SG_N_CARNELIAN, 4.0F, 4.0F),
-            strength(OreType.SG_N_CITRINE, 4.0F, 4.0F),
-            strength(OreType.SG_N_IOLITE, 4.0F, 4.0F),
-            strength(OreType.SG_N_MOLDAVITE, 4.0F, 4.0F),
-            strength(OreType.SG_N_PEARL, 4.0F, 4.0F),
-            strength(OreType.SG_N_TANZANITE, 4.0F, 4.0F),
-            strength(OreType.URANINITE_POOR, 3.0F, 8.0F, 4.5F, 3.0F),
-            strength(OreType.URANINITE, 3.2F, 8.0F, 4.5F, 3.0F),
-            strength(OreType.URANINITE_DENSE, 4.0F, 8.0F, 4.5F, 3.0F),
-            strength(OreType.BORT, 4.0F, 10.0F, 4.0F, 10.0F),
-            strength(OreType.THORIUM, 3.5F, 3.5F),
-            strength(OreType.DENSE_FLUORITE, 5.0F, 9.0F, 6.0F, 9.0F),
-            strength(OreType.DENSE_LEAD, 5.0F, 9.0F, 6.0F, 9.0F),
-            strength(OreType.DENSE_OSMIUM, 7.5F, 12.0F, 8.5F, 12.0F),
-            strength(OreType.DENSE_TIN, 5.0F, 6.0F, 6.0F, 6.0F),
-            strength(OreType.DENSE_URANIUM, 5.0F, 9.0F, 6.0F, 9.0F));
-
-    private static Map.Entry<OreType, Strength> strength(OreType ore, float hardness, float resistance,
-                                                         float deepHardness, float deepResistance) {
-        return Map.entry(ore, new Strength(hardness, resistance, deepHardness, deepResistance));
-    }
-
-    /** An ore with no deepslate form: stone-tier only, or Nether only. */
-    private static Map.Entry<OreType, Strength> strength(OreType ore, float hardness, float resistance) {
-        return strength(ore, hardness, resistance, hardness, resistance);
-    }
-
     private static Block createBlock(OreVariant variant) {
-
-        final BlockBehaviour.Properties properties;
-        if (variant.ore().requiredModId() == null) {
-            // Vanilla equivalent: safe to resolve here (vanilla registers before any mod), and
-            // ofLegacyCopy carries hardness, blast resistance and the correct-tool flag straight off
-            // the ore we stand in for, so mining behaviour cannot drift from parity.
-            properties = BlockBehaviour.Properties.ofLegacyCopy(
-                    BuiltInRegistries.BLOCK.getValue(variant.vanillaEquivalentId()));
-        } else {
-            // Modded equivalent: its block may not be registered yet - registration order between
-            // unrelated mods is deliberately not relied on. Bake the vanilla ore convention by tier
-            // instead (stone ores 3.0/3.0, deepslate ores 4.5/3.0), which Create's zinc follows,
-            // unless the mod's own jar says otherwise (STRENGTH_OVERRIDES).
-            final boolean deep = variant.host().tier() == OreTier.DEEPSLATE;
-            final Strength own = STRENGTH_OVERRIDES.get(variant.ore());
-            final float hardness = own == null ? (deep ? 4.5F : 3.0F) : deep ? own.deepHardness() : own.hardness();
-            final float resistance = own == null ? 3.0F : deep ? own.deepResistance() : own.resistance();
-            properties = BlockBehaviour.Properties.of()
-                    .requiresCorrectToolForDrops()
-                    .strength(hardness, resistance);
+        // The properties source is always a vanilla block, so it is safe to resolve here (vanilla
+        // registers before any mod), and ofLegacyCopy carries its hardness, blast resistance and the
+        // correct-tool flag, so mining cannot drift from the ore the variant stands in for. A modded
+        // ore's own block may not be registered yet, so it is never read: it takes the vanilla ore
+        // convention for its tier, unless its own mod sets a strength, read from that mod's jar.
+        final OreType.Strength own = variant.ore().strength();
+        final BlockBehaviour.Properties properties = BlockBehaviour.Properties
+                .ofLegacyCopy(BuiltInRegistries.BLOCK.getValue(variant.propertiesSource()));
+        if (own != null) {
+            properties.strength(variant.deepslate() ? own.deepHardness() : own.hardness(),
+                    variant.deepslate() ? own.deepResistance() : own.resistance());
         }
-        // Only map colour and sound follow the HOST stone - vanilla varies those by host rock too
-        // (deepslate ores use MapColor.DEEPSLATE), and they have no balance effect.
-        properties.mapColor(variant.host().mapColor())
-                .sound(variant.host().sound());
+        // Only the map colour (and, in the block, the sound) follows the HOST stone - vanilla varies
+        // those by host rock too (deepslate ores use MapColor.DEEPSLATE), and they have no balance effect.
+        properties.mapColor(variant.host().mapColor());
 
         // From 1.21.2 a block Properties carries an id that MUST be set before construction, or the
         // constructor throws "Block id not set" (an NPE). It matches the registry id used below.
         // Safe here because every block built in this loop is registered immediately, so no
         // unregistered intrusive holder is ever left behind.
-        properties.setId(ResourceKey.create(Registries.BLOCK, variant.id()));
+        properties.setId(variant.blockKey());
 
         return variant.ore().redstoneLike()
-                ? new RedStoneOreBlock(properties)
-                : new DropExperienceBlock(variant.ore().xpFor(variant.host()), properties);
+                ? new HostedRedStoneOreBlock(variant.host(), properties)
+                : new HostedOreBlock(variant.host(), variant.ore().xpFor(variant.host()), properties);
     }
 }

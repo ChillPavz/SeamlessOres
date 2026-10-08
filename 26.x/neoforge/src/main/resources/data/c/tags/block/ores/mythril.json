@@ -21,15 +21,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_mythril_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_mythril_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_marble_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mythril_ore",
       "required": false
     },
     {

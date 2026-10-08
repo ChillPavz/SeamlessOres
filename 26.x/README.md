@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**446 blocks** in the `seamlessores` namespace.
+**899 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -90,7 +90,7 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Energized Tin | `granite_energized_tin_ore` | `diorite_energized_tin_ore` | `andesite_energized_tin_ore` | `tuff_energized_tin_ore` | `dripstone_energized_tin_ore` |
+| Tin | `granite_energized_tin_ore` | `diorite_energized_tin_ore` | `andesite_energized_tin_ore` | `tuff_energized_tin_ore` | `dripstone_energized_tin_ore` |
 
 **Mythic Metals, Overworld, requires `mythicmetals`**
 
@@ -176,11 +176,11 @@ touching ore of the same type across different host stones.
 | Tanzanite | `granite_tanzanite_ore` | `diorite_tanzanite_ore` | `andesite_tanzanite_ore` | `tuff_tanzanite_ore` | `dripstone_tanzanite_ore` |   |
 | Turquoise | `granite_turquoise_ore` | `diorite_turquoise_ore` | `andesite_turquoise_ore` | `tuff_turquoise_ore` | `dripstone_turquoise_ore` |   |
 | White Diamond | `granite_white_diamond_ore` | `diorite_white_diamond_ore` | `andesite_white_diamond_ore` | `tuff_white_diamond_ore` | `dripstone_white_diamond_ore` |   |
-| Silents Aquamarine | `granite_silents_aquamarine_ore` | `diorite_silents_aquamarine_ore` | `andesite_silents_aquamarine_ore` | `tuff_silents_aquamarine_ore` | `dripstone_silents_aquamarine_ore` |   |
-| Silents Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` | `dripstone_silents_citrine_ore` |   |
-| Silents Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` | `dripstone_silents_peridot_ore` |   |
-| Silents Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` | `dripstone_silents_topaz_ore` |   |
-| Silents Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` | `dripstone_silents_silver_ore` | `cinnabar_silents_silver_ore` |
+| Aquamarine | `granite_silents_aquamarine_ore` | `diorite_silents_aquamarine_ore` | `andesite_silents_aquamarine_ore` | `tuff_silents_aquamarine_ore` | `dripstone_silents_aquamarine_ore` |   |
+| Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` | `dripstone_silents_citrine_ore` |   |
+| Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` | `dripstone_silents_peridot_ore` |   |
+| Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` | `dripstone_silents_topaz_ore` |   |
+| Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` | `dripstone_silents_silver_ore` | `cinnabar_silents_silver_ore` |
 | Opal | `granite_opal_ore` | `diorite_opal_ore` | `andesite_opal_ore` | `tuff_opal_ore` | `dripstone_opal_ore` |   |
 
 **Silent's Gems, Nether, requires `silentgems`**
@@ -190,7 +190,7 @@ touching ore of the same type across different host stones.
 | Alexandrite | `basalt_alexandrite_ore` | `blackstone_alexandrite_ore` |
 | Black Diamond | `basalt_black_diamond_ore` | `blackstone_black_diamond_ore` |
 | Carnelian | `basalt_carnelian_ore` | `blackstone_carnelian_ore` |
-| Silents Citrine | `basalt_silents_citrine_ore` | `blackstone_silents_citrine_ore` |
+| Citrine | `basalt_silents_citrine_ore` | `blackstone_silents_citrine_ore` |
 | Iolite | `basalt_iolite_ore` | `blackstone_iolite_ore` |
 | Moldavite | `basalt_moldavite_ore` | `blackstone_moldavite_ore` |
 | Pearl | `basalt_pearl_ore` | `blackstone_pearl_ore` |
@@ -206,15 +206,15 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Tech Reborn Bauxite | `granite_techreborn_bauxite_ore` | `diorite_techreborn_bauxite_ore` | `andesite_techreborn_bauxite_ore` | `tuff_techreborn_bauxite_ore` | `dripstone_techreborn_bauxite_ore` |   |
+| Bauxite | `granite_techreborn_bauxite_ore` | `diorite_techreborn_bauxite_ore` | `andesite_techreborn_bauxite_ore` | `tuff_techreborn_bauxite_ore` | `dripstone_techreborn_bauxite_ore` |   |
 | Galena | `granite_galena_ore` | `diorite_galena_ore` | `andesite_galena_ore` | `tuff_galena_ore` | `dripstone_galena_ore` | `cinnabar_galena_ore` |
 | Iridium | `granite_iridium_ore` | `diorite_iridium_ore` | `andesite_iridium_ore` | `tuff_iridium_ore` | `dripstone_iridium_ore` |   |
-| Tech Reborn Lead | `granite_techreborn_lead_ore` | `diorite_techreborn_lead_ore` | `andesite_techreborn_lead_ore` | `tuff_techreborn_lead_ore` | `dripstone_techreborn_lead_ore` | `cinnabar_techreborn_lead_ore` |
-| Tech Reborn Ruby | `granite_techreborn_ruby_ore` | `diorite_techreborn_ruby_ore` | `andesite_techreborn_ruby_ore` | `tuff_techreborn_ruby_ore` | `dripstone_techreborn_ruby_ore` |   |
-| Tech Reborn Sapphire | `granite_techreborn_sapphire_ore` | `diorite_techreborn_sapphire_ore` | `andesite_techreborn_sapphire_ore` | `tuff_techreborn_sapphire_ore` | `dripstone_techreborn_sapphire_ore` |   |
-| Tech Reborn Silver | `granite_techreborn_silver_ore` | `diorite_techreborn_silver_ore` | `andesite_techreborn_silver_ore` | `tuff_techreborn_silver_ore` | `dripstone_techreborn_silver_ore` | `cinnabar_techreborn_silver_ore` |
-| Tech Reborn Tin | `granite_techreborn_tin_ore` | `diorite_techreborn_tin_ore` | `andesite_techreborn_tin_ore` | `tuff_techreborn_tin_ore` | `dripstone_techreborn_tin_ore` |   |
-| Tech Reborn Uranium | `granite_techreborn_uranium_ore` | `diorite_techreborn_uranium_ore` | `andesite_techreborn_uranium_ore` | `tuff_techreborn_uranium_ore` | `dripstone_techreborn_uranium_ore` |   |
+| Lead | `granite_techreborn_lead_ore` | `diorite_techreborn_lead_ore` | `andesite_techreborn_lead_ore` | `tuff_techreborn_lead_ore` | `dripstone_techreborn_lead_ore` | `cinnabar_techreborn_lead_ore` |
+| Ruby | `granite_techreborn_ruby_ore` | `diorite_techreborn_ruby_ore` | `andesite_techreborn_ruby_ore` | `tuff_techreborn_ruby_ore` | `dripstone_techreborn_ruby_ore` |   |
+| Sapphire | `granite_techreborn_sapphire_ore` | `diorite_techreborn_sapphire_ore` | `andesite_techreborn_sapphire_ore` | `tuff_techreborn_sapphire_ore` | `dripstone_techreborn_sapphire_ore` |   |
+| Silver | `granite_techreborn_silver_ore` | `diorite_techreborn_silver_ore` | `andesite_techreborn_silver_ore` | `tuff_techreborn_silver_ore` | `dripstone_techreborn_silver_ore` | `cinnabar_techreborn_silver_ore` |
+| Tin | `granite_techreborn_tin_ore` | `diorite_techreborn_tin_ore` | `andesite_techreborn_tin_ore` | `tuff_techreborn_tin_ore` | `dripstone_techreborn_tin_ore` |   |
+| Uranium | `granite_techreborn_uranium_ore` | `diorite_techreborn_uranium_ore` | `andesite_techreborn_uranium_ore` | `tuff_techreborn_uranium_ore` | `dripstone_techreborn_uranium_ore` |   |
 | Pyrite |   |   |   |   |   | `cinnabar_pyrite_ore` |
 | Sphalerite |   |   |   |   |   | `cinnabar_sphalerite_ore` |
 
@@ -230,7 +230,7 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Occultism Silver | `granite_occultism_silver_ore` | `diorite_occultism_silver_ore` | `andesite_occultism_silver_ore` | `tuff_occultism_silver_ore` | `dripstone_occultism_silver_ore` | `cinnabar_occultism_silver_ore` |
+| Silver | `granite_occultism_silver_ore` | `diorite_occultism_silver_ore` | `andesite_occultism_silver_ore` | `tuff_occultism_silver_ore` | `dripstone_occultism_silver_ore` | `cinnabar_occultism_silver_ore` |
 
 **Mystical Agriculture, Overworld, requires `mysticalagriculture`**
 
@@ -240,8 +240,8 @@ touching ore of the same type across different host stones.
 | Prosperity | `granite_prosperity_ore` | `diorite_prosperity_ore` | `andesite_prosperity_ore` | `tuff_prosperity_ore` | `dripstone_prosperity_ore` |
 
 A variant is registered only when the mod that owns its ore is installed, so how many of
-these you can actually see depends on which mods have a build for your loader at your
-Minecraft version:
+these (in the game's own rock) you can actually see depends on which mods have a build for
+your loader at your Minecraft version:
 
 | Minecraft | Loader | Blocks | Supported mods available here |
 |---|---|---|---|
@@ -278,7 +278,7 @@ An ore that could never form in a stone (coal in marble, diamond in limestone) g
 that ore becomes the stone instead, so no seam is left. Create's asurine, crimsite, ochrum and
 veridium each keep only the ore Create ties them to.
 
-<!-- BEGIN GENERATED matrix-block-list -->
+<!-- BEGIN GENERATED modded-stone-list -->
 **453 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Blockus, requires `blockus`** (Fabric, 26.1.x to 26.3)
@@ -291,42 +291,42 @@ Stones: Limestone `blockus_limestone`, Marble `blockus_marble`, Bluestone `block
 | Iron | `iron` |  | every stone |
 | Copper | `copper` |  | Limestone, Marble, Bluestone |
 | Gold | `gold` |  | every stone |
-| Redstone | `redstone` |  | every stone |
-| Emerald | `emerald` |  | Limestone, Marble |
 | Lapis Lazuli | `lapis` |  | Marble, Viridite |
 | Diamond | `diamond` |  | Viridite |
+| Emerald | `emerald` |  | Limestone, Marble |
+| Redstone | `redstone` |  | every stone |
 | Zinc | `zinc` | Create `create` | Limestone, Marble, Viridite |
-| Energized Tin | `energized_tin` | Energized Power `energizedpower` | Limestone, Marble |
+| Aquamarine | `aquamarine` | Mythic Upgrades `mythicupgrades` | Viridite |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | every stone |
+| Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Bluestone, Viridite |
+| Topaz | `topaz` | Mythic Upgrades `mythicupgrades` | Viridite |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | every stone |
 | Adamantite | `adamantite` | Mythic Metals `mythicmetals` | Bluestone, Viridite |
-| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Limestone, Marble |
-| Banglum | `banglum` | Mythic Metals `mythicmetals` | Limestone, Marble |
 | Carmot | `carmot` | Mythic Metals `mythicmetals` | every stone |
-| Kyber | `kyber` | Mythic Metals `mythicmetals` | Limestone, Marble |
-| Manganese | `manganese` | Mythic Metals `mythicmetals` | Limestone, Marble |
 | Morkite | `morkite` | Mythic Metals `mythicmetals` | every stone |
 | Mythril | `mythril` | Mythic Metals `mythicmetals` | every stone |
-| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | every stone |
 | Prometheum | `prometheum` | Mythic Metals `mythicmetals` | every stone |
-| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Limestone, Marble |
 | Runite | `runite` | Mythic Metals `mythicmetals` | every stone |
+| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | every stone |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Limestone, Marble |
 | Silver | `silver` | Mythic Metals `mythicmetals` | Limestone, Marble |
 | Starrite | `starrite` | Mythic Metals `mythicmetals` | Limestone |
 | Tin | `tin` | Mythic Metals `mythicmetals` | Limestone, Marble |
-| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | every stone |
-| Aquamarine | `aquamarine` | Mythic Upgrades `mythicupgrades` | Viridite |
-| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | every stone |
-| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | every stone |
-| Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Bluestone, Viridite |
-| Topaz | `topaz` | Mythic Upgrades `mythicupgrades` | Viridite |
-| Tech Reborn Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | every stone |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | every stone |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Limestone, Marble |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | every stone |
 | Galena | `galena` | Tech Reborn `techreborn` | Limestone, Marble, Viridite |
 | Iridium | `iridium` | Tech Reborn `techreborn` | Bluestone, Viridite |
-| Tech Reborn Lead | `techreborn_lead` | Tech Reborn `techreborn` | Limestone, Marble, Viridite |
-| Tech Reborn Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Marble |
-| Tech Reborn Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Marble |
-| Tech Reborn Silver | `techreborn_silver` | Tech Reborn `techreborn` | every stone |
-| Tech Reborn Tin | `techreborn_tin` | Tech Reborn `techreborn` | Limestone, Marble |
-| Tech Reborn Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Limestone, Marble, Viridite |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Limestone, Marble, Viridite |
+| Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Marble |
+| Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Marble |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | every stone |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Limestone, Marble |
+| Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Limestone, Marble, Viridite |
 
 **Create, requires `create`** (Create Fly, Fabric, 26.1.2 and 26.2)
 
@@ -338,48 +338,48 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Iron | `iron` |  | Crimsite, Limestone, Scoria, Calcite, Smooth Basalt |
 | Copper | `copper` |  | Limestone, Scoria, Veridium, Calcite, Smooth Basalt |
 | Gold | `gold` |  | Limestone, Ochrum, Scoria, Calcite, Smooth Basalt |
-| Redstone | `redstone` |  | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Emerald | `emerald` |  | Limestone, Calcite |
 | Lapis Lazuli | `lapis` |  | Calcite |
-| Zinc | `zinc` |  | Asurine, Limestone, Scoria, Calcite, Smooth Basalt |
+| Emerald | `emerald` |  | Limestone, Calcite |
+| Redstone | `redstone` |  | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
 | Nether Gold | `nether_gold` |  | Scorchia, Scoria, Smooth Basalt |
-| Nether Quartz | `quartz` |  | Scorchia, Scoria, Smooth Basalt |
-| Energized Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
-| Adamantite | `adamantite` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Banglum | `banglum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Carmot | `carmot` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Kyber | `kyber` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Manganese | `manganese` | Mythic Metals `mythicmetals` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Midas Gold | `midas_gold` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
-| Morkite | `morkite` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Mythril | `mythril` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Nether Banglum | `nether_banglum` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
-| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Palladium | `palladium` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
-| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Runite | `runite` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
-| Silver | `silver` | Mythic Metals `mythicmetals` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Stormyx | `stormyx` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
-| Tin | `tin` | Mythic Metals `mythicmetals` | Limestone |
-| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Quartz | `quartz` |  | Scorchia, Scoria, Smooth Basalt |
+| Zinc | `zinc` |  | Asurine, Limestone, Scoria, Calcite, Smooth Basalt |
 | Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
 | Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Scoria, Smooth Basalt |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
 | Ruby | `ruby` | Mythic Upgrades `mythicupgrades` | Scorchia, Scoria, Smooth Basalt |
 | Sapphire | `sapphire` | Mythic Upgrades `mythicupgrades` | Scorchia, Scoria, Smooth Basalt |
-| Tech Reborn Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Cinnabar | `cinnabar` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
+| Adamantite | `adamantite` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Carmot | `carmot` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Morkite | `morkite` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Mythril | `mythril` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Runite | `runite` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Tin | `tin` | Mythic Metals `mythicmetals` | Limestone |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Nether Banglum | `nether_banglum` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
+| Midas Gold | `midas_gold` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
+| Palladium | `palladium` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
+| Stormyx | `stormyx` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
 | Galena | `galena` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Tech Reborn Lead | `techreborn_lead` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Scoria, Smooth Basalt |
+| Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Scoria, Smooth Basalt |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Limestone |
+| Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Limestone, Calcite |
+| Cinnabar | `cinnabar` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
 | Pyrite | `pyrite` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
-| Tech Reborn Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Scoria, Smooth Basalt |
-| Tech Reborn Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Scoria, Smooth Basalt |
-| Tech Reborn Silver | `techreborn_silver` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
 | Sphalerite | `sphalerite` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
-| Tech Reborn Tin | `techreborn_tin` | Tech Reborn `techreborn` | Limestone |
-| Tech Reborn Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Limestone, Calcite |
 
 **Forbidden and Arcanus, requires `forbidden_arcanus`** (NeoForge, 26.1.2)
 
@@ -389,28 +389,28 @@ Stones: Darkstone `forbidden_arcanus_darkstone`
 |---|---|---|---|
 | Iron | `iron` |  | Darkstone |
 | Gold | `gold` |  | Darkstone |
-| Redstone | `redstone` |  | Darkstone |
 | Lapis Lazuli | `lapis` |  | Darkstone |
 | Diamond | `diamond` |  | Darkstone |
-| Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Darkstone |
-| Occultism Silver | `occultism_silver` | Occultism `occultism` | Darkstone |
-| Uraninite | `uraninite` | Powah `powah` | Darkstone |
-| Uraninite Dense | `uraninite_dense` | Powah `powah` | Darkstone |
-| Uraninite Poor | `uraninite_poor` | Powah `powah` | Darkstone |
-| Bort | `bort` | Silent Gear `silentgear` | Darkstone |
+| Redstone | `redstone` |  | Darkstone |
 | Alexandrite | `alexandrite` | Silent's Gems `silentgems` | Darkstone |
-| Silent's Aquamarine | `silents_aquamarine` | Silent's Gems `silentgems` | Darkstone |
 | Chaos | `chaos` | Silent's Gems `silentgems` | Darkstone |
 | Garnet | `garnet` | Silent's Gems `silentgems` | Darkstone |
 | Heliodor | `heliodor` | Silent's Gems `silentgems` | Darkstone |
 | Iolite | `iolite` | Silent's Gems `silentgems` | Darkstone |
-| Opal | `opal` | Silent's Gems `silentgems` | Darkstone |
-| Silent's Peridot | `silents_peridot` | Silent's Gems `silentgems` | Darkstone |
-| Silent's Ruby | `silents_ruby` | Silent's Gems `silentgems` | Darkstone |
-| Silent's Sapphire | `silents_sapphire` | Silent's Gems `silentgems` | Darkstone |
-| Silent's Silver | `silents_silver` | Silent's Gems `silentgems` | Darkstone |
-| Silent's Topaz | `silents_topaz` | Silent's Gems `silentgems` | Darkstone |
+| Ruby | `silents_ruby` | Silent's Gems `silentgems` | Darkstone |
+| Sapphire | `silents_sapphire` | Silent's Gems `silentgems` | Darkstone |
 | Turquoise | `turquoise` | Silent's Gems `silentgems` | Darkstone |
+| Aquamarine | `silents_aquamarine` | Silent's Gems `silentgems` | Darkstone |
+| Peridot | `silents_peridot` | Silent's Gems `silentgems` | Darkstone |
+| Topaz | `silents_topaz` | Silent's Gems `silentgems` | Darkstone |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Darkstone |
+| Uraninite | `uraninite` | Powah `powah` | Darkstone |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Darkstone |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | Darkstone |
+| Bort | `bort` | Silent Gear `silentgear` | Darkstone |
+| Silver | `occultism_silver` | Occultism `occultism` | Darkstone |
+| Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Darkstone |
+| Opal | `opal` | Silent's Gems `silentgems` | Darkstone |
 
 **Mythic Upgrades, requires `mythicupgrades`** (Fabric and NeoForge, 26.2 and 26.3)
 
@@ -437,43 +437,43 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Iron | `iron` |  | every stone |
 | Copper | `copper` |  | every stone |
 | Gold | `gold` |  | every stone |
-| Redstone | `redstone` |  | every stone |
-| Emerald | `emerald` |  | Blunite |
 | Lapis Lazuli | `lapis` |  | Blunite |
 | Diamond | `diamond` |  | Blunite |
+| Emerald | `emerald` |  | Blunite |
+| Redstone | `redstone` |  | every stone |
 | Zinc | `zinc` | Create `create` | every stone |
-| Energized Tin | `energized_tin` | Energized Power `energizedpower` | Blunite |
-| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | every stone |
-| Banglum | `banglum` | Mythic Metals `mythicmetals` | every stone |
+| Aquamarine | `aquamarine` | Mythic Upgrades `mythicupgrades` | Blunite |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | every stone |
+| Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Blunite |
+| Topaz | `topaz` | Mythic Upgrades `mythicupgrades` | Blunite |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | every stone |
 | Carmot | `carmot` | Mythic Metals `mythicmetals` | every stone |
-| Kyber | `kyber` | Mythic Metals `mythicmetals` | every stone |
-| Manganese | `manganese` | Mythic Metals `mythicmetals` | every stone |
 | Morkite | `morkite` | Mythic Metals `mythicmetals` | every stone |
 | Mythril | `mythril` | Mythic Metals `mythicmetals` | every stone |
-| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | every stone |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | every stone |
+| Runite | `runite` | Mythic Metals `mythicmetals` | every stone |
+| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | every stone |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | every stone |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | every stone |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | every stone |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | every stone |
 | Osmium | `osmium` | Mythic Metals `mythicmetals` | Blunite |
 | Platinum | `platinum` | Mythic Metals `mythicmetals` | Blunite |
-| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | every stone |
 | Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | every stone |
-| Runite | `runite` | Mythic Metals `mythicmetals` | every stone |
 | Silver | `silver` | Mythic Metals `mythicmetals` | every stone |
 | Starrite | `starrite` | Mythic Metals `mythicmetals` | every stone |
 | Tin | `tin` | Mythic Metals `mythicmetals` | Blunite |
-| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | every stone |
-| Aquamarine | `aquamarine` | Mythic Upgrades `mythicupgrades` | Blunite |
-| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | every stone |
-| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | every stone |
-| Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Blunite |
-| Topaz | `topaz` | Mythic Upgrades `mythicupgrades` | Blunite |
-| Tech Reborn Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | every stone |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | every stone |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Blunite |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | every stone |
 | Galena | `galena` | Tech Reborn `techreborn` | every stone |
 | Iridium | `iridium` | Tech Reborn `techreborn` | Blunite |
-| Tech Reborn Lead | `techreborn_lead` | Tech Reborn `techreborn` | every stone |
-| Tech Reborn Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Blunite |
-| Tech Reborn Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Blunite |
-| Tech Reborn Silver | `techreborn_silver` | Tech Reborn `techreborn` | every stone |
-| Tech Reborn Tin | `techreborn_tin` | Tech Reborn `techreborn` | Blunite |
-| Tech Reborn Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | every stone |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | every stone |
+| Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Blunite |
+| Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Blunite |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | every stone |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Blunite |
+| Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | every stone |
 
 **Wilder Wild, requires `wilderwild`** (Fabric 26.1.x to 26.3, NeoForge 26.2 and 26.3)
 
@@ -485,27 +485,27 @@ Stones: Gabbro `wilderwild_gabbro`
 | Copper | `copper` |  | Gabbro |
 | Gold | `gold` |  | Gabbro |
 | Redstone | `redstone` |  | Gabbro |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Gabbro |
 | Adamantite | `adamantite` | Mythic Metals `mythicmetals` | Gabbro |
-| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Gabbro |
-| Banglum | `banglum` | Mythic Metals `mythicmetals` | Gabbro |
 | Carmot | `carmot` | Mythic Metals `mythicmetals` | Gabbro |
-| Kyber | `kyber` | Mythic Metals `mythicmetals` | Gabbro |
 | Morkite | `morkite` | Mythic Metals `mythicmetals` | Gabbro |
 | Mythril | `mythril` | Mythic Metals `mythicmetals` | Gabbro |
-| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | Gabbro |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Gabbro |
+| Runite | `runite` | Mythic Metals `mythicmetals` | Gabbro |
+| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | Gabbro |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Gabbro |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Gabbro |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | Gabbro |
 | Osmium | `osmium` | Mythic Metals `mythicmetals` | Gabbro |
 | Platinum | `platinum` | Mythic Metals `mythicmetals` | Gabbro |
-| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Gabbro |
 | Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Gabbro |
-| Runite | `runite` | Mythic Metals `mythicmetals` | Gabbro |
 | Silver | `silver` | Mythic Metals `mythicmetals` | Gabbro |
-| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | Gabbro |
-| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Gabbro |
-| Occultism Silver | `occultism_silver` | Occultism `occultism` | Gabbro |
-| Tech Reborn Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Gabbro |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | Gabbro |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Gabbro |
 | Iridium | `iridium` | Tech Reborn `techreborn` | Gabbro |
-| Tech Reborn Silver | `techreborn_silver` | Tech Reborn `techreborn` | Gabbro |
-<!-- END GENERATED matrix-block-list -->
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Gabbro |
+| Silver | `occultism_silver` | Occultism `occultism` | Gabbro |
+<!-- END GENERATED modded-stone-list -->
 
 ## Configuration
 
@@ -523,7 +523,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 446 blocks takes **98 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 899 blocks takes **99 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -531,7 +531,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `inferium` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `occultism_silver` `opal_andesite` `opal_diorite` `opal_dripstone` `opal_granite` `opal_tuff` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `inferium` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `occultism_silver` `opal_andesite` `opal_darkstone` `opal_diorite` `opal_dripstone` `opal_granite` `opal_tuff` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its

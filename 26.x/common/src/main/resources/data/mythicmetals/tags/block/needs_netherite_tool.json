@@ -21,15 +21,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_unobtainium_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_marble_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_unobtainium_ore",
       "required": false
     },
     {

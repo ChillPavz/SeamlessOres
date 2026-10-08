@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "silentgear:bort_ore"
+        "seamlessores:andesite_bort_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "silentgear"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "silentgear"
-  },
   "type": "minecraft:block",
   "pools": [
     {

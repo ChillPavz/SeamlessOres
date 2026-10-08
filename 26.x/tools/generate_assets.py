@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """
-Generates Seamless Ores' client assets: blockstates, two-layer block models, item model
-definitions, the lang file, and (optionally) the ore overlay textures.
+Generates everything about Seamless Ores' blocks that is data: blockstates, two-layer block models,
+item model definitions, the lang file, loot tables, tags, the README's block lists, the Java tables
+(ModdedPairs, OreGeology, the config switches) and (optionally) the ore overlay textures.
+
+One table of ores (ORE_DEFS, mirroring OreType.java) and one of hosts (READ from HostStone.java):
+the game's own rock, where the pairs follow from each ore's tiers, and the stones other mods place,
+where they are measured (modded_pairs.json) and cut by the geology rule (geology.py).
 
 Run with Python 3.14 -- Pillow is only installed there on this machine:
 
@@ -33,13 +38,9 @@ import sys
 import tempfile
 import zipfile
 
-MOD_ID = "seamlessores"
+import geology
 
-# Classic Forge's datapack condition key. SINGULAR, and it takes ONE object rather than an array -
-# it is ICondition.DEFAULT_FIELD, verified as "forge:condition" in forge 52 and 61 alike. Spelled
-# differently again on 1.20.x Forge (unnamespaced "conditions", array), so re-verify against the
-# real jar before carrying this to an older branch.
-FORGE_CONDITION_KEY = "forge:condition"
+MOD_ID = "seamlessores"
 
 # Colour-distance (summed per-channel) above which a pixel counts as ore rather than shaded stone.
 # 0 keeps 141/256 px for iron and hazes over granite; 60 keeps 76 and looks right; 90 eats real blobs.
@@ -192,33 +193,60 @@ use_profile("26.1")
 # Source of the zinc overlay texture (Create Fly, mod id 'create'; CC0 plus the original Create MIT).
 CREATE_JAR = MOD_JARS["create"]
 
-# Host stones that receive ore but have no matching ore texture in vanilla.
-# KEEP IN SYNC WITH HostStone.java.
-#   tier - which vanilla ore this stone stands in for
-#   side / end - the model's base textures for side faces and up/down faces. For most stones they
-#     are the same sprite, but basalt AND blackstone are cube_column blocks in vanilla (side + _top
-#     textures); using the side sprite on all six faces makes our tops visibly mismatch the
-#     neighbouring stone. Values read from the vanilla block models, not guessed.
-# Stone and deepslate are absent (vanilla ships matching ores). Calcite and smooth basalt are absent
-# because they are in no ore replaceables tag, so ore never generates in them at all.
-HOSTS = {
-    "granite":    {"tier": "stone",     "side": "minecraft:block/granite",     "end": "minecraft:block/granite"},
-    "diorite":    {"tier": "stone",     "side": "minecraft:block/diorite",     "end": "minecraft:block/diorite"},
-    "andesite":   {"tier": "stone",     "side": "minecraft:block/andesite",    "end": "minecraft:block/andesite"},
-    "tuff":       {"tier": "deepslate", "side": "minecraft:block/tuff",        "end": "minecraft:block/tuff"},
-    # Dripstone: no ore feature targets it. Its variants are swapped in where the dripstone cluster's
-    # shell wraps an ore (DripstoneShell), so each stands in for the STONE-tier ore. Mirrors
-    # OreTier.DRIPSTONE and OreType.vanillaFor.
-    "dripstone":  {"tier": "dripstone", "ore_tier": "stone",
-                   "side": "minecraft:block/dripstone_block", "end": "minecraft:block/dripstone_block"},
-    # Cinnabar (26.2 and up): variants ADD ore, placed by our own rare features in the Sulfur Caves
-    # (generate_cinnabar_worldgen), never by the injectors. Only CINNABAR_FAMILY gets one. "since"
-    # keeps its loot out of the 26.1 profile, where the block does not exist. Mirrors
-    # OreTier.CINNABAR, HostStone.CINNABAR and OreType.vanillaFor.
-    "cinnabar":   {"tier": "cinnabar", "since": "26.2",
-                   "side": "minecraft:block/cinnabar", "end": "minecraft:block/cinnabar"},
-    "basalt":     {"tier": "nether",    "side": "minecraft:block/basalt_side", "end": "minecraft:block/basalt_top"},
-    "blackstone": {"tier": "nether",    "side": "minecraft:block/blackstone",  "end": "minecraft:block/blackstone_top"},
+# How each host stone is drawn, which only this script needs: the host table itself (which stones,
+# which tier, which ores) is READ from HostStone.java (read_hosts), so the blocks that register and
+# the files generated here cannot drift apart. A host with several looks must be mirrored exactly, or
+# its ore is the one tile that never varies. Read from each stone's own blockstate and models.
+#   single:          one texture on every face.
+#   column:          a side texture and an end texture: basalt AND blackstone are cube_column blocks in
+#                    vanilla, and the side sprite on all six faces makes our tops mismatch the stone.
+#   mirrored_turned: Wilder Wild gabbro, four random models: plain, mirrored, and each turned 180.
+#   textures4:       Create's natural stones, four random models, each its own texture (<prefix>0 to 3).
+HOST_LOOK = {
+    "minecraft:granite": ("single", "minecraft:block/granite"),
+    "minecraft:diorite": ("single", "minecraft:block/diorite"),
+    "minecraft:andesite": ("single", "minecraft:block/andesite"),
+    "minecraft:tuff": ("single", "minecraft:block/tuff"),
+    "minecraft:dripstone_block": ("single", "minecraft:block/dripstone_block"),
+    "minecraft:cinnabar": ("single", "minecraft:block/cinnabar"),
+    "minecraft:basalt": ("column", "minecraft:block/basalt_side", "minecraft:block/basalt_top"),
+    "minecraft:blackstone": ("column", "minecraft:block/blackstone", "minecraft:block/blackstone_top"),
+    "blockus:limestone": ("single", "blockus:block/limestone"),
+    "blockus:marble": ("single", "blockus:block/marble"),
+    "blockus:bluestone": ("single", "blockus:block/bluestone"),
+    "blockus:viridite": ("single", "blockus:block/viridite"),
+    "create:asurine": ("textures4", "create:block/palettes/stone_types/natural/asurine_"),
+    "create:crimsite": ("textures4", "create:block/palettes/stone_types/natural/crimsite_"),
+    "create:limestone": ("single", "create:block/palettes/stone_types/limestone"),
+    "create:ochrum": ("textures4", "create:block/palettes/stone_types/natural/ochrum_"),
+    "create:scorchia": ("single", "create:block/palettes/stone_types/scorchia"),
+    "create:scoria": ("single", "create:block/palettes/stone_types/scoria"),
+    "create:veridium": ("textures4", "create:block/palettes/stone_types/natural/veridium_"),
+    "minecraft:calcite": ("single", "minecraft:block/calcite"),
+    "minecraft:smooth_basalt": ("single", "minecraft:block/smooth_basalt"),
+    "forbidden_arcanus:darkstone": ("single", "forbidden_arcanus:block/darkstone"),
+    "mythicupgrades:aquamarine_schist": ("single", "mythicupgrades:block/aquamarine_schist"),
+    "mythicupgrades:citrine_schist": ("single", "mythicupgrades:block/citrine_schist"),
+    "mythicupgrades:peridot_schist": ("single", "mythicupgrades:block/peridot_schist"),
+    "mythicupgrades:topaz_schist": ("single", "mythicupgrades:block/topaz_schist"),
+    "mythicupgrades:sapphire_schist": ("single", "mythicupgrades:block/sapphire_schist"),
+    "promenade:asphalt": ("single", "promenade:block/asphalt"),
+    "promenade:blunite": ("single", "promenade:block/blunite"),
+    "wilderwild:gabbro": ("mirrored_turned", "wilderwild:block/gabbro"),
+}
+
+# A host block that only some Minecraft versions have: its loot stays out of the earlier profiles.
+HOST_SINCE = {"minecraft:cinnabar": "26.2"}
+
+# The mods that PLACE a host stone, for the README and the config screen. Where each exists at 26.x,
+# measured with references/tools/som-grid/availability.py.
+STONE_MODS = {
+    "blockus": {"display": "Blockus", "bands": "Fabric, 26.1.x to 26.3"},
+    "create": {"display": "Create", "bands": "Create Fly, Fabric, 26.1.2 and 26.2"},
+    "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "NeoForge, 26.1.2"},
+    "mythicupgrades": {"display": "Mythic Upgrades", "bands": "Fabric and NeoForge, 26.2 and 26.3"},
+    "promenade": {"display": "Promenade", "bands": "Fabric, 26.1.x and 26.2"},
+    "wilderwild": {"display": "Wilder Wild", "bands": "Fabric 26.1.x to 26.3, NeoForge 26.2 and 26.3"},
 }
 
 # The ores that get a cinnabar variant, by OVERLAY key: Nether gold is also named "gold", its overlay
@@ -332,14 +360,14 @@ ORE_DEFS = [
      "tiers": {"stone": "lapis_ore", "deepslate": "deepslate_lapis_ore"}},
     {"name": "diamond",  "overlay": "diamond",  "source": "diamond_ore",  "base": "stone",
      "tiers": {"stone": "diamond_ore", "deepslate": "deepslate_diamond_ore"}},
-    # Dripstone emerald too: Create's strata put dripstone blocks in the mountains, and the Matrix
-    # ores convert the emerald they swallow into it.
+    # Dripstone emerald too: Create's strata put dripstone blocks in the mountains, over the
+    # emerald they swallow.
     {"name": "emerald",  "overlay": "emerald",  "source": "emerald_ore",  "base": "stone",
      "tiers": {"stone": "emerald_ore", "deepslate": "deepslate_emerald_ore"}},
     {"name": "redstone", "overlay": "redstone", "source": "redstone_ore", "base": "stone",
      "tiers": {"stone": "redstone_ore", "deepslate": "deepslate_redstone_ore"}},
     # Nether. These ADD ore - vanilla's nether features match netherrack only - so their worldgen
-    # injection is config-gated in OreTargetInjector. Registration and assets are unconditional.
+    # injection is config-gated in OreSideInjector. Registration and assets are unconditional.
     {"name": "gold",     "overlay": "nether_gold", "source": "nether_gold_ore",   "base": "netherrack",
      "tiers": {"nether": "nether_gold_ore"}},
     {"name": "quartz",   "overlay": "quartz",      "source": "nether_quartz_ore", "base": "netherrack",
@@ -436,9 +464,10 @@ ORE_DEFS = [
     {"name": "tin", "overlay": "tin", "source": "tin_ore", "base": "stone",
      "mod": "mythicmetals", "tiers": {"stone": "tin_ore"}},
     # Mythic Metals ships its own tuff_orichalcum_ore through an explicit block_match
-    # target ahead of its deepslate tag entry, so tuff is already seamless there.
+    # target ahead of its deepslate tag entry, so tuff is already seamless there: skipped.
     {"name": "orichalcum", "overlay": "orichalcum", "source": "orichalcum_ore", "base": "stone",
-     "mod": "mythicmetals", "tiers": {"stone": "orichalcum_ore"}},
+     "mod": "mythicmetals", "skip_hosts": ["tuff"],
+     "tiers": {"stone": "orichalcum_ore", "deepslate": "deepslate_orichalcum_ore"}},
     # Nether. Like our own gold and quartz these ADD ore, so they ride the basalt and blackstone
     # host toggles and the bastion protection. Banglum's nether form reuses the plain name for the
     # same reason nether gold does: the host already disambiguates.
@@ -586,29 +615,30 @@ ORE_DEFS = [
     # variant would invent ore. These ADD ore (the mod targets c:netherracks only), so they ride the
     # host toggles, the nether dials and bastion protection, exactly like our gold and quartz.
     # They reuse the overworld overlay: measured against the mod’s own nether textures it lands
-    # 96-100% on the gem pixels, because the same blobs are drawn on netherrack as on stone.
-    {"name": "alexandrite", "overlay": "alexandrite", "source": "nether_alexandrite_ore", "base": "netherrack",
+    # 96-100% on the gem pixels, because the same blobs are drawn on netherrack as on stone. So the
+    # overlay cannot be their key, as it is everyone else's: theirs is spelled out.
+    {"name": "alexandrite", "key": "nether_alexandrite", "overlay": "alexandrite", "source": "nether_alexandrite_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_alexandrite_ore"}},
-    {"name": "black_diamond", "overlay": "black_diamond", "source": "nether_black_diamond_ore", "base": "netherrack",
+    {"name": "black_diamond", "key": "nether_black_diamond", "overlay": "black_diamond", "source": "nether_black_diamond_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_black_diamond_ore"}},
-    {"name": "carnelian", "overlay": "carnelian", "source": "nether_carnelian_ore", "base": "netherrack",
+    {"name": "carnelian", "key": "nether_carnelian", "overlay": "carnelian", "source": "nether_carnelian_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_carnelian_ore"}},
-    {"name": "silents_citrine", "overlay": "silents_citrine", "source": "nether_citrine_ore", "base": "netherrack",
+    {"name": "silents_citrine", "key": "nether_silents_citrine", "overlay": "silents_citrine", "source": "nether_citrine_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_citrine_ore"}},
-    {"name": "iolite", "overlay": "iolite", "source": "nether_iolite_ore", "base": "netherrack",
+    {"name": "iolite", "key": "nether_iolite", "overlay": "iolite", "source": "nether_iolite_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_iolite_ore"}},
-    {"name": "moldavite", "overlay": "moldavite", "source": "nether_moldavite_ore", "base": "netherrack",
+    {"name": "moldavite", "key": "nether_moldavite", "overlay": "moldavite", "source": "nether_moldavite_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_moldavite_ore"}},
-    {"name": "pearl", "overlay": "pearl", "source": "nether_pearl_ore", "base": "netherrack",
+    {"name": "pearl", "key": "nether_pearl", "overlay": "pearl", "source": "nether_pearl_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_pearl_ore"}},
-    {"name": "tanzanite", "overlay": "tanzanite", "source": "nether_tanzanite_ore", "base": "netherrack",
+    {"name": "tanzanite", "key": "nether_tanzanite", "overlay": "tanzanite", "source": "nether_tanzanite_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_tanzanite_ore"}},
     # Tech Reborn (Fabric only at 26.1.x). Its nine overworld ores all target the vanilla replaceables
@@ -673,9 +703,99 @@ ORE_DEFS = [
     {"name": "opal", "overlay": "opal", "source": "opal_ore", "base": "stone",
      "mod": "silentgems", "raw_drop": "silentgems:opal",
      "host_overlays": {"granite": "opal_granite", "diorite": "opal_diorite", "andesite": "opal_andesite", "tuff": "opal_tuff",
-                       "dripstone": "opal_dripstone"},
+                       "dripstone": "opal_dripstone", "forbidden_arcanus_darkstone": "opal_darkstone"},
      "tiers": {"stone": "opal_ore", "deepslate": "deepslate_opal_ore"}},
 ]
+
+# Every ore has a KEY, unique across the table: the id part in a stone another mod places (one of those
+# takes both golds: create_scoria_nether_gold_ore) and the geology rule's key. The overlay, unless set.
+# Mirrors OreType.key().
+for _ore in ORE_DEFS:
+    _ore.setdefault("key", _ore["overlay"])
+ORE_BY_KEY = {}
+for _ore in ORE_DEFS:
+    if ORE_BY_KEY.setdefault(_ore["key"], _ore) is not _ore:
+        sys.exit(f"two ores share the key {_ore['key']}")
+
+# Which other mods' ores each stone another mod places swallows, measured by the pair model
+# (references/tools/som-grid) from the real jars. Its "kinds" restate what the ore table already holds,
+# so they are only checked against it here.
+MODDED_PAIRS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "modded_pairs.json"),
+                              encoding="utf-8"))
+for _key, _kind in MODDED_PAIRS["kinds"].items():
+    _ore = ORE_BY_KEY.get(_key)
+    _forms = [f"{_ore.get('mod') or 'minecraft'}:{_ore['tiers'][t]}" for t in ("stone", "deepslate", "nether")
+              if _ore and t in _ore["tiers"]]
+    if _ore is None or _forms != _kind["forms"]:
+        sys.exit(f"modded_pairs.json: ore {_key} is not the ore table's ({_forms} vs {_kind['forms']})")
+
+HOST_TABLE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "common", "src", "main",
+                          "java", "com", "chillpavz", MOD_ID, "content", "HostStone.java")
+
+
+def read_hosts():
+    """Every host stone, in HostStone.ALL order, read from HostStone.java.
+
+    name: the id prefix of its variants; tier: OreTier, lower case; placed_by: the mod that places it
+    (None: the game's own rock); swallows: the ore keys a mod's stone feature lays it over (listed in the
+    table, plus the measured modded pairs), refused among them by the fixed geology rule.
+    """
+    text = open(HOST_TABLE, encoding="utf-8").read()
+    decls = re.findall(r'public static final HostStone (\w+) = (vanilla|placed)\((.*?)\)((?:\s*\.\w+\([^)]*\))*);',
+                       text, re.S)
+    hosts = {}
+    names = {}
+    for const, kind, args, chain in decls:
+        parts = [a.strip() for a in args.split(",")]
+        strings = [a.strip('"') for a in parts if a.startswith('"')]
+        tier = next(a for a in parts if a.startswith("OreTier.")).split(".", 1)[1].lower()
+        listed = [a.lower() for a in parts if re.fullmatch(r"[A-Z_]+", a)]
+        if kind == "vanilla":
+            name, ns, path, placed_by = strings[0], "minecraft", strings[-1], None
+        else:
+            ns, path = strings
+            name, placed_by = f"{ns}_{path}", ns
+        swallowed_by = placed_by
+        for call, call_args in re.findall(r"\.(\w+)\(([^)]*)\)", chain):
+            words = [a.strip() for a in call_args.split(",")]
+            if call == "placedBy":
+                placed_by = swallowed_by = words[0].strip('"')
+            elif call == "swallowing":
+                swallowed_by = words[0].strip('"')
+                listed = [a.lower() for a in words[1:]]
+            else:
+                sys.exit(f"{const}: unknown call .{call}()")
+        host_id = f"{ns}:{path}"
+        unknown = [o for o in listed if o not in ORE_BY_KEY]
+        if unknown:
+            sys.exit(f"{host_id} lists unknown ores {unknown}")
+        listed += list(MODDED_PAIRS["hosts"].get(host_id, {}))
+        swallows = [o["key"] for o in ORE_DEFS if o["key"] in listed]
+        if host_id not in HOST_LOOK:
+            sys.exit(f"{host_id} has no HOST_LOOK entry")
+        look = HOST_LOOK[host_id]
+        names[const] = name
+        hosts[name] = {"name": name, "id": host_id, "ns": ns, "path": path, "tier": tier,
+                       "ore_tier": "stone" if tier in ("dripstone", "cinnabar") else tier,
+                       "placed_by": placed_by, "swallowed_by": swallowed_by, "swallows": swallows,
+                       "refused": [o for o in swallows if placed_by and geology.fixed(name, o)],
+                       "look": look[0], "side": look[1], "end": look[2] if len(look) > 2 else look[1],
+                       "since": HOST_SINCE.get(host_id)}
+    declared = len(re.findall(r"public static final HostStone \w+ =", text))
+    if len(hosts) != declared:
+        sys.exit(f"parsed {len(hosts)} of {declared} hosts in {HOST_TABLE}: keep each one the shape"
+                 ' vanilla("name"[, "path"], OreTier.X, MapColor.Y) or placed("ns", "path", OreTier.X, MapColor.Y,'
+                 ' ORE, ...), optionally .placedBy("mod") or .swallowing("mod", ORE, ...)')
+    order = re.search(r"List<HostStone> ALL = List\.of\((.*?)\);", text, re.S).group(1)
+    if [names.get(c.strip()) for c in order.split(",")] != list(hosts):
+        sys.exit("HostStone.ALL must list every host, in declaration order")
+    missing = set(MODDED_PAIRS["hosts"]) - {h["id"] for h in hosts.values()}
+    if missing:
+        sys.exit(f"modded_pairs.json has pairs for stones not in the host table: {sorted(missing)}")
+    return hosts
+
+
+HOSTS = read_hosts()
 
 FACES = ["down", "up", "north", "south", "west", "east"]
 
@@ -713,12 +833,21 @@ def resources_dir():
 #   occultism           neoforge only    (added Sept 2026)
 #   mysticalagriculture neoforge only    (added Sept 2026; 26.1.2 only, needs Cucumber, also 26.1.2)
 #
-# There is no forge module on this branch, so nothing is ever written to one.
+# There is no forge module on this branch, so nothing is ever written to one, and no table carries
+# Forge's condition key.
 #
 # The other six (mythicupgrades, mythicmetals, densemekanism, tfmg, things, create_new_age) have NO
 # 26.1.2 build. Their variants never register here and their data is inert. They keep their earlier
 # routing so the derived registration lights them up with no code change if a build appears.
+#
+# The mods that place a host stone route the same way, and a variant's table goes only to the loaders
+# that carry its stone's mod AND its ore's (loot_modules): blockus and promenade Fabric only,
+# forbidden_arcanus NeoForge only, wilderwild both (STONE_MODS).
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
+    "blockus": ("fabric",),
+    "forbidden_arcanus": ("neoforge",),
+    "promenade": ("fabric",),
+    "wilderwild": ("fabric", "neoforge"),
     "create": ("fabric",),
     "mythicupgrades": ("fabric", "neoforge"),
     "mythicmetals": ("fabric",),
@@ -735,6 +864,15 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "mysticalagriculture": ("neoforge",),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
+
+
+def loot_modules(gate):
+    """The loader modules every mod of a variant's gate ships for."""
+    modules = [m for m in DEFAULT_CONDITIONAL_LOOT_MODULES
+               if all(m in CONDITIONAL_LOOT_MODULES_BY_MOD.get(mod, DEFAULT_CONDITIONAL_LOOT_MODULES) for mod in gate)]
+    if not modules:
+        sys.exit(f"no loader carries every mod of {gate}")
+    return modules
 
 def conditional_data_dir(module, namespace):
     return os.path.join(repo_root(), module, "src", "main", "resources", "data", namespace)
@@ -800,12 +938,22 @@ def data_dir(namespace):
 
 
 def variants():
-    """Every (host, host config, ore def, vanilla equivalent) pairing that actually exists.
+    """Every (host, host config, ore def, source form, source tier) that actually exists.
 
-    A pairing exists only where the ore has a vanilla equivalent for that host's tier, which is what
-    keeps granite quartz and basalt iron from being invented. Mirrors SeamlessOresContent.
+    In the game's own rock a pairing exists only where the ore has a form for that host's tier, which is
+    what keeps granite quartz and basalt iron from being invented; the variant stands in for that form.
+    A stone another mod places pairs with every ore it swallows that the geology rule keeps, and stands
+    in for every form of it; it takes its own tier's form for drops and tool tier where the ore has one,
+    else the first the ore has (a Nether ore in scoria). Mirrors HostStone.ores() and OreVariant.source().
     """
     for host, host_cfg in HOSTS.items():
+        if host_cfg["placed_by"]:
+            for ore in ORE_DEFS:
+                if ore["key"] in host_cfg["swallows"] and ore["key"] not in host_cfg["refused"]:
+                    tier = host_cfg["ore_tier"] if host_cfg["ore_tier"] in ore["tiers"] else next(
+                        t for t in ("stone", "deepslate", "nether") if t in ore["tiers"])
+                    yield host, host_cfg, ore, ore["tiers"][tier], tier
+            continue
         for ore in ORE_DEFS:
             # skip_hosts: the ore's own mod already ships a seamless variant for that stone, so ours
             # would take the host over (the injector prepends). Mirrors OreType.skipHosts.
@@ -815,11 +963,11 @@ def variants():
                 if ore["overlay"] not in CINNABAR_FAMILY:
                     continue
                 # Stands in for the stone ore, or the Nether one where the mod has no other.
-                vanilla = ore["tiers"].get("stone") or ore["tiers"].get("nether")
+                tier = "stone" if "stone" in ore["tiers"] else "nether"
             else:
-                vanilla = ore["tiers"].get(host_cfg.get("ore_tier", host_cfg["tier"]))
-            if vanilla is not None:
-                yield host, host_cfg, ore, vanilla
+                tier = host_cfg["ore_tier"]
+            if tier in ore["tiers"]:
+                yield host, host_cfg, ore, ore["tiers"][tier], tier
 
 
 def overlay_for(ore, host_cfg, face="side"):
@@ -841,7 +989,7 @@ def overlay_for(ore, host_cfg, face="side"):
 
 def all_overlay_keys():
     """Every overlay texture key a model references, end-face overlays included."""
-    return sorted({overlay_for(o, c, face) for _h, c, o, _v in variants() for face in ("side", "end")})
+    return sorted({overlay_for(o, c, face) for _h, c, o, _s, _t in variants() for face in ("side", "end")})
 
 
 # House style: this project does not use U+2014 EM DASH or U+2013 EN DASH in player-facing text.
@@ -876,7 +1024,8 @@ def write_json(path, data):
         CAPTURE[os.path.normpath(path)] = data
         return
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as handle:
+    # LF on every platform: the jar carries these bytes, and the repository stores LF.
+    with open(path, "w", encoding="utf-8", newline="\n") as handle:
         json.dump(data, handle, indent=2)
         handle.write("\n")
 
@@ -892,97 +1041,136 @@ def host_exists_in(host_cfg, version):
 
 
 def variant_name(host, ore):
-    return f"{host}_{ore}_ore"
+    """<host>_<ore>_ore. A stone another mod places names the ore by its key: it can take an overworld and
+    a Nether ore of one name (scoria takes gold and nether gold). Mirrors OreVariant.path()."""
+    return f"{host}_{ore['key'] if HOSTS[host]['placed_by'] else ore['name']}_ore"
 
 
 # Display-name overrides where the id fragment is not the vanilla display word. Vanilla calls the
 # block "Lapis Lazuli Ore" (id lapis_ore) - "Granite Lapis Ore" would be the exact naming
 # inconsistency users reported on the incumbent. Quartz stays "Quartz" (no "Nether" prefix: that
 # prefix distinguishes an overworld quartz that does not exist, and ours is already host-prefixed).
-# Prefixes that disambiguate a clashing ore name read as the mod, not as a made-up word.
-DISPLAY_NAMES = {"lapis": "Lapis Lazuli", "techreborn": "Tech Reborn", "mi": "MI"}
+DISPLAY_NAMES = {"lapis": "Lapis Lazuli"}
+# A block's name never carries a mod's name (owner, 8 Oct 2026): "Granite Aquamarine Ore" whichever
+# mod the aquamarine is from. These prefixes only keep ids apart; tooltips name the mod.
+MOD_PREFIXES = ("silents_", "techreborn_", "energized_", "occultism_")
+# A stone whose display name is not its id path, title-cased.
+STONE_NAMES = {"dripstone_block": "Dripstone"}
 
 
 def title(name):
-    words = [DISPLAY_NAMES.get(part, part.capitalize()) for part in name.split("_")]
-    return " ".join(words)
+    for prefix in MOD_PREFIXES:
+        if name.startswith(prefix):
+            name = name[len(prefix):]
+    return " ".join(DISPLAY_NAMES.get(part, part.capitalize()) for part in name.split("_"))
 
 
-def cube_faces(side_ref, end_ref=None):
-    """Full-cube faces: side_ref on the four sides, end_ref (default same) on up/down."""
-    end_ref = end_ref or side_ref
-    face = {}
-    for side in FACES:
-        ref = end_ref if side in ("up", "down") else side_ref
-        face[side] = {"uv": [0, 0, 16, 16], "texture": ref, "cullface": side}
-    return face
+def stone_name(path):
+    return STONE_NAMES.get(path) or title(path)
+
+
+def block_title(host, ore):
+    """e.g. Granite Iron Ore, Limestone Iron Ore. The stone's own name, then the ore's, then Ore."""
+    cfg = HOSTS[host]
+    return f"{stone_name(cfg['path'])} {title(ore['key'] if cfg['placed_by'] else ore['name'])} Ore"
+
+
+def faces(ref, end_ref=None, mirrored=False):
+    """Full-cube faces: ref on the four sides, end_ref (default the same) on up and down."""
+    return {side: {"uv": [16, 0, 0, 16] if mirrored else [0, 0, 16, 16],
+                   "texture": end_ref if end_ref and side in ("up", "down") else ref, "cullface": side}
+            for side in FACES}
+
+
+def block_model(side, end, overlay, overlay_end, mirrored=False):
+    """Two coincident full cubes, following vanilla's own grass_block pattern: the stone, then the ore.
+
+    The base is opaque so it lands on the solid layer; the overlay has alpha and must land on cutout,
+    or its transparent pixels are drawn opaque. NO render_type FIELD FROM 26.1: the chunk layer is
+    DERIVED from the texture's own alpha (SpriteContents.computeTransparency feeding
+    ChunkSectionLayer.byTransparency), so there is nothing to declare and no per-loader API to call.
+    Only the stone layer is mirrored in a mirrored model: it has to match the host tile beside it
+    exactly, while the ore art reads the same either way.
+    """
+    textures = {"particle": side, "side": side, "end": end, "overlay": f"{MOD_ID}:block/{overlay}_overlay"}
+    if overlay_end != overlay:
+        textures["overlay_end"] = f"{MOD_ID}:block/{overlay_end}_overlay"
+    return {
+        "parent": "minecraft:block/block",
+        "textures": textures,
+        "elements": [
+            {"from": [0, 0, 0], "to": [16, 16, 16], "faces": faces("#side", "#end", mirrored)},
+            {"from": [0, 0, 0], "to": [16, 16, 16],
+             "faces": faces("#overlay", "#overlay_end" if "overlay_end" in textures else None)},
+        ],
+    }
+
+
+def camel(name):
+    words = name.split("_")
+    return words[0] + "".join(w[:1].upper() + w[1:] for w in words[1:])
 
 
 def generate_json():
     root = assets_dir()
     count = 0
+    # Every file of these folders is written here, so one this run does not write is a variant that no
+    # longer exists: cleared first, so a host or ore taken out of the tables leaves nothing behind.
+    for sub in (("blockstates",), ("models", "block"), ("items",)):
+        folder = os.path.join(root, *sub)
+        for name in os.listdir(folder) if os.path.isdir(folder) else []:
+            if name.endswith(".json"):
+                os.remove(os.path.join(folder, name))
 
-    for host, host_cfg, ore, _vanilla in variants():
-            name = variant_name(host, ore["name"])
+    models = os.path.join(root, "models", "block")
+    for host, host_cfg, ore, _source, _tier in variants():
+        name = variant_name(host, ore)
+        base = f"{MOD_ID}:block/{name}"
+        overlay, overlay_end = overlay_for(ore, host_cfg), overlay_for(ore, host_cfg, "end")
+        side, end, look = host_cfg["side"], host_cfg["end"], host_cfg["look"]
 
-            # Blockstate. Note redstone needs no lit variant: vanilla's own redstone_ore blockstate
-            # is a single model too -- the lit state only changes light emission, not the model.
-            write_json(
-                os.path.join(root, "blockstates", f"{name}.json"),
-                {"variants": {"": {"model": f"{MOD_ID}:block/{name}"}}},
-            )
+        # Blockstate and models. Redstone needs no lit variant: vanilla's own redstone_ore blockstate
+        # is a single model too -- the lit state only changes light emission, not the model.
+        if look in ("single", "column"):
+            state = {"variants": {"": {"model": base}}}
+            write_json(os.path.join(models, f"{name}.json"), block_model(side, end, overlay, overlay_end))
+        elif look == "mirrored_turned":
+            state = {"variants": {"": [{"model": base}, {"model": base + "_mirrored"},
+                                       {"model": base, "y": 180}, {"model": base + "_mirrored", "y": 180}]}}
+            write_json(os.path.join(models, f"{name}.json"), block_model(side, end, overlay, overlay_end))
+            write_json(os.path.join(models, f"{name}_mirrored.json"),
+                       block_model(side, end, overlay, overlay_end, mirrored=True))
+        elif look == "textures4":
+            # Create picks one of four natural textures per block; ours picks the same way, so a vein
+            # does not show as the one repeated tile in a varied wall. The item points at the first.
+            state = {"variants": {"": [{"model": f"{base}_{i}"} for i in range(4)]}}
+            for i in range(4):
+                write_json(os.path.join(models, f"{name}_{i}.json"),
+                           block_model(f"{side}{i}", f"{end}{i}", overlay, overlay_end))
+            write_json(os.path.join(models, f"{name}.json"), block_model(f"{side}0", f"{end}0", overlay, overlay_end))
+        else:
+            sys.exit(f"{host}: unknown look {look}")
+        write_json(os.path.join(root, "blockstates", f"{name}.json"), state)
 
-            # Two-layer block model, following vanilla's own grass_block pattern: two coincident
-            # full cubes. The base is opaque so it lands on the solid layer; the overlay has alpha
-            # and must land on cutout, or its transparent pixels are drawn opaque.
-            #
-            # NO render_type FIELD FROM 26.1. The chunk layer is DERIVED from the texture's own
-            # alpha (SpriteContents.computeTransparency feeding ChunkSectionLayer.byTransparency),
-            # so there is nothing to declare and no per-loader API to call. Below 26.1 both halves
-            # are needed instead: the field here for NeoForge and Forge, and a Fabric client
-            # initializer calling BlockRenderLayerMap.
-            textures = {
-                "particle": host_cfg["side"],
-                "side": host_cfg["side"],
-                "end": host_cfg["end"],
-                "overlay": f"{MOD_ID}:block/{overlay_for(ore, host_cfg)}_overlay",
-            }
-            end_overlay = overlay_for(ore, host_cfg, "end")
-            if end_overlay != overlay_for(ore, host_cfg):
-                textures["overlay_end"] = f"{MOD_ID}:block/{end_overlay}_overlay"
-            write_json(
-                os.path.join(root, "models", "block", f"{name}.json"),
-                {
-                    "parent": "minecraft:block/block",
-                    "textures": textures,
-                    "elements": [
-                        {"from": [0, 0, 0], "to": [16, 16, 16], "faces": cube_faces("#side", "#end")},
-                        {"from": [0, 0, 0], "to": [16, 16, 16],
-                         "faces": cube_faces("#overlay", "#overlay_end" if "overlay_end" in textures else None)},
-                    ],
-                },
-            )
+        # Item model definition. The assets/<ns>/items/ DEFINITION layer arrives at 1.21.4, so
+        # a block item is given its look with an items/ file pointing straight at the block
+        # model. Vanilla ships no models/item/ file for a block item, so neither do we; writing
+        # one here would be dead weight.
+        write_json(
+            os.path.join(root, "items", f"{name}.json"),
+            {"model": {"type": "minecraft:model", "model": base}},
+        )
+        count += 1
 
-            # Item model definition. The assets/<ns>/items/ DEFINITION layer arrives at 1.21.4, so
-            # a block item is given its look with an items/ file pointing straight at the block
-            # model. Vanilla ships no models/item/ file for a block item, so neither do we; writing
-            # one here would be dead weight.
-            write_json(
-                os.path.join(root, "items", f"{name}.json"),
-                {"model": {"type": "minecraft:model", "model": f"{MOD_ID}:block/{name}"}},
-            )
-            count += 1
-
-    lang = {
-        f"block.{MOD_ID}.{variant_name(host, ore['name'])}": title(variant_name(host, ore["name"]))
-        for host, _cfg, ore, _v in variants()
-    }
+    lang = {f"block.{MOD_ID}.{variant_name(host, ore)}": block_title(host, ore)
+            for host, _cfg, ore, _s, _t in variants()}
     # Cloth Config / AutoConfig screen strings. The key shapes are fixed by AutoConfig:
     # text.autoconfig.<modid>.title / .option.<field> / .option.<field>.@Tooltip
     # A @Tooltip(count = n) needs n indexed keys instead of the bare one.
     lang.update({
-        # Our own creative tab, so 295 variants stop burying vanilla's Natural Blocks.
+        # Our own creative tabs, so several hundred variants stop burying vanilla's Natural Blocks.
         f"itemGroup.{MOD_ID}.ores": "Seamless Ores: Vanilla Stones",
+        f"itemGroup.{MOD_ID}.modded_stones": "Seamless Ores: Modded Stones",
         f"text.autoconfig.{MOD_ID}.title": "Seamless Ores",
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
@@ -1221,8 +1409,31 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.mysticalAgriculture.@Tooltip":
             "Generate host-matched inferium and prosperity ore. Does nothing unless the mod is installed.",
     })
+    # One switch per stone another mod places, in the Modded Stones category. Field names follow
+    # SeamlessOresConfigData: the host's name in camelCase. Create and Blockus both have a limestone, so
+    # a clashing stone name carries its mod here, where both switches sit in one list.
+    cfg = f"text.autoconfig.{MOD_ID}"
+    lang[f"{cfg}.category.modded_stones"] = "Modded Stones"
+    placed = [c for c in HOSTS.values() if c["placed_by"]]
+    paths = [c["path"] for c in placed]
+    for c in placed:
+        field = camel(c["name"])
+        clash = f" ({STONE_MODS[c['placed_by']]['display']})" if paths.count(c["path"]) > 1 else ""
+        lang[f"{cfg}.option.{field}"] = f"{stone_name(c['path'])}{clash}"
+        mod = STONE_MODS[c["placed_by"]]["display"]
+        where = mod if c["placed_by"] == c["ns"] else f"{mod}'s layers of"
+        lang[f"{cfg}.option.{field}.@Tooltip"] = (
+            f"Ore generated in {where} {stone_name(c['path']).lower()} matches the stone. Off: it keeps"
+            f" its own look. Applies to newly generated chunks, from the next world load.")
     assert_no_dashes(lang.items(), "lang entries")
     write_json(os.path.join(root, "lang", "en_us.json"), lang)
+
+    # Every overlay a model names must ship: only the owner's art does, so a missing one is a
+    # missing texture in game, not something to derive here.
+    missing = [o for o in all_overlay_keys()
+               if not os.path.exists(os.path.join(root, "textures", "block", f"{o}_overlay.png"))]
+    if missing:
+        sys.exit(f"  !! no overlay texture for {missing}")
 
     # Animation metadata for the overlays that need it. Written next to the texture, which is where
     # the vanilla sprite loader looks; nothing else has to know.
@@ -1238,61 +1449,115 @@ def generate_json():
     print(f"  {len(lang)} lang entries")
 
 
-def read_mod_ore_tags():
-    """Block and item id -> every c:ores/<x> tag it is in, read from each supported mod's own jar.
+def jar_tags(jar, kind):
+    """tag id -> members of every tag of this kind ("block" or "item") in an open jar, with nested
+    references (#tag) resolved inside the jar. Powah's needs_iron_tool is nothing but #c:ores/uraninite
+    and Silent's Gems points c:ores/<gem> at #silentgems:ores/<gem>: an unresolved reader sees neither."""
+    tags = {}
+    for n in jar.namelist():
+        m = re.match(rf"^data/([^/]+)/tags/{kind}s?/(.+)\.json$", n)
+        if m:
+            try:
+                values = json.loads(jar.read(n)).get("values", [])
+            except ValueError:
+                continue
+            tags[f"{m.group(1)}:{m.group(2)}"] = [v["id"] if isinstance(v, dict) else v for v in values]
 
-    Nested references are resolved inside the jar: Silent's Gems points c:ores/<gem> at its own
-    #silentgems:ores/<gem>. A missing jar contributes nothing; the loot step already fails loudly
-    for that case, so it cannot slip through silently.
+    def resolve(tag, seen):
+        members = set()
+        for value in tags.get(tag, []):
+            if value.startswith("#"):
+                if value[1:] not in seen:
+                    members |= resolve(value[1:], seen | {value[1:]})
+            else:
+                members.add(value)
+        return members
+
+    return {tag: resolve(tag, {tag}) for tag in tags}
+
+
+def read_mod_tags():
+    """What each supported mod's own jar says about its ores, for tag parity.
+
+    Returns (ore_tags, tool_tags, own_tool_tags): block and item id -> every c:ores/<material> tag it is
+    in; vanilla tier tag (needs_iron_tool...) -> the blocks the mods put in it; and (namespace, tag) ->
+    the blocks of a mod's OWN needs_* tag. Mythic Metals 0.26.0 feeds needs_copper_tools and
+    needs_netherite_tool into vanilla's incorrect_for_<tool> lists, a tier requirement by another route,
+    so a variant left out of them would mine a tier too cheaply. Read whatever the jar has rather than
+    naming them. A missing jar is reported, and its ores fall back to needs_iron_tool.
     """
-    out = {"block": {}, "item": {}}
-    for mod_jar in MOD_JARS.values():
+    ore_tags = {"block": {}, "item": {}}
+    tool_tags = {}
+    own_tool_tags = {}
+    for mod_id, mod_jar in MOD_JARS.items():
         if not mod_jar or not os.path.exists(mod_jar):
+            print(f"  !! {mod_id} jar not found ({mod_jar}) - its tool tags fall back to needs_iron_tool")
+            for ore in ORE_DEFS:
+                if ore.get("mod") == mod_id:
+                    tool_tags.setdefault("needs_iron_tool", set()).update(
+                        f"{mod_id}:{tier_ore}" for tier_ore in ore["tiers"].values())
             continue
-        with zipfile.ZipFile(mod_jar) as z:
+        with zipfile.ZipFile(mod_jar) as jar:
             for kind in ("block", "item"):
-                tags = {}
-                for n in z.namelist():
-                    m = re.match(rf"^data/([^/]+)/tags/{kind}s?/(.+)\.json$", n)
-                    if m:
-                        values = json.loads(z.read(n)).get("values", [])
-                        tags[f"{m.group(1)}:{m.group(2)}"] = [
-                            v["id"] if isinstance(v, dict) else v for v in values]
-
-                def resolve(tag, seen):
-                    members = set()
-                    for value in tags.get(tag, []):
-                        if value.startswith("#"):
-                            if value[1:] not in seen:
-                                members |= resolve(value[1:], seen | {value[1:]})
-                        else:
-                            members.add(value)
-                    return members
-
-                for tag in tags:
-                    if tag.startswith("c:ores/"):
-                        for member in resolve(tag, {tag}):
-                            out[kind].setdefault(member, set()).add(tag[len("c:ores/"):])
-    return out
+                for tag, members in jar_tags(jar, kind).items():
+                    namespace, path = tag.split(":", 1)
+                    if namespace == "c" and path.startswith("ores/"):
+                        for member in members:
+                            ore_tags[kind].setdefault(member, set()).add(path[len("ores/"):])
+                    elif kind == "block" and namespace == "minecraft" and path in TOOL_TAGS:
+                        tool_tags.setdefault(path, set()).update(members)
+                    elif kind == "block" and namespace != "minecraft" and re.fullmatch(r"needs_[^/]+", path):
+                        own_tool_tags.setdefault((namespace, path), set()).update(members)
+    return ore_tags, tool_tags, own_tool_tags
 
 
-def is_silk_touch_branch(child):
-    """Whether a loot entry is the silk-touch branch, which drops the block itself.
+def is_silk_touch_branch(node):
+    """Whether a loot entry or pool carries a Silk Touch condition (not an inverted one).
 
-    Three spellings, and 26.3 introduced two of them. Up to 26.2 an entry carries a "conditions" LIST
-    holding a minecraft:match_tool. From 26.3 it carries a single "condition": vanilla, Energized Power
-    and Mythic Upgrades name the shared predicate as a string ("minecraft:tool/can_silk_touch"), Tech
-    Reborn writes the match_tool object inline. Missing any of them silently makes a silk-touched
-    variant drop the source mod's block instead of ours.
+    Three spellings, and 26.3 introduced two of them. Up to 26.2 a "conditions" LIST holding a
+    minecraft:match_tool. From 26.3 a single "condition": vanilla, Energized Power and Mythic Upgrades
+    name the shared predicate as a string ("minecraft:tool/can_silk_touch"), Tech Reborn writes the
+    match_tool object inline. Missing any of them silently makes a silk-touched variant drop the source
+    mod's block instead of ours.
     """
-    if any(cond.get("condition") == "minecraft:match_tool" for cond in child.get("conditions", [])):
-        return True
-    condition = child.get("condition")
+    condition = node.get("condition")
     if isinstance(condition, str):
         return condition.endswith("can_silk_touch")
     if isinstance(condition, dict):
-        return condition.get("type") == "minecraft:match_tool"
-    return False
+        return condition.get("type") == "minecraft:match_tool" and "silk_touch" in json.dumps(condition)
+    return any(c.get("condition") == "minecraft:match_tool" and "silk_touch" in json.dumps(c)
+               for c in node.get("conditions", []))
+
+
+def silk_touch_to(table, source, our_id, name):
+    """Points every drop of the ore's own block that Silk Touch guards at our block instead.
+
+    The guard sits on the entry in vanilla's tables (an alternatives child) and on the whole pool in Tech
+    Reborn's. Exactly one such drop is expected. An ore that always drops itself (Tech Reborn 6.0.5's
+    bauxite) has none: our variant then drops that mod's own ore, the item every recipe for it expects.
+    Anything else is a table shape nobody has checked, and stops the run.
+    """
+    swapped = 0
+
+    def visit(entry, guarded):
+        nonlocal swapped
+        guarded = guarded or is_silk_touch_branch(entry)
+        if guarded and entry.get("name") == source:
+            entry["name"] = our_id
+            swapped += 1
+        for child in entry.get("children", []):
+            visit(child, guarded)
+
+    for pool in table.get("pools", []):
+        for entry in pool.get("entries", []):
+            visit(entry, is_silk_touch_branch(pool))
+    if swapped != 1 and not (swapped == 0 and f'"name": "{source}"' in json.dumps(table)):
+        sys.exit(f"  !! {name} ({CURRENT_PROFILE}): expected one silk touch drop of {source}, found {swapped}")
+
+
+def gate_of(host_cfg, ore):
+    """The mods a variant exists with: the one that places its stone, and the ore's own."""
+    return list(dict.fromkeys(m for m in (host_cfg["placed_by"], ore.get("mod")) if m))
 
 
 def generate_data():
@@ -1304,7 +1569,7 @@ def generate_data():
     ours = data_dir(MOD_ID)
     mc = data_dir("minecraft")
     conv = data_dir("c")
-    mod_ore_tags = read_mod_ore_tags()
+    mod_ore_tags, modded_tool_tags, mod_own_tool_tags = read_mod_tags()
 
     mineable = []
     tool_tags = {}
@@ -1318,143 +1583,74 @@ def generate_data():
 
         # Read the real vanilla tool tags once, then mirror membership per variant. NOT hardcoded
         # per ore, because it is not uniform by ore: overworld gold_ore is in needs_iron_tool but
-        # nether_gold_ore is in none of them (wooden pickaxe), and coal is in none either.
-        vanilla_tool_tags = {}
-        for tag in TOOL_TAGS:
-            with jar.open(f"data/minecraft/tags/block/{tag}.json") as handle:
-                vanilla_tool_tags[tag] = set(json.load(handle)["values"])
-
-        # Modded ores' tool tags come from THEIR jar - zinc is needs_iron_tool via Create's own
-        # data, and hardcoding would have guessed stone-tool wrong. Read every mod we cover, not
-        # just Create: the entries merge, and each mod only ever names its own blocks.
-        modded_tool_tags = {}
-        mod_own_tool_tags = {}          # (namespace, tag path) -> the blocks that mod lists there
-        for mod_id, mod_jar in MOD_JARS.items():
-            if not os.path.exists(mod_jar):
-                print(f"  !! {mod_id} jar not found ({mod_jar}) - its tool tags fall back to needs_iron_tool")
-                for ore in ORE_DEFS:
-                    if ore.get("mod") != mod_id:
-                        continue
-                    for tier_ore in ore["tiers"].values():
-                        modded_tool_tags.setdefault("needs_iron_tool", set()).add(f"{mod_id}:{tier_ore}")
-                continue
-            with zipfile.ZipFile(mod_jar) as mod_jar_zip:
-                for tag in TOOL_TAGS:
-                    try:
-                        with mod_jar_zip.open(f"data/minecraft/tags/block/{tag}.json") as handle:
-                            values = {str(v) for v in json.load(handle)["values"]}
-                    except KeyError:
-                        continue
-                    modded_tool_tags.setdefault(tag, set()).update(values)
-                # A mod can also gate ITS OWN tools with tags in its own namespace and feed those
-                # into vanilla's incorrect_for_<tool> composition, which is a tier requirement by
-                # another route. Mythic Metals 0.26.0 does exactly that: needs_copper_tools carries
-                # five of its ores and needs_netherite_tool two more, so a variant left out of them
-                # is minable a tier too cheaply next to the block it stands in for. Read whatever
-                # the jar has rather than naming the two, and mirror membership the same way.
-                for member in mod_jar_zip.namelist():
-                    match = re.match(r"^data/([^/]+)/tags/block/(needs_[^/]+)\.json$", member)
-                    if not match or match.group(1) == "minecraft":
-                        continue
-                    try:
-                        listed = json.loads(mod_jar_zip.read(member)).get("values", [])
-                    except ValueError:
-                        continue
-                    mod_own_tool_tags.setdefault((match.group(1), match.group(2)), set()).update(
-                        str(v["id"] if isinstance(v, dict) else v) for v in listed)
-        for host, host_cfg, ore, vanilla in variants():
-                name = variant_name(host, ore["name"])
+        # nether_gold_ore is in none of them (wooden pickaxe), and coal is in none either. A modded
+        # ore's tier comes from ITS jar (read_mod_tags): zinc is needs_iron_tool via Create's own data,
+        # and hardcoding would have guessed stone-tool wrong.
+        vanilla = jar_tags(jar, "block")
+        vanilla_tool_tags = {tag: vanilla.get(f"minecraft:{tag}", set()) for tag in TOOL_TAGS}
+        for host, host_cfg, ore, source, source_tier in variants():
+                name = variant_name(host, ore)
                 our_id = f"{MOD_ID}:{name}"
                 mod = ore.get("mod")
-                vanilla_id = f"{mod}:{vanilla}" if mod else f"minecraft:{vanilla}"
+                source_id = f"{mod}:{source}" if mod else f"minecraft:{source}"
+                gate = gate_of(host_cfg, ore)
 
                 # --- loot table -------------------------------------------------------------
-                if mod is None:
-                    # Read vanilla's table and swap only the identity bits. Ore loot is NOT uniform:
-                    # copper is uniform 2-5, lapis 4-9, redstone 4-5 with uniform_bonus_count rather
-                    # than ore_drops. Copying the real table is the only way to guarantee parity.
-                    with jar.open(f"data/minecraft/loot_table/blocks/{vanilla}.json") as handle:
-                        table = json.load(handle)
-                    for pool in table.get("pools", []):
-                        for entry in pool.get("entries", []):
-                            for child in entry.get("children", []):
-                                if is_silk_touch_branch(child):
-                                    # Silk-touch branch drops the block itself - ours.
-                                    child["name"] = our_id
-                    table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
-                else:
-                    # Third-party ore: TRANSFORM THAT MOD'S OWN TABLE, exactly as we do for vanilla.
-                    #
-                    # This replaced "write our own in the vanilla iron_ore shape", which was correct
-                    # only while zinc was the only modded ore, because Create's zinc table IS that
-                    # shape. Mythic Metals' are not: set_count uniform 1-2 on the raw drop (so our
-                    # own table would give HALF the yield), bonus_rolls, and rare secondary drops
-                    # behind their own mythicmetals:random_chance_with_luck condition. Writing our
-                    # own would be a visible balance break across every variant. All three mods we
-                    # cover are MIT, and we credit them.
-                    #
-                    # Hard error rather than a fallback if the jar is missing: silently shipping a
-                    # table with the wrong yield is exactly the class of bug this project keeps
-                    # finding, and a generator run is a dev-time step where failing loudly is free.
-                    mod_jar_path = MOD_JARS.get(mod)
-                    if not mod_jar_path or not os.path.exists(mod_jar_path):
-                        raise SystemExit(
-                            f"  !! cannot generate the loot table for {name}: the {mod} jar is "
-                            f"required to transform its own table and was not found at "
-                            f"{mod_jar_path}. Fix its path in PROFILES or COMMON_JARS."
-                        )
-                    with zipfile.ZipFile(mod_jar_path) as mod_zip:
-                        loot_path = f"data/{mod}/loot_table/blocks/{vanilla}.json"
-                        try:
-                            with mod_zip.open(loot_path) as handle:
-                                table = json.load(handle)
-                        except KeyError:
-                            raise SystemExit(f"  !! {mod} jar has no {loot_path} (needed by {name})")
-                    for pool in table.get("pools", []):
-                        for entry in pool.get("entries", []):
-                            for child in entry.get("children", []):
-                                if is_silk_touch_branch(child):
-                                    # Silk-touch branch drops the block itself - ours.
-                                    child["name"] = our_id
-                    table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
-                    # All three loaders' conditions keep it inert when the mod is absent; each
-                    # loader ignores the other two keys. NEVER neoforge:item_exists - removed at 26.2.
-                    conditions = {
-                        "fabric:load_conditions": [
-                            {"condition": "fabric:registry_contains",
-                             "registry": "minecraft:block", "values": [vanilla_id]}
-                        ],
-                        "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": mod}],
-                        FORGE_CONDITION_KEY: {"type": "forge:mod_loaded", "modid": mod},
-                    }
-                    table = {**conditions, **table}
+                # TRANSFORMED FROM THE ORE'S OWN TABLE, never written by hand: vanilla's from the client
+                # jar, a mod's from that mod's jar. Ore loot is not uniform (copper 2-5, lapis 4-9,
+                # redstone uniform_bonus_count; Mythic Metals' set_count 1-2 plus rare secondary drops,
+                # Dense Mekanism and Powah set_count), so copying the real table is the only way to
+                # guarantee parity. Hard error rather than a fallback if the jar is missing: silently
+                # shipping a table with the wrong yield is exactly the class of bug this project keeps
+                # finding, and a generator run is a dev-time step where failing loudly is free.
+                jar_path = CLIENT_JAR if mod is None else MOD_JARS.get(mod)
+                if not jar_path or not os.path.exists(jar_path):
+                    raise SystemExit(f"  !! cannot generate the loot table for {name}: the {mod} jar is "
+                                     f"required to transform its own table and was not found at {jar_path}."
+                                     f" Fix its path in PROFILES or COMMON_JARS.")
+                loot_path = f"data/{source_id.split(':')[0]}/loot_table/blocks/{source}.json"
+                with zipfile.ZipFile(jar_path) as source_jar:
+                    try:
+                        with source_jar.open(loot_path) as handle:
+                            table = json.load(handle)
+                    except KeyError:
+                        raise SystemExit(f"  !! {os.path.basename(jar_path)} has no {loot_path} (needed by {name})")
+                silk_touch_to(table, source_id, our_id, name)
+                table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
 
                 if not host_exists_in(host_cfg, CURRENT_PROFILE):
                     pass    # no such block on this version: a table naming its item would not load
-                elif mod:
-                    # Conditional table: goes to the loaders that can host that mod, not to common.
-                    for module in CONDITIONAL_LOOT_MODULES_BY_MOD.get(
-                            mod, DEFAULT_CONDITIONAL_LOOT_MODULES):
+                elif gate:
+                    # From 26.3 loot tables are a datapack REGISTRY, and a table naming an item that is
+                    # not registered fails registry loading: the world does not open. A variant exists
+                    # only with the mods in its gate, so its table carries each loader's condition for
+                    # exactly that, and each loader ignores the other's key. NEVER neoforge:item_exists:
+                    # removed at 26.2. Written only to the loaders every mod of the gate ships for.
+                    conditions = {
+                        "fabric:load_conditions": [{"condition": "fabric:registry_contains",
+                                                    "registry": "minecraft:block", "values": [our_id]}],
+                        "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": m} for m in gate],
+                    }
+                    for module in loot_modules(gate):
                         write_json(os.path.join(conditional_data_dir(module, MOD_ID),
-                                                "loot_table", "blocks", f"{name}.json"), table)
+                                                "loot_table", "blocks", f"{name}.json"), {**conditions, **table})
                 else:
                     write_json(os.path.join(ours, "loot_table", "blocks", f"{name}.json"), table)
 
                 # --- tags -------------------------------------------------------------------
-                # A modded variant's block only exists when its mod is loaded, so its tag entries
-                # are optional objects - a plain string would log a tag error without the mod.
-                # Cinnabar variants do not exist on 26.1, so theirs are optional as well.
-                entry = {"id": our_id, "required": False} if mod or host_cfg.get("since") else our_id
+                # A variant that needs a mod, or a block only some versions have, may be absent, so its
+                # tag entries are optional objects: a plain string would log a tag error without it.
+                entry = {"id": our_id, "required": False} if gate or host_cfg.get("since") else our_id
                 if mod:
                     entry_mod[our_id] = mod
                 mineable.append(entry)
                 source_tags = modded_tool_tags if mod else vanilla_tool_tags
                 for tag, members in source_tags.items():
-                    if vanilla_id in members:
+                    if source_id in members:
                         tool_tags.setdefault(tag, []).append(entry)
                 if mod:
                     for tag_key, members in mod_own_tool_tags.items():
-                        if vanilla_id in members:
+                        if source_id in members:
                             foreign_tool_tags.setdefault(tag_key, []).append(entry)
                 conv_block.setdefault(ore["name"], []).append(entry)
                 conv_item.setdefault(ore["name"], []).append(entry)
@@ -1466,15 +1662,14 @@ def generate_data():
                 # source mod lists twice (Extreme Reactors' yellorite is c:ores/uranium as well).
                 if mod:
                     for kind, target in (("block", conv_block), ("item", conv_item)):
-                        for tag_name in sorted(mod_ore_tags[kind].get(vanilla_id, ())):
+                        for tag_name in sorted(mod_ore_tags[kind].get(source_id, ())):
                             if tag_name != ore["name"]:
                                 target.setdefault(tag_name, []).append(entry)
-                # c:ores_in_ground/<stone|deepslate|netherrack> - keyed on the ore we stand in for,
+                # c:ores_in_ground/<stone|deepslate|netherrack> - keyed on the form we stand in for,
                 # so consumers treat a variant exactly like its counterpart.
                 # Cinnabar has no ground tag of its own, and is neither stone nor netherrack.
                 if host_cfg["tier"] != "cinnabar":
-                    ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[
-                        host_cfg.get("ore_tier", host_cfg["tier"])]
+                    ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[source_tier]
                     ores_in_ground.setdefault(ground, []).append(entry)
 
     # Tags MERGE with vanilla's by default (no "replace": true), so these add to the existing lists
@@ -1601,11 +1796,14 @@ def _block_list():
     sources while the README still said 64, because nothing forced the two to agree. Anything here
     that a human would have to retype when an ore is added belongs in this function instead.
     """
-    # source mod id (None = vanilla) -> list of (ore def, {host: block id}), in ORE_DEFS order
+    # source mod id (None = vanilla) -> list of (ore def, {host: block id}), in ORE_DEFS order. The
+    # game's own rock only; the stones other mods place have a section of their own.
     grouped = {}
-    for host, host_cfg, ore, _vanilla in variants():
+    for host, host_cfg, ore, _source, _tier in variants():
+        if host_cfg["placed_by"]:
+            continue
         entry = grouped.setdefault(ore.get("mod"), {}).setdefault(id(ore), (ore, {}))
-        entry[1][host] = variant_name(host, ore["name"])
+        entry[1][host] = variant_name(host, ore)
 
     order = [None] + [m for m in MODS if m in grouped]
     unknown = [m for m in grouped if m is not None and m not in MODS]
@@ -1647,15 +1845,15 @@ def _loader_counts():
     per_version = {}
     for version in PROFILES:
         counts = {}
-        for _host, cfg, ore, _v in variants():
-            if host_exists_in(cfg, version):
+        for _host, cfg, ore, _s, _t in variants():
+            if not cfg["placed_by"] and host_exists_in(cfg, version):
                 counts[ore.get("mod")] = counts.get(ore.get("mod"), 0) + 1
         per_version[version] = counts
 
     lines = [
         "A variant is registered only when the mod that owns its ore is installed, so how many of",
-        "these you can actually see depends on which mods have a build for your loader at your",
-        "Minecraft version:",
+        "these (in the game's own rock) you can actually see depends on which mods have a build for",
+        "your loader at your Minecraft version:",
         "",
         "| Minecraft | Loader | Blocks | Supported mods available here |",
         "|---|---|---|---|",
@@ -1722,6 +1920,41 @@ def _credits():
     return lines + [""]
 
 
+def _modded_stone_list():
+    """The ores in the stones other mods place, by the mod that places them.
+
+    From the same host table the blocks register from, so the README cannot claim a block the jar does
+    not have.
+    """
+    placed = [c for c in HOSTS.values() if c["placed_by"]]
+    built = {}
+    for host, cfg, ore, _s, _t in variants():
+        if cfg["placed_by"]:
+            built.setdefault(host, []).append(ore["key"])
+    lines = [f"**{sum(len(v) for v in built.values())} blocks**, plus the dripstone ones listed above. Each exists"
+             f" only when the mod that places its stone is installed, and one of another mod's ore only with that"
+             f" mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone`"
+             f" and `iron` make `blockus_limestone_iron_ore`.", ""]
+    for placer in dict.fromkeys(c["placed_by"] for c in placed):
+        stones = [c for c in placed if c["placed_by"] == placer]
+        lines.append(f"**{STONE_MODS[placer]['display']}, requires `{placer}`** ({STONE_MODS[placer]['bands']})")
+        lines.append("")
+        lines.append("Stones: " + ", ".join(f"{stone_name(c['path'])} `{c['name']}`" for c in stones))
+        lines.append("")
+        lines.append("| Ore | `<ore>` | Also requires | In |")
+        lines.append("|---|---|---|---|")
+        for ore in ORE_DEFS:
+            within = [stone_name(c["path"]) for c in stones if ore["key"] in built.get(c["name"], ())]
+            if not within:
+                continue
+            mod = ore.get("mod")
+            needs = f"{MODS[mod]['display']} `{mod}`" if mod and mod != placer else ""
+            where = "every stone" if len(within) == len(stones) and len(stones) > 1 else ", ".join(within)
+            lines.append(f"| {title(ore['key'])} | `{ore['key']}` | {needs} | {where} |")
+        lines.append("")
+    return lines
+
+
 def generate_readme():
     """Rewrites the generated sections of README.md in place, leaving the prose alone.
 
@@ -1735,6 +1968,7 @@ def generate_readme():
 
     sections = {
         "block-list": _block_list(),
+        "modded-stone-list": _modded_stone_list(),
         "overlay-list": _overlay_list(),
         "credits": _credits(),
     }
@@ -1819,10 +2053,10 @@ def generate_cinnabar_worldgen():
                             os.remove(os.path.join(dirpath, f))
     count = 0
     report = []
-    for host, host_cfg, ore, _vanilla in variants():
+    for host, host_cfg, ore, _source, _tier in variants():
         if host_cfg["tier"] != "cinnabar":
             continue
-        block = f"{MOD_ID}:{variant_name(host, ore['name'])}"
+        block = f"{MOD_ID}:{variant_name(host, ore)}"
         mod = ore.get("mod")
         conditions = {}
         if mod:
@@ -1933,6 +2167,75 @@ def generate_versioned_data():
         print(f"  [{version}] {len(tables)} loot tables -> {overlay}/")
 
 
+def replace_block(text, begin, end, body, where):
+    if begin not in text or end not in text:
+        sys.exit(f"{where} has no '{begin.strip()}' markers")
+    head, rest = text.split(begin, 1)
+    _old, tail = rest.split(end, 1)
+    return f"{head}{begin}{body}{end}{tail}"
+
+
+def write_text(path, text):
+    with open(path, "w", encoding="utf-8", newline="\n") as handle:
+        handle.write(text)
+
+
+def generate_java():
+    """The Java that is data: the measured modded pairs, the geology tables, and the config switches.
+
+    ModdedPairs from modded_pairs.json; OreGeology from geology.py, both tables; and in each loader's
+    SeamlessOresConfigData a switch per stone another mod places (the game's own rock has hand-written
+    ones, with their own wording) and the push of every host's switch. The two config copies must stay
+    identical.
+    """
+    content = os.path.dirname(HOST_TABLE)
+    keys = [o["key"] for o in ORE_DEFS]
+    for table, rule in (("STRICT", geology.STRICT), ("LENIENT", geology.LENIENT)):
+        unknown = sorted(set(rule) - set(keys))
+        if unknown:
+            sys.exit(f"geology.py {table} names unknown ore keys {unknown}")
+    placed = [c for c in HOSTS.values() if c["placed_by"]]
+    unknown = sorted((set(h for hosts in geology.STRICT.values() for h in hosts) | set(geology.LORE))
+                     - {c["name"] for c in placed})
+    if unknown:
+        sys.exit(f"geology.py names unknown stones {unknown}")
+
+    cases = []
+    for host, pairs in MODDED_PAIRS["hosts"].items():
+        listed = [o["key"] for o in ORE_DEFS if o["key"] in pairs]
+        cases.append(f'            case "{host}" -> keys({", ".join(chr(34) + k + chr(34) for k in listed)});')
+    path = os.path.join(content, "ModdedPairs.java")
+    text = open(path, encoding="utf-8").read()
+    write_text(path, replace_block(text, "        return switch (host) {\n", "            default -> List.of();",
+                                   "\n".join(cases) + "\n", path))
+
+    own = [c["name"] for c in HOSTS.values() if not c["placed_by"]]
+    write_text(os.path.join(content, "OreGeology.java"), geology.java([c["name"] for c in placed], own, keys))
+
+    fields, push = [], []
+    for c in placed:
+        fields += ['    @ConfigEntry.Category("modded_stones")', "    @ConfigEntry.Gui.Tooltip",
+                   f"    public boolean {camel(c['name'])} = true;", ""]
+    for c in HOSTS.values():
+        push.append(f'        values.hosts.put("{c["name"]}", {camel(c["name"])});')
+    texts = []
+    for loader in ("fabric", "neoforge"):
+        path = os.path.join(repo_root(), loader, "src", "main", "java", "com", "chillpavz", MOD_ID, "config",
+                            "SeamlessOresConfigData.java")
+        text = open(path, encoding="utf-8").read()
+        text = replace_block(text, "    // BEGIN GENERATED modded stone switches (tools/generate_assets.py, from the host table)\n",
+                             "    // END GENERATED modded stone switches", "\n".join(fields), path)
+        text = replace_block(text, "        // BEGIN GENERATED host switches (tools/generate_assets.py, from the host table)\n",
+                             "        // END GENERATED host switches", "\n".join(push) + "\n", path)
+        texts.append((path, text))
+    if texts[0][1] != texts[1][1]:
+        sys.exit("the two SeamlessOresConfigData copies differ outside the generated blocks; make them identical")
+    for path, text in texts:
+        write_text(path, text)
+    print(f"  Java: modded pairs for {len(cases)} stones, geology for {len(placed)} + {len(own)} hosts,"
+          f" {len(HOSTS)} host switches")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -1950,18 +2253,14 @@ def main():
     print("Updating README...")
     generate_readme()
 
+    print("Generating the Java tables...")
+    generate_java()
+
     if args.textures:
         print("Extracting overlay textures...")
         generate_textures()
     else:
         print("Skipped textures (pass --textures to regenerate; it overwrites hand edits).")
-
-    # The Matrix ores, in modded stones. Always after the rest: they add to the lang file and to tag
-    # files written above, rather than writing their own.
-    print("Generating the Matrix ores...")
-    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "matrix"))
-    import generate_matrix
-    generate_matrix.main()
 
 
 if __name__ == "__main__":

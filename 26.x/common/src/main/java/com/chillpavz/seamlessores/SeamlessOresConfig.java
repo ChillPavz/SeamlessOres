@@ -1,5 +1,12 @@
 package com.chillpavz.seamlessores;
 
+import com.chillpavz.seamlessores.content.HostStone;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -36,7 +43,7 @@ public final class SeamlessOresConfig {
      *
      * <p><b>This REMOVES ore</b>, so it is off by default: where the ore feature would have placed a
      * refused ore, the rock stays rock. Worldgen only; every block stays registered. See
-     * {@code content.OreGeology} for the rule set. The Matrix ores in modded stones follow a fixed
+     * {@code content.OreGeology} for the rule set. The stones other mods place follow a fixed
      * geology rule of their own, whatever this says.
      */
     public static boolean geology = false;
@@ -338,21 +345,15 @@ public final class SeamlessOresConfig {
      * type can be swapped and still compile — and the symptom would be a silently wrong worldgen
      * dial, which is the hardest class of bug to notice in this mod.
      *
-     * <p>The host booleans live here rather than being turned into a {@code Set} by each loader, so
-     * that derivation exists once instead of being copy-pasted into all three modules.
+     * <p>The host switches arrive as a map and become the disabled set here, so that derivation exists
+     * once instead of in each loader module.
      */
     public static final class Values {
-        public boolean granite = true;
-        public boolean diorite = true;
-        public boolean andesite = true;
-        public boolean tuff = true;
-        public boolean dripstone = true;
-        public boolean cinnabar = true;
+        /** One switch per host stone, by {@code HostStone.name()}. */
+        public final Map<String, Boolean> hosts = new HashMap<>();
         public int cinnabarAmount = 100;
         public boolean lushCaves = true;
         public boolean sulfurCaves = true;
-        public boolean basalt = true;
-        public boolean blackstone = true;
         public boolean oreVeins = true;
         public boolean geology = false;
         public boolean bastionSafeNether = true;
@@ -385,16 +386,23 @@ public final class SeamlessOresConfig {
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
     public static void apply(Values values) {
-        final Set<String> disabled = new java.util.HashSet<>();
-        if (!values.granite) disabled.add("granite");
-        if (!values.diorite) disabled.add("diorite");
-        if (!values.andesite) disabled.add("andesite");
-        if (!values.tuff) disabled.add("tuff");
-        if (!values.dripstone) disabled.add("dripstone");
-        if (!values.cinnabar) disabled.add("cinnabar");
-        if (!values.basalt) disabled.add("basalt");
-        if (!values.blackstone) disabled.add("blackstone");
+        // Every host has a switch: the loader's config class carries one per host, the ones for other
+        // mods' stones generated from the host table. A host without one stays on and the log says so,
+        // which means the generator was not re-run after the table changed.
+        final Set<String> disabled = new HashSet<>();
+        final List<String> missing = new ArrayList<>();
+        for (HostStone host : HostStone.ALL) {
+            final Boolean enabled = values.hosts.get(host.name());
+            if (enabled == null) {
+                missing.add(host.name());
+            } else if (!enabled) {
+                disabled.add(host.name());
+            }
+        }
         disabledHosts = Set.copyOf(disabled);
+        if (!missing.isEmpty()) {
+            Constants.LOG.warn("Config: no switch for {}, generated as normal", missing);
+        }
 
         oreVeins = values.oreVeins;
         geology = values.geology;

@@ -21,15 +21,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_morkite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_morkite_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_marble_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_morkite_ore",
       "required": false
     },
     {

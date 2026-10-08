@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "mysticalagriculture:prosperity_ore"
+        "seamlessores:granite_prosperity_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "mysticalagriculture"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "mysticalagriculture"
-  },
   "type": "minecraft:block",
   "pools": [
     {

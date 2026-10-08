@@ -5,8 +5,11 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
+import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 
+import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.UnaryOperator;
 
@@ -34,8 +37,17 @@ public interface WorldgenEra {
     /** Hands over the bastion-safe ore and nether gem feature types, whatever their era's form. */
     void registerFeatureTypes(BiConsumer<Identifier, Object> sink);
 
-    /** Adds the variant targets to every ore feature, then restyles the large veins. Server start. */
-    void injectOreTargets(RegistryAccess registries);
+    /** Every ore site, freshly read: an injector may have rebound some since the last call. */
+    List<OreSite> oreSites(RegistryAccess registries);
+
+    /**
+     * Whether the ore side should add "this stone" next to {@code original}: from 26.3 always, since it
+     * can say "the original target AND this stone"; before, only where the original accepts the stone.
+     */
+    boolean receives(RuleTest original, Block stone);
+
+    /** Restyles the large ore veins, and keeps them out of the Sulfur Caves. Server start, after the ores. */
+    void injectVeins(RegistryAccess registries);
 
     /** The upper bound of a count placement's provider, or -1 when it cannot be read. */
     int maxCount(CountPlacement placement);

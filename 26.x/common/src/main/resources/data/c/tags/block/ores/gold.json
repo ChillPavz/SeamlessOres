@@ -12,15 +12,15 @@
     "seamlessores:basalt_gold_ore",
     "seamlessores:blackstone_gold_ore",
     {
-      "id": "seamlessores:blockus_bluestone_gold_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_gold_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_marble_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_gold_ore",
       "required": false
     },
     {
@@ -48,10 +48,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_calcite_gold_ore",
       "required": false
     },
@@ -61,6 +57,10 @@
     },
     {
       "id": "seamlessores:minecraft_smooth_basalt_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
       "required": false
     },
     {

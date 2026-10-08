@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "create:zinc_ore"
+        "seamlessores:granite_zinc_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "create"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "create"
-  },
   "type": "minecraft:block",
   "pools": [
     {

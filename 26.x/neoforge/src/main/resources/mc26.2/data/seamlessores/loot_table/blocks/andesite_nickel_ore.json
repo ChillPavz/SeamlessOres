@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "tfmg:nickel_ore"
+        "seamlessores:andesite_nickel_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "tfmg"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "tfmg"
-  },
   "type": "minecraft:block",
   "pools": [
     {

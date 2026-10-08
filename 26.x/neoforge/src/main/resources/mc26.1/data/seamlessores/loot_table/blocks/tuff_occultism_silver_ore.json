@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "occultism:silver_ore_deepslate"
+        "seamlessores:tuff_occultism_silver_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "occultism"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "occultism"
-  },
   "type": "minecraft:block",
   "pools": [
     {

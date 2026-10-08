@@ -14,11 +14,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_lapis_ore",
+      "id": "seamlessores:minecraft_calcite_lapis_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_lapis_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_lapis_ore",
       "required": false
     },
     {

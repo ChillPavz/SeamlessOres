@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "mysticalagriculture:inferium_ore"
+        "seamlessores:diorite_inferium_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "mysticalagriculture"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "mysticalagriculture"
-  },
   "type": "minecraft:block",
   "random_sequence": "seamlessores:blocks/diorite_inferium_ore",
   "pools": [

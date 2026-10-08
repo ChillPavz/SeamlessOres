@@ -1,13 +1,8 @@
 package com.chillpavz.seamlessores;
 
-import com.chillpavz.seamlessores.matrix.MatrixAliases;
-import com.chillpavz.seamlessores.matrix.MatrixPresence;
-import com.chillpavz.seamlessores.matrix.content.MatrixContent;
+import com.chillpavz.seamlessores.content.MatrixAliases;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.EventPriority;
-import java.util.ArrayList;
-import java.util.List;
 import com.chillpavz.seamlessores.config.ClothConfigBootstrap;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import com.chillpavz.seamlessores.platform.Services;
@@ -79,11 +74,7 @@ public class SeamlessOresNeoForge {
         event.register(Registries.ITEM,
                 helper -> SeamlessOresContent.registerItems(helper::register));
         event.register(Registries.CREATIVE_MODE_TAB,
-                helper -> SeamlessOresContent.registerCreativeTab(helper::register));
-        // The Matrix ores, in modded stones. After ours: the dripstone ones are our own blocks.
-        event.register(Registries.BLOCK, helper -> MatrixContent.registerBlocks(helper::register));
-        event.register(Registries.ITEM, helper -> MatrixContent.registerItems(helper::register));
-        event.register(Registries.CREATIVE_MODE_TAB, helper -> MatrixContent.registerCreativeTab(helper::register));
+                helper -> SeamlessOresContent.registerCreativeTabs(helper::register));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks. Up to
         // 26.2 a feature type is a Feature in FEATURE; from 26.3 it is its codec, in FEATURE_TYPE.
         registerFeatureTypes(event, Worldgen.era());
@@ -95,7 +86,7 @@ public class SeamlessOresNeoForge {
      * alias may not shadow a live id.
      */
     private void onRegisterLast(RegisterEvent event) {
-        if (MatrixPresence.oldMatrixInstalled()) {
+        if (MatrixAliases.oldModInstalled()) {
             return;
         }
         if (event.getRegistryKey().equals(Registries.BLOCK)) {
@@ -113,16 +104,11 @@ public class SeamlessOresNeoForge {
 
     private void onBuildCreativeTabs(BuildCreativeModeTabContentsEvent event) {
 
-        // Two tabs: vanilla stones (ours, then the Matrix ores in calcite and smooth basalt) and
-        // modded stones (the rest of the Matrix ores).
-        final List<Item> items = new ArrayList<>();
-        if (event.getTabKey().equals(SeamlessOresContent.TAB)) {
-            items.addAll(SeamlessOresContent.creativeTabItems());
-            items.addAll(MatrixContent.creativeTabItems(true));
-        } else if (event.getTabKey().equals(MatrixContent.TAB)) {
-            items.addAll(MatrixContent.creativeTabItems(false));
+        // Two tabs: the game's own rock, and the stones other mods add.
+        if (!event.getTabKey().equals(SeamlessOresContent.TAB) && !event.getTabKey().equals(SeamlessOresContent.MODDED_TAB)) {
+            return;
         }
-        for (var item : items) {
+        for (var item : SeamlessOresContent.creativeTabItems(event.getTabKey())) {
             event.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
     }

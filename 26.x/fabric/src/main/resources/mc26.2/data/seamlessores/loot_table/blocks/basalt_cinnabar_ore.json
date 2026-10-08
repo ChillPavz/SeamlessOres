@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "techreborn:cinnabar_ore"
+        "seamlessores:basalt_cinnabar_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "techreborn"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "techreborn"
-  },
   "type": "minecraft:block",
   "functions": [
     {
@@ -128,7 +124,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "techreborn:cinnabar_ore"
+          "name": "seamlessores:basalt_cinnabar_ore"
         }
       ],
       "rolls": 1.0

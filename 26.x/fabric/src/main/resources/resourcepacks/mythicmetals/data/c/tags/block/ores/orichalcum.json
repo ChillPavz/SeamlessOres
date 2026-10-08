@@ -17,15 +17,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_orichalcum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_orichalcum_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_marble_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_orichalcum_ore",
       "required": false
     },
     {

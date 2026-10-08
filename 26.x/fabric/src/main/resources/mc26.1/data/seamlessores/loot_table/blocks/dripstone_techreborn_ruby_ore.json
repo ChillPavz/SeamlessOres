@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "techreborn:ruby_ore"
+        "seamlessores:dripstone_techreborn_ruby_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "techreborn"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "techreborn"
-  },
   "type": "minecraft:block",
   "functions": [
     {
@@ -135,7 +131,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "techreborn:ruby_ore"
+          "name": "seamlessores:dripstone_techreborn_ruby_ore"
         }
       ],
       "rolls": 1.0

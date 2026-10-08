@@ -1,7 +1,7 @@
 package com.chillpavz.seamlessores.client;
 
 import com.chillpavz.seamlessores.Constants;
-import com.chillpavz.seamlessores.matrix.MatrixPresence;
+import com.chillpavz.seamlessores.content.MatrixAliases;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
@@ -57,7 +57,7 @@ public final class MatrixMessage {
                 return;
             }
             decided = true;
-            if (MatrixPresence.oldMatrixInstalled()) {
+            if (MatrixAliases.oldModInstalled()) {
                 player.sendSystemMessage(removeMatrix());
                 Constants.LOG.info("Showed the note to remove Seamless Ores: Matrix in chat");
                 return;

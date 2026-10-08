@@ -2,7 +2,6 @@ package com.chillpavz.seamlessores.config;
 
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
-import com.chillpavz.seamlessores.matrix.MatrixConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
@@ -10,8 +9,6 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.minecraft.world.InteractionResult;
 
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Cloth Config data class.
@@ -142,7 +139,7 @@ public class SeamlessOresConfigData implements ConfigData {
     // One switch per stone that another mod adds (Blockus, Create, Mythic Upgrades and so on), for the
     // ores that end up inside it. The screen factory hides the switch of a stone whose mod is absent.
 
-    // BEGIN GENERATED matrix switches (tools/matrix/generate_matrix.py, from the Matrix host table)
+    // BEGIN GENERATED modded stone switches (tools/generate_assets.py, from the host table)
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean blockusLimestone = true;
@@ -193,10 +190,6 @@ public class SeamlessOresConfigData implements ConfigData {
 
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
-    public boolean minecraftDripstoneBlock = true;
-
-    @ConfigEntry.Category("modded_stones")
-    @ConfigEntry.Gui.Tooltip
     public boolean minecraftSmoothBasalt = true;
 
     @ConfigEntry.Category("modded_stones")
@@ -234,7 +227,7 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean wilderwildGabbro = true;
-    // END GENERATED matrix switches
+    // END GENERATED modded stone switches
 
     // --- Create ---------------------------------------------------------------------------------
 
@@ -380,17 +373,41 @@ public class SeamlessOresConfigData implements ConfigData {
     public void push() {
         final SeamlessOresConfig.Values values = new SeamlessOresConfig.Values();
 
-        values.granite = granite;
-        values.diorite = diorite;
-        values.andesite = andesite;
-        values.tuff = tuff;
-        values.dripstone = dripstone;
-        values.cinnabar = cinnabar;
         values.cinnabarAmount = cinnabarAmount;
         values.lushCaves = lushCaves;
         values.sulfurCaves = sulfurCaves;
-        values.basalt = basalt;
-        values.blackstone = blackstone;
+        // BEGIN GENERATED host switches (tools/generate_assets.py, from the host table)
+        values.hosts.put("granite", granite);
+        values.hosts.put("diorite", diorite);
+        values.hosts.put("andesite", andesite);
+        values.hosts.put("tuff", tuff);
+        values.hosts.put("dripstone", dripstone);
+        values.hosts.put("cinnabar", cinnabar);
+        values.hosts.put("basalt", basalt);
+        values.hosts.put("blackstone", blackstone);
+        values.hosts.put("blockus_limestone", blockusLimestone);
+        values.hosts.put("blockus_marble", blockusMarble);
+        values.hosts.put("blockus_bluestone", blockusBluestone);
+        values.hosts.put("blockus_viridite", blockusViridite);
+        values.hosts.put("create_asurine", createAsurine);
+        values.hosts.put("create_crimsite", createCrimsite);
+        values.hosts.put("create_limestone", createLimestone);
+        values.hosts.put("create_ochrum", createOchrum);
+        values.hosts.put("create_scorchia", createScorchia);
+        values.hosts.put("create_scoria", createScoria);
+        values.hosts.put("create_veridium", createVeridium);
+        values.hosts.put("minecraft_calcite", minecraftCalcite);
+        values.hosts.put("minecraft_smooth_basalt", minecraftSmoothBasalt);
+        values.hosts.put("forbidden_arcanus_darkstone", forbiddenArcanusDarkstone);
+        values.hosts.put("mythicupgrades_aquamarine_schist", mythicupgradesAquamarineSchist);
+        values.hosts.put("mythicupgrades_citrine_schist", mythicupgradesCitrineSchist);
+        values.hosts.put("mythicupgrades_peridot_schist", mythicupgradesPeridotSchist);
+        values.hosts.put("mythicupgrades_topaz_schist", mythicupgradesTopazSchist);
+        values.hosts.put("mythicupgrades_sapphire_schist", mythicupgradesSapphireSchist);
+        values.hosts.put("promenade_asphalt", promenadeAsphalt);
+        values.hosts.put("promenade_blunite", promenadeBlunite);
+        values.hosts.put("wilderwild_gabbro", wilderwildGabbro);
+        // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;
 
@@ -427,33 +444,5 @@ public class SeamlessOresConfigData implements ConfigData {
         values.createNewAge = createNewAge;
 
         SeamlessOresConfig.apply(values);
-
-        final Map<String, Boolean> matrix = new HashMap<>();
-        // BEGIN GENERATED matrix push (tools/matrix/generate_matrix.py)
-        matrix.put("blockus_limestone", blockusLimestone);
-        matrix.put("blockus_marble", blockusMarble);
-        matrix.put("blockus_bluestone", blockusBluestone);
-        matrix.put("blockus_viridite", blockusViridite);
-        matrix.put("create_asurine", createAsurine);
-        matrix.put("create_crimsite", createCrimsite);
-        matrix.put("create_limestone", createLimestone);
-        matrix.put("create_ochrum", createOchrum);
-        matrix.put("create_scorchia", createScorchia);
-        matrix.put("create_scoria", createScoria);
-        matrix.put("create_veridium", createVeridium);
-        matrix.put("minecraft_calcite", minecraftCalcite);
-        matrix.put("minecraft_dripstone_block", minecraftDripstoneBlock);
-        matrix.put("minecraft_smooth_basalt", minecraftSmoothBasalt);
-        matrix.put("forbidden_arcanus_darkstone", forbiddenArcanusDarkstone);
-        matrix.put("mythicupgrades_aquamarine_schist", mythicupgradesAquamarineSchist);
-        matrix.put("mythicupgrades_citrine_schist", mythicupgradesCitrineSchist);
-        matrix.put("mythicupgrades_peridot_schist", mythicupgradesPeridotSchist);
-        matrix.put("mythicupgrades_topaz_schist", mythicupgradesTopazSchist);
-        matrix.put("mythicupgrades_sapphire_schist", mythicupgradesSapphireSchist);
-        matrix.put("promenade_asphalt", promenadeAsphalt);
-        matrix.put("promenade_blunite", promenadeBlunite);
-        matrix.put("wilderwild_gabbro", wilderwildGabbro);
-        // END GENERATED matrix push
-        MatrixConfig.apply(matrix);
     }
 }

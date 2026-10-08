@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_chaos_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_gleaming_ore",
       "required": false
     },
@@ -38,6 +42,10 @@
     },
     {
       "id": "seamlessores:diorite_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_chaos_ore",
       "required": false
     },
     {
@@ -65,6 +73,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_chaos_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_gleaming_ore",
       "required": false
     },
@@ -78,6 +90,10 @@
     },
     {
       "id": "seamlessores:tuff_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_chaos_ore",
       "required": false
     },
     {
@@ -102,6 +118,10 @@
     },
     {
       "id": "seamlessores:dripstone_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_chaos_ore",
       "required": false
     },
     {
@@ -185,31 +205,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_iridium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_orichalcum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_orichalcum_ore",
+      "id": "seamlessores:blockus_limestone_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_starrite_ore",
+      "id": "seamlessores:blockus_limestone_orichalcum_ore",
       "required": false
     },
     {
@@ -221,11 +225,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_adamantite_ore",
+      "id": "seamlessores:blockus_bluestone_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_iridium_ore",
+      "id": "seamlessores:blockus_bluestone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_adamantite_ore",
       "required": false
     },
     {
@@ -234,6 +250,10 @@
     },
     {
       "id": "seamlessores:blockus_viridite_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_iridium_ore",
       "required": false
     },
     {
@@ -317,10 +337,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_chaos_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_calcite_adamantite_ore",
       "required": false
     },
@@ -349,11 +365,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_mythril_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_orichalcum_ore",
+      "id": "seamlessores:promenade_asphalt_mythril_ore",
       "required": false
     },
     {
@@ -361,7 +377,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_iridium_ore",
+      "id": "seamlessores:promenade_asphalt_orichalcum_ore",
       "required": false
     },
     {
@@ -369,19 +385,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_orichalcum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_adamantite_ore",
+      "id": "seamlessores:promenade_blunite_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_iridium_ore",
+      "id": "seamlessores:promenade_blunite_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_adamantite_ore",
       "required": false
     },
     {
@@ -390,6 +406,10 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_iridium_ore",
       "required": false
     }
   ]

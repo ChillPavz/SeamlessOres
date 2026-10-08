@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "things:gleaming_ore"
+        "seamlessores:diorite_gleaming_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "things"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "things"
-  },
   "type": "minecraft:block",
   "pools": [
     {

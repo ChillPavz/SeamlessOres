@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "techreborn:deepslate_sapphire_ore"
+        "seamlessores:tuff_techreborn_sapphire_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "techreborn"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "techreborn"
-  },
   "type": "minecraft:block",
   "modifier": {
     "type": "minecraft:explosion_decay"
@@ -120,7 +116,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "techreborn:deepslate_sapphire_ore"
+          "name": "seamlessores:tuff_techreborn_sapphire_ore"
         }
       ],
       "rolls": 1

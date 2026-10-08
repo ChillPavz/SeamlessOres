@@ -43,18 +43,8 @@ def props(path):
     return out
 
 
-# The Matrix ores keep their era classes beside the rest of their worldgen (they use its
-# package-private types): Era261 and Create's LayeredOre are 26.1.x/26.2, Era263 is 26.3.
-MATRIX_ERA = {"261": ("Era261", "LayeredOre"), "263": ("Era263",)}
-MATRIX_PACKAGE = f"com/chillpavz/{MOD_ID}/matrix/worldgen/"
-
-
 def era_class(name, era):
-    if not name.endswith(".class"):
-        return False
-    if name.startswith(ERA_PACKAGE + f"era{era}/"):
-        return True
-    return name.startswith(MATRIX_PACKAGE) and name[len(MATRIX_PACKAGE):].split("$")[0].split(".")[0] in MATRIX_ERA[era]
+    return name.startswith(ERA_PACKAGE + f"era{era}/") and name.endswith(".class")
 
 
 def directives(text):

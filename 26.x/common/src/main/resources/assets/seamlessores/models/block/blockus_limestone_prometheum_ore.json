@@ -2,7 +2,8 @@
   "parent": "minecraft:block/block",
   "textures": {
     "particle": "blockus:block/limestone",
-    "stone": "blockus:block/limestone",
+    "side": "blockus:block/limestone",
+    "end": "blockus:block/limestone",
     "overlay": "seamlessores:block/prometheum_overlay"
   },
   "elements": [
@@ -25,7 +26,7 @@
             16,
             16
           ],
-          "texture": "#stone",
+          "texture": "#end",
           "cullface": "down"
         },
         "up": {
@@ -35,7 +36,7 @@
             16,
             16
           ],
-          "texture": "#stone",
+          "texture": "#end",
           "cullface": "up"
         },
         "north": {
@@ -45,7 +46,7 @@
             16,
             16
           ],
-          "texture": "#stone",
+          "texture": "#side",
           "cullface": "north"
         },
         "south": {
@@ -55,7 +56,7 @@
             16,
             16
           ],
-          "texture": "#stone",
+          "texture": "#side",
           "cullface": "south"
         },
         "west": {
@@ -65,7 +66,7 @@
             16,
             16
           ],
-          "texture": "#stone",
+          "texture": "#side",
           "cullface": "west"
         },
         "east": {
@@ -75,7 +76,7 @@
             16,
             16
           ],
-          "texture": "#stone",
+          "texture": "#side",
           "cullface": "east"
         }
       }

@@ -1,8 +1,6 @@
 package com.chillpavz.seamlessores;
 
-import com.chillpavz.seamlessores.matrix.MatrixAliases;
-import com.chillpavz.seamlessores.matrix.MatrixPresence;
-import com.chillpavz.seamlessores.matrix.content.MatrixContent;
+import com.chillpavz.seamlessores.content.MatrixAliases;
 import net.fabricmc.fabric.api.event.registry.FabricRegistry;
 import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
 import java.util.ArrayList;
@@ -54,12 +52,7 @@ public class SeamlessOresFabric implements ModInitializer {
 
         SeamlessOresContent.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
         SeamlessOresContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
-        SeamlessOresContent.registerCreativeTab(
-                (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
-        // The Matrix ores, in modded stones. After ours: the dripstone ones are our own blocks.
-        MatrixContent.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
-        MatrixContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
-        MatrixContent.registerCreativeTab(
+        SeamlessOresContent.registerCreativeTabs(
                 (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
         registerMatrixAliases();
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks. Up to
@@ -99,21 +92,14 @@ public class SeamlessOresFabric implements ModInitializer {
         // CreativeModeTab.Output is protected, so items cannot be added via displayItems from outside
         // vanilla - each loader has its own event for this. On 26.x the Fabric API class is
         // CreativeModeTabEvents; the older ItemGroupEvents is gone.
-        // Two tabs: vanilla stones (ours, then the Matrix ores in calcite and smooth basalt) and
-        // modded stones (the rest of the Matrix ores).
-        CreativeModeTabEvents.modifyOutputEvent(SeamlessOresContent.TAB).register(output -> {
-            for (var item : SeamlessOresContent.creativeTabItems()) {
-                output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            }
-            for (var item : MatrixContent.creativeTabItems(true)) {
-                output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            }
-        });
-        CreativeModeTabEvents.modifyOutputEvent(MatrixContent.TAB).register(output -> {
-            for (var item : MatrixContent.creativeTabItems(false)) {
-                output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            }
-        });
+        // Two tabs: the game's own rock, and the stones other mods add.
+        for (var tab : List.of(SeamlessOresContent.TAB, SeamlessOresContent.MODDED_TAB)) {
+            CreativeModeTabEvents.modifyOutputEvent(tab).register(output -> {
+                for (var item : SeamlessOresContent.creativeTabItems(tab)) {
+                    output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+                }
+            });
+        }
 
         // Worldgen registries are datapack-loaded per world, so the injection has to happen once the
         // server exists and before any chunk is generated.
@@ -129,7 +115,7 @@ public class SeamlessOresFabric implements ModInitializer {
      * target, but it would warn once per variant.
      */
     private static void registerMatrixAliases() {
-        if (MatrixPresence.oldMatrixInstalled()) {
+        if (MatrixAliases.oldModInstalled()) {
             return;
         }
         final List<MatrixAliases.Alias> now = new ArrayList<>();

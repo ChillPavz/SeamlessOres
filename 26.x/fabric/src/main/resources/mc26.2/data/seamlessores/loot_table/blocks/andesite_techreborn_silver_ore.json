@@ -4,7 +4,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "techreborn:silver_ore"
+        "seamlessores:andesite_techreborn_silver_ore"
       ]
     }
   ],
@@ -14,10 +14,6 @@
       "modid": "techreborn"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "techreborn"
-  },
   "type": "minecraft:block",
   "pools": [
     {

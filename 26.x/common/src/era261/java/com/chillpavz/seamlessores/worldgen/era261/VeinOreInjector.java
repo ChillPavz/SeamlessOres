@@ -14,7 +14,7 @@ import net.minecraft.world.level.levelgen.OreVeinifier;
 /**
  * Fixes the ore that {@link OreVeinifier} places in the large copper and iron veins.
  *
- * <h2>Why this exists as a separate thing from {@link OreTargetInjector}</h2>
+ * <h2>Why this exists as a separate thing from {@code OreSideInjector}</h2>
  * There are <b>two</b> ore systems in Minecraft, not one. Configured features are the familiar one.
  * The other is {@code OreVeinifier}, which builds the big copper and iron veins during <i>noise</i>
  * generation, before any feature runs, and which is not registered anywhere - so patching the

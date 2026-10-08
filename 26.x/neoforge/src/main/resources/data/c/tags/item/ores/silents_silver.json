@@ -23,6 +23,10 @@
     {
       "id": "seamlessores:cinnabar_silents_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_silver_ore",
+      "required": false
     }
   ]
 }

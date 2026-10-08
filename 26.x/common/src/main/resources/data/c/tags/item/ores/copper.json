@@ -6,15 +6,15 @@
     "seamlessores:tuff_copper_ore",
     "seamlessores:dripstone_copper_ore",
     {
-      "id": "seamlessores:blockus_bluestone_copper_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_copper_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_marble_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_copper_ore",
       "required": false
     },
     {
