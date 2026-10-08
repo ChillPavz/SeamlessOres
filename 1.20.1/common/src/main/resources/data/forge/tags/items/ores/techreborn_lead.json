@@ -19,6 +19,58 @@
     {
       "id": "seamlessores:dripstone_techreborn_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_techreborn_lead_ore",
+      "required": false
     }
   ]
 }

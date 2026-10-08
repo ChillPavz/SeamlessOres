@@ -15,6 +15,26 @@
     {
       "id": "seamlessores:dripstone_kyber_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_kyber_ore",
+      "required": false
     }
   ]
 }

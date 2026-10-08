@@ -36,6 +36,9 @@ final class BandWorldgen implements WorldgenEra {
         for (Holder.Reference<ConfiguredFeature<?, ?>> holder : features.listElements().toList()) {
             if (holder.value().config() instanceof OreConfiguration) {
                 sites.add(new OreConfigurationSite(holder));
+            } else if (LayeredOre.is(holder.value().config())) {
+                // Create's strata: a site per block list of every layer.
+                LayeredOre.addSites(holder, holder.key().identifier().toString(), sites);
             }
         }
         return sites;

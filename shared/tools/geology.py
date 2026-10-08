@@ -17,14 +17,28 @@ import os
 
 # --- FIXED: the stones other mods place ------------------------------------------------------------
 
+# Exempt, never judged: dripstone block (a speleothem), the Nether stones (scorchia, Twigs' bloodstone,
+# Mythic Upgrades' sapphire schist) and the invented ones (Forbidden and Arcanus' darkstone, Blockus'
+# viridite, Promenade's blunite).
 CLASSES = {
-    "LIME": ["blockus_limestone", "create_limestone"],
+    # sedimentary carbonate; Spawn's reefstone is reef limestone
+    "LIME": ["blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone"],
     "CALC": ["minecraft_calcite"],
-    "ASPH": ["promenade_asphalt"],
+    # sedimentary hydrocarbon: asphalt, and TFMG's lignite (brown coal)
+    "ASPH": ["promenade_asphalt", "tfmg_lignite"],
     "MARB": ["blockus_marble"],
-    "SCH": ["mythicupgrades_%s_schist" % g for g in ("aquamarine", "citrine", "peridot", "topaz")],
+    # metamorphic pelite
+    "SCH": ["mythicupgrades_%s_schist" % g for g in ("aquamarine", "citrine", "peridot", "topaz")] + ["twigs_schist"],
+    # mafic intrusive; bluestone read as dolerite
     "PLUT": ["wilderwild_gabbro", "blockus_bluestone"],
+    # mafic volcanic
     "VOLC": ["minecraft_smooth_basalt", "create_scoria"],
+    # felsic volcanic: Twigs' rhyolite
+    "FELS": ["twigs_rhyolite"],
+    # residual laterite: TFMG's bauxite, the weathering crust aluminium is mined from
+    "LATE": ["tfmg_bauxite"],
+    # massive sulphide: TFMG's galena, a lead-zinc ore body as rock
+    "SULF": ["tfmg_galena"],
 }
 ALL = list(CLASSES)
 
@@ -33,33 +47,84 @@ def _hosts(*classes):
     return [h for c in classes for h in CLASSES[c]]
 
 
-_TIN = _hosts("CALC", "ASPH", "SCH", "PLUT", "VOLC")
-_BERYL = _hosts("LIME", "CALC", "ASPH", "MARB", "PLUT", "VOLC")
-_PERIDOT = _hosts("LIME", "CALC", "ASPH", "MARB", "SCH")
-_CORUNDUM = _hosts("LIME", "CALC", "ASPH", "PLUT")
-_PGM = _hosts("LIME", "CALC", "ASPH", "MARB", "SCH", "VOLC")
+def _all_but(*kept):
+    return _hosts(*(c for c in ALL if c not in kept))
+
+
+# Each family: the ore keys of one mineral, whatever mod they come from, and the hosts it is refused
+# in. The reason is on each line; som-geology-rules in the maintainer notes holds the full table.
+FAMILIES = [
+    # Coal needs a swamp: limestone (coal measures sit on carbonate platforms) and the hydrocarbons keep it.
+    (["coal", "lignite_coal"], _all_but("LIME", "ASPH")),
+    # Colombian emerald is in black shale and carbonate; schist emerald is the classic pegmatite contact.
+    (["emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF")),
+    # Lazurite rock is lazurite with calcite: marble and calcite only.
+    (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF")),
+    # A kimberlite pipe, which none of these is.
+    (["diamond", "bort", "white_diamond", "black_diamond"], _hosts(*ALL)),
+    # Topaz rhyolite (Thomas Range, Utah) is THE topaz host; nothing else here.
+    (["topaz", "silents_topaz"], _all_but("FELS")),
+    # Lead, zinc and antimony: carbonate, shale, schist and epithermal veins in volcanics; never in a
+    # mafic intrusion, never in a weathering crust. Massive sulphide is their own rock.
+    (["zinc", "galena", "techreborn_lead", "lead", "mi_lead", "ie_lead", "mek_lead", "dense_lead",
+      "oreganized_lead", "antimony"], _hosts("PLUT", "LATE")),
+    # Manganese also forms in laterite.
+    (["manganese"], _hosts("PLUT")),
+    # Carbonate replacement tin, and rhyolite-hosted tin (Durango).
+    (["tin", "energized_tin", "techreborn_tin", "mi_tin", "mek_tin", "dense_tin"],
+     _all_but("LIME", "MARB", "FELS")),
+    # Beryl in mica schist.
+    (["aquamarine", "silents_aquamarine", "heliodor"], _all_but("SCH")),
+    # Olivine: mafic rock only.
+    (["peridot", "silents_peridot"], _all_but("PLUT", "VOLC")),
+    # Corundum never coexists with free quartz: marble (Mogok), schist, basalt sapphire.
+    (["techreborn_ruby", "techreborn_sapphire", "silents_ruby", "silents_sapphire", "iceandfire_sapphire"],
+     _all_but("MARB", "SCH", "VOLC")),
+    # Platinum group and nickel: mafic intrusions (Noril'sk, Bushveld, Sudbury).
+    (["platinum", "iridium", "osmium", "mi_iridium", "mek_osmium", "dense_osmium",
+      "nickel", "mi_nickel", "ie_nickel"], _all_but("PLUT")),
+    # Uranium: asphaltite, carbonate, schist and rhyolite caldera uranium are real; not in mafic rock,
+    # not in a laterite, not in a lead-zinc body. Extreme Reactors' yellorite is its uranium ore.
+    (["techreborn_uranium", "uranium", "ie_uranium", "mek_uranium", "dense_uranium", "yellorite",
+      "uraninite", "uraninite_poor", "uraninite_dense"], _hosts("PLUT", "VOLC", "LATE", "SULF")),
+    # Rock salt is an evaporite, laid down with carbonate.
+    (["salt"], _all_but("LIME")),
+    # Fluorite: Mississippi Valley carbonate, skarn marble, calcite veins, rhyolite (Mexico), lead-zinc gangue.
+    (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE")),
+    # Scheelite skarn at limestone and marble contacts, and scheelite in schist.
+    (["tungsten"], _all_but("LIME", "MARB", "SCH")),
+    # Monazite and thorium: metamorphic monazite in pelitic schist.
+    (["monazite", "thorium"], _all_but("SCH")),
+    # Lithium: clays from rhyolite (Thacker Pass) and spodumene pegmatite in schist belts.
+    (["lithium"], _all_but("FELS", "SCH")),
+    # Garnet: schist, skarn marble, rhyolite (spessartine).
+    (["garnet"], _all_but("SCH", "MARB", "FELS")),
+    # Kyanite, cordierite (iolite), chrysoberyl (alexandrite) and rose quartz pegmatite: pelitic schist.
+    (["kyanite", "iolite", "alexandrite", "rose_quartz"], _all_but("SCH")),
+    # Tanzanite (zoisite): Merelani's graphitic schist and marble.
+    (["tanzanite"], _all_but("SCH", "MARB")),
+    # Turquoise: supergene, over altered volcanics and sulphides, in the weathering profile.
+    (["turquoise"], _all_but("FELS", "LATE", "SULF")),
+    # Opal: rhyolite fire opal, and the deep weathering profile (Australia).
+    (["opal"], _all_but("FELS", "LATE")),
+    # Carnelian (chalcedony) fills vesicles in lava.
+    (["carnelian"], _all_but("VOLC", "FELS")),
+    # Ammolite is fossil shell; pearl is reef; moldavite (tektite) lies in sediments.
+    (["ammolite", "pearl"], _all_but("LIME")),
+    (["moldavite"], _all_but("LIME", "CALC", "ASPH", "LATE")),
+]
 
 # ore -> hosts it is refused in
-STRICT = {
-    "coal": _hosts("CALC", "MARB", "SCH", "PLUT", "VOLC"),
-    "emerald": _hosts("ASPH", "PLUT", "VOLC"),
-    "lapis": _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC"),
-    "diamond": _hosts(*ALL), "bort": _hosts(*ALL),
-    "topaz": _hosts(*ALL), "silents_topaz": _hosts(*ALL),
-    "zinc": _hosts("PLUT"), "galena": _hosts("PLUT"), "techreborn_lead": _hosts("PLUT"),
-    "manganese": _hosts("PLUT"),
-    "tin": _TIN, "energized_tin": _TIN, "techreborn_tin": _TIN,
-    "aquamarine": _BERYL, "silents_aquamarine": _BERYL, "heliodor": _BERYL,
-    "peridot": _PERIDOT, "silents_peridot": _PERIDOT,
-    "techreborn_ruby": _CORUNDUM, "techreborn_sapphire": _CORUNDUM,
-    "platinum": _PGM, "iridium": _PGM, "osmium": _PGM,
-    "techreborn_uranium": _hosts("PLUT", "VOLC"),
-}
+STRICT = {key: hosts for keys, hosts in FAMILIES for key in keys}
+if len(STRICT) != sum(len(keys) for keys, _hosts_ in FAMILIES):
+    raise SystemExit("geology.py: an ore key is in two families")
 
 # Invented ores and rock are never judged; nor is anything on an exempt host or in the Nether.
 FICTION = set("redstone adamantite aquarium banglum carmot kyber midas_gold morkite mythril necoium "
               "nether_banglum orichalcum palladium prometheum quadrillum runite starrite stormyx "
-              "unobtainium chaos prosperity".split())
+              "unobtainium chaos prosperity inferium gleaming experience nether_experience soulstone "
+              "brilliant blazing_quartz dawn_stone dusk_stone fire_stone ice_stone leaf_stone moon_stone "
+              "shiny_stone sun_stone thunder_stone water_stone".split())
 
 # Create's four invented stones each keep only the ore Create ties them to, plus fiction (owner).
 LORE = {"create_asurine": "zinc", "create_crimsite": "iron", "create_ochrum": "gold",

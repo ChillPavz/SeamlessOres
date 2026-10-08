@@ -19,6 +19,30 @@
     {
       "id": "seamlessores:dripstone_galena_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_galena_ore",
+      "required": false
     }
   ]
 }

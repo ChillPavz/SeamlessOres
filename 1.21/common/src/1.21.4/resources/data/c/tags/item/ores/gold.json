@@ -6,6 +6,66 @@
     "seamlessores:tuff_gold_ore",
     "seamlessores:dripstone_gold_ore",
     "seamlessores:basalt_gold_ore",
-    "seamlessores:blackstone_gold_ore"
+    "seamlessores:blackstone_gold_ore",
+    {
+      "id": "seamlessores:blockus_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_gold_ore",
+      "required": false
+    }
   ]
 }

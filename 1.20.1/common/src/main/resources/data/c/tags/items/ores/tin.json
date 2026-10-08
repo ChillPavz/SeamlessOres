@@ -15,6 +15,30 @@
     {
       "id": "seamlessores:dripstone_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_tin_ore",
+      "required": false
     }
   ]
 }

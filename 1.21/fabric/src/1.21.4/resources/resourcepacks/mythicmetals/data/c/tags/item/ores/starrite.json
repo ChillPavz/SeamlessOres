@@ -15,6 +15,18 @@
     {
       "id": "seamlessores:dripstone_starrite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_starrite_ore",
+      "required": false
     }
   ]
 }

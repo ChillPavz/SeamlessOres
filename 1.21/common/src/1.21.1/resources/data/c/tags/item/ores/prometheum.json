@@ -19,6 +19,38 @@
     {
       "id": "seamlessores:dripstone_prometheum_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_prometheum_ore",
+      "required": false
     }
   ]
 }

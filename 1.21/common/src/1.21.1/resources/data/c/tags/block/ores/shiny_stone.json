@@ -19,6 +19,90 @@
     {
       "id": "seamlessores:dripstone_shiny_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_shiny_stone_ore",
+      "required": false
     }
   ]
 }

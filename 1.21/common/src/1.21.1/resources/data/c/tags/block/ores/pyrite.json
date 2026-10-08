@@ -7,6 +7,10 @@
     {
       "id": "seamlessores:blackstone_pyrite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_pyrite_ore",
+      "required": false
     }
   ]
 }

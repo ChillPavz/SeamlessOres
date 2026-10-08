@@ -55,6 +55,86 @@
     {
       "id": "seamlessores:dripstone_techreborn_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_techreborn_silver_ore",
+      "required": false
     }
   ]
 }

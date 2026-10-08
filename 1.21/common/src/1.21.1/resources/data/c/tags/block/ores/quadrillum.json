@@ -15,6 +15,30 @@
     {
       "id": "seamlessores:dripstone_quadrillum_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_quadrillum_ore",
+      "required": false
     }
   ]
 }

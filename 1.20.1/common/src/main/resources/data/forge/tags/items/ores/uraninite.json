@@ -21,6 +21,58 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_uraninite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_uraninite_poor_ore",
       "required": false
     },
@@ -58,6 +110,106 @@
     },
     {
       "id": "seamlessores:dripstone_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_uraninite_poor_ore",
       "required": false
     }
   ]

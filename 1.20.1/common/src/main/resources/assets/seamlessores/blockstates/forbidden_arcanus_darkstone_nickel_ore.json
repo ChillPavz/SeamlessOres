@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_nickel_ore"
+      },
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_nickel_ore_mirrored"
+      },
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_nickel_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_nickel_ore_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

@@ -19,6 +19,50 @@
     {
       "id": "seamlessores:dripstone_antimony_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_antimony_ore",
+      "required": false
     }
   ]
 }

@@ -19,6 +19,74 @@
     {
       "id": "seamlessores:dripstone_natural_quartz_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_natural_quartz_ore",
+      "required": false
     }
   ]
 }

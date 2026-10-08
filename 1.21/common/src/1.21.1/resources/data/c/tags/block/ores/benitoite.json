@@ -7,6 +7,22 @@
     {
       "id": "seamlessores:blackstone_benitoite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_benitoite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_benitoite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_benitoite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_benitoite_ore",
+      "required": false
     }
   ]
 }

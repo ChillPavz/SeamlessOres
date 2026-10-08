@@ -24,7 +24,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**601 blocks** in the `seamlessores` namespace.
+**601 blocks** in the game's own rock, in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -352,6 +352,617 @@ Mekanism itself is not supported. It registers its own `mekanism:ore` feature ty
 configuration is not an `OreConfiguration`, so the target list this mod extends is not there to
 extend. Dense Mekanism uses a plain `minecraft:ore` and works normally.
 
+## Ores in modded stones
+
+Stones that other mods add, such as Blockus' limestone or Create's layers, are placed after the
+ores and swallow them. These blocks give that ore the look of the stone around it.
+
+An ore that could never form in a stone (coal in marble, diamond in limestone) gets no block there:
+that ore becomes the stone instead, so no seam is left. Create's asurine, crimsite, ochrum and
+veridium each keep only the ore Create ties them to.
+
+<!-- BEGIN GENERATED modded-stone-list -->
+**1170 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+
+**Blockus, requires `blockus`** (Fabric)
+
+Stones: Limestone `blockus_limestone`, Marble `blockus_marble`, Bluestone `blockus_bluestone`, Viridite `blockus_viridite`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Coal | `coal` |  | Limestone |
+| Iron | `iron` |  | every stone |
+| Copper | `copper` |  | every stone |
+| Gold | `gold` |  | every stone |
+| Lapis Lazuli | `lapis` |  | Marble, Viridite |
+| Diamond | `diamond` |  | Viridite |
+| Emerald | `emerald` |  | Limestone, Marble |
+| Redstone | `redstone` |  | every stone |
+| Zinc | `zinc` | Create `create` | Limestone, Marble, Viridite |
+| Aquamarine | `aquamarine` | Mythic Upgrades `mythicupgrades` | Viridite |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | every stone |
+| Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Bluestone, Viridite |
+| Topaz | `topaz` | Mythic Upgrades `mythicupgrades` | Viridite |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | every stone |
+| Adamantite | `adamantite` | Mythic Metals `mythicmetals` | Bluestone, Viridite |
+| Carmot | `carmot` | Mythic Metals `mythicmetals` | every stone |
+| Morkite | `morkite` | Mythic Metals `mythicmetals` | every stone |
+| Mythril | `mythril` | Mythic Metals `mythicmetals` | every stone |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | every stone |
+| Runite | `runite` | Mythic Metals `mythicmetals` | every stone |
+| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | every stone |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Starrite | `starrite` | Mythic Metals `mythicmetals` | Limestone |
+| Tin | `tin` | Mythic Metals `mythicmetals` | Limestone, Marble |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | every stone |
+| Uraninite | `uraninite` | Powah `powah` | Limestone, Marble, Viridite |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Limestone, Marble, Viridite |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | Limestone, Marble, Viridite |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Limestone, Marble |
+| Gleaming | `gleaming` | Things `things` | every stone |
+| Experience | `experience` | Exp Ores `expores` | every stone |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | every stone |
+| Galena | `galena` | Tech Reborn `techreborn` | Limestone, Marble, Viridite |
+| Iridium | `iridium` | Tech Reborn `techreborn` | Bluestone, Viridite |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Limestone, Marble, Viridite |
+| Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Marble |
+| Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Marble |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | every stone |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Limestone, Marble |
+| Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Limestone, Marble, Viridite |
+| Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | every stone |
+| Iridium | `mi_iridium` | Modern Industrialization `modern_industrialization` | Bluestone, Viridite |
+| Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Limestone, Marble, Viridite |
+| Lignite Coal | `lignite_coal` | Modern Industrialization `modern_industrialization` | Limestone, Viridite |
+| Monazite | `monazite` | Modern Industrialization `modern_industrialization` | Viridite |
+| Nickel | `mi_nickel` | Modern Industrialization `modern_industrialization` | Bluestone, Viridite |
+| Salt | `salt` | Modern Industrialization `modern_industrialization` | Limestone, Viridite |
+| Tin | `mi_tin` | Modern Industrialization `modern_industrialization` | Limestone, Marble, Viridite |
+| Tungsten | `tungsten` | Modern Industrialization `modern_industrialization` | Limestone, Marble, Viridite |
+| Uranium | `uranium` | Modern Industrialization `modern_industrialization` | Limestone, Marble, Viridite |
+| Lead | `oreganized_lead` | Oreganized `oreganized` | Limestone, Marble, Viridite |
+| Silver | `oreganized_silver` | Oreganized `oreganized` | every stone |
+| Soulstone | `soulstone` | Malum `malum` | every stone |
+| Natural Quartz | `natural_quartz` | Malum `malum` | every stone |
+| Brilliant | `brilliant` | Malum `malum` | every stone |
+| Dawn Stone | `dawn_stone` | Cobblemon `cobblemon` | every stone |
+| Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | every stone |
+| Fire Stone | `fire_stone` | Cobblemon `cobblemon` | every stone |
+| Ice Stone | `ice_stone` | Cobblemon `cobblemon` | every stone |
+| Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | every stone |
+| Moon Stone | `moon_stone` | Cobblemon `cobblemon` | every stone |
+| Shiny Stone | `shiny_stone` | Cobblemon `cobblemon` | every stone |
+| Sun Stone | `sun_stone` | Cobblemon `cobblemon` | every stone |
+| Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | every stone |
+| Water Stone | `water_stone` | Cobblemon `cobblemon` | every stone |
+
+**Create, requires `create`** (Forge, and Fabric through Create Fabric)
+
+Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_limestone`, Ochrum `create_ochrum`, Scorchia `create_scorchia`, Scoria `create_scoria`, Veridium `create_veridium`, Calcite `minecraft_calcite`, Smooth Basalt `minecraft_smooth_basalt`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Coal | `coal` |  | Limestone |
+| Iron | `iron` |  | Crimsite, Limestone, Scoria, Calcite, Smooth Basalt |
+| Copper | `copper` |  | Limestone, Scoria, Veridium, Calcite, Smooth Basalt |
+| Gold | `gold` |  | Limestone, Ochrum, Scoria, Calcite, Smooth Basalt |
+| Lapis Lazuli | `lapis` |  | Calcite |
+| Emerald | `emerald` |  | Limestone, Calcite |
+| Redstone | `redstone` |  | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Nether Gold | `nether_gold` |  | Scorchia, Scoria, Smooth Basalt |
+| Quartz | `quartz` |  | Scorchia, Scoria, Smooth Basalt |
+| Zinc | `zinc` |  | Asurine, Limestone, Scoria, Calcite, Smooth Basalt |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Scoria, Smooth Basalt |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Ruby | `ruby` | Mythic Upgrades `mythicupgrades` | Scorchia, Scoria, Smooth Basalt |
+| Sapphire | `sapphire` | Mythic Upgrades `mythicupgrades` | Scorchia, Scoria, Smooth Basalt |
+| Adamantite | `adamantite` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Carmot | `carmot` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Morkite | `morkite` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Mythril | `mythril` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Runite | `runite` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Tin | `tin` | Mythic Metals `mythicmetals` | Limestone |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Nether Banglum | `nether_banglum` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
+| Midas Gold | `midas_gold` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
+| Palladium | `palladium` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
+| Stormyx | `stormyx` | Mythic Metals `mythicmetals` | Scorchia, Scoria, Smooth Basalt |
+| Ruby | `silents_ruby` | Silent's Gems `silentgems` | Scoria, Smooth Basalt |
+| Sapphire | `silents_sapphire` | Silent's Gems `silentgems` | Scoria, Smooth Basalt |
+| Peridot | `silents_peridot` | Silent's Gems `silentgems` | Scoria, Smooth Basalt |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Dense Fluorite | `dense_fluorite` | Dense Mekanism `densemekanism` | Limestone, Calcite |
+| Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Dense Tin | `dense_tin` | Dense Mekanism `densemekanism` | Limestone |
+| Dense Uranium | `dense_uranium` | Dense Mekanism `densemekanism` | Limestone, Calcite |
+| Uraninite | `uraninite` | Powah `powah` | Limestone, Calcite |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Limestone, Calcite |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | Limestone, Calcite |
+| Lead | `lead` | Create: TFMG `tfmg` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
+| Gleaming | `gleaming` | Things `things` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Scoria, Smooth Basalt |
+| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Experience | `experience` | Exp Ores `expores` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Nether Experience | `nether_experience` | Exp Ores `expores` | Scorchia, Scoria, Smooth Basalt |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Galena | `galena` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Scoria, Smooth Basalt |
+| Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Scoria, Smooth Basalt |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Limestone |
+| Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Lignite Coal | `lignite_coal` | Modern Industrialization `modern_industrialization` | Limestone |
+| Salt | `salt` | Modern Industrialization `modern_industrialization` | Limestone |
+| Tin | `mi_tin` | Modern Industrialization `modern_industrialization` | Limestone |
+| Tungsten | `tungsten` | Modern Industrialization `modern_industrialization` | Limestone |
+| Uranium | `uranium` | Modern Industrialization `modern_industrialization` | Limestone, Calcite |
+| Silver | `occultism_silver` | Occultism `occultism` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Limestone, Calcite |
+| Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Lead | `oreganized_lead` | Oreganized `oreganized` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Silver | `oreganized_silver` | Oreganized `oreganized` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Soulstone | `soulstone` | Malum `malum` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Natural Quartz | `natural_quartz` | Malum `malum` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Brilliant | `brilliant` | Malum `malum` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Blazing Quartz | `blazing_quartz` | Malum `malum` | Scorchia, Scoria, Smooth Basalt |
+| Cinnabar | `cinnabar` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
+| Pyrite | `pyrite` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
+| Sphalerite | `sphalerite` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
+| Dawn Stone | `dawn_stone` | Cobblemon `cobblemon` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Fire Stone | `fire_stone` | Cobblemon `cobblemon` | every stone |
+| Ice Stone | `ice_stone` | Cobblemon `cobblemon` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Moon Stone | `moon_stone` | Cobblemon `cobblemon` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Shiny Stone | `shiny_stone` | Cobblemon `cobblemon` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Sun Stone | `sun_stone` | Cobblemon `cobblemon` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+| Water Stone | `water_stone` | Cobblemon `cobblemon` | Asurine, Crimsite, Limestone, Ochrum, Scoria, Veridium, Calcite, Smooth Basalt |
+
+**Create: TFMG, requires `tfmg`** (Forge)
+
+Stones: Bauxite `tfmg_bauxite`, Galena `tfmg_galena`, Lignite `tfmg_lignite`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Coal | `coal` |  | Lignite |
+| Iron | `iron` |  | every stone |
+| Copper | `copper` |  | every stone |
+| Gold | `gold` |  | every stone |
+| Redstone | `redstone` |  | every stone |
+| Zinc | `zinc` | Create `create` | Galena, Lignite |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | every stone |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | every stone |
+| Turquoise | `turquoise` | Silent's Gems `silentgems` | Bauxite, Galena |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | every stone |
+| Dense Fluorite | `dense_fluorite` | Dense Mekanism `densemekanism` | Galena |
+| Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Galena, Lignite |
+| Dense Uranium | `dense_uranium` | Dense Mekanism `densemekanism` | Lignite |
+| Uraninite | `uraninite` | Powah `powah` | Lignite |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Lignite |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | Lignite |
+| Lead | `lead` |  | Galena, Lignite |
+| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Silver | `occultism_silver` | Occultism `occultism` | every stone |
+| Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Lignite |
+| Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | every stone |
+| Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | every stone |
+| Lead | `oreganized_lead` | Oreganized `oreganized` | Galena, Lignite |
+| Silver | `oreganized_silver` | Oreganized `oreganized` | every stone |
+| Soulstone | `soulstone` | Malum `malum` | every stone |
+| Natural Quartz | `natural_quartz` | Malum `malum` | every stone |
+| Brilliant | `brilliant` | Malum `malum` | every stone |
+| Dawn Stone | `dawn_stone` | Cobblemon `cobblemon` | every stone |
+| Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | every stone |
+| Fire Stone | `fire_stone` | Cobblemon `cobblemon` | every stone |
+| Ice Stone | `ice_stone` | Cobblemon `cobblemon` | every stone |
+| Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | every stone |
+| Moon Stone | `moon_stone` | Cobblemon `cobblemon` | every stone |
+| Shiny Stone | `shiny_stone` | Cobblemon `cobblemon` | every stone |
+| Sun Stone | `sun_stone` | Cobblemon `cobblemon` | every stone |
+| Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | every stone |
+| Water Stone | `water_stone` | Cobblemon `cobblemon` | every stone |
+
+**Twigs, requires `twigs`** (Fabric and Forge)
+
+Stones: Rhyolite `twigs_rhyolite`, Schist `twigs_schist`, Bloodstone `twigs_bloodstone`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Iron | `iron` |  | Rhyolite, Schist |
+| Copper | `copper` |  | Rhyolite, Schist |
+| Gold | `gold` |  | Rhyolite, Schist |
+| Emerald | `emerald` |  | Schist |
+| Redstone | `redstone` |  | Rhyolite, Schist |
+| Nether Gold | `nether_gold` |  | Bloodstone |
+| Quartz | `quartz` |  | Bloodstone |
+| Zinc | `zinc` | Create `create` | Rhyolite, Schist |
+| Aquamarine | `aquamarine` | Mythic Upgrades `mythicupgrades` | Schist |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | Rhyolite, Schist |
+| Topaz | `topaz` | Mythic Upgrades `mythicupgrades` | Rhyolite |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Rhyolite, Schist |
+| Ruby | `ruby` | Mythic Upgrades `mythicupgrades` | Bloodstone |
+| Sapphire | `sapphire` | Mythic Upgrades `mythicupgrades` | Bloodstone |
+| Adamantite | `adamantite` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Carmot | `carmot` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Morkite | `morkite` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Mythril | `mythril` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Runite | `runite` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Schist |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Schist |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Schist |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Schist |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | Rhyolite, Schist |
+| Nether Banglum | `nether_banglum` | Mythic Metals `mythicmetals` | Bloodstone |
+| Midas Gold | `midas_gold` | Mythic Metals `mythicmetals` | Bloodstone |
+| Palladium | `palladium` | Mythic Metals `mythicmetals` | Bloodstone |
+| Stormyx | `stormyx` | Mythic Metals `mythicmetals` | Bloodstone |
+| Alexandrite | `alexandrite` | Silent's Gems `silentgems` | Schist |
+| Heliodor | `heliodor` | Silent's Gems `silentgems` | Schist |
+| Iolite | `iolite` | Silent's Gems `silentgems` | Schist |
+| Ruby | `silents_ruby` | Silent's Gems `silentgems` | Schist |
+| Sapphire | `silents_sapphire` | Silent's Gems `silentgems` | Schist |
+| Turquoise | `turquoise` | Silent's Gems `silentgems` | Rhyolite |
+| Topaz | `silents_topaz` | Silent's Gems `silentgems` | Rhyolite |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Rhyolite, Schist |
+| Dense Fluorite | `dense_fluorite` | Dense Mekanism `densemekanism` | Rhyolite |
+| Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Rhyolite, Schist |
+| Dense Tin | `dense_tin` | Dense Mekanism `densemekanism` | Rhyolite |
+| Dense Uranium | `dense_uranium` | Dense Mekanism `densemekanism` | Rhyolite, Schist |
+| Uraninite | `uraninite` | Powah `powah` | Rhyolite, Schist |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Rhyolite, Schist |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | Rhyolite, Schist |
+| Lead | `lead` | Create: TFMG `tfmg` | Rhyolite, Schist |
+| Lithium | `lithium` | Create: TFMG `tfmg` | Rhyolite, Schist |
+| Gleaming | `gleaming` | Things `things` | Rhyolite, Schist |
+| Thorium | `thorium` | Create: New Age `create_new_age` | Schist |
+| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Schist |
+| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Rhyolite, Schist |
+| Experience | `experience` | Exp Ores `expores` | Rhyolite, Schist |
+| Nether Experience | `nether_experience` | Exp Ores `expores` | Bloodstone |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Rhyolite, Schist |
+| Galena | `galena` | Tech Reborn `techreborn` | Rhyolite, Schist |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Rhyolite, Schist |
+| Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Schist |
+| Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Schist |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Rhyolite, Schist |
+| Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Rhyolite, Schist |
+| Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | Rhyolite, Schist |
+| Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Rhyolite, Schist |
+| Monazite | `monazite` | Modern Industrialization `modern_industrialization` | Schist |
+| Tin | `mi_tin` | Modern Industrialization `modern_industrialization` | Rhyolite |
+| Tungsten | `tungsten` | Modern Industrialization `modern_industrialization` | Schist |
+| Uranium | `uranium` | Modern Industrialization `modern_industrialization` | Rhyolite, Schist |
+| Silver | `occultism_silver` | Occultism `occultism` | Rhyolite, Schist |
+| Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Rhyolite, Schist |
+| Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Rhyolite, Schist |
+| Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Rhyolite, Schist |
+| Lead | `oreganized_lead` | Oreganized `oreganized` | Rhyolite, Schist |
+| Silver | `oreganized_silver` | Oreganized `oreganized` | Rhyolite, Schist |
+| Soulstone | `soulstone` | Malum `malum` | Rhyolite, Schist |
+| Natural Quartz | `natural_quartz` | Malum `malum` | Rhyolite, Schist |
+| Brilliant | `brilliant` | Malum `malum` | Rhyolite, Schist |
+| Blazing Quartz | `blazing_quartz` | Malum `malum` | Bloodstone |
+| Cinnabar | `cinnabar` | Tech Reborn `techreborn` | Bloodstone |
+| Pyrite | `pyrite` | Tech Reborn `techreborn` | Bloodstone |
+| Sphalerite | `sphalerite` | Tech Reborn `techreborn` | Bloodstone |
+| Dawn Stone | `dawn_stone` | Cobblemon `cobblemon` | Rhyolite, Schist |
+| Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | Rhyolite, Schist |
+| Fire Stone | `fire_stone` | Cobblemon `cobblemon` | every stone |
+| Ice Stone | `ice_stone` | Cobblemon `cobblemon` | Rhyolite, Schist |
+| Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Rhyolite, Schist |
+| Moon Stone | `moon_stone` | Cobblemon `cobblemon` | Rhyolite, Schist |
+| Shiny Stone | `shiny_stone` | Cobblemon `cobblemon` | Rhyolite, Schist |
+| Sun Stone | `sun_stone` | Cobblemon `cobblemon` | Rhyolite, Schist |
+| Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Rhyolite, Schist |
+| Water Stone | `water_stone` | Cobblemon `cobblemon` | Rhyolite, Schist |
+
+**Forbidden and Arcanus, requires `forbidden_arcanus`** (Forge)
+
+Stones: Darkstone `forbidden_arcanus_darkstone`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Iron | `iron` |  | Darkstone |
+| Gold | `gold` |  | Darkstone |
+| Lapis Lazuli | `lapis` |  | Darkstone |
+| Diamond | `diamond` |  | Darkstone |
+| Redstone | `redstone` |  | Darkstone |
+| Zinc | `zinc` | Create `create` | Darkstone |
+| Aquamarine | `aquamarine` | Mythic Upgrades `mythicupgrades` | Darkstone |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | Darkstone |
+| Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Darkstone |
+| Topaz | `topaz` | Mythic Upgrades `mythicupgrades` | Darkstone |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Darkstone |
+| Alexandrite | `alexandrite` | Silent's Gems `silentgems` | Darkstone |
+| Heliodor | `heliodor` | Silent's Gems `silentgems` | Darkstone |
+| Iolite | `iolite` | Silent's Gems `silentgems` | Darkstone |
+| Ruby | `silents_ruby` | Silent's Gems `silentgems` | Darkstone |
+| Sapphire | `silents_sapphire` | Silent's Gems `silentgems` | Darkstone |
+| Turquoise | `turquoise` | Silent's Gems `silentgems` | Darkstone |
+| Peridot | `silents_peridot` | Silent's Gems `silentgems` | Darkstone |
+| Topaz | `silents_topaz` | Silent's Gems `silentgems` | Darkstone |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Darkstone |
+| Dense Fluorite | `dense_fluorite` | Dense Mekanism `densemekanism` | Darkstone |
+| Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Darkstone |
+| Dense Osmium | `dense_osmium` | Dense Mekanism `densemekanism` | Darkstone |
+| Dense Uranium | `dense_uranium` | Dense Mekanism `densemekanism` | Darkstone |
+| Uraninite | `uraninite` | Powah `powah` | Darkstone |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Darkstone |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | Darkstone |
+| Lithium | `lithium` | Create: TFMG `tfmg` | Darkstone |
+| Nickel | `nickel` | Create: TFMG `tfmg` | Darkstone |
+| Bort | `bort` | Silent Gear `silentgear` | Darkstone |
+| Silver | `occultism_silver` | Occultism `occultism` | Darkstone |
+| Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Darkstone |
+| Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Darkstone |
+| Soulstone | `soulstone` | Malum `malum` | Darkstone |
+| Natural Quartz | `natural_quartz` | Malum `malum` | Darkstone |
+| Brilliant | `brilliant` | Malum `malum` | Darkstone |
+| Dawn Stone | `dawn_stone` | Cobblemon `cobblemon` | Darkstone |
+| Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | Darkstone |
+| Fire Stone | `fire_stone` | Cobblemon `cobblemon` | Darkstone |
+| Ice Stone | `ice_stone` | Cobblemon `cobblemon` | Darkstone |
+| Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Darkstone |
+| Moon Stone | `moon_stone` | Cobblemon `cobblemon` | Darkstone |
+| Shiny Stone | `shiny_stone` | Cobblemon `cobblemon` | Darkstone |
+| Sun Stone | `sun_stone` | Cobblemon `cobblemon` | Darkstone |
+| Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Darkstone |
+| Water Stone | `water_stone` | Cobblemon `cobblemon` | Darkstone |
+
+**Let's Do Meadow, requires `meadow`** (Fabric and Forge)
+
+Stones: Limestone `meadow_limestone`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Zinc | `zinc` | Create `create` | Limestone |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | Limestone |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Limestone |
+| Carmot | `carmot` | Mythic Metals `mythicmetals` | Limestone |
+| Morkite | `morkite` | Mythic Metals `mythicmetals` | Limestone |
+| Mythril | `mythril` | Mythic Metals `mythicmetals` | Limestone |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Limestone |
+| Runite | `runite` | Mythic Metals `mythicmetals` | Limestone |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Limestone |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Limestone |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | Limestone |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Limestone |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Limestone |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Limestone |
+| Starrite | `starrite` | Mythic Metals `mythicmetals` | Limestone |
+| Tin | `tin` | Mythic Metals `mythicmetals` | Limestone |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | Limestone |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Limestone |
+| Dense Fluorite | `dense_fluorite` | Dense Mekanism `densemekanism` | Limestone |
+| Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Limestone |
+| Dense Tin | `dense_tin` | Dense Mekanism `densemekanism` | Limestone |
+| Dense Uranium | `dense_uranium` | Dense Mekanism `densemekanism` | Limestone |
+| Uraninite | `uraninite` | Powah `powah` | Limestone |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Limestone |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | Limestone |
+| Lead | `lead` | Create: TFMG `tfmg` | Limestone |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
+| Gleaming | `gleaming` | Things `things` | Limestone |
+| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone |
+| Experience | `experience` | Exp Ores `expores` | Limestone |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Limestone |
+| Galena | `galena` | Tech Reborn `techreborn` | Limestone |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Limestone |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Limestone |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Limestone |
+| Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Limestone |
+| Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | Limestone |
+| Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Limestone |
+| Lignite Coal | `lignite_coal` | Modern Industrialization `modern_industrialization` | Limestone |
+| Salt | `salt` | Modern Industrialization `modern_industrialization` | Limestone |
+| Tin | `mi_tin` | Modern Industrialization `modern_industrialization` | Limestone |
+| Tungsten | `tungsten` | Modern Industrialization `modern_industrialization` | Limestone |
+| Uranium | `uranium` | Modern Industrialization `modern_industrialization` | Limestone |
+| Silver | `occultism_silver` | Occultism `occultism` | Limestone |
+| Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Limestone |
+| Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Limestone |
+| Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Limestone |
+| Lead | `oreganized_lead` | Oreganized `oreganized` | Limestone |
+| Silver | `oreganized_silver` | Oreganized `oreganized` | Limestone |
+| Soulstone | `soulstone` | Malum `malum` | Limestone |
+| Natural Quartz | `natural_quartz` | Malum `malum` | Limestone |
+| Brilliant | `brilliant` | Malum `malum` | Limestone |
+| Dawn Stone | `dawn_stone` | Cobblemon `cobblemon` | Limestone |
+| Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | Limestone |
+| Fire Stone | `fire_stone` | Cobblemon `cobblemon` | Limestone |
+| Ice Stone | `ice_stone` | Cobblemon `cobblemon` | Limestone |
+| Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Limestone |
+| Moon Stone | `moon_stone` | Cobblemon `cobblemon` | Limestone |
+| Shiny Stone | `shiny_stone` | Cobblemon `cobblemon` | Limestone |
+| Sun Stone | `sun_stone` | Cobblemon `cobblemon` | Limestone |
+| Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Limestone |
+| Water Stone | `water_stone` | Cobblemon `cobblemon` | Limestone |
+
+**Mythic Upgrades, requires `mythicupgrades`** (Fabric and Forge)
+
+Stones: Aquamarine Schist `mythicupgrades_aquamarine_schist`, Citrine Schist `mythicupgrades_citrine_schist`, Peridot Schist `mythicupgrades_peridot_schist`, Topaz Schist `mythicupgrades_topaz_schist`, Sapphire Schist `mythicupgrades_sapphire_schist`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Iron | `iron` |  | Aquamarine Schist, Citrine Schist, Peridot Schist, Topaz Schist |
+| Copper | `copper` |  | Aquamarine Schist, Citrine Schist, Peridot Schist, Topaz Schist |
+| Gold | `gold` |  | Aquamarine Schist, Citrine Schist, Peridot Schist, Topaz Schist |
+| Redstone | `redstone` |  | Aquamarine Schist, Citrine Schist, Peridot Schist, Topaz Schist |
+| Aquamarine | `aquamarine` |  | Peridot Schist |
+| Citrine | `citrine` |  | Topaz Schist |
+| Necoium | `necoium` |  | Aquamarine Schist, Citrine Schist, Peridot Schist, Topaz Schist |
+| Ruby | `ruby` |  | Sapphire Schist |
+
+**Promenade, requires `promenade`** (Fabric)
+
+Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Coal | `coal` |  | every stone |
+| Iron | `iron` |  | every stone |
+| Copper | `copper` |  | every stone |
+| Gold | `gold` |  | every stone |
+| Lapis Lazuli | `lapis` |  | Blunite |
+| Diamond | `diamond` |  | Blunite |
+| Emerald | `emerald` |  | Blunite |
+| Redstone | `redstone` |  | every stone |
+| Zinc | `zinc` | Create `create` | every stone |
+| Aquamarine | `aquamarine` | Mythic Upgrades `mythicupgrades` | Blunite |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | every stone |
+| Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Blunite |
+| Topaz | `topaz` | Mythic Upgrades `mythicupgrades` | Blunite |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | every stone |
+| Carmot | `carmot` | Mythic Metals `mythicmetals` | every stone |
+| Morkite | `morkite` | Mythic Metals `mythicmetals` | every stone |
+| Mythril | `mythril` | Mythic Metals `mythicmetals` | every stone |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | every stone |
+| Runite | `runite` | Mythic Metals `mythicmetals` | every stone |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | every stone |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | every stone |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | every stone |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | every stone |
+| Osmium | `osmium` | Mythic Metals `mythicmetals` | Blunite |
+| Platinum | `platinum` | Mythic Metals `mythicmetals` | Blunite |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | every stone |
+| Silver | `silver` | Mythic Metals `mythicmetals` | every stone |
+| Tin | `tin` | Mythic Metals `mythicmetals` | Blunite |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | every stone |
+| Uraninite | `uraninite` | Powah `powah` | every stone |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | every stone |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | every stone |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Blunite |
+| Gleaming | `gleaming` | Things `things` | every stone |
+| Thorium | `thorium` | Create: New Age `create_new_age` | Blunite |
+| Experience | `experience` | Exp Ores `expores` | every stone |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | every stone |
+| Galena | `galena` | Tech Reborn `techreborn` | every stone |
+| Iridium | `iridium` | Tech Reborn `techreborn` | Blunite |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | every stone |
+| Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Blunite |
+| Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Blunite |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | every stone |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Blunite |
+| Antimony | `antimony` | Modern Industrialization `modern_industrialization` | every stone |
+| Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | every stone |
+| Iridium | `mi_iridium` | Modern Industrialization `modern_industrialization` | Blunite |
+| Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | every stone |
+| Lignite Coal | `lignite_coal` | Modern Industrialization `modern_industrialization` | every stone |
+| Monazite | `monazite` | Modern Industrialization `modern_industrialization` | Blunite |
+| Nickel | `mi_nickel` | Modern Industrialization `modern_industrialization` | Blunite |
+| Salt | `salt` | Modern Industrialization `modern_industrialization` | Blunite |
+| Tin | `mi_tin` | Modern Industrialization `modern_industrialization` | Blunite |
+| Tungsten | `tungsten` | Modern Industrialization `modern_industrialization` | Blunite |
+| Uranium | `uranium` | Modern Industrialization `modern_industrialization` | every stone |
+| Lead | `oreganized_lead` | Oreganized `oreganized` | every stone |
+| Silver | `oreganized_silver` | Oreganized `oreganized` | every stone |
+| Soulstone | `soulstone` | Malum `malum` | every stone |
+| Natural Quartz | `natural_quartz` | Malum `malum` | every stone |
+| Brilliant | `brilliant` | Malum `malum` | every stone |
+| Dawn Stone | `dawn_stone` | Cobblemon `cobblemon` | every stone |
+| Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | every stone |
+| Fire Stone | `fire_stone` | Cobblemon `cobblemon` | every stone |
+| Ice Stone | `ice_stone` | Cobblemon `cobblemon` | every stone |
+| Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | every stone |
+| Moon Stone | `moon_stone` | Cobblemon `cobblemon` | every stone |
+| Shiny Stone | `shiny_stone` | Cobblemon `cobblemon` | every stone |
+| Sun Stone | `sun_stone` | Cobblemon `cobblemon` | every stone |
+| Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | every stone |
+| Water Stone | `water_stone` | Cobblemon `cobblemon` | every stone |
+
+**Spawn, requires `spawn`** (Fabric and Forge)
+
+Stones: Reefstone `spawn_reefstone`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Coal | `coal` |  | Reefstone |
+| Iron | `iron` |  | Reefstone |
+| Copper | `copper` |  | Reefstone |
+| Gold | `gold` |  | Reefstone |
+| Emerald | `emerald` |  | Reefstone |
+| Redstone | `redstone` |  | Reefstone |
+| Zinc | `zinc` | Create `create` | Reefstone |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | Reefstone |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Reefstone |
+| Carmot | `carmot` | Mythic Metals `mythicmetals` | Reefstone |
+| Morkite | `morkite` | Mythic Metals `mythicmetals` | Reefstone |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Reefstone |
+| Runite | `runite` | Mythic Metals `mythicmetals` | Reefstone |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Reefstone |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Reefstone |
+| Kyber | `kyber` | Mythic Metals `mythicmetals` | Reefstone |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Reefstone |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Reefstone |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Reefstone |
+| Tin | `tin` | Mythic Metals `mythicmetals` | Reefstone |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Reefstone |
+| Dense Fluorite | `dense_fluorite` | Dense Mekanism `densemekanism` | Reefstone |
+| Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Reefstone |
+| Dense Tin | `dense_tin` | Dense Mekanism `densemekanism` | Reefstone |
+| Uraninite | `uraninite` | Powah `powah` | Reefstone |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Reefstone |
+| Lead | `lead` | Create: TFMG `tfmg` | Reefstone |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Reefstone |
+| Gleaming | `gleaming` | Things `things` | Reefstone |
+| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Reefstone |
+| Experience | `experience` | Exp Ores `expores` | Reefstone |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Reefstone |
+| Galena | `galena` | Tech Reborn `techreborn` | Reefstone |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Reefstone |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Reefstone |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Reefstone |
+| Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Reefstone |
+| Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | Reefstone |
+| Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Reefstone |
+| Lignite Coal | `lignite_coal` | Modern Industrialization `modern_industrialization` | Reefstone |
+| Salt | `salt` | Modern Industrialization `modern_industrialization` | Reefstone |
+| Tin | `mi_tin` | Modern Industrialization `modern_industrialization` | Reefstone |
+| Tungsten | `tungsten` | Modern Industrialization `modern_industrialization` | Reefstone |
+| Uranium | `uranium` | Modern Industrialization `modern_industrialization` | Reefstone |
+| Silver | `occultism_silver` | Occultism `occultism` | Reefstone |
+| Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Reefstone |
+| Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Reefstone |
+| Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Reefstone |
+| Lead | `oreganized_lead` | Oreganized `oreganized` | Reefstone |
+| Soulstone | `soulstone` | Malum `malum` | Reefstone |
+| Brilliant | `brilliant` | Malum `malum` | Reefstone |
+| Dawn Stone | `dawn_stone` | Cobblemon `cobblemon` | Reefstone |
+| Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | Reefstone |
+| Fire Stone | `fire_stone` | Cobblemon `cobblemon` | Reefstone |
+| Ice Stone | `ice_stone` | Cobblemon `cobblemon` | Reefstone |
+| Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Reefstone |
+| Moon Stone | `moon_stone` | Cobblemon `cobblemon` | Reefstone |
+| Shiny Stone | `shiny_stone` | Cobblemon `cobblemon` | Reefstone |
+| Sun Stone | `sun_stone` | Cobblemon `cobblemon` | Reefstone |
+| Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Reefstone |
+| Water Stone | `water_stone` | Cobblemon `cobblemon` | Reefstone |
+<!-- END GENERATED modded-stone-list -->
+
 ## Configuration
 
 Every setting gates **worldgen only, never registration**, which is what makes a client and a server
@@ -368,7 +979,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 601 blocks takes **173 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 1771 blocks takes **595 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -376,7 +987,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `antimony` `aquamarine` `aquarium` `banglum` `benitoite` `black_diamond` `blazing_quartz` `bort` `brilliant` `carmot` `carnelian` `cinnabar` `citrine` `coal` `copper` `dawn_stone_andesite` `dawn_stone_diorite` `dawn_stone_dripstone` `dawn_stone_granite` `dawn_stone_tuff` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `dusk_stone_andesite` `dusk_stone_diorite` `dusk_stone_dripstone` `dusk_stone_granite` `dusk_stone_tuff` `emerald` `energized_tin` `experience` `fire_stone_andesite` `fire_stone_basalt_side` `fire_stone_basalt_top` `fire_stone_blackstone` `fire_stone_blackstone_top` `fire_stone_diorite` `fire_stone_dripstone` `fire_stone_granite` `fire_stone_tuff` `galena` `gleaming` `gold` `heliodor` `ice_stone_andesite` `ice_stone_diorite` `ice_stone_dripstone` `ice_stone_granite` `ice_stone_tuff` `iceandfire_sapphire` `iceandfire_silver` `ie_aluminum` `ie_lead` `ie_nickel` `ie_silver` `ie_uranium` `inferium` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `leaf_stone_andesite` `leaf_stone_diorite` `leaf_stone_dripstone` `leaf_stone_granite` `leaf_stone_tuff` `lignite_coal` `lithium` `manganese` `mek_fluorite` `mek_lead` `mek_osmium` `mek_tin` `mek_uranium` `mi_bauxite` `mi_iridium` `mi_lead` `mi_nickel` `mi_tin` `midas_gold` `moldavite` `monazite` `moon_stone_andesite` `moon_stone_diorite` `moon_stone_granite` `moon_stone_tuff` `morkite` `mythril` `natural_quartz` `necoium` `nether_banglum` `nether_experience` `nether_gold` `nickel` `occultism_silver` `oreganized_lead` `oreganized_silver` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `salt` `sapphire` `shiny_stone_andesite` `shiny_stone_diorite` `shiny_stone_dripstone` `shiny_stone_granite` `shiny_stone_tuff` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `soulstone` `sphalerite` `starrite` `stormyx` `sun_stone_andesite` `sun_stone_diorite` `sun_stone_dripstone` `sun_stone_granite` `sun_stone_tuff` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `thunder_stone_andesite` `thunder_stone_diorite` `thunder_stone_dripstone` `thunder_stone_granite` `thunder_stone_tuff` `tin` `topaz` `tungsten` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `uranium` `water_stone_andesite` `water_stone_diorite` `water_stone_dripstone` `water_stone_granite` `water_stone_tuff` `white_diamond` `yellorite` `zinc`
+`adamantite` `alexandrite` `ammolite` `antimony` `aquamarine` `aquarium` `banglum` `benitoite` `black_diamond` `blazing_quartz` `bort` `brilliant` `carmot` `carnelian` `cinnabar` `citrine` `coal` `copper` `dawn_stone_andesite` `dawn_stone_blockus_bluestone` `dawn_stone_blockus_limestone` `dawn_stone_blockus_marble` `dawn_stone_blockus_viridite` `dawn_stone_create_asurine_0` `dawn_stone_create_asurine_1` `dawn_stone_create_asurine_2` `dawn_stone_create_asurine_3` `dawn_stone_create_crimsite_0` `dawn_stone_create_crimsite_1` `dawn_stone_create_crimsite_2` `dawn_stone_create_crimsite_3` `dawn_stone_create_limestone` `dawn_stone_create_ochrum_0` `dawn_stone_create_ochrum_1` `dawn_stone_create_ochrum_2` `dawn_stone_create_ochrum_3` `dawn_stone_create_scoria` `dawn_stone_create_veridium_0` `dawn_stone_create_veridium_1` `dawn_stone_create_veridium_2` `dawn_stone_create_veridium_3` `dawn_stone_diorite` `dawn_stone_dripstone` `dawn_stone_forbidden_arcanus_darkstone` `dawn_stone_forbidden_arcanus_darkstone_mirrored` `dawn_stone_granite` `dawn_stone_meadow_limestone` `dawn_stone_minecraft_calcite` `dawn_stone_minecraft_smooth_basalt` `dawn_stone_promenade_asphalt` `dawn_stone_promenade_blunite` `dawn_stone_spawn_reefstone` `dawn_stone_tfmg_bauxite_0` `dawn_stone_tfmg_bauxite_1` `dawn_stone_tfmg_bauxite_2` `dawn_stone_tfmg_bauxite_3` `dawn_stone_tfmg_galena_0` `dawn_stone_tfmg_galena_1` `dawn_stone_tfmg_galena_2` `dawn_stone_tfmg_galena_3` `dawn_stone_tfmg_lignite` `dawn_stone_tuff` `dawn_stone_twigs_rhyolite` `dawn_stone_twigs_rhyolite_end` `dawn_stone_twigs_schist` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `dusk_stone_andesite` `dusk_stone_blockus_bluestone` `dusk_stone_blockus_limestone` `dusk_stone_blockus_marble` `dusk_stone_blockus_viridite` `dusk_stone_create_asurine_0` `dusk_stone_create_asurine_1` `dusk_stone_create_asurine_2` `dusk_stone_create_asurine_3` `dusk_stone_create_crimsite_0` `dusk_stone_create_crimsite_1` `dusk_stone_create_crimsite_2` `dusk_stone_create_crimsite_3` `dusk_stone_create_limestone` `dusk_stone_create_ochrum_0` `dusk_stone_create_ochrum_1` `dusk_stone_create_ochrum_2` `dusk_stone_create_ochrum_3` `dusk_stone_create_scoria` `dusk_stone_create_veridium_0` `dusk_stone_create_veridium_1` `dusk_stone_create_veridium_2` `dusk_stone_create_veridium_3` `dusk_stone_diorite` `dusk_stone_dripstone` `dusk_stone_forbidden_arcanus_darkstone` `dusk_stone_forbidden_arcanus_darkstone_mirrored` `dusk_stone_granite` `dusk_stone_meadow_limestone` `dusk_stone_minecraft_calcite` `dusk_stone_minecraft_smooth_basalt` `dusk_stone_promenade_asphalt` `dusk_stone_promenade_blunite` `dusk_stone_spawn_reefstone` `dusk_stone_tfmg_bauxite_0` `dusk_stone_tfmg_bauxite_1` `dusk_stone_tfmg_bauxite_2` `dusk_stone_tfmg_bauxite_3` `dusk_stone_tfmg_galena_0` `dusk_stone_tfmg_galena_1` `dusk_stone_tfmg_galena_2` `dusk_stone_tfmg_galena_3` `dusk_stone_tfmg_lignite` `dusk_stone_tuff` `dusk_stone_twigs_rhyolite` `dusk_stone_twigs_rhyolite_end` `dusk_stone_twigs_schist` `emerald` `energized_tin` `experience` `fire_stone_andesite` `fire_stone_basalt_side` `fire_stone_basalt_top` `fire_stone_blackstone` `fire_stone_blackstone_top` `fire_stone_blockus_bluestone` `fire_stone_blockus_limestone` `fire_stone_blockus_marble` `fire_stone_blockus_viridite` `fire_stone_create_asurine_0` `fire_stone_create_asurine_1` `fire_stone_create_asurine_2` `fire_stone_create_asurine_3` `fire_stone_create_crimsite_0` `fire_stone_create_crimsite_1` `fire_stone_create_crimsite_2` `fire_stone_create_crimsite_3` `fire_stone_create_limestone` `fire_stone_create_ochrum_0` `fire_stone_create_ochrum_1` `fire_stone_create_ochrum_2` `fire_stone_create_ochrum_3` `fire_stone_create_scorchia` `fire_stone_create_scoria` `fire_stone_create_veridium_0` `fire_stone_create_veridium_1` `fire_stone_create_veridium_2` `fire_stone_create_veridium_3` `fire_stone_diorite` `fire_stone_dripstone` `fire_stone_forbidden_arcanus_darkstone` `fire_stone_forbidden_arcanus_darkstone_mirrored` `fire_stone_granite` `fire_stone_meadow_limestone` `fire_stone_minecraft_calcite` `fire_stone_minecraft_smooth_basalt` `fire_stone_promenade_asphalt` `fire_stone_promenade_blunite` `fire_stone_spawn_reefstone` `fire_stone_tfmg_bauxite_0` `fire_stone_tfmg_bauxite_1` `fire_stone_tfmg_bauxite_2` `fire_stone_tfmg_bauxite_3` `fire_stone_tfmg_galena_0` `fire_stone_tfmg_galena_1` `fire_stone_tfmg_galena_2` `fire_stone_tfmg_galena_3` `fire_stone_tfmg_lignite` `fire_stone_tuff` `fire_stone_twigs_bloodstone` `fire_stone_twigs_rhyolite` `fire_stone_twigs_rhyolite_end` `fire_stone_twigs_schist` `galena` `gleaming` `gold` `heliodor` `ice_stone_andesite` `ice_stone_blockus_bluestone` `ice_stone_blockus_limestone` `ice_stone_blockus_marble` `ice_stone_blockus_viridite` `ice_stone_create_asurine_0` `ice_stone_create_asurine_1` `ice_stone_create_asurine_2` `ice_stone_create_asurine_3` `ice_stone_create_crimsite_0` `ice_stone_create_crimsite_1` `ice_stone_create_crimsite_2` `ice_stone_create_crimsite_3` `ice_stone_create_limestone` `ice_stone_create_ochrum_0` `ice_stone_create_ochrum_1` `ice_stone_create_ochrum_2` `ice_stone_create_ochrum_3` `ice_stone_create_scoria` `ice_stone_create_veridium_0` `ice_stone_create_veridium_1` `ice_stone_create_veridium_2` `ice_stone_create_veridium_3` `ice_stone_diorite` `ice_stone_dripstone` `ice_stone_forbidden_arcanus_darkstone` `ice_stone_forbidden_arcanus_darkstone_mirrored` `ice_stone_granite` `ice_stone_meadow_limestone` `ice_stone_minecraft_calcite` `ice_stone_minecraft_smooth_basalt` `ice_stone_promenade_asphalt` `ice_stone_promenade_blunite` `ice_stone_spawn_reefstone` `ice_stone_tfmg_bauxite_0` `ice_stone_tfmg_bauxite_1` `ice_stone_tfmg_bauxite_2` `ice_stone_tfmg_bauxite_3` `ice_stone_tfmg_galena_0` `ice_stone_tfmg_galena_1` `ice_stone_tfmg_galena_2` `ice_stone_tfmg_galena_3` `ice_stone_tfmg_lignite` `ice_stone_tuff` `ice_stone_twigs_rhyolite` `ice_stone_twigs_rhyolite_end` `ice_stone_twigs_schist` `iceandfire_sapphire` `iceandfire_silver` `ie_aluminum` `ie_lead` `ie_nickel` `ie_silver` `ie_uranium` `inferium` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `leaf_stone_andesite` `leaf_stone_blockus_bluestone` `leaf_stone_blockus_limestone` `leaf_stone_blockus_marble` `leaf_stone_blockus_viridite` `leaf_stone_create_asurine_0` `leaf_stone_create_asurine_1` `leaf_stone_create_asurine_2` `leaf_stone_create_asurine_3` `leaf_stone_create_crimsite_0` `leaf_stone_create_crimsite_1` `leaf_stone_create_crimsite_2` `leaf_stone_create_crimsite_3` `leaf_stone_create_limestone` `leaf_stone_create_ochrum_0` `leaf_stone_create_ochrum_1` `leaf_stone_create_ochrum_2` `leaf_stone_create_ochrum_3` `leaf_stone_create_scoria` `leaf_stone_create_veridium_0` `leaf_stone_create_veridium_1` `leaf_stone_create_veridium_2` `leaf_stone_create_veridium_3` `leaf_stone_diorite` `leaf_stone_dripstone` `leaf_stone_forbidden_arcanus_darkstone` `leaf_stone_forbidden_arcanus_darkstone_mirrored` `leaf_stone_granite` `leaf_stone_meadow_limestone` `leaf_stone_minecraft_calcite` `leaf_stone_minecraft_smooth_basalt` `leaf_stone_promenade_asphalt` `leaf_stone_promenade_blunite` `leaf_stone_spawn_reefstone` `leaf_stone_tfmg_bauxite_0` `leaf_stone_tfmg_bauxite_1` `leaf_stone_tfmg_bauxite_2` `leaf_stone_tfmg_bauxite_3` `leaf_stone_tfmg_galena_0` `leaf_stone_tfmg_galena_1` `leaf_stone_tfmg_galena_2` `leaf_stone_tfmg_galena_3` `leaf_stone_tfmg_lignite` `leaf_stone_tuff` `leaf_stone_twigs_rhyolite` `leaf_stone_twigs_rhyolite_end` `leaf_stone_twigs_schist` `lignite_coal` `lithium` `manganese` `mek_fluorite` `mek_lead` `mek_osmium` `mek_tin` `mek_uranium` `mi_bauxite` `mi_iridium` `mi_lead` `mi_nickel` `mi_tin` `midas_gold` `moldavite` `monazite` `moon_stone_andesite` `moon_stone_blockus_bluestone` `moon_stone_blockus_limestone` `moon_stone_blockus_marble` `moon_stone_blockus_viridite` `moon_stone_create_asurine_0` `moon_stone_create_asurine_1` `moon_stone_create_asurine_2` `moon_stone_create_asurine_3` `moon_stone_create_crimsite_0` `moon_stone_create_crimsite_1` `moon_stone_create_crimsite_2` `moon_stone_create_crimsite_3` `moon_stone_create_limestone` `moon_stone_create_ochrum_0` `moon_stone_create_ochrum_1` `moon_stone_create_ochrum_2` `moon_stone_create_ochrum_3` `moon_stone_create_scoria` `moon_stone_create_veridium_0` `moon_stone_create_veridium_1` `moon_stone_create_veridium_2` `moon_stone_create_veridium_3` `moon_stone_diorite` `moon_stone_forbidden_arcanus_darkstone` `moon_stone_forbidden_arcanus_darkstone_mirrored` `moon_stone_granite` `moon_stone_meadow_limestone` `moon_stone_minecraft_calcite` `moon_stone_minecraft_smooth_basalt` `moon_stone_promenade_asphalt` `moon_stone_promenade_blunite` `moon_stone_spawn_reefstone` `moon_stone_tfmg_bauxite_0` `moon_stone_tfmg_bauxite_1` `moon_stone_tfmg_bauxite_2` `moon_stone_tfmg_bauxite_3` `moon_stone_tfmg_galena_0` `moon_stone_tfmg_galena_1` `moon_stone_tfmg_galena_2` `moon_stone_tfmg_galena_3` `moon_stone_tfmg_lignite` `moon_stone_tuff` `moon_stone_twigs_rhyolite` `moon_stone_twigs_rhyolite_end` `moon_stone_twigs_schist` `morkite` `mythril` `natural_quartz` `necoium` `nether_banglum` `nether_experience` `nether_gold` `nickel` `occultism_silver` `oreganized_lead` `oreganized_silver` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `salt` `sapphire` `shiny_stone_andesite` `shiny_stone_blockus_bluestone` `shiny_stone_blockus_limestone` `shiny_stone_blockus_marble` `shiny_stone_blockus_viridite` `shiny_stone_create_asurine_0` `shiny_stone_create_asurine_1` `shiny_stone_create_asurine_2` `shiny_stone_create_asurine_3` `shiny_stone_create_crimsite_0` `shiny_stone_create_crimsite_1` `shiny_stone_create_crimsite_2` `shiny_stone_create_crimsite_3` `shiny_stone_create_limestone` `shiny_stone_create_ochrum_0` `shiny_stone_create_ochrum_1` `shiny_stone_create_ochrum_2` `shiny_stone_create_ochrum_3` `shiny_stone_create_scoria` `shiny_stone_create_veridium_0` `shiny_stone_create_veridium_1` `shiny_stone_create_veridium_2` `shiny_stone_create_veridium_3` `shiny_stone_diorite` `shiny_stone_dripstone` `shiny_stone_forbidden_arcanus_darkstone` `shiny_stone_forbidden_arcanus_darkstone_mirrored` `shiny_stone_granite` `shiny_stone_meadow_limestone` `shiny_stone_minecraft_calcite` `shiny_stone_minecraft_smooth_basalt` `shiny_stone_promenade_asphalt` `shiny_stone_promenade_blunite` `shiny_stone_spawn_reefstone` `shiny_stone_tfmg_bauxite_0` `shiny_stone_tfmg_bauxite_1` `shiny_stone_tfmg_bauxite_2` `shiny_stone_tfmg_bauxite_3` `shiny_stone_tfmg_galena_0` `shiny_stone_tfmg_galena_1` `shiny_stone_tfmg_galena_2` `shiny_stone_tfmg_galena_3` `shiny_stone_tfmg_lignite` `shiny_stone_tuff` `shiny_stone_twigs_rhyolite` `shiny_stone_twigs_rhyolite_end` `shiny_stone_twigs_schist` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `soulstone` `sphalerite` `starrite` `stormyx` `sun_stone_andesite` `sun_stone_blockus_bluestone` `sun_stone_blockus_limestone` `sun_stone_blockus_marble` `sun_stone_blockus_viridite` `sun_stone_create_asurine_0` `sun_stone_create_asurine_1` `sun_stone_create_asurine_2` `sun_stone_create_asurine_3` `sun_stone_create_crimsite_0` `sun_stone_create_crimsite_1` `sun_stone_create_crimsite_2` `sun_stone_create_crimsite_3` `sun_stone_create_limestone` `sun_stone_create_ochrum_0` `sun_stone_create_ochrum_1` `sun_stone_create_ochrum_2` `sun_stone_create_ochrum_3` `sun_stone_create_scoria` `sun_stone_create_veridium_0` `sun_stone_create_veridium_1` `sun_stone_create_veridium_2` `sun_stone_create_veridium_3` `sun_stone_diorite` `sun_stone_dripstone` `sun_stone_forbidden_arcanus_darkstone` `sun_stone_forbidden_arcanus_darkstone_mirrored` `sun_stone_granite` `sun_stone_meadow_limestone` `sun_stone_minecraft_calcite` `sun_stone_minecraft_smooth_basalt` `sun_stone_promenade_asphalt` `sun_stone_promenade_blunite` `sun_stone_spawn_reefstone` `sun_stone_tfmg_bauxite_0` `sun_stone_tfmg_bauxite_1` `sun_stone_tfmg_bauxite_2` `sun_stone_tfmg_bauxite_3` `sun_stone_tfmg_galena_0` `sun_stone_tfmg_galena_1` `sun_stone_tfmg_galena_2` `sun_stone_tfmg_galena_3` `sun_stone_tfmg_lignite` `sun_stone_tuff` `sun_stone_twigs_rhyolite` `sun_stone_twigs_rhyolite_end` `sun_stone_twigs_schist` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `thunder_stone_andesite` `thunder_stone_blockus_bluestone` `thunder_stone_blockus_limestone` `thunder_stone_blockus_marble` `thunder_stone_blockus_viridite` `thunder_stone_create_asurine_0` `thunder_stone_create_asurine_1` `thunder_stone_create_asurine_2` `thunder_stone_create_asurine_3` `thunder_stone_create_crimsite_0` `thunder_stone_create_crimsite_1` `thunder_stone_create_crimsite_2` `thunder_stone_create_crimsite_3` `thunder_stone_create_limestone` `thunder_stone_create_ochrum_0` `thunder_stone_create_ochrum_1` `thunder_stone_create_ochrum_2` `thunder_stone_create_ochrum_3` `thunder_stone_create_scoria` `thunder_stone_create_veridium_0` `thunder_stone_create_veridium_1` `thunder_stone_create_veridium_2` `thunder_stone_create_veridium_3` `thunder_stone_diorite` `thunder_stone_dripstone` `thunder_stone_forbidden_arcanus_darkstone` `thunder_stone_forbidden_arcanus_darkstone_mirrored` `thunder_stone_granite` `thunder_stone_meadow_limestone` `thunder_stone_minecraft_calcite` `thunder_stone_minecraft_smooth_basalt` `thunder_stone_promenade_asphalt` `thunder_stone_promenade_blunite` `thunder_stone_spawn_reefstone` `thunder_stone_tfmg_bauxite_0` `thunder_stone_tfmg_bauxite_1` `thunder_stone_tfmg_bauxite_2` `thunder_stone_tfmg_bauxite_3` `thunder_stone_tfmg_galena_0` `thunder_stone_tfmg_galena_1` `thunder_stone_tfmg_galena_2` `thunder_stone_tfmg_galena_3` `thunder_stone_tfmg_lignite` `thunder_stone_tuff` `thunder_stone_twigs_rhyolite` `thunder_stone_twigs_rhyolite_end` `thunder_stone_twigs_schist` `tin` `topaz` `tungsten` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `uranium` `water_stone_andesite` `water_stone_blockus_bluestone` `water_stone_blockus_limestone` `water_stone_blockus_marble` `water_stone_blockus_viridite` `water_stone_create_asurine_0` `water_stone_create_asurine_1` `water_stone_create_asurine_2` `water_stone_create_asurine_3` `water_stone_create_crimsite_0` `water_stone_create_crimsite_1` `water_stone_create_crimsite_2` `water_stone_create_crimsite_3` `water_stone_create_limestone` `water_stone_create_ochrum_0` `water_stone_create_ochrum_1` `water_stone_create_ochrum_2` `water_stone_create_ochrum_3` `water_stone_create_scoria` `water_stone_create_veridium_0` `water_stone_create_veridium_1` `water_stone_create_veridium_2` `water_stone_create_veridium_3` `water_stone_diorite` `water_stone_dripstone` `water_stone_forbidden_arcanus_darkstone` `water_stone_forbidden_arcanus_darkstone_mirrored` `water_stone_granite` `water_stone_meadow_limestone` `water_stone_minecraft_calcite` `water_stone_minecraft_smooth_basalt` `water_stone_promenade_asphalt` `water_stone_promenade_blunite` `water_stone_spawn_reefstone` `water_stone_tfmg_bauxite_0` `water_stone_tfmg_bauxite_1` `water_stone_tfmg_bauxite_2` `water_stone_tfmg_bauxite_3` `water_stone_tfmg_galena_0` `water_stone_tfmg_galena_1` `water_stone_tfmg_galena_2` `water_stone_tfmg_galena_3` `water_stone_tfmg_lignite` `water_stone_tuff` `water_stone_twigs_rhyolite` `water_stone_twigs_rhyolite_end` `water_stone_twigs_schist` `white_diamond` `yellorite` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its

@@ -19,6 +19,54 @@
     {
       "id": "seamlessores:dripstone_silents_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_silents_silver_ore",
+      "required": false
     }
   ]
 }

@@ -19,6 +19,34 @@
     {
       "id": "seamlessores:dripstone_runite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_runite_ore",
+      "required": false
     }
   ]
 }

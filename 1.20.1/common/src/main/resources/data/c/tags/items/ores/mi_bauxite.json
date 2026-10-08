@@ -19,6 +19,62 @@
     {
       "id": "seamlessores:dripstone_mi_bauxite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_mi_bauxite_ore",
+      "required": false
     }
   ]
 }

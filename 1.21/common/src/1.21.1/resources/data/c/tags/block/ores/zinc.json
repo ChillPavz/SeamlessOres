@@ -19,6 +19,54 @@
     {
       "id": "seamlessores:dripstone_zinc_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_zinc_ore",
+      "required": false
     }
   ]
 }

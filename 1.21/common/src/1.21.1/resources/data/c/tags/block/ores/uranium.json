@@ -95,6 +95,86 @@
     {
       "id": "seamlessores:dripstone_mek_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_yellorite_ore",
+      "required": false
     }
   ]
 }

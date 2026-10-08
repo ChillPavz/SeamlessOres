@@ -21,6 +21,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_bluestone_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_peridot_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_silents_peridot_ore",
       "required": false
     },
@@ -38,6 +62,18 @@
     },
     {
       "id": "seamlessores:dripstone_silents_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silents_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_silents_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_peridot_ore",
       "required": false
     }
   ]

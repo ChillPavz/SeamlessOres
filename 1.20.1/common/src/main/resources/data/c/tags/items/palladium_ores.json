@@ -7,6 +7,22 @@
     {
       "id": "seamlessores:blackstone_palladium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_palladium_ore",
+      "required": false
     }
   ]
 }

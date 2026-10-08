@@ -27,6 +27,30 @@
     {
       "id": "seamlessores:blackstone_alexandrite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_nether_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_nether_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_nether_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_alexandrite_ore",
+      "required": false
     }
   ]
 }

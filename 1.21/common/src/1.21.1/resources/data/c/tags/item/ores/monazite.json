@@ -19,6 +19,14 @@
     {
       "id": "seamlessores:dripstone_monazite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_monazite_ore",
+      "required": false
     }
   ]
 }

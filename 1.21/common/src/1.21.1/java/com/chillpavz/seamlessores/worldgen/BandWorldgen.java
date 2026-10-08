@@ -41,6 +41,9 @@ final class BandWorldgen implements WorldgenEra {
             final FeatureConfiguration config = holder.value().config();
             if (config instanceof OreConfiguration) {
                 sites.add(new OreConfigurationSite(holder));
+            } else if (LayeredOre.is(config)) {
+                // Create's strata, and TFMG's on Create's feature: a site per block list of every layer.
+                LayeredOre.addSites(holder, holder.key().location().toString(), sites);
             } else if (rebuildsForeign(config)) {
                 // Another mod's own configuration type around vanilla's target list: Immersive
                 // Engineering's and Mekanism's. See ForeignOreTargets for what is accepted there.

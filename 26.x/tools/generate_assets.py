@@ -42,10 +42,10 @@ import zipfile
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
                                 "shared", "tools"))
 import assetgen  # noqa: E402
-import geology  # noqa: E402
-from assetgen import (MOD_ID, TOOL_TAGS, assert_no_dashes, jar_tags, look_models, parse_host_table,  # noqa: E402
-                      read_mod_tags, silk_touch_to, stone_name, texture_path, title, write_json,
-                      write_text, write_texture_json)
+import placed  # noqa: E402
+from assetgen import (MOD_ID, TOOL_TAGS, assert_no_dashes, jar_tags, look_models,  # noqa: E402
+                      read_mod_tags, silk_touch_to, texture_path, title, write_json,
+                      write_texture_json)
 
 # Colour-distance (summed per-channel) above which a pixel counts as ore rather than shaded stone.
 # 0 keeps 141/256 px for iron and hazes over granite; 60 keeps 76 and looks right; 90 eats real blobs.
@@ -199,7 +199,7 @@ use_profile("26.1")
 CREATE_JAR = MOD_JARS["create"]
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
-# which tier, which ores) is READ from HostStone.java (read_hosts), so the blocks that register and
+# which tier, which ores) is READ from HostStone.java (placed.Hosts), so the blocks that register and
 # the files generated here cannot drift apart. A host with several looks must be mirrored exactly, or
 # its ore is the one tile that never varies. Read from each stone's own blockstate and models.
 #   single:          one texture on every face.
@@ -714,63 +714,15 @@ ORE_DEFS = [
 
 # Every ore has a KEY, unique across the table: the id part in a stone another mod places (one of those
 # takes both golds: create_scoria_nether_gold_ore) and the geology rule's key. The overlay, unless set.
-# Mirrors OreType.key().
-for _ore in ORE_DEFS:
-    _ore.setdefault("key", _ore["overlay"])
-ORE_BY_KEY = {}
-for _ore in ORE_DEFS:
-    if ORE_BY_KEY.setdefault(_ore["key"], _ore) is not _ore:
-        sys.exit(f"two ores share the key {_ore['key']}")
-
-# Which other mods' ores each stone another mod places swallows, measured by the pair model
-# (references/tools/som-grid) from the real jars. Its "kinds" restate what the ore table already holds,
-# so they are only checked against it here.
-MODDED_PAIRS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "modded_pairs.json"),
-                              encoding="utf-8"))
-for _key, _kind in MODDED_PAIRS["kinds"].items():
-    _ore = ORE_BY_KEY.get(_key)
-    _forms = [f"{_ore.get('mod') or 'minecraft'}:{_ore['tiers'][t]}" for t in ("stone", "deepslate", "nether")
-              if _ore and t in _ore["tiers"]]
-    if _ore is None or _forms != _kind["forms"]:
-        sys.exit(f"modded_pairs.json: ore {_key} is not the ore table's ({_forms} vs {_kind['forms']})")
-
+# Mirrors OreType.key(). The host table is READ from HostStone.java (shared/tools/placed.py), so the
+# blocks that register and the files generated here cannot drift apart; which other mods' ores each
+# stone another mod places swallows is measured by the pair model (references/tools/som-grid) from the
+# real jars, in modded_pairs.json.
 HOST_TABLE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "common", "src", "main",
                           "java", "com", "chillpavz", MOD_ID, "content", "HostStone.java")
-
-
-def read_hosts():
-    """Every host stone, in HostStone.ALL order, from the shared parser of HostStone.java, with this
-    band's data added: its look, the measured modded pairs, the fixed geology rule.
-
-    swallows: the ore keys a mod's stone feature lays it over (listed in the table, plus the measured
-    modded pairs), refused among them by the fixed geology rule.
-    """
-    hosts = {}
-    for decl in parse_host_table(HOST_TABLE):
-        name, placed_by, listed = decl["name"], decl["placed_by"], decl["listed"]
-        host_id = f"{decl['ns']}:{decl['path']}"
-        unknown = [o for o in listed if o not in ORE_BY_KEY]
-        if unknown:
-            sys.exit(f"{host_id} lists unknown ores {unknown}")
-        listed = listed + list(MODDED_PAIRS["hosts"].get(host_id, {}))
-        swallows = [o["key"] for o in ORE_DEFS if o["key"] in listed]
-        if host_id not in HOST_LOOK:
-            sys.exit(f"{host_id} has no HOST_LOOK entry")
-        look = HOST_LOOK[host_id]
-        tier = decl["tier"]
-        hosts[name] = {"name": name, "id": host_id, "ns": decl["ns"], "path": decl["path"], "tier": tier,
-                       "ore_tier": "stone" if tier in ("dripstone", "cinnabar") else tier,
-                       "placed_by": placed_by, "swallowed_by": decl["swallowed_by"], "swallows": swallows,
-                       "refused": [o for o in swallows if placed_by and geology.fixed(name, o)],
-                       "look": look[0], "side": look[1], "end": look[2] if len(look) > 2 else look[1],
-                       "since": HOST_SINCE.get(host_id)}
-    missing = set(MODDED_PAIRS["hosts"]) - {h["id"] for h in hosts.values()}
-    if missing:
-        sys.exit(f"modded_pairs.json has pairs for stones not in the host table: {sorted(missing)}")
-    return hosts
-
-
-HOSTS = read_hosts()
+HOSTS = placed.Hosts(HOST_TABLE, ORE_DEFS, os.path.join(os.path.dirname(os.path.abspath(__file__)), "modded_pairs.json"),
+                     HOST_LOOK, since=HOST_SINCE)
+ORE_BY_KEY = HOSTS.ore_by_key
 
 
 def repo_root():
@@ -837,10 +789,16 @@ DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 def loot_modules(gate):
     """The loader modules every mod of a variant's gate ships for."""
     modules = [m for m in DEFAULT_CONDITIONAL_LOOT_MODULES
-               if all(m in CONDITIONAL_LOOT_MODULES_BY_MOD.get(mod, DEFAULT_CONDITIONAL_LOOT_MODULES) for mod in gate)]
+               if m in placed.loot_modules(gate, CONDITIONAL_LOOT_MODULES_BY_MOD, DEFAULT_CONDITIONAL_LOOT_MODULES)]
     if not modules:
         sys.exit(f"no loader carries every mod of {gate}")
     return modules
+
+
+# The loaders each stone mod's variants register on (ModdedPairs.shipsHere): exactly those its loot goes to.
+STONE_LOADERS = {c["placed_by"]: tuple(CONDITIONAL_LOOT_MODULES_BY_MOD.get(c["placed_by"], DEFAULT_CONDITIONAL_LOOT_MODULES))
+                 for c in HOSTS.placed()}
+
 
 def conditional_data_dir(module, namespace):
     return os.path.join(repo_root(), module, "src", "main", "resources", "data", namespace)
@@ -906,59 +864,16 @@ def data_dir(namespace):
 
 
 def variants():
-    """Every (host, host config, ore def, source form, source tier) that actually exists.
-
-    In the game's own rock a pairing exists only where the ore has a form for that host's tier, which is
-    what keeps granite quartz and basalt iron from being invented; the variant stands in for that form.
-    A stone another mod places pairs with every ore it swallows that the geology rule keeps, and stands
-    in for every form of it; it takes its own tier's form for drops and tool tier where the ore has one,
-    else the first the ore has (a Nether ore in scoria). Mirrors HostStone.ores() and OreVariant.source().
-    """
-    for host, host_cfg in HOSTS.items():
-        if host_cfg["placed_by"]:
-            for ore in ORE_DEFS:
-                if ore["key"] in host_cfg["swallows"] and ore["key"] not in host_cfg["refused"]:
-                    tier = host_cfg["ore_tier"] if host_cfg["ore_tier"] in ore["tiers"] else next(
-                        t for t in ("stone", "deepslate", "nether") if t in ore["tiers"])
-                    yield host, host_cfg, ore, ore["tiers"][tier], tier
-            continue
-        for ore in ORE_DEFS:
-            # skip_hosts: the ore's own mod already ships a seamless variant for that stone, so ours
-            # would take the host over (the injector prepends). Mirrors OreType.skipHosts.
-            if host in ore.get("skip_hosts", ()):
-                continue
-            if host_cfg["tier"] == "cinnabar":
-                if ore["overlay"] not in CINNABAR_FAMILY:
-                    continue
-                # Stands in for the stone ore, or the Nether one where the mod has no other.
-                tier = "stone" if "stone" in ore["tiers"] else "nether"
-            else:
-                tier = host_cfg["ore_tier"]
-            if tier in ore["tiers"]:
-                yield host, host_cfg, ore, ore["tiers"][tier], tier
+    """Every (host, host config, ore def, source form, source tier) that actually exists (placed.py)."""
+    return HOSTS.variants(CINNABAR_FAMILY)
 
 
 def overlay_for(ore, host_cfg, face="side"):
-    """Overlay key for this host, honouring a per-tier override. Mirrors OreType.overlayFor."""
-    # host_overlays: a TRANSLUCENT ore (Silent's Gems' opal, Cobblemon) takes the colour of the rock
-    # behind it, so each host needs its own precomposited overlay; ours render CUTOUT, which cannot do
-    # partial alpha. A (side, end) pair serves a host whose end faces use another texture. Generator
-    # only, because the Java side never reads overlay keys: the models carry them.
-    host = next((h for h, c in HOSTS.items() if c is host_cfg), None)
-    if host in ore.get("host_overlays", {}):
-        chosen = ore["host_overlays"][host]
-        if isinstance(chosen, tuple):
-            return chosen[0] if face == "side" else chosen[1]
-        return chosen
-    if host_cfg["tier"] == "deepslate" and ore.get("deepslate_overlay"):
-        return ore["deepslate_overlay"]
-    return ore["overlay"]
+    return HOSTS.overlay_for(ore, host_cfg, face)
 
 
 def all_overlay_keys():
-    """Every overlay texture key a model references, end-face overlays included."""
-    return sorted({overlay_for(o, c, face) for _h, c, o, _s, _t in variants() for face in ("side", "end")})
-
+    return HOSTS.overlay_keys(CINNABAR_FAMILY)
 
 def version_key(version):
     return tuple(int(part) for part in version.split("."))
@@ -971,20 +886,11 @@ def host_exists_in(host_cfg, version):
 
 
 def variant_name(host, ore):
-    """<host>_<ore>_ore. A stone another mod places names the ore by its key: it can take an overworld and
-    a Nether ore of one name (scoria takes gold and nether gold). Mirrors OreVariant.path()."""
-    return f"{host}_{ore['key'] if HOSTS[host]['placed_by'] else ore['name']}_ore"
+    return HOSTS.name_of(host, ore)
 
 
 def block_title(host, ore):
-    """e.g. Granite Iron Ore, Limestone Iron Ore. The stone's own name, then the ore's, then Ore."""
-    cfg = HOSTS[host]
-    return f"{stone_name(cfg['path'])} {title(ore['key'] if cfg['placed_by'] else ore['name'])} Ore"
-
-
-def camel(name):
-    words = name.split("_")
-    return words[0] + "".join(w[:1].upper() + w[1:] for w in words[1:])
+    return HOSTS.title_of(host, ore)
 
 
 def generate_json():
@@ -1268,22 +1174,8 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.mysticalAgriculture.@Tooltip":
             "Generate host-matched inferium and prosperity ore. Does nothing unless the mod is installed.",
     })
-    # One switch per stone another mod places, in the Modded Stones category. Field names follow
-    # SeamlessOresConfigData: the host's name in camelCase. Create and Blockus both have a limestone, so
-    # a clashing stone name carries its mod here, where both switches sit in one list.
-    cfg = f"text.autoconfig.{MOD_ID}"
-    lang[f"{cfg}.category.modded_stones"] = "Modded Stones"
-    placed = [c for c in HOSTS.values() if c["placed_by"]]
-    paths = [c["path"] for c in placed]
-    for c in placed:
-        field = camel(c["name"])
-        clash = f" ({STONE_MODS[c['placed_by']]['display']})" if paths.count(c["path"]) > 1 else ""
-        lang[f"{cfg}.option.{field}"] = f"{stone_name(c['path'])}{clash}"
-        mod = STONE_MODS[c["placed_by"]]["display"]
-        where = mod if c["placed_by"] == c["ns"] else f"{mod}'s layers of"
-        lang[f"{cfg}.option.{field}.@Tooltip"] = (
-            f"Ore generated in {where} {stone_name(c['path']).lower()} matches the stone. Off: it keeps"
-            f" its own look. Applies to newly generated chunks, from the next world load.")
+    # One switch per stone another mod places, in the Modded Stones category (placed.switch_lang).
+    lang.update(placed.switch_lang(HOSTS, STONE_MODS))
     assert_no_dashes(lang.items(), "lang entries")
     write_json(os.path.join(root, "lang", "en_us.json"), lang)
 
@@ -1307,10 +1199,7 @@ def generate_json():
     print(f"  {len(lang)} lang entries")
 
 
-def gate_of(host_cfg, ore):
-    """The mods a variant exists with: the one that places its stone, and the ore's own."""
-    return list(dict.fromkeys(m for m in (host_cfg["placed_by"], ore.get("mod")) if m))
-
+gate_of = placed.gate_of
 
 def generate_data():
     """Loot tables and tags. Loot is TRANSFORMED from vanilla's own tables, never reconstructed."""
@@ -1674,39 +1563,7 @@ def _credits():
 
 
 def _modded_stone_list():
-    """The ores in the stones other mods place, by the mod that places them.
-
-    From the same host table the blocks register from, so the README cannot claim a block the jar does
-    not have.
-    """
-    placed = [c for c in HOSTS.values() if c["placed_by"]]
-    built = {}
-    for host, cfg, ore, _s, _t in variants():
-        if cfg["placed_by"]:
-            built.setdefault(host, []).append(ore["key"])
-    lines = [f"**{sum(len(v) for v in built.values())} blocks**, plus the dripstone ones listed above. Each exists"
-             f" only when the mod that places its stone is installed, and one of another mod's ore only with that"
-             f" mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone`"
-             f" and `iron` make `blockus_limestone_iron_ore`.", ""]
-    for placer in dict.fromkeys(c["placed_by"] for c in placed):
-        stones = [c for c in placed if c["placed_by"] == placer]
-        lines.append(f"**{STONE_MODS[placer]['display']}, requires `{placer}`** ({STONE_MODS[placer]['bands']})")
-        lines.append("")
-        lines.append("Stones: " + ", ".join(f"{stone_name(c['path'])} `{c['name']}`" for c in stones))
-        lines.append("")
-        lines.append("| Ore | `<ore>` | Also requires | In |")
-        lines.append("|---|---|---|---|")
-        for ore in ORE_DEFS:
-            within = [stone_name(c["path"]) for c in stones if ore["key"] in built.get(c["name"], ())]
-            if not within:
-                continue
-            mod = ore.get("mod")
-            needs = f"{MODS[mod]['display']} `{mod}`" if mod and mod != placer else ""
-            where = "every stone" if len(within) == len(stones) and len(stones) > 1 else ", ".join(within)
-            lines.append(f"| {title(ore['key'])} | `{ore['key']}` | {needs} | {where} |")
-        lines.append("")
-    return lines
-
+    return placed.modded_stone_list(HOSTS, STONE_MODS, MODS, CINNABAR_FAMILY)
 
 def generate_readme():
     """Rewrites the generated sections of README.md in place, leaving the prose alone.
@@ -1772,17 +1629,17 @@ def read_source(version, namespace, path):
         return None
     with zipfile.ZipFile(jar_path) as jar:
         try:
-            placed = json.loads(jar.read(f"data/{namespace}/worldgen/placed_feature/{path}.json"))
+            source = json.loads(jar.read(f"data/{namespace}/worldgen/placed_feature/{path}.json"))
         except KeyError:
             return None
-        feature_ns, feature_path = placed["feature"].split(":", 1)
+        feature_ns, feature_path = source["feature"].split(":", 1)
         folder = "feature" if version_key(version) >= version_key("26.3") else "configured_feature"
         try:
             feature = json.loads(jar.read(f"data/{feature_ns}/worldgen/{folder}/{feature_path}.json"))
         except KeyError:
             return None     # a jar built for another version (Silent Gear: 26.1 only)
     config = feature.get("config", feature)
-    return config["size"], config.get("discard_chance_on_air_exposure", 0.0), placed["placement"]
+    return config["size"], config.get("discard_chance_on_air_exposure", 0.0), source["placement"]
 
 
 def generate_cinnabar_worldgen():
@@ -1919,14 +1776,6 @@ def generate_versioned_data():
         print(f"  [{version}] {len(tables)} loot tables -> {overlay}/")
 
 
-def replace_block(text, begin, end, body, where):
-    if begin not in text or end not in text:
-        sys.exit(f"{where} has no '{begin.strip()}' markers")
-    head, rest = text.split(begin, 1)
-    _old, tail = rest.split(end, 1)
-    return f"{head}{begin}{body}{end}{tail}"
-
-
 def generate_java():
     """The Java that is data: the measured modded pairs, the geology tables, and the config switches.
 
@@ -1935,36 +1784,10 @@ def generate_java():
     places (the game's own rock has hand-written ones, with their own wording) and the push of every
     host's switch.
     """
-    content = os.path.dirname(HOST_TABLE)
-    placed = [c for c in HOSTS.values() if c["placed_by"]]
-    geology.note_absent([o["key"] for o in ORE_DEFS], [c["name"] for c in HOSTS.values()])
-
-    cases = []
-    for host, pairs in MODDED_PAIRS["hosts"].items():
-        listed = [o["key"] for o in ORE_DEFS if o["key"] in pairs]
-        cases.append(f'            case "{host}" -> keys({", ".join(chr(34) + k + chr(34) for k in listed)});')
-    path = os.path.join(content, "ModdedPairs.java")
-    text = open(path, encoding="utf-8").read()
-    write_text(path, replace_block(text, "        return switch (host) {\n", "            default -> List.of();",
-                                   "\n".join(cases) + "\n", path))
-
-    geology.write_java(write_text)
-
-    fields, push = [], []
-    for c in placed:
-        fields += ['    @ConfigEntry.Category("modded_stones")', "    @ConfigEntry.Gui.Tooltip",
-                   f"    public boolean {camel(c['name'])} = true;", ""]
-    for c in HOSTS.values():
-        push.append(f'        values.hosts.put("{c["name"]}", {camel(c["name"])});')
-    path = os.path.join(repo_root(), "cloth-config", "java", "com", "chillpavz", MOD_ID, "config",
-                        "SeamlessOresConfigData.java")
-    text = open(path, encoding="utf-8").read()
-    text = replace_block(text, "    // BEGIN GENERATED modded stone switches (tools/generate_assets.py, from the host table)\n",
-                         "    // END GENERATED modded stone switches", "\n".join(fields), path)
-    text = replace_block(text, "        // BEGIN GENERATED host switches (tools/generate_assets.py, from the host table)\n",
-                         "        // END GENERATED host switches", "\n".join(push) + "\n", path)
-    write_text(path, text)
-    print(f"  Java: modded pairs for {len(cases)} stones, the shared geology rule, {len(HOSTS)} host switches")
+    config = os.path.join(repo_root(), "cloth-config", "java", "com", "chillpavz", MOD_ID, "config",
+                          "SeamlessOresConfigData.java")
+    cases = placed.write_java(HOSTS, os.path.dirname(HOST_TABLE), config, STONE_LOADERS)
+    print(f"  Java: modded pairs for {cases} stones, the shared geology rule, {len(HOSTS)} host switches")
 
 
 def main():

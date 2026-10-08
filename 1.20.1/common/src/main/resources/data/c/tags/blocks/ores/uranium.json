@@ -19,6 +19,50 @@
     {
       "id": "seamlessores:dripstone_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_uranium_ore",
+      "required": false
     }
   ]
 }

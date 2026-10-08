@@ -27,6 +27,14 @@
     {
       "id": "seamlessores:blackstone_alexandrite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_alexandrite_ore",
+      "required": false
     }
   ]
 }

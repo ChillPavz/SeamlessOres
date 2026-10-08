@@ -15,6 +15,58 @@
     {
       "id": "seamlessores:dripstone_kyber_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_kyber_ore",
+      "required": false
     }
   ]
 }

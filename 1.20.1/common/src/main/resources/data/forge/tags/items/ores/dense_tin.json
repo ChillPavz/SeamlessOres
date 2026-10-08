@@ -19,6 +19,22 @@
     {
       "id": "seamlessores:dripstone_dense_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_dense_tin_ore",
+      "required": false
     }
   ]
 }

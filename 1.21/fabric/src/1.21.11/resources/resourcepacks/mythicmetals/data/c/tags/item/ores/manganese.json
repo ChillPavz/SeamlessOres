@@ -15,6 +15,38 @@
     {
       "id": "seamlessores:dripstone_manganese_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_manganese_ore",
+      "required": false
     }
   ]
 }

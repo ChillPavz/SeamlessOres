@@ -76,7 +76,7 @@ public class SeamlessOresForge {
         event.register(Registries.ITEM,
                 helper -> SeamlessOresContent.registerItems(helper::register));
         event.register(Registries.CREATIVE_MODE_TAB,
-                helper -> SeamlessOresContent.registerCreativeTab(helper::register));
+                helper -> SeamlessOresContent.registerCreativeTabs(helper::register));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
         event.register(Registries.FEATURE,
                 helper -> BastionSafeOreFeature.register(helper::register));
@@ -86,10 +86,11 @@ public class SeamlessOresForge {
 
     private static void onBuildTabContents(BuildCreativeModeTabContentsEvent event) {
 
-        if (!event.getTabKey().equals(SeamlessOresContent.TAB)) {
+        // Two tabs: the game's own rock, and the stones other mods add.
+        if (!event.getTabKey().equals(SeamlessOresContent.TAB) && !event.getTabKey().equals(SeamlessOresContent.MODDED_TAB)) {
             return;
         }
-        for (var item : SeamlessOresContent.creativeTabItems()) {
+        for (var item : SeamlessOresContent.creativeTabItems(event.getTabKey())) {
             event.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
     }

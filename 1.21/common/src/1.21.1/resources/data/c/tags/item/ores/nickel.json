@@ -59,6 +59,14 @@
     {
       "id": "seamlessores:dripstone_ie_nickel_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_mi_nickel_ore",
+      "required": false
     }
   ]
 }

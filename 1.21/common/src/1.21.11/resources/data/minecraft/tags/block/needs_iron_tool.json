@@ -690,6 +690,342 @@
     {
       "id": "seamlessores:blackstone_sapphire_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_necoium_ore",
+      "required": false
     }
   ]
 }

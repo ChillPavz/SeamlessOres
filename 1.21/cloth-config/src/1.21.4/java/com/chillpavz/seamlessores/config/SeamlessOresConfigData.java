@@ -115,6 +115,76 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
     public int netherVeinSize = 80;
 
+    // --- Modded Stones ----------------------------------------------------------------------------
+    // One switch per stone that another mod adds (Blockus, Create, Twigs and so on), for the ores that
+    // end up inside it. The screen factory hides the tab when none of those mods is installed.
+
+    // BEGIN GENERATED modded stone switches (tools/generate_assets.py, from the host table)
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean blockusLimestone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean blockusMarble = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean blockusBluestone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean blockusViridite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createAsurine = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createCrimsite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createLimestone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createOchrum = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createScorchia = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createScoria = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createVeridium = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean minecraftCalcite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean minecraftSmoothBasalt = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean promenadeAsphalt = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean promenadeBlunite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean wilderwildGabbro = true;
+    // END GENERATED modded stone switches
+
     // --- Create ---------------------------------------------------------------------------------
 
     @ConfigEntry.Category("create")
@@ -266,6 +336,22 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("dripstone", dripstone);
         values.hosts.put("basalt", basalt);
         values.hosts.put("blackstone", blackstone);
+        values.hosts.put("blockus_limestone", blockusLimestone);
+        values.hosts.put("blockus_marble", blockusMarble);
+        values.hosts.put("blockus_bluestone", blockusBluestone);
+        values.hosts.put("blockus_viridite", blockusViridite);
+        values.hosts.put("create_asurine", createAsurine);
+        values.hosts.put("create_crimsite", createCrimsite);
+        values.hosts.put("create_limestone", createLimestone);
+        values.hosts.put("create_ochrum", createOchrum);
+        values.hosts.put("create_scorchia", createScorchia);
+        values.hosts.put("create_scoria", createScoria);
+        values.hosts.put("create_veridium", createVeridium);
+        values.hosts.put("minecraft_calcite", minecraftCalcite);
+        values.hosts.put("minecraft_smooth_basalt", minecraftSmoothBasalt);
+        values.hosts.put("promenade_asphalt", promenadeAsphalt);
+        values.hosts.put("promenade_blunite", promenadeBlunite);
+        values.hosts.put("wilderwild_gabbro", wilderwildGabbro);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

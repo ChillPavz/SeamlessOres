@@ -15,6 +15,26 @@
     {
       "id": "seamlessores:dripstone_aquarium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_aquarium_ore",
+      "required": false
     }
   ]
 }

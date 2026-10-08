@@ -17,6 +17,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_energized_tin_ore",
       "required": false
     },
@@ -54,6 +78,30 @@
     },
     {
       "id": "seamlessores:dripstone_mek_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_energized_tin_ore",
       "required": false
     }
   ]

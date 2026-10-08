@@ -151,6 +151,218 @@
     {
       "id": "seamlessores:blackstone_fire_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_nether_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_nether_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_nether_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_sapphire_schist_ruby_ore",
+      "required": false
     }
   ]
 }

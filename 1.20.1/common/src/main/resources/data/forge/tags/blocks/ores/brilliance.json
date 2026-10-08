@@ -19,6 +19,94 @@
     {
       "id": "seamlessores:dripstone_brilliance_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_brilliant_ore",
+      "required": false
     }
   ]
 }

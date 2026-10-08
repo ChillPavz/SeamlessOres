@@ -19,6 +19,78 @@
     {
       "id": "seamlessores:dripstone_prometheum_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_prometheum_ore",
+      "required": false
     }
   ]
 }

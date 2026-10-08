@@ -19,6 +19,70 @@
     {
       "id": "seamlessores:dripstone_chaos_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_chaos_ore",
+      "required": false
     }
   ]
 }

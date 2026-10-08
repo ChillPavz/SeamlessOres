@@ -15,6 +15,22 @@
     {
       "id": "seamlessores:dripstone_manganese_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_manganese_ore",
+      "required": false
     }
   ]
 }

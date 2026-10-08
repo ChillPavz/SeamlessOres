@@ -7,6 +7,22 @@
     {
       "id": "seamlessores:blackstone_pyrite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_pyrite_ore",
+      "required": false
     }
   ]
 }

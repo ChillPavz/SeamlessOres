@@ -255,9 +255,10 @@ public record OreType(String name, String key, String overlay, String deepslateO
      * Orichalcum targets both replaceables tags, but Mythic Metals ships its OWN
      * {@code tuff_orichalcum_ore} through an explicit {@code block_match tuff} target that sits
      * ahead of its deepslate tag entry. Tuff is therefore already seamless, and a variant of ours
-     * would take that host away from it, because the injector prepends. Stone tier only.
+     * would take that host away from it, because the injector prepends. So tuff is skipped, while
+     * the deepslate form is still this ore wherever another mod's stone swallows it.
      */
-    public static final OreType ORICHALCUM = mmStone("orichalcum")
+    public static final OreType ORICHALCUM = mmBoth("orichalcum", NONE, null).skipping("tuff")
             .withStrength(5.5F, 6.5F);
 
     // Nether. Like our own gold and quartz these ADD ore, so they ride the basalt and blackstone

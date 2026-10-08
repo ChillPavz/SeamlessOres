@@ -19,6 +19,54 @@
     {
       "id": "seamlessores:dripstone_adamantite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_adamantite_ore",
+      "required": false
     }
   ]
 }

@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:dripstone_platinum_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_platinum_ore",
+      "required": false
     }
   ]
 }

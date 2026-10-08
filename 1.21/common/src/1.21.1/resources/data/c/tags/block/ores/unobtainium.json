@@ -19,6 +19,34 @@
     {
       "id": "seamlessores:dripstone_unobtainium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_unobtainium_ore",
+      "required": false
     }
   ]
 }

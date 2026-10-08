@@ -59,6 +59,170 @@
     {
       "id": "seamlessores:dripstone_oreganized_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_oreganized_lead_ore",
+      "required": false
     }
   ]
 }

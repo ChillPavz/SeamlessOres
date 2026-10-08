@@ -19,6 +19,70 @@
     {
       "id": "seamlessores:dripstone_soulstone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_soulstone_ore",
+      "required": false
     }
   ]
 }

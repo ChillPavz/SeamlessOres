@@ -1,6 +1,7 @@
 package com.chillpavz.seamlessores.config;
 
 import com.chillpavz.seamlessores.Constants;
+import com.chillpavz.seamlessores.content.HostStone;
 import com.chillpavz.seamlessores.content.OreType;
 import com.chillpavz.seamlessores.platform.Services;
 import me.shedaniel.autoconfig.AutoConfig;
@@ -104,6 +105,10 @@ public final class SeamlessOresConfigScreenFactory {
                 // Collapsed it shows a thin strip, which reintroduces the problem this solves.
                 builder.setGlobalizedExpanded(true);
                 hideCategoriesOfAbsentMods(builder);
+                // The Modded Stones tab only matters with a mod installed that places one of the stones.
+                if (HostStone.ALL.stream().noneMatch(host -> host.placedBy() != null && host.present())) {
+                    builder.removeCategoryIfExists(Component.translatable(CATEGORY_PREFIX + "modded_stones"));
+                }
                 return builder.build();
             });
         } else {

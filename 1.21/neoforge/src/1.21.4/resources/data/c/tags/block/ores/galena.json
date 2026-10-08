@@ -19,6 +19,42 @@
     {
       "id": "seamlessores:dripstone_galena_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_galena_ore",
+      "required": false
     }
   ]
 }

@@ -7,6 +7,22 @@
     {
       "id": "seamlessores:blackstone_midas_gold_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_midas_gold_ore",
+      "required": false
     }
   ]
 }

@@ -19,6 +19,94 @@
     {
       "id": "seamlessores:dripstone_thunder_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_thunder_stone_ore",
+      "required": false
     }
   ]
 }

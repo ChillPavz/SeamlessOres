@@ -19,6 +19,30 @@
     {
       "id": "seamlessores:dripstone_uraninite_dense_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_dense_ore",
+      "required": false
     }
   ]
 }

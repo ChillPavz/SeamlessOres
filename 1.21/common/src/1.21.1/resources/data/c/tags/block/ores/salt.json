@@ -19,6 +19,22 @@
     {
       "id": "seamlessores:dripstone_salt_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_salt_ore",
+      "required": false
     }
   ]
 }

@@ -27,6 +27,42 @@
     {
       "id": "seamlessores:blackstone_ruby_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silents_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_silents_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silents_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_sapphire_schist_ruby_ore",
+      "required": false
     }
   ]
 }

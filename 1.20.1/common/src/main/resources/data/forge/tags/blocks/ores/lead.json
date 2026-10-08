@@ -21,6 +21,46 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_ie_lead_ore",
       "required": false
     },
@@ -78,6 +118,66 @@
     },
     {
       "id": "seamlessores:dripstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_oreganized_lead_ore",
       "required": false
     }
   ]

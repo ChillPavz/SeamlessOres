@@ -19,6 +19,26 @@
     {
       "id": "seamlessores:dripstone_adamantite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_adamantite_ore",
+      "required": false
     }
   ]
 }

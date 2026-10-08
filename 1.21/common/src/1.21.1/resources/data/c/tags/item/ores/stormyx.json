@@ -3,6 +3,10 @@
     {
       "id": "seamlessores:basalt_stormyx_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_stormyx_ore",
+      "required": false
     }
   ]
 }

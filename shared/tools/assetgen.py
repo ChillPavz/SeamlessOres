@@ -150,34 +150,42 @@ def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=Non
     return model
 
 
-LOOKS = ("single", "column", "mirrored_turned", "textures4")
+LOOKS = ("single", "column", "turned", "mirrored_turned", "textures4")
 
 
-def look_models(name, look, side, end, overlay, overlay_end, render_type=None):
+def look_models(name, look, side, end, overlay, overlay_end, render_type=None, overlays=None):
     """(blockstate, {model file name: model}) for one variant in a host of the given look.
 
     single / column: one model (a column's end faces are just another texture).
+    turned: the host picks itself as is or turned 180 (Meadow's limestone on 1.20.1); one model, turned
+    in the blockstate, which turns the ore with it.
     mirrored_turned: the host picks among itself mirrored and turned (Wilder Wild's gabbro), so ours
     does the same, or a vein shows as the one tile that never turns.
     textures4: the host picks one of four natural textures per block (Create's strata); ours picks the
     same way. The item points at the plain model, which is the first texture.
+    overlays: {model suffix: (overlay, overlay_end)} where each model needs its own (a translucent ore,
+    precomposited over the rock that model shows); otherwise every model takes overlay and overlay_end.
     Redstone needs no lit variant: vanilla's own redstone_ore blockstate is a single model too, the lit
     state only changes light emission.
     """
     base = f"{MOD_ID}:block/{name}"
 
-    def model(s, e, mirrored=False):
-        return block_model(s, e, overlay, overlay_end, mirrored=mirrored, render_type=render_type)
+    def model(s, e, mirrored=False, suffix=""):
+        o, oe = overlays[suffix] if overlays else (overlay, overlay_end)
+        return block_model(s, e, o, oe, mirrored=mirrored, render_type=render_type)
 
     if look in ("single", "column"):
         return {"variants": {"": {"model": base}}}, {name: model(side, end)}
+    if look == "turned":
+        return {"variants": {"": [{"model": base}, {"model": base, "y": 180}]}}, {name: model(side, end)}
     if look == "mirrored_turned":
         state = {"variants": {"": [{"model": base}, {"model": base + "_mirrored"},
                                    {"model": base, "y": 180}, {"model": base + "_mirrored", "y": 180}]}}
-        return state, {name: model(side, end), f"{name}_mirrored": model(side, end, mirrored=True)}
+        return state, {name: model(side, end),
+                       f"{name}_mirrored": model(side, end, mirrored=True, suffix="_mirrored")}
     if look == "textures4":
         state = {"variants": {"": [{"model": f"{base}_{i}"} for i in range(4)]}}
-        models = {f"{name}_{i}": model(f"{side}{i}", f"{end}{i}") for i in range(4)}
+        models = {f"{name}_{i}": model(f"{side}{i}", f"{end}{i}", suffix=f"_{i}") for i in range(4)}
         models[name] = model(f"{side}0", f"{end}0")
         return state, models
     sys.exit(f"{name}: unknown look {look}")

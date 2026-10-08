@@ -21,6 +21,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_viridite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_topaz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_silents_topaz_ore",
       "required": false
     },
@@ -38,6 +54,14 @@
     },
     {
       "id": "seamlessores:dripstone_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_topaz_ore",
       "required": false
     }
   ]

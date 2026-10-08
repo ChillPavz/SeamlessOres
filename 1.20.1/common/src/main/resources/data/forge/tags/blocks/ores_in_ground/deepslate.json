@@ -383,6 +383,414 @@
     {
       "id": "seamlessores:tuff_water_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mi_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mi_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_turquoise_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_water_stone_ore",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_techreborn_tin_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_techreborn_tin_ore",
+        "y": 180
+      }
+    ]
+  }
+}

@@ -4,6 +4,14 @@
     "seamlessores:diorite_diamond_ore",
     "seamlessores:andesite_diamond_ore",
     "seamlessores:tuff_diamond_ore",
-    "seamlessores:dripstone_diamond_ore"
+    "seamlessores:dripstone_diamond_ore",
+    {
+      "id": "seamlessores:blockus_viridite_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_diamond_ore",
+      "required": false
+    }
   ]
 }

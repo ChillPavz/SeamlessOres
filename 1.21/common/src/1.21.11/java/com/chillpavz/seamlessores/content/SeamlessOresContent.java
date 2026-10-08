@@ -19,6 +19,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
+import java.util.function.Supplier;
 
 /**
  * The declaration table and the block/item factories built from it.
@@ -150,12 +151,29 @@ public final class SeamlessOresContent {
             ResourceKey.create(Registries.CREATIVE_MODE_TAB,
                     Identifier.fromNamespaceAndPath(Constants.MOD_ID, "ores"));
 
-    public static void registerCreativeTab(BiConsumer<Identifier, CreativeModeTab> sink) {
-        final CreativeModeTab tab = CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
-                .title(Component.translatable("itemGroup." + Constants.MOD_ID + ".ores"))
-                .icon(SeamlessOresContent::tabIcon)
+    public static final ResourceKey<CreativeModeTab> MODDED_TAB =
+            ResourceKey.create(Registries.CREATIVE_MODE_TAB,
+                    Identifier.fromNamespaceAndPath(Constants.MOD_ID, "modded_stones"));
+
+    /**
+     * Registers the Vanilla Stones tab, and the Modded Stones one while a stone mod is installed: decided
+     * by the mod set alone, so client and server agree.
+     */
+    public static void registerCreativeTabs(BiConsumer<Identifier, CreativeModeTab> sink) {
+        sink.accept(TAB.identifier(), tab("ores", SeamlessOresContent::tabIcon));
+        if (VARIANTS.stream().anyMatch(variant -> !variant.host().vanillaRock())) {
+            sink.accept(MODDED_TAB.identifier(), tab("modded_stones", () -> {
+                final List<Item> items = creativeTabItems(MODDED_TAB);
+                return items.isEmpty() ? ItemStack.EMPTY : new ItemStack(items.get(0));
+            }));
+        }
+    }
+
+    private static CreativeModeTab tab(String name, Supplier<ItemStack> icon) {
+        return CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
+                .title(Component.translatable("itemGroup." + Constants.MOD_ID + "." + name))
+                .icon(icon)
                 .build();
-        sink.accept(TAB.identifier(), tab);
     }
 
     private static ItemStack tabIcon() {
@@ -171,15 +189,21 @@ public final class SeamlessOresContent {
     }
 
     /**
-     * Items in creative-tab order, <b>grouped by the mod they belong to</b>.
+     * One tab's items in creative-tab order, <b>grouped by the mod the ore belongs to</b>.
      *
      * <p>Registration order is host-major, which interleaves every mod's ores and makes 295 items
      * unreadable. Here vanilla comes first, then each mod's ores together in one run, so it is
      * obvious at a glance which ore came from where. Sorting only the display order leaves
      * registration untouched.
      */
-    public static List<Item> creativeTabItems() {
-        final List<Map.Entry<OreVariant, Item>> entries = new ArrayList<>(ITEMS.entrySet());
+    public static List<Item> creativeTabItems(ResourceKey<CreativeModeTab> tab) {
+        final boolean vanillaRock = tab.equals(TAB);
+        final List<Map.Entry<OreVariant, Item>> entries = new ArrayList<>();
+        for (Map.Entry<OreVariant, Item> e : ITEMS.entrySet()) {
+            if (e.getKey().host().vanillaRock() == vanillaRock) {
+                entries.add(e);
+            }
+        }
         final List<OreType> oreOrder = OreType.ALL;
         final List<HostStone> hostOrder = HostStone.ALL;
         entries.sort(Comparator

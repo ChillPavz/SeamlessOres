@@ -7,6 +7,10 @@
     {
       "id": "seamlessores:blackstone_sphalerite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_sphalerite_ore",
+      "required": false
     }
   ]
 }

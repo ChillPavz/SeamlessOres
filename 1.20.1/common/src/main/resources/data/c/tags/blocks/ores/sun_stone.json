@@ -19,6 +19,94 @@
     {
       "id": "seamlessores:dripstone_sun_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_sun_stone_ore",
+      "required": false
     }
   ]
 }

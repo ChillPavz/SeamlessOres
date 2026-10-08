@@ -19,6 +19,18 @@
     {
       "id": "seamlessores:dripstone_lithium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_lithium_ore",
+      "required": false
     }
   ]
 }

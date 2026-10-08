@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/tfmg_galena_ice_stone_ore_0"
+      },
+      {
+        "model": "seamlessores:block/tfmg_galena_ice_stone_ore_1"
+      },
+      {
+        "model": "seamlessores:block/tfmg_galena_ice_stone_ore_2"
+      },
+      {
+        "model": "seamlessores:block/tfmg_galena_ice_stone_ore_3"
+      }
+    ]
+  }
+}

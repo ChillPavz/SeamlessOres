@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_inferium_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_inferium_ore",
+        "y": 180
+      }
+    ]
+  }
+}

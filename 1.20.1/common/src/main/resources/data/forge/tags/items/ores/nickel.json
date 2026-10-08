@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_ie_nickel_ore",
       "required": false
     },

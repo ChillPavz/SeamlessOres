@@ -19,6 +19,38 @@
     {
       "id": "seamlessores:dripstone_tungsten_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_tungsten_ore",
+      "required": false
     }
   ]
 }

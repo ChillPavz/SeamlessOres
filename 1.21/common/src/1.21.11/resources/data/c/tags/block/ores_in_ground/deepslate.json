@@ -207,6 +207,146 @@
     {
       "id": "seamlessores:tuff_opal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_gleaming_ore",
+      "required": false
     }
   ]
 }

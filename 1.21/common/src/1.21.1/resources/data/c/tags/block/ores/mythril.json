@@ -19,6 +19,34 @@
     {
       "id": "seamlessores:dripstone_mythril_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythril_ore",
+      "required": false
     }
   ]
 }

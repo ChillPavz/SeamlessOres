@@ -21,6 +21,62 @@
       "required": false
     },
     "seamlessores:basalt_quartz_ore",
-    "seamlessores:blackstone_quartz_ore"
+    "seamlessores:blackstone_quartz_ore",
+    {
+      "id": "seamlessores:create_limestone_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_natural_quartz_ore",
+      "required": false
+    }
   ]
 }

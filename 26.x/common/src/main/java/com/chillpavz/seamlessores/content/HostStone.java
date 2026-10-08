@@ -279,7 +279,7 @@ public final class HostStone {
     public boolean present() {
         return placedBy == null
                 ? BuiltInRegistries.BLOCK.containsKey(id)
-                : Services.PLATFORM.isModLoaded(placedBy);
+                : Services.PLATFORM.isModLoaded(placedBy) && ModdedPairs.shipsHere(placedBy);
     }
 
     /**

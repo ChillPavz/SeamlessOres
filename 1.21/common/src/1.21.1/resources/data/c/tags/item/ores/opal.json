@@ -19,6 +19,18 @@
     {
       "id": "seamlessores:dripstone_opal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_opal_ore",
+      "required": false
     }
   ]
 }

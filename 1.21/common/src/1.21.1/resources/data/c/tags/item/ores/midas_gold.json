@@ -7,6 +7,10 @@
     {
       "id": "seamlessores:blackstone_midas_gold_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_midas_gold_ore",
+      "required": false
     }
   ]
 }

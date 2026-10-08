@@ -1,9 +1,11 @@
 package com.chillpavz.seamlessores.content;
 
 import com.chillpavz.seamlessores.Constants;
+import com.chillpavz.seamlessores.platform.Services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Which other mods' ores each stone swallows, as measured by the pair model: every ore that reaches the
@@ -19,7 +21,43 @@ final class ModdedPairs {
     /** The modded ores the stone with this id swallows; none for a stone with no modded pairs. */
     static List<OreType> of(String host) {
         return switch (host) {
+            case "blockus:bluestone" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "orichalcum", "gleaming");
+            case "blockus:limestone" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "starrite", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "blockus:marble" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "blockus:viridite" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "orichalcum", "gleaming");
+            case "create:asurine" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "create:crimsite" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "create:limestone" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "create:ochrum" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "create:scorchia" -> keys("ruby", "sapphire", "nether_banglum", "midas_gold", "palladium", "stormyx");
+            case "create:scoria" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "ruby", "sapphire", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "nether_banglum", "midas_gold", "palladium", "stormyx", "energized_tin", "gleaming");
+            case "create:veridium" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "minecraft:calcite" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "minecraft:dripstone_block" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "minecraft:smooth_basalt" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "ruby", "sapphire", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "nether_banglum", "midas_gold", "palladium", "stormyx", "energized_tin", "gleaming");
+            case "promenade:asphalt" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "starrite", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "promenade:blunite" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "starrite", "tin", "orichalcum", "energized_tin", "gleaming");
+            case "wilderwild:gabbro" -> keys("necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
             default -> List.of();
+        };
+    }
+
+    /**
+     * Whether this loader carries the loot of the stones that mod places. The generator writes a placed
+     * stone's tables only to the loaders the mod ships for, so on any other one (a build that appeared
+     * later, a port on one platform only) its variants would drop nothing: there the stone gets none, and
+     * the ore in it keeps its own look.
+     */
+    static boolean shipsHere(String mod) {
+        final String here = Services.PLATFORM.getPlatformName().toLowerCase(Locale.ROOT);
+        return switch (mod) {
+            // BEGIN GENERATED stone loaders (tools/generate_assets.py, from its loot routing)
+            case "blockus" -> here.equals("fabric");
+            case "create" -> here.equals("fabric");
+            case "promenade" -> here.equals("fabric");
+            case "wilderwild" -> here.equals("fabric");
+            // END GENERATED stone loaders
+            default -> false;
         };
     }
 

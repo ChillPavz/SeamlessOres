@@ -21,6 +21,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
+import java.util.List;
+
 public class SeamlessOresFabric implements ModInitializer {
 
     @Override
@@ -33,7 +35,7 @@ public class SeamlessOresFabric implements ModInitializer {
 
         SeamlessOresContent.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
         SeamlessOresContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
-        SeamlessOresContent.registerCreativeTab(
+        SeamlessOresContent.registerCreativeTabs(
                 (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
         BastionSafeOreFeature.register((id, feature) ->
@@ -60,11 +62,14 @@ public class SeamlessOresFabric implements ModInitializer {
         // modifyEntriesEvent is the pre-26.1 spelling; it became creativetab.v1.CreativeModeTabEvents
         // / modifyOutputEvent at 26.1. FabricItemGroupEntries implements CreativeModeTab.Output, so
         // the body is unchanged.
-        ItemGroupEvents.modifyEntriesEvent(SeamlessOresContent.TAB).register(output -> {
-            for (var item : SeamlessOresContent.creativeTabItems()) {
-                output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            }
-        });
+        // Two tabs: the game's own rock, and the stones other mods add (registered only with one).
+        for (var tab : List.of(SeamlessOresContent.TAB, SeamlessOresContent.MODDED_TAB)) {
+            ItemGroupEvents.modifyEntriesEvent(tab).register(output -> {
+                for (var item : SeamlessOresContent.creativeTabItems(tab)) {
+                    output.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+                }
+            });
+        }
 
         // Worldgen registries are datapack-loaded per world, so the injection has to happen once the
         // server exists and before any chunk is generated.

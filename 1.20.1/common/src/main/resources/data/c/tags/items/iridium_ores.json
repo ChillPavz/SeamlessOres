@@ -39,6 +39,30 @@
     {
       "id": "seamlessores:dripstone_mi_iridium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mi_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mi_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_iridium_ore",
+      "required": false
     }
   ]
 }

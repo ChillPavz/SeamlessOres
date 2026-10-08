@@ -55,6 +55,86 @@
     {
       "id": "seamlessores:dripstone_mi_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_mi_tin_ore",
+      "required": false
     }
   ]
 }

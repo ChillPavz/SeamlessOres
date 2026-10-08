@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_iceandfire_silver_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_iceandfire_silver_ore",
+        "y": 180
+      }
+    ]
+  }
+}

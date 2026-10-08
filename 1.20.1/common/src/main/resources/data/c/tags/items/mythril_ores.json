@@ -19,6 +19,74 @@
     {
       "id": "seamlessores:dripstone_mythril_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythril_ore",
+      "required": false
     }
   ]
 }

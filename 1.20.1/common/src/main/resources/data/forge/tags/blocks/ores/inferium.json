@@ -19,6 +19,66 @@
     {
       "id": "seamlessores:dripstone_inferium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_calcite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_inferium_ore",
+      "required": false
     }
   ]
 }

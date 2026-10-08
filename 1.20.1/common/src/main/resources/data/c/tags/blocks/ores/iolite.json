@@ -27,6 +27,14 @@
     {
       "id": "seamlessores:blackstone_iolite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_iolite_ore",
+      "required": false
     }
   ]
 }

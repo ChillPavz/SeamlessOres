@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_techreborn_bauxite_ore"
+      },
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_techreborn_bauxite_ore_mirrored"
+      },
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_techreborn_bauxite_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_techreborn_bauxite_ore_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}
