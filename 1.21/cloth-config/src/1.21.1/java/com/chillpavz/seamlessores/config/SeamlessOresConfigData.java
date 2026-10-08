@@ -215,6 +215,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean immersiveEngineering = true;
 
+    // --- Malum ----------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("malum")
+    @ConfigEntry.Gui.Tooltip
+    public boolean malum = true;
+
     // --- Mekanism -------------------------------------------------------------------------------
 
     @ConfigEntry.Category("mekanism")
@@ -350,6 +356,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.immersiveEngineering = immersiveEngineering;
         values.mekanism = mekanism;
         values.oreganized = oreganized;
+        values.malum = malum;
         values.extremeReactors = extremeReactors;
         values.mysticalAgriculture = mysticalAgriculture;
         values.things = things;

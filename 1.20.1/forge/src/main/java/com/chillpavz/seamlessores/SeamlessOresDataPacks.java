@@ -65,7 +65,7 @@ public final class SeamlessOresDataPacks {
             "create", "create_new_age", "tfmg", "energizedpower",
             "mythicupgrades", "powah", "silentgear", "silentgems", "iceandfire",
             "occultism", "bigreactors", "mysticalagriculture", "cobblemon", "densemekanism",
-            "immersiveengineering", "mekanism", "oreganized");
+            "immersiveengineering", "mekanism", "oreganized", "malum");
 
     public static void addPackFinders(AddPackFindersEvent event) {
         if (event.getPackType() != PackType.SERVER_DATA) {

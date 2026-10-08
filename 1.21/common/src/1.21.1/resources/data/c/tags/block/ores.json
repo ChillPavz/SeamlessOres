@@ -37,6 +37,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_brilliance_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_carmot_ore",
       "required": false
     },
@@ -232,6 +236,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_natural_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_necoium_ore",
       "required": false
     },
@@ -334,6 +342,10 @@
     },
     {
       "id": "seamlessores:andesite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_soulstone_ore",
       "required": false
     },
     {
@@ -449,6 +461,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_blazing_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_carnelian_ore",
       "required": false
     },
@@ -524,6 +540,10 @@
     },
     {
       "id": "seamlessores:blackstone_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_blazing_quartz_ore",
       "required": false
     },
     {
@@ -618,6 +638,10 @@
     },
     {
       "id": "seamlessores:diorite_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_brilliance_ore",
       "required": false
     },
     {
@@ -816,6 +840,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_natural_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_necoium_ore",
       "required": false
     },
@@ -918,6 +946,10 @@
     },
     {
       "id": "seamlessores:diorite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_soulstone_ore",
       "required": false
     },
     {
@@ -1050,6 +1082,10 @@
     },
     {
       "id": "seamlessores:dripstone_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_brilliance_ore",
       "required": false
     },
     {
@@ -1243,6 +1279,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_natural_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_necoium_ore",
       "required": false
     },
@@ -1345,6 +1385,10 @@
     },
     {
       "id": "seamlessores:dripstone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_soulstone_ore",
       "required": false
     },
     {
@@ -1477,6 +1521,10 @@
     },
     {
       "id": "seamlessores:granite_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_brilliance_ore",
       "required": false
     },
     {
@@ -1675,6 +1723,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_natural_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_necoium_ore",
       "required": false
     },
@@ -1777,6 +1829,10 @@
     },
     {
       "id": "seamlessores:granite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_soulstone_ore",
       "required": false
     },
     {
@@ -1901,6 +1957,10 @@
     },
     {
       "id": "seamlessores:tuff_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_brilliance_ore",
       "required": false
     },
     {
@@ -2091,6 +2151,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_natural_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_necoium_ore",
       "required": false
     },
@@ -2173,6 +2237,10 @@
     },
     {
       "id": "seamlessores:tuff_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_soulstone_ore",
       "required": false
     },
     {

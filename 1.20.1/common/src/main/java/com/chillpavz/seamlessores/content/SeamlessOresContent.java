@@ -205,6 +205,12 @@ public final class SeamlessOresContent {
         // Only the map colour (and, in the block, the sound) follows the HOST stone - vanilla varies
         // those by host rock too (deepslate ores use MapColor.DEEPSLATE), and they have no balance effect.
         properties.mapColor(variant.host().mapColor());
+        // Light follows the ORE. A vanilla ore's copy carries its own; the vanilla block a modded ore
+        // copies does not glow, so an ore that does (Malum's blazing quartz) sets it here.
+        final int light = variant.ore().lightEmission();
+        if (light > 0) {
+            properties.lightLevel(state -> light);
+        }
 
         return variant.ore().redstoneLike()
                 ? new HostedRedStoneOreBlock(variant.host(), properties)

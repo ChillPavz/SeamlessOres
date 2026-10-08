@@ -139,8 +139,13 @@ OREGANIZED_JAR = jar("1.20.1-Oreganized-4.3.2.jar", "OREGANIZED_JAR")
 # forge:ores/<x>. Read for tags only, so the variants join both shapes; loot is identical in the two.
 OREGANIZED_FABRIC_JAR = jar("1.20.1-Oreganized-fabric-2.0.3.jar", "OREGANIZED_FABRIC_JAR")
 # Jars read for ore tags only, beside MOD_JARS: a mod whose two loader builds tag differently.
-TAG_ONLY_JARS = [OREGANIZED_FABRIC_JAR]
+MALUM_FABRIC_JAR = jar("malum-1.20.1-1.6.3.0b-fabric.jar", "MALUM_FABRIC_JAR")
+TAG_ONLY_JARS = [OREGANIZED_FABRIC_JAR, MALUM_FABRIC_JAR]
+# Malum (Sammy Semicolon). Its jar says All Rights Reserved; the ore art is used with SammySemicolon's
+# permission (8 Oct 2026), credited with a link as Immersive Engineering is.
+MALUM_JAR = jar("malum-1.20.1-1.6.7.jar", "MALUM_JAR")
 MOD_JARS = {"oreganized": OREGANIZED_JAR,
+            "malum": MALUM_JAR,
             "create_new_age": CREATE_NEW_AGE_JAR,
             "mekanism": MEKANISM_JAR,
             "immersiveengineering": IMMERSIVE_ENGINEERING_JAR,
@@ -272,6 +277,10 @@ MODS = {
                        "licence": "Blu's License of Common Sense",
                        "author": "BluSunrize, Damien A.W. Hazard",
                        "link": "https://modrinth.com/mod/immersiveengineering"},
+    "malum":          {"display": "Malum",             "category": "malum",
+                       "licence": "All Rights Reserved, used with permission",
+                       "author": "Sammy Semicolon",
+                       "link": "https://modrinth.com/mod/malum"},
     "oreganized":     {"display": "Oreganized",        "category": "oreganized",
                        "licence": "MIT code, assets All Rights Reserved",
                        "author": "Team Galena",
@@ -720,6 +729,23 @@ ORE_DEFS = [
     {"name": "oreganized_silver", "overlay": "oreganized_silver", "source": "silver_ore", "base": "stone",
      "mod": "oreganized",
      "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    # Malum (NeoForge at 1.21.1; Forge and Fabric at 1.20.1). Soulstone, natural quartz and brilliance
+    # sit on the vanilla replaceables tags and blazing quartz on base_stone_nether, so every host is a
+    # restyle. Natural quartz's deepslate form is deepslate_quartz_ore, and brilliance's blocks are
+    # brilliant_stone / brilliant_deepslate. The overlays are the owner's (brilliant and blazing_quartz
+    # are the ores' own glow layers). No cthonic gold: see OreType.
+    {"name": "soulstone", "overlay": "soulstone", "source": "soulstone_ore", "base": "stone",
+     "mod": "malum", "texture_dir": "ores",
+     "tiers": {"stone": "soulstone_ore", "deepslate": "deepslate_soulstone_ore"}},
+    {"name": "natural_quartz", "overlay": "natural_quartz", "source": "natural_quartz_ore", "base": "stone",
+     "mod": "malum", "texture_dir": "ores",
+     "tiers": {"stone": "natural_quartz_ore", "deepslate": "deepslate_quartz_ore"}},
+    {"name": "brilliance", "overlay": "brilliant", "source": "brilliant_stone", "base": "stone",
+     "mod": "malum", "texture_dir": "ores",
+     "tiers": {"stone": "brilliant_stone", "deepslate": "brilliant_deepslate"}},
+    {"name": "blazing_quartz", "overlay": "blazing_quartz", "source": "blazing_quartz_ore", "base": "netherrack",
+     "mod": "malum", "texture_dir": "ores",
+     "tiers": {"nether": "blazing_quartz_ore"}},
     # Nether ores that ADD ore: each targets netherrack only (benitoite through forge:netherrack, which
     # holds netherrack alone), so basalt and blackstone variants put ore where the mod places none.
     # Behind that mod's own nether switch, and thinned by the same netherOreRarity / netherVeinSize
@@ -862,6 +888,8 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     # Oreganized, queried per version on the Modrinth API (2 Oct 2026): Forge 1.20.1, Fabric and
     # Quilt 1.20.1 (Modrinth only), NeoForge 1.21.1. Nothing else from 1.20.2 up.
     "oreganized": ("forge", "fabric"),
+    # Malum, on both platforms (Modrinth and CurseForge agree): Forge and Fabric 1.20.1, NeoForge 1.21.1.
+    "malum": ("forge", "fabric"),
     "mekanism": ("forge",),
     "cobblemon": ("fabric", "forge"),
 }
@@ -1031,6 +1059,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.immersive_engineering": "Immersive Engineering",
         f"text.autoconfig.{MOD_ID}.category.oreganized": "Oreganized",
+        f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
 
@@ -1259,6 +1288,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[2]":
             "Turn off to leave the Nether exactly as Extreme Reactors generates it.",
 
+        f"text.autoconfig.{MOD_ID}.option.malum": "Malum: variants",
+        f"text.autoconfig.{MOD_ID}.option.malum.@Tooltip":
+            "Generate host-matched soulstone, natural quartz, brilliance and blazing quartz ore."
+            " Does nothing unless Malum is installed.",
         f"text.autoconfig.{MOD_ID}.option.oreganized": "Oreganized: variants",
         f"text.autoconfig.{MOD_ID}.option.oreganized.@Tooltip":
             "Generate host-matched lead and silver ore. Does nothing unless Oreganized is installed.",

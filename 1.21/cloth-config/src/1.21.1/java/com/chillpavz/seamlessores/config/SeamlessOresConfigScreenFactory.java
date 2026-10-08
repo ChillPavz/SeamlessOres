@@ -76,6 +76,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("immersiveengineering", "immersive_engineering");
         MOD_CATEGORIES.put("mekanism", "mekanism");
         MOD_CATEGORIES.put("oreganized", "oreganized");
+        MOD_CATEGORIES.put("malum", "malum");
         MOD_CATEGORIES.put("energizedpower", "energized_power");
         MOD_CATEGORIES.put("bigreactors", "extreme_reactors");
         MOD_CATEGORIES.put("modern_industrialization", "modern_industrialization");

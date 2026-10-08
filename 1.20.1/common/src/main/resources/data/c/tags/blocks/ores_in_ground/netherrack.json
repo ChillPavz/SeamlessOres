@@ -55,6 +55,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_blazing_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_cinnabar_ore",
       "required": false
     },
@@ -122,6 +126,10 @@
     },
     {
       "id": "seamlessores:blackstone_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_blazing_quartz_ore",
       "required": false
     },
     {

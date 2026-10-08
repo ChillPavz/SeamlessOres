@@ -597,6 +597,43 @@ public record OreType(String name, String key, String overlay, String deepslateO
     public static final OreType OREGANIZED_LEAD = modded("oreganized_lead", "oreganized", "oreganized", "lead", NONE);
     public static final OreType OREGANIZED_SILVER = modded("oreganized_silver", "oreganized", "oreganized", "silver", NONE);
 
+    // --- Malum, 1.20.1 (Forge 1.6.7 and Fabric 1.6.3.0b) --------------------------------------------------------
+    // Its ore art is used with SammySemicolon's permission (8 Oct 2026; the jar says All Rights
+    // Reserved), credited in the README as Immersive Engineering is. Read from the jars: every feature
+    // below is plain minecraft:ore on the vanilla replaceables tags (blazing quartz on
+    // base_stone_nether), so all of it is a pure restyle. Cthonic gold has NO variant: its own feature
+    // reads its first target to decide whether to grow clusters (see the maintainer notes).
+    // Strength from MalumBlockProperties (stone / deepslate, resistance 3 throughout); no
+    // needs_*_tool tags, so any pickaxe, as the vanilla convention our variants copy.
+    private static OreType malum(String name, String overlay, String stoneId, String deepslateId, IntProvider xp,
+                                 IntProvider deepslateXp) {
+        return ore(name, overlay, null, "malum", of("malum", stoneId), of("malum", deepslateId), null,
+                xp, deepslateXp, false, Set.of());
+    }
+
+    /** Soulstone: the one-argument DropExperienceBlock, so no experience at all (1.21.1 gives 14-18). */
+    public static final OreType MALUM_SOULSTONE =
+            malum("soulstone", "soulstone", "soulstone_ore", "deepslate_soulstone_ore", NONE, null)
+                    .withStrength(5.0F, 3.0F, 7.0F, 3.0F);
+    /** Natural quartz; its deepslate form is deepslate_quartz_ore. One overlay serves both tiers. */
+    public static final OreType MALUM_NATURAL_QUARTZ =
+            malum("natural_quartz", "natural_quartz", "natural_quartz_ore", "deepslate_quartz_ore",
+                    UniformInt.of(1, 4), UniformInt.of(2, 5))
+                    .withStrength(4.0F, 3.0F, 6.0F, 3.0F);
+    /** Brilliance: brilliant_stone and brilliant_deepslate. The overlay is the ore's own glow layer. */
+    public static final OreType MALUM_BRILLIANCE =
+            malum("brilliance", "brilliant", "brilliant_stone", "brilliant_deepslate",
+                    UniformInt.of(14, 18), UniformInt.of(16, 26))
+                    .withStrength(3.0F, 3.0F, 5.0F, 3.0F);
+    /**
+     * Blazing quartz: Nether only, and its feature already targets base_stone_nether, so basalt and
+     * blackstone are a restyle like the overworld hosts (no ore added). Light 6, as the ore.
+     */
+    public static final OreType MALUM_BLAZING_QUARTZ =
+            ore("blazing_quartz", "blazing_quartz", null, "malum", null, null, of("malum", "blazing_quartz_ore"),
+                    UniformInt.of(4, 7), null, false, Set.of())
+                    .withStrength(3.0F, 3.0F);
+
     // --- Nether ores that ADD ore (Sept 2026) -----------------------------------------------------
     // Each targets netherrack only, so basalt and blackstone variants put ore where the mod places
     // none. Behind the owning mod's own nether switch and thinned by netherOreRarity, like our gold
@@ -664,6 +701,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     IE_ALUMINUM, IE_LEAD, IE_NICKEL, IE_SILVER, IE_URANIUM,
                     MEK_FLUORITE, MEK_LEAD, MEK_OSMIUM, MEK_TIN, MEK_URANIUM,
                     OREGANIZED_LEAD, OREGANIZED_SILVER,
+                    MALUM_SOULSTONE, MALUM_NATURAL_QUARTZ, MALUM_BRILLIANCE, MALUM_BLAZING_QUARTZ,
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, BENITOITE,
                     CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE,
                     CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE);
@@ -724,6 +762,15 @@ public record OreType(String name, String key, String overlay, String deepslateO
     }
 
     private static final Set<String> KEEPS_BEHAVIOUR = Set.of("banglum", "nether_banglum");
+
+    // Block light the counterpart ore emits, by name: Malum's blazing quartz (6). Cobblemon 1.5.2's ores
+    // emit none at this version (its evolutionStoneOre helper takes no light level here).
+    private static final Map<String, Integer> LIGHT = Map.of("blazing_quartz", 6);
+
+    /** Block light the counterpart ore emits: 0 for almost every ore, and the same on every tier. */
+    public int lightEmission() {
+        return LIGHT.getOrDefault(name, 0);
+    }
 
     /** Experience for this host, honouring a per-tier override. */
     public IntProvider xpFor(HostStone host) {

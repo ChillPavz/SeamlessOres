@@ -341,6 +341,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_brilliance_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_dawn_stone_ore",
       "required": false
     },

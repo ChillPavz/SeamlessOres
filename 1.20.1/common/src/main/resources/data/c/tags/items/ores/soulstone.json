@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_soulstone_ore",
+      "required": false
+    }
+  ]
+}

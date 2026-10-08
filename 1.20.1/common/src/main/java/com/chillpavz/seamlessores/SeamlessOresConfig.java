@@ -155,6 +155,10 @@ public final class SeamlessOresConfig {
      * tags, so no ore is added anywhere. */
     public static boolean oreganized = true;
 
+    /** Whether Malum variants generate. Pure restyle: its ores sit on the replaceables tags and blazing
+     * quartz on base_stone_nether, so no ore is added anywhere. */
+    public static boolean malum = true;
+
     /** Whether Extreme Reactors variants generate. Pure restyle. */
     public static boolean extremeReactors = true;
 
@@ -221,6 +225,7 @@ public final class SeamlessOresConfig {
             case "immersiveengineering" -> immersiveEngineering;
             case "mekanism" -> mekanism;
             case "oreganized" -> oreganized;
+            case "malum" -> malum;
             case "bigreactors" -> netherHost ? extremeReactorsNether : extremeReactors;
             case "cobblemon" -> netherHost ? cobblemonNether : cobblemon;
             case "mysticalagriculture" -> mysticalAgriculture;
@@ -412,6 +417,7 @@ public final class SeamlessOresConfig {
         public boolean immersiveEngineering = true;
         public boolean mekanism = true;
         public boolean oreganized = true;
+        public boolean malum = true;
         public boolean extremeReactors = true;
         public boolean extremeReactorsNether = true;
         public boolean cobblemon = true;
@@ -473,6 +479,7 @@ public final class SeamlessOresConfig {
         immersiveEngineering = values.immersiveEngineering;
         mekanism = values.mekanism;
         oreganized = values.oreganized;
+        malum = values.malum;
         extremeReactors = values.extremeReactors;
         extremeReactorsNether = values.extremeReactorsNether;
         cobblemon = values.cobblemon;

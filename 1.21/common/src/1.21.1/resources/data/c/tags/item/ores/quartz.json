@@ -1,5 +1,25 @@
 {
   "values": [
+    {
+      "id": "seamlessores:granite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_natural_quartz_ore",
+      "required": false
+    },
     "seamlessores:basalt_quartz_ore",
     "seamlessores:blackstone_quartz_ore"
   ]
