@@ -48,11 +48,13 @@ configurations {
 // Code and resources that are identical in every band live once, in the repository's shared/ folder.
 sourceSets.main.java.srcDir('../../shared/java')
 sourceSets.main.resources.srcDir('../../shared/resources')
+// The narrower shared folders: shared/loaders, shared/eras and this toolchain's <a>+<b> groups.
+apply from: '../../shared/gradle/shared-sources.gradle'
 
 artifacts {
     // Every source folder, the era one and shared/ included: the loaders compile common's sources themselves.
-    sourceSets.main.java.srcDirs.each { commonJava it }
-    sourceSets.main.resources.srcDirs.each { commonResources it }
+    sourceSets.main.java.srcDirs.findAll { it.exists() }.each { commonJava it }
+    sourceSets.main.resources.srcDirs.findAll { it.exists() }.each { commonResources it }
 }
 
 // The ore overlays, from shared/textures: only those this band's models name.

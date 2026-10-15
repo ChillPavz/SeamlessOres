@@ -2,6 +2,9 @@ plugins {
     id 'multiloader-loader'
     id 'net.neoforged.moddev.legacyforge'
 }
+// The shared folders this loader takes in this band: shared/loaders, shared/eras and this
+// toolchain's <a>+<b> groups.
+apply from: '../../shared/gradle/shared-sources.gradle'
 
 // Mixin: common's config, with a refmap. Classic Forge 1.20.1 runs on SRG member names, so a mixin
 // written in Mojang names only finds its target through the refmap the annotation processor writes

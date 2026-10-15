@@ -3,6 +3,9 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0.46,6.2)'
     id 'idea'
 }
+// The shared folders this loader takes in this band: shared/loaders, shared/eras and this
+// toolchain's <a>+<b> groups.
+apply from: '../../shared/gradle/shared-sources.gradle'
 base {
     // The template used mod_name here, which puts spaces in the jar filename; mod_id matches what
     // multiloader-common gives the other modules.

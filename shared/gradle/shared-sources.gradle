@@ -1,0 +1,39 @@
+// The shared source folders that belong to this module in this band, added as source folders.
+//
+// shared/java and shared/resources hold what every band and every loader ships; common adds them
+// itself. This script adds the narrower ones, each byte-identical in every band it names:
+//   shared/loaders/<loader>/{java,resources}         every band of that loader (fabric, forge, neoforge)
+//   shared/loaders/<a>+<b>/{java,resources}          every band of both loaders (forge+neoforge)
+//   shared/eras/<bands>/<module>/{java,resources}    only the bands named, joined by '+'
+//   <toolchain>/<a>+<b>/src/<main|era>/{java,resources}   several loaders of ONE toolchain folder
+// An era folder is named by exact bands only (1.20.1, 1.21.1, 1.21.4, 1.21.11, 26.x), never by a
+// toolchain folder. A module folder may name several modules the same way (fabric+forge).
+//
+// Applied by every module's build.gradle, after the band's own era folders. Plain Groovy, so it
+// runs on every Gradle in the repository.
+
+def prop = { String key -> project.hasProperty(key) ? project.property(key).toString() : null }
+def band = prop('version_band') ?: prop('minecraft_version_label') ?: prop('minecraft_version')
+def module = project.name
+def shared = rootProject.file('../shared')
+
+def names = { File dir -> dir.name.split('\\+') as List }
+def forModule = { File dir -> names(dir).contains(module) }
+def subdirs = { File parent -> (parent.listFiles() ?: []).findAll { it.isDirectory() }.sort { it.name } }
+
+def dirs = []
+if (module != 'common') {
+    subdirs(new File(shared, 'loaders')).findAll(forModule).each { dirs << it }
+}
+subdirs(new File(shared, 'eras')).findAll { names(it).contains(band) }.each { era ->
+    subdirs(era).findAll(forModule).each { dirs << it }
+}
+// A toolchain folder's own <a>+<b> module groups: src/main, and the era folders that name this band.
+subdirs(rootProject.projectDir).findAll { it.name.contains('+') && forModule(it) }.each { group ->
+    subdirs(new File(group, 'src')).findAll { it.name == 'main' || names(it).contains(band) }.each { dirs << it }
+}
+
+dirs.each { dir ->
+    sourceSets.main.java.srcDir(new File(dir, 'java'))
+    sourceSets.main.resources.srcDir(new File(dir, 'resources'))
+}

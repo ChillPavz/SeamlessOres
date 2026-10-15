@@ -2,6 +2,9 @@ plugins {
     id 'multiloader-loader'
     id 'net.neoforged.moddev'
 }
+// The shared folders this loader takes in this band: shared/loaders, shared/eras and this
+// toolchain's <a>+<b> groups.
+apply from: '../../shared/gradle/shared-sources.gradle'
 
 repositories {
     maven { url = 'https://maven.shedaniel.me/' }

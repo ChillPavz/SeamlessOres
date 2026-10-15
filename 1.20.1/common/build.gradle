@@ -44,10 +44,12 @@ configurations {
 // template's sourceDirectories.singleFile throws once there are two.
 sourceSets.main.java.srcDir('../../shared/java')
 sourceSets.main.resources.srcDir('../../shared/resources')
+// The narrower shared folders: shared/loaders, shared/eras and this toolchain's <a>+<b> groups.
+apply from: '../../shared/gradle/shared-sources.gradle'
 
 artifacts {
-    sourceSets.main.java.srcDirs.each { commonJava it }
-    sourceSets.main.resources.srcDirs.each { commonResources it }
+    sourceSets.main.java.srcDirs.findAll { it.exists() }.each { commonJava it }
+    sourceSets.main.resources.srcDirs.findAll { it.exists() }.each { commonResources it }
 }
 
 // The ore overlays, from shared/textures: only those this band's models name.
