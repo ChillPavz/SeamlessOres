@@ -67,6 +67,13 @@ public final class SeamlessOresConfig {
      */
     public static boolean sulfurCaves = true;
 
+    /**
+     * Whether the one-time note in chat after an update is shown (client only; see
+     * {@code client.MatrixMessage}). Off for a modpack whose players should not see it. A pack can
+     * also ship the marker file that note writes, {@code config/seamlessores-note.txt}.
+     */
+    public static boolean showUpdateNote = true;
+
     /** The top of the cinnabar amount slider; the veins' data counts are the default times this / 100. */
     public static final int CINNABAR_AMOUNT_MAX = 300;
 
@@ -354,6 +361,7 @@ public final class SeamlessOresConfig {
         public int cinnabarAmount = 100;
         public boolean lushCaves = true;
         public boolean sulfurCaves = true;
+        public boolean showUpdateNote = true;
         public boolean oreVeins = true;
         public boolean geology = false;
         public boolean bastionSafeNether = true;
@@ -408,6 +416,7 @@ public final class SeamlessOresConfig {
         geology = values.geology;
         lushCaves = values.lushCaves;
         sulfurCaves = values.sulfurCaves;
+        showUpdateNote = values.showUpdateNote;
         cinnabarAmount = Math.max(0, Math.min(CINNABAR_AMOUNT_MAX, values.cinnabarAmount));
         bastionSafeNether = values.bastionSafeNether;
         netherOreRarity = values.netherOreRarity;

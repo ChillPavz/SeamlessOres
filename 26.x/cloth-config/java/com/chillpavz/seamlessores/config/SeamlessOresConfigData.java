@@ -351,6 +351,13 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean things = true;
 
+    // --- Client ---------------------------------------------------------------------------------
+    // Last, after the mod tabs: the one setting that is not about worldgen.
+
+    @ConfigEntry.Category("client")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean showUpdateNote = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -376,6 +383,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.cinnabarAmount = cinnabarAmount;
         values.lushCaves = lushCaves;
         values.sulfurCaves = sulfurCaves;
+        values.showUpdateNote = showUpdateNote;
         // BEGIN GENERATED host switches (tools/generate_assets.py, from the host table)
         values.hosts.put("granite", granite);
         values.hosts.put("diorite", diorite);

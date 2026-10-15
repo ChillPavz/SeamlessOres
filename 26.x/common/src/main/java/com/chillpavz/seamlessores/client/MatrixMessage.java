@@ -1,6 +1,7 @@
 package com.chillpavz.seamlessores.client;
 
 import com.chillpavz.seamlessores.Constants;
+import com.chillpavz.seamlessores.SeamlessOresConfig;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
@@ -19,7 +20,7 @@ import java.nio.file.Path;
  *
  * <p>It shows a few seconds after the player enters a world, once on this installation, the first time
  * after updating to the version that merged it (a one-line marker file in the config folder remembers
- * it). Asking players to remove the old Matrix mod is that mod's own red note, on every world load, so
+ * it), unless the config's {@code showUpdateNote} is off. Asking players to remove the old Matrix mod is that mod's own red note, on every world load, so
  * this one never mentions it. Changing {@link #NOTE} makes it show once more to everyone.
  *
  * <p>It goes through {@code LocalPlayer.sendSystemMessage}, which is the same on every 26.x version;
@@ -53,6 +54,9 @@ public final class MatrixMessage {
                 return;
             }
             decided = true;
+            if (!SeamlessOresConfig.showUpdateNote) {
+                return;   // switched off in the config: no note, and no marker written either
+            }
             final Path marker = minecraft.gameDirectory.toPath().resolve("config").resolve(MARKER);
             if (NOTE.equals(readMarker(marker))) {
                 return;

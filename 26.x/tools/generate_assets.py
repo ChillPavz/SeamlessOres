@@ -990,6 +990,12 @@ def generate_json():
             "Ore left bare in a Lush Caves clay floor or moss carpet becomes clay or moss, so a",
         f"text.autoconfig.{MOD_ID}.option.lushCaves.@Tooltip[1]":
             "little ore is removed there. Bone meal on moss works exactly as in vanilla.",
+        f"text.autoconfig.{MOD_ID}.category.client": "Client",
+        f"text.autoconfig.{MOD_ID}.option.showUpdateNote": "One-time update note in chat",
+        f"text.autoconfig.{MOD_ID}.option.showUpdateNote.@Tooltip[0]":
+            "A short note in chat, once, the first time a world is joined after an update that adds",
+        f"text.autoconfig.{MOD_ID}.option.showUpdateNote.@Tooltip[1]":
+            "something new. Turn it off to never see it, for example in a modpack.",
         f"text.autoconfig.{MOD_ID}.option.sulfurCaves": "Sulfur Caves stay bare (removes ore)",
         f"text.autoconfig.{MOD_ID}.option.sulfurCaves.@Tooltip[0]":
             "No ore in or against the sulfur and cinnabar of the Sulfur Caves, including the large",
