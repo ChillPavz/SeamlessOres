@@ -25,10 +25,37 @@ REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 JARS = os.path.join(os.path.dirname(os.path.dirname(REPO)), "Assets", "Jars")
 
 
+_LIBRARY = None
+
+
+def library():
+    """File name -> path for every jar in the library, whatever category folder it is filed in. A
+    folder named `env` holds per-environment copies under fixed names, and a folder whose name starts
+    with a dot is an index of links to the same files; neither is walked."""
+    global _LIBRARY
+    if _LIBRARY is None:
+        found, twice = {}, set()
+        for folder, dirs, files in os.walk(JARS):
+            dirs[:] = [d for d in dirs if d != "env" and not d.startswith(".")]
+            for name in files:
+                if name in found:
+                    twice.add(name)
+                found[name] = os.path.join(folder, name)
+        if twice:
+            sys.exit(f"the jar library holds these names twice: {sorted(twice)}")
+        _LIBRARY = found
+    return _LIBRARY
+
+
 def jar(file_name, env=None):
-    """A jar from the library, or the path in the environment variable `env` when that is set."""
+    """A jar from the library, found by its file name in any of its folders, or the path in the
+    environment variable `env` when that is set. A name the library does not hold is returned as a
+    path in its root, so the miss is reported under that name."""
     override = os.environ.get(env) if env else None
-    return override or os.path.join(JARS, file_name)
+    if override:
+        return override
+    name = os.path.basename(file_name.replace("\\", "/"))
+    return library().get(name) or os.path.join(JARS, file_name)
 
 
 def era_file(module_dir, band, rel):
