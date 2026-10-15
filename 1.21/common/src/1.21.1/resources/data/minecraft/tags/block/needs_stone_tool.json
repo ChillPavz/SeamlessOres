@@ -576,6 +576,42 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_iron_ore",
       "required": false
     },

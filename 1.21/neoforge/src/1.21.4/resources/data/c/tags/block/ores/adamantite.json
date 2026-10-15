@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_adamantite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_bluestone_adamantite_ore",
       "required": false
     },

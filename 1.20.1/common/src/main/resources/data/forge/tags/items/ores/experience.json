@@ -29,6 +29,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_experience_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_experience_ore",
       "required": false
     },

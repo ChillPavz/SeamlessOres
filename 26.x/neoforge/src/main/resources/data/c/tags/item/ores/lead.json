@@ -65,6 +65,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_techreborn_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_techreborn_lead_ore",
       "required": false
     },

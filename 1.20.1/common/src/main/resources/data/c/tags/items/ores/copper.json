@@ -6,6 +6,10 @@
     "seamlessores:tuff_copper_ore",
     "seamlessores:dripstone_copper_ore",
     {
+      "id": "seamlessores:minecraft_blackstone_copper_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_copper_ore",
       "required": false
     },

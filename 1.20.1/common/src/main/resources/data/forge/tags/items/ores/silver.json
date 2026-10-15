@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_silver_ore",
       "required": false
     },
@@ -158,6 +162,22 @@
     },
     {
       "id": "seamlessores:dripstone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_oreganized_silver_ore",
       "required": false
     },
     {

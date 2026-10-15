@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_shiny_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_shiny_stone_ore",
       "required": false
     },

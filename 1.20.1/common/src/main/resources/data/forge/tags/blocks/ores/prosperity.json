@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_prosperity_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_asurine_prosperity_ore",
       "required": false
     },

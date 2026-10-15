@@ -246,6 +246,8 @@ HOST_SINCE = {"minecraft:cinnabar": "26.2"}
 # The mods that PLACE a host stone, for the README and the config screen. Where each exists at 26.x,
 # measured with references/tools/som-grid/availability.py.
 STONE_MODS = {
+    # Deep blackstone: the game's rock, laid by Terralith's caves (the mod or its datapack).
+    "minecraft": {"display": "Terralith", "bands": "its mod or datapack, every 26.x version, both loaders"},
     "blockus": {"display": "Blockus", "bands": "Fabric, 26.1.x to 26.3"},
     "create": {"display": "Create", "bands": "Create Fly, Fabric, 26.1.2 and 26.2"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "NeoForge, 26.1.2"},
@@ -712,6 +714,12 @@ ORE_DEFS = [
      "tiers": {"stone": "opal_ore", "deepslate": "deepslate_opal_ore"}},
 ]
 
+# A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
+# one painted over its stone (placed.translucent_overlays), from the layer the pack's solver recovered.
+for _ore in ORE_DEFS:
+    if _ore["overlay"] == "opal":
+        _ore["translucent"] = os.path.join(os.path.dirname(assetgen.POOL), "layers", "opal_translucent_layer.png")
+
 # Every ore has a KEY, unique across the table: the id part in a stone another mod places (one of those
 # takes both golds: create_scoria_nether_gold_ore) and the geology rule's key. The overlay, unless set.
 # Mirrors OreType.key(). The host table is READ from HostStone.java (shared/tools/placed.py), so the
@@ -764,6 +772,7 @@ def resources_dir():
 # that carry its stone's mod AND its ore's (loot_modules): blockus Fabric only, forbidden_arcanus
 # NeoForge only, promenade (NeoForge from 6.0.0 on 26.3) and wilderwild both (STONE_MODS).
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
+    "minecraft": ("fabric", "neoforge"),   # deep blackstone (Terralith): the game's rock, every loader
     "blockus": ("fabric",),
     "forbidden_arcanus": ("neoforge",),
     "promenade": ("fabric", "neoforge"),
@@ -903,6 +912,12 @@ def generate_json():
         for name in os.listdir(folder) if os.path.isdir(folder) else []:
             if name.endswith(".json"):
                 os.remove(os.path.join(folder, name))
+    # A translucent ore on a host with no hand-made overlay (deep blackstone) gets one painted over that
+    # stone, read from the newest client jar.
+    painted = placed.translucent_overlays(HOSTS, os.path.join(root, "textures", "block"),
+                                          {"minecraft": os.path.expanduser(CLIENT_JARS["26.3"])})
+    if painted:
+        print(f"  {painted} translucent overlays painted over the stones that have none drawn")
 
     models = os.path.join(root, "models", "block")
     for host, host_cfg, ore, _source, _tier in variants():

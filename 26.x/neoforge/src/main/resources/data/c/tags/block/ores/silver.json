@@ -89,6 +89,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_occultism_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_silver_ore",
       "required": false
     },

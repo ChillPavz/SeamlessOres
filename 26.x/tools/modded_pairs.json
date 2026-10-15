@@ -17,6 +17,22 @@
    "strength": null,
    "deepslate_overlay": null
   },
+  "inferium": {
+   "mod": "mysticalagriculture",
+   "seamless_ores_name": "inferium",
+   "forms": [
+    "mysticalagriculture:inferium_ore",
+    "mysticalagriculture:deepslate_inferium_ore"
+   ],
+   "nether": false,
+   "xp": [
+    2,
+    5
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
   "prosperity": {
    "mod": "mysticalagriculture",
    "seamless_ores_name": "prosperity",
@@ -3253,6 +3269,336 @@
      "26.1.x neoforge"
     ],
     "rate": 196.39
+   }
+  },
+  "minecraft:blackstone": {
+   "adamantite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.26
+   },
+   "alexandrite": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.16
+   },
+   "aquamarine": {
+    "where": [
+     "26.2 fabric",
+     "26.2 neoforge",
+     "26.3 fabric",
+     "26.3 neoforge"
+    ],
+    "rate": 3.72
+   },
+   "aquarium": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.65
+   },
+   "bort": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 6.38
+   },
+   "carmot": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.2
+   },
+   "chaos": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 3.25
+   },
+   "citrine": {
+    "where": [
+     "26.2 fabric",
+     "26.2 neoforge",
+     "26.3 fabric",
+     "26.3 neoforge"
+    ],
+    "rate": 3.72
+   },
+   "energized_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge",
+     "26.2 fabric",
+     "26.2 neoforge",
+     "26.3 fabric",
+     "26.3 neoforge"
+    ],
+    "rate": 0.3
+   },
+   "galena": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.59
+   },
+   "garnet": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.8
+   },
+   "heliodor": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.16
+   },
+   "inferium": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 4.56
+   },
+   "iolite": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.16
+   },
+   "iridium": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 0.64
+   },
+   "manganese": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.21
+   },
+   "morkite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 1.62
+   },
+   "mythril": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.26
+   },
+   "necoium": {
+    "where": [
+     "26.2 fabric",
+     "26.2 neoforge",
+     "26.3 fabric",
+     "26.3 neoforge"
+    ],
+    "rate": 4.25
+   },
+   "occultism_silver": {
+    "where": [
+     "26.1.x neoforge",
+     "26.2 neoforge",
+     "26.3 neoforge"
+    ],
+    "rate": 5.93
+   },
+   "opal": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.26
+   },
+   "orichalcum": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.27
+   },
+   "peridot": {
+    "where": [
+     "26.2 fabric",
+     "26.2 neoforge",
+     "26.3 fabric",
+     "26.3 neoforge"
+    ],
+    "rate": 3.72
+   },
+   "platinum": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.61
+   },
+   "prometheum": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 1.03
+   },
+   "prosperity": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 5.1
+   },
+   "quadrillum": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.5
+   },
+   "runite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.36
+   },
+   "silents_aquamarine": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.8
+   },
+   "silents_peridot": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.47
+   },
+   "silents_ruby": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.6
+   },
+   "silents_sapphire": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.37
+   },
+   "silents_silver": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 5.89
+   },
+   "silents_topaz": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.47
+   },
+   "silver": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.7
+   },
+   "techreborn_bauxite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.83
+   },
+   "techreborn_lead": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.48
+   },
+   "techreborn_ruby": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 0.33
+   },
+   "techreborn_sapphire": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 0.29
+   },
+   "techreborn_silver": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.42
+   },
+   "techreborn_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 0.97
+   },
+   "techreborn_uranium": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 0.85
+   },
+   "topaz": {
+    "where": [
+     "26.2 fabric",
+     "26.2 neoforge",
+     "26.3 fabric",
+     "26.3 neoforge"
+    ],
+    "rate": 3.72
+   },
+   "turquoise": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.16
+   },
+   "unobtainium": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 0.16
+   },
+   "uraninite": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.28
+   },
+   "uraninite_dense": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.48
+   },
+   "uraninite_poor": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.6
    }
   },
   "minecraft:calcite": {

@@ -17,7 +17,7 @@ import sys
 import zipfile
 
 import geology
-from assetgen import (MOD_ID, POOL, camel, replace_block, stone_name, texture_path, title, write_text)
+from assetgen import (MOD_ID, POOL, STONE_NAMES, camel, replace_block, stone_name, texture_path, title, write_text)
 
 
 def index_ores(ore_defs):
@@ -131,7 +131,7 @@ class Hosts(dict):
         """e.g. Granite Iron Ore, Limestone Iron Ore. The stone's own name, then the ore's (never its
         mod's), then Ore."""
         cfg = self[host]
-        return f"{stone_name(cfg['path'])} {title(ore['key'] if cfg['placed_by'] else ore['name'])} Ore"
+        return f"{host_stone_name(cfg)} {title(ore['key'] if cfg['placed_by'] else ore['name'])} Ore"
 
     def overlay_for(self, ore, host_cfg, face="side", model=""):
         """Overlay key for this host and face, honouring a per-host or per-tier override. Mirrors
@@ -247,7 +247,7 @@ def translucent_overlays(hosts, band_textures, jars):
     rocks = {}
     for host, cfg, ore, _s, _t in list(hosts.variants()):
         layer_path = ore.get("translucent")
-        if not layer_path or not cfg["placed_by"]:
+        if not layer_path:
             continue
         overrides = ore.setdefault("host_overlays", {})
         if host in overrides:
@@ -280,6 +280,12 @@ def translucent_overlays(hosts, band_textures, jars):
 
 # --- Player-facing text ------------------------------------------------------------------------------
 
+def host_stone_name(cfg):
+    """A host's stone as players read it: by its name where one block hosts twice (deep blackstone,
+    besides the Nether one), else by its block."""
+    return STONE_NAMES.get(cfg["name"]) or stone_name(cfg["path"])
+
+
 def switch_lang(hosts, stone_mods):
     """The Modded Stones category's strings: one switch per stone another mod places. Field names follow
     SeamlessOresConfigData: the host's name in camelCase. Create and Blockus both have a limestone, so a
@@ -292,10 +298,10 @@ def switch_lang(hosts, stone_mods):
         field = camel(c["name"])
         display = stone_mods[c["placed_by"]]["display"]
         clash = f" ({display})" if paths.count(c["path"]) > 1 else ""
-        lang[f"{cfg}.option.{field}"] = f"{stone_name(c['path'])}{clash}"
+        lang[f"{cfg}.option.{field}"] = f"{host_stone_name(c)}{clash}"
         where = display if c["placed_by"] == c["ns"] else f"{display}'s layers of"
         lang[f"{cfg}.option.{field}.@Tooltip"] = (
-            f"Ore generated in {where} {stone_name(c['path']).lower()} matches the stone. Off: it keeps"
+            f"Ore generated in {where} {host_stone_name(c).lower()} matches the stone. Off: it keeps"
             f" its own look. Applies to newly generated chunks, from the next world load.")
     return lang
 
@@ -314,14 +320,16 @@ def modded_stone_list(hosts, stone_mods, mods, cinnabar_family=None):
              f" and `iron` make `blockus_limestone_iron_ore`.", ""]
     for placer in dict.fromkeys(c["placed_by"] for c in placed):
         stones = [c for c in placed if c["placed_by"] == placer]
-        lines.append(f"**{stone_mods[placer]['display']}, requires `{placer}`** ({stone_mods[placer]['bands']})")
+        # The game's own rock that a worldgen pack lays (deep blackstone) needs no mod id: a datapack works too.
+        requires = "" if placer == "minecraft" else f", requires `{placer}`"
+        lines.append(f"**{stone_mods[placer]['display']}{requires}** ({stone_mods[placer]['bands']})")
         lines.append("")
-        lines.append("Stones: " + ", ".join(f"{stone_name(c['path'])} `{c['name']}`" for c in stones))
+        lines.append("Stones: " + ", ".join(f"{host_stone_name(c)} `{c['name']}`" for c in stones))
         lines.append("")
         lines.append("| Ore | `<ore>` | Also requires | In |")
         lines.append("|---|---|---|---|")
         for ore in hosts.ore_defs:
-            within = [stone_name(c["path"]) for c in stones if ore["key"] in built.get(c["name"], ())]
+            within = [host_stone_name(c) for c in stones if ore["key"] in built.get(c["name"], ())]
             if not within:
                 continue
             mod = ore.get("mod")

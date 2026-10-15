@@ -140,6 +140,8 @@ HOST_LOOK = {
 # stone textures are read from (a translucent ore's overlay is painted over them). Where each exists
 # here, on both platforms: so-older-band-stone-survey in the maintainer notes.
 STONE_MODS = {
+    # Deep blackstone: the game's rock, laid by Terralith's caves (the mod or its datapack).
+    "minecraft": {"display": "Terralith", "bands": "its mod or datapack, Fabric, NeoForge and Forge"},
     "blockus": {"display": "Blockus", "bands": "Fabric"},
     "create": {"display": "Create", "bands": "Create Fly, Fabric"},
     "promenade": {"display": "Promenade", "bands": "Fabric"},
@@ -578,6 +580,7 @@ def resources_dir():
 # and their data is inert. They are kept with their 1.21.1-era routing so the derived registration
 # lights them up with no code change if a build ever appears. Re-query per version on any bump.
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
+    "minecraft": ('fabric', 'neoforge', 'forge'),   # deep blackstone (Terralith): the game's rock, every loader
     "create": ("fabric",),
     "mythicupgrades": ("fabric", "neoforge"),
     "mythicmetals": ("fabric",),

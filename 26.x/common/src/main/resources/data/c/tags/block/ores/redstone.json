@@ -10,6 +10,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_redstone_ore",
       "required": false
     },

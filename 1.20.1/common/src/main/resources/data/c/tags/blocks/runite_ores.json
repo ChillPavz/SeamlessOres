@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_runite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_runite_ore",
       "required": false
     },

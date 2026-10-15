@@ -190,6 +190,8 @@ HOST_LOOK = {
 # stone textures are read from (a translucent ore's overlay is painted over them). Where each exists
 # here, on both platforms: so-older-band-stone-survey in the maintainer notes.
 STONE_MODS = {
+    # Deep blackstone: the game's rock, laid by Terralith's caves (the mod or its datapack).
+    "minecraft": {"display": "Terralith", "bands": "its mod or datapack, Fabric, NeoForge and Forge"},
     "blockus": {"display": "Blockus", "bands": "Fabric"},
     "create": {"display": "Create", "bands": "NeoForge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "NeoForge"},
@@ -897,6 +899,7 @@ def resources_dir():
 # in the Forge jar or its 88 variants drop nothing there, and Forge 52 will log a parse error per
 # table on instances that do not have the mod. A noisy log beats blocks that drop nothing.
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
+    "minecraft": ('fabric', 'neoforge', 'forge'),   # deep blackstone (Terralith): the game's rock, every loader
     # VERIFIED PER MINECRAFT VERSION, not from the project-level "loaders" array. That array is the
     # UNION across every file a project has ever shipped, so a mod with a Forge build at 1.20.1
     # still reports "forge" when its 1.21.1 file is NeoForge only. Trusting it put 143 conditional

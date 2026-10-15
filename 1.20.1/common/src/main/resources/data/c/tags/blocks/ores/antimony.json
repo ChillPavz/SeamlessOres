@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_antimony_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_antimony_ore",
       "required": false
     },

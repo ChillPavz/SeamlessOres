@@ -219,6 +219,8 @@ HOST_LOOK = {
 # stone textures are read from (a translucent ore's overlay is painted over them). Where each exists
 # here, on both platforms: so-older-band-stone-survey in the maintainer notes.
 STONE_MODS = {
+    # Deep blackstone: the game's rock, laid by Terralith's caves (the mod or its datapack).
+    "minecraft": {"display": "Terralith", "bands": "its mod or datapack, Fabric and Forge"},
     "blockus": {"display": "Blockus", "bands": "Fabric"},
     "create": {"display": "Create", "bands": "Forge, and Fabric through Create Fabric"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "Forge"},
@@ -921,6 +923,7 @@ def resources_dir():
 # in the Forge jar or its 88 variants drop nothing there, and Forge 52 will log a parse error per
 # table on instances that do not have the mod. A noisy log beats blocks that drop nothing.
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
+    "minecraft": ('fabric', 'forge'),   # deep blackstone (Terralith): the game's rock, every loader
     # RE-QUERIED PER GAME VERSION for 1.20.1, never carried over from another branch. That array on
     # a project page is the UNION across every file it has ever shipped, so it lies about any single
     # version. Query instead:

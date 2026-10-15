@@ -1772,6 +1772,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_coal_ore",
       "required": false
     },

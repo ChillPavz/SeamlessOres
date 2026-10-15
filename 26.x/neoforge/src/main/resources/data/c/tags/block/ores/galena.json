@@ -25,6 +25,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_galena_ore",
       "required": false
     },

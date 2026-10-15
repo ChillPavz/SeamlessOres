@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_oreganized_lead_ore",
       "required": false
     },

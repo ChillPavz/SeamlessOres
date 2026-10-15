@@ -205,6 +205,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_chaos_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_mythril_ore",
       "required": false
     },

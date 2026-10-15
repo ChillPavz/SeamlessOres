@@ -122,6 +122,10 @@ public class SeamlessOresConfigData implements ConfigData {
     // BEGIN GENERATED modded stone switches (tools/generate_assets.py, from the host table)
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
+    public boolean minecraftBlackstone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
     public boolean blockusLimestone = true;
 
     @ConfigEntry.Category("modded_stones")
@@ -452,6 +456,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("dripstone", dripstone);
         values.hosts.put("basalt", basalt);
         values.hosts.put("blackstone", blackstone);
+        values.hosts.put("minecraft_blackstone", minecraftBlackstone);
         values.hosts.put("blockus_limestone", blockusLimestone);
         values.hosts.put("blockus_marble", blockusMarble);
         values.hosts.put("blockus_bluestone", blockusBluestone);

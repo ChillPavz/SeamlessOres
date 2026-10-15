@@ -75,6 +75,15 @@ public final class HostStone {
     // ore, see OreTier.NETHER, so their worldgen injection is config-gated.
     public static final HostStone BASALT = vanilla("basalt", OreTier.NETHER, MapColor.COLOR_BLACK);
     public static final HostStone BLACKSTONE = vanilla("blackstone", OreTier.NETHER, MapColor.COLOR_BLACK);
+    // The same rock deep in the Overworld, a stone other worldgen places: Terralith (mod or datapack)
+    // puts blackstone in deepslate_ore_replaceables and lays it in its thermal and mantle caves before
+    // the ores, so ore lands in it. Measured and judged like any such stone (pairs, fixed geology rule),
+    // but present in every game, because a datapack cannot be detected at registration: its variants
+    // only generate where a pack lays the rock. Ids carry the namespace (minecraft_blackstone_gold_ore),
+    // because blackstone_gold_ore is the Nether one.
+    public static final HostStone MINECRAFT_BLACKSTONE = placed("minecraft", "blackstone", OreTier.DEEPSLATE,
+            MapColor.COLOR_BLACK,
+            COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
     // Calcite and smooth basalt are in no ore replaceables tag, so ore never generates in them on its
     // own; they are hosts only where Create lays them down, below.
 
@@ -189,7 +198,7 @@ public final class HostStone {
      * config screen lists them.
      */
     public static final List<HostStone> ALL = List.of(
-            GRANITE, DIORITE, ANDESITE, TUFF, DRIPSTONE, BASALT, BLACKSTONE,
+            GRANITE, DIORITE, ANDESITE, TUFF, DRIPSTONE, BASALT, BLACKSTONE, MINECRAFT_BLACKSTONE,
             BLOCKUS_LIMESTONE, BLOCKUS_MARBLE, BLOCKUS_BLUESTONE, BLOCKUS_VIRIDITE, CREATE_ASURINE, CREATE_CRIMSITE,
             CREATE_LIMESTONE, CREATE_OCHRUM, CREATE_SCORCHIA, CREATE_SCORIA, CREATE_VERIDIUM, MINECRAFT_CALCITE,
             MINECRAFT_SMOOTH_BASALT, TFMG_BAUXITE, TFMG_GALENA, TFMG_LIGNITE, TWIGS_RHYOLITE, TWIGS_SCHIST,

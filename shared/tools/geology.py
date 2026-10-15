@@ -32,7 +32,8 @@ CLASSES = {
     # mafic intrusive; bluestone read as dolerite
     "PLUT": ["wilderwild_gabbro", "blockus_bluestone"],
     # mafic volcanic
-    "VOLC": ["minecraft_smooth_basalt", "create_scoria"],
+    # mafic volcanic; deep blackstone is the blackstone Terralith lays in its caves
+    "VOLC": ["minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone"],
     # felsic volcanic: Twigs' rhyolite
     "FELS": ["twigs_rhyolite"],
     # residual laterite: TFMG's bauxite, the weathering crust aluminium is mined from

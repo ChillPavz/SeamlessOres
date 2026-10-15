@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_zinc_ore",
       "required": false
     },

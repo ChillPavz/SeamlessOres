@@ -31,6 +31,7 @@ public final class Worldgen {
         run("Ore veins", VeinOreInjector::inject);
         // The dripstone shell swap and the Lush Caves patches run after the ore pass, as on 26.x.
         run("Dripstone shells", DripstoneShell::prepare);
+        run("Walled-in ore", WalledInOre::prepare);
         run("Lush Caves", () -> LushCavesInjector.inject(registries, ERA));
     }
 

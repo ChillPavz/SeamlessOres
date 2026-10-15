@@ -8,6 +8,10 @@
     "seamlessores:basalt_gold_ore",
     "seamlessores:blackstone_gold_ore",
     {
+      "id": "seamlessores:minecraft_blackstone_gold_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_gold_ore",
       "required": false
     },

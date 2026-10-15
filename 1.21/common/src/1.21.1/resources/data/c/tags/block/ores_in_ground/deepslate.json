@@ -397,6 +397,210 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_silents_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_silents_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_silents_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_water_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },

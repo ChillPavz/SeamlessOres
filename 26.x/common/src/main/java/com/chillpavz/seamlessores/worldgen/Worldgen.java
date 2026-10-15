@@ -78,6 +78,7 @@ public final class Worldgen {
         // The large copper and iron veins come from noise generation, invisible to the ore features.
         run("Ore veins", () -> era().injectVeins(registries));
         DripstoneShell.prepare();
+        run("Walled-in ore", WalledInOre::prepare);
         LushCavesInjector.inject(registries, era());
     }
 

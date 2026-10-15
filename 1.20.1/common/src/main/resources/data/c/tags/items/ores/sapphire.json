@@ -29,6 +29,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_blackstone_silents_sapphire_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scorchia_sapphire_ore",
       "required": false
     },

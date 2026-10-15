@@ -235,7 +235,42 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**349 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**377 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+
+**Terralith** (its mod or datapack, Fabric, NeoForge and Forge)
+
+Stones: Deep Blackstone `minecraft_blackstone`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Iron | `iron` |  | Deep Blackstone |
+| Copper | `copper` |  | Deep Blackstone |
+| Gold | `gold` |  | Deep Blackstone |
+| Redstone | `redstone` |  | Deep Blackstone |
+| Zinc | `zinc` | Create `create` | Deep Blackstone |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | Deep Blackstone |
+| Peridot | `peridot` | Mythic Upgrades `mythicupgrades` | Deep Blackstone |
+| Necoium | `necoium` | Mythic Upgrades `mythicupgrades` | Deep Blackstone |
+| Adamantite | `adamantite` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Carmot | `carmot` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Morkite | `morkite` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Mythril | `mythril` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Runite | `runite` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Unobtainium | `unobtainium` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | Deep Blackstone |
+| Chaos | `chaos` | Silent's Gems `silentgems` | Deep Blackstone |
+| Ruby | `silents_ruby` | Silent's Gems `silentgems` | Deep Blackstone |
+| Sapphire | `silents_sapphire` | Silent's Gems `silentgems` | Deep Blackstone |
+| Peridot | `silents_peridot` | Silent's Gems `silentgems` | Deep Blackstone |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Deep Blackstone |
+| Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Deep Blackstone |
+| Lead | `lead` | Create: TFMG `tfmg` | Deep Blackstone |
+| Gleaming | `gleaming` | Things `things` | Deep Blackstone |
 
 **Blockus, requires `blockus`** (Fabric)
 
@@ -404,7 +439,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 717 blocks takes **83 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 745 blocks takes **83 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
