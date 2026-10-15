@@ -250,7 +250,7 @@ STONE_MODS = {
     "create": {"display": "Create", "bands": "Create Fly, Fabric, 26.1.2 and 26.2"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "NeoForge, 26.1.2"},
     "mythicupgrades": {"display": "Mythic Upgrades", "bands": "Fabric and NeoForge, 26.2 and 26.3"},
-    "promenade": {"display": "Promenade", "bands": "Fabric, 26.1.x and 26.2"},
+    "promenade": {"display": "Promenade", "bands": "Fabric on every 26.x version, NeoForge on 26.3"},
     "wilderwild": {"display": "Wilder Wild", "bands": "Fabric 26.1.x to 26.3, NeoForge 26.2 and 26.3"},
 }
 
@@ -761,12 +761,12 @@ def resources_dir():
 # routing so the derived registration lights them up with no code change if a build appears.
 #
 # The mods that place a host stone route the same way, and a variant's table goes only to the loaders
-# that carry its stone's mod AND its ore's (loot_modules): blockus and promenade Fabric only,
-# forbidden_arcanus NeoForge only, wilderwild both (STONE_MODS).
+# that carry its stone's mod AND its ore's (loot_modules): blockus Fabric only, forbidden_arcanus
+# NeoForge only, promenade (NeoForge from 6.0.0 on 26.3) and wilderwild both (STONE_MODS).
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "blockus": ("fabric",),
     "forbidden_arcanus": ("neoforge",),
-    "promenade": ("fabric",),
+    "promenade": ("fabric", "neoforge"),
     "wilderwild": ("fabric", "neoforge"),
     "create": ("fabric",),
     "mythicupgrades": ("fabric", "neoforge"),

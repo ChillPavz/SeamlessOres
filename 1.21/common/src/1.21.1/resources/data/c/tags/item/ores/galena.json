@@ -43,6 +43,14 @@
     {
       "id": "seamlessores:meadow_limestone_galena_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_galena_ore",
+      "required": false
     }
   ]
 }

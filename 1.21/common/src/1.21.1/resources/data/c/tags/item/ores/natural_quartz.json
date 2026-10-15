@@ -59,6 +59,14 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_natural_quartz_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_natural_quartz_ore",
+      "required": false
     }
   ]
 }

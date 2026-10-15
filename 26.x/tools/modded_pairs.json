@@ -4000,7 +4000,9 @@
   "promenade:asphalt": {
    "aquamarine": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 0.89
    },
@@ -4024,28 +4026,34 @@
    },
    "citrine": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 0.89
    },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 179.08
    },
    "galena": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 91.49
    },
    "iridium": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 0.57
    },
@@ -4075,9 +4083,17 @@
    },
    "necoium": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 2.68
+   },
+   "occultism_silver": {
+    "where": [
+     "26.3 neoforge"
+    ],
+    "rate": 59.92
    },
    "orichalcum": {
     "where": [
@@ -4093,7 +4109,9 @@
    },
    "peridot": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 0.89
    },
@@ -4136,49 +4154,56 @@
    "techreborn_bauxite": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 33.08
    },
    "techreborn_lead": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 112.61
    },
    "techreborn_ruby": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 40.17
    },
    "techreborn_sapphire": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 35.15
    },
    "techreborn_silver": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 125.8
    },
    "techreborn_tin": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 158.67
    },
    "techreborn_uranium": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 10.12
    },
@@ -4190,7 +4215,9 @@
    },
    "topaz": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 0.89
    },
@@ -4204,7 +4231,9 @@
   "promenade:blunite": {
    "aquamarine": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 0.89
    },
@@ -4228,28 +4257,34 @@
    },
    "citrine": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 0.89
    },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 180.87
    },
    "galena": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 91.49
    },
    "iridium": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 0.57
    },
@@ -4279,9 +4314,17 @@
    },
    "necoium": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 2.68
+   },
+   "occultism_silver": {
+    "where": [
+     "26.3 neoforge"
+    ],
+    "rate": 60.35
    },
    "orichalcum": {
     "where": [
@@ -4297,7 +4340,9 @@
    },
    "peridot": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 0.89
    },
@@ -4340,49 +4385,56 @@
    "techreborn_bauxite": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 33.08
    },
    "techreborn_lead": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 112.61
    },
    "techreborn_ruby": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 42.14
    },
    "techreborn_sapphire": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 36.88
    },
    "techreborn_silver": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 125.81
    },
    "techreborn_tin": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 161.5
    },
    "techreborn_uranium": {
     "where": [
      "26.1.x fabric",
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric"
     ],
     "rate": 10.12
    },
@@ -4394,7 +4446,9 @@
    },
    "topaz": {
     "where": [
-     "26.2 fabric"
+     "26.2 fabric",
+     "26.3 fabric",
+     "26.3 neoforge"
     ],
     "rate": 0.89
    },

@@ -2897,6 +2897,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_occultism_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_orichalcum_ore",
       "required": false
     },
@@ -3026,6 +3030,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_occultism_silver_ore",
       "required": false
     },
     {

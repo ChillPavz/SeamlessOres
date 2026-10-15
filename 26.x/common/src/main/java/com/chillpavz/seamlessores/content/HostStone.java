@@ -150,7 +150,8 @@ public final class HostStone {
     public static final HostStone MYTHICUPGRADES_SAPPHIRE_SCHIST = placed("mythicupgrades", "sapphire_schist",
             OreTier.STONE, MapColor.LAPIS);
 
-    // Promenade: Fabric, 26.1.x and 26.2. Both in stone_ore_replaceables, so later ore lands in them.
+    // Promenade: Fabric on every 26.x version, NeoForge on 26.3 (6.0.0). Both in stone_ore_replaceables,
+    // so later ore lands in them.
     public static final HostStone PROMENADE_ASPHALT = placed("promenade", "asphalt", OreTier.STONE, MapColor.DEEPSLATE,
             COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
     public static final HostStone PROMENADE_BLUNITE = placed("promenade", "blunite", OreTier.STONE,

@@ -29,6 +29,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_occultism_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_occultism_silver_ore",
       "required": false
     }

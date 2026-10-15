@@ -137,6 +137,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uraninite_dense_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_uraninite_ore",
       "required": false
     },

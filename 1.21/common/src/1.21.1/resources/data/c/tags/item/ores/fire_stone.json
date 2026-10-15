@@ -113,6 +113,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_fire_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_fire_stone_ore",
       "required": false
     },

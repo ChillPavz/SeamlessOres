@@ -61,6 +61,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_osmium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_osmium_ore",
       "required": false
     }

@@ -43,6 +43,14 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_dense_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_uranium_ore",
+      "required": false
     }
   ]
 }

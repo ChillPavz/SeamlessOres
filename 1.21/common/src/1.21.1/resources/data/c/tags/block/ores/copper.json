@@ -82,6 +82,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_copper_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_copper_ore",
       "required": false
     },

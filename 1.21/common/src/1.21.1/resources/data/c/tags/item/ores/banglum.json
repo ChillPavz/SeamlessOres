@@ -45,6 +45,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_banglum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_banglum_ore",
       "required": false
     }

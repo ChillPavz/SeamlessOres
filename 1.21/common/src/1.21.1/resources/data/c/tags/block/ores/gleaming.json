@@ -45,6 +45,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_gleaming_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_gleaming_ore",
       "required": false
     }

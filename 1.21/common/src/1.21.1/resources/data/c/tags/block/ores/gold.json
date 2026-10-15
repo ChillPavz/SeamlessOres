@@ -100,6 +100,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_gold_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_gold_ore",
       "required": false
     },

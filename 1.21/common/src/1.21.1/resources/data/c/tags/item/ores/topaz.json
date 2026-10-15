@@ -59,6 +59,14 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_silents_topaz_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silents_topaz_ore",
+      "required": false
     }
   ]
 }

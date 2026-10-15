@@ -23,6 +23,10 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_bort_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_bort_ore",
+      "required": false
     }
   ]
 }

@@ -109,6 +109,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_necoium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_necoium_ore",
       "required": false
     },

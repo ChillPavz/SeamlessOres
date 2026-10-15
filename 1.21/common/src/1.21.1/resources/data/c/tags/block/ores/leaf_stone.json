@@ -97,6 +97,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_leaf_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_leaf_stone_ore",
       "required": false
     },

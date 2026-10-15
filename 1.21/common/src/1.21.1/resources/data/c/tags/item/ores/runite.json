@@ -45,6 +45,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_runite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_runite_ore",
       "required": false
     }

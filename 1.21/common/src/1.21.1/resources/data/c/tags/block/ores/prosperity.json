@@ -81,6 +81,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_prosperity_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_prosperity_ore",
       "required": false
     }

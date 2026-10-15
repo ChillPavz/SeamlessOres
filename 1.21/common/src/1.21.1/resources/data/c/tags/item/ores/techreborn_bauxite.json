@@ -49,6 +49,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_techreborn_bauxite_ore",
       "required": false
     }

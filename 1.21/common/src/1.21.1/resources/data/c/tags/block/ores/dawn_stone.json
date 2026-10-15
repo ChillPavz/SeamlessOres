@@ -97,6 +97,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dawn_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_dawn_stone_ore",
       "required": false
     },

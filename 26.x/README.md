@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**899 blocks** in the `seamlessores` namespace.
+**901 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -279,7 +279,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**453 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**455 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Blockus, requires `blockus`** (Fabric, 26.1.x to 26.3)
 
@@ -427,7 +427,7 @@ Stones: Aquamarine Schist `mythicupgrades_aquamarine_schist`, Citrine Schist `my
 | Necoium | `necoium` |  | Aquamarine Schist, Citrine Schist, Peridot Schist, Topaz Schist |
 | Ruby | `ruby` |  | Sapphire Schist |
 
-**Promenade, requires `promenade`** (Fabric, 26.1.x and 26.2)
+**Promenade, requires `promenade`** (Fabric on every 26.x version, NeoForge on 26.3)
 
 Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 
@@ -474,6 +474,7 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Silver | `techreborn_silver` | Tech Reborn `techreborn` | every stone |
 | Tin | `techreborn_tin` | Tech Reborn `techreborn` | Blunite |
 | Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | every stone |
+| Silver | `occultism_silver` | Occultism `occultism` | every stone |
 
 **Wilder Wild, requires `wilderwild`** (Fabric 26.1.x to 26.3, NeoForge 26.2 and 26.3)
 
@@ -523,7 +524,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 899 blocks takes **99 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 901 blocks takes **99 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png

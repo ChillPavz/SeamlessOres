@@ -23,6 +23,14 @@
     {
       "id": "seamlessores:meadow_limestone_starrite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_starrite_ore",
+      "required": false
     }
   ]
 }

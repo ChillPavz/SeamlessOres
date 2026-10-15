@@ -49,6 +49,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_yellorite_ore",
       "required": false
     }

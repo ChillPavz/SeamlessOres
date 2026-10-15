@@ -94,6 +94,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_redstone_ore",
       "required": false
     },

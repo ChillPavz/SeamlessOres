@@ -77,6 +77,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_inferium_ore",
       "required": false
     }

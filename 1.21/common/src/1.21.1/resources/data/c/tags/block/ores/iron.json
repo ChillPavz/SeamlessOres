@@ -82,6 +82,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iron_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_iron_ore",
       "required": false
     },

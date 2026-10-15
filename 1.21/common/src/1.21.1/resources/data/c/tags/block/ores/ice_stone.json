@@ -97,6 +97,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_ice_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_ice_stone_ore",
       "required": false
     },

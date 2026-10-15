@@ -61,6 +61,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_dense_lead_ore",
       "required": false
     }

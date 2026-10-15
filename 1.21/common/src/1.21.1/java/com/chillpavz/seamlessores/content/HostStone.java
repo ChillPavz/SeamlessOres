@@ -167,6 +167,13 @@ public final class HostStone {
     public static final HostStone MYTHICUPGRADES_SAPPHIRE_SCHIST = placed("mythicupgrades", "sapphire_schist",
             OreTier.STONE, MapColor.LAPIS);
 
+    // Promenade (Fabric and NeoForge, 6.0.1). Both in stone_ore_replaceables, so later ore lands in them.
+    public static final HostStone PROMENADE_ASPHALT = placed("promenade", "asphalt", OreTier.STONE, MapColor.DEEPSLATE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
+    public static final HostStone PROMENADE_BLUNITE = placed("promenade", "blunite", OreTier.STONE,
+            MapColor.TERRACOTTA_CYAN,
+            COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
+
     // Spawn: reefstone under the oceans, y 10 to 63. Hardness 1.0 (SpawnBlocks).
     public static final HostStone SPAWN_REEFSTONE = placed("spawn", "reefstone", OreTier.STONE,
             MapColor.TERRACOTTA_GRAY,
@@ -188,7 +195,7 @@ public final class HostStone {
             MINECRAFT_SMOOTH_BASALT, TFMG_BAUXITE, TFMG_GALENA, TFMG_LIGNITE, TWIGS_RHYOLITE, TWIGS_SCHIST,
             TWIGS_BLOODSTONE, FORBIDDEN_ARCANUS_DARKSTONE, MEADOW_LIMESTONE, MYTHICUPGRADES_AQUAMARINE_SCHIST,
             MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST, MYTHICUPGRADES_TOPAZ_SCHIST,
-            MYTHICUPGRADES_SAPPHIRE_SCHIST, SPAWN_REEFSTONE, WILDERWILD_GABBRO);
+            MYTHICUPGRADES_SAPPHIRE_SCHIST, PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE, WILDERWILD_GABBRO);
 
     private final String name;
     private final ResourceLocation id;

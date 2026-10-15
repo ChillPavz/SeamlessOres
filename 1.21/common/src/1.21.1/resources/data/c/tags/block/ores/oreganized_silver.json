@@ -59,6 +59,14 @@
     {
       "id": "seamlessores:meadow_limestone_oreganized_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_silver_ore",
+      "required": false
     }
   ]
 }

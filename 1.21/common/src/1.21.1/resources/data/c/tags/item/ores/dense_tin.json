@@ -33,6 +33,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_dense_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_dense_tin_ore",
       "required": false
     }

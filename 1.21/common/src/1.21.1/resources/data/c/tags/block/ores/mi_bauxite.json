@@ -65,6 +65,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_bauxite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_mi_bauxite_ore",
       "required": false
     }

@@ -129,6 +129,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_citrine_ore",
       "required": false
     }

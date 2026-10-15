@@ -57,6 +57,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_oreganized_lead_ore",
       "required": false
     }

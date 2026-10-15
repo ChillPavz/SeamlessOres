@@ -41,8 +41,8 @@ final class ModdedPairs {
             case "mythicupgrades:peridot_schist" -> keys("aquamarine", "necoium");
             case "mythicupgrades:sapphire_schist" -> keys("ruby");
             case "mythicupgrades:topaz_schist" -> keys("citrine", "necoium");
-            case "promenade:asphalt" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "starrite", "tin", "orichalcum", "energized_tin", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium");
-            case "promenade:blunite" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "starrite", "tin", "orichalcum", "energized_tin", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium");
+            case "promenade:asphalt" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "starrite", "tin", "orichalcum", "energized_tin", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium", "occultism_silver");
+            case "promenade:blunite" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "starrite", "tin", "orichalcum", "energized_tin", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium", "occultism_silver");
             case "wilderwild:gabbro" -> keys("necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium", "occultism_silver");
             default -> List.of();
         };
@@ -62,7 +62,7 @@ final class ModdedPairs {
             case "create" -> here.equals("fabric");
             case "forbidden_arcanus" -> here.equals("neoforge");
             case "mythicupgrades" -> here.equals("fabric") || here.equals("neoforge");
-            case "promenade" -> here.equals("fabric");
+            case "promenade" -> here.equals("fabric") || here.equals("neoforge");
             case "wilderwild" -> here.equals("fabric") || here.equals("neoforge");
             // END GENERATED stone loaders
             default -> false;

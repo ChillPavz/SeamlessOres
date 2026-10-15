@@ -289,6 +289,46 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_silents_silver_ore",
       "required": false
     },

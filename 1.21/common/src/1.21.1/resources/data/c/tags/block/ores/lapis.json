@@ -20,6 +20,10 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_lapis_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_lapis_ore",
+      "required": false
     }
   ]
 }

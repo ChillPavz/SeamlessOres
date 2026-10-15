@@ -63,6 +63,14 @@
     {
       "id": "seamlessores:mythicupgrades_peridot_schist_aquamarine_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silents_aquamarine_ore",
+      "required": false
     }
   ]
 }

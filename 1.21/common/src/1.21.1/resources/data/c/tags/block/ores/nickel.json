@@ -67,6 +67,14 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_mi_nickel_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_nickel_ore",
+      "required": false
     }
   ]
 }

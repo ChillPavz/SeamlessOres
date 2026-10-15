@@ -169,6 +169,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_uranium_ore",
       "required": false
     },

@@ -1236,6 +1236,150 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_iron_ore",
       "required": false
     },

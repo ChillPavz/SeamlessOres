@@ -37,6 +37,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_energized_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_energized_tin_ore",
       "required": false
     }

@@ -65,6 +65,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_zinc_ore",
       "required": false
     }

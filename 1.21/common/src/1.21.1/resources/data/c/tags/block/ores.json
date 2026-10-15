@@ -4136,6 +4136,606 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_bort_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silents_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silents_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silents_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silents_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_antimony_ore",
       "required": false
     },
