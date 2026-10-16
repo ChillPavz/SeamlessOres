@@ -221,6 +221,10 @@ public class SeamlessOresConfigData implements ConfigData {
 
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
+    public boolean bornInChaosV1BlackArgillite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
     public boolean forbiddenArcanusDarkstone = true;
 
     @ConfigEntry.Category("modded_stones")
@@ -488,6 +492,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("twigs_rhyolite", twigsRhyolite);
         values.hosts.put("twigs_schist", twigsSchist);
         values.hosts.put("twigs_bloodstone", twigsBloodstone);
+        values.hosts.put("born_in_chaos_v1_black_argillite", bornInChaosV1BlackArgillite);
         values.hosts.put("forbidden_arcanus_darkstone", forbiddenArcanusDarkstone);
         values.hosts.put("meadow_limestone", meadowLimestone);
         values.hosts.put("mythicupgrades_aquamarine_schist", mythicupgradesAquamarineSchist);

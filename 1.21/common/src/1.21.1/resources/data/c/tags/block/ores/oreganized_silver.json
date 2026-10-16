@@ -61,6 +61,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_oreganized_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_oreganized_silver_ore",
       "required": false
     },

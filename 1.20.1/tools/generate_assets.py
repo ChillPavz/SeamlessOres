@@ -207,6 +207,8 @@ HOST_LOOK = {
     "twigs:schist": ("single", "twigs:block/schist"),
     "twigs:bloodstone": ("single", "twigs:block/bloodstone"),
     "forbidden_arcanus:darkstone": ("mirrored_turned", "forbidden_arcanus:block/darkstone"),
+    # Born in Chaos names its black argillite texture tiemnyikirpich6 (its block model).
+    "born_in_chaos_v1:black_argillite": ("single", "born_in_chaos_v1:block/tiemnyikirpich6"),
     "meadow:limestone": ("turned", "meadow:block/limestone"),
     "mythicupgrades:aquamarine_schist": ("single", "mythicupgrades:block/aquamarine_schist"),
     "mythicupgrades:citrine_schist": ("single", "mythicupgrades:block/citrine_schist"),
@@ -226,6 +228,7 @@ STONE_MODS = {
     "minecraft": {"display": "Terralith", "bands": "its mod or datapack, Fabric and Forge"},
     "blockus": {"display": "Blockus", "bands": "Fabric"},
     "create": {"display": "Create", "bands": "Forge, and Fabric through Create Fabric"},
+    "born_in_chaos_v1": {"display": "Born in Chaos", "bands": "Forge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "Forge"},
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and Forge"},
     "mythicupgrades": {"display": "Mythic Upgrades", "bands": "Fabric and Forge"},
@@ -237,6 +240,7 @@ STONE_MODS = {
 STONE_JARS = {"minecraft": CLIENT_JAR,
               "blockus": jar("blockus-2.7.22+1.20.1.jar"),
               "create": jar("1.20.1-create-1.20.1-6.0.8.jar"),
+              "born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
               "forbidden_arcanus": jar("forbidden_arcanus-1.20.1-2.2.6.jar"),
               "meadow": jar("letsdo-meadow-forge-1.3.25.jar"),
               "mythicupgrades": jar("1.20.1-mythicupgrades-forge-1.20.1-5.1.0.jar"),
@@ -976,6 +980,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     # The mods that place a host stone route the same way: a variant's table goes only to the loaders
     # that carry its stone's mod AND its ore's (loot_modules). Both platforms, per version (survey).
     "blockus": ('fabric',),
+    "born_in_chaos_v1": ('forge',),   # Born in Chaos, both platforms: Forge only on this band
     "forbidden_arcanus": ('forge',),
     "meadow": ('fabric', 'forge'),
     "promenade": ('fabric',),

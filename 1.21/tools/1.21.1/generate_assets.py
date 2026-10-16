@@ -177,6 +177,8 @@ HOST_LOOK = {
     "twigs:schist": ("single", "twigs:block/schist"),
     "twigs:bloodstone": ("single", "twigs:block/bloodstone"),
     "forbidden_arcanus:darkstone": ("single", "forbidden_arcanus:block/darkstone"),
+    # Born in Chaos names its black argillite texture tiemnyikirpich6 (its block model).
+    "born_in_chaos_v1:black_argillite": ("single", "born_in_chaos_v1:block/tiemnyikirpich6"),
     "meadow:limestone": ("single", "meadow:block/limestone"),
     "mythicupgrades:aquamarine_schist": ("single", "mythicupgrades:block/aquamarine_schist"),
     "mythicupgrades:citrine_schist": ("single", "mythicupgrades:block/citrine_schist"),
@@ -197,6 +199,7 @@ STONE_MODS = {
     "minecraft": {"display": "Terralith", "bands": "its mod or datapack, Fabric, NeoForge and Forge"},
     "blockus": {"display": "Blockus", "bands": "Fabric"},
     "create": {"display": "Create", "bands": "NeoForge"},
+    "born_in_chaos_v1": {"display": "Born in Chaos", "bands": "NeoForge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "NeoForge"},
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and NeoForge"},
     "mythicupgrades": {"display": "Mythic Upgrades", "bands": "Fabric and NeoForge"},
@@ -209,6 +212,7 @@ STONE_MODS = {
 STONE_JARS = {"minecraft": CLIENT_JAR,
               "blockus": jar("blockus-2.9.18+1.21.1.jar"),
               "create": jar("create-1.21.1-6.0.10.jar"),
+              "born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
               "forbidden_arcanus": jar("1.21.1-forbidden_arcanus-2.6.1.jar"),
               "meadow": jar("letsdo-meadow-neoforge-1.4.8.jar"),
               "mythicupgrades": jar("mythicupgrades-neoforge-1.21.1-5.1.1.jar"),
@@ -949,6 +953,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     # The mods that place a host stone route the same way: a variant's table goes only to the loaders
     # that carry its stone's mod AND its ore's (loot_modules). Both platforms, per version (survey).
     "blockus": ('fabric',),
+    "born_in_chaos_v1": ('neoforge',),   # Born in Chaos, both platforms: NeoForge only on this band
     "forbidden_arcanus": ('neoforge',),
     "meadow": ('fabric', 'neoforge'),
     "promenade": ('fabric', 'neoforge'),   # 6.0.1, 11 Oct 2026: its first 1.21.1 and first NeoForge build

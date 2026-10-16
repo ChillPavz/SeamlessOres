@@ -25,6 +25,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_emerald_ore",
       "required": false
     },

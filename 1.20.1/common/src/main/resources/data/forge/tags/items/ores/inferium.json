@@ -77,6 +77,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_inferium_ore",
       "required": false
     },

@@ -152,6 +152,14 @@ public final class HostStone {
     public static final HostStone TWIGS_BLOODSTONE = placed("twigs", "bloodstone", OreTier.STONE, MapColor.COLOR_GRAY,
             NETHER_GOLD, QUARTZ);
 
+    // Born in Chaos: black argillite blobs (size 27, three a chunk, y -17 to 17) laid over stone, granite,
+    // diorite and andesite AFTER the game's ores, in every Overworld biome. Hardness 4.0, so it takes the
+    // deepslate ore's form. A host only (owner, 15 Oct 2026); the mod is All Rights Reserved, so its
+    // texture is referenced by key, never shipped.
+    public static final HostStone BORN_IN_CHAOS_V1_BLACK_ARGILLITE = placed("born_in_chaos_v1", "black_argillite",
+            OreTier.DEEPSLATE, MapColor.COLOR_BLACK,
+            COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
+
     // Forbidden and Arcanus: the bottom 13 blocks of the overworld. Darkstone copies stone at
     // hardness 4.5 (ModBlocks), so it takes the deepslate ore's form.
     public static final HostStone FORBIDDEN_ARCANUS_DARKSTONE = placed("forbidden_arcanus", "darkstone",
@@ -202,7 +210,7 @@ public final class HostStone {
             BLOCKUS_LIMESTONE, BLOCKUS_MARBLE, BLOCKUS_BLUESTONE, BLOCKUS_VIRIDITE, CREATE_ASURINE, CREATE_CRIMSITE,
             CREATE_LIMESTONE, CREATE_OCHRUM, CREATE_SCORCHIA, CREATE_SCORIA, CREATE_VERIDIUM, MINECRAFT_CALCITE,
             MINECRAFT_SMOOTH_BASALT, TFMG_BAUXITE, TFMG_GALENA, TFMG_LIGNITE, TWIGS_RHYOLITE, TWIGS_SCHIST,
-            TWIGS_BLOODSTONE, FORBIDDEN_ARCANUS_DARKSTONE, MEADOW_LIMESTONE, MYTHICUPGRADES_AQUAMARINE_SCHIST,
+            TWIGS_BLOODSTONE, BORN_IN_CHAOS_V1_BLACK_ARGILLITE, FORBIDDEN_ARCANUS_DARKSTONE, MEADOW_LIMESTONE, MYTHICUPGRADES_AQUAMARINE_SCHIST,
             MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST, MYTHICUPGRADES_TOPAZ_SCHIST,
             MYTHICUPGRADES_SAPPHIRE_SCHIST, PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE);
 

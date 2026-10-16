@@ -40,6 +40,8 @@ CLASSES = {
     "LATE": ["tfmg_bauxite"],
     # massive sulphide: TFMG's galena, a lead-zinc ore body as rock
     "SULF": ["tfmg_galena"],
+    # black shale and argillite (organic-rich sedimentary pelite): Born in Chaos' black argillite
+    "SHAL": ["born_in_chaos_v1_black_argillite"],
 }
 ALL = list(CLASSES)
 
@@ -55,12 +57,13 @@ def _all_but(*kept):
 # Each family: the ore keys of one mineral, whatever mod they come from, and the hosts it is refused
 # in. The reason is on each line; som-geology-rules in the maintainer notes holds the full table.
 FAMILIES = [
-    # Coal needs a swamp: limestone (coal measures sit on carbonate platforms) and the hydrocarbons keep it.
-    (["coal", "lignite_coal"], _all_but("LIME", "ASPH")),
+    # Coal needs a swamp: limestone (coal measures sit on carbonate platforms), the hydrocarbons, and the
+    # black shale the seams lie between keep it.
+    (["coal", "lignite_coal"], _all_but("LIME", "ASPH", "SHAL")),
     # Colombian emerald is in black shale and carbonate; schist emerald is the classic pegmatite contact.
     (["emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF")),
     # Lazurite rock is lazurite with calcite: marble and calcite only.
-    (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF")),
+    (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL")),
     # A kimberlite pipe, which none of these is.
     (["diamond", "bort", "white_diamond", "black_diamond"], _hosts(*ALL)),
     # Topaz rhyolite (Thomas Range, Utah) is THE topaz host; nothing else here.
@@ -91,7 +94,7 @@ FAMILIES = [
     # Rock salt is an evaporite, laid down with carbonate.
     (["salt"], _all_but("LIME")),
     # Fluorite: Mississippi Valley carbonate, skarn marble, calcite veins, rhyolite (Mexico), lead-zinc gangue.
-    (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE")),
+    (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL")),
     # Scheelite skarn at limestone and marble contacts, and scheelite in schist.
     (["tungsten"], _all_but("LIME", "MARB", "SCH")),
     # Monazite and thorium: metamorphic monazite in pelitic schist.
@@ -110,8 +113,9 @@ FAMILIES = [
     (["opal"], _all_but("FELS", "LATE")),
     # Carnelian (chalcedony) fills vesicles in lava.
     (["carnelian"], _all_but("VOLC", "FELS")),
-    # Ammolite is fossil shell; pearl is reef; moldavite (tektite) lies in sediments.
-    (["ammolite", "pearl"], _all_but("LIME")),
+    # Ammolite is fossil shell (the Bearpaw shale); pearl is reef; moldavite (tektite) lies in sediments.
+    (["ammolite"], _all_but("LIME", "SHAL")),
+    (["pearl"], _all_but("LIME")),
     (["moldavite"], _all_but("LIME", "CALC", "ASPH", "LATE")),
 ]
 
