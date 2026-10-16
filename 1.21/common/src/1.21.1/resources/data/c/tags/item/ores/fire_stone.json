@@ -33,35 +33,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_fire_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_crimsite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_fire_stone_ore",
       "required": false
     },
     {
@@ -73,19 +45,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_fire_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_smooth_basalt_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_fire_stone_ore",
       "required": false
     },
     {
@@ -93,47 +53,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_fire_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_rhyolite_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_fire_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_bloodstone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_fire_stone_ore",
       "required": false
     }
   ]

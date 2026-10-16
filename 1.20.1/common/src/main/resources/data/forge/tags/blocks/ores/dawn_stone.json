@@ -21,47 +21,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_dawn_stone_ore",
       "required": false
     },
     {
@@ -69,51 +29,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_rhyolite_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_dawn_stone_ore",
       "required": false
     }
   ]

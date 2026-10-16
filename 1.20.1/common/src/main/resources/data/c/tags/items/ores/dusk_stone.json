@@ -25,14 +25,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_dusk_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_bluestone_dusk_stone_ore",
       "required": false
     },
@@ -41,31 +33,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_dusk_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_dusk_stone_ore",
       "required": false
     },
     {
@@ -73,23 +41,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_dusk_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tfmg_lignite_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_dusk_stone_ore",
       "required": false
     },
     {
@@ -101,19 +53,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_dusk_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_asphalt_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_dusk_stone_ore",
       "required": false
     }
   ]

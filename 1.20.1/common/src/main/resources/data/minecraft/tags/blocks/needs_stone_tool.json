@@ -844,39 +844,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_thunder_stone_ore",
       "required": false
     },
     {
@@ -936,35 +904,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_fire_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_moon_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_thunder_stone_ore",
       "required": false
     },
     {
@@ -992,23 +936,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_bluestone_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_leaf_stone_ore",
       "required": false
     },
     {
@@ -1016,19 +944,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_sun_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_bluestone_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_water_stone_ore",
       "required": false
     },
     {
@@ -1096,39 +1012,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_fire_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_asurine_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_thunder_stone_ore",
       "required": false
     },
     {
@@ -1144,43 +1028,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_dusk_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_crimsite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_water_stone_ore",
       "required": false
     },
     {
@@ -1260,39 +1108,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_thunder_stone_ore",
       "required": false
     },
     {
@@ -1304,43 +1120,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_shiny_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_ochrum_sun_stone_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_ochrum_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_water_stone_ore",
       "required": false
     },
     {
@@ -1384,10 +1168,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_dusk_stone_ore",
       "required": false
     },
@@ -1396,31 +1176,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_shiny_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_water_stone_ore",
       "required": false
     },
     {
@@ -1432,43 +1188,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_veridium_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_water_stone_ore",
       "required": false
     },
     {
@@ -1528,35 +1248,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_fire_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_calcite_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_moon_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_calcite_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_thunder_stone_ore",
       "required": false
     },
     {
@@ -1600,10 +1296,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_smooth_basalt_dusk_stone_ore",
       "required": false
     },
@@ -1612,31 +1304,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_shiny_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_smooth_basalt_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_water_stone_ore",
       "required": false
     },
     {
@@ -1652,43 +1320,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tfmg_bauxite_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_water_stone_ore",
       "required": false
     },
     {
@@ -1720,43 +1352,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_dusk_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tfmg_galena_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_sun_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tfmg_galena_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_water_stone_ore",
       "required": false
     },
     {
@@ -1788,43 +1388,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tfmg_lignite_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tfmg_lignite_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_water_stone_ore",
       "required": false
     },
     {
@@ -1892,19 +1460,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_dusk_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_rhyolite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_leaf_stone_ore",
       "required": false
     },
     {
@@ -1912,19 +1468,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_shiny_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_rhyolite_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_water_stone_ore",
       "required": false
     },
     {
@@ -1984,23 +1528,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_fire_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_schist_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_leaf_stone_ore",
       "required": false
     },
     {
@@ -2012,15 +1540,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_sun_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_schist_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_water_stone_ore",
       "required": false
     },
     {
@@ -2152,39 +1672,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_thunder_stone_ore",
       "required": false
     },
     {
@@ -2256,43 +1744,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_asphalt_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_asphalt_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_water_stone_ore",
       "required": false
     },
     {
@@ -2364,39 +1820,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_fire_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_thunder_stone_ore",
       "required": false
     },
     {
@@ -2476,39 +1900,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_dawn_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:spawn_reefstone_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_thunder_stone_ore",
       "required": false
     },
     {

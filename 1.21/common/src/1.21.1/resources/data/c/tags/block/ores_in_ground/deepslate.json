@@ -569,10 +569,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_blackstone_dusk_stone_ore",
       "required": false
     },
@@ -581,31 +577,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_shiny_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_blackstone_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_water_stone_ore",
       "required": false
     },
     {
@@ -709,43 +681,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_water_stone_ore",
       "required": false
     },
     {
@@ -873,43 +813,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_leaf_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_water_stone_ore",
       "required": false
     },
     {
@@ -1109,43 +1017,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:forbidden_arcanus_darkstone_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_leaf_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:forbidden_arcanus_darkstone_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_water_stone_ore",
       "required": false
     },
     {
@@ -1221,23 +1097,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:wilderwild_gabbro_dusk_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_fire_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_ice_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_leaf_stone_ore",
       "required": false
     },
     {
@@ -1245,19 +1105,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_shiny_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_sun_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:wilderwild_gabbro_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_water_stone_ore",
       "required": false
     }
   ]

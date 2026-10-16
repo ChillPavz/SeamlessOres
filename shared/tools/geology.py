@@ -3,7 +3,8 @@
 FIXED, for the stones other mods place (Blockus' limestone, Create's strata, ...): a refused pair is
 never built, and worldgen turns that ore into the stone wherever the stone swallows it, so no seam can
 appear. Not configurable: nothing registry-side may depend on config. The strict reading, plus a lore
-rule for Create's four invented stones (the owner's choice: "be very strict, the more we cut the better").
+rule for Create's four invented stones (the owner's choice: "be very strict, the more we cut the better"),
+and a lore rule for Cobblemon's evolution stones (COBBLEMON_KEEPS, COBBLEMON_LORE).
 
 OPTIONAL, for the game's own granite, diorite, andesite and tuff: the "Geology (removes ore)" option,
 default off. Every block stays registered; with the option on, the rock stays rock where the ore would
@@ -124,7 +125,45 @@ STRICT = {key: hosts for keys, hosts in FAMILIES for key in keys}
 if len(STRICT) != sum(len(keys) for keys, _hosts_ in FAMILIES):
     raise SystemExit("geology.py: an ore key is in two families")
 
-# Invented ores and rock are never judged; nor is anything on an exempt host or in the Nether.
+# Cobblemon's ten evolution stones (owner, 16 Oct 2026): each is kept only in the rock classes its real
+# counterpart or its idea belongs to; the stones in no class (invented, exempt, the Nether ones) keep
+# only those that fit their own lore (ore lore x stone lore). Written as refusals in STRICT, so the rule
+# is one table. The reasons, stone by stone, are in the maintainer notes (so-wave-2026-10-build).
+COBBLEMON_KEEPS = {
+    "fire_stone": ["VOLC", "FELS", "SULF"],             # volcanic heat, hot sulphide
+    "water_stone": ["LIME", "CALC", "MARB"],            # water-laid carbonate
+    "thunder_stone": ["SULF", "PLUT", "SCH"],           # metal-rich, deep crust
+    "leaf_stone": ["ASPH", "LIME", "LATE", "SHAL"],     # organic sediment, fossils, soil crust
+    "moon_stone": ["PLUT", "FELS", "SCH"],              # real moonstone: feldspar in plutonic rock, schist
+    "sun_stone": ["VOLC", "FELS"],                      # real sunstone: feldspar in lava (Oregon)
+    "ice_stone": ["MARB", "SCH", "CALC"],               # white, glassy, cold-looking
+    "dawn_stone": ["MARB", "CALC", "FELS"],             # pale and pink
+    "dusk_stone": ["PLUT", "VOLC", "ASPH", "SHAL"],     # dark rock
+    "shiny_stone": ["MARB", "CALC", "SCH"],             # sparkle: sugary marble, calcite, mica
+}
+# The stones in no class, by their own lore: which evolution stones they keep.
+COBBLEMON_LORE = {
+    "create_asurine": ["water_stone", "ice_stone"],          # blue crystal
+    "create_crimsite": ["fire_stone"],                       # crimson
+    "create_ochrum": ["sun_stone", "thunder_stone"],         # ochre, gold
+    "create_veridium": ["leaf_stone"],                       # green
+    "forbidden_arcanus_darkstone": ["dusk_stone", "moon_stone"],   # dark, arcane, the deepest rock
+    "blockus_viridite": ["leaf_stone", "dusk_stone"],        # green, of the deep dark
+    "promenade_blunite": ["water_stone", "ice_stone"],       # blue-grey
+    "create_scorchia": ["fire_stone", "dusk_stone"],         # scorched lava rock
+    "twigs_bloodstone": ["fire_stone"],                      # red, of the Nether
+    "mythicupgrades_sapphire_schist": ["water_stone", "ice_stone"],   # sapphire blue
+    "mythicupgrades_ruby_schist": ["fire_stone"],            # ruby red
+}
+_CLASSED = [h for hosts in CLASSES.values() for h in hosts]
+for _stone, _kept in COBBLEMON_KEEPS.items():
+    if _stone in STRICT:
+        raise SystemExit(f"geology.py: {_stone} is in a family and in the Cobblemon rule")
+    STRICT[_stone] = [h for h in _CLASSED if not any(h in CLASSES[c] for c in _kept)] + \
+        [h for h, kept in COBBLEMON_LORE.items() if _stone not in kept]
+
+# Invented ores and rock are never judged; nor is anything on an exempt host or in the Nether. (The
+# Cobblemon stones are judged above, through STRICT, which fixed() reads first.)
 FICTION = set("redstone adamantite aquarium banglum carmot kyber midas_gold morkite mythril necoium "
               "nether_banglum orichalcum palladium prometheum quadrillum runite starrite stormyx "
               "unobtainium chaos prosperity inferium gleaming experience nether_experience soulstone "

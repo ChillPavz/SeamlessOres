@@ -21,10 +21,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_water_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_water_stone_ore",
       "required": false
     },
@@ -33,19 +29,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_water_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_asurine_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_water_stone_ore",
       "required": false
     },
     {
@@ -53,59 +37,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_water_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_calcite_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_water_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_water_stone_ore",
       "required": false
     },
     {
