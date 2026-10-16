@@ -9,12 +9,13 @@ iron in a grey stone block pasted into granite. For Minecraft **1.20** through *
 - **The ore stays where it was.** Veins are not added, moved or made more common. A block that becomes
   granite iron ore was already going to be iron ore; only its look changes.
 - **Vanilla stones**: granite, diorite, andesite, tuff and dripstone, plus basalt and blackstone in the
-  Nether and, on 26.2 and 26.3, the Sulfur Caves' cinnabar.
-- **Other mods' stones**: Blockus, Create, Create: TFMG, Forbidden and Arcanus, Let's Do Meadow,
+  Nether, the Sulfur Caves' cinnabar (26.2 and 26.3, and with Vanilla Backport on 1.21.1 and 1.20.1),
+  and the deep blackstone Terralith lays in its caves.
+- **Other mods' stones**: Blockus, Born in Chaos, Create, Create: TFMG, Forbidden and Arcanus, Let's Do Meadow,
   Mythic Upgrades, Promenade, Spawn, Twigs and Wilder Wild, each with the ores that really form inside
   it, on the versions and loaders those mods exist for.
 - **Other mods' ores**: Cobblemon, Create, Create: New Age, Create: TFMG, Dense Mekanism, Energized
-  Power, Exp Ores, Extreme Reactors, Ice and Fire, Immersive Engineering, Malum, Mekanism, Modern
+  Power, Exp Ores, Extreme Reactors, Ice and Fire (Community Edition), Immersive Engineering, Malum, Mekanism, Modern
   Industrialization, Mystical Agriculture, Mythic Metals, Mythic Upgrades, Occultism, Oreganized,
   Powah, Silent Gear, Silent's Gems, Tech Reborn and Things.
 - **A modded block exists only when its mods are installed.** Each variant copies the tags, drops,

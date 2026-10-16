@@ -12,6 +12,8 @@ import net.minecraft.core.registries.Registries;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import com.chillpavz.seamlessores.content.HostStone;
+import com.chillpavz.seamlessores.content.RetiredBlocks;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerChunkEvents;
 import com.chillpavz.seamlessores.worldgen.CinnabarOreFeature;
 import com.chillpavz.seamlessores.worldgen.CinnabarVeins;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
@@ -39,6 +41,12 @@ public class SeamlessOresFabric implements ModInitializer {
 
         SeamlessOresContent.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
         SeamlessOresContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
+        // Ids an earlier release registered and this one no longer builds: placeholders that become their stone.
+        RetiredBlocks.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
+        RetiredBlocks.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item),
+                BuiltInRegistries.BLOCK::get);
+        ServerChunkEvents.CHUNK_LOAD.register((level, chunk) ->
+                level.getServer().execute(() -> RetiredBlocks.convertChunk(level, chunk)));
         SeamlessOresContent.registerCreativeTabs(
                 (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.

@@ -1,7 +1,11 @@
 package com.chillpavz.seamlessores;
 
 import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
+import com.chillpavz.seamlessores.content.RetiredBlocks;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraftforge.event.level.ChunkEvent;
 import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
 import com.chillpavz.seamlessores.worldgen.CinnabarOreFeature;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
@@ -54,6 +58,12 @@ public class SeamlessOresForge {
         // Game bus: worldgen registries are datapack-loaded per world, so this is the point where
         // they exist and no chunk has been generated yet.
         MinecraftForge.EVENT_BUS.addListener(SeamlessOresForge::onServerAboutToStart);
+        // A loaded chunk's retired placeholders become their stone, on the server thread after the load.
+        MinecraftForge.EVENT_BUS.addListener((ChunkEvent.Load event) -> {
+            if (event.getLevel() instanceof ServerLevel level) {
+                level.getServer().execute(() -> RetiredBlocks.convertChunk(level, event.getChunk()));
+            }
+        });
 
         // Client-only: the screen classes must never be loaded on a dedicated server, so the
         // reference lives behind this guard in a separate class.
@@ -76,6 +86,9 @@ public class SeamlessOresForge {
                 helper -> SeamlessOresContent.registerBlocks(helper::register));
         event.register(Registries.ITEM,
                 helper -> SeamlessOresContent.registerItems(helper::register));
+        // Ids an earlier release registered and this one no longer builds: placeholders that become their stone.
+        event.register(Registries.BLOCK, helper -> RetiredBlocks.registerBlocks(helper::register));
+        event.register(Registries.ITEM, helper -> RetiredBlocks.registerItems(helper::register, BuiltInRegistries.BLOCK::get));
         event.register(Registries.CREATIVE_MODE_TAB,
                 helper -> SeamlessOresContent.registerCreativeTabs(helper::register));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.

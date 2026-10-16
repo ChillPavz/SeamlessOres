@@ -1,0 +1,845 @@
+{
+  "_comment": "Block ids Seamless Ores 5.0.0 registered and 5.1.0 no longer builds (the Cobblemon lore rule). Kept as placeholders that turn into their host stone (RetiredBlocks). Never remove a line.",
+  "retired": [
+    {
+      "id": "blockus_bluestone_dawn_stone_ore",
+      "host": "blockus_bluestone",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "blockus_bluestone_fire_stone_ore",
+      "host": "blockus_bluestone",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "blockus_bluestone_ice_stone_ore",
+      "host": "blockus_bluestone",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "blockus_bluestone_leaf_stone_ore",
+      "host": "blockus_bluestone",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "blockus_bluestone_shiny_stone_ore",
+      "host": "blockus_bluestone",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "blockus_bluestone_sun_stone_ore",
+      "host": "blockus_bluestone",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "blockus_bluestone_water_stone_ore",
+      "host": "blockus_bluestone",
+      "ore": "water_stone"
+    },
+    {
+      "id": "blockus_limestone_dawn_stone_ore",
+      "host": "blockus_limestone",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "blockus_limestone_dusk_stone_ore",
+      "host": "blockus_limestone",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "blockus_limestone_fire_stone_ore",
+      "host": "blockus_limestone",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "blockus_limestone_ice_stone_ore",
+      "host": "blockus_limestone",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "blockus_limestone_moon_stone_ore",
+      "host": "blockus_limestone",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "blockus_limestone_shiny_stone_ore",
+      "host": "blockus_limestone",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "blockus_limestone_sun_stone_ore",
+      "host": "blockus_limestone",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "blockus_limestone_thunder_stone_ore",
+      "host": "blockus_limestone",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "blockus_marble_dusk_stone_ore",
+      "host": "blockus_marble",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "blockus_marble_fire_stone_ore",
+      "host": "blockus_marble",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "blockus_marble_leaf_stone_ore",
+      "host": "blockus_marble",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "blockus_marble_moon_stone_ore",
+      "host": "blockus_marble",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "blockus_marble_sun_stone_ore",
+      "host": "blockus_marble",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "blockus_marble_thunder_stone_ore",
+      "host": "blockus_marble",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "blockus_viridite_dawn_stone_ore",
+      "host": "blockus_viridite",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "blockus_viridite_fire_stone_ore",
+      "host": "blockus_viridite",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "blockus_viridite_ice_stone_ore",
+      "host": "blockus_viridite",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "blockus_viridite_moon_stone_ore",
+      "host": "blockus_viridite",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "blockus_viridite_shiny_stone_ore",
+      "host": "blockus_viridite",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "blockus_viridite_sun_stone_ore",
+      "host": "blockus_viridite",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "blockus_viridite_thunder_stone_ore",
+      "host": "blockus_viridite",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "blockus_viridite_water_stone_ore",
+      "host": "blockus_viridite",
+      "ore": "water_stone"
+    },
+    {
+      "id": "create_asurine_dawn_stone_ore",
+      "host": "create_asurine",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "create_asurine_dusk_stone_ore",
+      "host": "create_asurine",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "create_asurine_fire_stone_ore",
+      "host": "create_asurine",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "create_asurine_leaf_stone_ore",
+      "host": "create_asurine",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "create_asurine_moon_stone_ore",
+      "host": "create_asurine",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "create_asurine_shiny_stone_ore",
+      "host": "create_asurine",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "create_asurine_sun_stone_ore",
+      "host": "create_asurine",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "create_asurine_thunder_stone_ore",
+      "host": "create_asurine",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "create_crimsite_dawn_stone_ore",
+      "host": "create_crimsite",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "create_crimsite_dusk_stone_ore",
+      "host": "create_crimsite",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "create_crimsite_ice_stone_ore",
+      "host": "create_crimsite",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "create_crimsite_leaf_stone_ore",
+      "host": "create_crimsite",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "create_crimsite_moon_stone_ore",
+      "host": "create_crimsite",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "create_crimsite_shiny_stone_ore",
+      "host": "create_crimsite",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "create_crimsite_sun_stone_ore",
+      "host": "create_crimsite",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "create_crimsite_thunder_stone_ore",
+      "host": "create_crimsite",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "create_crimsite_water_stone_ore",
+      "host": "create_crimsite",
+      "ore": "water_stone"
+    },
+    {
+      "id": "create_limestone_dawn_stone_ore",
+      "host": "create_limestone",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "create_limestone_dusk_stone_ore",
+      "host": "create_limestone",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "create_limestone_fire_stone_ore",
+      "host": "create_limestone",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "create_limestone_ice_stone_ore",
+      "host": "create_limestone",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "create_limestone_moon_stone_ore",
+      "host": "create_limestone",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "create_limestone_shiny_stone_ore",
+      "host": "create_limestone",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "create_limestone_sun_stone_ore",
+      "host": "create_limestone",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "create_limestone_thunder_stone_ore",
+      "host": "create_limestone",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "create_ochrum_dawn_stone_ore",
+      "host": "create_ochrum",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "create_ochrum_dusk_stone_ore",
+      "host": "create_ochrum",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "create_ochrum_fire_stone_ore",
+      "host": "create_ochrum",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "create_ochrum_ice_stone_ore",
+      "host": "create_ochrum",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "create_ochrum_leaf_stone_ore",
+      "host": "create_ochrum",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "create_ochrum_moon_stone_ore",
+      "host": "create_ochrum",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "create_ochrum_shiny_stone_ore",
+      "host": "create_ochrum",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "create_ochrum_water_stone_ore",
+      "host": "create_ochrum",
+      "ore": "water_stone"
+    },
+    {
+      "id": "create_scoria_dawn_stone_ore",
+      "host": "create_scoria",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "create_scoria_ice_stone_ore",
+      "host": "create_scoria",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "create_scoria_leaf_stone_ore",
+      "host": "create_scoria",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "create_scoria_moon_stone_ore",
+      "host": "create_scoria",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "create_scoria_shiny_stone_ore",
+      "host": "create_scoria",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "create_scoria_thunder_stone_ore",
+      "host": "create_scoria",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "create_scoria_water_stone_ore",
+      "host": "create_scoria",
+      "ore": "water_stone"
+    },
+    {
+      "id": "create_veridium_dawn_stone_ore",
+      "host": "create_veridium",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "create_veridium_dusk_stone_ore",
+      "host": "create_veridium",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "create_veridium_fire_stone_ore",
+      "host": "create_veridium",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "create_veridium_ice_stone_ore",
+      "host": "create_veridium",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "create_veridium_moon_stone_ore",
+      "host": "create_veridium",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "create_veridium_shiny_stone_ore",
+      "host": "create_veridium",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "create_veridium_sun_stone_ore",
+      "host": "create_veridium",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "create_veridium_thunder_stone_ore",
+      "host": "create_veridium",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "create_veridium_water_stone_ore",
+      "host": "create_veridium",
+      "ore": "water_stone"
+    },
+    {
+      "id": "forbidden_arcanus_darkstone_dawn_stone_ore",
+      "host": "forbidden_arcanus_darkstone",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "forbidden_arcanus_darkstone_fire_stone_ore",
+      "host": "forbidden_arcanus_darkstone",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "forbidden_arcanus_darkstone_ice_stone_ore",
+      "host": "forbidden_arcanus_darkstone",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "forbidden_arcanus_darkstone_leaf_stone_ore",
+      "host": "forbidden_arcanus_darkstone",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "forbidden_arcanus_darkstone_shiny_stone_ore",
+      "host": "forbidden_arcanus_darkstone",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "forbidden_arcanus_darkstone_sun_stone_ore",
+      "host": "forbidden_arcanus_darkstone",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "forbidden_arcanus_darkstone_thunder_stone_ore",
+      "host": "forbidden_arcanus_darkstone",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "forbidden_arcanus_darkstone_water_stone_ore",
+      "host": "forbidden_arcanus_darkstone",
+      "ore": "water_stone"
+    },
+    {
+      "id": "meadow_limestone_dawn_stone_ore",
+      "host": "meadow_limestone",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "meadow_limestone_dusk_stone_ore",
+      "host": "meadow_limestone",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "meadow_limestone_fire_stone_ore",
+      "host": "meadow_limestone",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "meadow_limestone_ice_stone_ore",
+      "host": "meadow_limestone",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "meadow_limestone_moon_stone_ore",
+      "host": "meadow_limestone",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "meadow_limestone_shiny_stone_ore",
+      "host": "meadow_limestone",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "meadow_limestone_sun_stone_ore",
+      "host": "meadow_limestone",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "meadow_limestone_thunder_stone_ore",
+      "host": "meadow_limestone",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "minecraft_calcite_dusk_stone_ore",
+      "host": "minecraft_calcite",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "minecraft_calcite_fire_stone_ore",
+      "host": "minecraft_calcite",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "minecraft_calcite_leaf_stone_ore",
+      "host": "minecraft_calcite",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "minecraft_calcite_moon_stone_ore",
+      "host": "minecraft_calcite",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "minecraft_calcite_sun_stone_ore",
+      "host": "minecraft_calcite",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "minecraft_calcite_thunder_stone_ore",
+      "host": "minecraft_calcite",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "minecraft_smooth_basalt_dawn_stone_ore",
+      "host": "minecraft_smooth_basalt",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "minecraft_smooth_basalt_ice_stone_ore",
+      "host": "minecraft_smooth_basalt",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "minecraft_smooth_basalt_leaf_stone_ore",
+      "host": "minecraft_smooth_basalt",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "minecraft_smooth_basalt_moon_stone_ore",
+      "host": "minecraft_smooth_basalt",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "minecraft_smooth_basalt_shiny_stone_ore",
+      "host": "minecraft_smooth_basalt",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "minecraft_smooth_basalt_thunder_stone_ore",
+      "host": "minecraft_smooth_basalt",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "minecraft_smooth_basalt_water_stone_ore",
+      "host": "minecraft_smooth_basalt",
+      "ore": "water_stone"
+    },
+    {
+      "id": "promenade_asphalt_dawn_stone_ore",
+      "host": "promenade_asphalt",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "promenade_asphalt_fire_stone_ore",
+      "host": "promenade_asphalt",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "promenade_asphalt_ice_stone_ore",
+      "host": "promenade_asphalt",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "promenade_asphalt_moon_stone_ore",
+      "host": "promenade_asphalt",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "promenade_asphalt_shiny_stone_ore",
+      "host": "promenade_asphalt",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "promenade_asphalt_sun_stone_ore",
+      "host": "promenade_asphalt",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "promenade_asphalt_thunder_stone_ore",
+      "host": "promenade_asphalt",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "promenade_asphalt_water_stone_ore",
+      "host": "promenade_asphalt",
+      "ore": "water_stone"
+    },
+    {
+      "id": "promenade_blunite_dawn_stone_ore",
+      "host": "promenade_blunite",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "promenade_blunite_dusk_stone_ore",
+      "host": "promenade_blunite",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "promenade_blunite_fire_stone_ore",
+      "host": "promenade_blunite",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "promenade_blunite_leaf_stone_ore",
+      "host": "promenade_blunite",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "promenade_blunite_moon_stone_ore",
+      "host": "promenade_blunite",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "promenade_blunite_shiny_stone_ore",
+      "host": "promenade_blunite",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "promenade_blunite_sun_stone_ore",
+      "host": "promenade_blunite",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "promenade_blunite_thunder_stone_ore",
+      "host": "promenade_blunite",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "spawn_reefstone_dawn_stone_ore",
+      "host": "spawn_reefstone",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "spawn_reefstone_dusk_stone_ore",
+      "host": "spawn_reefstone",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "spawn_reefstone_fire_stone_ore",
+      "host": "spawn_reefstone",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "spawn_reefstone_ice_stone_ore",
+      "host": "spawn_reefstone",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "spawn_reefstone_moon_stone_ore",
+      "host": "spawn_reefstone",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "spawn_reefstone_shiny_stone_ore",
+      "host": "spawn_reefstone",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "spawn_reefstone_sun_stone_ore",
+      "host": "spawn_reefstone",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "spawn_reefstone_thunder_stone_ore",
+      "host": "spawn_reefstone",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "tfmg_bauxite_dawn_stone_ore",
+      "host": "tfmg_bauxite",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "tfmg_bauxite_dusk_stone_ore",
+      "host": "tfmg_bauxite",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "tfmg_bauxite_fire_stone_ore",
+      "host": "tfmg_bauxite",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "tfmg_bauxite_ice_stone_ore",
+      "host": "tfmg_bauxite",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "tfmg_bauxite_moon_stone_ore",
+      "host": "tfmg_bauxite",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "tfmg_bauxite_shiny_stone_ore",
+      "host": "tfmg_bauxite",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "tfmg_bauxite_sun_stone_ore",
+      "host": "tfmg_bauxite",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "tfmg_bauxite_thunder_stone_ore",
+      "host": "tfmg_bauxite",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "tfmg_bauxite_water_stone_ore",
+      "host": "tfmg_bauxite",
+      "ore": "water_stone"
+    },
+    {
+      "id": "tfmg_galena_dawn_stone_ore",
+      "host": "tfmg_galena",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "tfmg_galena_dusk_stone_ore",
+      "host": "tfmg_galena",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "tfmg_galena_ice_stone_ore",
+      "host": "tfmg_galena",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "tfmg_galena_leaf_stone_ore",
+      "host": "tfmg_galena",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "tfmg_galena_moon_stone_ore",
+      "host": "tfmg_galena",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "tfmg_galena_shiny_stone_ore",
+      "host": "tfmg_galena",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "tfmg_galena_sun_stone_ore",
+      "host": "tfmg_galena",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "tfmg_galena_water_stone_ore",
+      "host": "tfmg_galena",
+      "ore": "water_stone"
+    },
+    {
+      "id": "tfmg_lignite_dawn_stone_ore",
+      "host": "tfmg_lignite",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "tfmg_lignite_fire_stone_ore",
+      "host": "tfmg_lignite",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "tfmg_lignite_ice_stone_ore",
+      "host": "tfmg_lignite",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "tfmg_lignite_moon_stone_ore",
+      "host": "tfmg_lignite",
+      "ore": "moon_stone"
+    },
+    {
+      "id": "tfmg_lignite_shiny_stone_ore",
+      "host": "tfmg_lignite",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "tfmg_lignite_sun_stone_ore",
+      "host": "tfmg_lignite",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "tfmg_lignite_thunder_stone_ore",
+      "host": "tfmg_lignite",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "tfmg_lignite_water_stone_ore",
+      "host": "tfmg_lignite",
+      "ore": "water_stone"
+    },
+    {
+      "id": "twigs_rhyolite_dusk_stone_ore",
+      "host": "twigs_rhyolite",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "twigs_rhyolite_ice_stone_ore",
+      "host": "twigs_rhyolite",
+      "ore": "ice_stone"
+    },
+    {
+      "id": "twigs_rhyolite_leaf_stone_ore",
+      "host": "twigs_rhyolite",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "twigs_rhyolite_shiny_stone_ore",
+      "host": "twigs_rhyolite",
+      "ore": "shiny_stone"
+    },
+    {
+      "id": "twigs_rhyolite_thunder_stone_ore",
+      "host": "twigs_rhyolite",
+      "ore": "thunder_stone"
+    },
+    {
+      "id": "twigs_rhyolite_water_stone_ore",
+      "host": "twigs_rhyolite",
+      "ore": "water_stone"
+    },
+    {
+      "id": "twigs_schist_dawn_stone_ore",
+      "host": "twigs_schist",
+      "ore": "dawn_stone"
+    },
+    {
+      "id": "twigs_schist_dusk_stone_ore",
+      "host": "twigs_schist",
+      "ore": "dusk_stone"
+    },
+    {
+      "id": "twigs_schist_fire_stone_ore",
+      "host": "twigs_schist",
+      "ore": "fire_stone"
+    },
+    {
+      "id": "twigs_schist_leaf_stone_ore",
+      "host": "twigs_schist",
+      "ore": "leaf_stone"
+    },
+    {
+      "id": "twigs_schist_sun_stone_ore",
+      "host": "twigs_schist",
+      "ore": "sun_stone"
+    },
+    {
+      "id": "twigs_schist_water_stone_ore",
+      "host": "twigs_schist",
+      "ore": "water_stone"
+    }
+  ]
+}
