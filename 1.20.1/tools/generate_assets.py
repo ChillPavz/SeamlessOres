@@ -106,7 +106,8 @@ TFMG_JAR = jar("1.20.1-tfmg-1.0.2f.jar", "TFMG_JAR")
 
 ENERGIZEDPOWER_JAR = jar("1.20.1-energizedpower-1.20.1-2.15.22-forge.jar", "ENERGIZEDPOWER_JAR")
 
-ICEANDFIRE_JAR = jar("iceandfire-2.1.13-1.20.1-beta-5.jar", "ICEANDFIRE_JAR")
+# Ice and Fire Community Edition, the maintained fork (same mod id and ids), Forge and Fabric at 1.20.1.
+ICEANDFIRE_JAR = jar("IceAndFireCE-1.2.10-1.20.1-forge.jar", "ICEANDFIRE_JAR")
 EXPORES_JAR = jar("1.20.1-expores-1.0.0+mc1.20.1.jar", "EXPORES_JAR")
 THINGS_JAR = jar("1.20.1-things-0.3.3+1.20.jar", "THINGS_JAR")
 
@@ -317,7 +318,7 @@ MODS = {
     "silentgems":     {"display": "Silent's Gems",     "category": "silents_gems",
                        "licence": "MIT",          "author": "SilentChaos512"},
     "iceandfire":     {"display": "Ice and Fire",      "category": "ice_and_fire",
-                       "licence": "LGPL-3.0",     "author": "Alexthe666, TheBv"},
+                       "licence": "LGPL-3.0",     "author": "Alexthe666, the Community Edition by IAFEnvoy"},
     "expores":        {"display": "Exp Ores",          "category": "exp_ores",
                        "licence": "MIT",          "author": "TriQue"},
     "things":         {"display": "Things",            "category": "things",
@@ -624,7 +625,7 @@ ORE_DEFS = [
      "mod": "silentgems",
      "tiers": {"nether": "moldavite_nether_ore"}},
     # --- Ice and Fire (mod id iceandfire, LGPL-3.0) --------------------------------------------
-    # Forge only at 1.20.1, and this mod exists on no other branch we ship.
+    # The Community Edition (the maintained fork, same ids): Forge and Fabric at 1.20.1, NeoForge at 1.21.1.
     # Both ids are PREFIXED: Silent's Gems has its own sapphire and silver, and at 1.20.1 both mods
     # are Forge, so they genuinely coexist and <host>_sapphire_ore would collide. Block ids are a
     # one-way door, so the newcomer takes the prefix.
@@ -633,8 +634,8 @@ ORE_DEFS = [
     {"name": "iceandfire_sapphire", "overlay": "iceandfire_sapphire", "source": "sapphire_ore",
      "base": "stone", "mod": "iceandfire",
      "tiers": {"stone": "sapphire_ore"}},
-    {"name": "iceandfire_silver", "overlay": "iceandfire_silver", "source": "silver_ore",
-     "base": "stone", "mod": "iceandfire",
+    {"name": "iceandfire_silver", "overlay": "iceandfire_silver", "deepslate_overlay": "iceandfire_deepslate_silver",
+     "source": "silver_ore", "base": "stone", "mod": "iceandfire",
      "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
 
     # --- Exp Ores (mod id expores, MIT) ---------------------------------------------------------
@@ -955,7 +956,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "silentgems": ("forge",),
     "things": ("fabric",),
     # Both of these exist at 1.20.x and on no other branch we ship.
-    "iceandfire": ("forge",),
+    "iceandfire": ("forge", "fabric"),   # Ice and Fire CE 1.2.10: Forge and Fabric (the original was Forge only)
     "expores": ("fabric",),
     # Sept 2026 wave, each queried per version for 1.20.1 on the Modrinth API:
     "techreborn": ("fabric",),

@@ -5,7 +5,7 @@
     "particle": "minecraft:block/tuff",
     "side": "minecraft:block/tuff",
     "end": "minecraft:block/tuff",
-    "overlay": "seamlessores:block/iceandfire_silver_overlay"
+    "overlay": "seamlessores:block/iceandfire_deepslate_silver_overlay"
   },
   "elements": [
     {

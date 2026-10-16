@@ -113,10 +113,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_iceandfire_sapphire_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:granite_experience_ore",
       "required": false
     },
@@ -285,10 +281,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_iceandfire_sapphire_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:diorite_experience_ore",
       "required": false
     },
@@ -454,10 +446,6 @@
     },
     {
       "id": "seamlessores:andesite_thorium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_iceandfire_sapphire_ore",
       "required": false
     },
     {
@@ -832,10 +820,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_iceandfire_sapphire_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:dripstone_experience_ore",
       "required": false
     },
@@ -1013,10 +997,6 @@
     },
     {
       "id": "seamlessores:minecraft_blackstone_silents_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_iceandfire_sapphire_ore",
       "required": false
     },
     {
@@ -1564,10 +1544,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_iceandfire_sapphire_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_experience_ore",
       "required": false
     },
@@ -1745,10 +1721,6 @@
     },
     {
       "id": "seamlessores:minecraft_smooth_basalt_silents_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_iceandfire_sapphire_ore",
       "required": false
     },
     {
@@ -2045,10 +2017,6 @@
     },
     {
       "id": "seamlessores:twigs_schist_thorium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_iceandfire_sapphire_ore",
       "required": false
     },
     {

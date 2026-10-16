@@ -323,6 +323,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 3)
     public boolean extremeReactorsNether = true;
 
+    // --- Ice and Fire ---------------------------------------------------------------------------
+
+    @ConfigEntry.Category("ice_and_fire")
+    @ConfigEntry.Gui.Tooltip
+    public boolean iceAndFire = true;
+
     // --- Modern Industrialization ---------------------------------------------------------------
 
     @ConfigEntry.Category("modern_industrialization")
@@ -541,6 +547,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.cobblemonNether = cobblemonNether;
         values.modernIndustrialization = modernIndustrialization;
         values.occultism = occultism;
+        values.iceAndFire = iceAndFire;
         values.immersiveEngineering = immersiveEngineering;
         values.mekanism = mekanism;
         values.oreganized = oreganized;

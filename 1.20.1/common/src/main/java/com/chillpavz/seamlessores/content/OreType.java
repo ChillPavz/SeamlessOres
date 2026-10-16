@@ -443,7 +443,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
     public static final OreType SG_N_MOLDAVITE = silentNether("moldavite", "moldavite")
             .withStrength(4.0F, 4.0F);
 
-    // --- Ice and Fire (mod id iceandfire, LGPL-3.0). Forge only at 1.20.1 ---------------------
+    // --- Ice and Fire Community Edition (mod id iceandfire, LGPL-3.0). Forge and Fabric at 1.20.1 -
     // Both ids are PREFIXED because Silent's Gems ships its own sapphire and silver and both mods
     // are Forge here, so they coexist and the unprefixed ids would collide. Block ids are a one-way
     // door; the newcomer takes the prefix.
@@ -458,7 +458,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(3, 7), null, false, Set.of())
             .withStrength(4.0F, 3.0F);
     public static final OreType IAF_SILVER = ore(
-            "iceandfire_silver", "iceandfire_silver", null, "iceandfire",
+            "iceandfire_silver", "iceandfire_silver", "iceandfire_deepslate_silver", "iceandfire",
             of("iceandfire", "silver_ore"), of("iceandfire", "deepslate_silver_ore"), null,
             NONE, null, false, Set.of())
             .withStrength(3.0F, 3.0F, 3.0F, 3.0F);

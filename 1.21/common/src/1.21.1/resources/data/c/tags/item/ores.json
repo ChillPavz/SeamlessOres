@@ -118,6 +118,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_ie_aluminum_ore",
       "required": false
     },
@@ -1241,6 +1249,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_inferium_ore",
       "required": false
     },
@@ -1601,6 +1613,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_inferium_ore",
       "required": false
     },
@@ -1902,6 +1918,14 @@
     },
     {
       "id": "seamlessores:create_scoria_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -2239,6 +2263,14 @@
     },
     {
       "id": "seamlessores:diorite_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -2682,6 +2714,14 @@
     },
     {
       "id": "seamlessores:dripstone_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -3365,6 +3405,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_ie_aluminum_ore",
       "required": false
     },
@@ -3748,6 +3796,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_inferium_ore",
       "required": false
     },
@@ -3945,6 +3997,14 @@
     },
     {
       "id": "seamlessores:minecraft_blackstone_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -4160,6 +4220,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:minecraft_calcite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_calcite_inferium_ore",
       "required": false
     },
@@ -4317,6 +4381,14 @@
     },
     {
       "id": "seamlessores:minecraft_smooth_basalt_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_smooth_basalt_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -4632,6 +4704,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_inferium_ore",
       "required": false
     },
@@ -4901,6 +4977,14 @@
     },
     {
       "id": "seamlessores:promenade_blunite_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -5224,6 +5308,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_inferium_ore",
       "required": false
     },
@@ -5368,6 +5456,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_bauxite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_inferium_ore",
       "required": false
     },
@@ -5489,6 +5581,10 @@
     },
     {
       "id": "seamlessores:tfmg_galena_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -5629,6 +5725,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -5846,6 +5946,10 @@
     },
     {
       "id": "seamlessores:tuff_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -6300,6 +6404,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_inferium_ore",
       "required": false
     },
@@ -6561,6 +6669,14 @@
     },
     {
       "id": "seamlessores:twigs_schist_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_iceandfire_silver_ore",
       "required": false
     },
     {

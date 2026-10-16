@@ -766,6 +766,18 @@
     ],
     "rate": 10.81
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.18
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.57
+   },
    "iridium": {
     "where": [
      "1.20.1 fabric"
@@ -1073,6 +1085,18 @@
      "1.20.1 fabric"
     ],
     "rate": 35.28
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 22.51
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 105.94
    },
    "iridium": {
     "where": [
@@ -1453,6 +1477,18 @@
      "1.20.1 fabric"
     ],
     "rate": 31.73
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 21.74
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 102.33
    },
    "iridium": {
     "where": [
@@ -2461,12 +2497,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 9.65
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 45.42
@@ -3017,12 +3055,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 12.34
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 58.08
@@ -3573,12 +3613,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 12.82
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 60.35
@@ -4129,12 +4171,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 8.37
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 39.37
@@ -4776,12 +4820,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 11.08
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 52.16
@@ -5388,12 +5434,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 9.13
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 42.95
@@ -6161,12 +6209,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 13.33
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 62.75
@@ -6693,12 +6743,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 0.21
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 0.99
@@ -7231,12 +7283,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 5.65
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 26.61
@@ -7787,12 +7841,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 9.56
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 44.99
@@ -8356,12 +8412,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 8.91
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 41.92
@@ -8956,6 +9014,18 @@
     ],
     "rate": 13.53
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 8.74
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 41.15
+   },
    "iridium": {
     "where": [
      "1.20.1 fabric"
@@ -9323,6 +9393,18 @@
      "1.20.1 fabric"
     ],
     "rate": 13.53
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 8.74
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 41.15
    },
    "iridium": {
     "where": [
@@ -9732,12 +9814,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 12.0
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 56.46
@@ -11190,12 +11274,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 2.38
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 11.2
@@ -11697,12 +11783,14 @@
    },
    "iceandfire_sapphire": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 1.18
    },
    "iceandfire_silver": {
     "where": [
+     "1.20.1 fabric",
      "1.20.1 forge"
     ],
     "rate": 5.57

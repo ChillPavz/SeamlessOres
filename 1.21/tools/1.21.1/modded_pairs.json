@@ -200,6 +200,19 @@
     "cobblemon:deepslate_ice_stone_ore"
    ]
   },
+  "iceandfire_sapphire": {
+   "mod": "iceandfire",
+   "forms": [
+    "iceandfire:sapphire_ore"
+   ]
+  },
+  "iceandfire_silver": {
+   "mod": "iceandfire",
+   "forms": [
+    "iceandfire:silver_ore",
+    "iceandfire:deepslate_silver_ore"
+   ]
+  },
   "inferium": {
    "mod": "mysticalagriculture",
    "forms": [
@@ -1687,6 +1700,18 @@
     ],
     "rate": 13.46
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.24
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.68
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -2036,6 +2061,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 16.82
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.65
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.42
    },
    "inferium": {
     "where": [
@@ -2411,6 +2448,18 @@
     ],
     "rate": 21.51
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.34
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 58.08
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -2785,6 +2834,18 @@
     ],
     "rate": 22.35
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.82
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 60.35
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -3158,6 +3219,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.58
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.37
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.37
    },
    "inferium": {
     "where": [
@@ -3625,6 +3698,18 @@
     ],
     "rate": 19.32
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.08
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 52.16
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -4058,6 +4143,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 15.9
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.13
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.95
    },
    "inferium": {
     "where": [
@@ -4736,6 +4833,18 @@
     ],
     "rate": 65.67
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.26
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.33
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -5166,6 +5275,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.55
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.21
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.99
    },
    "inferium": {
     "where": [
@@ -5652,6 +5773,18 @@
     ],
     "rate": 9.85
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.65
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 26.61
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -6025,6 +6158,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 16.66
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.56
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 44.99
    },
    "inferium": {
     "where": [
@@ -6411,6 +6556,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 15.53
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.91
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.92
    },
    "inferium": {
     "where": [
@@ -6924,6 +7081,18 @@
     ],
     "rate": 25.97
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.76
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 78.89
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -7434,6 +7603,18 @@
     ],
     "rate": 27.3
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 17.05
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 80.24
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -7901,6 +8082,18 @@
     ],
     "rate": 16.71
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.0
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 56.46
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -8232,6 +8425,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 20.83
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.95
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 56.24
    },
    "inferium": {
     "where": [
@@ -8607,6 +8812,18 @@
     ],
     "rate": 20.83
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.95
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 56.24
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -8980,6 +9197,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 20.83
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.95
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 56.24
    },
    "inferium": {
     "where": [
@@ -9504,6 +9733,18 @@
     ],
     "rate": 9.43
    },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.38
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.2
+   },
    "inferium": {
     "where": [
      "1.21.1 neoforge"
@@ -10001,6 +10242,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.42
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.18
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.57
    },
    "inferium": {
     "where": [

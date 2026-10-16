@@ -154,6 +154,9 @@ public final class SeamlessOresConfig {
     /** Whether Occultism variants generate. Pure restyle. */
     public static boolean occultism = true;
 
+    /** Ice and Fire Community Edition's silver and sapphire. */
+    public static boolean iceAndFire = true;
+
     /** Whether Immersive Engineering variants generate. Pure restyle: all five sit on the
      * replaceables tags, so no ore is added anywhere. */
     public static boolean immersiveEngineering = true;
@@ -231,6 +234,7 @@ public final class SeamlessOresConfig {
             case "techreborn" -> netherHost ? techRebornNether : techReborn;
             case "modern_industrialization" -> modernIndustrialization;
             case "occultism" -> occultism;
+            case "iceandfire" -> iceAndFire;
             case "immersiveengineering" -> immersiveEngineering;
             case "mekanism" -> mekanism;
             case "oreganized" -> oreganized;
@@ -426,6 +430,7 @@ public final class SeamlessOresConfig {
         public boolean cobblemonNether = true;
         public boolean modernIndustrialization = true;
         public boolean occultism = true;
+        public boolean iceAndFire = true;
         public boolean immersiveEngineering = true;
         public boolean mekanism = true;
         public boolean oreganized = true;
@@ -488,6 +493,7 @@ public final class SeamlessOresConfig {
         cobblemonNether = values.cobblemonNether;
         modernIndustrialization = values.modernIndustrialization;
         occultism = values.occultism;
+        iceAndFire = values.iceAndFire;
         immersiveEngineering = values.immersiveEngineering;
         mekanism = values.mekanism;
         oreganized = values.oreganized;

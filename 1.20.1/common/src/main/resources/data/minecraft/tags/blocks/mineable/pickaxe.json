@@ -2664,6 +2664,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_experience_ore",
       "required": false
     },
@@ -2892,6 +2896,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_experience_ore",
       "required": false
     },
@@ -3069,6 +3081,10 @@
     },
     {
       "id": "seamlessores:blockus_bluestone_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -6744,6 +6760,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_experience_ore",
       "required": false
     },
@@ -6981,6 +7001,14 @@
     },
     {
       "id": "seamlessores:promenade_blunite_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iceandfire_silver_ore",
       "required": false
     },
     {

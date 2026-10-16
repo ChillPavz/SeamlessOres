@@ -96,6 +96,8 @@ CREATE_NEW_AGE_JAR = jar("create-new-age-1.2.0+neoforge-mc1.21.1.jar", "CREATE_N
 TECHREBORN_JAR = jar("1.21.1-TechReborn-5.11.19.jar", "TECHREBORN_JAR")
 MODERN_INDUSTRIALIZATION_JAR = jar("Modern-Industrialization-2.5.6.jar", "MODERN_INDUSTRIALIZATION_JAR")
 OCCULTISM_JAR = jar("occultism-1.21.1-neoforge-1.224.3.jar", "OCCULTISM_JAR")
+# Ice and Fire Community Edition, the maintained fork (same mod id and ids); NeoForge only at 1.21.1.
+ICEANDFIRE_JAR = jar("1.21.1-iceandfire-ce-2.1.4.jar", "ICEANDFIRE_JAR")
 EXTREME_REACTORS_JAR = jar("ExtremeReactors2-1.21.1-2.4.9.jar", "EXTREME_REACTORS_JAR")
 MYSTICAL_AGRICULTURE_JAR = jar("1.21.1-MysticalAgriculture-1.21.1-8.0.28.jar", "MYSTICAL_AGRICULTURE_JAR")
 # Cobblemon 1.7.3 and 1.8.0 (both 1.21.1) ship identical ore features, loot tables and tags;
@@ -120,6 +122,7 @@ OREGANIZED_JAR = jar("Oreganized-1.21.1-5.3.0.jar", "OREGANIZED_JAR")
 # permission (8 Oct 2026), credited with a link as Immersive Engineering is.
 MALUM_JAR = jar("malum-1.21.1-1.8.2.jar", "MALUM_JAR")
 MOD_JARS = {"oreganized": OREGANIZED_JAR,
+            "iceandfire": ICEANDFIRE_JAR,
             "malum": MALUM_JAR,
             "create_new_age": CREATE_NEW_AGE_JAR,
             "mekanism": MEKANISM_JAR,
@@ -287,6 +290,8 @@ MODS = {
                        "licence": "LGPL-3.0",     "author": "owmii, Technici4n, shartte"},
     "silentgear":     {"display": "Silent Gear",       "category": "silent_gear",
                        "licence": "MIT",          "author": "SilentChaos512"},
+    "iceandfire":     {"display": "Ice and Fire",      "category": "ice_and_fire",
+                       "licence": "LGPL-3.0",     "author": "Alexthe666, the Community Edition by IAFEnvoy"},
     "silentgems":     {"display": "Silent's Gems",     "category": "silents_gems",
                        "licence": "MIT",          "author": "SilentChaos512"},
     "things":         {"display": "Things",            "category": "things",
@@ -613,6 +618,15 @@ ORE_DEFS = [
     {"name": "tanzanite", "overlay": "tanzanite", "source": "nether_tanzanite_ore", "base": "netherrack",
      "mod": "silentgems",
      "tiers": {"nether": "nether_tanzanite_ore"}},
+    # Ice and Fire Community Edition (mod id iceandfire, LGPL-3.0), NeoForge only at 1.21.1. The same
+    # PREFIXED ids as 1.20.1. The overlays are the owner's, drawn from CE's own specks; the deepslate
+    # silver ore has specks of its own. Sapphire targets stone_ore_replaceables only: no deepslate tier.
+    {"name": "iceandfire_sapphire", "overlay": "iceandfire_sapphire", "source": "sapphire_ore",
+     "base": "stone", "mod": "iceandfire",
+     "tiers": {"stone": "sapphire_ore"}},
+    {"name": "iceandfire_silver", "overlay": "iceandfire_silver", "deepslate_overlay": "iceandfire_deepslate_silver",
+     "source": "silver_ore", "base": "stone", "mod": "iceandfire",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
     # Tech Reborn (Fabric only at 1.21.1). Its eight overworld ores all target the vanilla
     # replaceables tags: a pure restyle. Uranium does not exist here yet; cinnabar, pyrite and
     # sphalerite (netherrack only, they would ADD ore) and the four end stone ores are not covered.
@@ -934,6 +948,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "techreborn": ("fabric",),
     "modern_industrialization": ("neoforge",),   # its 1.20.1 build is Fabric; the loader flips
     "occultism": ("neoforge",),
+    "iceandfire": ("neoforge",),   # Ice and Fire CE 2.1.4, both platforms: NeoForge only at 1.21.1
     "bigreactors": ("neoforge",),
     "mysticalagriculture": ("neoforge",),
     # Immersive Engineering, queried per version on the Modrinth API AND on CurseForge:
@@ -1089,6 +1104,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.modern_industrialization": "Modern Industrialization",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
         f"text.autoconfig.{MOD_ID}.category.occultism": "Occultism",
+        f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.immersive_engineering": "Immersive Engineering",
         f"text.autoconfig.{MOD_ID}.category.oreganized": "Oreganized",
@@ -1304,6 +1320,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.mysticalAgriculture": "Mystical Agriculture: variants",
         f"text.autoconfig.{MOD_ID}.option.mysticalAgriculture.@Tooltip":
             "Generate host-matched inferium and prosperity ore. Does nothing unless the mod is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.iceAndFire": "Ice and Fire: variants",
+        f"text.autoconfig.{MOD_ID}.option.iceAndFire.@Tooltip":
+            "Generate host-matched sapphire and silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.occultism": "Occultism: variants",
         f"text.autoconfig.{MOD_ID}.option.occultism.@Tooltip":

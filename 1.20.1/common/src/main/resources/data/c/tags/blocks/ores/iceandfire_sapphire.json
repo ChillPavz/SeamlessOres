@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_iceandfire_sapphire_ore",
       "required": false
     },
@@ -30,6 +34,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iceandfire_sapphire_ore",
       "required": false
     }
   ]

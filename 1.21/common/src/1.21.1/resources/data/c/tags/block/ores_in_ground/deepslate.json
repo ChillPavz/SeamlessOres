@@ -205,6 +205,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_techreborn_bauxite_ore",
       "required": false
     },
@@ -490,6 +494,10 @@
     },
     {
       "id": "seamlessores:minecraft_blackstone_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -806,6 +814,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_iceandfire_silver_ore",
       "required": false
     },
     {

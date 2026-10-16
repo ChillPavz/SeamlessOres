@@ -5,7 +5,7 @@
     "particle": "minecraft:block/blackstone",
     "side": "minecraft:block/blackstone",
     "end": "minecraft:block/blackstone_top",
-    "overlay": "seamlessores:block/iceandfire_silver_overlay"
+    "overlay": "seamlessores:block/iceandfire_deepslate_silver_overlay"
   },
   "elements": [
     {

@@ -449,6 +449,21 @@ public record OreType(String name, String key, String overlay, String deepslateO
             .withStrength(4.0F, 4.0F);
     public static final OreType SG_N_PEARL = silentNether("pearl", "pearl")
             .withStrength(4.0F, 4.0F);
+    // --- Ice and Fire Community Edition (mod id iceandfire, LGPL-3.0). NeoForge only at 1.21.1 ----
+    // The same PREFIXED ids as 1.20.1 (Silent's Gems has its own sapphire and silver). Sapphire has no
+    // deepslate tier (its feature targets stone_ore_replaceables only). Read from IafBlocks 2.1.4:
+    // silver 3.0/3.0 with 2 experience (CE's change; the 1.20.1 build drops none), sapphire 4.0/3.0
+    // with 3 to 7. The deepslate silver ore has specks of its own, so its own overlay.
+    public static final OreType IAF_SAPPHIRE = ore(
+            "iceandfire_sapphire", "iceandfire_sapphire", null, "iceandfire",
+            of("iceandfire", "sapphire_ore"), null, null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(4.0F, 3.0F);
+    public static final OreType IAF_SILVER = ore(
+            "iceandfire_silver", "iceandfire_silver", "iceandfire_deepslate_silver", "iceandfire",
+            of("iceandfire", "silver_ore"), of("iceandfire", "deepslate_silver_ore"), null,
+            ConstantInt.of(2), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 3.0F, 3.0F);
     public static final OreType SG_N_TANZANITE = silentNether("tanzanite", "tanzanite")
             .withStrength(4.0F, 4.0F);
 
@@ -684,6 +699,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
                     SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE,
+                    IAF_SAPPHIRE, IAF_SILVER,
                     TR_BAUXITE, TR_GALENA, TR_IRIDIUM, TR_LEAD, TR_RUBY, TR_SAPPHIRE, TR_SILVER, TR_TIN,
                     MI_ANTIMONY, MI_BAUXITE, MI_LEAD, MI_LIGNITE_COAL, MI_MONAZITE, MI_NICKEL, MI_SALT,
                     MI_TIN, MI_TUNGSTEN, MI_URANIUM,

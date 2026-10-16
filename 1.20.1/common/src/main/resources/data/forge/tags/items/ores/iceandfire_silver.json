@@ -25,6 +25,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_iceandfire_silver_ore",
       "required": false
     },
@@ -66,6 +78,14 @@
     },
     {
       "id": "seamlessores:meadow_limestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iceandfire_silver_ore",
       "required": false
     },
     {
