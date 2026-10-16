@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_cave",
+  "features": "seamlessores:cinnabar_redstone_ore_redstone",
+  "step": "underground_ores"
+}

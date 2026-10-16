@@ -117,6 +117,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_occultism_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_blackstone_silver_ore",
       "required": false
     },

@@ -52,7 +52,7 @@ import static com.chillpavz.seamlessores.content.OreType.ZINC;
  * <p>tools/&lt;band&gt;/generate_assets.py PARSES this table, and so does Seamless Glowing Ores' pack
  * generator: keep each host one expression of the shape {@code vanilla("path", OreTier.X, MapColor.Y)}
  * (with an optional second id path) or {@code placed("namespace", "path", OreTier.X, MapColor.Y, ORE, ...)},
- * optionally followed by {@code .placedBy("mod")} or {@code .swallowing("mod", ORE, ...)}.
+ * optionally followed by {@code .placedBy("mod")}, {@code .swallowing("mod", ORE, ...)} or {@code .backportedBy("mod")}.
  */
 public final class HostStone {
 
@@ -71,6 +71,11 @@ public final class HostStone {
     public static final HostStone DRIPSTONE = vanilla("dripstone", "dripstone_block", OreTier.DRIPSTONE,
             MapColor.TERRACOTTA_BROWN)
             .swallowing("create", COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
+    // Cinnabar is the game's own rock from 26.2; on this band Vanilla Backport adds it under the same id,
+    // in its Sulfur Caves, so the host exists only with that mod (an id test alone would also match
+    // another mod's minecraft:cinnabar). Its variants ADD ore, see OreTier.CINNABAR.
+    public static final HostStone CINNABAR = vanilla("cinnabar", OreTier.CINNABAR, MapColor.COLOR_RED)
+            .backportedBy("vanillabackport");
     // Nether hosts: the two stones in base_stone_nether besides netherrack itself. Their variants ADD
     // ore, see OreTier.NETHER, so their worldgen injection is config-gated.
     public static final HostStone BASALT = vanilla("basalt", OreTier.NETHER, MapColor.COLOR_BLACK);
@@ -198,7 +203,7 @@ public final class HostStone {
      * config screen lists them.
      */
     public static final List<HostStone> ALL = List.of(
-            GRANITE, DIORITE, ANDESITE, TUFF, DRIPSTONE, BASALT, BLACKSTONE, MINECRAFT_BLACKSTONE,
+            GRANITE, DIORITE, ANDESITE, TUFF, DRIPSTONE, CINNABAR, BASALT, BLACKSTONE, MINECRAFT_BLACKSTONE,
             BLOCKUS_LIMESTONE, BLOCKUS_MARBLE, BLOCKUS_BLUESTONE, BLOCKUS_VIRIDITE, CREATE_ASURINE, CREATE_CRIMSITE,
             CREATE_LIMESTONE, CREATE_OCHRUM, CREATE_SCORCHIA, CREATE_SCORIA, CREATE_VERIDIUM, MINECRAFT_CALCITE,
             MINECRAFT_SMOOTH_BASALT, TFMG_BAUXITE, TFMG_GALENA, TFMG_LIGNITE, TWIGS_RHYOLITE, TWIGS_SCHIST,
@@ -215,6 +220,8 @@ public final class HostStone {
     private final List<OreType> swallows;
     private final List<OreType> refused;
     private volatile Block block;
+    /** The mod that adds this game rock to this band, or null: see {@link #backportedBy}. */
+    private String backportedBy;
 
     private HostStone(String name, ResourceLocation id, OreTier tier, MapColor mapColor, String placedBy,
                       String swallowedBy, List<OreType> listed) {
@@ -266,6 +273,16 @@ public final class HostStone {
         return new HostStone(name, id, tier, mapColor, modId, modId, swallows);
     }
 
+    /**
+     * The same rock, which only {@code modId} adds to this Minecraft (a later game block, backported): it
+     * exists, and its variants with it, only while that mod is installed. The block may be registered
+     * after ours, so its presence is never read from the block registry.
+     */
+    private HostStone backportedBy(String modId) {
+        this.backportedBy = modId;
+        return this;
+    }
+
     /** The same rock, which {@code modId}'s stone feature also lays over the listed ores. */
     private HostStone swallowing(String modId, OreType... ores) {
         return new HostStone(name, id, tier, mapColor, placedBy, modId, List.of(ores));
@@ -305,6 +322,9 @@ public final class HostStone {
      * so this is safe to ask during our own registration.
      */
     public boolean present() {
+        if (backportedBy != null) {
+            return Services.PLATFORM.isModLoaded(backportedBy);
+        }
         return placedBy == null
                 ? BuiltInRegistries.BLOCK.containsKey(id)
                 : Services.PLATFORM.isModLoaded(placedBy) && ModdedPairs.shipsHere(placedBy);

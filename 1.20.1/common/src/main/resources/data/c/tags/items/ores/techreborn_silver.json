@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_techreborn_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_blackstone_techreborn_silver_ore",
       "required": false
     },

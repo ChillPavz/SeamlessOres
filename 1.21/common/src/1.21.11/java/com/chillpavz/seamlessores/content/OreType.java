@@ -522,6 +522,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
             // The ore a dripstone shell wraps is whatever generated there, stone or deepslate; the
             // variant stands in for the stone one, whose drops and xp the deepslate one shares.
             case DRIPSTONE -> stoneOre;
+            // Cinnabar exists on this band in no game or mod: Vanilla Backport is 1.21.1 and 1.20.1.
+            case CINNABAR -> null;
         };
     }
 

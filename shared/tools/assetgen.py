@@ -378,8 +378,8 @@ def parse_host_table(path):
 
     Each is a dict: const (the Java constant), name (the id prefix of its variants), ns and path (its
     block id), tier (OreTier, lower case), placed_by (the mod that places it; None for the game's own
-    rock), swallowed_by (the mod whose feature lays it over ore), listed (the ore keys written in the
-    table, lower case). The band adds what is its own data: looks, measured pairs, geology.
+    rock), swallowed_by (the mod whose feature lays it over ore), backported_by (the mod that adds a later
+    game rock to this band, None otherwise), listed (the ore keys written in the table, lower case). The band adds what is its own data: looks, measured pairs, geology.
     """
     text = open(path, encoding="utf-8").read()
     decls = re.findall(r'public static final HostStone (\w+) = (vanilla|placed)\((.*?)\)((?:\s*\.\w+\([^)]*\))*);',
@@ -396,6 +396,7 @@ def parse_host_table(path):
             ns, block = strings
             name, placed_by = f"{ns}_{block}", ns
         swallowed_by = placed_by
+        backported_by = None
         for call, call_args in re.findall(r"\.(\w+)\(([^)]*)\)", chain):
             words = [a.strip() for a in call_args.split(",")]
             if call == "placedBy":
@@ -403,15 +404,18 @@ def parse_host_table(path):
             elif call == "swallowing":
                 swallowed_by = words[0].strip('"')
                 listed = [a.lower() for a in words[1:]]
+            elif call == "backportedBy":
+                backported_by = words[0].strip('"')
             else:
                 sys.exit(f"{const}: unknown call .{call}()")
         hosts.append({"const": const, "name": name, "ns": ns, "path": block, "tier": tier,
-                      "placed_by": placed_by, "swallowed_by": swallowed_by, "listed": listed})
+                      "placed_by": placed_by, "swallowed_by": swallowed_by, "backported_by": backported_by,
+                      "listed": listed})
     declared = len(re.findall(r"public static final HostStone \w+ =", text))
     if len(hosts) != declared:
         sys.exit(f"parsed {len(hosts)} of {declared} hosts in {path}: keep each one the shape"
                  ' vanilla("name"[, "path"], OreTier.X, MapColor.Y) or placed("ns", "path", OreTier.X, MapColor.Y,'
-                 ' ORE, ...), optionally .placedBy("mod") or .swallowing("mod", ORE, ...)')
+                 ' ORE, ...), optionally .placedBy("mod"), .swallowing("mod", ORE, ...) or .backportedBy("mod")')
     order = re.search(r"List<HostStone> ALL = List\.of\((.*?)\);", text, re.S).group(1)
     if [c.strip() for c in order.split(",")] != [h["const"] for h in hosts]:
         sys.exit("HostStone.ALL must list every host, in declaration order")

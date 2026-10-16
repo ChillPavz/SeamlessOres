@@ -17,10 +17,15 @@ package com.chillpavz.seamlessores.content;
  * and skips every ore block, which leaves stone ore standing in a dripstone wall. A dripstone variant
  * is swapped in for that one ore at that moment (see {@code DripstoneShell}), so it stands in for the
  * stone-tier ore and never adds any.
+ * <p>
+ * {@link #CINNABAR} ADDS ore, like {@link #NETHER}: no ore feature targets cinnabar. A few features of
+ * our own place the ores that really form beside cinnabar into Vanilla Backport's Sulfur Caves
+ * (1.21.1 and 1.20.1), mirroring the game's own from 26.2.
  */
 public enum OreTier {
     STONE,
     DEEPSLATE,
     NETHER,
-    DRIPSTONE
+    DRIPSTONE,
+    CINNABAR
 }

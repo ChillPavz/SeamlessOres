@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "seamlessores:cinnabar_sphalerite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_sphalerite_ore",
       "required": false
     },

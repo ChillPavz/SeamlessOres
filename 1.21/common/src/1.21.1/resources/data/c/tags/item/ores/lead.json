@@ -141,6 +141,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_techreborn_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_blackstone_dense_lead_ore",
       "required": false
     },

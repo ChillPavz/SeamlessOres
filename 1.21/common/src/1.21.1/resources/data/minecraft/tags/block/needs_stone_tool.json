@@ -576,6 +576,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_iron_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_blackstone_iron_ore",
       "required": false
     },

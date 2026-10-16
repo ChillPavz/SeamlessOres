@@ -11,7 +11,11 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import com.chillpavz.seamlessores.content.HostStone;
+import com.chillpavz.seamlessores.worldgen.CinnabarOreFeature;
+import com.chillpavz.seamlessores.worldgen.CinnabarVeins;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
+import com.chillpavz.seamlessores.worldgen.SulfurCaves;
 import com.chillpavz.seamlessores.worldgen.Worldgen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -42,6 +46,20 @@ public class SeamlessOresFabric implements ModInitializer {
                 Registry.register(BuiltInRegistries.FEATURE, id, feature));
         NetherGemFeature.register((id, feature) ->
                 Registry.register(BuiltInRegistries.FEATURE, id, feature));
+        // Vanilla Backport's cinnabar veins: the type is registered always, because the data names it.
+        CinnabarOreFeature.register((id, feature) ->
+                Registry.register(BuiltInRegistries.FEATURE, id, feature));
+        // Each cinnabar variant's mirrored veins, in Vanilla Backport's Sulfur Caves only. A variant
+        // exists only with that mod (and its ore's), so this adds nothing without them.
+        for (var variant : SeamlessOresContent.variants()) {
+            if (variant.host() != HostStone.CINNABAR) {
+                continue;
+            }
+            for (var id : CinnabarVeins.placedFeatures(variant)) {
+                BiomeModifications.addFeature(BiomeSelectors.includeByKey(SulfurCaves.BIOME),
+                        GenerationStep.Decoration.UNDERGROUND_ORES, ResourceKey.create(Registries.PLACED_FEATURE, id));
+            }
+        }
 
         // Ruby and sapphire in basalt deltas. This is the ONE place the mod adds a feature rather
         // than extending one, so it needs the per-loader biome API - NeoForge does the same job with

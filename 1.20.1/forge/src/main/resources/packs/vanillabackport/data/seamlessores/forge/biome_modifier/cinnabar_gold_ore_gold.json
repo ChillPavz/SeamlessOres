@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_cave",
+  "features": "seamlessores:cinnabar_gold_ore_gold",
+  "step": "underground_ores"
+}

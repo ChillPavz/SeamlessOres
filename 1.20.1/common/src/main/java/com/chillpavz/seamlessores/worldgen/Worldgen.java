@@ -18,6 +18,8 @@ public final class Worldgen {
 
     /** The ore targets (both sides), the large veins, the dripstone shell swap and the Lush Caves patches. */
     public static void onServerStarting(RegistryAccess registries) {
+        // Vanilla Backport's Sulfur Caves first: the ore side asks whether they are on.
+        run("Sulfur Caves", () -> SulfurCaves.prepare(registries));
         run(OreSideInjector.NAME, () -> OreSideInjector.inject(registries, ERA));
         run(StoneSideInjector.NAME, () -> StoneSideInjector.inject(registries, ERA));
         // Copper is thinned separately: it edits placement COUNTS on placed features rather than
@@ -33,6 +35,8 @@ public final class Worldgen {
         // The large copper and iron veins come from OreVeinifier during noise generation, invisible to
         // the ore features.
         run("Ore veins", VeinOreInjector::inject);
+        // After the veins are restyled: the Sulfur Caves keep the veins as they now stand out.
+        run("Sulfur Caves", SulfurCaves::afterInjectors);
         // The dripstone shell swap and the Lush Caves patches run after the ore pass, as on 26.x.
         run("Dripstone shells", DripstoneShell::prepare);
         run("Walled-in ore", WalledInOre::prepare);

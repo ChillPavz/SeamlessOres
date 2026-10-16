@@ -39,6 +39,7 @@ from assetgen import (POOL, TOOL_TAGS, assert_no_dashes, era_file, jar, jar_tags
                       look_models, read_mod_tags, silk_touch_to, stone_name, texture_path, title,
                       write_json, write_texture_json)
 import placed  # noqa: E402
+import cinnabar  # noqa: E402
 
 MOD_ID = "seamlessores"
 
@@ -152,6 +153,8 @@ HOST_LOOK = {
     "minecraft:andesite": ("single", "minecraft:block/andesite"),
     "minecraft:tuff": ("single", "minecraft:block/tuff"),
     "minecraft:dripstone_block": ("single", "minecraft:block/dripstone_block"),
+    # Vanilla Backport's cinnabar: the game's own id and texture key, from that mod (referenced, not shipped).
+    "minecraft:cinnabar": ("single", "minecraft:block/cinnabar"),
     "minecraft:basalt": ("column", "minecraft:block/basalt_side", "minecraft:block/basalt_top"),
     "minecraft:blackstone": ("column", "minecraft:block/blackstone", "minecraft:block/blackstone_top"),
     "blockus:limestone": ("single", "blockus:block/limestone"),
@@ -900,6 +903,8 @@ def resources_dir():
 # table on instances that do not have the mod. A noisy log beats blocks that drop nothing.
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "minecraft": ('fabric', 'neoforge', 'forge'),   # deep blackstone (Terralith): the game's rock, every loader
+    # Vanilla Backport 1.1.7.10 (cinnabar, its Sulfur Caves): Fabric and NeoForge at 1.21.1, no Forge build.
+    "vanillabackport": ("fabric", "neoforge"),
     # VERIFIED PER MINECRAFT VERSION, not from the project-level "loaders" array. That array is the
     # UNION across every file a project has ever shipped, so a mod with a Forge build at 1.20.1
     # still reports "forge" when its 1.21.1 file is NeoForge only. Trusting it put 143 conditional
@@ -981,7 +986,7 @@ def data_dir(namespace):
 
 def variants():
     """Every (host, host config, ore def, source form, source tier) that actually exists (placed.py)."""
-    return HOSTS.variants()
+    return HOSTS.variants(cinnabar.FAMILY)
 
 
 def overlay_for(ore, host_cfg, face="side"):
@@ -989,7 +994,7 @@ def overlay_for(ore, host_cfg, face="side"):
 
 
 def all_overlay_keys():
-    return HOSTS.overlay_keys()
+    return HOSTS.overlay_keys(cinnabar.FAMILY)
 
 
 def variant_name(host, ore):
@@ -1106,6 +1111,24 @@ def generate_json():
             "Ore left bare in a Lush Caves clay floor or moss carpet becomes clay or moss, so a",
         f"text.autoconfig.{MOD_ID}.option.lushCaves.@Tooltip[1]":
             "little ore is removed there. Bone meal on moss works exactly as in vanilla.",
+        f"text.autoconfig.{MOD_ID}.category.sulfur_caves": "Sulfur Caves",
+        f"text.autoconfig.{MOD_ID}.option.cinnabar": "Cinnabar ores (adds ore)",
+        f"text.autoconfig.{MOD_ID}.option.cinnabar.@Tooltip[0]":
+            "Gold, silver, iron, redstone and sulfide ores inside the Sulfur Caves' cinnabar,",
+        f"text.autoconfig.{MOD_ID}.option.cinnabar.@Tooltip[1]":
+            "where vanilla puts none.",
+        f"text.autoconfig.{MOD_ID}.option.cinnabarAmount": "Cinnabar ore amount (percent)",
+        f"text.autoconfig.{MOD_ID}.option.cinnabarAmount.@Tooltip[0]":
+            "How much cinnabar ore forms, in percent of the default. 0 places none,",
+        f"text.autoconfig.{MOD_ID}.option.cinnabarAmount.@Tooltip[1]":
+            "300 places three times as much. Applies to newly generated chunks.",
+        f"text.autoconfig.{MOD_ID}.option.sulfurCaves": "Sulfur Caves stay bare (removes ore)",
+        f"text.autoconfig.{MOD_ID}.option.sulfurCaves.@Tooltip[0]":
+            "No ore in or against the sulfur and cinnabar of the Sulfur Caves, including the large",
+        f"text.autoconfig.{MOD_ID}.option.sulfurCaves.@Tooltip[1]":
+            "copper and iron veins there.",
+        f"text.autoconfig.{MOD_ID}.option.sulfurCaves.@Tooltip[2]":
+            "On this version the Sulfur Caves come from Vanilla Backport.",
 
         f"text.autoconfig.{MOD_ID}.option.basalt": "Basalt variants (adds ore)",
         f"text.autoconfig.{MOD_ID}.option.basalt.@Tooltip[0]":
@@ -1436,7 +1459,7 @@ def generate_data():
                     conditions = {
                         "fabric:load_conditions": [
                             {"condition": "fabric:registry_contains", "registry": "minecraft:block",
-                             "values": [our_id if host_cfg["placed_by"] else vanilla_id]}
+                             "values": [our_id if host_cfg["placed_by"] or host_cfg["backported_by"] else vanilla_id]}
                         ],
                         "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": m} for m in gate],
                         FORGE_CONDITION_KEY: {"type": "forge:mod_loaded", "modid": gate[0]},
@@ -1480,8 +1503,10 @@ def generate_data():
                                 target.setdefault(tag_name, []).append(entry)
                 # c:ores_in_ground/<stone|deepslate|netherrack> - keyed on the ore we stand in for,
                 # so consumers treat a variant exactly like its counterpart.
-                ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[source_tier]
-                ores_in_ground.setdefault(ground, []).append(entry)
+                # A cinnabar variant stands in no ground the tag names.
+                if host_cfg["tier"] != "cinnabar":
+                    ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[source_tier]
+                    ores_in_ground.setdefault(ground, []).append(entry)
 
     # Tags MERGE with vanilla's by default (no "replace": true), so these add to the existing lists
     # rather than clobbering them. Getting this wrong would unregister 417 vanilla pickaxe entries.
@@ -1514,6 +1539,17 @@ def generate_data():
                               ("lush_moss_replaceable", "#minecraft:moss_replaceable")):
         write_json(os.path.join(ours, "tags", "block", f"{name}.json"),
                    {"values": [vanilla_tag, {"id": "#c:ores", "required": False}]})
+
+    # Vanilla Backport's Sulfur Caves: the mirrored cinnabar veins, attached on NeoForge by biome
+    # modifier (Fabric attaches them in code, from CinnabarVeins), and the tag no ore may touch.
+    written, report = cinnabar.write(
+        variants(), variant_name, gate_of, {"minecraft": CLIENT_JAR, **MOD_JARS}, data_dir(MOD_ID),
+        lambda gate: os.path.join(conditional_data_dir("neoforge", MOD_ID), "neoforge", "biome_modifier")
+        if "neoforge" in loot_modules(gate) else None,
+        "neoforge:add_features", "#c:is_cave", "neoforge:conditions")
+    print(f"  cinnabar: {len(written)} mirrored veins, Sulfur Caves only")
+    for line in report:
+        print("    " + line)
 
     print(f"  {len(mineable)} loot tables")
     print(f"  tags: mineable/pickaxe, {', '.join(sorted(tool_tags))}, "
@@ -1611,7 +1647,7 @@ def generate_textures():
                   f"  (from {source} over {base_name})")
 
 
-OVERWORLD_HOSTS = ["granite", "diorite", "andesite", "tuff", "dripstone"]
+OVERWORLD_HOSTS = ["granite", "diorite", "andesite", "tuff", "dripstone", "cinnabar"]
 NETHER_HOSTS = ["basalt", "blackstone"]
 
 
@@ -1772,7 +1808,7 @@ def generate_readme():
 
     sections = {
         "block-list": _block_list(),
-        "modded-stone-list": placed.modded_stone_list(HOSTS, STONE_MODS, MODS),
+        "modded-stone-list": placed.modded_stone_list(HOSTS, STONE_MODS, MODS, cinnabar.FAMILY),
         "overlay-list": _overlay_list(),
         "credits": _credits(),
     }

@@ -77,7 +77,8 @@ class Hosts(dict):
             tier = decl["tier"]
             self[name] = {"name": name, "id": host_id, "ns": decl["ns"], "path": decl["path"], "tier": tier,
                           "ore_tier": "stone" if tier in ("dripstone", "cinnabar") else tier,
-                          "placed_by": placed_by, "swallowed_by": decl["swallowed_by"], "swallows": swallows,
+                          "placed_by": placed_by, "swallowed_by": decl["swallowed_by"],
+                          "backported_by": decl.get("backported_by"), "swallows": swallows,
                           "refused": [o for o in swallows if placed_by and geology.fixed(name, o)],
                           "look": look[0], "side": look[1], "end": look[2] if len(look) > 2 else look[1],
                           "since": (since or {}).get(host_id)}
@@ -172,8 +173,9 @@ MODEL_SUFFIXES = {"single": ("",), "column": ("",), "turned": ("",), "mirrored_t
 
 
 def gate_of(host_cfg, ore):
-    """The mods a variant exists with: the one that places its stone, and the ore's own."""
-    return list(dict.fromkeys(m for m in (host_cfg["placed_by"], ore.get("mod")) if m))
+    """The mods a variant exists with: the one that places its stone (or adds the game rock to this band,
+    Vanilla Backport's cinnabar), and the ore's own."""
+    return list(dict.fromkeys(m for m in (host_cfg["placed_by"], host_cfg.get("backported_by"), ore.get("mod")) if m))
 
 
 def loot_modules(gate, by_mod, default):

@@ -6,7 +6,11 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ChunkSweepMixin",
-    "DripstoneUtilsMixin"
+    "DripstoneUtilsMixin",
+    "SulfurNoiseFillMixin",
+    "SulfurOreFeatureMixin",
+    "SulfurRegionMixin",
+    "SulfurSweepMixin"
   ],
   "client": [],
   "server": [],

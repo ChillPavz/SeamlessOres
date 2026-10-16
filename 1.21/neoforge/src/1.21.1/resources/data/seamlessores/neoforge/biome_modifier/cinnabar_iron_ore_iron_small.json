@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#c:is_cave",
+  "features": "seamlessores:cinnabar_iron_ore_iron_small",
+  "step": "underground_ores",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ]
+}

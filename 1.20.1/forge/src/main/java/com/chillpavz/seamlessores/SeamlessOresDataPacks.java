@@ -174,7 +174,11 @@ public final class SeamlessOresDataPacks {
             "twigs.oreganized",
             "twigs.powah",
             "twigs.silentgems",
-            "twigs.tfmg");
+            "twigs.tfmg",
+            "vanillabackport",
+            "vanillabackport.create",
+            "vanillabackport.occultism",
+            "vanillabackport.silentgems");
     // END GENERATED packs
 
     public static void addPackFinders(AddPackFindersEvent event) {

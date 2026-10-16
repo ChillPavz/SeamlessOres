@@ -59,6 +59,23 @@ public final class SeamlessOresConfig {
     public static boolean lushCaves = true;
 
     /**
+     * Whether Vanilla Backport's Sulfur Caves keep ore out of their sulfur and cinnabar. Like
+     * {@link #lushCaves} this REMOVES ore: the large veins are not built inside the biome, and no ore
+     * feature places a block that would touch sulfur or cinnabar. See {@code SulfurCaves}.
+     */
+    public static boolean sulfurCaves = true;
+
+    /** The top of the cinnabar amount slider; the veins' data counts are the default times this / 100. */
+    public static final int CINNABAR_AMOUNT_MAX = 300;
+
+    /**
+     * How much cinnabar ore forms, in percent of the default (0 to {@link #CINNABAR_AMOUNT_MAX}).
+     * Each cinnabar vein in the data is attempted at three times the default count and kept with
+     * probability amount / 300, so 100 is the default and 0 places none. See {@code CinnabarOreFeature}.
+     */
+    public static int cinnabarAmount = 100;
+
+    /**
      * Ordinary overworld copper, as a percentage of vanilla's vein count.
      *
      * <p>Vanilla runs {@code ore_copper} at 16 attempts per chunk of size 10, in every biome. This
@@ -381,6 +398,8 @@ public final class SeamlessOresConfig {
         public boolean lushCaves = true;
         public boolean oreVeins = true;
         public boolean geology = false;
+        public boolean sulfurCaves = true;
+        public int cinnabarAmount = 100;
         public boolean bastionSafeNether = true;
         public int netherOreRarity = 2;
         public int netherVeinSize = 80;
@@ -440,6 +459,8 @@ public final class SeamlessOresConfig {
 
         oreVeins = values.oreVeins;
         geology = values.geology;
+        sulfurCaves = values.sulfurCaves;
+        cinnabarAmount = Math.max(0, Math.min(CINNABAR_AMOUNT_MAX, values.cinnabarAmount));
         lushCaves = values.lushCaves;
         bastionSafeNether = values.bastionSafeNether;
         netherOreRarity = values.netherOreRarity;

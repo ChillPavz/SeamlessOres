@@ -3,6 +3,7 @@ package com.chillpavz.seamlessores;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
+import com.chillpavz.seamlessores.worldgen.CinnabarOreFeature;
 import com.chillpavz.seamlessores.worldgen.NetherGemFeature;
 import com.chillpavz.seamlessores.worldgen.Worldgen;
 import net.minecraft.core.registries.Registries;
@@ -82,6 +83,9 @@ public class SeamlessOresForge {
                 helper -> BastionSafeOreFeature.register(helper::register));
         event.register(Registries.FEATURE,
                 helper -> NetherGemFeature.register(helper::register));
+        // Vanilla Backport's cinnabar veins: the type is registered always, because the data names it.
+        event.register(Registries.FEATURE,
+                helper -> CinnabarOreFeature.register(helper::register));
     }
 
     private static void onBuildTabContents(BuildCreativeModeTabContentsEvent event) {

@@ -89,6 +89,25 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
     public int dripstoneCopper = 50;
 
+    // --- Sulfur Caves (Vanilla Backport) -----------------------------------------------------------
+    // The screen factory hides the tab when Vanilla Backport is not installed.
+
+    // ADDS ore, like basalt and blackstone: see OreTier.CINNABAR.
+    @ConfigEntry.Category("sulfur_caves")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean cinnabar = true;
+
+    // Percent of the default amount; see SeamlessOresConfig.cinnabarAmount.
+    @ConfigEntry.Category("sulfur_caves")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    @ConfigEntry.BoundedDiscrete(min = 0, max = 300)
+    public int cinnabarAmount = 100;
+
+    // Removes ore as well; see SeamlessOresConfig.sulfurCaves.
+    @ConfigEntry.Category("sulfur_caves")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean sulfurCaves = true;
+
     // --- Nether ---------------------------------------------------------------------------------
 
     /** Adds gold and quartz where vanilla has none - see the tooltip. */
@@ -446,6 +465,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("andesite", andesite);
         values.hosts.put("tuff", tuff);
         values.hosts.put("dripstone", dripstone);
+        values.hosts.put("cinnabar", cinnabar);
         values.hosts.put("basalt", basalt);
         values.hosts.put("blackstone", blackstone);
         values.hosts.put("minecraft_blackstone", minecraftBlackstone);
@@ -482,6 +502,8 @@ public class SeamlessOresConfigData implements ConfigData {
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;
+        values.sulfurCaves = sulfurCaves;
+        values.cinnabarAmount = cinnabarAmount;
 
         values.bastionSafeNether = bastionSafeNether;
         values.netherOreRarity = netherOreRarity;

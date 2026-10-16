@@ -107,6 +107,10 @@ public final class SeamlessOresConfigScreenFactory {
                 if (HostStone.ALL.stream().noneMatch(host -> host.placedBy() != null && host.present())) {
                     builder.removeCategoryIfExists(Component.translatable(CATEGORY_PREFIX + "modded_stones"));
                 }
+                // The Sulfur Caves and their cinnabar come with Vanilla Backport on this band.
+                if (!HostStone.CINNABAR.present()) {
+                    builder.removeCategoryIfExists(Component.translatable(CATEGORY_PREFIX + "sulfur_caves"));
+                }
                 return builder.build();
             });
         } else {

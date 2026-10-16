@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_blackstone_galena_ore",
       "required": false
     },

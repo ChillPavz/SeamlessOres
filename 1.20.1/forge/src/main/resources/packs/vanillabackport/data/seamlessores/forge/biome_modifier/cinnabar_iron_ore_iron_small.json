@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_cave",
+  "features": "seamlessores:cinnabar_iron_ore_iron_small",
+  "step": "underground_ores"
+}
