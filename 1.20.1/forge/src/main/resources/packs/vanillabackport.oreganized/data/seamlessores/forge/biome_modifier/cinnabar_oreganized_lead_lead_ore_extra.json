@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_cave",
+  "features": "seamlessores:cinnabar_oreganized_lead_lead_ore_extra",
+  "step": "underground_ores"
+}

@@ -1209,6 +1209,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_dense_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:cinnabar_galena_ore",
       "required": false
     },
@@ -1217,11 +1225,43 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_ie_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:cinnabar_iron_ore",
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_mi_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:cinnabar_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_silver_ore",
       "required": false
     },
     {
@@ -1234,6 +1274,10 @@
     },
     {
       "id": "seamlessores:cinnabar_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_silver_ore",
       "required": false
     },
     {

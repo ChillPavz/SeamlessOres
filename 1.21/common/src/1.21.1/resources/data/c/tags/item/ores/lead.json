@@ -141,7 +141,31 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:cinnabar_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_lead_ore",
       "required": false
     },
     {

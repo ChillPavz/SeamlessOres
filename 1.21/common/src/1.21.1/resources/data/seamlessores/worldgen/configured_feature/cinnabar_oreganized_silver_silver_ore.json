@@ -1,0 +1,9 @@
+{
+  "type": "seamlessores:cinnabar_ore",
+  "config": {
+    "size": 3,
+    "discard_chance_on_air_exposure": 0.8,
+    "ore": "seamlessores:cinnabar_oreganized_silver_ore",
+    "factor": 3
+  }
+}

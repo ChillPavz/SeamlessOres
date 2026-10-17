@@ -14,7 +14,7 @@ import java.util.Map;
  * feature exactly (vein size, veins per chunk, height range, air exposure); only the target becomes
  * cinnabar, the biome the Sulfur Caves, and the vein count is tripled for the amount slider (see
  * {@link CinnabarOreFeature}). The generator reads the values out of each game and mod jar; this table
- * only names the sources. KEEP IN SYNC WITH CINNABAR_SOURCES in the band's generate_assets.py.
+ * only names the sources. KEEP IN SYNC WITH SOURCES in shared/tools/cinnabar.py.
  *
  * <p>Gold's badlands-only extra feature is left out on purpose: it applies in badlands only.
  */
@@ -35,7 +35,18 @@ public final class CinnabarVeins {
             Map.entry("pyrite", List.of("pyrite_ore")),
             Map.entry("sphalerite", List.of("sphalerite_ore")),
             Map.entry("occultism_silver", List.of("ore_silver", "ore_silver_deepslate")),
-            Map.entry("silents_silver", List.of("silver_ore")));
+            Map.entry("silents_silver", List.of("silver_ore")),
+            Map.entry("silver", List.of("ore_silver")),
+            Map.entry("iceandfire_silver", List.of("silver_ore")),
+            Map.entry("ie_lead", List.of("lead")),
+            Map.entry("ie_silver", List.of("silver")),
+            Map.entry("oreganized_lead", List.of("lead_ore", "lead_ore_extra")),
+            Map.entry("oreganized_silver", List.of("silver_ore", "silver_ore_extra")),
+            Map.entry("mi_lead", List.of("ore_generator_lead")),
+            Map.entry("antimony", List.of("ore_generator_antimony")),
+            Map.entry("mek_lead", List.of("ore_lead_normal")),
+            Map.entry("dense_lead", List.of("dense_lead")),
+            Map.entry("lead", List.of("lead_ore")));
 
     /** Our placed features for one cinnabar variant, e.g. {@code seamlessores:cinnabar_gold_ore_gold}. */
     public static List<ResourceLocation> placedFeatures(OreVariant variant) {

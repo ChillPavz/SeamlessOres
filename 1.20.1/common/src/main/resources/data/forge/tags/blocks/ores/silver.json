@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_blackstone_silver_ore",
       "required": false
     },
@@ -150,6 +154,14 @@
     },
     {
       "id": "seamlessores:cinnabar_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_silver_ore",
       "required": false
     },
     {

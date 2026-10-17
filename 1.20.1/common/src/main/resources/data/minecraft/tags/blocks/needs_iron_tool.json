@@ -900,6 +900,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_ie_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:cinnabar_pyrite_ore",
       "required": false
     },

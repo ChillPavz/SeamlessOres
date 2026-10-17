@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_mi_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_blackstone_mi_lead_ore",
       "required": false
     },

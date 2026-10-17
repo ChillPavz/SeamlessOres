@@ -262,16 +262,43 @@ public final class SulfurCaves {
     }
 
     /**
-     * After a chunk's own decoration: vein ore or raw ore touching sulfur or cinnabar becomes the
-     * sulfur or cinnabar it touches most. Only sections whose palette holds a vein ore are read.
+     * After a chunk's own decoration: vein ore, raw ore or any known ore touching sulfur or cinnabar
+     * becomes the sulfur or cinnabar it touches most. Only sections whose palette holds one are read.
+     * The known ores are here for the mods whose ore features are not the game's (Mekanism's
+     * {@code mekanism:ore}, Immersive Engineering's {@code ie_ore}): the {@code OreFeature} hook never
+     * sees them, so their ore against sulfur is caught here instead. Such a feature also writes into the
+     * chunks around its own, which may have been swept already, so the region's other chunks are read
+     * too, but only their sections that hold sulfur or cinnabar (or sit beside one that does).
      */
     public static void sweepVeinEdges(WorldGenLevel level, ChunkAccess chunk) {
         final Map<Block, BlockState> fillers = veinFiller;
-        if (!active || fillers.isEmpty()) {
+        final Set<Block> ores = knownOre;
+        if (!active || (fillers.isEmpty() && ores.isEmpty())) {
             return;
         }
+        final Predicate<Block> swept = block -> fillers.containsKey(block) || ores.contains(block);
         // The region's own write zone: the vein's ore often runs on into the next chunk.
-        final Predicate<BlockPos> writable = level instanceof WriteZone zone ? zone::seamlessores$canWrite : inChunk(chunk);
+        final boolean region = level instanceof WriteZone;
+        final Predicate<BlockPos> writable = region ? ((WriteZone) level)::seamlessores$canWrite : inChunk(chunk);
+        final int cx = chunk.getPos().x;
+        final int cz = chunk.getPos().z;
+        final int reach = region ? 1 : 0;
+        for (int dx = -reach; dx <= reach; dx++) {
+            for (int dz = -reach; dz <= reach; dz++) {
+                final boolean own = dx == 0 && dz == 0;
+                final ChunkAccess target;
+                try {
+                    target = own ? chunk : level.getChunk(cx + dx, cz + dz);
+                } catch (RuntimeException outsideRegion) {
+                    continue;
+                }
+                sweepChunk(level, target, swept, writable, !own);
+            }
+        }
+    }
+
+    private static void sweepChunk(WorldGenLevel level, ChunkAccess chunk, Predicate<Block> swept,
+                                   Predicate<BlockPos> writable, boolean onlyBesideCover) {
         final LevelChunkSection[] sections = chunk.getSections();
         final int minX = chunk.getPos().getMinBlockX();
         final int minZ = chunk.getPos().getMinBlockZ();
@@ -280,22 +307,27 @@ public final class SulfurCaves {
             final LevelChunkSection section = sections[i];
             // Not gated on the section's own biomes: the bands are drawn through a jittered biome lookup.
             if (section.hasOnlyAir()
-                    || !section.getStates().maybeHas(state -> fillers.containsKey(state.getBlock()))) {
+                    || !section.getStates().maybeHas(state -> swept.test(state.getBlock()))
+                    || (onlyBesideCover && !holdsCover(sections, i - 1) && !holdsCover(sections, i)
+                        && !holdsCover(sections, i + 1))) {
                 continue;
             }
             final int minY = SectionPos.sectionToBlockCoord(chunk.getSectionYFromSectionIndex(i));
             for (int y = 0; y < 16; y++) {
                 for (int z = 0; z < 16; z++) {
                     for (int x = 0; x < 16; x++) {
-                        if (!fillers.containsKey(section.getBlockState(x, y, z).getBlock())) {
+                        if (!swept.test(section.getBlockState(x, y, z).getBlock())) {
                             continue;
                         }
                         pos.set(minX + x, minY + y, minZ + z);
+                        if (!writable.test(pos)) {
+                            continue;
+                        }
                         final BlockState cover = cover(level, pos);
                         if (cover != null) {
                             flood(level, pos.immutable(), cover, writable);
                             if (EDGE_ANNOUNCED.compareAndSet(false, true)) {
-                                Constants.LOG.info("Worldgen: first vein edge cleared beside sulfur or cinnabar at {}",
+                                Constants.LOG.info("Worldgen: first ore edge cleared beside sulfur or cinnabar at {}",
                                         pos.immutable());
                             }
                         }
@@ -303,6 +335,12 @@ public final class SulfurCaves {
                 }
             }
         }
+    }
+
+    /** Whether the section at this index exists and its palette may hold sulfur or cinnabar. */
+    private static boolean holdsCover(LevelChunkSection[] sections, int i) {
+        return i >= 0 && i < sections.length && !sections[i].hasOnlyAir()
+                && sections[i].getStates().maybeHas(state -> state.is(KEEPS_ORE_OUT));
     }
 
     /**

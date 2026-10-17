@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_blackstone_lead_ore",
       "required": false
     },
@@ -126,6 +130,18 @@
     },
     {
       "id": "seamlessores:dripstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_ie_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_mek_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_lead_ore",
       "required": false
     },
     {

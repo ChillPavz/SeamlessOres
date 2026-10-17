@@ -21,9 +21,13 @@ from assetgen import write_json
 MOD_ID = "seamlessores"
 
 # The ores that get a cinnabar variant, by OVERLAY key: Nether gold is also named "gold", its overlay is
-# not. KEEP IN SYNC WITH OreType.cinnabarFamily(). The same family as 26.2 and up.
+# not. KEEP IN SYNC WITH OreType.cinnabarFamily(). 26.2 and up's family, plus the silver, lead and
+# antimony of the mods only these bands have (owner, 17 Oct 2026): what forms beside cinnabar in a hot
+# spring deposit (gold, silver, pyrite, the lead and zinc sulfides, stibnite), whichever mod it comes from.
 FAMILY = {"gold", "iron", "redstone", "zinc", "galena", "techreborn_lead", "techreborn_silver",
-          "occultism_silver", "silents_silver", "pyrite", "sphalerite"}
+          "occultism_silver", "silents_silver", "pyrite", "sphalerite",
+          "silver", "iceandfire_silver", "ie_lead", "ie_silver", "oreganized_lead", "oreganized_silver",
+          "mi_lead", "antimony", "mek_lead", "dense_lead", "lead"}
 
 # Ore name -> (namespace, [placed feature paths]). Gold's badlands-only extra feature is left out.
 SOURCES = {
@@ -38,6 +42,37 @@ SOURCES = {
     "sphalerite": ("techreborn", ["sphalerite_ore"]),
     "occultism_silver": ("occultism", ["ore_silver", "ore_silver_deepslate"]),
     "silents_silver": ("silentgear", ["silver_ore"]),
+    "silver": ("mythicmetals", ["ore_silver"]),
+    "iceandfire_silver": ("iceandfire", ["silver_ore"]),
+    "ie_lead": ("immersiveengineering", ["lead"]),
+    "ie_silver": ("immersiveengineering", ["silver"]),
+    "oreganized_lead": ("oreganized", ["lead_ore", "lead_ore_extra"]),
+    "oreganized_silver": ("oreganized", ["silver_ore", "silver_ore_extra"]),
+    "mi_lead": ("modern_industrialization", ["ore_generator_lead"]),
+    "antimony": ("modern_industrialization", ["ore_generator_antimony"]),
+    "mek_lead": ("mekanism", ["ore_lead_normal"]),
+    "dense_lead": ("densemekanism", ["dense_lead"]),
+    "lead": ("tfmg", ["lead_ore"]),
+}
+
+# Modern Industrialization has a stone and a deepslate feature over the SAME height range, each placing
+# only in its own rock, so at any height one of them applies: mirroring both would double it in cinnabar.
+# Only the stone one is mirrored (Occultism's and Oreganized's pairs cover different heights, so both stay).
+
+
+def _trapezoid(low, high):
+    return {"type": "minecraft:trapezoid", "min_inclusive": low, "max_inclusive": high}
+
+
+# The sources whose vein size, count and height live in the mod's CODE (its own feature types, read
+# from its config defaults), not in a configured feature: (size, discard chance, count, height), read
+# from the class files and the same at 1.20.1 and 1.21.1. Immersive Engineering: IEServerConfig.Ores
+# .VeinType (lead size 8, -32..80, 12 a chunk; silver size 9, -48..32, 10 a chunk, a quarter discarded
+# on air). Mekanism: OreType LEAD "normal" (8 a chunk, a quarter discarded, size 9, bottom-24..64).
+IN_CODE = {
+    ("immersiveengineering", "lead"): (8, 0.0, 12, _trapezoid({"absolute": -32}, {"absolute": 80})),
+    ("immersiveengineering", "silver"): (9, 0.25, 10, _trapezoid({"absolute": -48}, {"absolute": 32})),
+    ("mekanism", "ore_lead_normal"): (9, 0.25, 8, _trapezoid({"above_bottom": -24}, {"absolute": 64})),
 }
 
 # A source whose jar carries no such feature (its worldgen is in code) gets this stand in.
@@ -129,8 +164,16 @@ def write(variants, name_of, gate_of, jars, data_dir, modifier_dir_of, modifier_
         namespace, sources = SOURCES[ore["name"]]
         for source in sources:
             key = f"cinnabar_{ore['name']}_{source}"
-            found = read_source(jars.get(namespace), namespace, source)
-            if found is None:
+            in_code = IN_CODE.get((namespace, source))
+            found = None if in_code else read_source(jars.get(namespace), namespace, source)
+            if in_code:
+                size, discard, count, height = in_code
+                placement = [{"type": "minecraft:count", "count": count},
+                             {"type": "minecraft:in_square"},
+                             {"type": "minecraft:height_range", "height": height},
+                             {"type": "minecraft:biome"}]
+                report.append(f"{key}: size {size}, discard {discard}, {count}, {json.dumps(height)} (from code)")
+            elif found is None:
                 if namespace == "minecraft":
                     sys.exit(f"  !! {namespace}:{source} not found in the game jar")
                 fb = FALLBACK

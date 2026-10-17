@@ -191,8 +191,14 @@ public final class SeamlessOresDataPacks {
             "twigs.tfmg",
             "vanillabackport",
             "vanillabackport.create",
+            "vanillabackport.densemekanism",
+            "vanillabackport.iceandfire",
+            "vanillabackport.immersiveengineering",
+            "vanillabackport.mekanism",
             "vanillabackport.occultism",
-            "vanillabackport.silentgems");
+            "vanillabackport.oreganized",
+            "vanillabackport.silentgems",
+            "vanillabackport.tfmg");
     // END GENERATED packs
 
     public static void addPackFinders(AddPackFindersEvent event) {

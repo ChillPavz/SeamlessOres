@@ -57,7 +57,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:cinnabar_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:cinnabar_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_silver_ore",
       "required": false
     },
     {
