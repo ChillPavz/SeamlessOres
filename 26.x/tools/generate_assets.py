@@ -104,6 +104,8 @@ PROFILES = {
             "energizedpower": REFS + "26.1.2-energizedpower-3.0.0+26.1.x-neoforge.jar",
             "techreborn": REFS + "26.1.x-TechReborn-6.0.5.jar",
             "occultism": REFS + "occultism-26.1.2-neoforge-1.251.0.jar",
+            # Ice and Fire Community Edition 2.2-beta.4, its only 26.x build (a beta, owner 17 Oct 2026).
+            "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -121,6 +123,8 @@ PROFILES = {
             "techreborn": ("fabric",),
             "occultism": ("neoforge",),
             "mysticalagriculture": ("neoforge",),
+            # CurseForge only (Ice and Fire CE is not on Modrinth); 26.1.2 NeoForge, needs Jupiter and Uranus.
+            "iceandfire": ("neoforge",),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -135,6 +139,7 @@ PROFILES = {
             "energizedpower": REFS + "energizedpower-3.0.0+26.2.x-neoforge.jar",
             "techreborn": REFS + "26.2-TechReborn-6.1.1.jar",
             "occultism": REFS + "occultism-26.2-neoforge-1.253.1.jar",
+            "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",   # no 26.2 build: stands in, inert
         },
         "available": {
             "create": ("fabric",),
@@ -167,6 +172,7 @@ PROFILES = {
             "energizedpower": REFS + "energizedpower-3.0.1+26.3.x-fabric.jar",
             "techreborn": REFS + "26.3-TechReborn-6.2.0.jar",
             "occultism": REFS + "occultism-26.3-neoforge-1.256.0.jar",
+            "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",   # no 26.3 build: stands in, inert
         },
         "available": {
             "mythicupgrades": ("fabric", "neoforge"),
@@ -350,6 +356,8 @@ MODS = {
                        "licence": "MIT",          "author": "Team Reborn, modmuss50, drcrazy"},
     "occultism":      {"display": "Occultism",         "category": "occultism",
                        "licence": "MIT",          "author": "Kli Kli"},
+    "iceandfire":     {"display": "Ice and Fire",      "category": "ice_and_fire",
+                       "licence": "LGPL-3.0",     "author": "Alexthe666, the Community Edition by IAFEnvoy"},
     "mysticalagriculture": {"display": "Mystical Agriculture", "category": "mystical_agriculture",
                        "licence": "MIT",          "author": "BlakeBr0"},
 }
@@ -684,6 +692,15 @@ ORE_DEFS = [
     {"name": "occultism_silver", "overlay": "occultism_silver", "source": "silver_ore", "base": "stone",
      "mod": "occultism",
      "tiers": {"stone": "silver_ore", "deepslate": "silver_ore_deepslate"}},
+    # Ice and Fire Community Edition (mod id iceandfire, LGPL-3.0), 26.1.2 NeoForge only (2.2-beta.4).
+    # The same PREFIXED ids as the older bands. The overlays are the owner's, drawn from CE's own specks;
+    # the deepslate silver ore has specks of its own. Sapphire targets stone_ore_replaceables only.
+    {"name": "iceandfire_sapphire", "overlay": "iceandfire_sapphire", "source": "sapphire_ore",
+     "base": "stone", "mod": "iceandfire",
+     "tiers": {"stone": "sapphire_ore"}},
+    {"name": "iceandfire_silver", "overlay": "iceandfire_silver", "deepslate_overlay": "iceandfire_deepslate_silver",
+     "source": "silver_ore", "base": "stone", "mod": "iceandfire",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
     # Nether ores that ADD ore: each targets netherrack only, so basalt and blackstone variants put
     # ore where the mod places none. Behind that mod's own nether switch, and thinned by the same
     # netherOreRarity / netherVeinSize dials as our gold and quartz.
@@ -760,6 +777,7 @@ def resources_dir():
 #   techreborn          fabric only      (added Sept 2026)
 #   occultism           neoforge only    (added Sept 2026)
 #   mysticalagriculture neoforge only    (added Sept 2026; 26.1.2 only, needs Cucumber, also 26.1.2)
+#   iceandfire          neoforge only    (Ice and Fire CE 2.2-beta.4, 26.1.2 only, CurseForge; Oct 2026)
 #
 # There is no forge module on this branch, so nothing is ever written to one, and no table carries
 # Forge's condition key.
@@ -791,6 +809,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "techreborn": ("fabric",),
     "occultism": ("neoforge",),
     "mysticalagriculture": ("neoforge",),
+    "iceandfire": ("neoforge",),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -971,6 +990,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
         f"text.autoconfig.{MOD_ID}.category.occultism": "Occultism",
+        f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
 
@@ -1178,6 +1198,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.occultism": "Occultism: variants",
         f"text.autoconfig.{MOD_ID}.option.occultism.@Tooltip":
             "Generate host-matched silver ore. Does nothing unless Occultism is installed.",
+
+        f"text.autoconfig.{MOD_ID}.option.iceAndFire": "Ice and Fire: variants",
+        f"text.autoconfig.{MOD_ID}.option.iceAndFire.@Tooltip":
+            "Generate host-matched sapphire and silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.techReborn": "Tech Reborn: variants",
         f"text.autoconfig.{MOD_ID}.option.techReborn.@Tooltip":

@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_silver_ore",
       "required": false
     },
@@ -30,6 +34,10 @@
     },
     {
       "id": "seamlessores:diorite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -49,6 +57,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_silents_silver_ore",
       "required": false
     },
@@ -58,6 +70,10 @@
     },
     {
       "id": "seamlessores:tuff_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -74,6 +90,10 @@
     },
     {
       "id": "seamlessores:dripstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_iceandfire_silver_ore",
       "required": false
     },
     {
@@ -102,6 +122,10 @@
     },
     {
       "id": "seamlessores:minecraft_blackstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_iceandfire_silver_ore",
       "required": false
     },
     {

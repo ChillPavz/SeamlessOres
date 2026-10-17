@@ -301,6 +301,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean occultism = true;
 
+    // --- Ice and Fire ---------------------------------------------------------------------------
+
+    @ConfigEntry.Category("ice_and_fire")
+    @ConfigEntry.Gui.Tooltip
+    public boolean iceAndFire = true;
+
     // --- Powah ----------------------------------------------------------------------------------
 
     @ConfigEntry.Category("powah")
@@ -451,6 +457,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.techReborn = techReborn;
         values.techRebornNether = techRebornNether;
         values.occultism = occultism;
+        values.iceAndFire = iceAndFire;
         values.mysticalAgriculture = mysticalAgriculture;
         values.things = things;
         values.silentGear = silentGear;

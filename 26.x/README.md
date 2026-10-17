@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**935 blocks** in the `seamlessores` namespace.
+**946 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -232,6 +232,13 @@ touching ore of the same type across different host stones.
 |---|---|---|---|---|---|---|
 | Silver | `granite_occultism_silver_ore` | `diorite_occultism_silver_ore` | `andesite_occultism_silver_ore` | `tuff_occultism_silver_ore` | `dripstone_occultism_silver_ore` | `cinnabar_occultism_silver_ore` |
 
+**Ice and Fire, Overworld, requires `iceandfire`**
+
+| | granite | diorite | andesite | tuff | dripstone |
+|---|---|---|---|---|---|
+| Iceandfire Sapphire | `granite_iceandfire_sapphire_ore` | `diorite_iceandfire_sapphire_ore` | `andesite_iceandfire_sapphire_ore` |   | `dripstone_iceandfire_sapphire_ore` |
+| Iceandfire Silver | `granite_iceandfire_silver_ore` | `diorite_iceandfire_silver_ore` | `andesite_iceandfire_silver_ore` | `tuff_iceandfire_silver_ore` | `dripstone_iceandfire_silver_ore` |
+
 **Mystical Agriculture, Overworld, requires `mysticalagriculture`**
 
 | | granite | diorite | andesite | tuff | dripstone |
@@ -246,7 +253,7 @@ your loader at your Minecraft version:
 | Minecraft | Loader | Blocks | Supported mods available here |
 |---|---|---|---|
 | 26.1 to 26.1.2 | Fabric | 191 | Create, Energized Power, Mythic Metals, Tech Reborn |
-| 26.1 to 26.1.2 | NeoForge | 215 | Energized Power, Mystical Agriculture, Occultism, Powah, Silent Gear, Silent's Gems |
+| 26.1 to 26.1.2 | NeoForge | 224 | Energized Power, Ice and Fire, Mystical Agriculture, Occultism, Powah, Silent Gear, Silent's Gems |
 | 26.2 | Fabric | 143 | Create, Energized Power, Mythic Upgrades, Tech Reborn |
 | 26.2 | NeoForge | 87 | Energized Power, Mythic Upgrades, Occultism |
 | 26.3 | Fabric | 137 | Energized Power, Mythic Upgrades, Tech Reborn |
@@ -279,7 +286,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**489 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**491 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, every 26.x version, both loaders)
 
@@ -319,6 +326,8 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Deep Blackstone |
 | Silver | `techreborn_silver` | Tech Reborn `techreborn` | Deep Blackstone |
 | Silver | `occultism_silver` | Occultism `occultism` | Deep Blackstone |
+| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Deep Blackstone |
+| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Deep Blackstone |
 | Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Deep Blackstone |
 | Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Deep Blackstone |
 
@@ -565,7 +574,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 935 blocks takes **99 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 946 blocks takes **102 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -573,7 +582,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `inferium` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `occultism_silver` `opal_andesite` `opal_darkstone` `opal_diorite` `opal_dripstone` `opal_granite` `opal_tuff` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `occultism_silver` `opal_andesite` `opal_darkstone` `opal_diorite` `opal_dripstone` `opal_granite` `opal_tuff` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -671,6 +680,7 @@ is theirs and is used under the licence shown:
 | Things | glisco | MIT |
 | Tech Reborn | Team Reborn, modmuss50, drcrazy | MIT |
 | Occultism | Kli Kli | MIT |
+| Ice and Fire | Alexthe666, the Community Edition by IAFEnvoy | LGPL-3.0 |
 | Mystical Agriculture | BlakeBr0 | MIT |
 <!-- END GENERATED credits -->
 

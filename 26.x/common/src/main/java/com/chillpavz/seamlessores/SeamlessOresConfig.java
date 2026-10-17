@@ -160,6 +160,9 @@ public final class SeamlessOresConfig {
     /** Whether Occultism variants generate. Pure restyle. */
     public static boolean occultism = true;
 
+    /** Ice and Fire Community Edition's silver and sapphire. */
+    public static boolean iceAndFire = true;
+
     /** Whether Mystical Agriculture variants generate. Pure restyle. */
     public static boolean mysticalAgriculture = true;
 
@@ -200,6 +203,7 @@ public final class SeamlessOresConfig {
             case "energizedpower" -> energizedPower;
             case "techreborn" -> netherHost ? techRebornNether : techReborn;
             case "occultism" -> occultism;
+            case "iceandfire" -> iceAndFire;
             case "mysticalagriculture" -> mysticalAgriculture;
             case "things" -> things;
             case "silentgear" -> silentGear;
@@ -386,6 +390,7 @@ public final class SeamlessOresConfig {
         public boolean techReborn = true;
         public boolean techRebornNether = true;
         public boolean occultism = true;
+        public boolean iceAndFire = true;
         public boolean mysticalAgriculture = true;
         public boolean things = true;
         public boolean silentGear = true;
@@ -440,6 +445,7 @@ public final class SeamlessOresConfig {
         techReborn = values.techReborn;
         techRebornNether = values.techRebornNether;
         occultism = values.occultism;
+        iceAndFire = values.iceAndFire;
         mysticalAgriculture = values.mysticalAgriculture;
         things = values.things;
         silentGear = values.silentGear;

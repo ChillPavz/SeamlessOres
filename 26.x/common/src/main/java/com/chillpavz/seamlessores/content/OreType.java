@@ -481,6 +481,23 @@ public record OreType(String name, String key, String overlay, String deepslateO
             "occultism", of("occultism", "silver_ore"), of("occultism", "silver_ore_deepslate"),
             null, NONE, null, false, Set.of());
 
+    // --- Ice and Fire Community Edition (mod id iceandfire, LGPL-3.0). NeoForge 26.1.2 only, a beta ---
+    // CE's only 26.x build is 2.2-beta.4 (owner, 17 Oct 2026: support it while it is a beta). The same
+    // PREFIXED ids as the older bands (Silent's Gems has its own sapphire and silver). Sapphire has no
+    // deepslate tier (its feature targets stone_ore_replaceables only). Read from IafBlocks 2.2-beta.4,
+    // byte-identical to 2.1.4: silver 3.0/3.0 with 2 experience, sapphire 4.0/3.0 with 3 to 7. The
+    // deepslate silver ore has specks of its own, so its own overlay.
+    public static final OreType IAF_SAPPHIRE = ore(
+            "iceandfire_sapphire", "iceandfire_sapphire", null, "iceandfire",
+            of("iceandfire", "sapphire_ore"), null, null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(4.0F, 3.0F);
+    public static final OreType IAF_SILVER = ore(
+            "iceandfire_silver", "iceandfire_silver", "iceandfire_deepslate_silver", "iceandfire",
+            of("iceandfire", "silver_ore"), of("iceandfire", "deepslate_silver_ore"), null,
+            ConstantInt.of(2), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 3.0F, 3.0F);
+
     // --- Nether ores that ADD ore (Sept 2026) -----------------------------------------------------
     // Each targets netherrack only, so basalt and blackstone variants put ore where the mod places
     // none. Behind the owning mod's own nether switch and thinned by netherOreRarity, like our gold
@@ -527,7 +544,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
                     SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE,
                     TR_BAUXITE, TR_GALENA, TR_IRIDIUM, TR_LEAD, TR_RUBY, TR_SAPPHIRE, TR_SILVER, TR_TIN,
-                    TR_URANIUM, OCCULTISM_SILVER,
+                    TR_URANIUM, OCCULTISM_SILVER, IAF_SAPPHIRE, IAF_SILVER,
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE,
                     INFERIUM, PROSPERITY, SG_OPAL);
 

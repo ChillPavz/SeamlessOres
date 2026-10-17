@@ -245,6 +245,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_inferium_ore",
       "required": false
     },
@@ -366,6 +370,10 @@
     },
     {
       "id": "seamlessores:minecraft_blackstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_iceandfire_silver_ore",
       "required": false
     },
     {

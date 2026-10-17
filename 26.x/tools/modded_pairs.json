@@ -17,6 +17,47 @@
    "strength": null,
    "deepslate_overlay": null
   },
+  "iceandfire_sapphire": {
+   "mod": "iceandfire",
+   "seamless_ores_name": "iceandfire_sapphire",
+   "forms": [
+    "iceandfire:sapphire_ore"
+   ],
+   "nether": false,
+   "xp": [
+    3,
+    7
+   ],
+   "deepslate_xp": null,
+   "strength": [
+    4.0,
+    3.0,
+    4.0,
+    3.0
+   ],
+   "deepslate_overlay": null
+  },
+  "iceandfire_silver": {
+   "mod": "iceandfire",
+   "seamless_ores_name": "iceandfire_silver",
+   "forms": [
+    "iceandfire:silver_ore",
+    "iceandfire:deepslate_silver_ore"
+   ],
+   "nether": false,
+   "xp": [
+    2,
+    2
+   ],
+   "deepslate_xp": null,
+   "strength": [
+    3.0,
+    3.0,
+    3.0,
+    3.0
+   ],
+   "deepslate_overlay": "iceandfire_deepslate_silver"
+  },
   "inferium": {
    "mod": "mysticalagriculture",
    "seamless_ores_name": "inferium",
@@ -3356,6 +3397,18 @@
      "26.1.x neoforge"
     ],
     "rate": 0.16
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.21
+   },
+   "iceandfire_silver": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.99
    },
    "inferium": {
     "where": [
