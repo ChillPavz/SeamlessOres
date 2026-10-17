@@ -146,7 +146,17 @@ public final class OreGeology {
             Map.entry("mi_iridium", Set.of("granite")),
             Map.entry("osmium", Set.of("granite")),
             Map.entry("dense_osmium", Set.of("granite")),
-            Map.entry("mek_osmium", Set.of("granite")));
+            Map.entry("mek_osmium", Set.of("granite")),
+            Map.entry("fire_stone", Set.of("granite", "diorite")),
+            Map.entry("water_stone", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("thunder_stone", Set.of("andesite", "tuff")),
+            Map.entry("leaf_stone", Set.of("granite", "diorite", "andesite")),
+            Map.entry("moon_stone", Set.of("andesite", "tuff")),
+            Map.entry("sun_stone", Set.of("granite", "diorite")),
+            Map.entry("ice_stone", Set.of("granite", "andesite", "tuff")),
+            Map.entry("dawn_stone", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("dusk_stone", Set.of("granite", "diorite")),
+            Map.entry("shiny_stone", Set.of("diorite", "andesite", "tuff")));
 
     /** Whether this ore never forms in this stone another mod places: no variant, worldgen makes it stone. */
     public static boolean fixed(String host, String ore) {

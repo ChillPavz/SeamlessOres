@@ -210,6 +210,23 @@ LENIENT = {
     "osmium": _GRANITE, "dense_osmium": _GRANITE, "mek_osmium": _GRANITE,
 }
 
+# Cobblemon's evolution stones in the game's own rock, by the same lore as COBBLEMON_KEEPS (owner, 17 Oct
+# 2026: behind the option, not fixed, because these are restyles of Cobblemon's own ore and the cut
+# removes it). Each rock keeps the stones that fit it: granite (pink, plutonic, the moonstone pegmatites,
+# the deep metal-rich crust, mica sparkle) Moon, Dawn, Thunder, Shiny; diorite (white, plutonic) Moon,
+# Ice, Thunder; andesite (grey lava) Fire, Sun, Dusk; tuff (volcanic ash, which buries forests whole)
+# Fire, Sun, Dusk, Leaf.
+_COBBLEMON_ROCK_KEEPS = {
+    "granite": ["moon_stone", "dawn_stone", "thunder_stone", "shiny_stone"],
+    "diorite": ["moon_stone", "ice_stone", "thunder_stone"],
+    "andesite": ["fire_stone", "sun_stone", "dusk_stone"],
+    "tuff": ["fire_stone", "sun_stone", "dusk_stone", "leaf_stone"],
+}
+for _stone in COBBLEMON_KEEPS:
+    if _stone in LENIENT:
+        raise SystemExit(f"geology.py: {_stone} is already in LENIENT")
+    LENIENT[_stone] = [rock for rock, kept in _COBBLEMON_ROCK_KEEPS.items() if _stone not in kept]
+
 
 def optional(host, ore):
     """Whether the geology option, when on, refuses this ore in this rock of the game's own."""
