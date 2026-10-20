@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/diorite_water_stone_ore"
+      "model": "seamlessores:block/retired/diorite_water_stone_ore"
     }
   }
 }

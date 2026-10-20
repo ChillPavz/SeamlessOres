@@ -353,6 +353,8 @@ def silk_touch_to(table, source, our_id, name, where):
     Anything else is a table shape nobody has checked, and stops the run. `where` names the run in
     that message (the Minecraft version being read).
     """
+    if not table.get("pools"):
+        return  # the ore drops nothing at all (Born in Chaos' infected diamond): neither does the variant
     swapped = 0
 
     def visit(entry, guarded):
@@ -369,6 +371,61 @@ def silk_touch_to(table, source, our_id, name, where):
             visit(entry, is_silk_touch_branch(pool))
     if swapped != 1 and not (swapped == 0 and f'"name": "{source}"' in json.dumps(table)):
         sys.exit(f"  !! {name} ({where}): expected one silk touch drop of {source}, found {swapped}")
+
+
+def defer_to_source(table, source, our_id, nested_key):
+    """The variant's table, DEFERRING to the source ore's own: Silk Touch drops our block, anything else
+    runs the source ore's table (a minecraft:loot_table entry), so a datapack, KubeJS or a mod update
+    that changes that ore's drops changes the variant's too. Call AFTER silk_touch_to, on its result.
+
+    Kept as the static copy (returned unchanged) where deferring is not safe:
+    - no Silk Touch branch of ours (an ore that always drops itself): the copy already drops what the
+      source does, and there is no guard to split on;
+    - a block_state_property condition: the source table would test OUR block's state, not its own.
+    The guard is the source's own Silk Touch condition, copied in the source's own spelling (a
+    "conditions" list up to 26.2, a single "condition" from 26.3). nested_key: "name" up to 1.20.4,
+    "value" from 1.20.5. source: the source block id; its table is <namespace>:blocks/<path>.
+    """
+    text = json.dumps(table)
+    if "block_state_property" in text or f'"{our_id}"' not in text:
+        return table
+    guard = None
+
+    def find(node, inherited):
+        nonlocal guard
+        own = is_silk_touch_branch(node)
+        if guard is None and node.get("name") == our_id and (own or inherited):
+            holder = node if own else inherited
+            guard = {k: holder[k] for k in ("condition", "conditions") if k in holder}
+        for child in node.get("children", []):
+            find(child, node if own else inherited)
+
+    for pool in table.get("pools", []):
+        for entry in pool.get("entries", []):
+            find(entry, pool if is_silk_touch_branch(pool) else None)
+    if not guard:
+        return table
+    if "conditions" in guard:
+        guard["conditions"] = [c for c in guard["conditions"]
+                               if c.get("condition") == "minecraft:match_tool" and "silk_touch" in json.dumps(c)]
+    namespace, path = source.split(":", 1)
+    deferred = {
+        "type": table.get("type", "minecraft:block"),
+        "pools": [{
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [{
+                "type": "minecraft:alternatives",
+                "children": [
+                    {"type": "minecraft:item", "name": our_id, **guard},
+                    {"type": "minecraft:loot_table", nested_key: f"{namespace}:blocks/{path}"},
+                ],
+            }],
+        }],
+    }
+    if "random_sequence" in table:
+        deferred["random_sequence"] = table["random_sequence"]
+    return deferred
 
 
 # --- The host table --------------------------------------------------------------------------------

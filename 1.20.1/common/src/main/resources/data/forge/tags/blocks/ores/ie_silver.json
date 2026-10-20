@@ -17,10 +17,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ie_silver_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:cinnabar_ie_silver_ore",
       "required": false
     }

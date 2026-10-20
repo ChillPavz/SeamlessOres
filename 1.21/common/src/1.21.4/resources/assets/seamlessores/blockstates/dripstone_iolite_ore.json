@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/dripstone_iolite_ore"
+      "model": "seamlessores:block/retired/dripstone_iolite_ore"
     }
   }
 }

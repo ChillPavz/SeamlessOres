@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/tuff_mi_nickel_ore"
+      "model": "seamlessores:block/retired/tuff_mi_nickel_ore"
     }
   }
 }

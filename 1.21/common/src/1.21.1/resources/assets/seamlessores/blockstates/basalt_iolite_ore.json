@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/basalt_iolite_ore"
+      "model": "seamlessores:block/retired/basalt_iolite_ore"
     }
   }
 }

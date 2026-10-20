@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/granite_mek_osmium_ore"
+      "model": "seamlessores:block/retired/granite_mek_osmium_ore"
     }
   }
 }

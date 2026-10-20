@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/andesite_ammolite_ore"
+      "model": "seamlessores:block/retired/andesite_ammolite_ore"
     }
   }
 }

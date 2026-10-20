@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/andesite_leaf_stone_ore"
+      "model": "seamlessores:block/retired/andesite_leaf_stone_ore"
     }
   }
 }

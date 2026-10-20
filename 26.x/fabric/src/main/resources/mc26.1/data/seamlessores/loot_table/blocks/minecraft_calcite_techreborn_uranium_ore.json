@@ -21,6 +21,7 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -28,6 +29,7 @@
           "children": [
             {
               "type": "minecraft:item",
+              "name": "seamlessores:minecraft_calcite_techreborn_uranium_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -44,27 +46,15 @@
                     }
                   }
                 }
-              ],
-              "name": "seamlessores:minecraft_calcite_techreborn_uranium_ore"
+              ]
             },
             {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "techreborn:raw_uranium"
+              "type": "minecraft:loot_table",
+              "value": "techreborn:blocks/uranium_ore"
             }
           ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ],
   "random_sequence": "seamlessores:blocks/minecraft_calcite_techreborn_uranium_ore"

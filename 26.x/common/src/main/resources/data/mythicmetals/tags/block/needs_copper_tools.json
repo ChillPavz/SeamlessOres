@@ -13,10 +13,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_platinum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:granite_silver_ore",
       "required": false
     },
@@ -30,10 +26,6 @@
     },
     {
       "id": "seamlessores:diorite_manganese_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_platinum_ore",
       "required": false
     },
     {
@@ -53,10 +45,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_platinum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:andesite_silver_ore",
       "required": false
     },
@@ -70,14 +58,6 @@
     },
     {
       "id": "seamlessores:dripstone_manganese_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_platinum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_silver_ore",
       "required": false
     },
     {

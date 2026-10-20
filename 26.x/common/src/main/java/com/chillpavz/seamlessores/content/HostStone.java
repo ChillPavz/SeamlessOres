@@ -309,8 +309,25 @@ public final class HostStone {
     public List<OreType> ores() {
         final List<OreType> ores = new ArrayList<>();
         for (OreType ore : OreType.ALL) {
-            if (placedBy == null ? ore.formIn(this) != null : swallows.contains(ore) && !refused.contains(ore)) {
+            if (placedBy == null ? ore.formIn(this) != null && !OreGeology.fixed(name, ore.key())
+                    : swallows.contains(ore) && !refused.contains(ore)) {
                 ores.add(ore);
+            }
+        }
+        return ores;
+    }
+
+    /**
+     * The game's own rock only: the ores that generate in it but never form there by the fixed geology
+     * rule (a modded ore, {@link OreGeology}). No variant is built; worldgen keeps the rock where one lands.
+     */
+    public List<OreType> rockRefused() {
+        final List<OreType> ores = new ArrayList<>();
+        if (placedBy == null) {
+            for (OreType ore : OreType.ALL) {
+                if (ore.formIn(this) != null && OreGeology.fixed(name, ore.key())) {
+                    ores.add(ore);
+                }
             }
         }
         return ores;

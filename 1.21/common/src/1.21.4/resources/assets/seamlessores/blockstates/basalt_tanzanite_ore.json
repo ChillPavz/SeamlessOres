@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/basalt_tanzanite_ore"
+      "model": "seamlessores:block/retired/basalt_tanzanite_ore"
     }
   }
 }

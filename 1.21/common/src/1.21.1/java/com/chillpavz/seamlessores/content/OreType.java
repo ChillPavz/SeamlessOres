@@ -681,6 +681,16 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("cobblemon", "fire_stone_ore"), of("cobblemon", "deepslate_fire_stone_ore"),
             of("cobblemon", "nether_fire_stone_ore"), COBBLEMON_XP, null, false, Set.of());
 
+    // --- Born in Chaos (mod id born_in_chaos_v1, All Rights Reserved; its author's permission, 20 Oct 2026) ---
+    // Infected diamond: a trap that looks exactly like diamond ore (its models draw the game's own diamond
+    // textures, so its overlay is ours) and drops nothing; breaking it spawns a Diamond Thermite (TrapOreBlock).
+    // Only the deepslate form is declared: by the geology rule tuff is the one game rock that keeps diamond.
+    // Its feature matches deepslate only, so the tuff variant ADDS ore, behind a switch that is off by
+    // default (addsOre). Strength 4.5/3.0, read from InfectedDeepslateDiamondOreBlock.
+    public static final OreType INFECTED_DIAMOND = ore("infected_diamond", "diamond", null, "born_in_chaos_v1",
+            null, of("born_in_chaos_v1", "infected_deepslate_diamond_ore"), null, NONE, null, false, Set.of())
+            .withKey("infected_diamond").withStrength(4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -709,7 +719,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     OREGANIZED_LEAD, OREGANIZED_SILVER,
                     MALUM_SOULSTONE, MALUM_NATURAL_QUARTZ, MALUM_BRILLIANCE, MALUM_BLAZING_QUARTZ,
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, BENITOITE, SG_OPAL,
-                    CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE, CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE);
+                    CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE, CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE,
+                    INFECTED_DIAMOND);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 
@@ -727,6 +738,17 @@ public record OreType(String name, String key, String overlay, String deepslateO
     /** The ore with this {@link #key()}, or null. */
     public static OreType byKey(String key) {
         return BY_KEY.get(key);
+    }
+
+    /**
+     * Ores whose variants in the game's own rock ADD ore: their own feature matches no such rock, so the
+     * variant is added wherever a vein reaches it, behind the ore's mod's adds-ore switch, off by default.
+     */
+    private static final Set<String> ADDS_ORE = Set.of("infected_diamond");
+
+    /** Whether this ore's variants in the game's own rock add ore (see ADDS_ORE). */
+    public boolean addsOre() {
+        return ADDS_ORE.contains(key);
     }
 
     /** Whether this ore exists in this game: always for vanilla's, only with its mod for a modded one. */

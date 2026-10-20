@@ -36,9 +36,10 @@ import zipfile
 # The overlay art lives once, in the repository's shared/textures pool (shared/tools/assetgen.py).
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "shared", "tools"))
 from assetgen import (POOL, TOOL_TAGS, assert_no_dashes, era_file, jar, jar_tags,  # noqa: E402
-                      look_models, read_mod_tags, silk_touch_to, stone_name, texture_path, title,
+                      look_models, read_mod_tags, defer_to_source, silk_touch_to, stone_name, texture_path, title,
                       write_json, write_texture_json)
 import placed  # noqa: E402
+import retired  # noqa: E402
 
 MOD_ID = "seamlessores"
 
@@ -850,11 +851,11 @@ def generate_json():
 
         f"text.autoconfig.{MOD_ID}.option.geology": "Geology (removes ore)",
         f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[0]":
-            "Keeps ores out of rock they could never form in, such as coal in granite or",
+            "Keeps the game's own ores out of rock they could never form in, such as coal in granite",
         f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[1]":
-            "diamond in diorite: that ore stays plain rock, so there is less of it. Off by default.",
+            "or diamond in diorite: that ore stays plain rock, so there is less of it. Off by default.",
         f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[2]":
-            "Applies to newly generated chunks, from the next world load.",
+            "Ores from other mods always follow this rule. Applies to new chunks, from the next world load.",
 
         f"text.autoconfig.{MOD_ID}.option.createZinc": "Create: zinc variants",
         f"text.autoconfig.{MOD_ID}.option.createZinc.@Tooltip":
@@ -1042,6 +1043,8 @@ def generate_data():
                     with jar.open(f"data/minecraft/loot_table/blocks/{vanilla}.json") as handle:
                         table = json.load(handle)
                     silk_touch_to(table, vanilla_id, our_id, name, BAND)
+                    # Non-Silk-Touch drops run the source ore's own table, so pack edits to it carry over.
+                    table = defer_to_source(table, vanilla_id, our_id, "value")
                     table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
                 else:
                     # Third-party ore: TRANSFORM THAT MOD'S OWN TABLE, exactly as we do for vanilla.
@@ -1072,6 +1075,8 @@ def generate_data():
                         except KeyError:
                             raise SystemExit(f"  !! {mod} jar has no {loot_path} (needed by {name})")
                     silk_touch_to(table, vanilla_id, our_id, name, BAND)
+                    # Non-Silk-Touch drops run the source ore's own table, so pack edits to it carry over.
+                    table = defer_to_source(table, vanilla_id, our_id, "value")
                     table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
                 if gate:
                     # All three loaders' conditions keep it inert without the mods of its gate (the
@@ -1419,6 +1424,8 @@ def main():
     generate_json()
     print("Generating loot tables and tags...")
     generate_data()
+    # Ids an earlier release registered and this one no longer builds: placeholders drawn as their stone.
+    print(f"  retired ids: {retired.write(os.path.join(os.path.dirname(os.path.abspath(__file__)), "retired_ids.json"), HOSTS, assets_dir(), resources_dir(), item_definitions=True)} placeholders")
     print("Updating README...")
     generate_readme()
     print("Generating the Java tables...")

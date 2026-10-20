@@ -33,14 +33,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_silents_citrine_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:basalt_silents_citrine_ore",
       "required": false
     },

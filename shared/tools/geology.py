@@ -1,4 +1,4 @@
-"""The geology rule: which ore never forms in which host rock. One rule, two tables, by kind of host.
+"""The geology rule: which ore never forms in which host rock.
 
 FIXED, for the stones other mods place (Blockus' limestone, Create's strata, ...): a refused pair is
 never built, and worldgen turns that ore into the stone wherever the stone swallows it, so no seam can
@@ -6,9 +6,11 @@ appear. Not configurable: nothing registry-side may depend on config. The strict
 rule for Create's four invented stones (the owner's choice: "be very strict, the more we cut the better"),
 and a lore rule for Cobblemon's evolution stones (COBBLEMON_KEEPS, COBBLEMON_LORE).
 
-OPTIONAL, for the game's own granite, diorite, andesite and tuff: the "Geology (removes ore)" option,
-default off. Every block stays registered; with the option on, the rock stays rock where the ore would
-have gone. The lenient reading: only what geology rules out plainly.
+THE GAME'S OWN ROCK (granite, diorite, andesite, tuff, dripstone, and the Nether's basalt and blackstone),
+by the same strict reading (ROCK, below). A MODDED ore refused there is FIXED like the above: never built
+(an id an earlier release built is retired, RetiredBlocks), and worldgen keeps the rock. A VANILLA ore
+refused there is OPTIONAL: the "Geology (removes ore)" option, default off; every vanilla block stays
+registered, and with the option on the rock stays rock where the ore would have gone (owner, 20 Oct 2026).
 
 Host keys are HostStone.name(), ore keys OreType.key(). Every band's tools/generate_assets.py writes the
 one shared/java OreGeology.java from this file (write_java), and reads it for the blocks it generates.
@@ -66,7 +68,8 @@ FAMILIES = [
     # Lazurite rock is lazurite with calcite: marble and calcite only.
     (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL")),
     # A kimberlite pipe, which none of these is.
-    (["diamond", "bort", "white_diamond", "black_diamond"], _hosts(*ALL)),
+    # Born in Chaos' infected diamond is diamond, whatever lives in it.
+    (["diamond", "bort", "white_diamond", "black_diamond", "infected_diamond"], _hosts(*ALL)),
     # Topaz rhyolite (Thomas Range, Utah) is THE topaz host; nothing else here.
     (["topaz", "silents_topaz"], _all_but("FELS")),
     # Lead, zinc and antimony: carbonate, shale, schist and epithermal veins in volcanics; never in a
@@ -118,6 +121,8 @@ FAMILIES = [
     (["ammolite"], _all_but("LIME", "SHAL")),
     (["pearl"], _all_but("LIME")),
     (["moldavite"], _all_but("LIME", "CALC", "ASPH", "LATE")),
+    # Benitoite: only in hydrothermally altered serpentinite (San Benito County); none of these.
+    (["benitoite"], _hosts(*ALL)),
 ]
 
 # ore -> hosts it is refused in
@@ -176,68 +181,123 @@ LORE = {"create_asurine": "zinc", "create_crimsite": "iron", "create_ochrum": "g
 
 
 def fixed(host, ore):
-    """Whether a stone another mod places never holds this ore: no variant, and worldgen makes it stone."""
+    """Whether this ore never forms in this host, for good: no variant, and worldgen makes it stone. The
+    stones other mods place, and modded ores in the game's own rock (rock_fixed, below)."""
+    if host in GAME_ROCK:
+        return rock_fixed(host, ore)
     if host in STRICT.get(ore, ()):
         return True
     keep = LORE.get(host)
     return keep is not None and ore != keep and ore not in FICTION
 
 
-# --- OPTIONAL: the game's own rock ---------------------------------------------------------------
+# --- THE GAME'S OWN ROCK -------------------------------------------------------------------------
 
-_PLUTONIC = ["granite", "diorite"]
-_IGNEOUS = ["granite", "diorite", "andesite"]
-_GRANITE = ["granite"]
+# The game's own ores: their refusals in the game's own rock are behind the option, never fixed.
+VANILLA_ORES = {"coal", "iron", "copper", "gold", "redstone", "lapis", "diamond", "emerald", "nether_gold", "quartz"}
 
-# ore -> hosts it is refused in, with the option on
-LENIENT = {
-    # Coal needs a swamp; granite and diorite never had one. Ash falls on coal swamps, so tuff keeps
-    # it, and andesite rarely (lava over a coal basin).
-    "coal": _PLUTONIC, "lignite_coal": _PLUTONIC,
-    # Salt is an evaporite: sedimentary only, so none of the four keeps it.
-    "salt": ["granite", "diorite", "andesite", "tuff"],
-    # Diamond needs a kimberlite pipe. Its crater is pyroclastic, so tuff keeps it.
-    "diamond": _IGNEOUS, "white_diamond": _IGNEOUS, "black_diamond": _IGNEOUS, "bort": _IGNEOUS,
-    # Ammolite is fossil shell; tuff keeps it (found beside ash beds).
-    "ammolite": _IGNEOUS,
-    # Corundum and olivine never coexist with free quartz.
-    "silents_ruby": _GRANITE, "silents_sapphire": _GRANITE,
-    "techreborn_ruby": _GRANITE, "techreborn_sapphire": _GRANITE, "iceandfire_sapphire": _GRANITE,
-    "peridot": _GRANITE, "silents_peridot": _GRANITE,
-    # Nickel and the platinum group are mafic to ultramafic.
-    "nickel": _GRANITE, "mi_nickel": _GRANITE, "ie_nickel": _GRANITE,
-    "platinum": _GRANITE, "iridium": _GRANITE, "mi_iridium": _GRANITE,
-    "osmium": _GRANITE, "dense_osmium": _GRANITE, "mek_osmium": _GRANITE,
-}
+# Granite: felsic plutonic. Diorite: intermediate plutonic. Andesite: intermediate volcanic. Tuff: volcanic
+# ash. Dripstone: cave calcite (a speleothem). Basalt and blackstone: the Nether's mafic lava rock.
+_G, _D, _A, _T = "granite", "diorite", "andesite", "tuff"
+FOUR = [_G, _D, _A, _T]
+NETHER_ROCK = ["basalt", "blackstone"]
+GAME_ROCK = set(FOUR + ["dripstone"] + NETHER_ROCK)
 
-# Cobblemon's evolution stones in the game's own rock, by the same lore as COBBLEMON_KEEPS (owner, 17 Oct
-# 2026: behind the option, not fixed, because these are restyles of Cobblemon's own ore and the cut
-# removes it). Each rock keeps the stones that fit it: granite (pink, plutonic, the moonstone pegmatites,
-# the deep metal-rich crust, mica sparkle) Moon, Dawn, Thunder, Shiny; diorite (white, plutonic) Moon,
-# Ice, Thunder; andesite (grey lava) Fire, Sun, Dusk; tuff (volcanic ash, which buries forests whole)
-# Fire, Sun, Dusk, Leaf.
+# Ore -> which of the four rocks it never forms in. Absent: it forms in all four (iron, copper, gold,
+# silver, the lead-zinc family, uranium, bauxite, citrine, fiction).
+_FOUR_ROCK = [
+    # Coal needs a swamp: never in a pluton or a lava flow; ash falls on coal swamps, so tuff keeps it.
+    (["coal", "lignite_coal"], [_G, _D, _A]),
+    # Kimberlite only; its crater is pyroclastic, so tuff keeps it (the kimberlite tuff decision).
+    (["diamond", "bort", "white_diamond", "black_diamond", "infected_diamond"], [_G, _D, _A]),
+    # Beryl (emerald) and lazurite form at granite contacts: plutonic rock keeps them, lava and ash do not.
+    (["emerald", "lapis"], [_A, _T]),
+    # Granite pegmatite and greisen minerals: granite only.
+    (["topaz", "silents_topaz", "tin", "energized_tin", "techreborn_tin", "mi_tin", "mek_tin", "dense_tin",
+      "aquamarine", "silents_aquamarine", "heliodor", "monazite", "thorium", "garnet"], [_D, _A, _T]),
+    # Wolframite in granite, scheelite skarn at diorite contacts.
+    (["tungsten"], [_A, _T]),
+    # Spodumene pegmatite (granite) and caldera lithium clays (tuff).
+    (["lithium"], [_D, _A]),
+    # Fluorite: granite greisen, rhyolitic tuff.
+    (["dense_fluorite", "mek_fluorite"], [_D, _A]),
+    # Olivine and corundum never coexist with these; nickel and the platinum group are ultramafic; salt is
+    # an evaporite; the rest are metamorphic, biogenic or impact minerals.
+    (["peridot", "silents_peridot", "techreborn_ruby", "techreborn_sapphire", "silents_ruby", "silents_sapphire",
+      "iceandfire_sapphire", "platinum", "iridium", "osmium", "mi_iridium", "mek_osmium", "dense_osmium",
+      "nickel", "mi_nickel", "ie_nickel", "salt", "kyanite", "iolite", "alexandrite", "rose_quartz",
+      "tanzanite", "ammolite", "pearl", "moldavite"], FOUR),
+    # Turquoise is supergene, over altered volcanics: lava and ash keep it.
+    (["turquoise"], [_G, _D]),
+    # Opal: in rhyolitic tuff (Ethiopia).
+    (["opal"], [_G, _D, _A]),
+    # Carnelian fills vesicles in lava and ash.
+    (["carnelian"], [_G, _D]),
+]
+
+# Dripstone KEEPS only what precipitates in limestone caves or fills karst cavities, and refuses the rest:
+# goethite, malachite and azurite speleothems; Mississippi Valley lead-zinc and fluorite; cave manganese
+# crusts; karst bauxite; karst uranium (Tyuya-Muyun); halite speleothems.
+DRIPSTONE_KEEPS = set(
+    "iron copper manganese salt dense_fluorite mek_fluorite mi_bauxite techreborn_bauxite ie_aluminum "
+    "zinc galena techreborn_lead lead mi_lead ie_lead mek_lead dense_lead oreganized_lead antimony "
+    "techreborn_uranium uranium ie_uranium mek_uranium dense_uranium yellorite uraninite uraninite_poor "
+    "uraninite_dense".split())
+
+# Basalt and blackstone: real minerals by the mafic volcanic reading (FAMILIES' VOLC). Every invented
+# Nether ore fits fire, lava or the piglins' gold and keeps both (lore, owner's rule of 20 Oct 2026).
+_NETHER_REFUSED = ["nether_black_diamond", "nether_iolite", "nether_alexandrite", "nether_tanzanite",
+                   "nether_moldavite", "nether_pearl", "benitoite"]
+
+# Cobblemon's evolution stones by the lore of COBBLEMON_KEEPS: granite (pink, plutonic, moonstone
+# pegmatites, metal-rich crust, mica sparkle), diorite (white, plutonic), andesite (grey lava), tuff
+# (volcanic ash, which buries forests whole), dripstone (cave calcite, CALC), the Nether rock (VOLC).
 _COBBLEMON_ROCK_KEEPS = {
     "granite": ["moon_stone", "dawn_stone", "thunder_stone", "shiny_stone"],
     "diorite": ["moon_stone", "ice_stone", "thunder_stone"],
     "andesite": ["fire_stone", "sun_stone", "dusk_stone"],
     "tuff": ["fire_stone", "sun_stone", "dusk_stone", "leaf_stone"],
+    "dripstone": [s for s, k in COBBLEMON_KEEPS.items() if "CALC" in k],
+    "basalt": [s for s, k in COBBLEMON_KEEPS.items() if "VOLC" in k],
+    "blackstone": [s for s, k in COBBLEMON_KEEPS.items() if "VOLC" in k],
 }
+
+# ore -> the game's own rocks other than dripstone it never forms in (dripstone: DRIPSTONE_KEEPS)
+ROCK = {}
+for _keys, _rocks in _FOUR_ROCK:
+    for _k in _keys:
+        if _k in ROCK:
+            raise SystemExit(f"geology.py: {_k} is twice in the four-rock table")
+        ROCK[_k] = list(_rocks)
+for _k in _NETHER_REFUSED:
+    ROCK.setdefault(_k, []).extend(NETHER_ROCK)
 for _stone in COBBLEMON_KEEPS:
-    if _stone in LENIENT:
-        raise SystemExit(f"geology.py: {_stone} is already in LENIENT")
-    LENIENT[_stone] = [rock for rock, kept in _COBBLEMON_ROCK_KEEPS.items() if _stone not in kept]
+    if _stone in ROCK:
+        raise SystemExit(f"geology.py: {_stone} is already in ROCK")
+    ROCK[_stone] = [rock for rock, kept in _COBBLEMON_ROCK_KEEPS.items() if _stone not in kept]
+
+
+def _rock_refuses(host, ore):
+    if host == "dripstone" and ore not in COBBLEMON_KEEPS:
+        return ore not in DRIPSTONE_KEEPS and ore not in FICTION
+    return host in ROCK.get(ore, ())
+
+
+def rock_fixed(host, ore):
+    """Whether a MODDED ore never forms in this rock of the game's own: no variant, worldgen keeps the rock."""
+    return host in GAME_ROCK and ore not in VANILLA_ORES and _rock_refuses(host, ore)
 
 
 def optional(host, ore):
-    """Whether the geology option, when on, refuses this ore in this rock of the game's own."""
-    return host in LENIENT.get(ore, ())
+    """Whether the geology option, when on, refuses this VANILLA ore in this rock of the game's own."""
+    return host in GAME_ROCK and ore in VANILLA_ORES and _rock_refuses(host, ore)
 
 
 def note_absent(keys, hosts):
     """Prints the ores and stones this rule names that a band does not have. The rule serves every
     band, so most bands lack some; the list is printed, not refused, so a misspelt key still shows."""
-    ores = set(STRICT) | set(LENIENT)
-    stones = set(h for hs in STRICT.values() for h in hs) | set(LORE) | set(h for hs in LENIENT.values() for h in hs)
+    ores = set(STRICT) | set(ROCK)
+    stones = set(h for hs in STRICT.values() for h in hs) | set(LORE)
     absent_ores, absent_stones = sorted(ores - set(keys)), sorted(stones - set(hosts))
     if absent_ores or absent_stones:
         print(f"  geology rule, not in this band: {len(absent_ores)} ores {absent_ores},"
@@ -254,13 +314,17 @@ def _map_of_sets(rule, indent):
     return ",\n".join(rows)
 
 
+def _set(values):
+    return ", ".join('"%s"' % v for v in sorted(values))
+
+
 def java():
     """OreGeology.java: this rule, written as Java. Minecraft-free and the same for every band, so it
     lives once in shared/java; a band asks it by host name and ore key and never lists its own."""
     return JAVA % (_map_of_sets(STRICT, " " * 12),
                    ",\n".join('            Map.entry("%s", "%s")' % kv for kv in LORE.items()),
-                   ", ".join('"%s"' % f for f in sorted(FICTION)),
-                   _map_of_sets(LENIENT, " " * 12))
+                   _set(FICTION), _map_of_sets(ROCK, " " * 12), _set(DRIPSTONE_KEEPS), _set(COBBLEMON_KEEPS),
+                   _set(VANILLA_ORES), _set(GAME_ROCK))
 
 
 def write_java(write_text):
@@ -274,16 +338,17 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * The geology rule: the ores that never form in a host rock. One rule, two tables, by kind of host.
+ * The geology rule: the ores that never form in a host rock.
  *
  * <p><b>Fixed</b>, for the stones other mods place: a refused pair is never registered, and worldgen
  * turns that ore into the stone wherever the stone swallows it, so no seam can appear. Never
  * configurable: the registered block set must not depend on config. The strict reading, plus a lore
  * rule for Create's four invented stones: each keeps only the ore Create ties it to, and fiction.
  *
- * <p><b>Optional</b>, for the game's own granite, diorite, andesite and tuff: the geology option, off
- * by default because it REMOVES ore. Every block stays registered; with the option on, where the ore
- * feature would have placed a refused ore the rock stays rock.
+ * <p><b>The game's own rock</b> (granite, diorite, andesite, tuff, dripstone, basalt, blackstone), by the
+ * same strict reading: a MODDED ore refused there is fixed too (never registered, the rock stays rock); a
+ * VANILLA ore refused there is <b>optional</b>, the geology option, off by default because it REMOVES ore.
+ * Every vanilla block stays registered; with the option on, where the ore would have gone the rock stays.
  *
  * <p>Asked by host name ({@code HostStone.name()}) and ore key ({@code OreType.key()}), so it is the same
  * in every band, whatever ores and stones a band has.
@@ -305,12 +370,33 @@ public final class OreGeology {
     /** Invented ores, never judged by geology. */
     private static final Set<String> FICTION = Set.of(%s);
 
-    /** Ore key -> the game's own rocks the geology option refuses it in. */
-    private static final Map<String, Set<String>> LENIENT = Map.ofEntries(
+    /** Ore key -> the game's own rocks, dripstone aside, it never forms in. */
+    private static final Map<String, Set<String>> ROCK = Map.ofEntries(
 %s);
 
-    /** Whether this ore never forms in this stone another mod places: no variant, worldgen makes it stone. */
+    /** The only real ores dripstone, a cave calcite, keeps. */
+    private static final Set<String> DRIPSTONE_KEEPS = Set.of(%s);
+
+    /** Cobblemon's evolution stones: judged in dripstone by their lore (ROCK), not by DRIPSTONE_KEEPS. */
+    private static final Set<String> COBBLEMON = Set.of(%s);
+
+    /** The game's own ores: their refusals in the game's own rock are the option's, never fixed. */
+    private static final Set<String> VANILLA_ORES = Set.of(%s);
+
+    private static final Set<String> GAME_ROCK = Set.of(%s);
+
+    private static boolean rockRefuses(String host, String ore) {
+        if ("dripstone".equals(host) && !COBBLEMON.contains(ore)) {
+            return !DRIPSTONE_KEEPS.contains(ore) && !FICTION.contains(ore);
+        }
+        return ROCK.getOrDefault(ore, Set.of()).contains(host);
+    }
+
+    /** Whether this ore never forms in this host, for good: no variant, worldgen makes it the stone. */
     public static boolean fixed(String host, String ore) {
+        if (GAME_ROCK.contains(host)) {
+            return !VANILLA_ORES.contains(ore) && rockRefuses(host, ore);
+        }
         if (STRICT.getOrDefault(ore, Set.of()).contains(host)) {
             return true;
         }
@@ -318,9 +404,11 @@ public final class OreGeology {
         return keep != null && !keep.equals(ore) && !FICTION.contains(ore);
     }
 
-    /** Whether the geology option, when on, refuses this ore in this rock of the game's own. */
+    /** Whether the geology option, when on, refuses this VANILLA ore in this rock of the game's own. */
     public static boolean optional(String host, String ore) {
-        return LENIENT.getOrDefault(ore, Set.of()).contains(host);
+        return GAME_ROCK.contains(host) && VANILLA_ORES.contains(ore) && rockRefuses(host, ore);
     }
 }
 '''
+
+

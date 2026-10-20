@@ -1,22 +1,6 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_iceandfire_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_iceandfire_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_iceandfire_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_iceandfire_sapphire_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_blackstone_iceandfire_sapphire_ore",
       "required": false
     }

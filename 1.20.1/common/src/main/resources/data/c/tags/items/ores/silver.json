@@ -13,10 +13,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_silver_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:cinnabar_silver_ore",
       "required": false
     },

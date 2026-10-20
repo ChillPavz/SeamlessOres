@@ -3,6 +3,7 @@ package com.chillpavz.seamlessores;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
 import com.chillpavz.seamlessores.content.OreType;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
+import com.chillpavz.seamlessores.content.RetiredBlocks;
 import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.GenerationStep;
@@ -17,6 +18,7 @@ import com.chillpavz.seamlessores.worldgen.Worldgen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerChunkEvents;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
@@ -43,6 +45,12 @@ public class SeamlessOresFabric implements ModInitializer {
 
         SeamlessOresContent.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
         SeamlessOresContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
+        // Ids an earlier release registered and this one no longer builds: placeholders that become their stone.
+        RetiredBlocks.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
+        RetiredBlocks.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item),
+                BuiltInRegistries.BLOCK::getValue);
+        ServerChunkEvents.CHUNK_LOAD.register((level, chunk) ->
+                level.getServer().execute(() -> RetiredBlocks.convertChunk(level, chunk)));
         SeamlessOresContent.registerCreativeTabs(
                 (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.

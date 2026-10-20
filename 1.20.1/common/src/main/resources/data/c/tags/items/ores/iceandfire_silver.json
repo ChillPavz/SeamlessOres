@@ -17,10 +17,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_iceandfire_silver_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:cinnabar_iceandfire_silver_ore",
       "required": false
     },

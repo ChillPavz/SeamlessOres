@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/granite_salt_ore"
+      "model": "seamlessores:block/retired/granite_salt_ore"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/dripstone_aquamarine_ore"
+      "model": "seamlessores:block/retired/dripstone_aquamarine_ore"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/granite_nickel_ore"
+      "model": "seamlessores:block/retired/granite_nickel_ore"
     }
   }
 }

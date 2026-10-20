@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "seamlessores:block/dripstone_techreborn_sapphire_ore"
+    "model": "seamlessores:block/retired/dripstone_techreborn_sapphire_ore"
   }
 }

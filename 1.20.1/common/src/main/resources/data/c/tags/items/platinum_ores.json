@@ -1,22 +1,6 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_platinum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_platinum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_platinum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_platinum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_platinum_ore",
       "required": false
     }

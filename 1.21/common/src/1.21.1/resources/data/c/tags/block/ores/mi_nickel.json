@@ -1,26 +1,6 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_mi_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mi_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mi_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_mi_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mi_nickel_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:forbidden_arcanus_darkstone_mi_nickel_ore",
       "required": false
     },

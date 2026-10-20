@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/basalt_black_diamond_ore"
+      "model": "seamlessores:block/retired/basalt_black_diamond_ore"
     }
   }
 }

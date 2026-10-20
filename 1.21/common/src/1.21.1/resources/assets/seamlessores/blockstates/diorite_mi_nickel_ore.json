@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/diorite_mi_nickel_ore"
+      "model": "seamlessores:block/retired/diorite_mi_nickel_ore"
     }
   }
 }

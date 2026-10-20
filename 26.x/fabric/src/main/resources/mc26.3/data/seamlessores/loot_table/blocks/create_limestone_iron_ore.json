@@ -17,33 +17,24 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
-              "condition": "minecraft:tool/can_silk_touch",
-              "name": "seamlessores:create_limestone_iron_ore"
+              "name": "seamlessores:create_limestone_iron_ore",
+              "condition": "minecraft:tool/can_silk_touch"
             },
             {
-              "type": "minecraft:item",
-              "modifier": [
-                {
-                  "type": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "type": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "minecraft:raw_iron"
+              "type": "minecraft:loot_table",
+              "value": "minecraft:blocks/iron_ore"
             }
           ]
         }
-      ],
-      "rolls": 1
+      ]
     }
   ],
   "random_sequence": "seamlessores:blocks/create_limestone_iron_ore"

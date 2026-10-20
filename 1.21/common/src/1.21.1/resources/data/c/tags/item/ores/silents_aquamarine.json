@@ -5,22 +5,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silents_aquamarine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_silents_aquamarine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_silents_aquamarine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_silents_aquamarine_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_schist_silents_aquamarine_ore",
       "required": false
     },

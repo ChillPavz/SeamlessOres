@@ -36,7 +36,7 @@ import zipfile
 # The overlay art lives once, in the repository's shared/textures pool (shared/tools/assetgen.py).
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "shared", "tools"))
 from assetgen import (POOL, TOOL_TAGS, assert_no_dashes, era_file, jar, jar_tags,  # noqa: E402
-                      look_models, read_mod_tags, silk_touch_to, stone_name, texture_path, title,
+                      look_models, read_mod_tags, defer_to_source, silk_touch_to, stone_name, texture_path, title,
                       write_json, write_texture_json)
 import placed  # noqa: E402
 import cinnabar  # noqa: E402
@@ -149,7 +149,8 @@ TAG_ONLY_JARS = [OREGANIZED_FABRIC_JAR, MALUM_FABRIC_JAR]
 # Malum (Sammy Semicolon). Its jar says All Rights Reserved; the ore art is used with SammySemicolon's
 # permission (8 Oct 2026), credited with a link as Immersive Engineering is.
 MALUM_JAR = jar("malum-1.20.1-1.6.7.jar", "MALUM_JAR")
-MOD_JARS = {"oreganized": OREGANIZED_JAR,
+MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
+            "oreganized": OREGANIZED_JAR,
             "malum": MALUM_JAR,
             "create_new_age": CREATE_NEW_AGE_JAR,
             "mekanism": MEKANISM_JAR,
@@ -298,6 +299,8 @@ ANIMATED_OVERLAYS = {
 # The licences matter here rather than being decoration: the overlay for each of these is DERIVED
 # from that mod's own ore texture, so attribution is an obligation, not a courtesy.
 MODS = {
+    "born_in_chaos_v1": {"display": "Born in Chaos", "category": "born_in_chaos",
+                         "licence": "All Rights Reserved, used with permission", "author": "Mongoose_artist"},
     "create":         {"display": "Create",            "category": "create",
                        "licence": "MIT",          "author": ""},
     "create_new_age": {"display": "Create: New Age",   "category": "create_new_age",
@@ -860,6 +863,12 @@ ORE_DEFS = [
     {"name": "water_stone", "overlay": "water_stone", "source": "water_stone_ore", "base": "stone",
      "mod": "cobblemon",
      "tiers": {"stone": "water_stone_ore", "deepslate": "deepslate_water_stone_ore"}},
+    # Born in Chaos (All Rights Reserved, its author's permission, 20 Oct 2026): infected diamond, a trap that
+    # looks like diamond ore (its models draw the game's diamond textures) and drops nothing. Deepslate form
+    # only: tuff is the one game rock the geology rule lets keep diamond. It ADDS ore (OreType.addsOre).
+    {"name": "infected_diamond", "overlay": "diamond", "key": "infected_diamond",
+     "source": "infected_deepslate_diamond_ore", "base": "deepslate", "mod": "born_in_chaos_v1", "untagged": True,
+     "tiers": {"deepslate": "infected_deepslate_diamond_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1155,6 +1164,7 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.modern_industrialization": "Modern Industrialization",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
         f"text.autoconfig.{MOD_ID}.category.occultism": "Occultism",
+        f"text.autoconfig.{MOD_ID}.category.born_in_chaos": "Born in Chaos",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.immersive_engineering": "Immersive Engineering",
         f"text.autoconfig.{MOD_ID}.category.oreganized": "Oreganized",
@@ -1236,11 +1246,11 @@ def generate_json():
 
         f"text.autoconfig.{MOD_ID}.option.geology": "Geology (removes ore)",
         f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[0]":
-            "Keeps ores out of rock they could never form in, such as coal in granite or",
+            "Keeps the game's own ores out of rock they could never form in, such as coal in granite",
         f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[1]":
-            "diamond in diorite: that ore stays plain rock, so there is less of it. Off by default.",
+            "or diamond in diorite: that ore stays plain rock, so there is less of it. Off by default.",
         f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[2]":
-            "Applies to newly generated chunks, from the next world load.",
+            "Ores from other mods always follow this rule. Applies to new chunks, from the next world load.",
 
         f"text.autoconfig.{MOD_ID}.option.createZinc": "Create: zinc variants",
         f"text.autoconfig.{MOD_ID}.option.createZinc.@Tooltip":
@@ -1397,6 +1407,14 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.techRebornNether.@Tooltip[2]":
             "Turn off to leave the Nether exactly as Tech Reborn generates it.",
 
+        f"text.autoconfig.{MOD_ID}.option.bornInChaosInfectedDiamond": "Infected diamond in tuff (adds ore)",
+        f"text.autoconfig.{MOD_ID}.option.bornInChaosInfectedDiamond.@Tooltip[0]":
+            "Lets Born in Chaos' infected diamond form in tuff as well as deepslate, so this ADDS ore.",
+        f"text.autoconfig.{MOD_ID}.option.bornInChaosInfectedDiamond.@Tooltip[1]":
+            "It looks like diamond and behaves as Born in Chaos made it. Off by default.",
+        f"text.autoconfig.{MOD_ID}.option.bornInChaosInfectedDiamond.@Tooltip[2]":
+            "Applies to new chunks, from the next world load. Does nothing without Born in Chaos.",
+
         f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether": "Extreme Reactors: nether variants (adds ore)",
         f"text.autoconfig.{MOD_ID}.option.extremeReactorsNether.@Tooltip[0]":
             "Puts benitoite in basalt and blackstone. Extreme Reactors generates it in netherrack",
@@ -1536,6 +1554,7 @@ def generate_data():
     mc = data_dir("minecraft")
     mod_ore_tags = read_mod_ore_tags()
     _, modded_tool_tags, mod_own_tool_tags = read_mod_tags(MOD_JARS, ORE_DEFS)
+    untagged_ids = set()   # variants kept out of every convention ore tag ("untagged")
     parity_block = {}
     parity_item = {}
 
@@ -1577,6 +1596,8 @@ def generate_data():
                     with jar.open(f"data/minecraft/{LOOT_DIR}/blocks/{vanilla}.json") as handle:
                         table = json.load(handle)
                     silk_touch_to(table, vanilla_id, our_id, name, "1.20.1")
+                    # Non-Silk-Touch drops run the source ore's own table, so pack edits to it carry over.
+                    table = defer_to_source(table, vanilla_id, our_id, "name")
                     # No random_sequence: 1.20.1's own tables do not have that field yet
                     # (checked against data/minecraft/loot_tables/blocks/iron_ore.json).
                 else:
@@ -1618,6 +1639,8 @@ def generate_data():
                             ABSENT_AT_THIS_VERSION.setdefault(mod, []).append(f"{name} ({vanilla})")
                             continue
                     silk_touch_to(table, vanilla_id, our_id, name, "1.20.1")
+                    # Non-Silk-Touch drops run the source ore's own table, so pack edits to it carry over.
+                    table = defer_to_source(table, vanilla_id, our_id, "name")
 
                 if gate:
                     # Fabric's conditions keep it inert without the mods of its gate; a variant in a
@@ -1659,8 +1682,14 @@ def generate_data():
                     for tag_key, members in mod_own_tool_tags.items():
                         if vanilla_id in members:
                             foreign_tool_tags.setdefault(tag_key, []).append(entry)
-                conv_block.setdefault(ore["name"], []).append(entry)
-                conv_item.setdefault(ore["name"], []).append(entry)
+                # An ore its own mod keeps out of every convention tag (a trap meant to pass for
+                # diamond) stays out of them as a variant too: an ore finder would give it away.
+                untagged = ore.get("untagged", False)
+                if untagged:
+                    untagged_ids.add(our_id)
+                if not untagged:
+                    conv_block.setdefault(ore["name"], []).append(entry)
+                    conv_item.setdefault(ore["name"], []).append(entry)
                 # TAG PARITY with the ore we stand in for: every common ore tag its counterpart is in,
                 # read from that mod's own jar, in its own namespace and shape (forge:ores/tin,
                 # c:tin_ores). The name-keyed tags above stay, so nothing a published release put into a
@@ -1676,7 +1705,7 @@ def generate_data():
                 # c:ores_in_ground/<stone|deepslate|netherrack> - keyed on the ore we stand in for,
                 # so consumers treat a variant exactly like its counterpart.
                 # A cinnabar variant stands in no ground the tag names.
-                if host_cfg["tier"] != "cinnabar":
+                if host_cfg["tier"] != "cinnabar" and not untagged:
                     ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[source_tier]
                     ores_in_ground.setdefault(ground, []).append(entry)
 
@@ -1691,7 +1720,8 @@ def generate_data():
         write_json(os.path.join(data_dir(namespace), *TAG_BLOCK_DIR, f"{tag}.json"),
                    {"values": values})
 
-    all_ids = sorted(mineable, key=lambda e: e["id"] if isinstance(e, dict) else e)
+    all_ids = sorted((e for e in mineable if (e["id"] if isinstance(e, dict) else e) not in untagged_ids),
+                     key=lambda e: e["id"] if isinstance(e, dict) else e)
     # Written into BOTH common-tag namespaces, because 1.20.x is the era where the ecosystem is
     # split: Fabric mods read c:ores, Forge mods read forge:ores. The copy a given loader ignores
     # is just a tag nobody queries.

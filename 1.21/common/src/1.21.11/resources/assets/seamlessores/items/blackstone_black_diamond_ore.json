@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "seamlessores:block/blackstone_black_diamond_ore"
+    "model": "seamlessores:block/retired/blackstone_black_diamond_ore"
   }
 }

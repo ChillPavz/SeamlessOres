@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/diorite_alexandrite_ore"
+      "model": "seamlessores:block/retired/diorite_alexandrite_ore"
     }
   }
 }

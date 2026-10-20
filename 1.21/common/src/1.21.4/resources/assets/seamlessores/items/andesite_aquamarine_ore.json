@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "seamlessores:block/andesite_aquamarine_ore"
+    "model": "seamlessores:block/retired/andesite_aquamarine_ore"
   }
 }

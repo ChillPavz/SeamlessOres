@@ -39,12 +39,13 @@ public final class SeamlessOresConfig {
     public static boolean oreVeins = true;
 
     /**
-     * Whether an ore that could never form in granite, diorite, andesite or tuff is refused there.
+     * Whether one of the game's own ores is refused in a rock of the game's own it could never form in
+     * (granite, diorite, andesite, tuff, dripstone, basalt, blackstone).
      *
      * <p><b>This REMOVES ore</b>, so it is off by default: where the ore feature would have placed a
      * refused ore, the rock stays rock. Worldgen only; every block stays registered. See
-     * {@code content.OreGeology} for the rule set. The stones other mods place follow a fixed
-     * geology rule of their own, whatever this says.
+     * {@code content.OreGeology} for the rule set. Modded ores in that rock, and every ore in the
+     * stones other mods place, follow the same rule fixed, whatever this says.
      */
     public static boolean geology = false;
 

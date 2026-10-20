@@ -12,10 +12,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_dense_osmium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:granite_dense_tin_ore",
       "required": false
     },
@@ -32,10 +28,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_nickel_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:granite_energized_tin_ore",
       "required": false
     },
@@ -47,19 +39,7 @@
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
     {
-      "id": "seamlessores:diorite_dense_fluorite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:diorite_dense_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_dense_osmium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_dense_tin_ore",
       "required": false
     },
     {
@@ -70,39 +50,11 @@
       "id": "seamlessores:diorite_lead_ore",
       "required": false
     },
-    {
-      "id": "seamlessores:diorite_lithium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_techreborn_tin_ore",
-      "required": false
-    },
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
     "seamlessores:andesite_lapis_ore",
     {
-      "id": "seamlessores:andesite_dense_fluorite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:andesite_dense_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_dense_osmium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_dense_tin_ore",
       "required": false
     },
     {
@@ -111,22 +63,6 @@
     },
     {
       "id": "seamlessores:andesite_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_lithium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_techreborn_tin_ore",
       "required": false
     },
     "seamlessores:tuff_iron_ore",
@@ -141,14 +77,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_osmium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_dense_tin_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_dense_uranium_ore",
       "required": false
     },
@@ -158,18 +86,6 @@
     },
     {
       "id": "seamlessores:tuff_lithium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_techreborn_tin_ore",
       "required": false
     },
     "seamlessores:dripstone_iron_ore",
@@ -184,35 +100,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_osmium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_dense_tin_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:dripstone_dense_uranium_ore",
       "required": false
     },
     {
       "id": "seamlessores:dripstone_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_lithium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_techreborn_tin_ore",
       "required": false
     },
     {

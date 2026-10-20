@@ -1,5 +1,5 @@
 {
- "_comment": "Block ids Seamless Ores 5.0.0 registered and 5.1.0 no longer builds (the Cobblemon lore rule). Kept as placeholders that turn into their host stone (RetiredBlocks). Never remove a line.",
+ "_comment": "Block ids an earlier Seamless Ores release registered and this one no longer builds: the Cobblemon lore rule (5.1.0) and the geology rule in the game's own rock (the release after 5.1.0). Kept as placeholders that turn into their host stone (RetiredBlocks). Never remove a line.",
  "retired": [
   {
    "id": "blockus_bluestone_dawn_stone_ore",
@@ -794,6 +794,1311 @@
   {
    "id": "wilderwild_gabbro_water_stone_ore",
    "host": "wilderwild_gabbro",
+   "ore": "water_stone"
+  },
+  {
+   "id": "andesite_alexandrite_ore",
+   "host": "andesite",
+   "ore": "alexandrite"
+  },
+  {
+   "id": "andesite_ammolite_ore",
+   "host": "andesite",
+   "ore": "ammolite"
+  },
+  {
+   "id": "andesite_aquamarine_ore",
+   "host": "andesite",
+   "ore": "aquamarine"
+  },
+  {
+   "id": "andesite_black_diamond_ore",
+   "host": "andesite",
+   "ore": "black_diamond"
+  },
+  {
+   "id": "andesite_bort_ore",
+   "host": "andesite",
+   "ore": "bort"
+  },
+  {
+   "id": "andesite_dawn_stone_ore",
+   "host": "andesite",
+   "ore": "dawn_stone"
+  },
+  {
+   "id": "andesite_dense_fluorite_ore",
+   "host": "andesite",
+   "ore": "dense_fluorite"
+  },
+  {
+   "id": "andesite_dense_osmium_ore",
+   "host": "andesite",
+   "ore": "dense_osmium"
+  },
+  {
+   "id": "andesite_dense_tin_ore",
+   "host": "andesite",
+   "ore": "dense_tin"
+  },
+  {
+   "id": "andesite_energized_tin_ore",
+   "host": "andesite",
+   "ore": "energized_tin"
+  },
+  {
+   "id": "andesite_garnet_ore",
+   "host": "andesite",
+   "ore": "garnet"
+  },
+  {
+   "id": "andesite_heliodor_ore",
+   "host": "andesite",
+   "ore": "heliodor"
+  },
+  {
+   "id": "andesite_ice_stone_ore",
+   "host": "andesite",
+   "ore": "ice_stone"
+  },
+  {
+   "id": "andesite_iceandfire_sapphire_ore",
+   "host": "andesite",
+   "ore": "iceandfire_sapphire"
+  },
+  {
+   "id": "andesite_ie_nickel_ore",
+   "host": "andesite",
+   "ore": "ie_nickel"
+  },
+  {
+   "id": "andesite_iolite_ore",
+   "host": "andesite",
+   "ore": "iolite"
+  },
+  {
+   "id": "andesite_iridium_ore",
+   "host": "andesite",
+   "ore": "iridium"
+  },
+  {
+   "id": "andesite_kyanite_ore",
+   "host": "andesite",
+   "ore": "kyanite"
+  },
+  {
+   "id": "andesite_leaf_stone_ore",
+   "host": "andesite",
+   "ore": "leaf_stone"
+  },
+  {
+   "id": "andesite_lignite_coal_ore",
+   "host": "andesite",
+   "ore": "lignite_coal"
+  },
+  {
+   "id": "andesite_lithium_ore",
+   "host": "andesite",
+   "ore": "lithium"
+  },
+  {
+   "id": "andesite_mek_fluorite_ore",
+   "host": "andesite",
+   "ore": "mek_fluorite"
+  },
+  {
+   "id": "andesite_mek_osmium_ore",
+   "host": "andesite",
+   "ore": "mek_osmium"
+  },
+  {
+   "id": "andesite_mek_tin_ore",
+   "host": "andesite",
+   "ore": "mek_tin"
+  },
+  {
+   "id": "andesite_mi_nickel_ore",
+   "host": "andesite",
+   "ore": "mi_nickel"
+  },
+  {
+   "id": "andesite_mi_tin_ore",
+   "host": "andesite",
+   "ore": "mi_tin"
+  },
+  {
+   "id": "andesite_moldavite_ore",
+   "host": "andesite",
+   "ore": "moldavite"
+  },
+  {
+   "id": "andesite_monazite_ore",
+   "host": "andesite",
+   "ore": "monazite"
+  },
+  {
+   "id": "andesite_moon_stone_ore",
+   "host": "andesite",
+   "ore": "moon_stone"
+  },
+  {
+   "id": "andesite_nickel_ore",
+   "host": "andesite",
+   "ore": "nickel"
+  },
+  {
+   "id": "andesite_opal_ore",
+   "host": "andesite",
+   "ore": "opal"
+  },
+  {
+   "id": "andesite_osmium_ore",
+   "host": "andesite",
+   "ore": "osmium"
+  },
+  {
+   "id": "andesite_pearl_ore",
+   "host": "andesite",
+   "ore": "pearl"
+  },
+  {
+   "id": "andesite_peridot_ore",
+   "host": "andesite",
+   "ore": "peridot"
+  },
+  {
+   "id": "andesite_platinum_ore",
+   "host": "andesite",
+   "ore": "platinum"
+  },
+  {
+   "id": "andesite_rose_quartz_ore",
+   "host": "andesite",
+   "ore": "rose_quartz"
+  },
+  {
+   "id": "andesite_ruby_ore",
+   "host": "andesite",
+   "ore": "silents_ruby"
+  },
+  {
+   "id": "andesite_salt_ore",
+   "host": "andesite",
+   "ore": "salt"
+  },
+  {
+   "id": "andesite_sapphire_ore",
+   "host": "andesite",
+   "ore": "silents_sapphire"
+  },
+  {
+   "id": "andesite_shiny_stone_ore",
+   "host": "andesite",
+   "ore": "shiny_stone"
+  },
+  {
+   "id": "andesite_silents_aquamarine_ore",
+   "host": "andesite",
+   "ore": "silents_aquamarine"
+  },
+  {
+   "id": "andesite_silents_peridot_ore",
+   "host": "andesite",
+   "ore": "silents_peridot"
+  },
+  {
+   "id": "andesite_silents_topaz_ore",
+   "host": "andesite",
+   "ore": "silents_topaz"
+  },
+  {
+   "id": "andesite_tanzanite_ore",
+   "host": "andesite",
+   "ore": "tanzanite"
+  },
+  {
+   "id": "andesite_techreborn_ruby_ore",
+   "host": "andesite",
+   "ore": "techreborn_ruby"
+  },
+  {
+   "id": "andesite_techreborn_sapphire_ore",
+   "host": "andesite",
+   "ore": "techreborn_sapphire"
+  },
+  {
+   "id": "andesite_techreborn_tin_ore",
+   "host": "andesite",
+   "ore": "techreborn_tin"
+  },
+  {
+   "id": "andesite_thorium_ore",
+   "host": "andesite",
+   "ore": "thorium"
+  },
+  {
+   "id": "andesite_thunder_stone_ore",
+   "host": "andesite",
+   "ore": "thunder_stone"
+  },
+  {
+   "id": "andesite_tin_ore",
+   "host": "andesite",
+   "ore": "tin"
+  },
+  {
+   "id": "andesite_topaz_ore",
+   "host": "andesite",
+   "ore": "topaz"
+  },
+  {
+   "id": "andesite_tungsten_ore",
+   "host": "andesite",
+   "ore": "tungsten"
+  },
+  {
+   "id": "andesite_water_stone_ore",
+   "host": "andesite",
+   "ore": "water_stone"
+  },
+  {
+   "id": "andesite_white_diamond_ore",
+   "host": "andesite",
+   "ore": "white_diamond"
+  },
+  {
+   "id": "basalt_alexandrite_ore",
+   "host": "basalt",
+   "ore": "nether_alexandrite"
+  },
+  {
+   "id": "basalt_benitoite_ore",
+   "host": "basalt",
+   "ore": "benitoite"
+  },
+  {
+   "id": "basalt_black_diamond_ore",
+   "host": "basalt",
+   "ore": "nether_black_diamond"
+  },
+  {
+   "id": "basalt_iolite_ore",
+   "host": "basalt",
+   "ore": "nether_iolite"
+  },
+  {
+   "id": "basalt_moldavite_ore",
+   "host": "basalt",
+   "ore": "nether_moldavite"
+  },
+  {
+   "id": "basalt_pearl_ore",
+   "host": "basalt",
+   "ore": "nether_pearl"
+  },
+  {
+   "id": "basalt_tanzanite_ore",
+   "host": "basalt",
+   "ore": "nether_tanzanite"
+  },
+  {
+   "id": "blackstone_alexandrite_ore",
+   "host": "blackstone",
+   "ore": "nether_alexandrite"
+  },
+  {
+   "id": "blackstone_benitoite_ore",
+   "host": "blackstone",
+   "ore": "benitoite"
+  },
+  {
+   "id": "blackstone_black_diamond_ore",
+   "host": "blackstone",
+   "ore": "nether_black_diamond"
+  },
+  {
+   "id": "blackstone_iolite_ore",
+   "host": "blackstone",
+   "ore": "nether_iolite"
+  },
+  {
+   "id": "blackstone_moldavite_ore",
+   "host": "blackstone",
+   "ore": "nether_moldavite"
+  },
+  {
+   "id": "blackstone_pearl_ore",
+   "host": "blackstone",
+   "ore": "nether_pearl"
+  },
+  {
+   "id": "blackstone_tanzanite_ore",
+   "host": "blackstone",
+   "ore": "nether_tanzanite"
+  },
+  {
+   "id": "diorite_alexandrite_ore",
+   "host": "diorite",
+   "ore": "alexandrite"
+  },
+  {
+   "id": "diorite_ammolite_ore",
+   "host": "diorite",
+   "ore": "ammolite"
+  },
+  {
+   "id": "diorite_aquamarine_ore",
+   "host": "diorite",
+   "ore": "aquamarine"
+  },
+  {
+   "id": "diorite_black_diamond_ore",
+   "host": "diorite",
+   "ore": "black_diamond"
+  },
+  {
+   "id": "diorite_bort_ore",
+   "host": "diorite",
+   "ore": "bort"
+  },
+  {
+   "id": "diorite_carnelian_ore",
+   "host": "diorite",
+   "ore": "carnelian"
+  },
+  {
+   "id": "diorite_dawn_stone_ore",
+   "host": "diorite",
+   "ore": "dawn_stone"
+  },
+  {
+   "id": "diorite_dense_fluorite_ore",
+   "host": "diorite",
+   "ore": "dense_fluorite"
+  },
+  {
+   "id": "diorite_dense_osmium_ore",
+   "host": "diorite",
+   "ore": "dense_osmium"
+  },
+  {
+   "id": "diorite_dense_tin_ore",
+   "host": "diorite",
+   "ore": "dense_tin"
+  },
+  {
+   "id": "diorite_dusk_stone_ore",
+   "host": "diorite",
+   "ore": "dusk_stone"
+  },
+  {
+   "id": "diorite_energized_tin_ore",
+   "host": "diorite",
+   "ore": "energized_tin"
+  },
+  {
+   "id": "diorite_fire_stone_ore",
+   "host": "diorite",
+   "ore": "fire_stone"
+  },
+  {
+   "id": "diorite_garnet_ore",
+   "host": "diorite",
+   "ore": "garnet"
+  },
+  {
+   "id": "diorite_heliodor_ore",
+   "host": "diorite",
+   "ore": "heliodor"
+  },
+  {
+   "id": "diorite_iceandfire_sapphire_ore",
+   "host": "diorite",
+   "ore": "iceandfire_sapphire"
+  },
+  {
+   "id": "diorite_ie_nickel_ore",
+   "host": "diorite",
+   "ore": "ie_nickel"
+  },
+  {
+   "id": "diorite_iolite_ore",
+   "host": "diorite",
+   "ore": "iolite"
+  },
+  {
+   "id": "diorite_iridium_ore",
+   "host": "diorite",
+   "ore": "iridium"
+  },
+  {
+   "id": "diorite_kyanite_ore",
+   "host": "diorite",
+   "ore": "kyanite"
+  },
+  {
+   "id": "diorite_leaf_stone_ore",
+   "host": "diorite",
+   "ore": "leaf_stone"
+  },
+  {
+   "id": "diorite_lignite_coal_ore",
+   "host": "diorite",
+   "ore": "lignite_coal"
+  },
+  {
+   "id": "diorite_lithium_ore",
+   "host": "diorite",
+   "ore": "lithium"
+  },
+  {
+   "id": "diorite_mek_fluorite_ore",
+   "host": "diorite",
+   "ore": "mek_fluorite"
+  },
+  {
+   "id": "diorite_mek_osmium_ore",
+   "host": "diorite",
+   "ore": "mek_osmium"
+  },
+  {
+   "id": "diorite_mek_tin_ore",
+   "host": "diorite",
+   "ore": "mek_tin"
+  },
+  {
+   "id": "diorite_mi_nickel_ore",
+   "host": "diorite",
+   "ore": "mi_nickel"
+  },
+  {
+   "id": "diorite_mi_tin_ore",
+   "host": "diorite",
+   "ore": "mi_tin"
+  },
+  {
+   "id": "diorite_moldavite_ore",
+   "host": "diorite",
+   "ore": "moldavite"
+  },
+  {
+   "id": "diorite_monazite_ore",
+   "host": "diorite",
+   "ore": "monazite"
+  },
+  {
+   "id": "diorite_nickel_ore",
+   "host": "diorite",
+   "ore": "nickel"
+  },
+  {
+   "id": "diorite_opal_ore",
+   "host": "diorite",
+   "ore": "opal"
+  },
+  {
+   "id": "diorite_osmium_ore",
+   "host": "diorite",
+   "ore": "osmium"
+  },
+  {
+   "id": "diorite_pearl_ore",
+   "host": "diorite",
+   "ore": "pearl"
+  },
+  {
+   "id": "diorite_peridot_ore",
+   "host": "diorite",
+   "ore": "peridot"
+  },
+  {
+   "id": "diorite_platinum_ore",
+   "host": "diorite",
+   "ore": "platinum"
+  },
+  {
+   "id": "diorite_rose_quartz_ore",
+   "host": "diorite",
+   "ore": "rose_quartz"
+  },
+  {
+   "id": "diorite_ruby_ore",
+   "host": "diorite",
+   "ore": "silents_ruby"
+  },
+  {
+   "id": "diorite_salt_ore",
+   "host": "diorite",
+   "ore": "salt"
+  },
+  {
+   "id": "diorite_sapphire_ore",
+   "host": "diorite",
+   "ore": "silents_sapphire"
+  },
+  {
+   "id": "diorite_shiny_stone_ore",
+   "host": "diorite",
+   "ore": "shiny_stone"
+  },
+  {
+   "id": "diorite_silents_aquamarine_ore",
+   "host": "diorite",
+   "ore": "silents_aquamarine"
+  },
+  {
+   "id": "diorite_silents_peridot_ore",
+   "host": "diorite",
+   "ore": "silents_peridot"
+  },
+  {
+   "id": "diorite_silents_topaz_ore",
+   "host": "diorite",
+   "ore": "silents_topaz"
+  },
+  {
+   "id": "diorite_sun_stone_ore",
+   "host": "diorite",
+   "ore": "sun_stone"
+  },
+  {
+   "id": "diorite_tanzanite_ore",
+   "host": "diorite",
+   "ore": "tanzanite"
+  },
+  {
+   "id": "diorite_techreborn_ruby_ore",
+   "host": "diorite",
+   "ore": "techreborn_ruby"
+  },
+  {
+   "id": "diorite_techreborn_sapphire_ore",
+   "host": "diorite",
+   "ore": "techreborn_sapphire"
+  },
+  {
+   "id": "diorite_techreborn_tin_ore",
+   "host": "diorite",
+   "ore": "techreborn_tin"
+  },
+  {
+   "id": "diorite_thorium_ore",
+   "host": "diorite",
+   "ore": "thorium"
+  },
+  {
+   "id": "diorite_tin_ore",
+   "host": "diorite",
+   "ore": "tin"
+  },
+  {
+   "id": "diorite_topaz_ore",
+   "host": "diorite",
+   "ore": "topaz"
+  },
+  {
+   "id": "diorite_turquoise_ore",
+   "host": "diorite",
+   "ore": "turquoise"
+  },
+  {
+   "id": "diorite_water_stone_ore",
+   "host": "diorite",
+   "ore": "water_stone"
+  },
+  {
+   "id": "diorite_white_diamond_ore",
+   "host": "diorite",
+   "ore": "white_diamond"
+  },
+  {
+   "id": "dripstone_alexandrite_ore",
+   "host": "dripstone",
+   "ore": "alexandrite"
+  },
+  {
+   "id": "dripstone_ammolite_ore",
+   "host": "dripstone",
+   "ore": "ammolite"
+  },
+  {
+   "id": "dripstone_aquamarine_ore",
+   "host": "dripstone",
+   "ore": "aquamarine"
+  },
+  {
+   "id": "dripstone_black_diamond_ore",
+   "host": "dripstone",
+   "ore": "black_diamond"
+  },
+  {
+   "id": "dripstone_bort_ore",
+   "host": "dripstone",
+   "ore": "bort"
+  },
+  {
+   "id": "dripstone_carnelian_ore",
+   "host": "dripstone",
+   "ore": "carnelian"
+  },
+  {
+   "id": "dripstone_citrine_ore",
+   "host": "dripstone",
+   "ore": "citrine"
+  },
+  {
+   "id": "dripstone_dense_osmium_ore",
+   "host": "dripstone",
+   "ore": "dense_osmium"
+  },
+  {
+   "id": "dripstone_dense_tin_ore",
+   "host": "dripstone",
+   "ore": "dense_tin"
+  },
+  {
+   "id": "dripstone_dusk_stone_ore",
+   "host": "dripstone",
+   "ore": "dusk_stone"
+  },
+  {
+   "id": "dripstone_energized_tin_ore",
+   "host": "dripstone",
+   "ore": "energized_tin"
+  },
+  {
+   "id": "dripstone_fire_stone_ore",
+   "host": "dripstone",
+   "ore": "fire_stone"
+  },
+  {
+   "id": "dripstone_garnet_ore",
+   "host": "dripstone",
+   "ore": "garnet"
+  },
+  {
+   "id": "dripstone_heliodor_ore",
+   "host": "dripstone",
+   "ore": "heliodor"
+  },
+  {
+   "id": "dripstone_iceandfire_sapphire_ore",
+   "host": "dripstone",
+   "ore": "iceandfire_sapphire"
+  },
+  {
+   "id": "dripstone_iceandfire_silver_ore",
+   "host": "dripstone",
+   "ore": "iceandfire_silver"
+  },
+  {
+   "id": "dripstone_ie_nickel_ore",
+   "host": "dripstone",
+   "ore": "ie_nickel"
+  },
+  {
+   "id": "dripstone_ie_silver_ore",
+   "host": "dripstone",
+   "ore": "ie_silver"
+  },
+  {
+   "id": "dripstone_iolite_ore",
+   "host": "dripstone",
+   "ore": "iolite"
+  },
+  {
+   "id": "dripstone_iridium_ore",
+   "host": "dripstone",
+   "ore": "iridium"
+  },
+  {
+   "id": "dripstone_kyanite_ore",
+   "host": "dripstone",
+   "ore": "kyanite"
+  },
+  {
+   "id": "dripstone_leaf_stone_ore",
+   "host": "dripstone",
+   "ore": "leaf_stone"
+  },
+  {
+   "id": "dripstone_lignite_coal_ore",
+   "host": "dripstone",
+   "ore": "lignite_coal"
+  },
+  {
+   "id": "dripstone_lithium_ore",
+   "host": "dripstone",
+   "ore": "lithium"
+  },
+  {
+   "id": "dripstone_mek_osmium_ore",
+   "host": "dripstone",
+   "ore": "mek_osmium"
+  },
+  {
+   "id": "dripstone_mek_tin_ore",
+   "host": "dripstone",
+   "ore": "mek_tin"
+  },
+  {
+   "id": "dripstone_mi_nickel_ore",
+   "host": "dripstone",
+   "ore": "mi_nickel"
+  },
+  {
+   "id": "dripstone_mi_tin_ore",
+   "host": "dripstone",
+   "ore": "mi_tin"
+  },
+  {
+   "id": "dripstone_moldavite_ore",
+   "host": "dripstone",
+   "ore": "moldavite"
+  },
+  {
+   "id": "dripstone_monazite_ore",
+   "host": "dripstone",
+   "ore": "monazite"
+  },
+  {
+   "id": "dripstone_natural_quartz_ore",
+   "host": "dripstone",
+   "ore": "natural_quartz"
+  },
+  {
+   "id": "dripstone_nickel_ore",
+   "host": "dripstone",
+   "ore": "nickel"
+  },
+  {
+   "id": "dripstone_occultism_silver_ore",
+   "host": "dripstone",
+   "ore": "occultism_silver"
+  },
+  {
+   "id": "dripstone_opal_ore",
+   "host": "dripstone",
+   "ore": "opal"
+  },
+  {
+   "id": "dripstone_oreganized_silver_ore",
+   "host": "dripstone",
+   "ore": "oreganized_silver"
+  },
+  {
+   "id": "dripstone_osmium_ore",
+   "host": "dripstone",
+   "ore": "osmium"
+  },
+  {
+   "id": "dripstone_pearl_ore",
+   "host": "dripstone",
+   "ore": "pearl"
+  },
+  {
+   "id": "dripstone_peridot_ore",
+   "host": "dripstone",
+   "ore": "peridot"
+  },
+  {
+   "id": "dripstone_platinum_ore",
+   "host": "dripstone",
+   "ore": "platinum"
+  },
+  {
+   "id": "dripstone_rose_quartz_ore",
+   "host": "dripstone",
+   "ore": "rose_quartz"
+  },
+  {
+   "id": "dripstone_ruby_ore",
+   "host": "dripstone",
+   "ore": "silents_ruby"
+  },
+  {
+   "id": "dripstone_sapphire_ore",
+   "host": "dripstone",
+   "ore": "silents_sapphire"
+  },
+  {
+   "id": "dripstone_silents_aquamarine_ore",
+   "host": "dripstone",
+   "ore": "silents_aquamarine"
+  },
+  {
+   "id": "dripstone_silents_citrine_ore",
+   "host": "dripstone",
+   "ore": "silents_citrine"
+  },
+  {
+   "id": "dripstone_silents_peridot_ore",
+   "host": "dripstone",
+   "ore": "silents_peridot"
+  },
+  {
+   "id": "dripstone_silents_silver_ore",
+   "host": "dripstone",
+   "ore": "silents_silver"
+  },
+  {
+   "id": "dripstone_silents_topaz_ore",
+   "host": "dripstone",
+   "ore": "silents_topaz"
+  },
+  {
+   "id": "dripstone_silver_ore",
+   "host": "dripstone",
+   "ore": "silver"
+  },
+  {
+   "id": "dripstone_sun_stone_ore",
+   "host": "dripstone",
+   "ore": "sun_stone"
+  },
+  {
+   "id": "dripstone_tanzanite_ore",
+   "host": "dripstone",
+   "ore": "tanzanite"
+  },
+  {
+   "id": "dripstone_techreborn_ruby_ore",
+   "host": "dripstone",
+   "ore": "techreborn_ruby"
+  },
+  {
+   "id": "dripstone_techreborn_sapphire_ore",
+   "host": "dripstone",
+   "ore": "techreborn_sapphire"
+  },
+  {
+   "id": "dripstone_techreborn_silver_ore",
+   "host": "dripstone",
+   "ore": "techreborn_silver"
+  },
+  {
+   "id": "dripstone_techreborn_tin_ore",
+   "host": "dripstone",
+   "ore": "techreborn_tin"
+  },
+  {
+   "id": "dripstone_thorium_ore",
+   "host": "dripstone",
+   "ore": "thorium"
+  },
+  {
+   "id": "dripstone_thunder_stone_ore",
+   "host": "dripstone",
+   "ore": "thunder_stone"
+  },
+  {
+   "id": "dripstone_tin_ore",
+   "host": "dripstone",
+   "ore": "tin"
+  },
+  {
+   "id": "dripstone_topaz_ore",
+   "host": "dripstone",
+   "ore": "topaz"
+  },
+  {
+   "id": "dripstone_tungsten_ore",
+   "host": "dripstone",
+   "ore": "tungsten"
+  },
+  {
+   "id": "dripstone_turquoise_ore",
+   "host": "dripstone",
+   "ore": "turquoise"
+  },
+  {
+   "id": "dripstone_white_diamond_ore",
+   "host": "dripstone",
+   "ore": "white_diamond"
+  },
+  {
+   "id": "granite_alexandrite_ore",
+   "host": "granite",
+   "ore": "alexandrite"
+  },
+  {
+   "id": "granite_ammolite_ore",
+   "host": "granite",
+   "ore": "ammolite"
+  },
+  {
+   "id": "granite_black_diamond_ore",
+   "host": "granite",
+   "ore": "black_diamond"
+  },
+  {
+   "id": "granite_bort_ore",
+   "host": "granite",
+   "ore": "bort"
+  },
+  {
+   "id": "granite_carnelian_ore",
+   "host": "granite",
+   "ore": "carnelian"
+  },
+  {
+   "id": "granite_dense_osmium_ore",
+   "host": "granite",
+   "ore": "dense_osmium"
+  },
+  {
+   "id": "granite_dusk_stone_ore",
+   "host": "granite",
+   "ore": "dusk_stone"
+  },
+  {
+   "id": "granite_fire_stone_ore",
+   "host": "granite",
+   "ore": "fire_stone"
+  },
+  {
+   "id": "granite_ice_stone_ore",
+   "host": "granite",
+   "ore": "ice_stone"
+  },
+  {
+   "id": "granite_iceandfire_sapphire_ore",
+   "host": "granite",
+   "ore": "iceandfire_sapphire"
+  },
+  {
+   "id": "granite_ie_nickel_ore",
+   "host": "granite",
+   "ore": "ie_nickel"
+  },
+  {
+   "id": "granite_iolite_ore",
+   "host": "granite",
+   "ore": "iolite"
+  },
+  {
+   "id": "granite_iridium_ore",
+   "host": "granite",
+   "ore": "iridium"
+  },
+  {
+   "id": "granite_kyanite_ore",
+   "host": "granite",
+   "ore": "kyanite"
+  },
+  {
+   "id": "granite_leaf_stone_ore",
+   "host": "granite",
+   "ore": "leaf_stone"
+  },
+  {
+   "id": "granite_lignite_coal_ore",
+   "host": "granite",
+   "ore": "lignite_coal"
+  },
+  {
+   "id": "granite_mek_osmium_ore",
+   "host": "granite",
+   "ore": "mek_osmium"
+  },
+  {
+   "id": "granite_mi_nickel_ore",
+   "host": "granite",
+   "ore": "mi_nickel"
+  },
+  {
+   "id": "granite_moldavite_ore",
+   "host": "granite",
+   "ore": "moldavite"
+  },
+  {
+   "id": "granite_nickel_ore",
+   "host": "granite",
+   "ore": "nickel"
+  },
+  {
+   "id": "granite_opal_ore",
+   "host": "granite",
+   "ore": "opal"
+  },
+  {
+   "id": "granite_osmium_ore",
+   "host": "granite",
+   "ore": "osmium"
+  },
+  {
+   "id": "granite_pearl_ore",
+   "host": "granite",
+   "ore": "pearl"
+  },
+  {
+   "id": "granite_peridot_ore",
+   "host": "granite",
+   "ore": "peridot"
+  },
+  {
+   "id": "granite_platinum_ore",
+   "host": "granite",
+   "ore": "platinum"
+  },
+  {
+   "id": "granite_rose_quartz_ore",
+   "host": "granite",
+   "ore": "rose_quartz"
+  },
+  {
+   "id": "granite_ruby_ore",
+   "host": "granite",
+   "ore": "silents_ruby"
+  },
+  {
+   "id": "granite_salt_ore",
+   "host": "granite",
+   "ore": "salt"
+  },
+  {
+   "id": "granite_sapphire_ore",
+   "host": "granite",
+   "ore": "silents_sapphire"
+  },
+  {
+   "id": "granite_silents_peridot_ore",
+   "host": "granite",
+   "ore": "silents_peridot"
+  },
+  {
+   "id": "granite_sun_stone_ore",
+   "host": "granite",
+   "ore": "sun_stone"
+  },
+  {
+   "id": "granite_tanzanite_ore",
+   "host": "granite",
+   "ore": "tanzanite"
+  },
+  {
+   "id": "granite_techreborn_ruby_ore",
+   "host": "granite",
+   "ore": "techreborn_ruby"
+  },
+  {
+   "id": "granite_techreborn_sapphire_ore",
+   "host": "granite",
+   "ore": "techreborn_sapphire"
+  },
+  {
+   "id": "granite_turquoise_ore",
+   "host": "granite",
+   "ore": "turquoise"
+  },
+  {
+   "id": "granite_water_stone_ore",
+   "host": "granite",
+   "ore": "water_stone"
+  },
+  {
+   "id": "granite_white_diamond_ore",
+   "host": "granite",
+   "ore": "white_diamond"
+  },
+  {
+   "id": "tuff_alexandrite_ore",
+   "host": "tuff",
+   "ore": "alexandrite"
+  },
+  {
+   "id": "tuff_ammolite_ore",
+   "host": "tuff",
+   "ore": "ammolite"
+  },
+  {
+   "id": "tuff_aquamarine_ore",
+   "host": "tuff",
+   "ore": "aquamarine"
+  },
+  {
+   "id": "tuff_dawn_stone_ore",
+   "host": "tuff",
+   "ore": "dawn_stone"
+  },
+  {
+   "id": "tuff_dense_osmium_ore",
+   "host": "tuff",
+   "ore": "dense_osmium"
+  },
+  {
+   "id": "tuff_dense_tin_ore",
+   "host": "tuff",
+   "ore": "dense_tin"
+  },
+  {
+   "id": "tuff_energized_tin_ore",
+   "host": "tuff",
+   "ore": "energized_tin"
+  },
+  {
+   "id": "tuff_garnet_ore",
+   "host": "tuff",
+   "ore": "garnet"
+  },
+  {
+   "id": "tuff_heliodor_ore",
+   "host": "tuff",
+   "ore": "heliodor"
+  },
+  {
+   "id": "tuff_ice_stone_ore",
+   "host": "tuff",
+   "ore": "ice_stone"
+  },
+  {
+   "id": "tuff_ie_nickel_ore",
+   "host": "tuff",
+   "ore": "ie_nickel"
+  },
+  {
+   "id": "tuff_iolite_ore",
+   "host": "tuff",
+   "ore": "iolite"
+  },
+  {
+   "id": "tuff_iridium_ore",
+   "host": "tuff",
+   "ore": "iridium"
+  },
+  {
+   "id": "tuff_kyanite_ore",
+   "host": "tuff",
+   "ore": "kyanite"
+  },
+  {
+   "id": "tuff_mek_osmium_ore",
+   "host": "tuff",
+   "ore": "mek_osmium"
+  },
+  {
+   "id": "tuff_mek_tin_ore",
+   "host": "tuff",
+   "ore": "mek_tin"
+  },
+  {
+   "id": "tuff_mi_nickel_ore",
+   "host": "tuff",
+   "ore": "mi_nickel"
+  },
+  {
+   "id": "tuff_mi_tin_ore",
+   "host": "tuff",
+   "ore": "mi_tin"
+  },
+  {
+   "id": "tuff_moldavite_ore",
+   "host": "tuff",
+   "ore": "moldavite"
+  },
+  {
+   "id": "tuff_monazite_ore",
+   "host": "tuff",
+   "ore": "monazite"
+  },
+  {
+   "id": "tuff_moon_stone_ore",
+   "host": "tuff",
+   "ore": "moon_stone"
+  },
+  {
+   "id": "tuff_nickel_ore",
+   "host": "tuff",
+   "ore": "nickel"
+  },
+  {
+   "id": "tuff_pearl_ore",
+   "host": "tuff",
+   "ore": "pearl"
+  },
+  {
+   "id": "tuff_peridot_ore",
+   "host": "tuff",
+   "ore": "peridot"
+  },
+  {
+   "id": "tuff_rose_quartz_ore",
+   "host": "tuff",
+   "ore": "rose_quartz"
+  },
+  {
+   "id": "tuff_ruby_ore",
+   "host": "tuff",
+   "ore": "silents_ruby"
+  },
+  {
+   "id": "tuff_salt_ore",
+   "host": "tuff",
+   "ore": "salt"
+  },
+  {
+   "id": "tuff_sapphire_ore",
+   "host": "tuff",
+   "ore": "silents_sapphire"
+  },
+  {
+   "id": "tuff_shiny_stone_ore",
+   "host": "tuff",
+   "ore": "shiny_stone"
+  },
+  {
+   "id": "tuff_silents_aquamarine_ore",
+   "host": "tuff",
+   "ore": "silents_aquamarine"
+  },
+  {
+   "id": "tuff_silents_peridot_ore",
+   "host": "tuff",
+   "ore": "silents_peridot"
+  },
+  {
+   "id": "tuff_silents_topaz_ore",
+   "host": "tuff",
+   "ore": "silents_topaz"
+  },
+  {
+   "id": "tuff_tanzanite_ore",
+   "host": "tuff",
+   "ore": "tanzanite"
+  },
+  {
+   "id": "tuff_techreborn_ruby_ore",
+   "host": "tuff",
+   "ore": "techreborn_ruby"
+  },
+  {
+   "id": "tuff_techreborn_sapphire_ore",
+   "host": "tuff",
+   "ore": "techreborn_sapphire"
+  },
+  {
+   "id": "tuff_techreborn_tin_ore",
+   "host": "tuff",
+   "ore": "techreborn_tin"
+  },
+  {
+   "id": "tuff_thunder_stone_ore",
+   "host": "tuff",
+   "ore": "thunder_stone"
+  },
+  {
+   "id": "tuff_topaz_ore",
+   "host": "tuff",
+   "ore": "topaz"
+  },
+  {
+   "id": "tuff_tungsten_ore",
+   "host": "tuff",
+   "ore": "tungsten"
+  },
+  {
+   "id": "tuff_water_stone_ore",
+   "host": "tuff",
    "ore": "water_stone"
   }
  ]

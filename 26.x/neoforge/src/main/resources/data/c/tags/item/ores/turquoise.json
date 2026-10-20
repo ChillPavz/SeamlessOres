@@ -1,23 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_turquoise_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_turquoise_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:andesite_turquoise_ore",
       "required": false
     },
     {
       "id": "seamlessores:tuff_turquoise_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_turquoise_ore",
       "required": false
     },
     {

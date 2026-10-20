@@ -14,6 +14,7 @@ import com.chillpavz.seamlessores.worldgen.SulfurCaves;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
 import com.chillpavz.seamlessores.content.OreType;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
+import com.chillpavz.seamlessores.content.RetiredBlocks;
 import com.chillpavz.seamlessores.worldgen.Worldgen;
 import com.chillpavz.seamlessores.worldgen.WorldgenEra;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
@@ -27,6 +28,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerChunkEvents;
 import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
 import net.fabricmc.fabric.api.resource.v1.pack.PackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
@@ -52,6 +54,12 @@ public class SeamlessOresFabric implements ModInitializer {
 
         SeamlessOresContent.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
         SeamlessOresContent.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item));
+        // Ids an earlier release registered and this one no longer builds: placeholders that become their stone.
+        RetiredBlocks.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
+        RetiredBlocks.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item),
+                BuiltInRegistries.BLOCK::getValue);
+        ServerChunkEvents.CHUNK_LOAD.register((level, chunk, generated) ->
+                level.getServer().execute(() -> RetiredBlocks.convertChunk(level, chunk)));
         SeamlessOresContent.registerCreativeTabs(
                 (id, tab) -> Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id, tab));
         registerMatrixAliases();

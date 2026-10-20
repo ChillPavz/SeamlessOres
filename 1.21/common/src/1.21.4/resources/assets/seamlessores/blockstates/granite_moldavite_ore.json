@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/granite_moldavite_ore"
+      "model": "seamlessores:block/retired/granite_moldavite_ore"
     }
   }
 }

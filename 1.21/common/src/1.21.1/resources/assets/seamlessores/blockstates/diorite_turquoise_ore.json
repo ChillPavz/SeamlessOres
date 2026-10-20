@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/diorite_turquoise_ore"
+      "model": "seamlessores:block/retired/diorite_turquoise_ore"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/blackstone_pearl_ore"
+      "model": "seamlessores:block/retired/blackstone_pearl_ore"
     }
   }
 }

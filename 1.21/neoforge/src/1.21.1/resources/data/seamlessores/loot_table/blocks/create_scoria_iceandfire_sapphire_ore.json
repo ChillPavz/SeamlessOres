@@ -25,14 +25,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
-      "name": "sapphire_ore",
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "seamlessores:create_scoria_iceandfire_sapphire_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -46,22 +47,11 @@
                     }
                   }
                 }
-              ],
-              "name": "seamlessores:create_scoria_iceandfire_sapphire_ore"
+              ]
             },
             {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "iceandfire:sapphire_gem"
+              "type": "minecraft:loot_table",
+              "value": "iceandfire:blocks/sapphire_ore"
             }
           ]
         }

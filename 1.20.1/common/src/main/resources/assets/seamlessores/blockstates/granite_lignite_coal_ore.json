@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/granite_lignite_coal_ore"
+      "model": "seamlessores:block/retired/granite_lignite_coal_ore"
     }
   }
 }

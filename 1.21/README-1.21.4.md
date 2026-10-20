@@ -30,7 +30,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**416 blocks** in the game's own rock, in the `seamlessores` namespace.
+**239 blocks** in the game's own rock, in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -60,33 +60,31 @@ touching ore of the same type across different host stones.
 
 **Create: New Age, Overworld, requires `create_new_age`**
 
-| | granite | diorite | andesite | dripstone |
-|---|---|---|---|---|
-| Thorium | `granite_thorium_ore` | `diorite_thorium_ore` | `andesite_thorium_ore` | `dripstone_thorium_ore` |
+| | granite |
+|---|---|
+| Thorium | `granite_thorium_ore` |
 
 **Create: TFMG, Overworld, requires `tfmg`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
 | Lead | `granite_lead_ore` | `diorite_lead_ore` | `andesite_lead_ore` | `tuff_lead_ore` | `dripstone_lead_ore` |
-| Lithium | `granite_lithium_ore` | `diorite_lithium_ore` | `andesite_lithium_ore` | `tuff_lithium_ore` | `dripstone_lithium_ore` |
-| Nickel | `granite_nickel_ore` | `diorite_nickel_ore` | `andesite_nickel_ore` | `tuff_nickel_ore` | `dripstone_nickel_ore` |
+| Lithium | `granite_lithium_ore` |   |   | `tuff_lithium_ore` |   |
 
 **Dense Mekanism, Overworld, requires `densemekanism`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Dense Fluorite | `granite_dense_fluorite_ore` | `diorite_dense_fluorite_ore` | `andesite_dense_fluorite_ore` | `tuff_dense_fluorite_ore` | `dripstone_dense_fluorite_ore` |
+| Dense Fluorite | `granite_dense_fluorite_ore` |   |   | `tuff_dense_fluorite_ore` | `dripstone_dense_fluorite_ore` |
 | Dense Lead | `granite_dense_lead_ore` | `diorite_dense_lead_ore` | `andesite_dense_lead_ore` | `tuff_dense_lead_ore` | `dripstone_dense_lead_ore` |
-| Dense Osmium | `granite_dense_osmium_ore` | `diorite_dense_osmium_ore` | `andesite_dense_osmium_ore` | `tuff_dense_osmium_ore` | `dripstone_dense_osmium_ore` |
-| Dense Tin | `granite_dense_tin_ore` | `diorite_dense_tin_ore` | `andesite_dense_tin_ore` | `tuff_dense_tin_ore` | `dripstone_dense_tin_ore` |
+| Dense Tin | `granite_dense_tin_ore` |   |   |   |   |
 | Dense Uranium | `granite_dense_uranium_ore` | `diorite_dense_uranium_ore` | `andesite_dense_uranium_ore` | `tuff_dense_uranium_ore` | `dripstone_dense_uranium_ore` |
 
 **Energized Power, Overworld, requires `energizedpower`**
 
-| | granite | diorite | andesite | tuff | dripstone |
-|---|---|---|---|---|---|
-| Tin | `granite_energized_tin_ore` | `diorite_energized_tin_ore` | `andesite_energized_tin_ore` | `tuff_energized_tin_ore` | `dripstone_energized_tin_ore` |
+| | granite |
+|---|---|
+| Tin | `granite_energized_tin_ore` |
 
 **Mythic Metals, Overworld, requires `mythicmetals`**
 
@@ -103,12 +101,10 @@ touching ore of the same type across different host stones.
 | Banglum | `granite_banglum_ore` | `diorite_banglum_ore` | `andesite_banglum_ore` |   | `dripstone_banglum_ore` |
 | Kyber | `granite_kyber_ore` | `diorite_kyber_ore` | `andesite_kyber_ore` |   | `dripstone_kyber_ore` |
 | Manganese | `granite_manganese_ore` | `diorite_manganese_ore` | `andesite_manganese_ore` |   | `dripstone_manganese_ore` |
-| Osmium | `granite_osmium_ore` | `diorite_osmium_ore` | `andesite_osmium_ore` |   | `dripstone_osmium_ore` |
-| Platinum | `granite_platinum_ore` | `diorite_platinum_ore` | `andesite_platinum_ore` |   | `dripstone_platinum_ore` |
 | Quadrillum | `granite_quadrillum_ore` | `diorite_quadrillum_ore` | `andesite_quadrillum_ore` |   | `dripstone_quadrillum_ore` |
-| Silver | `granite_silver_ore` | `diorite_silver_ore` | `andesite_silver_ore` |   | `dripstone_silver_ore` |
+| Silver | `granite_silver_ore` | `diorite_silver_ore` | `andesite_silver_ore` |   |   |
 | Starrite | `granite_starrite_ore` | `diorite_starrite_ore` | `andesite_starrite_ore` |   | `dripstone_starrite_ore` |
-| Tin | `granite_tin_ore` | `diorite_tin_ore` | `andesite_tin_ore` |   | `dripstone_tin_ore` |
+| Tin | `granite_tin_ore` |   |   |   |   |
 | Orichalcum | `granite_orichalcum_ore` | `diorite_orichalcum_ore` | `andesite_orichalcum_ore` |   | `dripstone_orichalcum_ore` |
 
 **Mythic Metals, Nether, requires `mythicmetals`**
@@ -124,10 +120,9 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Aquamarine | `granite_aquamarine_ore` | `diorite_aquamarine_ore` | `andesite_aquamarine_ore` | `tuff_aquamarine_ore` | `dripstone_aquamarine_ore` |
-| Citrine | `granite_citrine_ore` | `diorite_citrine_ore` | `andesite_citrine_ore` | `tuff_citrine_ore` | `dripstone_citrine_ore` |
-| Peridot | `granite_peridot_ore` | `diorite_peridot_ore` | `andesite_peridot_ore` | `tuff_peridot_ore` | `dripstone_peridot_ore` |
-| Topaz | `granite_topaz_ore` | `diorite_topaz_ore` | `andesite_topaz_ore` | `tuff_topaz_ore` | `dripstone_topaz_ore` |
+| Aquamarine | `granite_aquamarine_ore` |   |   |   |   |
+| Citrine | `granite_citrine_ore` | `diorite_citrine_ore` | `andesite_citrine_ore` | `tuff_citrine_ore` |   |
+| Topaz | `granite_topaz_ore` |   |   |   |   |
 | Necoium | `granite_necoium_ore` | `diorite_necoium_ore` | `andesite_necoium_ore` | `tuff_necoium_ore` | `dripstone_necoium_ore` |
 
 **Mythic Upgrades, Nether, requires `mythicupgrades`**
@@ -147,49 +142,32 @@ touching ore of the same type across different host stones.
 
 **Silent Gear, Overworld, requires `silentgear`**
 
-| | granite | diorite | andesite | tuff | dripstone |
-|---|---|---|---|---|---|
-| Bort | `granite_bort_ore` | `diorite_bort_ore` | `andesite_bort_ore` | `tuff_bort_ore` | `dripstone_bort_ore` |
+| | tuff |
+|---|---|
+| Bort | `tuff_bort_ore` |
 
 **Silent's Gems, Overworld, requires `silentgems`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Alexandrite | `granite_alexandrite_ore` | `diorite_alexandrite_ore` | `andesite_alexandrite_ore` | `tuff_alexandrite_ore` | `dripstone_alexandrite_ore` |
-| Ammolite | `granite_ammolite_ore` | `diorite_ammolite_ore` | `andesite_ammolite_ore` | `tuff_ammolite_ore` | `dripstone_ammolite_ore` |
-| Black Diamond | `granite_black_diamond_ore` | `diorite_black_diamond_ore` | `andesite_black_diamond_ore` | `tuff_black_diamond_ore` | `dripstone_black_diamond_ore` |
-| Carnelian | `granite_carnelian_ore` | `diorite_carnelian_ore` | `andesite_carnelian_ore` | `tuff_carnelian_ore` | `dripstone_carnelian_ore` |
 | Chaos | `granite_chaos_ore` | `diorite_chaos_ore` | `andesite_chaos_ore` | `tuff_chaos_ore` | `dripstone_chaos_ore` |
-| Garnet | `granite_garnet_ore` | `diorite_garnet_ore` | `andesite_garnet_ore` | `tuff_garnet_ore` | `dripstone_garnet_ore` |
-| Heliodor | `granite_heliodor_ore` | `diorite_heliodor_ore` | `andesite_heliodor_ore` | `tuff_heliodor_ore` | `dripstone_heliodor_ore` |
-| Iolite | `granite_iolite_ore` | `diorite_iolite_ore` | `andesite_iolite_ore` | `tuff_iolite_ore` | `dripstone_iolite_ore` |
-| Kyanite | `granite_kyanite_ore` | `diorite_kyanite_ore` | `andesite_kyanite_ore` | `tuff_kyanite_ore` | `dripstone_kyanite_ore` |
-| Moldavite | `granite_moldavite_ore` | `diorite_moldavite_ore` | `andesite_moldavite_ore` | `tuff_moldavite_ore` | `dripstone_moldavite_ore` |
-| Pearl | `granite_pearl_ore` | `diorite_pearl_ore` | `andesite_pearl_ore` | `tuff_pearl_ore` | `dripstone_pearl_ore` |
-| Rose Quartz | `granite_rose_quartz_ore` | `diorite_rose_quartz_ore` | `andesite_rose_quartz_ore` | `tuff_rose_quartz_ore` | `dripstone_rose_quartz_ore` |
-| Ruby | `granite_ruby_ore` | `diorite_ruby_ore` | `andesite_ruby_ore` | `tuff_ruby_ore` | `dripstone_ruby_ore` |
-| Sapphire | `granite_sapphire_ore` | `diorite_sapphire_ore` | `andesite_sapphire_ore` | `tuff_sapphire_ore` | `dripstone_sapphire_ore` |
-| Tanzanite | `granite_tanzanite_ore` | `diorite_tanzanite_ore` | `andesite_tanzanite_ore` | `tuff_tanzanite_ore` | `dripstone_tanzanite_ore` |
-| Turquoise | `granite_turquoise_ore` | `diorite_turquoise_ore` | `andesite_turquoise_ore` | `tuff_turquoise_ore` | `dripstone_turquoise_ore` |
-| White Diamond | `granite_white_diamond_ore` | `diorite_white_diamond_ore` | `andesite_white_diamond_ore` | `tuff_white_diamond_ore` | `dripstone_white_diamond_ore` |
-| Aquamarine | `granite_silents_aquamarine_ore` | `diorite_silents_aquamarine_ore` | `andesite_silents_aquamarine_ore` | `tuff_silents_aquamarine_ore` | `dripstone_silents_aquamarine_ore` |
-| Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` | `dripstone_silents_citrine_ore` |
-| Peridot | `granite_silents_peridot_ore` | `diorite_silents_peridot_ore` | `andesite_silents_peridot_ore` | `tuff_silents_peridot_ore` | `dripstone_silents_peridot_ore` |
-| Topaz | `granite_silents_topaz_ore` | `diorite_silents_topaz_ore` | `andesite_silents_topaz_ore` | `tuff_silents_topaz_ore` | `dripstone_silents_topaz_ore` |
-| Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` | `dripstone_silents_silver_ore` |
+| Garnet | `granite_garnet_ore` |   |   |   |   |
+| Heliodor | `granite_heliodor_ore` |   |   |   |   |
+| Aquamarine | `granite_silents_aquamarine_ore` |   |   |   |   |
+| Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` |   |
+| Topaz | `granite_silents_topaz_ore` |   |   |   |   |
+| Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` |   |
+| Carnelian |   |   | `andesite_carnelian_ore` | `tuff_carnelian_ore` |   |
+| Turquoise |   |   | `andesite_turquoise_ore` | `tuff_turquoise_ore` |   |
+| Black Diamond |   |   |   | `tuff_black_diamond_ore` |   |
+| White Diamond |   |   |   | `tuff_white_diamond_ore` |   |
 
 **Silent's Gems, Nether, requires `silentgems`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Alexandrite | `basalt_alexandrite_ore` | `blackstone_alexandrite_ore` |
-| Black Diamond | `basalt_black_diamond_ore` | `blackstone_black_diamond_ore` |
 | Carnelian | `basalt_carnelian_ore` | `blackstone_carnelian_ore` |
 | Citrine | `basalt_silents_citrine_ore` | `blackstone_silents_citrine_ore` |
-| Iolite | `basalt_iolite_ore` | `blackstone_iolite_ore` |
-| Moldavite | `basalt_moldavite_ore` | `blackstone_moldavite_ore` |
-| Pearl | `basalt_pearl_ore` | `blackstone_pearl_ore` |
-| Tanzanite | `basalt_tanzanite_ore` | `blackstone_tanzanite_ore` |
 
 **Things, Overworld, requires `things`**
 
@@ -203,12 +181,9 @@ touching ore of the same type across different host stones.
 |---|---|---|---|---|---|
 | Bauxite | `granite_techreborn_bauxite_ore` | `diorite_techreborn_bauxite_ore` | `andesite_techreborn_bauxite_ore` | `tuff_techreborn_bauxite_ore` | `dripstone_techreborn_bauxite_ore` |
 | Galena | `granite_galena_ore` | `diorite_galena_ore` | `andesite_galena_ore` | `tuff_galena_ore` | `dripstone_galena_ore` |
-| Iridium | `granite_iridium_ore` | `diorite_iridium_ore` | `andesite_iridium_ore` | `tuff_iridium_ore` | `dripstone_iridium_ore` |
 | Lead | `granite_techreborn_lead_ore` | `diorite_techreborn_lead_ore` | `andesite_techreborn_lead_ore` | `tuff_techreborn_lead_ore` | `dripstone_techreborn_lead_ore` |
-| Ruby | `granite_techreborn_ruby_ore` | `diorite_techreborn_ruby_ore` | `andesite_techreborn_ruby_ore` | `tuff_techreborn_ruby_ore` | `dripstone_techreborn_ruby_ore` |
-| Sapphire | `granite_techreborn_sapphire_ore` | `diorite_techreborn_sapphire_ore` | `andesite_techreborn_sapphire_ore` | `tuff_techreborn_sapphire_ore` | `dripstone_techreborn_sapphire_ore` |
-| Silver | `granite_techreborn_silver_ore` | `diorite_techreborn_silver_ore` | `andesite_techreborn_silver_ore` | `tuff_techreborn_silver_ore` | `dripstone_techreborn_silver_ore` |
-| Tin | `granite_techreborn_tin_ore` | `diorite_techreborn_tin_ore` | `andesite_techreborn_tin_ore` | `tuff_techreborn_tin_ore` | `dripstone_techreborn_tin_ore` |
+| Silver | `granite_techreborn_silver_ore` | `diorite_techreborn_silver_ore` | `andesite_techreborn_silver_ore` | `tuff_techreborn_silver_ore` |   |
+| Tin | `granite_techreborn_tin_ore` |   |   |   |   |
 
 **Tech Reborn, Nether, requires `techreborn`**
 
@@ -224,20 +199,14 @@ touching ore of the same type across different host stones.
 |---|---|---|---|---|---|
 | Yellorite | `granite_yellorite_ore` | `diorite_yellorite_ore` | `andesite_yellorite_ore` | `tuff_yellorite_ore` | `dripstone_yellorite_ore` |
 
-**Extreme Reactors, Nether, requires `bigreactors`**
-
-| | basalt | blackstone |
-|---|---|---|
-| Benitoite | `basalt_benitoite_ore` | `blackstone_benitoite_ore` |
-
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
 Minecraft version:
 
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
-| Fabric | 185 | Create, Energized Power, Mythic Metals, Tech Reborn |
-| NeoForge | 55 | Energized Power, Extreme Reactors |
+| Fabric | 149 | Create, Energized Power, Mythic Metals, Tech Reborn |
+| NeoForge | 49 | Energized Power, Extreme Reactors |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -503,7 +472,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 864 blocks takes **91 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 687 blocks takes **80 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -511,7 +480,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ammolite` `aquamarine` `aquarium` `banglum` `benitoite` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iolite` `iridium` `iron` `kyanite` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `moldavite` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `nickel` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `pyrite` `quadrillum` `quartz` `redstone` `rose_quartz` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `yellorite` `zinc`
+`adamantite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iridium` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `yellorite` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its

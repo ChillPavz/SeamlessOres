@@ -1,23 +1,7 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_lignite_coal_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_lignite_coal_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_lignite_coal_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_lignite_coal_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_lignite_coal_ore",
       "required": false
     },
     {

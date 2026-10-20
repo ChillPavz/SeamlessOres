@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/dripstone_mek_osmium_ore"
+      "model": "seamlessores:block/retired/dripstone_mek_osmium_ore"
     }
   }
 }

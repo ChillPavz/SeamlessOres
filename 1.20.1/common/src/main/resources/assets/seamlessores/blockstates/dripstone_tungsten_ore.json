@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/dripstone_tungsten_ore"
+      "model": "seamlessores:block/retired/dripstone_tungsten_ore"
     }
   }
 }

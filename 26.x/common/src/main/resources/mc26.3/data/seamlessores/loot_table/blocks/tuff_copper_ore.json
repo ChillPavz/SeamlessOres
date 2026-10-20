@@ -2,41 +2,24 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
-              "condition": "minecraft:tool/can_silk_touch",
-              "name": "seamlessores:tuff_copper_ore"
+              "name": "seamlessores:tuff_copper_ore",
+              "condition": "minecraft:tool/can_silk_touch"
             },
             {
-              "type": "minecraft:item",
-              "modifier": [
-                {
-                  "type": "minecraft:set_count",
-                  "count": {
-                    "type": "minecraft:uniform",
-                    "max": 5,
-                    "min": 2
-                  }
-                },
-                {
-                  "type": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "type": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "minecraft:raw_copper"
+              "type": "minecraft:loot_table",
+              "value": "minecraft:blocks/deepslate_copper_ore"
             }
           ]
         }
-      ],
-      "rolls": 1
+      ]
     }
   ],
   "random_sequence": "seamlessores:blocks/tuff_copper_ore"

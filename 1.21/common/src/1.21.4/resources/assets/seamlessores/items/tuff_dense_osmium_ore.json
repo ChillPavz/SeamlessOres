@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "seamlessores:block/tuff_dense_osmium_ore"
+    "model": "seamlessores:block/retired/tuff_dense_osmium_ore"
   }
 }

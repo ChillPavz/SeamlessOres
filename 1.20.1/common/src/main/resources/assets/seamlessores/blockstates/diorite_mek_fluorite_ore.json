@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/diorite_mek_fluorite_ore"
+      "model": "seamlessores:block/retired/diorite_mek_fluorite_ore"
     }
   }
 }

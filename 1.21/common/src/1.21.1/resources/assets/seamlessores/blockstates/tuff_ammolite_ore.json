@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/tuff_ammolite_ore"
+      "model": "seamlessores:block/retired/tuff_ammolite_ore"
     }
   }
 }

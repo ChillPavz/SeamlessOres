@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/dripstone_citrine_ore"
+      "model": "seamlessores:block/retired/dripstone_citrine_ore"
     }
   }
 }

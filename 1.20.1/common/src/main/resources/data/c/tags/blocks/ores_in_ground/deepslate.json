@@ -13,19 +13,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_aquamarine_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_topaz_ore",
       "required": false
     },
     {
@@ -61,47 +49,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_alexandrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_ammolite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_black_diamond_ore",
       "required": false
     },
     {
       "id": "seamlessores:tuff_carnelian_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_heliodor_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_iolite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_kyanite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_moldavite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_rose_quartz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_sapphire_ore",
       "required": false
     },
     {
@@ -117,14 +69,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_silents_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_silents_topaz_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_silents_silver_ore",
       "required": false
     },
@@ -134,14 +78,6 @@
     },
     {
       "id": "seamlessores:tuff_dense_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_dense_osmium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_dense_tin_ore",
       "required": false
     },
     {
@@ -169,14 +105,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_energized_tin_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_gleaming_ore",
       "required": false
     },
@@ -201,27 +129,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_iridium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_techreborn_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_techreborn_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_techreborn_sapphire_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_techreborn_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_techreborn_tin_ore",
       "required": false
     },
     {
@@ -233,35 +145,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mi_iridium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_mi_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:tuff_lignite_coal_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_monazite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_mi_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_salt_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_mi_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_tungsten_ore",
       "required": false
     },
     {
@@ -293,10 +181,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_nickel_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_ie_silver_ore",
       "required": false
     },
@@ -310,14 +194,6 @@
     },
     {
       "id": "seamlessores:tuff_mek_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_mek_osmium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_mek_tin_ore",
       "required": false
     },
     {
@@ -345,10 +221,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dawn_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_dusk_stone_ore",
       "required": false
     },
@@ -357,31 +229,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ice_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_shiny_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_sun_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_thunder_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_water_stone_ore",
       "required": false
     },
     {

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/dripstone_natural_quartz_ore"
+      "model": "seamlessores:block/retired/dripstone_natural_quartz_ore"
     }
   }
 }

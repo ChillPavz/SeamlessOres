@@ -113,6 +113,10 @@ class Hosts(dict):
                 # would take the host over (the injector prepends). Mirrors OreType.skipHosts.
                 if host in ore.get("skip_hosts", ()):
                     continue
+                # A modded ore the geology rule refuses in this rock of the game's own: never built (an id an
+                # earlier release built is retired, retired.py). Mirrors HostStone.ores().
+                if geology.fixed(host, ore["key"]):
+                    continue
                 if cfg["tier"] == "cinnabar":
                     if ore["overlay"] not in (cinnabar_family or ()):
                         continue

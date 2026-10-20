@@ -19,6 +19,7 @@
           "children": [
             {
               "type": "minecraft:item",
+              "name": "seamlessores:minecraft_smooth_basalt_dusk_stone_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -33,19 +34,11 @@
                     ]
                   }
                 }
-              ],
-              "name": "seamlessores:minecraft_smooth_basalt_dusk_stone_ore"
+              ]
             },
             {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                }
-              ],
-              "name": "cobblemon:dusk_stone"
+              "type": "minecraft:loot_table",
+              "name": "cobblemon:blocks/dusk_stone_ore"
             }
           ]
         }

@@ -17,6 +17,7 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -24,6 +25,7 @@
           "children": [
             {
               "type": "minecraft:item",
+              "name": "seamlessores:diorite_uraninite_dense_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -40,32 +42,15 @@
                     }
                   }
                 }
-              ],
-              "name": "seamlessores:diorite_uraninite_dense_ore"
+              ]
             },
             {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "add": false,
-                  "count": 4.0,
-                  "function": "minecraft:set_count"
-                },
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "powah:uraninite_raw"
+              "type": "minecraft:loot_table",
+              "value": "powah:blocks/uraninite_ore_dense"
             }
           ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ],
   "random_sequence": "seamlessores:blocks/diorite_uraninite_dense_ore"

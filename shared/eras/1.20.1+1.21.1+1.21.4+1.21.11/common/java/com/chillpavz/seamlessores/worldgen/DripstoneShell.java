@@ -3,6 +3,7 @@ package com.chillpavz.seamlessores.worldgen;
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
 import com.chillpavz.seamlessores.content.HostStone;
+import com.chillpavz.seamlessores.content.OreGeology;
 import com.chillpavz.seamlessores.content.OreTier;
 import com.chillpavz.seamlessores.content.OreType;
 import com.chillpavz.seamlessores.content.OreVariant;
@@ -50,11 +51,29 @@ public final class DripstoneShell {
      */
     public static void prepare() {
         final Map<OreType, BlockState> dripstoneOf = new IdentityHashMap<>();
+        // Where the geology rule refuses an ore in dripstone, the wall stays dripstone instead (OreGeology):
+        // a modded ore always (no variant exists), a vanilla one with the option on.
+        final Block rockBlock = HostStone.DRIPSTONE.block();
+        final BlockState rock = rockBlock != null ? rockBlock.defaultBlockState() : null;
+        final int[] refused = {0};
         SeamlessOresContent.blocks().forEach((variant, block) -> {
             if (variant.host() == HostStone.DRIPSTONE && enabled(variant)) {
-                dripstoneOf.put(variant.ore(), block.defaultBlockState());
+                final boolean byOption = rock != null && SeamlessOresConfig.geology
+                        && OreGeology.optional(HostStone.DRIPSTONE.name(), variant.ore().key());
+                dripstoneOf.put(variant.ore(), byOption ? rock : block.defaultBlockState());
+                if (byOption) {
+                    refused[0]++;
+                }
             }
         });
+        if (rock != null) {
+            for (OreType ore : HostStone.DRIPSTONE.rockRefused()) {
+                if (enabled(new OreVariant(HostStone.DRIPSTONE, ore))) {
+                    dripstoneOf.put(ore, rock);
+                    refused[0]++;
+                }
+            }
+        }
 
         final Map<Block, BlockState> table = new IdentityHashMap<>();
         dripstoneOf.forEach((ore, dripstone) -> {
@@ -75,8 +94,8 @@ public final class DripstoneShell {
         });
 
         swaps = table.isEmpty() ? Map.of() : Map.copyOf(table);
-        Constants.LOG.info("Worldgen: dripstone shells restyle {} ore blocks into {} dripstone variants",
-                swaps.size(), dripstoneOf.size());
+        Constants.LOG.info("Worldgen: dripstone shells restyle {} ore blocks into {} dripstone variants ({} ores kept out by geology)",
+                swaps.size(), dripstoneOf.size() - refused[0], refused[0]);
     }
 
     private static boolean enabled(OreVariant variant) {

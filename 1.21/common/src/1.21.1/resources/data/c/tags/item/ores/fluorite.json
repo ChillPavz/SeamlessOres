@@ -9,22 +9,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_dense_fluorite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mek_fluorite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_dense_fluorite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mek_fluorite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_dense_fluorite_ore",
       "required": false
     },

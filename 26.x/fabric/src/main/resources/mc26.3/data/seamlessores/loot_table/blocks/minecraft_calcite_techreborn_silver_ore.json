@@ -21,12 +21,15 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "seamlessores:minecraft_calcite_techreborn_silver_ore",
               "condition": {
                 "type": "minecraft:match_tool",
                 "predicate": {
@@ -41,27 +44,15 @@
                     ]
                   }
                 }
-              },
-              "name": "seamlessores:minecraft_calcite_techreborn_silver_ore"
+              }
             },
             {
-              "type": "minecraft:item",
-              "modifier": [
-                {
-                  "type": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "type": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "techreborn:raw_silver"
+              "type": "minecraft:loot_table",
+              "value": "techreborn:blocks/silver_ore"
             }
           ]
         }
-      ],
-      "rolls": 1
+      ]
     }
   ],
   "random_sequence": "seamlessores:blocks/minecraft_calcite_techreborn_silver_ore"

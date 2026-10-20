@@ -21,12 +21,15 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "seamlessores:promenade_blunite_iridium_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -43,27 +46,15 @@
                     }
                   }
                 }
-              ],
-              "name": "seamlessores:promenade_blunite_iridium_ore"
+              ]
             },
             {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "techreborn:raw_iridium"
+              "type": "minecraft:loot_table",
+              "value": "techreborn:blocks/iridium_ore"
             }
           ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ],
   "random_sequence": "seamlessores:blocks/promenade_blunite_iridium_ore"

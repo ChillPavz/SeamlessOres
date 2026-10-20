@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/andesite_moldavite_ore"
+      "model": "seamlessores:block/retired/andesite_moldavite_ore"
     }
   }
 }

@@ -35,10 +35,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_natural_quartz_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_blackstone_natural_quartz_ore",
       "required": false
     },

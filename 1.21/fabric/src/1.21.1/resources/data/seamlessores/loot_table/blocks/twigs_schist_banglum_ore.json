@@ -25,14 +25,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0.5,
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "seamlessores:twigs_schist_banglum_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -49,40 +50,11 @@
                     }
                   }
                 }
-              ],
-              "name": "seamlessores:twigs_schist_banglum_ore"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "mythicmetals:banglum_chunk",
-              "conditions": [
-                {
-                  "condition": "mythicmetals:random_chance_with_luck",
-                  "chance": 0.002
-                }
               ]
             },
             {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1.0,
-                    "max": 2.0,
-                    "type": "minecraft:uniform"
-                  }
-                },
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "mythicmetals:raw_banglum"
+              "type": "minecraft:loot_table",
+              "value": "mythicmetals:blocks/banglum_ore"
             }
           ]
         }

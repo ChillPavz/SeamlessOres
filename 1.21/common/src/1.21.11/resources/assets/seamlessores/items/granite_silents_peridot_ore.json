@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "seamlessores:block/granite_silents_peridot_ore"
+    "model": "seamlessores:block/retired/granite_silents_peridot_ore"
   }
 }

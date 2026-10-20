@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/tuff_peridot_ore"
+      "model": "seamlessores:block/retired/tuff_peridot_ore"
     }
   }
 }

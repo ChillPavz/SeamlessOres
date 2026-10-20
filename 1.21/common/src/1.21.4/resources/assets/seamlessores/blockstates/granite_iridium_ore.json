@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/granite_iridium_ore"
+      "model": "seamlessores:block/retired/granite_iridium_ore"
     }
   }
 }

@@ -11,13 +11,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "seamlessores:blockus_viridite_gleaming_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -32,26 +34,11 @@
                     ]
                   }
                 }
-              ],
-              "name": "seamlessores:blockus_viridite_gleaming_ore"
+              ]
             },
             {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:binomial_with_bonus_count",
-                  "parameters": {
-                    "probability": 0.1,
-                    "extra": 0.065
-                  }
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "things:gleaming_powder"
+              "type": "minecraft:loot_table",
+              "name": "things:blocks/deepslate_gleaming_ore"
             }
           ]
         }

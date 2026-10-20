@@ -9,14 +9,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_moon_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_moon_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_bluestone_moon_stone_ore",
       "required": false
     },

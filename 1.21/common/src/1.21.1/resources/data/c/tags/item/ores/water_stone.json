@@ -1,22 +1,6 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_water_stone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_water_stone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:dripstone_water_stone_ore",
       "required": false
     },

@@ -432,6 +432,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.BoundedDiscrete(min = 25, max = 100)
     public int silentGemsNetherVeinSize = 80;
 
+    // --- Born in Chaos -------------------------------------------------------------------------
+
+    @ConfigEntry.Category("born_in_chaos")
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    public boolean bornInChaosInfectedDiamond = false;
+
     // --- Tech Reborn ----------------------------------------------------------------------------
 
     @ConfigEntry.Category("tech_reborn")
@@ -545,6 +551,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.iceAndFire = iceAndFire;
         values.techReborn = techReborn;
         values.techRebornNether = techRebornNether;
+        values.bornInChaosInfectedDiamond = bornInChaosInfectedDiamond;
         values.extremeReactorsNether = extremeReactorsNether;
         values.cobblemon = cobblemon;
         values.cobblemonNether = cobblemonNether;

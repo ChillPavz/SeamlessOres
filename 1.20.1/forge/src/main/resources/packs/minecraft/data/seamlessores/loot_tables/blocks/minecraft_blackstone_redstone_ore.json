@@ -2,6 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -9,6 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
+              "name": "seamlessores:minecraft_blackstone_redstone_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -23,39 +25,15 @@
                     ]
                   }
                 }
-              ],
-              "name": "seamlessores:minecraft_blackstone_redstone_ore"
+              ]
             },
             {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "add": false,
-                  "count": {
-                    "type": "minecraft:uniform",
-                    "max": 5.0,
-                    "min": 4.0
-                  },
-                  "function": "minecraft:set_count"
-                },
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:uniform_bonus_count",
-                  "function": "minecraft:apply_bonus",
-                  "parameters": {
-                    "bonusMultiplier": 1
-                  }
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "minecraft:redstone"
+              "type": "minecraft:loot_table",
+              "name": "minecraft:blocks/deepslate_redstone_ore"
             }
           ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ],
   "random_sequence": "minecraft:blocks/deepslate_redstone_ore"

@@ -25,10 +25,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_iridium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:diorite_adamantite_ore",
       "required": false
     },
@@ -50,10 +46,6 @@
     },
     {
       "id": "seamlessores:diorite_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_iridium_ore",
       "required": false
     },
     {
@@ -81,10 +73,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_iridium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_adamantite_ore",
       "required": false
     },
@@ -98,10 +86,6 @@
     },
     {
       "id": "seamlessores:tuff_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_iridium_ore",
       "required": false
     },
     {
@@ -129,19 +113,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_iridium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:basalt_palladium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:basalt_alexandrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:basalt_black_diamond_ore",
       "required": false
     },
     {
@@ -153,31 +125,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:basalt_iolite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:basalt_moldavite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:basalt_pearl_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:basalt_tanzanite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_palladium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_alexandrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_black_diamond_ore",
       "required": false
     },
     {
@@ -186,22 +134,6 @@
     },
     {
       "id": "seamlessores:blackstone_silents_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_iolite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_moldavite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_pearl_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_tanzanite_ore",
       "required": false
     },
     {

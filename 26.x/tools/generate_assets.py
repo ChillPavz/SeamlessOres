@@ -43,8 +43,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
                                 "shared", "tools"))
 import assetgen  # noqa: E402
 import placed  # noqa: E402
+import retired  # noqa: E402
 from assetgen import (MOD_ID, TOOL_TAGS, assert_no_dashes, jar_tags, look_models,  # noqa: E402
-                      read_mod_tags, silk_touch_to, texture_path, title, write_json,
+                      read_mod_tags, defer_to_source, silk_touch_to, texture_path, title, write_json,
                       write_texture_json)
 
 # Colour-distance (summed per-channel) above which a pixel counts as ore rather than shaded stone.
@@ -71,8 +72,8 @@ CLIENT_JARS = {
 }
 
 # Jars that are the same for every version: mods with no 26.x build at all (densemekanism, tfmg, things,
-# create_new_age), and the 26.1.2-only mods (Silent's Gems, Silent Gear, Powah, Mystical Agriculture,
-# Mythic Metals), whose 26.1.2 build is the only one there is.
+# create_new_age), and the 26.1.2-only mods (Powah, Mystical Agriculture, Mythic Metals), whose 26.1.2
+# build is the only one there is. Silent's Gems and Silent Gear also have 26.2 builds (the 26.2 profile).
 #
 # Mythic Metals: THE 26.1.2 BUILD. 0.26.0+26.1.2 (14 Sept 2026) has the same 36 ore blocks, ids,
 # features and loot as 0.24.6+1.21, but NOT the same tool tags: 0.26.0 fills all three vanilla tiers
@@ -140,6 +141,10 @@ PROFILES = {
             "techreborn": REFS + "26.2-TechReborn-6.1.1.jar",
             "occultism": REFS + "occultism-26.2-neoforge-1.253.1.jar",
             "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",   # no 26.2 build: stands in, inert
+            # Silent's Gems 5.2.0 and Silent Gear 4.3.0 (NeoForge, 20 Oct 2026; Silent Lib 12.0.0): the same
+            # ore blocks, worldgen and tool tags as their 26.1.2 builds; the loot only drops bonus_rolls.
+            "silentgems": REFS + "silentgems-26.2-neoforge-5.2.0.jar",
+            "silentgear": REFS + "silent-gear-26.2-neoforge-4.3.0.jar",
         },
         "available": {
             "create": ("fabric",),
@@ -147,6 +152,8 @@ PROFILES = {
             "energizedpower": ("fabric", "neoforge"),
             "techreborn": ("fabric",),
             "occultism": ("neoforge",),
+            "silentgems": ("neoforge",),
+            "silentgear": ("neoforge",),
         },
     },
     # 26.3 (data formats 121 and up): a new loot format, silk touch as a single "condition" (see
@@ -1072,11 +1079,11 @@ def generate_json():
 
         f"text.autoconfig.{MOD_ID}.option.geology": "Geology (removes ore)",
         f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[0]":
-            "Keeps ores out of rock they could never form in, such as coal in granite or",
+            "Keeps the game's own ores out of rock they could never form in, such as coal in granite",
         f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[1]":
-            "diamond in diorite: that ore stays plain rock, so there is less of it. Off by default.",
+            "or diamond in diorite: that ore stays plain rock, so there is less of it. Off by default.",
         f"text.autoconfig.{MOD_ID}.option.geology.@Tooltip[2]":
-            "Applies to newly generated chunks, from the next world load.",
+            "Ores from other mods always follow this rule. Applies to new chunks, from the next world load.",
 
         f"text.autoconfig.{MOD_ID}.option.createZinc": "Create: zinc variants",
         f"text.autoconfig.{MOD_ID}.option.createZinc.@Tooltip":
@@ -1302,6 +1309,8 @@ def generate_data():
                     except KeyError:
                         raise SystemExit(f"  !! {os.path.basename(jar_path)} has no {loot_path} (needed by {name})")
                 silk_touch_to(table, source_id, our_id, name, CURRENT_PROFILE)
+                # Non-Silk-Touch drops run the source ore's own table, so pack edits to it carry over.
+                table = defer_to_source(table, source_id, our_id, "value")
                 table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
 
                 if not host_exists_in(host_cfg, CURRENT_PROFILE):
@@ -1849,6 +1858,8 @@ def main():
     print("Generating loot tables and tags, once per Minecraft version...")
     generate_versioned_data()
     generate_cinnabar_worldgen()
+    # Ids an earlier release registered and this one no longer builds: placeholders drawn as their stone.
+    print(f"  retired ids: {retired.write(os.path.join(os.path.dirname(os.path.abspath(__file__)), "retired_ids.json"), HOSTS, assets_dir(), resources_dir(), item_definitions=True)} placeholders")
     print("Updating README...")
     generate_readme()
 

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/diorite_topaz_ore"
+      "model": "seamlessores:block/retired/diorite_topaz_ore"
     }
   }
 }

@@ -11,7 +11,8 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -37,8 +38,7 @@
             },
             {
               "type": "minecraft:loot_table",
-              "weight": 100,
-              "name": "techreborn:blocks/ore_drop/sapphire_ore"
+              "name": "techreborn:blocks/sapphire_ore"
             }
           ]
         }

@@ -39,12 +39,13 @@ public final class SeamlessOresConfig {
     public static boolean oreVeins = true;
 
     /**
-     * Whether an ore that could never form in granite, diorite, andesite or tuff is refused there.
+     * Whether one of the game's own ores is refused in a rock of the game's own it could never form in
+     * (granite, diorite, andesite, tuff, dripstone, basalt, blackstone).
      *
      * <p><b>This REMOVES ore</b>, so it is off by default: where the ore feature would have placed a
      * refused ore, the rock stays rock. Worldgen only; every block stays registered. See
-     * {@code content.OreGeology} for the rule set. The stones other mods place follow a fixed
-     * geology rule of their own, whatever this says.
+     * {@code content.OreGeology} for the rule set. Modded ores in that rock, and every ore in the
+     * stones other mods place, follow the same rule fixed, whatever this says.
      */
     public static boolean geology = false;
 
@@ -154,6 +155,13 @@ public final class SeamlessOresConfig {
      */
     public static boolean techRebornNether = true;
 
+    /**
+     * Whether Born in Chaos' infected diamond gets a tuff variant. Its own feature matches deepslate only,
+     * so this ADDS ore; off by default, as everything that adds ore is. Only tuff: by the geology rule
+     * it is the one rock of the game's own that keeps diamond.
+     */
+    public static boolean bornInChaosInfectedDiamond = false;
+
     /** Whether Modern Industrialization variants generate. Pure restyle. */
     public static boolean modernIndustrialization = true;
 
@@ -237,6 +245,8 @@ public final class SeamlessOresConfig {
             case "expores" -> expOres;
             case "iceandfire" -> iceAndFire;
             case "techreborn" -> netherHost ? techRebornNether : techReborn;
+            // Its only ore adds ore (OreType.addsOre), so the injector always asks with true.
+            case "born_in_chaos_v1" -> !netherHost || bornInChaosInfectedDiamond;
             case "modern_industrialization" -> modernIndustrialization;
             case "occultism" -> occultism;
             case "immersiveengineering" -> immersiveEngineering;
@@ -431,6 +441,7 @@ public final class SeamlessOresConfig {
         public boolean iceAndFire = true;
         public boolean techReborn = true;
         public boolean techRebornNether = true;
+        public boolean bornInChaosInfectedDiamond = false;
         public boolean modernIndustrialization = true;
         public boolean occultism = true;
         public boolean immersiveEngineering = true;
@@ -495,6 +506,7 @@ public final class SeamlessOresConfig {
         iceAndFire = values.iceAndFire;
         techReborn = values.techReborn;
         techRebornNether = values.techRebornNether;
+        bornInChaosInfectedDiamond = values.bornInChaosInfectedDiamond;
         modernIndustrialization = values.modernIndustrialization;
         occultism = values.occultism;
         immersiveEngineering = values.immersiveEngineering;

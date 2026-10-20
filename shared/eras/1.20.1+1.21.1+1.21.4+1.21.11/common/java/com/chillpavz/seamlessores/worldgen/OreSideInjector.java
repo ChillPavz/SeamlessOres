@@ -85,7 +85,7 @@ public final class OreSideInjector {
             final HostStone host = variant.host();
             final OreTier tier = host.tier();
             if (host.placedBy() != null || !(tier == OreTier.STONE || tier == OreTier.DEEPSLATE || tier == OreTier.NETHER)
-                    || host.block() == null || !enabled(host, variant.ore(), tier == OreTier.NETHER)) {
+                    || host.block() == null || !enabled(host, variant.ore(), tier == OreTier.NETHER || variant.ore().addsOre())) {
                 continue;
             }
             // The geology option may refuse the pair: then the rock stays rock (see OreGeology).
@@ -94,7 +94,29 @@ public final class OreSideInjector {
             final Block source = variant.sourceBlock();
             if (source != null) {
                 byOre.computeIfAbsent(source, b -> new ArrayList<>()).add(
-                        new Pairing(variant, host.block(), placed, tier == OreTier.NETHER, placed != entry.getValue()));
+                        new Pairing(variant, host.block(), placed, tier == OreTier.NETHER || variant.ore().addsOre(),
+                                placed != entry.getValue()));
+            }
+        }
+
+        // The game's own rock: a modded ore the fixed geology rule refuses there has no variant, and where
+        // its feature reaches the rock, the rock stays rock (OreGeology). Basalt and blackstone need nothing:
+        // their variants ADD ore, so a refused one is simply never added.
+        for (HostStone host : HostStone.ALL) {
+            final OreTier tier = host.tier();
+            if (host.placedBy() != null || !(tier == OreTier.STONE || tier == OreTier.DEEPSLATE) || host.block() == null) {
+                continue;
+            }
+            for (OreType ore : host.rockRefused()) {
+                if (!enabled(host, ore, false)) {
+                    continue;
+                }
+                final OreVariant variant = new OreVariant(host, ore);
+                final Pairing refusal = new Pairing(variant, host.block(), host.block(), false, false);
+                final Block source = variant.sourceBlock();
+                if (source != null) {
+                    byOre.computeIfAbsent(source, b -> new ArrayList<>()).add(refusal);
+                }
             }
         }
 
@@ -106,14 +128,17 @@ public final class OreSideInjector {
             }
             for (OreType ore : host.swallows()) {
                 final OreVariant variant = new OreVariant(host, ore);
-                final Block becomes = host.refused().contains(ore) ? stone : ours.get(variant);
+                // The game's own rock that another mod also lays (Create's dripstone): the option's refusals hold too.
+                final boolean byOption = host.placedBy() == null && SeamlessOresConfig.geology
+                        && OreGeology.optional(host.name(), ore.key());
+                final Block becomes = host.refused().contains(ore) || byOption ? stone : ours.get(variant);
                 if (becomes == null || !enabled(host, ore, false)) {
                     continue;
                 }
                 for (var form : ore.forms()) {
                     BuiltInRegistries.BLOCK.getOptional(form).ifPresent(block -> byOre
                             .computeIfAbsent(block, b -> new ArrayList<>())
-                            .add(new Pairing(variant, stone, becomes, false, false)));
+                            .add(new Pairing(variant, stone, becomes, false, byOption)));
                 }
             }
         }
@@ -127,24 +152,32 @@ public final class OreSideInjector {
         int resized = 0;
         int foreign = 0;
         int refusedByOption = 0;
+        int refusedFixed = 0;
         for (OreSite site : era.oreSites(registries)) {
             final Set<OreSite.Rule> rules = new LinkedHashSet<>();
             final List<OreSite.Target> targets = site.targets();
             OreVariant netherAdded = null;
             int refusedHere = 0;
+            int fixedHere = 0;
             for (int i = 0; i < targets.size(); i++) {
                 final OreSite.Target target = targets.get(i);
                 for (Pairing pairing : byOre.getOrDefault(target.state().getBlock(), List.of())) {
                     final boolean receives = era.receives(target.test(), pairing.stone());
                     if (pairing.adds() && !receives) {
                         rules.add(new OreSite.Add(pairing.stone(), pairing.becomes()));
-                        if (netherAdded == null) {
+                        // Only a Nether vein is scaled by the Nether dials; an ore that adds ore in the
+                        // Overworld (OreType.addsOre) keeps its own feature's size.
+                        if (netherAdded == null && pairing.variant().host().tier() == OreTier.NETHER) {
                             netherAdded = pairing.variant();
                         }
                     } else if (receives && !shadowed(era, targets, i, pairing.stone())
                             && rules.add(new OreSite.Receive(target.test(), pairing.stone(), pairing.becomes()))
-                            && pairing.byOption()) {
-                        refusedHere++;
+                            && pairing.becomes() == pairing.stone()) {
+                        if (pairing.byOption()) {
+                            refusedHere++;
+                        } else if (pairing.variant().host().placedBy() == null) {
+                            fixedHere++;
+                        }
                     }
                 }
             }
@@ -176,6 +209,7 @@ public final class OreSideInjector {
             patched++;
             added += rules.size();
             refusedByOption += refusedHere;
+            refusedFixed += fixedHere;
             if (site.foreign()) {
                 foreign++;
             }
@@ -188,6 +222,8 @@ public final class OreSideInjector {
         }
         Constants.LOG.info("{}: added {} ore targets across {} features ({} resized, {} not minecraft:ore)",
                 NAME, added, patched, resized, foreign);
+        Constants.LOG.info("Worldgen: geology keeps the game's own rock in {} ore targets (modded ores, fixed)",
+                refusedFixed);
         if (SeamlessOresConfig.geology) {
             Constants.LOG.info("Worldgen: geology refuses {} of those ore targets (the rock stays rock)",
                     refusedByOption);

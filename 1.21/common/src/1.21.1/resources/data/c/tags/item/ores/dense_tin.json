@@ -5,22 +5,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_dense_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_dense_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_dense_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_dense_tin_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_dense_tin_ore",
       "required": false
     },

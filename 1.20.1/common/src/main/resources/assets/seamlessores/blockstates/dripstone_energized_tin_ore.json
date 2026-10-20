@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/dripstone_energized_tin_ore"
+      "model": "seamlessores:block/retired/dripstone_energized_tin_ore"
     }
   }
 }

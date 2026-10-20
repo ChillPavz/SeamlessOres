@@ -23,11 +23,10 @@
     "modid": "spawn"
   },
   "type": "minecraft:block",
-  "random_sequence": "seamlessores:blocks/spawn_reefstone_inferium_ore",
   "pools": [
     {
-      "name": "mysticalagriculture:inferium_ore",
-      "rolls": 1,
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -54,30 +53,13 @@
               ]
             },
             {
-              "type": "minecraft:item",
-              "name": "mysticalagriculture:inferium_essence",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 2.0,
-                    "max": 4.0,
-                    "type": "minecraft:uniform"
-                  }
-                },
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ]
+              "type": "minecraft:loot_table",
+              "value": "mysticalagriculture:blocks/inferium_ore"
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "seamlessores:blocks/spawn_reefstone_inferium_ore"
 }

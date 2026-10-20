@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/diorite_garnet_ore"
+      "model": "seamlessores:block/retired/diorite_garnet_ore"
     }
   }
 }

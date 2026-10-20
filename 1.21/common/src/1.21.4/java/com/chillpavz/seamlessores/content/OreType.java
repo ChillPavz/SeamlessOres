@@ -526,6 +526,17 @@ public record OreType(String name, String key, String overlay, String deepslateO
         return BY_KEY.get(key);
     }
 
+    /**
+     * Ores whose variants in the game's own rock ADD ore: their own feature matches no such rock, so the
+     * variant is added wherever a vein reaches it, behind the ore's mod's adds-ore switch, off by default.
+     */
+    private static final Set<String> ADDS_ORE = Set.of("infected_diamond");
+
+    /** Whether this ore's variants in the game's own rock add ore (see ADDS_ORE). */
+    public boolean addsOre() {
+        return ADDS_ORE.contains(key);
+    }
+
     /** Whether this ore exists in this game: always for vanilla's, only with its mod for a modded one. */
     public boolean isLoaded() {
         return requiredModId == null || Services.PLATFORM.isModLoaded(requiredModId);

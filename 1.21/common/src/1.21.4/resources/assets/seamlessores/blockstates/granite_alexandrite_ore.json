@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/granite_alexandrite_ore"
+      "model": "seamlessores:block/retired/granite_alexandrite_ore"
     }
   }
 }

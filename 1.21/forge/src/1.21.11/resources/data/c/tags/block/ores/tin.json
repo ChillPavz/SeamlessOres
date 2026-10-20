@@ -13,50 +13,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_dense_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_dense_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_dense_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_dense_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_energized_tin_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_tin_ore",
       "required": false
     },

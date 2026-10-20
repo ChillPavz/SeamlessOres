@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/andesite_thorium_ore"
+      "model": "seamlessores:block/retired/andesite_thorium_ore"
     }
   }
 }

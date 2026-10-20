@@ -1,26 +1,6 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_techreborn_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_techreborn_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_techreborn_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_techreborn_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_techreborn_ruby_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_blackstone_techreborn_ruby_ore",
       "required": false
     },

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/diorite_thorium_ore"
+      "model": "seamlessores:block/retired/diorite_thorium_ore"
     }
   }
 }

@@ -4,16 +4,17 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * The geology rule: the ores that never form in a host rock. One rule, two tables, by kind of host.
+ * The geology rule: the ores that never form in a host rock.
  *
  * <p><b>Fixed</b>, for the stones other mods place: a refused pair is never registered, and worldgen
  * turns that ore into the stone wherever the stone swallows it, so no seam can appear. Never
  * configurable: the registered block set must not depend on config. The strict reading, plus a lore
  * rule for Create's four invented stones: each keeps only the ore Create ties it to, and fiction.
  *
- * <p><b>Optional</b>, for the game's own granite, diorite, andesite and tuff: the geology option, off
- * by default because it REMOVES ore. Every block stays registered; with the option on, where the ore
- * feature would have placed a refused ore the rock stays rock.
+ * <p><b>The game's own rock</b> (granite, diorite, andesite, tuff, dripstone, basalt, blackstone), by the
+ * same strict reading: a MODDED ore refused there is fixed too (never registered, the rock stays rock); a
+ * VANILLA ore refused there is <b>optional</b>, the geology option, off by default because it REMOVES ore.
+ * Every vanilla block stays registered; with the option on, where the ore would have gone the rock stays.
  *
  * <p>Asked by host name ({@code HostStone.name()}) and ore key ({@code OreType.key()}), so it is the same
  * in every band, whatever ores and stones a band has.
@@ -34,6 +35,7 @@ public final class OreGeology {
             Map.entry("bort", Set.of("blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone", "minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_bauxite", "tfmg_galena", "born_in_chaos_v1_black_argillite")),
             Map.entry("white_diamond", Set.of("blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone", "minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_bauxite", "tfmg_galena", "born_in_chaos_v1_black_argillite")),
             Map.entry("black_diamond", Set.of("blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone", "minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_bauxite", "tfmg_galena", "born_in_chaos_v1_black_argillite")),
+            Map.entry("infected_diamond", Set.of("blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone", "minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_bauxite", "tfmg_galena", "born_in_chaos_v1_black_argillite")),
             Map.entry("topaz", Set.of("blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone", "minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "tfmg_bauxite", "tfmg_galena", "born_in_chaos_v1_black_argillite")),
             Map.entry("silents_topaz", Set.of("blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone", "minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "tfmg_bauxite", "tfmg_galena", "born_in_chaos_v1_black_argillite")),
             Map.entry("zinc", Set.of("wilderwild_gabbro", "blockus_bluestone", "tfmg_bauxite")),
@@ -100,6 +102,7 @@ public final class OreGeology {
             Map.entry("ammolite", Set.of("minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_bauxite", "tfmg_galena")),
             Map.entry("pearl", Set.of("minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_bauxite", "tfmg_galena", "born_in_chaos_v1_black_argillite")),
             Map.entry("moldavite", Set.of("blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_galena", "born_in_chaos_v1_black_argillite")),
+            Map.entry("benitoite", Set.of("blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone", "minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_bauxite", "tfmg_galena", "born_in_chaos_v1_black_argillite")),
             Map.entry("fire_stone", Set.of("blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone", "minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "tfmg_bauxite", "born_in_chaos_v1_black_argillite", "create_asurine", "create_ochrum", "create_veridium", "forbidden_arcanus_darkstone", "blockus_viridite", "promenade_blunite", "mythicupgrades_sapphire_schist")),
             Map.entry("water_stone", Set.of("promenade_asphalt", "tfmg_lignite", "mythicupgrades_aquamarine_schist", "mythicupgrades_citrine_schist", "mythicupgrades_peridot_schist", "mythicupgrades_topaz_schist", "twigs_schist", "wilderwild_gabbro", "blockus_bluestone", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_bauxite", "tfmg_galena", "born_in_chaos_v1_black_argillite", "create_crimsite", "create_ochrum", "create_veridium", "forbidden_arcanus_darkstone", "blockus_viridite", "create_scorchia", "twigs_bloodstone", "mythicupgrades_ruby_schist")),
             Map.entry("thunder_stone", Set.of("blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone", "minecraft_calcite", "promenade_asphalt", "tfmg_lignite", "blockus_marble", "minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "twigs_rhyolite", "tfmg_bauxite", "born_in_chaos_v1_black_argillite", "create_asurine", "create_crimsite", "create_veridium", "forbidden_arcanus_darkstone", "blockus_viridite", "promenade_blunite", "create_scorchia", "twigs_bloodstone", "mythicupgrades_sapphire_schist", "mythicupgrades_ruby_schist")),
@@ -121,45 +124,104 @@ public final class OreGeology {
     /** Invented ores, never judged by geology. */
     private static final Set<String> FICTION = Set.of("adamantite", "aquarium", "banglum", "blazing_quartz", "brilliant", "carmot", "chaos", "dawn_stone", "dusk_stone", "experience", "fire_stone", "gleaming", "ice_stone", "inferium", "kyber", "leaf_stone", "midas_gold", "moon_stone", "morkite", "mythril", "necoium", "nether_banglum", "nether_experience", "orichalcum", "palladium", "prometheum", "prosperity", "quadrillum", "redstone", "runite", "shiny_stone", "soulstone", "starrite", "stormyx", "sun_stone", "thunder_stone", "unobtainium", "water_stone");
 
-    /** Ore key -> the game's own rocks the geology option refuses it in. */
-    private static final Map<String, Set<String>> LENIENT = Map.ofEntries(
-            Map.entry("coal", Set.of("granite", "diorite")),
-            Map.entry("lignite_coal", Set.of("granite", "diorite")),
-            Map.entry("salt", Set.of("granite", "diorite", "andesite", "tuff")),
+    /** Ore key -> the game's own rocks, dripstone aside, it never forms in. */
+    private static final Map<String, Set<String>> ROCK = Map.ofEntries(
+            Map.entry("coal", Set.of("granite", "diorite", "andesite")),
+            Map.entry("lignite_coal", Set.of("granite", "diorite", "andesite")),
             Map.entry("diamond", Set.of("granite", "diorite", "andesite")),
+            Map.entry("bort", Set.of("granite", "diorite", "andesite")),
             Map.entry("white_diamond", Set.of("granite", "diorite", "andesite")),
             Map.entry("black_diamond", Set.of("granite", "diorite", "andesite")),
-            Map.entry("bort", Set.of("granite", "diorite", "andesite")),
-            Map.entry("ammolite", Set.of("granite", "diorite", "andesite")),
-            Map.entry("silents_ruby", Set.of("granite")),
-            Map.entry("silents_sapphire", Set.of("granite")),
-            Map.entry("techreborn_ruby", Set.of("granite")),
-            Map.entry("techreborn_sapphire", Set.of("granite")),
-            Map.entry("iceandfire_sapphire", Set.of("granite")),
-            Map.entry("peridot", Set.of("granite")),
-            Map.entry("silents_peridot", Set.of("granite")),
-            Map.entry("nickel", Set.of("granite")),
-            Map.entry("mi_nickel", Set.of("granite")),
-            Map.entry("ie_nickel", Set.of("granite")),
-            Map.entry("platinum", Set.of("granite")),
-            Map.entry("iridium", Set.of("granite")),
-            Map.entry("mi_iridium", Set.of("granite")),
-            Map.entry("osmium", Set.of("granite")),
-            Map.entry("dense_osmium", Set.of("granite")),
-            Map.entry("mek_osmium", Set.of("granite")),
-            Map.entry("fire_stone", Set.of("granite", "diorite")),
-            Map.entry("water_stone", Set.of("granite", "diorite", "andesite", "tuff")),
-            Map.entry("thunder_stone", Set.of("andesite", "tuff")),
-            Map.entry("leaf_stone", Set.of("granite", "diorite", "andesite")),
-            Map.entry("moon_stone", Set.of("andesite", "tuff")),
-            Map.entry("sun_stone", Set.of("granite", "diorite")),
-            Map.entry("ice_stone", Set.of("granite", "andesite", "tuff")),
-            Map.entry("dawn_stone", Set.of("diorite", "andesite", "tuff")),
-            Map.entry("dusk_stone", Set.of("granite", "diorite")),
-            Map.entry("shiny_stone", Set.of("diorite", "andesite", "tuff")));
+            Map.entry("infected_diamond", Set.of("granite", "diorite", "andesite")),
+            Map.entry("emerald", Set.of("andesite", "tuff")),
+            Map.entry("lapis", Set.of("andesite", "tuff")),
+            Map.entry("topaz", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("silents_topaz", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("tin", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("energized_tin", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("techreborn_tin", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("mi_tin", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("mek_tin", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("dense_tin", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("aquamarine", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("silents_aquamarine", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("heliodor", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("monazite", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("thorium", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("garnet", Set.of("diorite", "andesite", "tuff")),
+            Map.entry("tungsten", Set.of("andesite", "tuff")),
+            Map.entry("lithium", Set.of("diorite", "andesite")),
+            Map.entry("dense_fluorite", Set.of("diorite", "andesite")),
+            Map.entry("mek_fluorite", Set.of("diorite", "andesite")),
+            Map.entry("peridot", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("silents_peridot", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("techreborn_ruby", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("techreborn_sapphire", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("silents_ruby", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("silents_sapphire", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("iceandfire_sapphire", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("platinum", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("iridium", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("osmium", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("mi_iridium", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("mek_osmium", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("dense_osmium", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("nickel", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("mi_nickel", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("ie_nickel", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("salt", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("kyanite", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("iolite", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("alexandrite", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("rose_quartz", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("tanzanite", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("ammolite", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("pearl", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("moldavite", Set.of("granite", "diorite", "andesite", "tuff")),
+            Map.entry("turquoise", Set.of("granite", "diorite")),
+            Map.entry("opal", Set.of("granite", "diorite", "andesite")),
+            Map.entry("carnelian", Set.of("granite", "diorite")),
+            Map.entry("nether_black_diamond", Set.of("basalt", "blackstone")),
+            Map.entry("nether_iolite", Set.of("basalt", "blackstone")),
+            Map.entry("nether_alexandrite", Set.of("basalt", "blackstone")),
+            Map.entry("nether_tanzanite", Set.of("basalt", "blackstone")),
+            Map.entry("nether_moldavite", Set.of("basalt", "blackstone")),
+            Map.entry("nether_pearl", Set.of("basalt", "blackstone")),
+            Map.entry("benitoite", Set.of("basalt", "blackstone")),
+            Map.entry("fire_stone", Set.of("granite", "diorite", "dripstone")),
+            Map.entry("water_stone", Set.of("granite", "diorite", "andesite", "tuff", "basalt", "blackstone")),
+            Map.entry("thunder_stone", Set.of("andesite", "tuff", "dripstone", "basalt", "blackstone")),
+            Map.entry("leaf_stone", Set.of("granite", "diorite", "andesite", "dripstone", "basalt", "blackstone")),
+            Map.entry("moon_stone", Set.of("andesite", "tuff", "dripstone", "basalt", "blackstone")),
+            Map.entry("sun_stone", Set.of("granite", "diorite", "dripstone")),
+            Map.entry("ice_stone", Set.of("granite", "andesite", "tuff", "basalt", "blackstone")),
+            Map.entry("dawn_stone", Set.of("diorite", "andesite", "tuff", "basalt", "blackstone")),
+            Map.entry("dusk_stone", Set.of("granite", "diorite", "dripstone")),
+            Map.entry("shiny_stone", Set.of("diorite", "andesite", "tuff", "basalt", "blackstone")));
 
-    /** Whether this ore never forms in this stone another mod places: no variant, worldgen makes it stone. */
+    /** The only real ores dripstone, a cave calcite, keeps. */
+    private static final Set<String> DRIPSTONE_KEEPS = Set.of("antimony", "copper", "dense_fluorite", "dense_lead", "dense_uranium", "galena", "ie_aluminum", "ie_lead", "ie_uranium", "iron", "lead", "manganese", "mek_fluorite", "mek_lead", "mek_uranium", "mi_bauxite", "mi_lead", "oreganized_lead", "salt", "techreborn_bauxite", "techreborn_lead", "techreborn_uranium", "uraninite", "uraninite_dense", "uraninite_poor", "uranium", "yellorite", "zinc");
+
+    /** Cobblemon's evolution stones: judged in dripstone by their lore (ROCK), not by DRIPSTONE_KEEPS. */
+    private static final Set<String> COBBLEMON = Set.of("dawn_stone", "dusk_stone", "fire_stone", "ice_stone", "leaf_stone", "moon_stone", "shiny_stone", "sun_stone", "thunder_stone", "water_stone");
+
+    /** The game's own ores: their refusals in the game's own rock are the option's, never fixed. */
+    private static final Set<String> VANILLA_ORES = Set.of("coal", "copper", "diamond", "emerald", "gold", "iron", "lapis", "nether_gold", "quartz", "redstone");
+
+    private static final Set<String> GAME_ROCK = Set.of("andesite", "basalt", "blackstone", "diorite", "dripstone", "granite", "tuff");
+
+    private static boolean rockRefuses(String host, String ore) {
+        if ("dripstone".equals(host) && !COBBLEMON.contains(ore)) {
+            return !DRIPSTONE_KEEPS.contains(ore) && !FICTION.contains(ore);
+        }
+        return ROCK.getOrDefault(ore, Set.of()).contains(host);
+    }
+
+    /** Whether this ore never forms in this host, for good: no variant, worldgen makes it the stone. */
     public static boolean fixed(String host, String ore) {
+        if (GAME_ROCK.contains(host)) {
+            return !VANILLA_ORES.contains(ore) && rockRefuses(host, ore);
+        }
         if (STRICT.getOrDefault(ore, Set.of()).contains(host)) {
             return true;
         }
@@ -167,8 +229,8 @@ public final class OreGeology {
         return keep != null && !keep.equals(ore) && !FICTION.contains(ore);
     }
 
-    /** Whether the geology option, when on, refuses this ore in this rock of the game's own. */
+    /** Whether the geology option, when on, refuses this VANILLA ore in this rock of the game's own. */
     public static boolean optional(String host, String ore) {
-        return LENIENT.getOrDefault(ore, Set.of()).contains(host);
+        return GAME_ROCK.contains(host) && VANILLA_ORES.contains(ore) && rockRefuses(host, ore);
     }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/diorite_iceandfire_sapphire_ore"
+      "model": "seamlessores:block/retired/diorite_iceandfire_sapphire_ore"
     }
   }
 }

@@ -17,10 +17,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_silents_silver_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_blackstone_silents_silver_ore",
       "required": false
     }

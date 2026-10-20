@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/andesite_mi_iridium_ore"
+      "model": "seamlessores:block/retired/andesite_mi_iridium_ore"
     }
   }
 }
