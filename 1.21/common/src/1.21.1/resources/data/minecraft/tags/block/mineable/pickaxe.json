@@ -5036,6 +5036,422 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_mi_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_silents_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_mi_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_water_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_coal_ore",
       "required": false
     },

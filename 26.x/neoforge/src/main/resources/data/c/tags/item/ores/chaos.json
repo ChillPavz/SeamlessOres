@@ -27,6 +27,10 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_chaos_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_chaos_ore",
+      "required": false
     }
   ]
 }

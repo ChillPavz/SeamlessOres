@@ -113,6 +113,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_soulstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_soulstone_ore",
       "required": false
     },

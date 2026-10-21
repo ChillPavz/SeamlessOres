@@ -37,6 +37,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_ice_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_ice_stone_ore",
       "required": false
     }

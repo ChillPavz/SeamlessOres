@@ -85,6 +85,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_oreganized_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_oreganized_silver_ore",
       "required": false
     },

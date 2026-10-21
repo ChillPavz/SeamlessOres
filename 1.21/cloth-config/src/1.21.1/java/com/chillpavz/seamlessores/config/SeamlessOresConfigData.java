@@ -281,6 +281,18 @@ public class SeamlessOresConfigData implements ConfigData {
 
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
+    public boolean regionsUnexploredMossyStone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean regionsUnexploredArgillite = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean regionsUnexploredChalk = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
     public boolean promenadeAsphalt = true;
 
     @ConfigEntry.Category("modded_stones")
@@ -547,6 +559,9 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("mythicupgrades_topaz_schist", mythicupgradesTopazSchist);
         values.hosts.put("mythicupgrades_sapphire_schist", mythicupgradesSapphireSchist);
         values.hosts.put("mythicupgrades_jade_schist", mythicupgradesJadeSchist);
+        values.hosts.put("regions_unexplored_mossy_stone", regionsUnexploredMossyStone);
+        values.hosts.put("regions_unexplored_argillite", regionsUnexploredArgillite);
+        values.hosts.put("regions_unexplored_chalk", regionsUnexploredChalk);
         values.hosts.put("promenade_asphalt", promenadeAsphalt);
         values.hosts.put("promenade_blunite", promenadeBlunite);
         values.hosts.put("spawn_reefstone", spawnReefstone);

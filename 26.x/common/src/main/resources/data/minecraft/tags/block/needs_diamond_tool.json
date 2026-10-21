@@ -317,6 +317,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_starrite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_mythril_ore",
       "required": false
     },

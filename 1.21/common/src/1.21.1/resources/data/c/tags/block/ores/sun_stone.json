@@ -31,6 +31,10 @@
     {
       "id": "seamlessores:embellishcraft_basalt_sun_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_sun_stone_ore",
+      "required": false
     }
   ]
 }

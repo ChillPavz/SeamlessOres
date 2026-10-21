@@ -14,6 +14,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_coal_ore",
       "required": false
     },

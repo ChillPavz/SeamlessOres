@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_antimony_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_antimony_ore_mirrored"
+      }
+    ]
+  }
+}

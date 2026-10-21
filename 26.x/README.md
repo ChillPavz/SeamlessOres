@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**762 blocks** in the `seamlessores` namespace.
+**819 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -260,7 +260,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**492 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**549 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, every 26.x version, both loaders)
 
@@ -452,6 +452,49 @@ Stones: Aquamarine Schist `mythicupgrades_aquamarine_schist`, Citrine Schist `my
 | Ruby | `ruby` |  | Sapphire Schist |
 | Ametrine | `ametrine` |  | Jade Schist |
 
+**Regions Unexplored, requires `regions_unexplored`** (Fabric and NeoForge, 26.1.x)
+
+Stones: Mossy Stone `regions_unexplored_mossy_stone`, Argillite `regions_unexplored_argillite`, Chalk `regions_unexplored_chalk`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Coal | `coal` |  | every stone |
+| Iron | `iron` |  | every stone |
+| Copper | `copper` |  | every stone |
+| Gold | `gold` |  | every stone |
+| Lapis Lazuli | `lapis` |  | Mossy Stone |
+| Emerald | `emerald` |  | Mossy Stone, Chalk |
+| Redstone | `redstone` |  | Argillite |
+| Zinc | `zinc` | Create `create` | Mossy Stone, Argillite |
+| Morkite | `morkite` | Mythic Metals `mythicmetals` | Argillite |
+| Prometheum | `prometheum` | Mythic Metals `mythicmetals` | Argillite |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Mossy Stone, Argillite |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Mossy Stone |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Argillite |
+| Osmium | `osmium` | Mythic Metals `mythicmetals` | Mossy Stone |
+| Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Argillite |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Argillite |
+| Starrite | `starrite` | Mythic Metals `mythicmetals` | Mossy Stone, Chalk |
+| Tin | `tin` | Mythic Metals `mythicmetals` | Mossy Stone, Chalk |
+| Chaos | `chaos` | Silent's Gems `silentgems` | Argillite |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Argillite |
+| Uraninite | `uraninite` | Powah `powah` | Argillite |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Mossy Stone, Argillite |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Mossy Stone, Chalk |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Argillite |
+| Galena | `galena` | Tech Reborn `techreborn` | Argillite |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Argillite |
+| Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Mossy Stone |
+| Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Mossy Stone |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Argillite |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Mossy Stone, Chalk |
+| Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Argillite |
+| Silver | `occultism_silver` | Occultism `occultism` | every stone |
+| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Mossy Stone |
+| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Mossy Stone, Argillite |
+| Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Argillite |
+
 **Promenade, requires `promenade`** (Fabric on every 26.x version, NeoForge on 26.3)
 
 Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
@@ -549,7 +592,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 762 blocks takes **91 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 819 blocks takes **91 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png

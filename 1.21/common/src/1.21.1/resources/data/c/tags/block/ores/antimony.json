@@ -89,6 +89,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_antimony_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_antimony_ore",
       "required": false
     },

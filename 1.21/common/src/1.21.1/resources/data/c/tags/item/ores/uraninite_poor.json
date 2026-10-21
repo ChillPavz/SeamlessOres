@@ -65,6 +65,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_uraninite_poor_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_uraninite_poor_ore",
       "required": false
     },

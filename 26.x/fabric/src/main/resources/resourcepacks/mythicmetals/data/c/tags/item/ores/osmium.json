@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_osmium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_osmium_ore",
       "required": false
     },

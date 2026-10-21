@@ -449,6 +449,46 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_dense_lead_ore",
       "required": false
     },

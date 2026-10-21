@@ -93,6 +93,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_brilliant_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_brilliant_ore",
       "required": false
     },

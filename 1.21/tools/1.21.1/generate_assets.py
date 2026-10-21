@@ -199,6 +199,9 @@ HOST_LOOK = {
     "mythicupgrades:jade_schist": ("single", "mythicupgrades:block/jade_schist"),
     "promenade:asphalt": ("single", "promenade:block/asphalt"),
     "promenade:blunite": ("single", "promenade:block/blunite"),
+    "regions_unexplored:mossy_stone": ("moss_mirrored", "minecraft:block/stone", "seamlessores:block/regions_unexplored_mossy_stone_moss"),
+    "regions_unexplored:argillite": ("mirrored", "regions_unexplored:block/argillite"),
+    "regions_unexplored:chalk": ("single", "regions_unexplored:block/chalk"),
     "spawn:reefstone": ("single", "spawn:block/reefstone"),
     "wilderwild:gabbro": ("mirrored_turned", "wilderwild:block/gabbro"),
 }
@@ -217,6 +220,7 @@ STONE_MODS = {
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and NeoForge"},
     "mythicupgrades": {"display": "Mythic Upgrades", "bands": "Fabric and NeoForge"},
     "promenade": {"display": "Promenade", "bands": "Fabric and NeoForge"},
+    "regions_unexplored": {"display": "Regions Unexplored", "bands": "Fabric and NeoForge"},
     "spawn": {"display": "Spawn", "bands": "NeoForge"},
     "tfmg": {"display": "Create: TFMG", "bands": "NeoForge"},
     "twigs": {"display": "Twigs", "bands": "Fabric and NeoForge"},
@@ -231,6 +235,7 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "meadow": jar("letsdo-meadow-neoforge-1.4.8.jar"),
               "mythicupgrades": jar("mythicupgrades-neoforge-1.21.1-5.1.1.jar"),
               "promenade": jar("1.21.1-promenade-neoforge-6.0.1.jar"),
+              "regions_unexplored": jar("1.21.1-regions-unexplored-0.6.3-neoforge-21.1.jar"),
               "spawn": jar("spawn-4.0.7-1.21.1.jar"),
               "tfmg": jar("tfmg-1.2.2.jar"),
               "twigs": jar("Twigs-1.21.1-3.1.2.jar"),
@@ -998,6 +1003,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "forbidden_arcanus": ('neoforge',),
     "meadow": ('fabric', 'neoforge'),
     "promenade": ('fabric', 'neoforge'),   # 6.0.1, 11 Oct 2026: its first 1.21.1 and first NeoForge build
+    "regions_unexplored": ("fabric", "neoforge"),   # Regions Unexplored: Fabric and NeoForge
     "spawn": ('neoforge',),
     "twigs": ('fabric', 'neoforge'),
     "wilderwild": ('fabric',),
@@ -1082,7 +1088,7 @@ def generate_json():
             # SeamlessOresFabricClient calling BlockRenderLayerMap. Both halves are needed.
             state, block_models = look_models(name, host_cfg["look"], host_cfg["side"], host_cfg["end"],
                                               None, None, render_type="minecraft:cutout",
-                                              overlays=HOSTS.overlays_of(ore, host_cfg))
+                                              overlays=HOSTS.overlays_of(ore, host_cfg), moss=host_cfg["moss"])
             for model_name, model in block_models.items():
                 write_json(os.path.join(root, "models", "block", f"{model_name}.json"), model)
             write_json(os.path.join(root, "blockstates", f"{name}.json"), state)

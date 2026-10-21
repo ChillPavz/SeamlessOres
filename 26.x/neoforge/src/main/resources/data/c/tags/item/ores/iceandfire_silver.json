@@ -19,6 +19,18 @@
     {
       "id": "seamlessores:minecraft_blackstone_iceandfire_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_iceandfire_silver_ore",
+      "required": false
     }
   ]
 }

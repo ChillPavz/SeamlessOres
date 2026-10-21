@@ -25,7 +25,8 @@ import os
 # viridite, Promenade's blunite).
 CLASSES = {
     # sedimentary carbonate; Spawn's reefstone is reef limestone
-    "LIME": ["blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone"],
+    "LIME": ["blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone",
+             "regions_unexplored_chalk"],
     "CALC": ["minecraft_calcite"],
     # sedimentary hydrocarbon: asphalt, and TFMG's lignite (brown coal)
     "ASPH": ["promenade_asphalt", "tfmg_lignite"],
@@ -46,7 +47,7 @@ CLASSES = {
     # massive sulphide: TFMG's galena, a lead-zinc ore body as rock
     "SULF": ["tfmg_galena"],
     # black shale and argillite (organic-rich sedimentary pelite): Born in Chaos' black argillite
-    "SHAL": ["born_in_chaos_v1_black_argillite"],
+    "SHAL": ["born_in_chaos_v1_black_argillite", "regions_unexplored_argillite"],
     # serpentinite and the jadeitite / nephrite that forms from it (owner, 21 Oct 2026): EmbellishCraft's jade
     "SERP": ["embellishcraft_jade"],
 }

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_iron_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_iron_ore_mirrored"
+      }
+    ]
+  }
+}

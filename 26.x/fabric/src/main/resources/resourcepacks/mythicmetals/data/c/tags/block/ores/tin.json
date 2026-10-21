@@ -17,6 +17,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_tin_ore",
       "required": false
     }

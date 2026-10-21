@@ -121,6 +121,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_necoium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_necoium_ore",
       "required": false
     },

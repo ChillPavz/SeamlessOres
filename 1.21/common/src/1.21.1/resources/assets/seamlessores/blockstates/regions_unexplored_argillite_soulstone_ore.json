@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_soulstone_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_soulstone_ore_mirrored"
+      }
+    ]
+  }
+}

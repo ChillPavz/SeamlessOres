@@ -251,6 +251,9 @@ HOST_LOOK = {
     "mythicupgrades:jade_schist": ("single", "mythicupgrades:block/jade_schist"),
     "promenade:asphalt": ("single", "promenade:block/asphalt"),
     "promenade:blunite": ("single", "promenade:block/blunite"),
+    "regions_unexplored:mossy_stone": ("moss_mirrored_turned", "minecraft:block/stone", "seamlessores:block/regions_unexplored_mossy_stone_moss"),
+    "regions_unexplored:argillite": ("mirrored_turned", "regions_unexplored:block/argillite"),
+    "regions_unexplored:chalk": ("single", "regions_unexplored:block/chalk"),
     "wilderwild:gabbro": ("mirrored_turned", "wilderwild:block/gabbro"),
 }
 
@@ -267,6 +270,7 @@ STONE_MODS = {
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "NeoForge, 26.1.2"},
     "mythicupgrades": {"display": "Mythic Upgrades", "bands": "Fabric and NeoForge, 26.2 and 26.3"},
     "promenade": {"display": "Promenade", "bands": "Fabric on every 26.x version, NeoForge on 26.3"},
+    "regions_unexplored": {"display": "Regions Unexplored", "bands": "Fabric and NeoForge, 26.1.x"},
     "wilderwild": {"display": "Wilder Wild", "bands": "Fabric 26.1.x to 26.3, NeoForge 26.2 and 26.3"},
 }
 
@@ -807,6 +811,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "blockus": ("fabric",),
     "forbidden_arcanus": ("neoforge",),
     "promenade": ("fabric", "neoforge"),
+    "regions_unexplored": ("fabric", "neoforge"),   # Regions Unexplored: Fabric and NeoForge
     "wilderwild": ("fabric", "neoforge"),
     "create": ("fabric",),
     "mythicupgrades": ("fabric", "neoforge"),
@@ -959,7 +964,7 @@ def generate_json():
         side, end, look = host_cfg["side"], host_cfg["end"], host_cfg["look"]
 
         # Blockstate and models, in the host's look. No render_type from 26.1: the layer is derived.
-        state, block_models = look_models(name, look, side, end, overlay, overlay_end)
+        state, block_models = look_models(name, look, side, end, overlay, overlay_end, moss=host_cfg["moss"])
         for model_name, model in block_models.items():
             write_json(os.path.join(models, f"{model_name}.json"), model)
         write_json(os.path.join(root, "blockstates", f"{name}.json"), state)

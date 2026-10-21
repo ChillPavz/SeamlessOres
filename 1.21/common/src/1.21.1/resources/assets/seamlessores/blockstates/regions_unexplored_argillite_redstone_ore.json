@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_redstone_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_redstone_ore_mirrored"
+      }
+    ]
+  }
+}

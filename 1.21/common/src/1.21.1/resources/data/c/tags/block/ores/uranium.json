@@ -189,6 +189,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_dense_uranium_ore",
       "required": false
     },

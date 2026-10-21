@@ -153,7 +153,7 @@ def faces(ref, end_ref=None, mirrored=False):
             for side in FACES}
 
 
-def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=None):
+def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=None, moss=None):
     """Two coincident full cubes, following vanilla's own grass_block pattern: the stone, then the ore.
 
     The base is opaque so it lands on the solid layer; the overlay has alpha and must land on cutout,
@@ -162,6 +162,9 @@ def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=Non
     ChunkSectionLayer.byTransparency). At 1.21.11 and below the layer is declared, and a band passes
     render_type. Only the stone layer is mirrored in a mirrored model: it has to match the host tile
     beside it exactly, while the ore art reads the same either way.
+
+    moss: a third cube on top of the ore, mirrored with the stone (Regions Unexplored's mossy stone: the
+    game's stone, the ore, then the moss, so the moss hides part of the ore, owner, 21 Oct 2026).
     """
     textures = {"particle": side, "side": side, "end": end, "overlay": f"{MOD_ID}:block/{overlay}_overlay"}
     if overlay_end != overlay:
@@ -175,13 +178,17 @@ def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=Non
         {"from": [0, 0, 0], "to": [16, 16, 16],
          "faces": faces("#overlay", "#overlay_end" if "overlay_end" in textures else None)},
     ]
+    if moss:
+        textures["moss"] = moss
+        model["elements"].append({"from": [0, 0, 0], "to": [16, 16, 16], "faces": faces("#moss", None, mirrored)})
     return model
 
 
-LOOKS = ("single", "column", "turned", "mirrored_turned", "textures4")
+LOOKS = ("single", "column", "turned", "mirrored", "mirrored_turned", "textures4", "moss_mirrored",
+         "moss_mirrored_turned")
 
 
-def look_models(name, look, side, end, overlay, overlay_end, render_type=None, overlays=None):
+def look_models(name, look, side, end, overlay, overlay_end, render_type=None, overlays=None, moss=None):
     """(blockstate, {model file name: model}) for one variant in a host of the given look.
 
     single / column: one model (a column's end faces are just another texture).
@@ -189,6 +196,8 @@ def look_models(name, look, side, end, overlay, overlay_end, render_type=None, o
     in the blockstate, which turns the ore with it.
     mirrored_turned: the host picks among itself mirrored and turned (Wilder Wild's gabbro), so ours
     does the same, or a vein shows as the one tile that never turns.
+    mirrored: itself or mirrored, never turned (Regions Unexplored's argillite and mossy stone at 1.21.1).
+    moss_mirrored / moss_mirrored_turned: the same, with the moss cube on top (moss, see block_model).
     textures4: the host picks one of four natural textures per block (Create's strata); ours picks the
     same way. The item points at the plain model, which is the first texture.
     overlays: {model suffix: (overlay, overlay_end)} where each model needs its own (a translucent ore,
@@ -200,13 +209,17 @@ def look_models(name, look, side, end, overlay, overlay_end, render_type=None, o
 
     def model(s, e, mirrored=False, suffix=""):
         o, oe = overlays[suffix] if overlays else (overlay, overlay_end)
-        return block_model(s, e, o, oe, mirrored=mirrored, render_type=render_type)
+        return block_model(s, e, o, oe, mirrored=mirrored, render_type=render_type, moss=moss)
 
     if look in ("single", "column"):
         return {"variants": {"": {"model": base}}}, {name: model(side, end)}
     if look == "turned":
         return {"variants": {"": [{"model": base}, {"model": base, "y": 180}]}}, {name: model(side, end)}
-    if look == "mirrored_turned":
+    if look in ("mirrored", "moss_mirrored"):
+        state = {"variants": {"": [{"model": base}, {"model": base + "_mirrored"}]}}
+        return state, {name: model(side, end),
+                       f"{name}_mirrored": model(side, end, mirrored=True, suffix="_mirrored")}
+    if look in ("mirrored_turned", "moss_mirrored_turned"):
         state = {"variants": {"": [{"model": base}, {"model": base + "_mirrored"},
                                    {"model": base, "y": 180}, {"model": base + "_mirrored", "y": 180}]}}
         return state, {name: model(side, end),

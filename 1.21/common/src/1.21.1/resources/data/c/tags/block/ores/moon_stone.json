@@ -37,6 +37,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_moon_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_moon_stone_ore",
       "required": false
     }

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_techreborn_ruby_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_techreborn_ruby_ore_mirrored"
+      }
+    ]
+  }
+}

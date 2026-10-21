@@ -27,6 +27,10 @@
     {
       "id": "seamlessores:embellishcraft_gneiss_dawn_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_dawn_stone_ore",
+      "required": false
     }
   ]
 }

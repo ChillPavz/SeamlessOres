@@ -165,6 +165,21 @@ public final class HostStone {
     public static final HostStone MYTHICUPGRADES_JADE_SCHIST = placed("mythicupgrades", "jade_schist",
             OreTier.STONE, MapColor.PLANT);
 
+    // Regions Unexplored (Fabric and NeoForge, 0.7.0, 26.1.x only): surface-rule skins, laid before every feature. Mossy stone (maple
+    // forests) is in stone_ore_replaceables, so ore lands in it: a restyle. Argillite (the Ancient Delta's
+    // cave floors) and chalk (the Chalk Cliffs) are in no ore tag, so their variants ADD ore, behind switches
+    // that are Off by default (owner, 21 Oct 2026). Map colours and hardness read from RUBlocks: mossy stone
+    // and argillite copy stone (1.5), chalk is 0.5.
+    public static final HostStone REGIONS_UNEXPLORED_MOSSY_STONE = placed("regions_unexplored", "mossy_stone",
+            OreTier.STONE, MapColor.STONE,
+            COAL, IRON, COPPER, GOLD, EMERALD, LAPIS, ZINC);
+    public static final HostStone REGIONS_UNEXPLORED_ARGILLITE = placed("regions_unexplored", "argillite",
+            OreTier.STONE, MapColor.TERRACOTTA_ORANGE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+    public static final HostStone REGIONS_UNEXPLORED_CHALK = placed("regions_unexplored", "chalk",
+            OreTier.STONE, MapColor.STONE,
+            COAL, IRON, COPPER, GOLD, EMERALD);
+
     // Promenade: Fabric on every 26.x version, NeoForge on 26.3 (6.0.0). Both in stone_ore_replaceables,
     // so later ore lands in them.
     public static final HostStone PROMENADE_ASPHALT = placed("promenade", "asphalt", OreTier.STONE, MapColor.DEEPSLATE,
@@ -191,6 +206,7 @@ public final class HostStone {
             FORBIDDEN_ARCANUS_DARKSTONE,
             MYTHICUPGRADES_AQUAMARINE_SCHIST, MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST,
             MYTHICUPGRADES_TOPAZ_SCHIST, MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST,
+            REGIONS_UNEXPLORED_MOSSY_STONE, REGIONS_UNEXPLORED_ARGILLITE, REGIONS_UNEXPLORED_CHALK,
             PROMENADE_ASPHALT, PROMENADE_BLUNITE,
             WILDERWILD_GABBRO);
 

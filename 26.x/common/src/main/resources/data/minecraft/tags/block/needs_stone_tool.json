@@ -328,6 +328,82 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_iceandfire_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_iron_ore",
       "required": false
     },

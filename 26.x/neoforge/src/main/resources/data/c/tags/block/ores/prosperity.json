@@ -27,6 +27,10 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_prosperity_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_prosperity_ore",
+      "required": false
     }
   ]
 }

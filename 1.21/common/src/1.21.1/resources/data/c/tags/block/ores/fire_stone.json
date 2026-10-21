@@ -51,6 +51,10 @@
     {
       "id": "seamlessores:embellishcraft_basalt_fire_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_fire_stone_ore",
+      "required": false
     }
   ]
 }

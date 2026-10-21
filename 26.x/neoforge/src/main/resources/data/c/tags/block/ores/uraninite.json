@@ -71,6 +71,18 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_dense_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_uraninite_poor_ore",
+      "required": false
     }
   ]
 }

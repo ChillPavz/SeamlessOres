@@ -37,6 +37,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_manganese_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_manganese_ore",
       "required": false
     },

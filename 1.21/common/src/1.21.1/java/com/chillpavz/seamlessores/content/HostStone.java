@@ -218,6 +218,21 @@ public final class HostStone {
     public static final HostStone MYTHICUPGRADES_JADE_SCHIST = placed("mythicupgrades", "jade_schist",
             OreTier.STONE, MapColor.PLANT);
 
+    // Regions Unexplored (Fabric and NeoForge, 0.6.3): surface-rule skins, laid before every feature. Mossy stone (maple
+    // forests) is in stone_ore_replaceables, so ore lands in it: a restyle. Argillite (the Ancient Delta's
+    // cave floors) and chalk (the Chalk Cliffs) are in no ore tag, so their variants ADD ore, behind switches
+    // that are Off by default (owner, 21 Oct 2026). Map colours and hardness read from RUBlocks: mossy stone
+    // and argillite copy stone (1.5), chalk is 0.5.
+    public static final HostStone REGIONS_UNEXPLORED_MOSSY_STONE = placed("regions_unexplored", "mossy_stone",
+            OreTier.STONE, MapColor.STONE,
+            COAL, IRON, COPPER, GOLD, EMERALD, LAPIS, ZINC);
+    public static final HostStone REGIONS_UNEXPLORED_ARGILLITE = placed("regions_unexplored", "argillite",
+            OreTier.STONE, MapColor.TERRACOTTA_ORANGE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+    public static final HostStone REGIONS_UNEXPLORED_CHALK = placed("regions_unexplored", "chalk",
+            OreTier.STONE, MapColor.STONE,
+            COAL, IRON, COPPER, GOLD, EMERALD);
+
     // Promenade (Fabric and NeoForge, 6.0.1). Both in stone_ore_replaceables, so later ore lands in them.
     public static final HostStone PROMENADE_ASPHALT = placed("promenade", "asphalt", OreTier.STONE, MapColor.DEEPSLATE,
             COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
@@ -247,7 +262,8 @@ public final class HostStone {
             TWIGS_BLOODSTONE, BORN_IN_CHAOS_V1_BLACK_ARGILLITE, EMBELLISHCRAFT_BASALT, EMBELLISHCRAFT_SLATE, EMBELLISHCRAFT_MARBLE, EMBELLISHCRAFT_GNEISS, EMBELLISHCRAFT_JADE, EMBELLISHCRAFT_LARVIKITE,
             FORBIDDEN_ARCANUS_DARKSTONE, MEADOW_LIMESTONE, MYTHICUPGRADES_AQUAMARINE_SCHIST,
             MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST, MYTHICUPGRADES_TOPAZ_SCHIST,
-            MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST, PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE, WILDERWILD_GABBRO);
+            MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST, REGIONS_UNEXPLORED_MOSSY_STONE, REGIONS_UNEXPLORED_ARGILLITE, REGIONS_UNEXPLORED_CHALK,
+            PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE, WILDERWILD_GABBRO);
 
     private final String name;
     private final ResourceLocation id;

@@ -101,6 +101,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_inferium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_inferium_ore",
       "required": false
     },

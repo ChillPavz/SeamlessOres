@@ -80,7 +80,11 @@ class Hosts(dict):
                           "placed_by": placed_by, "swallowed_by": decl["swallowed_by"],
                           "backported_by": decl.get("backported_by"), "swallows": swallows,
                           "refused": [o for o in swallows if placed_by and geology.fixed(name, o)],
-                          "look": look[0], "side": look[1], "end": look[2] if len(look) > 2 else look[1],
+                          # A moss look's third entry is the moss texture, not an end face.
+                          "look": look[0], "side": look[1],
+                          "end": look[2] if len(look) > 2 and not look[0].startswith("moss") else look[1],
+                          "moss": look[2] if look[0].startswith("moss") else None,
+                          "adds": host_id.replace(":", "_") in ADDS_ORE_HOSTS,
                           "since": (since or {}).get(host_id)}
         missing = set(self.pairs["hosts"]) - {h["id"] for h in self.values()}
         if missing:
@@ -173,8 +177,13 @@ class Hosts(dict):
 
 
 # The models a look writes, by suffix: what look_models names them.
-MODEL_SUFFIXES = {"single": ("",), "column": ("",), "turned": ("",), "mirrored_turned": ("", "_mirrored"),
-                  "textures4": ("", "_0", "_1", "_2", "_3")}
+MODEL_SUFFIXES = {"single": ("",), "column": ("",), "turned": ("",), "mirrored": ("", "_mirrored"),
+                  "mirrored_turned": ("", "_mirrored"), "textures4": ("", "_0", "_1", "_2", "_3"),
+                  "moss_mirrored": ("", "_mirrored"), "moss_mirrored_turned": ("", "_mirrored")}
+
+# Stones ore never forms in today (in no ore replaceables tag): a variant there ADDS ore, so its switch is
+# Off by default (owner, 21 Oct 2026; the opt-in rule). Host names, the same on every band.
+ADDS_ORE_HOSTS = {"regions_unexplored_argillite", "regions_unexplored_chalk"}
 
 
 def gate_of(host_cfg, ore):
@@ -307,6 +316,11 @@ def switch_lang(hosts, stone_mods):
         clash = f" ({display})" if paths.count(c["path"]) > 1 else ""
         lang[f"{cfg}.option.{field}"] = f"{host_stone_name(c)}{clash}"
         where = display if c["placed_by"] == c["ns"] else f"{display}'s layers of"
+        if c.get("adds"):
+            lang[f"{cfg}.option.{field}.@Tooltip"] = (
+                f"Lets ore form in {where} {host_stone_name(c).lower()}, which ore never reaches otherwise, so"
+                f" this ADDS ore. Off by default. Applies to newly generated chunks, from the next world load.")
+            continue
         lang[f"{cfg}.option.{field}.@Tooltip"] = (
             f"Ore generated in {where} {host_stone_name(c).lower()} matches the stone. Off: it keeps"
             f" its own look. Applies to newly generated chunks, from the next world load.")
@@ -380,7 +394,7 @@ def write_java(hosts, content_dir, config_java, stone_loaders):
     fields, push = [], []
     for c in hosts.placed():
         fields += ['    @ConfigEntry.Category("modded_stones")', "    @ConfigEntry.Gui.Tooltip",
-                   f"    public boolean {camel(c['name'])} = true;", ""]
+                   f"    public boolean {camel(c['name'])} = {'false' if c.get('adds') else 'true'};", ""]
     for c in hosts.values():
         push.append(f'        values.hosts.put("{c["name"]}", {camel(c["name"])});')
     text = open(config_java, encoding="utf-8").read()

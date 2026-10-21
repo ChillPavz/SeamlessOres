@@ -33,6 +33,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_water_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_water_stone_ore",
       "required": false
     },

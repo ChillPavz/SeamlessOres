@@ -97,6 +97,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_prosperity_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_prosperity_ore",
       "required": false
     },

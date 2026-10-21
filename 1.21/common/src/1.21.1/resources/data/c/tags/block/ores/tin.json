@@ -113,6 +113,42 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_mi_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_energized_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_techreborn_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_tin_ore",
       "required": false
     },

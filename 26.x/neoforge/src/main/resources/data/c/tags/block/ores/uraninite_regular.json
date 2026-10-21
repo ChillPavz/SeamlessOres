@@ -23,6 +23,10 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_uraninite_ore",
+      "required": false
     }
   ]
 }

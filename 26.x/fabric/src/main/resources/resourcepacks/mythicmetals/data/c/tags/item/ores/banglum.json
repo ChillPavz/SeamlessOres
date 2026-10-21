@@ -77,6 +77,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_banglum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_banglum_ore",
       "required": false
     },

@@ -297,6 +297,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_gleaming_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_chaos_ore",
       "required": false
     },
