@@ -201,6 +201,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_techreborn_lead_ore",
       "required": false
     },

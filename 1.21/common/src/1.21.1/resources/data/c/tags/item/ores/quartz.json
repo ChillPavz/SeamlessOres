@@ -79,6 +79,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_natural_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_natural_quartz_ore",
       "required": false
     },

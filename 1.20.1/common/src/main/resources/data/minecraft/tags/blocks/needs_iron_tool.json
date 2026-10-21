@@ -1636,6 +1636,178 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_silents_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_silents_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_silents_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_silents_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_silents_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_silents_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_uraninite_poor_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
       "required": false
     },

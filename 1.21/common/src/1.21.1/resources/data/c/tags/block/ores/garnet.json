@@ -13,6 +13,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_garnet_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_garnet_ore",
       "required": false
     },

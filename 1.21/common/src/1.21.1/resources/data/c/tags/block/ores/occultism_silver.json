@@ -65,6 +65,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_occultism_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_occultism_silver_ore",
       "required": false
     },

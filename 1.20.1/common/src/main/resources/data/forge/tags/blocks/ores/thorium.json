@@ -9,6 +9,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_thorium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_thorium_ore",
       "required": false
     }

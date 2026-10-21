@@ -19,6 +19,14 @@
     {
       "id": "seamlessores:twigs_rhyolite_dawn_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_dawn_stone_ore",
+      "required": false
     }
   ]
 }

@@ -65,6 +65,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_lead_ore",
       "required": false
     },

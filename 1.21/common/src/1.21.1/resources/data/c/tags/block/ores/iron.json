@@ -74,6 +74,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_iron_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
       "required": false
     },

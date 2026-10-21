@@ -160,6 +160,29 @@ public final class HostStone {
             OreTier.DEEPSLATE, MapColor.COLOR_BLACK,
             COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
 
+    // EmbellishCraft (Forge only on this band): one minecraft:ore blob per stone on both ore
+    // replaceables tags, added at underground_ores AFTER the game's ores, so ore stays inside as stone ore.
+    // Every Overworld biome, larvikite in cold ones. Hardness 1.5 (stone's form) and map colours read from
+    // its RockType and InitRockBlocks.
+    public static final HostStone EMBELLISHCRAFT_BASALT = placed("embellishcraft", "basalt",
+            OreTier.STONE, MapColor.COLOR_BLACK,
+            COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
+    public static final HostStone EMBELLISHCRAFT_SLATE = placed("embellishcraft", "slate",
+            OreTier.STONE, MapColor.TERRACOTTA_BLUE,
+            COAL, IRON, COPPER, GOLD, EMERALD, LAPIS, ZINC);
+    public static final HostStone EMBELLISHCRAFT_MARBLE = placed("embellishcraft", "marble",
+            OreTier.STONE, MapColor.QUARTZ,
+            COAL, IRON, COPPER, GOLD, EMERALD, LAPIS, ZINC);
+    public static final HostStone EMBELLISHCRAFT_GNEISS = placed("embellishcraft", "gneiss",
+            OreTier.STONE, MapColor.TERRACOTTA_WHITE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, ZINC);
+    public static final HostStone EMBELLISHCRAFT_JADE = placed("embellishcraft", "jade",
+            OreTier.STONE, MapColor.TERRACOTTA_GREEN,
+            COAL, IRON, COPPER, GOLD, EMERALD);
+    public static final HostStone EMBELLISHCRAFT_LARVIKITE = placed("embellishcraft", "larvikite",
+            OreTier.STONE, MapColor.TERRACOTTA_LIGHT_BLUE,
+            COAL, IRON, COPPER, GOLD, EMERALD, LAPIS, ZINC);
+
     // Forbidden and Arcanus: the bottom 13 blocks of the overworld. Darkstone copies stone at
     // hardness 4.5 (ModBlocks), so it takes the deepslate ore's form.
     public static final HostStone FORBIDDEN_ARCANUS_DARKSTONE = placed("forbidden_arcanus", "darkstone",
@@ -216,7 +239,8 @@ public final class HostStone {
             BLOCKUS_LIMESTONE, BLOCKUS_MARBLE, BLOCKUS_BLUESTONE, BLOCKUS_VIRIDITE, CREATE_ASURINE, CREATE_CRIMSITE,
             CREATE_LIMESTONE, CREATE_OCHRUM, CREATE_SCORCHIA, CREATE_SCORIA, CREATE_VERIDIUM, MINECRAFT_CALCITE,
             MINECRAFT_SMOOTH_BASALT, TFMG_BAUXITE, TFMG_GALENA, TFMG_LIGNITE, TWIGS_RHYOLITE, TWIGS_SCHIST,
-            TWIGS_BLOODSTONE, BORN_IN_CHAOS_V1_BLACK_ARGILLITE, FORBIDDEN_ARCANUS_DARKSTONE, MEADOW_LIMESTONE, MYTHICUPGRADES_AQUAMARINE_SCHIST,
+            TWIGS_BLOODSTONE, BORN_IN_CHAOS_V1_BLACK_ARGILLITE, EMBELLISHCRAFT_BASALT, EMBELLISHCRAFT_SLATE, EMBELLISHCRAFT_MARBLE, EMBELLISHCRAFT_GNEISS, EMBELLISHCRAFT_JADE, EMBELLISHCRAFT_LARVIKITE,
+            FORBIDDEN_ARCANUS_DARKSTONE, MEADOW_LIMESTONE, MYTHICUPGRADES_AQUAMARINE_SCHIST,
             MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST, MYTHICUPGRADES_TOPAZ_SCHIST,
             MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST, PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE);
 

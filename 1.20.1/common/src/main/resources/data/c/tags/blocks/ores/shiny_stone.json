@@ -19,6 +19,18 @@
     {
       "id": "seamlessores:twigs_schist_shiny_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_shiny_stone_ore",
+      "required": false
     }
   ]
 }

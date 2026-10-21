@@ -29,14 +29,16 @@ CLASSES = {
     "CALC": ["minecraft_calcite"],
     # sedimentary hydrocarbon: asphalt, and TFMG's lignite (brown coal)
     "ASPH": ["promenade_asphalt", "tfmg_lignite"],
-    "MARB": ["blockus_marble"],
+    "MARB": ["blockus_marble", "embellishcraft_marble"],
     # metamorphic pelite
-    "SCH": ["mythicupgrades_%s_schist" % g for g in ("aquamarine", "citrine", "peridot", "topaz")] + ["twigs_schist"],
+    # EmbellishCraft's slate is the same pelite at low grade
+    "SCH": ["mythicupgrades_%s_schist" % g for g in ("aquamarine", "citrine", "peridot", "topaz")] + ["twigs_schist",
+                                                                                                    "embellishcraft_slate"],
     # mafic intrusive; bluestone read as dolerite
     "PLUT": ["wilderwild_gabbro", "blockus_bluestone"],
     # mafic volcanic
     # mafic volcanic; deep blackstone is the blackstone Terralith lays in its caves
-    "VOLC": ["minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone"],
+    "VOLC": ["minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "embellishcraft_basalt"],
     # felsic volcanic: Twigs' rhyolite
     "FELS": ["twigs_rhyolite"],
     # residual laterite: TFMG's bauxite, the weathering crust aluminium is mined from
@@ -45,6 +47,8 @@ CLASSES = {
     "SULF": ["tfmg_galena"],
     # black shale and argillite (organic-rich sedimentary pelite): Born in Chaos' black argillite
     "SHAL": ["born_in_chaos_v1_black_argillite"],
+    # serpentinite and the jadeitite / nephrite that forms from it (owner, 21 Oct 2026): EmbellishCraft's jade
+    "SERP": ["embellishcraft_jade"],
 }
 ALL = list(CLASSES)
 
@@ -64,9 +68,9 @@ FAMILIES = [
     # black shale the seams lie between keep it.
     (["coal", "lignite_coal"], _all_but("LIME", "ASPH", "SHAL")),
     # Colombian emerald is in black shale and carbonate; schist emerald is the classic pegmatite contact.
-    (["emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF")),
+    (["emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SERP")),
     # Lazurite rock is lazurite with calcite: marble and calcite only.
-    (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL")),
+    (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL", "SERP")),
     # A kimberlite pipe, which none of these is.
     # Born in Chaos' infected diamond is diamond, whatever lives in it.
     (["diamond", "bort", "white_diamond", "black_diamond", "infected_diamond"], _hosts(*ALL)),
@@ -75,30 +79,31 @@ FAMILIES = [
     # Lead, zinc and antimony: carbonate, shale, schist and epithermal veins in volcanics; never in a
     # mafic intrusion, never in a weathering crust. Massive sulphide is their own rock.
     (["zinc", "galena", "techreborn_lead", "lead", "mi_lead", "ie_lead", "mek_lead", "dense_lead",
-      "oreganized_lead", "antimony"], _hosts("PLUT", "LATE")),
+      "oreganized_lead", "antimony"], _hosts("PLUT", "LATE", "SERP")),
     # Manganese also forms in laterite.
-    (["manganese"], _hosts("PLUT")),
+    (["manganese"], _hosts("PLUT", "SERP")),
     # Carbonate replacement tin, and rhyolite-hosted tin (Durango).
     (["tin", "energized_tin", "techreborn_tin", "mi_tin", "mek_tin", "dense_tin"],
      _all_but("LIME", "MARB", "FELS")),
     # Beryl in mica schist.
     (["aquamarine", "silents_aquamarine", "heliodor"], _all_but("SCH")),
-    # Olivine: mafic rock only.
-    (["peridot", "silents_peridot"], _all_but("PLUT", "VOLC")),
+    # Olivine: mafic rock only, and the serpentinite it alters to.
+    (["peridot", "silents_peridot"], _all_but("PLUT", "VOLC", "SERP")),
     # Corundum never coexists with free quartz: marble (Mogok), schist, basalt sapphire.
     (["techreborn_ruby", "techreborn_sapphire", "silents_ruby", "silents_sapphire", "iceandfire_sapphire"],
      _all_but("MARB", "SCH", "VOLC")),
-    # Platinum group and nickel: mafic intrusions (Noril'sk, Bushveld, Sudbury).
+    # Platinum group and nickel: mafic intrusions (Noril'sk, Bushveld, Sudbury) and serpentinite (laterite
+    # nickel, placer platinum).
     (["platinum", "iridium", "osmium", "mi_iridium", "mek_osmium", "dense_osmium",
-      "nickel", "mi_nickel", "ie_nickel"], _all_but("PLUT")),
+      "nickel", "mi_nickel", "ie_nickel"], _all_but("PLUT", "SERP")),
     # Uranium: asphaltite, carbonate, schist and rhyolite caldera uranium are real; not in mafic rock,
     # not in a laterite, not in a lead-zinc body. Extreme Reactors' yellorite is its uranium ore.
     (["techreborn_uranium", "uranium", "ie_uranium", "mek_uranium", "dense_uranium", "yellorite",
-      "uraninite", "uraninite_poor", "uraninite_dense"], _hosts("PLUT", "VOLC", "LATE", "SULF")),
+      "uraninite", "uraninite_poor", "uraninite_dense"], _hosts("PLUT", "VOLC", "LATE", "SULF", "SERP")),
     # Rock salt is an evaporite, laid down with carbonate.
     (["salt"], _all_but("LIME")),
     # Fluorite: Mississippi Valley carbonate, skarn marble, calcite veins, rhyolite (Mexico), lead-zinc gangue.
-    (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL")),
+    (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL", "SERP")),
     # Scheelite skarn at limestone and marble contacts, and scheelite in schist.
     (["tungsten"], _all_but("LIME", "MARB", "SCH")),
     # Monazite and thorium: metamorphic monazite in pelitic schist.
@@ -121,8 +126,8 @@ FAMILIES = [
     (["ammolite"], _all_but("LIME", "SHAL")),
     (["pearl"], _all_but("LIME")),
     (["moldavite"], _all_but("LIME", "CALC", "ASPH", "LATE")),
-    # Benitoite: only in hydrothermally altered serpentinite (San Benito County); none of these.
-    (["benitoite"], _hosts(*ALL)),
+    # Benitoite: only in hydrothermally altered serpentinite (San Benito County).
+    (["benitoite"], _all_but("SERP")),
 ]
 
 # ore -> hosts it is refused in
@@ -191,6 +196,11 @@ GEMS = set("ametrine jade aquamarine citrine peridot topaz ruby sapphire diamond
            "iceandfire_sapphire".split())
 
 
+# Stones other mods place that are judged exactly as one of the game's rocks (owner, 21 Oct 2026). A refusal
+# is fixed here, vanilla ore included, as for every stone another mod places.
+ROCK_AS = {"embellishcraft_gneiss": "granite", "embellishcraft_larvikite": "diorite"}
+
+
 def fixed(host, ore):
     """Whether this ore never forms in this host, for good: no variant, and worldgen makes it stone. The
     stones other mods place, and modded ores in the game's own rock (rock_fixed, below)."""
@@ -200,6 +210,8 @@ def fixed(host, ore):
         return True
     if host in END_GEM_STONES:
         return ore not in GEMS and ore not in FICTION
+    if host in ROCK_AS:
+        return _rock_refuses(ROCK_AS[host], ore)
     keep = LORE.get(host)
     return keep is not None and ore != keep and ore not in FICTION
 
@@ -310,7 +322,7 @@ def note_absent(keys, hosts):
     """Prints the ores and stones this rule names that a band does not have. The rule serves every
     band, so most bands lack some; the list is printed, not refused, so a misspelt key still shows."""
     ores = set(STRICT) | set(ROCK)
-    stones = set(h for hs in STRICT.values() for h in hs) | set(LORE) | set(END_GEM_STONES)
+    stones = set(h for hs in STRICT.values() for h in hs) | set(LORE) | set(END_GEM_STONES) | set(ROCK_AS)
     absent_ores, absent_stones = sorted(ores - set(keys)), sorted(stones - set(hosts))
     if absent_ores or absent_stones:
         print(f"  geology rule, not in this band: {len(absent_ores)} ores {absent_ores},"
@@ -337,7 +349,8 @@ def java():
     return JAVA % (_map_of_sets(STRICT, " " * 12),
                    ",\n".join('            Map.entry("%s", "%s")' % kv for kv in LORE.items()),
                    _set(FICTION), _map_of_sets(ROCK, " " * 12), _set(DRIPSTONE_KEEPS), _set(COBBLEMON_KEEPS),
-                   _set(VANILLA_ORES), _set(GAME_ROCK), _set(END_GEM_STONES), _set(GEMS))
+                   _set(VANILLA_ORES), _set(GAME_ROCK), _set(END_GEM_STONES), _set(GEMS),
+                   ",\n".join('            Map.entry("%s", "%s")' % kv for kv in ROCK_AS.items()))
 
 
 def write_java(write_text):
@@ -404,6 +417,10 @@ public final class OreGeology {
 
     private static final Set<String> GEMS = Set.of(%s);
 
+    /** Stones other mods place that are judged as one of the game's rocks (gneiss as granite). */
+    private static final Map<String, String> ROCK_AS = Map.ofEntries(
+%s);
+
     private static boolean rockRefuses(String host, String ore) {
         if ("dripstone".equals(host) && !COBBLEMON.contains(ore)) {
             return !DRIPSTONE_KEEPS.contains(ore) && !FICTION.contains(ore);
@@ -421,6 +438,9 @@ public final class OreGeology {
         }
         if (END_GEM_STONES.contains(host)) {
             return !GEMS.contains(ore) && !FICTION.contains(ore);
+        }
+        if (ROCK_AS.containsKey(host)) {
+            return rockRefuses(ROCK_AS.get(host), ore);
         }
         final String keep = LORE.get(host);
         return keep != null && !keep.equals(ore) && !FICTION.contains(ore);

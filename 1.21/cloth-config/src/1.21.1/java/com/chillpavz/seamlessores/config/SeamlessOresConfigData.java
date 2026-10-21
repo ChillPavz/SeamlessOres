@@ -225,6 +225,30 @@ public class SeamlessOresConfigData implements ConfigData {
 
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
+    public boolean embellishcraftBasalt = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean embellishcraftSlate = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean embellishcraftMarble = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean embellishcraftGneiss = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean embellishcraftJade = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean embellishcraftLarvikite = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
     public boolean forbiddenArcanusDarkstone = true;
 
     @ConfigEntry.Category("modded_stones")
@@ -509,6 +533,12 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("twigs_schist", twigsSchist);
         values.hosts.put("twigs_bloodstone", twigsBloodstone);
         values.hosts.put("born_in_chaos_v1_black_argillite", bornInChaosV1BlackArgillite);
+        values.hosts.put("embellishcraft_basalt", embellishcraftBasalt);
+        values.hosts.put("embellishcraft_slate", embellishcraftSlate);
+        values.hosts.put("embellishcraft_marble", embellishcraftMarble);
+        values.hosts.put("embellishcraft_gneiss", embellishcraftGneiss);
+        values.hosts.put("embellishcraft_jade", embellishcraftJade);
+        values.hosts.put("embellishcraft_larvikite", embellishcraftLarvikite);
         values.hosts.put("forbidden_arcanus_darkstone", forbiddenArcanusDarkstone);
         values.hosts.put("meadow_limestone", meadowLimestone);
         values.hosts.put("mythicupgrades_aquamarine_schist", mythicupgradesAquamarineSchist);

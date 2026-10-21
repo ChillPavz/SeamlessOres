@@ -9,6 +9,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_monazite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_monazite_ore",
       "required": false
     },

@@ -27,6 +27,10 @@
     {
       "id": "seamlessores:twigs_rhyolite_sun_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_sun_stone_ore",
+      "required": false
     }
   ]
 }

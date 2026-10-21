@@ -23,6 +23,18 @@
     {
       "id": "seamlessores:twigs_schist_thunder_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_thunder_stone_ore",
+      "required": false
     }
   ]
 }

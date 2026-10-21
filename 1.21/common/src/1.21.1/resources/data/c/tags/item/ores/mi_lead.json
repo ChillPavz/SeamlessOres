@@ -65,6 +65,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_mi_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_mi_lead_ore",
       "required": false
     },

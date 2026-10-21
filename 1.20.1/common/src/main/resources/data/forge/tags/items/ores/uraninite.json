@@ -57,6 +57,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_uraninite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_ore",
       "required": false
     },
@@ -186,6 +190,22 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_uraninite_poor_ore",
       "required": false
     },
     {

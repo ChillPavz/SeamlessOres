@@ -349,6 +349,78 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_mi_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_dense_lead_ore",
       "required": false
     },

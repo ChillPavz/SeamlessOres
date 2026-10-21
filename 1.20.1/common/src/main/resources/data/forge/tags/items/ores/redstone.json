@@ -86,6 +86,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
       "required": false
     },

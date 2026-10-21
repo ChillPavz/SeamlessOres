@@ -57,6 +57,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_uraninite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_ore",
       "required": false
     },

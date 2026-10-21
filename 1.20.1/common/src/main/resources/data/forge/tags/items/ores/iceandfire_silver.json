@@ -77,6 +77,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_iceandfire_silver_ore",
       "required": false
     },

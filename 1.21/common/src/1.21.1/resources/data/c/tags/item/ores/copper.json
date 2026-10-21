@@ -70,6 +70,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_copper_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_copper_ore",
       "required": false
     },

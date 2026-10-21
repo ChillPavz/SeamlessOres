@@ -45,6 +45,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_yellorite_ore",
       "required": false
     },

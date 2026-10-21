@@ -81,6 +81,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_oreganized_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_oreganized_silver_ore",
       "required": false
     },
