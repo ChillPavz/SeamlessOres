@@ -134,9 +134,10 @@ class Hosts(dict):
 
     def title_of(self, host, ore):
         """e.g. Granite Iron Ore, Limestone Iron Ore. The stone's own name, then the ore's (never its
-        mod's), then Ore."""
+        mod's), then Ore. `name_style` is a formatting code the source mod puts on its own ore's name
+        (Born in Chaos names infected diamond in dark aqua, §3), so the variant reads like the ore."""
         cfg = self[host]
-        return f"{host_stone_name(cfg)} {title(ore['key'] if cfg['placed_by'] else ore['name'])} Ore"
+        return f"{ore.get('name_style', '')}{host_stone_name(cfg)} {title(ore['key'] if cfg['placed_by'] else ore['name'])} Ore"
 
     def overlay_for(self, ore, host_cfg, face="side", model=""):
         """Overlay key for this host and face, honouring a per-host or per-tier override. Mirrors

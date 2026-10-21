@@ -868,6 +868,7 @@ ORE_DEFS = [
     # only: tuff is the one game rock the geology rule lets keep diamond. It ADDS ore (OreType.addsOre).
     {"name": "infected_diamond", "overlay": "diamond", "key": "infected_diamond",
      "source": "infected_deepslate_diamond_ore", "base": "deepslate", "mod": "born_in_chaos_v1", "untagged": True,
+     "name_style": "§3",  # dark aqua, as Born in Chaos names its own block
      "tiers": {"deepslate": "infected_deepslate_diamond_ore"}},
 ]
 
