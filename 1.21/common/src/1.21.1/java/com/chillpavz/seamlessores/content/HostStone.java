@@ -188,6 +188,12 @@ public final class HostStone {
             COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND);
     public static final HostStone MYTHICUPGRADES_SAPPHIRE_SCHIST = placed("mythicupgrades", "sapphire_schist",
             OreTier.STONE, MapColor.LAPIS);
+    // The End: its own End biome (mythic_barrens) lays ametrine schist, ametrine ore, jade schist, jade ore,
+    // in that order, so jade schist swallows the ametrine placed before it; ametrine schist comes first and
+    // swallows nothing. Its own gem in its own schist stays the author's look. Hardness 1.5, resistance 6.0
+    // and map colour read from MythicBlocks.
+    public static final HostStone MYTHICUPGRADES_JADE_SCHIST = placed("mythicupgrades", "jade_schist",
+            OreTier.STONE, MapColor.PLANT);
 
     // Promenade (Fabric and NeoForge, 6.0.1). Both in stone_ore_replaceables, so later ore lands in them.
     public static final HostStone PROMENADE_ASPHALT = placed("promenade", "asphalt", OreTier.STONE, MapColor.DEEPSLATE,
@@ -217,7 +223,7 @@ public final class HostStone {
             MINECRAFT_SMOOTH_BASALT, TFMG_BAUXITE, TFMG_GALENA, TFMG_LIGNITE, TWIGS_RHYOLITE, TWIGS_SCHIST,
             TWIGS_BLOODSTONE, BORN_IN_CHAOS_V1_BLACK_ARGILLITE, FORBIDDEN_ARCANUS_DARKSTONE, MEADOW_LIMESTONE, MYTHICUPGRADES_AQUAMARINE_SCHIST,
             MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST, MYTHICUPGRADES_TOPAZ_SCHIST,
-            MYTHICUPGRADES_SAPPHIRE_SCHIST, PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE, WILDERWILD_GABBRO);
+            MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST, PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE, WILDERWILD_GABBRO);
 
     private final String name;
     private final ResourceLocation id;

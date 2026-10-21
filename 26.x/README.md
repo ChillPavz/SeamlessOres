@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**761 blocks** in the `seamlessores` namespace.
+**762 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -260,7 +260,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**491 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**492 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, every 26.x version, both loaders)
 
@@ -438,7 +438,7 @@ Stones: Darkstone `forbidden_arcanus_darkstone`
 
 **Mythic Upgrades, requires `mythicupgrades`** (Fabric and NeoForge, 26.2 and 26.3)
 
-Stones: Aquamarine Schist `mythicupgrades_aquamarine_schist`, Citrine Schist `mythicupgrades_citrine_schist`, Peridot Schist `mythicupgrades_peridot_schist`, Topaz Schist `mythicupgrades_topaz_schist`, Sapphire Schist `mythicupgrades_sapphire_schist`
+Stones: Aquamarine Schist `mythicupgrades_aquamarine_schist`, Citrine Schist `mythicupgrades_citrine_schist`, Peridot Schist `mythicupgrades_peridot_schist`, Topaz Schist `mythicupgrades_topaz_schist`, Sapphire Schist `mythicupgrades_sapphire_schist`, Jade Schist `mythicupgrades_jade_schist`
 
 | Ore | `<ore>` | Also requires | In |
 |---|---|---|---|
@@ -450,6 +450,7 @@ Stones: Aquamarine Schist `mythicupgrades_aquamarine_schist`, Citrine Schist `my
 | Citrine | `citrine` |  | Topaz Schist |
 | Necoium | `necoium` |  | Aquamarine Schist, Citrine Schist, Peridot Schist, Topaz Schist |
 | Ruby | `ruby` |  | Sapphire Schist |
+| Ametrine | `ametrine` |  | Jade Schist |
 
 **Promenade, requires `promenade`** (Fabric on every 26.x version, NeoForge on 26.3)
 
@@ -548,7 +549,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 761 blocks takes **90 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 762 blocks takes **91 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -556,7 +557,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iolite` `iridium` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_darkstone` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `alexandrite` `ametrine` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iolite` `iridium` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_darkstone` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its

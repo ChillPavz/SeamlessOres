@@ -222,6 +222,10 @@ public class SeamlessOresConfigData implements ConfigData {
 
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
+    public boolean mythicupgradesJadeSchist = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
     public boolean promenadeAsphalt = true;
 
     @ConfigEntry.Category("modded_stones")
@@ -423,6 +427,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("mythicupgrades_peridot_schist", mythicupgradesPeridotSchist);
         values.hosts.put("mythicupgrades_topaz_schist", mythicupgradesTopazSchist);
         values.hosts.put("mythicupgrades_sapphire_schist", mythicupgradesSapphireSchist);
+        values.hosts.put("mythicupgrades_jade_schist", mythicupgradesJadeSchist);
         values.hosts.put("promenade_asphalt", promenadeAsphalt);
         values.hosts.put("promenade_blunite", promenadeBlunite);
         values.hosts.put("wilderwild_gabbro", wilderwildGabbro);

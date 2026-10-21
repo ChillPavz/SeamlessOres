@@ -158,6 +158,12 @@ public final class HostStone {
     // Hardness 1.5 and map colour read from MythicBlocks.
     public static final HostStone MYTHICUPGRADES_SAPPHIRE_SCHIST = placed("mythicupgrades", "sapphire_schist",
             OreTier.STONE, MapColor.LAPIS);
+    // The End: its own End biome (mythic_barrens) lays ametrine schist, ametrine ore, jade schist, jade ore,
+    // in that order, so jade schist swallows the ametrine placed before it; ametrine schist comes first and
+    // swallows nothing. Its own gem in its own schist stays the author's look. Hardness 1.5, resistance 6.0
+    // and map colour read from MythicBlocks.
+    public static final HostStone MYTHICUPGRADES_JADE_SCHIST = placed("mythicupgrades", "jade_schist",
+            OreTier.STONE, MapColor.PLANT);
 
     // Promenade: Fabric on every 26.x version, NeoForge on 26.3 (6.0.0). Both in stone_ore_replaceables,
     // so later ore lands in them.
@@ -184,7 +190,7 @@ public final class HostStone {
             CREATE_VERIDIUM, MINECRAFT_CALCITE, MINECRAFT_SMOOTH_BASALT,
             FORBIDDEN_ARCANUS_DARKSTONE,
             MYTHICUPGRADES_AQUAMARINE_SCHIST, MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST,
-            MYTHICUPGRADES_TOPAZ_SCHIST, MYTHICUPGRADES_SAPPHIRE_SCHIST,
+            MYTHICUPGRADES_TOPAZ_SCHIST, MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST,
             PROMENADE_ASPHALT, PROMENADE_BLUNITE,
             WILDERWILD_GABBRO);
 

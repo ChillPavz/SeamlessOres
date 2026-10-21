@@ -32,8 +32,8 @@ def index_ores(ore_defs):
 
 
 def forms_of(ore):
-    """The ore's own block ids, stone then deepslate then Nether: how modded_pairs.json names a kind."""
-    return [f"{ore.get('mod') or 'minecraft'}:{ore['tiers'][t]}" for t in ("stone", "deepslate", "nether")
+    """The ore's own block ids, stone then deepslate then Nether then End: how modded_pairs.json names a kind."""
+    return [f"{ore.get('mod') or 'minecraft'}:{ore['tiers'][t]}" for t in ("stone", "deepslate", "nether", "end")
             if t in ore["tiers"]]
 
 
@@ -105,7 +105,7 @@ class Hosts(dict):
                 for ore in self.ore_defs:
                     if ore["key"] in cfg["swallows"] and ore["key"] not in cfg["refused"]:
                         tier = cfg["ore_tier"] if cfg["ore_tier"] in ore["tiers"] else next(
-                            t for t in ("stone", "deepslate", "nether") if t in ore["tiers"])
+                            t for t in ("stone", "deepslate", "nether", "end") if t in ore["tiers"])
                         yield host, cfg, ore, ore["tiers"][tier], tier
                 continue
             for ore in self.ore_defs:

@@ -179,6 +179,17 @@ FICTION = set("redstone adamantite aquarium banglum carmot kyber midas_gold mork
 LORE = {"create_asurine": "zinc", "create_crimsite": "iron", "create_ochrum": "gold",
         "create_veridium": "copper"}
 
+# THE END (owner, 21 Oct 2026). End stone and every End rock are fiction, and so are most End ores, so the
+# End is judged by lore, not by CLASSES: a crystalline End stone keeps gems (and fiction); a volcanic-looking
+# one (brimstone, sulphuric rock, void basalt, corrode stone) keeps metal and fire ores, added with its first
+# host; the game's own rocks in an End biome follow their Overworld class.
+END_GEM_STONES = ["mythicupgrades_jade_schist"]
+GEMS = set("ametrine jade aquamarine citrine peridot topaz ruby sapphire diamond emerald lapis quartz "
+           "alexandrite ammolite black_diamond carnelian garnet heliodor iolite kyanite moldavite opal pearl "
+           "rose_quartz tanzanite turquoise white_diamond silents_aquamarine silents_citrine silents_peridot "
+           "silents_ruby silents_sapphire silents_topaz techreborn_ruby techreborn_sapphire "
+           "iceandfire_sapphire".split())
+
 
 def fixed(host, ore):
     """Whether this ore never forms in this host, for good: no variant, and worldgen makes it stone. The
@@ -187,6 +198,8 @@ def fixed(host, ore):
         return rock_fixed(host, ore)
     if host in STRICT.get(ore, ()):
         return True
+    if host in END_GEM_STONES:
+        return ore not in GEMS and ore not in FICTION
     keep = LORE.get(host)
     return keep is not None and ore != keep and ore not in FICTION
 
@@ -297,7 +310,7 @@ def note_absent(keys, hosts):
     """Prints the ores and stones this rule names that a band does not have. The rule serves every
     band, so most bands lack some; the list is printed, not refused, so a misspelt key still shows."""
     ores = set(STRICT) | set(ROCK)
-    stones = set(h for hs in STRICT.values() for h in hs) | set(LORE)
+    stones = set(h for hs in STRICT.values() for h in hs) | set(LORE) | set(END_GEM_STONES)
     absent_ores, absent_stones = sorted(ores - set(keys)), sorted(stones - set(hosts))
     if absent_ores or absent_stones:
         print(f"  geology rule, not in this band: {len(absent_ores)} ores {absent_ores},"
@@ -324,7 +337,7 @@ def java():
     return JAVA % (_map_of_sets(STRICT, " " * 12),
                    ",\n".join('            Map.entry("%s", "%s")' % kv for kv in LORE.items()),
                    _set(FICTION), _map_of_sets(ROCK, " " * 12), _set(DRIPSTONE_KEEPS), _set(COBBLEMON_KEEPS),
-                   _set(VANILLA_ORES), _set(GAME_ROCK))
+                   _set(VANILLA_ORES), _set(GAME_ROCK), _set(END_GEM_STONES), _set(GEMS))
 
 
 def write_java(write_text):
@@ -343,7 +356,8 @@ import java.util.Set;
  * <p><b>Fixed</b>, for the stones other mods place: a refused pair is never registered, and worldgen
  * turns that ore into the stone wherever the stone swallows it, so no seam can appear. Never
  * configurable: the registered block set must not depend on config. The strict reading, plus a lore
- * rule for Create's four invented stones: each keeps only the ore Create ties it to, and fiction.
+ * rule for Create's four invented stones: each keeps only the ore Create ties it to, and fiction; and the
+ * End's lore: a crystalline End stone keeps gems and fiction.
  *
  * <p><b>The game's own rock</b> (granite, diorite, andesite, tuff, dripstone, basalt, blackstone), by the
  * same strict reading: a MODDED ore refused there is fixed too (never registered, the rock stays rock); a
@@ -385,6 +399,11 @@ public final class OreGeology {
 
     private static final Set<String> GAME_ROCK = Set.of(%s);
 
+    /** The End's crystalline stones: they keep gems, and fiction, only. */
+    private static final Set<String> END_GEM_STONES = Set.of(%s);
+
+    private static final Set<String> GEMS = Set.of(%s);
+
     private static boolean rockRefuses(String host, String ore) {
         if ("dripstone".equals(host) && !COBBLEMON.contains(ore)) {
             return !DRIPSTONE_KEEPS.contains(ore) && !FICTION.contains(ore);
@@ -399,6 +418,9 @@ public final class OreGeology {
         }
         if (STRICT.getOrDefault(ore, Set.of()).contains(host)) {
             return true;
+        }
+        if (END_GEM_STONES.contains(host)) {
+            return !GEMS.contains(ore) && !FICTION.contains(ore);
         }
         final String keep = LORE.get(host);
         return keep != null && !keep.equals(ore) && !FICTION.contains(ore);

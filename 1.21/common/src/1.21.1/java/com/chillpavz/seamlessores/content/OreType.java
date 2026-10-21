@@ -64,11 +64,14 @@ import java.util.Set;
  *                         injector prepends its targets, so it would win against the mod's own entry
  * @param strength         hardness and blast resistance where the ore's own mod sets them, or null for
  *                         the vanilla ore convention, which the vanilla block a variant copies carries
+ * @param endOre           id of the ore's End form, or null. No host of the game's own takes it (the End
+ *                         has only end stone); it pairs with the End stones other mods place, which
+ *                         take it as "the first form the ore has"
  */
 public record OreType(String name, String key, String overlay, String deepslateOverlay, String requiredModId,
                       ResourceLocation stoneOre, ResourceLocation deepslateOre, ResourceLocation netherOre,
                       IntProvider xp, IntProvider deepslateXp, boolean redstoneLike,
-                      Set<String> skipHosts, Strength strength) {
+                      Set<String> skipHosts, Strength strength, ResourceLocation endOre) {
 
     private static final IntProvider NONE = ConstantInt.of(0);
 
@@ -81,14 +84,14 @@ public record OreType(String name, String key, String overlay, String deepslateO
                                IntProvider xp, IntProvider deepslateXp, boolean redstoneLike,
                                Set<String> skipHosts) {
         return new OreType(name, overlay, overlay, deepslateOverlay, requiredModId, stoneOre, deepslateOre,
-                netherOre, xp, deepslateXp, redstoneLike, skipHosts, null);
+                netherOre, xp, deepslateXp, redstoneLike, skipHosts, null, null);
     }
 
     /** The same ore with the strength its own mod sets, read from that mod's jar. */
     private OreType withStrength(float hardness, float resistance, float deepHardness, float deepResistance) {
         return new OreType(name, key, overlay, deepslateOverlay, requiredModId, stoneOre, deepslateOre, netherOre,
                 xp, deepslateXp, redstoneLike, skipHosts,
-                new Strength(hardness, resistance, deepHardness, deepResistance));
+                new Strength(hardness, resistance, deepHardness, deepResistance), endOre);
     }
 
     /** An ore with no deepslate form: stone tier only, or Nether only. */
@@ -99,13 +102,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
     /** The same ore under another key. */
     private OreType withKey(String key) {
         return new OreType(name, key, overlay, deepslateOverlay, requiredModId, stoneOre, deepslateOre, netherOre,
-                xp, deepslateXp, redstoneLike, skipHosts, strength);
+                xp, deepslateXp, redstoneLike, skipHosts, strength, endOre);
     }
 
     /** The same ore, given no variant in the named hosts (see {@code skipHosts}). */
     private OreType skipping(String... hosts) {
         return new OreType(name, key, overlay, deepslateOverlay, requiredModId, stoneOre, deepslateOre, netherOre,
-                xp, deepslateXp, redstoneLike, Set.of(hosts), strength);
+                xp, deepslateXp, redstoneLike, Set.of(hosts), strength, endOre);
     }
 
     private static ResourceLocation mc(String path) {
@@ -160,12 +163,18 @@ public record OreType(String name, String key, String overlay, String deepslateO
     // The five overworld ores target the SAME replaceables tags as vanilla, so injecting them is a
     // pure restyle at zero balance cost. Ruby and sapphire are block_match netherrack only, so their
     // basalt/blackstone variants ADD ore, the same caveat as our nether gold and quartz, and ride
-    // the same host toggles and bastion protection. Ametrine and jade are deliberately absent:
-    // end_stone only, and the End has no second stone type to be seamless with.
+    // the same host toggles and bastion protection. Ametrine and jade are End ores (end_stone only).
+    // Ametrine has an End form for one host: Mythic Upgrades' own jade schist, laid over the ametrine
+    // its End biome placed first. Jade has none: nothing places a stone over it.
     private static OreType mythic(String name, IntProvider xp) {
         return ore(name, name, null, "mythicupgrades",
                 of("mythicupgrades", name + "_ore"), of("mythicupgrades", "deepslate_" + name + "_ore"),
                 null, xp, null, false, Set.of());
+    }
+
+    private static OreType mythicEnd(String name, IntProvider xp) {
+        return new OreType(name, name, name, null, "mythicupgrades", null, null, null, xp, null, false,
+                Set.of(), null, of("mythicupgrades", name + "_ore"));
     }
 
     private static OreType mythicNether(String name, IntProvider xp) {
@@ -180,6 +189,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
     public static final OreType NECOIUM = mythic("necoium", ConstantInt.of(0));
     public static final OreType RUBY = mythicNether("ruby", UniformInt.of(4, 10));
     public static final OreType SAPPHIRE = mythicNether("sapphire", UniformInt.of(4, 10));
+    // XP 6-14, hardness 3.0 and blast resistance 9.0 (end stone's), read from MythicBlocks on every band.
+    public static final OreType AMETRINE = mythicEnd("ametrine", UniformInt.of(6, 14)).withStrength(3.0F, 9.0F);
 
     // --- Mythic Metals (mod id mythicmetals, MIT) -----------------------------------------------
     // Every fact here was read out of the real jar; see the mapping table in the maintainer notes.
@@ -694,7 +705,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
-                    AQUAMARINE, CITRINE, PERIDOT, TOPAZ, NECOIUM, RUBY, SAPPHIRE,
+                    AQUAMARINE, CITRINE, PERIDOT, TOPAZ, NECOIUM, RUBY, SAPPHIRE, AMETRINE,
                     ADAMANTITE, CARMOT, MORKITE, MYTHRIL, PROMETHEUM, RUNITE, UNOBTAINIUM,
                     AQUARIUM, BANGLUM, KYBER, MANGANESE, OSMIUM, PLATINUM, QUADRILLUM, SILVER,
                     STARRITE, TIN, ORICHALCUM,
@@ -758,7 +769,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
 
     /** Every block that IS this ore before a stone swallows it: stone form, deepslate form, Nether form. */
     public List<ResourceLocation> forms() {
-        return Stream.of(stoneOre, deepslateOre, netherOre).filter(Objects::nonNull).toList();
+        return Stream.of(stoneOre, deepslateOre, netherOre, endOre).filter(Objects::nonNull).toList();
     }
 
     /**

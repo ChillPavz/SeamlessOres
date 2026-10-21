@@ -39,6 +39,7 @@ final class ModdedPairs {
             case "minecraft:smooth_basalt" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "ruby", "sapphire", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "nether_banglum", "midas_gold", "palladium", "stormyx", "energized_tin", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium", "cinnabar", "pyrite", "sphalerite");
             case "mythicupgrades:aquamarine_schist" -> keys("necoium");
             case "mythicupgrades:citrine_schist" -> keys("necoium");
+            case "mythicupgrades:jade_schist" -> keys("ametrine");
             case "mythicupgrades:peridot_schist" -> keys("aquamarine", "necoium");
             case "mythicupgrades:sapphire_schist" -> keys("ruby");
             case "mythicupgrades:topaz_schist" -> keys("citrine", "necoium");

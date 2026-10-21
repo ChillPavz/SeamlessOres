@@ -15,6 +15,12 @@
     "silentgems:deepslate_alexandrite_ore"
    ]
   },
+  "ametrine": {
+   "mod": "mythicupgrades",
+   "forms": [
+    "mythicupgrades:ametrine_ore"
+   ]
+  },
   "antimony": {
    "mod": "modern_industrialization",
    "forms": [
@@ -8880,6 +8886,15 @@
      "1.20.1 forge"
     ],
     "rate": 19.07
+   }
+  },
+  "mythicupgrades:jade_schist": {
+   "ametrine": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 88.37
    }
   },
   "mythicupgrades:peridot_schist": {

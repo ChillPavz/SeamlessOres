@@ -9,7 +9,8 @@ import java.util.Set;
  * <p><b>Fixed</b>, for the stones other mods place: a refused pair is never registered, and worldgen
  * turns that ore into the stone wherever the stone swallows it, so no seam can appear. Never
  * configurable: the registered block set must not depend on config. The strict reading, plus a lore
- * rule for Create's four invented stones: each keeps only the ore Create ties it to, and fiction.
+ * rule for Create's four invented stones: each keeps only the ore Create ties it to, and fiction; and the
+ * End's lore: a crystalline End stone keeps gems and fiction.
  *
  * <p><b>The game's own rock</b> (granite, diorite, andesite, tuff, dripstone, basalt, blackstone), by the
  * same strict reading: a MODDED ore refused there is fixed too (never registered, the rock stays rock); a
@@ -210,6 +211,11 @@ public final class OreGeology {
 
     private static final Set<String> GAME_ROCK = Set.of("andesite", "basalt", "blackstone", "diorite", "dripstone", "granite", "tuff");
 
+    /** The End's crystalline stones: they keep gems, and fiction, only. */
+    private static final Set<String> END_GEM_STONES = Set.of("mythicupgrades_jade_schist");
+
+    private static final Set<String> GEMS = Set.of("alexandrite", "ametrine", "ammolite", "aquamarine", "black_diamond", "carnelian", "citrine", "diamond", "emerald", "garnet", "heliodor", "iceandfire_sapphire", "iolite", "jade", "kyanite", "lapis", "moldavite", "opal", "pearl", "peridot", "quartz", "rose_quartz", "ruby", "sapphire", "silents_aquamarine", "silents_citrine", "silents_peridot", "silents_ruby", "silents_sapphire", "silents_topaz", "tanzanite", "techreborn_ruby", "techreborn_sapphire", "topaz", "turquoise", "white_diamond");
+
     private static boolean rockRefuses(String host, String ore) {
         if ("dripstone".equals(host) && !COBBLEMON.contains(ore)) {
             return !DRIPSTONE_KEEPS.contains(ore) && !FICTION.contains(ore);
@@ -224,6 +230,9 @@ public final class OreGeology {
         }
         if (STRICT.getOrDefault(ore, Set.of()).contains(host)) {
             return true;
+        }
+        if (END_GEM_STONES.contains(host)) {
+            return !GEMS.contains(ore) && !FICTION.contains(ore);
         }
         final String keep = LORE.get(host);
         return keep != null && !keep.equals(ore) && !FICTION.contains(ore);

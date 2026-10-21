@@ -4016,6 +4016,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:mythicupgrades_jade_schist_ametrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:mythicupgrades_peridot_schist_aquamarine_ore",
       "required": false
     },

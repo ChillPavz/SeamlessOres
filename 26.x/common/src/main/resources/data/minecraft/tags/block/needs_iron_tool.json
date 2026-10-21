@@ -1605,6 +1605,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:mythicupgrades_jade_schist_ametrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_gold_ore",
       "required": false
     },

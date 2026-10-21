@@ -248,6 +248,7 @@ HOST_LOOK = {
     "mythicupgrades:peridot_schist": ("single", "mythicupgrades:block/peridot_schist"),
     "mythicupgrades:topaz_schist": ("single", "mythicupgrades:block/topaz_schist"),
     "mythicupgrades:sapphire_schist": ("single", "mythicupgrades:block/sapphire_schist"),
+    "mythicupgrades:jade_schist": ("single", "mythicupgrades:block/jade_schist"),
     "promenade:asphalt": ("single", "promenade:block/asphalt"),
     "promenade:blunite": ("single", "promenade:block/blunite"),
     "wilderwild:gabbro": ("mirrored_turned", "wilderwild:block/gabbro"),
@@ -407,7 +408,7 @@ ORE_DEFS = [
     # ores target the same replaceables tags as vanilla, so injecting them is balance-neutral.
     # Ruby and sapphire are netherrack-only, so their basalt/blackstone variants ADD ore, exactly
     # like our nether gold and quartz, and ride the same host toggles and bastion protection.
-    # Ametrine and jade are deliberately absent: end_stone only, and the End has no second stone.
+    # Jade has no variant: nothing places a stone over it in the End (ametrine, below, has one).
     {"name": "aquamarine", "overlay": "aquamarine", "source": "aquamarine_ore", "base": "stone",
      "mod": "mythicupgrades", "raw_drop": "mythicupgrades:aquamarine",
      "tiers": {"stone": "aquamarine_ore", "deepslate": "deepslate_aquamarine_ore"}},
@@ -430,6 +431,11 @@ ORE_DEFS = [
     {"name": "sapphire",   "overlay": "sapphire",   "source": "sapphire_ore",   "base": "netherrack",
      "mod": "mythicupgrades", "raw_drop": "mythicupgrades:sapphire",
      "tiers": {"nether": "sapphire_ore"}},
+    # Ametrine: an End ore (end_stone only), so its one form is the End one and no game rock takes it.
+    # Its only host is Mythic Upgrades' own jade schist, laid over the ametrine its End biome placed first.
+    {"name": "ametrine",   "overlay": "ametrine",   "source": "ametrine_ore",   "base": "end_stone",
+     "mod": "mythicupgrades", "raw_drop": "mythicupgrades:ametrine",
+     "tiers": {"end": "ametrine_ore"}},
 
     # --- Mythic Metals (mod id mythicmetals, MIT, Fabric only on every version) ------------------
     # KEEP IN SYNC WITH OreType.java. Hosts derived from the real jar's configured features; the
@@ -1364,8 +1370,10 @@ def generate_data():
                 # so consumers treat a variant exactly like its counterpart.
                 # Cinnabar has no ground tag of its own, and is neither stone nor netherrack.
                 if host_cfg["tier"] != "cinnabar":
-                    ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}[source_tier]
-                    ores_in_ground.setdefault(ground, []).append(entry)
+                    # An End form has no ground tag: the convention names only stone, deepslate and netherrack.
+                    ground = {"stone": "stone", "deepslate": "deepslate", "nether": "netherrack"}.get(source_tier)
+                    if ground:
+                        ores_in_ground.setdefault(ground, []).append(entry)
 
     # Tags MERGE with vanilla's by default (no "replace": true), so these add to the existing lists
     # rather than clobbering them. Getting this wrong would unregister 417 vanilla pickaxe entries.
