@@ -41,7 +41,7 @@ CLASSES = {
     # mafic volcanic; deep blackstone is the blackstone Terralith lays in its caves
     "VOLC": ["minecraft_smooth_basalt", "create_scoria", "minecraft_blackstone", "embellishcraft_basalt"],
     # felsic volcanic: Twigs' rhyolite
-    "FELS": ["twigs_rhyolite"],
+    "FELS": ["twigs_rhyolite", "biomeswevegone_dacite", "biomeswevegone_white_dacite"],
     # residual laterite: TFMG's bauxite, the weathering crust aluminium is mined from
     "LATE": ["tfmg_bauxite"],
     # massive sulphide: TFMG's galena, a lead-zinc ore body as rock
@@ -53,6 +53,9 @@ CLASSES = {
     # chert and jasper, silica sedimentary (owner, 22 Oct 2026): Quark's jasper. Banded iron formation
     # (jaspilite) and the sea-floor exhalative beds: iron, manganese, copper, lead-zinc, gold, and fiction.
     "CHRT": ["quark_jasper"],
+    # red-bed sandstone (owner, 22 Oct 2026): Oh The Biomes We've Gone's red rock. Hematite-cemented continental
+    # sandstone: iron, red-bed copper, roll-front uranium and vanadium (Colorado Plateau), lead-zinc, gold, salt.
+    "RBED": ["biomeswevegone_red_rock"],
 }
 ALL = list(CLASSES)
 
@@ -72,9 +75,9 @@ FAMILIES = [
     # black shale the seams lie between keep it.
     (["coal", "lignite_coal"], _all_but("LIME", "ASPH", "SHAL")),
     # Colombian emerald is in black shale and carbonate; schist emerald is the classic pegmatite contact.
-    (["emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SERP", "CHRT")),
+    (["emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SERP", "CHRT", "RBED")),
     # Lazurite rock is lazurite with calcite: marble and calcite only.
-    (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL", "SERP", "CHRT")),
+    (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL", "SERP", "CHRT", "RBED")),
     # A kimberlite pipe, which none of these is.
     # Born in Chaos' infected diamond is diamond, whatever lives in it.
     (["diamond", "bort", "white_diamond", "black_diamond", "infected_diamond"], _hosts(*ALL)),
@@ -85,7 +88,7 @@ FAMILIES = [
     (["zinc", "galena", "techreborn_lead", "lead", "mi_lead", "ie_lead", "mek_lead", "dense_lead",
       "oreganized_lead", "antimony"], _hosts("PLUT", "LATE", "SERP")),
     # Manganese also forms in laterite.
-    (["manganese"], _hosts("PLUT", "SERP")),
+    (["manganese"], _hosts("PLUT", "SERP", "RBED")),
     # Carbonate replacement tin, and rhyolite-hosted tin (Durango).
     (["tin", "energized_tin", "techreborn_tin", "mi_tin", "mek_tin", "dense_tin"],
      _all_but("LIME", "MARB", "FELS")),
@@ -104,10 +107,10 @@ FAMILIES = [
     # not in a laterite, not in a lead-zinc body. Extreme Reactors' yellorite is its uranium ore.
     (["techreborn_uranium", "uranium", "ie_uranium", "mek_uranium", "dense_uranium", "yellorite",
       "uraninite", "uraninite_poor", "uraninite_dense"], _hosts("PLUT", "VOLC", "LATE", "SULF", "SERP", "CHRT")),
-    # Rock salt is an evaporite, laid down with carbonate.
-    (["salt"], _all_but("LIME")),
+    # Rock salt is an evaporite, laid down with carbonate and in red beds.
+    (["salt"], _all_but("LIME", "RBED")),
     # Fluorite: Mississippi Valley carbonate, skarn marble, calcite veins, rhyolite (Mexico), lead-zinc gangue.
-    (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL", "SERP", "CHRT")),
+    (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL", "SERP", "CHRT", "RBED")),
     # Scheelite skarn at limestone and marble contacts, and scheelite in schist.
     (["tungsten"], _all_but("LIME", "MARB", "SCH")),
     # Monazite and thorium: metamorphic monazite in pelitic schist.

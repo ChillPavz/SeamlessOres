@@ -191,6 +191,9 @@ HOST_LOOK = {
     "embellishcraft:gneiss": ("single", "embellishcraft:block/gneiss"),
     "embellishcraft:jade": ("single", "embellishcraft:block/jade"),
     "embellishcraft:larvikite": ("single", "embellishcraft:block/larvikite"),
+    "biomeswevegone:dacite": ("single", "biomeswevegone:block/dacite"),
+    "biomeswevegone:white_dacite": ("single", "biomeswevegone:block/white_dacite"),
+    "biomeswevegone:red_rock": ("single", "biomeswevegone:block/red_rock"),
     "quark:limestone": ("single", "quark:block/limestone"),
     "quark:jasper": ("single", "quark:block/jasper"),
     "quark:shale": ("single", "quark:block/shale"),
@@ -220,6 +223,7 @@ STONE_MODS = {
     "create": {"display": "Create", "bands": "NeoForge"},
     "born_in_chaos_v1": {"display": "Born in Chaos", "bands": "NeoForge"},
     "embellishcraft": {"display": "EmbellishCraft", "bands": "NeoForge"},
+    "biomeswevegone": {"display": "Oh The Biomes We've Gone", "bands": "Fabric, NeoForge and Forge"},
     "quark": {"display": "Quark", "bands": "NeoForge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "NeoForge"},
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and NeoForge"},
@@ -236,6 +240,7 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "create": jar("create-1.21.1-6.0.10.jar"),
               "born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
               "embellishcraft": jar("embellishcraft-1.21.1-8.0.0.4.jar"),
+              "biomeswevegone": jar("Oh-The-Biomes-Weve-Gone-NeoForge-2.6.3.jar"),
               "quark": jar("Quark-4.1-487.jar"),
               "forbidden_arcanus": jar("1.21.1-forbidden_arcanus-2.6.1.jar"),
               "meadow": jar("letsdo-meadow-neoforge-1.4.8.jar"),
@@ -1006,6 +1011,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "blockus": ('fabric',),
     "born_in_chaos_v1": ('neoforge',),   # Born in Chaos, both platforms: NeoForge only on this band
     "embellishcraft": ('neoforge',),   # EmbellishCraft: NeoForge only on this band
+    "biomeswevegone": ("fabric", "neoforge", "forge"),   # Oh The Biomes We've Gone: Fabric, NeoForge and Forge
     "quark": ('neoforge',),   # Quark: NeoForge only on this band
     "forbidden_arcanus": ('neoforge',),
     "meadow": ('fabric', 'neoforge'),

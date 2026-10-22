@@ -55,6 +55,14 @@
     {
       "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_fire_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_fire_stone_ore",
+      "required": false
     }
   ]
 }

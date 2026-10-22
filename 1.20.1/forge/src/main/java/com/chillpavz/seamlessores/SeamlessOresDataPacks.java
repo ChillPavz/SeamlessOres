@@ -64,6 +64,18 @@ public final class SeamlessOresDataPacks {
      */
     private static final List<String> PACKED_MODS = List.of(
             "bigreactors",
+            "biomeswevegone",
+            "biomeswevegone.cobblemon",
+            "biomeswevegone.create",
+            "biomeswevegone.densemekanism",
+            "biomeswevegone.energizedpower",
+            "biomeswevegone.iceandfire",
+            "biomeswevegone.malum",
+            "biomeswevegone.mysticalagriculture",
+            "biomeswevegone.occultism",
+            "biomeswevegone.oreganized",
+            "biomeswevegone.powah",
+            "biomeswevegone.tfmg",
             "born_in_chaos_v1",
             "born_in_chaos_v1.bigreactors",
             "born_in_chaos_v1.cobblemon",

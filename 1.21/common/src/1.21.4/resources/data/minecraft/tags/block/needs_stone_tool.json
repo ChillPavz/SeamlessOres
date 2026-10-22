@@ -266,6 +266,66 @@
     {
       "id": "seamlessores:wilderwild_gabbro_copper_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_tfmg_lead_ore",
+      "required": false
     }
   ]
 }

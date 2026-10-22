@@ -99,6 +99,10 @@
     {
       "id": "seamlessores:spawn_reefstone_powah_uraninite_poor_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_powah_uraninite_poor_ore",
+      "required": false
     }
   ]
 }

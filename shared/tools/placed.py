@@ -231,7 +231,8 @@ MODEL_SUFFIXES = {"single": ("",), "column": ("",), "turned": ("",), "mirrored":
 
 # Stones ore never forms in today (in no ore replaceables tag): a variant there ADDS ore, so its switch is
 # Off by default (owner, 21 Oct 2026; the opt-in rule). Host names, the same on every band.
-ADDS_ORE_HOSTS = {"regions_unexplored_argillite", "regions_unexplored_chalk"}
+ADDS_ORE_HOSTS = {"regions_unexplored_argillite", "regions_unexplored_chalk", "biomeswevegone_dacite",
+                  "biomeswevegone_white_dacite", "biomeswevegone_red_rock"}
 
 
 def gate_of(host_cfg, ore):

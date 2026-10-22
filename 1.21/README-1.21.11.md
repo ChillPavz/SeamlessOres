@@ -213,7 +213,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**377 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**405 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric, NeoForge and Forge)
 
@@ -399,6 +399,25 @@ Stones: Gabbro `wilderwild_gabbro`
 | Silver | `silver` | Mythic Metals `mythicmetals` | Gabbro |
 | Orichalcum | `orichalcum` | Mythic Metals `mythicmetals` | Gabbro |
 | Gleaming | `gleaming` | Things `things` | Gabbro |
+
+**Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric, NeoForge and Forge)
+
+Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacite`, Red Rock `biomeswevegone_red_rock`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Iron | `iron` |  | every stone |
+| Copper | `copper` |  | every stone |
+| Gold | `gold` |  | every stone |
+| Zinc | `zinc` | Create `create` | every stone |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | White Dacite, Red Rock |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | White Dacite, Red Rock |
+| Starrite | `starrite` | Mythic Metals `mythicmetals` | Dacite, White Dacite |
+| Tin | `tin` | Mythic Metals `mythicmetals` | Dacite, White Dacite |
+| Dense Tin | `dense_tin` | Dense Mekanism `densemekanism` | Dacite, White Dacite |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | White Dacite |
+| Lead | `lead` | Create: TFMG `tfmg` | every stone |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Dacite, White Dacite |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -417,7 +436,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 586 blocks takes **69 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 614 blocks takes **69 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png

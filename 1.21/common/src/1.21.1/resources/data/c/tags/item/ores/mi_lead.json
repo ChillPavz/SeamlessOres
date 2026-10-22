@@ -119,6 +119,14 @@
     {
       "id": "seamlessores:spawn_reefstone_modern_industrialization_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_modern_industrialization_lead_ore",
+      "required": false
     }
   ]
 }

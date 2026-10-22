@@ -19,6 +19,14 @@
     {
       "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_mythicmetals_tin_ore",
+      "required": false
     }
   ]
 }

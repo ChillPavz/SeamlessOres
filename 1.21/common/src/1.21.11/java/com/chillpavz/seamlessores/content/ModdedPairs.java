@@ -21,6 +21,9 @@ final class ModdedPairs {
     /** The modded ores the stone with this id swallows; none for a stone with no modded pairs. */
     static List<OreType> of(String host) {
         return switch (host) {
+            case "biomeswevegone:dacite" -> keys("osmium", "starrite", "tin", "dense_osmium", "dense_tin", "lead", "energized_tin", "thorium");
+            case "biomeswevegone:red_rock" -> keys("aquarium", "banglum", "osmium", "tin", "dense_osmium", "dense_tin", "lead", "energized_tin", "thorium");
+            case "biomeswevegone:white_dacite" -> keys("aquarium", "banglum", "osmium", "starrite", "tin", "dense_osmium", "dense_tin", "uraninite_poor", "lead", "energized_tin", "thorium");
             case "blockus:bluestone" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "orichalcum", "gleaming");
             case "blockus:limestone" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "starrite", "tin", "orichalcum", "energized_tin", "gleaming");
             case "blockus:marble" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "gleaming");
@@ -58,6 +61,7 @@ final class ModdedPairs {
             case "create" -> here.equals("fabric");
             case "promenade" -> here.equals("fabric");
             case "wilderwild" -> here.equals("fabric");
+            case "biomeswevegone" -> here.equals("fabric") || here.equals("neoforge") || here.equals("forge");
             // END GENERATED stone loaders
             default -> false;
         };

@@ -156,6 +156,18 @@
     {
       "id": "seamlessores:wilderwild_gabbro_iron_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_iron_ore",
+      "required": false
     }
   ]
 }

@@ -105,6 +105,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_tfmg_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_immersiveengineering_lead_ore",
       "required": false
     },
@@ -270,6 +282,18 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_oreganized_lead_ore",
       "required": false
     }
   ]

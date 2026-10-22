@@ -302,6 +302,18 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean spawnReefstone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean biomeswevegoneDacite = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean biomeswevegoneWhiteDacite = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean biomeswevegoneRedRock = false;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -567,6 +579,9 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("promenade_asphalt", promenadeAsphalt);
         values.hosts.put("promenade_blunite", promenadeBlunite);
         values.hosts.put("spawn_reefstone", spawnReefstone);
+        values.hosts.put("biomeswevegone_dacite", biomeswevegoneDacite);
+        values.hosts.put("biomeswevegone_white_dacite", biomeswevegoneWhiteDacite);
+        values.hosts.put("biomeswevegone_red_rock", biomeswevegoneRedRock);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

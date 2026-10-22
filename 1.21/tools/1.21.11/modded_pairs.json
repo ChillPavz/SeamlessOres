@@ -385,6 +385,183 @@
   }
  },
  "hosts": {
+  "biomeswevegone:dacite": {
+   "dense_osmium": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 54.04
+   },
+   "dense_tin": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 2.33
+   },
+   "energized_tin": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 4.37
+   },
+   "lead": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 2.89
+   },
+   "osmium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 8.37
+   },
+   "starrite": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 1.11
+   },
+   "thorium": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 5.97
+   },
+   "tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 9.86
+   }
+  },
+  "biomeswevegone:red_rock": {
+   "aquarium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 0.23
+   },
+   "banglum": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 0.21
+   },
+   "dense_osmium": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 4.12
+   },
+   "dense_tin": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.32
+   },
+   "energized_tin": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.86
+   },
+   "lead": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.36
+   },
+   "osmium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 0.72
+   },
+   "thorium": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.52
+   },
+   "tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 0.94
+   }
+  },
+  "biomeswevegone:white_dacite": {
+   "aquarium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 2.41
+   },
+   "banglum": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 2.17
+   },
+   "dense_osmium": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 20.87
+   },
+   "dense_tin": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 3.41
+   },
+   "energized_tin": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 9.08
+   },
+   "lead": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 3.79
+   },
+   "osmium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 7.63
+   },
+   "starrite": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 0.62
+   },
+   "thorium": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 5.45
+   },
+   "tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 9.97
+   },
+   "uraninite_poor": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.21
+   }
+  },
   "blockus:bluestone": {
    "adamantite": {
     "where": [

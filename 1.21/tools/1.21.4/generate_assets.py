@@ -147,6 +147,9 @@ HOST_LOOK = {
     "promenade:asphalt": ("single", "promenade:block/asphalt"),
     "promenade:blunite": ("single", "promenade:block/blunite"),
     "wilderwild:gabbro": ("mirrored_turned", "wilderwild:block/gabbro"),
+    "biomeswevegone:dacite": ("single", "biomeswevegone:block/dacite"),
+    "biomeswevegone:white_dacite": ("single", "biomeswevegone:block/white_dacite"),
+    "biomeswevegone:red_rock": ("single", "biomeswevegone:block/red_rock"),
 }
 
 # The mods that PLACE a host stone, for the README and the config screen, and the jar each one's
@@ -159,12 +162,14 @@ STONE_MODS = {
     "create": {"display": "Create", "bands": "Create Fly, Fabric, read from its 1.21.8 build"},
     "promenade": {"display": "Promenade", "bands": "Fabric, read from its 1.21.9 build"},
     "wilderwild": {"display": "Wilder Wild", "bands": "Fabric, read from its 1.21.10 build"},
+    "biomeswevegone": {"display": "Oh The Biomes We've Gone", "bands": "Fabric and NeoForge, its 1.21.4 build"},
 }
 STONE_JARS = {"minecraft": CLIENT_JAR,
               "blockus": jar("blockus-2.14.1+1.21.10.jar"),
               "create": jar("create-fly-1.21.8-6.0.9-2.jar"),
               "promenade": jar("1.21.4-promenade-5.3.1.jar"),
-              "wilderwild": jar("WilderWild-4.2.1-mc1.21.10.jar")}
+              "wilderwild": jar("WilderWild-4.2.1-mc1.21.10.jar"),
+              "biomeswevegone": jar("Oh-The-Biomes-Weve-Gone-NeoForge-3.2.5.jar")}
 HOST_TABLE = era_file(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
                                    "common"), BAND, "java/com/chillpavz/seamlessores/content/HostStone.java")
 
@@ -665,6 +670,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "blockus": ('fabric',),
     "promenade": ('fabric',),
     "wilderwild": ('fabric',),
+    "biomeswevegone": ("fabric", "neoforge"),   # Oh The Biomes We've Gone: Fabric and NeoForge
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 

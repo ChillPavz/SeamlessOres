@@ -127,6 +127,18 @@
     {
       "id": "seamlessores:spawn_reefstone_iceandfire_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_iceandfire_silver_ore",
+      "required": false
     }
   ]
 }

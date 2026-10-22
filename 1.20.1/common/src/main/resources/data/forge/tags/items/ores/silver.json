@@ -399,6 +399,30 @@
     {
       "id": "seamlessores:spawn_reefstone_occultism_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_oreganized_silver_ore",
+      "required": false
     }
   ]
 }

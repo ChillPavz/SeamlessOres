@@ -245,6 +245,20 @@ public final class HostStone {
             MapColor.TERRACOTTA_GRAY,
             COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
 
+    // Oh The Biomes We've Gone: its rock is in no ore tag and is laid by surface rules, before every feature, so
+    // a variant here ADDS ore (its switch is Off by default). Dacite fills the top 10 blocks of stone in Dacite
+    // Ridges, white dacite the same in Skyris Vale and on the Dacite Shore, red rock the floor where the surface
+    // noise is high in Red Rock Valley and Peaks. Map colours read from its BWGBlocks.
+    public static final HostStone BIOMESWEVEGONE_DACITE = placed("biomeswevegone", "dacite",
+            OreTier.STONE, MapColor.TERRACOTTA_BROWN,
+            COAL, IRON, COPPER, GOLD, EMERALD, ZINC);
+    public static final HostStone BIOMESWEVEGONE_WHITE_DACITE = placed("biomeswevegone", "white_dacite",
+            OreTier.STONE, MapColor.TERRACOTTA_WHITE,
+            COAL, IRON, COPPER, GOLD, EMERALD, LAPIS, ZINC);
+    public static final HostStone BIOMESWEVEGONE_RED_ROCK = placed("biomeswevegone", "red_rock",
+            OreTier.STONE, MapColor.COLOR_RED,
+            COAL, IRON, COPPER, GOLD, EMERALD, ZINC);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -258,7 +272,8 @@ public final class HostStone {
             QUARK_LIMESTONE, QUARK_JASPER, QUARK_SHALE,
             FORBIDDEN_ARCANUS_DARKSTONE, MEADOW_LIMESTONE, MYTHICUPGRADES_AQUAMARINE_SCHIST,
             MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST, MYTHICUPGRADES_TOPAZ_SCHIST,
-            MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST, PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE);
+            MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST, PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE,
+            BIOMESWEVEGONE_DACITE, BIOMESWEVEGONE_WHITE_DACITE, BIOMESWEVEGONE_RED_ROCK);
 
     private final String name;
     private final ResourceLocation id;

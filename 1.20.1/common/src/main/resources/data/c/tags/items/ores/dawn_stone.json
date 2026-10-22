@@ -27,6 +27,14 @@
     {
       "id": "seamlessores:embellishcraft_gneiss_cobblemon_dawn_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_dawn_stone_ore",
+      "required": false
     }
   ]
 }

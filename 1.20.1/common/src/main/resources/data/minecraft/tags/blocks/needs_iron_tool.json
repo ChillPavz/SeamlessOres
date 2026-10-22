@@ -2334,6 +2334,58 @@
     {
       "id": "seamlessores:spawn_reefstone_mysticalagriculture_prosperity_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_expores_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_expores_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_expores_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_oreganized_silver_ore",
+      "required": false
     }
   ]
 }
