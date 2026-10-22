@@ -985,7 +985,7 @@ for _ore in ORE_DEFS:
 
 # This generator writes ONE band of the 1.21 folder: everything it emits goes to
 # <module>/src/<BAND>/resources, which only that band's build compiles (see settings.gradle).
-BAND_LOADERS = {"1.21.1": ("fabric", "neoforge", "forge"), "1.21.4": ("fabric", "neoforge"),
+BAND_LOADERS = {"1.21.1": ("fabric", "neoforge", "forge"),
                 "1.21.11": ("fabric", "neoforge", "forge")}[BAND]
 
 

@@ -15,7 +15,7 @@ java {
 
 // ERA SOURCE FOLDERS. What differs between the 1.21.x bands lives in src/<era>/java and
 // src/<era>/resources, where <era> names the bands that share those bytes, joined by '+':
-// src/1.21.11/ is that band's alone, src/1.21.1+1.21.4/ goes into both of those builds. The band
+// src/1.21.11/ is that band's alone, a src/1.21.1+1.21.11/ would go into both builds. The band
 // comes from -Pmc (settings.gradle); a folder that names another band is never compiled.
 ext.bandEraDirs = { File moduleDir ->
     (new File(moduleDir, 'src').listFiles() ?: new File[0])

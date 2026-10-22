@@ -14,8 +14,8 @@ anything that differs in even one band stays in that band's own source tree.
 | `gradle/` | script plugins the bands apply |
 | `tools/` | Python the bands' tools import |
 
-Bands are named exactly, never by toolchain folder: `1.20.1`, `1.21.1`, `1.21.4`, `1.21.11`, `26.x`.
-So `eras/1.21.1+1.21.4+1.21.11+26.x/common` is common code for those four bands and no other.
+Bands are named exactly, never by toolchain folder: `1.20.1`, `1.21.1`, `1.21.11`, `26.x`.
+So `eras/1.21.1+1.21.11+26.x/common` is common code for those three bands and no other.
 
 Something several loaders of ONE toolchain folder share stays inside that folder, as
 `<toolchain>/<a>+<b>/src/<main or band>/java`, like `cloth-config/`.

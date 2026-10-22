@@ -44,14 +44,13 @@ plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
 }
 
-// ONE FOLDER, THREE BUILDS. -Pmc picks a file in versions/: everything that changes with
+// ONE FOLDER, TWO BUILDS. -Pmc picks a file in versions/: everything that changes with
 // Minecraft (versions, ranges, the mod version while the bands still differ, which loaders are
 // built) lives there and nowhere else, so no stale value can shadow it.
 //   ./gradlew build -Pmc=1.21.1    Fabric, NeoForge, Forge 1.21-1.21.1
-//   ./gradlew build -Pmc=1.21.4    Fabric, NeoForge 1.21.4-1.21.10
 //   ./gradlew build -Pmc=1.21.11   Fabric, NeoForge, Forge 1.21.11
 // Era source folders are found by name: src/<era>/ is compiled when <era>, split on '+', names
-// this band (src/1.21.1+1.21.4/ goes into both of those builds). tools/build_all.py runs all three.
+// this band. tools/build_all.py runs both.
 def band = providers.gradleProperty('mc').getOrElse('1.21.11')
 def bandFile = file("versions/${band}.properties")
 if (!bandFile.exists()) {

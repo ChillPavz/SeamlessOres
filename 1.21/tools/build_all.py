@@ -2,7 +2,7 @@
 """Build every 1.21.x band from this one folder.
 
     py -3 tools/build_all.py              every band in versions/
-    py -3 tools/build_all.py 1.21.4       just the bands named
+    py -3 tools/build_all.py 1.21.11      just the bands named
 
 Each band is `gradlew build -Pmc=<band>`. Jars carry the band's Minecraft version in their name,
 so all bands sit side by side in each loader's build/libs. Gradle runs on JDK 24 here (Gradle

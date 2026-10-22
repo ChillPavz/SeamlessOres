@@ -6,7 +6,7 @@
 //   shared/loaders/<a>+<b>/{java,resources}          every band of both loaders (forge+neoforge)
 //   shared/eras/<bands>/<module>/{java,resources}    only the bands named, joined by '+'
 //   <toolchain>/<a>+<b>/src/<main|era>/{java,resources}   several loaders of ONE toolchain folder
-// An era folder is named by exact bands only (1.20.1, 1.21.1, 1.21.4, 1.21.11, 26.x), never by a
+// An era folder is named by exact bands only (1.20.1, 1.21.1, 1.21.11, 26.x), never by a
 // toolchain folder. A module folder may name several modules the same way (fabric+forge).
 //
 // Applied by every module's build.gradle, after the band's own era folders. Plain Groovy, so it
