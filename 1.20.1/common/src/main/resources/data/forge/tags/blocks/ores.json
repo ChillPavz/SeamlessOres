@@ -2225,6 +2225,10 @@
     },
     "seamlessores:diorite_redstone_ore",
     {
+      "id": "seamlessores:diorite_scalinghealth_power_crystal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_silentgems_citrine_ore",
       "required": false
     },
@@ -2387,6 +2391,10 @@
       "required": false
     },
     "seamlessores:dripstone_redstone_ore",
+    {
+      "id": "seamlessores:dripstone_scalinghealth_heart_crystal_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:dripstone_techreborn_bauxite_ore",
       "required": false
@@ -3179,6 +3187,14 @@
       "required": false
     },
     "seamlessores:granite_redstone_ore",
+    {
+      "id": "seamlessores:granite_scalinghealth_heart_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_scalinghealth_power_crystal_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:granite_silentgems_citrine_ore",
       "required": false

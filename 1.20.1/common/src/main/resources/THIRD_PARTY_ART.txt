@@ -134,6 +134,10 @@ Powah by owmii, Technici4n, shartte, LGPL-3.0:
   assets/seamlessores/textures/block/uraninite_overlay.png
   assets/seamlessores/textures/block/uraninite_poor_overlay.png
 
+Scaling Health by SilentChaos512, MIT:
+  assets/seamlessores/textures/block/heart_crystal_overlay.png
+  assets/seamlessores/textures/block/power_crystal_overlay.png
+
 Silent Gear by SilentChaos512, MIT:
   assets/seamlessores/textures/block/bort_overlay.png
 

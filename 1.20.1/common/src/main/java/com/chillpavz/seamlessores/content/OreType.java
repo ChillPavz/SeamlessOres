@@ -744,6 +744,18 @@ public record OreType(String name, String key, String overlay, String deepslateO
             null, null, of("oresabovediamonds", "nether_black_opal_ore"),
             UniformInt.of(25, 75), null, false, Set.of());
 
+    // --- Scaling Health (mod id scalinghealth, MIT). Forge at 1.20.1: 3.0 hardness, 15.0 blast resistance, 1 to 5 XP ---
+    public static final OreType SH_HEART_CRYSTAL = ore(
+            "heart_crystal", "heart_crystal", null, "scalinghealth",
+            of("scalinghealth", "heart_crystal_ore"), of("scalinghealth", "deepslate_heart_crystal_ore"), null,
+            UniformInt.of(1, 5), null, false, Set.of())
+            .withStrength(3.0F, 15.0F, 3.0F, 15.0F);
+    public static final OreType SH_POWER_CRYSTAL = ore(
+            "power_crystal", "power_crystal", null, "scalinghealth",
+            of("scalinghealth", "power_crystal_ore"), of("scalinghealth", "deepslate_power_crystal_ore"), null,
+            UniformInt.of(1, 5), null, false, Set.of())
+            .withStrength(3.0F, 15.0F, 3.0F, 15.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -776,7 +788,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     BR_URANIUM,
                     EMBERS_LEAD, EMBERS_SILVER,
                     CTD_ALUMINUM, CTD_TITANIUM,
-                    OAD_AMETHYST, OAD_NETHER_AMETHYST, OAD_BLACK_OPAL, OAD_NETHER_BLACK_OPAL);
+                    OAD_AMETHYST, OAD_NETHER_AMETHYST, OAD_BLACK_OPAL, OAD_NETHER_BLACK_OPAL,
+                    SH_HEART_CRYSTAL, SH_POWER_CRYSTAL);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

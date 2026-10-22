@@ -276,6 +276,14 @@
       "id": "seamlessores:granite_oresabovediamonds_amethyst_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_scalinghealth_heart_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_scalinghealth_power_crystal_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -478,6 +486,10 @@
     },
     {
       "id": "seamlessores:diorite_create_tank_defenses_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_scalinghealth_power_crystal_ore",
       "required": false
     },
     "seamlessores:andesite_coal_ore",
@@ -821,6 +833,10 @@
     },
     {
       "id": "seamlessores:dripstone_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_scalinghealth_heart_crystal_ore",
       "required": false
     },
     {

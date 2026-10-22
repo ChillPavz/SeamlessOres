@@ -530,6 +530,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean oresAboveDiamonds = true;
 
+    // --- Scaling Health ------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("scaling_health")
+    @ConfigEntry.Gui.Tooltip
+    public boolean scalingHealth = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -659,6 +665,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.embersRekindled = embersRekindled;
         values.createTankDefenses = createTankDefenses;
         values.oresAboveDiamonds = oresAboveDiamonds;
+        values.scalingHealth = scalingHealth;
 
         SeamlessOresConfig.apply(values);
     }

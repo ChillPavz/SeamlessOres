@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_scalinghealth_heart_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_scalinghealth_heart_crystal_ore",
+      "required": false
+    }
+  ]
+}

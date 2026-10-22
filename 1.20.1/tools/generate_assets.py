@@ -179,7 +179,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "biggerreactors": jar("biggerreactors-1.20.1-0.6.0-beta.10.5.jar"),
             "embers": jar("embersrekindled-1.20.1-1.4.7.jar"),
             "create_tank_defenses": jar("CreateTankDefenses-v0.80.jar"),
-            "oresabovediamonds": jar("oresabovediamonds-10.0.1b.jar")}
+            "oresabovediamonds": jar("oresabovediamonds-10.0.1b.jar"),
+            "scalinghealth": jar("ScalingHealth-1.20.1-8.0.2+9.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -389,6 +390,8 @@ MODS = {
                        "licence": "AFL-3.0", "author": "ItsRuby05"},
     "oresabovediamonds": {"display": "Ores Above Diamonds", "category": "ores_above_diamonds",
                        "licence": "MIT", "author": "Squidsword"},
+    "scalinghealth": {"display": "Scaling Health", "category": "scaling_health",
+                       "licence": "MIT", "author": "SilentChaos512"},
 }
 
 ORE_DEFS = [
@@ -941,6 +944,13 @@ ORE_DEFS = [
     {"name": "nether_black_opal", "overlay": "nether_black_opal", "source": "nether_black_opal_ore", "base": "netherrack",
      "mod": "oresabovediamonds",
      "tiers": {"nether": "nether_black_opal_ore"}},
+    # --- Scaling Health (mod id scalinghealth, MIT). Forge at 1.20.1: 3.0 hardness, 15.0 blast resistance, 1 to 5 XP ---
+    {"name": "heart_crystal", "overlay": "heart_crystal", "source": "heart_crystal_ore", "base": "stone",
+     "mod": "scalinghealth",
+     "tiers": {"stone": "heart_crystal_ore", "deepslate": "deepslate_heart_crystal_ore"}},
+    {"name": "power_crystal", "overlay": "power_crystal", "source": "power_crystal_ore", "base": "stone",
+     "mod": "scalinghealth",
+     "tiers": {"stone": "power_crystal_ore", "deepslate": "deepslate_power_crystal_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1076,6 +1086,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "embers": ('forge',),
     "create_tank_defenses": ('forge',),
     "oresabovediamonds": ('forge',),
+    "scalinghealth": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1222,6 +1233,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.scaling_health": "Scaling Health",
         f"text.autoconfig.{MOD_ID}.category.ores_above_diamonds": "Ores Above Diamonds",
         f"text.autoconfig.{MOD_ID}.category.create_tank_defenses": "Create: Tank Defenses",
         f"text.autoconfig.{MOD_ID}.category.embers_rekindled": "Embers Rekindled",
@@ -1254,6 +1266,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.scalingHealth": "Scaling Health: variants",
+        f"text.autoconfig.{MOD_ID}.option.scalingHealth.@Tooltip":
+            "Generate host-matched heart and power crystal ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.oresAboveDiamonds": "Ores Above Diamonds: variants",
         f"text.autoconfig.{MOD_ID}.option.oresAboveDiamonds.@Tooltip":

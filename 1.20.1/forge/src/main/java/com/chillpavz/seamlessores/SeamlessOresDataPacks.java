@@ -201,6 +201,7 @@ public final class SeamlessOresDataPacks {
             "quark.powah",
             "quark.silentgems",
             "quark.tfmg",
+            "scalinghealth",
             "silentgear",
             "silentgems",
             "spawn",
