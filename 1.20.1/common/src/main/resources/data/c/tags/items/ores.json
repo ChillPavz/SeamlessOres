@@ -23,6 +23,14 @@
     },
     "seamlessores:andesite_copper_ore",
     {
+      "id": "seamlessores:andesite_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_create_tank_defenses_titanium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_create_zinc_ore",
       "required": false
     },
@@ -2043,6 +2051,14 @@
     },
     "seamlessores:diorite_copper_ore",
     {
+      "id": "seamlessores:diorite_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_create_tank_defenses_titanium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_create_zinc_ore",
       "required": false
     },
@@ -2242,6 +2258,10 @@
       "required": false
     },
     "seamlessores:dripstone_copper_ore",
+    {
+      "id": "seamlessores:dripstone_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:dripstone_create_zinc_ore",
       "required": false
@@ -2923,6 +2943,10 @@
     "seamlessores:granite_copper_ore",
     {
       "id": "seamlessores:granite_create_new_age_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_create_tank_defenses_aluminum_ore",
       "required": false
     },
     {
@@ -4573,6 +4597,10 @@
       "required": false
     },
     "seamlessores:tuff_copper_ore",
+    {
+      "id": "seamlessores:tuff_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:tuff_create_zinc_ore",
       "required": false

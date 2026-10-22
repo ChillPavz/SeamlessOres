@@ -518,6 +518,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean embersRekindled = true;
 
+    // --- Create: Tank Defenses -----------------------------------------------------------------------
+
+    @ConfigEntry.Category("create_tank_defenses")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createTankDefenses = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -645,6 +651,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.createNewAge = createNewAge;
         values.biggerReactors = biggerReactors;
         values.embersRekindled = embersRekindled;
+        values.createTankDefenses = createTankDefenses;
 
         SeamlessOresConfig.apply(values);
     }

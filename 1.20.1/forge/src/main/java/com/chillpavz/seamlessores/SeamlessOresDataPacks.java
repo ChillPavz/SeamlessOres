@@ -109,6 +109,7 @@ public final class SeamlessOresDataPacks {
             "create.silentgems",
             "create.tfmg",
             "create_new_age",
+            "create_tank_defenses",
             "densemekanism",
             "embellishcraft",
             "embellishcraft.biggerreactors",

@@ -222,6 +222,9 @@ public final class SeamlessOresConfig {
     /** Whether Embers Rekindled variants generate. Pure restyle. */
     public static boolean embersRekindled = true;
 
+    /** Whether Create: Tank Defenses variants generate. Pure restyle. */
+    public static boolean createTankDefenses = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -267,6 +270,7 @@ public final class SeamlessOresConfig {
             case "create_new_age" -> createNewAge;
             case "biggerreactors" -> biggerReactors;
             case "embers" -> embersRekindled;
+            case "create_tank_defenses" -> createTankDefenses;
             default -> true;
         };
     }
@@ -466,6 +470,7 @@ public final class SeamlessOresConfig {
         public boolean createNewAge = true;
         public boolean biggerReactors = true;
         public boolean embersRekindled = true;
+        public boolean createTankDefenses = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -533,6 +538,7 @@ public final class SeamlessOresConfig {
         createNewAge = values.createNewAge;
         biggerReactors = values.biggerReactors;
         embersRekindled = values.embersRekindled;
+        createTankDefenses = values.createTankDefenses;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

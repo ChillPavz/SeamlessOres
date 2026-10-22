@@ -715,6 +715,16 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("embers", "silver_ore"), of("embers", "deepslate_silver_ore"), null,
             NONE, null, false, Set.of());
 
+    // --- Create: Tank Defenses (mod id create_tank_defenses, AFL-3.0). Forge at 1.20.1: iron convention, no XP; its tool tier is checked in code (aluminium iron, titanium diamond) ---
+    public static final OreType CTD_ALUMINUM = ore(
+            "tankdefenses_aluminum", "tankdefenses_aluminum", null, "create_tank_defenses",
+            of("create_tank_defenses", "aluminum_ore"), of("create_tank_defenses", "aluminum_deepslate_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType CTD_TITANIUM = ore(
+            "tankdefenses_titanium", "tankdefenses_titanium", null, "create_tank_defenses",
+            of("create_tank_defenses", "titanium_ore"), of("create_tank_defenses", "titanium_deepslate_ore"), null,
+            NONE, null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -745,7 +755,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE,
                     INFECTED_DIAMOND,
                     BR_URANIUM,
-                    EMBERS_LEAD, EMBERS_SILVER);
+                    EMBERS_LEAD, EMBERS_SILVER,
+                    CTD_ALUMINUM, CTD_TITANIUM);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

@@ -237,6 +237,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },

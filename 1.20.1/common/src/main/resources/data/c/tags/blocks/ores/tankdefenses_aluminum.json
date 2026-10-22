@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_create_tank_defenses_aluminum_ore",
+      "required": false
+    }
+  ]
+}

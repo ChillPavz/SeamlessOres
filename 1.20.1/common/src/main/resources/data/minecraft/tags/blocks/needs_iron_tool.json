@@ -100,6 +100,10 @@
       "id": "seamlessores:granite_embers_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -174,6 +178,10 @@
     },
     {
       "id": "seamlessores:diorite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_create_tank_defenses_aluminum_ore",
       "required": false
     },
     "seamlessores:andesite_gold_ore",
@@ -254,6 +262,10 @@
     },
     {
       "id": "seamlessores:andesite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_create_tank_defenses_aluminum_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
@@ -376,6 +388,10 @@
       "id": "seamlessores:tuff_embers_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
     "seamlessores:dripstone_gold_ore",
     "seamlessores:dripstone_diamond_ore",
     "seamlessores:dripstone_redstone_ore",
@@ -425,6 +441,10 @@
     },
     {
       "id": "seamlessores:dripstone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_create_tank_defenses_aluminum_ore",
       "required": false
     },
     {

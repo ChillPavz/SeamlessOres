@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:diorite_create_tank_defenses_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_create_tank_defenses_titanium_ore",
+      "required": false
+    }
+  ]
+}

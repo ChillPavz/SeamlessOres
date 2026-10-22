@@ -5,6 +5,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_create_tank_defenses_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_create_tank_defenses_titanium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_things_gleaming_ore",
       "required": false
     },

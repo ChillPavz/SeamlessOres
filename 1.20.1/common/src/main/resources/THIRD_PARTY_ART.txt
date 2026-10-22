@@ -14,6 +14,10 @@ Create, MIT:
 Create: New Age by Antarctic Gardens, BSD-3-Clause:
   assets/seamlessores/textures/block/thorium_overlay.png
 
+Create: Tank Defenses by ItsRuby05, AFL-3.0:
+  assets/seamlessores/textures/block/tankdefenses_aluminum_overlay.png
+  assets/seamlessores/textures/block/tankdefenses_titanium_overlay.png
+
 Create: TFMG by DrMangoTea, Pepa, Luna, MIT:
   assets/seamlessores/textures/block/lead_overlay.png
   assets/seamlessores/textures/block/lithium_overlay.png
