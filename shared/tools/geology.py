@@ -91,10 +91,22 @@ FAMILIES = [
     (["diamond", "bort", "white_diamond", "black_diamond", "infected_diamond"], _hosts(*ALL)),
     # Topaz rhyolite (Thomas Range, Utah) is THE topaz host; nothing else here.
     (["topaz", "silents_topaz"], _all_but("FELS")),
+    # Black (smoky) quartz grows in granite pegmatite and in schist veins (Actually Additions).
+    (["black_quartz"], _all_but("FELS", "PLUT", "SCH")),
+    # Amethyst lines geodes in lava and rhyolite, and veins in granite and carbonate (Ores Above Diamonds).
+    (["amethyst", "nether_amethyst"], _all_but("VOLC", "FELS", "PLUT", "LIME")),
+    # Jade (jadeite, nephrite) forms from serpentinite and in high-pressure schist (Sullys, Epic Paladins).
+    (["sullysmod_jade", "epicpaladins_jade"], _all_but("SERP", "SCH")),
+    # Titanium (ilmenite, rutile): mafic intrusions and lava, rutile schist, placer sands in red beds.
+    (["tankdefenses_titanium"], _all_but("PLUT", "VOLC", "SCH", "RBED")),
+    # Native sulphur: volcanic fumaroles, and the caps of salt domes over carbonate and sulphide (Scorched Guns).
+    (["scguns_sulfur", "scguns_nether_sulfur"], _all_but("VOLC", "FELS", "LIME", "SULF")),
+    # Sal ammoniac: fumaroles, and burning coal seams in shale and asphalt (Theurgy).
+    (["sal_ammoniac"], _all_but("VOLC", "FELS", "ASPH", "SHAL")),
     # Lead, zinc and antimony: carbonate, shale, schist and epithermal veins in volcanics; never in a
     # mafic intrusion, never in a weathering crust. Massive sulphide is their own rock.
     (["zinc", "galena", "techreborn_lead", "lead", "mi_lead", "ie_lead", "mek_lead", "dense_lead",
-      "oreganized_lead", "antimony"], _hosts("PLUT", "LATE", "SERP")),
+      "oreganized_lead", "antimony", "embers_lead", "superbwarfare_galena"], _hosts("PLUT", "LATE", "SERP")),
     # Manganese also forms in laterite.
     (["manganese"], _hosts("PLUT", "SERP", "RBED")),
     # Carbonate replacement tin, and rhyolite-hosted tin (Durango).
@@ -110,17 +122,18 @@ FAMILIES = [
     # Platinum group and nickel: mafic intrusions (Noril'sk, Bushveld, Sudbury) and serpentinite (laterite
     # nickel, placer platinum).
     (["platinum", "iridium", "osmium", "mi_iridium", "mek_osmium", "dense_osmium",
-      "nickel", "mi_nickel", "ie_nickel"], _all_but("PLUT", "SERP")),
+      "nickel", "mi_nickel", "ie_nickel", "createpropulsion_platinum"], _all_but("PLUT", "SERP")),
     # Uranium: asphaltite, carbonate, schist and rhyolite caldera uranium are real; not in mafic rock,
     # not in a laterite, not in a lead-zinc body. Extreme Reactors' yellorite is its uranium ore.
     (["techreborn_uranium", "uranium", "ie_uranium", "mek_uranium", "dense_uranium", "yellorite",
-      "uraninite", "uraninite_poor", "uraninite_dense"], _hosts("PLUT", "VOLC", "LATE", "SULF", "SERP", "CHRT")),
+      "uraninite", "uraninite_poor", "uraninite_dense", "biggerreactors_uranium"],
+     _hosts("PLUT", "VOLC", "LATE", "SULF", "SERP", "CHRT")),
     # Rock salt is an evaporite, laid down with carbonate and in red beds.
-    (["salt"], _all_but("LIME", "RBED")),
+    (["salt", "expandeddelight_salt"], _all_but("LIME", "RBED")),
     # Fluorite: Mississippi Valley carbonate, skarn marble, calcite veins, rhyolite (Mexico), lead-zinc gangue.
     (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL", "SERP", "CHRT", "RBED")),
     # Scheelite skarn at limestone and marble contacts, and scheelite in schist.
-    (["tungsten"], _all_but("LIME", "MARB", "SCH")),
+    (["tungsten", "superbwarfare_scheelite"], _all_but("LIME", "MARB", "SCH")),
     # Monazite and thorium: metamorphic monazite in pelitic schist.
     (["monazite", "thorium"], _all_but("SCH")),
     # Lithium: clays from rhyolite (Thacker Pass) and spodumene pegmatite in schist belts.
@@ -134,9 +147,9 @@ FAMILIES = [
     # Turquoise: supergene, over altered volcanics and sulphides, in the weathering profile.
     (["turquoise"], _all_but("FELS", "LATE", "SULF")),
     # Opal: rhyolite fire opal, and the deep weathering profile (Australia).
-    (["opal"], _all_but("FELS", "LATE")),
+    (["opal", "black_opal", "nether_black_opal"], _all_but("FELS", "LATE")),
     # Carnelian (chalcedony) fills vesicles in lava.
-    (["carnelian"], _all_but("VOLC", "FELS")),
+    (["carnelian", "epicpaladins_bloodstone"], _all_but("VOLC", "FELS")),
     # Ammolite is fossil shell (the Bearpaw shale); pearl is reef; moldavite (tektite) lies in sediments.
     (["ammolite"], _all_but("LIME", "SHAL")),
     (["pearl"], _all_but("LIME")),
@@ -213,7 +226,7 @@ GEMS = set("ametrine jade aquamarine citrine peridot topaz ruby sapphire diamond
            "alexandrite ammolite black_diamond carnelian garnet heliodor iolite kyanite moldavite opal pearl "
            "rose_quartz tanzanite turquoise white_diamond silents_aquamarine silents_citrine silents_peridot "
            "silents_ruby silents_sapphire silents_topaz techreborn_ruby techreborn_sapphire "
-           "iceandfire_sapphire".split())
+           "iceandfire_sapphire epicpaladins_jade amethyst black_opal".split())
 
 
 # Stones other mods place that are judged exactly as one of the game's rocks (owner, 21 Oct 2026). A refusal
@@ -346,7 +359,15 @@ _FOUR_ROCK = [
     (["topaz", "silents_topaz", "tin", "energized_tin", "techreborn_tin", "mi_tin", "mek_tin", "dense_tin",
       "aquamarine", "silents_aquamarine", "heliodor", "monazite", "thorium", "garnet"], [_D, _A, _T]),
     # Wolframite in granite, scheelite skarn at diorite contacts.
-    (["tungsten"], [_A, _T]),
+    (["tungsten", "superbwarfare_scheelite"], [_A, _T]),
+    # Smoky quartz: granite pegmatite only.
+    (["black_quartz"], [_D, _A, _T]),
+    # Amethyst geodes in lava and ash, veins in granite; never in diorite.
+    (["amethyst"], [_D]),
+    # Ilmenite and rutile: intermediate rock keeps them (diorite, andesite).
+    (["tankdefenses_titanium"], [_G, _T]),
+    # Fumarole minerals: andesite and tuff keep them.
+    (["scguns_sulfur", "sal_ammoniac"], [_G, _D]),
     # Spodumene pegmatite (granite) and caldera lithium clays (tuff).
     (["lithium"], [_D, _A]),
     # Fluorite: granite greisen, rhyolitic tuff.
@@ -356,13 +377,14 @@ _FOUR_ROCK = [
     (["peridot", "silents_peridot", "techreborn_ruby", "techreborn_sapphire", "silents_ruby", "silents_sapphire",
       "iceandfire_sapphire", "platinum", "iridium", "osmium", "mi_iridium", "mek_osmium", "dense_osmium",
       "nickel", "mi_nickel", "ie_nickel", "salt", "kyanite", "iolite", "alexandrite", "rose_quartz",
+      "createpropulsion_platinum", "expandeddelight_salt", "sullysmod_jade",
       "tanzanite", "ammolite", "pearl", "moldavite"], FOUR),
     # Turquoise is supergene, over altered volcanics: lava and ash keep it.
     (["turquoise"], [_G, _D]),
     # Opal: in rhyolitic tuff (Ethiopia).
-    (["opal"], [_G, _D, _A]),
+    (["opal", "black_opal"], [_G, _D, _A]),
     # Carnelian fills vesicles in lava and ash.
-    (["carnelian"], [_G, _D]),
+    (["carnelian", "epicpaladins_bloodstone"], [_G, _D]),
 ]
 
 # Dripstone KEEPS only what precipitates in limestone caves or fills karst cavities, and refuses the rest:
@@ -372,12 +394,13 @@ DRIPSTONE_KEEPS = set(
     "iron copper manganese salt dense_fluorite mek_fluorite mi_bauxite techreborn_bauxite ie_aluminum "
     "zinc galena techreborn_lead lead mi_lead ie_lead mek_lead dense_lead oreganized_lead antimony "
     "techreborn_uranium uranium ie_uranium mek_uranium dense_uranium yellorite uraninite uraninite_poor "
-    "uraninite_dense".split())
+    "uraninite_dense biggerreactors_uranium embers_lead superbwarfare_galena expandeddelight_salt "
+    "tankdefenses_aluminum".split())
 
 # Basalt and blackstone: real minerals by the mafic volcanic reading (FAMILIES' VOLC). Every invented
 # Nether ore fits fire, lava or the piglins' gold and keeps both (lore, owner's rule of 20 Oct 2026).
 _NETHER_REFUSED = ["nether_black_diamond", "nether_iolite", "nether_alexandrite", "nether_tanzanite",
-                   "nether_moldavite", "nether_pearl", "benitoite"]
+                   "nether_moldavite", "nether_pearl", "benitoite", "nether_black_opal"]
 
 # Cobblemon's evolution stones by the lore of COBBLEMON_KEEPS: granite (pink, plutonic, moonstone
 # pegmatites, metal-rich crust, mica sparkle), diorite (white, plutonic), andesite (grey lava), tuff
