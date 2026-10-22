@@ -146,7 +146,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "densemekanism": DENSEMEKANISM_JAR,
             "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
             "silentgems": SILENT_GEMS_JAR,
-            "mythicmetals": MYTHIC_METALS_JAR}
+            "mythicmetals": MYTHIC_METALS_JAR,
+            "createpropulsion": jar("createpropulsion-1.1.5.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -354,6 +355,8 @@ MODS = {
                        "link": "https://modrinth.com/mod/mekanism"},
     "cobblemon":      {"display": "Cobblemon",         "category": "cobblemon",
                        "licence": "MPL-2.0",      "author": "The Cobblemon Team"},
+    "createpropulsion": {"display": "Create: Propulsion", "category": "create_propulsion",
+                       "licence": "MIT", "author": "Sergey Feduk, Tronco_78, Bunting_chj, SSnowly, KyivSec"},
 }
 
 ORE_DEFS = [
@@ -884,6 +887,10 @@ ORE_DEFS = [
      "source": "infected_deepslate_diamond_ore", "base": "deepslate", "mod": "born_in_chaos_v1", "untagged": True,
      "name_style": "§3",  # dark aqua, as Born in Chaos names its own block
      "tiers": {"deepslate": "infected_deepslate_diamond_ore"}},
+    # --- Create Propulsion: Simulated (mod id createpropulsion, MIT): platinum, iron convention, no XP. NeoForge at 1.21.1 ---
+    {"name": "createpropulsion_platinum", "overlay": "createpropulsion_platinum", "source": "platinum_ore", "base": "stone",
+     "mod": "createpropulsion",
+     "tiers": {"stone": "platinum_ore", "deepslate": "deepslate_platinum_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1022,6 +1029,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "spawn": ('neoforge',),
     "twigs": ('fabric', 'neoforge'),
     "wilderwild": ('fabric',),
+    "createpropulsion": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1132,6 +1140,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.create_propulsion": "Create: Propulsion",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
         f"text.autoconfig.{MOD_ID}.category.nether": "Nether",
         f"text.autoconfig.{MOD_ID}.category.create": "Create",
@@ -1159,6 +1168,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.createPropulsion": "Create: Propulsion: variants",
+        f"text.autoconfig.{MOD_ID}.option.createPropulsion.@Tooltip":
+            "Generate host-matched platinum ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.granite": "Granite variants",
         f"text.autoconfig.{MOD_ID}.option.granite.@Tooltip":

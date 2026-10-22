@@ -11,6 +11,9 @@ Create, MIT:
 Create: New Age by Antarctic Gardens, BSD-3-Clause:
   assets/seamlessores/textures/block/thorium_overlay.png
 
+Create: Propulsion by Sergey Feduk, Tronco_78, Bunting_chj, SSnowly, KyivSec, MIT:
+  assets/seamlessores/textures/block/createpropulsion_platinum_overlay.png
+
 Create: TFMG by DrMangoTea, Pepa, Luna, MIT:
   assets/seamlessores/textures/block/lead_overlay.png
   assets/seamlessores/textures/block/lithium_overlay.png

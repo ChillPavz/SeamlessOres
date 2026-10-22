@@ -516,6 +516,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean things = true;
 
+    // --- Create: Propulsion --------------------------------------------------------------------------
+
+    @ConfigEntry.Category("create_propulsion")
+    @ConfigEntry.Gui.Tooltip
+    public boolean createPropulsion = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -644,6 +650,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.things = things;
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;
+        values.createPropulsion = createPropulsion;
 
         SeamlessOresConfig.apply(values);
     }

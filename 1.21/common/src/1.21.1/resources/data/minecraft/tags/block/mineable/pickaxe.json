@@ -4048,6 +4048,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_createpropulsion_platinum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_copper_ore",
       "required": false
     },
@@ -4921,6 +4925,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_createpropulsion_platinum_ore",
       "required": false
     },
     {

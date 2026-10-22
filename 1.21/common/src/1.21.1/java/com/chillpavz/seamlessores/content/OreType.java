@@ -702,6 +702,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
             null, of("born_in_chaos_v1", "infected_deepslate_diamond_ore"), null, NONE, null, false, Set.of())
             .withKey("infected_diamond").withStrength(4.5F, 3.0F);
 
+    // --- Create Propulsion: Simulated (mod id createpropulsion, MIT): platinum, iron convention, no XP. NeoForge at 1.21.1 ---
+    public static final OreType CP_PLATINUM = ore(
+            "createpropulsion_platinum", "createpropulsion_platinum", null, "createpropulsion",
+            of("createpropulsion", "platinum_ore"), of("createpropulsion", "deepslate_platinum_ore"), null,
+            NONE, null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -731,7 +737,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     MALUM_SOULSTONE, MALUM_NATURAL_QUARTZ, MALUM_BRILLIANCE, MALUM_BLAZING_QUARTZ,
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, BENITOITE, SG_OPAL,
                     CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE, CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE,
-                    INFECTED_DIAMOND);
+                    INFECTED_DIAMOND,
+                    CP_PLATINUM);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

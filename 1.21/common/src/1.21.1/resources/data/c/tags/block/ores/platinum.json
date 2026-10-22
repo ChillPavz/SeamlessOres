@@ -1,7 +1,15 @@
 {
   "values": [
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_createpropulsion_platinum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_mythicmetals_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_createpropulsion_platinum_ore",
       "required": false
     },
     {

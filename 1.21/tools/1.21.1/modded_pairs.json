@@ -100,6 +100,13 @@
     "mythicupgrades:deepslate_citrine_ore"
    ]
   },
+  "createpropulsion_platinum": {
+   "mod": "createpropulsion",
+   "forms": [
+    "createpropulsion:platinum_ore",
+    "createpropulsion:deepslate_platinum_ore"
+   ]
+  },
   "dawn_stone": {
    "mod": "cobblemon",
    "forms": [
@@ -2249,6 +2256,12 @@
     ],
     "rate": 1.38
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.27
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -2598,6 +2611,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.83
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.04
    },
    "dawn_stone": {
     "where": [
@@ -2985,6 +3004,12 @@
     ],
     "rate": 1.06
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.67
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -3371,6 +3396,12 @@
     ],
     "rate": 1.1
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 17.32
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -3756,6 +3787,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.72
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.3
    },
    "dawn_stone": {
     "where": [
@@ -4235,6 +4272,12 @@
     ],
     "rate": 0.95
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 14.97
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -4681,6 +4724,12 @@
     ],
     "rate": 0.78
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.33
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -5066,6 +5115,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.96
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.57
    },
    "dawn_stone": {
     "where": [
@@ -6429,6 +6484,12 @@
     ],
     "rate": 9.14
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 479.44
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -7164,6 +7225,12 @@
     ],
     "rate": 3.72
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.99
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -7672,6 +7739,12 @@
     ],
     "rate": 0.48
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.64
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -8057,6 +8130,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.82
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.91
    },
    "dawn_stone": {
     "where": [
@@ -8455,6 +8534,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.76
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.03
    },
    "dawn_stone": {
     "where": [
@@ -8984,6 +9069,12 @@
     ],
     "rate": 0.89
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.14
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -9506,6 +9597,12 @@
     ],
     "rate": 0.89
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.14
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -10008,6 +10105,12 @@
     ],
     "rate": 27.21
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.98
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -10340,6 +10443,12 @@
     ],
     "rate": 27.21
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.62
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -10671,6 +10780,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 27.21
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.64
    },
    "dawn_stone": {
     "where": [
@@ -11011,6 +11126,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.72
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.32
    },
    "dawn_stone": {
     "where": [
@@ -11852,6 +11973,12 @@
     ],
     "rate": 1.34
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.3
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -12177,6 +12304,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.02
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.14
    },
    "dawn_stone": {
     "where": [
@@ -12564,6 +12697,12 @@
     ],
     "rate": 1.02
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.14
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -12949,6 +13088,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.02
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.14
    },
    "dawn_stone": {
     "where": [
@@ -13475,6 +13620,12 @@
     ],
     "rate": 1.52
    },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.34
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -13977,6 +14128,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.67
+   },
+   "createpropulsion_platinum": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.41
    },
    "dawn_stone": {
     "where": [
