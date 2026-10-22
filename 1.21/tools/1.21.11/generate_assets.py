@@ -106,7 +106,8 @@ MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
             "silentgems": SILENT_GEMS_JAR,
             "mythicmetals": MYTHIC_METALS_JAR,
-            "evilcraft": jar("evilcraft-1.21.11-neoforge-1.2.62-828.jar")}
+            "evilcraft": jar("evilcraft-1.21.11-neoforge-1.2.62-828.jar"),
+            "denseores": jar("denseores-1.3.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -226,6 +227,8 @@ MODS = {
                        "licence": "MIT",          "author": "glisco"},
     "evilcraft": {"display": "EvilCraft", "category": "evilcraft",
                        "licence": "CC BY 4.0 (art)", "author": "rubensworks"},
+    "denseores": {"display": "Dense Ores", "category": "dense_ores",
+                       "licence": "AGPL-3.0 (art, as its Modrinth page)", "author": "NewJumperr"},
 }
 
 ORE_DEFS = [
@@ -533,6 +536,40 @@ ORE_DEFS = [
     {"name": "dark", "overlay": "dark", "source": "dark_ore", "base": "stone",
      "mod": "evilcraft",
      "tiers": {"stone": "dark_ore", "deepslate": "dark_ore_deepslate"}},
+    # --- Dense Ores (mod id denseores; art shipped under AGPL-3.0, its Modrinth licence): the game's ores, denser ---
+    {"name": "denseores_coal", "overlay": "denseores_coal", "deepslate_overlay": "denseores_coal_deepslate", "source": "dense_coal_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_coal_ore", "deepslate": "dense_deepslate_coal_ore"}},
+    {"name": "denseores_copper", "overlay": "denseores_copper", "source": "dense_copper_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_copper_ore", "deepslate": "dense_deepslate_copper_ore"}},
+    {"name": "denseores_iron", "overlay": "denseores_iron", "source": "dense_iron_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_iron_ore", "deepslate": "dense_deepslate_iron_ore"}},
+    {"name": "denseores_gold", "overlay": "denseores_gold", "source": "dense_gold_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_gold_ore", "deepslate": "dense_deepslate_gold_ore"}},
+    {"name": "denseores_lapis", "overlay": "denseores_lapis", "source": "dense_lapis_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_lapis_ore", "deepslate": "dense_deepslate_lapis_ore"}},
+    {"name": "denseores_redstone", "overlay": "denseores_redstone", "source": "dense_redstone_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_redstone_ore", "deepslate": "dense_deepslate_redstone_ore"}},
+    {"name": "denseores_diamond", "overlay": "denseores_diamond", "source": "dense_diamond_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_diamond_ore", "deepslate": "dense_deepslate_diamond_ore"}},
+    {"name": "denseores_emerald", "overlay": "denseores_emerald", "source": "dense_emerald_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_emerald_ore", "deepslate": "dense_deepslate_emerald_ore"}},
+    {"name": "denseores_nether_gold", "overlay": "denseores_nether_gold", "source": "dense_nether_gold_ore", "base": "netherrack",
+     "mod": "denseores",
+     "tiers": {"nether": "dense_nether_gold_ore"}},
+    {"name": "denseores_nether_quartz", "overlay": "denseores_nether_quartz", "source": "dense_nether_quartz_ore", "base": "netherrack",
+     "mod": "denseores",
+     "tiers": {"nether": "dense_nether_quartz_ore"}},
+    {"name": "denseores_ancient_nether", "overlay": "denseores_ancient_nether", "source": "ancient_nether_ore", "base": "netherrack",
+     "mod": "denseores",
+     "tiers": {"nether": "ancient_nether_ore"}},
 ]
 
 # This generator writes ONE band of the 1.21 folder: everything it emits goes to
@@ -615,6 +652,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "wilderwild": ('fabric',),
     "biomeswevegone": ("fabric", "neoforge", "forge"),   # Oh The Biomes We've Gone: Fabric, NeoForge and Forge
     "evilcraft": ('neoforge',),
+    "denseores": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -797,6 +835,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
         f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
         f"text.autoconfig.{MOD_ID}.category.nether": "Nether",
@@ -813,6 +852,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.things": "Things",
         f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
+
+        f"text.autoconfig.{MOD_ID}.option.denseOres": "Dense Ores: variants",
+        f"text.autoconfig.{MOD_ID}.option.denseOres.@Tooltip":
+            "Generate host-matched Dense Ores ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.evilCraft": "EvilCraft: variants",
         f"text.autoconfig.{MOD_ID}.option.evilCraft.@Tooltip":

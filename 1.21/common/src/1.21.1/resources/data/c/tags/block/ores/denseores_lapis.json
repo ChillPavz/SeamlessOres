@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_denseores_dense_lapis_ore",
+      "required": false
+    }
+  ]
+}

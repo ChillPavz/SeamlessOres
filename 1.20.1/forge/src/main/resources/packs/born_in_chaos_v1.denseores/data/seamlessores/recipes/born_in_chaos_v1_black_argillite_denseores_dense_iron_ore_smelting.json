@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.8,
+  "group": "iron_ingot",
+  "ingredient": {
+    "item": "seamlessores:born_in_chaos_v1_black_argillite_denseores_dense_iron_ore"
+  },
+  "result": "minecraft:iron_ingot"
+}

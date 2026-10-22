@@ -313,6 +313,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_diamond_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -502,6 +526,18 @@
     },
     {
       "id": "seamlessores:blackstone_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -717,6 +753,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_silentcompat_voidmetal_ore",
       "required": false
     },
@@ -802,6 +854,14 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_denseores_dense_redstone_ore",
       "required": false
     }
   ]

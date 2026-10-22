@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 4.0,
+  "group": "gold_ingot",
+  "ingredient": {
+    "item": "seamlessores:basalt_denseores_dense_nether_gold_ore"
+  },
+  "result": "minecraft:gold_ingot"
+}

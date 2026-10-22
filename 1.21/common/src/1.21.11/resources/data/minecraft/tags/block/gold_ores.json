@@ -1,12 +1,36 @@
 {
   "values": [
     "seamlessores:granite_gold_ore",
+    {
+      "id": "seamlessores:granite_denseores_dense_gold_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
+    {
+      "id": "seamlessores:diorite_denseores_dense_gold_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
+    {
+      "id": "seamlessores:andesite_denseores_dense_gold_ore",
+      "required": false
+    },
     "seamlessores:tuff_gold_ore",
+    {
+      "id": "seamlessores:tuff_denseores_dense_gold_ore",
+      "required": false
+    },
     "seamlessores:dripstone_gold_ore",
     "seamlessores:basalt_nether_gold_ore",
+    {
+      "id": "seamlessores:basalt_denseores_dense_nether_gold_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
+    {
+      "id": "seamlessores:blackstone_denseores_dense_nether_gold_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:minecraft_blackstone_gold_ore",
       "required": false

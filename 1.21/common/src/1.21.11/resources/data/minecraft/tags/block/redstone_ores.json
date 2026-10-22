@@ -1,12 +1,32 @@
 {
   "values": [
     "seamlessores:granite_redstone_ore",
+    {
+      "id": "seamlessores:granite_denseores_dense_redstone_ore",
+      "required": false
+    },
     "seamlessores:diorite_redstone_ore",
+    {
+      "id": "seamlessores:diorite_denseores_dense_redstone_ore",
+      "required": false
+    },
     "seamlessores:andesite_redstone_ore",
+    {
+      "id": "seamlessores:andesite_denseores_dense_redstone_ore",
+      "required": false
+    },
     "seamlessores:tuff_redstone_ore",
+    {
+      "id": "seamlessores:tuff_denseores_dense_redstone_ore",
+      "required": false
+    },
     "seamlessores:dripstone_redstone_ore",
     {
       "id": "seamlessores:blackstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_dense_redstone_ore",
       "required": false
     },
     {

@@ -582,6 +582,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean betterNether = true;
 
+    // --- Dense Ores ----------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("dense_ores")
+    @ConfigEntry.Gui.Tooltip
+    public boolean denseOres = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -721,6 +727,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.evilCraft = evilCraft;
         values.electrodynamics = electrodynamics;
         values.betterNether = betterNether;
+        values.denseOres = denseOres;
 
         SeamlessOresConfig.apply(values);
     }

@@ -4,6 +4,10 @@
     "seamlessores:diorite_coal_ore",
     "seamlessores:andesite_coal_ore",
     "seamlessores:tuff_coal_ore",
+    {
+      "id": "seamlessores:tuff_denseores_dense_coal_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     {
       "id": "seamlessores:blockus_limestone_coal_ore",
@@ -14,7 +18,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_denseores_dense_coal_ore",
       "required": false
     },
     {
@@ -22,11 +34,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_coal_ore",
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_denseores_dense_coal_ore",
       "required": false
     },
     {
@@ -35,6 +63,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_denseores_dense_coal_ore",
       "required": false
     }
   ]

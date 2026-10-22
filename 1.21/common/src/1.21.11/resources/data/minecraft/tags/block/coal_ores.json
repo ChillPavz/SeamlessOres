@@ -4,6 +4,10 @@
     "seamlessores:diorite_coal_ore",
     "seamlessores:andesite_coal_ore",
     "seamlessores:tuff_coal_ore",
+    {
+      "id": "seamlessores:tuff_denseores_dense_coal_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     {
       "id": "seamlessores:blockus_limestone_coal_ore",

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.8,
+  "group": "copper_ingot",
+  "ingredient": {
+    "item": "seamlessores:quark_jasper_denseores_dense_copper_ore"
+  },
+  "result": "minecraft:copper_ingot"
+}

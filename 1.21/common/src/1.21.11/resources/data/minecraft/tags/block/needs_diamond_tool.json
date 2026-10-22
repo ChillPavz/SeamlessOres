@@ -25,11 +25,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
       "id": "seamlessores:blackstone_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_ancient_nether_ore",
       "required": false
     },
     {

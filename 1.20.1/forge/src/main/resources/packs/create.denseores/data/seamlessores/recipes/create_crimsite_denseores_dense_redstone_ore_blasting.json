@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 2.8,
+  "group": "redstone",
+  "ingredient": {
+    "item": "seamlessores:create_crimsite_denseores_dense_redstone_ore"
+  },
+  "result": "minecraft:redstone"
+}

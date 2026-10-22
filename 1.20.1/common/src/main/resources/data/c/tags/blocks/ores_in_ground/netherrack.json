@@ -82,6 +82,18 @@
       "id": "seamlessores:basalt_iter_rpg_magmanum_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_denseores_dense_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_denseores_dense_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_denseores_ancient_nether_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -161,6 +173,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_denseores_dense_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_dense_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scorchia_nether_gold_ore",
       "required": false
     },
@@ -230,6 +254,18 @@
     },
     {
       "id": "seamlessores:create_scorchia_iter_rpg_magmanum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_denseores_dense_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_denseores_dense_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_denseores_ancient_nether_ore",
       "required": false
     },
     {
@@ -305,6 +341,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_denseores_dense_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_dense_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_nether_gold_ore",
       "required": false
     },
@@ -377,6 +425,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_denseores_dense_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_denseores_dense_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_nether_gold_ore",
       "required": false
     },
@@ -446,6 +506,18 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_iter_rpg_magmanum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_denseores_dense_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_denseores_dense_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_denseores_ancient_nether_ore",
       "required": false
     },
     {

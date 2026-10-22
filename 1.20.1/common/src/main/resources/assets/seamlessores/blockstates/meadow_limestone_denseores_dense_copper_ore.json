@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_denseores_dense_copper_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_denseores_dense_copper_ore",
+        "y": 180
+      }
+    ]
+  }
+}

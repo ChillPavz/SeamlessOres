@@ -104,6 +104,55 @@
     "densemekanism:dense_deepslate_uranium_ore"
    ]
   },
+  "denseores_coal": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_coal_ore",
+    "denseores:dense_deepslate_coal_ore"
+   ]
+  },
+  "denseores_copper": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_copper_ore",
+    "denseores:dense_deepslate_copper_ore"
+   ]
+  },
+  "denseores_diamond": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_diamond_ore",
+    "denseores:dense_deepslate_diamond_ore"
+   ]
+  },
+  "denseores_emerald": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_emerald_ore",
+    "denseores:dense_deepslate_emerald_ore"
+   ]
+  },
+  "denseores_iron": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_iron_ore",
+    "denseores:dense_deepslate_iron_ore"
+   ]
+  },
+  "denseores_lapis": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_lapis_ore",
+    "denseores:dense_deepslate_lapis_ore"
+   ]
+  },
+  "denseores_redstone": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_redstone_ore",
+    "denseores:dense_deepslate_redstone_ore"
+   ]
+  },
   "energized_tin": {
    "mod": "energizedpower",
    "forms": [
@@ -405,6 +454,30 @@
     ],
     "rate": 2.33
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 22.45
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 3.74
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 31.36
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 18.53
+   },
    "energized_tin": {
     "where": [
      "1.21.11 fabric",
@@ -468,6 +541,30 @@
     ],
     "rate": 0.32
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 1.81
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.36
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 2.49
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 1.41
+   },
    "energized_tin": {
     "where": [
      "1.21.11 fabric",
@@ -530,6 +627,30 @@
      "1.21.11 neoforge"
     ],
     "rate": 3.41
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 13.31
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 3.84
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 19.53
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 6.69
    },
    "energized_tin": {
     "where": [
@@ -2069,6 +2190,48 @@
      "1.21.11 neoforge"
     ],
     "rate": 2.06
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 2.21
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.71
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.8
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.9
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 2.01
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 1.21
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 1.16
    },
    "energized_tin": {
     "where": [

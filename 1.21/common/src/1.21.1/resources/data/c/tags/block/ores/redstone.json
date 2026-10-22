@@ -1,9 +1,25 @@
 {
   "values": [
     "seamlessores:granite_redstone_ore",
+    {
+      "id": "seamlessores:granite_denseores_dense_redstone_ore",
+      "required": false
+    },
     "seamlessores:diorite_redstone_ore",
+    {
+      "id": "seamlessores:diorite_denseores_dense_redstone_ore",
+      "required": false
+    },
     "seamlessores:andesite_redstone_ore",
+    {
+      "id": "seamlessores:andesite_denseores_dense_redstone_ore",
+      "required": false
+    },
     "seamlessores:tuff_redstone_ore",
+    {
+      "id": "seamlessores:tuff_denseores_dense_redstone_ore",
+      "required": false
+    },
     "seamlessores:dripstone_redstone_ore",
     {
       "id": "seamlessores:cinnabar_redstone_ore",
@@ -11,6 +27,10 @@
     },
     {
       "id": "seamlessores:blackstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -22,7 +42,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_crimsite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -30,7 +58,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_galena_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -38,11 +74,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_redstone_ore",
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -51,6 +99,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -71,6 +123,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_denseores_dense_redstone_ore",
       "required": false
     },
     {

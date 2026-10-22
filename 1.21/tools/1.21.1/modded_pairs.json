@@ -200,6 +200,80 @@
     "densemekanism:dense_deepslate_uranium_ore"
    ]
   },
+  "denseores_ancient_nether": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:ancient_nether_ore"
+   ]
+  },
+  "denseores_coal": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_coal_ore",
+    "denseores:dense_deepslate_coal_ore"
+   ]
+  },
+  "denseores_copper": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_copper_ore",
+    "denseores:dense_deepslate_copper_ore"
+   ]
+  },
+  "denseores_diamond": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_diamond_ore",
+    "denseores:dense_deepslate_diamond_ore"
+   ]
+  },
+  "denseores_emerald": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_emerald_ore",
+    "denseores:dense_deepslate_emerald_ore"
+   ]
+  },
+  "denseores_gold": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_gold_ore",
+    "denseores:dense_deepslate_gold_ore"
+   ]
+  },
+  "denseores_iron": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_iron_ore",
+    "denseores:dense_deepslate_iron_ore"
+   ]
+  },
+  "denseores_lapis": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_lapis_ore",
+    "denseores:dense_deepslate_lapis_ore"
+   ]
+  },
+  "denseores_nether_gold": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_nether_gold_ore"
+   ]
+  },
+  "denseores_nether_quartz": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_nether_quartz_ore"
+   ]
+  },
+  "denseores_redstone": {
+   "mod": "denseores",
+   "forms": [
+    "denseores:dense_redstone_ore",
+    "denseores:dense_deepslate_redstone_ore"
+   ]
+  },
   "dimensional_shard": {
    "mod": "rftoolsbase",
    "forms": [
@@ -1018,6 +1092,30 @@
     ],
     "rate": 2.33
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.45
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.74
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.36
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.53
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 fabric",
@@ -1228,6 +1326,30 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.32
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.81
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.36
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.49
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.41
    },
    "dusk_stone": {
     "where": [
@@ -1451,6 +1573,30 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.41
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.31
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.84
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.53
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.69
    },
    "dusk_stone": {
     "where": [
@@ -2630,6 +2776,48 @@
     ],
     "rate": 17.65
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 56.74
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.69
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.09
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.26
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.1
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.73
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.68
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -3147,6 +3335,48 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.62
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 52.35
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 26.41
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.42
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.95
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 17.37
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.15
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.94
    },
    "dimensional_shard": {
     "where": [
@@ -3720,6 +3950,48 @@
     ],
     "rate": 18.69
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 66.93
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 33.77
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.93
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.74
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.21
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.14
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.48
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -4291,6 +4563,48 @@
      "1.21.1 neoforge"
     ],
     "rate": 19.42
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 69.55
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.09
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.2
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 37.13
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.07
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.5
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.58
    },
    "dimensional_shard": {
     "where": [
@@ -4864,6 +5178,48 @@
     ],
     "rate": 12.67
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.37
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.89
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.69
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.22
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.05
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.2
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.68
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -5334,6 +5690,30 @@
     ],
     "rate": 205.93
    },
+   "denseores_ancient_nether": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.6
+   },
+   "denseores_gold": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 150.54
+   },
+   "denseores_nether_gold": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 75.27
+   },
+   "denseores_nether_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 130.79
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -5539,6 +5919,72 @@
      "1.21.1 neoforge"
     ],
     "rate": 16.78
+   },
+   "denseores_ancient_nether": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.97
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 60.11
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.33
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.22
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.09
+   },
+   "denseores_gold": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 98.93
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.94
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.21
+   },
+   "denseores_nether_gold": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 49.46
+   },
+   "denseores_nether_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 85.95
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.23
    },
    "dimensional_shard": {
     "where": [
@@ -6184,6 +6630,48 @@
     ],
     "rate": 13.82
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 49.49
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.97
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.12
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 26.43
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.42
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.76
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.84
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -6756,6 +7244,48 @@
     ],
     "rate": 35.92
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.3
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.48
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.17
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.71
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.94
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 17.26
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 14.01
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -7274,6 +7804,42 @@
     ],
     "rate": 87.25
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.95
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.02
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.26
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.31
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.91
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.27
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -7678,6 +8244,30 @@
     ],
     "rate": 2.33
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.39
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.53
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.3
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 14.69
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -7847,6 +8437,30 @@
      "1.21.1 neoforge"
     ],
     "rate": 12.72
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.36
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.57
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.34
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.4
    },
    "dusk_stone": {
     "where": [
@@ -8066,6 +8680,30 @@
     ],
     "rate": 1.45
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 50.35
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.18
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 67.23
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 89.46
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -8241,6 +8879,36 @@
      "1.21.1 neoforge"
     ],
     "rate": 22.12
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.68
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.25
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.69
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.23
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.56
    },
    "dimensional_shard": {
     "where": [
@@ -8627,6 +9295,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 317.15
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 44.26
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 194.39
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 17.79
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 402.78
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 368.73
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 569.37
    },
    "dreadstone": {
     "where": [
@@ -9028,6 +9732,30 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.67
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 92.81
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.22
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 145.2
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 65.32
    },
    "dimensional_shard": {
     "where": [
@@ -9567,6 +10295,48 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.06
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.21
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.71
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.8
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.9
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.01
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.21
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.16
    },
    "dimensional_shard": {
     "where": [
@@ -10249,6 +11019,48 @@
     ],
     "rate": 8.56
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.66
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.47
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.17
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.37
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.17
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.19
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.14
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -10820,6 +11632,48 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.48
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 51.85
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 26.16
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.37
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.68
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 17.2
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.08
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.92
    },
    "dimensional_shard": {
     "where": [
@@ -11404,6 +12258,72 @@
      "1.21.1 neoforge"
     ],
     "rate": 13.49
+   },
+   "denseores_ancient_nether": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.41
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.31
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.38
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.0
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 25.8
+   },
+   "denseores_gold": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 44.27
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.03
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.6
+   },
+   "denseores_nether_gold": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.13
+   },
+   "denseores_nether_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 38.46
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.79
    },
    "dimensional_shard": {
     "where": [
@@ -12132,6 +13052,48 @@
     ],
     "rate": 1.48
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 77.54
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.29
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.41
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 44.01
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 14.75
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.65
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.48
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -12828,6 +13790,48 @@
     ],
     "rate": 1.48
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 79.33
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 44.09
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.41
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 46.73
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.29
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.66
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.48
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -13503,6 +14507,48 @@
     ],
     "rate": 0.83
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 421.92
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 257.85
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.46
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 306.91
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 53.51
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.28
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.91
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -14003,6 +15049,48 @@
     ],
     "rate": 2.42
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1230.61
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 752.08
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.84
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 895.14
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 156.06
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 59.16
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.65
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -14502,6 +15590,48 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.38
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 703.21
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 429.76
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.77
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 511.51
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 89.18
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 33.81
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.52
    },
    "dimensional_shard": {
     "where": [
@@ -15006,6 +16136,48 @@
     ],
     "rate": 0.38
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.56
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.2
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.13
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.24
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.36
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.18
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.11
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -15454,6 +16626,30 @@
     ],
     "rate": 0.35
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.37
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.56
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.7
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.78
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 fabric",
@@ -15676,6 +16872,30 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.48
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.3
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.75
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.95
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.02
    },
    "dusk_stone": {
     "where": [
@@ -15988,6 +17208,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 119.33
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 49.27
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.92
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.72
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.64
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.6
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.1
    },
    "dimensional_shard": {
     "where": [
@@ -16488,6 +17744,48 @@
      "1.21.1 neoforge"
     ],
     "rate": 18.1
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 64.81
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.7
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.71
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.6
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.5
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.85
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.41
    },
    "dimensional_shard": {
     "where": [
@@ -17061,6 +18359,48 @@
     ],
     "rate": 18.1
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 64.81
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.7
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.71
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.6
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.5
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.85
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.41
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -17633,6 +18973,48 @@
     ],
     "rate": 18.1
    },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 64.81
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.7
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.71
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.6
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.5
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.85
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.41
+   },
    "dimensional_shard": {
     "where": [
      "1.21.1 neoforge"
@@ -18127,6 +19509,30 @@
     ],
     "rate": 5.55
    },
+   "denseores_ancient_nether": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.62
+   },
+   "denseores_gold": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.4
+   },
+   "denseores_nether_gold": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.7
+   },
+   "denseores_nether_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 25.29
+   },
    "fire_stone": {
     "where": [
      "1.21.1 fabric",
@@ -18374,6 +19780,48 @@
      "1.21.1 neoforge"
     ],
     "rate": 50.39
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.42
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.04
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.18
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.61
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.74
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.39
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.35
    },
    "dimensional_shard": {
     "where": [
@@ -19051,6 +20499,48 @@
      "1.21.1 neoforge"
     ],
     "rate": 4.62
+   },
+   "denseores_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.53
+   },
+   "denseores_copper": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.33
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.77
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.14
+   },
+   "denseores_iron": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.7
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.8
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.46
    },
    "dimensional_shard": {
     "where": [

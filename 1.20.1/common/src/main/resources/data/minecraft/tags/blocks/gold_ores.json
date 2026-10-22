@@ -1,16 +1,40 @@
 {
   "values": [
     "seamlessores:granite_gold_ore",
+    {
+      "id": "seamlessores:granite_denseores_dense_gold_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
+    {
+      "id": "seamlessores:diorite_denseores_dense_gold_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
+    {
+      "id": "seamlessores:andesite_denseores_dense_gold_ore",
+      "required": false
+    },
     "seamlessores:tuff_gold_ore",
+    {
+      "id": "seamlessores:tuff_denseores_dense_gold_ore",
+      "required": false
+    },
     "seamlessores:dripstone_gold_ore",
     {
       "id": "seamlessores:cinnabar_gold_ore",
       "required": false
     },
     "seamlessores:basalt_nether_gold_ore",
+    {
+      "id": "seamlessores:basalt_denseores_dense_nether_gold_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
+    {
+      "id": "seamlessores:blackstone_denseores_dense_nether_gold_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:minecraft_blackstone_gold_ore",
       "required": false
@@ -44,11 +68,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_denseores_dense_nether_gold_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_gold_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_scoria_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_dense_nether_gold_ore",
       "required": false
     },
     {
@@ -61,6 +101,14 @@
     },
     {
       "id": "seamlessores:smooth_basalt_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_denseores_dense_nether_gold_ore",
       "required": false
     },
     {
@@ -85,6 +133,14 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_denseores_dense_nether_gold_ore",
       "required": false
     },
     {

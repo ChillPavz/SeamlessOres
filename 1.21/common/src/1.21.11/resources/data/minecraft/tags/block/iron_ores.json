@@ -1,12 +1,36 @@
 {
   "values": [
     "seamlessores:granite_iron_ore",
+    {
+      "id": "seamlessores:granite_denseores_dense_iron_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
+    {
+      "id": "seamlessores:diorite_denseores_dense_iron_ore",
+      "required": false
+    },
     "seamlessores:andesite_iron_ore",
+    {
+      "id": "seamlessores:andesite_denseores_dense_iron_ore",
+      "required": false
+    },
     "seamlessores:tuff_iron_ore",
+    {
+      "id": "seamlessores:tuff_denseores_dense_iron_ore",
+      "required": false
+    },
     "seamlessores:dripstone_iron_ore",
     {
+      "id": "seamlessores:dripstone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_dense_iron_ore",
       "required": false
     },
     {
@@ -62,11 +86,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_white_dacite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_denseores_dense_iron_ore",
       "required": false
     }
   ]

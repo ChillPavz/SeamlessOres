@@ -307,6 +307,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean evilCraft = true;
 
+    // --- Dense Ores ----------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("dense_ores")
+    @ConfigEntry.Gui.Tooltip
+    public boolean denseOres = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -390,6 +396,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;
         values.evilCraft = evilCraft;
+        values.denseOres = denseOres;
 
         SeamlessOresConfig.apply(values);
     }

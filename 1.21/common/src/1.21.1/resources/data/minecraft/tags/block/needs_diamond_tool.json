@@ -61,6 +61,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_silentgems_nether_carnelian_ore",
       "required": false
     },
@@ -70,6 +74,10 @@
     },
     {
       "id": "seamlessores:blackstone_betternether_nether_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_ancient_nether_ore",
       "required": false
     },
     {
@@ -129,6 +137,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_silentgems_chaos_ore",
       "required": false
     },
@@ -166,6 +178,10 @@
     },
     {
       "id": "seamlessores:create_scoria_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_ancient_nether_ore",
       "required": false
     },
     {
@@ -210,6 +226,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_denseores_ancient_nether_ore",
       "required": false
     },
     {
@@ -278,6 +298,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_betternether_nether_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_denseores_ancient_nether_ore",
       "required": false
     },
     {

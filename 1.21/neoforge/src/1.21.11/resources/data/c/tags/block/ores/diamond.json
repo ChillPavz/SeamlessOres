@@ -1,0 +1,13 @@
+{
+  "values": [
+    "seamlessores:granite_diamond_ore",
+    "seamlessores:diorite_diamond_ore",
+    "seamlessores:andesite_diamond_ore",
+    "seamlessores:tuff_diamond_ore",
+    {
+      "id": "seamlessores:tuff_denseores_dense_diamond_ore",
+      "required": false
+    },
+    "seamlessores:dripstone_diamond_ore"
+  ]
+}

@@ -264,6 +264,9 @@ public final class SeamlessOresConfig {
     /** Whether Electrodynamics variants generate. Pure restyle. */
     public static boolean electrodynamics = true;
 
+    /** Whether Dense Ores variants generate. Pure restyle. */
+    public static boolean denseOres = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -323,6 +326,7 @@ public final class SeamlessOresConfig {
             case "evilcraft" -> evilCraft;
             case "iter_rpg" -> iterRpg;
             case "electrodynamics" -> electrodynamics;
+            case "denseores" -> denseOres;
             default -> true;
         };
     }
@@ -536,6 +540,7 @@ public final class SeamlessOresConfig {
         public boolean evilCraft = true;
         public boolean iterRpg = true;
         public boolean electrodynamics = true;
+        public boolean denseOres = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -617,6 +622,7 @@ public final class SeamlessOresConfig {
         evilCraft = values.evilCraft;
         iterRpg = values.iterRpg;
         electrodynamics = values.electrodynamics;
+        denseOres = values.denseOres;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

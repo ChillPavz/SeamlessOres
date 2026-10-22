@@ -157,7 +157,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "theurgy": jar("theurgy-1.21.1-neoforge-1.78.0.jar"),
             "evilcraft": jar("evilcraft-1.21.1-neoforge-1.2.99.jar"),
             "electrodynamics": jar("electrodynamics-1.21.1-1.1.0.jar"),
-            "betternether": jar("better-nether-21.0.11.jar")}
+            "betternether": jar("better-nether-21.0.11.jar"),
+            "denseores": jar("denseores-1.2.2.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -387,6 +388,8 @@ MODS = {
                        "licence": "Aurilisdev licence (credit and link)", "author": "aurilisdev, skip999"},
     "betternether": {"display": "BetterNether", "category": "betternether",
                        "licence": "MIT", "author": "quiqueck, paulevs"},
+    "denseores": {"display": "Dense Ores", "category": "dense_ores",
+                       "licence": "AGPL-3.0 (art, as its Modrinth page)", "author": "NewJumperr"},
 }
 
 ORE_DEFS = [
@@ -1039,6 +1042,40 @@ ORE_DEFS = [
     {"name": "betternether_nether_ruby", "overlay": "betternether_nether_ruby", "source": "nether_ruby_ore", "base": "netherrack",
      "mod": "betternether",
      "tiers": {"nether": "nether_ruby_ore"}},
+    # --- Dense Ores (mod id denseores; art shipped under AGPL-3.0, its Modrinth licence): the game's ores, denser ---
+    {"name": "denseores_coal", "overlay": "denseores_coal", "deepslate_overlay": "denseores_coal_deepslate", "source": "dense_coal_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_coal_ore", "deepslate": "dense_deepslate_coal_ore"}},
+    {"name": "denseores_copper", "overlay": "denseores_copper", "source": "dense_copper_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_copper_ore", "deepslate": "dense_deepslate_copper_ore"}},
+    {"name": "denseores_iron", "overlay": "denseores_iron", "source": "dense_iron_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_iron_ore", "deepslate": "dense_deepslate_iron_ore"}},
+    {"name": "denseores_gold", "overlay": "denseores_gold", "source": "dense_gold_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_gold_ore", "deepslate": "dense_deepslate_gold_ore"}},
+    {"name": "denseores_lapis", "overlay": "denseores_lapis", "source": "dense_lapis_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_lapis_ore", "deepslate": "dense_deepslate_lapis_ore"}},
+    {"name": "denseores_redstone", "overlay": "denseores_redstone", "source": "dense_redstone_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_redstone_ore", "deepslate": "dense_deepslate_redstone_ore"}},
+    {"name": "denseores_diamond", "overlay": "denseores_diamond", "source": "dense_diamond_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_diamond_ore", "deepslate": "dense_deepslate_diamond_ore"}},
+    {"name": "denseores_emerald", "overlay": "denseores_emerald", "source": "dense_emerald_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_emerald_ore", "deepslate": "dense_deepslate_emerald_ore"}},
+    {"name": "denseores_nether_gold", "overlay": "denseores_nether_gold", "source": "dense_nether_gold_ore", "base": "netherrack",
+     "mod": "denseores",
+     "tiers": {"nether": "dense_nether_gold_ore"}},
+    {"name": "denseores_nether_quartz", "overlay": "denseores_nether_quartz", "source": "dense_nether_quartz_ore", "base": "netherrack",
+     "mod": "denseores",
+     "tiers": {"nether": "dense_nether_quartz_ore"}},
+    {"name": "denseores_ancient_nether", "overlay": "denseores_ancient_nether", "source": "ancient_nether_ore", "base": "netherrack",
+     "mod": "denseores",
+     "tiers": {"nether": "ancient_nether_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1188,6 +1225,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "evilcraft": ('neoforge',),
     "electrodynamics": ('neoforge',),
     "betternether": ('fabric',),
+    "denseores": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1298,6 +1336,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
         f"text.autoconfig.{MOD_ID}.category.betternether": "BetterNether",
         f"text.autoconfig.{MOD_ID}.category.electrodynamics": "Electrodynamics",
         f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
@@ -1336,6 +1375,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.denseOres": "Dense Ores: variants",
+        f"text.autoconfig.{MOD_ID}.option.denseOres.@Tooltip":
+            "Generate host-matched Dense Ores ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.betterNether": "BetterNether: variants",
         f"text.autoconfig.{MOD_ID}.option.betterNether.@Tooltip":

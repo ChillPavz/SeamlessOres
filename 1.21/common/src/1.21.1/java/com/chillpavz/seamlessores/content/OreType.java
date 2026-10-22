@@ -906,6 +906,53 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(1, 5), null, false, Set.of())
             .withStrength(3.0F, 5.0F);
 
+    // --- Dense Ores (mod id denseores; art shipped under AGPL-3.0, its Modrinth licence): the game's ores, denser ---
+    public static final OreType DO_COAL = ore(
+            "denseores_coal", "denseores_coal", "denseores_coal_deepslate", "denseores",
+            of("denseores", "dense_coal_ore"), of("denseores", "dense_deepslate_coal_ore"), null,
+            UniformInt.of(2, 4), null, false, Set.of());
+    public static final OreType DO_COPPER = ore(
+            "denseores_copper", "denseores_copper", null, "denseores",
+            of("denseores", "dense_copper_ore"), of("denseores", "dense_deepslate_copper_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType DO_IRON = ore(
+            "denseores_iron", "denseores_iron", null, "denseores",
+            of("denseores", "dense_iron_ore"), of("denseores", "dense_deepslate_iron_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType DO_GOLD = ore(
+            "denseores_gold", "denseores_gold", null, "denseores",
+            of("denseores", "dense_gold_ore"), of("denseores", "dense_deepslate_gold_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType DO_LAPIS = ore(
+            "denseores_lapis", "denseores_lapis", null, "denseores",
+            of("denseores", "dense_lapis_ore"), of("denseores", "dense_deepslate_lapis_ore"), null,
+            UniformInt.of(4, 7), null, false, Set.of());
+    public static final OreType DO_REDSTONE = ore(
+            "denseores_redstone", "denseores_redstone", null, "denseores",
+            of("denseores", "dense_redstone_ore"), of("denseores", "dense_deepslate_redstone_ore"), null,
+            UniformInt.of(1, 5), null, true, Set.of());
+    public static final OreType DO_DIAMOND = ore(
+            "denseores_diamond", "denseores_diamond", null, "denseores",
+            of("denseores", "dense_diamond_ore"), of("denseores", "dense_deepslate_diamond_ore"), null,
+            UniformInt.of(5, 9), null, false, Set.of());
+    public static final OreType DO_EMERALD = ore(
+            "denseores_emerald", "denseores_emerald", null, "denseores",
+            of("denseores", "dense_emerald_ore"), of("denseores", "dense_deepslate_emerald_ore"), null,
+            UniformInt.of(5, 9), null, false, Set.of());
+    public static final OreType DO_NETHER_GOLD = ore(
+            "denseores_nether_gold", "denseores_nether_gold", null, "denseores",
+            null, null, of("denseores", "dense_nether_gold_ore"),
+            UniformInt.of(2, 3), null, false, Set.of());
+    public static final OreType DO_NETHER_QUARTZ = ore(
+            "denseores_nether_quartz", "denseores_nether_quartz", null, "denseores",
+            null, null, of("denseores", "dense_nether_quartz_ore"),
+            UniformInt.of(4, 7), null, false, Set.of());
+    public static final OreType DO_ANCIENT_NETHER = ore(
+            "denseores_ancient_nether", "denseores_ancient_nether", null, "denseores",
+            null, null, of("denseores", "ancient_nether_ore"),
+            UniformInt.of(2, 3), null, false, Set.of())
+            .withStrength(12.0F, 100.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -946,7 +993,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TH_SAL_AMMONIAC,
                     EC_DARK,
                     ED_ALUMINUM, ED_CHROMIUM, ED_FLUORITE, ED_LEAD, ED_LITHIUM, ED_MOLYBDENUM, ED_MONAZITE, ED_NITER, ED_SALT, ED_SILVER, ED_SULFUR, ED_SYLVITE, ED_THORIUM, ED_TIN, ED_TITANIUM, ED_URANIUM, ED_VANADIUM,
-                    BN_CINCINNASITE, BN_NETHER_LAPIS, BN_NETHER_REDSTONE, BN_NETHER_RUBY);
+                    BN_CINCINNASITE, BN_NETHER_LAPIS, BN_NETHER_REDSTONE, BN_NETHER_RUBY,
+                    DO_COAL, DO_COPPER, DO_IRON, DO_GOLD, DO_LAPIS, DO_REDSTONE, DO_DIAMOND, DO_EMERALD, DO_NETHER_GOLD, DO_NETHER_QUARTZ, DO_ANCIENT_NETHER);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

@@ -348,6 +348,30 @@
       "id": "seamlessores:granite_electrodynamics_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_denseores_dense_emerald_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -608,6 +632,30 @@
       "id": "seamlessores:diorite_electrodynamics_vanadium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_emerald_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -856,6 +904,22 @@
       "id": "seamlessores:andesite_electrodynamics_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_denseores_dense_redstone_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -1041,6 +1105,14 @@
     },
     {
       "id": "seamlessores:dripstone_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_denseores_dense_iron_ore",
       "required": false
     },
     {
@@ -1520,6 +1592,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_crimsite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_coal_ore",
       "required": false
     },
@@ -1788,6 +1864,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -1809,6 +1901,10 @@
     },
     {
       "id": "seamlessores:create_scorchia_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_denseores_dense_gold_ore",
       "required": false
     },
     {
@@ -2021,6 +2117,22 @@
     },
     {
       "id": "seamlessores:create_scoria_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -2244,6 +2356,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_iron_ore",
       "required": false
     },
@@ -2456,6 +2584,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -2521,6 +2665,14 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_denseores_dense_iron_ore",
       "required": false
     },
     {
@@ -2637,6 +2789,18 @@
     },
     {
       "id": "seamlessores:tfmg_galena_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -2777,6 +2941,18 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_denseores_dense_iron_ore",
       "required": false
     },
     {
@@ -3017,6 +3193,18 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -3316,7 +3504,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_denseores_dense_gold_ore",
       "required": false
     },
     {
@@ -3464,6 +3672,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_iron_ore",
       "required": false
     },
@@ -3608,6 +3828,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_marble_iron_ore",
       "required": false
     },
@@ -3685,6 +3917,18 @@
     },
     {
       "id": "seamlessores:embellishcraft_marble_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_denseores_dense_emerald_ore",
       "required": false
     },
     {
@@ -3872,6 +4116,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_iron_ore",
       "required": false
     },
@@ -3901,6 +4161,14 @@
     },
     {
       "id": "seamlessores:embellishcraft_jade_sullysmod_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_denseores_dense_iron_ore",
       "required": false
     },
     {
@@ -3977,6 +4245,18 @@
     },
     {
       "id": "seamlessores:embellishcraft_larvikite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_denseores_dense_emerald_ore",
       "required": false
     },
     {
@@ -4148,6 +4428,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_iron_ore",
       "required": false
     },
@@ -4217,6 +4513,14 @@
     },
     {
       "id": "seamlessores:quark_jasper_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_denseores_dense_iron_ore",
       "required": false
     },
     {
@@ -4357,6 +4661,22 @@
     },
     {
       "id": "seamlessores:quark_shale_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_denseores_dense_emerald_ore",
       "required": false
     },
     {
@@ -4597,6 +4917,22 @@
     },
     {
       "id": "seamlessores:meadow_limestone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_denseores_dense_emerald_ore",
       "required": false
     },
     {
@@ -5144,6 +5480,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_iron_ore",
       "required": false
     },
@@ -5221,6 +5573,14 @@
     },
     {
       "id": "seamlessores:biomeswevegone_dacite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_denseores_dense_iron_ore",
       "required": false
     },
     {
@@ -5324,6 +5684,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_white_dacite_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_iron_ore",
       "required": false
     },
@@ -5365,6 +5733,14 @@
     },
     {
       "id": "seamlessores:biomeswevegone_red_rock_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_denseores_dense_iron_ore",
       "required": false
     }
   ]

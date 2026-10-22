@@ -64,6 +64,18 @@
       "id": "seamlessores:granite_create_new_age_thorium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_denseores_dense_emerald_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -94,6 +106,18 @@
     },
     {
       "id": "seamlessores:diorite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_emerald_ore",
       "required": false
     },
     "seamlessores:andesite_gold_ore",
@@ -134,6 +158,14 @@
     },
     {
       "id": "seamlessores:andesite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_denseores_dense_redstone_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
@@ -194,6 +226,18 @@
     },
     {
       "id": "seamlessores:tuff_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_diamond_ore",
       "required": false
     },
     "seamlessores:dripstone_gold_ore",
@@ -265,6 +309,10 @@
     },
     {
       "id": "seamlessores:blackstone_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_denseores_dense_redstone_ore",
       "required": false
     },
     {

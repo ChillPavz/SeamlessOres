@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_denseores_dense_emerald_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_denseores_dense_emerald_ore",
+        "y": 180
+      }
+    ]
+  }
+}

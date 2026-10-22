@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 4.0,
+  "group": "emerald",
+  "ingredient": {
+    "item": "seamlessores:born_in_chaos_v1_black_argillite_denseores_dense_emerald_ore"
+  },
+  "result": "minecraft:emerald"
+}
