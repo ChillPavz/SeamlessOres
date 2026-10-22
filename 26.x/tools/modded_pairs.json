@@ -61,6 +61,184 @@
    ],
    "deepslate_overlay": null
   },
+  "denseores_ancient_nether": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_ancient_nether",
+   "forms": [
+    "denseores:ancient_nether_ore"
+   ],
+   "nether": true,
+   "xp": [
+    0,
+    0
+   ],
+   "deepslate_xp": null,
+   "strength": [
+    30.0,
+    500.0,
+    30.0,
+    500.0
+   ],
+   "deepslate_overlay": null
+  },
+  "denseores_coal": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_coal",
+   "forms": [
+    "denseores:dense_coal_ore",
+    "denseores:dense_deepslate_coal_ore"
+   ],
+   "nether": false,
+   "xp": [
+    2,
+    4
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": "denseores_coal_deepslate"
+  },
+  "denseores_copper": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_copper",
+   "forms": [
+    "denseores:dense_copper_ore",
+    "denseores:dense_deepslate_copper_ore"
+   ],
+   "nether": false,
+   "xp": [
+    0,
+    0
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "denseores_diamond": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_diamond",
+   "forms": [
+    "denseores:dense_diamond_ore",
+    "denseores:dense_deepslate_diamond_ore"
+   ],
+   "nether": false,
+   "xp": [
+    5,
+    9
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "denseores_emerald": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_emerald",
+   "forms": [
+    "denseores:dense_emerald_ore",
+    "denseores:dense_deepslate_emerald_ore"
+   ],
+   "nether": false,
+   "xp": [
+    5,
+    9
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "denseores_gold": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_gold",
+   "forms": [
+    "denseores:dense_gold_ore",
+    "denseores:dense_deepslate_gold_ore"
+   ],
+   "nether": false,
+   "xp": [
+    0,
+    0
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "denseores_iron": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_iron",
+   "forms": [
+    "denseores:dense_iron_ore",
+    "denseores:dense_deepslate_iron_ore"
+   ],
+   "nether": false,
+   "xp": [
+    0,
+    0
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "denseores_lapis": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_lapis",
+   "forms": [
+    "denseores:dense_lapis_ore",
+    "denseores:dense_deepslate_lapis_ore"
+   ],
+   "nether": false,
+   "xp": [
+    4,
+    7
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "denseores_nether_gold": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_nether_gold",
+   "forms": [
+    "denseores:dense_nether_gold_ore"
+   ],
+   "nether": true,
+   "xp": [
+    2,
+    3
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "denseores_nether_quartz": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_nether_quartz",
+   "forms": [
+    "denseores:dense_nether_quartz_ore"
+   ],
+   "nether": true,
+   "xp": [
+    4,
+    7
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "denseores_redstone": {
+   "mod": "denseores",
+   "seamless_ores_name": "denseores_redstone",
+   "forms": [
+    "denseores:dense_redstone_ore",
+    "denseores:dense_deepslate_redstone_ore"
+   ],
+   "nether": false,
+   "xp": [
+    1,
+    5
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
   "energized_tin": {
    "mod": "energizedpower",
    "seamless_ores_name": "energized_tin",
@@ -1297,6 +1475,55 @@
     ],
     "rate": 2.14
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 44.5
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 8.21
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 31.23
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 17.88
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 71.21
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 48.06
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 46.71
+   },
    "galena": {
     "where": [
      "26.1.x fabric",
@@ -1435,6 +1662,55 @@
      "26.3 fabric"
     ],
     "rate": 1.11
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 101.96
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 57.76
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 3.03
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 59.75
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 18.57
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 6.08
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 0.6
    },
    "energized_tin": {
     "where": [
@@ -1655,6 +1931,55 @@
     ],
     "rate": 1.11
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 97.18
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 55.62
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 3.03
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 52.5
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 17.15
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 6.06
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 0.6
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -1862,6 +2187,55 @@
     ],
     "rate": 1.96
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 9.34
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 0.83
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 9.96
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 3.76
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 21.88
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 16.74
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 17.1
+   },
    "galena": {
     "where": [
      "26.1.x fabric",
@@ -2004,6 +2378,55 @@
      "26.2 fabric"
     ],
     "rate": 0.83
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 52.35
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 26.41
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 5.42
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 27.95
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 17.37
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 7.15
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 1.94
    },
    "energized_tin": {
     "where": [
@@ -2209,6 +2632,55 @@
     ],
     "rate": 0.83
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 52.35
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 26.41
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 5.42
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 27.95
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 17.37
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 7.15
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 1.94
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -2412,6 +2884,55 @@
      "26.2 fabric"
     ],
     "rate": 1.1
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 69.55
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 35.09
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 7.2
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 37.13
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 23.07
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 9.5
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 2.58
    },
    "energized_tin": {
     "where": [
@@ -2617,6 +3138,55 @@
     ],
     "rate": 0.72
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 45.37
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 22.89
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 4.69
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 24.22
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 15.05
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 6.2
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 1.68
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -2813,6 +3383,34 @@
     ],
     "rate": 43.69
    },
+   "denseores_ancient_nether": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 28.21
+   },
+   "denseores_gold": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 93.11
+   },
+   "denseores_nether_gold": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 46.55
+   },
+   "denseores_nether_quartz": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 80.89
+   },
    "midas_gold": {
     "where": [
      "26.1.x fabric"
@@ -2928,6 +3526,83 @@
      "26.2 fabric"
     ],
     "rate": 0.69
+   },
+   "denseores_ancient_nether": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 29.97
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 43.9
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 22.15
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 4.54
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 23.44
+   },
+   "denseores_gold": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 98.93
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 14.57
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 6.0
+   },
+   "denseores_nether_gold": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 49.46
+   },
+   "denseores_nether_quartz": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 85.95
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 1.63
    },
    "energized_tin": {
     "where": [
@@ -3183,6 +3858,55 @@
     ],
     "rate": 0.78
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 49.49
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 24.97
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 5.12
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 26.43
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 16.42
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 6.76
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 1.84
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -3375,6 +4099,42 @@
     ],
     "rate": 597.07
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 44.26
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 194.39
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 17.79
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 402.78
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 368.73
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 569.37
+   },
    "garnet": {
     "where": [
      "26.1.x neoforge"
@@ -3540,6 +4300,69 @@
      "26.3 neoforge"
     ],
     "rate": 2.55
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 2.21
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 0.71
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 0.8
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 0.9
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 2.01
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 1.21
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 1.16
    },
    "energized_tin": {
     "where": [
@@ -3873,6 +4696,55 @@
     ],
     "rate": 0.48
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 30.66
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 15.47
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 3.17
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 16.37
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 10.17
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 4.19
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 1.14
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -4076,6 +4948,55 @@
      "26.2 fabric"
     ],
     "rate": 0.31
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 19.44
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 9.81
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 2.01
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 10.38
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 6.45
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 2.66
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 0.72
    },
    "energized_tin": {
     "where": [
@@ -4308,6 +5229,83 @@
      "26.2 fabric"
     ],
     "rate": 0.25
+   },
+   "denseores_ancient_nether": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 10.39
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 15.91
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 8.03
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 1.65
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 8.49
+   },
+   "denseores_gold": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 34.29
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 5.28
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 2.17
+   },
+   "denseores_nether_gold": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 17.15
+   },
+   "denseores_nether_quartz": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 29.79
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 0.59
    },
    "energized_tin": {
     "where": [
@@ -4651,6 +5649,55 @@
     ],
     "rate": 41.73
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 77.54
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 43.29
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 2.41
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 44.01
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 14.75
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 4.65
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 0.48
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -4894,6 +5941,55 @@
     ],
     "rate": 41.81
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 79.33
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 44.09
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 2.41
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 46.73
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 15.29
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 4.66
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric"
+    ],
+    "rate": 0.48
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -5121,6 +6217,55 @@
     ],
     "rate": 0.45
    },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.56
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.2
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.13
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.24
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.36
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.18
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.11
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -5304,6 +6449,34 @@
    }
   },
   "regions_unexplored:chalk": {
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 3.37
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.56
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 4.7
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 2.78
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -5390,6 +6563,34 @@
      "26.1.x neoforge"
     ],
     "rate": 0.5
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 6.3
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 3.75
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 8.95
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 1.02
    },
    "energized_tin": {
     "where": [
@@ -5502,6 +6703,62 @@
      "26.3 neoforge"
     ],
     "rate": 5.04
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 6.08
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 2.77
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 1.21
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 3.03
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 3.27
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 1.84
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.2 neoforge"
+    ],
+    "rate": 1.24
    },
    "energized_tin": {
     "where": [

@@ -25,6 +25,20 @@ Dense Mekanism, MIT:
   assets/seamlessores/textures/block/dense_tin_overlay.png
   assets/seamlessores/textures/block/dense_uranium_overlay.png
 
+Dense Ores by NewJumperr, AGPL-3.0 (art, as its Modrinth page):
+  assets/seamlessores/textures/block/denseores_ancient_nether_overlay.png
+  assets/seamlessores/textures/block/denseores_coal_deepslate_overlay.png
+  assets/seamlessores/textures/block/denseores_coal_overlay.png
+  assets/seamlessores/textures/block/denseores_copper_overlay.png
+  assets/seamlessores/textures/block/denseores_diamond_overlay.png
+  assets/seamlessores/textures/block/denseores_emerald_overlay.png
+  assets/seamlessores/textures/block/denseores_gold_overlay.png
+  assets/seamlessores/textures/block/denseores_iron_overlay.png
+  assets/seamlessores/textures/block/denseores_lapis_overlay.png
+  assets/seamlessores/textures/block/denseores_nether_gold_overlay.png
+  assets/seamlessores/textures/block/denseores_nether_quartz_overlay.png
+  assets/seamlessores/textures/block/denseores_redstone_overlay.png
+
 Energized Power by JDDev0, MIT:
   assets/seamlessores/textures/block/energized_tin_overlay.png
 

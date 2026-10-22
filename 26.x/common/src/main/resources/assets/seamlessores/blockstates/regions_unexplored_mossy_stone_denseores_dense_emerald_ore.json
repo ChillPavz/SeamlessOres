@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_denseores_dense_emerald_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_denseores_dense_emerald_ore_mirrored"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_denseores_dense_emerald_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_denseores_dense_emerald_ore_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

@@ -112,6 +112,7 @@ PROFILES = {
             "theurgy": REFS + "theurgy-26.1.2-neoforge-1.116.0.jar",
             "evilcraft": REFS + "evilcraft-26.1.2-neoforge-1.2.108-1172.jar",
             "betternether": REFS + "better-nether-26.101.2.jar",
+            "denseores": REFS + "denseores-neoforge-1.4.1.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -134,6 +135,7 @@ PROFILES = {
             "theurgy": ("neoforge",),
             "evilcraft": ("neoforge",),
             "betternether": ("fabric",),
+            "denseores": ("fabric", "neoforge"),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -156,6 +158,7 @@ PROFILES = {
             "theurgy": REFS + "theurgy-26.2-neoforge-1.118.1.jar",
             "evilcraft": REFS + "evilcraft-26.2-neoforge-1.2.98-1108.jar",
             "betternether": REFS + "better-nether-26.201.4.jar",
+            "denseores": REFS + "denseores-neoforge-26.2-1.4.1.jar",
         },
         "available": {
             "create": ("fabric",),
@@ -168,6 +171,7 @@ PROFILES = {
             "theurgy": ("neoforge",),
             "evilcraft": ("neoforge",),
             "betternether": ("fabric",),
+            "denseores": ("fabric", "neoforge"),
         },
     },
     # 26.3 (data formats 121 and up): a new loot format, silk touch as a single "condition" (see
@@ -194,6 +198,7 @@ PROFILES = {
             "techreborn": REFS + "26.3-TechReborn-6.2.0.jar",
             "occultism": REFS + "occultism-26.3-neoforge-1.256.0.jar",
             "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",   # no 26.3 build: stands in, inert
+            "denseores": REFS + "denseores-neoforge-26.2-1.4.1.jar",       # no 26.3 build: stands in, inert
             "theurgy": REFS + "theurgy-26.3-neoforge-1.120.0.jar",
             "evilcraft": REFS + "evilcraft-26.3-neoforge-1.2.98-1170.jar",
             "betternether": REFS + "better-nether-26.301.2.jar",
@@ -414,6 +419,8 @@ MODS = {
                        "licence": "CC BY 4.0 (art)", "author": "rubensworks"},
     "betternether": {"display": "BetterNether", "category": "betternether",
                        "licence": "MIT", "author": "quiqueck, paulevs"},
+    "denseores": {"display": "Dense Ores", "category": "dense_ores",
+                       "licence": "AGPL-3.0 (art, as its Modrinth page)", "author": "NewJumperr"},
 }
 
 ORE_DEFS = [
@@ -809,6 +816,40 @@ ORE_DEFS = [
     {"name": "betternether_nether_ruby", "overlay": "betternether_nether_ruby", "source": "nether_ruby_ore", "base": "netherrack",
      "mod": "betternether",
      "tiers": {"nether": "nether_ruby_ore"}},
+    # --- Dense Ores (mod id denseores; art shipped under AGPL-3.0, its Modrinth licence): the game's ores, denser ---
+    {"name": "denseores_coal", "overlay": "denseores_coal", "deepslate_overlay": "denseores_coal_deepslate", "source": "dense_coal_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_coal_ore", "deepslate": "dense_deepslate_coal_ore"}},
+    {"name": "denseores_copper", "overlay": "denseores_copper", "source": "dense_copper_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_copper_ore", "deepslate": "dense_deepslate_copper_ore"}},
+    {"name": "denseores_iron", "overlay": "denseores_iron", "source": "dense_iron_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_iron_ore", "deepslate": "dense_deepslate_iron_ore"}},
+    {"name": "denseores_gold", "overlay": "denseores_gold", "source": "dense_gold_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_gold_ore", "deepslate": "dense_deepslate_gold_ore"}},
+    {"name": "denseores_lapis", "overlay": "denseores_lapis", "source": "dense_lapis_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_lapis_ore", "deepslate": "dense_deepslate_lapis_ore"}},
+    {"name": "denseores_redstone", "overlay": "denseores_redstone", "source": "dense_redstone_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_redstone_ore", "deepslate": "dense_deepslate_redstone_ore"}},
+    {"name": "denseores_diamond", "overlay": "denseores_diamond", "source": "dense_diamond_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_diamond_ore", "deepslate": "dense_deepslate_diamond_ore"}},
+    {"name": "denseores_emerald", "overlay": "denseores_emerald", "source": "dense_emerald_ore", "base": "stone",
+     "mod": "denseores",
+     "tiers": {"stone": "dense_emerald_ore", "deepslate": "dense_deepslate_emerald_ore"}},
+    {"name": "denseores_nether_gold", "overlay": "denseores_nether_gold", "source": "dense_nether_gold_ore", "base": "netherrack",
+     "mod": "denseores",
+     "tiers": {"nether": "dense_nether_gold_ore"}},
+    {"name": "denseores_nether_quartz", "overlay": "denseores_nether_quartz", "source": "dense_nether_quartz_ore", "base": "netherrack",
+     "mod": "denseores",
+     "tiers": {"nether": "dense_nether_quartz_ore"}},
+    {"name": "denseores_ancient_nether", "overlay": "denseores_ancient_nether", "source": "ancient_nether_ore", "base": "netherrack",
+     "mod": "denseores",
+     "tiers": {"nether": "ancient_nether_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -894,6 +935,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "theurgy": ("neoforge",),
     "evilcraft": ("neoforge",),
     "betternether": ("fabric",),
+    "denseores": ("fabric", "neoforge"),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1059,6 +1101,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
         f"text.autoconfig.{MOD_ID}.category.betternether": "BetterNether",
         f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
         f"text.autoconfig.{MOD_ID}.category.theurgy": "Theurgy",
@@ -1081,6 +1124,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.denseOres": "Dense Ores: variants",
+        f"text.autoconfig.{MOD_ID}.option.denseOres.@Tooltip":
+            "Generate host-matched Dense Ores ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.betterNether": "BetterNether: variants",
         f"text.autoconfig.{MOD_ID}.option.betterNether.@Tooltip":

@@ -112,6 +112,18 @@
       "id": "seamlessores:granite_mysticalagriculture_prosperity_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_denseores_dense_emerald_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -188,6 +200,18 @@
       "id": "seamlessores:diorite_mysticalagriculture_prosperity_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_denseores_dense_emerald_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     "seamlessores:andesite_diamond_ore",
     "seamlessores:andesite_emerald_ore",
@@ -258,6 +282,14 @@
     },
     {
       "id": "seamlessores:andesite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_denseores_dense_redstone_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
@@ -354,6 +386,18 @@
     },
     {
       "id": "seamlessores:tuff_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_denseores_dense_diamond_ore",
       "required": false
     },
     "seamlessores:dripstone_gold_ore",
@@ -581,6 +625,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_gold_ore",
       "required": false
     },
@@ -618,6 +666,10 @@
     },
     {
       "id": "seamlessores:blockus_limestone_techreborn_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_denseores_dense_emerald_ore",
       "required": false
     },
     {
@@ -669,6 +721,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_bluestone_gold_ore",
       "required": false
     },
@@ -698,6 +754,10 @@
     },
     {
       "id": "seamlessores:blockus_bluestone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -749,6 +809,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_crimsite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_gold_ore",
       "required": false
     },
@@ -789,6 +853,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -826,6 +894,10 @@
     },
     {
       "id": "seamlessores:create_scorchia_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_denseores_dense_gold_ore",
       "required": false
     },
     {
@@ -917,6 +989,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_mythicmetals_prometheum_ore",
       "required": false
     },
@@ -958,6 +1038,10 @@
     },
     {
       "id": "seamlessores:calcite_techreborn_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_denseores_dense_emerald_ore",
       "required": false
     },
     {
@@ -1049,6 +1133,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_denseores_dense_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
       "required": false
     },
@@ -1066,6 +1158,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_denseores_dense_redstone_ore",
       "required": false
     },
     {
@@ -1173,6 +1269,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_gold_ore",
       "required": false
     },
@@ -1225,6 +1325,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_gold_ore",
       "required": false
     },
@@ -1238,6 +1342,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_chalk_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_denseores_dense_emerald_ore",
       "required": false
     },
     {
@@ -1325,6 +1433,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_gold_ore",
       "required": false
     },
@@ -1358,6 +1470,10 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_denseores_dense_redstone_ore",
       "required": false
     }
   ]

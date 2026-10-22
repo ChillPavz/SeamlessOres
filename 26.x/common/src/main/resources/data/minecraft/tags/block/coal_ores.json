@@ -4,9 +4,17 @@
     "seamlessores:diorite_coal_ore",
     "seamlessores:andesite_coal_ore",
     "seamlessores:tuff_coal_ore",
+    {
+      "id": "seamlessores:tuff_denseores_dense_coal_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     {
       "id": "seamlessores:blockus_limestone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_denseores_dense_coal_ore",
       "required": false
     },
     {
@@ -14,7 +22,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_mossy_stone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_denseores_dense_coal_ore",
       "required": false
     },
     {
@@ -22,11 +38,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_coal_ore",
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_chalk_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_denseores_dense_coal_ore",
       "required": false
     }
   ]

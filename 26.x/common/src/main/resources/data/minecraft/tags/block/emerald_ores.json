@@ -1,7 +1,15 @@
 {
   "values": [
     "seamlessores:granite_emerald_ore",
+    {
+      "id": "seamlessores:granite_denseores_dense_emerald_ore",
+      "required": false
+    },
     "seamlessores:diorite_emerald_ore",
+    {
+      "id": "seamlessores:diorite_denseores_dense_emerald_ore",
+      "required": false
+    },
     "seamlessores:andesite_emerald_ore",
     "seamlessores:tuff_emerald_ore",
     "seamlessores:dripstone_emerald_ore",
@@ -10,7 +18,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_denseores_dense_emerald_ore",
       "required": false
     },
     {
@@ -18,7 +34,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:calcite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_denseores_dense_emerald_ore",
       "required": false
     },
     {
@@ -26,7 +50,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_denseores_dense_emerald_ore",
       "required": false
     }
   ]

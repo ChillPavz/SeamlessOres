@@ -1,7 +1,15 @@
 {
   "values": [
     "seamlessores:granite_lapis_ore",
+    {
+      "id": "seamlessores:granite_denseores_dense_lapis_ore",
+      "required": false
+    },
     "seamlessores:diorite_lapis_ore",
+    {
+      "id": "seamlessores:diorite_denseores_dense_lapis_ore",
+      "required": false
+    },
     "seamlessores:andesite_lapis_ore",
     "seamlessores:tuff_lapis_ore",
     "seamlessores:dripstone_lapis_ore",
@@ -10,7 +18,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:calcite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_denseores_dense_lapis_ore",
       "required": false
     },
     {
