@@ -1920,6 +1920,7 @@ def main():
     print(f"  renamed ids: {renamed.write(HOSTS, list(variants()), os.path.join(os.path.dirname(os.path.abspath(__file__)), "retired_ids.json"), resources_dir())} aliased")
     print("Updating README...")
     generate_readme()
+    print(f"  THIRD_PARTY_ART.txt: {assetgen.write_art_notice(os.path.join(resources_dir(), 'THIRD_PARTY_ART.txt'), ORE_DEFS, MODS)} mods")
 
     print("Generating the Java tables...")
     generate_java()

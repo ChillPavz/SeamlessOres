@@ -1,0 +1,85 @@
+Seamless Ores: third-party art
+
+Seamless Ores' code is licensed under PolyForm Shield 1.0.0 (see LICENSE). The ore overlay
+textures listed below are derived from other mods' own ore textures. Each stays under the
+licence of the mod it comes from, shown with it; PolyForm Shield does not apply to them.
+The overlays of the game's own ores are derived from Minecraft's textures and remain Mojang's.
+
+Create, MIT:
+  assets/seamlessores/textures/block/zinc_overlay.png
+
+Create: New Age by Antarctic Gardens, BSD-3-Clause:
+  assets/seamlessores/textures/block/thorium_overlay.png
+
+Create: TFMG by DrMangoTea, Pepa, Luna, MIT:
+  assets/seamlessores/textures/block/lead_overlay.png
+  assets/seamlessores/textures/block/lithium_overlay.png
+
+Dense Mekanism, MIT:
+  assets/seamlessores/textures/block/dense_fluorite_overlay.png
+  assets/seamlessores/textures/block/dense_lead_overlay.png
+  assets/seamlessores/textures/block/dense_tin_overlay.png
+  assets/seamlessores/textures/block/dense_uranium_overlay.png
+
+Energized Power by JDDev0, MIT:
+  assets/seamlessores/textures/block/energized_tin_overlay.png
+
+Mythic Metals by Noaaan, MIT:
+  assets/seamlessores/textures/block/adamantite_overlay.png
+  assets/seamlessores/textures/block/aquarium_overlay.png
+  assets/seamlessores/textures/block/banglum_overlay.png
+  assets/seamlessores/textures/block/carmot_overlay.png
+  assets/seamlessores/textures/block/kyber_overlay.png
+  assets/seamlessores/textures/block/manganese_overlay.png
+  assets/seamlessores/textures/block/midas_gold_overlay.png
+  assets/seamlessores/textures/block/morkite_overlay.png
+  assets/seamlessores/textures/block/mythril_overlay.png
+  assets/seamlessores/textures/block/nether_banglum_overlay.png
+  assets/seamlessores/textures/block/orichalcum_overlay.png
+  assets/seamlessores/textures/block/osmium_overlay.png
+  assets/seamlessores/textures/block/palladium_overlay.png
+  assets/seamlessores/textures/block/platinum_overlay.png
+  assets/seamlessores/textures/block/prometheum_overlay.png
+  assets/seamlessores/textures/block/quadrillum_overlay.png
+  assets/seamlessores/textures/block/runite_overlay.png
+  assets/seamlessores/textures/block/silver_overlay.png
+  assets/seamlessores/textures/block/starrite_overlay.png
+  assets/seamlessores/textures/block/stormyx_overlay.png
+  assets/seamlessores/textures/block/tin_overlay.png
+  assets/seamlessores/textures/block/unobtainium_deepslate_overlay.png
+
+Mythic Upgrades by TriQue, MIT:
+  assets/seamlessores/textures/block/aquamarine_overlay.png
+  assets/seamlessores/textures/block/citrine_overlay.png
+  assets/seamlessores/textures/block/necoium_overlay.png
+  assets/seamlessores/textures/block/peridot_overlay.png
+  assets/seamlessores/textures/block/ruby_overlay.png
+  assets/seamlessores/textures/block/sapphire_overlay.png
+  assets/seamlessores/textures/block/topaz_overlay.png
+
+Powah by owmii, Technici4n, shartte, LGPL-3.0:
+  assets/seamlessores/textures/block/uraninite_dense_overlay.png
+  assets/seamlessores/textures/block/uraninite_overlay.png
+  assets/seamlessores/textures/block/uraninite_poor_overlay.png
+
+Silent Gear by SilentChaos512, MIT:
+  assets/seamlessores/textures/block/bort_overlay.png
+
+Silent's Gems by SilentChaos512, MIT:
+  assets/seamlessores/textures/block/black_diamond_overlay.png
+  assets/seamlessores/textures/block/carnelian_overlay.png
+  assets/seamlessores/textures/block/chaos_overlay.png
+  assets/seamlessores/textures/block/garnet_overlay.png
+  assets/seamlessores/textures/block/heliodor_overlay.png
+  assets/seamlessores/textures/block/silents_aquamarine_overlay.png
+  assets/seamlessores/textures/block/silents_citrine_overlay.png
+  assets/seamlessores/textures/block/silents_peridot_overlay.png
+  assets/seamlessores/textures/block/silents_ruby_overlay.png
+  assets/seamlessores/textures/block/silents_sapphire_overlay.png
+  assets/seamlessores/textures/block/silents_silver_overlay.png
+  assets/seamlessores/textures/block/silents_topaz_overlay.png
+  assets/seamlessores/textures/block/turquoise_overlay.png
+  assets/seamlessores/textures/block/white_diamond_overlay.png
+
+Things by glisco, MIT:
+  assets/seamlessores/textures/block/gleaming_overlay.png

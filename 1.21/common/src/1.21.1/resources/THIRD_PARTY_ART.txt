@@ -1,0 +1,155 @@
+Seamless Ores: third-party art
+
+Seamless Ores' code is licensed under PolyForm Shield 1.0.0 (see LICENSE). The ore overlay
+textures listed below are derived from other mods' own ore textures. Each stays under the
+licence of the mod it comes from, shown with it; PolyForm Shield does not apply to them.
+The overlays of the game's own ores are derived from Minecraft's textures and remain Mojang's.
+
+Create, MIT:
+  assets/seamlessores/textures/block/zinc_overlay.png
+
+Create: New Age by Antarctic Gardens, BSD-3-Clause:
+  assets/seamlessores/textures/block/thorium_overlay.png
+
+Create: TFMG by DrMangoTea, Pepa, Luna, MIT:
+  assets/seamlessores/textures/block/lead_overlay.png
+  assets/seamlessores/textures/block/lithium_overlay.png
+  assets/seamlessores/textures/block/nickel_overlay.png
+
+Dense Mekanism, MIT:
+  assets/seamlessores/textures/block/dense_fluorite_overlay.png
+  assets/seamlessores/textures/block/dense_lead_overlay.png
+  assets/seamlessores/textures/block/dense_osmium_overlay.png
+  assets/seamlessores/textures/block/dense_tin_overlay.png
+  assets/seamlessores/textures/block/dense_uranium_overlay.png
+
+Energized Power by JDDev0, MIT:
+  assets/seamlessores/textures/block/energized_tin_overlay.png
+
+Extreme Reactors by ZeroNoRyouki, MIT:
+  assets/seamlessores/textures/block/yellorite_overlay.png
+
+Ice and Fire by Alexthe666, the Community Edition by IAFEnvoy, LGPL-3.0:
+  assets/seamlessores/textures/block/iceandfire_deepslate_silver_overlay.png
+  assets/seamlessores/textures/block/iceandfire_sapphire_overlay.png
+  assets/seamlessores/textures/block/iceandfire_silver_overlay.png
+
+Immersive Engineering by BluSunrize, Damien A.W. Hazard, Blu's License of Common Sense:
+  assets/seamlessores/textures/block/ie_aluminum_overlay.png
+  assets/seamlessores/textures/block/ie_lead_overlay.png
+  assets/seamlessores/textures/block/ie_silver_overlay.png
+  assets/seamlessores/textures/block/ie_uranium_overlay.png
+
+Malum by Sammy Semicolon, All Rights Reserved, used with permission:
+  assets/seamlessores/textures/block/blazing_quartz_overlay.png
+  assets/seamlessores/textures/block/brilliant_overlay.png
+  assets/seamlessores/textures/block/natural_quartz_overlay.png
+  assets/seamlessores/textures/block/soulstone_overlay.png
+
+Mekanism by Aidan C. Brady, MIT:
+  assets/seamlessores/textures/block/mek_fluorite_overlay.png
+  assets/seamlessores/textures/block/mek_lead_overlay.png
+  assets/seamlessores/textures/block/mek_tin_overlay.png
+  assets/seamlessores/textures/block/mek_uranium_overlay.png
+
+Modern Industrialization by Azerococo, Technici4n, MIT:
+  assets/seamlessores/textures/block/antimony_overlay.png
+  assets/seamlessores/textures/block/lignite_coal_overlay.png
+  assets/seamlessores/textures/block/mi_bauxite_overlay.png
+  assets/seamlessores/textures/block/mi_lead_overlay.png
+  assets/seamlessores/textures/block/mi_nickel_overlay.png
+  assets/seamlessores/textures/block/mi_tin_overlay.png
+  assets/seamlessores/textures/block/monazite_overlay.png
+  assets/seamlessores/textures/block/salt_overlay.png
+  assets/seamlessores/textures/block/tungsten_overlay.png
+  assets/seamlessores/textures/block/uranium_overlay.png
+
+Mystical Agriculture by BlakeBr0, MIT:
+  assets/seamlessores/textures/block/inferium_overlay.png
+  assets/seamlessores/textures/block/prosperity_overlay.png
+
+Mythic Metals by Noaaan, MIT:
+  assets/seamlessores/textures/block/adamantite_overlay.png
+  assets/seamlessores/textures/block/aquarium_overlay.png
+  assets/seamlessores/textures/block/banglum_overlay.png
+  assets/seamlessores/textures/block/carmot_overlay.png
+  assets/seamlessores/textures/block/kyber_overlay.png
+  assets/seamlessores/textures/block/manganese_overlay.png
+  assets/seamlessores/textures/block/midas_gold_overlay.png
+  assets/seamlessores/textures/block/morkite_overlay.png
+  assets/seamlessores/textures/block/mythril_overlay.png
+  assets/seamlessores/textures/block/nether_banglum_overlay.png
+  assets/seamlessores/textures/block/orichalcum_overlay.png
+  assets/seamlessores/textures/block/osmium_overlay.png
+  assets/seamlessores/textures/block/palladium_overlay.png
+  assets/seamlessores/textures/block/platinum_overlay.png
+  assets/seamlessores/textures/block/prometheum_overlay.png
+  assets/seamlessores/textures/block/quadrillum_overlay.png
+  assets/seamlessores/textures/block/runite_overlay.png
+  assets/seamlessores/textures/block/silver_overlay.png
+  assets/seamlessores/textures/block/starrite_overlay.png
+  assets/seamlessores/textures/block/stormyx_overlay.png
+  assets/seamlessores/textures/block/tin_overlay.png
+  assets/seamlessores/textures/block/unobtainium_deepslate_overlay.png
+
+Mythic Upgrades by TriQue, MIT:
+  assets/seamlessores/textures/block/ametrine_overlay.png
+  assets/seamlessores/textures/block/aquamarine_overlay.png
+  assets/seamlessores/textures/block/citrine_overlay.png
+  assets/seamlessores/textures/block/necoium_overlay.png
+  assets/seamlessores/textures/block/peridot_overlay.png
+  assets/seamlessores/textures/block/ruby_overlay.png
+  assets/seamlessores/textures/block/sapphire_overlay.png
+  assets/seamlessores/textures/block/topaz_overlay.png
+
+Occultism by Kli Kli, MIT:
+  assets/seamlessores/textures/block/occultism_silver_overlay.png
+
+Oreganized by Team Galena, MIT code, assets All Rights Reserved:
+  assets/seamlessores/textures/block/oreganized_lead_overlay.png
+  assets/seamlessores/textures/block/oreganized_silver_overlay.png
+
+Powah by owmii, Technici4n, shartte, LGPL-3.0:
+  assets/seamlessores/textures/block/uraninite_dense_overlay.png
+  assets/seamlessores/textures/block/uraninite_overlay.png
+  assets/seamlessores/textures/block/uraninite_poor_overlay.png
+
+Silent Gear by SilentChaos512, MIT:
+  assets/seamlessores/textures/block/bort_overlay.png
+
+Silent's Gems by SilentChaos512, MIT:
+  assets/seamlessores/textures/block/alexandrite_overlay.png
+  assets/seamlessores/textures/block/black_diamond_overlay.png
+  assets/seamlessores/textures/block/carnelian_overlay.png
+  assets/seamlessores/textures/block/chaos_overlay.png
+  assets/seamlessores/textures/block/garnet_overlay.png
+  assets/seamlessores/textures/block/heliodor_overlay.png
+  assets/seamlessores/textures/block/iolite_overlay.png
+  assets/seamlessores/textures/block/moldavite_overlay.png
+  assets/seamlessores/textures/block/pearl_overlay.png
+  assets/seamlessores/textures/block/silents_aquamarine_overlay.png
+  assets/seamlessores/textures/block/silents_citrine_overlay.png
+  assets/seamlessores/textures/block/silents_peridot_overlay.png
+  assets/seamlessores/textures/block/silents_ruby_overlay.png
+  assets/seamlessores/textures/block/silents_sapphire_overlay.png
+  assets/seamlessores/textures/block/silents_silver_overlay.png
+  assets/seamlessores/textures/block/silents_topaz_overlay.png
+  assets/seamlessores/textures/block/tanzanite_overlay.png
+  assets/seamlessores/textures/block/turquoise_overlay.png
+  assets/seamlessores/textures/block/white_diamond_overlay.png
+
+Tech Reborn by Team Reborn, modmuss50, drcrazy, MIT:
+  assets/seamlessores/textures/block/cinnabar_overlay.png
+  assets/seamlessores/textures/block/galena_overlay.png
+  assets/seamlessores/textures/block/iridium_overlay.png
+  assets/seamlessores/textures/block/pyrite_overlay.png
+  assets/seamlessores/textures/block/sphalerite_overlay.png
+  assets/seamlessores/textures/block/techreborn_bauxite_overlay.png
+  assets/seamlessores/textures/block/techreborn_lead_overlay.png
+  assets/seamlessores/textures/block/techreborn_ruby_overlay.png
+  assets/seamlessores/textures/block/techreborn_sapphire_overlay.png
+  assets/seamlessores/textures/block/techreborn_silver_overlay.png
+  assets/seamlessores/textures/block/techreborn_tin_overlay.png
+
+Things by glisco, MIT:
+  assets/seamlessores/textures/block/gleaming_overlay.png

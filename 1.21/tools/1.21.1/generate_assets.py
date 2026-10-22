@@ -35,6 +35,7 @@ import zipfile
 
 # The overlay art lives once, in the repository's shared/textures pool (shared/tools/assetgen.py).
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "shared", "tools"))
+import assetgen  # noqa: E402
 import parity  # noqa: E402
 from assetgen import (POOL, TOOL_TAGS, assert_no_dashes, era_file, jar, jar_tags,  # noqa: E402
                       look_models, read_mod_tags, defer_to_source, silk_touch_to, stone_name, texture_path, title,
@@ -1963,6 +1964,7 @@ def main():
     print(f"  renamed ids: {renamed.write(HOSTS, list(variants()), os.path.join(os.path.dirname(os.path.abspath(__file__)), "retired_ids.json"), resources_dir())} aliased")
     print("Updating README...")
     generate_readme()
+    print(f"  THIRD_PARTY_ART.txt: {assetgen.write_art_notice(os.path.join(resources_dir(), 'THIRD_PARTY_ART.txt'), ORE_DEFS, MODS)} mods")
     print("Generating the Java tables...")
     cases = placed.write_java(HOSTS, os.path.dirname(HOST_TABLE), os.path.join(repo_root(), "cloth-config", "src", BAND, "java", "com", "chillpavz", MOD_ID, "config",
                      "SeamlessOresConfigData.java"), STONE_LOADERS)

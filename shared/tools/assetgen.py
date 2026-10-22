@@ -132,6 +132,43 @@ MOD_PREFIXES = ("silents_", "techreborn_", "energized_", "occultism_", "mi_", "i
 STONE_NAMES = {"dripstone_block": "Dripstone", "minecraft_blackstone": "Deep Blackstone"}
 
 
+def write_art_notice(path, ore_defs, mods):
+    """THIRD_PARTY_ART.txt, shipped in the jar: every overlay derived from another mod's ore art, under
+    that mod's licence. Copyleft and share-alike art (LGPL, GPL, AGPL, CC BY-SA) keeps its own licence
+    inside this jar, file by file, so the notice names each file (owner, 22 Oct 2026)."""
+    # Only what this band ships: the overlays its block models name (the build copies no others).
+    used = set()
+    for root, _dirs, files in os.walk(os.path.join(os.path.dirname(path), "assets", MOD_ID, "models", "block")):
+        for name in files:
+            if name.endswith(".json"):
+                used |= set(re.findall(rf'"{MOD_ID}:block/([a-z0-9_/]+)_overlay"', open(os.path.join(root, name), encoding="utf-8").read()))
+    by_mod = {}
+    # An overlay a game ore also uses is the game's (Born in Chaos' infected diamond wears diamond's).
+    vanilla = {k for ore in ore_defs if not ore.get("mod") for k in (ore["overlay"], ore.get("deepslate_overlay")) if k}
+    for ore in ore_defs:
+        mod = ore.get("mod")
+        if not mod or mod not in mods:
+            continue
+        for key in (ore["overlay"], ore.get("deepslate_overlay")):
+            if key and key not in vanilla and key in used:
+                by_mod.setdefault(mod, set()).add(f"assets/{MOD_ID}/textures/block/{key}_overlay.png")
+    lines = ["Seamless Ores: third-party art", "",
+             "Seamless Ores' code is licensed under PolyForm Shield 1.0.0 (see LICENSE). The ore overlay",
+             "textures listed below are derived from other mods' own ore textures. Each stays under the",
+             "licence of the mod it comes from, shown with it; PolyForm Shield does not apply to them.",
+             "The overlays of the game's own ores are derived from Minecraft's textures and remain Mojang's.",
+             ""]
+    for mod in sorted(by_mod, key=lambda m: mods[m]["display"].lower()):
+        info = mods[mod]
+        author = f" by {info['author']}" if info.get("author") and info["author"] != "-" else ""
+        lines.append(f"{info['display']}{author}, {info['licence']}:")
+        lines += [f"  {f}" for f in sorted(by_mod[mod])]
+        lines.append("")
+    assert_no_dashes([("THIRD_PARTY_ART.txt", line) for line in lines], "lines of THIRD_PARTY_ART.txt")
+    write_text(path, "\n".join(lines))
+    return len(by_mod)
+
+
 def title(name):
     for prefix in MOD_PREFIXES:
         if name.startswith(prefix):
