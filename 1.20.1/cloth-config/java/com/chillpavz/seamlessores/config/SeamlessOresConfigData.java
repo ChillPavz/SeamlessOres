@@ -506,6 +506,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean things = true;
 
+    // --- Bigger Reactors -----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("bigger_reactors")
+    @ConfigEntry.Gui.Tooltip
+    public boolean biggerReactors = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -631,6 +637,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.things = things;
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;
+        values.biggerReactors = biggerReactors;
 
         SeamlessOresConfig.apply(values);
     }

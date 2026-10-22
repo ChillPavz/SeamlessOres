@@ -225,6 +225,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -506,6 +510,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_biggerreactors_uranium_ore",
       "required": false
     },
     {

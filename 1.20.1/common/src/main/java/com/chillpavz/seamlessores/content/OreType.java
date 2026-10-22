@@ -699,6 +699,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
             null, of("born_in_chaos_v1", "infected_deepslate_diamond_ore"), null, NONE, null, false, Set.of())
             .withKey("infected_diamond").withStrength(4.5F, 3.0F);
 
+    // --- Bigger Reactors (mod id biggerreactors, LGPL-2.1). Forge at 1.20.1: uranium, iron convention (3.0, 4.5 deep; 3.0), no XP ---
+    public static final OreType BR_URANIUM = ore(
+            "biggerreactors_uranium", "biggerreactors_uranium", null, "biggerreactors",
+            of("biggerreactors", "uranium_ore"), of("biggerreactors", "deepslate_uranium_ore"), null,
+            NONE, null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -727,7 +733,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, BENITOITE,
                     CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE,
                     CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE,
-                    INFECTED_DIAMOND);
+                    INFECTED_DIAMOND,
+                    BR_URANIUM);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

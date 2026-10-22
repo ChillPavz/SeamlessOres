@@ -47,6 +47,13 @@
     "mythicmetals:banglum_ore"
    ]
   },
+  "biggerreactors_uranium": {
+   "mod": "biggerreactors",
+   "forms": [
+    "biggerreactors:uranium_ore",
+    "biggerreactors:deepslate_uranium_ore"
+   ]
+  },
   "blazing_quartz": {
    "mod": "malum",
    "forms": [
@@ -2733,6 +2740,12 @@
     ],
     "rate": 1.38
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 54.64
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -3023,6 +3036,12 @@
      "1.20.1 fabric"
     ],
     "rate": 16.18
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.44
    },
    "bort": {
     "where": [
@@ -3582,6 +3601,12 @@
     ],
     "rate": 16.18
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 37.64
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -4140,6 +4165,12 @@
     ],
     "rate": 21.5
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.11
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -4697,6 +4728,12 @@
      "1.20.1 fabric"
     ],
     "rate": 14.03
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 25.51
    },
    "bort": {
     "where": [
@@ -5334,6 +5371,12 @@
     ],
     "rate": 13.57
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.8
+   },
    "blazing_quartz": {
     "where": [
      "1.20.1 fabric",
@@ -5961,6 +6004,12 @@
     ],
     "rate": 15.3
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.83
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -6494,6 +6543,12 @@
     ],
     "rate": 4.78
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 149.54
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -6777,6 +6832,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.38
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.7
    },
    "brilliant": {
     "where": [
@@ -7410,6 +7471,12 @@
    }
   },
   "embellishcraft:slate": {
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.38
+   },
    "brilliant": {
     "where": [
      "1.20.1 forge"
@@ -7603,6 +7670,12 @@
      "1.20.1 forge"
     ],
     "rate": 9.14
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 61.22
    },
    "bort": {
     "where": [
@@ -7858,6 +7931,12 @@
      "1.20.1 fabric"
     ],
     "rate": 16.06
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.03
    },
    "bort": {
     "where": [
@@ -8379,6 +8458,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.65
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.04
    },
    "bort": {
     "where": [
@@ -8919,6 +9004,12 @@
      "1.20.1 fabric"
     ],
     "rate": 9.48
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.24
    },
    "bort": {
     "where": [
@@ -9478,6 +9569,12 @@
     ],
     "rate": 6.01
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.16
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -10035,6 +10132,12 @@
      "1.20.1 fabric"
     ],
     "rate": 4.92
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.17
    },
    "blazing_quartz": {
     "where": [
@@ -11460,6 +11563,12 @@
     ],
     "rate": 27.21
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.6
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -11714,6 +11823,12 @@
     ],
     "rate": 27.21
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 284.66
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -11967,6 +12082,12 @@
      "1.20.1 forge"
     ],
     "rate": 27.21
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.6
    },
    "bort": {
     "where": [
@@ -12240,6 +12361,12 @@
      "1.20.1 fabric"
     ],
     "rate": 20.72
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.57
    },
    "bort": {
     "where": [
@@ -12692,6 +12819,12 @@
     ],
     "rate": 1.02
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.45
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -12994,6 +13127,12 @@
     ],
     "rate": 1.02
    },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.45
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -13295,6 +13434,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.02
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.45
    },
    "bort": {
     "where": [
@@ -13688,6 +13833,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.52
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.93
    },
    "bort": {
     "where": [
@@ -14190,6 +14341,12 @@
      "1.20.1 fabric"
     ],
     "rate": 1.55
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.84
    },
    "bort": {
     "where": [

@@ -175,7 +175,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "densemekanism": DENSEMEKANISM_JAR,
             "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
             "silentgems": SILENT_GEMS_JAR,
-            "mythicmetals": MYTHIC_METALS_JAR}
+            "mythicmetals": MYTHIC_METALS_JAR,
+            "biggerreactors": jar("biggerreactors-1.20.1-0.6.0-beta.10.5.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -377,6 +378,8 @@ MODS = {
                        "link": "https://modrinth.com/mod/mekanism"},
     "cobblemon":      {"display": "Cobblemon",         "category": "cobblemon",
                        "licence": "MPL-2.0",      "author": "The Cobblemon Team"},
+    "biggerreactors": {"display": "Bigger Reactors", "category": "bigger_reactors",
+                       "licence": "LGPL-2.1", "author": "RogueLogix, gizmocodes, Ridanisaurus"},
 }
 
 ORE_DEFS = [
@@ -898,6 +901,10 @@ ORE_DEFS = [
      "source": "infected_deepslate_diamond_ore", "base": "deepslate", "mod": "born_in_chaos_v1", "untagged": True,
      "name_style": "§3",  # dark aqua, as Born in Chaos names its own block
      "tiers": {"deepslate": "infected_deepslate_diamond_ore"}},
+    # --- Bigger Reactors (mod id biggerreactors, LGPL-2.1). Forge at 1.20.1: uranium, iron convention (3.0, 4.5 deep; 3.0), no XP ---
+    {"name": "biggerreactors_uranium", "overlay": "biggerreactors_uranium", "source": "uranium_ore", "base": "stone",
+     "mod": "biggerreactors",
+     "tiers": {"stone": "uranium_ore", "deepslate": "deepslate_uranium_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1029,6 +1036,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "promenade": ('fabric',),
     "spawn": ('fabric', 'forge'),
     "twigs": ('fabric', 'forge'),
+    "biggerreactors": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1175,6 +1183,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.bigger_reactors": "Bigger Reactors",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
         f"text.autoconfig.{MOD_ID}.category.nether": "Nether",
         f"text.autoconfig.{MOD_ID}.category.create": "Create",
@@ -1203,6 +1212,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.biggerReactors": "Bigger Reactors: variants",
+        f"text.autoconfig.{MOD_ID}.option.biggerReactors.@Tooltip":
+            "Generate host-matched uranium ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.granite": "Granite variants",
         f"text.autoconfig.{MOD_ID}.option.granite.@Tooltip":

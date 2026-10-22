@@ -24,7 +24,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**326 blocks** in the game's own rock, in the `seamlessores` namespace.
+**331 blocks** in the game's own rock, in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -303,6 +303,12 @@ touching ore of the same type across different host stones.
 |---|---|---|
 | Fire Stone | `basalt_cobblemon_nether_fire_stone_ore` | `blackstone_cobblemon_nether_fire_stone_ore` |
 
+**Bigger Reactors, Overworld, requires `biggerreactors`**
+
+| | granite | diorite | andesite | tuff | dripstone |
+|---|---|---|---|---|---|
+| Uranium | `granite_biggerreactors_uranium_ore` | `diorite_biggerreactors_uranium_ore` | `andesite_biggerreactors_uranium_ore` | `tuff_biggerreactors_uranium_ore` | `dripstone_biggerreactors_uranium_ore` |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
 Minecraft version:
@@ -311,7 +317,7 @@ Minecraft version:
 |---|---|---|
 | Fabric | 231 | Cobblemon, Create, Create: New Age, Energized Power, Exp Ores, Ice and Fire, Malum, Modern Industrialization, Mythic Metals, Mythic Upgrades, Oreganized, Powah, Tech Reborn, Things |
 | NeoForge | 46 | none at this Minecraft version |
-| Forge | 222 | Born in Chaos, Cobblemon, Create, Create: New Age, Create: TFMG, Dense Mekanism, Energized Power, Extreme Reactors, Ice and Fire, Immersive Engineering, Malum, Mekanism, Mystical Agriculture, Mythic Upgrades, Occultism, Oreganized, Powah, Silent Gear, Silent's Gems |
+| Forge | 227 | Bigger Reactors, Born in Chaos, Cobblemon, Create, Create: New Age, Create: TFMG, Dense Mekanism, Energized Power, Extreme Reactors, Ice and Fire, Immersive Engineering, Malum, Mekanism, Mystical Agriculture, Mythic Upgrades, Occultism, Oreganized, Powah, Silent Gear, Silent's Gems |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -338,7 +344,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**962 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**974 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric and Forge)
 
@@ -541,6 +547,7 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Sun Stone | `sun_stone` | Cobblemon `cobblemon` | Ochrum, Scoria, Smooth Basalt |
 | Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Ochrum |
 | Water Stone | `water_stone` | Cobblemon `cobblemon` | Asurine, Limestone, Calcite |
+| Uranium | `biggerreactors_uranium` | Bigger Reactors `biggerreactors` | Limestone, Calcite |
 
 **Create: TFMG, requires `tfmg`** (Forge)
 
@@ -577,6 +584,7 @@ Stones: Bauxite `tfmg_bauxite`, Galena `tfmg_galena`, Lignite `tfmg_lignite`
 | Fire Stone | `fire_stone` | Cobblemon `cobblemon` | Galena |
 | Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Bauxite, Lignite |
 | Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Galena |
+| Uranium | `biggerreactors_uranium` | Bigger Reactors `biggerreactors` | Lignite |
 
 **Twigs, requires `twigs`** (Fabric and Forge)
 
@@ -662,6 +670,7 @@ Stones: Rhyolite `twigs_rhyolite`, Schist `twigs_schist`, Bloodstone `twigs_bloo
 | Shiny Stone | `shiny_stone` | Cobblemon `cobblemon` | Schist |
 | Sun Stone | `sun_stone` | Cobblemon `cobblemon` | Rhyolite |
 | Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Schist |
+| Uranium | `biggerreactors_uranium` | Bigger Reactors `biggerreactors` | Rhyolite, Schist |
 
 **Born in Chaos, requires `born_in_chaos_v1`** (Forge)
 
@@ -693,6 +702,7 @@ Stones: Black Argillite `born_in_chaos_v1_black_argillite`
 | Brilliant | `brilliant` | Malum `malum` | Black Argillite |
 | Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | Black Argillite |
 | Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Black Argillite |
+| Uranium | `biggerreactors_uranium` | Bigger Reactors `biggerreactors` | Black Argillite |
 
 **EmbellishCraft, requires `embellishcraft`** (Forge)
 
@@ -743,6 +753,7 @@ Stones: Basalt `embellishcraft_basalt`, Slate `embellishcraft_slate`, Marble `em
 | Sun Stone | `sun_stone` | Cobblemon `cobblemon` | Basalt |
 | Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Slate, Gneiss, Larvikite |
 | Water Stone | `water_stone` | Cobblemon `cobblemon` | Marble |
+| Uranium | `biggerreactors_uranium` | Bigger Reactors `biggerreactors` | Slate, Gneiss |
 
 **Quark, requires `quark`** (Forge)
 
@@ -777,6 +788,7 @@ Stones: Limestone `quark_limestone`, Jasper `quark_jasper`, Shale `quark_shale`
 | Dusk Stone | `dusk_stone` | Cobblemon `cobblemon` | Shale |
 | Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Limestone, Shale |
 | Water Stone | `water_stone` | Cobblemon `cobblemon` | Limestone |
+| Uranium | `biggerreactors_uranium` | Bigger Reactors `biggerreactors` | Limestone, Shale |
 
 **Forbidden and Arcanus, requires `forbidden_arcanus`** (Forge)
 
@@ -847,6 +859,7 @@ Stones: Limestone `meadow_limestone`
 | Brilliant | `brilliant` | Malum `malum` | Limestone |
 | Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Limestone |
 | Water Stone | `water_stone` | Cobblemon `cobblemon` | Limestone |
+| Uranium | `biggerreactors_uranium` | Bigger Reactors `biggerreactors` | Limestone |
 
 **Mythic Upgrades, requires `mythicupgrades`** (Fabric and Forge)
 
@@ -962,6 +975,7 @@ Stones: Reefstone `spawn_reefstone`
 | Brilliant | `brilliant` | Malum `malum` | Reefstone |
 | Leaf Stone | `leaf_stone` | Cobblemon `cobblemon` | Reefstone |
 | Water Stone | `water_stone` | Cobblemon `cobblemon` | Reefstone |
+| Uranium | `biggerreactors_uranium` | Bigger Reactors `biggerreactors` | Reefstone |
 
 **Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric and Forge)
 
@@ -1008,7 +1022,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 1288 blocks takes **261 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 1305 blocks takes **262 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -1016,7 +1030,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ametrine` `antimony` `aquamarine` `aquarium` `banglum` `black_diamond` `blazing_quartz` `bort` `brilliant` `carmot` `carnelian` `cinnabar` `citrine` `coal` `copper` `dawn_stone_biomeswevegone_dacite` `dawn_stone_biomeswevegone_white_dacite` `dawn_stone_blockus_marble` `dawn_stone_dripstone` `dawn_stone_embellishcraft_gneiss` `dawn_stone_embellishcraft_marble` `dawn_stone_granite` `dawn_stone_minecraft_calcite` `dawn_stone_twigs_rhyolite` `dawn_stone_twigs_rhyolite_end` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `dusk_stone_andesite` `dusk_stone_blockus_bluestone` `dusk_stone_blockus_viridite` `dusk_stone_born_in_chaos_v1_black_argillite` `dusk_stone_create_scoria` `dusk_stone_embellishcraft_basalt` `dusk_stone_forbidden_arcanus_darkstone` `dusk_stone_forbidden_arcanus_darkstone_mirrored` `dusk_stone_minecraft_blackstone` `dusk_stone_minecraft_blackstone_end` `dusk_stone_minecraft_smooth_basalt` `dusk_stone_promenade_asphalt` `dusk_stone_quark_shale` `dusk_stone_tfmg_lignite` `dusk_stone_tuff` `emerald` `energized_tin` `experience` `fire_stone_andesite` `fire_stone_basalt_side` `fire_stone_basalt_top` `fire_stone_biomeswevegone_dacite` `fire_stone_biomeswevegone_white_dacite` `fire_stone_blackstone` `fire_stone_blackstone_top` `fire_stone_create_crimsite_0` `fire_stone_create_crimsite_1` `fire_stone_create_crimsite_2` `fire_stone_create_crimsite_3` `fire_stone_create_scorchia` `fire_stone_create_scoria` `fire_stone_embellishcraft_basalt` `fire_stone_minecraft_blackstone` `fire_stone_minecraft_blackstone_end` `fire_stone_minecraft_smooth_basalt` `fire_stone_tfmg_galena_0` `fire_stone_tfmg_galena_1` `fire_stone_tfmg_galena_2` `fire_stone_tfmg_galena_3` `fire_stone_tuff` `fire_stone_twigs_bloodstone` `fire_stone_twigs_rhyolite` `fire_stone_twigs_rhyolite_end` `galena` `gleaming` `gold` `heliodor` `ice_stone_blockus_marble` `ice_stone_create_asurine_0` `ice_stone_create_asurine_1` `ice_stone_create_asurine_2` `ice_stone_create_asurine_3` `ice_stone_diorite` `ice_stone_dripstone` `ice_stone_embellishcraft_larvikite` `ice_stone_embellishcraft_marble` `ice_stone_embellishcraft_slate` `ice_stone_minecraft_calcite` `ice_stone_promenade_blunite` `ice_stone_twigs_schist` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `ie_aluminum` `ie_lead` `ie_silver` `ie_uranium` `inferium` `iolite` `iridium` `iron` `kyber` `lapis` `lead` `leaf_stone_blockus_limestone` `leaf_stone_blockus_viridite` `leaf_stone_born_in_chaos_v1_black_argillite` `leaf_stone_create_limestone` `leaf_stone_create_veridium_0` `leaf_stone_create_veridium_1` `leaf_stone_create_veridium_2` `leaf_stone_create_veridium_3` `leaf_stone_meadow_limestone` `leaf_stone_promenade_asphalt` `leaf_stone_quark_limestone` `leaf_stone_quark_shale` `leaf_stone_spawn_reefstone` `leaf_stone_tfmg_bauxite_0` `leaf_stone_tfmg_bauxite_1` `leaf_stone_tfmg_bauxite_2` `leaf_stone_tfmg_bauxite_3` `leaf_stone_tfmg_lignite` `leaf_stone_tuff` `lignite_coal` `lithium` `manganese` `mek_fluorite` `mek_lead` `mek_tin` `mek_uranium` `mi_bauxite` `mi_iridium` `mi_lead` `mi_nickel` `mi_tin` `midas_gold` `monazite` `moon_stone_biomeswevegone_dacite` `moon_stone_biomeswevegone_white_dacite` `moon_stone_blockus_bluestone` `moon_stone_diorite` `moon_stone_embellishcraft_gneiss` `moon_stone_embellishcraft_larvikite` `moon_stone_embellishcraft_slate` `moon_stone_forbidden_arcanus_darkstone` `moon_stone_forbidden_arcanus_darkstone_mirrored` `moon_stone_granite` `moon_stone_twigs_rhyolite` `moon_stone_twigs_rhyolite_end` `moon_stone_twigs_schist` `morkite` `mythril` `natural_quartz` `necoium` `nether_banglum` `nether_experience` `nether_gold` `nickel` `occultism_silver` `oreganized_lead` `oreganized_silver` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `salt` `sapphire` `shiny_stone_blockus_marble` `shiny_stone_dripstone` `shiny_stone_embellishcraft_gneiss` `shiny_stone_embellishcraft_marble` `shiny_stone_embellishcraft_slate` `shiny_stone_granite` `shiny_stone_minecraft_calcite` `shiny_stone_twigs_schist` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `soulstone` `sphalerite` `starrite` `stormyx` `sun_stone_andesite` `sun_stone_biomeswevegone_dacite` `sun_stone_biomeswevegone_white_dacite` `sun_stone_create_ochrum_0` `sun_stone_create_ochrum_1` `sun_stone_create_ochrum_2` `sun_stone_create_ochrum_3` `sun_stone_create_scoria` `sun_stone_embellishcraft_basalt` `sun_stone_minecraft_blackstone` `sun_stone_minecraft_blackstone_end` `sun_stone_minecraft_smooth_basalt` `sun_stone_tuff` `sun_stone_twigs_rhyolite` `sun_stone_twigs_rhyolite_end` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `thunder_stone_blockus_bluestone` `thunder_stone_create_ochrum_0` `thunder_stone_create_ochrum_1` `thunder_stone_create_ochrum_2` `thunder_stone_create_ochrum_3` `thunder_stone_diorite` `thunder_stone_embellishcraft_gneiss` `thunder_stone_embellishcraft_larvikite` `thunder_stone_embellishcraft_slate` `thunder_stone_granite` `thunder_stone_tfmg_galena_0` `thunder_stone_tfmg_galena_1` `thunder_stone_tfmg_galena_2` `thunder_stone_tfmg_galena_3` `thunder_stone_twigs_schist` `tin` `topaz` `tungsten` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `uranium` `water_stone_blockus_limestone` `water_stone_blockus_marble` `water_stone_create_asurine_0` `water_stone_create_asurine_1` `water_stone_create_asurine_2` `water_stone_create_asurine_3` `water_stone_create_limestone` `water_stone_dripstone` `water_stone_embellishcraft_marble` `water_stone_meadow_limestone` `water_stone_minecraft_calcite` `water_stone_promenade_blunite` `water_stone_quark_limestone` `water_stone_spawn_reefstone` `white_diamond` `yellorite` `zinc`
+`adamantite` `alexandrite` `ametrine` `antimony` `aquamarine` `aquarium` `banglum` `biggerreactors_uranium` `black_diamond` `blazing_quartz` `bort` `brilliant` `carmot` `carnelian` `cinnabar` `citrine` `coal` `copper` `dawn_stone_biomeswevegone_dacite` `dawn_stone_biomeswevegone_white_dacite` `dawn_stone_blockus_marble` `dawn_stone_dripstone` `dawn_stone_embellishcraft_gneiss` `dawn_stone_embellishcraft_marble` `dawn_stone_granite` `dawn_stone_minecraft_calcite` `dawn_stone_twigs_rhyolite` `dawn_stone_twigs_rhyolite_end` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `dusk_stone_andesite` `dusk_stone_blockus_bluestone` `dusk_stone_blockus_viridite` `dusk_stone_born_in_chaos_v1_black_argillite` `dusk_stone_create_scoria` `dusk_stone_embellishcraft_basalt` `dusk_stone_forbidden_arcanus_darkstone` `dusk_stone_forbidden_arcanus_darkstone_mirrored` `dusk_stone_minecraft_blackstone` `dusk_stone_minecraft_blackstone_end` `dusk_stone_minecraft_smooth_basalt` `dusk_stone_promenade_asphalt` `dusk_stone_quark_shale` `dusk_stone_tfmg_lignite` `dusk_stone_tuff` `emerald` `energized_tin` `experience` `fire_stone_andesite` `fire_stone_basalt_side` `fire_stone_basalt_top` `fire_stone_biomeswevegone_dacite` `fire_stone_biomeswevegone_white_dacite` `fire_stone_blackstone` `fire_stone_blackstone_top` `fire_stone_create_crimsite_0` `fire_stone_create_crimsite_1` `fire_stone_create_crimsite_2` `fire_stone_create_crimsite_3` `fire_stone_create_scorchia` `fire_stone_create_scoria` `fire_stone_embellishcraft_basalt` `fire_stone_minecraft_blackstone` `fire_stone_minecraft_blackstone_end` `fire_stone_minecraft_smooth_basalt` `fire_stone_tfmg_galena_0` `fire_stone_tfmg_galena_1` `fire_stone_tfmg_galena_2` `fire_stone_tfmg_galena_3` `fire_stone_tuff` `fire_stone_twigs_bloodstone` `fire_stone_twigs_rhyolite` `fire_stone_twigs_rhyolite_end` `galena` `gleaming` `gold` `heliodor` `ice_stone_blockus_marble` `ice_stone_create_asurine_0` `ice_stone_create_asurine_1` `ice_stone_create_asurine_2` `ice_stone_create_asurine_3` `ice_stone_diorite` `ice_stone_dripstone` `ice_stone_embellishcraft_larvikite` `ice_stone_embellishcraft_marble` `ice_stone_embellishcraft_slate` `ice_stone_minecraft_calcite` `ice_stone_promenade_blunite` `ice_stone_twigs_schist` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `ie_aluminum` `ie_lead` `ie_silver` `ie_uranium` `inferium` `iolite` `iridium` `iron` `kyber` `lapis` `lead` `leaf_stone_blockus_limestone` `leaf_stone_blockus_viridite` `leaf_stone_born_in_chaos_v1_black_argillite` `leaf_stone_create_limestone` `leaf_stone_create_veridium_0` `leaf_stone_create_veridium_1` `leaf_stone_create_veridium_2` `leaf_stone_create_veridium_3` `leaf_stone_meadow_limestone` `leaf_stone_promenade_asphalt` `leaf_stone_quark_limestone` `leaf_stone_quark_shale` `leaf_stone_spawn_reefstone` `leaf_stone_tfmg_bauxite_0` `leaf_stone_tfmg_bauxite_1` `leaf_stone_tfmg_bauxite_2` `leaf_stone_tfmg_bauxite_3` `leaf_stone_tfmg_lignite` `leaf_stone_tuff` `lignite_coal` `lithium` `manganese` `mek_fluorite` `mek_lead` `mek_tin` `mek_uranium` `mi_bauxite` `mi_iridium` `mi_lead` `mi_nickel` `mi_tin` `midas_gold` `monazite` `moon_stone_biomeswevegone_dacite` `moon_stone_biomeswevegone_white_dacite` `moon_stone_blockus_bluestone` `moon_stone_diorite` `moon_stone_embellishcraft_gneiss` `moon_stone_embellishcraft_larvikite` `moon_stone_embellishcraft_slate` `moon_stone_forbidden_arcanus_darkstone` `moon_stone_forbidden_arcanus_darkstone_mirrored` `moon_stone_granite` `moon_stone_twigs_rhyolite` `moon_stone_twigs_rhyolite_end` `moon_stone_twigs_schist` `morkite` `mythril` `natural_quartz` `necoium` `nether_banglum` `nether_experience` `nether_gold` `nickel` `occultism_silver` `oreganized_lead` `oreganized_silver` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `salt` `sapphire` `shiny_stone_blockus_marble` `shiny_stone_dripstone` `shiny_stone_embellishcraft_gneiss` `shiny_stone_embellishcraft_marble` `shiny_stone_embellishcraft_slate` `shiny_stone_granite` `shiny_stone_minecraft_calcite` `shiny_stone_twigs_schist` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `soulstone` `sphalerite` `starrite` `stormyx` `sun_stone_andesite` `sun_stone_biomeswevegone_dacite` `sun_stone_biomeswevegone_white_dacite` `sun_stone_create_ochrum_0` `sun_stone_create_ochrum_1` `sun_stone_create_ochrum_2` `sun_stone_create_ochrum_3` `sun_stone_create_scoria` `sun_stone_embellishcraft_basalt` `sun_stone_minecraft_blackstone` `sun_stone_minecraft_blackstone_end` `sun_stone_minecraft_smooth_basalt` `sun_stone_tuff` `sun_stone_twigs_rhyolite` `sun_stone_twigs_rhyolite_end` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `thunder_stone_blockus_bluestone` `thunder_stone_create_ochrum_0` `thunder_stone_create_ochrum_1` `thunder_stone_create_ochrum_2` `thunder_stone_create_ochrum_3` `thunder_stone_diorite` `thunder_stone_embellishcraft_gneiss` `thunder_stone_embellishcraft_larvikite` `thunder_stone_embellishcraft_slate` `thunder_stone_granite` `thunder_stone_tfmg_galena_0` `thunder_stone_tfmg_galena_1` `thunder_stone_tfmg_galena_2` `thunder_stone_tfmg_galena_3` `thunder_stone_twigs_schist` `tin` `topaz` `tungsten` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `uranium` `water_stone_blockus_limestone` `water_stone_blockus_marble` `water_stone_create_asurine_0` `water_stone_create_asurine_1` `water_stone_create_asurine_2` `water_stone_create_asurine_3` `water_stone_create_limestone` `water_stone_dripstone` `water_stone_embellishcraft_marble` `water_stone_meadow_limestone` `water_stone_minecraft_calcite` `water_stone_promenade_blunite` `water_stone_quark_limestone` `water_stone_spawn_reefstone` `white_diamond` `yellorite` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -1107,6 +1121,7 @@ is theirs and is used under the licence shown:
 | [Oreganized](https://modrinth.com/mod/oreganized) | Team Galena | MIT code, assets All Rights Reserved |
 | [Mekanism](https://modrinth.com/mod/mekanism) | Aidan C. Brady | MIT |
 | Cobblemon | The Cobblemon Team | MPL-2.0 |
+| Bigger Reactors | RogueLogix, gizmocodes, Ridanisaurus | LGPL-2.1 |
 <!-- END GENERATED credits -->
 
 The Immersive Engineering variants (aluminum, lead, nickel, silver and uranium) are derived from

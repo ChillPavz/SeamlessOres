@@ -69,6 +69,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_bigreactors_yellorite_ore",
       "required": false
     },
@@ -78,6 +82,10 @@
     },
     {
       "id": "seamlessores:diorite_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_biggerreactors_uranium_ore",
       "required": false
     },
     {
@@ -93,11 +101,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_immersiveengineering_uranium_ore",
       "required": false
     },
     {
       "id": "seamlessores:tuff_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_biggerreactors_uranium_ore",
       "required": false
     },
     {
@@ -113,7 +129,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_biggerreactors_uranium_ore",
       "required": false
     },
     {
@@ -121,7 +145,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_biggerreactors_uranium_ore",
       "required": false
     },
     {
@@ -129,7 +161,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_biggerreactors_uranium_ore",
       "required": false
     },
     {
@@ -137,7 +181,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_gneiss_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_biggerreactors_uranium_ore",
       "required": false
     },
     {
@@ -145,7 +197,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_biggerreactors_uranium_ore",
       "required": false
     },
     {
@@ -153,7 +213,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_biggerreactors_uranium_ore",
       "required": false
     }
   ]
