@@ -178,7 +178,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "mythicmetals": MYTHIC_METALS_JAR,
             "biggerreactors": jar("biggerreactors-1.20.1-0.6.0-beta.10.5.jar"),
             "embers": jar("embersrekindled-1.20.1-1.4.7.jar"),
-            "create_tank_defenses": jar("CreateTankDefenses-v0.80.jar")}
+            "create_tank_defenses": jar("CreateTankDefenses-v0.80.jar"),
+            "oresabovediamonds": jar("oresabovediamonds-10.0.1b.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -386,6 +387,8 @@ MODS = {
                        "licence": "MIT", "author": "RCXcrafter, BordListian, Elucent, TechnoMysterio, KomradeSpectre"},
     "create_tank_defenses": {"display": "Create: Tank Defenses", "category": "create_tank_defenses",
                        "licence": "AFL-3.0", "author": "ItsRuby05"},
+    "oresabovediamonds": {"display": "Ores Above Diamonds", "category": "ores_above_diamonds",
+                       "licence": "MIT", "author": "Squidsword"},
 }
 
 ORE_DEFS = [
@@ -925,6 +928,19 @@ ORE_DEFS = [
     {"name": "tankdefenses_titanium", "overlay": "tankdefenses_titanium", "tool_tier": ["needs_diamond_tool"], "source": "titanium_ore", "base": "stone",
      "mod": "create_tank_defenses",
      "tiers": {"stone": "titanium_ore", "deepslate": "titanium_deepslate_ore"}},
+    # --- Ores Above Diamonds (mod id oresabovediamonds, MIT). Forge at 1.20.1: 3.0 (4.5 deep), 3.0; amethyst 10 to 30 XP, black opal 25 to 75 ---
+    {"name": "amethyst", "overlay": "amethyst", "source": "amethyst_ore", "base": "stone",
+     "mod": "oresabovediamonds",
+     "tiers": {"stone": "amethyst_ore", "deepslate": "deepslate_amethyst_ore"}},
+    {"name": "nether_amethyst", "key": "nether_amethyst", "overlay": "amethyst", "source": "nether_amethyst_ore", "base": "netherrack",
+     "mod": "oresabovediamonds",
+     "tiers": {"nether": "nether_amethyst_ore"}},
+    {"name": "black_opal", "overlay": "black_opal", "source": "black_opal_ore", "base": "stone",
+     "mod": "oresabovediamonds",
+     "tiers": {"stone": "black_opal_ore", "deepslate": "deepslate_black_opal_ore"}},
+    {"name": "nether_black_opal", "overlay": "nether_black_opal", "source": "nether_black_opal_ore", "base": "netherrack",
+     "mod": "oresabovediamonds",
+     "tiers": {"nether": "nether_black_opal_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1059,6 +1075,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "biggerreactors": ('forge',),
     "embers": ('forge',),
     "create_tank_defenses": ('forge',),
+    "oresabovediamonds": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1205,6 +1222,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.ores_above_diamonds": "Ores Above Diamonds",
         f"text.autoconfig.{MOD_ID}.category.create_tank_defenses": "Create: Tank Defenses",
         f"text.autoconfig.{MOD_ID}.category.embers_rekindled": "Embers Rekindled",
         f"text.autoconfig.{MOD_ID}.category.bigger_reactors": "Bigger Reactors",
@@ -1236,6 +1254,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.oresAboveDiamonds": "Ores Above Diamonds: variants",
+        f"text.autoconfig.{MOD_ID}.option.oresAboveDiamonds.@Tooltip":
+            "Generate host-matched amethyst and black opal ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.createTankDefenses": "Create: Tank Defenses: variants",
         f"text.autoconfig.{MOD_ID}.option.createTankDefenses.@Tooltip":

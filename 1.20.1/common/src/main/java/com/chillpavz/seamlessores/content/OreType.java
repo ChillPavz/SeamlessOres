@@ -725,6 +725,25 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("create_tank_defenses", "titanium_ore"), of("create_tank_defenses", "titanium_deepslate_ore"), null,
             NONE, null, false, Set.of());
 
+    // --- Ores Above Diamonds (mod id oresabovediamonds, MIT). Forge at 1.20.1: 3.0 (4.5 deep), 3.0; amethyst 10 to 30 XP, black opal 25 to 75 ---
+    public static final OreType OAD_AMETHYST = ore(
+            "amethyst", "amethyst", null, "oresabovediamonds",
+            of("oresabovediamonds", "amethyst_ore"), of("oresabovediamonds", "deepslate_amethyst_ore"), null,
+            UniformInt.of(10, 30), null, false, Set.of());
+    public static final OreType OAD_NETHER_AMETHYST = ore(
+            "nether_amethyst", "amethyst", null, "oresabovediamonds",
+            null, null, of("oresabovediamonds", "nether_amethyst_ore"),
+            UniformInt.of(10, 30), null, false, Set.of())
+            .withKey("nether_amethyst");
+    public static final OreType OAD_BLACK_OPAL = ore(
+            "black_opal", "black_opal", null, "oresabovediamonds",
+            of("oresabovediamonds", "black_opal_ore"), of("oresabovediamonds", "deepslate_black_opal_ore"), null,
+            UniformInt.of(25, 75), null, false, Set.of());
+    public static final OreType OAD_NETHER_BLACK_OPAL = ore(
+            "nether_black_opal", "nether_black_opal", null, "oresabovediamonds",
+            null, null, of("oresabovediamonds", "nether_black_opal_ore"),
+            UniformInt.of(25, 75), null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -756,7 +775,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     INFECTED_DIAMOND,
                     BR_URANIUM,
                     EMBERS_LEAD, EMBERS_SILVER,
-                    CTD_ALUMINUM, CTD_TITANIUM);
+                    CTD_ALUMINUM, CTD_TITANIUM,
+                    OAD_AMETHYST, OAD_NETHER_AMETHYST, OAD_BLACK_OPAL, OAD_NETHER_BLACK_OPAL);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

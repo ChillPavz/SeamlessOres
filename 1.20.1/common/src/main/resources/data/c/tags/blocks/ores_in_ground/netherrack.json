@@ -58,6 +58,10 @@
       "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_oresabovediamonds_nether_amethyst_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -110,6 +114,10 @@
     },
     {
       "id": "seamlessores:blackstone_cobblemon_nether_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oresabovediamonds_nether_amethyst_ore",
       "required": false
     },
     {

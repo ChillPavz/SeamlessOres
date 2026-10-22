@@ -144,6 +144,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_powah_uraninite_dense_ore",
       "required": false
     },
@@ -230,6 +234,10 @@
     },
     "seamlessores:basalt_nether_gold_ore",
     "seamlessores:basalt_nether_quartz_ore",
+    {
+      "id": "seamlessores:basalt_oresabovediamonds_nether_amethyst_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:basalt_silentgems_carnelian_nether_ore",
       "required": false
@@ -574,6 +582,14 @@
     },
     {
       "id": "seamlessores:blackstone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oresabovediamonds_nether_amethyst_ore",
       "required": false
     },
     {
@@ -1677,6 +1693,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_powah_uraninite_dense_ore",
       "required": false
     },
@@ -1938,6 +1958,10 @@
     },
     {
       "id": "seamlessores:create_scoria_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
@@ -2452,6 +2476,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_redstone_ore",
       "required": false
     },
@@ -2900,6 +2928,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
       "required": false
     },
@@ -3131,6 +3163,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_powah_uraninite_dense_ore",
       "required": false
     },
@@ -3321,6 +3357,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
@@ -3824,6 +3864,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_powah_uraninite_ore",
       "required": false
     },
@@ -4089,6 +4133,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
@@ -4373,6 +4421,10 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_oresabovediamonds_black_opal_ore",
       "required": false
     },
     {
@@ -4743,6 +4795,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oresabovediamonds_black_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_powah_uraninite_dense_ore",
       "required": false
     },
@@ -4985,6 +5045,14 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oresabovediamonds_black_opal_ore",
       "required": false
     },
     {

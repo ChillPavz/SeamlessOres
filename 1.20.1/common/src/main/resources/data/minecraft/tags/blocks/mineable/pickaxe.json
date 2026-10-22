@@ -272,6 +272,10 @@
       "id": "seamlessores:granite_create_tank_defenses_aluminum_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -668,6 +672,10 @@
       "id": "seamlessores:andesite_create_tank_defenses_titanium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
     "seamlessores:tuff_coal_ore",
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
@@ -910,6 +918,14 @@
     },
     {
       "id": "seamlessores:tuff_create_tank_defenses_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oresabovediamonds_black_opal_ore",
       "required": false
     },
     "seamlessores:dripstone_coal_ore",
@@ -1205,6 +1221,10 @@
       "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_oresabovediamonds_nether_amethyst_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -1257,6 +1277,10 @@
     },
     {
       "id": "seamlessores:blackstone_cobblemon_nether_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oresabovediamonds_nether_amethyst_ore",
       "required": false
     },
     {
@@ -1409,6 +1433,10 @@
     },
     {
       "id": "seamlessores:blackstone_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
@@ -2128,6 +2156,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -2409,6 +2441,10 @@
     },
     {
       "id": "seamlessores:create_scoria_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
@@ -2812,6 +2848,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -2861,6 +2901,10 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_oresabovediamonds_black_opal_ore",
       "required": false
     },
     {
@@ -3221,6 +3265,14 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oresabovediamonds_black_opal_ore",
       "required": false
     },
     {
@@ -3716,6 +3768,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_iron_ore",
       "required": false
     },
@@ -4204,6 +4260,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_iron_ore",
       "required": false
     },
@@ -4416,6 +4476,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_create_zinc_ore",
       "required": false
     },
@@ -4589,6 +4653,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {

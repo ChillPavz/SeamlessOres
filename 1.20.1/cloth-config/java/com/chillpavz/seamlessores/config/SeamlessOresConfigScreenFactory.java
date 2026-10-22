@@ -95,6 +95,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("biggerreactors", "bigger_reactors");
         MOD_CATEGORIES.put("embers", "embers_rekindled");
         MOD_CATEGORIES.put("create_tank_defenses", "create_tank_defenses");
+        MOD_CATEGORIES.put("oresabovediamonds", "ores_above_diamonds");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

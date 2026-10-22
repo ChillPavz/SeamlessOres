@@ -241,6 +241,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oresabovediamonds_black_opal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -374,6 +382,10 @@
     },
     {
       "id": "seamlessores:blackstone_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
@@ -602,6 +614,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_oresabovediamonds_amethyst_ore",
       "required": false
     }
   ]

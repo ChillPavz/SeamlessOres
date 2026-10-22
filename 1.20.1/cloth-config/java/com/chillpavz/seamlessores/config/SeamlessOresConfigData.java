@@ -524,6 +524,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean createTankDefenses = true;
 
+    // --- Ores Above Diamonds -------------------------------------------------------------------------
+
+    @ConfigEntry.Category("ores_above_diamonds")
+    @ConfigEntry.Gui.Tooltip
+    public boolean oresAboveDiamonds = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -652,6 +658,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.biggerReactors = biggerReactors;
         values.embersRekindled = embersRekindled;
         values.createTankDefenses = createTankDefenses;
+        values.oresAboveDiamonds = oresAboveDiamonds;
 
         SeamlessOresConfig.apply(values);
     }

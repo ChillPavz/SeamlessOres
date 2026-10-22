@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "seamlessores:granite_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_things_gleaming_ore",
       "required": false
     },
@@ -13,7 +17,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
@@ -25,11 +37,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_oresabovediamonds_nether_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_silentgems_carnelian_nether_ore",
       "required": false
     },
     {
       "id": "seamlessores:blackstone_silentgems_citrine_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oresabovediamonds_nether_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
@@ -45,11 +69,43 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:calcite_things_gleaming_ore",
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {

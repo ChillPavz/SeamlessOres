@@ -15,6 +15,13 @@
     "silentgems:deepslate_alexandrite_ore"
    ]
   },
+  "amethyst": {
+   "mod": "oresabovediamonds",
+   "forms": [
+    "oresabovediamonds:amethyst_ore",
+    "oresabovediamonds:deepslate_amethyst_ore"
+   ]
+  },
   "ametrine": {
    "mod": "mythicupgrades",
    "forms": [
@@ -52,6 +59,13 @@
    "forms": [
     "biggerreactors:uranium_ore",
     "biggerreactors:deepslate_uranium_ore"
+   ]
+  },
+  "black_opal": {
+   "mod": "oresabovediamonds",
+   "forms": [
+    "oresabovediamonds:black_opal_ore",
+    "oresabovediamonds:deepslate_black_opal_ore"
    ]
   },
   "blazing_quartz": {
@@ -2748,6 +2762,12 @@
    }
   },
   "born_in_chaos_v1:black_argillite": {
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.85
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -2759,6 +2779,12 @@
      "1.20.1 forge"
     ],
     "rate": 54.64
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.57
    },
    "bort": {
     "where": [
@@ -3038,6 +3064,12 @@
     ],
     "rate": 0.22
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.17
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -3068,6 +3100,12 @@
      "1.20.1 forge"
     ],
     "rate": 29.44
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
    },
    "bort": {
     "where": [
@@ -3614,6 +3652,12 @@
     ],
     "rate": 0.29
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.77
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -3644,6 +3688,12 @@
      "1.20.1 forge"
     ],
     "rate": 37.64
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.74
    },
    "bort": {
     "where": [
@@ -4190,6 +4240,12 @@
     ],
     "rate": 0.3
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.88
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -4220,6 +4276,12 @@
      "1.20.1 forge"
     ],
     "rate": 39.11
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.77
    },
    "bort": {
     "where": [
@@ -4766,6 +4828,12 @@
     ],
     "rate": 0.19
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.88
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -4796,6 +4864,12 @@
      "1.20.1 forge"
     ],
     "rate": 25.51
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.5
    },
    "bort": {
     "where": [
@@ -5420,6 +5494,12 @@
     ],
     "rate": 0.26
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.49
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -5450,6 +5530,12 @@
      "1.20.1 forge"
     ],
     "rate": 33.8
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.67
    },
    "blazing_quartz": {
     "where": [
@@ -6065,6 +6151,12 @@
     ],
     "rate": 0.21
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.05
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -6095,6 +6187,12 @@
      "1.20.1 forge"
     ],
     "rate": 27.83
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.55
    },
    "bort": {
     "where": [
@@ -6635,6 +6733,12 @@
     ],
     "rate": 11.84
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.29
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -6646,6 +6750,12 @@
      "1.20.1 forge"
     ],
     "rate": 149.54
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.29
    },
    "bort": {
     "where": [
@@ -7781,6 +7891,12 @@
     ],
     "rate": 58.94
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 123.83
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -7792,6 +7908,12 @@
      "1.20.1 forge"
     ],
     "rate": 61.22
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.94
    },
    "bort": {
     "where": [
@@ -8029,6 +8151,12 @@
    }
   },
   "meadow:limestone": {
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.12
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -8568,6 +8696,12 @@
     ],
     "rate": 0.16
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.42
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -8592,6 +8726,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.04
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.14
    },
    "bort": {
     "where": [
@@ -9120,6 +9260,12 @@
     ],
     "rate": 0.13
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.27
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -9150,6 +9296,12 @@
      "1.20.1 forge"
     ],
     "rate": 17.24
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.34
    },
    "bort": {
     "where": [
@@ -9696,6 +9848,12 @@
     ],
     "rate": 0.22
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.15
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -9726,6 +9884,12 @@
      "1.20.1 forge"
     ],
     "rate": 29.16
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.57
    },
    "bort": {
     "where": [
@@ -10272,6 +10436,12 @@
     ],
     "rate": 0.21
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.0
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -10302,6 +10472,12 @@
      "1.20.1 forge"
     ],
     "rate": 27.17
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.53
    },
    "blazing_quartz": {
     "where": [
@@ -11733,6 +11909,12 @@
    }
   },
   "quark:jasper": {
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -11999,6 +12181,12 @@
    }
   },
   "quark:limestone": {
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.43
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -12265,6 +12453,12 @@
    }
   },
   "quark:shale": {
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -13013,6 +13207,12 @@
     ],
     "rate": 0.28
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.68
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -13024,6 +13224,12 @@
      "1.20.1 forge"
     ],
     "rate": 36.45
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.72
    },
    "bort": {
     "where": [
@@ -13333,6 +13539,12 @@
     ],
     "rate": 0.28
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.68
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -13344,6 +13556,12 @@
      "1.20.1 forge"
     ],
     "rate": 36.45
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.72
    },
    "bort": {
     "where": [
@@ -13653,6 +13871,12 @@
     ],
     "rate": 0.28
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.68
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -13664,6 +13888,12 @@
      "1.20.1 forge"
     ],
     "rate": 36.45
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.72
    },
    "bort": {
     "where": [
@@ -14057,6 +14287,12 @@
     ],
     "rate": 3.93
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.24
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -14075,6 +14311,12 @@
      "1.20.1 forge"
     ],
     "rate": 43.93
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.35
    },
    "bort": {
     "where": [
@@ -14565,6 +14807,12 @@
     ],
     "rate": 0.36
    },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.93
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -14595,6 +14843,12 @@
      "1.20.1 forge"
     ],
     "rate": 4.84
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.3
    },
    "bort": {
     "where": [

@@ -225,6 +225,9 @@ public final class SeamlessOresConfig {
     /** Whether Create: Tank Defenses variants generate. Pure restyle. */
     public static boolean createTankDefenses = true;
 
+    /** Whether Ores Above Diamonds variants generate. Pure restyle. */
+    public static boolean oresAboveDiamonds = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -271,6 +274,7 @@ public final class SeamlessOresConfig {
             case "biggerreactors" -> biggerReactors;
             case "embers" -> embersRekindled;
             case "create_tank_defenses" -> createTankDefenses;
+            case "oresabovediamonds" -> oresAboveDiamonds;
             default -> true;
         };
     }
@@ -471,6 +475,7 @@ public final class SeamlessOresConfig {
         public boolean biggerReactors = true;
         public boolean embersRekindled = true;
         public boolean createTankDefenses = true;
+        public boolean oresAboveDiamonds = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -539,6 +544,7 @@ public final class SeamlessOresConfig {
         biggerReactors = values.biggerReactors;
         embersRekindled = values.embersRekindled;
         createTankDefenses = values.createTankDefenses;
+        oresAboveDiamonds = values.oresAboveDiamonds;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

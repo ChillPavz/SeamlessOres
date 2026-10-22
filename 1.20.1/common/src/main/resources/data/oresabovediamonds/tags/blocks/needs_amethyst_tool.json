@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:tuff_oresabovediamonds_black_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_oresabovediamonds_black_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oresabovediamonds_black_opal_ore",
+      "required": false
+    }
+  ]
+}
