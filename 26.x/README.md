@@ -211,7 +211,7 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Iceandfire Silver | `granite_iceandfire_silver_ore` | `diorite_iceandfire_silver_ore` | `andesite_iceandfire_silver_ore` | `tuff_iceandfire_silver_ore` |
+| Silver | `granite_iceandfire_silver_ore` | `diorite_iceandfire_silver_ore` | `andesite_iceandfire_silver_ore` | `tuff_iceandfire_silver_ore` |
 
 **Mystical Agriculture, Overworld, requires `mysticalagriculture`**
 
@@ -292,8 +292,8 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Deep Blackstone |
 | Silver | `techreborn_silver` | Tech Reborn `techreborn` | Deep Blackstone |
 | Silver | `occultism_silver` | Occultism `occultism` | Deep Blackstone |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Deep Blackstone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Deep Blackstone |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Deep Blackstone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Deep Blackstone |
 
 **Blockus, requires `blockus`** (Fabric, 26.1.x to 26.3)
 
@@ -446,8 +446,8 @@ Stones: Mossy Stone `regions_unexplored_mossy_stone`, Argillite `regions_unexplo
 | Tin | `techreborn_tin` | Tech Reborn `techreborn` | Mossy Stone, Chalk |
 | Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Argillite |
 | Silver | `occultism_silver` | Occultism `occultism` | every stone |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Mossy Stone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Mossy Stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Mossy Stone, Argillite |
 
 **Promenade, requires `promenade`** (Fabric on every 26.x version, NeoForge on 26.3)

@@ -150,7 +150,7 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | cinnabar |
 |---|---|---|---|---|---|
-| Iceandfire Silver | `granite_iceandfire_silver_ore` | `diorite_iceandfire_silver_ore` | `andesite_iceandfire_silver_ore` | `tuff_iceandfire_silver_ore` | `cinnabar_iceandfire_silver_ore` |
+| Silver | `granite_iceandfire_silver_ore` | `diorite_iceandfire_silver_ore` | `andesite_iceandfire_silver_ore` | `tuff_iceandfire_silver_ore` | `cinnabar_iceandfire_silver_ore` |
 
 **Silent's Gems, Overworld, requires `silentgems`**
 
@@ -357,8 +357,8 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Silver | `silents_silver` | Silent's Gems `silentgems` | Deep Blackstone |
 | Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Deep Blackstone |
 | Lead | `lead` | Create: TFMG `tfmg` | Deep Blackstone |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Deep Blackstone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Deep Blackstone |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Deep Blackstone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Deep Blackstone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Deep Blackstone |
 | Galena | `galena` | Tech Reborn `techreborn` | Deep Blackstone |
 | Lead | `techreborn_lead` | Tech Reborn `techreborn` | Deep Blackstone |
@@ -463,8 +463,8 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Nether Moldavite | `nether_moldavite` | Silent's Gems `silentgems` | Scorchia, Scoria, Smooth Basalt |
 | Nether Pearl | `nether_pearl` | Silent's Gems `silentgems` | Scorchia, Scoria, Smooth Basalt |
 | Nether Tanzanite | `nether_tanzanite` | Silent's Gems `silentgems` | Scorchia, Scoria, Smooth Basalt |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Scoria, Smooth Basalt |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Scoria, Smooth Basalt |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone, Scoria, Calcite, Smooth Basalt |
 | Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Limestone, Scoria, Calcite, Smooth Basalt |
 | Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | Limestone, Scoria, Calcite, Smooth Basalt |
 | Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Limestone, Scoria, Calcite, Smooth Basalt |
@@ -515,7 +515,7 @@ Stones: Bauxite `tfmg_bauxite`, Galena `tfmg_galena`, Lignite `tfmg_lignite`
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Lignite |
 | Uraninite Dense | `uraninite_dense` | Powah `powah` | Lignite |
 | Lead | `lead` |  | Galena, Lignite |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Galena, Lignite |
 | Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | every stone |
 | Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Galena, Lignite |
@@ -597,8 +597,8 @@ Stones: Rhyolite `twigs_rhyolite`, Schist `twigs_schist`, Bloodstone `twigs_bloo
 | Nether Moldavite | `nether_moldavite` | Silent's Gems `silentgems` | Bloodstone |
 | Nether Pearl | `nether_pearl` | Silent's Gems `silentgems` | Bloodstone |
 | Nether Tanzanite | `nether_tanzanite` | Silent's Gems `silentgems` | Bloodstone |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Schist |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Rhyolite, Schist |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Schist |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Rhyolite, Schist |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Rhyolite, Schist |
 | Galena | `galena` | Tech Reborn `techreborn` | Rhyolite, Schist |
 | Lead | `techreborn_lead` | Tech Reborn `techreborn` | Rhyolite, Schist |
@@ -651,7 +651,7 @@ Stones: Black Argillite `born_in_chaos_v1_black_argillite`
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Black Argillite |
 | Uraninite Dense | `uraninite_dense` | Powah `powah` | Black Argillite |
 | Lead | `lead` | Create: TFMG `tfmg` | Black Argillite |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Black Argillite |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Black Argillite |
 | Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Black Argillite |
 | Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | Black Argillite |
 | Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Black Argillite |
@@ -701,8 +701,8 @@ Stones: Basalt `embellishcraft_basalt`, Slate `embellishcraft_slate`, Marble `em
 | Lead | `lead` | Create: TFMG `tfmg` | Basalt, Slate, Marble, Gneiss, Larvikite |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Marble, Gneiss |
 | Thorium | `thorium` | Create: New Age `create_new_age` | Slate, Gneiss |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Basalt, Slate, Marble |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Basalt, Slate, Marble |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Basalt, Slate, Gneiss, Larvikite |
 | Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | Basalt, Slate, Gneiss |
 | Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Basalt, Slate, Gneiss, Larvikite |
@@ -749,7 +749,7 @@ Stones: Limestone `quark_limestone`, Jasper `quark_jasper`, Shale `quark_shale`
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Limestone, Shale |
 | Lead | `lead` | Create: TFMG `tfmg` | every stone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Antimony | `antimony` | Modern Industrialization `modern_industrialization` | every stone |
 | Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | every stone |
 | Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | every stone |
@@ -813,7 +813,7 @@ Stones: Limestone `meadow_limestone`
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Limestone |
 | Lead | `lead` | Create: TFMG `tfmg` | Limestone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Limestone |
 | Galena | `galena` | Tech Reborn `techreborn` | Limestone |
 | Lead | `techreborn_lead` | Tech Reborn `techreborn` | Limestone |
@@ -882,8 +882,8 @@ Stones: Mossy Stone `regions_unexplored_mossy_stone`, Argillite `regions_unexplo
 | Lead | `lead` | Create: TFMG `tfmg` | every stone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Mossy Stone, Chalk |
 | Thorium | `thorium` | Create: New Age `create_new_age` | Mossy Stone |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Mossy Stone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Mossy Stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Argillite |
 | Galena | `galena` | Tech Reborn `techreborn` | Argillite |
 | Lead | `techreborn_lead` | Tech Reborn `techreborn` | Argillite |
@@ -951,7 +951,7 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Uraninite Dense | `uraninite_dense` | Powah `powah` | Asphalt |
 | Lead | `lead` | Create: TFMG `tfmg` | Asphalt |
 | Nickel | `nickel` | Create: TFMG `tfmg` | Blunite |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | every stone |
 | Galena | `galena` | Tech Reborn `techreborn` | Asphalt |
 | Iridium | `iridium` | Tech Reborn `techreborn` | Blunite |
@@ -996,7 +996,7 @@ Stones: Reefstone `spawn_reefstone`
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Reefstone |
 | Lead | `lead` | Create: TFMG `tfmg` | Reefstone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Reefstone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Reefstone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Reefstone |
 | Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Reefstone |
 | Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | Reefstone |
 | Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Reefstone |
@@ -1053,7 +1053,7 @@ Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacit
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | White Dacite |
 | Lead | `lead` | Create: TFMG `tfmg` | every stone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Dacite, White Dacite |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Tin | `techreborn_tin` | Tech Reborn `techreborn` | Dacite, White Dacite |
 | Antimony | `antimony` | Modern Industrialization `modern_industrialization` | White Dacite |
 | Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | White Dacite, Red Rock |

@@ -124,7 +124,7 @@ def assert_no_dashes(strings, what):
 DISPLAY_NAMES = {"lapis": "Lapis Lazuli"}
 # A block's name never carries a mod's name (owner, 8 Oct 2026): "Granite Aquamarine Ore" whichever
 # mod the aquamarine is from. These prefixes only keep ids apart; tooltips name the mod.
-MOD_PREFIXES = ("silents_", "techreborn_", "energized_", "occultism_", "mi_", "ie_", "mek_", "oreganized_")
+MOD_PREFIXES = ("silents_", "techreborn_", "energized_", "occultism_", "mi_", "ie_", "mek_", "oreganized_", "iceandfire_")
 # A stone whose display name is not its id path, title-cased.
 # By block path, or by host name where one block hosts twice (deep blackstone, besides the Nether one).
 STONE_NAMES = {"dripstone_block": "Dripstone", "minecraft_blackstone": "Deep Blackstone"}

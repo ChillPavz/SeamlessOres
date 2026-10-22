@@ -170,7 +170,7 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | cinnabar |
 |---|---|---|---|---|---|
-| Iceandfire Silver | `granite_iceandfire_silver_ore` | `diorite_iceandfire_silver_ore` | `andesite_iceandfire_silver_ore` | `tuff_iceandfire_silver_ore` | `cinnabar_iceandfire_silver_ore` |
+| Silver | `granite_iceandfire_silver_ore` | `diorite_iceandfire_silver_ore` | `andesite_iceandfire_silver_ore` | `tuff_iceandfire_silver_ore` | `cinnabar_iceandfire_silver_ore` |
 
 **Exp Ores, Overworld, requires `expores`**
 
@@ -364,8 +364,8 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Silver | `silents_silver` | Silent's Gems `silentgems` | Deep Blackstone |
 | Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Deep Blackstone |
 | Lead | `lead` | Create: TFMG `tfmg` | Deep Blackstone |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Deep Blackstone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Deep Blackstone |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Deep Blackstone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Deep Blackstone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Deep Blackstone |
 | Galena | `galena` | Tech Reborn `techreborn` | Deep Blackstone |
 | Lead | `techreborn_lead` | Tech Reborn `techreborn` | Deep Blackstone |
@@ -414,8 +414,8 @@ Stones: Limestone `blockus_limestone`, Marble `blockus_marble`, Bluestone `block
 | Uraninite Dense | `uraninite_dense` | Powah `powah` | Limestone, Marble |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Limestone, Marble |
 | Gleaming | `gleaming` | Things `things` | Marble |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Marble |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone, Marble, Bluestone |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Marble |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone, Marble, Bluestone |
 | Experience | `experience` | Exp Ores `expores` | Limestone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | every stone |
 | Galena | `galena` | Tech Reborn `techreborn` | Limestone, Marble |
@@ -501,8 +501,8 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Lead | `lead` | Create: TFMG `tfmg` | Limestone, Scoria, Calcite, Smooth Basalt |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
 | Gleaming | `gleaming` | Things `things` | Calcite |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Scoria, Smooth Basalt |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Scoria, Smooth Basalt |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone, Scoria, Calcite, Smooth Basalt |
 | Experience | `experience` | Exp Ores `expores` | Limestone, Veridium |
 | Nether Experience | `nether_experience` | Exp Ores `expores` | Scorchia, Scoria, Smooth Basalt |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Limestone, Scoria, Calcite, Smooth Basalt |
@@ -564,7 +564,7 @@ Stones: Bauxite `tfmg_bauxite`, Galena `tfmg_galena`, Lignite `tfmg_lignite`
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Lignite |
 | Uraninite Dense | `uraninite_dense` | Powah `powah` | Lignite |
 | Lead | `lead` |  | Galena, Lignite |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Silver | `occultism_silver` | Occultism `occultism` | every stone |
 | Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Lignite |
 | Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Bauxite, Lignite |
@@ -629,8 +629,8 @@ Stones: Rhyolite `twigs_rhyolite`, Schist `twigs_schist`, Bloodstone `twigs_bloo
 | Lithium | `lithium` | Create: TFMG `tfmg` | Rhyolite, Schist |
 | Gleaming | `gleaming` | Things `things` | Schist |
 | Thorium | `thorium` | Create: New Age `create_new_age` | Schist |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Schist |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Rhyolite, Schist |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Schist |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Rhyolite, Schist |
 | Nether Experience | `nether_experience` | Exp Ores `expores` | Bloodstone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Rhyolite, Schist |
 | Galena | `galena` | Tech Reborn `techreborn` | Rhyolite, Schist |
@@ -683,7 +683,7 @@ Stones: Black Argillite `born_in_chaos_v1_black_argillite`
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Black Argillite |
 | Uraninite Dense | `uraninite_dense` | Powah `powah` | Black Argillite |
 | Lead | `lead` | Create: TFMG `tfmg` | Black Argillite |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Black Argillite |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Black Argillite |
 | Silver | `occultism_silver` | Occultism `occultism` | Black Argillite |
 | Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Black Argillite |
 | Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Black Argillite |
@@ -725,8 +725,8 @@ Stones: Basalt `embellishcraft_basalt`, Slate `embellishcraft_slate`, Marble `em
 | Lead | `lead` | Create: TFMG `tfmg` | Basalt, Slate, Marble, Gneiss, Larvikite |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Marble, Gneiss |
 | Thorium | `thorium` | Create: New Age `create_new_age` | Slate, Gneiss |
-| Iceandfire Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Basalt, Slate, Marble |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Basalt, Slate, Marble |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Silver | `occultism_silver` | Occultism `occultism` | every stone |
 | Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Slate, Gneiss |
 | Prosperity | `prosperity` | Mystical Agriculture `mysticalagriculture` | Gneiss |
@@ -766,7 +766,7 @@ Stones: Limestone `quark_limestone`, Jasper `quark_jasper`, Shale `quark_shale`
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Limestone, Shale |
 | Lead | `lead` | Create: TFMG `tfmg` | every stone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Silver | `occultism_silver` | Occultism `occultism` | every stone |
 | Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Limestone, Shale |
 | Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Limestone, Shale |
@@ -823,7 +823,7 @@ Stones: Limestone `meadow_limestone`
 | Uraninite Dense | `uraninite_dense` | Powah `powah` | Limestone |
 | Lead | `lead` | Create: TFMG `tfmg` | Limestone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Limestone |
 | Experience | `experience` | Exp Ores `expores` | Limestone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Limestone |
 | Galena | `galena` | Tech Reborn `techreborn` | Limestone |
@@ -891,7 +891,7 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Uraninite | `uraninite` | Powah `powah` | Asphalt |
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Asphalt |
 | Uraninite Dense | `uraninite_dense` | Powah `powah` | Asphalt |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | every stone |
 | Galena | `galena` | Tech Reborn `techreborn` | Asphalt |
 | Iridium | `iridium` | Tech Reborn `techreborn` | Blunite |
@@ -940,7 +940,7 @@ Stones: Reefstone `spawn_reefstone`
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | Reefstone |
 | Lead | `lead` | Create: TFMG `tfmg` | Reefstone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Reefstone |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Reefstone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Reefstone |
 | Experience | `experience` | Exp Ores `expores` | Reefstone |
 | Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Reefstone |
 | Galena | `galena` | Tech Reborn `techreborn` | Reefstone |
@@ -978,7 +978,7 @@ Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacit
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | White Dacite |
 | Lead | `lead` | Create: TFMG `tfmg` | every stone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Dacite, White Dacite |
-| Iceandfire Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Tin | `techreborn_tin` | Tech Reborn `techreborn` | Dacite, White Dacite |
 | Antimony | `antimony` | Modern Industrialization `modern_industrialization` | White Dacite |
 | Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | White Dacite, Red Rock |
