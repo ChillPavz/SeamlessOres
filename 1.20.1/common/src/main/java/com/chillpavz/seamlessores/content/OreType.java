@@ -880,87 +880,87 @@ public record OreType(String name, String key, String overlay, String deepslateO
             .withStrength(4.0F, 6.0F);
 
     // --- Electrodynamics (mod id electrodynamics; its art may be redistributed with credit to its author and a link to its page): 17 minerals, placed by its own rule test ---
-    public static final OreType ED_ALUMINUM = ore(
+    public static final OreType EDY_ALUMINUM = ore(
             "electrodynamics_aluminum", "electrodynamics_aluminum", null, "electrodynamics",
             of("electrodynamics", "orealuminum"), of("electrodynamics", "deepslateorealuminum"), null,
             NONE, null, false, Set.of())
             .withStrength(4.0F, 4.4F, 5.5F, 5.9F);
-    public static final OreType ED_CHROMIUM = ore(
+    public static final OreType EDY_CHROMIUM = ore(
             "electrodynamics_chromium", "electrodynamics_chromium", null, "electrodynamics",
             of("electrodynamics", "orechromium"), of("electrodynamics", "deepslateorechromium"), null,
             NONE, null, false, Set.of())
             .withStrength(10.0F, 6.5F, 11.5F, 8.0F);
-    public static final OreType ED_FLUORITE = ore(
+    public static final OreType EDY_FLUORITE = ore(
             "electrodynamics_fluorite", "electrodynamics_fluorite", null, "electrodynamics",
             of("electrodynamics", "orefluorite"), of("electrodynamics", "deepslateorefluorite"), null,
             NONE, null, false, Set.of())
             .withStrength(2.0F, 2.0F, 3.5F, 3.5F);
-    public static final OreType ED_LEAD = ore(
+    public static final OreType EDY_LEAD = ore(
             "electrodynamics_lead", "electrodynamics_lead", null, "electrodynamics",
             of("electrodynamics", "orelead"), of("electrodynamics", "deepslateorelead"), null,
             NONE, null, false, Set.of())
             .withStrength(4.0F, 8.0F, 5.5F, 9.5F);
-    public static final OreType ED_LITHIUM = ore(
+    public static final OreType EDY_LITHIUM = ore(
             "electrodynamics_lithium", "electrodynamics_lithium", "electrodynamics_lithium_deepslate", "electrodynamics",
             of("electrodynamics", "orelithium"), of("electrodynamics", "deepslateorelithium"), null,
             NONE, null, false, Set.of())
             .withStrength(4.0F, 8.0F, 5.5F, 9.5F);
-    public static final OreType ED_MOLYBDENUM = ore(
+    public static final OreType EDY_MOLYBDENUM = ore(
             "electrodynamics_molybdenum", "electrodynamics_molybdenum", null, "electrodynamics",
             of("electrodynamics", "oremolybdenum"), of("electrodynamics", "deepslateoremolybdenum"), null,
             NONE, null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 4.5F);
-    public static final OreType ED_MONAZITE = ore(
+    public static final OreType EDY_MONAZITE = ore(
             "electrodynamics_monazite", "electrodynamics_monazite", null, "electrodynamics",
             of("electrodynamics", "oremonazite"), of("electrodynamics", "deepslateoremonazite"), null,
             NONE, null, false, Set.of())
             .withStrength(6.0F, 4.5F, 7.5F, 6.0F);
-    public static final OreType ED_NITER = ore(
+    public static final OreType EDY_NITER = ore(
             "electrodynamics_niter", "electrodynamics_niter", null, "electrodynamics",
             of("electrodynamics", "oreniter"), of("electrodynamics", "deepslateoreniter"), null,
             UniformInt.of(1, 2), null, false, Set.of())
             .withStrength(6.0F, 4.5F, 7.5F, 6.0F);
-    public static final OreType ED_SALT = ore(
+    public static final OreType EDY_SALT = ore(
             "electrodynamics_salt", "electrodynamics_salt", null, "electrodynamics",
             of("electrodynamics", "oresalt"), of("electrodynamics", "deepslateoresalt"), null,
             UniformInt.of(0, 2), null, false, Set.of())
             .withStrength(3.0F, 5.0F, 4.5F, 6.5F);
-    public static final OreType ED_SILVER = ore(
+    public static final OreType EDY_SILVER = ore(
             "electrodynamics_silver", "electrodynamics_silver", null, "electrodynamics",
             of("electrodynamics", "oresilver"), of("electrodynamics", "deepslateoresilver"), null,
             NONE, null, false, Set.of())
             .withStrength(4.0F, 5.5F, 5.5F, 7.0F);
-    public static final OreType ED_SULFUR = ore(
+    public static final OreType EDY_SULFUR = ore(
             "electrodynamics_sulfur", "electrodynamics_sulfur", null, "electrodynamics",
             of("electrodynamics", "oresulfur"), of("electrodynamics", "deepslateoresulfur"), null,
             UniformInt.of(1, 2), null, false, Set.of())
             .withStrength(6.0F, 4.5F, 7.5F, 6.0F);
-    public static final OreType ED_SYLVITE = ore(
+    public static final OreType EDY_SYLVITE = ore(
             "electrodynamics_sylvite", "electrodynamics_sylvite", null, "electrodynamics",
             of("electrodynamics", "oresylvite"), of("electrodynamics", "deepslateoresylvite"), null,
             UniformInt.of(3, 7), null, false, Set.of())
             .withStrength(2.0F, 2.0F, 3.5F, 3.5F);
-    public static final OreType ED_THORIUM = ore(
+    public static final OreType EDY_THORIUM = ore(
             "electrodynamics_thorium", "electrodynamics_thorium", null, "electrodynamics",
             of("electrodynamics", "orethorium"), of("electrodynamics", "deepslateorethorium"), null,
             NONE, null, false, Set.of())
             .withStrength(10.0F, 6.5F, 11.5F, 8.0F);
-    public static final OreType ED_TIN = ore(
+    public static final OreType EDY_TIN = ore(
             "electrodynamics_tin", "electrodynamics_tin", null, "electrodynamics",
             of("electrodynamics", "oretin"), of("electrodynamics", "deepslateoretin"), null,
             NONE, null, false, Set.of())
             .withStrength(3.0F, 5.0F, 4.5F, 6.5F);
-    public static final OreType ED_TITANIUM = ore(
+    public static final OreType EDY_TITANIUM = ore(
             "electrodynamics_titanium", "electrodynamics_titanium", null, "electrodynamics",
             of("electrodynamics", "oretitanium"), of("electrodynamics", "deepslateoretitanium"), null,
             NONE, null, false, Set.of())
             .withStrength(10.0F, 6.5F, 11.5F, 8.0F);
-    public static final OreType ED_URANIUM = ore(
+    public static final OreType EDY_URANIUM = ore(
             "electrodynamics_uranium", "electrodynamics_uranium", null, "electrodynamics",
             of("electrodynamics", "oreuranium"), of("electrodynamics", "deepslateoreuranium"), null,
             NONE, null, false, Set.of())
             .withStrength(10.0F, 6.5F, 11.5F, 8.0F);
-    public static final OreType ED_VANADIUM = ore(
+    public static final OreType EDY_VANADIUM = ore(
             "electrodynamics_vanadium", "electrodynamics_vanadium", null, "electrodynamics",
             of("electrodynamics", "orevanadium"), of("electrodynamics", "deepslateorevanadium"), null,
             NONE, null, false, Set.of())
@@ -1057,7 +1057,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TH_SAL_AMMONIAC,
                     EC_DARK,
                     IR_MAGMANUM, IR_SANGUARNET,
-                    ED_ALUMINUM, ED_CHROMIUM, ED_FLUORITE, ED_LEAD, ED_LITHIUM, ED_MOLYBDENUM, ED_MONAZITE, ED_NITER, ED_SALT, ED_SILVER, ED_SULFUR, ED_SYLVITE, ED_THORIUM, ED_TIN, ED_TITANIUM, ED_URANIUM, ED_VANADIUM,
+                    EDY_ALUMINUM, EDY_CHROMIUM, EDY_FLUORITE, EDY_LEAD, EDY_LITHIUM, EDY_MOLYBDENUM, EDY_MONAZITE, EDY_NITER, EDY_SALT, EDY_SILVER, EDY_SULFUR, EDY_SYLVITE, EDY_THORIUM, EDY_TIN, EDY_TITANIUM, EDY_URANIUM, EDY_VANADIUM,
                     DO_COAL, DO_COPPER, DO_IRON, DO_GOLD, DO_LAPIS, DO_REDSTONE, DO_DIAMOND, DO_EMERALD, DO_NETHER_GOLD, DO_NETHER_QUARTZ, DO_ANCIENT_NETHER);
 
     private static final Map<String, OreType> BY_KEY = byKey();
