@@ -61,6 +61,19 @@ def _shared_words(a, b):
     return table[0][0]
 
 
+def _words(path):
+    """A block path's words. "deepslate" and "ore" glued to the front of a word count as words of their
+    own: Electrodynamics writes orealuminum and deepslateorealuminum."""
+    out = []
+    for word in path.split("_"):
+        for prefix in ("deepslate", "ore"):
+            if word.startswith(prefix) and len(word) > len(prefix) + 2 and word not in ("ores",):
+                out.append(prefix)
+                word = word[len(prefix):]
+        out.append(word)
+    return out
+
+
 def id_of(cfg, ore, tier):
     """The id rule (owner, 22 Oct 2026): <stone>_<ore>_ore. Each half is its block's path, with any mod
     but the game's in front by its full id (create_limestone, mekanism_uranium); dripstone_block is
@@ -70,9 +83,9 @@ def id_of(cfg, ore, tier):
         cfg["path"] if cfg["ns"] == "minecraft" else f"{cfg['ns']}_{cfg['path']}")
     forms = ore["tiers"]
     if tier in ("stone", "deepslate") and "stone" in forms and "deepslate" in forms:
-        words = _shared_words(forms["stone"].split("_"), forms["deepslate"].split("_"))
+        words = _shared_words(_words(forms["stone"]), _words(forms["deepslate"]))
     else:
-        words = forms[tier].split("_")
+        words = _words(forms[tier])
     words = [w for w in words if w != "deepslate"]
     if "ore" in words:
         words.remove("ore")
