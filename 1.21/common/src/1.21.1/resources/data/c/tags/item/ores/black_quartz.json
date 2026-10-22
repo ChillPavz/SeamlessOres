@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_actuallyadditions_black_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_actuallyadditions_black_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_actuallyadditions_black_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_actuallyadditions_black_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_actuallyadditions_black_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_actuallyadditions_black_quartz_ore",
+      "required": false
+    }
+  ]
+}

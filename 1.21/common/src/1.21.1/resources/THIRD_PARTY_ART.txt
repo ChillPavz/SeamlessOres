@@ -5,6 +5,9 @@ textures listed below are derived from other mods' own ore textures. Each stays 
 licence of the mod it comes from, shown with it; PolyForm Shield does not apply to them.
 The overlays of the game's own ores are derived from Minecraft's textures and remain Mojang's.
 
+Actually Additions by Ellpeck, MIT:
+  assets/seamlessores/textures/block/black_quartz_overlay.png
+
 Create, MIT:
   assets/seamlessores/textures/block/zinc_overlay.png
 

@@ -219,6 +219,9 @@ public final class SeamlessOresConfig {
     /** Whether Hazen 'N Stuff variants generate. Pure restyle. */
     public static boolean hazenNStuff = true;
 
+    /** Whether Actually Additions variants generate. Pure restyle. */
+    public static boolean actuallyAdditions = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -263,6 +266,7 @@ public final class SeamlessOresConfig {
             case "create_new_age" -> createNewAge;
             case "createpropulsion" -> createPropulsion;
             case "hazennstuff" -> hazenNStuff;
+            case "actuallyadditions" -> actuallyAdditions;
             default -> true;
         };
     }
@@ -461,6 +465,7 @@ public final class SeamlessOresConfig {
         public boolean createNewAge = true;
         public boolean createPropulsion = true;
         public boolean hazenNStuff = true;
+        public boolean actuallyAdditions = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -527,6 +532,7 @@ public final class SeamlessOresConfig {
         createNewAge = values.createNewAge;
         createPropulsion = values.createPropulsion;
         hazenNStuff = values.hazenNStuff;
+        actuallyAdditions = values.actuallyAdditions;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

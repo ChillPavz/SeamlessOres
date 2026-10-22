@@ -2080,6 +2080,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_actuallyadditions_black_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_gneiss_bigreactors_yellorite_ore",
       "required": false
     },
@@ -2396,6 +2400,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_actuallyadditions_black_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_bigreactors_yellorite_ore",
       "required": false
     },
@@ -2573,6 +2581,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_tfmg_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_actuallyadditions_black_quartz_ore",
       "required": false
     },
     {
@@ -3229,6 +3241,10 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_actuallyadditions_black_quartz_ore",
       "required": false
     },
     {
@@ -4932,6 +4948,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_actuallyadditions_black_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_bigreactors_yellorite_ore",
       "required": false
     },
@@ -5101,6 +5121,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_actuallyadditions_black_quartz_ore",
       "required": false
     },
     {

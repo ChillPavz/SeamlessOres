@@ -148,7 +148,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "silentgems": SILENT_GEMS_JAR,
             "mythicmetals": MYTHIC_METALS_JAR,
             "createpropulsion": jar("createpropulsion-1.1.5.jar"),
-            "hazennstuff": jar("hazennstuff-1.4.0.14.jar")}
+            "hazennstuff": jar("hazennstuff-1.4.0.14.jar"),
+            "actuallyadditions": jar("actuallyadditions-1.3.26+mc1.21.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -360,6 +361,8 @@ MODS = {
                        "licence": "MIT", "author": "Sergey Feduk, Tronco_78, Bunting_chj, SSnowly, KyivSec"},
     "hazennstuff": {"display": "Hazen 'N Stuff", "category": "hazen_n_stuff",
                        "licence": "PolyForm Shield 1.0.0", "author": "Hazen"},
+    "actuallyadditions": {"display": "Actually Additions", "category": "actually_additions",
+                       "licence": "MIT", "author": "Ellpeck"},
 }
 
 ORE_DEFS = [
@@ -901,6 +904,10 @@ ORE_DEFS = [
     {"name": "dreadstone", "overlay": "dreadstone", "source": "dreadstone_ore", "base": "deepslate",
      "mod": "hazennstuff",
      "tiers": {"deepslate": "dreadstone_ore"}},
+    # --- Actually Additions (mod id actuallyadditions, MIT): black quartz, stone's properties at 1.5 hardness, 10.0 blast resistance, no XP. NeoForge at 1.21.1 ---
+    {"name": "black_quartz", "overlay": "black_quartz", "source": "black_quartz_ore", "base": "stone",
+     "mod": "actuallyadditions",
+     "tiers": {"stone": "black_quartz_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1041,6 +1048,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "wilderwild": ('fabric',),
     "createpropulsion": ('neoforge',),
     "hazennstuff": ('neoforge',),
+    "actuallyadditions": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1151,6 +1159,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.actually_additions": "Actually Additions",
         f"text.autoconfig.{MOD_ID}.category.hazen_n_stuff": "Hazen 'N Stuff",
         f"text.autoconfig.{MOD_ID}.category.create_propulsion": "Create: Propulsion",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
@@ -1180,6 +1189,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.actuallyAdditions": "Actually Additions: variants",
+        f"text.autoconfig.{MOD_ID}.option.actuallyAdditions.@Tooltip":
+            "Generate host-matched black quartz ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.hazenNStuff": "Hazen 'N Stuff: variants",
         f"text.autoconfig.{MOD_ID}.option.hazenNStuff.@Tooltip":

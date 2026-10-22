@@ -528,6 +528,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean hazenNStuff = true;
 
+    // --- Actually Additions --------------------------------------------------------------------------
+
+    @ConfigEntry.Category("actually_additions")
+    @ConfigEntry.Gui.Tooltip
+    public boolean actuallyAdditions = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -658,6 +664,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.createNewAge = createNewAge;
         values.createPropulsion = createPropulsion;
         values.hazenNStuff = hazenNStuff;
+        values.actuallyAdditions = actuallyAdditions;
 
         SeamlessOresConfig.apply(values);
     }

@@ -720,6 +720,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(2, 4), null, false, Set.of())
             .withStrength(3.0F, 3.0F, 3.0F, 3.0F);
 
+    // --- Actually Additions (mod id actuallyadditions, MIT): black quartz, stone's properties at 1.5 hardness, 10.0 blast resistance, no XP. NeoForge at 1.21.1 ---
+    public static final OreType AA_BLACK_QUARTZ = ore(
+            "black_quartz", "black_quartz", null, "actuallyadditions",
+            of("actuallyadditions", "black_quartz_ore"), null, null,
+            NONE, null, false, Set.of())
+            .withStrength(1.5F, 10.0F, 1.5F, 10.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -751,7 +758,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE, CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE,
                     INFECTED_DIAMOND,
                     CP_PLATINUM,
-                    HNS_CHLOROPHYTE, HNS_DREADSTONE);
+                    HNS_CHLOROPHYTE, HNS_DREADSTONE,
+                    AA_BLACK_QUARTZ);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

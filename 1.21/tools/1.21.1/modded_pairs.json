@@ -53,6 +53,12 @@
     "bigreactors:benitoite_ore"
    ]
   },
+  "black_quartz": {
+   "mod": "actuallyadditions",
+   "forms": [
+    "actuallyadditions:black_quartz_ore"
+   ]
+  },
   "blazing_quartz": {
    "mod": "malum",
    "forms": [
@@ -2262,6 +2268,12 @@
     ],
     "rate": 1.38
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 86.29
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -2629,6 +2641,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.83
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.56
    },
    "bort": {
     "where": [
@@ -3034,6 +3052,12 @@
     ],
     "rate": 1.06
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 55.69
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -3438,6 +3462,12 @@
     ],
     "rate": 1.1
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 57.87
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -3841,6 +3871,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.72
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 37.75
    },
    "bort": {
     "where": [
@@ -4332,6 +4368,12 @@
     ],
     "rate": 140.72
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 50.01
+   },
    "blazing_quartz": {
     "where": [
      "1.21.1 neoforge"
@@ -4802,6 +4844,12 @@
     ],
     "rate": 0.78
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.18
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -5206,6 +5254,12 @@
     ],
     "rate": 0.96
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.53
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -5591,6 +5645,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.28
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.08
    },
    "brilliant": {
     "where": [
@@ -6362,6 +6422,12 @@
     ],
     "rate": 21.03
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.65
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -6961,6 +7027,12 @@
     ],
     "rate": 0.62
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.53
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -7361,6 +7433,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.65
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.37
    },
    "bort": {
     "where": [
@@ -7895,6 +7973,12 @@
     ],
     "rate": 0.48
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 25.51
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -8298,6 +8382,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.82
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.14
    },
    "bort": {
     "where": [
@@ -8708,6 +8798,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 62.97
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 40.2
    },
    "blazing_quartz": {
     "where": [
@@ -9254,6 +9350,12 @@
     ],
     "rate": 23.01
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 66.65
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -9794,6 +9896,12 @@
     ],
     "rate": 23.41
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 66.65
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -10321,6 +10429,12 @@
     ],
     "rate": 27.21
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 248.29
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -10665,6 +10779,12 @@
     ],
     "rate": 27.21
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 724.18
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -11008,6 +11128,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 27.21
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 413.82
    },
    "bort": {
     "where": [
@@ -11359,6 +11485,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.25
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.57
    },
    "bort": {
     "where": [
@@ -12225,6 +12357,12 @@
     ],
     "rate": 1.34
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.72
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -12562,6 +12700,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.02
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 53.93
    },
    "bort": {
     "where": [
@@ -12967,6 +13111,12 @@
     ],
     "rate": 1.02
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 53.93
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -13370,6 +13520,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.02
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 53.93
    },
    "bort": {
     "where": [
@@ -13907,6 +14063,12 @@
     ],
     "rate": 1.52
    },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.77
+   },
    "bort": {
     "where": [
      "1.21.1 neoforge"
@@ -14427,6 +14589,12 @@
      "1.21.1 fabric"
     ],
     "rate": 1.55
+   },
+   "black_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.81
    },
    "bort": {
     "where": [
