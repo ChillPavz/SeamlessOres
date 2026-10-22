@@ -590,6 +590,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean evilCraft = true;
 
+    // --- Iter RPG ------------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("iter_rpg")
+    @ConfigEntry.Gui.Tooltip
+    public boolean iterRpg = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -729,6 +735,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.expandedDelight = expandedDelight;
         values.theurgy = theurgy;
         values.evilCraft = evilCraft;
+        values.iterRpg = iterRpg;
 
         SeamlessOresConfig.apply(values);
     }

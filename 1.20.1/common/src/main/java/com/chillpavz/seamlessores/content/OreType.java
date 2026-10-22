@@ -867,6 +867,18 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("evilcraft", "dark_ore"), of("evilcraft", "dark_ore_deepslate"), null,
             UniformInt.of(1, 5), null, true, Set.of());
 
+    // --- Iter RPG (mod id iter_rpg; GPL-3.0): magmanum in netherrack, sanguarnet in deepslate ---
+    public static final OreType IR_MAGMANUM = ore(
+            "iter_rpg_magmanum", "iter_rpg_magmanum", null, "iter_rpg",
+            null, null, of("iter_rpg", "magmanum_ore"),
+            NONE, null, false, Set.of())
+            .withStrength(0.8F, 6.0F);
+    public static final OreType IR_SANGUARNET = ore(
+            "iter_rpg_sanguarnet", "iter_rpg_sanguarnet", null, "iter_rpg",
+            null, of("iter_rpg", "sanguarnet_ore"), null,
+            UniformInt.of(1, 2), null, false, Set.of())
+            .withStrength(4.0F, 6.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -909,7 +921,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     RFT_SHARD, RFT_NETHER_SHARD,
                     ED_SALT,
                     TH_SAL_AMMONIAC,
-                    EC_DARK);
+                    EC_DARK,
+                    IR_MAGMANUM, IR_SANGUARNET);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

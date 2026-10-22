@@ -50,7 +50,9 @@
     "silentgear:prospector_hammer_targets": "the prospector hammer finds it",
     "silentgems:ores": "",
     "silentgems:ores/*": "",
-    "techreborn:ores": ""
+    "techreborn:ores": "",
+    "forge:conductive_blocks": "Iter RPG: blocks its lightning conducts through",
+    "forge:fire_element": "Iter RPG: the fire element its spells read"
   },
   "skip": {
     "iceandfire:*dragon_cave*": "Ice and Fire PLACES blocks from these lists in dragon caves: our variants would appear there",

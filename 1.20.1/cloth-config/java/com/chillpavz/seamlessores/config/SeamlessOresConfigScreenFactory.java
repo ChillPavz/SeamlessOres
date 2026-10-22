@@ -106,6 +106,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("expandeddelight", "expanded_delight");
         MOD_CATEGORIES.put("theurgy", "theurgy");
         MOD_CATEGORIES.put("evilcraft", "evilcraft");
+        MOD_CATEGORIES.put("iter_rpg", "iter_rpg");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

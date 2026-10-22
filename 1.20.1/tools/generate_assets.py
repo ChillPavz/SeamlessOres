@@ -189,7 +189,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "rftoolsbase": jar("rftoolsbase-1.20-5.0.7.jar"),
             "expandeddelight": jar("expandeddelight-0.3.2.jar"),
             "theurgy": jar("theurgy-1.20.1-1.30.0.jar"),
-            "evilcraft": jar("EvilCraft-1.20.1-1.3.4.jar")}
+            "evilcraft": jar("EvilCraft-1.20.1-1.3.4.jar"),
+            "iter_rpg": jar("iter_rpg-0.7.9a-forge-1.20.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -420,6 +421,8 @@ MODS = {
                        "licence": "CC BY-SA 4.0 (art)", "author": "Kli Kli"},
     "evilcraft": {"display": "EvilCraft", "category": "evilcraft",
                        "licence": "CC BY 4.0 (art)", "author": "rubensworks"},
+    "iter_rpg": {"display": "Iter RPG", "category": "iter_rpg",
+                       "licence": "GPL-3.0", "author": "BaronFonShish, RayRindou"},
 }
 
 ORE_DEFS = [
@@ -1048,6 +1051,13 @@ ORE_DEFS = [
     {"name": "dark", "overlay": "dark", "source": "dark_ore", "base": "stone",
      "mod": "evilcraft",
      "tiers": {"stone": "dark_ore", "deepslate": "dark_ore_deepslate"}},
+    # --- Iter RPG (mod id iter_rpg; GPL-3.0): magmanum in netherrack, sanguarnet in deepslate ---
+    {"name": "iter_rpg_magmanum", "overlay": "iter_rpg_magmanum", "source": "magmanum_ore", "base": "netherrack",
+     "mod": "iter_rpg",
+     "tiers": {"nether": "magmanum_ore"}},
+    {"name": "iter_rpg_sanguarnet", "overlay": "iter_rpg_sanguarnet", "source": "sanguarnet_ore", "base": "deepslate",
+     "mod": "iter_rpg",
+     "tiers": {"deepslate": "sanguarnet_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1193,6 +1203,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "expandeddelight": ('fabric',),
     "theurgy": ('forge',),
     "evilcraft": ('forge',),
+    "iter_rpg": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1339,6 +1350,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.iter_rpg": "Iter RPG",
         f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
         f"text.autoconfig.{MOD_ID}.category.theurgy": "Theurgy",
         f"text.autoconfig.{MOD_ID}.category.expanded_delight": "Expanded Delight",
@@ -1381,6 +1393,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.iterRpg": "Iter RPG: variants",
+        f"text.autoconfig.{MOD_ID}.option.iterRpg.@Tooltip":
+            "Generate host-matched Iter RPG ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.evilCraft": "EvilCraft: variants",
         f"text.autoconfig.{MOD_ID}.option.evilCraft.@Tooltip":

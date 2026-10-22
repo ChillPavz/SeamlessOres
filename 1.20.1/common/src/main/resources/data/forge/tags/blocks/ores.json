@@ -233,6 +233,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_iter_rpg_magmanum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_malum_blazing_quartz_ore",
       "required": false
     },
@@ -572,6 +576,10 @@
     },
     {
       "id": "seamlessores:blackstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_iter_rpg_magmanum_ore",
       "required": false
     },
     {
@@ -1933,6 +1941,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_iter_rpg_magmanum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scorchia_malum_blazing_quartz_ore",
       "required": false
     },
@@ -2054,6 +2066,10 @@
     },
     {
       "id": "seamlessores:create_scoria_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_iter_rpg_magmanum_ore",
       "required": false
     },
     {
@@ -4528,6 +4544,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_iter_rpg_magmanum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_malum_blazing_quartz_ore",
       "required": false
     },
@@ -5501,6 +5521,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_expores_nether_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_iter_rpg_magmanum_ore",
       "required": false
     },
     {

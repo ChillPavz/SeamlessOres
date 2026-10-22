@@ -67,6 +67,9 @@ Immersive Engineering by BluSunrize, Damien A.W. Hazard, Blu's License of Common
   assets/seamlessores/textures/block/ie_silver_overlay.png
   assets/seamlessores/textures/block/ie_uranium_overlay.png
 
+Iter RPG by BaronFonShish, RayRindou, GPL-3.0:
+  assets/seamlessores/textures/block/iter_rpg_magmanum_overlay.png
+
 Malum by Sammy Semicolon, All Rights Reserved, used with permission:
   assets/seamlessores/textures/block/blazing_quartz_overlay.png
   assets/seamlessores/textures/block/brilliant_overlay.png

@@ -1377,6 +1377,10 @@
       "id": "seamlessores:basalt_rftoolsbase_dimensionalshard_nether_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_iter_rpg_magmanum_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -1449,6 +1453,10 @@
     },
     {
       "id": "seamlessores:blackstone_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_iter_rpg_magmanum_ore",
       "required": false
     },
     {
@@ -2476,6 +2484,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_iter_rpg_magmanum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_iron_ore",
       "required": false
     },
@@ -2729,6 +2741,10 @@
     },
     {
       "id": "seamlessores:create_scoria_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_iter_rpg_magmanum_ore",
       "required": false
     },
     {
@@ -3185,6 +3201,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_iter_rpg_magmanum_ore",
       "required": false
     },
     {
@@ -4013,6 +4033,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_iter_rpg_magmanum_ore",
       "required": false
     },
     {
