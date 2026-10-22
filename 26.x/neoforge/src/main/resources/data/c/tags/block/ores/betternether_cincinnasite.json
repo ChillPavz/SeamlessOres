@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:basalt_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_betternether_cincinnasite_ore",
+      "required": false
+    }
+  ]
+}

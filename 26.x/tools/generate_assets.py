@@ -111,6 +111,7 @@ PROFILES = {
             "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",
             "theurgy": REFS + "theurgy-26.1.2-neoforge-1.116.0.jar",
             "evilcraft": REFS + "evilcraft-26.1.2-neoforge-1.2.108-1172.jar",
+            "betternether": REFS + "better-nether-26.101.2.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -132,6 +133,7 @@ PROFILES = {
             "iceandfire": ("neoforge",),
             "theurgy": ("neoforge",),
             "evilcraft": ("neoforge",),
+            "betternether": ("fabric",),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -153,6 +155,7 @@ PROFILES = {
             "silentgear": REFS + "silent-gear-26.2-neoforge-4.3.0.jar",
             "theurgy": REFS + "theurgy-26.2-neoforge-1.118.1.jar",
             "evilcraft": REFS + "evilcraft-26.2-neoforge-1.2.98-1108.jar",
+            "betternether": REFS + "better-nether-26.201.4.jar",
         },
         "available": {
             "create": ("fabric",),
@@ -164,6 +167,7 @@ PROFILES = {
             "silentgear": ("neoforge",),
             "theurgy": ("neoforge",),
             "evilcraft": ("neoforge",),
+            "betternether": ("fabric",),
         },
     },
     # 26.3 (data formats 121 and up): a new loot format, silk touch as a single "condition" (see
@@ -192,6 +196,7 @@ PROFILES = {
             "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",   # no 26.3 build: stands in, inert
             "theurgy": REFS + "theurgy-26.3-neoforge-1.120.0.jar",
             "evilcraft": REFS + "evilcraft-26.3-neoforge-1.2.98-1170.jar",
+            "betternether": REFS + "better-nether-26.301.2.jar",
         },
         "available": {
             "mythicupgrades": ("fabric", "neoforge"),
@@ -200,6 +205,7 @@ PROFILES = {
             "occultism": ("neoforge",),
             "theurgy": ("neoforge",),
             "evilcraft": ("neoforge",),
+            "betternether": ("fabric",),
         },
     },
 }
@@ -406,6 +412,8 @@ MODS = {
                        "licence": "CC BY-SA 4.0 (art)", "author": "Kli Kli"},
     "evilcraft": {"display": "EvilCraft", "category": "evilcraft",
                        "licence": "CC BY 4.0 (art)", "author": "rubensworks"},
+    "betternether": {"display": "BetterNether", "category": "betternether",
+                       "licence": "MIT", "author": "quiqueck, paulevs"},
 }
 
 ORE_DEFS = [
@@ -788,6 +796,19 @@ ORE_DEFS = [
     {"name": "dark", "overlay": "dark", "source": "dark_ore", "base": "stone",
      "mod": "evilcraft",
      "tiers": {"stone": "dark_ore", "deepslate": "dark_ore_deepslate"}},
+    # --- BetterNether (mod id betternether; MIT): cincinnasite, nether lapis, redstone and ruby, all in netherrack ---
+    {"name": "betternether_cincinnasite", "overlay": "betternether_cincinnasite", "source": "cincinnasite_ore", "base": "netherrack",
+     "mod": "betternether",
+     "tiers": {"nether": "cincinnasite_ore"}},
+    {"name": "betternether_nether_lapis", "overlay": "betternether_nether_lapis", "source": "nether_lapis_ore", "base": "netherrack",
+     "mod": "betternether",
+     "tiers": {"nether": "nether_lapis_ore"}},
+    {"name": "betternether_nether_redstone", "overlay": "betternether_nether_redstone", "source": "nether_redstone_ore", "base": "netherrack",
+     "mod": "betternether",
+     "tiers": {"nether": "nether_redstone_ore"}},
+    {"name": "betternether_nether_ruby", "overlay": "betternether_nether_ruby", "source": "nether_ruby_ore", "base": "netherrack",
+     "mod": "betternether",
+     "tiers": {"nether": "nether_ruby_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -872,6 +893,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "iceandfire": ("neoforge",),
     "theurgy": ("neoforge",),
     "evilcraft": ("neoforge",),
+    "betternether": ("fabric",),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1037,6 +1059,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.betternether": "BetterNether",
         f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
         f"text.autoconfig.{MOD_ID}.category.theurgy": "Theurgy",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
@@ -1058,6 +1081,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.betterNether": "BetterNether: variants",
+        f"text.autoconfig.{MOD_ID}.option.betterNether.@Tooltip":
+            "Generate host-matched BetterNether ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.evilCraft": "EvilCraft: variants",
         f"text.autoconfig.{MOD_ID}.option.evilCraft.@Tooltip":

@@ -30,7 +30,23 @@
       "required": false
     },
     "seamlessores:basalt_nether_quartz_ore",
+    {
+      "id": "seamlessores:basalt_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_betternether_nether_ruby_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_quartz_ore",
+    {
+      "id": "seamlessores:blackstone_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_betternether_nether_ruby_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:blackstone_redstone_ore",
       "required": false
@@ -72,11 +88,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_betternether_nether_ruby_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_redstone_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_scoria_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_betternether_nether_ruby_ore",
       "required": false
     },
     {
@@ -93,6 +125,14 @@
     },
     {
       "id": "seamlessores:smooth_basalt_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_betternether_nether_ruby_ore",
       "required": false
     },
     {

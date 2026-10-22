@@ -548,6 +548,28 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("evilcraft", "dark_ore"), of("evilcraft", "dark_ore_deepslate"), null,
             UniformInt.of(1, 5), null, true, Set.of());
 
+    // --- BetterNether (mod id betternether; MIT): cincinnasite, nether lapis, redstone and ruby, all in netherrack ---
+    public static final OreType BN_CINCINNASITE = ore(
+            "betternether_cincinnasite", "betternether_cincinnasite", null, "betternether",
+            null, null, of("betternether", "cincinnasite_ore"),
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 5.0F);
+    public static final OreType BN_NETHER_LAPIS = ore(
+            "betternether_nether_lapis", "betternether_nether_lapis", null, "betternether",
+            null, null, of("betternether", "nether_lapis_ore"),
+            UniformInt.of(1, 3), null, false, Set.of())
+            .withStrength(3.0F, 5.0F);
+    public static final OreType BN_NETHER_REDSTONE = ore(
+            "betternether_nether_redstone", "betternether_nether_redstone", null, "betternether",
+            null, null, of("betternether", "nether_redstone_ore"),
+            UniformInt.of(1, 5), null, true, Set.of())
+            .withStrength(3.0F, 5.0F);
+    public static final OreType BN_NETHER_RUBY = ore(
+            "betternether_nether_ruby", "betternether_nether_ruby", null, "betternether",
+            null, null, of("betternether", "nether_ruby_ore"),
+            UniformInt.of(1, 5), null, false, Set.of())
+            .withStrength(3.0F, 5.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -571,7 +593,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE,
                     INFERIUM, PROSPERITY, SG_OPAL,
                     TH_SAL_AMMONIAC,
-                    EC_DARK);
+                    EC_DARK,
+                    BN_CINCINNASITE, BN_NETHER_LAPIS, BN_NETHER_REDSTONE, BN_NETHER_RUBY);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 
