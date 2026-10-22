@@ -153,7 +153,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "superbwarfare": jar("superbwarfare-0.8.9.2-mc1.21.1-c22d98c2.jar"),
             "epicpaladins": jar("epicpaladins-1.4.3-1.21.1.jar"),
             "rftoolsbase": jar("rftoolsbase-1.21-6.0.11.jar"),
-            "expandeddelight": jar("expandeddelight-0.1.4.jar")}
+            "expandeddelight": jar("expandeddelight-0.1.4.jar"),
+            "theurgy": jar("theurgy-1.21.1-neoforge-1.78.0.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -375,6 +376,8 @@ MODS = {
                        "licence": "MIT", "author": "McJty"},
     "expandeddelight": {"display": "Expanded Delight", "category": "expanded_delight",
                        "licence": "MIT", "author": "ianm1647"},
+    "theurgy": {"display": "Theurgy", "category": "theurgy",
+                       "licence": "CC BY-SA 4.0 (art)", "author": "Kli Kli"},
 }
 
 ORE_DEFS = [
@@ -954,6 +957,10 @@ ORE_DEFS = [
     {"name": "expandeddelight_salt", "overlay": "expandeddelight_salt", "source": "salt_ore", "base": "stone",
      "mod": "expandeddelight",
      "tiers": {"stone": "salt_ore", "deepslate": "deepslate_salt_ore"}},
+    # --- Theurgy (mod id theurgy; its art is CC BY-SA 4.0): sal ammoniac, iron convention, 2 to 5 XP ---
+    {"name": "sal_ammoniac", "overlay": "sal_ammoniac", "source": "sal_ammoniac_ore", "base": "stone",
+     "mod": "theurgy",
+     "tiers": {"stone": "sal_ammoniac_ore", "deepslate": "deepslate_sal_ammoniac_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1099,6 +1106,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "epicpaladins": ('neoforge',),
     "rftoolsbase": ('neoforge',),
     "expandeddelight": ('neoforge',),
+    "theurgy": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1209,6 +1217,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.theurgy": "Theurgy",
         f"text.autoconfig.{MOD_ID}.category.expanded_delight": "Expanded Delight",
         f"text.autoconfig.{MOD_ID}.category.rftools_base": "RFTools Base",
         f"text.autoconfig.{MOD_ID}.category.epic_paladins": "Epic Paladins",
@@ -1243,6 +1252,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.theurgy": "Theurgy: variants",
+        f"text.autoconfig.{MOD_ID}.option.theurgy.@Tooltip":
+            "Generate host-matched sal ammoniac ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.expandedDelight": "Expanded Delight: variants",
         f"text.autoconfig.{MOD_ID}.option.expandedDelight.@Tooltip":

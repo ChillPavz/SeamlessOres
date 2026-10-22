@@ -252,6 +252,9 @@ public final class SeamlessOresConfig {
     /** Whether Expanded Delight variants generate. Pure restyle. */
     public static boolean expandedDelight = true;
 
+    /** Whether Theurgy variants generate. Pure restyle. */
+    public static boolean theurgy = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -307,6 +310,7 @@ public final class SeamlessOresConfig {
             case "epicpaladins" -> epicPaladins;
             case "rftoolsbase" -> rftoolsBase;
             case "expandeddelight" -> expandedDelight;
+            case "theurgy" -> theurgy;
             default -> true;
         };
     }
@@ -516,6 +520,7 @@ public final class SeamlessOresConfig {
         public boolean epicPaladins = true;
         public boolean rftoolsBase = true;
         public boolean expandedDelight = true;
+        public boolean theurgy = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -593,6 +598,7 @@ public final class SeamlessOresConfig {
         epicPaladins = values.epicPaladins;
         rftoolsBase = values.rftoolsBase;
         expandedDelight = values.expandedDelight;
+        theurgy = values.theurgy;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

@@ -684,6 +684,10 @@
       "id": "seamlessores:andesite_epicpaladins_bloodstone_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -1408,6 +1412,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -1669,6 +1677,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -1960,6 +1972,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_lignite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_iron_ore",
       "required": false
     },
@@ -2153,6 +2169,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -2533,6 +2553,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -3356,6 +3380,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_copper_ore",
       "required": false
     },
@@ -3780,6 +3808,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_coal_ore",
       "required": false
     },
@@ -3925,6 +3957,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -4153,6 +4189,10 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -4520,6 +4560,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
       "required": false
     },
@@ -4601,6 +4645,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {

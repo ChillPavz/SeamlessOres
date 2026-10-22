@@ -229,6 +229,10 @@
       "id": "seamlessores:andesite_scguns_sulfur_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
     "seamlessores:tuff_lapis_ore",
@@ -298,6 +302,10 @@
     },
     {
       "id": "seamlessores:tuff_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_theurgy_sal_ammoniac_ore",
       "required": false
     },
     "seamlessores:dripstone_iron_ore",
@@ -445,6 +453,10 @@
     },
     {
       "id": "seamlessores:blackstone_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -796,6 +808,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -924,6 +940,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -1012,6 +1032,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_lignite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_iron_ore",
       "required": false
     },
@@ -1085,6 +1109,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -1188,6 +1216,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_iron_ore",
       "required": false
     },
@@ -1221,6 +1253,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -1509,6 +1545,10 @@
     },
     {
       "id": "seamlessores:quark_shale_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -1832,6 +1872,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
       "required": false
     },
@@ -1889,6 +1933,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {

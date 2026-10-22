@@ -98,6 +98,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("epicpaladins", "epic_paladins");
         MOD_CATEGORIES.put("rftoolsbase", "rftools_base");
         MOD_CATEGORIES.put("expandeddelight", "expanded_delight");
+        MOD_CATEGORIES.put("theurgy", "theurgy");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

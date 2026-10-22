@@ -587,6 +587,13 @@
     "mythicmetals:deepslate_runite_ore"
    ]
   },
+  "sal_ammoniac": {
+   "mod": "theurgy",
+   "forms": [
+    "theurgy:sal_ammoniac_ore",
+    "theurgy:deepslate_sal_ammoniac_ore"
+   ]
+  },
   "salt": {
    "mod": "modern_industrialization",
    "forms": [
@@ -957,6 +964,12 @@
     ],
     "rate": 8.37
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.94
+   },
    "shiny_stone": {
     "where": [
      "1.21.1 fabric",
@@ -1167,6 +1180,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.72
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.1
    },
    "shiny_stone": {
     "where": [
@@ -1384,6 +1403,12 @@
      "1.21.1 fabric"
     ],
     "rate": 7.63
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.95
    },
    "salt": {
     "where": [
@@ -2605,6 +2630,12 @@
     ],
     "rate": 108.1
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 63.31
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -3050,6 +3081,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 56.52
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 79.07
    },
    "salt": {
     "where": [
@@ -3509,6 +3546,12 @@
     ],
     "rate": 72.26
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 101.09
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -3967,6 +4010,12 @@
     ],
     "rate": 75.08
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 105.04
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -4424,6 +4473,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 48.98
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 68.52
    },
    "salt": {
     "where": [
@@ -5053,6 +5108,12 @@
     ],
     "rate": 13.89
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 90.79
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -5517,6 +5578,12 @@
     ],
     "rate": 53.43
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 74.75
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -5969,6 +6036,12 @@
     ],
     "rate": 74.74
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.61
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -6343,6 +6416,12 @@
     ],
     "rate": 11.77
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 60.6
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -6579,6 +6658,12 @@
     ],
     "rate": 4.35
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 33.91
+   },
    "shiny_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -6755,6 +6840,12 @@
     ],
     "rate": 33.18
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 17.88
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -6918,6 +7009,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 8.05
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 53.05
    },
    "shiny_stone": {
     "where": [
@@ -7124,6 +7221,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 4.69
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 54.33
    },
    "salt": {
     "where": [
@@ -7468,6 +7571,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 533.82
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 50.6
    },
    "salt": {
     "where": [
@@ -7882,6 +7991,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.34
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 180.0
    },
    "salt": {
     "where": [
@@ -8459,6 +8574,12 @@
     ],
     "rate": 0.36
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.57
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -8970,6 +9091,12 @@
     ],
     "rate": 33.1
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 46.31
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -9427,6 +9554,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 55.98
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 78.31
    },
    "salt": {
     "where": [
@@ -9963,6 +10096,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 6.22
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 72.97
    },
    "salt": {
     "where": [
@@ -10573,6 +10712,12 @@
     ],
     "rate": 4.74
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 119.72
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -11167,6 +11312,12 @@
     ],
     "rate": 4.74
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 124.75
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -11636,6 +11787,12 @@
     ],
     "rate": 179.82
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 812.89
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -12034,6 +12191,12 @@
     ],
     "rate": 524.48
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2370.93
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -12431,6 +12594,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 299.7
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1354.81
    },
    "salt": {
     "where": [
@@ -12895,6 +13064,12 @@
     ],
     "rate": 0.16
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.67
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -13185,6 +13360,12 @@
     ],
     "rate": 1.26
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.54
+   },
    "shiny_stone": {
     "where": [
      "1.21.1 fabric",
@@ -13407,6 +13588,12 @@
      "1.21.1 fabric"
     ],
     "rate": 6.45
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.12
    },
    "salt": {
     "where": [
@@ -13743,6 +13930,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 23.87
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 78.6
    },
    "salt": {
     "where": [
@@ -14189,6 +14382,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 69.97
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 97.89
    },
    "salt": {
     "where": [
@@ -14648,6 +14847,12 @@
     ],
     "rate": 69.97
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 97.89
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -15105,6 +15310,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 69.97
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 97.89
    },
    "salt": {
     "where": [
@@ -15783,6 +15994,12 @@
     ],
     "rate": 8.93
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 44.38
+   },
    "salt": {
     "where": [
      "1.21.1 neoforge"
@@ -16376,6 +16593,12 @@
      "1.21.1 fabric"
     ],
     "rate": 1.13
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.04
    },
    "salt": {
     "where": [

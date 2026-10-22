@@ -561,6 +561,13 @@
     "mythicmetals:deepslate_runite_ore"
    ]
   },
+  "sal_ammoniac": {
+   "mod": "theurgy",
+   "forms": [
+    "theurgy:sal_ammoniac_ore",
+    "theurgy:deepslate_sal_ammoniac_ore"
+   ]
+  },
   "salt": {
    "mod": "modern_industrialization",
    "forms": [
@@ -966,6 +973,12 @@
     ],
     "rate": 8.37
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.94
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -1194,6 +1207,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.72
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.1
    },
    "shiny_stone": {
     "where": [
@@ -1428,6 +1447,12 @@
      "1.20.1 fabric"
     ],
     "rate": 7.63
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.95
    },
    "salt": {
     "where": [
@@ -3180,6 +3205,12 @@
     ],
     "rate": 108.1
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.31
+   },
    "scguns_sulfur": {
     "where": [
      "1.20.1 forge"
@@ -3745,6 +3776,12 @@
      "1.20.1 fabric"
     ],
     "rate": 2.46
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 79.07
    },
    "salt": {
     "where": [
@@ -4406,6 +4443,12 @@
     ],
     "rate": 2.46
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 101.09
+   },
    "salt": {
     "where": [
      "1.20.1 fabric"
@@ -5066,6 +5109,12 @@
     ],
     "rate": 3.27
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 105.04
+   },
    "salt": {
     "where": [
      "1.20.1 fabric"
@@ -5725,6 +5774,12 @@
      "1.20.1 fabric"
     ],
     "rate": 2.13
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 68.52
    },
    "salt": {
     "where": [
@@ -6550,6 +6605,12 @@
     ],
     "rate": 2.06
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 90.79
+   },
    "salt": {
     "where": [
      "1.20.1 fabric"
@@ -7241,6 +7302,12 @@
     ],
     "rate": 2.32
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 74.75
+   },
    "salt": {
     "where": [
      "1.20.1 fabric"
@@ -7715,6 +7782,12 @@
     ],
     "rate": 373.68
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 138.04
+   },
    "scguns_sulfur": {
     "where": [
      "1.20.1 forge"
@@ -8029,6 +8102,12 @@
     ],
     "rate": 15.69
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 80.8
+   },
    "scguns_sulfur": {
     "where": [
      "1.20.1 forge"
@@ -8247,6 +8326,12 @@
     ],
     "rate": 5.34
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.82
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 forge"
@@ -8392,6 +8477,12 @@
      "1.20.1 forge"
     ],
     "rate": 33.18
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.88
    },
    "scguns_sulfur": {
     "where": [
@@ -8562,6 +8653,12 @@
      "1.20.1 forge"
     ],
     "rate": 9.72
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 81.75
    },
    "scguns_sulfur": {
     "where": [
@@ -8762,6 +8859,12 @@
      "1.20.1 forge"
     ],
     "rate": 140.34
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 185.61
    },
    "scguns_sulfur": {
     "where": [
@@ -9064,6 +9167,12 @@
      "1.20.1 forge"
     ],
     "rate": 533.82
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 50.6
    },
    "scguns_sulfur": {
     "where": [
@@ -9593,6 +9702,12 @@
      "1.20.1 fabric"
     ],
     "rate": 2.03
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 301.61
    },
    "salt": {
     "where": [
@@ -10229,6 +10344,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.36
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.57
    },
    "salt": {
     "where": [
@@ -10890,6 +11011,12 @@
     ],
     "rate": 1.44
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 46.31
+   },
    "salt": {
     "where": [
      "1.20.1 fabric"
@@ -11549,6 +11676,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.91
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 78.31
    },
    "salt": {
     "where": [
@@ -12271,6 +12404,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.75
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 72.97
    },
    "salt": {
     "where": [
@@ -13569,6 +13708,12 @@
     ],
     "rate": 179.82
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 812.89
+   },
    "scguns_sulfur": {
     "where": [
      "1.20.1 forge"
@@ -13901,6 +14046,12 @@
     ],
     "rate": 524.48
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2370.93
+   },
    "scguns_sulfur": {
     "where": [
      "1.20.1 forge"
@@ -14232,6 +14383,12 @@
      "1.20.1 forge"
     ],
     "rate": 179.82
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 812.89
    },
    "scguns_sulfur": {
     "where": [
@@ -14700,6 +14857,12 @@
     ],
     "rate": 3.59
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 78.6
+   },
    "salt": {
     "where": [
      "1.20.1 fabric"
@@ -15161,6 +15324,12 @@
     ],
     "rate": 69.97
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.89
+   },
    "scguns_sulfur": {
     "where": [
      "1.20.1 forge"
@@ -15559,6 +15728,12 @@
     ],
     "rate": 69.97
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.89
+   },
    "scguns_sulfur": {
     "where": [
      "1.20.1 forge"
@@ -15956,6 +16131,12 @@
      "1.20.1 forge"
     ],
     "rate": 69.97
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.89
    },
    "scguns_sulfur": {
     "where": [
@@ -16606,6 +16787,12 @@
     ],
     "rate": 8.93
    },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.38
+   },
    "salt": {
     "where": [
      "1.20.1 fabric"
@@ -17240,6 +17427,12 @@
      "1.20.1 fabric"
     ],
     "rate": 1.13
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.04
    },
    "salt": {
     "where": [

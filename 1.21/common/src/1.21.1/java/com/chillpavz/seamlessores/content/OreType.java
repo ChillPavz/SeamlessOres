@@ -785,6 +785,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("expandeddelight", "salt_ore"), of("expandeddelight", "deepslate_salt_ore"), null,
             UniformInt.of(0, 2), null, false, Set.of());
 
+    // --- Theurgy (mod id theurgy; its art is CC BY-SA 4.0): sal ammoniac, iron convention, 2 to 5 XP ---
+    public static final OreType TH_SAL_AMMONIAC = ore(
+            "sal_ammoniac", "sal_ammoniac", null, "theurgy",
+            of("theurgy", "sal_ammoniac_ore"), of("theurgy", "deepslate_sal_ammoniac_ore"), null,
+            UniformInt.of(2, 5), null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -821,7 +827,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     SW_GALENA, SW_SCHEELITE, SW_SILVER,
                     EP_ARCLIGHT, EP_BLOODSTONE, EP_CRYORIUM, EP_MOONLIGHT,
                     RFT_SHARD, RFT_NETHER_SHARD,
-                    ED_SALT);
+                    ED_SALT,
+                    TH_SAL_AMMONIAC);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

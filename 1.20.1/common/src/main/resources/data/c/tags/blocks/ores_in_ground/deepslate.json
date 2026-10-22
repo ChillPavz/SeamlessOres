@@ -277,6 +277,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -434,6 +438,10 @@
     },
     {
       "id": "seamlessores:blackstone_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -618,6 +626,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {

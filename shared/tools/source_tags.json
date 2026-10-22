@@ -29,6 +29,7 @@
     "forge:*_ore": "a mod's own grouping of its ore items (Ores Above Diamonds' recipes read it)",
     "oresabovediamonds:*_ore": "",
     "scguns:*_ore": "",
+    "theurgy:divination_rod_*": "Theurgy's divination rod finds it, as it finds the ore",
     "scguns:metal_detectable": "Scorched Guns' metal detector finds it, as it finds the ore",
     "immersiveengineering:mineable/*": "the mod's own tools mine it at full speed",
     "mythicmetals:mineable/*": "",

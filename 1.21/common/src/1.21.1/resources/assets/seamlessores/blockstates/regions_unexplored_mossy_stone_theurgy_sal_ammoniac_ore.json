@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_theurgy_sal_ammoniac_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_theurgy_sal_ammoniac_ore_mirrored"
+      }
+    ]
+  }
+}

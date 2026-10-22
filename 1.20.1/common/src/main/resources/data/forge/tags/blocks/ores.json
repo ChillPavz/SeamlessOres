@@ -213,6 +213,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
       "required": false
     },
@@ -363,6 +367,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_copper_ore",
       "required": false
     },
@@ -492,6 +500,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -738,6 +750,10 @@
     },
     {
       "id": "seamlessores:blackstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -1322,6 +1338,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -2209,6 +2229,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_cobblemon_leaf_stone_ore",
       "required": false
     },
@@ -2749,6 +2773,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -4404,6 +4432,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_cobblemon_dusk_stone_ore",
       "required": false
     },
@@ -4649,6 +4681,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -5132,6 +5168,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_lignite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_biggerreactors_uranium_ore",
       "required": false
     },
@@ -5401,6 +5441,10 @@
     },
     {
       "id": "seamlessores:tuff_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -5681,6 +5725,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
