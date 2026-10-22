@@ -265,6 +265,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -410,6 +418,14 @@
     },
     {
       "id": "seamlessores:blackstone_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -589,6 +605,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_silentcompat_voidmetal_ore",
       "required": false
     },
@@ -658,6 +682,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_superbwarfare_silver_ore",
       "required": false
     }
   ]

@@ -94,6 +94,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("createpropulsion", "create_propulsion");
         MOD_CATEGORIES.put("hazennstuff", "hazen_n_stuff");
         MOD_CATEGORIES.put("actuallyadditions", "actually_additions");
+        MOD_CATEGORIES.put("superbwarfare", "superb_warfare");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

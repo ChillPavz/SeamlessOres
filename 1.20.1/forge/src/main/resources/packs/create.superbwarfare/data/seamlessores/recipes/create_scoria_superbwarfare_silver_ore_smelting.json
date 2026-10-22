@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "seamlessores:create_scoria_superbwarfare_silver_ore"
+    }
+  ],
+  "result": "superbwarfare:silver_ingot"
+}

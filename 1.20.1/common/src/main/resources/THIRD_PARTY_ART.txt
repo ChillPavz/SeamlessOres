@@ -172,6 +172,11 @@ Silent's Gems by SilentChaos512, MIT:
 Sully's Mod by Uraneptus, MiteBeMana, KekeCreations, LGPL-3.0:
   assets/seamlessores/textures/block/sullysmod_jade_overlay.png
 
+Superb Warfare by Atsuishio, Roki27, Light_Quanta and other contributors, GPL-3.0:
+  assets/seamlessores/textures/block/superbwarfare_galena_overlay.png
+  assets/seamlessores/textures/block/superbwarfare_scheelite_overlay.png
+  assets/seamlessores/textures/block/superbwarfare_silver_overlay.png
+
 Tech Reborn by Team Reborn, modmuss50, drcrazy, MIT:
   assets/seamlessores/textures/block/cinnabar_overlay.png
   assets/seamlessores/textures/block/galena_overlay.png

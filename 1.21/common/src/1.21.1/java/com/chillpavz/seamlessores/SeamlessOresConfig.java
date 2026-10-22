@@ -222,6 +222,9 @@ public final class SeamlessOresConfig {
     /** Whether Actually Additions variants generate. Pure restyle. */
     public static boolean actuallyAdditions = true;
 
+    /** Whether Superb Warfare variants generate. Pure restyle. */
+    public static boolean superbWarfare = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -267,6 +270,7 @@ public final class SeamlessOresConfig {
             case "createpropulsion" -> createPropulsion;
             case "hazennstuff" -> hazenNStuff;
             case "actuallyadditions" -> actuallyAdditions;
+            case "superbwarfare" -> superbWarfare;
             default -> true;
         };
     }
@@ -466,6 +470,7 @@ public final class SeamlessOresConfig {
         public boolean createPropulsion = true;
         public boolean hazenNStuff = true;
         public boolean actuallyAdditions = true;
+        public boolean superbWarfare = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -533,6 +538,7 @@ public final class SeamlessOresConfig {
         createPropulsion = values.createPropulsion;
         hazenNStuff = values.hazenNStuff;
         actuallyAdditions = values.actuallyAdditions;
+        superbWarfare = values.superbWarfare;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

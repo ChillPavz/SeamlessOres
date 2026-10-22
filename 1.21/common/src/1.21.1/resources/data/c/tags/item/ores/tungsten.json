@@ -5,7 +5,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_modern_industrialization_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_superbwarfare_scheelite_ore",
       "required": false
     },
     {
@@ -13,7 +21,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_modern_industrialization_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_superbwarfare_scheelite_ore",
       "required": false
     },
     {
@@ -21,7 +41,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_modern_industrialization_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_superbwarfare_scheelite_ore",
       "required": false
     },
     {
@@ -29,7 +61,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_modern_industrialization_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_superbwarfare_scheelite_ore",
       "required": false
     }
   ]

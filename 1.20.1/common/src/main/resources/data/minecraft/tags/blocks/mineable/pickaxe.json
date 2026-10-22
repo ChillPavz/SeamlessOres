@@ -288,6 +288,18 @@
       "id": "seamlessores:granite_silentcompat_arcmetal_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_superbwarfare_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -500,6 +512,18 @@
       "id": "seamlessores:diorite_silentcompat_arcmetal_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_superbwarfare_silver_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -698,6 +722,14 @@
     },
     {
       "id": "seamlessores:andesite_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_superbwarfare_silver_ore",
       "required": false
     },
     "seamlessores:tuff_coal_ore",
@@ -968,6 +1000,14 @@
       "id": "seamlessores:tuff_silentcompat_voidmetal_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_superbwarfare_silver_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -1117,6 +1157,10 @@
     },
     {
       "id": "seamlessores:dripstone_scalinghealth_heart_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -1505,6 +1549,14 @@
     },
     {
       "id": "seamlessores:blackstone_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -2236,6 +2288,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -2544,6 +2608,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -2729,6 +2801,14 @@
     },
     {
       "id": "seamlessores:calcite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -2960,6 +3040,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -3013,6 +3101,10 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_oresabovediamonds_black_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -3105,6 +3197,14 @@
     },
     {
       "id": "seamlessores:tfmg_galena_silentcompat_plasteel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -3213,6 +3313,14 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -3397,6 +3505,14 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -3640,6 +3756,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_nether_gold_ore",
       "required": false
     },
@@ -3816,6 +3944,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_iron_ore",
       "required": false
     },
@@ -3924,6 +4060,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_iron_ore",
       "required": false
     },
@@ -4017,6 +4161,18 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_sullysmod_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -4224,6 +4380,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_iron_ore",
       "required": false
     },
@@ -4313,6 +4481,14 @@
     },
     {
       "id": "seamlessores:embellishcraft_larvikite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -4436,6 +4612,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_iron_ore",
       "required": false
     },
@@ -4485,6 +4673,14 @@
     },
     {
       "id": "seamlessores:quark_jasper_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -4592,6 +4788,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
       "required": false
     },
@@ -4657,6 +4861,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -4845,6 +5053,18 @@
     },
     {
       "id": "seamlessores:meadow_limestone_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -5345,6 +5565,18 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_superbwarfare_scheelite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_superbwarfare_silver_ore",
       "required": false
     },
     {

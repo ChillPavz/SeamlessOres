@@ -797,6 +797,23 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("sullysmod", "jade_ore"), of("sullysmod", "deepslate_jade_ore"), null,
             NONE, null, false, Set.of());
 
+    // --- Superb Warfare (mod id superbwarfare, GPL-3.0): 3.0 hardness, 5.0 blast resistance (8.0 deep), no XP ---
+    public static final OreType SW_GALENA = ore(
+            "superbwarfare_galena", "superbwarfare_galena", null, "superbwarfare",
+            of("superbwarfare", "galena_ore"), of("superbwarfare", "deepslate_galena_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 5.0F, 3.0F, 8.0F);
+    public static final OreType SW_SCHEELITE = ore(
+            "superbwarfare_scheelite", "superbwarfare_scheelite", null, "superbwarfare",
+            of("superbwarfare", "scheelite_ore"), of("superbwarfare", "deepslate_scheelite_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 5.0F, 3.0F, 8.0F);
+    public static final OreType SW_SILVER = ore(
+            "superbwarfare_silver", "superbwarfare_silver", null, "superbwarfare",
+            of("superbwarfare", "silver_ore"), of("superbwarfare", "deepslate_silver_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 5.0F, 3.0F, 8.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -833,7 +850,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     SH_HEART_CRYSTAL, SH_POWER_CRYSTAL,
                     SG_ANTHRALITE, SG_SULFUR, SG_NETHER_SULFUR, SG_VEHEMENT_COAL,
                     SC_ARCMETAL, SC_PLASTEEL, SC_VOIDMETAL,
-                    SM_JADE);
+                    SM_JADE,
+                    SW_GALENA, SW_SCHEELITE, SW_SILVER);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 
@@ -912,7 +930,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
                 cinnabarFamily = Set.of(GOLD, IRON, REDSTONE, ZINC, TR_GALENA, TR_LEAD, TR_SILVER,
                         OCCULTISM_SILVER, SG_SILVER, TR_PYRITE, TR_SPHALERITE,
                         SILVER, IAF_SILVER, IE_LEAD, IE_SILVER, OREGANIZED_LEAD, OREGANIZED_SILVER,
-                        MI_LEAD, MI_ANTIMONY, MEK_LEAD, DENSE_LEAD, TFMG_LEAD, EMBERS_LEAD, EMBERS_SILVER);
+                        MI_LEAD, MI_ANTIMONY, MEK_LEAD, DENSE_LEAD, TFMG_LEAD, EMBERS_LEAD, EMBERS_SILVER, SW_GALENA, SW_SILVER);
             }
             return cinnabarFamily;
         }

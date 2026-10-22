@@ -100,6 +100,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("scguns", "scorched_guns");
         MOD_CATEGORIES.put("silentcompat", "silent_gear_compat");
         MOD_CATEGORIES.put("sullysmod", "sullys_mod");
+        MOD_CATEGORIES.put("superbwarfare", "superb_warfare");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

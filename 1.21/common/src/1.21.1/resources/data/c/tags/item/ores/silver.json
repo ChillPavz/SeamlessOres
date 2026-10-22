@@ -29,6 +29,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_mythicmetals_silver_ore",
       "required": false
     },
@@ -54,6 +58,10 @@
     },
     {
       "id": "seamlessores:diorite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -85,6 +93,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_silentgems_silver_ore",
       "required": false
     },
@@ -106,6 +118,10 @@
     },
     {
       "id": "seamlessores:tuff_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -161,6 +177,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_mythicmetals_silver_ore",
       "required": false
     },
@@ -201,6 +221,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_silentgems_silver_ore",
       "required": false
     },
@@ -214,6 +238,10 @@
     },
     {
       "id": "seamlessores:create_scoria_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -233,6 +261,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_silentgems_silver_ore",
       "required": false
     },
@@ -246,6 +278,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -265,6 +301,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_bauxite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_galena_silentgems_silver_ore",
       "required": false
     },
@@ -281,6 +321,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_silentgems_silver_ore",
       "required": false
     },
@@ -294,6 +338,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -314,6 +362,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -341,6 +393,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_silentgems_silver_ore",
       "required": false
     },
@@ -354,6 +410,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -373,6 +433,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_silentgems_silver_ore",
       "required": false
     },
@@ -386,6 +450,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -413,6 +481,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_iceandfire_silver_ore",
       "required": false
     },
@@ -433,6 +505,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_larvikite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_silentgems_silver_ore",
       "required": false
     },
@@ -442,6 +518,10 @@
     },
     {
       "id": "seamlessores:quark_limestone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -457,6 +537,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_jasper_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_silentgems_silver_ore",
       "required": false
     },
@@ -469,11 +553,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_silver_ore",
       "required": false
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -498,6 +590,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -530,6 +626,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_superbwarfare_silver_ore",
       "required": false
     },
     {
@@ -569,6 +669,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_mythicmetals_silver_ore",
       "required": false
     },
@@ -593,6 +697,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_silentgems_silver_ore",
       "required": false
     },
@@ -602,6 +710,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_superbwarfare_silver_ore",
       "required": false
     },
     {

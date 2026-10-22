@@ -240,6 +240,9 @@ public final class SeamlessOresConfig {
     /** Whether Sully's Mod variants generate. Pure restyle. */
     public static boolean sullysMod = true;
 
+    /** Whether Superb Warfare variants generate. Pure restyle. */
+    public static boolean superbWarfare = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -291,6 +294,7 @@ public final class SeamlessOresConfig {
             case "scguns" -> scorchedGuns;
             case "silentcompat" -> silentGearCompat;
             case "sullysmod" -> sullysMod;
+            case "superbwarfare" -> superbWarfare;
             default -> true;
         };
     }
@@ -496,6 +500,7 @@ public final class SeamlessOresConfig {
         public boolean scorchedGuns = true;
         public boolean silentGearCompat = true;
         public boolean sullysMod = true;
+        public boolean superbWarfare = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -569,6 +574,7 @@ public final class SeamlessOresConfig {
         scorchedGuns = values.scorchedGuns;
         silentGearCompat = values.silentGearCompat;
         sullysMod = values.sullysMod;
+        superbWarfare = values.superbWarfare;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

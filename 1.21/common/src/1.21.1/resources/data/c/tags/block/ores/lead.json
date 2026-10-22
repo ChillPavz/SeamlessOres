@@ -29,6 +29,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -54,6 +58,10 @@
     },
     {
       "id": "seamlessores:diorite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -85,6 +93,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -113,6 +125,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -138,6 +154,10 @@
     },
     {
       "id": "seamlessores:dripstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -189,6 +209,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_techreborn_lead_ore",
       "required": false
     },
@@ -213,6 +237,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -226,6 +254,10 @@
     },
     {
       "id": "seamlessores:create_scoria_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -245,6 +277,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -258,6 +294,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -277,6 +317,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -290,6 +334,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -313,6 +361,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -333,6 +385,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -342,6 +398,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -361,6 +421,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -374,6 +438,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -398,6 +466,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_gneiss_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -433,6 +505,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -449,6 +525,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_jasper_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -462,6 +542,10 @@
     },
     {
       "id": "seamlessores:quark_shale_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -482,6 +566,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_superbwarfare_galena_ore",
       "required": false
     },
     {
@@ -517,6 +605,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_tfmg_lead_ore",
       "required": false
     },
@@ -545,6 +637,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -558,6 +654,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_superbwarfare_galena_ore",
       "required": false
     },
     {

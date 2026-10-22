@@ -628,6 +628,27 @@
     "cobblemon:deepslate_sun_stone_ore"
    ]
   },
+  "superbwarfare_galena": {
+   "mod": "superbwarfare",
+   "forms": [
+    "superbwarfare:galena_ore",
+    "superbwarfare:deepslate_galena_ore"
+   ]
+  },
+  "superbwarfare_scheelite": {
+   "mod": "superbwarfare",
+   "forms": [
+    "superbwarfare:scheelite_ore",
+    "superbwarfare:deepslate_scheelite_ore"
+   ]
+  },
+  "superbwarfare_silver": {
+   "mod": "superbwarfare",
+   "forms": [
+    "superbwarfare:silver_ore",
+    "superbwarfare:deepslate_silver_ore"
+   ]
+  },
   "techreborn_bauxite": {
    "mod": "techreborn",
    "forms": [
@@ -3125,6 +3146,24 @@
     ],
     "rate": 13.46
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 94.96
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 65.65
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.98
+   },
    "thunder_stone": {
     "where": [
      "1.20.1 forge"
@@ -3657,6 +3696,24 @@
      "1.20.1 forge"
     ],
     "rate": 16.82
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 60.52
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 46.13
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.81
    },
    "techreborn_bauxite": {
     "where": [
@@ -4270,6 +4327,24 @@
     ],
     "rate": 21.51
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 77.38
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.99
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.44
+   },
    "techreborn_bauxite": {
     "where": [
      "1.20.1 fabric"
@@ -4882,6 +4957,24 @@
     ],
     "rate": 22.35
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 80.41
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 61.29
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.63
+   },
    "techreborn_bauxite": {
     "where": [
      "1.20.1 fabric"
@@ -5493,6 +5586,24 @@
      "1.20.1 forge"
     ],
     "rate": 14.58
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 52.45
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.98
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.63
    },
    "techreborn_bauxite": {
     "where": [
@@ -6271,6 +6382,24 @@
     ],
     "rate": 19.32
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 69.49
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 52.97
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.34
+   },
    "techreborn_bauxite": {
     "where": [
      "1.20.1 fabric"
@@ -6889,6 +7018,24 @@
     ],
     "rate": 15.9
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.22
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.62
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.51
+   },
    "techreborn_bauxite": {
     "where": [
      "1.20.1 fabric"
@@ -7306,6 +7453,24 @@
     ],
     "rate": 29.35
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 326.4
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 270.33
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 168.33
+   },
    "thunder_stone": {
     "where": [
      "1.20.1 forge"
@@ -7577,6 +7742,24 @@
      "1.20.1 forge"
     ],
     "rate": 17.18
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.41
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 25.47
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.55
    },
    "thorium": {
     "where": [
@@ -7893,6 +8076,18 @@
      "1.20.1 forge"
     ],
     "rate": 3.8
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.47
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.18
    },
    "thorium": {
     "where": [
@@ -8258,6 +8453,24 @@
     ],
     "rate": 45.72
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.77
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.91
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.59
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -8517,6 +8730,24 @@
      "1.20.1 forge"
     ],
     "rate": 10.76
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 623.62
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 545.66
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 350.78
    },
    "thunder_stone": {
     "where": [
@@ -9025,6 +9256,24 @@
      "1.20.1 forge"
     ],
     "rate": 113.84
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.37
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.01
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.86
    },
    "techreborn_bauxite": {
     "where": [
@@ -9607,6 +9856,24 @@
      "1.20.1 forge"
     ],
     "rate": 0.55
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.1
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.83
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.23
    },
    "techreborn_bauxite": {
     "where": [
@@ -10220,6 +10487,24 @@
     ],
     "rate": 9.85
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.45
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.02
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.95
+   },
    "techreborn_bauxite": {
     "where": [
      "1.20.1 fabric"
@@ -10831,6 +11116,24 @@
      "1.20.1 forge"
     ],
     "rate": 16.66
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 59.95
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.7
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.58
    },
    "techreborn_bauxite": {
     "where": [
@@ -11518,6 +11821,24 @@
      "1.20.1 forge"
     ],
     "rate": 15.53
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 55.86
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 42.58
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.97
    },
    "techreborn_bauxite": {
     "where": [
@@ -12722,6 +13043,24 @@
     ],
     "rate": 177.67
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 259.77
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 180.17
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 67.56
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -13012,6 +13351,24 @@
     ],
     "rate": 518.22
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 757.67
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 525.48
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 197.06
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -13301,6 +13658,24 @@
      "1.20.1 forge"
     ],
     "rate": 177.67
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 259.77
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 180.17
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 67.56
    },
    "thorium": {
     "where": [
@@ -13736,6 +14111,24 @@
     ],
     "rate": 16.71
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 38.05
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.48
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.3
+   },
    "techreborn_bauxite": {
     "where": [
      "1.20.1 fabric"
@@ -14140,6 +14533,24 @@
     ],
     "rate": 20.83
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 74.93
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.12
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.48
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -14496,6 +14907,24 @@
     ],
     "rate": 20.83
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 74.93
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.12
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.48
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -14851,6 +15280,24 @@
      "1.20.1 forge"
     ],
     "rate": 20.83
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 74.93
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.12
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.48
    },
    "thorium": {
     "where": [
@@ -15450,6 +15897,24 @@
     ],
     "rate": 9.43
    },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 103.93
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 83.06
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 50.58
+   },
    "techreborn_bauxite": {
     "where": [
      "1.20.1 fabric"
@@ -16042,6 +16507,24 @@
      "1.20.1 forge"
     ],
     "rate": 2.42
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.94
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.54
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.35
    },
    "techreborn_bauxite": {
     "where": [

@@ -554,6 +554,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean sullysMod = true;
 
+    // --- Superb Warfare ------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("superb_warfare")
+    @ConfigEntry.Gui.Tooltip
+    public boolean superbWarfare = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -687,6 +693,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.scorchedGuns = scorchedGuns;
         values.silentGearCompat = silentGearCompat;
         values.sullysMod = sullysMod;
+        values.superbWarfare = superbWarfare;
 
         SeamlessOresConfig.apply(values);
     }

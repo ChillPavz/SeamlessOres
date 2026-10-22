@@ -183,7 +183,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "scalinghealth": jar("ScalingHealth-1.20.1-8.0.2+9.jar"),
             "scguns": jar("ScorchedGuns-0.5.5-1.20.1.jar"),
             "silentcompat": jar("SilentCompat-forge-1.20.1-1.4.0.jar"),
-            "sullysmod": jar("sullysmod-3.3.1-beta-all.jar")}
+            "sullysmod": jar("sullysmod-3.3.1-beta-all.jar"),
+            "superbwarfare": jar("superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -402,6 +403,8 @@ MODS = {
                        "licence": "MIT", "author": "dragoni7"},
     "sullysmod": {"display": "Sully's Mod", "category": "sullys_mod",
                        "licence": "LGPL-3.0", "author": "Uraneptus, MiteBeMana, KekeCreations"},
+    "superbwarfare": {"display": "Superb Warfare", "category": "superb_warfare",
+                       "licence": "GPL-3.0", "author": "Atsuishio, Roki27, Light_Quanta and other contributors"},
 }
 
 ORE_DEFS = [
@@ -988,6 +991,16 @@ ORE_DEFS = [
     {"name": "sullysmod_jade", "overlay": "sullysmod_jade", "source": "jade_ore", "base": "stone",
      "mod": "sullysmod",
      "tiers": {"stone": "jade_ore", "deepslate": "deepslate_jade_ore"}},
+    # --- Superb Warfare (mod id superbwarfare, GPL-3.0): 3.0 hardness, 5.0 blast resistance (8.0 deep), no XP ---
+    {"name": "superbwarfare_galena", "overlay": "superbwarfare_galena", "source": "galena_ore", "base": "stone",
+     "mod": "superbwarfare",
+     "tiers": {"stone": "galena_ore", "deepslate": "deepslate_galena_ore"}},
+    {"name": "superbwarfare_scheelite", "overlay": "superbwarfare_scheelite", "source": "scheelite_ore", "base": "stone",
+     "mod": "superbwarfare",
+     "tiers": {"stone": "scheelite_ore", "deepslate": "deepslate_scheelite_ore"}},
+    {"name": "superbwarfare_silver", "overlay": "superbwarfare_silver", "source": "silver_ore", "base": "stone",
+     "mod": "superbwarfare",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1127,6 +1140,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "scguns": ('forge',),
     "silentcompat": ('forge',),
     "sullysmod": ('forge',),
+    "superbwarfare": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1273,6 +1287,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.superb_warfare": "Superb Warfare",
         f"text.autoconfig.{MOD_ID}.category.sullys_mod": "Sully's Mod",
         f"text.autoconfig.{MOD_ID}.category.silent_gear_compat": "Silent Gear Compat",
         f"text.autoconfig.{MOD_ID}.category.scorched_guns": "Scorched Guns",
@@ -1309,6 +1324,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.superbWarfare": "Superb Warfare: variants",
+        f"text.autoconfig.{MOD_ID}.option.superbWarfare.@Tooltip":
+            "Generate host-matched galena, scheelite and silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.sullysMod": "Sully's Mod: variants",
         f"text.autoconfig.{MOD_ID}.option.sullysMod.@Tooltip":

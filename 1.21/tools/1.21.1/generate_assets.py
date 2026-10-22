@@ -149,7 +149,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "mythicmetals": MYTHIC_METALS_JAR,
             "createpropulsion": jar("createpropulsion-1.1.5.jar"),
             "hazennstuff": jar("hazennstuff-1.4.0.14.jar"),
-            "actuallyadditions": jar("actuallyadditions-1.3.26+mc1.21.1.jar")}
+            "actuallyadditions": jar("actuallyadditions-1.3.26+mc1.21.1.jar"),
+            "superbwarfare": jar("superbwarfare-0.8.9.2-mc1.21.1-c22d98c2.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -363,6 +364,8 @@ MODS = {
                        "licence": "PolyForm Shield 1.0.0", "author": "Hazen"},
     "actuallyadditions": {"display": "Actually Additions", "category": "actually_additions",
                        "licence": "MIT", "author": "Ellpeck"},
+    "superbwarfare": {"display": "Superb Warfare", "category": "superb_warfare",
+                       "licence": "GPL-3.0", "author": "Atsuishio, Roki27, Light_Quanta and other contributors"},
 }
 
 ORE_DEFS = [
@@ -908,6 +911,16 @@ ORE_DEFS = [
     {"name": "black_quartz", "overlay": "black_quartz", "source": "black_quartz_ore", "base": "stone",
      "mod": "actuallyadditions",
      "tiers": {"stone": "black_quartz_ore"}},
+    # --- Superb Warfare (mod id superbwarfare, GPL-3.0): 3.0 hardness, 5.0 blast resistance (8.0 deep), no XP ---
+    {"name": "superbwarfare_galena", "overlay": "superbwarfare_galena", "source": "galena_ore", "base": "stone",
+     "mod": "superbwarfare",
+     "tiers": {"stone": "galena_ore", "deepslate": "deepslate_galena_ore"}},
+    {"name": "superbwarfare_scheelite", "overlay": "superbwarfare_scheelite", "source": "scheelite_ore", "base": "stone",
+     "mod": "superbwarfare",
+     "tiers": {"stone": "scheelite_ore", "deepslate": "deepslate_scheelite_ore"}},
+    {"name": "superbwarfare_silver", "overlay": "superbwarfare_silver", "source": "silver_ore", "base": "stone",
+     "mod": "superbwarfare",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1049,6 +1062,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "createpropulsion": ('neoforge',),
     "hazennstuff": ('neoforge',),
     "actuallyadditions": ('neoforge',),
+    "superbwarfare": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1159,6 +1173,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.superb_warfare": "Superb Warfare",
         f"text.autoconfig.{MOD_ID}.category.actually_additions": "Actually Additions",
         f"text.autoconfig.{MOD_ID}.category.hazen_n_stuff": "Hazen 'N Stuff",
         f"text.autoconfig.{MOD_ID}.category.create_propulsion": "Create: Propulsion",
@@ -1189,6 +1204,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.superbWarfare": "Superb Warfare: variants",
+        f"text.autoconfig.{MOD_ID}.option.superbWarfare.@Tooltip":
+            "Generate host-matched galena, scheelite and silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.actuallyAdditions": "Actually Additions: variants",
         f"text.autoconfig.{MOD_ID}.option.actuallyAdditions.@Tooltip":

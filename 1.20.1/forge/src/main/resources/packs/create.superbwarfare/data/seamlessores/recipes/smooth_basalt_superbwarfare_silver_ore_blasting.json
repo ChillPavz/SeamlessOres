@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "seamlessores:smooth_basalt_superbwarfare_silver_ore"
+    }
+  ],
+  "result": "superbwarfare:silver_ingot"
+}
