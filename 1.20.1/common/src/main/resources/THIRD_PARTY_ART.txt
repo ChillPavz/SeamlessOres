@@ -37,6 +37,12 @@ Embers Rekindled by RCXcrafter, BordListian, Elucent, TechnoMysterio, KomradeSpe
 Energized Power by JDDev0, MIT:
   assets/seamlessores/textures/block/energized_tin_overlay.png
 
+Epic Paladins by epicpaladinssareus, VeroxUniverse, continued by Bandit-Bytes, LGPL-3.0:
+  assets/seamlessores/textures/block/arclight_overlay.png
+  assets/seamlessores/textures/block/cryorium_overlay.png
+  assets/seamlessores/textures/block/epicpaladins_bloodstone_overlay.png
+  assets/seamlessores/textures/block/moonlight_overlay.png
+
 Exp Ores by TriQue, MIT:
   assets/seamlessores/textures/block/experience_overlay.png
   assets/seamlessores/textures/block/nether_experience_overlay.png

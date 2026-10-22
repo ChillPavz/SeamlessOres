@@ -54,6 +54,10 @@
       "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_epicpaladins_moonlight_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -102,6 +106,10 @@
     },
     {
       "id": "seamlessores:blackstone_cobblemon_nether_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_epicpaladins_moonlight_ore",
       "required": false
     },
     {
@@ -157,6 +165,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_epicpaladins_moonlight_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_nether_gold_ore",
       "required": false
     },
@@ -209,6 +221,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_epicpaladins_moonlight_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_nether_gold_ore",
       "required": false
     },
@@ -258,6 +274,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_malum_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_epicpaladins_moonlight_ore",
       "required": false
     },
     {
@@ -338,6 +358,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_techreborn_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_epicpaladins_moonlight_ore",
       "required": false
     },
     {

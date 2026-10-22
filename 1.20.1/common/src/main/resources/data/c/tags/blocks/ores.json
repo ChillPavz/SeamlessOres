@@ -52,6 +52,10 @@
       "required": false
     },
     "seamlessores:andesite_emerald_ore",
+    {
+      "id": "seamlessores:andesite_epicpaladins_bloodstone_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     {
       "id": "seamlessores:andesite_iceandfire_silver_ore",
@@ -210,6 +214,10 @@
     },
     {
       "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_epicpaladins_moonlight_ore",
       "required": false
     },
     {
@@ -516,6 +524,14 @@
     },
     {
       "id": "seamlessores:blackstone_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_epicpaladins_moonlight_ore",
       "required": false
     },
     {
@@ -1353,6 +1369,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_epicpaladins_cryorium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:calcite_gold_ore",
       "required": false
     },
@@ -1841,6 +1861,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_ochrum_epicpaladins_arclight_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -1850,6 +1874,10 @@
     },
     {
       "id": "seamlessores:create_scorchia_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_epicpaladins_moonlight_ore",
       "required": false
     },
     {
@@ -1942,6 +1970,14 @@
     },
     {
       "id": "seamlessores:create_scoria_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_epicpaladins_moonlight_ore",
       "required": false
     },
     {
@@ -2228,6 +2264,14 @@
       "required": false
     },
     "seamlessores:diorite_emerald_ore",
+    {
+      "id": "seamlessores:diorite_epicpaladins_arclight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_epicpaladins_cryorium_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     {
       "id": "seamlessores:diorite_iceandfire_silver_ore",
@@ -2588,6 +2632,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_gold_ore",
       "required": false
     },
@@ -2729,6 +2777,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_gneiss_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_epicpaladins_arclight_ore",
       "required": false
     },
     {
@@ -3032,6 +3084,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_epicpaladins_arclight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_epicpaladins_cryorium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_gold_ore",
       "required": false
     },
@@ -3109,6 +3169,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_epicpaladins_arclight_ore",
       "required": false
     },
     {
@@ -3233,6 +3297,10 @@
     "seamlessores:granite_emerald_ore",
     {
       "id": "seamlessores:granite_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_epicpaladins_arclight_ore",
       "required": false
     },
     "seamlessores:granite_gold_ore",
@@ -4320,6 +4388,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_epicpaladins_moonlight_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_expores_nether_experience_ore",
       "required": false
     },
@@ -5056,6 +5132,10 @@
     },
     "seamlessores:tuff_emerald_ore",
     {
+      "id": "seamlessores:tuff_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_expores_experience_ore",
       "required": false
     },
@@ -5276,6 +5356,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_bloodstone_epicpaladins_moonlight_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_expores_nether_experience_ore",
       "required": false
     },
@@ -5389,6 +5473,14 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_epicpaladins_arclight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_epicpaladins_bloodstone_ore",
       "required": false
     },
     {
@@ -5581,6 +5673,14 @@
     },
     {
       "id": "seamlessores:twigs_schist_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_epicpaladins_arclight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_epicpaladins_cryorium_ore",
       "required": false
     },
     {

@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:andesite_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_epicpaladins_bloodstone_ore",
+      "required": false
+    }
+  ]
+}

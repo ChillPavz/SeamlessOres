@@ -273,6 +273,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -426,6 +430,10 @@
     },
     {
       "id": "seamlessores:blackstone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_epicpaladins_bloodstone_ore",
       "required": false
     },
     {
@@ -686,6 +694,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_epicpaladins_arclight_ore",
       "required": false
     }
   ]

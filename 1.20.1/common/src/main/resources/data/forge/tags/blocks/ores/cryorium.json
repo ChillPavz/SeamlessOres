@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:diorite_epicpaladins_cryorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_epicpaladins_cryorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_epicpaladins_cryorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_epicpaladins_cryorium_ore",
+      "required": false
+    }
+  ]
+}

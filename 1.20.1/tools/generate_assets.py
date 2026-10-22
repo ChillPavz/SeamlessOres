@@ -184,7 +184,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "scguns": jar("ScorchedGuns-0.5.5-1.20.1.jar"),
             "silentcompat": jar("SilentCompat-forge-1.20.1-1.4.0.jar"),
             "sullysmod": jar("sullysmod-3.3.1-beta-all.jar"),
-            "superbwarfare": jar("superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar")}
+            "superbwarfare": jar("superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar"),
+            "epicpaladins": jar("epicpaladins-1.0.2-1.20.1-forge.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -405,6 +406,8 @@ MODS = {
                        "licence": "LGPL-3.0", "author": "Uraneptus, MiteBeMana, KekeCreations"},
     "superbwarfare": {"display": "Superb Warfare", "category": "superb_warfare",
                        "licence": "GPL-3.0", "author": "Atsuishio, Roki27, Light_Quanta and other contributors"},
+    "epicpaladins": {"display": "Epic Paladins", "category": "epic_paladins",
+                       "licence": "LGPL-3.0", "author": "epicpaladinssareus, VeroxUniverse, continued by Bandit-Bytes"},
 }
 
 ORE_DEFS = [
@@ -1001,6 +1004,19 @@ ORE_DEFS = [
     {"name": "superbwarfare_silver", "overlay": "superbwarfare_silver", "source": "silver_ore", "base": "stone",
      "mod": "superbwarfare",
      "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    # --- Epic Paladins (mod id epicpaladins, LGPL-3.0): diamond ore's properties at strength 4.0, 3 to 7 XP; jade is End only (no host) ---
+    {"name": "arclight", "overlay": "arclight", "source": "arclight_ore", "base": "stone",
+     "mod": "epicpaladins",
+     "tiers": {"stone": "arclight_ore", "deepslate": "deepslate_arclight_ore"}},
+    {"name": "epicpaladins_bloodstone", "overlay": "epicpaladins_bloodstone", "source": "bloodstone_ore", "base": "stone",
+     "mod": "epicpaladins",
+     "tiers": {"stone": "bloodstone_ore", "deepslate": "deepslate_bloodstone_ore"}},
+    {"name": "cryorium", "overlay": "cryorium", "source": "cryorium_ore", "base": "stone",
+     "mod": "epicpaladins",
+     "tiers": {"stone": "cryorium_ore", "deepslate": "deepslate_cryorium_ore"}},
+    {"name": "moonlight", "overlay": "moonlight", "source": "moonlight_ore", "base": "netherrack",
+     "mod": "epicpaladins",
+     "tiers": {"nether": "moonlight_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1141,6 +1157,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "silentcompat": ('forge',),
     "sullysmod": ('forge',),
     "superbwarfare": ('forge',),
+    "epicpaladins": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1287,6 +1304,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.epic_paladins": "Epic Paladins",
         f"text.autoconfig.{MOD_ID}.category.superb_warfare": "Superb Warfare",
         f"text.autoconfig.{MOD_ID}.category.sullys_mod": "Sully's Mod",
         f"text.autoconfig.{MOD_ID}.category.silent_gear_compat": "Silent Gear Compat",
@@ -1324,6 +1342,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.epicPaladins": "Epic Paladins: variants",
+        f"text.autoconfig.{MOD_ID}.option.epicPaladins.@Tooltip":
+            "Generate host-matched arclight, bloodstone, cryorium and moonlight ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.superbWarfare": "Superb Warfare: variants",
         f"text.autoconfig.{MOD_ID}.option.superbWarfare.@Tooltip":

@@ -744,6 +744,28 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(3.0F, 5.0F, 3.0F, 8.0F);
 
+    // --- Epic Paladins (mod id epicpaladins, LGPL-3.0): diamond ore's properties at strength 4.0, 3 to 7 XP; jade is End only (no host) ---
+    public static final OreType EP_ARCLIGHT = ore(
+            "arclight", "arclight", null, "epicpaladins",
+            of("epicpaladins", "arclight_ore"), of("epicpaladins", "deepslate_arclight_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(4.0F, 4.0F, 4.0F, 4.0F);
+    public static final OreType EP_BLOODSTONE = ore(
+            "epicpaladins_bloodstone", "epicpaladins_bloodstone", null, "epicpaladins",
+            of("epicpaladins", "bloodstone_ore"), of("epicpaladins", "deepslate_bloodstone_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(4.0F, 4.0F, 4.0F, 4.0F);
+    public static final OreType EP_CRYORIUM = ore(
+            "cryorium", "cryorium", null, "epicpaladins",
+            of("epicpaladins", "cryorium_ore"), of("epicpaladins", "deepslate_cryorium_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(4.0F, 4.0F, 4.0F, 4.0F);
+    public static final OreType EP_MOONLIGHT = ore(
+            "moonlight", "moonlight", null, "epicpaladins",
+            null, null, of("epicpaladins", "moonlight_ore"),
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(4.0F, 4.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -777,7 +799,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     CP_PLATINUM,
                     HNS_CHLOROPHYTE, HNS_DREADSTONE,
                     AA_BLACK_QUARTZ,
-                    SW_GALENA, SW_SCHEELITE, SW_SILVER);
+                    SW_GALENA, SW_SCHEELITE, SW_SILVER,
+                    EP_ARCLIGHT, EP_BLOODSTONE, EP_CRYORIUM, EP_MOONLIGHT);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

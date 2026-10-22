@@ -540,6 +540,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean superbWarfare = true;
 
+    // --- Epic Paladins -------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("epic_paladins")
+    @ConfigEntry.Gui.Tooltip
+    public boolean epicPaladins = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -672,6 +678,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hazenNStuff = hazenNStuff;
         values.actuallyAdditions = actuallyAdditions;
         values.superbWarfare = superbWarfare;
+        values.epicPaladins = epicPaladins;
 
         SeamlessOresConfig.apply(values);
     }
