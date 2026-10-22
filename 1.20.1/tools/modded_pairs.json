@@ -197,6 +197,125 @@
     "cobblemon:deepslate_dusk_stone_ore"
    ]
   },
+  "electrodynamics_aluminum": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:orealuminum",
+    "electrodynamics:deepslateorealuminum"
+   ]
+  },
+  "electrodynamics_chromium": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:orechromium",
+    "electrodynamics:deepslateorechromium"
+   ]
+  },
+  "electrodynamics_fluorite": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:orefluorite",
+    "electrodynamics:deepslateorefluorite"
+   ]
+  },
+  "electrodynamics_lead": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:orelead",
+    "electrodynamics:deepslateorelead"
+   ]
+  },
+  "electrodynamics_lithium": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:orelithium",
+    "electrodynamics:deepslateorelithium"
+   ]
+  },
+  "electrodynamics_molybdenum": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oremolybdenum",
+    "electrodynamics:deepslateoremolybdenum"
+   ]
+  },
+  "electrodynamics_monazite": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oremonazite",
+    "electrodynamics:deepslateoremonazite"
+   ]
+  },
+  "electrodynamics_niter": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oreniter",
+    "electrodynamics:deepslateoreniter"
+   ]
+  },
+  "electrodynamics_salt": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oresalt",
+    "electrodynamics:deepslateoresalt"
+   ]
+  },
+  "electrodynamics_silver": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oresilver",
+    "electrodynamics:deepslateoresilver"
+   ]
+  },
+  "electrodynamics_sulfur": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oresulfur",
+    "electrodynamics:deepslateoresulfur"
+   ]
+  },
+  "electrodynamics_sylvite": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oresylvite",
+    "electrodynamics:deepslateoresylvite"
+   ]
+  },
+  "electrodynamics_thorium": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:orethorium",
+    "electrodynamics:deepslateorethorium"
+   ]
+  },
+  "electrodynamics_tin": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oretin",
+    "electrodynamics:deepslateoretin"
+   ]
+  },
+  "electrodynamics_titanium": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oretitanium",
+    "electrodynamics:deepslateoretitanium"
+   ]
+  },
+  "electrodynamics_uranium": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:oreuranium",
+    "electrodynamics:deepslateoreuranium"
+   ]
+  },
+  "electrodynamics_vanadium": {
+   "mod": "electrodynamics",
+   "forms": [
+    "electrodynamics:orevanadium",
+    "electrodynamics:deepslateorevanadium"
+   ]
+  },
   "embers_lead": {
    "mod": "embers",
    "forms": [
@@ -893,6 +1012,12 @@
     ],
     "rate": 15.43
    },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.11
+   },
    "energized_tin": {
     "where": [
      "1.20.1 fabric",
@@ -1115,6 +1240,18 @@
      "1.20.1 forge"
     ],
     "rate": 1.23
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.14
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.33
    },
    "energized_tin": {
     "where": [
@@ -1349,6 +1486,18 @@
      "1.20.1 forge"
     ],
     "rate": 9.28
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.47
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.1
    },
    "energized_tin": {
     "where": [
@@ -3104,6 +3253,90 @@
     ],
     "rate": 13.46
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.14
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 56.98
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.88
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 59.2
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.76
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 59.67
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 110.33
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.74
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 109.15
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.96
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 117.8
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 77.38
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.68
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 94.24
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -3512,6 +3745,108 @@
      "1.20.1 forge"
     ],
     "rate": 16.82
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.75
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.11
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.56
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.45
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.98
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.4
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.39
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 59.14
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.84
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.35
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 56.86
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.17
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 68.08
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 66.27
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.42
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.16
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 54.47
    },
    "embers_lead": {
     "where": [
@@ -4185,6 +4520,108 @@
     ],
     "rate": 21.51
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.08
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 37.22
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.61
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.33
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.38
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 41.42
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 46.53
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 75.61
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 81.62
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.92
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 72.69
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.23
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 87.05
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 84.73
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.1
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.49
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 69.64
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -4857,6 +5294,108 @@
     ],
     "rate": 22.35
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.22
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 38.68
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.34
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 47.1
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.53
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.04
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 48.35
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 78.57
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 84.81
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.63
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 75.54
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.13
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 90.45
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 88.04
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.12
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.55
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 72.36
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -5528,6 +6067,108 @@
      "1.20.1 forge"
     ],
     "rate": 14.58
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.71
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 25.23
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.62
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.73
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.91
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.08
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.54
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 51.25
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 55.33
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.77
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.27
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.74
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 59.0
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.43
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.69
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.01
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 47.2
    },
    "embers_lead": {
     "where": [
@@ -6322,6 +6963,108 @@
     ],
     "rate": 19.32
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.12
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.43
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.71
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 40.71
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.38
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 37.2
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 41.79
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 67.9
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 73.3
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.44
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 65.28
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.86
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 78.17
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 76.09
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.44
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.34
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 62.54
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -7080,6 +7823,108 @@
     ],
     "rate": 15.9
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.5
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.53
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.76
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.52
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.72
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.63
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.41
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 55.91
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 60.36
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.47
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 53.75
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.17
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 64.37
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 62.65
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.3
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.1
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 51.49
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -7717,6 +8562,90 @@
     ],
     "rate": 29.35
    },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 71.97
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 37.74
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 204.66
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 86.69
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 55.53
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 102.68
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 158.11
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 214.77
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 41.58
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 256.86
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 106.54
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 203.61
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 61.7
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 205.49
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -8091,6 +9020,96 @@
     ],
     "rate": 17.18
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 37.58
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.53
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.03
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.23
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.9
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 55.56
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.8
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.97
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 108.24
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.34
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.88
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.22
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.29
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.31
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 25.83
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -8345,6 +9364,12 @@
     ],
     "rate": 15.95
    },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.09
+   },
    "energized_tin": {
     "where": [
      "1.20.1 forge"
@@ -8502,6 +9527,42 @@
      "1.20.1 forge"
     ],
     "rate": 3.8
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.72
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.8
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.04
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.45
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.5
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.87
    },
    "energized_tin": {
     "where": [
@@ -8678,6 +9739,18 @@
      "1.20.1 forge"
     ],
     "rate": 31.87
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.66
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.99
    },
    "energized_tin": {
     "where": [
@@ -8890,6 +9963,96 @@
      "1.20.1 forge"
     ],
     "rate": 45.72
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.59
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.18
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.46
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.81
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.21
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.15
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.54
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.44
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 122.05
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.25
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.22
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.39
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.6
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 118.96
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.88
    },
    "energized_tin": {
     "where": [
@@ -9186,6 +10349,24 @@
      "1.20.1 forge"
     ],
     "rate": 10.76
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 391.77
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 302.67
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 307.08
    },
    "embers_silver": {
     "where": [
@@ -9553,6 +10734,96 @@
      "1.20.1 forge"
     ],
     "rate": 113.84
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.86
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.51
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.61
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.22
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.89
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.6
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.47
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.21
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.2
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.6
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.27
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.41
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.27
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 136.69
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 25.82
    },
    "embers_lead": {
     "where": [
@@ -10182,6 +11453,102 @@
      "1.20.1 forge"
     ],
     "rate": 0.55
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.7
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.85
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.19
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.44
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.13
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.46
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.12
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.46
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.46
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.79
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.25
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.18
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.13
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.85
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.4
    },
    "embers_lead": {
     "where": [
@@ -10842,6 +12209,108 @@
      "1.20.1 forge"
     ],
     "rate": 9.85
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.32
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.05
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.53
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.77
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.46
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.97
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.32
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.64
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 37.39
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.12
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.3
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.64
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.88
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 38.81
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.96
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.9
    },
    "embers_lead": {
     "where": [
@@ -11514,6 +12983,108 @@
      "1.20.1 forge"
     ],
     "rate": 16.66
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.53
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.84
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.42
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.12
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.76
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.09
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.05
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.57
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.23
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.02
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 56.31
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.99
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 67.43
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 65.64
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.22
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.15
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 53.95
    },
    "embers_lead": {
     "where": [
@@ -12199,6 +13770,108 @@
      "1.20.1 forge"
     ],
     "rate": 15.53
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.99
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.87
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.44
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.72
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.21
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.9
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.59
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 54.58
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.92
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.7
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 52.47
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.77
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 62.84
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 61.16
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.84
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.07
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 50.27
    },
    "embers_lead": {
     "where": [
@@ -13751,6 +15424,96 @@
     ],
     "rate": 177.67
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 209.49
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 168.38
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 81.75
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 139.95
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 93.98
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 301.67
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 274.25
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 431.99
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 603.34
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 172.19
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 219.79
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 106.22
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 278.47
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 624.39
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 222.77
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -14095,6 +15858,96 @@
     ],
     "rate": 518.22
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 611.03
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 491.09
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 238.45
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 408.19
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 274.12
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 879.88
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 799.89
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1259.98
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1759.75
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 502.23
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 641.04
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 309.82
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 812.19
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1821.14
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 649.75
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -14438,6 +16291,96 @@
      "1.20.1 forge"
     ],
     "rate": 177.67
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 209.49
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 168.38
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 81.75
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 139.95
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 93.98
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 301.67
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 274.25
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 431.99
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 603.34
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 172.19
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 219.79
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 106.22
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 278.47
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 624.39
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 222.77
    },
    "embers_lead": {
     "where": [
@@ -14799,6 +16742,96 @@
      "1.20.1 forge"
     ],
     "rate": 16.71
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.23
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.12
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.55
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.05
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.46
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 50.73
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.29
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 60.01
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.07
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.26
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.53
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.28
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.89
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.71
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.91
    },
    "embers_lead": {
     "where": [
@@ -15349,6 +17382,108 @@
     ],
     "rate": 20.83
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.16
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.05
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.02
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.9
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.45
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 40.11
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.06
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 73.22
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 79.04
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 42.53
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 70.39
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.49
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 84.29
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 82.05
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 25.28
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.44
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 67.43
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -15759,6 +17894,108 @@
     ],
     "rate": 20.83
    },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.16
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.05
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.02
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.9
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.45
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 40.11
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.06
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 73.22
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 79.04
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 42.53
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 70.39
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.49
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 84.29
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 82.05
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 25.28
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.44
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 67.43
+   },
    "embers_lead": {
     "where": [
      "1.20.1 forge"
@@ -16168,6 +18405,108 @@
      "1.20.1 forge"
     ],
     "rate": 20.83
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.16
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.05
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.02
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.9
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.45
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 40.11
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.06
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 73.22
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 79.04
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 42.53
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 70.39
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.49
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 84.29
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 82.05
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 25.28
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.44
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 67.43
    },
    "embers_lead": {
     "where": [
@@ -16709,6 +19048,96 @@
      "1.20.1 forge"
     ],
     "rate": 9.43
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.42
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.38
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.83
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 65.09
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.72
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.05
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 50.03
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 50.28
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 67.37
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.68
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 79.18
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.27
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 52.52
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.46
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.34
    },
    "embers_lead": {
     "where": [
@@ -17337,6 +19766,108 @@
      "1.20.1 forge"
     ],
     "rate": 2.42
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.03
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.87
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.94
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.16
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.27
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.83
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.84
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.87
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.71
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.46
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.87
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.42
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.68
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.6
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.84
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.86
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.74
    },
    "embers_lead": {
     "where": [

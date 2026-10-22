@@ -89,6 +89,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_silentgems_silver_ore",
       "required": false
     },
@@ -110,6 +114,10 @@
     },
     {
       "id": "seamlessores:diorite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -137,6 +145,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_silentgems_silver_ore",
       "required": false
     },
@@ -158,6 +170,10 @@
     },
     {
       "id": "seamlessores:tuff_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -197,6 +213,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_oreganized_silver_ore",
       "required": false
     },
@@ -233,6 +253,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_silentgems_silver_ore",
       "required": false
     },
@@ -250,6 +274,10 @@
     },
     {
       "id": "seamlessores:create_scoria_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -273,6 +301,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_silentgems_silver_ore",
       "required": false
     },
@@ -290,6 +322,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -313,6 +349,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_bauxite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_galena_silentgems_silver_ore",
       "required": false
     },
@@ -330,6 +370,10 @@
     },
     {
       "id": "seamlessores:tfmg_galena_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -353,6 +397,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_lignite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_silentgems_silver_ore",
       "required": false
     },
@@ -370,6 +418,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -393,6 +445,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_silentgems_silver_ore",
       "required": false
     },
@@ -410,6 +466,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -433,6 +493,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_silentgems_silver_ore",
       "required": false
     },
@@ -442,6 +506,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -465,6 +533,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_occultism_silver_ore",
       "required": false
     },
@@ -481,6 +553,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_larvikite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_silentgems_silver_ore",
       "required": false
     },
@@ -490,6 +566,10 @@
     },
     {
       "id": "seamlessores:quark_limestone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -505,6 +585,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_jasper_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_silentgems_silver_ore",
       "required": false
     },
@@ -514,6 +598,10 @@
     },
     {
       "id": "seamlessores:quark_shale_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -533,6 +621,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_silentgems_silver_ore",
       "required": false
     },
@@ -546,6 +638,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -566,6 +662,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_silver_ore",
       "required": false
     },
     {

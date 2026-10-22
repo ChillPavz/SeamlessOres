@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:diorite_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_titanium_ore",
+      "required": false
+    }
+  ]
+}

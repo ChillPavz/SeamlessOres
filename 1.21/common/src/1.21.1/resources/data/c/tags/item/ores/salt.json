@@ -9,11 +9,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_modern_industrialization_salt_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_limestone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_salt_ore",
       "required": false
     },
     {
@@ -25,6 +33,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_modern_industrialization_salt_ore",
       "required": false
     },
@@ -33,7 +45,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_mossy_stone_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_electrodynamics_salt_ore",
       "required": false
     },
     {
@@ -42,6 +62,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_salt_ore",
       "required": false
     }
   ]

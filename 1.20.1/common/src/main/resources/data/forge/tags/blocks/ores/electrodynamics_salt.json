@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:dripstone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_electrodynamics_salt_ore",
+      "required": false
+    }
+  ]
+}

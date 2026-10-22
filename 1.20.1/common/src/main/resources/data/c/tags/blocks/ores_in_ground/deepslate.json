@@ -285,6 +285,34 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -450,6 +478,30 @@
     },
     {
       "id": "seamlessores:blackstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_vanadium_ore",
       "required": false
     },
     {
@@ -645,6 +697,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_silentcompat_voidmetal_ore",
       "required": false
     },
@@ -726,6 +798,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_electrodynamics_silver_ore",
       "required": false
     }
   ]

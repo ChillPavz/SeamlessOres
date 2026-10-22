@@ -25,6 +25,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },
@@ -61,6 +65,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -69,11 +77,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_marble_densemekanism_dense_tin_ore",
       "required": false
     },
     {
       "id": "seamlessores:embellishcraft_marble_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_electrodynamics_tin_ore",
       "required": false
     },
     {
@@ -89,6 +105,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -98,6 +118,10 @@
     },
     {
       "id": "seamlessores:quark_limestone_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_tin_ore",
       "required": false
     },
     {
@@ -121,6 +145,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_mossy_stone_mythicmetals_tin_ore",
       "required": false
     },
@@ -141,6 +169,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_mythicmetals_tin_ore",
       "required": false
     },
@@ -157,6 +189,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_chalk_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -166,6 +202,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_tin_ore",
       "required": false
     },
     {
@@ -182,6 +222,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_dacite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_electrodynamics_tin_ore",
       "required": false
     },
     {
@@ -202,6 +246,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_electrodynamics_tin_ore",
       "required": false
     }
   ]

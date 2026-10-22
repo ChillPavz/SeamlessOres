@@ -596,6 +596,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean iterRpg = true;
 
+    // --- Electrodynamics -----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("electrodynamics")
+    @ConfigEntry.Gui.Tooltip
+    public boolean electrodynamics = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -736,6 +742,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.theurgy = theurgy;
         values.evilCraft = evilCraft;
         values.iterRpg = iterRpg;
+        values.electrodynamics = electrodynamics;
 
         SeamlessOresConfig.apply(values);
     }

@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_thorium_ore",
+      "required": false
+    }
+  ]
+}

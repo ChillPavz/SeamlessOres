@@ -137,6 +137,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_immersiveengineering_lead_ore",
       "required": false
     },
@@ -154,6 +158,10 @@
     },
     {
       "id": "seamlessores:diorite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_lead_ore",
       "required": false
     },
     {
@@ -177,6 +185,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_immersiveengineering_lead_ore",
       "required": false
     },
@@ -197,6 +209,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_immersiveengineering_lead_ore",
       "required": false
     },
@@ -214,6 +230,10 @@
     },
     {
       "id": "seamlessores:dripstone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_electrodynamics_lead_ore",
       "required": false
     },
     {
@@ -241,6 +261,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_oreganized_lead_ore",
       "required": false
     },
@@ -261,6 +285,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_oreganized_lead_ore",
       "required": false
     },
@@ -270,6 +298,10 @@
     },
     {
       "id": "seamlessores:create_scoria_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_electrodynamics_lead_ore",
       "required": false
     },
     {
@@ -285,6 +317,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_oreganized_lead_ore",
       "required": false
     },
@@ -294,6 +330,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_electrodynamics_lead_ore",
       "required": false
     },
     {
@@ -309,6 +349,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_oreganized_lead_ore",
       "required": false
     },
@@ -318,6 +362,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_electrodynamics_lead_ore",
       "required": false
     },
     {
@@ -333,6 +381,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_oreganized_lead_ore",
       "required": false
     },
@@ -345,11 +397,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_embers_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_lead_ore",
       "required": false
     },
     {
@@ -365,11 +425,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_oreganized_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:embellishcraft_slate_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_lead_ore",
       "required": false
     },
     {
@@ -389,6 +457,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_larvikite_oreganized_lead_ore",
       "required": false
     },
@@ -405,6 +477,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_oreganized_lead_ore",
       "required": false
     },
@@ -414,6 +490,10 @@
     },
     {
       "id": "seamlessores:quark_jasper_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_electrodynamics_lead_ore",
       "required": false
     },
     {
@@ -429,6 +509,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_oreganized_lead_ore",
       "required": false
     },
@@ -438,6 +522,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_electrodynamics_lead_ore",
       "required": false
     },
     {
@@ -454,6 +542,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_lead_ore",
       "required": false
     },
     {

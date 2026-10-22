@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_electrodynamics_molybdenum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_molybdenum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_molybdenum_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_electrodynamics_tin_ore",
+      "required": false
+    }
+  ]
+}

@@ -52,7 +52,8 @@
     "silentgems:ores/*": "",
     "techreborn:ores": "",
     "forge:conductive_blocks": "Iter RPG: blocks its lightning conducts through",
-    "forge:fire_element": "Iter RPG: the fire element its spells read"
+    "forge:fire_element": "Iter RPG: the fire element its spells read",
+    "c:electricdrillblocks": "Electrodynamics: what its electric drill can mine"
   },
   "skip": {
     "iceandfire:*dragon_cave*": "Ice and Fire PLACES blocks from these lists in dragon caves: our variants would appear there",

@@ -288,6 +288,46 @@
       "id": "seamlessores:granite_rftoolsbase_dimensionalshard_overworld_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_molybdenum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_uranium_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -496,6 +536,30 @@
       "id": "seamlessores:diorite_rftoolsbase_dimensionalshard_overworld_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_vanadium_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -690,6 +754,34 @@
     },
     {
       "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_molybdenum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_uranium_ore",
       "required": false
     },
     "seamlessores:tuff_coal_ore",
@@ -948,6 +1040,34 @@
       "id": "seamlessores:tuff_evilcraft_dark_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_uranium_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -1085,6 +1205,34 @@
     },
     {
       "id": "seamlessores:dripstone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -1465,6 +1613,30 @@
     },
     {
       "id": "seamlessores:blackstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_vanadium_ore",
       "required": false
     },
     {
@@ -1940,6 +2112,46 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -2212,6 +2424,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -2357,6 +2593,26 @@
     },
     {
       "id": "seamlessores:calcite_epicpaladins_cryorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -2548,6 +2804,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -2609,6 +2889,14 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -2709,6 +2997,26 @@
     },
     {
       "id": "seamlessores:tfmg_galena_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_electrodynamics_sulfur_ore",
       "required": false
     },
     {
@@ -2841,6 +3149,22 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -3041,6 +3365,38 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -3300,6 +3656,38 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_nether_gold_ore",
       "required": false
     },
@@ -3532,6 +3920,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_iron_ore",
       "required": false
     },
@@ -3657,6 +4065,26 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_vanadium_ore",
       "required": false
     },
     {
@@ -3788,6 +4216,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_marble_iron_ore",
       "required": false
     },
@@ -3849,6 +4289,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_marble_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_electrodynamics_tin_ore",
       "required": false
     },
     {
@@ -4032,6 +4476,42 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_molybdenum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_iron_ore",
       "required": false
     },
@@ -4133,6 +4613,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_larvikite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_electrodynamics_aluminum_ore",
       "required": false
     },
     {
@@ -4288,6 +4772,42 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_iron_ore",
       "required": false
     },
@@ -4353,6 +4873,18 @@
     },
     {
       "id": "seamlessores:quark_jasper_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -4488,6 +5020,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
       "required": false
     },
@@ -4569,6 +5121,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_electrodynamics_silver_ore",
       "required": false
     },
     {
@@ -4729,6 +5285,22 @@
     },
     {
       "id": "seamlessores:meadow_limestone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_electrodynamics_tin_ore",
       "required": false
     },
     {
@@ -5012,6 +5584,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_coal_ore",
       "required": false
     },
@@ -5172,6 +5752,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_coal_ore",
       "required": false
     },
@@ -5241,6 +5825,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_chalk_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_electrodynamics_tin_ore",
       "required": false
     },
     {
@@ -5408,6 +5996,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_iron_ore",
       "required": false
     },
@@ -5549,6 +6149,26 @@
     },
     {
       "id": "seamlessores:promenade_blunite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_electrodynamics_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_electrodynamics_molybdenum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_electrodynamics_vanadium_ore",
       "required": false
     },
     {
@@ -5696,6 +6316,42 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_iron_ore",
       "required": false
     },
@@ -5840,6 +6496,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
       "required": false
     },
@@ -5925,6 +6585,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_electrodynamics_tin_ore",
       "required": false
     },
     {

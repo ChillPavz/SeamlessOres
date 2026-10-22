@@ -5,7 +5,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_create_new_age_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_thorium_ore",
       "required": false
     },
     {
@@ -14,6 +22,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_gneiss_create_new_age_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_thorium_ore",
       "required": false
     },
     {

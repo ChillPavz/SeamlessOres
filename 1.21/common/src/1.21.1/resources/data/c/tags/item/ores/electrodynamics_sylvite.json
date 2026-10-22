@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:dripstone_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_sylvite_ore",
+      "required": false
+    }
+  ]
+}

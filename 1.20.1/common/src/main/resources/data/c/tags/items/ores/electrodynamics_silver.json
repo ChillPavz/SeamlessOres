@@ -1,0 +1,104 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_electrodynamics_silver_ore",
+      "required": false
+    }
+  ]
+}

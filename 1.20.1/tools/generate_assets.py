@@ -190,7 +190,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "expandeddelight": jar("expandeddelight-0.3.2.jar"),
             "theurgy": jar("theurgy-1.20.1-1.30.0.jar"),
             "evilcraft": jar("EvilCraft-1.20.1-1.3.4.jar"),
-            "iter_rpg": jar("iter_rpg-0.7.9a-forge-1.20.1.jar")}
+            "iter_rpg": jar("iter_rpg-0.7.9a-forge-1.20.1.jar"),
+            "electrodynamics": jar("Electrodynamics-1.20.1-1.0.14.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -423,6 +424,8 @@ MODS = {
                        "licence": "CC BY 4.0 (art)", "author": "rubensworks"},
     "iter_rpg": {"display": "Iter RPG", "category": "iter_rpg",
                        "licence": "GPL-3.0", "author": "BaronFonShish, RayRindou"},
+    "electrodynamics": {"display": "Electrodynamics", "category": "electrodynamics",
+                       "licence": "Aurilisdev licence (credit and link)", "author": "aurilisdev, skip999"},
 }
 
 ORE_DEFS = [
@@ -1058,6 +1061,58 @@ ORE_DEFS = [
     {"name": "iter_rpg_sanguarnet", "overlay": "iter_rpg_sanguarnet", "source": "sanguarnet_ore", "base": "deepslate",
      "mod": "iter_rpg",
      "tiers": {"deepslate": "sanguarnet_ore"}},
+    # --- Electrodynamics (mod id electrodynamics; its art may be redistributed with credit to its author and a link to its page): 17 minerals, placed by its own rule test ---
+    {"name": "electrodynamics_aluminum", "overlay": "electrodynamics_aluminum", "source": "orealuminum", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "orealuminum", "deepslate": "deepslateorealuminum"}},
+    {"name": "electrodynamics_chromium", "overlay": "electrodynamics_chromium", "source": "orechromium", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "orechromium", "deepslate": "deepslateorechromium"}},
+    {"name": "electrodynamics_fluorite", "overlay": "electrodynamics_fluorite", "source": "orefluorite", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "orefluorite", "deepslate": "deepslateorefluorite"}},
+    {"name": "electrodynamics_lead", "overlay": "electrodynamics_lead", "source": "orelead", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "orelead", "deepslate": "deepslateorelead"}},
+    {"name": "electrodynamics_lithium", "overlay": "electrodynamics_lithium", "deepslate_overlay": "electrodynamics_lithium_deepslate", "source": "orelithium", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "orelithium", "deepslate": "deepslateorelithium"}},
+    {"name": "electrodynamics_molybdenum", "overlay": "electrodynamics_molybdenum", "source": "oremolybdenum", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oremolybdenum", "deepslate": "deepslateoremolybdenum"}},
+    {"name": "electrodynamics_monazite", "overlay": "electrodynamics_monazite", "source": "oremonazite", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oremonazite", "deepslate": "deepslateoremonazite"}},
+    {"name": "electrodynamics_niter", "overlay": "electrodynamics_niter", "source": "oreniter", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oreniter", "deepslate": "deepslateoreniter"}},
+    {"name": "electrodynamics_salt", "overlay": "electrodynamics_salt", "source": "oresalt", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oresalt", "deepslate": "deepslateoresalt"}},
+    {"name": "electrodynamics_silver", "overlay": "electrodynamics_silver", "source": "oresilver", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oresilver", "deepslate": "deepslateoresilver"}},
+    {"name": "electrodynamics_sulfur", "overlay": "electrodynamics_sulfur", "source": "oresulfur", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oresulfur", "deepslate": "deepslateoresulfur"}},
+    {"name": "electrodynamics_sylvite", "overlay": "electrodynamics_sylvite", "source": "oresylvite", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oresylvite", "deepslate": "deepslateoresylvite"}},
+    {"name": "electrodynamics_thorium", "overlay": "electrodynamics_thorium", "source": "orethorium", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "orethorium", "deepslate": "deepslateorethorium"}},
+    {"name": "electrodynamics_tin", "overlay": "electrodynamics_tin", "source": "oretin", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oretin", "deepslate": "deepslateoretin"}},
+    {"name": "electrodynamics_titanium", "overlay": "electrodynamics_titanium", "source": "oretitanium", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oretitanium", "deepslate": "deepslateoretitanium"}},
+    {"name": "electrodynamics_uranium", "overlay": "electrodynamics_uranium", "source": "oreuranium", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "oreuranium", "deepslate": "deepslateoreuranium"}},
+    {"name": "electrodynamics_vanadium", "overlay": "electrodynamics_vanadium", "source": "orevanadium", "base": "stone",
+     "mod": "electrodynamics",
+     "tiers": {"stone": "orevanadium", "deepslate": "deepslateorevanadium"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1204,6 +1259,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "theurgy": ('forge',),
     "evilcraft": ('forge',),
     "iter_rpg": ('forge',),
+    "electrodynamics": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1350,6 +1406,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.electrodynamics": "Electrodynamics",
         f"text.autoconfig.{MOD_ID}.category.iter_rpg": "Iter RPG",
         f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
         f"text.autoconfig.{MOD_ID}.category.theurgy": "Theurgy",
@@ -1393,6 +1450,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.electrodynamics": "Electrodynamics: variants",
+        f"text.autoconfig.{MOD_ID}.option.electrodynamics.@Tooltip":
+            "Generate host-matched Electrodynamics ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.iterRpg": "Iter RPG: variants",
         f"text.autoconfig.{MOD_ID}.option.iterRpg.@Tooltip":

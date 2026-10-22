@@ -24,7 +24,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**397 blocks** in the game's own rock, in the `seamlessores` namespace.
+**434 blocks** in the game's own rock, in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -423,6 +423,27 @@ touching ore of the same type across different host stones.
 |---|---|---|
 | Iter Rpg Magmanum | `basalt_iter_rpg_magmanum_ore` | `blackstone_iter_rpg_magmanum_ore` |
 
+**Electrodynamics, Overworld, requires `electrodynamics`**
+
+| | granite | diorite | andesite | tuff | dripstone |
+|---|---|---|---|---|---|
+| Electrodynamics Aluminum | `granite_electrodynamics_aluminum_ore` | `diorite_electrodynamics_aluminum_ore` | `andesite_electrodynamics_aluminum_ore` | `tuff_electrodynamics_aluminum_ore` | `dripstone_electrodynamics_aluminum_ore` |
+| Electrodynamics Fluorite | `granite_electrodynamics_fluorite_ore` |   |   | `tuff_electrodynamics_fluorite_ore` | `dripstone_electrodynamics_fluorite_ore` |
+| Electrodynamics Lead | `granite_electrodynamics_lead_ore` | `diorite_electrodynamics_lead_ore` | `andesite_electrodynamics_lead_ore` | `tuff_electrodynamics_lead_ore` | `dripstone_electrodynamics_lead_ore` |
+| Electrodynamics Lithium | `granite_electrodynamics_lithium_ore` |   |   | `tuff_electrodynamics_lithium_ore` |   |
+| Electrodynamics Molybdenum | `granite_electrodynamics_molybdenum_ore` |   | `andesite_electrodynamics_molybdenum_ore` |   |   |
+| Electrodynamics Monazite | `granite_electrodynamics_monazite_ore` |   |   |   |   |
+| Electrodynamics Silver | `granite_electrodynamics_silver_ore` | `diorite_electrodynamics_silver_ore` | `andesite_electrodynamics_silver_ore` | `tuff_electrodynamics_silver_ore` |   |
+| Electrodynamics Thorium | `granite_electrodynamics_thorium_ore` |   |   |   |   |
+| Electrodynamics Tin | `granite_electrodynamics_tin_ore` |   |   |   |   |
+| Electrodynamics Uranium | `granite_electrodynamics_uranium_ore` | `diorite_electrodynamics_uranium_ore` | `andesite_electrodynamics_uranium_ore` | `tuff_electrodynamics_uranium_ore` | `dripstone_electrodynamics_uranium_ore` |
+| Electrodynamics Titanium |   | `diorite_electrodynamics_titanium_ore` | `andesite_electrodynamics_titanium_ore` |   |   |
+| Electrodynamics Vanadium |   | `diorite_electrodynamics_vanadium_ore` |   |   |   |
+| Electrodynamics Sulfur |   |   | `andesite_electrodynamics_sulfur_ore` | `tuff_electrodynamics_sulfur_ore` |   |
+| Electrodynamics Niter |   |   |   |   | `dripstone_electrodynamics_niter_ore` |
+| Electrodynamics Salt |   |   |   |   | `dripstone_electrodynamics_salt_ore` |
+| Electrodynamics Sylvite |   |   |   |   | `dripstone_electrodynamics_sylvite_ore` |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
 Minecraft version:
@@ -431,7 +452,7 @@ Minecraft version:
 |---|---|---|
 | Fabric | 232 | Cobblemon, Create, Create: New Age, Energized Power, Exp Ores, Expanded Delight, Ice and Fire, Malum, Modern Industrialization, Mythic Metals, Mythic Upgrades, Oreganized, Powah, Tech Reborn, Things |
 | NeoForge | 46 | none at this Minecraft version |
-| Forge | 292 | Bigger Reactors, Born in Chaos, Cobblemon, Create, Create: New Age, Create: TFMG, Create: Tank Defenses, Dense Mekanism, Embers Rekindled, Energized Power, Epic Paladins, EvilCraft, Extreme Reactors, Ice and Fire, Immersive Engineering, Iter RPG, Malum, Mekanism, Mystical Agriculture, Mythic Upgrades, Occultism, Oreganized, Ores Above Diamonds, Powah, RFTools Base, Scaling Health, Scorched Guns, Silent Gear, Silent Gear Compat, Silent's Gems, Superb Warfare, Theurgy |
+| Forge | 329 | Bigger Reactors, Born in Chaos, Cobblemon, Create, Create: New Age, Create: TFMG, Create: Tank Defenses, Dense Mekanism, Electrodynamics, Embers Rekindled, Energized Power, Epic Paladins, EvilCraft, Extreme Reactors, Ice and Fire, Immersive Engineering, Iter RPG, Malum, Mekanism, Mystical Agriculture, Mythic Upgrades, Occultism, Oreganized, Ores Above Diamonds, Powah, RFTools Base, Scaling Health, Scorched Guns, Silent Gear, Silent Gear Compat, Silent's Gems, Superb Warfare, Theurgy |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -458,7 +479,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**1151 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**1278 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric and Forge)
 
@@ -512,6 +533,12 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Bloodstone | `epicpaladins_bloodstone` | Epic Paladins `epicpaladins` | Deep Blackstone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Deep Blackstone |
 | Dark | `dark` | EvilCraft `evilcraft` | Deep Blackstone |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Deep Blackstone |
 
 **Blockus, requires `blockus`** (Fabric)
 
@@ -692,6 +719,18 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Scoria, Smooth Basalt |
 | Dark | `dark` | EvilCraft `evilcraft` | Scoria, Smooth Basalt |
 | Iter Rpg Magmanum | `iter_rpg_magmanum` | Iter RPG `iter_rpg` | Scorchia, Scoria, Smooth Basalt |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Limestone, Calcite |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Limestone, Scoria, Smooth Basalt |
+| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Scoria, Smooth Basalt |
+| Electrodynamics Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Limestone, Calcite |
+| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Scoria, Smooth Basalt |
 
 **Create: TFMG, requires `tfmg`** (Forge)
 
@@ -739,6 +778,12 @@ Stones: Bauxite `tfmg_bauxite`, Galena `tfmg_galena`, Lignite `tfmg_lignite`
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | every stone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Lignite |
 | Dark | `dark` | EvilCraft `evilcraft` | Lignite |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | every stone |
+| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Galena |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Galena, Lignite |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
+| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Galena |
+| Electrodynamics Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Lignite |
 
 **Twigs, requires `twigs`** (Fabric and Forge)
 
@@ -845,6 +890,17 @@ Stones: Rhyolite `twigs_rhyolite`, Schist `twigs_schist`, Bloodstone `twigs_bloo
 | Nether Dimensional Shard | `nether_dimensional_shard` | RFTools Base `rftoolsbase` | Bloodstone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Rhyolite |
 | Iter Rpg Magmanum | `iter_rpg_magmanum` | Iter RPG `iter_rpg` | Bloodstone |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
+| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Rhyolite |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
+| Electrodynamics Lithium | `electrodynamics_lithium` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
+| Electrodynamics Monazite | `electrodynamics_monazite` | Electrodynamics `electrodynamics` | Schist |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
+| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Rhyolite |
+| Electrodynamics Thorium | `electrodynamics_thorium` | Electrodynamics `electrodynamics` | Schist |
+| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Rhyolite |
+| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Schist |
+| Electrodynamics Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
 
 **Born in Chaos, requires `born_in_chaos_v1`** (Forge)
 
@@ -884,6 +940,11 @@ Stones: Black Argillite `born_in_chaos_v1_black_argillite`
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Black Argillite |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Black Argillite |
 | Dark | `dark` | EvilCraft `evilcraft` | Black Argillite |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Black Argillite |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Black Argillite |
+| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Black Argillite |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Black Argillite |
+| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Black Argillite |
 
 **EmbellishCraft, requires `embellishcraft`** (Forge)
 
@@ -951,6 +1012,18 @@ Stones: Basalt `embellishcraft_basalt`, Slate `embellishcraft_slate`, Marble `em
 | Dimensional Shard | `dimensional_shard` | RFTools Base `rftoolsbase` | Slate, Gneiss |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Basalt |
 | Dark | `dark` | EvilCraft `evilcraft` | Basalt |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Slate, Gneiss, Larvikite |
+| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Gneiss |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Basalt, Slate, Gneiss |
+| Electrodynamics Lithium | `electrodynamics_lithium` | Electrodynamics `electrodynamics` | Slate, Gneiss |
+| Electrodynamics Molybdenum | `electrodynamics_molybdenum` | Electrodynamics `electrodynamics` | Gneiss |
+| Electrodynamics Monazite | `electrodynamics_monazite` | Electrodynamics `electrodynamics` | Slate, Gneiss |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Basalt, Slate, Gneiss, Larvikite |
+| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Basalt |
+| Electrodynamics Thorium | `electrodynamics_thorium` | Electrodynamics `electrodynamics` | Slate, Gneiss |
+| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Marble, Gneiss |
+| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Basalt |
+| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Basalt |
 
 **Quark, requires `quark`** (Forge)
 
@@ -995,6 +1068,16 @@ Stones: Limestone `quark_limestone`, Jasper `quark_jasper`, Shale `quark_shale`
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | every stone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Shale |
 | Dark | `dark` | EvilCraft `evilcraft` | Shale |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | every stone |
+| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | every stone |
+| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Limestone, Shale |
+| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
+| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Shale |
 
 **Forbidden and Arcanus, requires `forbidden_arcanus`** (Forge)
 
@@ -1022,6 +1105,7 @@ Stones: Darkstone `forbidden_arcanus_darkstone`
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Darkstone |
 | Arclight | `arclight` | Epic Paladins `epicpaladins` | Darkstone |
 | Dark | `dark` | EvilCraft `evilcraft` | Darkstone |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Darkstone |
 
 **Let's Do Meadow, requires `meadow`** (Fabric and Forge)
 
@@ -1080,6 +1164,15 @@ Stones: Limestone `meadow_limestone`
 | Scheelite | `superbwarfare_scheelite` | Superb Warfare `superbwarfare` | Limestone |
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Limestone |
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Limestone |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Limestone |
+| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Limestone |
 
 **Mythic Upgrades, requires `mythicupgrades`** (Fabric and Forge)
 
@@ -1203,6 +1296,15 @@ Stones: Reefstone `spawn_reefstone`
 | Scheelite | `superbwarfare_scheelite` | Superb Warfare `superbwarfare` | Reefstone |
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Reefstone |
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Reefstone |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Reefstone |
+| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Reefstone |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Reefstone |
+| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Reefstone |
+| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Reefstone |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Reefstone |
+| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Reefstone |
+| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Reefstone |
+| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Reefstone |
 
 **Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric and Forge)
 
@@ -1234,6 +1336,8 @@ Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacit
 | Sulfur | `scguns_sulfur` | Scorched Guns `scguns` | White Dacite |
 | Arcmetal | `arcmetal` | Silent Gear Compat `silentcompat` | Dacite, White Dacite |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Dacite, White Dacite |
+| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Red Rock |
+| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Dacite, White Dacite |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -1252,7 +1356,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 1548 blocks takes **292 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 1712 blocks takes **309 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -1260,7 +1364,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `amethyst` `ametrine` `anthralite` `anthralite_deepslate` `antimony` `aquamarine` `aquarium` `arclight` `arcmetal` `banglum` `biggerreactors_uranium` `black_diamond` `black_opal` `blazing_quartz` `bort` `brilliant` `carmot` `carnelian` `cinnabar` `citrine` `coal` `copper` `cryorium` `dark` `dawn_stone_biomeswevegone_dacite` `dawn_stone_biomeswevegone_white_dacite` `dawn_stone_blockus_marble` `dawn_stone_dripstone` `dawn_stone_embellishcraft_gneiss` `dawn_stone_embellishcraft_marble` `dawn_stone_granite` `dawn_stone_minecraft_calcite` `dawn_stone_twigs_rhyolite` `dawn_stone_twigs_rhyolite_end` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `dimensional_shard` `dusk_stone_andesite` `dusk_stone_blockus_bluestone` `dusk_stone_blockus_viridite` `dusk_stone_born_in_chaos_v1_black_argillite` `dusk_stone_create_scoria` `dusk_stone_embellishcraft_basalt` `dusk_stone_forbidden_arcanus_darkstone` `dusk_stone_forbidden_arcanus_darkstone_mirrored` `dusk_stone_minecraft_blackstone` `dusk_stone_minecraft_blackstone_end` `dusk_stone_minecraft_smooth_basalt` `dusk_stone_promenade_asphalt` `dusk_stone_quark_shale` `dusk_stone_tfmg_lignite` `dusk_stone_tuff` `embers_lead` `embers_silver` `emerald` `energized_tin` `epicpaladins_bloodstone` `expandeddelight_salt` `experience` `fire_stone_andesite` `fire_stone_basalt_side` `fire_stone_basalt_top` `fire_stone_biomeswevegone_dacite` `fire_stone_biomeswevegone_white_dacite` `fire_stone_blackstone` `fire_stone_blackstone_top` `fire_stone_create_crimsite_0` `fire_stone_create_crimsite_1` `fire_stone_create_crimsite_2` `fire_stone_create_crimsite_3` `fire_stone_create_scorchia` `fire_stone_create_scoria` `fire_stone_embellishcraft_basalt` `fire_stone_minecraft_blackstone` `fire_stone_minecraft_blackstone_end` `fire_stone_minecraft_smooth_basalt` `fire_stone_tfmg_galena_0` `fire_stone_tfmg_galena_1` `fire_stone_tfmg_galena_2` `fire_stone_tfmg_galena_3` `fire_stone_tuff` `fire_stone_twigs_bloodstone` `fire_stone_twigs_rhyolite` `fire_stone_twigs_rhyolite_end` `galena` `gleaming` `gold` `heart_crystal` `heliodor` `ice_stone_blockus_marble` `ice_stone_create_asurine_0` `ice_stone_create_asurine_1` `ice_stone_create_asurine_2` `ice_stone_create_asurine_3` `ice_stone_diorite` `ice_stone_dripstone` `ice_stone_embellishcraft_larvikite` `ice_stone_embellishcraft_marble` `ice_stone_embellishcraft_slate` `ice_stone_minecraft_calcite` `ice_stone_promenade_blunite` `ice_stone_twigs_schist` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `ie_aluminum` `ie_lead` `ie_silver` `ie_uranium` `inferium` `iolite` `iridium` `iron` `iter_rpg_magmanum` `kyber` `lapis` `lead` `leaf_stone_blockus_limestone` `leaf_stone_blockus_viridite` `leaf_stone_born_in_chaos_v1_black_argillite` `leaf_stone_create_limestone` `leaf_stone_create_veridium_0` `leaf_stone_create_veridium_1` `leaf_stone_create_veridium_2` `leaf_stone_create_veridium_3` `leaf_stone_meadow_limestone` `leaf_stone_promenade_asphalt` `leaf_stone_quark_limestone` `leaf_stone_quark_shale` `leaf_stone_spawn_reefstone` `leaf_stone_tfmg_bauxite_0` `leaf_stone_tfmg_bauxite_1` `leaf_stone_tfmg_bauxite_2` `leaf_stone_tfmg_bauxite_3` `leaf_stone_tfmg_lignite` `leaf_stone_tuff` `lignite_coal` `lithium` `manganese` `mek_fluorite` `mek_lead` `mek_tin` `mek_uranium` `mi_bauxite` `mi_iridium` `mi_lead` `mi_nickel` `mi_tin` `midas_gold` `monazite` `moon_stone_biomeswevegone_dacite` `moon_stone_biomeswevegone_white_dacite` `moon_stone_blockus_bluestone` `moon_stone_diorite` `moon_stone_embellishcraft_gneiss` `moon_stone_embellishcraft_larvikite` `moon_stone_embellishcraft_slate` `moon_stone_forbidden_arcanus_darkstone` `moon_stone_forbidden_arcanus_darkstone_mirrored` `moon_stone_granite` `moon_stone_twigs_rhyolite` `moon_stone_twigs_rhyolite_end` `moon_stone_twigs_schist` `moonlight` `morkite` `mythril` `natural_quartz` `necoium` `nether_banglum` `nether_experience` `nether_gold` `nickel` `occultism_silver` `oreganized_lead` `oreganized_silver` `orichalcum` `osmium` `palladium` `peridot` `plasteel` `platinum` `power_crystal` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sal_ammoniac` `salt` `sapphire` `scguns_nether_sulfur` `scguns_sulfur` `scguns_sulfur_deepslate` `shiny_stone_blockus_marble` `shiny_stone_dripstone` `shiny_stone_embellishcraft_gneiss` `shiny_stone_embellishcraft_marble` `shiny_stone_embellishcraft_slate` `shiny_stone_granite` `shiny_stone_minecraft_calcite` `shiny_stone_twigs_schist` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `soulstone` `sphalerite` `starrite` `stormyx` `sullysmod_jade` `sun_stone_andesite` `sun_stone_biomeswevegone_dacite` `sun_stone_biomeswevegone_white_dacite` `sun_stone_create_ochrum_0` `sun_stone_create_ochrum_1` `sun_stone_create_ochrum_2` `sun_stone_create_ochrum_3` `sun_stone_create_scoria` `sun_stone_embellishcraft_basalt` `sun_stone_minecraft_blackstone` `sun_stone_minecraft_blackstone_end` `sun_stone_minecraft_smooth_basalt` `sun_stone_tuff` `sun_stone_twigs_rhyolite` `sun_stone_twigs_rhyolite_end` `superbwarfare_galena` `superbwarfare_scheelite` `superbwarfare_silver` `tankdefenses_aluminum` `tankdefenses_titanium` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `thunder_stone_blockus_bluestone` `thunder_stone_create_ochrum_0` `thunder_stone_create_ochrum_1` `thunder_stone_create_ochrum_2` `thunder_stone_create_ochrum_3` `thunder_stone_diorite` `thunder_stone_embellishcraft_gneiss` `thunder_stone_embellishcraft_larvikite` `thunder_stone_embellishcraft_slate` `thunder_stone_granite` `thunder_stone_tfmg_galena_0` `thunder_stone_tfmg_galena_1` `thunder_stone_tfmg_galena_2` `thunder_stone_tfmg_galena_3` `thunder_stone_twigs_schist` `tin` `topaz` `tungsten` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `uranium` `vehement_coal` `voidmetal` `water_stone_blockus_limestone` `water_stone_blockus_marble` `water_stone_create_asurine_0` `water_stone_create_asurine_1` `water_stone_create_asurine_2` `water_stone_create_asurine_3` `water_stone_create_limestone` `water_stone_dripstone` `water_stone_embellishcraft_marble` `water_stone_meadow_limestone` `water_stone_minecraft_calcite` `water_stone_promenade_blunite` `water_stone_quark_limestone` `water_stone_spawn_reefstone` `white_diamond` `yellorite` `zinc`
+`adamantite` `alexandrite` `amethyst` `ametrine` `anthralite` `anthralite_deepslate` `antimony` `aquamarine` `aquarium` `arclight` `arcmetal` `banglum` `biggerreactors_uranium` `black_diamond` `black_opal` `blazing_quartz` `bort` `brilliant` `carmot` `carnelian` `cinnabar` `citrine` `coal` `copper` `cryorium` `dark` `dawn_stone_biomeswevegone_dacite` `dawn_stone_biomeswevegone_white_dacite` `dawn_stone_blockus_marble` `dawn_stone_dripstone` `dawn_stone_embellishcraft_gneiss` `dawn_stone_embellishcraft_marble` `dawn_stone_granite` `dawn_stone_minecraft_calcite` `dawn_stone_twigs_rhyolite` `dawn_stone_twigs_rhyolite_end` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `diamond` `dimensional_shard` `dusk_stone_andesite` `dusk_stone_blockus_bluestone` `dusk_stone_blockus_viridite` `dusk_stone_born_in_chaos_v1_black_argillite` `dusk_stone_create_scoria` `dusk_stone_embellishcraft_basalt` `dusk_stone_forbidden_arcanus_darkstone` `dusk_stone_forbidden_arcanus_darkstone_mirrored` `dusk_stone_minecraft_blackstone` `dusk_stone_minecraft_blackstone_end` `dusk_stone_minecraft_smooth_basalt` `dusk_stone_promenade_asphalt` `dusk_stone_quark_shale` `dusk_stone_tfmg_lignite` `dusk_stone_tuff` `electrodynamics_aluminum` `electrodynamics_fluorite` `electrodynamics_lead` `electrodynamics_lithium` `electrodynamics_lithium_deepslate` `electrodynamics_molybdenum` `electrodynamics_monazite` `electrodynamics_niter` `electrodynamics_salt` `electrodynamics_silver` `electrodynamics_sulfur` `electrodynamics_sylvite` `electrodynamics_thorium` `electrodynamics_tin` `electrodynamics_titanium` `electrodynamics_uranium` `electrodynamics_vanadium` `embers_lead` `embers_silver` `emerald` `energized_tin` `epicpaladins_bloodstone` `expandeddelight_salt` `experience` `fire_stone_andesite` `fire_stone_basalt_side` `fire_stone_basalt_top` `fire_stone_biomeswevegone_dacite` `fire_stone_biomeswevegone_white_dacite` `fire_stone_blackstone` `fire_stone_blackstone_top` `fire_stone_create_crimsite_0` `fire_stone_create_crimsite_1` `fire_stone_create_crimsite_2` `fire_stone_create_crimsite_3` `fire_stone_create_scorchia` `fire_stone_create_scoria` `fire_stone_embellishcraft_basalt` `fire_stone_minecraft_blackstone` `fire_stone_minecraft_blackstone_end` `fire_stone_minecraft_smooth_basalt` `fire_stone_tfmg_galena_0` `fire_stone_tfmg_galena_1` `fire_stone_tfmg_galena_2` `fire_stone_tfmg_galena_3` `fire_stone_tuff` `fire_stone_twigs_bloodstone` `fire_stone_twigs_rhyolite` `fire_stone_twigs_rhyolite_end` `galena` `gleaming` `gold` `heart_crystal` `heliodor` `ice_stone_blockus_marble` `ice_stone_create_asurine_0` `ice_stone_create_asurine_1` `ice_stone_create_asurine_2` `ice_stone_create_asurine_3` `ice_stone_diorite` `ice_stone_dripstone` `ice_stone_embellishcraft_larvikite` `ice_stone_embellishcraft_marble` `ice_stone_embellishcraft_slate` `ice_stone_minecraft_calcite` `ice_stone_promenade_blunite` `ice_stone_twigs_schist` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `ie_aluminum` `ie_lead` `ie_silver` `ie_uranium` `inferium` `iolite` `iridium` `iron` `iter_rpg_magmanum` `kyber` `lapis` `lead` `leaf_stone_blockus_limestone` `leaf_stone_blockus_viridite` `leaf_stone_born_in_chaos_v1_black_argillite` `leaf_stone_create_limestone` `leaf_stone_create_veridium_0` `leaf_stone_create_veridium_1` `leaf_stone_create_veridium_2` `leaf_stone_create_veridium_3` `leaf_stone_meadow_limestone` `leaf_stone_promenade_asphalt` `leaf_stone_quark_limestone` `leaf_stone_quark_shale` `leaf_stone_spawn_reefstone` `leaf_stone_tfmg_bauxite_0` `leaf_stone_tfmg_bauxite_1` `leaf_stone_tfmg_bauxite_2` `leaf_stone_tfmg_bauxite_3` `leaf_stone_tfmg_lignite` `leaf_stone_tuff` `lignite_coal` `lithium` `manganese` `mek_fluorite` `mek_lead` `mek_tin` `mek_uranium` `mi_bauxite` `mi_iridium` `mi_lead` `mi_nickel` `mi_tin` `midas_gold` `monazite` `moon_stone_biomeswevegone_dacite` `moon_stone_biomeswevegone_white_dacite` `moon_stone_blockus_bluestone` `moon_stone_diorite` `moon_stone_embellishcraft_gneiss` `moon_stone_embellishcraft_larvikite` `moon_stone_embellishcraft_slate` `moon_stone_forbidden_arcanus_darkstone` `moon_stone_forbidden_arcanus_darkstone_mirrored` `moon_stone_granite` `moon_stone_twigs_rhyolite` `moon_stone_twigs_rhyolite_end` `moon_stone_twigs_schist` `moonlight` `morkite` `mythril` `natural_quartz` `necoium` `nether_banglum` `nether_experience` `nether_gold` `nickel` `occultism_silver` `oreganized_lead` `oreganized_silver` `orichalcum` `osmium` `palladium` `peridot` `plasteel` `platinum` `power_crystal` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sal_ammoniac` `salt` `sapphire` `scguns_nether_sulfur` `scguns_sulfur` `scguns_sulfur_deepslate` `shiny_stone_blockus_marble` `shiny_stone_dripstone` `shiny_stone_embellishcraft_gneiss` `shiny_stone_embellishcraft_marble` `shiny_stone_embellishcraft_slate` `shiny_stone_granite` `shiny_stone_minecraft_calcite` `shiny_stone_twigs_schist` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `soulstone` `sphalerite` `starrite` `stormyx` `sullysmod_jade` `sun_stone_andesite` `sun_stone_biomeswevegone_dacite` `sun_stone_biomeswevegone_white_dacite` `sun_stone_create_ochrum_0` `sun_stone_create_ochrum_1` `sun_stone_create_ochrum_2` `sun_stone_create_ochrum_3` `sun_stone_create_scoria` `sun_stone_embellishcraft_basalt` `sun_stone_minecraft_blackstone` `sun_stone_minecraft_blackstone_end` `sun_stone_minecraft_smooth_basalt` `sun_stone_tuff` `sun_stone_twigs_rhyolite` `sun_stone_twigs_rhyolite_end` `superbwarfare_galena` `superbwarfare_scheelite` `superbwarfare_silver` `tankdefenses_aluminum` `tankdefenses_titanium` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `thunder_stone_blockus_bluestone` `thunder_stone_create_ochrum_0` `thunder_stone_create_ochrum_1` `thunder_stone_create_ochrum_2` `thunder_stone_create_ochrum_3` `thunder_stone_diorite` `thunder_stone_embellishcraft_gneiss` `thunder_stone_embellishcraft_larvikite` `thunder_stone_embellishcraft_slate` `thunder_stone_granite` `thunder_stone_tfmg_galena_0` `thunder_stone_tfmg_galena_1` `thunder_stone_tfmg_galena_2` `thunder_stone_tfmg_galena_3` `thunder_stone_twigs_schist` `tin` `topaz` `tungsten` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `uranium` `vehement_coal` `voidmetal` `water_stone_blockus_limestone` `water_stone_blockus_marble` `water_stone_create_asurine_0` `water_stone_create_asurine_1` `water_stone_create_asurine_2` `water_stone_create_asurine_3` `water_stone_create_limestone` `water_stone_dripstone` `water_stone_embellishcraft_marble` `water_stone_meadow_limestone` `water_stone_minecraft_calcite` `water_stone_promenade_blunite` `water_stone_quark_limestone` `water_stone_spawn_reefstone` `white_diamond` `yellorite` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -1366,6 +1470,7 @@ is theirs and is used under the licence shown:
 | Theurgy | Kli Kli | CC BY-SA 4.0 (art) |
 | EvilCraft | rubensworks | CC BY 4.0 (art) |
 | Iter RPG | BaronFonShish, RayRindou | GPL-3.0 |
+| Electrodynamics | aurilisdev, skip999 | Aurilisdev licence (credit and link) |
 <!-- END GENERATED credits -->
 
 The Immersive Engineering variants (aluminum, lead, nickel, silver and uranium) are derived from

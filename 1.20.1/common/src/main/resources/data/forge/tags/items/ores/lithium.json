@@ -15,6 +15,30 @@
     {
       "id": "seamlessores:twigs_schist_tfmg_lithium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_lithium_ore",
+      "required": false
     }
   ]
 }

@@ -5,11 +5,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_things_gleaming_ore",
       "required": false
     },
     {
       "id": "seamlessores:diorite_create_tank_defenses_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -21,11 +37,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_things_gleaming_ore",
       "required": false
     },
     {
       "id": "seamlessores:tuff_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -65,6 +97,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_things_gleaming_ore",
       "required": false
     },
@@ -81,6 +117,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scorchia_scguns_vehement_coal_ore",
       "required": false
     },
@@ -93,7 +133,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:calcite_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -105,11 +153,35 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -118,6 +190,18 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_thorium_ore",
       "required": false
     },
     {

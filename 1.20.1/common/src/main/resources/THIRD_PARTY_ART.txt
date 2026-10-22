@@ -30,6 +30,25 @@ Dense Mekanism, MIT:
   assets/seamlessores/textures/block/dense_tin_overlay.png
   assets/seamlessores/textures/block/dense_uranium_overlay.png
 
+Electrodynamics by aurilisdev, skip999, Aurilisdev licence (credit and link):
+  assets/seamlessores/textures/block/electrodynamics_aluminum_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_fluorite_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_lead_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_lithium_deepslate_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_lithium_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_molybdenum_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_monazite_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_niter_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_salt_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_silver_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_sulfur_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_sylvite_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_thorium_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_tin_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_titanium_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_uranium_overlay.png
+  assets/seamlessores/textures/block/electrodynamics_vanadium_overlay.png
+
 Embers Rekindled by RCXcrafter, BordListian, Elucent, TechnoMysterio, KomradeSpectre, MIT:
   assets/seamlessores/textures/block/embers_lead_overlay.png
   assets/seamlessores/textures/block/embers_silver_overlay.png

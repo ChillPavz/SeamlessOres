@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_electrodynamics_niter_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_electrodynamics_niter_ore_mirrored"
+      }
+    ]
+  }
+}

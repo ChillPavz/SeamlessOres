@@ -5,11 +5,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_electrodynamics_monazite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_modern_industrialization_monazite_ore",
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_electrodynamics_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_electrodynamics_monazite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_gneiss_modern_industrialization_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_electrodynamics_monazite_ore",
       "required": false
     }
   ]

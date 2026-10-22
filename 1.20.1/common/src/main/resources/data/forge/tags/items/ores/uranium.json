@@ -73,6 +73,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_bigreactors_yellorite_ore",
       "required": false
     },
@@ -86,6 +90,10 @@
     },
     {
       "id": "seamlessores:diorite_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -105,6 +113,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_immersiveengineering_uranium_ore",
       "required": false
     },
@@ -114,6 +126,10 @@
     },
     {
       "id": "seamlessores:tuff_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -133,11 +149,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_bigreactors_yellorite_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_limestone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -149,11 +173,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_bigreactors_yellorite_ore",
       "required": false
     },
     {
       "id": "seamlessores:tfmg_lignite_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_electrodynamics_uranium_ore",
       "required": false
     },
     {
@@ -165,11 +197,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_bigreactors_yellorite_ore",
       "required": false
     },
     {
       "id": "seamlessores:twigs_schist_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_electrodynamics_uranium_ore",
       "required": false
     },
     {
