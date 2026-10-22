@@ -87,6 +87,12 @@
     "silentgems:deepslate_chaos_ore"
    ]
   },
+  "chlorophyte": {
+   "mod": "hazennstuff",
+   "forms": [
+    "hazennstuff:chlorophyte_ore"
+   ]
+  },
   "cinnabar": {
    "mod": "techreborn",
    "forms": [
@@ -147,6 +153,12 @@
    "forms": [
     "densemekanism:dense_uranium_ore",
     "densemekanism:dense_deepslate_uranium_ore"
+   ]
+  },
+  "dreadstone": {
+   "mod": "hazennstuff",
+   "forms": [
+    "hazennstuff:dreadstone_ore"
    ]
   },
   "dusk_stone": {
@@ -757,6 +769,12 @@
  },
  "hosts": {
   "biomeswevegone:dacite": {
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.25
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -949,6 +967,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.21
+   },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.66
    },
    "dawn_stone": {
     "where": [
@@ -1148,6 +1172,12 @@
      "1.21.1 fabric"
     ],
     "rate": 2.17
+   },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.95
    },
    "dawn_stone": {
     "where": [
@@ -2250,6 +2280,12 @@
     ],
     "rate": 72.32
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.38
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -2297,6 +2333,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 17.65
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 40.89
    },
    "dusk_stone": {
     "where": [
@@ -2606,6 +2648,12 @@
     ],
     "rate": 35.06
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.69
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -2653,6 +2701,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.62
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.43
    },
    "dusk_stone": {
     "where": [
@@ -2998,6 +3052,12 @@
     ],
     "rate": 44.82
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.39
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -3045,6 +3105,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 18.69
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.96
    },
    "dusk_stone": {
     "where": [
@@ -3390,6 +3456,12 @@
     ],
     "rate": 46.58
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.87
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -3437,6 +3509,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 19.42
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.13
    },
    "dusk_stone": {
     "where": [
@@ -3782,6 +3860,12 @@
     ],
     "rate": 30.38
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.4
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -3829,6 +3913,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 12.67
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.31
    },
    "dusk_stone": {
     "where": [
@@ -4266,6 +4356,12 @@
     ],
     "rate": 40.25
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.13
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -4313,6 +4409,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 16.78
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 26.9
    },
    "dusk_stone": {
     "where": [
@@ -4718,6 +4820,12 @@
     ],
     "rate": 33.15
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.16
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -4765,6 +4873,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 13.82
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.15
    },
    "dusk_stone": {
     "where": [
@@ -5110,6 +5224,12 @@
     ],
     "rate": 50.0
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.37
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -5157,6 +5277,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 35.92
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.21
    },
    "dusk_stone": {
     "where": [
@@ -5478,6 +5604,12 @@
     ],
     "rate": 4.37
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.51
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -5762,6 +5894,12 @@
    }
   },
   "embellishcraft:jade": {
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.09
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -5901,6 +6039,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.95
+   },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.13
    },
    "dawn_stone": {
     "where": [
@@ -6072,6 +6216,12 @@
    }
   },
   "embellishcraft:marble": {
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 25.3
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -6211,6 +6361,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 21.03
+   },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.93
    },
    "dawn_stone": {
     "where": [
@@ -6520,6 +6676,12 @@
     ],
     "rate": 317.15
    },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 526.18
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -6804,6 +6966,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.12
+   },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.15
    },
    "citrine": {
     "where": [
@@ -7218,6 +7386,12 @@
     ],
     "rate": 3.25
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.26
+   },
    "citrine": {
     "where": [
      "1.21.1 fabric",
@@ -7267,6 +7441,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.06
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.87
    },
    "dusk_stone": {
     "where": [
@@ -7733,6 +7913,12 @@
     ],
     "rate": 20.53
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.68
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -7780,6 +7966,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 8.56
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.72
    },
    "dusk_stone": {
     "where": [
@@ -8125,6 +8317,12 @@
     ],
     "rate": 34.72
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.6
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -8172,6 +8370,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.48
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.21
    },
    "dusk_stone": {
     "where": [
@@ -8529,6 +8733,12 @@
     ],
     "rate": 32.36
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.94
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -8576,6 +8786,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 13.49
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.63
    },
    "dusk_stone": {
     "where": [
@@ -9062,6 +9278,12 @@
     ],
     "rate": 29.51
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.12
+   },
    "citrine": {
     "where": [
      "1.21.1 fabric",
@@ -9111,6 +9333,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.48
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.57
    },
    "dusk_stone": {
     "where": [
@@ -9590,6 +9818,12 @@
     ],
     "rate": 29.51
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.83
+   },
    "citrine": {
     "where": [
      "1.21.1 fabric",
@@ -9639,6 +9873,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.48
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.57
    },
    "dusk_stone": {
     "where": [
@@ -10099,6 +10339,12 @@
     ],
     "rate": 94.97
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 111.87
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -10437,6 +10683,12 @@
     ],
     "rate": 277.0
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 326.29
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -10774,6 +11026,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 158.28
+   },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 186.45
    },
    "citrine": {
     "where": [
@@ -11170,6 +11428,12 @@
     ],
     "rate": 0.38
    },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.51
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 fabric",
@@ -11527,6 +11791,12 @@
    }
   },
   "regions_unexplored:chalk": {
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.24
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -11725,6 +11995,12 @@
      "1.21.1 fabric"
     ],
     "rate": 2.21
+   },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.48
    },
    "dawn_stone": {
     "where": [
@@ -11966,6 +12242,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 11.71
+   },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.41
    },
    "citrine": {
     "where": [
@@ -12299,6 +12581,12 @@
     ],
     "rate": 43.41
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.0
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -12346,6 +12634,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 18.1
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.01
    },
    "dusk_stone": {
     "where": [
@@ -12691,6 +12985,12 @@
     ],
     "rate": 43.41
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.0
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -12738,6 +13038,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 18.1
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.01
    },
    "dusk_stone": {
     "where": [
@@ -13083,6 +13389,12 @@
     ],
     "rate": 43.41
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.0
+   },
    "citrine": {
     "where": [
      "1.21.1 neoforge"
@@ -13130,6 +13442,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 18.1
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.01
    },
    "dusk_stone": {
     "where": [
@@ -13613,6 +13931,12 @@
     ],
     "rate": 76.38
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.35
+   },
    "citrine": {
     "where": [
      "1.21.1 fabric",
@@ -13662,6 +13986,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 50.39
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 69.96
    },
    "dusk_stone": {
     "where": [
@@ -14122,6 +14452,12 @@
     ],
     "rate": 7.4
    },
+   "chlorophyte": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.3
+   },
    "citrine": {
     "where": [
      "1.21.1 fabric",
@@ -14171,6 +14507,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 4.62
+   },
+   "dreadstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.4
    },
    "dusk_stone": {
     "where": [

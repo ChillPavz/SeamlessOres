@@ -708,6 +708,18 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("createpropulsion", "platinum_ore"), of("createpropulsion", "deepslate_platinum_ore"), null,
             NONE, null, false, Set.of());
 
+    // --- Hazen 'N Stuff (mod id hazennstuff, PolyForm Shield 1.0.0): strength 3.0, 2 to 4 XP; zenalite generates in the End only; solar core has no overlay yet, so no variant. NeoForge at 1.21.1 ---
+    public static final OreType HNS_CHLOROPHYTE = ore(
+            "chlorophyte", "chlorophyte", null, "hazennstuff",
+            of("hazennstuff", "chlorophyte_ore"), null, null,
+            UniformInt.of(2, 4), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 3.0F, 3.0F);
+    public static final OreType HNS_DREADSTONE = ore(
+            "dreadstone", "dreadstone", null, "hazennstuff",
+            null, of("hazennstuff", "dreadstone_ore"), null,
+            UniformInt.of(2, 4), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 3.0F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -738,7 +750,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, BENITOITE, SG_OPAL,
                     CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE, CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE,
                     INFECTED_DIAMOND,
-                    CP_PLATINUM);
+                    CP_PLATINUM,
+                    HNS_CHLOROPHYTE, HNS_DREADSTONE);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

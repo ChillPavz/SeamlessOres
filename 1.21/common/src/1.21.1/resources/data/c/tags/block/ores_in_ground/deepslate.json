@@ -229,6 +229,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -361,6 +365,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -398,6 +406,18 @@
     },
     {
       "id": "seamlessores:blockus_viridite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_hazennstuff_dreadstone_ore",
       "required": false
     },
     {
@@ -517,6 +537,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
       "required": false
     },
@@ -582,6 +610,18 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_createpropulsion_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_hazennstuff_dreadstone_ore",
       "required": false
     },
     {

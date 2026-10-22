@@ -856,6 +856,10 @@
       "id": "seamlessores:tuff_born_in_chaos_v1_infected_diamond_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_hazennstuff_dreadstone_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -1328,6 +1332,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_coal_ore",
       "required": false
     },
@@ -1636,6 +1644,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_crimsite_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_coal_ore",
       "required": false
     },
@@ -1773,6 +1785,10 @@
     },
     {
       "id": "seamlessores:create_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_hazennstuff_chlorophyte_ore",
       "required": false
     },
     {
@@ -2004,6 +2020,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -2017,6 +2037,10 @@
     },
     {
       "id": "seamlessores:create_veridium_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_hazennstuff_chlorophyte_ore",
       "required": false
     },
     {
@@ -2292,6 +2316,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -2345,6 +2373,10 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_hazennstuff_chlorophyte_ore",
       "required": false
     },
     {
@@ -2549,6 +2581,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_hazennstuff_chlorophyte_ore",
       "required": false
     },
     {
@@ -3152,6 +3188,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_iron_ore",
       "required": false
     },
@@ -3253,6 +3297,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_hazennstuff_dreadstone_ore",
       "required": false
     },
     {
@@ -3812,6 +3860,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_iron_ore",
       "required": false
     },
@@ -3984,6 +4036,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
       "required": false
     },
@@ -4049,6 +4105,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_createpropulsion_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_hazennstuff_dreadstone_ore",
       "required": false
     },
     {
@@ -4189,6 +4249,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_hazennstuff_chlorophyte_ore",
       "required": false
     },
     {
@@ -4460,6 +4524,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_coal_ore",
       "required": false
     },
@@ -4600,6 +4668,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_coal_ore",
       "required": false
     },
@@ -4665,6 +4737,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_chalk_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_hazennstuff_chlorophyte_ore",
       "required": false
     },
     {
@@ -4812,6 +4888,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_iron_ore",
       "required": false
     },
@@ -4929,6 +5009,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_createpropulsion_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_hazennstuff_dreadstone_ore",
       "required": false
     },
     {
@@ -5053,6 +5137,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_hazennstuff_chlorophyte_ore",
       "required": false
     },
     {

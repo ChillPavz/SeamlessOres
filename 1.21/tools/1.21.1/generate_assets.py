@@ -147,7 +147,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
             "silentgems": SILENT_GEMS_JAR,
             "mythicmetals": MYTHIC_METALS_JAR,
-            "createpropulsion": jar("createpropulsion-1.1.5.jar")}
+            "createpropulsion": jar("createpropulsion-1.1.5.jar"),
+            "hazennstuff": jar("hazennstuff-1.4.0.14.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -357,6 +358,8 @@ MODS = {
                        "licence": "MPL-2.0",      "author": "The Cobblemon Team"},
     "createpropulsion": {"display": "Create: Propulsion", "category": "create_propulsion",
                        "licence": "MIT", "author": "Sergey Feduk, Tronco_78, Bunting_chj, SSnowly, KyivSec"},
+    "hazennstuff": {"display": "Hazen 'N Stuff", "category": "hazen_n_stuff",
+                       "licence": "PolyForm Shield 1.0.0", "author": "Hazen"},
 }
 
 ORE_DEFS = [
@@ -891,6 +894,13 @@ ORE_DEFS = [
     {"name": "createpropulsion_platinum", "overlay": "createpropulsion_platinum", "source": "platinum_ore", "base": "stone",
      "mod": "createpropulsion",
      "tiers": {"stone": "platinum_ore", "deepslate": "deepslate_platinum_ore"}},
+    # --- Hazen 'N Stuff (mod id hazennstuff, PolyForm Shield 1.0.0): strength 3.0, 2 to 4 XP; zenalite generates in the End only; solar core has no overlay yet, so no variant. NeoForge at 1.21.1 ---
+    {"name": "chlorophyte", "overlay": "chlorophyte", "source": "chlorophyte_ore", "base": "stone",
+     "mod": "hazennstuff",
+     "tiers": {"stone": "chlorophyte_ore"}},
+    {"name": "dreadstone", "overlay": "dreadstone", "source": "dreadstone_ore", "base": "deepslate",
+     "mod": "hazennstuff",
+     "tiers": {"deepslate": "dreadstone_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1030,6 +1040,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "twigs": ('fabric', 'neoforge'),
     "wilderwild": ('fabric',),
     "createpropulsion": ('neoforge',),
+    "hazennstuff": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1140,6 +1151,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.hazen_n_stuff": "Hazen 'N Stuff",
         f"text.autoconfig.{MOD_ID}.category.create_propulsion": "Create: Propulsion",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
         f"text.autoconfig.{MOD_ID}.category.nether": "Nether",
@@ -1168,6 +1180,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.hazenNStuff": "Hazen 'N Stuff: variants",
+        f"text.autoconfig.{MOD_ID}.option.hazenNStuff.@Tooltip":
+            "Generate host-matched chlorophyte and dreadstone ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.createPropulsion": "Create: Propulsion: variants",
         f"text.autoconfig.{MOD_ID}.option.createPropulsion.@Tooltip":

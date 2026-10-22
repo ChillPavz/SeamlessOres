@@ -1,0 +1,37 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:smooth_basalt_hazennstuff_dreadstone_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hazennstuff"
+    }
+  ],
+  "forge:condition": {
+    "type": "forge:mod_loaded",
+    "modid": "create"
+  },
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "dreadstone",
+  "ingredient": {
+    "item": "seamlessores:smooth_basalt_hazennstuff_dreadstone_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "hazennstuff:dreadstone"
+  }
+}

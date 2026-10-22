@@ -1,0 +1,52 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:create_limestone_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_hazennstuff_chlorophyte_ore",
+      "required": false
+    }
+  ]
+}

@@ -32,6 +32,10 @@ Energized Power by JDDev0, MIT:
 Extreme Reactors by ZeroNoRyouki, MIT:
   assets/seamlessores/textures/block/yellorite_overlay.png
 
+Hazen 'N Stuff by Hazen, PolyForm Shield 1.0.0:
+  assets/seamlessores/textures/block/chlorophyte_overlay.png
+  assets/seamlessores/textures/block/dreadstone_overlay.png
+
 Ice and Fire by Alexthe666, the Community Edition by IAFEnvoy, LGPL-3.0:
   assets/seamlessores/textures/block/iceandfire_deepslate_silver_overlay.png
   assets/seamlessores/textures/block/iceandfire_sapphire_overlay.png

@@ -92,6 +92,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("silentgems", "silents_gems");
         MOD_CATEGORIES.put("things", "things");
         MOD_CATEGORIES.put("createpropulsion", "create_propulsion");
+        MOD_CATEGORIES.put("hazennstuff", "hazen_n_stuff");
     }
 
     /** The config screen to open, given whatever screen the player came from. */
