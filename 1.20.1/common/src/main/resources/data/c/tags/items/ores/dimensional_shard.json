@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    }
+  ]
+}

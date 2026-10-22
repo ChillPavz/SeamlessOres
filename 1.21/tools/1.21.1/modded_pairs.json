@@ -175,6 +175,12 @@
     "densemekanism:dense_deepslate_uranium_ore"
    ]
   },
+  "dimensional_shard": {
+   "mod": "rftoolsbase",
+   "forms": [
+    "rftoolsbase:dimensionalshard_overworld"
+   ]
+  },
   "dreadstone": {
    "mod": "hazennstuff",
    "forms": [
@@ -430,6 +436,12 @@
    "mod": "silentgems",
    "forms": [
     "silentgems:nether_carnelian_ore"
+   ]
+  },
+  "nether_dimensional_shard": {
+   "mod": "rftoolsbase",
+   "forms": [
+    "rftoolsbase:dimensionalshard_nether"
    ]
   },
   "nether_iolite": {
@@ -2406,6 +2418,12 @@
     ],
     "rate": 17.65
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 64.46
+   },
    "dreadstone": {
     "where": [
      "1.21.1 neoforge"
@@ -2815,6 +2833,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.62
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.39
    },
    "dreadstone": {
     "where": [
@@ -3262,6 +3286,12 @@
     ],
     "rate": 18.69
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 46.53
+   },
    "dreadstone": {
     "where": [
      "1.21.1 neoforge"
@@ -3707,6 +3737,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 19.42
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.35
    },
    "dreadstone": {
     "where": [
@@ -4154,6 +4190,12 @@
     ],
     "rate": 12.67
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.54
+   },
    "dreadstone": {
     "where": [
      "1.21.1 neoforge"
@@ -4534,6 +4576,12 @@
     ],
     "rate": 84.55
    },
+   "nether_dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 53.23
+   },
    "nether_iolite": {
     "where": [
      "1.21.1 neoforge"
@@ -4697,6 +4745,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 16.78
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.79
    },
    "dreadstone": {
     "where": [
@@ -4871,6 +4925,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 55.56
+   },
+   "nether_dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.98
    },
    "nether_iolite": {
     "where": [
@@ -5209,6 +5269,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 13.82
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.41
    },
    "dreadstone": {
     "where": [
@@ -5656,6 +5722,12 @@
     ],
     "rate": 35.92
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 17.45
+   },
    "dreadstone": {
     "where": [
      "1.21.1 neoforge"
@@ -6065,6 +6137,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 87.25
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.67
    },
    "dusk_stone": {
     "where": [
@@ -6854,6 +6932,12 @@
     ],
     "rate": 22.12
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.64
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -7539,6 +7623,12 @@
     ],
     "rate": 3.67
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.55
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 fabric",
@@ -8017,6 +8107,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.06
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.82
    },
    "dreadstone": {
     "where": [
@@ -8585,6 +8681,12 @@
     ],
     "rate": 8.56
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.32
+   },
    "dreadstone": {
     "where": [
      "1.21.1 neoforge"
@@ -9030,6 +9132,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.48
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.05
    },
    "dreadstone": {
     "where": [
@@ -9489,6 +9597,12 @@
     ],
     "rate": 13.49
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 33.59
+   },
    "dreadstone": {
     "where": [
      "1.21.1 neoforge"
@@ -9662,6 +9776,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 24.86
+   },
+   "nether_dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.65
    },
    "nether_iolite": {
     "where": [
@@ -10083,6 +10203,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.48
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 54.46
    },
    "dreadstone": {
     "where": [
@@ -10666,6 +10792,12 @@
     ],
     "rate": 1.48
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 54.46
+   },
    "dreadstone": {
     "where": [
      "1.21.1 neoforge"
@@ -11227,6 +11359,12 @@
     ],
     "rate": 0.83
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 209.49
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -11613,6 +11751,12 @@
     ],
     "rate": 2.42
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 611.03
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -11998,6 +12142,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.38
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 349.16
    },
    "dusk_stone": {
     "where": [
@@ -12387,6 +12537,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.38
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.48
    },
    "dreadstone": {
     "where": [
@@ -13293,6 +13449,12 @@
     ],
     "rate": 119.33
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.2
+   },
    "dusk_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -13678,6 +13840,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 18.1
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.06
    },
    "dreadstone": {
     "where": [
@@ -14125,6 +14293,12 @@
     ],
     "rate": 18.1
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.06
+   },
    "dreadstone": {
     "where": [
      "1.21.1 neoforge"
@@ -14571,6 +14745,12 @@
     ],
     "rate": 18.1
    },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.06
+   },
    "dreadstone": {
     "where": [
      "1.21.1 neoforge"
@@ -14970,6 +15150,12 @@
     ],
     "rate": 4.61
    },
+   "nether_dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.89
+   },
    "nether_iolite": {
     "where": [
      "1.21.1 neoforge"
@@ -15162,6 +15348,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 50.39
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.01
    },
    "dreadstone": {
     "where": [
@@ -15725,6 +15917,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 4.62
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.84
    },
    "dreadstone": {
     "where": [

@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:basalt_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    }
+  ]
+}

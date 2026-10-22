@@ -259,6 +259,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_scguns_nether_sulfur_ore",
       "required": false
     },
@@ -642,6 +646,10 @@
     },
     {
       "id": "seamlessores:blackstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_rftoolsbase_dimensionalshard_nether_ore",
       "required": false
     },
     {
@@ -1921,6 +1929,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scorchia_scguns_nether_sulfur_ore",
       "required": false
     },
@@ -2106,6 +2118,10 @@
     },
     {
       "id": "seamlessores:create_scoria_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_rftoolsbase_dimensionalshard_nether_ore",
       "required": false
     },
     {
@@ -2392,6 +2408,10 @@
       "required": false
     },
     "seamlessores:diorite_redstone_ore",
+    {
+      "id": "seamlessores:diorite_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:diorite_scalinghealth_power_crystal_ore",
       "required": false
@@ -2840,6 +2860,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_gneiss_silentgems_silver_ore",
       "required": false
     },
@@ -3117,6 +3141,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_rftoolsbase_dimensionalshard_overworld_ore",
       "required": false
     },
     {
@@ -3467,6 +3495,10 @@
       "required": false
     },
     "seamlessores:granite_redstone_ore",
+    {
+      "id": "seamlessores:granite_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:granite_scalinghealth_heart_crystal_ore",
       "required": false
@@ -4524,6 +4556,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_scguns_nether_sulfur_ore",
       "required": false
     },
@@ -5400,6 +5436,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_bloodstone_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_scguns_nether_sulfur_ore",
       "required": false
     },
@@ -5569,6 +5609,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_rftoolsbase_dimensionalshard_overworld_ore",
       "required": false
     },
     {
@@ -5797,6 +5841,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_rftoolsbase_dimensionalshard_overworld_ore",
       "required": false
     },
     {

@@ -102,6 +102,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("sullysmod", "sullys_mod");
         MOD_CATEGORIES.put("superbwarfare", "superb_warfare");
         MOD_CATEGORIES.put("epicpaladins", "epic_paladins");
+        MOD_CATEGORIES.put("rftoolsbase", "rftools_base");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

@@ -58,6 +58,10 @@
       "id": "seamlessores:basalt_epicpaladins_moonlight_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -110,6 +114,10 @@
     },
     {
       "id": "seamlessores:blackstone_epicpaladins_moonlight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_rftoolsbase_dimensionalshard_nether_ore",
       "required": false
     },
     {
@@ -169,6 +177,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_nether_gold_ore",
       "required": false
     },
@@ -225,6 +237,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_nether_gold_ore",
       "required": false
     },
@@ -278,6 +294,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_epicpaladins_moonlight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_rftoolsbase_dimensionalshard_nether_ore",
       "required": false
     },
     {
@@ -362,6 +382,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_epicpaladins_moonlight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_rftoolsbase_dimensionalshard_nether_ore",
       "required": false
     },
     {

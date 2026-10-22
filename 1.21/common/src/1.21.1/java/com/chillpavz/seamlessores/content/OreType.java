@@ -766,6 +766,19 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(3, 7), null, false, Set.of())
             .withStrength(4.0F, 4.0F);
 
+    // --- RFTools Base (mod id rftoolsbase, MIT): dimensional shard, 3.0 hardness, 5.0 blast resistance, no XP ---
+    public static final OreType RFT_SHARD = ore(
+            "dimensional_shard", "dimensional_shard", null, "rftoolsbase",
+            of("rftoolsbase", "dimensionalshard_overworld"), null, null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 5.0F, 3.0F, 5.0F);
+    public static final OreType RFT_NETHER_SHARD = ore(
+            "nether_dimensional_shard", "dimensional_shard", null, "rftoolsbase",
+            null, null, of("rftoolsbase", "dimensionalshard_nether"),
+            NONE, null, false, Set.of())
+            .withKey("nether_dimensional_shard")
+            .withStrength(3.0F, 5.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -800,7 +813,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     HNS_CHLOROPHYTE, HNS_DREADSTONE,
                     AA_BLACK_QUARTZ,
                     SW_GALENA, SW_SCHEELITE, SW_SILVER,
-                    EP_ARCLIGHT, EP_BLOODSTONE, EP_CRYORIUM, EP_MOONLIGHT);
+                    EP_ARCLIGHT, EP_BLOODSTONE, EP_CRYORIUM, EP_MOONLIGHT,
+                    RFT_SHARD, RFT_NETHER_SHARD);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

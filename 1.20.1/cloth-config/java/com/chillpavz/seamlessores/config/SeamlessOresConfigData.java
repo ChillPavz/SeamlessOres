@@ -566,6 +566,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean epicPaladins = true;
 
+    // --- RFTools Base --------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("rftools_base")
+    @ConfigEntry.Gui.Tooltip
+    public boolean rftoolsBase = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -701,6 +707,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.sullysMod = sullysMod;
         values.superbWarfare = superbWarfare;
         values.epicPaladins = epicPaladins;
+        values.rftoolsBase = rftoolsBase;
 
         SeamlessOresConfig.apply(values);
     }
