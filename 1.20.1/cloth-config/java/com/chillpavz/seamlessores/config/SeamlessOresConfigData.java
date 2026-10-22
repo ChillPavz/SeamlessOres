@@ -572,6 +572,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean rftoolsBase = true;
 
+    // --- Expanded Delight ----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("expanded_delight")
+    @ConfigEntry.Gui.Tooltip
+    public boolean expandedDelight = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -708,6 +714,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.superbWarfare = superbWarfare;
         values.epicPaladins = epicPaladins;
         values.rftoolsBase = rftoolsBase;
+        values.expandedDelight = expandedDelight;
 
         SeamlessOresConfig.apply(values);
     }

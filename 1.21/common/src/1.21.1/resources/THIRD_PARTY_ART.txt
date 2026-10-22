@@ -38,6 +38,9 @@ Epic Paladins by epicpaladinssareus, VeroxUniverse, continued by Bandit-Bytes, L
   assets/seamlessores/textures/block/epicpaladins_bloodstone_overlay.png
   assets/seamlessores/textures/block/moonlight_overlay.png
 
+Expanded Delight by ianm1647, MIT:
+  assets/seamlessores/textures/block/expandeddelight_salt_overlay.png
+
 Extreme Reactors by ZeroNoRyouki, MIT:
   assets/seamlessores/textures/block/yellorite_overlay.png
 

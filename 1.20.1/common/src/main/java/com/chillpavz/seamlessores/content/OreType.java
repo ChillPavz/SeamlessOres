@@ -849,6 +849,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
             .withKey("nether_dimensional_shard")
             .withStrength(3.0F, 5.0F);
 
+    // --- Expanded Delight (mod id expandeddelight, MIT): salt, iron convention, 0 to 2 XP. Fabric at 1.20.1, NeoForge at 1.21.1 ---
+    public static final OreType ED_SALT = ore(
+            "expandeddelight_salt", "expandeddelight_salt", null, "expandeddelight",
+            of("expandeddelight", "salt_ore"), of("expandeddelight", "deepslate_salt_ore"), null,
+            UniformInt.of(0, 2), null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -888,7 +894,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     SM_JADE,
                     SW_GALENA, SW_SCHEELITE, SW_SILVER,
                     EP_ARCLIGHT, EP_BLOODSTONE, EP_CRYORIUM, EP_MOONLIGHT,
-                    RFT_SHARD, RFT_NETHER_SHARD);
+                    RFT_SHARD, RFT_NETHER_SHARD,
+                    ED_SALT);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:dripstone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_expandeddelight_salt_ore",
+      "required": false
+    }
+  ]
+}

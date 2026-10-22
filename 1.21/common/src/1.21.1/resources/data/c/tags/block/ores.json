@@ -1369,6 +1369,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_gold_ore",
       "required": false
     },
@@ -2007,6 +2011,10 @@
       "required": false
     },
     "seamlessores:dripstone_diamond_ore",
+    {
+      "id": "seamlessores:dripstone_expandeddelight_salt_ore",
+      "required": false
+    },
     "seamlessores:dripstone_gold_ore",
     {
       "id": "seamlessores:dripstone_immersiveengineering_aluminum_ore",
@@ -3100,6 +3108,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_hazennstuff_chlorophyte_ore",
       "required": false
     },
@@ -3733,6 +3745,10 @@
     },
     {
       "id": "seamlessores:quark_limestone_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_expandeddelight_salt_ore",
       "required": false
     },
     {
@@ -4581,6 +4597,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_expandeddelight_salt_ore",
       "required": false
     },
     {

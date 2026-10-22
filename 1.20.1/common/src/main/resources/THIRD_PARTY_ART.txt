@@ -47,6 +47,9 @@ Exp Ores by TriQue, MIT:
   assets/seamlessores/textures/block/experience_overlay.png
   assets/seamlessores/textures/block/nether_experience_overlay.png
 
+Expanded Delight by ianm1647, MIT:
+  assets/seamlessores/textures/block/expandeddelight_salt_overlay.png
+
 Extreme Reactors by ZeroNoRyouki, MIT:
   assets/seamlessores/textures/block/yellorite_overlay.png
 

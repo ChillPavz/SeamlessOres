@@ -186,7 +186,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "sullysmod": jar("sullysmod-3.3.1-beta-all.jar"),
             "superbwarfare": jar("superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar"),
             "epicpaladins": jar("epicpaladins-1.0.2-1.20.1-forge.jar"),
-            "rftoolsbase": jar("rftoolsbase-1.20-5.0.7.jar")}
+            "rftoolsbase": jar("rftoolsbase-1.20-5.0.7.jar"),
+            "expandeddelight": jar("expandeddelight-0.3.2.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -411,6 +412,8 @@ MODS = {
                        "licence": "LGPL-3.0", "author": "epicpaladinssareus, VeroxUniverse, continued by Bandit-Bytes"},
     "rftoolsbase": {"display": "RFTools Base", "category": "rftools_base",
                        "licence": "MIT", "author": "McJty"},
+    "expandeddelight": {"display": "Expanded Delight", "category": "expanded_delight",
+                       "licence": "MIT", "author": "ianm1647"},
 }
 
 ORE_DEFS = [
@@ -1027,6 +1030,10 @@ ORE_DEFS = [
     {"name": "nether_dimensional_shard", "key": "nether_dimensional_shard", "overlay": "dimensional_shard", "source": "dimensionalshard_nether", "base": "netherrack",
      "mod": "rftoolsbase",
      "tiers": {"nether": "dimensionalshard_nether"}},
+    # --- Expanded Delight (mod id expandeddelight, MIT): salt, iron convention, 0 to 2 XP. Fabric at 1.20.1, NeoForge at 1.21.1 ---
+    {"name": "expandeddelight_salt", "overlay": "expandeddelight_salt", "source": "salt_ore", "base": "stone",
+     "mod": "expandeddelight",
+     "tiers": {"stone": "salt_ore", "deepslate": "deepslate_salt_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1169,6 +1176,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "superbwarfare": ('forge',),
     "epicpaladins": ('forge',),
     "rftoolsbase": ('forge',),
+    "expandeddelight": ('fabric',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1315,6 +1323,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.expanded_delight": "Expanded Delight",
         f"text.autoconfig.{MOD_ID}.category.rftools_base": "RFTools Base",
         f"text.autoconfig.{MOD_ID}.category.epic_paladins": "Epic Paladins",
         f"text.autoconfig.{MOD_ID}.category.superb_warfare": "Superb Warfare",
@@ -1354,6 +1363,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.expandedDelight": "Expanded Delight: variants",
+        f"text.autoconfig.{MOD_ID}.option.expandedDelight.@Tooltip":
+            "Generate host-matched salt ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.rftoolsBase": "RFTools Base: variants",
         f"text.autoconfig.{MOD_ID}.option.rftoolsBase.@Tooltip":

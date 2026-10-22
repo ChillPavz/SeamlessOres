@@ -218,6 +218,13 @@
     "epicpaladins:deepslate_bloodstone_ore"
    ]
   },
+  "expandeddelight_salt": {
+   "mod": "expandeddelight",
+   "forms": [
+    "expandeddelight:salt_ore",
+    "expandeddelight:deepslate_salt_ore"
+   ]
+  },
   "experience": {
    "mod": "expores",
    "forms": [
@@ -1569,6 +1576,12 @@
     ],
     "rate": 10.81
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 28.96
+   },
    "experience": {
     "where": [
      "1.20.1 fabric"
@@ -1894,6 +1907,12 @@
      "1.20.1 fabric"
     ],
     "rate": 250.96
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 84.02
    },
    "experience": {
     "where": [
@@ -2287,6 +2306,12 @@
     ],
     "rate": 246.13
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 83.99
+   },
    "experience": {
     "where": [
      "1.20.1 fabric"
@@ -2660,6 +2685,12 @@
      "1.20.1 fabric"
     ],
     "rate": 2.27
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.54
    },
    "experience": {
     "where": [
@@ -3445,6 +3476,12 @@
     ],
     "rate": 12.57
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 43.54
+   },
    "experience": {
     "where": [
      "1.20.1 fabric"
@@ -4098,6 +4135,12 @@
      "1.20.1 forge"
     ],
     "rate": 16.07
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 43.54
    },
    "experience": {
     "where": [
@@ -4753,6 +4796,12 @@
     ],
     "rate": 16.69
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 57.85
+   },
    "experience": {
     "where": [
      "1.20.1 fabric"
@@ -5406,6 +5455,12 @@
      "1.20.1 forge"
     ],
     "rate": 10.89
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 37.74
    },
    "experience": {
     "where": [
@@ -6176,6 +6231,12 @@
     ],
     "rate": 14.43
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 36.52
+   },
    "experience": {
     "where": [
      "1.20.1 fabric"
@@ -6909,6 +6970,12 @@
      "1.20.1 forge"
     ],
     "rate": 11.88
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 41.17
    },
    "experience": {
     "where": [
@@ -9282,6 +9349,12 @@
     ],
     "rate": 5.58
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 28.72
+   },
    "experience": {
     "where": [
      "1.20.1 fabric"
@@ -9898,6 +9971,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.14
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.67
    },
    "experience": {
     "where": [
@@ -10540,6 +10619,12 @@
      "1.20.1 forge"
     ],
     "rate": 7.36
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 25.5
    },
    "experience": {
     "where": [
@@ -11194,6 +11279,12 @@
      "1.20.1 forge"
     ],
     "rate": 12.45
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 16.17
    },
    "experience": {
     "where": [
@@ -11861,6 +11952,12 @@
      "1.20.1 forge"
     ],
     "rate": 11.6
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 13.23
    },
    "experience": {
     "where": [
@@ -12550,6 +12647,12 @@
     ],
     "rate": 93.6
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 34.67
+   },
    "experience": {
     "where": [
      "1.20.1 fabric"
@@ -12929,6 +13032,12 @@
      "1.20.1 fabric"
     ],
     "rate": 93.6
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 34.67
    },
    "experience": {
     "where": [
@@ -14383,6 +14492,12 @@
      "1.20.1 forge"
     ],
     "rate": 6.7
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 42.59
    },
    "experience": {
     "where": [
@@ -16233,6 +16348,12 @@
     ],
     "rate": 23.82
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 28.79
+   },
    "experience": {
     "where": [
      "1.20.1 fabric"
@@ -16849,6 +16970,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.57
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.71
    },
    "experience": {
     "where": [

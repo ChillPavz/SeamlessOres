@@ -208,6 +208,13 @@
     "epicpaladins:deepslate_bloodstone_ore"
    ]
   },
+  "expandeddelight_salt": {
+   "mod": "expandeddelight",
+   "forms": [
+    "expandeddelight:salt_ore",
+    "expandeddelight:deepslate_salt_ore"
+   ]
+  },
   "fire_stone": {
    "mod": "cobblemon",
    "forms": [
@@ -2442,6 +2449,12 @@
     ],
     "rate": 21.67
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 63.81
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -2863,6 +2876,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 12.57
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.98
    },
    "fire_stone": {
     "where": [
@@ -3316,6 +3335,12 @@
     ],
     "rate": 16.07
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 62.63
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -3768,6 +3793,12 @@
     ],
     "rate": 16.69
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 65.08
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -4219,6 +4250,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 10.89
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.45
    },
    "fire_stone": {
     "where": [
@@ -4776,6 +4813,12 @@
     ],
     "rate": 14.43
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 56.25
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -5300,6 +5343,12 @@
     ],
     "rate": 11.88
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 46.31
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -5746,6 +5795,12 @@
     ],
     "rate": 14.98
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.68
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -6161,6 +6216,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.93
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.73
    },
    "fire_stone": {
     "where": [
@@ -6604,6 +6665,12 @@
     ],
     "rate": 44.11
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.92
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -6949,6 +7016,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 50.58
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.95
    },
    "fire_stone": {
     "where": [
@@ -7649,6 +7722,12 @@
     ],
     "rate": 0.1
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.93
+   },
    "fire_stone": {
     "where": [
      "1.21.1 fabric",
@@ -8139,6 +8218,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.14
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.88
    },
    "fire_stone": {
     "where": [
@@ -8711,6 +8796,12 @@
     ],
     "rate": 7.36
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.69
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -9162,6 +9253,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 12.45
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.52
    },
    "fire_stone": {
     "where": [
@@ -9626,6 +9723,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 11.6
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.21
    },
    "fire_stone": {
     "where": [
@@ -10236,6 +10339,12 @@
     ],
     "rate": 13.05
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 74.26
+   },
    "fire_stone": {
     "where": [
      "1.21.1 fabric",
@@ -10824,6 +10933,12 @@
     ],
     "rate": 13.05
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 74.26
+   },
    "fire_stone": {
     "where": [
      "1.21.1 fabric",
@@ -11383,6 +11498,12 @@
     ],
     "rate": 47.43
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 307.26
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -11775,6 +11896,12 @@
     ],
     "rate": 138.35
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 896.17
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -12166,6 +12293,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 79.05
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 512.1
    },
    "fire_stone": {
     "where": [
@@ -12569,6 +12702,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.22
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.49
    },
    "fire_stone": {
     "where": [
@@ -13473,6 +13612,12 @@
     ],
     "rate": 6.7
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 47.91
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -13870,6 +14015,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 15.56
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 60.65
    },
    "fire_stone": {
     "where": [
@@ -14323,6 +14474,12 @@
     ],
     "rate": 15.56
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 60.65
+   },
    "fire_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -14774,6 +14931,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 15.56
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 60.65
    },
    "fire_stone": {
     "where": [
@@ -15374,6 +15537,12 @@
     ],
     "rate": 23.82
    },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.39
+   },
    "fire_stone": {
     "where": [
      "1.21.1 fabric",
@@ -15949,6 +16118,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.57
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.43
    },
    "fire_stone": {
     "where": [

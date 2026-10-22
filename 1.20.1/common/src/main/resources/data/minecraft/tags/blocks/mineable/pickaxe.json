@@ -1192,6 +1192,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:cinnabar_iron_ore",
       "required": false
     },
@@ -1757,6 +1761,10 @@
     },
     {
       "id": "seamlessores:blockus_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_expandeddelight_salt_ore",
       "required": false
     },
     {
@@ -2345,6 +2353,10 @@
     },
     {
       "id": "seamlessores:create_limestone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_expandeddelight_salt_ore",
       "required": false
     },
     {
@@ -5216,6 +5228,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_expandeddelight_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:mythicupgrades_aquamarine_schist_iron_ore",
       "required": false
     },
@@ -5725,6 +5741,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_expandeddelight_salt_ore",
       "required": false
     },
     {
