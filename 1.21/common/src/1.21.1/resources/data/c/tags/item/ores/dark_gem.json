@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_evilcraft_dark_ore",
+      "required": false
+    }
+  ]
+}

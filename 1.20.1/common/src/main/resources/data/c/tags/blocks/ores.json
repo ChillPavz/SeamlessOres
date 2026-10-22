@@ -56,6 +56,10 @@
       "id": "seamlessores:andesite_epicpaladins_bloodstone_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     {
       "id": "seamlessores:andesite_iceandfire_silver_ore",
@@ -548,6 +552,10 @@
     },
     {
       "id": "seamlessores:blackstone_epicpaladins_moonlight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -1266,6 +1274,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -2021,6 +2033,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_expores_nether_experience_ore",
       "required": false
     },
@@ -2692,6 +2708,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_gold_ore",
       "required": false
     },
@@ -3241,6 +3261,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_epicpaladins_arclight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -4364,6 +4388,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_gold_ore",
       "required": false
     },
@@ -4473,6 +4501,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_epicpaladins_moonlight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -5096,6 +5128,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_lignite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_gold_ore",
       "required": false
     },
@@ -5229,6 +5265,10 @@
     "seamlessores:tuff_emerald_ore",
     {
       "id": "seamlessores:tuff_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
       "required": false
     },
     {

@@ -62,6 +62,13 @@
     "mythicupgrades:deepslate_citrine_ore"
    ]
   },
+  "dark": {
+   "mod": "evilcraft",
+   "forms": [
+    "evilcraft:dark_ore",
+    "evilcraft:dark_ore_deepslate"
+   ]
+  },
   "dense_fluorite": {
    "mod": "densemekanism",
    "forms": [
@@ -505,6 +512,12 @@
      "1.21.11 fabric"
     ],
     "rate": 2.17
+   },
+   "dark": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.49
    },
    "dense_osmium": {
     "where": [
@@ -2020,6 +2033,12 @@
      "1.21.11 neoforge"
     ],
     "rate": 3.72
+   },
+   "dark": {
+    "where": [
+     "1.21.11 neoforge"
+    ],
+    "rate": 2.55
    },
    "dense_fluorite": {
     "where": [

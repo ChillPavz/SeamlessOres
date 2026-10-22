@@ -304,6 +304,10 @@
       "id": "seamlessores:andesite_tfmg_lead_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",

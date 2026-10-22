@@ -30,7 +30,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**194 blocks** in the game's own rock, in the `seamlessores` namespace.
+**196 blocks** in the game's own rock, in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -199,6 +199,12 @@ touching ore of the same type across different host stones.
 |---|---|---|---|---|---|
 | Yellorite | `granite_bigreactors_yellorite_ore` | `diorite_bigreactors_yellorite_ore` | `andesite_bigreactors_yellorite_ore` | `tuff_bigreactors_yellorite_ore` | `dripstone_bigreactors_yellorite_ore` |
 
+**EvilCraft, Overworld, requires `evilcraft`**
+
+| | andesite | tuff |
+|---|---|---|
+| Dark | `andesite_evilcraft_dark_ore` | `tuff_evilcraft_dark_ore` |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
 Minecraft version:
@@ -233,7 +239,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**277 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**278 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric and NeoForge)
 
@@ -266,6 +272,7 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Ruby | `techreborn_ruby` | Tech Reborn `techreborn` | Deep Blackstone |
 | Sapphire | `techreborn_sapphire` | Tech Reborn `techreborn` | Deep Blackstone |
 | Silver | `techreborn_silver` | Tech Reborn `techreborn` | Deep Blackstone |
+| Dark | `dark` | EvilCraft `evilcraft` | Deep Blackstone |
 
 **Blockus, requires `blockus`** (Fabric, read from its 1.21.10 build)
 
@@ -441,7 +448,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 471 blocks takes **79 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 474 blocks takes **80 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -449,7 +456,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iridium` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `yellorite` `zinc`
+`adamantite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iridium` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `yellorite` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -529,6 +536,7 @@ is theirs and is used under the licence shown:
 | Things | glisco | MIT |
 | Tech Reborn | Team Reborn, modmuss50, drcrazy | MIT |
 | Extreme Reactors | ZeroNoRyouki | MIT |
+| EvilCraft | rubensworks | CC BY 4.0 (art) |
 <!-- END GENERATED credits -->
 
 Built on [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template) by jaredlll08.

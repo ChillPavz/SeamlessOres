@@ -368,6 +368,10 @@
       "id": "seamlessores:andesite_bigreactors_yellorite_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:tuff_coal_ore",
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
@@ -494,6 +498,10 @@
     },
     {
       "id": "seamlessores:tuff_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
       "required": false
     },
     "seamlessores:dripstone_coal_ore",
@@ -745,6 +753,10 @@
     },
     {
       "id": "seamlessores:blackstone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
       "required": false
     },
     {

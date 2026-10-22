@@ -760,6 +760,10 @@
       "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -1832,6 +1836,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -2216,6 +2224,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -2489,6 +2501,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -3085,6 +3101,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -3837,6 +3857,10 @@
     },
     {
       "id": "seamlessores:quark_shale_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_evilcraft_dark_ore",
       "required": false
     },
     {

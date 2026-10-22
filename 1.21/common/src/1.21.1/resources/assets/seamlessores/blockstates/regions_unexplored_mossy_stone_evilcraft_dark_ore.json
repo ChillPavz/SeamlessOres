@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_evilcraft_dark_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_evilcraft_dark_ore_mirrored"
+      }
+    ]
+  }
+}

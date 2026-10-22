@@ -113,6 +113,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -174,6 +178,10 @@
     },
     {
       "id": "seamlessores:blackstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
       "required": false
     },
     {

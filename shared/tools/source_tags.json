@@ -26,6 +26,7 @@
     "densemekanism:dense_deepslate_ores": "",
     "densemekanism:dense_stone_ores": "",
     "*:mineable/*": "any mod's own tools mine it at full speed, as they mine the ore",
+    "*:*_ores": "a mod's own grouping of its ores (the skip list, checked first, keeps out placement lists)",
     "forge:*_ore": "a mod's own grouping of its ore items (Ores Above Diamonds' recipes read it)",
     "oresabovediamonds:*_ore": "",
     "scguns:*_ore": "",

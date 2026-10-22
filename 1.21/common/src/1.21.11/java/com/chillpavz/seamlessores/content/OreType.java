@@ -459,6 +459,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
      */
     public static final OreType SG_OPAL = silentGem("opal", GEM_XP);
 
+    // --- EvilCraft (mod id evilcraft; its images are CC BY 4.0): dark ore glows when touched and drops 1 to 5 XP, as redstone ore does; 3.0 ---
+    public static final OreType EC_DARK = ore(
+            "dark", "dark", null, "evilcraft",
+            of("evilcraft", "dark_ore"), of("evilcraft", "dark_ore_deepslate"), null,
+            UniformInt.of(1, 5), null, true, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -477,7 +483,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     ENERGIZED_TIN, GLEAMING, BORT, THORIUM,
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
                     SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE,
-                    SG_OPAL);
+                    SG_OPAL,
+                    EC_DARK);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

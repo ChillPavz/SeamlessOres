@@ -304,6 +304,10 @@
       "id": "seamlessores:andesite_tfmg_lead_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:tuff_coal_ore",
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
@@ -414,6 +418,10 @@
     },
     {
       "id": "seamlessores:tuff_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
       "required": false
     },
     "seamlessores:dripstone_coal_ore",
@@ -601,6 +609,10 @@
     },
     {
       "id": "seamlessores:blackstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
       "required": false
     },
     {

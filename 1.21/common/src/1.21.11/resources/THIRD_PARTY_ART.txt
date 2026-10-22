@@ -24,6 +24,9 @@ Dense Mekanism, MIT:
 Energized Power by JDDev0, MIT:
   assets/seamlessores/textures/block/energized_tin_overlay.png
 
+EvilCraft by rubensworks, CC BY 4.0 (art):
+  assets/seamlessores/textures/block/dark_overlay.png
+
 Mythic Metals by Noaaan, MIT:
   assets/seamlessores/textures/block/adamantite_overlay.png
   assets/seamlessores/textures/block/aquarium_overlay.png

@@ -688,6 +688,10 @@
       "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:tuff_coal_ore",
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
@@ -938,6 +942,10 @@
     },
     {
       "id": "seamlessores:tuff_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
       "required": false
     },
     "seamlessores:dripstone_coal_ore",
@@ -1453,6 +1461,10 @@
     },
     {
       "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -2196,6 +2208,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -2528,6 +2544,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -2817,6 +2837,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -3504,6 +3528,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_iron_ore",
       "required": false
     },
@@ -3625,6 +3653,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -4452,6 +4484,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
       "required": false
     },
@@ -4529,6 +4565,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_epicpaladins_arclight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -4968,6 +5008,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_coal_ore",
       "required": false
     },
@@ -5121,6 +5165,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -5356,6 +5404,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_iron_ore",
       "required": false
     },
@@ -5493,6 +5545,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_rftoolsbase_dimensionalshard_overworld_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_evilcraft_dark_ore",
       "required": false
     },
     {

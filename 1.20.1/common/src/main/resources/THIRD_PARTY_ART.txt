@@ -43,6 +43,9 @@ Epic Paladins by epicpaladinssareus, VeroxUniverse, continued by Bandit-Bytes, L
   assets/seamlessores/textures/block/epicpaladins_bloodstone_overlay.png
   assets/seamlessores/textures/block/moonlight_overlay.png
 
+EvilCraft by rubensworks, CC BY 4.0 (art):
+  assets/seamlessores/textures/block/dark_overlay.png
+
 Exp Ores by TriQue, MIT:
   assets/seamlessores/textures/block/experience_overlay.png
   assets/seamlessores/textures/block/nether_experience_overlay.png

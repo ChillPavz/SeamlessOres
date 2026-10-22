@@ -16,6 +16,10 @@
     },
     "seamlessores:andesite_diamond_ore",
     "seamlessores:andesite_emerald_ore",
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_lapis_ore",
@@ -216,6 +220,10 @@
     },
     {
       "id": "seamlessores:blackstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -1231,6 +1239,10 @@
     },
     "seamlessores:tuff_diamond_ore",
     "seamlessores:tuff_emerald_ore",
+    {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:tuff_gold_ore",
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_lapis_ore",

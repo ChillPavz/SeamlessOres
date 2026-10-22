@@ -249,6 +249,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -398,6 +402,10 @@
     },
     {
       "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -585,6 +593,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_hazennstuff_dreadstone_ore",
       "required": false
     },
@@ -666,6 +678,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_epicpaladins_arclight_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
       "required": false
     },
     {

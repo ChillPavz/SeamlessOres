@@ -135,6 +135,13 @@
     "epicpaladins:deepslate_cryorium_ore"
    ]
   },
+  "dark": {
+   "mod": "evilcraft",
+   "forms": [
+    "evilcraft:dark_ore",
+    "evilcraft:dark_ore_deepslate"
+   ]
+  },
   "dawn_stone": {
    "mod": "cobblemon",
    "forms": [
@@ -1304,6 +1311,12 @@
      "1.20.1 fabric"
     ],
     "rate": 2.17
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.49
    },
    "dawn_stone": {
     "where": [
@@ -3031,6 +3044,12 @@
     ],
     "rate": 21.67
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.07
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 forge"
@@ -3431,6 +3450,12 @@
      "1.20.1 forge"
     ],
     "rate": 12.57
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.09
    },
    "dawn_stone": {
     "where": [
@@ -4098,6 +4123,12 @@
     ],
     "rate": 16.07
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 41.02
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 fabric",
@@ -4764,6 +4795,12 @@
     ],
     "rate": 16.69
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 42.63
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 fabric",
@@ -5429,6 +5466,12 @@
      "1.20.1 forge"
     ],
     "rate": 10.89
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.81
    },
    "dawn_stone": {
     "where": [
@@ -6211,6 +6254,12 @@
     ],
     "rate": 14.43
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.84
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 fabric",
@@ -6957,6 +7006,12 @@
     ],
     "rate": 11.88
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.34
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 fabric",
@@ -7590,6 +7645,12 @@
     ],
     "rate": 74.91
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 158.06
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 forge"
@@ -7963,6 +8024,12 @@
      "1.20.1 forge"
     ],
     "rate": 5.24
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.63
    },
    "dawn_stone": {
     "where": [
@@ -8382,6 +8449,12 @@
     ],
     "rate": 0.51
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.95
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 forge"
@@ -8557,6 +8630,12 @@
      "1.20.1 forge"
     ],
     "rate": 95.42
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.94
    },
    "dawn_stone": {
     "where": [
@@ -8751,6 +8830,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.26
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.5
    },
    "dawn_stone": {
     "where": [
@@ -9041,6 +9126,12 @@
      "1.20.1 forge"
     ],
     "rate": 143.4
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 597.07
    },
    "dawn_stone": {
     "where": [
@@ -9388,6 +9479,12 @@
      "1.20.1 forge"
     ],
     "rate": 5.58
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.5
    },
    "dawn_stone": {
     "where": [
@@ -10011,6 +10108,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.14
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.55
    },
    "dawn_stone": {
     "where": [
@@ -10665,6 +10768,12 @@
      "1.20.1 forge"
     ],
     "rate": 7.36
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.79
    },
    "dawn_stone": {
     "where": [
@@ -11331,6 +11440,12 @@
      "1.20.1 forge"
     ],
     "rate": 12.45
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.78
    },
    "dawn_stone": {
     "where": [
@@ -12010,6 +12125,12 @@
      "1.20.1 forge"
     ],
     "rate": 11.6
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.61
    },
    "dawn_stone": {
     "where": [
@@ -13552,6 +13673,12 @@
     ],
     "rate": 47.43
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 187.3
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 forge"
@@ -13890,6 +14017,12 @@
     ],
     "rate": 138.35
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 546.28
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 forge"
@@ -14227,6 +14360,12 @@
      "1.20.1 forge"
     ],
     "rate": 47.43
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 187.3
    },
    "dawn_stone": {
     "where": [
@@ -14586,6 +14725,12 @@
      "1.20.1 forge"
     ],
     "rate": 6.7
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.88
    },
    "dawn_stone": {
     "where": [
@@ -15126,6 +15271,12 @@
     ],
     "rate": 15.56
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.73
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 forge"
@@ -15530,6 +15681,12 @@
     ],
     "rate": 15.56
    },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.73
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 forge"
@@ -15933,6 +16090,12 @@
      "1.20.1 forge"
     ],
     "rate": 15.56
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.73
    },
    "dawn_stone": {
     "where": [
@@ -16460,6 +16623,12 @@
      "1.20.1 forge"
     ],
     "rate": 23.82
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 53.99
    },
    "dawn_stone": {
     "where": [
@@ -17082,6 +17251,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.57
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.89
    },
    "dawn_stone": {
     "where": [

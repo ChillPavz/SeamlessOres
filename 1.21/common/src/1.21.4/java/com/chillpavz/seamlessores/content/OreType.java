@@ -487,6 +487,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
     public static final OreType BENITOITE =
             netherOnlyModded("benitoite", "bigreactors", "benitoite_ore", UniformInt.of(3, 5));
 
+    // --- EvilCraft (mod id evilcraft; its images are CC BY 4.0): dark ore glows when touched and drops 1 to 5 XP, as redstone ore does; 3.0 ---
+    public static final OreType EC_DARK = ore(
+            "dark", "dark", null, "evilcraft",
+            of("evilcraft", "dark_ore"), of("evilcraft", "dark_ore_deepslate"), null,
+            UniformInt.of(1, 5), null, true, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -506,7 +512,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     SG_N_ALEXANDRITE, SG_N_BLACK_DIAMOND, SG_N_CARNELIAN, SG_N_CITRINE,
                     SG_N_IOLITE, SG_N_MOLDAVITE, SG_N_PEARL, SG_N_TANZANITE,
                     TR_BAUXITE, TR_GALENA, TR_IRIDIUM, TR_LEAD, TR_RUBY, TR_SAPPHIRE, TR_SILVER, TR_TIN,
-                    TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, YELLORITE, BENITOITE);
+                    TR_CINNABAR, TR_PYRITE, TR_SPHALERITE, YELLORITE, BENITOITE,
+                    EC_DARK);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

@@ -133,6 +133,13 @@
     "epicpaladins:deepslate_cryorium_ore"
    ]
   },
+  "dark": {
+   "mod": "evilcraft",
+   "forms": [
+    "evilcraft:dark_ore",
+    "evilcraft:dark_ore_deepslate"
+   ]
+  },
   "dawn_stone": {
    "mod": "cobblemon",
    "forms": [
@@ -1270,6 +1277,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 4.95
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.49
    },
    "dawn_stone": {
     "where": [
@@ -2414,6 +2427,12 @@
     ],
     "rate": 21.67
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.07
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -2841,6 +2860,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 12.57
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.09
    },
    "dawn_stone": {
     "where": [
@@ -3306,6 +3331,12 @@
     ],
     "rate": 16.07
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.02
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -3770,6 +3801,12 @@
     ],
     "rate": 16.69
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.63
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -4233,6 +4270,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 10.89
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.81
    },
    "dawn_stone": {
     "where": [
@@ -4802,6 +4845,12 @@
     ],
     "rate": 14.43
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.84
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -5338,6 +5387,12 @@
     ],
     "rate": 11.88
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.34
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -5802,6 +5857,12 @@
     ],
     "rate": 14.98
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.61
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -6235,6 +6296,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.93
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.64
    },
    "dawn_stone": {
     "where": [
@@ -6714,6 +6781,12 @@
     ],
     "rate": 2.13
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.95
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -7072,6 +7145,12 @@
     ],
     "rate": 9.93
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.27
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -7397,6 +7476,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 143.4
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 597.07
    },
    "dawn_stone": {
     "where": [
@@ -7779,6 +7864,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.1
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.58
    },
    "dawn_stone": {
     "where": [
@@ -8264,6 +8355,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.14
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.55
    },
    "dawn_stone": {
     "where": [
@@ -8851,6 +8948,12 @@
     ],
     "rate": 7.36
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.79
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -9314,6 +9417,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 12.45
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.78
    },
    "dawn_stone": {
     "where": [
@@ -9790,6 +9899,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 11.6
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.61
    },
    "dawn_stone": {
     "where": [
@@ -10409,6 +10524,12 @@
     ],
     "rate": 13.05
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.73
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -11009,6 +11130,12 @@
     ],
     "rate": 13.05
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.81
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -11589,6 +11716,12 @@
     ],
     "rate": 47.43
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 187.3
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -11993,6 +12126,12 @@
     ],
     "rate": 138.35
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 546.28
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -12396,6 +12535,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 79.05
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 312.16
    },
    "dawn_stone": {
     "where": [
@@ -12802,6 +12947,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.22
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.45
    },
    "dawn_stone": {
     "where": [
@@ -13462,6 +13613,12 @@
     ],
     "rate": 2.48
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.5
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -13744,6 +13901,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 6.7
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.88
    },
    "dawn_stone": {
     "where": [
@@ -14142,6 +14305,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 15.56
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.73
    },
    "dawn_stone": {
     "where": [
@@ -14607,6 +14776,12 @@
     ],
     "rate": 15.56
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.73
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -15070,6 +15245,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 15.56
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.73
    },
    "dawn_stone": {
     "where": [
@@ -15686,6 +15867,12 @@
     ],
     "rate": 23.82
    },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 53.99
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -16266,6 +16453,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.57
+   },
+   "dark": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.89
    },
    "dawn_stone": {
     "where": [

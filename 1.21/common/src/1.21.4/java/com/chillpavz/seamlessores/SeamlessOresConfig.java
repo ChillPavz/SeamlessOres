@@ -151,6 +151,9 @@ public final class SeamlessOresConfig {
     /** Whether Create: New Age variants generate. Pure restyle. */
     public static boolean createNewAge = true;
 
+    /** Whether EvilCraft variants generate. Pure restyle. */
+    public static boolean evilCraft = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -182,6 +185,7 @@ public final class SeamlessOresConfig {
             case "things" -> things;
             case "silentgear" -> silentGear;
             case "create_new_age" -> createNewAge;
+            case "evilcraft" -> evilCraft;
             default -> true;
         };
     }
@@ -365,6 +369,7 @@ public final class SeamlessOresConfig {
         public boolean things = true;
         public boolean silentGear = true;
         public boolean createNewAge = true;
+        public boolean evilCraft = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -416,6 +421,7 @@ public final class SeamlessOresConfig {
         things = values.things;
         silentGear = values.silentGear;
         createNewAge = values.createNewAge;
+        evilCraft = values.evilCraft;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

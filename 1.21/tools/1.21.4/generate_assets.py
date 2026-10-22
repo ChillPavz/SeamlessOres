@@ -116,7 +116,8 @@ MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "densemekanism": DENSEMEKANISM_JAR,
             "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
             "silentgems": SILENT_GEMS_JAR,
-            "mythicmetals": MYTHIC_METALS_JAR}
+            "mythicmetals": MYTHIC_METALS_JAR,
+            "evilcraft": jar("evilcraft-1.21.4-neoforge-1.2.62-649.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -246,6 +247,8 @@ MODS = {
                        "licence": "MIT",          "author": "Team Reborn, modmuss50, drcrazy"},
     "bigreactors":    {"display": "Extreme Reactors",  "category": "extreme_reactors",
                        "licence": "MIT",          "author": "ZeroNoRyouki"},
+    "evilcraft": {"display": "EvilCraft", "category": "evilcraft",
+                       "licence": "CC BY 4.0 (art)", "author": "rubensworks"},
 }
 
 ORE_DEFS = [
@@ -587,6 +590,10 @@ ORE_DEFS = [
     {"name": "benitoite", "overlay": "benitoite", "source": "benitoite_ore", "base": "netherrack",
      "mod": "bigreactors",
      "tiers": {"nether": "benitoite_ore"}},
+    # --- EvilCraft (mod id evilcraft; its images are CC BY 4.0): dark ore glows when touched and drops 1 to 5 XP, as redstone ore does; 3.0 ---
+    {"name": "dark", "overlay": "dark", "source": "dark_ore", "base": "stone",
+     "mod": "evilcraft",
+     "tiers": {"stone": "dark_ore", "deepslate": "dark_ore_deepslate"}},
 ]
 
 # This generator writes ONE band of the 1.21 folder: everything it emits goes to
@@ -673,6 +680,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "promenade": ('fabric',),
     "wilderwild": ('fabric',),
     "biomeswevegone": ("fabric", "neoforge"),   # Oh The Biomes We've Gone: Fabric and NeoForge
+    "evilcraft": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -847,6 +855,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
         f"text.autoconfig.{MOD_ID}.category.nether": "Nether",
         f"text.autoconfig.{MOD_ID}.category.create": "Create",
@@ -864,6 +873,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
+
+        f"text.autoconfig.{MOD_ID}.option.evilCraft": "EvilCraft: variants",
+        f"text.autoconfig.{MOD_ID}.option.evilCraft.@Tooltip":
+            "Generate host-matched dark ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.granite": "Granite variants",
         f"text.autoconfig.{MOD_ID}.option.granite.@Tooltip":
