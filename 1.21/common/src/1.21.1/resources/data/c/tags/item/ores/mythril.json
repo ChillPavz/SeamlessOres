@@ -9,23 +9,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_mythicmetals_mythril_ore",
       "required": false
     },
     {
@@ -37,19 +21,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_schist_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_mythril_ore",
       "required": false
     },
     {

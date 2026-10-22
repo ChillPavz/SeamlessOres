@@ -35,7 +35,10 @@ def write(hosts, variants, retired_path, resources_dir):
         if name in renamed or name in retired:
             raise SystemExit(f"{pair} would take {MOD_ID}:{name}, which an earlier release used for another"
                              f" block: keep that pair's shipped id in {hosts.renamed_path} (\"kept\")")
-    missing = sorted(new for new in renamed.values() if new not in seen and new not in retired)
+    # A renamed id whose new block is gone is covered when its OLD id is retired: the old id is then a
+    # placeholder that turns into its stone (a pair the geology or lore rule cut after the rename).
+    missing = sorted(old for old, new in renamed.items() if new not in seen and new not in retired
+                     and old not in retired)
     if missing:
         print(f"  renamed ids whose new block this band does not build (left unconverted): {missing}")
     write_json(os.path.join(resources_dir, MOD_ID, "ids.json"), {"ids": ids, "renamed": renamed})

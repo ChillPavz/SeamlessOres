@@ -221,19 +221,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_fluorite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_osmium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_uranium_ore",
       "required": false
     },
     {

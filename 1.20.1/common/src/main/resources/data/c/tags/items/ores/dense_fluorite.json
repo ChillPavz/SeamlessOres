@@ -37,10 +37,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_fluorite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_densemekanism_dense_fluorite_ore",
       "required": false
     },

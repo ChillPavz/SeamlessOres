@@ -19,10 +19,6 @@
     {
       "id": "seamlessores:calcite_emerald_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_emerald_ore",
-      "required": false
     }
   ]
 }

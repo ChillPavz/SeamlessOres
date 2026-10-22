@@ -1,18 +1,6 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_malum_brilliant_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_malum_brilliant_ore",
       "required": false
     },
@@ -21,31 +9,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_malum_brilliant_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_malum_brilliant_ore",
       "required": false
     },
     {
@@ -53,43 +17,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_malum_brilliant_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_veridium_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_malum_brilliant_ore",
       "required": false
     },
     {
@@ -97,23 +25,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_slate_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_gneiss_malum_brilliant_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:quark_limestone_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:quark_jasper_malum_brilliant_ore",
       "required": false
     },
     {
@@ -121,19 +33,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_malum_brilliant_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_malum_brilliant_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_malum_brilliant_ore",
       "required": false
     },
     {

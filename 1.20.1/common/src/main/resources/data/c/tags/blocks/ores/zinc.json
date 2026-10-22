@@ -37,10 +37,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_create_zinc_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_asurine_create_zinc_ore",
       "required": false
     },
@@ -113,19 +109,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_create_zinc_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_create_zinc_ore",
       "required": false
     },
     {
       "id": "seamlessores:promenade_asphalt_create_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_create_zinc_ore",
       "required": false
     },
     {

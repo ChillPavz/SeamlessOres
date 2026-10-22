@@ -9,10 +9,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mythicupgrades_topaz_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_rhyolite_mythicupgrades_topaz_ore",
       "required": false
     },
@@ -26,22 +22,6 @@
     },
     {
       "id": "seamlessores:embellishcraft_gneiss_silentgems_topaz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_topaz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_topaz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicupgrades_topaz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_silentgems_topaz_ore",
       "required": false
     }
   ]

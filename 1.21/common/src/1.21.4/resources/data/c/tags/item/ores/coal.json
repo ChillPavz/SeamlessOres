@@ -16,10 +16,6 @@
     {
       "id": "seamlessores:promenade_asphalt_coal_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_coal_ore",
-      "required": false
     }
   ]
 }

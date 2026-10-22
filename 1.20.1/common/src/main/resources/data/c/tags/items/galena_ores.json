@@ -37,10 +37,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_techreborn_galena_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_techreborn_galena_ore",
       "required": false
     },
@@ -70,10 +66,6 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_techreborn_galena_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_galena_ore",
       "required": false
     },
     {

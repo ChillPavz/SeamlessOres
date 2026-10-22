@@ -49,10 +49,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_ruby_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:mythicupgrades_sapphire_schist_mythicupgrades_ruby_ore",
       "required": false
     }

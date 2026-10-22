@@ -61,10 +61,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_bigreactors_yellorite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_bigreactors_yellorite_ore",
       "required": false
     },
@@ -74,10 +70,6 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_bigreactors_yellorite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_bigreactors_yellorite_ore",
       "required": false
     },
     {

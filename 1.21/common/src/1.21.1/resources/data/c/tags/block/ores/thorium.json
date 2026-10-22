@@ -19,10 +19,6 @@
     {
       "id": "seamlessores:regions_unexplored_mossy_stone_create_new_age_thorium_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_create_new_age_thorium_ore",
-      "required": false
     }
   ]
 }

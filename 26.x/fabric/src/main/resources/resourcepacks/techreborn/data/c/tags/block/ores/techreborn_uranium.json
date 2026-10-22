@@ -29,10 +29,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_techreborn_uranium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_techreborn_uranium_ore",
       "required": false
     },
@@ -46,10 +42,6 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_techreborn_uranium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_uranium_ore",
       "required": false
     }
   ]

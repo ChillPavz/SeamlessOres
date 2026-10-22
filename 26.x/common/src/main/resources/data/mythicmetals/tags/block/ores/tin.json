@@ -23,10 +23,6 @@
     {
       "id": "seamlessores:regions_unexplored_chalk_mythicmetals_tin_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
-      "required": false
     }
   ]
 }

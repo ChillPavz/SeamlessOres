@@ -1,15 +1,7 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:diorite_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_things_gleaming_ore",
       "required": false
     },
     {
@@ -17,51 +9,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_schist_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:regions_unexplored_argillite_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_things_gleaming_ore",
       "required": false
     }
   ]

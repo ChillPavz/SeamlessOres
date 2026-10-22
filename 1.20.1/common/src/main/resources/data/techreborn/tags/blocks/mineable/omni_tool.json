@@ -213,15 +213,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_techreborn_galena_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_techreborn_iridium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_techreborn_lead_ore",
       "required": false
     },
     {
@@ -441,31 +433,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_techreborn_galena_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_techreborn_iridium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_techreborn_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_sapphire_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_techreborn_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
       "required": false
     },
     {

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/promenade_blunite_coal_ore"
+      "model": "seamlessores:block/retired/promenade_blunite_coal_ore"
     }
   }
 }

@@ -19,10 +19,6 @@
     {
       "id": "seamlessores:dripstone_powah_uraninite_dense_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_dense_ore",
-      "required": false
     }
   ]
 }

@@ -1,18 +1,7 @@
 {
   "variants": {
-    "": [
-      {
-        "model": "seamlessores:block/create_asurine_redstone_ore_0"
-      },
-      {
-        "model": "seamlessores:block/create_asurine_redstone_ore_1"
-      },
-      {
-        "model": "seamlessores:block/create_asurine_redstone_ore_2"
-      },
-      {
-        "model": "seamlessores:block/create_asurine_redstone_ore_3"
-      }
-    ]
+    "": {
+      "model": "seamlessores:block/retired/create_asurine_redstone_ore"
+    }
   }
 }

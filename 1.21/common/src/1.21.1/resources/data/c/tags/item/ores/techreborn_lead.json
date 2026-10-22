@@ -37,10 +37,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_techreborn_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_rhyolite_techreborn_lead_ore",
       "required": false
     },
@@ -58,10 +54,6 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_techreborn_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_lead_ore",
       "required": false
     }
   ]

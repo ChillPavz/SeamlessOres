@@ -25,10 +25,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_mythicmetals_morkite_ore",
       "required": false
     },
@@ -38,10 +34,6 @@
     },
     {
       "id": "seamlessores:tuff_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_mythicmetals_runite_ore",
       "required": false
     },
     {
@@ -169,10 +161,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_immersiveengineering_aluminum_ore",
       "required": false
     },
@@ -265,35 +253,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
@@ -325,15 +285,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_iceandfire_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_expores_experience_ore",
       "required": false
     },
     {
@@ -377,14 +329,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_oreganized_lead_ore",
       "required": false
     },
@@ -393,15 +337,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_malum_soulstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_malum_quartz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_malum_brilliant_ore",
       "required": false
     },
     {
@@ -429,26 +365,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_lapis_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_diamond_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_create_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicupgrades_aquamarine_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_mythicupgrades_citrine_ore",
       "required": false
     },
@@ -457,71 +373,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mythicupgrades_topaz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_powah_uraninite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_powah_uraninite_poor_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_powah_uraninite_dense_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_expores_experience_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_techreborn_bauxite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_techreborn_galena_ore",
       "required": false
     },
     {
@@ -529,15 +381,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_techreborn_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_techreborn_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_modern_industrialization_antimony_ore",
       "required": false
     },
     {
@@ -549,39 +393,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_modern_industrialization_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_modern_industrialization_lignite_coal_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_modern_industrialization_monazite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_modern_industrialization_nickel_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_modern_industrialization_salt_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_modern_industrialization_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_modern_industrialization_tungsten_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_modern_industrialization_uranium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_oreganized_lead_ore",
       "required": false
     },
     {
@@ -589,15 +401,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_malum_soulstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_malum_quartz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_malum_brilliant_ore",
       "required": false
     },
     {
@@ -629,19 +433,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_create_zinc_ore",
       "required": false
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -689,10 +485,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_oreganized_silver_ore",
       "required": false
     },
@@ -725,23 +517,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_lapis_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_diamond_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_create_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_aquamarine_ore",
       "required": false
     },
     {
@@ -753,43 +529,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_topaz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_alexandrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_heliodor_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_iolite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_turquoise_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_topaz_ore",
       "required": false
     },
     {
@@ -797,35 +537,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_fluorite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_osmium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_uranium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_poor_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_dense_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_tfmg_lithium_ore",
       "required": false
     },
     {
@@ -833,19 +545,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgear_bort_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:forbidden_arcanus_darkstone_occultism_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_bigreactors_yellorite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -854,10 +554,6 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_malum_quartz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_malum_brilliant_ore",
       "required": false
     },
     {

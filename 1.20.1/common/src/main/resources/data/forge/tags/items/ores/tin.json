@@ -21,10 +21,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:spawn_reefstone_mythicmetals_tin_ore",
       "required": false
     },
@@ -70,10 +66,6 @@
     },
     {
       "id": "seamlessores:meadow_limestone_energizedpower_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
       "required": false
     },
     {

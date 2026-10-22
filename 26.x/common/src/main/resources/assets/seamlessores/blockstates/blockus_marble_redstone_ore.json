@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/blockus_marble_redstone_ore"
+      "model": "seamlessores:block/retired/blockus_marble_redstone_ore"
     }
   }
 }

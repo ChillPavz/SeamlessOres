@@ -73,10 +73,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_oreganized_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_oreganized_silver_ore",
       "required": false
     },
@@ -210,10 +206,6 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
       "required": false
     },
     {

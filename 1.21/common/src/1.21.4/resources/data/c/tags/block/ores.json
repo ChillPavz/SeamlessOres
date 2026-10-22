@@ -24,19 +24,11 @@
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_lapis_ore",
     {
-      "id": "seamlessores:andesite_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:andesite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
       "id": "seamlessores:andesite_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mythicmetals_carmot_ore",
       "required": false
     },
     {
@@ -48,27 +40,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:andesite_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mythicmetals_runite_ore",
       "required": false
     },
     {
@@ -76,19 +48,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mythicmetals_starrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:andesite_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -142,10 +102,6 @@
     },
     {
       "id": "seamlessores:andesite_tfmg_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_things_gleaming_ore",
       "required": false
     },
     {
@@ -219,10 +175,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:biomeswevegone_dacite_mythicmetals_starrite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:biomeswevegone_dacite_mythicmetals_tin_ore",
       "required": false
     },
@@ -251,14 +203,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:biomeswevegone_red_rock_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_red_rock_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:biomeswevegone_red_rock_tfmg_lead_ore",
       "required": false
     },
@@ -284,18 +228,6 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_white_dacite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_white_dacite_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_white_dacite_mythicmetals_starrite_ore",
       "required": false
     },
     {
@@ -331,15 +263,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_carmot_ore",
       "required": false
     },
     {
@@ -355,10 +279,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_mythicmetals_nether_banglum_ore",
       "required": false
     },
@@ -371,31 +291,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -485,10 +385,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_bluestone_copper_ore",
       "required": false
     },
@@ -505,10 +401,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_bluestone_mythicmetals_morkite_ore",
       "required": false
     },
@@ -517,27 +409,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_bluestone_mythicmetals_runite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_bluestone_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -558,10 +434,6 @@
     },
     {
       "id": "seamlessores:blockus_bluestone_techreborn_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_things_gleaming_ore",
       "required": false
     },
     {
@@ -601,27 +473,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_mythicmetals_kyber_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_mythicmetals_manganese_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
@@ -629,19 +481,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_mythicmetals_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_mythicmetals_starrite_ore",
       "required": false
     },
     {
@@ -649,19 +489,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_redstone_ore",
       "required": false
     },
     {
@@ -682,10 +510,6 @@
     },
     {
       "id": "seamlessores:blockus_limestone_techreborn_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_things_gleaming_ore",
       "required": false
     },
     {
@@ -717,43 +541,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_mythicmetals_kyber_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
@@ -769,19 +561,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_redstone_ore",
       "required": false
     },
     {
@@ -821,14 +601,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_create_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_diamond_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_gold_ore",
       "required": false
     },
@@ -837,51 +609,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_lapis_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicupgrades_aquamarine_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -889,19 +617,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mythicupgrades_topaz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_techreborn_bauxite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_techreborn_galena_ore",
       "required": false
     },
     {
@@ -909,15 +625,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_techreborn_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_techreborn_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_things_gleaming_ore",
       "required": false
     },
     {
@@ -945,22 +653,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:calcite_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:calcite_mythicmetals_kyber_ore",
       "required": false
     },
@@ -969,47 +661,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:calcite_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:calcite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:calcite_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:calcite_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_redstone_ore",
       "required": false
     },
     {
@@ -1037,19 +693,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_asurine_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mythicmetals_carmot_ore",
       "required": false
     },
     {
@@ -1065,38 +709,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_crimsite_iron_ore",
       "required": false
     },
@@ -1105,47 +717,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_crimsite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_mythicmetals_kyber_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_crimsite_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
@@ -1154,10 +730,6 @@
     },
     {
       "id": "seamlessores:create_crimsite_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_things_gleaming_ore",
       "required": false
     },
     {
@@ -1189,10 +761,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_mythicmetals_aquarium_ore",
       "required": false
     },
@@ -1201,39 +769,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_mythicmetals_kyber_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_mythicmetals_runite_ore",
       "required": false
     },
     {
@@ -1245,19 +785,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_redstone_ore",
       "required": false
     },
     {
@@ -1281,71 +809,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_ochrum_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_kyber_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_things_gleaming_ore",
       "required": false
     },
     {
@@ -1409,19 +873,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_mythicmetals_aquarium_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_scoria_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_mythicmetals_carmot_ore",
       "required": false
     },
     {
@@ -1441,10 +897,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_mythicmetals_nether_banglum_ore",
       "required": false
     },
@@ -1457,18 +909,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_mythicmetals_silver_ore",
       "required": false
     },
@@ -1477,15 +917,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -1549,39 +981,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_veridium_copper_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_kyber_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_mythril_ore",
       "required": false
     },
     {
@@ -1590,30 +990,6 @@
     },
     {
       "id": "seamlessores:create_veridium_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_things_gleaming_ore",
       "required": false
     },
     {
@@ -1644,19 +1020,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:diorite_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mythicmetals_kyber_ore",
       "required": false
     },
     {
@@ -1664,19 +1028,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:diorite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mythicmetals_prometheum_ore",
       "required": false
     },
     {
@@ -1696,15 +1048,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:diorite_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -1720,10 +1064,6 @@
       "required": false
     },
     "seamlessores:diorite_redstone_ore",
-    {
-      "id": "seamlessores:diorite_silentgems_chaos_ore",
-      "required": false
-    },
     {
       "id": "seamlessores:diorite_silentgems_citrine_ore",
       "required": false
@@ -1783,63 +1123,11 @@
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_lapis_ore",
     {
-      "id": "seamlessores:dripstone_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:dripstone_mythicmetals_kyber_ore",
       "required": false
     },
     {
       "id": "seamlessores:dripstone_mythicmetals_manganese_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_starrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -1856,10 +1144,6 @@
     },
     "seamlessores:dripstone_redstone_ore",
     {
-      "id": "seamlessores:dripstone_silentgems_chaos_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:dripstone_techreborn_bauxite_ore",
       "required": false
     },
@@ -1873,10 +1157,6 @@
     },
     {
       "id": "seamlessores:dripstone_tfmg_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_things_gleaming_ore",
       "required": false
     },
     {
@@ -1923,19 +1203,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:granite_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_mythicmetals_kyber_ore",
       "required": false
     },
     {
@@ -1948,14 +1216,6 @@
     },
     {
       "id": "seamlessores:granite_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_mythicmetals_prometheum_ore",
       "required": false
     },
     {
@@ -1976,10 +1236,6 @@
     },
     {
       "id": "seamlessores:granite_mythicmetals_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
@@ -2013,10 +1269,6 @@
     "seamlessores:granite_redstone_ore",
     {
       "id": "seamlessores:granite_silentgems_aquamarine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_silentgems_chaos_ore",
       "required": false
     },
     {
@@ -2068,10 +1320,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:minecraft_blackstone_gold_ore",
       "required": false
     },
@@ -2096,19 +1344,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_asphalt_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_kyber_ore",
       "required": false
     },
     {
@@ -2116,27 +1352,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_asphalt_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_runite_ore",
       "required": false
     },
     {
@@ -2144,23 +1360,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_starrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_asphalt_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_redstone_ore",
       "required": false
     },
     {
@@ -2180,31 +1380,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_coal_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_copper_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_create_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_diamond_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_emerald_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -2216,30 +1392,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_lapis_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_kyber_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_manganese_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_mythicmetals_morkite_ore",
       "required": false
     },
@@ -2248,19 +1400,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_mythicmetals_osmium_ore",
       "required": false
     },
     {
       "id": "seamlessores:promenade_blunite_mythicmetals_platinum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_prometheum_ore",
       "required": false
     },
     {
@@ -2276,35 +1420,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mythicmetals_starrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicupgrades_aquamarine_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mythicupgrades_necoium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_mythicupgrades_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
@@ -2316,35 +1436,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_techreborn_galena_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_techreborn_iridium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_techreborn_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_sapphire_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_techreborn_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_things_gleaming_ore",
       "required": false
     },
     {
@@ -2364,19 +1460,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:smooth_basalt_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:smooth_basalt_mythicmetals_aquarium_ore",
       "required": false
     },
     {
       "id": "seamlessores:smooth_basalt_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_mythicmetals_carmot_ore",
       "required": false
     },
     {
@@ -2396,10 +1484,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:smooth_basalt_mythicmetals_mythril_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:smooth_basalt_mythicmetals_nether_banglum_ore",
       "required": false
     },
@@ -2412,18 +1496,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:smooth_basalt_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_mythicmetals_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_mythicmetals_runite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:smooth_basalt_mythicmetals_silver_ore",
       "required": false
     },
@@ -2432,15 +1504,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:smooth_basalt_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:smooth_basalt_mythicupgrades_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -2504,10 +1568,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:smooth_basalt_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_bigreactors_yellorite_ore",
       "required": false
     },
@@ -2539,10 +1599,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_mythicmetals_morkite_ore",
       "required": false
     },
@@ -2552,10 +1608,6 @@
     },
     {
       "id": "seamlessores:tuff_mythicmetals_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_mythicmetals_runite_ore",
       "required": false
     },
     {
@@ -2660,22 +1712,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_mythicmetals_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_mythicmetals_kyber_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:wilderwild_gabbro_mythicmetals_morkite_ore",
       "required": false
     },
@@ -2684,19 +1720,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_mythicmetals_orichalcum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:wilderwild_gabbro_mythicmetals_osmium_ore",
       "required": false
     },
     {
       "id": "seamlessores:wilderwild_gabbro_mythicmetals_platinum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_mythicmetals_prometheum_ore",
       "required": false
     },
     {
@@ -2709,14 +1737,6 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_mythicmetals_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_mythicmetals_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -2733,10 +1753,6 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_techreborn_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_things_gleaming_ore",
       "required": false
     }
   ]

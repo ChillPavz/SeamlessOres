@@ -9,19 +9,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mythicupgrades_aquamarine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_aquamarine_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:mythicupgrades_peridot_schist_mythicupgrades_aquamarine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicupgrades_aquamarine_ore",
       "required": false
     }
   ]

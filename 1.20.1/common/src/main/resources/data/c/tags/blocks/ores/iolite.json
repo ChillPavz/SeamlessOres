@@ -3,10 +3,6 @@
     {
       "id": "seamlessores:twigs_schist_silentgems_iolite_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_iolite_ore",
-      "required": false
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/tfmg_lignite_redstone_ore"
+      "model": "seamlessores:block/retired/tfmg_lignite_redstone_ore"
     }
   }
 }

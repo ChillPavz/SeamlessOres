@@ -1,15 +1,7 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:granite_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -17,39 +9,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -58,10 +18,6 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:regions_unexplored_argillite_mysticalagriculture_prosperity_ore",
       "required": false
     }
   ]

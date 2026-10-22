@@ -1,15 +1,7 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:diorite_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_things_gleaming_ore",
       "required": false
     },
     {
@@ -17,51 +9,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_things_gleaming_ore",
       "required": false
     },
     {
@@ -69,31 +17,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:smooth_basalt_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_things_gleaming_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:twigs_schist_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_things_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_things_gleaming_ore",
       "required": false
     }
   ]

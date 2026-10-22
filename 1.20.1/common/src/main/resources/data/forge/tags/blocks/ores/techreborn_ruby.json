@@ -19,10 +19,6 @@
     {
       "id": "seamlessores:twigs_schist_techreborn_ruby_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_ruby_ore",
-      "required": false
     }
   ]
 }

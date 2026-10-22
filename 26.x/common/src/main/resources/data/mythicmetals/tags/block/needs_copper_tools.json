@@ -1,27 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:granite_mythicmetals_manganese_ore",
       "required": false
     },
     {
       "id": "seamlessores:granite_mythicmetals_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_mythicmetals_banglum_ore",
       "required": false
     },
     {
@@ -46,14 +30,6 @@
     },
     {
       "id": "seamlessores:andesite_mythicmetals_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_banglum_ore",
       "required": false
     },
     {
@@ -89,14 +65,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_mythicmetals_manganese_ore",
       "required": false
     },
@@ -106,18 +74,6 @@
     },
     {
       "id": "seamlessores:create_asurine_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mythicmetals_banglum_ore",
       "required": false
     },
     {
@@ -137,14 +93,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_mythicmetals_aquarium_ore",
       "required": false
     },
@@ -158,22 +106,6 @@
     },
     {
       "id": "seamlessores:create_scoria_mythicmetals_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_banglum_ore",
       "required": false
     },
     {
@@ -221,10 +153,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_asphalt_mythicmetals_banglum_ore",
       "required": false
     },
@@ -237,31 +165,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_manganese_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_mythicmetals_platinum_ore",
       "required": false
     },
     {
       "id": "seamlessores:promenade_blunite_mythicmetals_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_mythicmetals_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_mythicmetals_banglum_ore",
       "required": false
     },
     {

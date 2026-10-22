@@ -28,10 +28,6 @@
     {
       "id": "seamlessores:regions_unexplored_chalk_emerald_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_emerald_ore",
-      "required": false
     }
   ]
 }

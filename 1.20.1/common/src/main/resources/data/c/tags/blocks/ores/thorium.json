@@ -15,10 +15,6 @@
     {
       "id": "seamlessores:embellishcraft_gneiss_create_new_age_thorium_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_create_new_age_thorium_ore",
-      "required": false
     }
   ]
 }

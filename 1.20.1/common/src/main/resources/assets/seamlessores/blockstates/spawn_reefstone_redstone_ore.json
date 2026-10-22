@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/spawn_reefstone_redstone_ore"
+      "model": "seamlessores:block/retired/spawn_reefstone_redstone_ore"
     }
   }
 }

@@ -61,23 +61,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_ruby_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:mythicupgrades_sapphire_schist_mythicupgrades_ruby_ore",
       "required": false
     },
     {
       "id": "seamlessores:regions_unexplored_mossy_stone_techreborn_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_silentgems_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_ruby_ore",
       "required": false
     }
   ]

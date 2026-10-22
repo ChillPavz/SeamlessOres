@@ -43,10 +43,6 @@
       "id": "seamlessores:granite_iceandfire_silver_ore",
       "required": false
     },
-    {
-      "id": "seamlessores:granite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
@@ -66,10 +62,6 @@
       "id": "seamlessores:diorite_iceandfire_silver_ore",
       "required": false
     },
-    {
-      "id": "seamlessores:diorite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
     "seamlessores:andesite_lapis_ore",
@@ -87,10 +79,6 @@
     },
     {
       "id": "seamlessores:andesite_iceandfire_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mysticalagriculture_inferium_ore",
       "required": false
     },
     "seamlessores:tuff_iron_ore",
@@ -144,10 +132,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:cinnabar_iron_ore",
       "required": false
     },
@@ -165,10 +149,6 @@
     },
     {
       "id": "seamlessores:blackstone_iceandfire_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -225,10 +205,6 @@
     },
     {
       "id": "seamlessores:blockus_viridite_iron_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_lapis_ore",
       "required": false
     },
     {
@@ -289,10 +265,6 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_lapis_ore",
       "required": false
     },
     {
@@ -417,22 +389,6 @@
     },
     {
       "id": "seamlessores:promenade_blunite_copper_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_lapis_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
       "required": false
     },
     {

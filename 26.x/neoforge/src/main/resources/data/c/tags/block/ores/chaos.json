@@ -1,14 +1,6 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_silentgems_chaos_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_silentgems_chaos_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:andesite_silentgems_chaos_ore",
       "required": false
     },
@@ -17,19 +9,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_silentgems_chaos_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_silentgems_chaos_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_chaos_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:regions_unexplored_argillite_silentgems_chaos_ore",
       "required": false
     }
   ]

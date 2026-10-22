@@ -29,10 +29,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_powah_uraninite_dense_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_powah_uraninite_dense_ore",
       "required": false
     },
@@ -57,19 +53,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_dense_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_powah_uraninite_dense_ore",
       "required": false
     },
     {
       "id": "seamlessores:promenade_asphalt_powah_uraninite_dense_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_powah_uraninite_dense_ore",
       "required": false
     }
   ]

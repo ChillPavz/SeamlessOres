@@ -14,23 +14,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_bluestone_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_redstone_ore",
       "required": false
     },
     {
@@ -38,23 +22,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scoria_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_redstone_ore",
       "required": false
     },
     {
@@ -62,15 +30,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tfmg_galena_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_lignite_redstone_ore",
       "required": false
     },
     {
@@ -82,27 +42,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:embellishcraft_basalt_redstone_ore",
       "required": false
     },
     {
       "id": "seamlessores:embellishcraft_gneiss_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:quark_limestone_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:quark_jasper_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:quark_shale_redstone_ore",
       "required": false
     },
     {
@@ -126,15 +70,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_redstone_ore",
       "required": false
     }
   ]

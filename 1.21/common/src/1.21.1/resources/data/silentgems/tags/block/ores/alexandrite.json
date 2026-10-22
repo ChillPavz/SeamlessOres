@@ -19,10 +19,6 @@
     {
       "id": "seamlessores:twigs_bloodstone_silentgems_nether_alexandrite_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_alexandrite_ore",
-      "required": false
     }
   ]
 }

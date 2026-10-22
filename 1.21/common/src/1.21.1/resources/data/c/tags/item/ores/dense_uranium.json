@@ -53,19 +53,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_uranium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:regions_unexplored_argillite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
       "id": "seamlessores:promenade_asphalt_densemekanism_dense_uranium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_densemekanism_dense_uranium_ore",
       "required": false
     }
   ]

@@ -89,27 +89,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_sapphire_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:regions_unexplored_mossy_stone_iceandfire_sapphire_ore",
       "required": false
     },
     {
       "id": "seamlessores:regions_unexplored_mossy_stone_techreborn_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_silentgems_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_iceandfire_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_sapphire_ore",
       "required": false
     }
   ]

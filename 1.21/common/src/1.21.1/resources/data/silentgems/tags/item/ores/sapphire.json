@@ -23,14 +23,6 @@
     {
       "id": "seamlessores:embellishcraft_slate_silentgems_sapphire_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_silentgems_sapphire_ore",
-      "required": false
     }
   ]
 }

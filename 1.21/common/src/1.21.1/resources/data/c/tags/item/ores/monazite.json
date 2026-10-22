@@ -11,14 +11,6 @@
     {
       "id": "seamlessores:embellishcraft_gneiss_modern_industrialization_monazite_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_monazite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_modern_industrialization_monazite_ore",
-      "required": false
     }
   ]
 }

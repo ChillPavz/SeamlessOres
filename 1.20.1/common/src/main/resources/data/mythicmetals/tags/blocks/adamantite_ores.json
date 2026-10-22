@@ -9,19 +9,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mythicmetals_adamantite_ore",
       "required": false
     },
     {
@@ -29,43 +17,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_crimsite_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_mythicmetals_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_mythicmetals_adamantite_ore",
       "required": false
     },
     {

@@ -34,10 +34,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_coal_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:spawn_reefstone_coal_ore",
       "required": false
     }

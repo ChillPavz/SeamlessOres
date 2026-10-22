@@ -1,10 +1,6 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:granite_mysticalagriculture_prosperity_ore",
       "required": false
     },
@@ -45,10 +41,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:diorite_mysticalagriculture_prosperity_ore",
       "required": false
     },
@@ -82,14 +74,6 @@
     },
     {
       "id": "seamlessores:diorite_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -129,10 +113,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_immersiveengineering_aluminum_ore",
       "required": false
     },
@@ -162,14 +142,6 @@
     },
     {
       "id": "seamlessores:tuff_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -217,14 +189,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blackstone_oreganized_lead_ore",
       "required": false
     },
@@ -253,35 +217,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_oreganized_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_oreganized_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -293,19 +233,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_ochrum_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -321,31 +249,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:calcite_oreganized_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:calcite_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -361,15 +269,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tfmg_bauxite_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -389,19 +289,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tfmg_lignite_oreganized_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:tfmg_lignite_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -414,10 +306,6 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -437,19 +325,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_basalt_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_basalt_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -461,15 +337,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:embellishcraft_slate_oreganized_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_marble_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -478,10 +346,6 @@
     },
     {
       "id": "seamlessores:embellishcraft_marble_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_gneiss_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -497,10 +361,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:embellishcraft_larvikite_oreganized_lead_ore",
       "required": false
     },
@@ -509,19 +369,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:quark_limestone_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:quark_limestone_oreganized_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:quark_jasper_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:quark_jasper_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -533,23 +381,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:quark_shale_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:quark_shale_oreganized_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_mysticalagriculture_prosperity_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:meadow_limestone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -569,19 +405,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_oreganized_silver_ore",
       "required": false
     },
     {
       "id": "seamlessores:spawn_reefstone_mysticalagriculture_inferium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -594,10 +422,6 @@
     },
     {
       "id": "seamlessores:biomeswevegone_dacite_oreganized_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_white_dacite_mysticalagriculture_inferium_ore",
       "required": false
     },
     {

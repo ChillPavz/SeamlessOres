@@ -176,10 +176,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_lapis_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_crimsite_iron_ore",
       "required": false
     },
@@ -245,18 +241,6 @@
     },
     {
       "id": "seamlessores:promenade_blunite_copper_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_lapis_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
       "required": false
     },
     {

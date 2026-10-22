@@ -10,10 +10,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_lapis_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:calcite_lapis_ore",
       "required": false
     },
@@ -26,15 +22,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_lapis_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:regions_unexplored_mossy_stone_lapis_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_lapis_ore",
       "required": false
     }
   ]

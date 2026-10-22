@@ -37,10 +37,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_modern_industrialization_tin_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_mythicmetals_tin_ore",
       "required": false
     },
@@ -66,18 +62,6 @@
     },
     {
       "id": "seamlessores:meadow_limestone_modern_industrialization_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_modern_industrialization_tin_ore",
       "required": false
     },
     {

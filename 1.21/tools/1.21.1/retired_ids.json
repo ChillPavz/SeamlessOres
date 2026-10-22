@@ -2110,6 +2110,1241 @@
    "id": "minecraft_smooth_basalt_benitoite_ore",
    "host": "minecraft_smooth_basalt",
    "ore": "benitoite"
+  },
+  {
+   "id": "andesite_adamantite_ore",
+   "host": "andesite",
+   "ore": "adamantite"
+  },
+  {
+   "id": "andesite_brilliance_ore",
+   "host": "andesite",
+   "ore": "brilliant"
+  },
+  {
+   "id": "andesite_carmot_ore",
+   "host": "andesite",
+   "ore": "carmot"
+  },
+  {
+   "id": "andesite_gleaming_ore",
+   "host": "andesite",
+   "ore": "gleaming"
+  },
+  {
+   "id": "andesite_inferium_ore",
+   "host": "andesite",
+   "ore": "inferium"
+  },
+  {
+   "id": "andesite_morkite_ore",
+   "host": "andesite",
+   "ore": "morkite"
+  },
+  {
+   "id": "andesite_mythril_ore",
+   "host": "andesite",
+   "ore": "mythril"
+  },
+  {
+   "id": "andesite_necoium_ore",
+   "host": "andesite",
+   "ore": "necoium"
+  },
+  {
+   "id": "andesite_prometheum_ore",
+   "host": "andesite",
+   "ore": "prometheum"
+  },
+  {
+   "id": "andesite_prosperity_ore",
+   "host": "andesite",
+   "ore": "prosperity"
+  },
+  {
+   "id": "andesite_quadrillum_ore",
+   "host": "andesite",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "andesite_runite_ore",
+   "host": "andesite",
+   "ore": "runite"
+  },
+  {
+   "id": "andesite_soulstone_ore",
+   "host": "andesite",
+   "ore": "soulstone"
+  },
+  {
+   "id": "andesite_starrite_ore",
+   "host": "andesite",
+   "ore": "starrite"
+  },
+  {
+   "id": "andesite_unobtainium_ore",
+   "host": "andesite",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "blockus_bluestone_carmot_ore",
+   "host": "blockus_bluestone",
+   "ore": "carmot"
+  },
+  {
+   "id": "blockus_bluestone_gleaming_ore",
+   "host": "blockus_bluestone",
+   "ore": "gleaming"
+  },
+  {
+   "id": "blockus_bluestone_necoium_ore",
+   "host": "blockus_bluestone",
+   "ore": "necoium"
+  },
+  {
+   "id": "blockus_bluestone_orichalcum_ore",
+   "host": "blockus_bluestone",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "blockus_bluestone_prometheum_ore",
+   "host": "blockus_bluestone",
+   "ore": "prometheum"
+  },
+  {
+   "id": "blockus_bluestone_unobtainium_ore",
+   "host": "blockus_bluestone",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "blockus_limestone_carmot_ore",
+   "host": "blockus_limestone",
+   "ore": "carmot"
+  },
+  {
+   "id": "blockus_limestone_gleaming_ore",
+   "host": "blockus_limestone",
+   "ore": "gleaming"
+  },
+  {
+   "id": "blockus_limestone_kyber_ore",
+   "host": "blockus_limestone",
+   "ore": "kyber"
+  },
+  {
+   "id": "blockus_limestone_morkite_ore",
+   "host": "blockus_limestone",
+   "ore": "morkite"
+  },
+  {
+   "id": "blockus_limestone_mythril_ore",
+   "host": "blockus_limestone",
+   "ore": "mythril"
+  },
+  {
+   "id": "blockus_limestone_necoium_ore",
+   "host": "blockus_limestone",
+   "ore": "necoium"
+  },
+  {
+   "id": "blockus_limestone_orichalcum_ore",
+   "host": "blockus_limestone",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "blockus_limestone_quadrillum_ore",
+   "host": "blockus_limestone",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "blockus_limestone_redstone_ore",
+   "host": "blockus_limestone",
+   "ore": "redstone"
+  },
+  {
+   "id": "blockus_limestone_runite_ore",
+   "host": "blockus_limestone",
+   "ore": "runite"
+  },
+  {
+   "id": "blockus_limestone_starrite_ore",
+   "host": "blockus_limestone",
+   "ore": "starrite"
+  },
+  {
+   "id": "blockus_limestone_unobtainium_ore",
+   "host": "blockus_limestone",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "blockus_marble_aquarium_ore",
+   "host": "blockus_marble",
+   "ore": "aquarium"
+  },
+  {
+   "id": "blockus_marble_banglum_ore",
+   "host": "blockus_marble",
+   "ore": "banglum"
+  },
+  {
+   "id": "blockus_marble_carmot_ore",
+   "host": "blockus_marble",
+   "ore": "carmot"
+  },
+  {
+   "id": "blockus_marble_kyber_ore",
+   "host": "blockus_marble",
+   "ore": "kyber"
+  },
+  {
+   "id": "blockus_marble_morkite_ore",
+   "host": "blockus_marble",
+   "ore": "morkite"
+  },
+  {
+   "id": "blockus_marble_necoium_ore",
+   "host": "blockus_marble",
+   "ore": "necoium"
+  },
+  {
+   "id": "blockus_marble_orichalcum_ore",
+   "host": "blockus_marble",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "blockus_marble_prometheum_ore",
+   "host": "blockus_marble",
+   "ore": "prometheum"
+  },
+  {
+   "id": "blockus_marble_quadrillum_ore",
+   "host": "blockus_marble",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "blockus_marble_redstone_ore",
+   "host": "blockus_marble",
+   "ore": "redstone"
+  },
+  {
+   "id": "blockus_marble_unobtainium_ore",
+   "host": "blockus_marble",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "blockus_viridite_adamantite_ore",
+   "host": "blockus_viridite",
+   "ore": "adamantite"
+  },
+  {
+   "id": "blockus_viridite_aquamarine_ore",
+   "host": "blockus_viridite",
+   "ore": "aquamarine"
+  },
+  {
+   "id": "blockus_viridite_carmot_ore",
+   "host": "blockus_viridite",
+   "ore": "carmot"
+  },
+  {
+   "id": "blockus_viridite_diamond_ore",
+   "host": "blockus_viridite",
+   "ore": "diamond"
+  },
+  {
+   "id": "blockus_viridite_galena_ore",
+   "host": "blockus_viridite",
+   "ore": "galena"
+  },
+  {
+   "id": "blockus_viridite_gleaming_ore",
+   "host": "blockus_viridite",
+   "ore": "gleaming"
+  },
+  {
+   "id": "blockus_viridite_lapis_ore",
+   "host": "blockus_viridite",
+   "ore": "lapis"
+  },
+  {
+   "id": "blockus_viridite_morkite_ore",
+   "host": "blockus_viridite",
+   "ore": "morkite"
+  },
+  {
+   "id": "blockus_viridite_mythril_ore",
+   "host": "blockus_viridite",
+   "ore": "mythril"
+  },
+  {
+   "id": "blockus_viridite_necoium_ore",
+   "host": "blockus_viridite",
+   "ore": "necoium"
+  },
+  {
+   "id": "blockus_viridite_orichalcum_ore",
+   "host": "blockus_viridite",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "blockus_viridite_prometheum_ore",
+   "host": "blockus_viridite",
+   "ore": "prometheum"
+  },
+  {
+   "id": "blockus_viridite_redstone_ore",
+   "host": "blockus_viridite",
+   "ore": "redstone"
+  },
+  {
+   "id": "blockus_viridite_runite_ore",
+   "host": "blockus_viridite",
+   "ore": "runite"
+  },
+  {
+   "id": "blockus_viridite_techreborn_lead_ore",
+   "host": "blockus_viridite",
+   "ore": "techreborn_lead"
+  },
+  {
+   "id": "blockus_viridite_topaz_ore",
+   "host": "blockus_viridite",
+   "ore": "topaz"
+  },
+  {
+   "id": "blockus_viridite_unobtainium_ore",
+   "host": "blockus_viridite",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "create_asurine_brilliant_ore",
+   "host": "create_asurine",
+   "ore": "brilliant"
+  },
+  {
+   "id": "create_asurine_chaos_ore",
+   "host": "create_asurine",
+   "ore": "chaos"
+  },
+  {
+   "id": "create_asurine_inferium_ore",
+   "host": "create_asurine",
+   "ore": "inferium"
+  },
+  {
+   "id": "create_asurine_necoium_ore",
+   "host": "create_asurine",
+   "ore": "necoium"
+  },
+  {
+   "id": "create_asurine_prosperity_ore",
+   "host": "create_asurine",
+   "ore": "prosperity"
+  },
+  {
+   "id": "create_asurine_redstone_ore",
+   "host": "create_asurine",
+   "ore": "redstone"
+  },
+  {
+   "id": "create_asurine_soulstone_ore",
+   "host": "create_asurine",
+   "ore": "soulstone"
+  },
+  {
+   "id": "create_crimsite_brilliant_ore",
+   "host": "create_crimsite",
+   "ore": "brilliant"
+  },
+  {
+   "id": "create_crimsite_chaos_ore",
+   "host": "create_crimsite",
+   "ore": "chaos"
+  },
+  {
+   "id": "create_crimsite_inferium_ore",
+   "host": "create_crimsite",
+   "ore": "inferium"
+  },
+  {
+   "id": "create_crimsite_prosperity_ore",
+   "host": "create_crimsite",
+   "ore": "prosperity"
+  },
+  {
+   "id": "create_crimsite_soulstone_ore",
+   "host": "create_crimsite",
+   "ore": "soulstone"
+  },
+  {
+   "id": "create_limestone_chaos_ore",
+   "host": "create_limestone",
+   "ore": "chaos"
+  },
+  {
+   "id": "create_limestone_necoium_ore",
+   "host": "create_limestone",
+   "ore": "necoium"
+  },
+  {
+   "id": "create_limestone_prosperity_ore",
+   "host": "create_limestone",
+   "ore": "prosperity"
+  },
+  {
+   "id": "create_limestone_redstone_ore",
+   "host": "create_limestone",
+   "ore": "redstone"
+  },
+  {
+   "id": "create_limestone_soulstone_ore",
+   "host": "create_limestone",
+   "ore": "soulstone"
+  },
+  {
+   "id": "create_ochrum_brilliant_ore",
+   "host": "create_ochrum",
+   "ore": "brilliant"
+  },
+  {
+   "id": "create_ochrum_chaos_ore",
+   "host": "create_ochrum",
+   "ore": "chaos"
+  },
+  {
+   "id": "create_ochrum_inferium_ore",
+   "host": "create_ochrum",
+   "ore": "inferium"
+  },
+  {
+   "id": "create_ochrum_necoium_ore",
+   "host": "create_ochrum",
+   "ore": "necoium"
+  },
+  {
+   "id": "create_ochrum_redstone_ore",
+   "host": "create_ochrum",
+   "ore": "redstone"
+  },
+  {
+   "id": "create_ochrum_soulstone_ore",
+   "host": "create_ochrum",
+   "ore": "soulstone"
+  },
+  {
+   "id": "create_scorchia_benitoite_ore",
+   "host": "create_scorchia",
+   "ore": "benitoite"
+  },
+  {
+   "id": "create_scoria_brilliant_ore",
+   "host": "create_scoria",
+   "ore": "brilliant"
+  },
+  {
+   "id": "create_scoria_inferium_ore",
+   "host": "create_scoria",
+   "ore": "inferium"
+  },
+  {
+   "id": "create_scoria_necoium_ore",
+   "host": "create_scoria",
+   "ore": "necoium"
+  },
+  {
+   "id": "create_scoria_prosperity_ore",
+   "host": "create_scoria",
+   "ore": "prosperity"
+  },
+  {
+   "id": "create_scoria_soulstone_ore",
+   "host": "create_scoria",
+   "ore": "soulstone"
+  },
+  {
+   "id": "create_veridium_chaos_ore",
+   "host": "create_veridium",
+   "ore": "chaos"
+  },
+  {
+   "id": "create_veridium_necoium_ore",
+   "host": "create_veridium",
+   "ore": "necoium"
+  },
+  {
+   "id": "create_veridium_prosperity_ore",
+   "host": "create_veridium",
+   "ore": "prosperity"
+  },
+  {
+   "id": "create_veridium_redstone_ore",
+   "host": "create_veridium",
+   "ore": "redstone"
+  },
+  {
+   "id": "create_veridium_soulstone_ore",
+   "host": "create_veridium",
+   "ore": "soulstone"
+  },
+  {
+   "id": "diorite_aquarium_ore",
+   "host": "diorite",
+   "ore": "aquarium"
+  },
+  {
+   "id": "diorite_banglum_ore",
+   "host": "diorite",
+   "ore": "banglum"
+  },
+  {
+   "id": "diorite_brilliance_ore",
+   "host": "diorite",
+   "ore": "brilliant"
+  },
+  {
+   "id": "diorite_chaos_ore",
+   "host": "diorite",
+   "ore": "chaos"
+  },
+  {
+   "id": "diorite_inferium_ore",
+   "host": "diorite",
+   "ore": "inferium"
+  },
+  {
+   "id": "diorite_kyber_ore",
+   "host": "diorite",
+   "ore": "kyber"
+  },
+  {
+   "id": "diorite_morkite_ore",
+   "host": "diorite",
+   "ore": "morkite"
+  },
+  {
+   "id": "diorite_necoium_ore",
+   "host": "diorite",
+   "ore": "necoium"
+  },
+  {
+   "id": "diorite_orichalcum_ore",
+   "host": "diorite",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "diorite_prometheum_ore",
+   "host": "diorite",
+   "ore": "prometheum"
+  },
+  {
+   "id": "diorite_soulstone_ore",
+   "host": "diorite",
+   "ore": "soulstone"
+  },
+  {
+   "id": "diorite_unobtainium_ore",
+   "host": "diorite",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "dripstone_adamantite_ore",
+   "host": "dripstone",
+   "ore": "adamantite"
+  },
+  {
+   "id": "dripstone_aquarium_ore",
+   "host": "dripstone",
+   "ore": "aquarium"
+  },
+  {
+   "id": "dripstone_banglum_ore",
+   "host": "dripstone",
+   "ore": "banglum"
+  },
+  {
+   "id": "dripstone_carmot_ore",
+   "host": "dripstone",
+   "ore": "carmot"
+  },
+  {
+   "id": "dripstone_chaos_ore",
+   "host": "dripstone",
+   "ore": "chaos"
+  },
+  {
+   "id": "dripstone_gleaming_ore",
+   "host": "dripstone",
+   "ore": "gleaming"
+  },
+  {
+   "id": "dripstone_inferium_ore",
+   "host": "dripstone",
+   "ore": "inferium"
+  },
+  {
+   "id": "dripstone_morkite_ore",
+   "host": "dripstone",
+   "ore": "morkite"
+  },
+  {
+   "id": "dripstone_mythril_ore",
+   "host": "dripstone",
+   "ore": "mythril"
+  },
+  {
+   "id": "dripstone_necoium_ore",
+   "host": "dripstone",
+   "ore": "necoium"
+  },
+  {
+   "id": "dripstone_orichalcum_ore",
+   "host": "dripstone",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "dripstone_prometheum_ore",
+   "host": "dripstone",
+   "ore": "prometheum"
+  },
+  {
+   "id": "dripstone_prosperity_ore",
+   "host": "dripstone",
+   "ore": "prosperity"
+  },
+  {
+   "id": "dripstone_quadrillum_ore",
+   "host": "dripstone",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "dripstone_runite_ore",
+   "host": "dripstone",
+   "ore": "runite"
+  },
+  {
+   "id": "dripstone_soulstone_ore",
+   "host": "dripstone",
+   "ore": "soulstone"
+  },
+  {
+   "id": "dripstone_starrite_ore",
+   "host": "dripstone",
+   "ore": "starrite"
+  },
+  {
+   "id": "dripstone_unobtainium_ore",
+   "host": "dripstone",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_alexandrite_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "alexandrite"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_antimony_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "antimony"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_aquamarine_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "aquamarine"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_bort_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "bort"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_brilliant_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "brilliant"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_chaos_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "chaos"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_dense_fluorite_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "dense_fluorite"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_dense_lead_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "dense_lead"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_dense_uranium_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "dense_uranium"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_diamond_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "diamond"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_garnet_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "garnet"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_heliodor_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "heliodor"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_iolite_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "iolite"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_lapis_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "lapis"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_lignite_coal_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "lignite_coal"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_lithium_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "lithium"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_mi_lead_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "mi_lead"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_mi_tin_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "mi_tin"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_monazite_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "monazite"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_necoium_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "necoium"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_opal_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "opal"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_prosperity_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "prosperity"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_salt_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "salt"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_silents_aquamarine_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "silents_aquamarine"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_silents_ruby_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "silents_ruby"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_silents_sapphire_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "silents_sapphire"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_silents_topaz_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "silents_topaz"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_topaz_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "topaz"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_tungsten_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "tungsten"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_turquoise_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "turquoise"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_uraninite_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "uraninite"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_uraninite_dense_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "uraninite_dense"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_uraninite_poor_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "uraninite_poor"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_uranium_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "uranium"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_yellorite_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "yellorite"
+  },
+  {
+   "id": "forbidden_arcanus_darkstone_zinc_ore",
+   "host": "forbidden_arcanus_darkstone",
+   "ore": "zinc"
+  },
+  {
+   "id": "granite_aquarium_ore",
+   "host": "granite",
+   "ore": "aquarium"
+  },
+  {
+   "id": "granite_banglum_ore",
+   "host": "granite",
+   "ore": "banglum"
+  },
+  {
+   "id": "granite_brilliance_ore",
+   "host": "granite",
+   "ore": "brilliant"
+  },
+  {
+   "id": "granite_chaos_ore",
+   "host": "granite",
+   "ore": "chaos"
+  },
+  {
+   "id": "granite_gleaming_ore",
+   "host": "granite",
+   "ore": "gleaming"
+  },
+  {
+   "id": "granite_inferium_ore",
+   "host": "granite",
+   "ore": "inferium"
+  },
+  {
+   "id": "granite_kyber_ore",
+   "host": "granite",
+   "ore": "kyber"
+  },
+  {
+   "id": "granite_orichalcum_ore",
+   "host": "granite",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "granite_prometheum_ore",
+   "host": "granite",
+   "ore": "prometheum"
+  },
+  {
+   "id": "granite_unobtainium_ore",
+   "host": "granite",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "meadow_limestone_chaos_ore",
+   "host": "meadow_limestone",
+   "ore": "chaos"
+  },
+  {
+   "id": "meadow_limestone_morkite_ore",
+   "host": "meadow_limestone",
+   "ore": "morkite"
+  },
+  {
+   "id": "meadow_limestone_prosperity_ore",
+   "host": "meadow_limestone",
+   "ore": "prosperity"
+  },
+  {
+   "id": "meadow_limestone_quadrillum_ore",
+   "host": "meadow_limestone",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "meadow_limestone_soulstone_ore",
+   "host": "meadow_limestone",
+   "ore": "soulstone"
+  },
+  {
+   "id": "meadow_limestone_starrite_ore",
+   "host": "meadow_limestone",
+   "ore": "starrite"
+  },
+  {
+   "id": "minecraft_calcite_brilliant_ore",
+   "host": "minecraft_calcite",
+   "ore": "brilliant"
+  },
+  {
+   "id": "minecraft_calcite_chaos_ore",
+   "host": "minecraft_calcite",
+   "ore": "chaos"
+  },
+  {
+   "id": "minecraft_calcite_inferium_ore",
+   "host": "minecraft_calcite",
+   "ore": "inferium"
+  },
+  {
+   "id": "minecraft_calcite_necoium_ore",
+   "host": "minecraft_calcite",
+   "ore": "necoium"
+  },
+  {
+   "id": "minecraft_calcite_prosperity_ore",
+   "host": "minecraft_calcite",
+   "ore": "prosperity"
+  },
+  {
+   "id": "minecraft_calcite_redstone_ore",
+   "host": "minecraft_calcite",
+   "ore": "redstone"
+  },
+  {
+   "id": "minecraft_calcite_soulstone_ore",
+   "host": "minecraft_calcite",
+   "ore": "soulstone"
+  },
+  {
+   "id": "minecraft_smooth_basalt_brilliant_ore",
+   "host": "minecraft_smooth_basalt",
+   "ore": "brilliant"
+  },
+  {
+   "id": "minecraft_smooth_basalt_inferium_ore",
+   "host": "minecraft_smooth_basalt",
+   "ore": "inferium"
+  },
+  {
+   "id": "minecraft_smooth_basalt_necoium_ore",
+   "host": "minecraft_smooth_basalt",
+   "ore": "necoium"
+  },
+  {
+   "id": "minecraft_smooth_basalt_prosperity_ore",
+   "host": "minecraft_smooth_basalt",
+   "ore": "prosperity"
+  },
+  {
+   "id": "minecraft_smooth_basalt_soulstone_ore",
+   "host": "minecraft_smooth_basalt",
+   "ore": "soulstone"
+  },
+  {
+   "id": "spawn_reefstone_chaos_ore",
+   "host": "spawn_reefstone",
+   "ore": "chaos"
+  },
+  {
+   "id": "spawn_reefstone_necoium_ore",
+   "host": "spawn_reefstone",
+   "ore": "necoium"
+  },
+  {
+   "id": "spawn_reefstone_prosperity_ore",
+   "host": "spawn_reefstone",
+   "ore": "prosperity"
+  },
+  {
+   "id": "spawn_reefstone_redstone_ore",
+   "host": "spawn_reefstone",
+   "ore": "redstone"
+  },
+  {
+   "id": "spawn_reefstone_soulstone_ore",
+   "host": "spawn_reefstone",
+   "ore": "soulstone"
+  },
+  {
+   "id": "tfmg_bauxite_brilliant_ore",
+   "host": "tfmg_bauxite",
+   "ore": "brilliant"
+  },
+  {
+   "id": "tfmg_bauxite_chaos_ore",
+   "host": "tfmg_bauxite",
+   "ore": "chaos"
+  },
+  {
+   "id": "tfmg_bauxite_necoium_ore",
+   "host": "tfmg_bauxite",
+   "ore": "necoium"
+  },
+  {
+   "id": "tfmg_bauxite_prosperity_ore",
+   "host": "tfmg_bauxite",
+   "ore": "prosperity"
+  },
+  {
+   "id": "tfmg_bauxite_redstone_ore",
+   "host": "tfmg_bauxite",
+   "ore": "redstone"
+  },
+  {
+   "id": "tfmg_bauxite_soulstone_ore",
+   "host": "tfmg_bauxite",
+   "ore": "soulstone"
+  },
+  {
+   "id": "tfmg_galena_brilliant_ore",
+   "host": "tfmg_galena",
+   "ore": "brilliant"
+  },
+  {
+   "id": "tfmg_galena_inferium_ore",
+   "host": "tfmg_galena",
+   "ore": "inferium"
+  },
+  {
+   "id": "tfmg_galena_necoium_ore",
+   "host": "tfmg_galena",
+   "ore": "necoium"
+  },
+  {
+   "id": "tfmg_galena_soulstone_ore",
+   "host": "tfmg_galena",
+   "ore": "soulstone"
+  },
+  {
+   "id": "tfmg_lignite_brilliant_ore",
+   "host": "tfmg_lignite",
+   "ore": "brilliant"
+  },
+  {
+   "id": "tfmg_lignite_chaos_ore",
+   "host": "tfmg_lignite",
+   "ore": "chaos"
+  },
+  {
+   "id": "tfmg_lignite_necoium_ore",
+   "host": "tfmg_lignite",
+   "ore": "necoium"
+  },
+  {
+   "id": "tfmg_lignite_prosperity_ore",
+   "host": "tfmg_lignite",
+   "ore": "prosperity"
+  },
+  {
+   "id": "tfmg_lignite_redstone_ore",
+   "host": "tfmg_lignite",
+   "ore": "redstone"
+  },
+  {
+   "id": "tuff_carmot_ore",
+   "host": "tuff",
+   "ore": "carmot"
+  },
+  {
+   "id": "tuff_prosperity_ore",
+   "host": "tuff",
+   "ore": "prosperity"
+  },
+  {
+   "id": "tuff_runite_ore",
+   "host": "tuff",
+   "ore": "runite"
+  },
+  {
+   "id": "twigs_bloodstone_benitoite_ore",
+   "host": "twigs_bloodstone",
+   "ore": "benitoite"
+  },
+  {
+   "id": "twigs_rhyolite_adamantite_ore",
+   "host": "twigs_rhyolite",
+   "ore": "adamantite"
+  },
+  {
+   "id": "twigs_rhyolite_brilliant_ore",
+   "host": "twigs_rhyolite",
+   "ore": "brilliant"
+  },
+  {
+   "id": "twigs_rhyolite_carmot_ore",
+   "host": "twigs_rhyolite",
+   "ore": "carmot"
+  },
+  {
+   "id": "twigs_rhyolite_gleaming_ore",
+   "host": "twigs_rhyolite",
+   "ore": "gleaming"
+  },
+  {
+   "id": "twigs_rhyolite_inferium_ore",
+   "host": "twigs_rhyolite",
+   "ore": "inferium"
+  },
+  {
+   "id": "twigs_rhyolite_morkite_ore",
+   "host": "twigs_rhyolite",
+   "ore": "morkite"
+  },
+  {
+   "id": "twigs_rhyolite_mythril_ore",
+   "host": "twigs_rhyolite",
+   "ore": "mythril"
+  },
+  {
+   "id": "twigs_rhyolite_necoium_ore",
+   "host": "twigs_rhyolite",
+   "ore": "necoium"
+  },
+  {
+   "id": "twigs_rhyolite_orichalcum_ore",
+   "host": "twigs_rhyolite",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "twigs_rhyolite_prometheum_ore",
+   "host": "twigs_rhyolite",
+   "ore": "prometheum"
+  },
+  {
+   "id": "twigs_rhyolite_quadrillum_ore",
+   "host": "twigs_rhyolite",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "twigs_rhyolite_runite_ore",
+   "host": "twigs_rhyolite",
+   "ore": "runite"
+  },
+  {
+   "id": "twigs_rhyolite_soulstone_ore",
+   "host": "twigs_rhyolite",
+   "ore": "soulstone"
+  },
+  {
+   "id": "twigs_rhyolite_unobtainium_ore",
+   "host": "twigs_rhyolite",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "twigs_schist_aquarium_ore",
+   "host": "twigs_schist",
+   "ore": "aquarium"
+  },
+  {
+   "id": "twigs_schist_banglum_ore",
+   "host": "twigs_schist",
+   "ore": "banglum"
+  },
+  {
+   "id": "twigs_schist_brilliant_ore",
+   "host": "twigs_schist",
+   "ore": "brilliant"
+  },
+  {
+   "id": "twigs_schist_chaos_ore",
+   "host": "twigs_schist",
+   "ore": "chaos"
+  },
+  {
+   "id": "twigs_schist_inferium_ore",
+   "host": "twigs_schist",
+   "ore": "inferium"
+  },
+  {
+   "id": "twigs_schist_kyber_ore",
+   "host": "twigs_schist",
+   "ore": "kyber"
+  },
+  {
+   "id": "twigs_schist_orichalcum_ore",
+   "host": "twigs_schist",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "twigs_schist_prometheum_ore",
+   "host": "twigs_schist",
+   "ore": "prometheum"
+  },
+  {
+   "id": "twigs_schist_quadrillum_ore",
+   "host": "twigs_schist",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "twigs_schist_soulstone_ore",
+   "host": "twigs_schist",
+   "ore": "soulstone"
+  },
+  {
+   "id": "twigs_schist_unobtainium_ore",
+   "host": "twigs_schist",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "wilderwild_gabbro_aquarium_ore",
+   "host": "wilderwild_gabbro",
+   "ore": "aquarium"
+  },
+  {
+   "id": "wilderwild_gabbro_banglum_ore",
+   "host": "wilderwild_gabbro",
+   "ore": "banglum"
+  },
+  {
+   "id": "wilderwild_gabbro_carmot_ore",
+   "host": "wilderwild_gabbro",
+   "ore": "carmot"
+  },
+  {
+   "id": "wilderwild_gabbro_gleaming_ore",
+   "host": "wilderwild_gabbro",
+   "ore": "gleaming"
+  },
+  {
+   "id": "wilderwild_gabbro_kyber_ore",
+   "host": "wilderwild_gabbro",
+   "ore": "kyber"
+  },
+  {
+   "id": "wilderwild_gabbro_necoium_ore",
+   "host": "wilderwild_gabbro",
+   "ore": "necoium"
+  },
+  {
+   "id": "wilderwild_gabbro_orichalcum_ore",
+   "host": "wilderwild_gabbro",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "wilderwild_gabbro_prometheum_ore",
+   "host": "wilderwild_gabbro",
+   "ore": "prometheum"
+  },
+  {
+   "id": "wilderwild_gabbro_unobtainium_ore",
+   "host": "wilderwild_gabbro",
+   "ore": "unobtainium"
   }
  ]
 }

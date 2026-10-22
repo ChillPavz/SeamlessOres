@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/forbidden_arcanus_darkstone_lapis_ore"
+      "model": "seamlessores:block/retired/forbidden_arcanus_darkstone_lapis_ore"
     }
   }
 }

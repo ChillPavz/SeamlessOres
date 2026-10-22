@@ -197,10 +197,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_techreborn_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_limestone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -469,14 +465,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_lead_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -554,26 +542,6 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_oreganized_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_densemekanism_dense_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_tfmg_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_modern_industrialization_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
       "required": false
     },
     {

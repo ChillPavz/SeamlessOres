@@ -3,10 +3,6 @@
     {
       "id": "seamlessores:granite_silentgems_aquamarine_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_aquamarine_ore",
-      "required": false
     }
   ]
 }

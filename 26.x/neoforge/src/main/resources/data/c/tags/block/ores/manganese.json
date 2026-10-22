@@ -51,10 +51,6 @@
     {
       "id": "seamlessores:promenade_asphalt_mythicmetals_manganese_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_mythicmetals_manganese_ore",
-      "required": false
     }
   ]
 }

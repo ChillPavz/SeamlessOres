@@ -3,10 +3,6 @@
     {
       "id": "seamlessores:tuff_silentgear_bort_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgear_bort_ore",
-      "required": false
     }
   ]
 }

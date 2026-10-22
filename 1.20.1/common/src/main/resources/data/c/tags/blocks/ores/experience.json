@@ -1,18 +1,6 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_expores_experience_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_expores_experience_ore",
       "required": false
     },
@@ -29,31 +17,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_expores_experience_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_limestone_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_expores_experience_ore",
       "required": false
     },
     {
@@ -61,15 +25,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_expores_experience_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_scorchia_expores_nether_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_expores_experience_ore",
       "required": false
     },
     {
@@ -81,23 +37,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:calcite_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_expores_experience_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:smooth_basalt_expores_nether_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_rhyolite_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_expores_experience_ore",
       "required": false
     },
     {
@@ -109,27 +49,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_expores_experience_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:spawn_reefstone_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_dacite_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_white_dacite_expores_experience_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_red_rock_expores_experience_ore",
       "required": false
     }
   ]

@@ -201,14 +201,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_uranium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_uranium_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_bigreactors_yellorite_ore",
       "required": false
     },
@@ -234,18 +226,6 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_bigreactors_yellorite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_densemekanism_dense_uranium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_modern_industrialization_uranium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_bigreactors_yellorite_ore",
       "required": false
     },
     {

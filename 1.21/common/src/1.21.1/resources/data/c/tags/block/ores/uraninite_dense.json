@@ -45,15 +45,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_dense_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_asphalt_powah_uraninite_dense_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_powah_uraninite_dense_ore",
       "required": false
     }
   ]

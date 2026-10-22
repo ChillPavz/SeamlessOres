@@ -53,18 +53,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:biomeswevegone_dacite_mythicmetals_tin_ore",
       "required": false
     },

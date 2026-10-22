@@ -23,10 +23,6 @@
     {
       "id": "seamlessores:embellishcraft_slate_silentgems_ruby_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_ruby_ore",
-      "required": false
     }
   ]
 }

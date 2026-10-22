@@ -20,9 +20,8 @@ import os
 
 # --- FIXED: the stones other mods place ------------------------------------------------------------
 
-# Exempt, never judged: dripstone block (a speleothem), the Nether stones (scorchia, Twigs' bloodstone,
-# Mythic Upgrades' sapphire schist) and the invented ones (Forbidden and Arcanus' darkstone, Blockus'
-# viridite, Promenade's blunite).
+# Exempt, never judged for REAL ores: dripstone block (a speleothem; invented ores follow their lore's
+# dripstone). The invented stones are classed below CLASSES, by what their own mods make them.
 CLASSES = {
     # sedimentary carbonate; Spawn's reefstone is reef limestone
     "LIME": ["blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone",
@@ -57,6 +56,15 @@ CLASSES = {
     # sandstone: iron, red-bed copper, roll-front uranium and vanadium (Colorado Plateau), lead-zinc, gold, salt.
     "RBED": ["biomeswevegone_red_rock"],
 }
+# INVENTED STONES ARE JUDGED TOO (owner, 22 Oct 2026; so-fiction-lore-rule): each is read as the rock its own
+# mod frames it as. Create's scorchia is black-dyed scoria and Twigs' bloodstone lies in the basalt deltas
+# (volcanic); Forbidden and Arcanus' darkstone floors the world at bedrock and Promenade calls blunite an
+# "igneous rock" (plutonic, as bluestone); Blockus' viridite is a dark green deep rock (serpentinite); Mythic
+# Upgrades names its Nether rift stones schist. Create's four strata keep their LORE, the End's gem schist its own.
+for _host, _class in {"create_scorchia": "VOLC", "twigs_bloodstone": "VOLC", "forbidden_arcanus_darkstone": "PLUT",
+                      "promenade_blunite": "PLUT", "blockus_viridite": "SERP",
+                      "mythicupgrades_ruby_schist": "SCH", "mythicupgrades_sapphire_schist": "SCH"}.items():
+    CLASSES[_class].append(_host)
 ALL = list(CLASSES)
 
 
@@ -176,18 +184,23 @@ _CLASSED = [h for hosts in CLASSES.values() for h in hosts]
 for _stone, _kept in COBBLEMON_KEEPS.items():
     if _stone in STRICT:
         raise SystemExit(f"geology.py: {_stone} is in a family and in the Cobblemon rule")
-    STRICT[_stone] = [h for h in _CLASSED if not any(h in CLASSES[c] for c in _kept)] + \
+    STRICT[_stone] = [h for h in _CLASSED if h not in COBBLEMON_LORE and not any(h in CLASSES[c] for c in _kept)] + \
         [h for h, kept in COBBLEMON_LORE.items() if _stone not in kept]
 
-# Invented ores and rock are never judged; nor is anything on an exempt host or in the Nether. (The
-# Cobblemon stones are judged above, through STRICT, which fixed() reads first.)
+# Invented ores. Each is judged by its LORE (FICTION_LORE below; the Cobblemon stones above), never left to
+# form anywhere (owner, 22 Oct 2026).
 FICTION = set("redstone adamantite aquarium banglum carmot kyber midas_gold morkite mythril necoium "
               "nether_banglum orichalcum palladium prometheum quadrillum runite starrite stormyx "
               "unobtainium chaos prosperity inferium gleaming experience nether_experience soulstone "
               "brilliant blazing_quartz dawn_stone dusk_stone fire_stone ice_stone leaf_stone moon_stone "
-              "shiny_stone sun_stone thunder_stone water_stone".split())
+              "shiny_stone sun_stone thunder_stone water_stone "
+              # the 24 ore mods of 22 Oct 2026
+              "arclight cryorium moonlight chlorophyte dreadstone zenalite solar_core cheese oratchalcum "
+              "ratlantean_gem dimensional_shard nether_dimensional_shard heart_crystal power_crystal arcmetal "
+              "plasteel solarmetal voidmetal dark anthralite vehement_coal enderite enderium".split())
 
-# Create's four invented stones each keep only the ore Create ties them to, plus fiction (owner).
+# Create's four invented stones each keep only the ore Create ties them to (owner), plus the invented ores
+# whose lore matches (FICTION_LORE).
 LORE = {"create_asurine": "zinc", "create_crimsite": "iron", "create_ochrum": "gold",
         "create_veridium": "copper"}
 
@@ -206,6 +219,91 @@ GEMS = set("ametrine jade aquamarine citrine peridot topaz ruby sapphire diamond
 # Stones other mods place that are judged exactly as one of the game's rocks (owner, 21 Oct 2026). A refusal
 # is fixed here, vanilla ore included, as for every stone another mod places.
 ROCK_AS = {"embellishcraft_gneiss": "granite", "embellishcraft_larvikite": "diorite"}
+
+
+# INVENTED ORES BY LORE (owner, 22 Oct 2026; the table and each mod's own words are in so-fiction-lore-rule).
+# ore -> (classes kept, the game's rocks kept, invented stones kept beyond their class). Every other classed
+# host, Create stratum, End gem stone and game rock refuses it. Rocks: G granite, D diorite, A andesite,
+# T tuff, Dr dripstone, B basalt, Bs blackstone.
+_ROCK_CODE = {"G": "granite", "D": "diorite", "A": "andesite", "T": "tuff", "Dr": "dripstone",
+              "B": "basalt", "Bs": "blackstone"}
+_NETHER_FIRE = ("VOLC", "B Bs", "")
+_DARK = "forbidden_arcanus_darkstone"
+FICTION_LORE = {
+    # Mythic Metals, from its advancement lines
+    "adamantite": ("PLUT SCH", "G D T", "create_crimsite " + _DARK),  # "the deepest part of the deepslate caves"
+    "aquarium": ("LIME CHRT SHAL VOLC", "A", "create_asurine"),    # under the oceans: sea-floor rock
+    "banglum": ("SULF VOLC LIME ASPH", "A T", ""),                 # "highly volatile", explosive: sulphur, nitre
+    "nether_banglum": ("SULF VOLC LIME ASPH", "B Bs", ""),
+    "carmot": ("SULF SCH", "G D", "create_crimsite"),              # "Alchemical Miracle", transmutation
+    "kyber": ("CALC VOLC FELS", "A Dr", "create_asurine"),         # "hidden inside Amethyst Geodes", calcite
+    "midas_gold": ("SULF FELS SCH VOLC", "B Bs", "create_ochrum"), # King Midas, Nether gold
+    "morkite": ("PLUT SCH VOLC", "G T", "create_asurine"),         # a deep mining crystal, teal
+    "mythril": ("PLUT SCH MARB", "G D T", "create_asurine"),       # "hallowed", dwarven, silver-blue
+    "orichalcum": ("VOLC SHAL CHRT", "A T", "create_veridium"),    # Atlantis bronze; the mod puts it in tuff and smooth basalt
+    "palladium": _NETHER_FIRE,                                     # under the Nether's lava ocean
+    "prometheum": ("ASPH LIME SHAL LATE", "T", "create_veridium"), # jungles and lush caves, regrowth
+    "quadrillum": ("PLUT SULF", "G D", "create_crimsite"),         # industrial: durasteel
+    "runite": ("SCH MARB PLUT", "G D", _DARK),                     # runes, hidden in the walls; runic darkstone
+    "starrite": ("CALC MARB", "D G", "mythicupgrades_jade_schist"), # "Fallen Stardrops", calcite of the mountains
+    "stormyx": _NETHER_FIRE,                                       # "The Nether Diamond", in blackstone
+    "unobtainium": ("", "T", _DARK),                               # "How Did You Get This?": the deepest rock only
+    "necoium": ("SCH", "G T", "create_crimsite"),                  # the mineral of Mythic Upgrades' schist caves
+    "chaos": ("VOLC FELS SULF", "A T", ""),                        # raw magic, entropy
+    "inferium": ("ASPH LIME SHAL LATE", "T", "create_veridium"),   # life force, growth
+    "prosperity": ("SULF SCH FELS", "G D", "create_ochrum"),       # abundance, rich veins
+    "gleaming": ("MARB SCH CALC", "T D", ""),                      # "where the stones meet": contact rock
+    "experience": ("SHAL LIME", "T Dr", "create_veridium"),        # remains and memory, as brilliance
+    "nether_experience": ("SHAL LIME VOLC", "B Bs", ""),
+    "soulstone": ("SHAL ASPH PLUT", "T G", _DARK),                 # "more in the arcane than the physical"
+    "brilliant": ("SHAL LIME", "T Dr", "create_veridium"),         # condensed experience, "where a soul faded away"
+    "blazing_quartz": _NETHER_FIRE,                                # the Nether's coal-like fuel
+    "redstone": ("SULF PLUT SCH VOLC FELS", "G D A T", "create_crimsite"),   # power that glows; vanilla: the option
+    # Epic Paladins
+    "arclight": ("FELS PLUT SCH", "G D", "create_ochrum"),         # holy radiance, amber
+    "cryorium": ("MARB CALC SCH", "D", ""),                        # cryo, frost
+    "moonlight": _NETHER_FIRE,                                     # moon glow in the Nether's rock
+    # Hazen 'N Stuff
+    "chlorophyte": ("ASPH SHAL LIME LATE", "T", "create_veridium"),  # the jungle ore, in mud
+    "dreadstone": ("PLUT VOLC SHAL", "T", "create_crimsite " + _DARK),  # dread, deep, dark red
+    "zenalite": ("MARB CALC", "D", "mythicupgrades_jade_schist"),  # dormant until a star wakes it
+    "solar_core": ("VOLC FELS", "B Bs", ""),                       # the sun, in the Nether
+    # Rats (Ratlantis only: no variant, lore for completeness)
+    "cheese": ("LIME CALC", "Dr D", ""),                           # holes, like karst
+    "oratchalcum": ("VOLC SHAL CHRT", "A T", ""),                  # Atlantis bronze, as orichalcum
+    "ratlantean_gem": ("LIME CHRT", "D", ""),                      # the gem of a sunken civilisation
+    # RFTools Base
+    "dimensional_shard": ("SCH MARB FELS PLUT", "G D", ""),       # "in various dimensions": crystalline rock
+    "nether_dimensional_shard": ("SCH MARB FELS PLUT VOLC", "B Bs", ""),
+    # Scaling Health
+    "heart_crystal": ("FELS VOLC CALC", "G Dr", "create_crimsite"),  # life, a red crystal
+    "power_crystal": ("SULF PLUT SCH", "G D", "create_asurine"),   # strength, a blue crystal (blunite is PLUT)
+    # SilentCompat, by their Silent Gear traits
+    "arcmetal": ("SULF PLUT SCH FELS", "G D", ""),                 # electric arc, mountain tops
+    "plasteel": ("PLUT SULF", "T", ""),                            # a dense alloy of the deepslate
+    "solarmetal": ("", "B Bs", ""),                                # takes the place of the Nether's lava
+    "voidmetal": ("PLUT VOLC SERP", "T", _DARK),                   # the void, magnetic, deep
+    # EvilCraft
+    "dark": ("PLUT VOLC SHAL ASPH", "A T", _DARK),                 # "a very obscure presence"
+    # Scorched Guns
+    "anthralite": ("ASPH SHAL LIME", "T", ""),                     # gunmetal of the coal measures
+    "vehement_coal": _NETHER_FIRE,                                 # "an intensely hot fuel"
+    # The End: no host keeps them yet
+    "enderite": ("", "", ""),
+    "enderium": ("", "", ""),
+}
+if set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS):
+    raise SystemExit(f"geology.py: invented ores with no lore: {sorted(set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS))}")
+_LORE_ROCK = {}     # ore -> the game's rocks it refuses, for ROCK below
+for _ore, (_classes, _rocks, _stones) in FICTION_LORE.items():
+    if _ore in STRICT:
+        raise SystemExit(f"geology.py: {_ore} is in a family and in the lore table")
+    _keep_classes, _keep_stones = _classes.split(), _stones.split()
+    STRICT[_ore] = [h for c in ALL if c not in _keep_classes for h in CLASSES[c] if h not in _keep_stones] + \
+        [h for h in LORE if h not in _keep_stones] + \
+        [h for h in END_GEM_STONES if h not in _keep_stones] + \
+        ([] if "Dr" in _rocks.split() else ["minecraft_dripstone_block"])
+    _LORE_ROCK[_ore] = [r for code, r in _ROCK_CODE.items() if code not in _rocks.split()]
 
 
 def fixed(host, ore):
@@ -303,6 +401,10 @@ for _keys, _rocks in _FOUR_ROCK:
         ROCK[_k] = list(_rocks)
 for _k in _NETHER_REFUSED:
     ROCK.setdefault(_k, []).extend(NETHER_ROCK)
+for _ore, _rocks in _LORE_ROCK.items():
+    if _ore in ROCK:
+        raise SystemExit(f"geology.py: {_ore} is in the four-rock table and in the lore table")
+    ROCK[_ore] = list(_rocks)
 for _stone in COBBLEMON_KEEPS:
     if _stone in ROCK:
         raise SystemExit(f"geology.py: {_stone} is already in ROCK")
@@ -310,8 +412,8 @@ for _stone in COBBLEMON_KEEPS:
 
 
 def _rock_refuses(host, ore):
-    if host == "dripstone" and ore not in COBBLEMON_KEEPS:
-        return ore not in DRIPSTONE_KEEPS and ore not in FICTION
+    if host == "dripstone" and ore not in FICTION:
+        return ore not in DRIPSTONE_KEEPS
     return host in ROCK.get(ore, ())
 
 
@@ -401,7 +503,7 @@ public final class OreGeology {
     private static final Map<String, String> LORE = Map.ofEntries(
 %s);
 
-    /** Invented ores, never judged by geology. */
+    /** Invented ores: judged by their lore (in STRICT and ROCK), dripstone included. */
     private static final Set<String> FICTION = Set.of(%s);
 
     /** Ore key -> the game's own rocks, dripstone aside, it never forms in. */
@@ -429,8 +531,8 @@ public final class OreGeology {
 %s);
 
     private static boolean rockRefuses(String host, String ore) {
-        if ("dripstone".equals(host) && !COBBLEMON.contains(ore)) {
-            return !DRIPSTONE_KEEPS.contains(ore) && !FICTION.contains(ore);
+        if ("dripstone".equals(host) && !FICTION.contains(ore)) {
+            return !DRIPSTONE_KEEPS.contains(ore);
         }
         return ROCK.getOrDefault(ore, Set.of()).contains(host);
     }

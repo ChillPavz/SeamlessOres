@@ -5,63 +5,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_malum_soulstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:tuff_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:smooth_basalt_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_bauxite_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tfmg_galena_malum_soulstone_ore",
       "required": false
     },
     {
@@ -69,47 +13,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:twigs_schist_malum_soulstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_malum_soulstone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_slate_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_marble_malum_soulstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:embellishcraft_gneiss_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_jade_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:embellishcraft_larvikite_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:quark_limestone_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:quark_jasper_malum_soulstone_ore",
       "required": false
     },
     {
@@ -121,10 +29,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_malum_soulstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:regions_unexplored_mossy_stone_malum_soulstone_ore",
       "required": false
     },
@@ -133,27 +37,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_malum_soulstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_asphalt_malum_soulstone_ore",
       "required": false
     },
     {
       "id": "seamlessores:promenade_blunite_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:spawn_reefstone_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_dacite_malum_soulstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:biomeswevegone_white_dacite_malum_soulstone_ore",
       "required": false
     }
   ]

@@ -15,10 +15,6 @@
     {
       "id": "seamlessores:twigs_schist_tfmg_lithium_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_tfmg_lithium_ore",
-      "required": false
     }
   ]
 }

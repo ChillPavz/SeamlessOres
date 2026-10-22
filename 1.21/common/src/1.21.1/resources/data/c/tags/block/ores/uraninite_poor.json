@@ -65,10 +65,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_poor_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:meadow_limestone_powah_uraninite_poor_ore",
       "required": false
     },
@@ -82,10 +78,6 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_powah_uraninite_poor_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_powah_uraninite_poor_ore",
       "required": false
     },
     {

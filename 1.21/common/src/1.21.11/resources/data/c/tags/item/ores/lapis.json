@@ -10,15 +10,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_lapis_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:calcite_lapis_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_lapis_ore",
       "required": false
     }
   ]

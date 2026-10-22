@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "seamlessores:block/promenade_asphalt_redstone_ore"
+      "model": "seamlessores:block/retired/promenade_asphalt_redstone_ore"
     }
   }
 }

@@ -19,10 +19,6 @@
     {
       "id": "seamlessores:twigs_rhyolite_silentgems_turquoise_ore",
       "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_turquoise_ore",
-      "required": false
     }
   ]
 }

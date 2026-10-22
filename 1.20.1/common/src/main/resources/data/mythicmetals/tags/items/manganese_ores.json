@@ -57,10 +57,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mythicmetals_manganese_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:spawn_reefstone_mythicmetals_manganese_ore",
       "required": false
     }

@@ -61,10 +61,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_emerald_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:spawn_reefstone_emerald_ore",
       "required": false
     }
