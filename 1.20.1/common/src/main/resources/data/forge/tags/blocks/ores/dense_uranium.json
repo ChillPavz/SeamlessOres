@@ -45,6 +45,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_uranium_ore",
       "required": false
     },

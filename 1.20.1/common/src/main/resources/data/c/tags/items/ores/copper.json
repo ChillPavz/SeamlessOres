@@ -94,6 +94,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_copper_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:mythicupgrades_aquamarine_schist_copper_ore",
       "required": false
     },

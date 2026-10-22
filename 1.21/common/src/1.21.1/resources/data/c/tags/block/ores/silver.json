@@ -433,6 +433,42 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_occultism_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_silver_ore",
       "required": false
     },

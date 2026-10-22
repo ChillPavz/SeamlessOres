@@ -85,6 +85,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_tfmg_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_tfmg_lead_ore",
       "required": false
     },
@@ -230,6 +242,18 @@
     },
     {
       "id": "seamlessores:embellishcraft_larvikite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_oreganized_lead_ore",
       "required": false
     },
     {

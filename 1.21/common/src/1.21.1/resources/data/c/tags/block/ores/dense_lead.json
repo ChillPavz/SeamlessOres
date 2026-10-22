@@ -81,6 +81,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_lead_ore",
       "required": false
     },

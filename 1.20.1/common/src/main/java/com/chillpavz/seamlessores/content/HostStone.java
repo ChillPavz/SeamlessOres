@@ -183,6 +183,21 @@ public final class HostStone {
             OreTier.STONE, MapColor.TERRACOTTA_LIGHT_BLUE,
             COAL, IRON, COPPER, GOLD, EMERALD, LAPIS, ZINC);
 
+    // Quark (Forge at 1.20.1, NeoForge at 1.21.1): its big stone clusters are a code generator at
+    // underground_decoration, AFTER every ore feature, replacing stone, granite, diorite and andesite, so ore
+    // stays inside as stone ore (the chunk sweep restyles it). Limestone in swamps and oceans, jasper in
+    // badlands and sandy biomes, shale in snowy (and, from 1.21.1, cold) ones, y 20 to 80. Hardness 1.5
+    // and map colours read from its NewStoneTypesModule. Myalite (the End) waits for a colour handler.
+    public static final HostStone QUARK_LIMESTONE = placed("quark", "limestone",
+            OreTier.STONE, MapColor.STONE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
+    public static final HostStone QUARK_JASPER = placed("quark", "jasper",
+            OreTier.STONE, MapColor.TERRACOTTA_RED,
+            COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
+    public static final HostStone QUARK_SHALE = placed("quark", "shale",
+            OreTier.STONE, MapColor.ICE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);
+
     // Forbidden and Arcanus: the bottom 13 blocks of the overworld. Darkstone copies stone at
     // hardness 4.5 (ModBlocks), so it takes the deepslate ore's form.
     public static final HostStone FORBIDDEN_ARCANUS_DARKSTONE = placed("forbidden_arcanus", "darkstone",
@@ -240,6 +255,7 @@ public final class HostStone {
             CREATE_LIMESTONE, CREATE_OCHRUM, CREATE_SCORCHIA, CREATE_SCORIA, CREATE_VERIDIUM, MINECRAFT_CALCITE,
             MINECRAFT_SMOOTH_BASALT, TFMG_BAUXITE, TFMG_GALENA, TFMG_LIGNITE, TWIGS_RHYOLITE, TWIGS_SCHIST,
             TWIGS_BLOODSTONE, BORN_IN_CHAOS_V1_BLACK_ARGILLITE, EMBELLISHCRAFT_BASALT, EMBELLISHCRAFT_SLATE, EMBELLISHCRAFT_MARBLE, EMBELLISHCRAFT_GNEISS, EMBELLISHCRAFT_JADE, EMBELLISHCRAFT_LARVIKITE,
+            QUARK_LIMESTONE, QUARK_JASPER, QUARK_SHALE,
             FORBIDDEN_ARCANUS_DARKSTONE, MEADOW_LIMESTONE, MYTHICUPGRADES_AQUAMARINE_SCHIST,
             MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST, MYTHICUPGRADES_TOPAZ_SCHIST,
             MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST, PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE);

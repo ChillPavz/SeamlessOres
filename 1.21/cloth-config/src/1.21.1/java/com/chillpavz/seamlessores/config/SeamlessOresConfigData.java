@@ -249,6 +249,18 @@ public class SeamlessOresConfigData implements ConfigData {
 
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
+    public boolean quarkLimestone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean quarkJasper = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean quarkShale = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
     public boolean forbiddenArcanusDarkstone = true;
 
     @ConfigEntry.Category("modded_stones")
@@ -551,6 +563,9 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("embellishcraft_gneiss", embellishcraftGneiss);
         values.hosts.put("embellishcraft_jade", embellishcraftJade);
         values.hosts.put("embellishcraft_larvikite", embellishcraftLarvikite);
+        values.hosts.put("quark_limestone", quarkLimestone);
+        values.hosts.put("quark_jasper", quarkJasper);
+        values.hosts.put("quark_shale", quarkShale);
         values.hosts.put("forbidden_arcanus_darkstone", forbiddenArcanusDarkstone);
         values.hosts.put("meadow_limestone", meadowLimestone);
         values.hosts.put("mythicupgrades_aquamarine_schist", mythicupgradesAquamarineSchist);

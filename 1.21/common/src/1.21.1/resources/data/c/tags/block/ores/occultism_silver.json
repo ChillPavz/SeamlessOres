@@ -89,6 +89,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_occultism_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_occultism_silver_ore",
       "required": false
     },

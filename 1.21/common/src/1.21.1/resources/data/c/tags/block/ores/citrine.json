@@ -125,6 +125,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_citrine_ore",
       "required": false
     },

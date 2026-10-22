@@ -41,6 +41,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_dusk_stone_ore",
       "required": false
     },

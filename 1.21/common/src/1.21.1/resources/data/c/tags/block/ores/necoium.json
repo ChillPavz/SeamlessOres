@@ -101,6 +101,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_necoium_ore",
       "required": false
     },

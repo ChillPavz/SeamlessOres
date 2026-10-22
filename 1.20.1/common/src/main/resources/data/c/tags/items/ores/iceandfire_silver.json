@@ -101,6 +101,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_iceandfire_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_iceandfire_silver_ore",
       "required": false
     },

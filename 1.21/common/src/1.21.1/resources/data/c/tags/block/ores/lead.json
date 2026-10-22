@@ -421,6 +421,54 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_lead_ore",
       "required": false
     },

@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_densemekanism_dense_tin_ore",
       "required": false
     },

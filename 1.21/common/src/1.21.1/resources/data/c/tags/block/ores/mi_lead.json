@@ -81,6 +81,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_lead_ore",
       "required": false
     },

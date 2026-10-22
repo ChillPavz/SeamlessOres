@@ -4568,6 +4568,374 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_silentgems_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_modern_industrialization_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_modern_industrialization_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_modern_industrialization_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_modern_industrialization_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_modern_industrialization_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_silentgems_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_modern_industrialization_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_modern_industrialization_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_silentgems_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_modern_industrialization_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_modern_industrialization_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_modern_industrialization_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_modern_industrialization_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
       "required": false
     },

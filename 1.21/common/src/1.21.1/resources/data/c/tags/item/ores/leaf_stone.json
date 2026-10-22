@@ -33,6 +33,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_cobblemon_leaf_stone_ore",
       "required": false
     },

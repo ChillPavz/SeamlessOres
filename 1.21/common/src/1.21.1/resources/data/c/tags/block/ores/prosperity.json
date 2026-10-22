@@ -89,6 +89,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_mysticalagriculture_prosperity_ore",
       "required": false
     },

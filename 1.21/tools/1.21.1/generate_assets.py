@@ -191,6 +191,9 @@ HOST_LOOK = {
     "embellishcraft:gneiss": ("single", "embellishcraft:block/gneiss"),
     "embellishcraft:jade": ("single", "embellishcraft:block/jade"),
     "embellishcraft:larvikite": ("single", "embellishcraft:block/larvikite"),
+    "quark:limestone": ("single", "quark:block/limestone"),
+    "quark:jasper": ("single", "quark:block/jasper"),
+    "quark:shale": ("single", "quark:block/shale"),
     "meadow:limestone": ("single", "meadow:block/limestone"),
     "mythicupgrades:aquamarine_schist": ("single", "mythicupgrades:block/aquamarine_schist"),
     "mythicupgrades:citrine_schist": ("single", "mythicupgrades:block/citrine_schist"),
@@ -217,6 +220,7 @@ STONE_MODS = {
     "create": {"display": "Create", "bands": "NeoForge"},
     "born_in_chaos_v1": {"display": "Born in Chaos", "bands": "NeoForge"},
     "embellishcraft": {"display": "EmbellishCraft", "bands": "NeoForge"},
+    "quark": {"display": "Quark", "bands": "NeoForge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "NeoForge"},
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and NeoForge"},
     "mythicupgrades": {"display": "Mythic Upgrades", "bands": "Fabric and NeoForge"},
@@ -232,6 +236,7 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "create": jar("create-1.21.1-6.0.10.jar"),
               "born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
               "embellishcraft": jar("embellishcraft-1.21.1-8.0.0.4.jar"),
+              "quark": jar("Quark-4.1-487.jar"),
               "forbidden_arcanus": jar("1.21.1-forbidden_arcanus-2.6.1.jar"),
               "meadow": jar("letsdo-meadow-neoforge-1.4.8.jar"),
               "mythicupgrades": jar("mythicupgrades-neoforge-1.21.1-5.1.1.jar"),
@@ -1001,6 +1006,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "blockus": ('fabric',),
     "born_in_chaos_v1": ('neoforge',),   # Born in Chaos, both platforms: NeoForge only on this band
     "embellishcraft": ('neoforge',),   # EmbellishCraft: NeoForge only on this band
+    "quark": ('neoforge',),   # Quark: NeoForge only on this band
     "forbidden_arcanus": ('neoforge',),
     "meadow": ('fabric', 'neoforge'),
     "promenade": ('fabric', 'neoforge'),   # 6.0.1, 11 Oct 2026: its first 1.21.1 and first NeoForge build

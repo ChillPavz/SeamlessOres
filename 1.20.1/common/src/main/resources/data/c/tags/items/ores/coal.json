@@ -22,6 +22,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_coal_ore",
       "required": false
     },

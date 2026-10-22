@@ -219,6 +219,9 @@ HOST_LOOK = {
     "embellishcraft:gneiss": ("single", "embellishcraft:block/gneiss"),
     "embellishcraft:jade": ("single", "embellishcraft:block/jade"),
     "embellishcraft:larvikite": ("single", "embellishcraft:block/larvikite"),
+    "quark:limestone": ("single", "quark:block/limestone"),
+    "quark:jasper": ("single", "quark:block/jasper"),
+    "quark:shale": ("single", "quark:block/shale"),
     "meadow:limestone": ("turned", "meadow:block/limestone"),
     "mythicupgrades:aquamarine_schist": ("single", "mythicupgrades:block/aquamarine_schist"),
     "mythicupgrades:citrine_schist": ("single", "mythicupgrades:block/citrine_schist"),
@@ -241,6 +244,7 @@ STONE_MODS = {
     "create": {"display": "Create", "bands": "Forge, and Fabric through Create Fabric"},
     "born_in_chaos_v1": {"display": "Born in Chaos", "bands": "Forge"},
     "embellishcraft": {"display": "EmbellishCraft", "bands": "Forge"},
+    "quark": {"display": "Quark", "bands": "Forge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "Forge"},
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and Forge"},
     "mythicupgrades": {"display": "Mythic Upgrades", "bands": "Fabric and Forge"},
@@ -254,6 +258,7 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "create": jar("1.20.1-create-1.20.1-6.0.8.jar"),
               "born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
               "embellishcraft": jar("embellishcraft-1.20.1-7.0.0.0.jar"),
+              "quark": jar("Quark-4.0-462.jar"),
               "forbidden_arcanus": jar("forbidden_arcanus-1.20.1-2.2.6.jar"),
               "meadow": jar("letsdo-meadow-forge-1.3.25.jar"),
               "mythicupgrades": jar("1.20.1-mythicupgrades-forge-1.20.1-5.1.0.jar"),
@@ -1009,6 +1014,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "blockus": ('fabric',),
     "born_in_chaos_v1": ('forge',),   # Born in Chaos, both platforms: Forge only on this band
     "embellishcraft": ('forge',),   # EmbellishCraft: Forge only on this band
+    "quark": ('forge',),   # Quark: Forge only on this band
     "forbidden_arcanus": ('forge',),
     "meadow": ('fabric', 'forge'),
     "promenade": ('fabric',),

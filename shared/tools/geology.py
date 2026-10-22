@@ -26,7 +26,7 @@ import os
 CLASSES = {
     # sedimentary carbonate; Spawn's reefstone is reef limestone
     "LIME": ["blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone",
-             "regions_unexplored_chalk"],
+             "regions_unexplored_chalk", "quark_limestone"],
     "CALC": ["minecraft_calcite"],
     # sedimentary hydrocarbon: asphalt, and TFMG's lignite (brown coal)
     "ASPH": ["promenade_asphalt", "tfmg_lignite"],
@@ -47,9 +47,12 @@ CLASSES = {
     # massive sulphide: TFMG's galena, a lead-zinc ore body as rock
     "SULF": ["tfmg_galena"],
     # black shale and argillite (organic-rich sedimentary pelite): Born in Chaos' black argillite
-    "SHAL": ["born_in_chaos_v1_black_argillite", "regions_unexplored_argillite"],
+    "SHAL": ["born_in_chaos_v1_black_argillite", "regions_unexplored_argillite", "quark_shale"],
     # serpentinite and the jadeitite / nephrite that forms from it (owner, 21 Oct 2026): EmbellishCraft's jade
     "SERP": ["embellishcraft_jade"],
+    # chert and jasper, silica sedimentary (owner, 22 Oct 2026): Quark's jasper. Banded iron formation
+    # (jaspilite) and the sea-floor exhalative beds: iron, manganese, copper, lead-zinc, gold, and fiction.
+    "CHRT": ["quark_jasper"],
 }
 ALL = list(CLASSES)
 
@@ -69,9 +72,9 @@ FAMILIES = [
     # black shale the seams lie between keep it.
     (["coal", "lignite_coal"], _all_but("LIME", "ASPH", "SHAL")),
     # Colombian emerald is in black shale and carbonate; schist emerald is the classic pegmatite contact.
-    (["emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SERP")),
+    (["emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SERP", "CHRT")),
     # Lazurite rock is lazurite with calcite: marble and calcite only.
-    (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL", "SERP")),
+    (["lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL", "SERP", "CHRT")),
     # A kimberlite pipe, which none of these is.
     # Born in Chaos' infected diamond is diamond, whatever lives in it.
     (["diamond", "bort", "white_diamond", "black_diamond", "infected_diamond"], _hosts(*ALL)),
@@ -100,11 +103,11 @@ FAMILIES = [
     # Uranium: asphaltite, carbonate, schist and rhyolite caldera uranium are real; not in mafic rock,
     # not in a laterite, not in a lead-zinc body. Extreme Reactors' yellorite is its uranium ore.
     (["techreborn_uranium", "uranium", "ie_uranium", "mek_uranium", "dense_uranium", "yellorite",
-      "uraninite", "uraninite_poor", "uraninite_dense"], _hosts("PLUT", "VOLC", "LATE", "SULF", "SERP")),
+      "uraninite", "uraninite_poor", "uraninite_dense"], _hosts("PLUT", "VOLC", "LATE", "SULF", "SERP", "CHRT")),
     # Rock salt is an evaporite, laid down with carbonate.
     (["salt"], _all_but("LIME")),
     # Fluorite: Mississippi Valley carbonate, skarn marble, calcite veins, rhyolite (Mexico), lead-zinc gangue.
-    (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL", "SERP")),
+    (["dense_fluorite", "mek_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL", "SERP", "CHRT")),
     # Scheelite skarn at limestone and marble contacts, and scheelite in schist.
     (["tungsten"], _all_but("LIME", "MARB", "SCH")),
     # Monazite and thorium: metamorphic monazite in pelitic schist.

@@ -149,6 +149,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_bigreactors_yellorite_ore",
       "required": false
     },

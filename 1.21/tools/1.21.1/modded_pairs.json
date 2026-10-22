@@ -9362,6 +9362,1002 @@
     "rate": 33.68
    }
   },
+  "quark:jasper": {
+   "antimony": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 766.52
+   },
+   "aquamarine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "bort": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.64
+   },
+   "brilliant": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.55
+   },
+   "chaos": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 94.97
+   },
+   "citrine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "dawn_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "dense_fluorite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.85
+   },
+   "dense_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 102.07
+   },
+   "dense_osmium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 332.21
+   },
+   "dense_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 837.84
+   },
+   "dense_uranium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.83
+   },
+   "dusk_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "energized_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1072.61
+   },
+   "fire_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "garnet": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.08
+   },
+   "ice_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 102.53
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 482.48
+   },
+   "inferium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 652.41
+   },
+   "lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 392.8
+   },
+   "leaf_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "lignite_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1974.86
+   },
+   "mi_bauxite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 783.72
+   },
+   "mi_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1962.3
+   },
+   "mi_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 643.88
+   },
+   "mi_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1103.79
+   },
+   "monazite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.47
+   },
+   "moon_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "natural_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.44
+   },
+   "necoium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.31
+   },
+   "nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 74.82
+   },
+   "occultism_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 310.38
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 670.38
+   },
+   "peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "prosperity": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 179.82
+   },
+   "salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 275.95
+   },
+   "shiny_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "silents_aquamarine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.08
+   },
+   "silents_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 90.95
+   },
+   "silents_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 70.16
+   },
+   "silents_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 60.23
+   },
+   "silents_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 349.4
+   },
+   "silents_topaz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 90.95
+   },
+   "soulstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 127.96
+   },
+   "sun_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "thorium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 175.23
+   },
+   "thunder_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "topaz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "tungsten": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 88.73
+   },
+   "uraninite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.49
+   },
+   "uraninite_poor": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 153.3
+   },
+   "uranium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 91.04
+   },
+   "water_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 177.67
+   },
+   "yellorite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 124.16
+   }
+  },
+  "quark:limestone": {
+   "antimony": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2235.69
+   },
+   "aquamarine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "bort": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 33.95
+   },
+   "brilliant": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 65.78
+   },
+   "chaos": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 277.0
+   },
+   "citrine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "dawn_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "dense_fluorite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 124.98
+   },
+   "dense_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 297.69
+   },
+   "dense_osmium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 968.95
+   },
+   "dense_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2443.69
+   },
+   "dense_uranium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.42
+   },
+   "dusk_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "energized_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3128.45
+   },
+   "fire_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "garnet": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 102.32
+   },
+   "ice_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 299.04
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1407.25
+   },
+   "inferium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1902.87
+   },
+   "lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1145.67
+   },
+   "leaf_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "lignite_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5760.01
+   },
+   "mi_bauxite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2285.86
+   },
+   "mi_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5723.36
+   },
+   "mi_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1877.98
+   },
+   "mi_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3219.39
+   },
+   "monazite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 62.61
+   },
+   "moon_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "natural_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.27
+   },
+   "necoium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.77
+   },
+   "nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 218.22
+   },
+   "occultism_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 905.26
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1955.28
+   },
+   "peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "prosperity": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 524.48
+   },
+   "salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 804.85
+   },
+   "shiny_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "silents_aquamarine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 102.32
+   },
+   "silents_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 265.27
+   },
+   "silents_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 204.64
+   },
+   "silents_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 175.66
+   },
+   "silents_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1019.07
+   },
+   "silents_topaz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 265.27
+   },
+   "soulstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 373.2
+   },
+   "sun_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "thorium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 511.08
+   },
+   "thunder_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "topaz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "tungsten": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 258.79
+   },
+   "uraninite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 103.51
+   },
+   "uraninite_poor": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 447.14
+   },
+   "uranium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 265.53
+   },
+   "water_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 518.22
+   },
+   "yellorite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 362.14
+   }
+  },
+  "quark:shale": {
+   "antimony": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1277.54
+   },
+   "aquamarine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "bort": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.4
+   },
+   "brilliant": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 37.59
+   },
+   "chaos": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 158.28
+   },
+   "citrine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "dawn_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "dense_fluorite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 71.42
+   },
+   "dense_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 170.11
+   },
+   "dense_osmium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 553.69
+   },
+   "dense_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1396.4
+   },
+   "dense_uranium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.38
+   },
+   "dusk_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "energized_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1787.69
+   },
+   "fire_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "garnet": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 58.47
+   },
+   "ice_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 170.88
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 804.14
+   },
+   "inferium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1087.36
+   },
+   "lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 654.67
+   },
+   "leaf_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "lignite_coal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3291.43
+   },
+   "mi_bauxite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1306.21
+   },
+   "mi_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3270.49
+   },
+   "mi_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1073.13
+   },
+   "mi_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1839.65
+   },
+   "monazite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.78
+   },
+   "moon_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "natural_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.73
+   },
+   "necoium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.6
+   },
+   "nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 124.7
+   },
+   "occultism_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 517.29
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1117.3
+   },
+   "peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "prosperity": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 299.7
+   },
+   "salt": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 459.91
+   },
+   "shiny_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "silents_aquamarine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 58.47
+   },
+   "silents_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 151.58
+   },
+   "silents_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 116.94
+   },
+   "silents_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 100.38
+   },
+   "silents_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 582.33
+   },
+   "silents_topaz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 151.58
+   },
+   "soulstone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 213.26
+   },
+   "sun_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "thorium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 292.05
+   },
+   "thunder_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "topaz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.21
+   },
+   "tungsten": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 147.88
+   },
+   "uraninite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 59.15
+   },
+   "uraninite_poor": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 255.51
+   },
+   "uranium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 151.73
+   },
+   "water_stone": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 296.12
+   },
+   "yellorite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 206.94
+   }
+  },
   "regions_unexplored:argillite": {
    "antimony": {
     "where": [

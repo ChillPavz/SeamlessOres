@@ -57,6 +57,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_energizedpower_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_energizedpower_tin_ore",
       "required": false
     },

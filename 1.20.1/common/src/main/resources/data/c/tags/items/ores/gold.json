@@ -116,6 +116,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_gold_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
       "required": false
     },

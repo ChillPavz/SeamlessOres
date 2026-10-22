@@ -221,6 +221,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_oreganized_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_techreborn_lead_ore",
       "required": false
     },

@@ -45,6 +45,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_emerald_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_emerald_ore",
       "required": false
     },
