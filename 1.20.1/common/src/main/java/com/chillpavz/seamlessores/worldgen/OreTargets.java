@@ -19,6 +19,12 @@ final class OreTargets {
 
     private OreTargets() {}
 
+    /**
+     * Other mods' rule tests whose answer depends on the block alone, read from their bytecode.
+     * Electrodynamics' asks its own ore switch and then whether the block is in a tag.
+     */
+    private static final Set<String> BLOCK_ONLY_FOREIGN = Set.of("electrodynamics.common.world.ruletests.RuleTestOre");
+
     /** Seeded, and only handed to rule tests that never read it; see {@link #receives}. */
     private static final RandomSource UNUSED = RandomSource.create(0L);
 
@@ -29,7 +35,8 @@ final class OreTargets {
      */
     static boolean receives(RuleTest original, Block stone) {
         final boolean blockOnly = original instanceof TagMatchTest || original instanceof BlockMatchTest
-                || original instanceof BlockStateMatchTest || original instanceof AlwaysTrueTest;
+                || original instanceof BlockStateMatchTest || original instanceof AlwaysTrueTest
+                || BLOCK_ONLY_FOREIGN.contains(original.getClass().getName());
         return blockOnly && original.test(stone.defaultBlockState(), UNUSED);
     }
 
