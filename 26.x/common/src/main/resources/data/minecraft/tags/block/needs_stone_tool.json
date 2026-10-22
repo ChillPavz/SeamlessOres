@@ -81,6 +81,10 @@
       "id": "seamlessores:andesite_iceandfire_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
     "seamlessores:tuff_lapis_ore",
@@ -110,6 +114,10 @@
     },
     {
       "id": "seamlessores:tuff_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_theurgy_sal_ammoniac_ore",
       "required": false
     },
     "seamlessores:dripstone_iron_ore",
@@ -149,6 +157,10 @@
     },
     {
       "id": "seamlessores:blackstone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -336,6 +348,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_iron_ore",
       "required": false
     },
@@ -349,6 +365,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -381,6 +401,10 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {

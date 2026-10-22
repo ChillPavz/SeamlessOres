@@ -1175,6 +1175,22 @@
    "deepslate_xp": null,
    "strength": null,
    "deepslate_overlay": null
+  },
+  "sal_ammoniac": {
+   "mod": "theurgy",
+   "seamless_ores_name": "sal_ammoniac",
+   "forms": [
+    "theurgy:sal_ammoniac_ore",
+    "theurgy:deepslate_sal_ammoniac_ore"
+   ],
+   "nether": false,
+   "xp": [
+    2,
+    5
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
   }
  },
  "hosts": {
@@ -3271,6 +3287,12 @@
     ],
     "rate": 533.82
    },
+   "sal_ammoniac": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 50.6
+   },
    "silents_aquamarine": {
     "where": [
      "26.1.x neoforge"
@@ -3535,6 +3557,14 @@
      "26.1.x fabric"
     ],
     "rate": 0.36
+   },
+   "sal_ammoniac": {
+    "where": [
+     "26.1.x neoforge",
+     "26.2 neoforge",
+     "26.3 neoforge"
+    ],
+    "rate": 2.57
    },
    "silents_aquamarine": {
     "where": [
@@ -4569,6 +4599,12 @@
     ],
     "rate": 4.74
    },
+   "sal_ammoniac": {
+    "where": [
+     "26.3 neoforge"
+    ],
+    "rate": 119.72
+   },
    "silver": {
     "where": [
      "26.1.x fabric"
@@ -4800,6 +4836,12 @@
     ],
     "rate": 4.74
    },
+   "sal_ammoniac": {
+    "where": [
+     "26.3 neoforge"
+    ],
+    "rate": 124.75
+   },
    "silver": {
     "where": [
      "26.1.x fabric"
@@ -4987,6 +5029,12 @@
     ],
     "rate": 0.16
    },
+   "sal_ammoniac": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.67
+   },
    "silents_aquamarine": {
     "where": [
      "26.1.x neoforge"
@@ -5116,6 +5164,12 @@
     ],
     "rate": 1.26
    },
+   "sal_ammoniac": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 5.54
+   },
    "starrite": {
     "where": [
      "26.1.x fabric"
@@ -5196,6 +5250,12 @@
      "26.1.x fabric"
     ],
     "rate": 6.45
+   },
+   "sal_ammoniac": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 19.12
    },
    "starrite": {
     "where": [
@@ -5360,6 +5420,13 @@
      "26.1.x fabric"
     ],
     "rate": 0.92
+   },
+   "sal_ammoniac": {
+    "where": [
+     "26.2 neoforge",
+     "26.3 neoforge"
+    ],
+    "rate": 8.62
    },
    "silver": {
     "where": [

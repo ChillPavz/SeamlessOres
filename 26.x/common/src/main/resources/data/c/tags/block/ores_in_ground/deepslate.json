@@ -145,6 +145,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -230,6 +234,10 @@
     },
     {
       "id": "seamlessores:blackstone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {

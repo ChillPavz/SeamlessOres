@@ -113,6 +113,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_mythicmetals_midas_gold_ore",
       "required": false
     },
@@ -298,6 +302,10 @@
     },
     {
       "id": "seamlessores:blackstone_techreborn_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -1497,6 +1505,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_copper_ore",
       "required": false
     },
@@ -1645,6 +1657,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_coal_ore",
       "required": false
     },
@@ -1766,6 +1782,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_mossy_stone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {
@@ -2030,6 +2050,10 @@
     },
     {
       "id": "seamlessores:tuff_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_theurgy_sal_ammoniac_ore",
       "required": false
     },
     {

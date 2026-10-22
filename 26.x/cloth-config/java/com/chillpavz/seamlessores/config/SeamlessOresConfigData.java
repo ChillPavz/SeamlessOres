@@ -384,6 +384,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean showUpdateNote = true;
 
+    // --- Theurgy -------------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("theurgy")
+    @ConfigEntry.Gui.Tooltip
+    public boolean theurgy = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -482,6 +488,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.things = things;
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;
+        values.theurgy = theurgy;
 
         SeamlessOresConfig.apply(values);
     }

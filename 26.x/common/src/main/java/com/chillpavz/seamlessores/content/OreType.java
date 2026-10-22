@@ -536,6 +536,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
      */
     public static final OreType SG_OPAL = silentGem("opal", GEM_XP);
 
+    // --- Theurgy (mod id theurgy; its art is CC BY-SA 4.0): sal ammoniac, iron convention, 2 to 5 XP ---
+    public static final OreType TH_SAL_AMMONIAC = ore(
+            "sal_ammoniac", "sal_ammoniac", null, "theurgy",
+            of("theurgy", "sal_ammoniac_ore"), of("theurgy", "deepslate_sal_ammoniac_ore"), null,
+            UniformInt.of(2, 5), null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -557,7 +563,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TR_BAUXITE, TR_GALENA, TR_IRIDIUM, TR_LEAD, TR_RUBY, TR_SAPPHIRE, TR_SILVER, TR_TIN,
                     TR_URANIUM, OCCULTISM_SILVER, IAF_SAPPHIRE, IAF_SILVER,
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE,
-                    INFERIUM, PROSPERITY, SG_OPAL);
+                    INFERIUM, PROSPERITY, SG_OPAL,
+                    TH_SAL_AMMONIAC);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

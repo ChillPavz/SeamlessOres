@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_theurgy_sal_ammoniac_ore",
+      "required": false
+    }
+  ]
+}
