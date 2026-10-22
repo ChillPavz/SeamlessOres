@@ -43,108 +43,108 @@ touching ore of the same type across different host stones.
 
 | | basalt | blackstone |
 |---|---|---|
-| Gold | `basalt_gold_ore` | `blackstone_gold_ore` |
-| Quartz | `basalt_quartz_ore` | `blackstone_quartz_ore` |
+| Gold | `basalt_nether_gold_ore` | `blackstone_nether_gold_ore` |
+| Quartz | `basalt_nether_quartz_ore` | `blackstone_nether_quartz_ore` |
 
 **Born in Chaos, Overworld, requires `born_in_chaos_v1`**
 
 | | tuff |
 |---|---|
-| Infected Diamond | `tuff_infected_diamond_ore` |
+| Infected Diamond | `tuff_born_in_chaos_v1_infected_diamond_ore` |
 
 **Create, Overworld, requires `create`**
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Zinc | `granite_zinc_ore` | `diorite_zinc_ore` | `andesite_zinc_ore` | `tuff_zinc_ore` | `dripstone_zinc_ore` | `cinnabar_zinc_ore` |
+| Zinc | `granite_create_zinc_ore` | `diorite_create_zinc_ore` | `andesite_create_zinc_ore` | `tuff_create_zinc_ore` | `dripstone_create_zinc_ore` | `cinnabar_create_zinc_ore` |
 
 **Create: New Age, Overworld, requires `create_new_age`**
 
 | | granite |
 |---|---|
-| Thorium | `granite_thorium_ore` |
+| Thorium | `granite_create_new_age_thorium_ore` |
 
 **Create: TFMG, Overworld, requires `tfmg`**
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Lead | `granite_lead_ore` | `diorite_lead_ore` | `andesite_lead_ore` | `tuff_lead_ore` | `dripstone_lead_ore` | `cinnabar_lead_ore` |
-| Lithium | `granite_lithium_ore` |   |   | `tuff_lithium_ore` |   |   |
+| Lead | `granite_tfmg_lead_ore` | `diorite_tfmg_lead_ore` | `andesite_tfmg_lead_ore` | `tuff_tfmg_lead_ore` | `dripstone_tfmg_lead_ore` | `cinnabar_tfmg_lead_ore` |
+| Lithium | `granite_tfmg_lithium_ore` |   |   | `tuff_tfmg_lithium_ore` |   |   |
 
 **Dense Mekanism, Overworld, requires `densemekanism`**
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Dense Fluorite | `granite_dense_fluorite_ore` |   |   | `tuff_dense_fluorite_ore` | `dripstone_dense_fluorite_ore` |   |
-| Dense Lead | `granite_dense_lead_ore` | `diorite_dense_lead_ore` | `andesite_dense_lead_ore` | `tuff_dense_lead_ore` | `dripstone_dense_lead_ore` | `cinnabar_dense_lead_ore` |
-| Dense Tin | `granite_dense_tin_ore` |   |   |   |   |   |
-| Dense Uranium | `granite_dense_uranium_ore` | `diorite_dense_uranium_ore` | `andesite_dense_uranium_ore` | `tuff_dense_uranium_ore` | `dripstone_dense_uranium_ore` |   |
+| Dense Fluorite | `granite_densemekanism_dense_fluorite_ore` |   |   | `tuff_densemekanism_dense_fluorite_ore` | `dripstone_densemekanism_dense_fluorite_ore` |   |
+| Dense Lead | `granite_densemekanism_dense_lead_ore` | `diorite_densemekanism_dense_lead_ore` | `andesite_densemekanism_dense_lead_ore` | `tuff_densemekanism_dense_lead_ore` | `dripstone_densemekanism_dense_lead_ore` | `cinnabar_densemekanism_dense_lead_ore` |
+| Dense Tin | `granite_densemekanism_dense_tin_ore` |   |   |   |   |   |
+| Dense Uranium | `granite_densemekanism_dense_uranium_ore` | `diorite_densemekanism_dense_uranium_ore` | `andesite_densemekanism_dense_uranium_ore` | `tuff_densemekanism_dense_uranium_ore` | `dripstone_densemekanism_dense_uranium_ore` |   |
 
 **Energized Power, Overworld, requires `energizedpower`**
 
 | | granite |
 |---|---|
-| Tin | `granite_energized_tin_ore` |
+| Tin | `granite_energizedpower_tin_ore` |
 
 **Mythic Metals, Overworld, requires `mythicmetals`**
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Adamantite | `granite_adamantite_ore` | `diorite_adamantite_ore` | `andesite_adamantite_ore` | `tuff_adamantite_ore` | `dripstone_adamantite_ore` |   |
-| Carmot | `granite_carmot_ore` | `diorite_carmot_ore` | `andesite_carmot_ore` | `tuff_carmot_ore` | `dripstone_carmot_ore` |   |
-| Morkite | `granite_morkite_ore` | `diorite_morkite_ore` | `andesite_morkite_ore` | `tuff_morkite_ore` | `dripstone_morkite_ore` |   |
-| Mythril | `granite_mythril_ore` | `diorite_mythril_ore` | `andesite_mythril_ore` | `tuff_mythril_ore` | `dripstone_mythril_ore` |   |
-| Prometheum | `granite_prometheum_ore` | `diorite_prometheum_ore` | `andesite_prometheum_ore` | `tuff_prometheum_ore` | `dripstone_prometheum_ore` |   |
-| Runite | `granite_runite_ore` | `diorite_runite_ore` | `andesite_runite_ore` | `tuff_runite_ore` | `dripstone_runite_ore` |   |
-| Unobtainium | `granite_unobtainium_ore` | `diorite_unobtainium_ore` | `andesite_unobtainium_ore` | `tuff_unobtainium_ore` | `dripstone_unobtainium_ore` |   |
-| Aquarium | `granite_aquarium_ore` | `diorite_aquarium_ore` | `andesite_aquarium_ore` |   | `dripstone_aquarium_ore` |   |
-| Banglum | `granite_banglum_ore` | `diorite_banglum_ore` | `andesite_banglum_ore` |   | `dripstone_banglum_ore` |   |
-| Kyber | `granite_kyber_ore` | `diorite_kyber_ore` | `andesite_kyber_ore` |   | `dripstone_kyber_ore` |   |
-| Manganese | `granite_manganese_ore` | `diorite_manganese_ore` | `andesite_manganese_ore` |   | `dripstone_manganese_ore` |   |
-| Quadrillum | `granite_quadrillum_ore` | `diorite_quadrillum_ore` | `andesite_quadrillum_ore` |   | `dripstone_quadrillum_ore` |   |
-| Silver | `granite_silver_ore` | `diorite_silver_ore` | `andesite_silver_ore` |   |   | `cinnabar_silver_ore` |
-| Starrite | `granite_starrite_ore` | `diorite_starrite_ore` | `andesite_starrite_ore` |   | `dripstone_starrite_ore` |   |
-| Tin | `granite_tin_ore` |   |   |   |   |   |
-| Orichalcum | `granite_orichalcum_ore` | `diorite_orichalcum_ore` | `andesite_orichalcum_ore` |   | `dripstone_orichalcum_ore` |   |
+| Adamantite | `granite_mythicmetals_adamantite_ore` | `diorite_mythicmetals_adamantite_ore` | `andesite_mythicmetals_adamantite_ore` | `tuff_mythicmetals_adamantite_ore` | `dripstone_mythicmetals_adamantite_ore` |   |
+| Carmot | `granite_mythicmetals_carmot_ore` | `diorite_mythicmetals_carmot_ore` | `andesite_mythicmetals_carmot_ore` | `tuff_mythicmetals_carmot_ore` | `dripstone_mythicmetals_carmot_ore` |   |
+| Morkite | `granite_mythicmetals_morkite_ore` | `diorite_mythicmetals_morkite_ore` | `andesite_mythicmetals_morkite_ore` | `tuff_mythicmetals_morkite_ore` | `dripstone_mythicmetals_morkite_ore` |   |
+| Mythril | `granite_mythicmetals_mythril_ore` | `diorite_mythicmetals_mythril_ore` | `andesite_mythicmetals_mythril_ore` | `tuff_mythicmetals_mythril_ore` | `dripstone_mythicmetals_mythril_ore` |   |
+| Prometheum | `granite_mythicmetals_prometheum_ore` | `diorite_mythicmetals_prometheum_ore` | `andesite_mythicmetals_prometheum_ore` | `tuff_mythicmetals_prometheum_ore` | `dripstone_mythicmetals_prometheum_ore` |   |
+| Runite | `granite_mythicmetals_runite_ore` | `diorite_mythicmetals_runite_ore` | `andesite_mythicmetals_runite_ore` | `tuff_mythicmetals_runite_ore` | `dripstone_mythicmetals_runite_ore` |   |
+| Unobtainium | `granite_mythicmetals_unobtainium_ore` | `diorite_mythicmetals_unobtainium_ore` | `andesite_mythicmetals_unobtainium_ore` | `tuff_mythicmetals_unobtainium_ore` | `dripstone_mythicmetals_unobtainium_ore` |   |
+| Aquarium | `granite_mythicmetals_aquarium_ore` | `diorite_mythicmetals_aquarium_ore` | `andesite_mythicmetals_aquarium_ore` |   | `dripstone_mythicmetals_aquarium_ore` |   |
+| Banglum | `granite_mythicmetals_banglum_ore` | `diorite_mythicmetals_banglum_ore` | `andesite_mythicmetals_banglum_ore` |   | `dripstone_mythicmetals_banglum_ore` |   |
+| Kyber | `granite_mythicmetals_kyber_ore` | `diorite_mythicmetals_kyber_ore` | `andesite_mythicmetals_kyber_ore` |   | `dripstone_mythicmetals_kyber_ore` |   |
+| Manganese | `granite_mythicmetals_manganese_ore` | `diorite_mythicmetals_manganese_ore` | `andesite_mythicmetals_manganese_ore` |   | `dripstone_mythicmetals_manganese_ore` |   |
+| Quadrillum | `granite_mythicmetals_quadrillum_ore` | `diorite_mythicmetals_quadrillum_ore` | `andesite_mythicmetals_quadrillum_ore` |   | `dripstone_mythicmetals_quadrillum_ore` |   |
+| Silver | `granite_mythicmetals_silver_ore` | `diorite_mythicmetals_silver_ore` | `andesite_mythicmetals_silver_ore` |   |   | `cinnabar_mythicmetals_silver_ore` |
+| Starrite | `granite_mythicmetals_starrite_ore` | `diorite_mythicmetals_starrite_ore` | `andesite_mythicmetals_starrite_ore` |   | `dripstone_mythicmetals_starrite_ore` |   |
+| Tin | `granite_mythicmetals_tin_ore` |   |   |   |   |   |
+| Orichalcum | `granite_mythicmetals_orichalcum_ore` | `diorite_mythicmetals_orichalcum_ore` | `andesite_mythicmetals_orichalcum_ore` |   | `dripstone_mythicmetals_orichalcum_ore` |   |
 
 **Mythic Metals, Nether, requires `mythicmetals`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Banglum | `basalt_banglum_ore` | `blackstone_banglum_ore` |
-| Midas Gold | `basalt_midas_gold_ore` | `blackstone_midas_gold_ore` |
-| Palladium | `basalt_palladium_ore` | `blackstone_palladium_ore` |
-| Stormyx | `basalt_stormyx_ore` |   |
+| Banglum | `basalt_mythicmetals_nether_banglum_ore` | `blackstone_mythicmetals_nether_banglum_ore` |
+| Midas Gold | `basalt_mythicmetals_midas_gold_ore` | `blackstone_mythicmetals_midas_gold_ore` |
+| Palladium | `basalt_mythicmetals_palladium_ore` | `blackstone_mythicmetals_palladium_ore` |
+| Stormyx | `basalt_mythicmetals_stormyx_ore` |   |
 
 **Mythic Upgrades, Overworld, requires `mythicupgrades`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Aquamarine | `granite_aquamarine_ore` |   |   |   |   |
-| Citrine | `granite_citrine_ore` | `diorite_citrine_ore` | `andesite_citrine_ore` | `tuff_citrine_ore` |   |
-| Topaz | `granite_topaz_ore` |   |   |   |   |
-| Necoium | `granite_necoium_ore` | `diorite_necoium_ore` | `andesite_necoium_ore` | `tuff_necoium_ore` | `dripstone_necoium_ore` |
+| Aquamarine | `granite_mythicupgrades_aquamarine_ore` |   |   |   |   |
+| Citrine | `granite_mythicupgrades_citrine_ore` | `diorite_mythicupgrades_citrine_ore` | `andesite_mythicupgrades_citrine_ore` | `tuff_mythicupgrades_citrine_ore` |   |
+| Topaz | `granite_mythicupgrades_topaz_ore` |   |   |   |   |
+| Necoium | `granite_mythicupgrades_necoium_ore` | `diorite_mythicupgrades_necoium_ore` | `andesite_mythicupgrades_necoium_ore` | `tuff_mythicupgrades_necoium_ore` | `dripstone_mythicupgrades_necoium_ore` |
 
 **Mythic Upgrades, Nether, requires `mythicupgrades`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Ruby | `basalt_ruby_ore` | `blackstone_ruby_ore` |
-| Sapphire | `basalt_sapphire_ore` | `blackstone_sapphire_ore` |
+| Ruby | `basalt_mythicupgrades_ruby_ore` | `blackstone_mythicupgrades_ruby_ore` |
+| Sapphire | `basalt_mythicupgrades_sapphire_ore` | `blackstone_mythicupgrades_sapphire_ore` |
 
 **Powah, Overworld, requires `powah`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Uraninite | `granite_uraninite_ore` | `diorite_uraninite_ore` | `andesite_uraninite_ore` | `tuff_uraninite_ore` | `dripstone_uraninite_ore` |
-| Uraninite Poor | `granite_uraninite_poor_ore` | `diorite_uraninite_poor_ore` | `andesite_uraninite_poor_ore` | `tuff_uraninite_poor_ore` | `dripstone_uraninite_poor_ore` |
-| Uraninite Dense | `granite_uraninite_dense_ore` | `diorite_uraninite_dense_ore` | `andesite_uraninite_dense_ore` | `tuff_uraninite_dense_ore` | `dripstone_uraninite_dense_ore` |
+| Uraninite | `granite_powah_uraninite_ore` | `diorite_powah_uraninite_ore` | `andesite_powah_uraninite_ore` | `tuff_powah_uraninite_ore` | `dripstone_powah_uraninite_ore` |
+| Uraninite Poor | `granite_powah_uraninite_poor_ore` | `diorite_powah_uraninite_poor_ore` | `andesite_powah_uraninite_poor_ore` | `tuff_powah_uraninite_poor_ore` | `dripstone_powah_uraninite_poor_ore` |
+| Uraninite Dense | `granite_powah_uraninite_dense_ore` | `diorite_powah_uraninite_dense_ore` | `andesite_powah_uraninite_dense_ore` | `tuff_powah_uraninite_dense_ore` | `dripstone_powah_uraninite_dense_ore` |
 
 **Silent Gear, Overworld, requires `silentgear`**
 
 | | tuff |
 |---|---|
-| Bort | `tuff_bort_ore` |
+| Bort | `tuff_silentgear_bort_ore` |
 
 **Ice and Fire, Overworld, requires `iceandfire`**
 
@@ -156,65 +156,65 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Chaos | `granite_chaos_ore` | `diorite_chaos_ore` | `andesite_chaos_ore` | `tuff_chaos_ore` | `dripstone_chaos_ore` |   |
-| Garnet | `granite_garnet_ore` |   |   |   |   |   |
-| Heliodor | `granite_heliodor_ore` |   |   |   |   |   |
-| Aquamarine | `granite_silents_aquamarine_ore` |   |   |   |   |   |
-| Citrine | `granite_silents_citrine_ore` | `diorite_silents_citrine_ore` | `andesite_silents_citrine_ore` | `tuff_silents_citrine_ore` |   |   |
-| Topaz | `granite_silents_topaz_ore` |   |   |   |   |   |
-| Silver | `granite_silents_silver_ore` | `diorite_silents_silver_ore` | `andesite_silents_silver_ore` | `tuff_silents_silver_ore` |   | `cinnabar_silents_silver_ore` |
-| Carnelian |   |   | `andesite_carnelian_ore` | `tuff_carnelian_ore` |   |   |
-| Turquoise |   |   | `andesite_turquoise_ore` | `tuff_turquoise_ore` |   |   |
-| Black Diamond |   |   |   | `tuff_black_diamond_ore` |   |   |
-| White Diamond |   |   |   | `tuff_white_diamond_ore` |   |   |
-| Opal |   |   |   | `tuff_opal_ore` |   |   |
+| Chaos | `granite_silentgems_chaos_ore` | `diorite_silentgems_chaos_ore` | `andesite_silentgems_chaos_ore` | `tuff_silentgems_chaos_ore` | `dripstone_silentgems_chaos_ore` |   |
+| Garnet | `granite_silentgems_garnet_ore` |   |   |   |   |   |
+| Heliodor | `granite_silentgems_heliodor_ore` |   |   |   |   |   |
+| Aquamarine | `granite_silentgems_aquamarine_ore` |   |   |   |   |   |
+| Citrine | `granite_silentgems_citrine_ore` | `diorite_silentgems_citrine_ore` | `andesite_silentgems_citrine_ore` | `tuff_silentgems_citrine_ore` |   |   |
+| Topaz | `granite_silentgems_topaz_ore` |   |   |   |   |   |
+| Silver | `granite_silentgems_silver_ore` | `diorite_silentgems_silver_ore` | `andesite_silentgems_silver_ore` | `tuff_silentgems_silver_ore` |   | `cinnabar_silentgems_silver_ore` |
+| Carnelian |   |   | `andesite_silentgems_carnelian_ore` | `tuff_silentgems_carnelian_ore` |   |   |
+| Turquoise |   |   | `andesite_silentgems_turquoise_ore` | `tuff_silentgems_turquoise_ore` |   |   |
+| Black Diamond |   |   |   | `tuff_silentgems_black_diamond_ore` |   |   |
+| White Diamond |   |   |   | `tuff_silentgems_white_diamond_ore` |   |   |
+| Opal |   |   |   | `tuff_silentgems_opal_ore` |   |   |
 
 **Silent's Gems, Nether, requires `silentgems`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Carnelian | `basalt_carnelian_ore` | `blackstone_carnelian_ore` |
-| Citrine | `basalt_silents_citrine_ore` | `blackstone_silents_citrine_ore` |
+| Carnelian | `basalt_silentgems_nether_carnelian_ore` | `blackstone_silentgems_nether_carnelian_ore` |
+| Citrine | `basalt_silentgems_nether_citrine_ore` | `blackstone_silentgems_nether_citrine_ore` |
 
 **Things, Overworld, requires `things`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Gleaming | `granite_gleaming_ore` | `diorite_gleaming_ore` | `andesite_gleaming_ore` | `tuff_gleaming_ore` | `dripstone_gleaming_ore` |
+| Gleaming | `granite_things_gleaming_ore` | `diorite_things_gleaming_ore` | `andesite_things_gleaming_ore` | `tuff_things_gleaming_ore` | `dripstone_things_gleaming_ore` |
 
 **Tech Reborn, Overworld, requires `techreborn`**
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
 | Bauxite | `granite_techreborn_bauxite_ore` | `diorite_techreborn_bauxite_ore` | `andesite_techreborn_bauxite_ore` | `tuff_techreborn_bauxite_ore` | `dripstone_techreborn_bauxite_ore` |   |
-| Galena | `granite_galena_ore` | `diorite_galena_ore` | `andesite_galena_ore` | `tuff_galena_ore` | `dripstone_galena_ore` | `cinnabar_galena_ore` |
+| Galena | `granite_techreborn_galena_ore` | `diorite_techreborn_galena_ore` | `andesite_techreborn_galena_ore` | `tuff_techreborn_galena_ore` | `dripstone_techreborn_galena_ore` | `cinnabar_techreborn_galena_ore` |
 | Lead | `granite_techreborn_lead_ore` | `diorite_techreborn_lead_ore` | `andesite_techreborn_lead_ore` | `tuff_techreborn_lead_ore` | `dripstone_techreborn_lead_ore` | `cinnabar_techreborn_lead_ore` |
 | Silver | `granite_techreborn_silver_ore` | `diorite_techreborn_silver_ore` | `andesite_techreborn_silver_ore` | `tuff_techreborn_silver_ore` |   | `cinnabar_techreborn_silver_ore` |
 | Tin | `granite_techreborn_tin_ore` |   |   |   |   |   |
-| Pyrite |   |   |   |   |   | `cinnabar_pyrite_ore` |
-| Sphalerite |   |   |   |   |   | `cinnabar_sphalerite_ore` |
+| Pyrite |   |   |   |   |   | `cinnabar_techreborn_pyrite_ore` |
+| Sphalerite |   |   |   |   |   | `cinnabar_techreborn_sphalerite_ore` |
 
 **Tech Reborn, Nether, requires `techreborn`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Pyrite | `basalt_pyrite_ore` | `blackstone_pyrite_ore` |
-| Sphalerite | `basalt_sphalerite_ore` | `blackstone_sphalerite_ore` |
-| Cinnabar | `basalt_cinnabar_ore` | `blackstone_cinnabar_ore` |
+| Pyrite | `basalt_techreborn_pyrite_ore` | `blackstone_techreborn_pyrite_ore` |
+| Sphalerite | `basalt_techreborn_sphalerite_ore` | `blackstone_techreborn_sphalerite_ore` |
+| Cinnabar | `basalt_techreborn_cinnabar_ore` | `blackstone_techreborn_cinnabar_ore` |
 
 **Modern Industrialization, Overworld, requires `modern_industrialization`**
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Antimony | `granite_antimony_ore` | `diorite_antimony_ore` | `andesite_antimony_ore` | `tuff_antimony_ore` | `dripstone_antimony_ore` | `cinnabar_antimony_ore` |
-| Bauxite | `granite_mi_bauxite_ore` | `diorite_mi_bauxite_ore` | `andesite_mi_bauxite_ore` | `tuff_mi_bauxite_ore` | `dripstone_mi_bauxite_ore` |   |
-| Lead | `granite_mi_lead_ore` | `diorite_mi_lead_ore` | `andesite_mi_lead_ore` | `tuff_mi_lead_ore` | `dripstone_mi_lead_ore` | `cinnabar_mi_lead_ore` |
-| Monazite | `granite_monazite_ore` |   |   |   |   |   |
-| Tin | `granite_mi_tin_ore` |   |   |   |   |   |
-| Tungsten | `granite_tungsten_ore` | `diorite_tungsten_ore` |   |   |   |   |
-| Uranium | `granite_uranium_ore` | `diorite_uranium_ore` | `andesite_uranium_ore` | `tuff_uranium_ore` | `dripstone_uranium_ore` |   |
-| Lignite Coal |   |   |   | `tuff_lignite_coal_ore` |   |   |
-| Salt |   |   |   |   | `dripstone_salt_ore` |   |
+| Antimony | `granite_modern_industrialization_antimony_ore` | `diorite_modern_industrialization_antimony_ore` | `andesite_modern_industrialization_antimony_ore` | `tuff_modern_industrialization_antimony_ore` | `dripstone_modern_industrialization_antimony_ore` | `cinnabar_modern_industrialization_antimony_ore` |
+| Bauxite | `granite_modern_industrialization_bauxite_ore` | `diorite_modern_industrialization_bauxite_ore` | `andesite_modern_industrialization_bauxite_ore` | `tuff_modern_industrialization_bauxite_ore` | `dripstone_modern_industrialization_bauxite_ore` |   |
+| Lead | `granite_modern_industrialization_lead_ore` | `diorite_modern_industrialization_lead_ore` | `andesite_modern_industrialization_lead_ore` | `tuff_modern_industrialization_lead_ore` | `dripstone_modern_industrialization_lead_ore` | `cinnabar_modern_industrialization_lead_ore` |
+| Monazite | `granite_modern_industrialization_monazite_ore` |   |   |   |   |   |
+| Tin | `granite_modern_industrialization_tin_ore` |   |   |   |   |   |
+| Tungsten | `granite_modern_industrialization_tungsten_ore` | `diorite_modern_industrialization_tungsten_ore` |   |   |   |   |
+| Uranium | `granite_modern_industrialization_uranium_ore` | `diorite_modern_industrialization_uranium_ore` | `andesite_modern_industrialization_uranium_ore` | `tuff_modern_industrialization_uranium_ore` | `dripstone_modern_industrialization_uranium_ore` |   |
+| Lignite Coal |   |   |   | `tuff_modern_industrialization_lignite_coal_ore` |   |   |
+| Salt |   |   |   |   | `dripstone_modern_industrialization_salt_ore` |   |
 
 **Occultism, Overworld, requires `occultism`**
 
@@ -226,37 +226,37 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Yellorite | `granite_yellorite_ore` | `diorite_yellorite_ore` | `andesite_yellorite_ore` | `tuff_yellorite_ore` | `dripstone_yellorite_ore` |
+| Yellorite | `granite_bigreactors_yellorite_ore` | `diorite_bigreactors_yellorite_ore` | `andesite_bigreactors_yellorite_ore` | `tuff_bigreactors_yellorite_ore` | `dripstone_bigreactors_yellorite_ore` |
 
 **Mystical Agriculture, Overworld, requires `mysticalagriculture`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Inferium | `granite_inferium_ore` | `diorite_inferium_ore` | `andesite_inferium_ore` | `tuff_inferium_ore` | `dripstone_inferium_ore` |
-| Prosperity | `granite_prosperity_ore` | `diorite_prosperity_ore` | `andesite_prosperity_ore` | `tuff_prosperity_ore` | `dripstone_prosperity_ore` |
+| Inferium | `granite_mysticalagriculture_inferium_ore` | `diorite_mysticalagriculture_inferium_ore` | `andesite_mysticalagriculture_inferium_ore` | `tuff_mysticalagriculture_inferium_ore` | `dripstone_mysticalagriculture_inferium_ore` |
+| Prosperity | `granite_mysticalagriculture_prosperity_ore` | `diorite_mysticalagriculture_prosperity_ore` | `andesite_mysticalagriculture_prosperity_ore` | `tuff_mysticalagriculture_prosperity_ore` | `dripstone_mysticalagriculture_prosperity_ore` |
 
 **Immersive Engineering, Overworld, requires `immersiveengineering`**
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Aluminum | `granite_ie_aluminum_ore` | `diorite_ie_aluminum_ore` | `andesite_ie_aluminum_ore` | `tuff_ie_aluminum_ore` | `dripstone_ie_aluminum_ore` |   |
-| Lead | `granite_ie_lead_ore` | `diorite_ie_lead_ore` | `andesite_ie_lead_ore` | `tuff_ie_lead_ore` | `dripstone_ie_lead_ore` | `cinnabar_ie_lead_ore` |
-| Silver | `granite_ie_silver_ore` | `diorite_ie_silver_ore` | `andesite_ie_silver_ore` | `tuff_ie_silver_ore` |   | `cinnabar_ie_silver_ore` |
-| Uranium | `granite_ie_uranium_ore` | `diorite_ie_uranium_ore` | `andesite_ie_uranium_ore` | `tuff_ie_uranium_ore` | `dripstone_ie_uranium_ore` |   |
+| Aluminum | `granite_immersiveengineering_aluminum_ore` | `diorite_immersiveengineering_aluminum_ore` | `andesite_immersiveengineering_aluminum_ore` | `tuff_immersiveengineering_aluminum_ore` | `dripstone_immersiveengineering_aluminum_ore` |   |
+| Lead | `granite_immersiveengineering_lead_ore` | `diorite_immersiveengineering_lead_ore` | `andesite_immersiveengineering_lead_ore` | `tuff_immersiveengineering_lead_ore` | `dripstone_immersiveengineering_lead_ore` | `cinnabar_immersiveengineering_lead_ore` |
+| Silver | `granite_immersiveengineering_silver_ore` | `diorite_immersiveengineering_silver_ore` | `andesite_immersiveengineering_silver_ore` | `tuff_immersiveengineering_silver_ore` |   | `cinnabar_immersiveengineering_silver_ore` |
+| Uranium | `granite_immersiveengineering_uranium_ore` | `diorite_immersiveengineering_uranium_ore` | `andesite_immersiveengineering_uranium_ore` | `tuff_immersiveengineering_uranium_ore` | `dripstone_immersiveengineering_uranium_ore` |   |
 
 **Malum, Overworld, requires `malum`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Soulstone | `granite_soulstone_ore` | `diorite_soulstone_ore` | `andesite_soulstone_ore` | `tuff_soulstone_ore` | `dripstone_soulstone_ore` |
-| Natural Quartz | `granite_natural_quartz_ore` | `diorite_natural_quartz_ore` | `andesite_natural_quartz_ore` | `tuff_natural_quartz_ore` |   |
-| Brilliance | `granite_brilliance_ore` | `diorite_brilliance_ore` | `andesite_brilliance_ore` | `tuff_brilliance_ore` | `dripstone_brilliance_ore` |
+| Soulstone | `granite_malum_soulstone_ore` | `diorite_malum_soulstone_ore` | `andesite_malum_soulstone_ore` | `tuff_malum_soulstone_ore` | `dripstone_malum_soulstone_ore` |
+| Natural Quartz | `granite_malum_quartz_ore` | `diorite_malum_quartz_ore` | `andesite_malum_quartz_ore` | `tuff_malum_quartz_ore` |   |
+| Brilliance | `granite_malum_brilliant_ore` | `diorite_malum_brilliant_ore` | `andesite_malum_brilliant_ore` | `tuff_malum_brilliant_ore` | `dripstone_malum_brilliant_ore` |
 
 **Malum, Nether, requires `malum`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Blazing Quartz | `basalt_blazing_quartz_ore` | `blackstone_blazing_quartz_ore` |
+| Blazing Quartz | `basalt_malum_blazing_quartz_ore` | `blackstone_malum_blazing_quartz_ore` |
 
 **Oreganized, Overworld, requires `oreganized`**
 
@@ -269,31 +269,31 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | dripstone | cinnabar |
 |---|---|---|---|---|---|---|
-| Fluorite | `granite_mek_fluorite_ore` |   |   | `tuff_mek_fluorite_ore` | `dripstone_mek_fluorite_ore` |   |
-| Lead | `granite_mek_lead_ore` | `diorite_mek_lead_ore` | `andesite_mek_lead_ore` | `tuff_mek_lead_ore` | `dripstone_mek_lead_ore` | `cinnabar_mek_lead_ore` |
-| Tin | `granite_mek_tin_ore` |   |   |   |   |   |
-| Uranium | `granite_mek_uranium_ore` | `diorite_mek_uranium_ore` | `andesite_mek_uranium_ore` | `tuff_mek_uranium_ore` | `dripstone_mek_uranium_ore` |   |
+| Fluorite | `granite_mekanism_fluorite_ore` |   |   | `tuff_mekanism_fluorite_ore` | `dripstone_mekanism_fluorite_ore` |   |
+| Lead | `granite_mekanism_lead_ore` | `diorite_mekanism_lead_ore` | `andesite_mekanism_lead_ore` | `tuff_mekanism_lead_ore` | `dripstone_mekanism_lead_ore` | `cinnabar_mekanism_lead_ore` |
+| Tin | `granite_mekanism_tin_ore` |   |   |   |   |   |
+| Uranium | `granite_mekanism_uranium_ore` | `diorite_mekanism_uranium_ore` | `andesite_mekanism_uranium_ore` | `tuff_mekanism_uranium_ore` | `dripstone_mekanism_uranium_ore` |   |
 
 **Cobblemon, Overworld, requires `cobblemon`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Dawn Stone | `granite_dawn_stone_ore` |   |   |   | `dripstone_dawn_stone_ore` |
-| Moon Stone | `granite_moon_stone_ore` | `diorite_moon_stone_ore` |   |   |   |
-| Shiny Stone | `granite_shiny_stone_ore` |   |   |   | `dripstone_shiny_stone_ore` |
-| Thunder Stone | `granite_thunder_stone_ore` | `diorite_thunder_stone_ore` |   |   |   |
-| Ice Stone |   | `diorite_ice_stone_ore` |   |   | `dripstone_ice_stone_ore` |
-| Dusk Stone |   |   | `andesite_dusk_stone_ore` | `tuff_dusk_stone_ore` |   |
-| Fire Stone |   |   | `andesite_fire_stone_ore` | `tuff_fire_stone_ore` |   |
-| Sun Stone |   |   | `andesite_sun_stone_ore` | `tuff_sun_stone_ore` |   |
-| Leaf Stone |   |   |   | `tuff_leaf_stone_ore` |   |
-| Water Stone |   |   |   |   | `dripstone_water_stone_ore` |
+| Dawn Stone | `granite_cobblemon_dawn_stone_ore` |   |   |   | `dripstone_cobblemon_dawn_stone_ore` |
+| Moon Stone | `granite_cobblemon_moon_stone_ore` | `diorite_cobblemon_moon_stone_ore` |   |   |   |
+| Shiny Stone | `granite_cobblemon_shiny_stone_ore` |   |   |   | `dripstone_cobblemon_shiny_stone_ore` |
+| Thunder Stone | `granite_cobblemon_thunder_stone_ore` | `diorite_cobblemon_thunder_stone_ore` |   |   |   |
+| Ice Stone |   | `diorite_cobblemon_ice_stone_ore` |   |   | `dripstone_cobblemon_ice_stone_ore` |
+| Dusk Stone |   |   | `andesite_cobblemon_dusk_stone_ore` | `tuff_cobblemon_dusk_stone_ore` |   |
+| Fire Stone |   |   | `andesite_cobblemon_fire_stone_ore` | `tuff_cobblemon_fire_stone_ore` |   |
+| Sun Stone |   |   | `andesite_cobblemon_sun_stone_ore` | `tuff_cobblemon_sun_stone_ore` |   |
+| Leaf Stone |   |   |   | `tuff_cobblemon_leaf_stone_ore` |   |
+| Water Stone |   |   |   |   | `dripstone_cobblemon_water_stone_ore` |
 
 **Cobblemon, Nether, requires `cobblemon`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Fire Stone | `basalt_fire_stone_ore` | `blackstone_fire_stone_ore` |
+| Fire Stone | `basalt_cobblemon_nether_fire_stone_ore` | `blackstone_cobblemon_nether_fire_stone_ore` |
 
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this

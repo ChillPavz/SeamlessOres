@@ -1,19 +1,19 @@
 {
   "values": [
     {
-      "id": "seamlessores:basalt_stormyx_ore",
+      "id": "seamlessores:basalt_mythicmetals_stormyx_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_stormyx_ore",
+      "id": "seamlessores:create_scorchia_mythicmetals_stormyx_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_stormyx_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_stormyx_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_stormyx_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_stormyx_ore",
       "required": false
     }
   ]

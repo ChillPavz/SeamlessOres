@@ -1,15 +1,15 @@
 {
   "values": [
     {
-      "id": "seamlessores:blockus_bluestone_mi_iridium_ore",
+      "id": "seamlessores:blockus_bluestone_modern_industrialization_iridium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mi_iridium_ore",
+      "id": "seamlessores:blockus_viridite_modern_industrialization_iridium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mi_iridium_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_iridium_ore",
       "required": false
     }
   ]

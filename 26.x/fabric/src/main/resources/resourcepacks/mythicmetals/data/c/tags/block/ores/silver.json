@@ -1,59 +1,59 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_silver_ore",
+      "id": "seamlessores:granite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silver_ore",
+      "id": "seamlessores:diorite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silver_ore",
+      "id": "seamlessores:andesite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silver_ore",
+      "id": "seamlessores:blackstone_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_silver_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_silver_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_silver_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_silver_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_silver_ore",
+      "id": "seamlessores:calcite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_silver_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_silver_ore",
+      "id": "seamlessores:regions_unexplored_argillite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_silver_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silver_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_silver_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_silver_ore",
       "required": false
     }
   ]

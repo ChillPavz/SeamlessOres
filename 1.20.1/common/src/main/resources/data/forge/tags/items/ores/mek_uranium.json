@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_mek_uranium_ore",
+      "id": "seamlessores:granite_mekanism_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mek_uranium_ore",
+      "id": "seamlessores:diorite_mekanism_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mek_uranium_ore",
+      "id": "seamlessores:andesite_mekanism_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mek_uranium_ore",
+      "id": "seamlessores:tuff_mekanism_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_mek_uranium_ore",
+      "id": "seamlessores:dripstone_mekanism_uranium_ore",
       "required": false
     }
   ]

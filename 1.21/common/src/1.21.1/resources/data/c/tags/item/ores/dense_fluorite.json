@@ -1,47 +1,47 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_dense_fluorite_ore",
+      "id": "seamlessores:granite_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_fluorite_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_fluorite_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_dense_fluorite_ore",
+      "id": "seamlessores:create_limestone_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_dense_fluorite_ore",
+      "id": "seamlessores:calcite_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_dense_fluorite_ore",
+      "id": "seamlessores:tfmg_galena_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_dense_fluorite_ore",
+      "id": "seamlessores:twigs_rhyolite_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_dense_fluorite_ore",
+      "id": "seamlessores:embellishcraft_gneiss_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_dense_fluorite_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_dense_fluorite_ore",
+      "id": "seamlessores:promenade_blunite_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_dense_fluorite_ore",
+      "id": "seamlessores:spawn_reefstone_densemekanism_dense_fluorite_ore",
       "required": false
     }
   ]

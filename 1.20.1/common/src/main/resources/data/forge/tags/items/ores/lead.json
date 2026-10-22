@@ -1,103 +1,103 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_lead_ore",
+      "id": "seamlessores:granite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_lead_ore",
+      "id": "seamlessores:diorite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_lead_ore",
+      "id": "seamlessores:andesite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_lead_ore",
+      "id": "seamlessores:tuff_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_lead_ore",
+      "id": "seamlessores:dripstone_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_lead_ore",
+      "id": "seamlessores:cinnabar_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_lead_ore",
+      "id": "seamlessores:blackstone_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_lead_ore",
+      "id": "seamlessores:create_limestone_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_lead_ore",
+      "id": "seamlessores:create_scoria_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_lead_ore",
+      "id": "seamlessores:calcite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_lead_ore",
+      "id": "seamlessores:smooth_basalt_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_lead_ore",
+      "id": "seamlessores:tfmg_galena_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_lead_ore",
+      "id": "seamlessores:tfmg_lignite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_lead_ore",
+      "id": "seamlessores:twigs_rhyolite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_lead_ore",
+      "id": "seamlessores:twigs_schist_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_lead_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_lead_ore",
+      "id": "seamlessores:embellishcraft_basalt_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_lead_ore",
+      "id": "seamlessores:embellishcraft_slate_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_lead_ore",
+      "id": "seamlessores:embellishcraft_marble_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_lead_ore",
+      "id": "seamlessores:embellishcraft_gneiss_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_lead_ore",
+      "id": "seamlessores:embellishcraft_larvikite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_lead_ore",
+      "id": "seamlessores:meadow_limestone_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_lead_ore",
+      "id": "seamlessores:spawn_reefstone_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_ie_lead_ore",
+      "id": "seamlessores:granite_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_mek_lead_ore",
+      "id": "seamlessores:granite_mekanism_lead_ore",
       "required": false
     },
     {
@@ -105,11 +105,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ie_lead_ore",
+      "id": "seamlessores:diorite_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mek_lead_ore",
+      "id": "seamlessores:diorite_mekanism_lead_ore",
       "required": false
     },
     {
@@ -117,11 +117,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ie_lead_ore",
+      "id": "seamlessores:andesite_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mek_lead_ore",
+      "id": "seamlessores:andesite_mekanism_lead_ore",
       "required": false
     },
     {
@@ -129,11 +129,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_lead_ore",
+      "id": "seamlessores:tuff_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mek_lead_ore",
+      "id": "seamlessores:tuff_mekanism_lead_ore",
       "required": false
     },
     {
@@ -141,11 +141,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ie_lead_ore",
+      "id": "seamlessores:dripstone_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_mek_lead_ore",
+      "id": "seamlessores:dripstone_mekanism_lead_ore",
       "required": false
     },
     {
@@ -153,11 +153,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_ie_lead_ore",
+      "id": "seamlessores:cinnabar_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_mek_lead_ore",
+      "id": "seamlessores:cinnabar_mekanism_lead_ore",
       "required": false
     },
     {
@@ -165,7 +165,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_oreganized_lead_ore",
+      "id": "seamlessores:blackstone_oreganized_lead_ore",
       "required": false
     },
     {
@@ -189,11 +189,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_oreganized_lead_ore",
+      "id": "seamlessores:calcite_oreganized_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_oreganized_lead_ore",
+      "id": "seamlessores:smooth_basalt_oreganized_lead_ore",
       "required": false
     },
     {

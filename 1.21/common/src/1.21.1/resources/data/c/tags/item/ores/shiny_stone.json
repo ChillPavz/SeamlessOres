@@ -1,39 +1,39 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_shiny_stone_ore",
+      "id": "seamlessores:granite_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_shiny_stone_ore",
+      "id": "seamlessores:dripstone_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_shiny_stone_ore",
+      "id": "seamlessores:blockus_marble_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_shiny_stone_ore",
+      "id": "seamlessores:calcite_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_shiny_stone_ore",
+      "id": "seamlessores:twigs_schist_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_shiny_stone_ore",
+      "id": "seamlessores:embellishcraft_slate_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_shiny_stone_ore",
+      "id": "seamlessores:embellishcraft_marble_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_shiny_stone_ore",
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_shiny_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_shiny_stone_ore",
       "required": false
     }
   ]

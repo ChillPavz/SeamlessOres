@@ -10,7 +10,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_redstone_ore",
+      "id": "seamlessores:blackstone_redstone_ore",
       "required": false
     },
     {
@@ -54,11 +54,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_redstone_ore",
+      "id": "seamlessores:calcite_redstone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_redstone_ore",
+      "id": "seamlessores:smooth_basalt_redstone_ore",
       "required": false
     },
     {

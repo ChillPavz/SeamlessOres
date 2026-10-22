@@ -1,19 +1,19 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_topaz_ore",
+      "id": "seamlessores:granite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_topaz_ore",
+      "id": "seamlessores:granite_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_topaz_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_topaz_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_topaz_ore",
       "required": false
     }
   ]

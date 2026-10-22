@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:basalt_stormyx_ore",
+      "id": "seamlessores:basalt_mythicmetals_stormyx_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_stormyx_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_stormyx_ore",
       "required": false
     }
   ]

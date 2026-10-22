@@ -1,107 +1,107 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_dense_lead_ore",
+      "id": "seamlessores:granite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_dense_lead_ore",
+      "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_dense_lead_ore",
+      "id": "seamlessores:andesite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_lead_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_lead_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_dense_lead_ore",
+      "id": "seamlessores:cinnabar_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_dense_lead_ore",
+      "id": "seamlessores:blackstone_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_dense_lead_ore",
+      "id": "seamlessores:create_limestone_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_dense_lead_ore",
+      "id": "seamlessores:create_scoria_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_dense_lead_ore",
+      "id": "seamlessores:calcite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_dense_lead_ore",
+      "id": "seamlessores:smooth_basalt_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_dense_lead_ore",
+      "id": "seamlessores:tfmg_galena_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_dense_lead_ore",
+      "id": "seamlessores:tfmg_lignite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_dense_lead_ore",
+      "id": "seamlessores:twigs_rhyolite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_dense_lead_ore",
+      "id": "seamlessores:twigs_schist_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_dense_lead_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_dense_lead_ore",
+      "id": "seamlessores:embellishcraft_basalt_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_dense_lead_ore",
+      "id": "seamlessores:embellishcraft_slate_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_dense_lead_ore",
+      "id": "seamlessores:embellishcraft_gneiss_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_dense_lead_ore",
+      "id": "seamlessores:embellishcraft_larvikite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_dense_lead_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_dense_lead_ore",
+      "id": "seamlessores:meadow_limestone_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_dense_lead_ore",
+      "id": "seamlessores:regions_unexplored_argillite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_dense_lead_ore",
+      "id": "seamlessores:promenade_asphalt_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_dense_lead_ore",
+      "id": "seamlessores:promenade_blunite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_dense_lead_ore",
+      "id": "seamlessores:spawn_reefstone_densemekanism_dense_lead_ore",
       "required": false
     }
   ]

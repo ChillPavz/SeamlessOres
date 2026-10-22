@@ -1,79 +1,79 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_yellorite_ore",
+      "id": "seamlessores:granite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_yellorite_ore",
+      "id": "seamlessores:diorite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_yellorite_ore",
+      "id": "seamlessores:andesite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_yellorite_ore",
+      "id": "seamlessores:tuff_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_yellorite_ore",
+      "id": "seamlessores:dripstone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_yellorite_ore",
+      "id": "seamlessores:create_limestone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_yellorite_ore",
+      "id": "seamlessores:calcite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_yellorite_ore",
+      "id": "seamlessores:tfmg_lignite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_yellorite_ore",
+      "id": "seamlessores:twigs_rhyolite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_yellorite_ore",
+      "id": "seamlessores:twigs_schist_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_yellorite_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_yellorite_ore",
+      "id": "seamlessores:embellishcraft_slate_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_yellorite_ore",
+      "id": "seamlessores:embellishcraft_gneiss_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_yellorite_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_yellorite_ore",
+      "id": "seamlessores:meadow_limestone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_yellorite_ore",
+      "id": "seamlessores:regions_unexplored_argillite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_yellorite_ore",
+      "id": "seamlessores:promenade_asphalt_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_yellorite_ore",
+      "id": "seamlessores:promenade_blunite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_yellorite_ore",
+      "id": "seamlessores:spawn_reefstone_bigreactors_yellorite_ore",
       "required": false
     }
   ]

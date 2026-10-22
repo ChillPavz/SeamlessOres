@@ -1,47 +1,47 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_kyber_ore",
+      "id": "seamlessores:granite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_kyber_ore",
+      "id": "seamlessores:diorite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_kyber_ore",
+      "id": "seamlessores:andesite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_kyber_ore",
+      "id": "seamlessores:dripstone_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_kyber_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_kyber_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_kyber_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_kyber_ore",
+      "id": "seamlessores:twigs_schist_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_kyber_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_kyber_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_kyber_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_kyber_ore",
       "required": false
     }
   ]

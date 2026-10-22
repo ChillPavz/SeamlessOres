@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_powah_uraninite_poor_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_powah_uraninite_poor_ore_mirrored"
+      }
+    ]
+  }
+}

@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_citrine_ore",
+      "id": "seamlessores:granite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_citrine_ore",
+      "id": "seamlessores:diorite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_citrine_ore",
+      "id": "seamlessores:andesite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_citrine_ore",
+      "id": "seamlessores:tuff_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_citrine_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_citrine_ore",
+      "id": "seamlessores:blockus_limestone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_citrine_ore",
+      "id": "seamlessores:blockus_marble_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_citrine_ore",
+      "id": "seamlessores:blockus_bluestone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_citrine_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_citrine_ore",
+      "id": "seamlessores:create_limestone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_citrine_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_citrine_ore",
+      "id": "seamlessores:calcite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_citrine_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_topaz_schist_citrine_ore",
+      "id": "seamlessores:mythicupgrades_topaz_schist_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_citrine_ore",
+      "id": "seamlessores:promenade_asphalt_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_citrine_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_citrine_ore",
       "required": false
     }
   ]

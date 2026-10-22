@@ -1,7 +1,7 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_tin_ore",
+      "id": "seamlessores:granite_mythicmetals_tin_ore",
       "required": false
     },
     {
@@ -9,11 +9,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_mi_tin_ore",
+      "id": "seamlessores:granite_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_tin_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
@@ -21,11 +21,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_mi_tin_ore",
+      "id": "seamlessores:blockus_limestone_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_tin_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_tin_ore",
       "required": false
     },
     {
@@ -33,15 +33,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_mi_tin_ore",
+      "id": "seamlessores:blockus_marble_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mi_tin_ore",
+      "id": "seamlessores:blockus_viridite_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_tin_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
@@ -49,15 +49,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_mi_tin_ore",
+      "id": "seamlessores:create_limestone_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_mi_tin_ore",
+      "id": "seamlessores:twigs_rhyolite_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_tin_ore",
+      "id": "seamlessores:meadow_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
@@ -65,11 +65,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_mi_tin_ore",
+      "id": "seamlessores:meadow_limestone_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_tin_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
       "required": false
     },
     {
@@ -77,11 +77,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mi_tin_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_tin_ore",
+      "id": "seamlessores:spawn_reefstone_mythicmetals_tin_ore",
       "required": false
     },
     {
@@ -89,7 +89,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_mi_tin_ore",
+      "id": "seamlessores:spawn_reefstone_modern_industrialization_tin_ore",
       "required": false
     }
   ]

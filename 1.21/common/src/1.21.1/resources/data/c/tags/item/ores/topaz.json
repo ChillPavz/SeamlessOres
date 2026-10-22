@@ -1,47 +1,47 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_topaz_ore",
+      "id": "seamlessores:granite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_topaz_ore",
+      "id": "seamlessores:granite_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_topaz_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_topaz_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_silents_topaz_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_topaz_ore",
+      "id": "seamlessores:embellishcraft_gneiss_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_silents_topaz_ore",
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_topaz_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_topaz_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_topaz_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silents_topaz_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_topaz_ore",
       "required": false
     }
   ]

@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_gleaming_ore",
+      "id": "seamlessores:granite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_gleaming_ore",
+      "id": "seamlessores:diorite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_gleaming_ore",
+      "id": "seamlessores:andesite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_gleaming_ore",
+      "id": "seamlessores:tuff_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_gleaming_ore",
+      "id": "seamlessores:dripstone_things_gleaming_ore",
       "required": false
     }
   ]

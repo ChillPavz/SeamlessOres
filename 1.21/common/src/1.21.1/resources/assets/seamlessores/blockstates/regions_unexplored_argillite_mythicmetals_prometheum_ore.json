@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_mythicmetals_prometheum_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_mythicmetals_prometheum_ore_mirrored"
+      }
+    ]
+  }
+}

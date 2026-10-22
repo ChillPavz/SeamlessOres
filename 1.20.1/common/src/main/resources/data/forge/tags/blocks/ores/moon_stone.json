@@ -1,39 +1,39 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_moon_stone_ore",
+      "id": "seamlessores:granite_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_moon_stone_ore",
+      "id": "seamlessores:diorite_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_moon_stone_ore",
+      "id": "seamlessores:blockus_bluestone_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_moon_stone_ore",
+      "id": "seamlessores:twigs_rhyolite_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_moon_stone_ore",
+      "id": "seamlessores:twigs_schist_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_moon_stone_ore",
+      "id": "seamlessores:embellishcraft_slate_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_moon_stone_ore",
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_moon_stone_ore",
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_moon_stone_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_moon_stone_ore",
       "required": false
     }
   ]

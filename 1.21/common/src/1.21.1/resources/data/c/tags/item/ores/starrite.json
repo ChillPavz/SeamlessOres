@@ -1,43 +1,43 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_starrite_ore",
+      "id": "seamlessores:granite_mythicmetals_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_starrite_ore",
+      "id": "seamlessores:diorite_mythicmetals_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_starrite_ore",
+      "id": "seamlessores:andesite_mythicmetals_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_starrite_ore",
+      "id": "seamlessores:dripstone_mythicmetals_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_starrite_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_starrite_ore",
+      "id": "seamlessores:meadow_limestone_mythicmetals_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_starrite_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_mythicmetals_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_starrite_ore",
+      "id": "seamlessores:regions_unexplored_chalk_mythicmetals_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_starrite_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_starrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_starrite_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_starrite_ore",
       "required": false
     }
   ]

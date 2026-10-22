@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_mythicmetals_aquarium_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_mythicmetals_aquarium_ore",
+        "y": 180
+      }
+    ]
+  }
+}

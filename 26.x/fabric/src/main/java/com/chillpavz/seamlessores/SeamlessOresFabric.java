@@ -1,5 +1,6 @@
 package com.chillpavz.seamlessores;
 
+import com.chillpavz.seamlessores.content.VariantIds;
 import com.chillpavz.seamlessores.content.MatrixAliases;
 import net.fabricmc.fabric.api.event.registry.FabricRegistry;
 import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
@@ -58,6 +59,11 @@ public class SeamlessOresFabric implements ModInitializer {
         RetiredBlocks.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
         RetiredBlocks.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item),
                 BuiltInRegistries.BLOCK::getValue);
+        // Ids 6.0.0 renamed (VariantIds): an old world's blocks and an old inventory's items convert on load.
+        VariantIds.addAliases((old, now) -> ((FabricRegistry) BuiltInRegistries.BLOCK).addAlias(Identifier.tryParse(old), Identifier.tryParse(now)),
+                id -> BuiltInRegistries.BLOCK.containsKey(Identifier.tryParse(id)), "blocks");
+        VariantIds.addAliases((old, now) -> ((FabricRegistry) BuiltInRegistries.ITEM).addAlias(Identifier.tryParse(old), Identifier.tryParse(now)),
+                id -> BuiltInRegistries.ITEM.containsKey(Identifier.tryParse(id)), "items");
         ServerChunkEvents.CHUNK_LOAD.register((level, chunk, generated) ->
                 level.getServer().execute(() -> RetiredBlocks.convertChunk(level, chunk)));
         SeamlessOresContent.registerCreativeTabs(

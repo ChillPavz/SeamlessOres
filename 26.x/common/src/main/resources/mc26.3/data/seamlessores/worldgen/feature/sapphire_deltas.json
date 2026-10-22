@@ -8,14 +8,14 @@
         "predicate_type": "minecraft:block_match",
         "block": "minecraft:basalt"
       },
-      "state": "seamlessores:basalt_sapphire_ore"
+      "state": "seamlessores:basalt_mythicupgrades_sapphire_ore"
     },
     {
       "target": {
         "predicate_type": "minecraft:block_match",
         "block": "minecraft:blackstone"
       },
-      "state": "seamlessores:blackstone_sapphire_ore"
+      "state": "seamlessores:blackstone_mythicupgrades_sapphire_ore"
     },
     {
       "target": {
@@ -30,8 +30,8 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "seamlessores:basalt_sapphire_ore",
-        "seamlessores:blackstone_sapphire_ore"
+        "seamlessores:basalt_mythicupgrades_sapphire_ore",
+        "seamlessores:blackstone_mythicupgrades_sapphire_ore"
       ]
     }
   ],

@@ -3,7 +3,7 @@
   "config": {
     "size": 8,
     "discard_chance_on_air_exposure": 0.0,
-    "ore": "seamlessores:cinnabar_mi_lead_ore",
+    "ore": "seamlessores:cinnabar_modern_industrialization_lead_ore",
     "factor": 3
   }
 }

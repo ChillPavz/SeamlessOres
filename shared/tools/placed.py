@@ -37,6 +37,50 @@ def forms_of(ore):
             if t in ore["tiers"]]
 
 
+def tier_of(cfg, ore):
+    """The ore form a variant stands in for (its drops, tool tier and id). A stone another mod places
+    takes its own tier's form where the ore has one, else the first the ore has (a Nether ore in scoria);
+    cinnabar the stone form, else the Nether one; the game's other rock its own tier's (which the ore may
+    lack: then there is no variant)."""
+    if cfg["placed_by"]:
+        return cfg["ore_tier"] if cfg["ore_tier"] in ore["tiers"] else next(
+            t for t in ("stone", "deepslate", "nether", "end") if t in ore["tiers"])
+    if cfg["tier"] == "cinnabar":
+        return "stone" if "stone" in ore["tiers"] else "nether"
+    return cfg["ore_tier"]
+
+
+def _shared_words(a, b):
+    """The words two ids share, in order (longest common subsequence): what a mod's stone and deepslate
+    forms have in common is the ore's name (brilliant_stone, brilliant_deepslate -> brilliant)."""
+    table = [[[] for _ in range(len(b) + 1)] for _ in range(len(a) + 1)]
+    for i in range(len(a) - 1, -1, -1):
+        for j in range(len(b) - 1, -1, -1):
+            table[i][j] = ([a[i]] + table[i + 1][j + 1] if a[i] == b[j]
+                           else max(table[i + 1][j], table[i][j + 1], key=len))
+    return table[0][0]
+
+
+def id_of(cfg, ore, tier):
+    """The id rule (owner, 22 Oct 2026): <stone>_<ore>_ore. Each half is its block's path, with any mod
+    but the game's in front by its full id (create_limestone, mekanism_uranium); dripstone_block is
+    dripstone. The ore half is the ore's name: a Nether or End form's own path, else the words the mod's
+    stone and deepslate forms share, without "deepslate" and "ore", then _ore."""
+    stone = "dripstone" if cfg["id"] == "minecraft:dripstone_block" else (
+        cfg["path"] if cfg["ns"] == "minecraft" else f"{cfg['ns']}_{cfg['path']}")
+    forms = ore["tiers"]
+    if tier in ("stone", "deepslate") and "stone" in forms and "deepslate" in forms:
+        words = _shared_words(forms["stone"].split("_"), forms["deepslate"].split("_"))
+    else:
+        words = forms[tier].split("_")
+    words = [w for w in words if w != "deepslate"]
+    if "ore" in words:
+        words.remove("ore")
+    mod = ore.get("mod") or "minecraft"
+    name = "_".join(words) if mod == "minecraft" else f"{mod}_{'_'.join(words)}"
+    return f"{stone}_{name}_ore"
+
+
 def load_pairs(path, ore_by_key):
     """modded_pairs.json, the pair model's measurement. Its "kinds" restate the ore table, so they are
     only checked against it: a kind the table does not have, or has with other forms, is an error."""
@@ -63,6 +107,10 @@ class Hosts(dict):
         self.ore_defs = ore_defs
         self.ore_by_key = index_ores(ore_defs)
         self.pairs = load_pairs(pairs_path, self.ore_by_key)
+        # The band's renamed_ids.json sits beside its modded_pairs.json: the pairs that keep a shipped id.
+        self.renamed_path = os.path.join(os.path.dirname(pairs_path), "renamed_ids.json")
+        self.kept = (json.load(open(self.renamed_path, encoding="utf-8"))["kept"]
+                     if os.path.exists(self.renamed_path) else {})
         for decl in parse_host_table(host_table):
             name, placed_by, listed = decl["name"], decl["placed_by"], decl["listed"]
             host_id = f"{decl['ns']}:{decl['path']}"
@@ -108,8 +156,7 @@ class Hosts(dict):
             if cfg["placed_by"]:
                 for ore in self.ore_defs:
                     if ore["key"] in cfg["swallows"] and ore["key"] not in cfg["refused"]:
-                        tier = cfg["ore_tier"] if cfg["ore_tier"] in ore["tiers"] else next(
-                            t for t in ("stone", "deepslate", "nether", "end") if t in ore["tiers"])
+                        tier = tier_of(cfg, ore)
                         yield host, cfg, ore, ore["tiers"][tier], tier
                 continue
             for ore in self.ore_defs:
@@ -121,19 +168,20 @@ class Hosts(dict):
                 # earlier release built is retired, retired.py). Mirrors HostStone.ores().
                 if geology.fixed(host, ore["key"]):
                     continue
-                if cfg["tier"] == "cinnabar":
-                    if ore["overlay"] not in (cinnabar_family or ()):
-                        continue
-                    # Stands in for the stone ore, or the Nether one where the mod has no other.
-                    tier = "stone" if "stone" in ore["tiers"] else "nether"
-                else:
-                    tier = cfg["ore_tier"]
+                if cfg["tier"] == "cinnabar" and ore["overlay"] not in (cinnabar_family or ()):
+                    continue
+                tier = tier_of(cfg, ore)
                 if tier in ore["tiers"]:
                     yield host, cfg, ore, ore["tiers"][tier], tier
 
     def name_of(self, host, ore):
-        """<host>_<ore>_ore. A stone another mod places names the ore by its key: it can take an overworld
-        and a Nether ore of one name (scoria takes gold and nether gold). Mirrors OreVariant.path()."""
+        """The variant's block id path, by the id rule (6.0.0, id_of), unless renamed_ids.json keeps a
+        shipped id for the pair. Java reads the result from ids.json (renamed.py), never recomputes it."""
+        return self.kept.get(f"{host}|{ore['key']}") or id_of(self[host], ore, tier_of(self[host], ore))
+
+    def legacy_name_of(self, host, ore):
+        """The id this pair had up to 5.x: <host>_<ore>_ore, the ore by its name in the game's rock and by
+        its key in a placed stone. Only seeds renamed_ids.json; nothing is named by it any more."""
         return f"{host}_{ore['key'] if self[host]['placed_by'] else ore['name']}_ore"
 
     def title_of(self, host, ore):

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_modern_industrialization_lignite_coal_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_modern_industrialization_lignite_coal_ore_mirrored"
+      }
+    ]
+  }
+}

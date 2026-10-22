@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_garnet_ore",
+      "id": "seamlessores:granite_silentgems_garnet_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_garnet_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_garnet_ore",
       "required": false
     }
   ]

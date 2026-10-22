@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:create_scorchia_benitoite_ore",
+      "id": "seamlessores:create_scorchia_bigreactors_benitoite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_benitoite_ore",
+      "id": "seamlessores:twigs_bloodstone_bigreactors_benitoite_ore",
       "required": false
     }
   ]

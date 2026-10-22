@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_mythicmetals_manganese_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_mythicmetals_manganese_ore",
+        "y": 180
+      }
+    ]
+  }
+}

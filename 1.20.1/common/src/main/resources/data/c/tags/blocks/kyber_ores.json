@@ -1,83 +1,83 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_kyber_ore",
+      "id": "seamlessores:granite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_kyber_ore",
+      "id": "seamlessores:diorite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_kyber_ore",
+      "id": "seamlessores:andesite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_kyber_ore",
+      "id": "seamlessores:dripstone_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_kyber_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_kyber_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_kyber_ore",
+      "id": "seamlessores:create_asurine_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_kyber_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_kyber_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_kyber_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_kyber_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_kyber_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_kyber_ore",
+      "id": "seamlessores:calcite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_kyber_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_kyber_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_kyber_ore",
+      "id": "seamlessores:twigs_schist_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_kyber_ore",
+      "id": "seamlessores:meadow_limestone_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_kyber_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_kyber_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_kyber_ore",
+      "id": "seamlessores:spawn_reefstone_mythicmetals_kyber_ore",
       "required": false
     }
   ]

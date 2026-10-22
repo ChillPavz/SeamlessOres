@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_ie_aluminum_ore",
+      "id": "seamlessores:granite_immersiveengineering_aluminum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ie_aluminum_ore",
+      "id": "seamlessores:diorite_immersiveengineering_aluminum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ie_aluminum_ore",
+      "id": "seamlessores:andesite_immersiveengineering_aluminum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_aluminum_ore",
+      "id": "seamlessores:tuff_immersiveengineering_aluminum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ie_aluminum_ore",
+      "id": "seamlessores:dripstone_immersiveengineering_aluminum_ore",
       "required": false
     }
   ]

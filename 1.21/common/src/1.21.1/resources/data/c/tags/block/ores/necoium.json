@@ -1,143 +1,143 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_necoium_ore",
+      "id": "seamlessores:granite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_necoium_ore",
+      "id": "seamlessores:diorite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_necoium_ore",
+      "id": "seamlessores:andesite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_necoium_ore",
+      "id": "seamlessores:tuff_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_necoium_ore",
+      "id": "seamlessores:dripstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_necoium_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_necoium_ore",
+      "id": "seamlessores:blockus_limestone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_necoium_ore",
+      "id": "seamlessores:blockus_marble_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_necoium_ore",
+      "id": "seamlessores:blockus_bluestone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_necoium_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_necoium_ore",
+      "id": "seamlessores:create_asurine_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_necoium_ore",
+      "id": "seamlessores:create_crimsite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_necoium_ore",
+      "id": "seamlessores:create_limestone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_necoium_ore",
+      "id": "seamlessores:create_ochrum_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_necoium_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_necoium_ore",
+      "id": "seamlessores:create_veridium_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_necoium_ore",
+      "id": "seamlessores:calcite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_necoium_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_necoium_ore",
+      "id": "seamlessores:tfmg_bauxite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_necoium_ore",
+      "id": "seamlessores:tfmg_galena_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_necoium_ore",
+      "id": "seamlessores:tfmg_lignite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_necoium_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_necoium_ore",
+      "id": "seamlessores:twigs_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_necoium_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_necoium_ore",
+      "id": "seamlessores:embellishcraft_basalt_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_necoium_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_aquamarine_schist_necoium_ore",
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_citrine_schist_necoium_ore",
+      "id": "seamlessores:mythicupgrades_citrine_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_peridot_schist_necoium_ore",
+      "id": "seamlessores:mythicupgrades_peridot_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_topaz_schist_necoium_ore",
+      "id": "seamlessores:mythicupgrades_topaz_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_necoium_ore",
+      "id": "seamlessores:regions_unexplored_argillite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_necoium_ore",
+      "id": "seamlessores:promenade_asphalt_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_necoium_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_necoium_ore",
+      "id": "seamlessores:spawn_reefstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_necoium_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicupgrades_necoium_ore",
       "required": false
     }
   ]

@@ -4,35 +4,35 @@
     "seamlessores:granite_copper_ore",
     "seamlessores:granite_lapis_ore",
     {
-      "id": "seamlessores:granite_tin_ore",
+      "id": "seamlessores:granite_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_dense_fluorite_ore",
+      "id": "seamlessores:granite_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_dense_lead_ore",
+      "id": "seamlessores:granite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_dense_tin_ore",
+      "id": "seamlessores:granite_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_dense_uranium_ore",
+      "id": "seamlessores:granite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_lead_ore",
+      "id": "seamlessores:granite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_lithium_ore",
+      "id": "seamlessores:granite_tfmg_lithium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_energized_tin_ore",
+      "id": "seamlessores:granite_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -44,22 +44,22 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_inferium_ore",
+      "id": "seamlessores:granite_mysticalagriculture_inferium_ore",
       "required": false
     },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
     {
-      "id": "seamlessores:diorite_dense_lead_ore",
+      "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_dense_uranium_ore",
+      "id": "seamlessores:diorite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_lead_ore",
+      "id": "seamlessores:diorite_tfmg_lead_ore",
       "required": false
     },
     {
@@ -67,22 +67,22 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_inferium_ore",
+      "id": "seamlessores:diorite_mysticalagriculture_inferium_ore",
       "required": false
     },
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
     "seamlessores:andesite_lapis_ore",
     {
-      "id": "seamlessores:andesite_dense_lead_ore",
+      "id": "seamlessores:andesite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_dense_uranium_ore",
+      "id": "seamlessores:andesite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_lead_ore",
+      "id": "seamlessores:andesite_tfmg_lead_ore",
       "required": false
     },
     {
@@ -90,30 +90,30 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_inferium_ore",
+      "id": "seamlessores:andesite_mysticalagriculture_inferium_ore",
       "required": false
     },
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
     "seamlessores:tuff_lapis_ore",
     {
-      "id": "seamlessores:tuff_dense_fluorite_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_lead_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_uranium_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_lead_ore",
+      "id": "seamlessores:tuff_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_lithium_ore",
+      "id": "seamlessores:tuff_tfmg_lithium_ore",
       "required": false
     },
     {
@@ -121,30 +121,30 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_inferium_ore",
+      "id": "seamlessores:tuff_mysticalagriculture_inferium_ore",
       "required": false
     },
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
     "seamlessores:dripstone_lapis_ore",
     {
-      "id": "seamlessores:dripstone_dense_fluorite_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_lead_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_uranium_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_lead_ore",
+      "id": "seamlessores:dripstone_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_inferium_ore",
+      "id": "seamlessores:dripstone_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -152,23 +152,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_iron_ore",
+      "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_copper_ore",
+      "id": "seamlessores:blackstone_copper_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_iceandfire_sapphire_ore",
+      "id": "seamlessores:blackstone_iceandfire_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_iceandfire_silver_ore",
+      "id": "seamlessores:blackstone_iceandfire_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_inferium_ore",
+      "id": "seamlessores:blackstone_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -180,11 +180,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_tin_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_energized_tin_ore",
+      "id": "seamlessores:blockus_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -204,11 +204,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_tin_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_energized_tin_ore",
+      "id": "seamlessores:blockus_marble_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -244,11 +244,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_tin_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_energized_tin_ore",
+      "id": "seamlessores:create_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -268,23 +268,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_iron_ore",
+      "id": "seamlessores:calcite_iron_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_copper_ore",
+      "id": "seamlessores:calcite_copper_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_lapis_ore",
+      "id": "seamlessores:calcite_lapis_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_iron_ore",
+      "id": "seamlessores:smooth_basalt_iron_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_copper_ore",
+      "id": "seamlessores:smooth_basalt_copper_ore",
       "required": false
     },
     {
@@ -340,11 +340,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_tin_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_energized_tin_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -360,7 +360,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_inferium_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -376,7 +376,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_inferium_ore",
+      "id": "seamlessores:regions_unexplored_argillite_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
@@ -388,11 +388,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_tin_ore",
+      "id": "seamlessores:regions_unexplored_chalk_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_energized_tin_ore",
+      "id": "seamlessores:regions_unexplored_chalk_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -424,11 +424,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_tin_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_energized_tin_ore",
+      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
       "required": false
     },
     {

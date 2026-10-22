@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_monazite_ore",
+      "id": "seamlessores:granite_modern_industrialization_monazite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_monazite_ore",
+      "id": "seamlessores:twigs_schist_modern_industrialization_monazite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_monazite_ore",
+      "id": "seamlessores:embellishcraft_gneiss_modern_industrialization_monazite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_monazite_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_monazite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_monazite_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_monazite_ore",
       "required": false
     }
   ]

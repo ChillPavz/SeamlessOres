@@ -1,15 +1,15 @@
 {
   "values": [
     {
-      "id": "seamlessores:blockus_bluestone_mi_nickel_ore",
+      "id": "seamlessores:blockus_bluestone_modern_industrialization_nickel_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mi_nickel_ore",
+      "id": "seamlessores:blockus_viridite_modern_industrialization_nickel_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mi_nickel_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_nickel_ore",
       "required": false
     }
   ]

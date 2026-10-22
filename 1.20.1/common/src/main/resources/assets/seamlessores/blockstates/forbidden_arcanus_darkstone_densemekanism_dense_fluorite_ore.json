@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_densemekanism_dense_fluorite_ore"
+      },
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_densemekanism_dense_fluorite_ore_mirrored"
+      },
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_densemekanism_dense_fluorite_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_densemekanism_dense_fluorite_ore_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

@@ -1,27 +1,27 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_uraninite_dense_ore",
+      "id": "seamlessores:granite_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_uraninite_dense_ore",
+      "id": "seamlessores:diorite_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_uraninite_dense_ore",
+      "id": "seamlessores:andesite_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_uraninite_dense_ore",
+      "id": "seamlessores:tuff_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_uraninite_dense_ore",
+      "id": "seamlessores:dripstone_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_dense_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_dense_ore",
       "required": false
     }
   ]

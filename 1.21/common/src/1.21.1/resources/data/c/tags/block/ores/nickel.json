@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_nickel_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_tfmg_nickel_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_mi_nickel_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_nickel_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_mi_nickel_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_modern_industrialization_nickel_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_nickel_ore",
+      "id": "seamlessores:promenade_blunite_tfmg_nickel_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mi_nickel_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_nickel_ore",
       "required": false
     }
   ]

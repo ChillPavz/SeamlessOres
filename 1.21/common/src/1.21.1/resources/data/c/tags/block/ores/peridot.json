@@ -1,59 +1,59 @@
 {
   "values": [
     {
-      "id": "seamlessores:minecraft_blackstone_peridot_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silents_peridot_ore",
+      "id": "seamlessores:blackstone_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_peridot_ore",
+      "id": "seamlessores:blockus_bluestone_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_peridot_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_peridot_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_silents_peridot_ore",
+      "id": "seamlessores:create_scoria_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_peridot_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_silents_peridot_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_peridot_ore",
+      "id": "seamlessores:embellishcraft_basalt_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_silents_peridot_ore",
+      "id": "seamlessores:embellishcraft_basalt_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_peridot_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_peridot_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_peridot_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silents_peridot_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_peridot_ore",
       "required": false
     }
   ]

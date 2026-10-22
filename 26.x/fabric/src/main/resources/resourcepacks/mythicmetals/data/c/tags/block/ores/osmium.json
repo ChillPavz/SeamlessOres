@@ -1,15 +1,15 @@
 {
   "values": [
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_osmium_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_mythicmetals_osmium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_osmium_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_osmium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_osmium_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_osmium_ore",
       "required": false
     }
   ]

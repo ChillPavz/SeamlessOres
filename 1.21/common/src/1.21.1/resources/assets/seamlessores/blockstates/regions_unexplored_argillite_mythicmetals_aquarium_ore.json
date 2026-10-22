@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_mythicmetals_aquarium_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_mythicmetals_aquarium_ore_mirrored"
+      }
+    ]
+  }
+}

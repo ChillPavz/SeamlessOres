@@ -1,71 +1,71 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_tin_ore",
+      "id": "seamlessores:granite_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_tin_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_tin_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_tin_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_tin_ore",
+      "id": "seamlessores:meadow_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_tin_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_tin_ore",
+      "id": "seamlessores:spawn_reefstone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_energized_tin_ore",
+      "id": "seamlessores:granite_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_mek_tin_ore",
+      "id": "seamlessores:granite_mekanism_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_energized_tin_ore",
+      "id": "seamlessores:blockus_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_energized_tin_ore",
+      "id": "seamlessores:blockus_marble_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_energized_tin_ore",
+      "id": "seamlessores:create_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_energized_tin_ore",
+      "id": "seamlessores:embellishcraft_marble_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_energized_tin_ore",
+      "id": "seamlessores:embellishcraft_gneiss_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_energized_tin_ore",
+      "id": "seamlessores:meadow_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_energized_tin_ore",
+      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_energized_tin_ore",
+      "id": "seamlessores:spawn_reefstone_energizedpower_tin_ore",
       "required": false
     }
   ]

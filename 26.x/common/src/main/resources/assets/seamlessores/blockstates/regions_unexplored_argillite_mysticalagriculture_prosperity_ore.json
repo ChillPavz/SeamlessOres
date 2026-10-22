@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_mysticalagriculture_prosperity_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_mysticalagriculture_prosperity_ore_mirrored"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_mysticalagriculture_prosperity_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_mysticalagriculture_prosperity_ore_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

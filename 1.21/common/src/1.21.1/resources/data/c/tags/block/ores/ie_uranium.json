@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_ie_uranium_ore",
+      "id": "seamlessores:granite_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ie_uranium_ore",
+      "id": "seamlessores:diorite_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ie_uranium_ore",
+      "id": "seamlessores:andesite_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_uranium_ore",
+      "id": "seamlessores:tuff_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ie_uranium_ore",
+      "id": "seamlessores:dripstone_immersiveengineering_uranium_ore",
       "required": false
     }
   ]

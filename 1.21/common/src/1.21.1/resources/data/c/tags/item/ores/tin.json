@@ -1,15 +1,15 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_tin_ore",
+      "id": "seamlessores:granite_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_dense_tin_ore",
+      "id": "seamlessores:granite_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_energized_tin_ore",
+      "id": "seamlessores:granite_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -17,19 +17,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_mi_tin_ore",
+      "id": "seamlessores:granite_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_mek_tin_ore",
+      "id": "seamlessores:granite_mekanism_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_tin_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_energized_tin_ore",
+      "id": "seamlessores:blockus_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -37,11 +37,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_tin_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_energized_tin_ore",
+      "id": "seamlessores:blockus_marble_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -49,59 +49,59 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_dense_tin_ore",
+      "id": "seamlessores:create_limestone_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_energized_tin_ore",
+      "id": "seamlessores:create_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_mi_tin_ore",
+      "id": "seamlessores:create_limestone_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_dense_tin_ore",
+      "id": "seamlessores:twigs_rhyolite_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_mi_tin_ore",
+      "id": "seamlessores:twigs_rhyolite_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_dense_tin_ore",
+      "id": "seamlessores:embellishcraft_marble_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_energized_tin_ore",
+      "id": "seamlessores:embellishcraft_marble_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_dense_tin_ore",
+      "id": "seamlessores:embellishcraft_gneiss_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_energized_tin_ore",
+      "id": "seamlessores:embellishcraft_gneiss_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_mi_tin_ore",
+      "id": "seamlessores:embellishcraft_gneiss_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_mi_tin_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_tin_ore",
+      "id": "seamlessores:meadow_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_dense_tin_ore",
+      "id": "seamlessores:meadow_limestone_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_energized_tin_ore",
+      "id": "seamlessores:meadow_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -109,19 +109,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_mi_tin_ore",
+      "id": "seamlessores:meadow_limestone_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_tin_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_dense_tin_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_energized_tin_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -129,19 +129,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_mi_tin_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_tin_ore",
+      "id": "seamlessores:regions_unexplored_chalk_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_dense_tin_ore",
+      "id": "seamlessores:regions_unexplored_chalk_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_energized_tin_ore",
+      "id": "seamlessores:regions_unexplored_chalk_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -149,15 +149,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_tin_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_dense_tin_ore",
+      "id": "seamlessores:promenade_blunite_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_energized_tin_ore",
+      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -165,19 +165,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mi_tin_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_dense_tin_ore",
+      "id": "seamlessores:spawn_reefstone_densemekanism_dense_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_energized_tin_ore",
+      "id": "seamlessores:spawn_reefstone_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_mi_tin_ore",
+      "id": "seamlessores:spawn_reefstone_modern_industrialization_tin_ore",
       "required": false
     }
   ]

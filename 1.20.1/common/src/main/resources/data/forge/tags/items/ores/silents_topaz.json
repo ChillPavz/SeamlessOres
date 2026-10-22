@@ -1,19 +1,19 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_silents_topaz_ore",
+      "id": "seamlessores:granite_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_silents_topaz_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_silents_topaz_ore",
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_topaz_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_topaz_ore",
       "required": false
     }
   ]

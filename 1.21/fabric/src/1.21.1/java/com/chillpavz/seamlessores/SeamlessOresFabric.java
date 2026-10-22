@@ -1,5 +1,7 @@
 package com.chillpavz.seamlessores;
 
+import java.lang.reflect.Method;
+import com.chillpavz.seamlessores.content.VariantIds;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import com.chillpavz.seamlessores.worldgen.BastionSafeOreFeature;
@@ -45,6 +47,9 @@ public class SeamlessOresFabric implements ModInitializer {
         RetiredBlocks.registerBlocks((id, block) -> Registry.register(BuiltInRegistries.BLOCK, id, block));
         RetiredBlocks.registerItems((id, item) -> Registry.register(BuiltInRegistries.ITEM, id, item),
                 BuiltInRegistries.BLOCK::get);
+        // Ids 6.0.0 renamed (VariantIds): an old world's blocks and an old inventory's items convert on load.
+        addRenamedAliases(BuiltInRegistries.BLOCK, "blocks");
+        addRenamedAliases(BuiltInRegistries.ITEM, "items");
         ServerChunkEvents.CHUNK_LOAD.register((level, chunk) ->
                 level.getServer().execute(() -> RetiredBlocks.convertChunk(level, chunk)));
         SeamlessOresContent.registerCreativeTabs(
@@ -101,5 +106,28 @@ public class SeamlessOresFabric implements ModInitializer {
         // server exists and before any chunk is generated.
         ServerLifecycleEvents.SERVER_STARTING.register(
                 server -> Worldgen.onServerStarting(server.registryAccess()));
+    }
+
+    /**
+     * Fabric API's registry aliases (FabricRegistry.addAlias) came after the Fabric API this band builds
+     * against, so the call is looked up on the registry at run time. With an older Fabric API installed,
+     * the ids 6.0.0 renamed do not convert, and that is said once per registry.
+     */
+    private static void addRenamedAliases(Registry<?> registry, String name) {
+        final Method addAlias;
+        try {
+            addAlias = registry.getClass().getMethod("addAlias", ResourceLocation.class, ResourceLocation.class);
+        } catch (NoSuchMethodException e) {
+            Constants.LOG.warn("This Fabric API cannot alias registry ids; {} from before Seamless Ores 6.0.0"
+                    + " will not convert. Update Fabric API to keep them", name);
+            return;
+        }
+        VariantIds.addAliases((old, now) -> {
+            try {
+                addAlias.invoke(registry, ResourceLocation.tryParse(old), ResourceLocation.tryParse(now));
+            } catch (ReflectiveOperationException e) {
+                throw new IllegalStateException(e);
+            }
+        }, id -> registry.containsKey(ResourceLocation.tryParse(id)), name);
     }
 }

@@ -1,107 +1,107 @@
 {
   "values": [
-    "seamlessores:basalt_gold_ore",
-    "seamlessores:basalt_quartz_ore",
+    "seamlessores:basalt_nether_gold_ore",
+    "seamlessores:basalt_nether_quartz_ore",
     {
-      "id": "seamlessores:basalt_ruby_ore",
+      "id": "seamlessores:basalt_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_sapphire_ore",
+      "id": "seamlessores:basalt_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_banglum_ore",
+      "id": "seamlessores:basalt_mythicmetals_nether_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_midas_gold_ore",
+      "id": "seamlessores:basalt_mythicmetals_midas_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_palladium_ore",
+      "id": "seamlessores:basalt_mythicmetals_palladium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_stormyx_ore",
+      "id": "seamlessores:basalt_mythicmetals_stormyx_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_carnelian_ore",
+      "id": "seamlessores:basalt_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_silents_citrine_ore",
+      "id": "seamlessores:basalt_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_blazing_quartz_ore",
+      "id": "seamlessores:basalt_malum_blazing_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_cinnabar_ore",
+      "id": "seamlessores:basalt_techreborn_cinnabar_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_pyrite_ore",
+      "id": "seamlessores:basalt_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_sphalerite_ore",
+      "id": "seamlessores:basalt_techreborn_sphalerite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_fire_stone_ore",
+      "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
       "required": false
     },
-    "seamlessores:blackstone_gold_ore",
-    "seamlessores:blackstone_quartz_ore",
+    "seamlessores:blackstone_nether_gold_ore",
+    "seamlessores:blackstone_nether_quartz_ore",
     {
-      "id": "seamlessores:blackstone_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blackstone_sapphire_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_banglum_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_midas_gold_ore",
+      "id": "seamlessores:blackstone_mythicmetals_nether_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_palladium_ore",
+      "id": "seamlessores:blackstone_mythicmetals_midas_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_carnelian_ore",
+      "id": "seamlessores:blackstone_mythicmetals_palladium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_silents_citrine_ore",
+      "id": "seamlessores:blackstone_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_blazing_quartz_ore",
+      "id": "seamlessores:blackstone_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_cinnabar_ore",
+      "id": "seamlessores:blackstone_malum_blazing_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_pyrite_ore",
+      "id": "seamlessores:blackstone_techreborn_cinnabar_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_sphalerite_ore",
+      "id": "seamlessores:blackstone_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_fire_stone_ore",
+      "id": "seamlessores:blackstone_techreborn_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_nether_fire_stone_ore",
       "required": false
     },
     {
@@ -109,55 +109,55 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_quartz_ore",
+      "id": "seamlessores:create_scorchia_nether_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_ruby_ore",
+      "id": "seamlessores:create_scorchia_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_sapphire_ore",
+      "id": "seamlessores:create_scorchia_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_alexandrite_ore",
+      "id": "seamlessores:create_scorchia_silentgems_nether_alexandrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_black_diamond_ore",
+      "id": "seamlessores:create_scorchia_silentgems_nether_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_carnelian_ore",
+      "id": "seamlessores:create_scorchia_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_silents_citrine_ore",
+      "id": "seamlessores:create_scorchia_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_iolite_ore",
+      "id": "seamlessores:create_scorchia_silentgems_nether_iolite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_moldavite_ore",
+      "id": "seamlessores:create_scorchia_silentgems_nether_moldavite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_pearl_ore",
+      "id": "seamlessores:create_scorchia_silentgems_nether_pearl_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_tanzanite_ore",
+      "id": "seamlessores:create_scorchia_silentgems_nether_tanzanite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_blazing_quartz_ore",
+      "id": "seamlessores:create_scorchia_malum_blazing_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_benitoite_ore",
+      "id": "seamlessores:create_scorchia_bigreactors_benitoite_ore",
       "required": false
     },
     {
@@ -165,103 +165,103 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_quartz_ore",
+      "id": "seamlessores:create_scoria_nether_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_ruby_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_sapphire_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_alexandrite_ore",
+      "id": "seamlessores:create_scoria_silentgems_nether_alexandrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_black_diamond_ore",
+      "id": "seamlessores:create_scoria_silentgems_nether_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_carnelian_ore",
+      "id": "seamlessores:create_scoria_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_silents_citrine_ore",
+      "id": "seamlessores:create_scoria_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_iolite_ore",
+      "id": "seamlessores:create_scoria_silentgems_nether_iolite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_moldavite_ore",
+      "id": "seamlessores:create_scoria_silentgems_nether_moldavite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_pearl_ore",
+      "id": "seamlessores:create_scoria_silentgems_nether_pearl_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_tanzanite_ore",
+      "id": "seamlessores:create_scoria_silentgems_nether_tanzanite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_blazing_quartz_ore",
+      "id": "seamlessores:create_scoria_malum_blazing_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_gold_ore",
+      "id": "seamlessores:smooth_basalt_nether_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_quartz_ore",
+      "id": "seamlessores:smooth_basalt_nether_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_ruby_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_sapphire_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_alexandrite_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_nether_alexandrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_black_diamond_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_nether_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_carnelian_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_silents_citrine_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_iolite_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_nether_iolite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_moldavite_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_nether_moldavite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_pearl_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_nether_pearl_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_tanzanite_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_nether_tanzanite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_blazing_quartz_ore",
+      "id": "seamlessores:smooth_basalt_malum_blazing_quartz_ore",
       "required": false
     },
     {
@@ -269,87 +269,87 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_quartz_ore",
+      "id": "seamlessores:twigs_bloodstone_nether_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_ruby_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_sapphire_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_banglum_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_nether_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_midas_gold_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_midas_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_palladium_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_palladium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_stormyx_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_stormyx_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_alexandrite_ore",
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_alexandrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_black_diamond_ore",
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_carnelian_ore",
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_silents_citrine_ore",
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_iolite_ore",
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_iolite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_moldavite_ore",
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_moldavite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_pearl_ore",
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_pearl_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_tanzanite_ore",
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_tanzanite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_blazing_quartz_ore",
+      "id": "seamlessores:twigs_bloodstone_malum_blazing_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_cinnabar_ore",
+      "id": "seamlessores:twigs_bloodstone_techreborn_cinnabar_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_pyrite_ore",
+      "id": "seamlessores:twigs_bloodstone_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_sphalerite_ore",
+      "id": "seamlessores:twigs_bloodstone_techreborn_sphalerite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_benitoite_ore",
+      "id": "seamlessores:twigs_bloodstone_bigreactors_benitoite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_sapphire_schist_ruby_ore",
+      "id": "seamlessores:mythicupgrades_sapphire_schist_mythicupgrades_ruby_ore",
       "required": false
     }
   ]

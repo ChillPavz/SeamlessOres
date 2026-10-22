@@ -1,59 +1,59 @@
 {
   "values": [
     {
-      "id": "seamlessores:tuff_leaf_stone_ore",
+      "id": "seamlessores:tuff_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_leaf_stone_ore",
+      "id": "seamlessores:blockus_limestone_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_leaf_stone_ore",
+      "id": "seamlessores:blockus_viridite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_leaf_stone_ore",
+      "id": "seamlessores:create_limestone_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_leaf_stone_ore",
+      "id": "seamlessores:create_veridium_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_leaf_stone_ore",
+      "id": "seamlessores:tfmg_bauxite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_leaf_stone_ore",
+      "id": "seamlessores:tfmg_lignite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_leaf_stone_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_leaf_stone_ore",
+      "id": "seamlessores:meadow_limestone_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_leaf_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_leaf_stone_ore",
+      "id": "seamlessores:regions_unexplored_argillite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_leaf_stone_ore",
+      "id": "seamlessores:regions_unexplored_chalk_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_leaf_stone_ore",
+      "id": "seamlessores:promenade_asphalt_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_leaf_stone_ore",
+      "id": "seamlessores:spawn_reefstone_cobblemon_leaf_stone_ore",
       "required": false
     }
   ]

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_expores_experience_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_expores_experience_ore",
+        "y": 180
+      }
+    ]
+  }
+}

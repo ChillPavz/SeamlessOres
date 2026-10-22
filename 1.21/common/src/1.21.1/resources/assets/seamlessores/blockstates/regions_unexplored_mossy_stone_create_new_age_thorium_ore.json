@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_create_new_age_thorium_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_create_new_age_thorium_ore_mirrored"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_bigreactors_yellorite_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_bigreactors_yellorite_ore_mirrored"
+      }
+    ]
+  }
+}

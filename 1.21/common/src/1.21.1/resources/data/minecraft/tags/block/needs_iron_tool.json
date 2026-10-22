@@ -5,63 +5,63 @@
     "seamlessores:granite_emerald_ore",
     "seamlessores:granite_redstone_ore",
     {
-      "id": "seamlessores:granite_zinc_ore",
+      "id": "seamlessores:granite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_aquamarine_ore",
+      "id": "seamlessores:granite_mythicupgrades_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_citrine_ore",
+      "id": "seamlessores:granite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_topaz_ore",
+      "id": "seamlessores:granite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_necoium_ore",
+      "id": "seamlessores:granite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_garnet_ore",
+      "id": "seamlessores:granite_silentgems_garnet_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_heliodor_ore",
+      "id": "seamlessores:granite_silentgems_heliodor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_aquamarine_ore",
+      "id": "seamlessores:granite_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_citrine_ore",
+      "id": "seamlessores:granite_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_topaz_ore",
+      "id": "seamlessores:granite_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_silver_ore",
+      "id": "seamlessores:granite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_uraninite_ore",
+      "id": "seamlessores:granite_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_uraninite_poor_ore",
+      "id": "seamlessores:granite_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_uraninite_dense_ore",
+      "id": "seamlessores:granite_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_thorium_ore",
+      "id": "seamlessores:granite_create_new_age_thorium_ore",
       "required": false
     },
     {
@@ -73,7 +73,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_galena_ore",
+      "id": "seamlessores:granite_techreborn_galena_ore",
       "required": false
     },
     {
@@ -89,23 +89,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_yellorite_ore",
+      "id": "seamlessores:granite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_prosperity_ore",
+      "id": "seamlessores:granite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_ie_lead_ore",
+      "id": "seamlessores:granite_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_ie_silver_ore",
+      "id": "seamlessores:granite_immersiveengineering_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_ie_uranium_ore",
+      "id": "seamlessores:granite_immersiveengineering_uranium_ore",
       "required": false
     },
     {
@@ -113,19 +113,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_dawn_stone_ore",
+      "id": "seamlessores:granite_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_moon_stone_ore",
+      "id": "seamlessores:granite_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_shiny_stone_ore",
+      "id": "seamlessores:granite_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_thunder_stone_ore",
+      "id": "seamlessores:granite_cobblemon_thunder_stone_ore",
       "required": false
     },
     "seamlessores:diorite_gold_ore",
@@ -133,35 +133,35 @@
     "seamlessores:diorite_emerald_ore",
     "seamlessores:diorite_redstone_ore",
     {
-      "id": "seamlessores:diorite_zinc_ore",
+      "id": "seamlessores:diorite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_citrine_ore",
+      "id": "seamlessores:diorite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_necoium_ore",
+      "id": "seamlessores:diorite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silents_citrine_ore",
+      "id": "seamlessores:diorite_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silents_silver_ore",
+      "id": "seamlessores:diorite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_uraninite_ore",
+      "id": "seamlessores:diorite_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_uraninite_poor_ore",
+      "id": "seamlessores:diorite_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_uraninite_dense_ore",
+      "id": "seamlessores:diorite_powah_uraninite_dense_ore",
       "required": false
     },
     {
@@ -173,7 +173,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_galena_ore",
+      "id": "seamlessores:diorite_techreborn_galena_ore",
       "required": false
     },
     {
@@ -189,23 +189,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_yellorite_ore",
+      "id": "seamlessores:diorite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_prosperity_ore",
+      "id": "seamlessores:diorite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ie_lead_ore",
+      "id": "seamlessores:diorite_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ie_silver_ore",
+      "id": "seamlessores:diorite_immersiveengineering_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ie_uranium_ore",
+      "id": "seamlessores:diorite_immersiveengineering_uranium_ore",
       "required": false
     },
     {
@@ -213,15 +213,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ice_stone_ore",
+      "id": "seamlessores:diorite_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_moon_stone_ore",
+      "id": "seamlessores:diorite_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_thunder_stone_ore",
+      "id": "seamlessores:diorite_cobblemon_thunder_stone_ore",
       "required": false
     },
     "seamlessores:andesite_gold_ore",
@@ -229,43 +229,43 @@
     "seamlessores:andesite_emerald_ore",
     "seamlessores:andesite_redstone_ore",
     {
-      "id": "seamlessores:andesite_zinc_ore",
+      "id": "seamlessores:andesite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_citrine_ore",
+      "id": "seamlessores:andesite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_necoium_ore",
+      "id": "seamlessores:andesite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_carnelian_ore",
+      "id": "seamlessores:andesite_silentgems_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_turquoise_ore",
+      "id": "seamlessores:andesite_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silents_citrine_ore",
+      "id": "seamlessores:andesite_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silents_silver_ore",
+      "id": "seamlessores:andesite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_uraninite_ore",
+      "id": "seamlessores:andesite_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_uraninite_poor_ore",
+      "id": "seamlessores:andesite_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_uraninite_dense_ore",
+      "id": "seamlessores:andesite_powah_uraninite_dense_ore",
       "required": false
     },
     {
@@ -277,7 +277,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_galena_ore",
+      "id": "seamlessores:andesite_techreborn_galena_ore",
       "required": false
     },
     {
@@ -293,23 +293,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_yellorite_ore",
+      "id": "seamlessores:andesite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_prosperity_ore",
+      "id": "seamlessores:andesite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ie_lead_ore",
+      "id": "seamlessores:andesite_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ie_silver_ore",
+      "id": "seamlessores:andesite_immersiveengineering_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ie_uranium_ore",
+      "id": "seamlessores:andesite_immersiveengineering_uranium_ore",
       "required": false
     },
     {
@@ -317,15 +317,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_dusk_stone_ore",
+      "id": "seamlessores:andesite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_fire_stone_ore",
+      "id": "seamlessores:andesite_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_sun_stone_ore",
+      "id": "seamlessores:andesite_cobblemon_sun_stone_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
@@ -333,55 +333,55 @@
     "seamlessores:tuff_emerald_ore",
     "seamlessores:tuff_redstone_ore",
     {
-      "id": "seamlessores:tuff_zinc_ore",
+      "id": "seamlessores:tuff_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_citrine_ore",
+      "id": "seamlessores:tuff_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_necoium_ore",
+      "id": "seamlessores:tuff_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_black_diamond_ore",
+      "id": "seamlessores:tuff_silentgems_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_carnelian_ore",
+      "id": "seamlessores:tuff_silentgems_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_turquoise_ore",
+      "id": "seamlessores:tuff_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_white_diamond_ore",
+      "id": "seamlessores:tuff_silentgems_white_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_silents_citrine_ore",
+      "id": "seamlessores:tuff_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_silents_silver_ore",
+      "id": "seamlessores:tuff_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_uraninite_ore",
+      "id": "seamlessores:tuff_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_uraninite_poor_ore",
+      "id": "seamlessores:tuff_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_uraninite_dense_ore",
+      "id": "seamlessores:tuff_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_bort_ore",
+      "id": "seamlessores:tuff_silentgear_bort_ore",
       "required": false
     },
     {
@@ -393,7 +393,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_galena_ore",
+      "id": "seamlessores:tuff_techreborn_galena_ore",
       "required": false
     },
     {
@@ -409,23 +409,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_yellorite_ore",
+      "id": "seamlessores:tuff_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_prosperity_ore",
+      "id": "seamlessores:tuff_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_lead_ore",
+      "id": "seamlessores:tuff_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_silver_ore",
+      "id": "seamlessores:tuff_immersiveengineering_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_uranium_ore",
+      "id": "seamlessores:tuff_immersiveengineering_uranium_ore",
       "required": false
     },
     {
@@ -433,50 +433,50 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dusk_stone_ore",
+      "id": "seamlessores:tuff_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_fire_stone_ore",
+      "id": "seamlessores:tuff_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_leaf_stone_ore",
+      "id": "seamlessores:tuff_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_sun_stone_ore",
+      "id": "seamlessores:tuff_cobblemon_sun_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_opal_ore",
+      "id": "seamlessores:tuff_silentgems_opal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_infected_diamond_ore",
+      "id": "seamlessores:tuff_born_in_chaos_v1_infected_diamond_ore",
       "required": false
     },
     "seamlessores:dripstone_gold_ore",
     "seamlessores:dripstone_diamond_ore",
     "seamlessores:dripstone_redstone_ore",
     {
-      "id": "seamlessores:dripstone_zinc_ore",
+      "id": "seamlessores:dripstone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_necoium_ore",
+      "id": "seamlessores:dripstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_uraninite_ore",
+      "id": "seamlessores:dripstone_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_uraninite_poor_ore",
+      "id": "seamlessores:dripstone_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_uraninite_dense_ore",
+      "id": "seamlessores:dripstone_powah_uraninite_dense_ore",
       "required": false
     },
     {
@@ -484,7 +484,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_galena_ore",
+      "id": "seamlessores:dripstone_techreborn_galena_ore",
       "required": false
     },
     {
@@ -492,35 +492,35 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_yellorite_ore",
+      "id": "seamlessores:dripstone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_prosperity_ore",
+      "id": "seamlessores:dripstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ie_lead_ore",
+      "id": "seamlessores:dripstone_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ie_uranium_ore",
+      "id": "seamlessores:dripstone_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dawn_stone_ore",
+      "id": "seamlessores:dripstone_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ice_stone_ore",
+      "id": "seamlessores:dripstone_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_shiny_stone_ore",
+      "id": "seamlessores:dripstone_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_water_stone_ore",
+      "id": "seamlessores:dripstone_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -532,11 +532,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_zinc_ore",
+      "id": "seamlessores:cinnabar_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_silents_silver_ore",
+      "id": "seamlessores:cinnabar_silentgems_silver_ore",
       "required": false
     },
     {
@@ -544,7 +544,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_galena_ore",
+      "id": "seamlessores:cinnabar_techreborn_galena_ore",
       "required": false
     },
     {
@@ -560,11 +560,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_ie_lead_ore",
+      "id": "seamlessores:cinnabar_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_ie_silver_ore",
+      "id": "seamlessores:cinnabar_immersiveengineering_silver_ore",
       "required": false
     },
     {
@@ -572,51 +572,51 @@
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_pyrite_ore",
+      "id": "seamlessores:cinnabar_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_sphalerite_ore",
+      "id": "seamlessores:cinnabar_techreborn_sphalerite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_ruby_ore",
+      "id": "seamlessores:basalt_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_sapphire_ore",
+      "id": "seamlessores:basalt_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_cinnabar_ore",
+      "id": "seamlessores:basalt_techreborn_cinnabar_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_pyrite_ore",
+      "id": "seamlessores:basalt_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_sphalerite_ore",
+      "id": "seamlessores:basalt_techreborn_sphalerite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_ruby_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_sapphire_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_cinnabar_ore",
+      "id": "seamlessores:blackstone_techreborn_cinnabar_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_pyrite_ore",
+      "id": "seamlessores:blackstone_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_sphalerite_ore",
+      "id": "seamlessores:blackstone_techreborn_sphalerite_ore",
       "required": false
     },
     {
@@ -624,95 +624,95 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_redstone_ore",
+      "id": "seamlessores:blackstone_redstone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_zinc_ore",
+      "id": "seamlessores:blackstone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_citrine_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_peridot_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_necoium_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silents_ruby_ore",
+      "id": "seamlessores:blackstone_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silents_sapphire_ore",
+      "id": "seamlessores:blackstone_silentgems_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silents_peridot_ore",
+      "id": "seamlessores:blackstone_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silents_silver_ore",
+      "id": "seamlessores:blackstone_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_iceandfire_sapphire_ore",
+      "id": "seamlessores:blackstone_iceandfire_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_iceandfire_silver_ore",
+      "id": "seamlessores:blackstone_iceandfire_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_bauxite_ore",
+      "id": "seamlessores:blackstone_techreborn_bauxite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_galena_ore",
+      "id": "seamlessores:blackstone_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_lead_ore",
+      "id": "seamlessores:blackstone_techreborn_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_ruby_ore",
+      "id": "seamlessores:blackstone_techreborn_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_sapphire_ore",
+      "id": "seamlessores:blackstone_techreborn_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_silver_ore",
+      "id": "seamlessores:blackstone_techreborn_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_occultism_silver_ore",
+      "id": "seamlessores:blackstone_occultism_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_prosperity_ore",
+      "id": "seamlessores:blackstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_oreganized_silver_ore",
+      "id": "seamlessores:blackstone_oreganized_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_dusk_stone_ore",
+      "id": "seamlessores:blackstone_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_fire_stone_ore",
+      "id": "seamlessores:blackstone_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_sun_stone_ore",
+      "id": "seamlessores:blackstone_cobblemon_sun_stone_ore",
       "required": false
     },
     {
@@ -728,11 +728,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_citrine_ore",
+      "id": "seamlessores:blockus_limestone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_necoium_ore",
+      "id": "seamlessores:blockus_limestone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -740,7 +740,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_galena_ore",
+      "id": "seamlessores:blockus_limestone_techreborn_galena_ore",
       "required": false
     },
     {
@@ -752,11 +752,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_leaf_stone_ore",
+      "id": "seamlessores:blockus_limestone_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_water_stone_ore",
+      "id": "seamlessores:blockus_limestone_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -772,11 +772,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_citrine_ore",
+      "id": "seamlessores:blockus_marble_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_necoium_ore",
+      "id": "seamlessores:blockus_marble_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -784,7 +784,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_galena_ore",
+      "id": "seamlessores:blockus_marble_techreborn_galena_ore",
       "required": false
     },
     {
@@ -804,19 +804,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_dawn_stone_ore",
+      "id": "seamlessores:blockus_marble_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_ice_stone_ore",
+      "id": "seamlessores:blockus_marble_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_shiny_stone_ore",
+      "id": "seamlessores:blockus_marble_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_water_stone_ore",
+      "id": "seamlessores:blockus_marble_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -828,15 +828,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_citrine_ore",
+      "id": "seamlessores:blockus_bluestone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_peridot_ore",
+      "id": "seamlessores:blockus_bluestone_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_necoium_ore",
+      "id": "seamlessores:blockus_bluestone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -848,15 +848,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_dusk_stone_ore",
+      "id": "seamlessores:blockus_bluestone_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_moon_stone_ore",
+      "id": "seamlessores:blockus_bluestone_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_thunder_stone_ore",
+      "id": "seamlessores:blockus_bluestone_cobblemon_thunder_stone_ore",
       "required": false
     },
     {
@@ -872,23 +872,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_aquamarine_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_citrine_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_peridot_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_topaz_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_necoium_ore",
+      "id": "seamlessores:blockus_viridite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -896,7 +896,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_galena_ore",
+      "id": "seamlessores:blockus_viridite_techreborn_galena_ore",
       "required": false
     },
     {
@@ -908,11 +908,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_dusk_stone_ore",
+      "id": "seamlessores:blockus_viridite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_leaf_stone_ore",
+      "id": "seamlessores:blockus_viridite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
@@ -920,23 +920,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_zinc_ore",
+      "id": "seamlessores:create_asurine_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_necoium_ore",
+      "id": "seamlessores:create_asurine_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_prosperity_ore",
+      "id": "seamlessores:create_asurine_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_ice_stone_ore",
+      "id": "seamlessores:create_asurine_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_water_stone_ore",
+      "id": "seamlessores:create_asurine_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -944,15 +944,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_necoium_ore",
+      "id": "seamlessores:create_crimsite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_prosperity_ore",
+      "id": "seamlessores:create_crimsite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_fire_stone_ore",
+      "id": "seamlessores:create_crimsite_cobblemon_fire_stone_ore",
       "required": false
     },
     {
@@ -968,31 +968,31 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_zinc_ore",
+      "id": "seamlessores:create_limestone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_citrine_ore",
+      "id": "seamlessores:create_limestone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_necoium_ore",
+      "id": "seamlessores:create_limestone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_silents_silver_ore",
+      "id": "seamlessores:create_limestone_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_uraninite_ore",
+      "id": "seamlessores:create_limestone_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_uraninite_poor_ore",
+      "id": "seamlessores:create_limestone_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_uraninite_dense_ore",
+      "id": "seamlessores:create_limestone_powah_uraninite_dense_ore",
       "required": false
     },
     {
@@ -1004,11 +1004,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_yellorite_ore",
+      "id": "seamlessores:create_limestone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_prosperity_ore",
+      "id": "seamlessores:create_limestone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -1016,11 +1016,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_leaf_stone_ore",
+      "id": "seamlessores:create_limestone_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_water_stone_ore",
+      "id": "seamlessores:create_limestone_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -1032,35 +1032,35 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_necoium_ore",
+      "id": "seamlessores:create_ochrum_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_prosperity_ore",
+      "id": "seamlessores:create_ochrum_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_sun_stone_ore",
+      "id": "seamlessores:create_ochrum_cobblemon_sun_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_thunder_stone_ore",
+      "id": "seamlessores:create_ochrum_cobblemon_thunder_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_ruby_ore",
+      "id": "seamlessores:create_scorchia_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_sapphire_ore",
+      "id": "seamlessores:create_scorchia_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_benitoite_ore",
+      "id": "seamlessores:create_scorchia_bigreactors_benitoite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_fire_stone_ore",
+      "id": "seamlessores:create_scorchia_cobblemon_fire_stone_ore",
       "required": false
     },
     {
@@ -1072,43 +1072,43 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_zinc_ore",
+      "id": "seamlessores:create_scoria_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_citrine_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_peridot_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_necoium_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_ruby_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_sapphire_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_silents_ruby_ore",
+      "id": "seamlessores:create_scoria_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_silents_sapphire_ore",
+      "id": "seamlessores:create_scoria_silentgems_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_silents_peridot_ore",
+      "id": "seamlessores:create_scoria_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_silents_silver_ore",
+      "id": "seamlessores:create_scoria_silentgems_silver_ore",
       "required": false
     },
     {
@@ -1124,7 +1124,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_prosperity_ore",
+      "id": "seamlessores:create_scoria_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -1132,15 +1132,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_dusk_stone_ore",
+      "id": "seamlessores:create_scoria_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_fire_stone_ore",
+      "id": "seamlessores:create_scoria_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_sun_stone_ore",
+      "id": "seamlessores:create_scoria_cobblemon_sun_stone_ore",
       "required": false
     },
     {
@@ -1148,171 +1148,171 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_necoium_ore",
+      "id": "seamlessores:create_veridium_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_prosperity_ore",
+      "id": "seamlessores:create_veridium_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_leaf_stone_ore",
+      "id": "seamlessores:create_veridium_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_gold_ore",
+      "id": "seamlessores:calcite_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_emerald_ore",
+      "id": "seamlessores:calcite_emerald_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_redstone_ore",
+      "id": "seamlessores:calcite_redstone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_zinc_ore",
+      "id": "seamlessores:calcite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_citrine_ore",
+      "id": "seamlessores:calcite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_necoium_ore",
+      "id": "seamlessores:calcite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_silents_silver_ore",
+      "id": "seamlessores:calcite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_uraninite_ore",
+      "id": "seamlessores:calcite_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_uraninite_poor_ore",
+      "id": "seamlessores:calcite_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_uraninite_dense_ore",
+      "id": "seamlessores:calcite_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_iceandfire_silver_ore",
+      "id": "seamlessores:calcite_iceandfire_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_occultism_silver_ore",
+      "id": "seamlessores:calcite_occultism_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_yellorite_ore",
+      "id": "seamlessores:calcite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_prosperity_ore",
+      "id": "seamlessores:calcite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_oreganized_silver_ore",
+      "id": "seamlessores:calcite_oreganized_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_dawn_stone_ore",
+      "id": "seamlessores:calcite_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_ice_stone_ore",
+      "id": "seamlessores:calcite_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_shiny_stone_ore",
+      "id": "seamlessores:calcite_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_water_stone_ore",
+      "id": "seamlessores:calcite_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_gold_ore",
+      "id": "seamlessores:smooth_basalt_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_redstone_ore",
+      "id": "seamlessores:smooth_basalt_redstone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_zinc_ore",
+      "id": "seamlessores:smooth_basalt_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_citrine_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_peridot_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_necoium_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_ruby_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_sapphire_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_silents_ruby_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_silents_sapphire_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_silents_peridot_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_silents_silver_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_iceandfire_sapphire_ore",
+      "id": "seamlessores:smooth_basalt_iceandfire_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_iceandfire_silver_ore",
+      "id": "seamlessores:smooth_basalt_iceandfire_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_occultism_silver_ore",
+      "id": "seamlessores:smooth_basalt_occultism_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_prosperity_ore",
+      "id": "seamlessores:smooth_basalt_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_oreganized_silver_ore",
+      "id": "seamlessores:smooth_basalt_oreganized_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_dusk_stone_ore",
+      "id": "seamlessores:smooth_basalt_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_fire_stone_ore",
+      "id": "seamlessores:smooth_basalt_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_sun_stone_ore",
+      "id": "seamlessores:smooth_basalt_cobblemon_sun_stone_ore",
       "required": false
     },
     {
@@ -1324,19 +1324,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_citrine_ore",
+      "id": "seamlessores:tfmg_bauxite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_necoium_ore",
+      "id": "seamlessores:tfmg_bauxite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_turquoise_ore",
+      "id": "seamlessores:tfmg_bauxite_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_silents_silver_ore",
+      "id": "seamlessores:tfmg_bauxite_silentgems_silver_ore",
       "required": false
     },
     {
@@ -1348,7 +1348,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_prosperity_ore",
+      "id": "seamlessores:tfmg_bauxite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -1356,11 +1356,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_leaf_stone_ore",
+      "id": "seamlessores:tfmg_bauxite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_opal_ore",
+      "id": "seamlessores:tfmg_bauxite_silentgems_opal_ore",
       "required": false
     },
     {
@@ -1372,23 +1372,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_zinc_ore",
+      "id": "seamlessores:tfmg_galena_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_citrine_ore",
+      "id": "seamlessores:tfmg_galena_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_necoium_ore",
+      "id": "seamlessores:tfmg_galena_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_turquoise_ore",
+      "id": "seamlessores:tfmg_galena_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_silents_silver_ore",
+      "id": "seamlessores:tfmg_galena_silentgems_silver_ore",
       "required": false
     },
     {
@@ -1400,7 +1400,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_prosperity_ore",
+      "id": "seamlessores:tfmg_galena_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -1408,11 +1408,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_fire_stone_ore",
+      "id": "seamlessores:tfmg_galena_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_thunder_stone_ore",
+      "id": "seamlessores:tfmg_galena_cobblemon_thunder_stone_ore",
       "required": false
     },
     {
@@ -1424,31 +1424,31 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_zinc_ore",
+      "id": "seamlessores:tfmg_lignite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_citrine_ore",
+      "id": "seamlessores:tfmg_lignite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_necoium_ore",
+      "id": "seamlessores:tfmg_lignite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_silents_silver_ore",
+      "id": "seamlessores:tfmg_lignite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_uraninite_ore",
+      "id": "seamlessores:tfmg_lignite_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_uraninite_poor_ore",
+      "id": "seamlessores:tfmg_lignite_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_uraninite_dense_ore",
+      "id": "seamlessores:tfmg_lignite_powah_uraninite_dense_ore",
       "required": false
     },
     {
@@ -1460,11 +1460,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_yellorite_ore",
+      "id": "seamlessores:tfmg_lignite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_prosperity_ore",
+      "id": "seamlessores:tfmg_lignite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -1472,11 +1472,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_dusk_stone_ore",
+      "id": "seamlessores:tfmg_lignite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_leaf_stone_ore",
+      "id": "seamlessores:tfmg_lignite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
@@ -1488,47 +1488,47 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_zinc_ore",
+      "id": "seamlessores:twigs_rhyolite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_citrine_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_topaz_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_necoium_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_garnet_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_garnet_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_turquoise_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_silents_topaz_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_silents_silver_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_uraninite_ore",
+      "id": "seamlessores:twigs_rhyolite_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_uraninite_poor_ore",
+      "id": "seamlessores:twigs_rhyolite_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_uraninite_dense_ore",
+      "id": "seamlessores:twigs_rhyolite_powah_uraninite_dense_ore",
       "required": false
     },
     {
@@ -1540,7 +1540,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_galena_ore",
+      "id": "seamlessores:twigs_rhyolite_techreborn_galena_ore",
       "required": false
     },
     {
@@ -1556,11 +1556,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_yellorite_ore",
+      "id": "seamlessores:twigs_rhyolite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_prosperity_ore",
+      "id": "seamlessores:twigs_rhyolite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -1568,23 +1568,23 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_dawn_stone_ore",
+      "id": "seamlessores:twigs_rhyolite_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_fire_stone_ore",
+      "id": "seamlessores:twigs_rhyolite_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_moon_stone_ore",
+      "id": "seamlessores:twigs_rhyolite_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_sun_stone_ore",
+      "id": "seamlessores:twigs_rhyolite_cobblemon_sun_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_opal_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_opal_ore",
       "required": false
     },
     {
@@ -1600,67 +1600,67 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_zinc_ore",
+      "id": "seamlessores:twigs_schist_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_aquamarine_ore",
+      "id": "seamlessores:twigs_schist_mythicupgrades_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_citrine_ore",
+      "id": "seamlessores:twigs_schist_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_necoium_ore",
+      "id": "seamlessores:twigs_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_alexandrite_ore",
+      "id": "seamlessores:twigs_schist_silentgems_alexandrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_garnet_ore",
+      "id": "seamlessores:twigs_schist_silentgems_garnet_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_heliodor_ore",
+      "id": "seamlessores:twigs_schist_silentgems_heliodor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_iolite_ore",
+      "id": "seamlessores:twigs_schist_silentgems_iolite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_silents_ruby_ore",
+      "id": "seamlessores:twigs_schist_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_silents_sapphire_ore",
+      "id": "seamlessores:twigs_schist_silentgems_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_silents_aquamarine_ore",
+      "id": "seamlessores:twigs_schist_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_silents_silver_ore",
+      "id": "seamlessores:twigs_schist_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_uraninite_ore",
+      "id": "seamlessores:twigs_schist_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_uraninite_poor_ore",
+      "id": "seamlessores:twigs_schist_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_uraninite_dense_ore",
+      "id": "seamlessores:twigs_schist_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_thorium_ore",
+      "id": "seamlessores:twigs_schist_create_new_age_thorium_ore",
       "required": false
     },
     {
@@ -1676,7 +1676,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_galena_ore",
+      "id": "seamlessores:twigs_schist_techreborn_galena_ore",
       "required": false
     },
     {
@@ -1700,11 +1700,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_yellorite_ore",
+      "id": "seamlessores:twigs_schist_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_prosperity_ore",
+      "id": "seamlessores:twigs_schist_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -1712,47 +1712,47 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_ice_stone_ore",
+      "id": "seamlessores:twigs_schist_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_moon_stone_ore",
+      "id": "seamlessores:twigs_schist_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_shiny_stone_ore",
+      "id": "seamlessores:twigs_schist_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_thunder_stone_ore",
+      "id": "seamlessores:twigs_schist_cobblemon_thunder_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_ruby_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_sapphire_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_cinnabar_ore",
+      "id": "seamlessores:twigs_bloodstone_techreborn_cinnabar_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_pyrite_ore",
+      "id": "seamlessores:twigs_bloodstone_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_sphalerite_ore",
+      "id": "seamlessores:twigs_bloodstone_techreborn_sphalerite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_benitoite_ore",
+      "id": "seamlessores:twigs_bloodstone_bigreactors_benitoite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_fire_stone_ore",
+      "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
       "required": false
     },
     {
@@ -1768,31 +1768,31 @@
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_zinc_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_citrine_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_necoium_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_silents_silver_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_uraninite_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_uraninite_poor_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_uraninite_dense_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_powah_uraninite_dense_ore",
       "required": false
     },
     {
@@ -1804,11 +1804,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_yellorite_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_prosperity_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -1816,11 +1816,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_dusk_stone_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_leaf_stone_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
@@ -1832,35 +1832,35 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_zinc_ore",
+      "id": "seamlessores:embellishcraft_basalt_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_citrine_ore",
+      "id": "seamlessores:embellishcraft_basalt_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_peridot_ore",
+      "id": "seamlessores:embellishcraft_basalt_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_necoium_ore",
+      "id": "seamlessores:embellishcraft_basalt_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_silents_ruby_ore",
+      "id": "seamlessores:embellishcraft_basalt_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_silents_sapphire_ore",
+      "id": "seamlessores:embellishcraft_basalt_silentgems_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_silents_peridot_ore",
+      "id": "seamlessores:embellishcraft_basalt_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_silents_silver_ore",
+      "id": "seamlessores:embellishcraft_basalt_silentgems_silver_ore",
       "required": false
     },
     {
@@ -1876,7 +1876,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_prosperity_ore",
+      "id": "seamlessores:embellishcraft_basalt_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -1884,15 +1884,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_dusk_stone_ore",
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_fire_stone_ore",
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_sun_stone_ore",
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_sun_stone_ore",
       "required": false
     },
     {
@@ -1904,35 +1904,35 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_zinc_ore",
+      "id": "seamlessores:embellishcraft_slate_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_garnet_ore",
+      "id": "seamlessores:embellishcraft_slate_silentgems_garnet_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_silents_ruby_ore",
+      "id": "seamlessores:embellishcraft_slate_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_silents_sapphire_ore",
+      "id": "seamlessores:embellishcraft_slate_silentgems_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_silents_aquamarine_ore",
+      "id": "seamlessores:embellishcraft_slate_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_silents_silver_ore",
+      "id": "seamlessores:embellishcraft_slate_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_uraninite_poor_ore",
+      "id": "seamlessores:embellishcraft_slate_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_thorium_ore",
+      "id": "seamlessores:embellishcraft_slate_create_new_age_thorium_ore",
       "required": false
     },
     {
@@ -1948,7 +1948,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_yellorite_ore",
+      "id": "seamlessores:embellishcraft_slate_bigreactors_yellorite_ore",
       "required": false
     },
     {
@@ -1956,19 +1956,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_ice_stone_ore",
+      "id": "seamlessores:embellishcraft_slate_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_moon_stone_ore",
+      "id": "seamlessores:embellishcraft_slate_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_shiny_stone_ore",
+      "id": "seamlessores:embellishcraft_slate_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_thunder_stone_ore",
+      "id": "seamlessores:embellishcraft_slate_cobblemon_thunder_stone_ore",
       "required": false
     },
     {
@@ -1996,19 +1996,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_dawn_stone_ore",
+      "id": "seamlessores:embellishcraft_marble_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_ice_stone_ore",
+      "id": "seamlessores:embellishcraft_marble_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_shiny_stone_ore",
+      "id": "seamlessores:embellishcraft_marble_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_water_stone_ore",
+      "id": "seamlessores:embellishcraft_marble_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -2024,47 +2024,47 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_zinc_ore",
+      "id": "seamlessores:embellishcraft_gneiss_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_aquamarine_ore",
+      "id": "seamlessores:embellishcraft_gneiss_mythicupgrades_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_citrine_ore",
+      "id": "seamlessores:embellishcraft_gneiss_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_topaz_ore",
+      "id": "seamlessores:embellishcraft_gneiss_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_garnet_ore",
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_garnet_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_silents_aquamarine_ore",
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_silents_topaz_ore",
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_silents_silver_ore",
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_uraninite_ore",
+      "id": "seamlessores:embellishcraft_gneiss_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_uraninite_poor_ore",
+      "id": "seamlessores:embellishcraft_gneiss_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_thorium_ore",
+      "id": "seamlessores:embellishcraft_gneiss_create_new_age_thorium_ore",
       "required": false
     },
     {
@@ -2076,27 +2076,27 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_yellorite_ore",
+      "id": "seamlessores:embellishcraft_gneiss_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_prosperity_ore",
+      "id": "seamlessores:embellishcraft_gneiss_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_dawn_stone_ore",
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_moon_stone_ore",
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_shiny_stone_ore",
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_thunder_stone_ore",
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_thunder_stone_ore",
       "required": false
     },
     {
@@ -2124,11 +2124,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_zinc_ore",
+      "id": "seamlessores:embellishcraft_larvikite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_uraninite_poor_ore",
+      "id": "seamlessores:embellishcraft_larvikite_powah_uraninite_poor_ore",
       "required": false
     },
     {
@@ -2140,15 +2140,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_ice_stone_ore",
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_moon_stone_ore",
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_thunder_stone_ore",
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_thunder_stone_ore",
       "required": false
     },
     {
@@ -2164,87 +2164,87 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_zinc_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_aquamarine_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_citrine_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_peridot_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_topaz_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_necoium_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_alexandrite_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_alexandrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_garnet_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_garnet_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_heliodor_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_heliodor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_iolite_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_iolite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_ruby_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_sapphire_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_turquoise_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_aquamarine_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_peridot_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_topaz_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_silver_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_poor_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_uraninite_dense_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_bort_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgear_bort_ore",
       "required": false
     },
     {
@@ -2252,39 +2252,39 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_yellorite_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_prosperity_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_dusk_stone_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_moon_stone_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_opal_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_opal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_zinc_ore",
+      "id": "seamlessores:meadow_limestone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_citrine_ore",
+      "id": "seamlessores:meadow_limestone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_silents_silver_ore",
+      "id": "seamlessores:meadow_limestone_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_uraninite_poor_ore",
+      "id": "seamlessores:meadow_limestone_powah_uraninite_poor_ore",
       "required": false
     },
     {
@@ -2296,7 +2296,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_galena_ore",
+      "id": "seamlessores:meadow_limestone_techreborn_galena_ore",
       "required": false
     },
     {
@@ -2312,11 +2312,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_yellorite_ore",
+      "id": "seamlessores:meadow_limestone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_prosperity_ore",
+      "id": "seamlessores:meadow_limestone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -2324,11 +2324,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_leaf_stone_ore",
+      "id": "seamlessores:meadow_limestone_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_water_stone_ore",
+      "id": "seamlessores:meadow_limestone_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -2340,7 +2340,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_aquamarine_schist_necoium_ore",
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -2352,7 +2352,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_citrine_schist_necoium_ore",
+      "id": "seamlessores:mythicupgrades_citrine_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -2364,11 +2364,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_peridot_schist_aquamarine_ore",
+      "id": "seamlessores:mythicupgrades_peridot_schist_mythicupgrades_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_peridot_schist_necoium_ore",
+      "id": "seamlessores:mythicupgrades_peridot_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -2380,19 +2380,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_topaz_schist_citrine_ore",
+      "id": "seamlessores:mythicupgrades_topaz_schist_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_topaz_schist_necoium_ore",
+      "id": "seamlessores:mythicupgrades_topaz_schist_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_sapphire_schist_ruby_ore",
+      "id": "seamlessores:mythicupgrades_sapphire_schist_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_jade_schist_ametrine_ore",
+      "id": "seamlessores:mythicupgrades_jade_schist_mythicupgrades_ametrine_ore",
       "required": false
     },
     {
@@ -2404,15 +2404,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_zinc_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_uraninite_poor_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_thorium_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_create_new_age_thorium_ore",
       "required": false
     },
     {
@@ -2436,43 +2436,43 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_dawn_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_dusk_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_fire_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_ice_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_leaf_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_moon_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_shiny_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_shiny_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_sun_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_sun_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_thunder_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_thunder_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_water_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -2484,27 +2484,27 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_zinc_ore",
+      "id": "seamlessores:regions_unexplored_argillite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_citrine_ore",
+      "id": "seamlessores:regions_unexplored_argillite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_necoium_ore",
+      "id": "seamlessores:regions_unexplored_argillite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_silents_silver_ore",
+      "id": "seamlessores:regions_unexplored_argillite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_uraninite_ore",
+      "id": "seamlessores:regions_unexplored_argillite_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_uraninite_poor_ore",
+      "id": "seamlessores:regions_unexplored_argillite_powah_uraninite_poor_ore",
       "required": false
     },
     {
@@ -2516,7 +2516,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_galena_ore",
+      "id": "seamlessores:regions_unexplored_argillite_techreborn_galena_ore",
       "required": false
     },
     {
@@ -2532,11 +2532,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_yellorite_ore",
+      "id": "seamlessores:regions_unexplored_argillite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_prosperity_ore",
+      "id": "seamlessores:regions_unexplored_argillite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -2544,11 +2544,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_dusk_stone_ore",
+      "id": "seamlessores:regions_unexplored_argillite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_leaf_stone_ore",
+      "id": "seamlessores:regions_unexplored_argillite_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
@@ -2572,11 +2572,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_leaf_stone_ore",
+      "id": "seamlessores:regions_unexplored_chalk_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_water_stone_ore",
+      "id": "seamlessores:regions_unexplored_chalk_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -2588,31 +2588,31 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_zinc_ore",
+      "id": "seamlessores:promenade_asphalt_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_citrine_ore",
+      "id": "seamlessores:promenade_asphalt_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_necoium_ore",
+      "id": "seamlessores:promenade_asphalt_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_silents_silver_ore",
+      "id": "seamlessores:promenade_asphalt_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_uraninite_ore",
+      "id": "seamlessores:promenade_asphalt_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_uraninite_poor_ore",
+      "id": "seamlessores:promenade_asphalt_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_uraninite_dense_ore",
+      "id": "seamlessores:promenade_asphalt_powah_uraninite_dense_ore",
       "required": false
     },
     {
@@ -2624,7 +2624,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_galena_ore",
+      "id": "seamlessores:promenade_asphalt_techreborn_galena_ore",
       "required": false
     },
     {
@@ -2640,11 +2640,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_yellorite_ore",
+      "id": "seamlessores:promenade_asphalt_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_prosperity_ore",
+      "id": "seamlessores:promenade_asphalt_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -2652,11 +2652,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_dusk_stone_ore",
+      "id": "seamlessores:promenade_asphalt_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_leaf_stone_ore",
+      "id": "seamlessores:promenade_asphalt_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
@@ -2676,75 +2676,75 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_zinc_ore",
+      "id": "seamlessores:promenade_blunite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_aquamarine_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_citrine_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_peridot_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_topaz_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_necoium_ore",
+      "id": "seamlessores:promenade_blunite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_garnet_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_garnet_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silents_ruby_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silents_sapphire_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silents_aquamarine_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silents_peridot_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silents_topaz_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silents_silver_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_uraninite_ore",
+      "id": "seamlessores:promenade_blunite_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_uraninite_poor_ore",
+      "id": "seamlessores:promenade_blunite_powah_uraninite_poor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_uraninite_dense_ore",
+      "id": "seamlessores:promenade_blunite_powah_uraninite_dense_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_bort_ore",
+      "id": "seamlessores:promenade_blunite_silentgear_bort_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_thorium_ore",
+      "id": "seamlessores:promenade_blunite_create_new_age_thorium_ore",
       "required": false
     },
     {
@@ -2760,7 +2760,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_galena_ore",
+      "id": "seamlessores:promenade_blunite_techreborn_galena_ore",
       "required": false
     },
     {
@@ -2784,11 +2784,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_yellorite_ore",
+      "id": "seamlessores:promenade_blunite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_prosperity_ore",
+      "id": "seamlessores:promenade_blunite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
@@ -2796,15 +2796,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_ice_stone_ore",
+      "id": "seamlessores:promenade_blunite_cobblemon_ice_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_water_stone_ore",
+      "id": "seamlessores:promenade_blunite_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_opal_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_opal_ore",
       "required": false
     },
     {
@@ -2820,27 +2820,27 @@
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_zinc_ore",
+      "id": "seamlessores:spawn_reefstone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_citrine_ore",
+      "id": "seamlessores:spawn_reefstone_mythicupgrades_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_necoium_ore",
+      "id": "seamlessores:spawn_reefstone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_silents_silver_ore",
+      "id": "seamlessores:spawn_reefstone_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_uraninite_ore",
+      "id": "seamlessores:spawn_reefstone_powah_uraninite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_uraninite_poor_ore",
+      "id": "seamlessores:spawn_reefstone_powah_uraninite_poor_ore",
       "required": false
     },
     {
@@ -2852,19 +2852,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_yellorite_ore",
+      "id": "seamlessores:spawn_reefstone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_prosperity_ore",
+      "id": "seamlessores:spawn_reefstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_leaf_stone_ore",
+      "id": "seamlessores:spawn_reefstone_cobblemon_leaf_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_water_stone_ore",
+      "id": "seamlessores:spawn_reefstone_cobblemon_water_stone_ore",
       "required": false
     },
     {
@@ -2876,7 +2876,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_necoium_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -2888,15 +2888,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_dusk_stone_ore",
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_moon_stone_ore",
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_moon_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_thunder_stone_ore",
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_thunder_stone_ore",
       "required": false
     }
   ]

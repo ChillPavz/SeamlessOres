@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:embellishcraft_jade_dense_osmium_ore",
+      "id": "seamlessores:embellishcraft_jade_densemekanism_dense_osmium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_dense_osmium_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_osmium_ore",
       "required": false
     }
   ]

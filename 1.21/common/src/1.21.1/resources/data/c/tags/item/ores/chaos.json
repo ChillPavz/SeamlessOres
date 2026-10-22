@@ -1,115 +1,115 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_chaos_ore",
+      "id": "seamlessores:granite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_chaos_ore",
+      "id": "seamlessores:diorite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_chaos_ore",
+      "id": "seamlessores:andesite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_chaos_ore",
+      "id": "seamlessores:tuff_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_chaos_ore",
+      "id": "seamlessores:dripstone_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_chaos_ore",
+      "id": "seamlessores:blackstone_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_chaos_ore",
+      "id": "seamlessores:create_asurine_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_chaos_ore",
+      "id": "seamlessores:create_crimsite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_chaos_ore",
+      "id": "seamlessores:create_limestone_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_chaos_ore",
+      "id": "seamlessores:create_ochrum_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_chaos_ore",
+      "id": "seamlessores:create_scoria_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_chaos_ore",
+      "id": "seamlessores:create_veridium_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_chaos_ore",
+      "id": "seamlessores:calcite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_chaos_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_chaos_ore",
+      "id": "seamlessores:tfmg_bauxite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_chaos_ore",
+      "id": "seamlessores:tfmg_galena_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_chaos_ore",
+      "id": "seamlessores:tfmg_lignite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_chaos_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_chaos_ore",
+      "id": "seamlessores:twigs_schist_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_chaos_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_chaos_ore",
+      "id": "seamlessores:embellishcraft_basalt_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_chaos_ore",
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_chaos_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_chaos_ore",
+      "id": "seamlessores:meadow_limestone_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_chaos_ore",
+      "id": "seamlessores:regions_unexplored_argillite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_chaos_ore",
+      "id": "seamlessores:promenade_asphalt_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_chaos_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_chaos_ore",
+      "id": "seamlessores:spawn_reefstone_silentgems_chaos_ore",
       "required": false
     }
   ]

@@ -1,19 +1,19 @@
 {
   "values": [
     {
-      "id": "seamlessores:basalt_ruby_ore",
+      "id": "seamlessores:basalt_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_ruby_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silents_ruby_ore",
+      "id": "seamlessores:blackstone_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_ruby_ore",
+      "id": "seamlessores:blackstone_techreborn_ruby_ore",
       "required": false
     },
     {
@@ -21,11 +21,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_ruby_ore",
+      "id": "seamlessores:create_scorchia_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_ruby_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_ruby_ore",
       "required": false
     },
     {
@@ -33,19 +33,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_ruby_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_techreborn_ruby_ore",
+      "id": "seamlessores:smooth_basalt_techreborn_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_ruby_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:mythicupgrades_sapphire_schist_ruby_ore",
+      "id": "seamlessores:mythicupgrades_sapphire_schist_mythicupgrades_ruby_ore",
       "required": false
     },
     {

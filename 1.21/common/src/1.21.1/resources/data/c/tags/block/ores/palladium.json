@@ -1,15 +1,15 @@
 {
   "values": [
     {
-      "id": "seamlessores:basalt_palladium_ore",
+      "id": "seamlessores:basalt_mythicmetals_palladium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_palladium_ore",
+      "id": "seamlessores:blackstone_mythicmetals_palladium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_palladium_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_palladium_ore",
       "required": false
     }
   ]

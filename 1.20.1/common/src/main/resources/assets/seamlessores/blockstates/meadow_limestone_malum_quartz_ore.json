@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_malum_quartz_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_malum_quartz_ore",
+        "y": 180
+      }
+    ]
+  }
+}

@@ -29,7 +29,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "seamlessores:cinnabar_pyrite_ore"
+        "seamlessores:cinnabar_techreborn_pyrite_ore"
       ]
     }
   ],

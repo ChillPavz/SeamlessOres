@@ -1,55 +1,55 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_dense_uranium_ore",
+      "id": "seamlessores:granite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_dense_uranium_ore",
+      "id": "seamlessores:diorite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_dense_uranium_ore",
+      "id": "seamlessores:andesite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_uranium_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_uranium_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_dense_uranium_ore",
+      "id": "seamlessores:create_limestone_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_dense_uranium_ore",
+      "id": "seamlessores:calcite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_dense_uranium_ore",
+      "id": "seamlessores:tfmg_lignite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_dense_uranium_ore",
+      "id": "seamlessores:twigs_rhyolite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_dense_uranium_ore",
+      "id": "seamlessores:twigs_schist_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_dense_uranium_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_dense_uranium_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_dense_uranium_ore",
+      "id": "seamlessores:meadow_limestone_densemekanism_dense_uranium_ore",
       "required": false
     }
   ]

@@ -1,35 +1,35 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_prosperity_ore",
+      "id": "seamlessores:granite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_prosperity_ore",
+      "id": "seamlessores:diorite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_prosperity_ore",
+      "id": "seamlessores:andesite_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_prosperity_ore",
+      "id": "seamlessores:tuff_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_prosperity_ore",
+      "id": "seamlessores:dripstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_prosperity_ore",
+      "id": "seamlessores:blackstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_prosperity_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_mysticalagriculture_prosperity_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_prosperity_ore",
+      "id": "seamlessores:regions_unexplored_argillite_mysticalagriculture_prosperity_ore",
       "required": false
     }
   ]

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_silentgems_heliodor_ore"
+      },
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_silentgems_heliodor_ore_mirrored"
+      },
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_silentgems_heliodor_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/forbidden_arcanus_darkstone_silentgems_heliodor_ore_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

@@ -1,123 +1,123 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_zinc_ore",
+      "id": "seamlessores:granite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_zinc_ore",
+      "id": "seamlessores:diorite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_zinc_ore",
+      "id": "seamlessores:andesite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_zinc_ore",
+      "id": "seamlessores:tuff_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_zinc_ore",
+      "id": "seamlessores:dripstone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_zinc_ore",
+      "id": "seamlessores:cinnabar_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_zinc_ore",
+      "id": "seamlessores:blackstone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_zinc_ore",
+      "id": "seamlessores:blockus_limestone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_zinc_ore",
+      "id": "seamlessores:blockus_marble_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_zinc_ore",
+      "id": "seamlessores:blockus_viridite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_zinc_ore",
+      "id": "seamlessores:create_asurine_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_zinc_ore",
+      "id": "seamlessores:create_limestone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_zinc_ore",
+      "id": "seamlessores:create_scoria_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_zinc_ore",
+      "id": "seamlessores:calcite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_zinc_ore",
+      "id": "seamlessores:smooth_basalt_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_zinc_ore",
+      "id": "seamlessores:tfmg_galena_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_zinc_ore",
+      "id": "seamlessores:tfmg_lignite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_zinc_ore",
+      "id": "seamlessores:twigs_rhyolite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_zinc_ore",
+      "id": "seamlessores:twigs_schist_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_zinc_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_zinc_ore",
+      "id": "seamlessores:embellishcraft_basalt_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_zinc_ore",
+      "id": "seamlessores:embellishcraft_slate_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_zinc_ore",
+      "id": "seamlessores:embellishcraft_marble_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_zinc_ore",
+      "id": "seamlessores:embellishcraft_gneiss_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_larvikite_zinc_ore",
+      "id": "seamlessores:embellishcraft_larvikite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_zinc_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_zinc_ore",
+      "id": "seamlessores:meadow_limestone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_zinc_ore",
+      "id": "seamlessores:promenade_asphalt_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_zinc_ore",
+      "id": "seamlessores:promenade_blunite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_zinc_ore",
+      "id": "seamlessores:spawn_reefstone_create_zinc_ore",
       "required": false
     }
   ]

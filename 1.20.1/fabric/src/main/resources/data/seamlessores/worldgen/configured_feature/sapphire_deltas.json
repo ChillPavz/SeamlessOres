@@ -20,7 +20,7 @@
           "block": "minecraft:basalt"
         },
         "state": {
-          "Name": "seamlessores:basalt_sapphire_ore"
+          "Name": "seamlessores:basalt_mythicupgrades_sapphire_ore"
         }
       },
       {
@@ -29,7 +29,7 @@
           "block": "minecraft:blackstone"
         },
         "state": {
-          "Name": "seamlessores:blackstone_sapphire_ore"
+          "Name": "seamlessores:blackstone_mythicupgrades_sapphire_ore"
         }
       },
       {

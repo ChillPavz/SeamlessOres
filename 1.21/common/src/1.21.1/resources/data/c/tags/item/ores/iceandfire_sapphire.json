@@ -1,7 +1,7 @@
 {
   "values": [
     {
-      "id": "seamlessores:minecraft_blackstone_iceandfire_sapphire_ore",
+      "id": "seamlessores:blackstone_iceandfire_sapphire_ore",
       "required": false
     },
     {
@@ -9,7 +9,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_iceandfire_sapphire_ore",
+      "id": "seamlessores:smooth_basalt_iceandfire_sapphire_ore",
       "required": false
     },
     {

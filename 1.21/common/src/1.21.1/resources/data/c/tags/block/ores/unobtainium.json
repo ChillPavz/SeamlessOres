@@ -1,63 +1,63 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_unobtainium_ore",
+      "id": "seamlessores:granite_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_unobtainium_ore",
+      "id": "seamlessores:diorite_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_unobtainium_ore",
+      "id": "seamlessores:andesite_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_unobtainium_ore",
+      "id": "seamlessores:tuff_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_unobtainium_ore",
+      "id": "seamlessores:dripstone_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_unobtainium_ore",
+      "id": "seamlessores:blackstone_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_unobtainium_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_unobtainium_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_unobtainium_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_unobtainium_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_unobtainium_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_unobtainium_ore",
+      "id": "seamlessores:twigs_schist_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_unobtainium_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_unobtainium_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_unobtainium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_unobtainium_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_unobtainium_ore",
       "required": false
     }
   ]

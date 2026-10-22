@@ -1,19 +1,19 @@
 {
   "values": [
     {
-      "id": "seamlessores:basalt_sapphire_ore",
+      "id": "seamlessores:basalt_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_sapphire_ore",
+      "id": "seamlessores:blackstone_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silents_sapphire_ore",
+      "id": "seamlessores:blackstone_silentgems_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_sapphire_ore",
+      "id": "seamlessores:blackstone_techreborn_sapphire_ore",
       "required": false
     },
     {
@@ -21,11 +21,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_sapphire_ore",
+      "id": "seamlessores:create_scorchia_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_sapphire_ore",
+      "id": "seamlessores:create_scoria_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
@@ -33,11 +33,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_sapphire_ore",
+      "id": "seamlessores:smooth_basalt_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_techreborn_sapphire_ore",
+      "id": "seamlessores:smooth_basalt_techreborn_sapphire_ore",
       "required": false
     },
     {

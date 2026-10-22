@@ -1,7 +1,7 @@
 {
   "values": [
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_sapphire_ore",
+      "id": "seamlessores:blackstone_techreborn_sapphire_ore",
       "required": false
     },
     {
@@ -13,7 +13,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_techreborn_sapphire_ore",
+      "id": "seamlessores:smooth_basalt_techreborn_sapphire_ore",
       "required": false
     },
     {

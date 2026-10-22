@@ -1,5 +1,5 @@
 {
- "_comment": "Block ids an earlier Seamless Ores release registered and this one no longer builds: the Cobblemon lore rule (5.1.0) and the geology rule in the game's own rock (the release after 5.1.0). Kept as placeholders that turn into their host stone (RetiredBlocks). Never remove a line.",
+ "_comment": "Block ids an earlier Seamless Ores release registered and this one no longer builds: the Cobblemon lore rule (5.1.0) and the geology rule in the game's own rock (the release after 5.1.0), and benitoite kept to serpentinite (6.0.0). Kept as placeholders that turn into their host stone (RetiredBlocks). Never remove a line.",
  "retired": [
   {
    "id": "blockus_bluestone_dawn_stone_ore",
@@ -2100,6 +2100,16 @@
    "id": "tuff_water_stone_ore",
    "host": "tuff",
    "ore": "water_stone"
+  },
+  {
+   "id": "create_scoria_benitoite_ore",
+   "host": "create_scoria",
+   "ore": "benitoite"
+  },
+  {
+   "id": "minecraft_smooth_basalt_benitoite_ore",
+   "host": "minecraft_smooth_basalt",
+   "ore": "benitoite"
   }
  ]
 }

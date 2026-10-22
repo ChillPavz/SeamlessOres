@@ -10,7 +10,7 @@
           "block": "minecraft:cinnabar"
         },
         "state": {
-          "Name": "seamlessores:cinnabar_silents_silver_ore"
+          "Name": "seamlessores:cinnabar_silentgems_silver_ore"
         }
       }
     ]
@@ -20,7 +20,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "seamlessores:cinnabar_silents_silver_ore"
+        "seamlessores:cinnabar_silentgems_silver_ore"
       ]
     }
   ],

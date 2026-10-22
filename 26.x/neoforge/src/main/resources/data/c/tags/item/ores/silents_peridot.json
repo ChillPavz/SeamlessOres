@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:minecraft_blackstone_silents_peridot_ore",
+      "id": "seamlessores:blackstone_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_peridot_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_peridot_ore",
       "required": false
     }
   ]

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_cobblemon_leaf_stone_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_cobblemon_leaf_stone_ore",
+        "y": 180
+      }
+    ]
+  }
+}

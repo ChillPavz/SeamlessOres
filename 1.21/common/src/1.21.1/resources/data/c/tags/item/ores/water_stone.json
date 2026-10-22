@@ -1,51 +1,51 @@
 {
   "values": [
     {
-      "id": "seamlessores:dripstone_water_stone_ore",
+      "id": "seamlessores:dripstone_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_water_stone_ore",
+      "id": "seamlessores:blockus_limestone_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_water_stone_ore",
+      "id": "seamlessores:blockus_marble_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_water_stone_ore",
+      "id": "seamlessores:create_asurine_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_water_stone_ore",
+      "id": "seamlessores:create_limestone_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_water_stone_ore",
+      "id": "seamlessores:calcite_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_water_stone_ore",
+      "id": "seamlessores:embellishcraft_marble_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_water_stone_ore",
+      "id": "seamlessores:meadow_limestone_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_water_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_water_stone_ore",
+      "id": "seamlessores:regions_unexplored_chalk_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_water_stone_ore",
+      "id": "seamlessores:promenade_blunite_cobblemon_water_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_water_stone_ore",
+      "id": "seamlessores:spawn_reefstone_cobblemon_water_stone_ore",
       "required": false
     }
   ]

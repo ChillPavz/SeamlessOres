@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:minecraft_blackstone_silents_peridot_ore",
+      "id": "seamlessores:blackstone_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_silents_peridot_ore",
+      "id": "seamlessores:create_scoria_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_silents_peridot_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_silents_peridot_ore",
+      "id": "seamlessores:embellishcraft_basalt_silentgems_peridot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_peridot_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_peridot_ore",
       "required": false
     }
   ]

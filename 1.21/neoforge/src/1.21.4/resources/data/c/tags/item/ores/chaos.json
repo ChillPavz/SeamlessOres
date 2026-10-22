@@ -1,27 +1,27 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_chaos_ore",
+      "id": "seamlessores:granite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_chaos_ore",
+      "id": "seamlessores:diorite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_chaos_ore",
+      "id": "seamlessores:andesite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_chaos_ore",
+      "id": "seamlessores:tuff_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_chaos_ore",
+      "id": "seamlessores:dripstone_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_chaos_ore",
+      "id": "seamlessores:blackstone_silentgems_chaos_ore",
       "required": false
     }
   ]

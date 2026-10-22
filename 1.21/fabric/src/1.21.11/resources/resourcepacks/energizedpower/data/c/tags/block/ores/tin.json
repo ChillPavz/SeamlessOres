@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_energized_tin_ore",
+      "id": "seamlessores:granite_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_energized_tin_ore",
+      "id": "seamlessores:blockus_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_energized_tin_ore",
+      "id": "seamlessores:blockus_marble_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_energized_tin_ore",
+      "id": "seamlessores:create_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_energized_tin_ore",
+      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
       "required": false
     }
   ]

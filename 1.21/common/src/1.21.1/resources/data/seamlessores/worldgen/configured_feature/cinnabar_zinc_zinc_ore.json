@@ -3,7 +3,7 @@
   "config": {
     "size": 12,
     "discard_chance_on_air_exposure": 0.0,
-    "ore": "seamlessores:cinnabar_zinc_ore",
+    "ore": "seamlessores:cinnabar_create_zinc_ore",
     "factor": 3
   }
 }

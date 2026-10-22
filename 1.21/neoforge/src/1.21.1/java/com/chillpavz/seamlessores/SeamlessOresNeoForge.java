@@ -1,5 +1,7 @@
 package com.chillpavz.seamlessores;
 
+import com.chillpavz.seamlessores.content.VariantIds;
+import net.minecraft.resources.ResourceLocation;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigScreen;
 import com.chillpavz.seamlessores.content.RetiredBlocks;
@@ -75,6 +77,13 @@ public class SeamlessOresNeoForge {
         // Ids an earlier release registered and this one no longer builds: placeholders that become their stone.
         event.register(Registries.BLOCK, helper -> RetiredBlocks.registerBlocks(helper::register));
         event.register(Registries.ITEM, helper -> RetiredBlocks.registerItems(helper::register, BuiltInRegistries.BLOCK::get));
+        // Ids 6.0.0 renamed (VariantIds): an old world's blocks and an old inventory's items convert on load.
+        event.register(Registries.BLOCK, helper -> VariantIds.addAliases(
+                (old, now) -> BuiltInRegistries.BLOCK.addAlias(ResourceLocation.tryParse(old), ResourceLocation.tryParse(now)),
+                id -> BuiltInRegistries.BLOCK.containsKey(ResourceLocation.tryParse(id)), "blocks"));
+        event.register(Registries.ITEM, helper -> VariantIds.addAliases(
+                (old, now) -> BuiltInRegistries.ITEM.addAlias(ResourceLocation.tryParse(old), ResourceLocation.tryParse(now)),
+                id -> BuiltInRegistries.ITEM.containsKey(ResourceLocation.tryParse(id)), "items"));
         event.register(Registries.CREATIVE_MODE_TAB,
                 helper -> SeamlessOresContent.registerCreativeTabs(helper::register));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.

@@ -1,27 +1,27 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_ie_lead_ore",
+      "id": "seamlessores:granite_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ie_lead_ore",
+      "id": "seamlessores:diorite_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ie_lead_ore",
+      "id": "seamlessores:andesite_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_lead_ore",
+      "id": "seamlessores:tuff_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ie_lead_ore",
+      "id": "seamlessores:dripstone_immersiveengineering_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_ie_lead_ore",
+      "id": "seamlessores:cinnabar_immersiveengineering_lead_ore",
       "required": false
     }
   ]

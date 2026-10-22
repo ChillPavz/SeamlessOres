@@ -1,31 +1,31 @@
 {
   "values": [
     {
-      "id": "seamlessores:dripstone_salt_ore",
+      "id": "seamlessores:dripstone_modern_industrialization_salt_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_salt_ore",
+      "id": "seamlessores:create_limestone_modern_industrialization_salt_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_salt_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_salt_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_salt_ore",
+      "id": "seamlessores:meadow_limestone_modern_industrialization_salt_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_salt_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_modern_industrialization_salt_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_salt_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_salt_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_salt_ore",
+      "id": "seamlessores:spawn_reefstone_modern_industrialization_salt_ore",
       "required": false
     }
   ]

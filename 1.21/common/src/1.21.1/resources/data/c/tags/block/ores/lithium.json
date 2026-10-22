@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_lithium_ore",
+      "id": "seamlessores:granite_tfmg_lithium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_lithium_ore",
+      "id": "seamlessores:tuff_tfmg_lithium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_lithium_ore",
+      "id": "seamlessores:twigs_rhyolite_tfmg_lithium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_lithium_ore",
+      "id": "seamlessores:twigs_schist_tfmg_lithium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_lithium_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_tfmg_lithium_ore",
       "required": false
     }
   ]

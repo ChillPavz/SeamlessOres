@@ -1,123 +1,123 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_experience_ore",
+      "id": "seamlessores:granite_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_experience_ore",
+      "id": "seamlessores:diorite_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_experience_ore",
+      "id": "seamlessores:andesite_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_experience_ore",
+      "id": "seamlessores:tuff_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_experience_ore",
+      "id": "seamlessores:dripstone_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_experience_ore",
+      "id": "seamlessores:basalt_expores_nether_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_experience_ore",
+      "id": "seamlessores:blackstone_expores_nether_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_experience_ore",
+      "id": "seamlessores:blackstone_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_experience_ore",
+      "id": "seamlessores:blockus_limestone_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_experience_ore",
+      "id": "seamlessores:blockus_marble_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_experience_ore",
+      "id": "seamlessores:blockus_bluestone_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_experience_ore",
+      "id": "seamlessores:blockus_viridite_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_experience_ore",
+      "id": "seamlessores:create_asurine_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_experience_ore",
+      "id": "seamlessores:create_crimsite_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_experience_ore",
+      "id": "seamlessores:create_limestone_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_experience_ore",
+      "id": "seamlessores:create_ochrum_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_experience_ore",
+      "id": "seamlessores:create_scorchia_expores_nether_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_experience_ore",
+      "id": "seamlessores:create_scoria_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_experience_ore",
+      "id": "seamlessores:create_scoria_expores_nether_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_experience_ore",
+      "id": "seamlessores:create_veridium_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_experience_ore",
+      "id": "seamlessores:calcite_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_experience_ore",
+      "id": "seamlessores:smooth_basalt_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_experience_ore",
+      "id": "seamlessores:smooth_basalt_expores_nether_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_experience_ore",
+      "id": "seamlessores:twigs_rhyolite_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_experience_ore",
+      "id": "seamlessores:twigs_schist_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_experience_ore",
+      "id": "seamlessores:twigs_bloodstone_expores_nether_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_experience_ore",
+      "id": "seamlessores:meadow_limestone_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_experience_ore",
+      "id": "seamlessores:promenade_asphalt_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_experience_ore",
+      "id": "seamlessores:promenade_blunite_expores_experience_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_experience_ore",
+      "id": "seamlessores:spawn_reefstone_expores_experience_ore",
       "required": false
     }
   ]

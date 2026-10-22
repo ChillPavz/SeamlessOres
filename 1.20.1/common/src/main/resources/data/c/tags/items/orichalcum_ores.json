@@ -1,91 +1,91 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_orichalcum_ore",
+      "id": "seamlessores:granite_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_orichalcum_ore",
+      "id": "seamlessores:diorite_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_orichalcum_ore",
+      "id": "seamlessores:andesite_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_orichalcum_ore",
+      "id": "seamlessores:dripstone_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_orichalcum_ore",
+      "id": "seamlessores:blackstone_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_orichalcum_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_orichalcum_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_orichalcum_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_orichalcum_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_orichalcum_ore",
+      "id": "seamlessores:create_asurine_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_orichalcum_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_orichalcum_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_orichalcum_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_orichalcum_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_orichalcum_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_orichalcum_ore",
+      "id": "seamlessores:calcite_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_orichalcum_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_orichalcum_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_orichalcum_ore",
+      "id": "seamlessores:twigs_schist_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_orichalcum_ore",
+      "id": "seamlessores:meadow_limestone_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_orichalcum_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_orichalcum_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_orichalcum_ore",
       "required": false
     }
   ]

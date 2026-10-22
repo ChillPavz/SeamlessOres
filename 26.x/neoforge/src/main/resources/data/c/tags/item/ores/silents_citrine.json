@@ -1,27 +1,27 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_silents_citrine_ore",
+      "id": "seamlessores:granite_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silents_citrine_ore",
+      "id": "seamlessores:diorite_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silents_citrine_ore",
+      "id": "seamlessores:andesite_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_silents_citrine_ore",
+      "id": "seamlessores:tuff_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_silents_citrine_ore",
+      "id": "seamlessores:basalt_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_silents_citrine_ore",
+      "id": "seamlessores:blackstone_silentgems_nether_citrine_ore",
       "required": false
     }
   ]

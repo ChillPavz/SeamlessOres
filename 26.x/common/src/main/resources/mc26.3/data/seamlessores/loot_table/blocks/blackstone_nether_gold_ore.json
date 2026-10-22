@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "seamlessores:blackstone_nether_gold_ore",
+              "condition": "minecraft:tool/can_silk_touch"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "minecraft:blocks/nether_gold_ore"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "seamlessores:blocks/blackstone_nether_gold_ore"
+}

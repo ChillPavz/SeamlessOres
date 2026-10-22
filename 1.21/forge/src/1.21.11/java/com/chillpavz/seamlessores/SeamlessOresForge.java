@@ -1,5 +1,14 @@
 package com.chillpavz.seamlessores;
 
+import com.chillpavz.seamlessores.content.VariantIds;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Item;
+import net.minecraftforge.registries.ForgeRegistry;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.IForgeRegistry;
+import net.minecraftforge.registries.MissingMappingsEvent;
+import java.util.List;
 import com.chillpavz.seamlessores.config.SeamlessOresConfigData;
 import com.chillpavz.seamlessores.content.SeamlessOresContent;
 import com.chillpavz.seamlessores.content.RetiredBlocks;
@@ -56,6 +65,8 @@ public class SeamlessOresForge {
         // Worldgen registries are datapack-loaded per world, so this is the point where they exist
         // and no chunk has been generated yet.
         ServerAboutToStartEvent.BUS.addListener(SeamlessOresForge::onServerAboutToStart);
+        // Game bus: a world saved before 6.0.0 that Forge still reports ids missing from (the aliases resolve them).
+        MissingMappingsEvent.BUS.addListener(SeamlessOresForge::onMissingMappings);
         // A loaded chunk's retired placeholders become their stone, on the server thread after the load.
         ChunkEvent.Load.BUS.addListener((ChunkEvent.Load event) -> {
             if (event.getLevel() instanceof ServerLevel level) {
@@ -95,6 +106,13 @@ public class SeamlessOresForge {
         // Ids an earlier release registered and this one no longer builds: placeholders that become their stone.
         event.register(Registries.BLOCK, helper -> RetiredBlocks.registerBlocks(helper::register));
         event.register(Registries.ITEM, helper -> RetiredBlocks.registerItems(helper::register, BuiltInRegistries.BLOCK::getValue));
+        // Ids 6.0.0 renamed (VariantIds): an old world's blocks and an old inventory's items convert on load.
+        event.register(Registries.BLOCK, helper -> VariantIds.addAliases(
+                (old, now) -> ((ForgeRegistry<Block>) ForgeRegistries.BLOCKS).addAlias(Identifier.tryParse(old), Identifier.tryParse(now)),
+                id -> ForgeRegistries.BLOCKS.containsKey(Identifier.tryParse(id)), "blocks"));
+        event.register(Registries.ITEM, helper -> VariantIds.addAliases(
+                (old, now) -> ((ForgeRegistry<Item>) ForgeRegistries.ITEMS).addAlias(Identifier.tryParse(old), Identifier.tryParse(now)),
+                id -> ForgeRegistries.ITEMS.containsKey(Identifier.tryParse(id)), "items"));
         event.register(Registries.CREATIVE_MODE_TAB,
                 helper -> SeamlessOresContent.registerCreativeTabs(helper::register));
         // Stands in for minecraft:ore on the nether features so bastions keep their own blocks.
@@ -112,6 +130,25 @@ public class SeamlessOresForge {
         }
         for (var item : SeamlessOresContent.creativeTabItems(event.getTabKey())) {
             event.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
+    }
+
+    /**
+     * A world saved before 6.0.0 lists our renamed ids in its registry snapshot. The aliases added at
+     * registration already resolve them; this maps any Forge still reports missing to the new block.
+     */
+    private static void onMissingMappings(MissingMappingsEvent event) {
+        remap(event.getMappings(Registries.BLOCK, Constants.MOD_ID), ForgeRegistries.BLOCKS);
+        remap(event.getMappings(Registries.ITEM, Constants.MOD_ID), ForgeRegistries.ITEMS);
+    }
+
+    private static <T> void remap(List<MissingMappingsEvent.Mapping<T>> mappings, IForgeRegistry<T> registry) {
+        for (MissingMappingsEvent.Mapping<T> mapping : mappings) {
+            final String now = VariantIds.renamed().get(mapping.getKey().getPath());
+            final T target = now == null ? null : registry.getValue(Identifier.tryParse(Constants.MOD_ID + ":" + now));
+            if (target != null) {
+                mapping.remap(target);
+            }
         }
     }
 }

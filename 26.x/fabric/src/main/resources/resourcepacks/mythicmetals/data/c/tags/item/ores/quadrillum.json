@@ -1,79 +1,79 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_quadrillum_ore",
+      "id": "seamlessores:granite_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_quadrillum_ore",
+      "id": "seamlessores:diorite_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_quadrillum_ore",
+      "id": "seamlessores:andesite_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_quadrillum_ore",
+      "id": "seamlessores:dripstone_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_quadrillum_ore",
+      "id": "seamlessores:blackstone_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_quadrillum_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_quadrillum_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_quadrillum_ore",
+      "id": "seamlessores:create_asurine_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_quadrillum_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_quadrillum_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_quadrillum_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_quadrillum_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_quadrillum_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_quadrillum_ore",
+      "id": "seamlessores:calcite_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_quadrillum_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_quadrillum_ore",
+      "id": "seamlessores:regions_unexplored_argillite_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_quadrillum_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_quadrillum_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_quadrillum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_quadrillum_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_quadrillum_ore",
       "required": false
     }
   ]

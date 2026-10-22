@@ -1,95 +1,95 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_mythril_ore",
+      "id": "seamlessores:granite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mythril_ore",
+      "id": "seamlessores:diorite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mythril_ore",
+      "id": "seamlessores:andesite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mythril_ore",
+      "id": "seamlessores:tuff_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_mythril_ore",
+      "id": "seamlessores:dripstone_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_mythril_ore",
+      "id": "seamlessores:blackstone_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_mythril_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_mythril_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_mythril_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mythril_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_mythril_ore",
+      "id": "seamlessores:create_asurine_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_mythril_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_mythril_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_mythril_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_mythril_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_mythril_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_mythril_ore",
+      "id": "seamlessores:calcite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_mythril_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_mythril_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_mythril_ore",
+      "id": "seamlessores:twigs_schist_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_mythril_ore",
+      "id": "seamlessores:meadow_limestone_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_mythril_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mythril_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_mythril_ore",
       "required": false
     }
   ]

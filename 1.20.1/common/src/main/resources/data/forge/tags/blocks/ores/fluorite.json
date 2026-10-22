@@ -1,15 +1,15 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_mek_fluorite_ore",
+      "id": "seamlessores:granite_mekanism_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mek_fluorite_ore",
+      "id": "seamlessores:tuff_mekanism_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_mek_fluorite_ore",
+      "id": "seamlessores:dripstone_mekanism_fluorite_ore",
       "required": false
     }
   ]

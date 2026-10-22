@@ -1,27 +1,27 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_silents_aquamarine_ore",
+      "id": "seamlessores:granite_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_silents_aquamarine_ore",
+      "id": "seamlessores:twigs_schist_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_silents_aquamarine_ore",
+      "id": "seamlessores:embellishcraft_slate_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_silents_aquamarine_ore",
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_aquamarine_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silents_aquamarine_ore",
+      "id": "seamlessores:promenade_blunite_silentgems_aquamarine_ore",
       "required": false
     }
   ]

@@ -1,19 +1,19 @@
 {
   "values": [
     {
-      "id": "seamlessores:andesite_carnelian_ore",
+      "id": "seamlessores:andesite_silentgems_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_carnelian_ore",
+      "id": "seamlessores:tuff_silentgems_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_carnelian_ore",
+      "id": "seamlessores:basalt_silentgems_carnelian_nether_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_carnelian_ore",
+      "id": "seamlessores:blackstone_silentgems_carnelian_nether_ore",
       "required": false
     }
   ]

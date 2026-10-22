@@ -1,17 +1,17 @@
 {
   "values": [
-    "seamlessores:basalt_quartz_ore",
-    "seamlessores:blackstone_quartz_ore",
+    "seamlessores:basalt_nether_quartz_ore",
+    "seamlessores:blackstone_nether_quartz_ore",
     {
-      "id": "seamlessores:create_scorchia_quartz_ore",
+      "id": "seamlessores:create_scorchia_nether_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_quartz_ore",
+      "id": "seamlessores:create_scoria_nether_quartz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_quartz_ore",
+      "id": "seamlessores:smooth_basalt_nether_quartz_ore",
       "required": false
     }
   ]

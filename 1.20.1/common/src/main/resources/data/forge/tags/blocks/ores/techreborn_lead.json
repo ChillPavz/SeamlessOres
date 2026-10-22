@@ -25,7 +25,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_lead_ore",
+      "id": "seamlessores:blackstone_techreborn_lead_ore",
       "required": false
     },
     {
@@ -49,11 +49,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_techreborn_lead_ore",
+      "id": "seamlessores:calcite_techreborn_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_techreborn_lead_ore",
+      "id": "seamlessores:smooth_basalt_techreborn_lead_ore",
       "required": false
     },
     {

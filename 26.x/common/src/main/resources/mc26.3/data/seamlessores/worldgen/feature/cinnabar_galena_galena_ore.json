@@ -8,7 +8,7 @@
         "predicate_type": "minecraft:block_match",
         "block": "minecraft:cinnabar"
       },
-      "state": "seamlessores:cinnabar_galena_ore"
+      "state": "seamlessores:cinnabar_techreborn_galena_ore"
     }
   ],
   "fabric:load_conditions": [
@@ -16,7 +16,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "seamlessores:cinnabar_galena_ore"
+        "seamlessores:cinnabar_techreborn_galena_ore"
       ]
     }
   ],

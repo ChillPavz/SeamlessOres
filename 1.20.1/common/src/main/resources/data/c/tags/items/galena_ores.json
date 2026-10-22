@@ -1,83 +1,83 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_galena_ore",
+      "id": "seamlessores:granite_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_galena_ore",
+      "id": "seamlessores:diorite_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_galena_ore",
+      "id": "seamlessores:andesite_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_galena_ore",
+      "id": "seamlessores:tuff_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_galena_ore",
+      "id": "seamlessores:dripstone_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_galena_ore",
+      "id": "seamlessores:cinnabar_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_galena_ore",
+      "id": "seamlessores:blackstone_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_galena_ore",
+      "id": "seamlessores:blockus_limestone_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_galena_ore",
+      "id": "seamlessores:blockus_marble_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_galena_ore",
+      "id": "seamlessores:blockus_viridite_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_galena_ore",
+      "id": "seamlessores:create_limestone_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_galena_ore",
+      "id": "seamlessores:create_scoria_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_galena_ore",
+      "id": "seamlessores:calcite_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_galena_ore",
+      "id": "seamlessores:smooth_basalt_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_galena_ore",
+      "id": "seamlessores:twigs_rhyolite_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_galena_ore",
+      "id": "seamlessores:twigs_schist_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_galena_ore",
+      "id": "seamlessores:meadow_limestone_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_galena_ore",
+      "id": "seamlessores:promenade_asphalt_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_galena_ore",
+      "id": "seamlessores:promenade_blunite_techreborn_galena_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_galena_ore",
+      "id": "seamlessores:spawn_reefstone_techreborn_galena_ore",
       "required": false
     }
   ]

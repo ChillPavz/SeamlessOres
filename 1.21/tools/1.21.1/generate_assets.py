@@ -40,6 +40,7 @@ from assetgen import (POOL, TOOL_TAGS, assert_no_dashes, era_file, jar, jar_tags
                       write_json, write_texture_json)
 import placed  # noqa: E402
 import cinnabar  # noqa: E402
+import renamed  # noqa: E402
 import retired  # noqa: E402
 
 MOD_ID = "seamlessores"
@@ -1924,6 +1925,8 @@ def main():
     generate_data()
     # Ids an earlier release registered and this one no longer builds: placeholders drawn as their stone.
     print(f"  retired ids: {retired.write(os.path.join(os.path.dirname(os.path.abspath(__file__)), "retired_ids.json"), HOSTS, assets_dir(), resources_dir())} placeholders")
+    # Every variant's id for the Java side, and the shipped ids 6.0.0 renamed (aliased on load).
+    print(f"  renamed ids: {renamed.write(HOSTS, list(variants()), os.path.join(os.path.dirname(os.path.abspath(__file__)), "retired_ids.json"), resources_dir())} aliased")
     print("Updating README...")
     generate_readme()
     print("Generating the Java tables...")

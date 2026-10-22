@@ -1,27 +1,27 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_thorium_ore",
+      "id": "seamlessores:granite_create_new_age_thorium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_thorium_ore",
+      "id": "seamlessores:twigs_schist_create_new_age_thorium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_thorium_ore",
+      "id": "seamlessores:embellishcraft_slate_create_new_age_thorium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_thorium_ore",
+      "id": "seamlessores:embellishcraft_gneiss_create_new_age_thorium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_thorium_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_create_new_age_thorium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_thorium_ore",
+      "id": "seamlessores:promenade_blunite_create_new_age_thorium_ore",
       "required": false
     }
   ]

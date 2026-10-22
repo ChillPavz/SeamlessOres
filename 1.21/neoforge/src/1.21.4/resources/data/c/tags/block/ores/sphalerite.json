@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:basalt_sphalerite_ore",
+      "id": "seamlessores:basalt_techreborn_sphalerite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_sphalerite_ore",
+      "id": "seamlessores:blackstone_techreborn_sphalerite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_sphalerite_ore",
+      "id": "seamlessores:create_scorchia_techreborn_sphalerite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_sphalerite_ore",
+      "id": "seamlessores:create_scoria_techreborn_sphalerite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_sphalerite_ore",
+      "id": "seamlessores:smooth_basalt_techreborn_sphalerite_ore",
       "required": false
     }
   ]

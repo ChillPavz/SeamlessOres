@@ -1,235 +1,235 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_dense_uranium_ore",
+      "id": "seamlessores:granite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_uranium_ore",
+      "id": "seamlessores:granite_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_yellorite_ore",
+      "id": "seamlessores:granite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_ie_uranium_ore",
+      "id": "seamlessores:granite_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_mek_uranium_ore",
+      "id": "seamlessores:granite_mekanism_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_dense_uranium_ore",
+      "id": "seamlessores:diorite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_uranium_ore",
+      "id": "seamlessores:diorite_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_yellorite_ore",
+      "id": "seamlessores:diorite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ie_uranium_ore",
+      "id": "seamlessores:diorite_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mek_uranium_ore",
+      "id": "seamlessores:diorite_mekanism_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_dense_uranium_ore",
+      "id": "seamlessores:andesite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_uranium_ore",
+      "id": "seamlessores:andesite_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_yellorite_ore",
+      "id": "seamlessores:andesite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ie_uranium_ore",
+      "id": "seamlessores:andesite_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mek_uranium_ore",
+      "id": "seamlessores:andesite_mekanism_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_uranium_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_uranium_ore",
+      "id": "seamlessores:tuff_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_uranium_ore",
+      "id": "seamlessores:tuff_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mek_uranium_ore",
+      "id": "seamlessores:tuff_mekanism_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_uranium_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_uranium_ore",
+      "id": "seamlessores:dripstone_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_yellorite_ore",
+      "id": "seamlessores:dripstone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ie_uranium_ore",
+      "id": "seamlessores:dripstone_immersiveengineering_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_mek_uranium_ore",
+      "id": "seamlessores:dripstone_mekanism_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_dense_uranium_ore",
+      "id": "seamlessores:create_limestone_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_uranium_ore",
+      "id": "seamlessores:create_limestone_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_yellorite_ore",
+      "id": "seamlessores:create_limestone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_dense_uranium_ore",
+      "id": "seamlessores:calcite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_uranium_ore",
+      "id": "seamlessores:calcite_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_yellorite_ore",
+      "id": "seamlessores:calcite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_dense_uranium_ore",
+      "id": "seamlessores:tfmg_lignite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_uranium_ore",
+      "id": "seamlessores:tfmg_lignite_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_yellorite_ore",
+      "id": "seamlessores:tfmg_lignite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_dense_uranium_ore",
+      "id": "seamlessores:twigs_rhyolite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_uranium_ore",
+      "id": "seamlessores:twigs_rhyolite_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_yellorite_ore",
+      "id": "seamlessores:twigs_rhyolite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_dense_uranium_ore",
+      "id": "seamlessores:twigs_schist_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_uranium_ore",
+      "id": "seamlessores:twigs_schist_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_yellorite_ore",
+      "id": "seamlessores:twigs_schist_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_dense_uranium_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_uranium_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_yellorite_ore",
+      "id": "seamlessores:embellishcraft_slate_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_uranium_ore",
+      "id": "seamlessores:embellishcraft_gneiss_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_yellorite_ore",
+      "id": "seamlessores:embellishcraft_gneiss_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_dense_uranium_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_uranium_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_yellorite_ore",
+      "id": "seamlessores:meadow_limestone_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_dense_uranium_ore",
+      "id": "seamlessores:regions_unexplored_argillite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_uranium_ore",
+      "id": "seamlessores:regions_unexplored_argillite_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_yellorite_ore",
+      "id": "seamlessores:regions_unexplored_argillite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_dense_uranium_ore",
+      "id": "seamlessores:promenade_asphalt_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_uranium_ore",
+      "id": "seamlessores:promenade_asphalt_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_yellorite_ore",
+      "id": "seamlessores:promenade_asphalt_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_dense_uranium_ore",
+      "id": "seamlessores:promenade_blunite_densemekanism_dense_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_uranium_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_yellorite_ore",
+      "id": "seamlessores:promenade_blunite_bigreactors_yellorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_uranium_ore",
+      "id": "seamlessores:spawn_reefstone_modern_industrialization_uranium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_yellorite_ore",
+      "id": "seamlessores:spawn_reefstone_bigreactors_yellorite_ore",
       "required": false
     }
   ]

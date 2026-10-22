@@ -1,19 +1,19 @@
 {
   "values": [
     {
-      "id": "seamlessores:cinnabar_pyrite_ore",
+      "id": "seamlessores:cinnabar_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_pyrite_ore",
+      "id": "seamlessores:basalt_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_pyrite_ore",
+      "id": "seamlessores:blackstone_techreborn_pyrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_pyrite_ore",
+      "id": "seamlessores:twigs_bloodstone_techreborn_pyrite_ore",
       "required": false
     }
   ]

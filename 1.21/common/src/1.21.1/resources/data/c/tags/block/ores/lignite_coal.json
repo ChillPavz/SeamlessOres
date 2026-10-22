@@ -1,51 +1,51 @@
 {
   "values": [
     {
-      "id": "seamlessores:tuff_lignite_coal_ore",
+      "id": "seamlessores:tuff_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_lignite_coal_ore",
+      "id": "seamlessores:create_limestone_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_lignite_coal_ore",
+      "id": "seamlessores:tfmg_lignite_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_lignite_coal_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_lignite_coal_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_lignite_coal_ore",
+      "id": "seamlessores:meadow_limestone_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_lignite_coal_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_lignite_coal_ore",
+      "id": "seamlessores:regions_unexplored_argillite_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_lignite_coal_ore",
+      "id": "seamlessores:regions_unexplored_chalk_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_lignite_coal_ore",
+      "id": "seamlessores:promenade_asphalt_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_lignite_coal_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_lignite_coal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_lignite_coal_ore",
+      "id": "seamlessores:spawn_reefstone_modern_industrialization_lignite_coal_ore",
       "required": false
     }
   ]

@@ -42,7 +42,7 @@ import static com.chillpavz.seamlessores.content.OreType.ZINC;
  *       bug, because the stone swallows that ore regardless. Its variants exist while the mod that
  *       places it is installed. That is the stone's own mod, except for the vanilla rock in Create's
  *       strata: calcite is such a host only because Create lays it down in bands, so it hangs on
- *       Create, and keeps its own namespace in its ids (minecraft_calcite_iron_ore).</li>
+ *       Create (calcite_iron_ore; minecraft_calcite_iron_ore before 6.0.0, aliased).</li>
  * </ul>
  * Dripstone is both: the game's own rock with derived pairs, which Create's strata also lay over ore.
  *
@@ -79,8 +79,8 @@ public final class HostStone {
     // puts blackstone in deepslate_ore_replaceables and lays it in its thermal and mantle caves before
     // the ores, so ore lands in it. Measured and judged like any such stone (pairs, fixed geology rule),
     // but present in every game, because a datapack cannot be detected at registration: its variants
-    // only generate where a pack lays the rock. Ids carry the namespace (minecraft_blackstone_gold_ore),
-    // because blackstone_gold_ore is the Nether one.
+    // only generate where a pack lays the rock. Its ids were minecraft_blackstone_* before 6.0.0 (aliased); gold keeps
+    // minecraft_blackstone_gold_ore, because blackstone_gold_ore was the Nether one's.
     public static final HostStone MINECRAFT_BLACKSTONE = placed("minecraft", "blackstone", OreTier.DEEPSLATE,
             MapColor.COLOR_BLACK,
             COAL, IRON, COPPER, GOLD, REDSTONE, EMERALD, LAPIS, DIAMOND, ZINC);

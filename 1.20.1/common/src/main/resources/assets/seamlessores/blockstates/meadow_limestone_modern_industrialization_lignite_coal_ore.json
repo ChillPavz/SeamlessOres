@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_modern_industrialization_lignite_coal_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_modern_industrialization_lignite_coal_ore",
+        "y": 180
+      }
+    ]
+  }
+}

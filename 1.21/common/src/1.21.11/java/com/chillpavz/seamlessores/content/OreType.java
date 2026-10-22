@@ -290,7 +290,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
     // Mythic Upgrades, and silver with Mythic Metals. With both mods installed the same id would be
     // registered twice. Those five carry a `silents_` prefix; the rest keep the plain name.
     // Ruby and sapphire need NO prefix even though Mythic Upgrades has both: theirs are netherrack
-    // only, so they produce basalt_ruby_ore while these produce granite_ruby_ore. Different hosts,
+    // only, so they never share a host with these (and from 6.0.0 an id carries the ore's mod). Different hosts,
     // no clash. The overlay key follows the name, so the prefixed five need their own art files.
     private static OreType silentGem(String name, IntProvider xp) {
         final String plain = name.startsWith("silents_") ? name.substring("silents_".length()) : name;

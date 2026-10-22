@@ -1,71 +1,71 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_silver_ore",
+      "id": "seamlessores:granite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silver_ore",
+      "id": "seamlessores:diorite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silver_ore",
+      "id": "seamlessores:andesite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_silver_ore",
+      "id": "seamlessores:cinnabar_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silver_ore",
+      "id": "seamlessores:blackstone_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_silver_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_silver_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_silver_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_silver_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_silver_ore",
+      "id": "seamlessores:calcite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_silver_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_silver_ore",
+      "id": "seamlessores:twigs_schist_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_silver_ore",
+      "id": "seamlessores:meadow_limestone_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_silver_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silver_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_silver_ore",
+      "id": "seamlessores:spawn_reefstone_mythicmetals_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_silver_ore",
+      "id": "seamlessores:granite_silentgems_silver_ore",
       "required": false
     },
     {
@@ -73,7 +73,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_ie_silver_ore",
+      "id": "seamlessores:granite_immersiveengineering_silver_ore",
       "required": false
     },
     {
@@ -81,7 +81,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silents_silver_ore",
+      "id": "seamlessores:diorite_silentgems_silver_ore",
       "required": false
     },
     {
@@ -89,7 +89,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ie_silver_ore",
+      "id": "seamlessores:diorite_immersiveengineering_silver_ore",
       "required": false
     },
     {
@@ -97,7 +97,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silents_silver_ore",
+      "id": "seamlessores:andesite_silentgems_silver_ore",
       "required": false
     },
     {
@@ -105,7 +105,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ie_silver_ore",
+      "id": "seamlessores:andesite_immersiveengineering_silver_ore",
       "required": false
     },
     {
@@ -113,7 +113,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_silents_silver_ore",
+      "id": "seamlessores:tuff_silentgems_silver_ore",
       "required": false
     },
     {
@@ -121,7 +121,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ie_silver_ore",
+      "id": "seamlessores:tuff_immersiveengineering_silver_ore",
       "required": false
     },
     {
@@ -129,7 +129,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_silents_silver_ore",
+      "id": "seamlessores:cinnabar_silentgems_silver_ore",
       "required": false
     },
     {
@@ -137,7 +137,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_ie_silver_ore",
+      "id": "seamlessores:cinnabar_immersiveengineering_silver_ore",
       "required": false
     },
     {
@@ -145,15 +145,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silents_silver_ore",
+      "id": "seamlessores:blackstone_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_occultism_silver_ore",
+      "id": "seamlessores:blackstone_occultism_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_oreganized_silver_ore",
+      "id": "seamlessores:blackstone_oreganized_silver_ore",
       "required": false
     },
     {
@@ -173,7 +173,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_silents_silver_ore",
+      "id": "seamlessores:create_limestone_silentgems_silver_ore",
       "required": false
     },
     {
@@ -185,7 +185,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_silents_silver_ore",
+      "id": "seamlessores:create_scoria_silentgems_silver_ore",
       "required": false
     },
     {
@@ -197,31 +197,31 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_silents_silver_ore",
+      "id": "seamlessores:calcite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_occultism_silver_ore",
+      "id": "seamlessores:calcite_occultism_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_oreganized_silver_ore",
+      "id": "seamlessores:calcite_oreganized_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_silents_silver_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_occultism_silver_ore",
+      "id": "seamlessores:smooth_basalt_occultism_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_oreganized_silver_ore",
+      "id": "seamlessores:smooth_basalt_oreganized_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_silents_silver_ore",
+      "id": "seamlessores:tfmg_bauxite_silentgems_silver_ore",
       "required": false
     },
     {
@@ -233,7 +233,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_silents_silver_ore",
+      "id": "seamlessores:tfmg_galena_silentgems_silver_ore",
       "required": false
     },
     {
@@ -245,7 +245,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_silents_silver_ore",
+      "id": "seamlessores:tfmg_lignite_silentgems_silver_ore",
       "required": false
     },
     {
@@ -257,7 +257,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_silents_silver_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_silver_ore",
       "required": false
     },
     {
@@ -269,7 +269,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_silents_silver_ore",
+      "id": "seamlessores:twigs_schist_silentgems_silver_ore",
       "required": false
     },
     {
@@ -281,7 +281,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_silents_silver_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_silentgems_silver_ore",
       "required": false
     },
     {
@@ -293,7 +293,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_silents_silver_ore",
+      "id": "seamlessores:embellishcraft_basalt_silentgems_silver_ore",
       "required": false
     },
     {
@@ -305,7 +305,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_slate_silents_silver_ore",
+      "id": "seamlessores:embellishcraft_slate_silentgems_silver_ore",
       "required": false
     },
     {
@@ -321,7 +321,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_silents_silver_ore",
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_silver_ore",
       "required": false
     },
     {
@@ -341,7 +341,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_silver_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_silver_ore",
       "required": false
     },
     {
@@ -349,7 +349,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_silents_silver_ore",
+      "id": "seamlessores:meadow_limestone_silentgems_silver_ore",
       "required": false
     },
     {
@@ -369,7 +369,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_silents_silver_ore",
+      "id": "seamlessores:spawn_reefstone_silentgems_silver_ore",
       "required": false
     },
     {

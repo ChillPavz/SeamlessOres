@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_silents_aquamarine_ore",
+      "id": "seamlessores:granite_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_silents_aquamarine_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_aquamarine_ore",
       "required": false
     }
   ]

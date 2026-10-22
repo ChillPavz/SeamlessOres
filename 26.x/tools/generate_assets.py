@@ -43,6 +43,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
                                 "shared", "tools"))
 import assetgen  # noqa: E402
 import placed  # noqa: E402
+import renamed  # noqa: E402
 import retired  # noqa: E402
 from assetgen import (MOD_ID, TOOL_TAGS, assert_no_dashes, jar_tags, look_models,  # noqa: E402
                       read_mod_tags, defer_to_source, silk_touch_to, texture_path, title, write_json,
@@ -1873,6 +1874,8 @@ def main():
     generate_cinnabar_worldgen()
     # Ids an earlier release registered and this one no longer builds: placeholders drawn as their stone.
     print(f"  retired ids: {retired.write(os.path.join(os.path.dirname(os.path.abspath(__file__)), "retired_ids.json"), HOSTS, assets_dir(), resources_dir(), item_definitions=True)} placeholders")
+    # Every variant's id for the Java side, and the shipped ids 6.0.0 renamed (aliased on load).
+    print(f"  renamed ids: {renamed.write(HOSTS, list(variants()), os.path.join(os.path.dirname(os.path.abspath(__file__)), "retired_ids.json"), resources_dir())} aliased")
     print("Updating README...")
     generate_readme()
 

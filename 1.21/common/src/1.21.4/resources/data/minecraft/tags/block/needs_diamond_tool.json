@@ -1,143 +1,143 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_chaos_ore",
+      "id": "seamlessores:granite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_gleaming_ore",
+      "id": "seamlessores:granite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_chaos_ore",
+      "id": "seamlessores:diorite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_gleaming_ore",
+      "id": "seamlessores:diorite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_chaos_ore",
+      "id": "seamlessores:andesite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_gleaming_ore",
+      "id": "seamlessores:andesite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_chaos_ore",
+      "id": "seamlessores:tuff_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_gleaming_ore",
+      "id": "seamlessores:tuff_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_chaos_ore",
+      "id": "seamlessores:dripstone_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_gleaming_ore",
+      "id": "seamlessores:dripstone_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_carnelian_ore",
+      "id": "seamlessores:basalt_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_silents_citrine_ore",
+      "id": "seamlessores:basalt_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_carnelian_ore",
+      "id": "seamlessores:blackstone_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_silents_citrine_ore",
+      "id": "seamlessores:blackstone_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_chaos_ore",
+      "id": "seamlessores:blackstone_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_gleaming_ore",
+      "id": "seamlessores:blackstone_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_gleaming_ore",
+      "id": "seamlessores:blockus_limestone_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_gleaming_ore",
+      "id": "seamlessores:blockus_marble_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_gleaming_ore",
+      "id": "seamlessores:blockus_bluestone_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_iridium_ore",
+      "id": "seamlessores:blockus_bluestone_techreborn_iridium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_gleaming_ore",
+      "id": "seamlessores:blockus_viridite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_iridium_ore",
+      "id": "seamlessores:blockus_viridite_techreborn_iridium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_gleaming_ore",
+      "id": "seamlessores:create_asurine_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_gleaming_ore",
+      "id": "seamlessores:create_crimsite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_gleaming_ore",
+      "id": "seamlessores:create_limestone_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_gleaming_ore",
+      "id": "seamlessores:create_ochrum_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_gleaming_ore",
+      "id": "seamlessores:create_scoria_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_gleaming_ore",
+      "id": "seamlessores:create_veridium_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_gleaming_ore",
+      "id": "seamlessores:calcite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_gleaming_ore",
+      "id": "seamlessores:smooth_basalt_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_gleaming_ore",
+      "id": "seamlessores:promenade_asphalt_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_gleaming_ore",
+      "id": "seamlessores:promenade_blunite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_iridium_ore",
+      "id": "seamlessores:promenade_blunite_techreborn_iridium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_gleaming_ore",
+      "id": "seamlessores:wilderwild_gabbro_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_iridium_ore",
+      "id": "seamlessores:wilderwild_gabbro_techreborn_iridium_ore",
       "required": false
     }
   ]

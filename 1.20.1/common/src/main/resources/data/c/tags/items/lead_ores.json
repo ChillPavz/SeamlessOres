@@ -5,7 +5,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:granite_mi_lead_ore",
+      "id": "seamlessores:granite_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -17,7 +17,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mi_lead_ore",
+      "id": "seamlessores:diorite_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -29,7 +29,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mi_lead_ore",
+      "id": "seamlessores:andesite_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -41,7 +41,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mi_lead_ore",
+      "id": "seamlessores:tuff_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -53,7 +53,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_mi_lead_ore",
+      "id": "seamlessores:dripstone_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -65,7 +65,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:cinnabar_mi_lead_ore",
+      "id": "seamlessores:cinnabar_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -73,15 +73,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_lead_ore",
+      "id": "seamlessores:blackstone_techreborn_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_mi_lead_ore",
+      "id": "seamlessores:blackstone_modern_industrialization_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_oreganized_lead_ore",
+      "id": "seamlessores:blackstone_oreganized_lead_ore",
       "required": false
     },
     {
@@ -89,7 +89,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_mi_lead_ore",
+      "id": "seamlessores:blockus_limestone_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -101,7 +101,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_mi_lead_ore",
+      "id": "seamlessores:blockus_marble_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -113,7 +113,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mi_lead_ore",
+      "id": "seamlessores:blockus_viridite_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -125,7 +125,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_mi_lead_ore",
+      "id": "seamlessores:create_limestone_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -137,7 +137,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_mi_lead_ore",
+      "id": "seamlessores:create_scoria_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -145,27 +145,27 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_techreborn_lead_ore",
+      "id": "seamlessores:calcite_techreborn_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_mi_lead_ore",
+      "id": "seamlessores:calcite_modern_industrialization_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_oreganized_lead_ore",
+      "id": "seamlessores:calcite_oreganized_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_techreborn_lead_ore",
+      "id": "seamlessores:smooth_basalt_techreborn_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_mi_lead_ore",
+      "id": "seamlessores:smooth_basalt_modern_industrialization_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_oreganized_lead_ore",
+      "id": "seamlessores:smooth_basalt_oreganized_lead_ore",
       "required": false
     },
     {
@@ -181,7 +181,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_mi_lead_ore",
+      "id": "seamlessores:twigs_rhyolite_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -193,7 +193,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_mi_lead_ore",
+      "id": "seamlessores:twigs_schist_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -225,7 +225,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_mi_lead_ore",
+      "id": "seamlessores:meadow_limestone_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -237,7 +237,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_mi_lead_ore",
+      "id": "seamlessores:promenade_asphalt_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -249,7 +249,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mi_lead_ore",
+      "id": "seamlessores:promenade_blunite_modern_industrialization_lead_ore",
       "required": false
     },
     {
@@ -261,7 +261,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_mi_lead_ore",
+      "id": "seamlessores:spawn_reefstone_modern_industrialization_lead_ore",
       "required": false
     },
     {

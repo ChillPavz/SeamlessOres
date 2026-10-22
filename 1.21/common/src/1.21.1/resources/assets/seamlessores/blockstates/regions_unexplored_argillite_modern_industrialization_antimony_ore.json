@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_modern_industrialization_antimony_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_argillite_modern_industrialization_antimony_ore_mirrored"
+      }
+    ]
+  }
+}

@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:tuff_black_diamond_ore",
+      "id": "seamlessores:tuff_silentgems_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_black_diamond_ore",
+      "id": "seamlessores:create_scorchia_silentgems_nether_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_black_diamond_ore",
+      "id": "seamlessores:create_scoria_silentgems_nether_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_black_diamond_ore",
+      "id": "seamlessores:smooth_basalt_silentgems_nether_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_nether_black_diamond_ore",
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_black_diamond_ore",
       "required": false
     }
   ]

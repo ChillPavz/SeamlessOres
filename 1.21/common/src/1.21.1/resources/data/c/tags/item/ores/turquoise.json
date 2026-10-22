@@ -1,27 +1,27 @@
 {
   "values": [
     {
-      "id": "seamlessores:andesite_turquoise_ore",
+      "id": "seamlessores:andesite_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_turquoise_ore",
+      "id": "seamlessores:tuff_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_bauxite_turquoise_ore",
+      "id": "seamlessores:tfmg_bauxite_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_turquoise_ore",
+      "id": "seamlessores:tfmg_galena_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_turquoise_ore",
+      "id": "seamlessores:twigs_rhyolite_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_turquoise_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_turquoise_ore",
       "required": false
     }
   ]

@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_dense_lead_ore",
+      "id": "seamlessores:granite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_lead_ore",
+      "id": "seamlessores:granite_tfmg_lead_ore",
       "required": false
     },
     {
@@ -13,11 +13,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:diorite_dense_lead_ore",
+      "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_lead_ore",
+      "id": "seamlessores:diorite_tfmg_lead_ore",
       "required": false
     },
     {
@@ -25,11 +25,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_dense_lead_ore",
+      "id": "seamlessores:andesite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_lead_ore",
+      "id": "seamlessores:andesite_tfmg_lead_ore",
       "required": false
     },
     {
@@ -37,11 +37,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_lead_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_lead_ore",
+      "id": "seamlessores:tuff_tfmg_lead_ore",
       "required": false
     },
     {
@@ -49,11 +49,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_lead_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_lead_ore",
+      "id": "seamlessores:dripstone_tfmg_lead_ore",
       "required": false
     },
     {
@@ -61,15 +61,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_dense_lead_ore",
+      "id": "seamlessores:blackstone_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_lead_ore",
+      "id": "seamlessores:blackstone_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_techreborn_lead_ore",
+      "id": "seamlessores:blackstone_techreborn_lead_ore",
       "required": false
     },
     {
@@ -93,11 +93,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_techreborn_lead_ore",
+      "id": "seamlessores:calcite_techreborn_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_techreborn_lead_ore",
+      "id": "seamlessores:smooth_basalt_techreborn_lead_ore",
       "required": false
     },
     {

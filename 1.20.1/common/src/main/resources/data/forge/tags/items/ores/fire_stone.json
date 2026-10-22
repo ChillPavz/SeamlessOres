@@ -1,55 +1,55 @@
 {
   "values": [
     {
-      "id": "seamlessores:andesite_fire_stone_ore",
+      "id": "seamlessores:andesite_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_fire_stone_ore",
+      "id": "seamlessores:tuff_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_fire_stone_ore",
+      "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_fire_stone_ore",
+      "id": "seamlessores:blackstone_cobblemon_nether_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_fire_stone_ore",
+      "id": "seamlessores:blackstone_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_fire_stone_ore",
+      "id": "seamlessores:create_crimsite_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_fire_stone_ore",
+      "id": "seamlessores:create_scorchia_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_fire_stone_ore",
+      "id": "seamlessores:create_scoria_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_fire_stone_ore",
+      "id": "seamlessores:smooth_basalt_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_galena_fire_stone_ore",
+      "id": "seamlessores:tfmg_galena_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_fire_stone_ore",
+      "id": "seamlessores:twigs_rhyolite_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_fire_stone_ore",
+      "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_fire_stone_ore",
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_fire_stone_ore",
       "required": false
     }
   ]

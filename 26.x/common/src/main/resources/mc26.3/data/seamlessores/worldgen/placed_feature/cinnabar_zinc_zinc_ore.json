@@ -29,7 +29,7 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "seamlessores:cinnabar_zinc_ore"
+        "seamlessores:cinnabar_create_zinc_ore"
       ]
     }
   ],

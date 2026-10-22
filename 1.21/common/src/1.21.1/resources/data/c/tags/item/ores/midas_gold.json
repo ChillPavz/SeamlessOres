@@ -1,15 +1,15 @@
 {
   "values": [
     {
-      "id": "seamlessores:basalt_midas_gold_ore",
+      "id": "seamlessores:basalt_mythicmetals_midas_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_midas_gold_ore",
+      "id": "seamlessores:blackstone_mythicmetals_midas_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_bloodstone_midas_gold_ore",
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_midas_gold_ore",
       "required": false
     }
   ]

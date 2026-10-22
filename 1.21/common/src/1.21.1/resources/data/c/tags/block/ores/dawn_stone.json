@@ -1,35 +1,35 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_dawn_stone_ore",
+      "id": "seamlessores:granite_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dawn_stone_ore",
+      "id": "seamlessores:dripstone_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_dawn_stone_ore",
+      "id": "seamlessores:blockus_marble_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_dawn_stone_ore",
+      "id": "seamlessores:calcite_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_dawn_stone_ore",
+      "id": "seamlessores:twigs_rhyolite_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_marble_dawn_stone_ore",
+      "id": "seamlessores:embellishcraft_marble_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_gneiss_dawn_stone_ore",
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_dawn_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_dawn_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_dawn_stone_ore",
       "required": false
     }
   ]

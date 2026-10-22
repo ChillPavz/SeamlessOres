@@ -25,8 +25,8 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "seamlessores:basalt_ruby_ore",
-        "seamlessores:blackstone_ruby_ore"
+        "seamlessores:basalt_mythicupgrades_ruby_ore",
+        "seamlessores:blackstone_mythicupgrades_ruby_ore"
       ]
     }
   ],

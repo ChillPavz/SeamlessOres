@@ -1,63 +1,63 @@
 {
   "values": [
     {
-      "id": "seamlessores:andesite_dusk_stone_ore",
+      "id": "seamlessores:andesite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dusk_stone_ore",
+      "id": "seamlessores:tuff_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_dusk_stone_ore",
+      "id": "seamlessores:blackstone_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_dusk_stone_ore",
+      "id": "seamlessores:blockus_bluestone_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_dusk_stone_ore",
+      "id": "seamlessores:blockus_viridite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_dusk_stone_ore",
+      "id": "seamlessores:create_scoria_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_dusk_stone_ore",
+      "id": "seamlessores:smooth_basalt_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tfmg_lignite_dusk_stone_ore",
+      "id": "seamlessores:tfmg_lignite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:born_in_chaos_v1_black_argillite_dusk_stone_ore",
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:embellishcraft_basalt_dusk_stone_ore",
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_dusk_stone_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_dusk_stone_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_dusk_stone_ore",
+      "id": "seamlessores:regions_unexplored_argillite_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_dusk_stone_ore",
+      "id": "seamlessores:promenade_asphalt_cobblemon_dusk_stone_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_dusk_stone_ore",
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_dusk_stone_ore",
       "required": false
     }
   ]

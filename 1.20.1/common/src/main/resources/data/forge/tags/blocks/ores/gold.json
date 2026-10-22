@@ -9,8 +9,8 @@
       "id": "seamlessores:cinnabar_gold_ore",
       "required": false
     },
-    "seamlessores:basalt_gold_ore",
-    "seamlessores:blackstone_gold_ore",
+    "seamlessores:basalt_nether_gold_ore",
+    "seamlessores:blackstone_nether_gold_ore",
     {
       "id": "seamlessores:minecraft_blackstone_gold_ore",
       "required": false
@@ -52,15 +52,15 @@
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_gold_ore",
+      "id": "seamlessores:calcite_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_gold_ore",
+      "id": "seamlessores:smooth_basalt_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_gold_ore",
+      "id": "seamlessores:smooth_basalt_nether_gold_ore",
       "required": false
     },
     {

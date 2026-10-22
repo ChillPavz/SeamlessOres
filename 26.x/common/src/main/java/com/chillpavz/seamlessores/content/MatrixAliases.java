@@ -14,8 +14,9 @@ import java.util.function.BiConsumer;
  * losing the blocks.
  *
  * <p>Matrix named a variant {@code seamlessoresmatrix:<stone namespace>_<stone path>_<ore key>_ore}, for
- * every ore each of its stones swallows (dripstone included, under Create). A pair we build keeps that
- * name under our namespace, or is our dripstone variant. A pair the geology rule refuses has no block:
+ * every ore each of its stones swallows (dripstone included, under Create). A pair we build maps straight
+ * to its variant's id (6.0.0's id rule, {@link VariantIds}; 5.x kept Matrix's name), or to our dripstone
+ * variant. A pair the geology rule refuses has no block:
  * its old id becomes the plain ore it stood in for, so no mined ore is lost (owner's choice; a few
  * seams stay in old chunks).
  *

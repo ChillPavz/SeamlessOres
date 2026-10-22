@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_silents_silver_ore",
+      "id": "seamlessores:granite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silents_silver_ore",
+      "id": "seamlessores:diorite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silents_silver_ore",
+      "id": "seamlessores:andesite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_silents_silver_ore",
+      "id": "seamlessores:tuff_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_silents_silver_ore",
+      "id": "seamlessores:blackstone_silentgems_silver_ore",
       "required": false
     }
   ]

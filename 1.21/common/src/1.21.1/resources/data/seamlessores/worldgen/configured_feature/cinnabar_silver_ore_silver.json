@@ -3,7 +3,7 @@
   "config": {
     "size": 8,
     "discard_chance_on_air_exposure": 0.25,
-    "ore": "seamlessores:cinnabar_silver_ore",
+    "ore": "seamlessores:cinnabar_mythicmetals_silver_ore",
     "factor": 3
   }
 }

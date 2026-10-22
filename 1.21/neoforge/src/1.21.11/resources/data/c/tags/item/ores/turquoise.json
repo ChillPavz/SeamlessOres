@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:andesite_turquoise_ore",
+      "id": "seamlessores:andesite_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_turquoise_ore",
+      "id": "seamlessores:tuff_silentgems_turquoise_ore",
       "required": false
     }
   ]

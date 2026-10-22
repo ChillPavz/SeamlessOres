@@ -1,31 +1,31 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_tin_ore",
+      "id": "seamlessores:granite_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_tin_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_tin_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_tin_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_tin_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_chalk_tin_ore",
+      "id": "seamlessores:regions_unexplored_chalk_mythicmetals_tin_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_tin_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
       "required": false
     }
   ]

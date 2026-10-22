@@ -1,215 +1,307 @@
 {
   "values": [
-    {
-      "id": "seamlessores:andesite_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_carnelian_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_chaos_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:andesite_citrine_ore",
-      "required": false
-    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_copper_ore",
     {
-      "id": "seamlessores:andesite_dense_lead_ore",
+      "id": "seamlessores:andesite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_dense_uranium_ore",
+      "id": "seamlessores:andesite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_densemekanism_dense_uranium_ore",
       "required": false
     },
     "seamlessores:andesite_diamond_ore",
     "seamlessores:andesite_emerald_ore",
-    {
-      "id": "seamlessores:andesite_gleaming_ore",
-      "required": false
-    },
     "seamlessores:andesite_gold_ore",
     "seamlessores:andesite_iron_ore",
-    {
-      "id": "seamlessores:andesite_kyber_ore",
-      "required": false
-    },
     "seamlessores:andesite_lapis_ore",
     {
-      "id": "seamlessores:andesite_lead_ore",
+      "id": "seamlessores:andesite_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_manganese_ore",
+      "id": "seamlessores:andesite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_morkite_ore",
+      "id": "seamlessores:andesite_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_mythril_ore",
+      "id": "seamlessores:andesite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_necoium_ore",
+      "id": "seamlessores:andesite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_orichalcum_ore",
+      "id": "seamlessores:andesite_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_prometheum_ore",
+      "id": "seamlessores:andesite_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_quadrillum_ore",
+      "id": "seamlessores:andesite_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicmetals_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_powah_uraninite_poor_ore",
       "required": false
     },
     "seamlessores:andesite_redstone_ore",
     {
-      "id": "seamlessores:andesite_runite_ore",
+      "id": "seamlessores:andesite_silentgems_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silents_citrine_ore",
+      "id": "seamlessores:andesite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silents_silver_ore",
+      "id": "seamlessores:andesite_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_silver_ore",
+      "id": "seamlessores:andesite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_starrite_ore",
+      "id": "seamlessores:andesite_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_turquoise_ore",
+      "id": "seamlessores:andesite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_unobtainium_ore",
+      "id": "seamlessores:andesite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_uraninite_dense_ore",
+      "id": "seamlessores:basalt_mythicmetals_midas_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_uraninite_ore",
+      "id": "seamlessores:basalt_mythicmetals_nether_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_uraninite_poor_ore",
+      "id": "seamlessores:basalt_mythicmetals_palladium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_zinc_ore",
+      "id": "seamlessores:basalt_mythicmetals_stormyx_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_banglum_ore",
+      "id": "seamlessores:basalt_mythicupgrades_ruby_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_carnelian_ore",
+      "id": "seamlessores:basalt_mythicupgrades_sapphire_ore",
       "required": false
     },
-    "seamlessores:basalt_gold_ore",
+    "seamlessores:basalt_nether_gold_ore",
+    "seamlessores:basalt_nether_quartz_ore",
     {
-      "id": "seamlessores:basalt_midas_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:basalt_palladium_ore",
-      "required": false
-    },
-    "seamlessores:basalt_quartz_ore",
-    {
-      "id": "seamlessores:basalt_ruby_ore",
+      "id": "seamlessores:basalt_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_sapphire_ore",
+      "id": "seamlessores:basalt_silentgems_nether_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_silents_citrine_ore",
+      "id": "seamlessores:blackstone_copper_ore",
       "required": false
     },
     {
-      "id": "seamlessores:basalt_stormyx_ore",
+      "id": "seamlessores:blackstone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_banglum_ore",
+      "id": "seamlessores:blackstone_densemekanism_dense_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_carnelian_ore",
-      "required": false
-    },
-    "seamlessores:blackstone_gold_ore",
-    {
-      "id": "seamlessores:blackstone_midas_gold_ore",
+      "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_palladium_ore",
-      "required": false
-    },
-    "seamlessores:blackstone_quartz_ore",
-    {
-      "id": "seamlessores:blackstone_ruby_ore",
+      "id": "seamlessores:blackstone_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_sapphire_ore",
+      "id": "seamlessores:blackstone_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blackstone_silents_citrine_ore",
+      "id": "seamlessores:blackstone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_adamantite_ore",
+      "id": "seamlessores:blackstone_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_carmot_ore",
+      "id": "seamlessores:blackstone_mythicmetals_midas_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_citrine_ore",
+      "id": "seamlessores:blackstone_mythicmetals_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicupgrades_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicupgrades_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicupgrades_sapphire_ore",
+      "required": false
+    },
+    "seamlessores:blackstone_nether_gold_ore",
+    "seamlessores:blackstone_nether_quartz_ore",
+    {
+      "id": "seamlessores:blackstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_chaos_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_things_gleaming_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_bluestone_copper_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_gleaming_ore",
       "required": false
     },
     {
@@ -221,27 +313,47 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_morkite_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_mythril_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_necoium_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_orichalcum_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_peridot_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_prometheum_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_mythicupgrades_peridot_ore",
       "required": false
     },
     {
@@ -249,27 +361,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_bluestone_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_citrine_ore",
+      "id": "seamlessores:blockus_bluestone_things_gleaming_ore",
       "required": false
     },
     {
@@ -281,15 +373,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_create_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_emerald_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_gleaming_ore",
+      "id": "seamlessores:blockus_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -301,35 +393,71 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_kyber_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_manganese_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_morkite_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_mythril_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_necoium_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_orichalcum_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_prometheum_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_quadrillum_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicmetals_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -337,43 +465,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_starrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_citrine_ore",
+      "id": "seamlessores:blockus_limestone_things_gleaming_ore",
       "required": false
     },
     {
@@ -381,15 +473,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_create_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_emerald_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_gleaming_ore",
+      "id": "seamlessores:blockus_marble_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -401,39 +493,71 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_kyber_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_marble_lapis_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_manganese_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_morkite_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_mythril_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_necoium_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_orichalcum_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_prometheum_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_quadrillum_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -441,39 +565,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_aquamarine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_citrine_ore",
+      "id": "seamlessores:blockus_marble_things_gleaming_ore",
       "required": false
     },
     {
@@ -481,11 +573,11 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_diamond_ore",
+      "id": "seamlessores:blockus_viridite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_gleaming_ore",
+      "id": "seamlessores:blockus_viridite_diamond_ore",
       "required": false
     },
     {
@@ -501,27 +593,55 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_morkite_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_mythril_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_necoium_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_orichalcum_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_peridot_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_prometheum_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythicupgrades_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythicupgrades_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
@@ -529,67 +649,159 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_runite_ore",
+      "id": "seamlessores:blockus_viridite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_topaz_ore",
+      "id": "seamlessores:calcite_copper_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_unobtainium_ore",
+      "id": "seamlessores:calcite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_zinc_ore",
+      "id": "seamlessores:calcite_emerald_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_adamantite_ore",
+      "id": "seamlessores:calcite_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_aquarium_ore",
+      "id": "seamlessores:calcite_iron_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_banglum_ore",
+      "id": "seamlessores:calcite_lapis_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_carmot_ore",
+      "id": "seamlessores:calcite_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_gleaming_ore",
+      "id": "seamlessores:calcite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_kyber_ore",
+      "id": "seamlessores:calcite_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_morkite_ore",
+      "id": "seamlessores:calcite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_mythril_ore",
+      "id": "seamlessores:calcite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_necoium_ore",
+      "id": "seamlessores:calcite_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_orichalcum_ore",
+      "id": "seamlessores:calcite_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_prometheum_ore",
+      "id": "seamlessores:calcite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_quadrillum_ore",
+      "id": "seamlessores:calcite_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_adamantite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_carmot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -597,35 +809,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_gleaming_ore",
+      "id": "seamlessores:create_asurine_things_gleaming_ore",
       "required": false
     },
     {
@@ -633,31 +817,55 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_kyber_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_morkite_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_mythril_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_necoium_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_orichalcum_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_prometheum_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_quadrillum_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -665,31 +873,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_crimsite_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_citrine_ore",
+      "id": "seamlessores:create_crimsite_things_gleaming_ore",
       "required": false
     },
     {
@@ -701,15 +885,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_create_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_emerald_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_gleaming_ore",
+      "id": "seamlessores:create_limestone_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -721,35 +905,71 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_kyber_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_manganese_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_morkite_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_mythril_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_necoium_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_orichalcum_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_prometheum_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_quadrillum_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -757,43 +977,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_limestone_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_gleaming_ore",
+      "id": "seamlessores:create_limestone_things_gleaming_ore",
       "required": false
     },
     {
@@ -801,31 +985,55 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_kyber_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_morkite_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_mythril_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_necoium_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_orichalcum_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_prometheum_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_quadrillum_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -833,19 +1041,31 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_runite_ore",
+      "id": "seamlessores:create_ochrum_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_unobtainium_ore",
+      "id": "seamlessores:create_scorchia_mythicmetals_midas_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_midas_gold_ore",
+      "id": "seamlessores:create_scorchia_mythicmetals_nether_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_nether_banglum_ore",
+      "id": "seamlessores:create_scorchia_mythicmetals_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_mythicmetals_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_mythicupgrades_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
@@ -853,43 +1073,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scorchia_palladium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scorchia_quartz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scorchia_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scorchia_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scorchia_stormyx_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_citrine_ore",
+      "id": "seamlessores:create_scorchia_nether_quartz_ore",
       "required": false
     },
     {
@@ -897,7 +1081,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_gleaming_ore",
+      "id": "seamlessores:create_scoria_create_zinc_ore",
       "required": false
     },
     {
@@ -909,31 +1093,95 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_kyber_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_manganese_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_midas_gold_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_morkite_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_mythril_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_necoium_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_nether_banglum_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_morkite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicupgrades_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicupgrades_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicupgrades_sapphire_ore",
       "required": false
     },
     {
@@ -941,27 +1189,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_palladium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_quartz_ore",
+      "id": "seamlessores:create_scoria_nether_quartz_ore",
       "required": false
     },
     {
@@ -969,47 +1197,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_stormyx_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_scoria_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_carmot_ore",
+      "id": "seamlessores:create_scoria_things_gleaming_ore",
       "required": false
     },
     {
@@ -1017,35 +1205,55 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_gleaming_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_kyber_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_morkite_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_mythril_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_necoium_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_orichalcum_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_prometheum_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_quadrillum_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -1053,754 +1261,406 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_veridium_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_chaos_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_citrine_ore",
+      "id": "seamlessores:create_veridium_things_gleaming_ore",
       "required": false
     },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_copper_ore",
     {
-      "id": "seamlessores:diorite_dense_lead_ore",
+      "id": "seamlessores:diorite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_dense_uranium_ore",
+      "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_densemekanism_dense_uranium_ore",
       "required": false
     },
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
-    {
-      "id": "seamlessores:diorite_gleaming_ore",
-      "required": false
-    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_iron_ore",
-    {
-      "id": "seamlessores:diorite_kyber_ore",
-      "required": false
-    },
     "seamlessores:diorite_lapis_ore",
     {
-      "id": "seamlessores:diorite_lead_ore",
+      "id": "seamlessores:diorite_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_manganese_ore",
+      "id": "seamlessores:diorite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_morkite_ore",
+      "id": "seamlessores:diorite_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_mythril_ore",
+      "id": "seamlessores:diorite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_necoium_ore",
+      "id": "seamlessores:diorite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_orichalcum_ore",
+      "id": "seamlessores:diorite_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_prometheum_ore",
+      "id": "seamlessores:diorite_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_quadrillum_ore",
+      "id": "seamlessores:diorite_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicmetals_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_powah_uraninite_poor_ore",
       "required": false
     },
     "seamlessores:diorite_redstone_ore",
     {
-      "id": "seamlessores:diorite_runite_ore",
+      "id": "seamlessores:diorite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silents_citrine_ore",
+      "id": "seamlessores:diorite_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silents_silver_ore",
+      "id": "seamlessores:diorite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_silver_ore",
+      "id": "seamlessores:diorite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_starrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_uraninite_dense_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_uraninite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_uraninite_poor_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:diorite_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_chaos_ore",
+      "id": "seamlessores:diorite_things_gleaming_ore",
       "required": false
     },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_copper_ore",
     {
-      "id": "seamlessores:dripstone_dense_fluorite_ore",
+      "id": "seamlessores:dripstone_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_lead_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_dense_uranium_ore",
+      "id": "seamlessores:dripstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_densemekanism_dense_uranium_ore",
       "required": false
     },
     "seamlessores:dripstone_diamond_ore",
-    {
-      "id": "seamlessores:dripstone_gleaming_ore",
-      "required": false
-    },
     "seamlessores:dripstone_gold_ore",
     "seamlessores:dripstone_iron_ore",
-    {
-      "id": "seamlessores:dripstone_kyber_ore",
-      "required": false
-    },
     "seamlessores:dripstone_lapis_ore",
     {
-      "id": "seamlessores:dripstone_lead_ore",
+      "id": "seamlessores:dripstone_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_manganese_ore",
+      "id": "seamlessores:dripstone_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_morkite_ore",
+      "id": "seamlessores:dripstone_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_mythril_ore",
+      "id": "seamlessores:dripstone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_necoium_ore",
+      "id": "seamlessores:dripstone_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_orichalcum_ore",
+      "id": "seamlessores:dripstone_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_prometheum_ore",
+      "id": "seamlessores:dripstone_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_quadrillum_ore",
+      "id": "seamlessores:dripstone_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythicmetals_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_powah_uraninite_poor_ore",
       "required": false
     },
     "seamlessores:dripstone_redstone_ore",
     {
-      "id": "seamlessores:dripstone_runite_ore",
+      "id": "seamlessores:dripstone_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_starrite_ore",
+      "id": "seamlessores:dripstone_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_uraninite_dense_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_uraninite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_uraninite_poor_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:dripstone_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_aquamarine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_chaos_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_citrine_ore",
+      "id": "seamlessores:dripstone_things_gleaming_ore",
       "required": false
     },
     "seamlessores:granite_coal_ore",
     "seamlessores:granite_copper_ore",
     {
-      "id": "seamlessores:granite_dense_fluorite_ore",
+      "id": "seamlessores:granite_create_new_age_thorium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_dense_lead_ore",
+      "id": "seamlessores:granite_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_dense_tin_ore",
+      "id": "seamlessores:granite_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_dense_uranium_ore",
+      "id": "seamlessores:granite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_densemekanism_dense_uranium_ore",
       "required": false
     },
     "seamlessores:granite_diamond_ore",
     "seamlessores:granite_emerald_ore",
     {
-      "id": "seamlessores:granite_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_garnet_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_gleaming_ore",
+      "id": "seamlessores:granite_energizedpower_tin_ore",
       "required": false
     },
     "seamlessores:granite_gold_ore",
-    {
-      "id": "seamlessores:granite_heliodor_ore",
-      "required": false
-    },
     "seamlessores:granite_iron_ore",
-    {
-      "id": "seamlessores:granite_kyber_ore",
-      "required": false
-    },
     "seamlessores:granite_lapis_ore",
     {
-      "id": "seamlessores:granite_lead_ore",
+      "id": "seamlessores:granite_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_lithium_ore",
+      "id": "seamlessores:granite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_manganese_ore",
+      "id": "seamlessores:granite_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_morkite_ore",
+      "id": "seamlessores:granite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_mythril_ore",
+      "id": "seamlessores:granite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_necoium_ore",
+      "id": "seamlessores:granite_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_orichalcum_ore",
+      "id": "seamlessores:granite_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_prometheum_ore",
+      "id": "seamlessores:granite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_quadrillum_ore",
+      "id": "seamlessores:granite_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicmetals_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicupgrades_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mythicupgrades_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_powah_uraninite_poor_ore",
       "required": false
     },
     "seamlessores:granite_redstone_ore",
     {
-      "id": "seamlessores:granite_runite_ore",
+      "id": "seamlessores:granite_silentgems_aquamarine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_aquamarine_ore",
+      "id": "seamlessores:granite_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_citrine_ore",
+      "id": "seamlessores:granite_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_silver_ore",
+      "id": "seamlessores:granite_silentgems_garnet_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silents_topaz_ore",
+      "id": "seamlessores:granite_silentgems_heliodor_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_silver_ore",
+      "id": "seamlessores:granite_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_starrite_ore",
+      "id": "seamlessores:granite_silentgems_topaz_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_thorium_ore",
+      "id": "seamlessores:granite_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_tin_ore",
+      "id": "seamlessores:granite_tfmg_lithium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:granite_topaz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_uraninite_dense_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_uraninite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_uraninite_poor_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:granite_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_chaos_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_copper_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_dense_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_gleaming_ore",
+      "id": "seamlessores:granite_things_gleaming_ore",
       "required": false
     },
     {
       "id": "seamlessores:minecraft_blackstone_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_iron_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_lead_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_manganese_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_silents_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_silents_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_silents_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_silents_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_blackstone_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_copper_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_emerald_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_iron_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_kyber_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_lapis_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_manganese_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_calcite_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_adamantite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_citrine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_copper_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_gleaming_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_iron_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_kyber_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_manganese_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_midas_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_morkite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_mythril_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_necoium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_nether_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_orichalcum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_palladium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_peridot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_prometheum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_quadrillum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_quartz_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_ruby_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_sapphire_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_stormyx_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:minecraft_smooth_basalt_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_citrine_ore",
       "required": false
     },
     {
@@ -1812,7 +1672,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_gleaming_ore",
+      "id": "seamlessores:promenade_asphalt_create_zinc_ore",
       "required": false
     },
     {
@@ -1824,35 +1684,67 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_kyber_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_manganese_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_morkite_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_mythril_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_necoium_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_orichalcum_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_prometheum_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_quadrillum_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythicmetals_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -1860,43 +1752,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_starrite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_unobtainium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_asphalt_zinc_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_aquamarine_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_carmot_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_citrine_ore",
+      "id": "seamlessores:promenade_asphalt_things_gleaming_ore",
       "required": false
     },
     {
@@ -1908,6 +1764,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_create_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_diamond_ore",
       "required": false
     },
@@ -1916,11 +1776,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_energized_tin_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:promenade_blunite_gleaming_ore",
+      "id": "seamlessores:promenade_blunite_energizedpower_tin_ore",
       "required": false
     },
     {
@@ -1932,51 +1788,95 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_kyber_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:promenade_blunite_lapis_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_manganese_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_morkite_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_mythril_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_necoium_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_orichalcum_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_osmium_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_peridot_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_platinum_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_prometheum_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_osmium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_quadrillum_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicmetals_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicupgrades_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicupgrades_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicupgrades_topaz_ore",
       "required": false
     },
     {
@@ -1984,175 +1884,255 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_runite_ore",
+      "id": "seamlessores:promenade_blunite_things_gleaming_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_silver_ore",
+      "id": "seamlessores:smooth_basalt_copper_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_starrite_ore",
+      "id": "seamlessores:smooth_basalt_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_tin_ore",
+      "id": "seamlessores:smooth_basalt_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_topaz_ore",
+      "id": "seamlessores:smooth_basalt_iron_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_unobtainium_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_zinc_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_adamantite_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_black_diamond_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_bort_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_carmot_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_manganese_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_carnelian_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_midas_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_chaos_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_citrine_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_orichalcum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_palladium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicupgrades_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicupgrades_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicupgrades_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_things_gleaming_ore",
       "required": false
     },
     "seamlessores:tuff_coal_ore",
     "seamlessores:tuff_copper_ore",
     {
-      "id": "seamlessores:tuff_dense_fluorite_ore",
+      "id": "seamlessores:tuff_create_zinc_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_lead_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_fluorite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_dense_uranium_ore",
+      "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_densemekanism_dense_uranium_ore",
       "required": false
     },
     "seamlessores:tuff_diamond_ore",
     "seamlessores:tuff_emerald_ore",
-    {
-      "id": "seamlessores:tuff_gleaming_ore",
-      "required": false
-    },
     "seamlessores:tuff_gold_ore",
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_lapis_ore",
     {
-      "id": "seamlessores:tuff_lead_ore",
+      "id": "seamlessores:tuff_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_lithium_ore",
+      "id": "seamlessores:tuff_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_morkite_ore",
+      "id": "seamlessores:tuff_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_mythril_ore",
+      "id": "seamlessores:tuff_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_necoium_ore",
+      "id": "seamlessores:tuff_mythicmetals_prometheum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_opal_ore",
+      "id": "seamlessores:tuff_mythicmetals_runite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_prometheum_ore",
+      "id": "seamlessores:tuff_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mythicupgrades_necoium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_powah_uraninite_poor_ore",
       "required": false
     },
     "seamlessores:tuff_redstone_ore",
     {
-      "id": "seamlessores:tuff_runite_ore",
+      "id": "seamlessores:tuff_silentgear_bort_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_silents_citrine_ore",
+      "id": "seamlessores:tuff_silentgems_black_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_silents_silver_ore",
+      "id": "seamlessores:tuff_silentgems_carnelian_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_turquoise_ore",
+      "id": "seamlessores:tuff_silentgems_chaos_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_unobtainium_ore",
+      "id": "seamlessores:tuff_silentgems_citrine_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_uraninite_dense_ore",
+      "id": "seamlessores:tuff_silentgems_opal_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_uraninite_ore",
+      "id": "seamlessores:tuff_silentgems_silver_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_uraninite_poor_ore",
+      "id": "seamlessores:tuff_silentgems_turquoise_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_white_diamond_ore",
+      "id": "seamlessores:tuff_silentgems_white_diamond_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_zinc_ore",
+      "id": "seamlessores:tuff_tfmg_lead_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_adamantite_ore",
+      "id": "seamlessores:tuff_tfmg_lithium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_aquarium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_banglum_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_carmot_ore",
+      "id": "seamlessores:tuff_things_gleaming_ore",
       "required": false
     },
     {
       "id": "seamlessores:wilderwild_gabbro_copper_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_gleaming_ore",
       "required": false
     },
     {
@@ -2164,39 +2144,67 @@
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_kyber_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_adamantite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_morkite_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_mythril_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_banglum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_necoium_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_orichalcum_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_kyber_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_osmium_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_morkite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_platinum_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_mythril_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_prometheum_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_orichalcum_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_quadrillum_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_prometheum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_runite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_unobtainium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythicupgrades_necoium_ore",
       "required": false
     },
     {
@@ -2204,15 +2212,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_runite_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_silver_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:wilderwild_gabbro_unobtainium_ore",
+      "id": "seamlessores:wilderwild_gabbro_things_gleaming_ore",
       "required": false
     }
   ]

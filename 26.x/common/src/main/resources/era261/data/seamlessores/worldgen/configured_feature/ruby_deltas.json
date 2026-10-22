@@ -10,7 +10,7 @@
           "block": "minecraft:basalt"
         },
         "state": {
-          "Name": "seamlessores:basalt_ruby_ore"
+          "Name": "seamlessores:basalt_mythicupgrades_ruby_ore"
         }
       },
       {
@@ -19,7 +19,7 @@
           "block": "minecraft:blackstone"
         },
         "state": {
-          "Name": "seamlessores:blackstone_ruby_ore"
+          "Name": "seamlessores:blackstone_mythicupgrades_ruby_ore"
         }
       },
       {
@@ -38,8 +38,8 @@
       "condition": "fabric:registry_contains",
       "registry": "minecraft:block",
       "values": [
-        "seamlessores:basalt_ruby_ore",
-        "seamlessores:blackstone_ruby_ore"
+        "seamlessores:basalt_mythicupgrades_ruby_ore",
+        "seamlessores:blackstone_mythicupgrades_ruby_ore"
       ]
     }
   ],

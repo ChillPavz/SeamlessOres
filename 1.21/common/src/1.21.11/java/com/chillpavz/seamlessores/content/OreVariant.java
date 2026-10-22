@@ -12,13 +12,13 @@ import net.minecraft.world.level.block.Block;
 public record OreVariant(HostStone host, OreType ore) {
 
     /**
-     * e.g. {@code granite_iron_ore}, mirroring vanilla's own {@code deepslate_iron_ore}. A stone another
-     * mod places names the ore by its key ({@code create_scoria_nether_gold_ore}): it can take an
-     * overworld and a Nether ore of one name, where the game's own rock takes one tier and keeps the
-     * names its ids have always had.
+     * e.g. {@code granite_iron_ore}, {@code create_limestone_techreborn_silver_ore}: the id rule of 6.0.0
+     * (stone, then ore, each with its mod in front unless it is the game's), read from the jar's ids.json
+     * ({@link VariantIds}), which the generator writes. Ids earlier releases shipped are aliased to these.
      */
     public String path() {
-        return host.name() + "_" + (host.placedBy() == null ? ore.name() : ore.key()) + "_ore";
+        return VariantIds.path(host.name(), ore.key(),
+                host.name() + "_" + (host.placedBy() == null ? ore.name() : ore.key()) + "_ore");
     }
 
     public Identifier id() {

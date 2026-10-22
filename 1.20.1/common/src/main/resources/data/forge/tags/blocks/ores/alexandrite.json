@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "seamlessores:twigs_schist_alexandrite_ore",
+      "id": "seamlessores:twigs_schist_silentgems_alexandrite_ore",
       "required": false
     },
     {
-      "id": "seamlessores:forbidden_arcanus_darkstone_alexandrite_ore",
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_alexandrite_ore",
       "required": false
     }
   ]

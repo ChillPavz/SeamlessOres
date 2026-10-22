@@ -1,99 +1,99 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_carmot_ore",
+      "id": "seamlessores:granite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_carmot_ore",
+      "id": "seamlessores:diorite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_carmot_ore",
+      "id": "seamlessores:andesite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_carmot_ore",
+      "id": "seamlessores:tuff_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_carmot_ore",
+      "id": "seamlessores:dripstone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_carmot_ore",
+      "id": "seamlessores:blackstone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_carmot_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_carmot_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_bluestone_carmot_ore",
+      "id": "seamlessores:blockus_bluestone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_viridite_carmot_ore",
+      "id": "seamlessores:blockus_viridite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_carmot_ore",
+      "id": "seamlessores:create_asurine_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_carmot_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_carmot_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_carmot_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_carmot_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_carmot_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_carmot_ore",
+      "id": "seamlessores:calcite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_carmot_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_rhyolite_carmot_ore",
+      "id": "seamlessores:twigs_rhyolite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:twigs_schist_carmot_ore",
+      "id": "seamlessores:twigs_schist_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:meadow_limestone_carmot_ore",
+      "id": "seamlessores:meadow_limestone_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_carmot_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_carmot_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_carmot_ore",
       "required": false
     },
     {
-      "id": "seamlessores:spawn_reefstone_carmot_ore",
+      "id": "seamlessores:spawn_reefstone_mythicmetals_carmot_ore",
       "required": false
     }
   ]

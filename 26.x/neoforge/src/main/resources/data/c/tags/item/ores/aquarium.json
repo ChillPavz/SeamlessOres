@@ -1,83 +1,83 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_aquarium_ore",
+      "id": "seamlessores:granite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_aquarium_ore",
+      "id": "seamlessores:diorite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_aquarium_ore",
+      "id": "seamlessores:andesite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_aquarium_ore",
+      "id": "seamlessores:dripstone_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_blackstone_aquarium_ore",
+      "id": "seamlessores:blackstone_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_aquarium_ore",
+      "id": "seamlessores:blockus_limestone_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:blockus_marble_aquarium_ore",
+      "id": "seamlessores:blockus_marble_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_asurine_aquarium_ore",
+      "id": "seamlessores:create_asurine_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_crimsite_aquarium_ore",
+      "id": "seamlessores:create_crimsite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_aquarium_ore",
+      "id": "seamlessores:create_limestone_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_ochrum_aquarium_ore",
+      "id": "seamlessores:create_ochrum_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_scoria_aquarium_ore",
+      "id": "seamlessores:create_scoria_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_aquarium_ore",
+      "id": "seamlessores:create_veridium_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_calcite_aquarium_ore",
+      "id": "seamlessores:calcite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:minecraft_smooth_basalt_aquarium_ore",
+      "id": "seamlessores:smooth_basalt_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_mossy_stone_aquarium_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:regions_unexplored_argillite_aquarium_ore",
+      "id": "seamlessores:regions_unexplored_argillite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_aquarium_ore",
+      "id": "seamlessores:promenade_asphalt_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_blunite_aquarium_ore",
+      "id": "seamlessores:promenade_blunite_mythicmetals_aquarium_ore",
       "required": false
     },
     {
-      "id": "seamlessores:wilderwild_gabbro_aquarium_ore",
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_aquarium_ore",
       "required": false
     }
   ]
