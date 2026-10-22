@@ -705,6 +705,16 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("biggerreactors", "uranium_ore"), of("biggerreactors", "deepslate_uranium_ore"), null,
             NONE, null, false, Set.of());
 
+    // --- Embers Rekindled (mod id embers, MIT). Forge at 1.20.1: lead and silver, iron convention, no XP ---
+    public static final OreType EMBERS_LEAD = ore(
+            "embers_lead", "embers_lead", null, "embers",
+            of("embers", "lead_ore"), of("embers", "deepslate_lead_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType EMBERS_SILVER = ore(
+            "embers_silver", "embers_silver", null, "embers",
+            of("embers", "silver_ore"), of("embers", "deepslate_silver_ore"), null,
+            NONE, null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -734,7 +744,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     CB_DAWN_STONE, CB_DUSK_STONE, CB_FIRE_STONE, CB_ICE_STONE, CB_LEAF_STONE, CB_MOON_STONE,
                     CB_SHINY_STONE, CB_SUN_STONE, CB_THUNDER_STONE, CB_WATER_STONE,
                     INFECTED_DIAMOND,
-                    BR_URANIUM);
+                    BR_URANIUM,
+                    EMBERS_LEAD, EMBERS_SILVER);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 
@@ -813,7 +824,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
                 cinnabarFamily = Set.of(GOLD, IRON, REDSTONE, ZINC, TR_GALENA, TR_LEAD, TR_SILVER,
                         OCCULTISM_SILVER, SG_SILVER, TR_PYRITE, TR_SPHALERITE,
                         SILVER, IAF_SILVER, IE_LEAD, IE_SILVER, OREGANIZED_LEAD, OREGANIZED_SILVER,
-                        MI_LEAD, MI_ANTIMONY, MEK_LEAD, DENSE_LEAD, TFMG_LEAD);
+                        MI_LEAD, MI_ANTIMONY, MEK_LEAD, DENSE_LEAD, TFMG_LEAD, EMBERS_LEAD, EMBERS_SILVER);
             }
             return cinnabarFamily;
         }

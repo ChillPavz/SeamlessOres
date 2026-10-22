@@ -35,6 +35,14 @@
       "required": false
     },
     "seamlessores:andesite_diamond_ore",
+    {
+      "id": "seamlessores:andesite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_embers_silver_ore",
+      "required": false
+    },
     "seamlessores:andesite_emerald_ore",
     "seamlessores:andesite_gold_ore",
     {
@@ -452,6 +460,14 @@
     },
     {
       "id": "seamlessores:blackstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_embers_silver_ore",
       "required": false
     },
     {
@@ -1117,6 +1133,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_emerald_ore",
       "required": false
     },
@@ -1222,6 +1246,14 @@
     },
     {
       "id": "seamlessores:calcite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_embers_silver_ore",
       "required": false
     },
     {
@@ -1521,6 +1553,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_emerald_ore",
       "required": false
     },
@@ -1762,6 +1802,14 @@
     },
     {
       "id": "seamlessores:create_scoria_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_embers_silver_ore",
       "required": false
     },
     {
@@ -2007,6 +2055,14 @@
       "required": false
     },
     "seamlessores:diorite_diamond_ore",
+    {
+      "id": "seamlessores:diorite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_embers_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_emerald_ore",
     "seamlessores:diorite_gold_ore",
     {
@@ -2204,6 +2260,10 @@
     },
     "seamlessores:dripstone_diamond_ore",
     {
+      "id": "seamlessores:dripstone_embers_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_expores_experience_ore",
       "required": false
     },
@@ -2324,6 +2384,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_gold_ore",
       "required": false
     },
@@ -2433,6 +2501,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_gneiss_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_embers_lead_ore",
       "required": false
     },
     {
@@ -2776,6 +2848,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
       "required": false
     },
@@ -2870,6 +2946,14 @@
       "required": false
     },
     "seamlessores:granite_diamond_ore",
+    {
+      "id": "seamlessores:granite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_embers_silver_ore",
+      "required": false
+    },
     "seamlessores:granite_emerald_ore",
     {
       "id": "seamlessores:granite_energizedpower_tin_ore",
@@ -3113,6 +3197,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_embers_lead_ore",
       "required": false
     },
     {
@@ -3580,6 +3668,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_jasper_embers_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_gold_ore",
       "required": false
     },
@@ -3657,6 +3749,10 @@
     },
     {
       "id": "seamlessores:quark_limestone_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_embers_lead_ore",
       "required": false
     },
     {
@@ -3756,6 +3852,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_embers_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_emerald_ore",
       "required": false
     },
@@ -3837,6 +3937,14 @@
     },
     {
       "id": "seamlessores:smooth_basalt_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_embers_silver_ore",
       "required": false
     },
     {
@@ -4060,6 +4168,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_embers_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_emerald_ore",
       "required": false
     },
@@ -4204,6 +4316,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_bauxite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_gold_ore",
       "required": false
     },
@@ -4265,6 +4381,14 @@
     },
     {
       "id": "seamlessores:tfmg_galena_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_embers_silver_ore",
       "required": false
     },
     {
@@ -4353,6 +4477,14 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_embers_silver_ore",
       "required": false
     },
     {
@@ -4458,6 +4590,14 @@
       "required": false
     },
     "seamlessores:tuff_diamond_ore",
+    {
+      "id": "seamlessores:tuff_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_embers_silver_ore",
+      "required": false
+    },
     "seamlessores:tuff_emerald_ore",
     {
       "id": "seamlessores:tuff_expores_experience_ore",
@@ -4748,6 +4888,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_gold_ore",
       "required": false
     },
@@ -4905,6 +5053,14 @@
     },
     {
       "id": "seamlessores:twigs_schist_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_embers_silver_ore",
       "required": false
     },
     {

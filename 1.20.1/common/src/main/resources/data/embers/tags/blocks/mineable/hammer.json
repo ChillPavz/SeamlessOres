@@ -1,0 +1,160 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_embers_lead_ore",
+      "required": false
+    }
+  ]
+}

@@ -229,6 +229,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -354,6 +362,14 @@
     },
     {
       "id": "seamlessores:blackstone_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_embers_silver_ore",
       "required": false
     },
     {
@@ -517,6 +533,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
       "required": false
     },
@@ -570,6 +594,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_embers_silver_ore",
       "required": false
     }
   ]

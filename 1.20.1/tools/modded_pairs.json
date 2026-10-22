@@ -143,6 +143,20 @@
     "cobblemon:deepslate_dusk_stone_ore"
    ]
   },
+  "embers_lead": {
+   "mod": "embers",
+   "forms": [
+    "embers:lead_ore",
+    "embers:deepslate_lead_ore"
+   ]
+  },
+  "embers_silver": {
+   "mod": "embers",
+   "forms": [
+    "embers:silver_ore",
+    "embers:deepslate_silver_ore"
+   ]
+  },
   "energized_tin": {
    "mod": "energizedpower",
    "forms": [
@@ -2806,6 +2820,18 @@
     ],
     "rate": 13.46
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 147.13
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.59
+   },
    "fire_stone": {
     "where": [
      "1.20.1 forge"
@@ -3112,6 +3138,18 @@
      "1.20.1 forge"
     ],
     "rate": 16.82
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.62
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.36
    },
    "energized_tin": {
     "where": [
@@ -3677,6 +3715,18 @@
     ],
     "rate": 21.51
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 73.67
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.96
+   },
    "energized_tin": {
     "where": [
      "1.20.1 fabric",
@@ -4241,6 +4291,18 @@
     ],
     "rate": 22.35
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 76.55
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.43
+   },
    "energized_tin": {
     "where": [
      "1.20.1 fabric",
@@ -4804,6 +4866,18 @@
      "1.20.1 forge"
     ],
     "rate": 14.58
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.94
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.11
    },
    "energized_tin": {
     "where": [
@@ -5460,6 +5534,18 @@
     ],
     "rate": 19.32
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 66.16
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.74
+   },
    "energized_tin": {
     "where": [
      "1.20.1 fabric",
@@ -6080,6 +6166,18 @@
     ],
     "rate": 15.9
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 54.48
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.84
+   },
    "energized_tin": {
     "where": [
      "1.20.1 fabric",
@@ -6609,6 +6707,18 @@
     ],
     "rate": 29.35
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 243.13
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 108.92
+   },
    "fire_stone": {
     "where": [
      "1.20.1 forge"
@@ -6886,6 +6996,12 @@
      "1.20.1 forge"
     ],
     "rate": 17.18
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.92
    },
    "energized_tin": {
     "where": [
@@ -7731,6 +7847,12 @@
     ],
     "rate": 10.76
    },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 101.36
+   },
    "fire_stone": {
     "where": [
      "1.20.1 forge"
@@ -8007,6 +8129,12 @@
      "1.20.1 forge"
     ],
     "rate": 113.84
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.22
    },
    "energized_tin": {
     "where": [
@@ -8534,6 +8662,18 @@
      "1.20.1 forge"
     ],
     "rate": 0.55
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.4
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.18
    },
    "energized_tin": {
     "where": [
@@ -9080,6 +9220,18 @@
      "1.20.1 forge"
     ],
     "rate": 9.85
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.75
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.48
    },
    "energized_tin": {
     "where": [
@@ -9644,6 +9796,18 @@
      "1.20.1 forge"
     ],
     "rate": 16.66
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.07
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.27
    },
    "energized_tin": {
     "where": [
@@ -10221,6 +10385,18 @@
      "1.20.1 forge"
     ],
     "rate": 15.53
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 53.18
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.63
    },
    "energized_tin": {
     "where": [
@@ -11629,6 +11805,12 @@
     ],
     "rate": 177.67
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 176.01
+   },
    "energized_tin": {
     "where": [
      "1.20.1 forge"
@@ -11889,6 +12071,12 @@
     ],
     "rate": 518.22
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 513.35
+   },
    "energized_tin": {
     "where": [
      "1.20.1 forge"
@@ -12148,6 +12336,12 @@
      "1.20.1 forge"
     ],
     "rate": 177.67
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 176.01
    },
    "energized_tin": {
     "where": [
@@ -12431,6 +12625,12 @@
      "1.20.1 forge"
     ],
     "rate": 16.71
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.59
    },
    "energized_tin": {
     "where": [
@@ -12885,6 +13085,18 @@
     ],
     "rate": 20.83
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 71.34
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.58
+   },
    "energized_tin": {
     "where": [
      "1.20.1 forge"
@@ -13193,6 +13405,18 @@
     ],
     "rate": 20.83
    },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 71.34
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.58
+   },
    "energized_tin": {
     "where": [
      "1.20.1 forge"
@@ -13500,6 +13724,18 @@
      "1.20.1 forge"
     ],
     "rate": 20.83
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 71.34
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.58
    },
    "energized_tin": {
     "where": [
@@ -13909,6 +14145,18 @@
      "1.20.1 forge"
     ],
     "rate": 9.43
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 76.03
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.11
    },
    "experience": {
     "where": [
@@ -14417,6 +14665,18 @@
      "1.20.1 forge"
     ],
     "rate": 2.42
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.74
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.68
    },
    "energized_tin": {
     "where": [

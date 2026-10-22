@@ -512,6 +512,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean biggerReactors = true;
 
+    // --- Embers Rekindled ----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("embers_rekindled")
+    @ConfigEntry.Gui.Tooltip
+    public boolean embersRekindled = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -638,6 +644,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.silentGear = silentGear;
         values.createNewAge = createNewAge;
         values.biggerReactors = biggerReactors;
+        values.embersRekindled = embersRekindled;
 
         SeamlessOresConfig.apply(values);
     }

@@ -26,6 +26,10 @@ Dense Mekanism, MIT:
   assets/seamlessores/textures/block/dense_tin_overlay.png
   assets/seamlessores/textures/block/dense_uranium_overlay.png
 
+Embers Rekindled by RCXcrafter, BordListian, Elucent, TechnoMysterio, KomradeSpectre, MIT:
+  assets/seamlessores/textures/block/embers_lead_overlay.png
+  assets/seamlessores/textures/block/embers_silver_overlay.png
+
 Energized Power by JDDev0, MIT:
   assets/seamlessores/textures/block/energized_tin_overlay.png
 

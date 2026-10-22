@@ -176,7 +176,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "create": CREATE_JAR, "mythicupgrades": MYTHIC_UPGRADES_JAR,
             "silentgems": SILENT_GEMS_JAR,
             "mythicmetals": MYTHIC_METALS_JAR,
-            "biggerreactors": jar("biggerreactors-1.20.1-0.6.0-beta.10.5.jar")}
+            "biggerreactors": jar("biggerreactors-1.20.1-0.6.0-beta.10.5.jar"),
+            "embers": jar("embersrekindled-1.20.1-1.4.7.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -380,6 +381,8 @@ MODS = {
                        "licence": "MPL-2.0",      "author": "The Cobblemon Team"},
     "biggerreactors": {"display": "Bigger Reactors", "category": "bigger_reactors",
                        "licence": "LGPL-2.1", "author": "RogueLogix, gizmocodes, Ridanisaurus"},
+    "embers": {"display": "Embers Rekindled", "category": "embers_rekindled",
+                       "licence": "MIT", "author": "RCXcrafter, BordListian, Elucent, TechnoMysterio, KomradeSpectre"},
 }
 
 ORE_DEFS = [
@@ -905,6 +908,13 @@ ORE_DEFS = [
     {"name": "biggerreactors_uranium", "overlay": "biggerreactors_uranium", "source": "uranium_ore", "base": "stone",
      "mod": "biggerreactors",
      "tiers": {"stone": "uranium_ore", "deepslate": "deepslate_uranium_ore"}},
+    # --- Embers Rekindled (mod id embers, MIT). Forge at 1.20.1: lead and silver, iron convention, no XP ---
+    {"name": "embers_lead", "overlay": "embers_lead", "source": "lead_ore", "base": "stone",
+     "mod": "embers",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "embers_silver", "overlay": "embers_silver", "source": "silver_ore", "base": "stone",
+     "mod": "embers",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1037,6 +1047,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "spawn": ('fabric', 'forge'),
     "twigs": ('fabric', 'forge'),
     "biggerreactors": ('forge',),
+    "embers": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1183,6 +1194,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.embers_rekindled": "Embers Rekindled",
         f"text.autoconfig.{MOD_ID}.category.bigger_reactors": "Bigger Reactors",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
         f"text.autoconfig.{MOD_ID}.category.nether": "Nether",
@@ -1212,6 +1224,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.embersRekindled": "Embers Rekindled: variants",
+        f"text.autoconfig.{MOD_ID}.option.embersRekindled.@Tooltip":
+            "Generate host-matched lead and silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.biggerReactors": "Bigger Reactors: variants",
         f"text.autoconfig.{MOD_ID}.option.biggerReactors.@Tooltip":
@@ -1738,6 +1754,10 @@ def generate_data():
                 for tag, members in source_tags.items():
                     if vanilla_id in members:
                         tool_tags.setdefault(tag, []).append(entry)
+                # A mod that checks the tool tier in code instead of by tag (MCreator's canHarvestBlock):
+                # the tier read from its bytecode, written as the vanilla tag that means the same.
+                for tag in ore.get("tool_tier", ()):
+                    tool_tags.setdefault(tag, []).append(entry)
                 if mod:
                     for tag_key, members in mod_own_tool_tags.items():
                         if vanilla_id in members:

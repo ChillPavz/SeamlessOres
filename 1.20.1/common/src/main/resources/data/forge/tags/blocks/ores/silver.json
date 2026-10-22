@@ -81,6 +81,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_silentgems_silver_ore",
       "required": false
     },
@@ -94,6 +98,10 @@
     },
     {
       "id": "seamlessores:diorite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_embers_silver_ore",
       "required": false
     },
     {
@@ -113,6 +121,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_silentgems_silver_ore",
       "required": false
     },
@@ -126,6 +138,10 @@
     },
     {
       "id": "seamlessores:tuff_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_embers_silver_ore",
       "required": false
     },
     {
@@ -157,6 +173,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_oreganized_silver_ore",
       "required": false
     },
@@ -185,6 +205,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_silentgems_silver_ore",
       "required": false
     },
@@ -194,6 +218,10 @@
     },
     {
       "id": "seamlessores:create_scoria_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_embers_silver_ore",
       "required": false
     },
     {
@@ -209,6 +237,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_silentgems_silver_ore",
       "required": false
     },
@@ -218,6 +250,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_embers_silver_ore",
       "required": false
     },
     {
@@ -233,6 +269,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_bauxite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_galena_silentgems_silver_ore",
       "required": false
     },
@@ -242,6 +282,10 @@
     },
     {
       "id": "seamlessores:tfmg_galena_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_embers_silver_ore",
       "required": false
     },
     {
@@ -257,6 +301,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_lignite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_silentgems_silver_ore",
       "required": false
     },
@@ -266,6 +314,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_embers_silver_ore",
       "required": false
     },
     {
@@ -281,6 +333,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_silentgems_silver_ore",
       "required": false
     },
@@ -293,6 +349,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_silentgems_silver_ore",
       "required": false
     },
@@ -302,6 +362,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_embers_silver_ore",
       "required": false
     },
     {
@@ -370,6 +434,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_embers_silver_ore",
       "required": false
     },
     {

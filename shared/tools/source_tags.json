@@ -25,6 +25,7 @@
     "cobblemon:natural": "Cobblemon counts it as a natural block, as the ore",
     "densemekanism:dense_deepslate_ores": "",
     "densemekanism:dense_stone_ores": "",
+    "*:mineable/*": "any mod's own tools mine it at full speed, as they mine the ore",
     "immersiveengineering:mineable/*": "the mod's own tools mine it at full speed",
     "mythicmetals:mineable/*": "",
     "oreganized:mineable/*": "",

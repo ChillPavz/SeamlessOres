@@ -260,6 +260,14 @@
       "id": "seamlessores:granite_biggerreactors_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_embers_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -448,6 +456,14 @@
       "id": "seamlessores:diorite_biggerreactors_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_embers_silver_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -624,6 +640,14 @@
       "id": "seamlessores:andesite_biggerreactors_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_embers_silver_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -761,6 +785,10 @@
     },
     {
       "id": "seamlessores:dripstone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_embers_lead_ore",
       "required": false
     },
     {
@@ -1428,6 +1456,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -1597,6 +1633,14 @@
     },
     {
       "id": "seamlessores:create_scoria_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_embers_silver_ore",
       "required": false
     },
     {
@@ -1780,6 +1824,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_iron_ore",
       "required": false
     },
@@ -1932,6 +1984,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -1977,6 +2037,10 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_embers_silver_ore",
       "required": false
     },
     {
@@ -2053,6 +2117,14 @@
     },
     {
       "id": "seamlessores:tfmg_galena_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_embers_silver_ore",
       "required": false
     },
     {
@@ -2149,6 +2221,14 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_embers_silver_ore",
       "required": false
     },
     {
@@ -2313,6 +2393,14 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_embers_silver_ore",
       "required": false
     },
     {
@@ -2540,6 +2628,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_embers_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
       "required": false
     },
@@ -2629,6 +2725,14 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_embers_silver_ore",
       "required": false
     },
     {
@@ -2920,6 +3024,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_embers_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_iron_ore",
       "required": false
     },
@@ -3112,6 +3220,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_embers_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_iron_ore",
       "required": false
     },
@@ -3157,6 +3269,10 @@
     },
     {
       "id": "seamlessores:quark_jasper_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_embers_lead_ore",
       "required": false
     },
     {
@@ -3253,6 +3369,10 @@
     },
     {
       "id": "seamlessores:quark_shale_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_embers_lead_ore",
       "required": false
     },
     {
@@ -3425,6 +3545,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_embers_lead_ore",
       "required": false
     },
     {
@@ -3905,6 +4029,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_embers_lead_ore",
       "required": false
     },
     {

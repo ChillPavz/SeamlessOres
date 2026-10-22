@@ -93,6 +93,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("silentgems", "silents_gems");
         MOD_CATEGORIES.put("things", "things");
         MOD_CATEGORIES.put("biggerreactors", "bigger_reactors");
+        MOD_CATEGORIES.put("embers", "embers_rekindled");
     }
 
     /** The config screen to open, given whatever screen the player came from. */
