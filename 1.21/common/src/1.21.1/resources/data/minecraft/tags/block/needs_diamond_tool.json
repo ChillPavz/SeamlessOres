@@ -57,11 +57,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_betternether_nether_ruby_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_silentgems_nether_carnelian_ore",
       "required": false
     },
     {
       "id": "seamlessores:blackstone_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_betternether_nether_ruby_ore",
       "required": false
     },
     {
@@ -266,6 +274,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_silentgems_nether_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_betternether_nether_ruby_ore",
       "required": false
     },
     {

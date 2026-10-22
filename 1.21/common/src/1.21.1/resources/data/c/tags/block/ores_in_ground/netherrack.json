@@ -62,6 +62,14 @@
       "id": "seamlessores:basalt_rftoolsbase_dimensionalshard_nether_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_betternether_nether_ruby_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -118,6 +126,14 @@
     },
     {
       "id": "seamlessores:blackstone_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_betternether_nether_ruby_ore",
       "required": false
     },
     {
@@ -386,6 +402,14 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_betternether_nether_ruby_ore",
       "required": false
     },
     {

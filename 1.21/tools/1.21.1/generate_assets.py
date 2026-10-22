@@ -156,7 +156,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "expandeddelight": jar("expandeddelight-0.1.4.jar"),
             "theurgy": jar("theurgy-1.21.1-neoforge-1.78.0.jar"),
             "evilcraft": jar("evilcraft-1.21.1-neoforge-1.2.99.jar"),
-            "electrodynamics": jar("electrodynamics-1.21.1-1.1.0.jar")}
+            "electrodynamics": jar("electrodynamics-1.21.1-1.1.0.jar"),
+            "betternether": jar("better-nether-21.0.11.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -384,6 +385,8 @@ MODS = {
                        "licence": "CC BY 4.0 (art)", "author": "rubensworks"},
     "electrodynamics": {"display": "Electrodynamics", "category": "electrodynamics",
                        "licence": "Aurilisdev licence (credit and link)", "author": "aurilisdev, skip999"},
+    "betternether": {"display": "BetterNether", "category": "betternether",
+                       "licence": "MIT", "author": "quiqueck, paulevs"},
 }
 
 ORE_DEFS = [
@@ -1023,6 +1026,19 @@ ORE_DEFS = [
     {"name": "electrodynamics_vanadium", "overlay": "electrodynamics_vanadium", "source": "orevanadium", "base": "stone",
      "mod": "electrodynamics",
      "tiers": {"stone": "orevanadium", "deepslate": "deepslateorevanadium"}},
+    # --- BetterNether (mod id betternether; MIT): cincinnasite, nether lapis, redstone and ruby, all in netherrack ---
+    {"name": "betternether_cincinnasite", "overlay": "betternether_cincinnasite", "source": "cincinnasite_ore", "base": "netherrack",
+     "mod": "betternether",
+     "tiers": {"nether": "cincinnasite_ore"}},
+    {"name": "betternether_nether_lapis", "overlay": "betternether_nether_lapis", "source": "nether_lapis_ore", "base": "netherrack",
+     "mod": "betternether",
+     "tiers": {"nether": "nether_lapis_ore"}},
+    {"name": "betternether_nether_redstone", "overlay": "betternether_nether_redstone", "source": "nether_redstone_ore", "base": "netherrack",
+     "mod": "betternether",
+     "tiers": {"nether": "nether_redstone_ore"}},
+    {"name": "betternether_nether_ruby", "overlay": "betternether_nether_ruby", "source": "nether_ruby_ore", "base": "netherrack",
+     "mod": "betternether",
+     "tiers": {"nether": "nether_ruby_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1171,6 +1187,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "theurgy": ('neoforge',),
     "evilcraft": ('neoforge',),
     "electrodynamics": ('neoforge',),
+    "betternether": ('fabric',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1281,6 +1298,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.betternether": "BetterNether",
         f"text.autoconfig.{MOD_ID}.category.electrodynamics": "Electrodynamics",
         f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
         f"text.autoconfig.{MOD_ID}.category.theurgy": "Theurgy",
@@ -1318,6 +1336,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.betterNether": "BetterNether: variants",
+        f"text.autoconfig.{MOD_ID}.option.betterNether.@Tooltip":
+            "Generate host-matched BetterNether ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.electrodynamics": "Electrodynamics: variants",
         f"text.autoconfig.{MOD_ID}.option.electrodynamics.@Tooltip":

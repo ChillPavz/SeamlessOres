@@ -8,6 +8,10 @@ The overlays of the game's own ores are derived from Minecraft's textures and re
 Actually Additions by Ellpeck, MIT:
   assets/seamlessores/textures/block/black_quartz_overlay.png
 
+BetterNether by quiqueck, paulevs, MIT:
+  assets/seamlessores/textures/block/betternether_cincinnasite_overlay.png
+  assets/seamlessores/textures/block/betternether_nether_ruby_overlay.png
+
 Create, MIT:
   assets/seamlessores/textures/block/zinc_overlay.png
 

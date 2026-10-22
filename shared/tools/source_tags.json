@@ -53,10 +53,13 @@
     "techreborn:ores": "",
     "forge:conductive_blocks": "Iter RPG: blocks its lightning conducts through",
     "forge:fire_element": "Iter RPG: the fire element its spells read",
-    "c:electricdrillblocks": "Electrodynamics: what its electric drill can mine"
+    "c:electricdrillblocks": "Electrodynamics: what its electric drill can mine",
+    "betternether:obsidian_breaker_mineable": "BetterNether: what its obsidian breaker can mine",
+    "wover:ores/nether": "WorldWeaver (BetterNether): its list of Nether ores"
   },
   "skip": {
     "iceandfire:*dragon_cave*": "Ice and Fire PLACES blocks from these lists in dragon caves: our variants would appear there",
-    "occultism:drop_from/*": "a mob's drop list: the possessed blaze would drop our variant"
+    "occultism:drop_from/*": "a mob's drop list: the possessed blaze would drop our variant",
+    "wover:surfaces/nether/*": "WorldWeaver (BetterNether) worldgen treats these as the Nether's surface rock: a placement list"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:basalt_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_betternether_cincinnasite_ore",
+      "required": false
+    }
+  ]
+}

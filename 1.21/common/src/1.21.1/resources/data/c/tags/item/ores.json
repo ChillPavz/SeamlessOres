@@ -225,6 +225,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_betternether_nether_ruby_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
       "required": false
     },
@@ -492,6 +500,14 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_betternether_nether_ruby_ore",
       "required": false
     },
     {
@@ -5941,6 +5957,14 @@
     },
     {
       "id": "seamlessores:tuff_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_betternether_cincinnasite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_betternether_nether_ruby_ore",
       "required": false
     },
     {

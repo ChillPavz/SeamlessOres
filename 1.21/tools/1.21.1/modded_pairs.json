@@ -60,6 +60,24 @@
     "bigreactors:benitoite_ore"
    ]
   },
+  "betternether_cincinnasite": {
+   "mod": "betternether",
+   "forms": [
+    "betternether:cincinnasite_ore"
+   ]
+  },
+  "betternether_nether_lapis": {
+   "mod": "betternether",
+   "forms": [
+    "betternether:nether_lapis_ore"
+   ]
+  },
+  "betternether_nether_ruby": {
+   "mod": "betternether",
+   "forms": [
+    "betternether:nether_ruby_ore"
+   ]
+  },
   "black_quartz": {
    "mod": "actuallyadditions",
    "forms": [
@@ -18078,6 +18096,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 16.56
+   },
+   "betternether_cincinnasite": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 19.31
+   },
+   "betternether_nether_lapis": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 15.74
+   },
+   "betternether_nether_ruby": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 14.07
    },
    "blazing_quartz": {
     "where": [

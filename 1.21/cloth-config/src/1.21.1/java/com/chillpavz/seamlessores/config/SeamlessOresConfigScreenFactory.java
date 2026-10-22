@@ -101,6 +101,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("theurgy", "theurgy");
         MOD_CATEGORIES.put("evilcraft", "evilcraft");
         MOD_CATEGORIES.put("electrodynamics", "electrodynamics");
+        MOD_CATEGORIES.put("betternether", "betternether");
     }
 
     /** The config screen to open, given whatever screen the player came from. */
