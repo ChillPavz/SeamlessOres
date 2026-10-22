@@ -1,0 +1,1532 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_immersiveengineering_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mekanism_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_immersiveengineering_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_immersiveengineering_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_immersiveengineering_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_immersiveengineering_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_malum_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_malum_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_nether_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_malum_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_malum_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_malum_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_malum_blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_mysticalagriculture_prosperity_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_oreganized_silver_ore",
+      "required": false
+    }
+  ]
+}

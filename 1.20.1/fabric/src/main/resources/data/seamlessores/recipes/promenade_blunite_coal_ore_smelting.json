@@ -1,0 +1,20 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:promenade_blunite_coal_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "coal",
+  "ingredient": {
+    "item": "seamlessores:promenade_blunite_coal_ore"
+  },
+  "result": "minecraft:coal"
+}

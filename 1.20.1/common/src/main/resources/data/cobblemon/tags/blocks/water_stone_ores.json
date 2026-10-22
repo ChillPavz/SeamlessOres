@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:dripstone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_cobblemon_water_stone_ore",
+      "required": false
+    }
+  ]
+}

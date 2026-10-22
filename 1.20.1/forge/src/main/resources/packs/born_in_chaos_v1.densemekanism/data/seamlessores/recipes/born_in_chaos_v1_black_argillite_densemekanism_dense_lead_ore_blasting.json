@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.6,
+  "group": "lead_ingot",
+  "ingredient": {
+    "item": "seamlessores:born_in_chaos_v1_black_argillite_densemekanism_dense_lead_ore"
+  },
+  "result": "mekanism:raw_lead"
+}

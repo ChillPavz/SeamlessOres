@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:andesite_silentgems_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentgems_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_carnelian_ore",
+      "required": false
+    }
+  ]
+}

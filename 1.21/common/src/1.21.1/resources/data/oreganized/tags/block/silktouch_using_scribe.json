@@ -1,0 +1,248 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_oreganized_silver_ore",
+      "required": false
+    }
+  ]
+}

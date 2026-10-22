@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:twigs_schist_cobblemon_shiny_stone_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "group": "shiny_stone",
+  "ingredient": {
+    "item": "seamlessores:twigs_schist_cobblemon_shiny_stone_ore"
+  },
+  "result": "cobblemon:shiny_stone",
+  "experience": 0.1,
+  "cookingtime": 200
+}

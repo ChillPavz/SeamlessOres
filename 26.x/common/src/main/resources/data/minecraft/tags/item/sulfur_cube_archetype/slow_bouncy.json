@@ -1,0 +1,227 @@
+{
+  "values": [
+    "seamlessores:granite_coal_ore",
+    "seamlessores:granite_lapis_ore",
+    "seamlessores:granite_diamond_ore",
+    "seamlessores:granite_emerald_ore",
+    "seamlessores:granite_redstone_ore",
+    "seamlessores:diorite_coal_ore",
+    "seamlessores:diorite_lapis_ore",
+    "seamlessores:diorite_diamond_ore",
+    "seamlessores:diorite_emerald_ore",
+    "seamlessores:diorite_redstone_ore",
+    "seamlessores:andesite_coal_ore",
+    "seamlessores:andesite_lapis_ore",
+    "seamlessores:andesite_diamond_ore",
+    "seamlessores:andesite_emerald_ore",
+    "seamlessores:andesite_redstone_ore",
+    "seamlessores:tuff_coal_ore",
+    "seamlessores:tuff_lapis_ore",
+    "seamlessores:tuff_diamond_ore",
+    "seamlessores:tuff_emerald_ore",
+    "seamlessores:tuff_redstone_ore",
+    "seamlessores:dripstone_coal_ore",
+    "seamlessores:dripstone_lapis_ore",
+    "seamlessores:dripstone_diamond_ore",
+    "seamlessores:dripstone_emerald_ore",
+    "seamlessores:dripstone_redstone_ore",
+    {
+      "id": "seamlessores:cinnabar_redstone_ore",
+      "required": false
+    },
+    "seamlessores:basalt_nether_quartz_ore",
+    "seamlessores:blackstone_nether_quartz_ore",
+    {
+      "id": "seamlessores:blackstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_citrine_schist_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_peridot_schist_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_topaz_schist_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_redstone_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:blockus_marble_malum_brilliant_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "seamlessores:blockus_marble_malum_brilliant_ore"
+  },
+  "result": {
+    "count": 2,
+    "item": "malum:chunk_of_brilliance"
+  }
+}

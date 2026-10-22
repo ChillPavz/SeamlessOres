@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:diorite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_cobblemon_ice_stone_ore",
+      "required": false
+    }
+  ]
+}

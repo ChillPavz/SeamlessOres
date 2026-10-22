@@ -1,0 +1,175 @@
+{
+  "values": [
+    "seamlessores:granite_gold_ore",
+    "seamlessores:diorite_gold_ore",
+    "seamlessores:andesite_gold_ore",
+    "seamlessores:tuff_gold_ore",
+    "seamlessores:dripstone_gold_ore",
+    {
+      "id": "seamlessores:cinnabar_gold_ore",
+      "required": false
+    },
+    "seamlessores:basalt_nether_gold_ore",
+    "seamlessores:blackstone_nether_gold_ore",
+    {
+      "id": "seamlessores:minecraft_blackstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_citrine_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_peridot_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_topaz_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_gold_ore",
+      "required": false
+    }
+  ]
+}

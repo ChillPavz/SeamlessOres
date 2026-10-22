@@ -1,0 +1,88 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_immersiveengineering_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_immersiveengineering_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_immersiveengineering_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_immersiveengineering_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_immersiveengineering_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_immersiveengineering_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_immersiveengineering_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_immersiveengineering_silver_ore",
+      "required": false
+    }
+  ]
+}

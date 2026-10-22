@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "seamlessores:create_scorchia_malum_blazing_quartz_ore"
+  },
+  "result": "malum:blazing_quartz"
+}

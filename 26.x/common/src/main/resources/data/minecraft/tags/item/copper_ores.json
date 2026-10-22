@@ -1,0 +1,85 @@
+{
+  "values": [
+    "seamlessores:granite_copper_ore",
+    "seamlessores:diorite_copper_ore",
+    "seamlessores:andesite_copper_ore",
+    "seamlessores:tuff_copper_ore",
+    "seamlessores:dripstone_copper_ore",
+    {
+      "id": "seamlessores:blackstone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_citrine_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_peridot_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_topaz_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_copper_ore",
+      "required": false
+    }
+  ]
+}

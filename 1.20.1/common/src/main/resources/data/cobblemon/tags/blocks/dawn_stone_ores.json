@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_dawn_stone_ore",
+      "required": false
+    }
+  ]
+}

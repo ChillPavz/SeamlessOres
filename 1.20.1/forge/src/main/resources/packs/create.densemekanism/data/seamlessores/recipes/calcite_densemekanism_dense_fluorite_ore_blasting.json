@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.6,
+  "group": "fluorite_gem",
+  "ingredient": {
+    "item": "seamlessores:calcite_densemekanism_dense_fluorite_ore"
+  },
+  "result": "mekanism:fluorite_gem"
+}

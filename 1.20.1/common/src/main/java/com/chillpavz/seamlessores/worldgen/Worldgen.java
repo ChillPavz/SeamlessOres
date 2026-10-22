@@ -1,6 +1,7 @@
 package com.chillpavz.seamlessores.worldgen;
 
 import com.chillpavz.seamlessores.Constants;
+import com.chillpavz.seamlessores.content.SourceDrift;
 import net.minecraft.core.RegistryAccess;
 
 import java.util.Set;
@@ -18,6 +19,9 @@ public final class Worldgen {
 
     /** The ore targets (both sides), the large veins, the dripstone shell swap and the Lush Caves patches. */
     public static void onServerStarting(RegistryAccess registries) {
+        // Hardness, blast resistance and experience are fixed when our blocks are built: say so once if a
+        // source ore has since changed (a mod update, a modpack script).
+        run("Source drift", SourceDrift::check);
         // Vanilla Backport's Sulfur Caves first: the ore side asks whether they are on.
         run("Sulfur Caves", () -> SulfurCaves.prepare(registries));
         run(OreSideInjector.NAME, () -> OreSideInjector.inject(registries, ERA));

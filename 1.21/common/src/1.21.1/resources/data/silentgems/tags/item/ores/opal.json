@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:tuff_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silentgems_opal_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "mythicupgrades:topaz_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.4,
+  "ingredient": {
+    "item": "seamlessores:granite_mythicupgrades_topaz_ore"
+  },
+  "result": "mythicupgrades:topaz"
+}

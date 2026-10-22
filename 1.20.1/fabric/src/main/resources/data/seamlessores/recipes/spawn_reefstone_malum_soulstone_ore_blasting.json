@@ -1,0 +1,21 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:spawn_reefstone_malum_soulstone_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "seamlessores:spawn_reefstone_malum_soulstone_ore"
+  },
+  "result": {
+    "count": 2,
+    "item": "malum:processed_soulstone"
+  }
+}

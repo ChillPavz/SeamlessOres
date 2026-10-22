@@ -42,6 +42,7 @@ import zipfile
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
                                 "shared", "tools"))
 import assetgen  # noqa: E402
+import parity  # noqa: E402
 import placed  # noqa: E402
 import renamed  # noqa: E402
 import retired  # noqa: E402
@@ -195,6 +196,22 @@ CLIENT_JAR = None
 CURRENT_PROFILE = None
 MOD_JARS = {}
 IN_RANGE_AVAILABILITY = {}
+
+
+_SOURCE_TAGS = None
+
+
+def all_source_tags():
+    """Every tag of every profile's jars at once (parity.SourceTags). One union, not one per version:
+    tags go in the base every version reads, and an entry for a variant or a tag a version lacks is
+    inert there (optional entry; a tag nothing reads)."""
+    global _SOURCE_TAGS
+    if _SOURCE_TAGS is None:
+        jars = [os.path.expanduser(j) for j in CLIENT_JARS.values()] + list(COMMON_JARS.values())
+        for profile in PROFILES.values():
+            jars += profile["jars"].values()
+        _SOURCE_TAGS = parity.SourceTags(sorted(set(jars)))
+    return _SOURCE_TAGS
 
 
 def use_profile(version):
@@ -879,7 +896,8 @@ def write_material_tags(conv, conv_block, conv_item, entry_mod):
             shutil.rmtree(stale)
     for kind, table in (("block", conv_block), ("item", conv_item)):
         for ore, values in table.items():
-            rel = os.path.join("tags", kind, "ores", f"{ore}.json")
+            # An ore name is c:ores/<name>; a key with a slash is a whole path (c:ore_rates/dense).
+            rel = os.path.join("tags", kind, *(ore.split("/") if "/" in ore else ("ores", ore))) + ".json"
             shared = os.path.join(conv, rel)
             # A mod's entries go to that mod's conditional pack; an optional entry that belongs to
             # no mod (a cinnabar variant, absent on 26.1) is shared like a plain one.
@@ -1283,6 +1301,8 @@ def generate_data():
     conv_item = {}
     ores_in_ground = {}
     entry_mod = {}      # a modded tag entry's id -> the mod that variant belongs to
+    copied_tags = {}    # (kind, tag) -> entries: every other tag the source ore is in (parity.py)
+    tags_of_sources = all_source_tags()
 
     with zipfile.ZipFile(CLIENT_JAR) as jar:
 
@@ -1320,6 +1340,9 @@ def generate_data():
                             table = json.load(handle)
                     except KeyError:
                         raise SystemExit(f"  !! {os.path.basename(jar_path)} has no {loot_path} (needed by {name})")
+                # The source ore's own smelting and blasting recipes, taking the variant: written beside
+                # its loot table, under the same conditions, so it exists exactly where the variant does.
+                recipes = parity.cooking_copies(jar_path, source_id, our_id, name)
                 silk_touch_to(table, source_id, our_id, name, CURRENT_PROFILE)
                 # Non-Silk-Touch drops run the source ore's own table, so pack edits to it carry over.
                 table = defer_to_source(table, source_id, our_id, "value")
@@ -1341,8 +1364,13 @@ def generate_data():
                     for module in loot_modules(gate):
                         write_json(os.path.join(conditional_data_dir(module, MOD_ID),
                                                 "loot_table", "blocks", f"{name}.json"), {**conditions, **table})
+                        for stem, recipe in recipes.items():
+                            write_json(os.path.join(conditional_data_dir(module, MOD_ID), "recipe", f"{stem}.json"),
+                                       {**conditions, **recipe})
                 else:
                     write_json(os.path.join(ours, "loot_table", "blocks", f"{name}.json"), table)
+                    for stem, recipe in recipes.items():
+                        write_json(os.path.join(ours, "recipe", f"{stem}.json"), recipe)
 
                 # --- tags -------------------------------------------------------------------
                 # A variant that needs a mod, or a block only some versions have, may be absent, so its
@@ -1361,6 +1389,10 @@ def generate_data():
                             foreign_tool_tags.setdefault(tag_key, []).append(entry)
                 conv_block.setdefault(ore["name"], []).append(entry)
                 conv_item.setdefault(ore["name"], []).append(entry)
+                # Every other tag the source ore is in, as reviewed in source_tags.json: piglins guard a
+                # gold variant, the drills of Tech Reborn and Mythic Metals mine it, and from 26.3 it
+                # blocks motion and fluids and suffocates (tags, no longer block properties).
+                parity.add_tag_entries(copied_tags, tags_of_sources.tags_for(source_id), entry)
                 # TAG PARITY with the ore we stand in for: every c:ores/<x> tag its counterpart is in,
                 # read from that mod's own jar. The name-keyed tag above stays, so nothing a published
                 # release put into a tag is ever taken back out, but on its own it was WRONG for every
@@ -1395,6 +1427,14 @@ def generate_data():
     all_ids = sorted(mineable, key=lambda e: e["id"] if isinstance(e, dict) else e)
     write_json(os.path.join(conv, "tags", "block", "ores.json"), {"values": all_ids})
     write_json(os.path.join(conv, "tags", "item", "ores.json"), {"values": all_ids})
+    tags_of_sources.check()
+    for (kind, tag), values in sorted(copied_tags.items()):
+        namespace, path = tag.split(":", 1)
+        if namespace == "c":
+            # A convention tag goes the way the c:ores/<x> tags go (per-mod packs on Fabric).
+            (conv_block if kind == "block" else conv_item)[path] = values
+        else:
+            write_json(os.path.join(data_dir(namespace), "tags", kind, f"{path}.json"), {"values": values})
     write_material_tags(conv, conv_block, conv_item, entry_mod)
     for ground, values in ores_in_ground.items():
         write_json(
@@ -1676,7 +1716,8 @@ def overlay_path(path, overlay):
 
 
 def is_loot(path):
-    return (os.sep + "loot_table" + os.sep) in path
+    """A file written once per Minecraft version: a loot table, or a cooking recipe beside it."""
+    return (os.sep + "loot_table" + os.sep) in path or (os.sep + MOD_ID + os.sep + "recipe" + os.sep) in path
 
 
 def scaled_count(count, factor):
@@ -1830,9 +1871,10 @@ def generate_versioned_data():
     for module in ("common", "fabric", "neoforge"):
         resources = os.path.join(repo_root(), module, "src", "main", "resources")
         for folder in [""] + [profile["overlay"] for profile in PROFILES.values()]:
-            loot = os.path.join(resources, folder, "data", MOD_ID, "loot_table")
-            if os.path.isdir(loot):
-                shutil.rmtree(loot)
+            for tree in ("loot_table", "recipe"):
+                loot = os.path.join(resources, folder, "data", MOD_ID, tree)
+                if os.path.isdir(loot):
+                    shutil.rmtree(loot)
 
     for path, (_version, data) in base.items():
         write_json(path, data)

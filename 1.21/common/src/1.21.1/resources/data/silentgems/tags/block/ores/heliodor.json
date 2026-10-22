@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_silentgems_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentgems_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_heliodor_ore",
+      "required": false
+    }
+  ]
+}

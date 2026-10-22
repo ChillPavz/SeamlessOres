@@ -1,0 +1,20 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:smooth_basalt_expores_nether_experience_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 10.0,
+  "group": "experience",
+  "ingredient": {
+    "item": "seamlessores:smooth_basalt_expores_nether_experience_ore"
+  },
+  "result": "minecraft:air"
+}

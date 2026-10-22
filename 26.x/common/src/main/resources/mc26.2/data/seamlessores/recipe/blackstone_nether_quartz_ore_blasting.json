@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.2,
+  "ingredient": "seamlessores:blackstone_nether_quartz_ore",
+  "result": {
+    "id": "minecraft:quartz"
+  }
+}

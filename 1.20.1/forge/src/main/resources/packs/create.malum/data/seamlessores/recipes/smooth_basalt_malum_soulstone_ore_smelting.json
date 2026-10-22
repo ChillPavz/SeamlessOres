@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "seamlessores:smooth_basalt_malum_soulstone_ore"
+  },
+  "result": {
+    "count": 2,
+    "item": "malum:processed_soulstone"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "dawn_stone",
+  "ingredient": {
+    "item": "seamlessores:granite_cobblemon_dawn_stone_ore"
+  },
+  "result": "cobblemon:dawn_stone",
+  "experience": 0.1,
+  "cookingtime": 100
+}

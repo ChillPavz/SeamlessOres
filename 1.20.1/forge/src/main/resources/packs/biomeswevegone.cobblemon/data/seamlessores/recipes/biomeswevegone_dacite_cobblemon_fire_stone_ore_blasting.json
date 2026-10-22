@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "fire_stone",
+  "ingredient": {
+    "item": "seamlessores:biomeswevegone_dacite_cobblemon_fire_stone_ore"
+  },
+  "result": "cobblemon:fire_stone",
+  "experience": 0.1,
+  "cookingtime": 100
+}

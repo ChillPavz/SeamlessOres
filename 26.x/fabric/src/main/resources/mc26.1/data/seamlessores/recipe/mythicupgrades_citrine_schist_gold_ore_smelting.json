@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:mythicupgrades_citrine_schist_gold_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythicupgrades"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "gold_ingot",
+  "ingredient": "seamlessores:mythicupgrades_citrine_schist_gold_ore",
+  "result": {
+    "id": "minecraft:gold_ingot"
+  }
+}

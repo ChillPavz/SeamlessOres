@@ -1,0 +1,412 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_silentgems_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_silentgems_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_silentgems_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_silentgems_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_silentgems_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_silentgems_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_silentgems_turquoise_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_silentgems_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentgems_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentgems_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentgems_turquoise_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentgems_white_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentgems_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_silentgems_turquoise_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_silentgems_turquoise_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_silentgems_turquoise_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_silentgems_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentgems_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentgems_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentgems_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentgems_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_silentgems_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_turquoise_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silentgems_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silentgems_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silentgems_opal_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:blockus_limestone_mythicupgrades_citrine_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.4,
+  "ingredient": {
+    "item": "seamlessores:blockus_limestone_mythicupgrades_citrine_ore"
+  },
+  "result": "mythicupgrades:citrine"
+}

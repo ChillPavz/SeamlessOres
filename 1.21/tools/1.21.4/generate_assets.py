@@ -35,6 +35,7 @@ import zipfile
 
 # The overlay art lives once, in the repository's shared/textures pool (shared/tools/assetgen.py).
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "shared", "tools"))
+import parity  # noqa: E402
 from assetgen import (POOL, TOOL_TAGS, assert_no_dashes, era_file, jar, jar_tags,  # noqa: E402
                       look_models, read_mod_tags, defer_to_source, silk_touch_to, stone_name, texture_path, title,
                       write_json, write_texture_json)
@@ -732,7 +733,8 @@ def write_material_tags(conv, conv_block, conv_item, entry_mod):
             shutil.rmtree(stale)
     for kind, table in (("block", conv_block), ("item", conv_item)):
         for ore, values in table.items():
-            rel = os.path.join("tags", kind, "ores", f"{ore}.json")
+            # An ore name is c:ores/<name>; a key with a slash is a whole path (c:ore_rates/dense).
+            rel = os.path.join("tags", kind, *(ore.split("/") if "/" in ore else ("ores", ore))) + ".json"
             shared = os.path.join(conv, rel)
             # A mod's entries go to that mod's conditional pack; an optional entry that belongs to
             # no mod (the game's ore in a stone another mod places) is shared like a plain one.
@@ -1090,6 +1092,8 @@ def generate_data():
     # longer exists: cleared first, as 26.x does, so a host or ore taken out leaves nothing behind.
     trees = [os.path.join(data_dir(MOD_ID), "loot_table")] + [
         os.path.join(conditional_data_dir(m, MOD_ID), "loot_table") for m in ("fabric", "neoforge", "forge")]
+    # The cooking recipes beside them (parity.cooking_copies), cleared the same way.
+    trees += [os.path.join(os.path.dirname(tree), "recipe") for tree in list(trees)]
     for tree in trees:
         if os.path.isdir(tree):
             shutil.rmtree(tree)
@@ -1108,6 +1112,8 @@ def generate_data():
     conv_block = {}
     conv_item = {}
     ores_in_ground = {}
+    copied_tags = {}    # (kind, tag) -> entries: every other tag the source ore is in (parity.py)
+    tags_of_sources = parity.SourceTags([CLIENT_JAR] + sorted(set(MOD_JARS.values())))
     entry_mod = {}      # a modded tag entry's id -> the mod that variant belongs to
 
     with zipfile.ZipFile(CLIENT_JAR) as jar:
@@ -1169,6 +1175,9 @@ def generate_data():
                     # Non-Silk-Touch drops run the source ore's own table, so pack edits to it carry over.
                     table = defer_to_source(table, vanilla_id, our_id, "value")
                     table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
+                # The source ore's own smelting and blasting recipes, taking the variant: written beside
+                # its loot table, under the same conditions, so it exists exactly where the variant does.
+                recipes = parity.cooking_copies(CLIENT_JAR if mod is None else MOD_JARS[mod], vanilla_id, our_id, name)
                 if gate:
                     # All three loaders' conditions keep it inert without the mods of its gate (the
                     # one that places its stone, the ore's own); each loader ignores the other two
@@ -1190,8 +1199,13 @@ def generate_data():
                     for module in modules:
                         write_json(os.path.join(conditional_data_dir(module, MOD_ID),
                                                 "loot_table", "blocks", f"{name}.json"), table)
+                        for stem, recipe in recipes.items():
+                            write_json(os.path.join(conditional_data_dir(module, MOD_ID), "recipe", f"{stem}.json"),
+                                       {**conditions, **recipe})
                 else:
                     write_json(os.path.join(ours, "loot_table", "blocks", f"{name}.json"), table)
+                    for stem, recipe in recipes.items():
+                        write_json(os.path.join(ours, "recipe", f"{stem}.json"), recipe)
 
                 # --- tags -------------------------------------------------------------------
                 # A modded variant's block only exists when its mod is loaded, so its tag entries
@@ -1210,6 +1224,11 @@ def generate_data():
                             foreign_tool_tags.setdefault(tag_key, []).append(entry)
                 conv_block.setdefault(ore["name"], []).append(entry)
                 conv_item.setdefault(ore["name"], []).append(entry)
+                # Every other tag the source ore is in, as reviewed in source_tags.json: piglins guard a
+                # gold variant, the drills of Tech Reborn and Mythic Metals mine it. Not for an ore its
+                # own mod keeps out of every convention tag ("untagged").
+                if not ore.get("untagged", False):
+                    parity.add_tag_entries(copied_tags, tags_of_sources.tags_for(vanilla_id), entry)
                 # TAG PARITY with the ore we stand in for: every c:ores/<x> tag its counterpart is in,
                 # read from that mod's own jar. The name-keyed tag above stays, so nothing a published
                 # release put into a tag is ever taken back out, but on its own it was WRONG for every
@@ -1240,6 +1259,14 @@ def generate_data():
     all_ids = sorted(mineable, key=lambda e: e["id"] if isinstance(e, dict) else e)
     write_json(os.path.join(conv, "tags", "block", "ores.json"), {"values": all_ids})
     write_json(os.path.join(conv, "tags", "item", "ores.json"), {"values": all_ids})
+    tags_of_sources.check()
+    for (kind, tag), values in sorted(copied_tags.items()):
+        namespace, path = tag.split(":", 1)
+        if namespace == "c":
+            # A convention tag goes the way the c:ores/<x> tags go (per-mod packs on Fabric).
+            (conv_block if kind == "block" else conv_item)[path] = values
+        else:
+            write_json(os.path.join(data_dir(namespace), "tags", kind, f"{path}.json"), {"values": values})
     write_material_tags(conv, conv_block, conv_item, entry_mod)
     for ground, values in ores_in_ground.items():
         write_json(

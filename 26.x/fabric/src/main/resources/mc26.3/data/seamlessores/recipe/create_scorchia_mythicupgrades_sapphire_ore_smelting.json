@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:create_scorchia_mythicupgrades_sapphire_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythicupgrades"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1.4,
+  "group": "sapphire",
+  "ingredient": "seamlessores:create_scorchia_mythicupgrades_sapphire_ore",
+  "result": {
+    "id": "mythicupgrades:sapphire"
+  }
+}

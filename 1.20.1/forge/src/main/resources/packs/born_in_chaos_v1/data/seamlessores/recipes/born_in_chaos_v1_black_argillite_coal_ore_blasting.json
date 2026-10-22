@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "coal",
+  "ingredient": {
+    "item": "seamlessores:born_in_chaos_v1_black_argillite_coal_ore"
+  },
+  "result": "minecraft:coal"
+}

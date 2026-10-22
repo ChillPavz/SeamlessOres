@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.6,
+  "group": "uranium_ingot",
+  "ingredient": {
+    "item": "seamlessores:twigs_schist_densemekanism_dense_uranium_ore"
+  },
+  "result": "mekanism:raw_uranium"
+}

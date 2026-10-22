@@ -1,0 +1,18 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "modern_industrialization:tin_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:granite_modern_industrialization_tin_ore"
+  },
+  "result": "modern_industrialization:tin_ingot"
+}

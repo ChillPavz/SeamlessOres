@@ -1,0 +1,157 @@
+{
+  "values": [
+    "seamlessores:granite_iron_ore",
+    "seamlessores:diorite_iron_ore",
+    "seamlessores:andesite_iron_ore",
+    "seamlessores:tuff_iron_ore",
+    "seamlessores:dripstone_iron_ore",
+    {
+      "id": "seamlessores:cinnabar_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_citrine_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_peridot_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_topaz_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_iron_ore",
+      "required": false
+    }
+  ]
+}

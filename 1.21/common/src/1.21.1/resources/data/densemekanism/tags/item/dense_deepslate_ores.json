@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:tuff_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_densemekanism_dense_uranium_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_silentgems_garnet_ore",
+      "required": false
+    }
+  ]
+}

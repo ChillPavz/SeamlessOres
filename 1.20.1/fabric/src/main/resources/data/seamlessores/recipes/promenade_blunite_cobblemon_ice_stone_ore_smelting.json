@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:promenade_blunite_cobblemon_ice_stone_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "group": "ice_stone",
+  "ingredient": {
+    "item": "seamlessores:promenade_blunite_cobblemon_ice_stone_ore"
+  },
+  "result": "cobblemon:ice_stone",
+  "experience": 0.1,
+  "cookingtime": 200
+}

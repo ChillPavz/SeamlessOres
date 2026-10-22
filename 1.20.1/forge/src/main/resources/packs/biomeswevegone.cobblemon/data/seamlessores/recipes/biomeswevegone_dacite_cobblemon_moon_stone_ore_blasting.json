@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "moon_stone",
+  "ingredient": {
+    "item": "seamlessores:biomeswevegone_dacite_cobblemon_moon_stone_ore"
+  },
+  "result": "cobblemon:moon_stone",
+  "experience": 0.1,
+  "cookingtime": 100
+}

@@ -1,0 +1,18 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "modern_industrialization:lead_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:dripstone_modern_industrialization_lead_ore"
+  },
+  "result": "modern_industrialization:lead_ingot"
+}

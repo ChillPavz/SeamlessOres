@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.1,
+  "group": "coal",
+  "ingredient": "seamlessores:tuff_coal_ore",
+  "result": {
+    "id": "minecraft:coal"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_thunder_stone_ore",
+      "required": false
+    }
+  ]
+}

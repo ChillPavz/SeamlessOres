@@ -1,0 +1,64 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_mekanism_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mekanism_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mekanism_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mekanism_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mekanism_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_mekanism_lead_ore",
+      "required": false
+    }
+  ]
+}

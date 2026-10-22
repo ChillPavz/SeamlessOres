@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:basalt_mythicmetals_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_mythicmetals_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_stormyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_stormyx_ore",
+      "required": false
+    }
+  ]
+}

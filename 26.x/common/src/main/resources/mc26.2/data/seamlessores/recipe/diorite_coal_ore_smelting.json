@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.1,
+  "group": "coal",
+  "ingredient": "seamlessores:diorite_coal_ore",
+  "result": {
+    "id": "minecraft:coal"
+  }
+}

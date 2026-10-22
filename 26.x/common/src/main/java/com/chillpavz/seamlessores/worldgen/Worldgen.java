@@ -2,6 +2,7 @@ package com.chillpavz.seamlessores.worldgen;
 
 import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.content.MatrixAliases;
+import com.chillpavz.seamlessores.content.SourceDrift;
 import com.google.gson.JsonObject;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
@@ -59,6 +60,9 @@ public final class Worldgen {
      * patches. The Sulfur Caves switch is read first, because the era's vein pass asks it.
      */
     public static void onServerStarting(RegistryAccess registries) {
+        // Hardness, blast resistance and experience are fixed when our blocks are built: say so once if a
+        // source ore has since changed (a mod update, a modpack script).
+        run("Source drift", SourceDrift::check);
         SulfurCaves.prepare(registries);
         if (MatrixAliases.oldModInstalled()) {
             // The retired Seamless Ores: Matrix is still installed and places the ores it swallows in

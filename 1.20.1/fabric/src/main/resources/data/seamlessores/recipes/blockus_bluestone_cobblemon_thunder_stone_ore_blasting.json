@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:blockus_bluestone_cobblemon_thunder_stone_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "group": "thunder_stone",
+  "ingredient": {
+    "item": "seamlessores:blockus_bluestone_cobblemon_thunder_stone_ore"
+  },
+  "result": "cobblemon:thunder_stone",
+  "experience": 0.1,
+  "cookingtime": 100
+}

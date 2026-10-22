@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "seamlessores:born_in_chaos_v1_black_argillite_iceandfire_silver_ore"
+  },
+  "result": "iceandfire:silver_ingot",
+  "experience": 0.35,
+  "cookingtime": 200
+}

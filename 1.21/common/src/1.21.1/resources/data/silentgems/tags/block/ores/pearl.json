@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_pearl_ore",
+      "required": false
+    }
+  ]
+}

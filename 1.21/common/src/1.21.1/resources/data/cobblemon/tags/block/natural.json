@@ -1,0 +1,508 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_cobblemon_nether_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_nether_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_shiny_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_cobblemon_ice_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_dawn_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_moon_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_sun_stone_ore",
+      "required": false
+    }
+  ]
+}

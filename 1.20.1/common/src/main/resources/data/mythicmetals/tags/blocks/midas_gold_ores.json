@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:basalt_mythicmetals_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_mythicmetals_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_mythicmetals_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_mythicmetals_midas_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_midas_gold_ore",
+      "required": false
+    }
+  ]
+}

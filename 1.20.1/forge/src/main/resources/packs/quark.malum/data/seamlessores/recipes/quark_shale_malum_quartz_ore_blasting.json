@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "seamlessores:quark_shale_malum_quartz_ore"
+  },
+  "result": "malum:natural_quartz"
+}

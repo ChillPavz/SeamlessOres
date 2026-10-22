@@ -1,0 +1,56 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:andesite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_cobblemon_dusk_stone_ore",
+      "required": false
+    }
+  ]
+}

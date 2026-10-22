@@ -1,0 +1,41 @@
+{
+  "values": [
+    "seamlessores:granite_lapis_ore",
+    "seamlessores:diorite_lapis_ore",
+    "seamlessores:andesite_lapis_ore",
+    "seamlessores:tuff_lapis_ore",
+    "seamlessores:dripstone_lapis_ore",
+    {
+      "id": "seamlessores:blockus_marble_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_lapis_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_densemekanism_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_densemekanism_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_densemekanism_dense_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_densemekanism_dense_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_densemekanism_dense_tin_ore",
+      "required": false
+    }
+  ]
+}

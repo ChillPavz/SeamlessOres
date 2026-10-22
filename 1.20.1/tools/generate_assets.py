@@ -38,6 +38,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 from assetgen import (POOL, TOOL_TAGS, assert_no_dashes, era_file, jar, jar_tags,  # noqa: E402
                       look_models, read_mod_tags, defer_to_source, silk_touch_to, stone_name, texture_path, title,
                       write_json, write_texture_json)
+import parity  # noqa: E402
 import placed  # noqa: E402
 import cinnabar  # noqa: E402
 import renamed  # noqa: E402
@@ -60,6 +61,7 @@ PACK_FORMAT = 15
 LOOT_DIR = "loot_tables"
 TAG_BLOCK_DIR = ("tags", "blocks")
 TAG_ITEM_DIR = ("tags", "items")
+RECIPE_DIR = "recipes"
 
 # Common-tag namespaces. At 1.20.x the ecosystem is SPLIT - Fabric uses `c:` and Forge uses
 # `forge:` - where 1.21+ settled on `c:` for both. Both are written: the one a given loader does
@@ -1572,6 +1574,8 @@ def generate_data():
         os.path.join(conditional_data_dir(m, MOD_ID), LOOT_DIR) for m in ("fabric",)]
     packs = os.path.join(repo_root(), "forge", "src", "main", "resources", "packs")
     trees += [os.path.join(packs, p, "data", MOD_ID, LOOT_DIR) for p in os.listdir(packs)]
+    # The cooking recipes beside them (parity.cooking_copies), cleared the same way.
+    trees += [os.path.join(os.path.dirname(tree), RECIPE_DIR) for tree in list(trees)]
     for tree in trees:
         if os.path.isdir(tree):
             shutil.rmtree(tree)
@@ -1593,6 +1597,8 @@ def generate_data():
     conv_block = {}
     conv_item = {}
     ores_in_ground = {}
+    copied_tags = {}    # (kind, tag) -> entries: every other tag the source ore is in (parity.py)
+    tags_of_sources = parity.SourceTags([CLIENT_JAR] + sorted(set(MOD_JARS.values())))
 
     with zipfile.ZipFile(CLIENT_JAR) as jar:
 
@@ -1671,6 +1677,9 @@ def generate_data():
                     # Non-Silk-Touch drops run the source ore's own table, so pack edits to it carry over.
                     table = defer_to_source(table, vanilla_id, our_id, "name")
 
+                # The source ore's own smelting and blasting recipes, taking the variant: written beside
+                # its loot table, by the same route, so it exists exactly where the variant does.
+                recipes = parity.cooking_copies(CLIENT_JAR if mod is None else MOD_JARS[mod], vanilla_id, our_id, name)
                 if gate:
                     # Fabric's conditions keep it inert without the mods of its gate; a variant in a
                     # stone another mod places tests for its own block, which exists only with all of
@@ -1689,14 +1698,22 @@ def generate_data():
                     if "fabric" in modules:
                         write_json(os.path.join(conditional_data_dir("fabric", MOD_ID),
                                                 LOOT_DIR, "blocks", f"{name}.json"), fabric_table)
+                        for stem, recipe in recipes.items():
+                            write_json(os.path.join(conditional_data_dir("fabric", MOD_ID), RECIPE_DIR, f"{stem}.json"),
+                                       {"fabric:load_conditions": fabric_table["fabric:load_conditions"], **recipe})
                     if "forge" in modules:
                         # Into that mod's own built-in datapack, with no condition keys: the pack is
                         # only offered to the game when the mod is loaded, so the file is never read
                         # otherwise. Forge 1.20.1 cannot gate it any other way.
                         write_json(os.path.join(forge_pack_data_dir(pack_of(gate), MOD_ID),
                                                 LOOT_DIR, "blocks", f"{name}.json"), table)
+                        for stem, recipe in recipes.items():
+                            write_json(os.path.join(forge_pack_data_dir(pack_of(gate), MOD_ID), RECIPE_DIR,
+                                                    f"{stem}.json"), recipe)
                 else:
                     write_json(os.path.join(ours, LOOT_DIR, "blocks", f"{name}.json"), table)
+                    for stem, recipe in recipes.items():
+                        write_json(os.path.join(ours, RECIPE_DIR, f"{stem}.json"), recipe)
 
                 # --- tags -------------------------------------------------------------------
                 # A modded variant's block only exists when its mod is loaded, so its tag entries
@@ -1719,6 +1736,10 @@ def generate_data():
                 if not untagged:
                     conv_block.setdefault(ore["name"], []).append(entry)
                     conv_item.setdefault(ore["name"], []).append(entry)
+                # Every other tag the source ore is in, as reviewed in source_tags.json: piglins guard a
+                # gold variant, the mods' own drills mine it. Not for an "untagged" ore.
+                if not untagged:
+                    parity.add_tag_entries(copied_tags, tags_of_sources.tags_for(vanilla_id), entry)
                 # TAG PARITY with the ore we stand in for: every common ore tag its counterpart is in,
                 # read from that mod's own jar, in its own namespace and shape (forge:ores/tin,
                 # c:tin_ores). The name-keyed tags above stay, so nothing a published release put into a
@@ -1766,8 +1787,8 @@ def generate_data():
             block_tags[(namespace, f"ores/{ore}")] = list(values)
         for ore, values in conv_item.items():
             item_tags[(namespace, f"ores/{ore}")] = list(values)
-    for tags, parity in ((block_tags, parity_block), (item_tags, parity_item)):
-        for key, values in parity.items():
+    for tags, joined in ((block_tags, parity_block), (item_tags, parity_item)):
+        for key, values in joined.items():
             merged = tags.setdefault(key, [])
             known = {e["id"] if isinstance(e, dict) else e for e in merged}
             merged += [e for e in values if (e["id"] if isinstance(e, dict) else e) not in known]
@@ -1775,6 +1796,11 @@ def generate_data():
         write_json(os.path.join(data_dir(namespace), *TAG_BLOCK_DIR, f"{path}.json"), {"values": values})
     for (namespace, path), values in item_tags.items():
         write_json(os.path.join(data_dir(namespace), *TAG_ITEM_DIR, f"{path}.json"), {"values": values})
+    tags_of_sources.check()
+    for (kind, tag), values in sorted(copied_tags.items()):
+        namespace, path = tag.split(":", 1)
+        write_json(os.path.join(data_dir(namespace), *(TAG_BLOCK_DIR if kind == "block" else TAG_ITEM_DIR),
+                                f"{path}.json"), {"values": values})
     for namespace in CONVENTION_NAMESPACES:
         for ground, values in ores_in_ground.items():
             write_json(

@@ -1,0 +1,20 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:twigs_rhyolite_redstone_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "redstone",
+  "ingredient": {
+    "item": "seamlessores:twigs_rhyolite_redstone_ore"
+  },
+  "result": "minecraft:redstone"
+}

@@ -1,0 +1,25 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:blockus_marble_lapis_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blockus"
+    }
+  ],
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "lapis_lazuli",
+  "ingredient": "seamlessores:blockus_marble_lapis_ore",
+  "result": {
+    "id": "minecraft:lapis_lazuli"
+  }
+}

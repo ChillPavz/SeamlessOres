@@ -1,0 +1,400 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_techreborn_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_techreborn_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_techreborn_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_techreborn_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_techreborn_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_techreborn_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_techreborn_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_techreborn_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_techreborn_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_techreborn_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_techreborn_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_techreborn_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_techreborn_pyrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_techreborn_sphalerite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_techreborn_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_techreborn_tin_ore",
+      "required": false
+    }
+  ]
+}

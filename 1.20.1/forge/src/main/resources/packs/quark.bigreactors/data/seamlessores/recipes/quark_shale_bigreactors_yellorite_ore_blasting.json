@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "bigreactors:yellorium",
+  "ingredient": {
+    "item": "seamlessores:quark_shale_bigreactors_yellorite_ore"
+  },
+  "result": "bigreactors:yellorium_ingot"
+}

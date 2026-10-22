@@ -1,0 +1,64 @@
+{
+  "values": [
+    "seamlessores:granite_emerald_ore",
+    "seamlessores:diorite_emerald_ore",
+    "seamlessores:andesite_emerald_ore",
+    "seamlessores:tuff_emerald_ore",
+    {
+      "id": "seamlessores:blockus_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_emerald_ore",
+      "required": false
+    }
+  ]
+}

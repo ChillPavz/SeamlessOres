@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:andesite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_sun_stone_ore",
+      "required": false
+    }
+  ]
+}

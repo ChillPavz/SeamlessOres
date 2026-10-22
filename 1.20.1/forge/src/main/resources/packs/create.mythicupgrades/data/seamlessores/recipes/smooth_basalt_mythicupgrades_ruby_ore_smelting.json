@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.4,
+  "ingredient": {
+    "item": "seamlessores:smooth_basalt_mythicupgrades_ruby_ore"
+  },
+  "result": "mythicupgrades:ruby"
+}

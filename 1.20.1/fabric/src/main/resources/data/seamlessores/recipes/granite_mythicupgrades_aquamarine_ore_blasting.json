@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "mythicupgrades:aquamarine_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.4,
+  "ingredient": {
+    "item": "seamlessores:granite_mythicupgrades_aquamarine_ore"
+  },
+  "result": "mythicupgrades:aquamarine"
+}

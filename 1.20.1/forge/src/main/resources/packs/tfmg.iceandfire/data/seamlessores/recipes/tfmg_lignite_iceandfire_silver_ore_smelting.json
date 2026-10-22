@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "seamlessores:tfmg_lignite_iceandfire_silver_ore"
+  },
+  "result": "iceandfire:silver_ingot",
+  "experience": 0.35,
+  "cookingtime": 200
+}

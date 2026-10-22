@@ -1,0 +1,18 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:blockus_marble_modern_industrialization_tin_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:blockus_marble_modern_industrialization_tin_ore"
+  },
+  "result": "modern_industrialization:tin_ingot"
+}

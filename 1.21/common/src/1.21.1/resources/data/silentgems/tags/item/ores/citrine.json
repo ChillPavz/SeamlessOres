@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_silentgems_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_silentgems_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_silentgems_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentgems_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_silentgems_nether_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_silentgems_nether_citrine_ore",
+      "required": false
+    }
+  ]
+}

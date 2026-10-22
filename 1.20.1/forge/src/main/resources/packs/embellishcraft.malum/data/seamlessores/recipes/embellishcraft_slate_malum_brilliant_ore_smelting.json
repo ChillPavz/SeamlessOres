@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "seamlessores:embellishcraft_slate_malum_brilliant_ore"
+  },
+  "result": {
+    "count": 2,
+    "item": "malum:chunk_of_brilliance"
+  }
+}

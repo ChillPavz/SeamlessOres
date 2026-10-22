@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.4,
+  "ingredient": {
+    "item": "seamlessores:mythicupgrades_jade_schist_mythicupgrades_ametrine_ore"
+  },
+  "result": "mythicupgrades:ametrine"
+}

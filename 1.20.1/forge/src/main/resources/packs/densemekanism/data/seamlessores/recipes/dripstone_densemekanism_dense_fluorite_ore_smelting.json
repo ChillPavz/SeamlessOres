@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.6,
+  "group": "fluorite_gem",
+  "ingredient": {
+    "item": "seamlessores:dripstone_densemekanism_dense_fluorite_ore"
+  },
+  "result": "mekanism:fluorite_gem"
+}

@@ -1,0 +1,72 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_mythicmetals_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_mythicmetals_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_mythicmetals_nether_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_mythicmetals_banglum_ore",
+      "required": false
+    }
+  ]
+}

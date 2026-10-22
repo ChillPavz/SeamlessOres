@@ -1,0 +1,24 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:mythicupgrades_aquamarine_schist_mythicupgrades_necoium_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythicupgrades"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "experience": 1.4,
+  "group": "necoium",
+  "ingredient": "seamlessores:mythicupgrades_aquamarine_schist_mythicupgrades_necoium_ore",
+  "result": {
+    "id": "mythicupgrades:necoium_ingot"
+  }
+}

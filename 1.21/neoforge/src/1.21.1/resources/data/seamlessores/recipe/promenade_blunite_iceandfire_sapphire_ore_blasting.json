@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:promenade_blunite_iceandfire_sapphire_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "promenade"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "iceandfire"
+    }
+  ],
+  "forge:condition": {
+    "type": "forge:mod_loaded",
+    "modid": "promenade"
+  },
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "seamlessores:promenade_blunite_iceandfire_sapphire_ore"
+  },
+  "result": {
+    "id": "iceandfire:sapphire_gem"
+  },
+  "experience": 0.35,
+  "cookingtime": 100
+}

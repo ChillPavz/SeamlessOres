@@ -1,0 +1,37 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:blackstone_densemekanism_dense_lead_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "minecraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "densemekanism"
+    }
+  ],
+  "forge:condition": {
+    "type": "forge:mod_loaded",
+    "modid": "minecraft"
+  },
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.6,
+  "group": "lead_ingot",
+  "ingredient": {
+    "item": "seamlessores:blackstone_densemekanism_dense_lead_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "mekanism:raw_lead"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "leaf_stone",
+  "ingredient": {
+    "item": "seamlessores:born_in_chaos_v1_black_argillite_cobblemon_leaf_stone_ore"
+  },
+  "result": "cobblemon:leaf_stone",
+  "experience": 0.1,
+  "cookingtime": 100
+}
