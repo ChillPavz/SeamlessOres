@@ -2752,6 +2752,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_jade_sullysmod_jade_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_larvikite_cobblemon_ice_stone_ore",
       "required": false
     },
@@ -2973,6 +2977,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_sullysmod_jade_ore",
       "required": false
     },
     {
@@ -5497,6 +5505,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_sullysmod_jade_ore",
       "required": false
     },
     {

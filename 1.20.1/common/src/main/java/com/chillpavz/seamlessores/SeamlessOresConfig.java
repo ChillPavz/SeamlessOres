@@ -237,6 +237,9 @@ public final class SeamlessOresConfig {
     /** Whether Silent Gear Compat variants generate. Pure restyle. */
     public static boolean silentGearCompat = true;
 
+    /** Whether Sully's Mod variants generate. Pure restyle. */
+    public static boolean sullysMod = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -287,6 +290,7 @@ public final class SeamlessOresConfig {
             case "scalinghealth" -> scalingHealth;
             case "scguns" -> scorchedGuns;
             case "silentcompat" -> silentGearCompat;
+            case "sullysmod" -> sullysMod;
             default -> true;
         };
     }
@@ -491,6 +495,7 @@ public final class SeamlessOresConfig {
         public boolean scalingHealth = true;
         public boolean scorchedGuns = true;
         public boolean silentGearCompat = true;
+        public boolean sullysMod = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -563,6 +568,7 @@ public final class SeamlessOresConfig {
         scalingHealth = values.scalingHealth;
         scorchedGuns = values.scorchedGuns;
         silentGearCompat = values.silentGearCompat;
+        sullysMod = values.sullysMod;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

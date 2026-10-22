@@ -182,7 +182,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "oresabovediamonds": jar("oresabovediamonds-10.0.1b.jar"),
             "scalinghealth": jar("ScalingHealth-1.20.1-8.0.2+9.jar"),
             "scguns": jar("ScorchedGuns-0.5.5-1.20.1.jar"),
-            "silentcompat": jar("SilentCompat-forge-1.20.1-1.4.0.jar")}
+            "silentcompat": jar("SilentCompat-forge-1.20.1-1.4.0.jar"),
+            "sullysmod": jar("sullysmod-3.3.1-beta-all.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -399,6 +400,8 @@ MODS = {
                        "licence": "GPL-3.0", "author": "ribs"},
     "silentcompat": {"display": "Silent Gear Compat", "category": "silent_gear_compat",
                        "licence": "MIT", "author": "dragoni7"},
+    "sullysmod": {"display": "Sully's Mod", "category": "sullys_mod",
+                       "licence": "LGPL-3.0", "author": "Uraneptus, MiteBeMana, KekeCreations"},
 }
 
 ORE_DEFS = [
@@ -981,6 +984,10 @@ ORE_DEFS = [
     {"name": "voidmetal", "overlay": "voidmetal", "source": "voidmetal_ore", "base": "deepslate",
      "mod": "silentcompat",
      "tiers": {"deepslate": "voidmetal_ore"}},
+    # --- Sully's Mod (mod id sullysmod, LGPL-3.0). Forge at 1.20.1: jade, iron convention, no XP ---
+    {"name": "sullysmod_jade", "overlay": "sullysmod_jade", "source": "jade_ore", "base": "stone",
+     "mod": "sullysmod",
+     "tiers": {"stone": "jade_ore", "deepslate": "deepslate_jade_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1119,6 +1126,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "scalinghealth": ('forge',),
     "scguns": ('forge',),
     "silentcompat": ('forge',),
+    "sullysmod": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1265,6 +1273,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.sullys_mod": "Sully's Mod",
         f"text.autoconfig.{MOD_ID}.category.silent_gear_compat": "Silent Gear Compat",
         f"text.autoconfig.{MOD_ID}.category.scorched_guns": "Scorched Guns",
         f"text.autoconfig.{MOD_ID}.category.scaling_health": "Scaling Health",
@@ -1300,6 +1309,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.sullysMod": "Sully's Mod: variants",
+        f"text.autoconfig.{MOD_ID}.option.sullysMod.@Tooltip":
+            "Generate host-matched jade ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.silentGearCompat": "Silent Gear Compat: variants",
         f"text.autoconfig.{MOD_ID}.option.silentGearCompat.@Tooltip":

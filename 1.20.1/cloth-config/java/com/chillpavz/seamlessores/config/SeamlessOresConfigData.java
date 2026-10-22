@@ -548,6 +548,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean silentGearCompat = true;
 
+    // --- Sully's Mod ---------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("sullys_mod")
+    @ConfigEntry.Gui.Tooltip
+    public boolean sullysMod = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -680,6 +686,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.scalingHealth = scalingHealth;
         values.scorchedGuns = scorchedGuns;
         values.silentGearCompat = silentGearCompat;
+        values.sullysMod = sullysMod;
 
         SeamlessOresConfig.apply(values);
     }

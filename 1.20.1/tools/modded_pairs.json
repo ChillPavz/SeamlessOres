@@ -614,6 +614,13 @@
     "mythicmetals:stormyx_ore"
    ]
   },
+  "sullysmod_jade": {
+   "mod": "sullysmod",
+   "forms": [
+    "sullysmod:jade_ore",
+    "sullysmod:deepslate_jade_ore"
+   ]
+  },
   "sun_stone": {
    "mod": "cobblemon",
    "forms": [
@@ -912,6 +919,12 @@
     ],
     "rate": 1.11
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.04
+   },
    "sun_stone": {
     "where": [
      "1.20.1 fabric",
@@ -1121,6 +1134,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.23
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.54
    },
    "sun_stone": {
     "where": [
@@ -1374,6 +1393,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.62
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.26
    },
    "sun_stone": {
     "where": [
@@ -3088,6 +3113,12 @@
     ],
     "rate": 21.67
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 61.7
+   },
    "sun_stone": {
     "where": [
      "1.20.1 forge"
@@ -3613,6 +3644,12 @@
      "1.20.1 forge"
     ],
     "rate": 18.31
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 113.56
    },
    "sun_stone": {
     "where": [
@@ -4220,6 +4257,12 @@
     ],
     "rate": 23.41
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 145.2
+   },
    "sun_stone": {
     "where": [
      "1.20.1 fabric",
@@ -4826,6 +4869,12 @@
     ],
     "rate": 24.33
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 150.87
+   },
    "sun_stone": {
     "where": [
      "1.20.1 fabric",
@@ -5431,6 +5480,12 @@
      "1.20.1 forge"
     ],
     "rate": 15.87
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.42
    },
    "sun_stone": {
     "where": [
@@ -6203,6 +6258,12 @@
     ],
     "rate": 38.83
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 130.4
+   },
    "sun_stone": {
     "where": [
      "1.20.1 fabric",
@@ -6815,6 +6876,12 @@
     ],
     "rate": 17.31
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 107.37
+   },
    "sun_stone": {
     "where": [
      "1.20.1 fabric",
@@ -7227,6 +7294,12 @@
     ],
     "rate": 47.26
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.29
+   },
    "sun_stone": {
     "where": [
      "1.20.1 forge"
@@ -7493,6 +7566,12 @@
     ],
     "rate": 16.02
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 147.11
+   },
    "sun_stone": {
     "where": [
      "1.20.1 forge"
@@ -7651,6 +7730,12 @@
     ],
     "rate": 0.71
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.3
+   },
    "sun_stone": {
     "where": [
      "1.20.1 forge"
@@ -7796,6 +7881,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.03
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.36
    },
    "sun_stone": {
     "where": [
@@ -7948,6 +8039,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.09
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.63
    },
    "sun_stone": {
     "where": [
@@ -8148,6 +8245,12 @@
      "1.20.1 forge"
     ],
     "rate": 14.78
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 202.33
    },
    "sun_stone": {
     "where": [
@@ -8910,6 +9013,12 @@
     ],
     "rate": 7.57
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 156.88
+   },
    "sun_stone": {
     "where": [
      "1.20.1 fabric",
@@ -9485,6 +9594,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.84
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.47
    },
    "sun_stone": {
     "where": [
@@ -10092,6 +10207,12 @@
     ],
     "rate": 10.72
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 66.51
+   },
    "sun_stone": {
     "where": [
      "1.20.1 fabric",
@@ -10697,6 +10818,12 @@
      "1.20.1 forge"
     ],
     "rate": 18.14
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 112.48
    },
    "sun_stone": {
     "where": [
@@ -11378,6 +11505,12 @@
      "1.20.1 fabric"
     ],
     "rate": 13.46
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 104.81
    },
    "sun_stone": {
     "where": [
@@ -12577,6 +12710,12 @@
     ],
     "rate": 127.96
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1206.21
+   },
    "sun_stone": {
     "where": [
      "1.20.1 forge"
@@ -12861,6 +13000,12 @@
     ],
     "rate": 373.2
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3518.12
+   },
    "sun_stone": {
     "where": [
      "1.20.1 forge"
@@ -13144,6 +13289,12 @@
      "1.20.1 forge"
     ],
     "rate": 127.96
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1206.21
    },
    "sun_stone": {
     "where": [
@@ -13572,6 +13723,12 @@
     ],
     "rate": 16.73
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 141.16
+   },
    "sun_stone": {
     "where": [
      "1.20.1 fabric",
@@ -13971,6 +14128,12 @@
     ],
     "rate": 22.67
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 140.6
+   },
    "sun_stone": {
     "where": [
      "1.20.1 forge"
@@ -14321,6 +14484,12 @@
     ],
     "rate": 22.67
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 140.6
+   },
    "sun_stone": {
     "where": [
      "1.20.1 forge"
@@ -14670,6 +14839,12 @@
      "1.20.1 forge"
     ],
     "rate": 22.67
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 140.6
    },
    "sun_stone": {
     "where": [
@@ -15262,6 +15437,12 @@
     ],
     "rate": 15.19
    },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.99
+   },
    "sun_stone": {
     "where": [
      "1.20.1 fabric",
@@ -15848,6 +16029,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.6
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.93
    },
    "sun_stone": {
     "where": [

@@ -169,6 +169,9 @@ Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/turquoise_overlay.png
   assets/seamlessores/textures/block/white_diamond_overlay.png
 
+Sully's Mod by Uraneptus, MiteBeMana, KekeCreations, LGPL-3.0:
+  assets/seamlessores/textures/block/sullysmod_jade_overlay.png
+
 Tech Reborn by Team Reborn, modmuss50, drcrazy, MIT:
   assets/seamlessores/textures/block/cinnabar_overlay.png
   assets/seamlessores/textures/block/galena_overlay.png

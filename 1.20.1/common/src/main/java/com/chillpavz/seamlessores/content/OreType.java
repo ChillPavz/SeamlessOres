@@ -791,6 +791,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(3, 7), null, false, Set.of())
             .withStrength(30.0F, 1200.0F, 30.0F, 1200.0F);
 
+    // --- Sully's Mod (mod id sullysmod, LGPL-3.0). Forge at 1.20.1: jade, iron convention, no XP ---
+    public static final OreType SM_JADE = ore(
+            "sullysmod_jade", "sullysmod_jade", null, "sullysmod",
+            of("sullysmod", "jade_ore"), of("sullysmod", "deepslate_jade_ore"), null,
+            NONE, null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -826,7 +832,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     OAD_AMETHYST, OAD_NETHER_AMETHYST, OAD_BLACK_OPAL, OAD_NETHER_BLACK_OPAL,
                     SH_HEART_CRYSTAL, SH_POWER_CRYSTAL,
                     SG_ANTHRALITE, SG_SULFUR, SG_NETHER_SULFUR, SG_VEHEMENT_COAL,
-                    SC_ARCMETAL, SC_PLASTEEL, SC_VOIDMETAL);
+                    SC_ARCMETAL, SC_PLASTEEL, SC_VOIDMETAL,
+                    SM_JADE);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

@@ -2752,6 +2752,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_sullysmod_jade_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
       "required": false
     },
@@ -2949,6 +2953,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_silentcompat_arcmetal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_sullysmod_jade_ore",
       "required": false
     },
     {
@@ -3181,6 +3189,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_jade_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_sullysmod_jade_ore",
       "required": false
     },
     {
