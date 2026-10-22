@@ -181,7 +181,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "create_tank_defenses": jar("CreateTankDefenses-v0.80.jar"),
             "oresabovediamonds": jar("oresabovediamonds-10.0.1b.jar"),
             "scalinghealth": jar("ScalingHealth-1.20.1-8.0.2+9.jar"),
-            "scguns": jar("ScorchedGuns-0.5.5-1.20.1.jar")}
+            "scguns": jar("ScorchedGuns-0.5.5-1.20.1.jar"),
+            "silentcompat": jar("SilentCompat-forge-1.20.1-1.4.0.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -396,6 +397,8 @@ MODS = {
                        "licence": "MIT", "author": "SilentChaos512"},
     "scguns": {"display": "Scorched Guns", "category": "scorched_guns",
                        "licence": "GPL-3.0", "author": "ribs"},
+    "silentcompat": {"display": "Silent Gear Compat", "category": "silent_gear_compat",
+                       "licence": "MIT", "author": "dragoni7"},
 }
 
 ORE_DEFS = [
@@ -968,6 +971,16 @@ ORE_DEFS = [
     {"name": "vehement_coal", "overlay": "vehement_coal", "source": "vehement_coal_ore", "base": "netherrack",
      "mod": "scguns",
      "tiers": {"nether": "vehement_coal_ore"}},
+    # --- Silent Gear Compat (mod id silentcompat, MIT). Forge at 1.20.1: 30.0 hardness, 1200.0 blast resistance, 3 to 7 XP; solarmetal takes the place of Nether lava, so no variant ---
+    {"name": "arcmetal", "overlay": "arcmetal", "source": "arcmetal_ore", "base": "stone",
+     "mod": "silentcompat",
+     "tiers": {"stone": "arcmetal_ore"}},
+    {"name": "plasteel", "overlay": "plasteel", "source": "plasteel_ore", "base": "deepslate",
+     "mod": "silentcompat",
+     "tiers": {"deepslate": "plasteel_ore"}},
+    {"name": "voidmetal", "overlay": "voidmetal", "source": "voidmetal_ore", "base": "deepslate",
+     "mod": "silentcompat",
+     "tiers": {"deepslate": "voidmetal_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1105,6 +1118,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "oresabovediamonds": ('forge',),
     "scalinghealth": ('forge',),
     "scguns": ('forge',),
+    "silentcompat": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1251,6 +1265,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.silent_gear_compat": "Silent Gear Compat",
         f"text.autoconfig.{MOD_ID}.category.scorched_guns": "Scorched Guns",
         f"text.autoconfig.{MOD_ID}.category.scaling_health": "Scaling Health",
         f"text.autoconfig.{MOD_ID}.category.ores_above_diamonds": "Ores Above Diamonds",
@@ -1285,6 +1300,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.silentGearCompat": "Silent Gear Compat: variants",
+        f"text.autoconfig.{MOD_ID}.option.silentGearCompat.@Tooltip":
+            "Generate host-matched arcmetal, plasteel and voidmetal ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.scorchedGuns": "Scorched Guns: variants",
         f"text.autoconfig.{MOD_ID}.option.scorchedGuns.@Tooltip":

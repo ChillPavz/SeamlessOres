@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "seamlessores:tfmg_galena_silentcompat_plasteel_ore"
+  },
+  "result": "silentcompat:plasteel_ingot"
+}

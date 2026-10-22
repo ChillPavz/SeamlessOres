@@ -331,6 +331,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_silentcompat_arcmetal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_techreborn_tin_ore",
       "required": false
     },
@@ -456,6 +460,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_silentcompat_arcmetal_ore",
       "required": false
     },
     {
@@ -622,6 +630,10 @@
     },
     {
       "id": "seamlessores:blackstone_scguns_vehement_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentcompat_voidmetal_ore",
       "required": false
     },
     {
@@ -2289,6 +2301,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_silentcompat_arcmetal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_silentgems_citrine_ore",
       "required": false
     },
@@ -2553,6 +2569,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_silentcompat_voidmetal_ore",
       "required": false
     },
     {
@@ -2940,6 +2960,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_silentcompat_arcmetal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_silentgems_ruby_ore",
       "required": false
     },
@@ -3005,6 +3029,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentcompat_voidmetal_ore",
       "required": false
     },
     {
@@ -3257,6 +3285,10 @@
     },
     {
       "id": "seamlessores:granite_scalinghealth_power_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_silentcompat_arcmetal_ore",
       "required": false
     },
     {
@@ -4632,6 +4664,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_silentcompat_plasteel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_galena_silentgems_silver_ore",
       "required": false
     },
@@ -4949,6 +4985,14 @@
     },
     {
       "id": "seamlessores:tuff_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentcompat_plasteel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentcompat_voidmetal_ore",
       "required": false
     },
     {
@@ -5425,6 +5469,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_silentcompat_arcmetal_ore",
       "required": false
     },
     {

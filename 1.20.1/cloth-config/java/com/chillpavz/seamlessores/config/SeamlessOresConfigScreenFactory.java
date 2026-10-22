@@ -98,6 +98,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("oresabovediamonds", "ores_above_diamonds");
         MOD_CATEGORIES.put("scalinghealth", "scaling_health");
         MOD_CATEGORIES.put("scguns", "scorched_guns");
+        MOD_CATEGORIES.put("silentcompat", "silent_gear_compat");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

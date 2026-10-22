@@ -257,6 +257,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_silentcompat_plasteel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -401,6 +409,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -458,6 +470,10 @@
     },
     {
       "id": "seamlessores:blockus_viridite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_silentcompat_plasteel_ore",
       "required": false
     },
     {
@@ -573,6 +589,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
       "required": false
     },
@@ -634,6 +654,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentcompat_voidmetal_ore",
       "required": false
     }
   ]

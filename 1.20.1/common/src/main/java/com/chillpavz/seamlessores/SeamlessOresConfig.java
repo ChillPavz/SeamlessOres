@@ -234,6 +234,9 @@ public final class SeamlessOresConfig {
     /** Whether Scorched Guns variants generate. Pure restyle. */
     public static boolean scorchedGuns = true;
 
+    /** Whether Silent Gear Compat variants generate. Pure restyle. */
+    public static boolean silentGearCompat = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -283,6 +286,7 @@ public final class SeamlessOresConfig {
             case "oresabovediamonds" -> oresAboveDiamonds;
             case "scalinghealth" -> scalingHealth;
             case "scguns" -> scorchedGuns;
+            case "silentcompat" -> silentGearCompat;
             default -> true;
         };
     }
@@ -486,6 +490,7 @@ public final class SeamlessOresConfig {
         public boolean oresAboveDiamonds = true;
         public boolean scalingHealth = true;
         public boolean scorchedGuns = true;
+        public boolean silentGearCompat = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -557,6 +562,7 @@ public final class SeamlessOresConfig {
         oresAboveDiamonds = values.oresAboveDiamonds;
         scalingHealth = values.scalingHealth;
         scorchedGuns = values.scorchedGuns;
+        silentGearCompat = values.silentGearCompat;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

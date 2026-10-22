@@ -149,6 +149,11 @@ Scorched Guns by ribs, GPL-3.0:
 Silent Gear by SilentChaos512, MIT:
   assets/seamlessores/textures/block/bort_overlay.png
 
+Silent Gear Compat by dragoni7, MIT:
+  assets/seamlessores/textures/block/arcmetal_overlay.png
+  assets/seamlessores/textures/block/plasteel_overlay.png
+  assets/seamlessores/textures/block/voidmetal_overlay.png
+
 Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/alexandrite_overlay.png
   assets/seamlessores/textures/block/black_diamond_overlay.png

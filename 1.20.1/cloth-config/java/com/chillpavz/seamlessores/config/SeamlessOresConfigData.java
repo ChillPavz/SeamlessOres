@@ -542,6 +542,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean scorchedGuns = true;
 
+    // --- Silent Gear Compat --------------------------------------------------------------------------
+
+    @ConfigEntry.Category("silent_gear_compat")
+    @ConfigEntry.Gui.Tooltip
+    public boolean silentGearCompat = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -673,6 +679,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.oresAboveDiamonds = oresAboveDiamonds;
         values.scalingHealth = scalingHealth;
         values.scorchedGuns = scorchedGuns;
+        values.silentGearCompat = silentGearCompat;
 
         SeamlessOresConfig.apply(values);
     }

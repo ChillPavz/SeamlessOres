@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:tuff_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_silentcompat_voidmetal_ore",
+      "required": false
+    }
+  ]
+}

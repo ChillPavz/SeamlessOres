@@ -774,6 +774,23 @@ public record OreType(String name, String key, String overlay, String deepslateO
             null, null, of("scguns", "vehement_coal_ore"),
             UniformInt.of(0, 1), null, false, Set.of());
 
+    // --- Silent Gear Compat (mod id silentcompat, MIT). Forge at 1.20.1: 30.0 hardness, 1200.0 blast resistance, 3 to 7 XP; solarmetal takes the place of Nether lava, so no variant ---
+    public static final OreType SC_ARCMETAL = ore(
+            "arcmetal", "arcmetal", null, "silentcompat",
+            of("silentcompat", "arcmetal_ore"), null, null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(30.0F, 1200.0F, 30.0F, 1200.0F);
+    public static final OreType SC_PLASTEEL = ore(
+            "plasteel", "plasteel", null, "silentcompat",
+            null, of("silentcompat", "plasteel_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(30.0F, 1200.0F, 30.0F, 1200.0F);
+    public static final OreType SC_VOIDMETAL = ore(
+            "voidmetal", "voidmetal", null, "silentcompat",
+            null, of("silentcompat", "voidmetal_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(30.0F, 1200.0F, 30.0F, 1200.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -808,7 +825,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     CTD_ALUMINUM, CTD_TITANIUM,
                     OAD_AMETHYST, OAD_NETHER_AMETHYST, OAD_BLACK_OPAL, OAD_NETHER_BLACK_OPAL,
                     SH_HEART_CRYSTAL, SH_POWER_CRYSTAL,
-                    SG_ANTHRALITE, SG_SULFUR, SG_NETHER_SULFUR, SG_VEHEMENT_COAL);
+                    SG_ANTHRALITE, SG_SULFUR, SG_NETHER_SULFUR, SG_VEHEMENT_COAL,
+                    SC_ARCMETAL, SC_PLASTEEL, SC_VOIDMETAL);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 
