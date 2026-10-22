@@ -536,6 +536,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean scalingHealth = true;
 
+    // --- Scorched Guns -------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("scorched_guns")
+    @ConfigEntry.Gui.Tooltip
+    public boolean scorchedGuns = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -666,6 +672,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.createTankDefenses = createTankDefenses;
         values.oresAboveDiamonds = oresAboveDiamonds;
         values.scalingHealth = scalingHealth;
+        values.scorchedGuns = scorchedGuns;
 
         SeamlessOresConfig.apply(values);
     }

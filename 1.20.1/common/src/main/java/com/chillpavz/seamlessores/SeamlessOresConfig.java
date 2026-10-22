@@ -231,6 +231,9 @@ public final class SeamlessOresConfig {
     /** Whether Scaling Health variants generate. Pure restyle. */
     public static boolean scalingHealth = true;
 
+    /** Whether Scorched Guns variants generate. Pure restyle. */
+    public static boolean scorchedGuns = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -279,6 +282,7 @@ public final class SeamlessOresConfig {
             case "create_tank_defenses" -> createTankDefenses;
             case "oresabovediamonds" -> oresAboveDiamonds;
             case "scalinghealth" -> scalingHealth;
+            case "scguns" -> scorchedGuns;
             default -> true;
         };
     }
@@ -481,6 +485,7 @@ public final class SeamlessOresConfig {
         public boolean createTankDefenses = true;
         public boolean oresAboveDiamonds = true;
         public boolean scalingHealth = true;
+        public boolean scorchedGuns = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -551,6 +556,7 @@ public final class SeamlessOresConfig {
         createTankDefenses = values.createTankDefenses;
         oresAboveDiamonds = values.oresAboveDiamonds;
         scalingHealth = values.scalingHealth;
+        scorchedGuns = values.scorchedGuns;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

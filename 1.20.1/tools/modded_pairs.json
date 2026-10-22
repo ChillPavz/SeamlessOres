@@ -28,6 +28,13 @@
     "mythicupgrades:ametrine_ore"
    ]
   },
+  "anthralite": {
+   "mod": "scguns",
+   "forms": [
+    "scguns:anthralite_ore",
+    "scguns:deepslate_anthralite_ore"
+   ]
+  },
   "antimony": {
    "mod": "modern_industrialization",
    "forms": [
@@ -509,6 +516,19 @@
     "mythicupgrades:sapphire_ore"
    ]
   },
+  "scguns_nether_sulfur": {
+   "mod": "scguns",
+   "forms": [
+    "scguns:nether_sulfur_ore"
+   ]
+  },
+  "scguns_sulfur": {
+   "mod": "scguns",
+   "forms": [
+    "scguns:sulfur_ore",
+    "scguns:deepslate_sulfur_ore"
+   ]
+  },
   "shiny_stone": {
    "mod": "cobblemon",
    "forms": [
@@ -704,6 +724,12 @@
    "forms": [
     "modern_industrialization:uranium_ore",
     "modern_industrialization:deepslate_uranium_ore"
+   ]
+  },
+  "vehement_coal": {
+   "mod": "scguns",
+   "forms": [
+    "scguns:vehement_coal_ore"
    ]
   },
   "water_stone": {
@@ -1286,6 +1312,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.38
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.28
    },
    "shiny_stone": {
     "where": [
@@ -2768,6 +2800,12 @@
     ],
     "rate": 2.85
    },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 112.28
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -2960,6 +2998,12 @@
     ],
     "rate": 108.1
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.67
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 forge"
@@ -3069,6 +3113,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.17
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.46
    },
    "antimony": {
     "where": [
@@ -3460,6 +3510,12 @@
     ],
     "rate": 47.81
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.51
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -3657,6 +3713,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.77
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 81.13
    },
    "antimony": {
     "where": [
@@ -4048,6 +4110,12 @@
     ],
     "rate": 47.81
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.4
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -4245,6 +4313,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.88
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 84.31
    },
    "antimony": {
     "where": [
@@ -4636,6 +4710,12 @@
     ],
     "rate": 63.53
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 47.18
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -4833,6 +4913,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.88
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 55.0
    },
    "antimony": {
     "where": [
@@ -5224,6 +5310,12 @@
     ],
     "rate": 41.44
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.78
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -5468,6 +5560,12 @@
     ],
     "rate": 21.14
    },
+   "scguns_nether_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 119.85
+   },
    "sphalerite": {
     "where": [
      "1.20.1 fabric"
@@ -5479,6 +5577,12 @@
      "1.20.1 fabric"
     ],
     "rate": 36.55
+   },
+   "vehement_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.96
    }
   },
   "create:scoria": {
@@ -5499,6 +5603,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.49
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 72.86
    },
    "antimony": {
     "where": [
@@ -5947,6 +6057,18 @@
     ],
     "rate": 13.89
    },
+   "scguns_nether_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 78.76
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 40.77
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -6124,6 +6246,12 @@
     ],
     "rate": 35.42
    },
+   "vehement_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.97
+   },
    "water_stone": {
     "where": [
      "1.20.1 fabric",
@@ -6156,6 +6284,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.05
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 60.0
    },
    "antimony": {
     "where": [
@@ -6547,6 +6681,12 @@
     ],
     "rate": 45.21
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.57
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -6738,6 +6878,12 @@
      "1.20.1 forge"
     ],
     "rate": 32.29
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 290.81
    },
    "aquamarine": {
     "where": [
@@ -6949,6 +7095,12 @@
     ],
     "rate": 373.68
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 137.14
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 forge"
@@ -7047,6 +7199,12 @@
    }
   },
   "embellishcraft:gneiss": {
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.12
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -7196,6 +7354,12 @@
      "1.20.1 forge"
     ],
     "rate": 15.69
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 30.8
    },
    "shiny_stone": {
     "where": [
@@ -7417,6 +7581,12 @@
    }
   },
   "embellishcraft:larvikite": {
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.51
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 forge"
@@ -7512,6 +7682,12 @@
      "1.20.1 forge"
     ],
     "rate": 33.18
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.0
    },
    "shiny_stone": {
     "where": [
@@ -7653,6 +7829,12 @@
     ],
     "rate": 9.72
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.51
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 forge"
@@ -7697,6 +7879,12 @@
    }
   },
   "embellishcraft:slate": {
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.21
+   },
    "biggerreactors_uranium": {
     "where": [
      "1.20.1 forge"
@@ -7805,6 +7993,12 @@
     ],
     "rate": 140.34
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.0
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 forge"
@@ -7896,6 +8090,12 @@
      "1.20.1 forge"
     ],
     "rate": 123.83
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 114.12
    },
    "aquamarine": {
     "where": [
@@ -8053,6 +8253,12 @@
     ],
     "rate": 533.82
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 262.53
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 forge"
@@ -8156,6 +8362,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.12
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.19
    },
    "antimony": {
     "where": [
@@ -8510,6 +8722,12 @@
     ],
     "rate": 28.82
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.41
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -8701,6 +8919,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.42
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.13
    },
    "antimony": {
     "where": [
@@ -9074,6 +9298,12 @@
     ],
     "rate": 2.88
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.14
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -9265,6 +9495,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.27
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 37.17
    },
    "antimony": {
     "where": [
@@ -9656,6 +9892,12 @@
     ],
     "rate": 28.01
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.8
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -9853,6 +10095,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.15
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 62.85
    },
    "antimony": {
     "where": [
@@ -10244,6 +10492,12 @@
     ],
     "rate": 17.76
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.17
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -10441,6 +10695,12 @@
      "1.20.1 forge"
     ],
     "rate": 2.0
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.57
    },
    "antimony": {
     "where": [
@@ -10889,6 +11149,18 @@
     ],
     "rate": 6.22
    },
+   "scguns_nether_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.25
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.77
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -11065,6 +11337,12 @@
      "1.20.1 fabric"
     ],
     "rate": 12.83
+   },
+   "vehement_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.28
    },
    "water_stone": {
     "where": [
@@ -11915,6 +12193,12 @@
     ],
     "rate": 0.15
    },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 245.21
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -12089,6 +12373,12 @@
     ],
     "rate": 179.82
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 204.94
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 forge"
@@ -12186,6 +12476,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.43
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 715.2
    },
    "aquamarine": {
     "where": [
@@ -12361,6 +12657,12 @@
     ],
     "rate": 524.48
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 597.73
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 forge"
@@ -12458,6 +12760,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.15
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 245.21
    },
    "aquamarine": {
     "where": [
@@ -12633,6 +12941,12 @@
     ],
     "rate": 179.82
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 204.94
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 forge"
@@ -12725,6 +13039,12 @@
    }
   },
   "spawn:reefstone": {
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.03
+   },
    "antimony": {
     "where": [
      "1.20.1 fabric"
@@ -13040,6 +13360,12 @@
     ],
     "rate": 42.14
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.29
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -13213,6 +13539,12 @@
     ],
     "rate": 2.68
    },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 78.57
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -13428,6 +13760,12 @@
      "1.20.1 forge"
     ],
     "rate": 69.97
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.96
    },
    "shiny_stone": {
     "where": [
@@ -13545,6 +13883,12 @@
     ],
     "rate": 2.68
    },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 78.57
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -13760,6 +14104,12 @@
      "1.20.1 forge"
     ],
     "rate": 69.97
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.96
    },
    "shiny_stone": {
     "where": [
@@ -13877,6 +14227,12 @@
     ],
     "rate": 2.68
    },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 78.57
+   },
    "aquamarine": {
     "where": [
      "1.20.1 forge"
@@ -14092,6 +14448,12 @@
      "1.20.1 forge"
     ],
     "rate": 69.97
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.96
    },
    "shiny_stone": {
     "where": [
@@ -14261,6 +14623,12 @@
     ],
     "rate": 2.77
    },
+   "scguns_nether_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.17
+   },
    "sphalerite": {
     "where": [
      "1.20.1 fabric"
@@ -14272,6 +14640,12 @@
      "1.20.1 fabric"
     ],
     "rate": 5.01
+   },
+   "vehement_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.76
    }
   },
   "twigs:rhyolite": {
@@ -14292,6 +14666,12 @@
      "1.20.1 forge"
     ],
     "rate": 10.24
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 86.68
    },
    "antimony": {
     "where": [
@@ -14652,6 +15032,12 @@
     ],
     "rate": 58.73
    },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.62
+   },
    "shiny_stone": {
     "where": [
      "1.20.1 fabric",
@@ -14812,6 +15198,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.93
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.16
    },
    "antimony": {
     "where": [
@@ -15202,6 +15594,12 @@
      "1.20.1 fabric"
     ],
     "rate": 8.36
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.21
    },
    "shiny_stone": {
     "where": [

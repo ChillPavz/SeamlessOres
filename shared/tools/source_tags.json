@@ -28,6 +28,8 @@
     "*:mineable/*": "any mod's own tools mine it at full speed, as they mine the ore",
     "forge:*_ore": "a mod's own grouping of its ore items (Ores Above Diamonds' recipes read it)",
     "oresabovediamonds:*_ore": "",
+    "scguns:*_ore": "",
+    "scguns:metal_detectable": "Scorched Guns' metal detector finds it, as it finds the ore",
     "immersiveengineering:mineable/*": "the mod's own tools mine it at full speed",
     "mythicmetals:mineable/*": "",
     "oreganized:mineable/*": "",

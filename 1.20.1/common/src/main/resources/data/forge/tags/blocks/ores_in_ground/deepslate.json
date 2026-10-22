@@ -249,6 +249,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_scguns_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -386,6 +394,10 @@
     },
     {
       "id": "seamlessores:blackstone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_scguns_sulfur_ore",
       "required": false
     },
     {
@@ -554,6 +566,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_scguns_anthralite_ore",
       "required": false
     },
     {

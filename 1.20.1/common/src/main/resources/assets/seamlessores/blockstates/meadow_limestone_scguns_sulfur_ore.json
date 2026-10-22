@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_scguns_sulfur_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_scguns_sulfur_ore",
+        "y": 180
+      }
+    ]
+  }
+}

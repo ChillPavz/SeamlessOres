@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:tuff_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_scguns_anthralite_ore",
+      "required": false
+    }
+  ]
+}

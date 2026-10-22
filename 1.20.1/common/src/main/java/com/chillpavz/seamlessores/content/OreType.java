@@ -756,6 +756,24 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(1, 5), null, false, Set.of())
             .withStrength(3.0F, 15.0F, 3.0F, 15.0F);
 
+    // --- Scorched Guns (mod id scguns, GPL-3.0). Forge at 1.20.1: iron convention; sulfur 0 to 2 XP (Nether 0 to 1), vehement coal 0 to 1 ---
+    public static final OreType SG_ANTHRALITE = ore(
+            "anthralite", "anthralite", "anthralite_deepslate", "scguns",
+            of("scguns", "anthralite_ore"), of("scguns", "deepslate_anthralite_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType SG_SULFUR = ore(
+            "scguns_sulfur", "scguns_sulfur", "scguns_sulfur_deepslate", "scguns",
+            of("scguns", "sulfur_ore"), of("scguns", "deepslate_sulfur_ore"), null,
+            UniformInt.of(0, 2), null, false, Set.of());
+    public static final OreType SG_NETHER_SULFUR = ore(
+            "scguns_nether_sulfur", "scguns_nether_sulfur", null, "scguns",
+            null, null, of("scguns", "nether_sulfur_ore"),
+            UniformInt.of(0, 1), null, false, Set.of());
+    public static final OreType SG_VEHEMENT_COAL = ore(
+            "vehement_coal", "vehement_coal", null, "scguns",
+            null, null, of("scguns", "vehement_coal_ore"),
+            UniformInt.of(0, 1), null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -789,7 +807,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     EMBERS_LEAD, EMBERS_SILVER,
                     CTD_ALUMINUM, CTD_TITANIUM,
                     OAD_AMETHYST, OAD_NETHER_AMETHYST, OAD_BLACK_OPAL, OAD_NETHER_BLACK_OPAL,
-                    SH_HEART_CRYSTAL, SH_POWER_CRYSTAL);
+                    SH_HEART_CRYSTAL, SH_POWER_CRYSTAL,
+                    SG_ANTHRALITE, SG_SULFUR, SG_NETHER_SULFUR, SG_VEHEMENT_COAL);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

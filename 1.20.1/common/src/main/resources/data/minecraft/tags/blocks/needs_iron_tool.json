@@ -404,6 +404,10 @@
       "id": "seamlessores:tuff_create_tank_defenses_aluminum_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_scguns_anthralite_ore",
+      "required": false
+    },
     "seamlessores:dripstone_gold_ore",
     "seamlessores:dripstone_diamond_ore",
     "seamlessores:dripstone_redstone_ore",
@@ -880,6 +884,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -1256,6 +1264,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_lignite_scguns_anthralite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_gold_ore",
       "required": false
     },
@@ -1516,6 +1528,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_scguns_anthralite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_gold_ore",
       "required": false
     },
@@ -1724,6 +1740,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_gold_ore",
       "required": false
     },
@@ -1769,6 +1789,10 @@
     },
     {
       "id": "seamlessores:quark_shale_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_scguns_anthralite_ore",
       "required": false
     },
     {
@@ -1853,6 +1877,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_scguns_anthralite_ore",
       "required": false
     },
     {
@@ -2041,6 +2069,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_scguns_anthralite_ore",
       "required": false
     },
     {

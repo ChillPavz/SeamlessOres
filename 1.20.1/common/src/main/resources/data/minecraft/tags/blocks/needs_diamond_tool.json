@@ -41,6 +41,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_scguns_vehement_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_silentgems_carnelian_nether_ore",
       "required": false
     },
@@ -50,6 +54,10 @@
     },
     {
       "id": "seamlessores:blackstone_oresabovediamonds_nether_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_scguns_vehement_coal_ore",
       "required": false
     },
     {
@@ -73,7 +81,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_scguns_vehement_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_scguns_vehement_coal_ore",
       "required": false
     },
     {
@@ -85,11 +101,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_scguns_vehement_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_oresabovediamonds_amethyst_ore",
       "required": false
     },
     {
       "id": "seamlessores:twigs_schist_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_scguns_vehement_coal_ore",
       "required": false
     },
     {

@@ -688,6 +688,10 @@
       "id": "seamlessores:andesite_oresabovediamonds_amethyst_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_scguns_sulfur_ore",
+      "required": false
+    },
     "seamlessores:tuff_coal_ore",
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
@@ -938,6 +942,14 @@
     },
     {
       "id": "seamlessores:tuff_oresabovediamonds_black_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_scguns_sulfur_ore",
       "required": false
     },
     "seamlessores:dripstone_coal_ore",
@@ -1241,6 +1253,14 @@
       "id": "seamlessores:basalt_oresabovediamonds_nether_amethyst_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_scguns_nether_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_scguns_vehement_coal_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -1297,6 +1317,14 @@
     },
     {
       "id": "seamlessores:blackstone_oresabovediamonds_nether_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_scguns_nether_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_scguns_vehement_coal_ore",
       "required": false
     },
     {
@@ -1453,6 +1481,10 @@
     },
     {
       "id": "seamlessores:blackstone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_scguns_sulfur_ore",
       "required": false
     },
     {
@@ -2176,6 +2208,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_scguns_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -2245,6 +2285,14 @@
     },
     {
       "id": "seamlessores:create_scorchia_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_scguns_nether_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_scguns_vehement_coal_ore",
       "required": false
     },
     {
@@ -2461,6 +2509,18 @@
     },
     {
       "id": "seamlessores:create_scoria_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_scguns_nether_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_scguns_vehement_coal_ore",
       "required": false
     },
     {
@@ -2868,6 +2928,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_scguns_nether_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_scguns_vehement_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -3008,6 +3080,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_scguns_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_coal_ore",
       "required": false
     },
@@ -3109,6 +3185,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_scguns_anthralite_ore",
       "required": false
     },
     {
@@ -3289,6 +3369,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_oresabovediamonds_black_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_scguns_sulfur_ore",
       "required": false
     },
     {
@@ -3580,6 +3664,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_bloodstone_scguns_nether_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_scguns_vehement_coal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_coal_ore",
       "required": false
     },
@@ -3688,6 +3780,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_scguns_anthralite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_iron_ore",
       "required": false
     },
@@ -3785,6 +3881,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_scguns_sulfur_ore",
       "required": false
     },
     {
@@ -4280,6 +4380,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_scguns_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_iron_ore",
       "required": false
     },
@@ -4429,6 +4537,10 @@
     },
     {
       "id": "seamlessores:quark_shale_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_scguns_anthralite_ore",
       "required": false
     },
     {
@@ -4673,6 +4785,14 @@
     },
     {
       "id": "seamlessores:meadow_limestone_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_scguns_sulfur_ore",
       "required": false
     },
     {
@@ -5168,6 +5288,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_scguns_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_iron_ore",
       "required": false
     },
@@ -5317,6 +5445,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_scguns_sulfur_ore",
       "required": false
     },
     {

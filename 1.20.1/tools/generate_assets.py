@@ -180,7 +180,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "embers": jar("embersrekindled-1.20.1-1.4.7.jar"),
             "create_tank_defenses": jar("CreateTankDefenses-v0.80.jar"),
             "oresabovediamonds": jar("oresabovediamonds-10.0.1b.jar"),
-            "scalinghealth": jar("ScalingHealth-1.20.1-8.0.2+9.jar")}
+            "scalinghealth": jar("ScalingHealth-1.20.1-8.0.2+9.jar"),
+            "scguns": jar("ScorchedGuns-0.5.5-1.20.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -310,6 +311,7 @@ ANIMATED_OVERLAYS = {
     # Extreme Reactors' benitoite: 10 frames, same pulse-and-rest shape, from its own mcmeta.
     "benitoite": {"frametime": 2, "frames": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 8, 7, 6, 5, 4, 3, 2, 1,
                                              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]},
+    "vehement_coal": {"frametime": 8, "interpolate": True, "frames": [0, 1, 2, 1]},  # Scorched Guns, from its own mcmeta
 }
 
 # Third-party mods whose ores get variants.
@@ -392,6 +394,8 @@ MODS = {
                        "licence": "MIT", "author": "Squidsword"},
     "scalinghealth": {"display": "Scaling Health", "category": "scaling_health",
                        "licence": "MIT", "author": "SilentChaos512"},
+    "scguns": {"display": "Scorched Guns", "category": "scorched_guns",
+                       "licence": "GPL-3.0", "author": "ribs"},
 }
 
 ORE_DEFS = [
@@ -951,6 +955,19 @@ ORE_DEFS = [
     {"name": "power_crystal", "overlay": "power_crystal", "source": "power_crystal_ore", "base": "stone",
      "mod": "scalinghealth",
      "tiers": {"stone": "power_crystal_ore", "deepslate": "deepslate_power_crystal_ore"}},
+    # --- Scorched Guns (mod id scguns, GPL-3.0). Forge at 1.20.1: iron convention; sulfur 0 to 2 XP (Nether 0 to 1), vehement coal 0 to 1 ---
+    {"name": "anthralite", "overlay": "anthralite", "deepslate_overlay": "anthralite_deepslate", "source": "anthralite_ore", "base": "stone",
+     "mod": "scguns",
+     "tiers": {"stone": "anthralite_ore", "deepslate": "deepslate_anthralite_ore"}},
+    {"name": "scguns_sulfur", "overlay": "scguns_sulfur", "deepslate_overlay": "scguns_sulfur_deepslate", "source": "sulfur_ore", "base": "stone",
+     "mod": "scguns",
+     "tiers": {"stone": "sulfur_ore", "deepslate": "deepslate_sulfur_ore"}},
+    {"name": "scguns_nether_sulfur", "overlay": "scguns_nether_sulfur", "source": "nether_sulfur_ore", "base": "netherrack",
+     "mod": "scguns",
+     "tiers": {"nether": "nether_sulfur_ore"}},
+    {"name": "vehement_coal", "overlay": "vehement_coal", "source": "vehement_coal_ore", "base": "netherrack",
+     "mod": "scguns",
+     "tiers": {"nether": "vehement_coal_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1087,6 +1104,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "create_tank_defenses": ('forge',),
     "oresabovediamonds": ('forge',),
     "scalinghealth": ('forge',),
+    "scguns": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1233,6 +1251,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.scorched_guns": "Scorched Guns",
         f"text.autoconfig.{MOD_ID}.category.scaling_health": "Scaling Health",
         f"text.autoconfig.{MOD_ID}.category.ores_above_diamonds": "Ores Above Diamonds",
         f"text.autoconfig.{MOD_ID}.category.create_tank_defenses": "Create: Tank Defenses",
@@ -1266,6 +1285,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.scorchedGuns": "Scorched Guns: variants",
+        f"text.autoconfig.{MOD_ID}.option.scorchedGuns.@Tooltip":
+            "Generate host-matched anthralite, sulfur and vehement coal ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.scalingHealth": "Scaling Health: variants",
         f"text.autoconfig.{MOD_ID}.option.scalingHealth.@Tooltip":

@@ -1,0 +1,505 @@
+{
+  "values": [
+    "seamlessores:granite_iron_ore",
+    "seamlessores:granite_copper_ore",
+    "seamlessores:granite_gold_ore",
+    "seamlessores:diorite_iron_ore",
+    "seamlessores:diorite_copper_ore",
+    "seamlessores:diorite_gold_ore",
+    "seamlessores:andesite_iron_ore",
+    "seamlessores:andesite_copper_ore",
+    "seamlessores:andesite_gold_ore",
+    "seamlessores:tuff_iron_ore",
+    "seamlessores:tuff_copper_ore",
+    "seamlessores:tuff_gold_ore",
+    {
+      "id": "seamlessores:tuff_scguns_anthralite_ore",
+      "required": false
+    },
+    "seamlessores:dripstone_iron_ore",
+    "seamlessores:dripstone_copper_ore",
+    "seamlessores:dripstone_gold_ore",
+    {
+      "id": "seamlessores:cinnabar_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_gold_ore",
+      "required": false
+    },
+    "seamlessores:basalt_nether_gold_ore",
+    "seamlessores:blackstone_nether_gold_ore",
+    {
+      "id": "seamlessores:blackstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_veridium_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_aquamarine_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_citrine_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_citrine_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_citrine_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_peridot_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_peridot_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_peridot_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_topaz_schist_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_topaz_schist_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:mythicupgrades_topaz_schist_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_gold_ore",
+      "required": false
+    }
+  ]
+}
