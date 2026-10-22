@@ -16,6 +16,10 @@
     },
     "seamlessores:andesite_diamond_ore",
     "seamlessores:andesite_emerald_ore",
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     {
       "id": "seamlessores:andesite_iceandfire_silver_ore",
@@ -168,6 +172,10 @@
     },
     {
       "id": "seamlessores:blackstone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -1145,6 +1153,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
       "required": false
     },
@@ -1453,6 +1465,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_gold_ore",
       "required": false
     },
@@ -1510,6 +1526,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -1586,6 +1606,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -1718,6 +1742,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_mossy_stone_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -1932,6 +1960,10 @@
     },
     "seamlessores:tuff_diamond_ore",
     "seamlessores:tuff_emerald_ore",
+    {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:tuff_gold_ore",
     {
       "id": "seamlessores:tuff_iceandfire_silver_ore",
@@ -2062,6 +2094,10 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_evilcraft_dark_ore",
       "required": false
     },
     {

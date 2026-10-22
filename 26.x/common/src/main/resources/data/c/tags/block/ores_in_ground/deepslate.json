@@ -149,6 +149,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -241,6 +245,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -293,6 +301,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_iron_ore",
       "required": false
     },
@@ -338,6 +350,10 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_evilcraft_dark_ore",
       "required": false
     }
   ]

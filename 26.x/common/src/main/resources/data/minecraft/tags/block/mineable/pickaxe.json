@@ -404,6 +404,10 @@
       "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:tuff_coal_ore",
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
@@ -550,6 +554,10 @@
     },
     {
       "id": "seamlessores:tuff_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
       "required": false
     },
     "seamlessores:dripstone_coal_ore",
@@ -854,6 +862,10 @@
     },
     {
       "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -1617,6 +1629,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:mythicupgrades_aquamarine_schist_iron_ore",
       "required": false
     },
@@ -1801,6 +1817,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_coal_ore",
       "required": false
     },
@@ -1882,6 +1902,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -1993,6 +2017,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_iron_ore",
       "required": false
     },
@@ -2061,6 +2089,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_iron_ore",
       "required": false
     },
@@ -2122,6 +2154,10 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_evilcraft_dark_ore",
       "required": false
     }
   ]

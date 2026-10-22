@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_evilcraft_dark_ore",
+      "required": false
+    }
+  ]
+}

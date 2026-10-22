@@ -110,6 +110,7 @@ PROFILES = {
             # Ice and Fire Community Edition 2.2-beta.4, its only 26.x build (a beta, owner 17 Oct 2026).
             "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",
             "theurgy": REFS + "theurgy-26.1.2-neoforge-1.116.0.jar",
+            "evilcraft": REFS + "evilcraft-26.1.2-neoforge-1.2.108-1172.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -130,6 +131,7 @@ PROFILES = {
             # CurseForge only (Ice and Fire CE is not on Modrinth); 26.1.2 NeoForge, needs Jupiter and Uranus.
             "iceandfire": ("neoforge",),
             "theurgy": ("neoforge",),
+            "evilcraft": ("neoforge",),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -150,6 +152,7 @@ PROFILES = {
             "silentgems": REFS + "silentgems-26.2-neoforge-5.2.0.jar",
             "silentgear": REFS + "silent-gear-26.2-neoforge-4.3.0.jar",
             "theurgy": REFS + "theurgy-26.2-neoforge-1.118.1.jar",
+            "evilcraft": REFS + "evilcraft-26.2-neoforge-1.2.98-1108.jar",
         },
         "available": {
             "create": ("fabric",),
@@ -160,6 +163,7 @@ PROFILES = {
             "silentgems": ("neoforge",),
             "silentgear": ("neoforge",),
             "theurgy": ("neoforge",),
+            "evilcraft": ("neoforge",),
         },
     },
     # 26.3 (data formats 121 and up): a new loot format, silk touch as a single "condition" (see
@@ -187,6 +191,7 @@ PROFILES = {
             "occultism": REFS + "occultism-26.3-neoforge-1.256.0.jar",
             "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",   # no 26.3 build: stands in, inert
             "theurgy": REFS + "theurgy-26.3-neoforge-1.120.0.jar",
+            "evilcraft": REFS + "evilcraft-26.3-neoforge-1.2.98-1170.jar",
         },
         "available": {
             "mythicupgrades": ("fabric", "neoforge"),
@@ -194,6 +199,7 @@ PROFILES = {
             "techreborn": ("fabric",),
             "occultism": ("neoforge",),
             "theurgy": ("neoforge",),
+            "evilcraft": ("neoforge",),
         },
     },
 }
@@ -398,6 +404,8 @@ MODS = {
                        "licence": "MIT",          "author": "BlakeBr0"},
     "theurgy": {"display": "Theurgy", "category": "theurgy",
                        "licence": "CC BY-SA 4.0 (art)", "author": "Kli Kli"},
+    "evilcraft": {"display": "EvilCraft", "category": "evilcraft",
+                       "licence": "CC BY 4.0 (art)", "author": "rubensworks"},
 }
 
 ORE_DEFS = [
@@ -776,6 +784,10 @@ ORE_DEFS = [
     {"name": "sal_ammoniac", "overlay": "sal_ammoniac", "source": "sal_ammoniac_ore", "base": "stone",
      "mod": "theurgy",
      "tiers": {"stone": "sal_ammoniac_ore", "deepslate": "deepslate_sal_ammoniac_ore"}},
+    # --- EvilCraft (mod id evilcraft; its images are CC BY 4.0): dark ore glows when touched and drops 1 to 5 XP, as redstone ore does; 3.0 ---
+    {"name": "dark", "overlay": "dark", "source": "dark_ore", "base": "stone",
+     "mod": "evilcraft",
+     "tiers": {"stone": "dark_ore", "deepslate": "dark_ore_deepslate"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -859,6 +871,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "mysticalagriculture": ("neoforge",),
     "iceandfire": ("neoforge",),
     "theurgy": ("neoforge",),
+    "evilcraft": ("neoforge",),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1024,6 +1037,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
         f"text.autoconfig.{MOD_ID}.category.theurgy": "Theurgy",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
         f"text.autoconfig.{MOD_ID}.category.nether": "Nether",
@@ -1044,6 +1058,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.evilCraft": "EvilCraft: variants",
+        f"text.autoconfig.{MOD_ID}.option.evilCraft.@Tooltip":
+            "Generate host-matched dark ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.theurgy": "Theurgy: variants",
         f"text.autoconfig.{MOD_ID}.option.theurgy.@Tooltip":

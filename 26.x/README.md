@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**564 blocks** in the `seamlessores` namespace.
+**573 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -226,6 +226,12 @@ touching ore of the same type across different host stones.
 |---|---|---|
 | Sal Ammoniac | `andesite_theurgy_sal_ammoniac_ore` | `tuff_theurgy_sal_ammoniac_ore` |
 
+**EvilCraft, Overworld, requires `evilcraft`**
+
+| | andesite | tuff |
+|---|---|---|
+| Dark | `andesite_evilcraft_dark_ore` | `tuff_evilcraft_dark_ore` |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these (in the game's own rock) you can actually see depends on which mods have a build for
 your loader at your Minecraft version:
@@ -233,11 +239,11 @@ your loader at your Minecraft version:
 | Minecraft | Loader | Blocks | Supported mods available here |
 |---|---|---|---|
 | 26.1 to 26.1.2 | Fabric | 119 | Create, Energized Power, Mythic Metals, Tech Reborn |
-| 26.1 to 26.1.2 | NeoForge | 99 | Energized Power, Ice and Fire, Mystical Agriculture, Occultism, Powah, Silent Gear, Silent's Gems, Theurgy |
+| 26.1 to 26.1.2 | NeoForge | 101 | Energized Power, EvilCraft, Ice and Fire, Mystical Agriculture, Occultism, Powah, Silent Gear, Silent's Gems, Theurgy |
 | 26.2 | Fabric | 102 | Create, Energized Power, Mythic Upgrades, Tech Reborn |
-| 26.2 | NeoForge | 94 | Energized Power, Mythic Upgrades, Occultism, Silent Gear, Silent's Gems, Theurgy |
+| 26.2 | NeoForge | 96 | Energized Power, EvilCraft, Mythic Upgrades, Occultism, Silent Gear, Silent's Gems, Theurgy |
 | 26.3 | Fabric | 96 | Energized Power, Mythic Upgrades, Tech Reborn |
-| 26.3 | NeoForge | 67 | Energized Power, Mythic Upgrades, Occultism, Theurgy |
+| 26.3 | NeoForge | 69 | Energized Power, EvilCraft, Mythic Upgrades, Occultism, Theurgy |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -266,7 +272,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**344 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**351 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, every 26.x version, both loaders)
 
@@ -301,6 +307,7 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Sapphire | `iceandfire_sapphire` | Ice and Fire `iceandfire` | Deep Blackstone |
 | Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Deep Blackstone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Deep Blackstone |
+| Dark | `dark` | EvilCraft `evilcraft` | Deep Blackstone |
 
 **Blockus, requires `blockus`** (Fabric, 26.1.x to 26.3)
 
@@ -402,6 +409,7 @@ Stones: Darkstone `forbidden_arcanus_darkstone`
 | Peridot | `silents_peridot` | Silent's Gems `silentgems` | Darkstone |
 | Silver | `silents_silver` | Silent's Gems `silentgems` | Darkstone |
 | Silver | `occultism_silver` | Occultism `occultism` | Darkstone |
+| Dark | `dark` | EvilCraft `evilcraft` | Darkstone |
 
 **Mythic Upgrades, requires `mythicupgrades`** (Fabric and NeoForge, 26.2 and 26.3)
 
@@ -457,6 +465,7 @@ Stones: Mossy Stone `regions_unexplored_mossy_stone`, Argillite `regions_unexplo
 | Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Mossy Stone, Argillite |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Mossy Stone, Argillite |
+| Dark | `dark` | EvilCraft `evilcraft` | Mossy Stone, Argillite |
 
 **Promenade, requires `promenade`** (Fabric on every 26.x version, NeoForge on 26.3)
 
@@ -490,6 +499,7 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Asphalt |
 | Silver | `occultism_silver` | Occultism `occultism` | every stone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Asphalt |
+| Dark | `dark` | EvilCraft `evilcraft` | every stone |
 
 **Wilder Wild, requires `wilderwild`** (Fabric 26.1.x to 26.3, NeoForge 26.2 and 26.3)
 
@@ -513,6 +523,7 @@ Stones: Gabbro `wilderwild_gabbro`
 | Iridium | `iridium` | Tech Reborn `techreborn` | Gabbro |
 | Silver | `techreborn_silver` | Tech Reborn `techreborn` | Gabbro |
 | Silver | `occultism_silver` | Occultism `occultism` | Gabbro |
+| Dark | `dark` | EvilCraft `evilcraft` | Gabbro |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -531,7 +542,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 564 blocks takes **88 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 573 blocks takes **89 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -539,7 +550,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `ametrine` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iridium` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sal_ammoniac` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `ametrine` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iridium` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sal_ammoniac` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -640,6 +651,7 @@ is theirs and is used under the licence shown:
 | Ice and Fire | Alexthe666, the Community Edition by IAFEnvoy | LGPL-3.0 |
 | Mystical Agriculture | BlakeBr0 | MIT |
 | Theurgy | Kli Kli | CC BY-SA 4.0 (art) |
+| EvilCraft | rubensworks | CC BY 4.0 (art) |
 <!-- END GENERATED credits -->
 
 Built on [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template) by jaredlll08.

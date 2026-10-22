@@ -404,6 +404,10 @@
       "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_evilcraft_dark_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -1237,6 +1241,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_coal_ore",
       "required": false
     },
@@ -1318,6 +1326,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_evilcraft_dark_ore",
       "required": false
     },
     {
@@ -1429,6 +1441,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_evilcraft_dark_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_iron_ore",
       "required": false
     },
@@ -1494,6 +1510,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_evilcraft_dark_ore",
       "required": false
     },
     {

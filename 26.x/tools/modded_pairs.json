@@ -17,6 +17,22 @@
    "strength": null,
    "deepslate_overlay": null
   },
+  "dark": {
+   "mod": "evilcraft",
+   "seamless_ores_name": "dark",
+   "forms": [
+    "evilcraft:dark_ore",
+    "evilcraft:dark_ore_deepslate"
+   ],
+   "nether": false,
+   "xp": [
+    1,
+    5
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
   "iceandfire_sapphire": {
    "mod": "iceandfire",
    "seamless_ores_name": "iceandfire_sapphire",
@@ -3251,6 +3267,12 @@
     ],
     "rate": 357.12
    },
+   "dark": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 597.07
+   },
    "garnet": {
     "where": [
      "26.1.x neoforge"
@@ -3408,6 +3430,14 @@
      "26.3 neoforge"
     ],
     "rate": 3.72
+   },
+   "dark": {
+    "where": [
+     "26.1.x neoforge",
+     "26.2 neoforge",
+     "26.3 neoforge"
+    ],
+    "rate": 2.55
    },
    "energized_tin": {
     "where": [
@@ -4492,6 +4522,12 @@
     ],
     "rate": 0.89
    },
+   "dark": {
+    "where": [
+     "26.3 neoforge"
+    ],
+    "rate": 41.73
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -4729,6 +4765,12 @@
     ],
     "rate": 0.89
    },
+   "dark": {
+    "where": [
+     "26.3 neoforge"
+    ],
+    "rate": 41.81
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -4949,6 +4991,12 @@
      "26.1.x neoforge"
     ],
     "rate": 0.65
+   },
+   "dark": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.45
    },
    "energized_tin": {
     "where": [
@@ -5214,6 +5262,12 @@
     ],
     "rate": 2.21
    },
+   "dark": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.5
+   },
    "energized_tin": {
     "where": [
      "26.1.x fabric",
@@ -5318,6 +5372,13 @@
      "26.1.x fabric"
     ],
     "rate": 0.39
+   },
+   "dark": {
+    "where": [
+     "26.2 neoforge",
+     "26.3 neoforge"
+    ],
+    "rate": 5.04
    },
    "energized_tin": {
     "where": [

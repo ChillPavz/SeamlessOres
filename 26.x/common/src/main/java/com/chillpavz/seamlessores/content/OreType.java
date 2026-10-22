@@ -542,6 +542,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("theurgy", "sal_ammoniac_ore"), of("theurgy", "deepslate_sal_ammoniac_ore"), null,
             UniformInt.of(2, 5), null, false, Set.of());
 
+    // --- EvilCraft (mod id evilcraft; its images are CC BY 4.0): dark ore glows when touched and drops 1 to 5 XP, as redstone ore does; 3.0 ---
+    public static final OreType EC_DARK = ore(
+            "dark", "dark", null, "evilcraft",
+            of("evilcraft", "dark_ore"), of("evilcraft", "dark_ore_deepslate"), null,
+            UniformInt.of(1, 5), null, true, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -564,7 +570,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TR_URANIUM, OCCULTISM_SILVER, IAF_SAPPHIRE, IAF_SILVER,
                     TR_CINNABAR, TR_PYRITE, TR_SPHALERITE,
                     INFERIUM, PROSPERITY, SG_OPAL,
-                    TH_SAL_AMMONIAC);
+                    TH_SAL_AMMONIAC,
+                    EC_DARK);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 
