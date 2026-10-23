@@ -1,0 +1,106 @@
+{
+  "values": [
+    "seamlessores:granite_gold_ore",
+    "seamlessores:granite_redstone_ore",
+    "seamlessores:diorite_gold_ore",
+    "seamlessores:diorite_redstone_ore",
+    "seamlessores:andesite_gold_ore",
+    "seamlessores:andesite_redstone_ore",
+    "seamlessores:tuff_gold_ore",
+    "seamlessores:tuff_redstone_ore",
+    "seamlessores:dripstone_gold_ore",
+    "seamlessores:dripstone_redstone_ore",
+    {
+      "id": "seamlessores:minecraft_blackstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_ochrum_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_gold_ore",
+      "required": false
+    }
+  ]
+}

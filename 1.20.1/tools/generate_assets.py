@@ -2083,10 +2083,11 @@ def generate_data():
                 # the tier read from its bytecode, written as the vanilla tag that means the same.
                 for tag in ore.get("tool_tier", ()):
                     tool_tags.setdefault(tag, []).append(entry)
-                if mod:
-                    for tag_key, members in mod_own_tool_tags.items():
-                        if vanilla_id in members:
-                            foreign_tool_tags.setdefault(tag_key, []).append(entry)
+                # A mod's own tier tag can list the game's ores too (Silent Gear puts gold and redstone ore in
+                # silentgear:needs_copper_tool), so it applies to every variant, as it does to the ore it stands in for.
+                for tag_key, members in mod_own_tool_tags.items():
+                    if vanilla_id in members:
+                        foreign_tool_tags.setdefault(tag_key, []).append(entry)
                 # An ore its own mod keeps out of every convention tag (a trap meant to pass for
                 # diamond) stays out of them as a variant too: an ore finder would give it away.
                 untagged = ore.get("untagged", False)

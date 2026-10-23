@@ -1,5 +1,39 @@
 {
   "values": [
+    "seamlessores:granite_gold_ore",
+    "seamlessores:granite_redstone_ore",
+    "seamlessores:diorite_gold_ore",
+    "seamlessores:diorite_redstone_ore",
+    "seamlessores:andesite_gold_ore",
+    "seamlessores:andesite_redstone_ore",
+    "seamlessores:tuff_gold_ore",
+    "seamlessores:tuff_redstone_ore",
+    "seamlessores:dripstone_gold_ore",
+    "seamlessores:dripstone_redstone_ore",
+    {
+      "id": "seamlessores:cinnabar_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:cinnabar_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:minecraft_blackstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_gold_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:blockus_bluestone_gold_ore",
       "required": false
@@ -9,31 +43,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:blockus_limestone_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_limestone_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_marble_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:blockus_viridite_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:blockus_viridite_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_asurine_redstone_ore",
       "required": false
     },
     {
@@ -45,15 +55,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_limestone_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:create_ochrum_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:create_ochrum_redstone_ore",
       "required": false
     },
     {
@@ -65,23 +67,7 @@
       "required": false
     },
     {
-      "id": "seamlessores:create_veridium_redstone_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:calcite_gold_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:calcite_redstone_ore",
       "required": false
     },
     {
@@ -90,6 +76,14 @@
     },
     {
       "id": "seamlessores:smooth_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_redstone_ore",
       "required": false
     },
     {
@@ -125,11 +119,19 @@
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_gold_ore",
+      "id": "seamlessores:regions_unexplored_mossy_stone_gold_ore",
       "required": false
     },
     {
-      "id": "seamlessores:promenade_asphalt_redstone_ore",
+      "id": "seamlessores:regions_unexplored_argillite_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_gold_ore",
       "required": false
     },
     {
