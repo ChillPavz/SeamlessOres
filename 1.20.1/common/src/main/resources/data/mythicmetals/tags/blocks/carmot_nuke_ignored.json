@@ -559,6 +559,30 @@
     {
       "id": "seamlessores:biomeswevegone_white_dacite_mythicmetals_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_mythicmetals_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_mythicmetals_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_mythicmetals_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_mythicmetals_banglum_ore",
+      "required": false
     }
   ]
 }

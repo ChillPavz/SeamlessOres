@@ -279,6 +279,21 @@ public final class HostStone {
             OreTier.STONE, MapColor.COLOR_RED,
             COAL, IRON, COPPER, GOLD, EMERALD, ZINC);
 
+    // Galosphere (Fabric and NeoForge at 1.21.1): pink salt is laid by noise patches on the floors and ceilings of Pink Salt
+    // Caves at vegetal_decoration, AFTER every ore feature, replacing base_stone_overworld 3 blocks deep and
+    // never an ore block, so ore stays inside as stone or deepslate ore (the chunk sweep restyles it). Pink,
+    // rose or pastel by noise. Rock salt keeps only what a salt bed holds (OreGeology), so the game's ores
+    // walled in by it become salt. Strength 0.75 and no map colour, read from its GBlocks.
+    public static final HostStone GALOSPHERE_PINK_SALT = placed("galosphere", "pink_salt",
+            OreTier.STONE, MapColor.NONE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+    public static final HostStone GALOSPHERE_ROSE_PINK_SALT = placed("galosphere", "rose_pink_salt",
+            OreTier.STONE, MapColor.NONE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+    public static final HostStone GALOSPHERE_PASTEL_PINK_SALT = placed("galosphere", "pastel_pink_salt",
+            OreTier.STONE, MapColor.NONE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -294,7 +309,8 @@ public final class HostStone {
             MYTHICUPGRADES_CITRINE_SCHIST, MYTHICUPGRADES_PERIDOT_SCHIST, MYTHICUPGRADES_TOPAZ_SCHIST,
             MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST, REGIONS_UNEXPLORED_MOSSY_STONE, REGIONS_UNEXPLORED_ARGILLITE, REGIONS_UNEXPLORED_CHALK,
             PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE, WILDERWILD_GABBRO,
-            BIOMESWEVEGONE_DACITE, BIOMESWEVEGONE_WHITE_DACITE, BIOMESWEVEGONE_RED_ROCK);
+            BIOMESWEVEGONE_DACITE, BIOMESWEVEGONE_WHITE_DACITE, BIOMESWEVEGONE_RED_ROCK,
+            GALOSPHERE_PINK_SALT, GALOSPHERE_ROSE_PINK_SALT, GALOSPHERE_PASTEL_PINK_SALT);
 
     private final String name;
     private final ResourceLocation id;

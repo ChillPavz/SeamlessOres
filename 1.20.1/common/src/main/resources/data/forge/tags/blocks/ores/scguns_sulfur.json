@@ -51,6 +51,18 @@
     {
       "id": "seamlessores:biomeswevegone_white_dacite_scguns_sulfur_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_scguns_sulfur_ore",
+      "required": false
     }
   ]
 }

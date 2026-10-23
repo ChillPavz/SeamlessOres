@@ -443,7 +443,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**1414 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**1444 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric, NeoForge and Forge)
 
@@ -1414,6 +1414,23 @@ Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacit
 | Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Dacite, White Dacite |
 | Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+
+**Galosphere, requires `galosphere`** (Fabric and NeoForge)
+
+Stones: Pink Salt `galosphere_pink_salt`, Rose Pink Salt `galosphere_rose_pink_salt`, Pastel Pink Salt `galosphere_pastel_pink_salt`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | every stone |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | every stone |
+| Lithium | `lithium` | Create: TFMG `tfmg` | every stone |
+| Salt | `salt` | Modern Industrialization `modern_industrialization` | every stone |
+| Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | every stone |
+| Electrodynamics Lithium | `electrodynamics_lithium` | Electrodynamics `electrodynamics` | every stone |
+| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | every stone |
+| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | every stone |
+| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | every stone |
+| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | every stone |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -1432,7 +1449,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 1841 blocks takes **348 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 1871 blocks takes **348 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png

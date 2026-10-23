@@ -31,6 +31,18 @@
     {
       "id": "seamlessores:spawn_reefstone_electrodynamics_niter_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_niter_ore",
+      "required": false
     }
   ]
 }

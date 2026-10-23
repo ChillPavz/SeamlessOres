@@ -23,6 +23,18 @@
     {
       "id": "seamlessores:embellishcraft_gneiss_electrodynamics_lithium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_lithium_ore",
+      "required": false
     }
   ]
 }

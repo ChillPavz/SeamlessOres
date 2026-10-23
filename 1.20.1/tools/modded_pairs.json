@@ -11295,6 +11295,2454 @@
     "rate": 1011.11
    }
   },
+  "galosphere:pastel_pink_salt": {
+   "adamantite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.41
+   },
+   "alexandrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.85
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.29
+   },
+   "antimony": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 51.16
+   },
+   "aquamarine": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "aquarium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 10.73
+   },
+   "arclight": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "banglum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.41
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.55
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.59
+   },
+   "bort": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.77
+   },
+   "brilliant": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.46
+   },
+   "carmot": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.12
+   },
+   "citrine": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "cryorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.18
+   },
+   "dawn_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "dense_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.21
+   },
+   "dense_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.78
+   },
+   "dense_osmium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.75
+   },
+   "dense_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.56
+   },
+   "dense_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.34
+   },
+   "denseores_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.33
+   },
+   "denseores_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.05
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.66
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.68
+   },
+   "denseores_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.74
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.52
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.01
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.68
+   },
+   "dusk_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.3
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.35
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.67
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.08
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.88
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.69
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.68
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.98
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.93
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.65
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.98
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.84
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.36
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.85
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.68
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.54
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.69
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.69
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.27
+   },
+   "energized_tin": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 23.57
+   },
+   "epicpaladins_bloodstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 13.33
+   },
+   "experience": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 10.94
+   },
+   "fire_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "galena": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 28.04
+   },
+   "gleaming": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.63
+   },
+   "gold": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "heliodor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "ice_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 2.47
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 11.63
+   },
+   "inferium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.3
+   },
+   "iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "iridium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.07
+   },
+   "kyber": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.74
+   },
+   "lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.14
+   },
+   "leaf_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "lignite_coal": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 87.38
+   },
+   "lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.41
+   },
+   "manganese": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 4.86
+   },
+   "mi_bauxite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 90.03
+   },
+   "mi_iridium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.26
+   },
+   "mi_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 130.98
+   },
+   "mi_nickel": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 42.98
+   },
+   "mi_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 73.67
+   },
+   "monazite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.19
+   },
+   "moon_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "morkite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 8.91
+   },
+   "mythril": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.41
+   },
+   "natural_quartz": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 2.85
+   },
+   "necoium": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 36.46
+   },
+   "nickel": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.38
+   },
+   "occultism_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.94
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 28.64
+   },
+   "oreganized_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.33
+   },
+   "orichalcum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.46
+   },
+   "osmium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.8
+   },
+   "peridot": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "plasteel": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.67
+   },
+   "platinum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.37
+   },
+   "prometheum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 7.01
+   },
+   "prosperity": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.72
+   },
+   "quadrillum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.78
+   },
+   "runite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.73
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.83
+   },
+   "salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 18.42
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.68
+   },
+   "shiny_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "silents_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.78
+   },
+   "silents_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.06
+   },
+   "silents_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.92
+   },
+   "silents_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.75
+   },
+   "silents_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.78
+   },
+   "silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 8.64
+   },
+   "soulstone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 5.96
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.07
+   },
+   "sun_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.9
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.35
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.85
+   },
+   "techreborn_bauxite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 19.05
+   },
+   "techreborn_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 28.04
+   },
+   "techreborn_ruby": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.14
+   },
+   "techreborn_sapphire": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 4.49
+   },
+   "techreborn_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 26.72
+   },
+   "techreborn_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 21.36
+   },
+   "thorium": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.01
+   },
+   "thunder_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "topaz": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "tungsten": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 15.87
+   },
+   "turquoise": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "unobtainium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.88
+   },
+   "uraninite": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 6.35
+   },
+   "uraninite_dense": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 2.3
+   },
+   "uraninite_poor": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 10.23
+   },
+   "uranium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 21.06
+   },
+   "voidmetal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.36
+   },
+   "water_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "yellorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.32
+   }
+  },
+  "galosphere:pink_salt": {
+   "adamantite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.41
+   },
+   "alexandrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.85
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.29
+   },
+   "antimony": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 51.16
+   },
+   "aquamarine": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "aquarium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 10.73
+   },
+   "arclight": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "banglum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.41
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.55
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.59
+   },
+   "bort": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.77
+   },
+   "brilliant": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.46
+   },
+   "carmot": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.12
+   },
+   "citrine": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "cryorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.18
+   },
+   "dawn_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "dense_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.21
+   },
+   "dense_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.78
+   },
+   "dense_osmium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.75
+   },
+   "dense_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.56
+   },
+   "dense_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.34
+   },
+   "denseores_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.33
+   },
+   "denseores_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.05
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.66
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.68
+   },
+   "denseores_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.74
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.52
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.01
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.68
+   },
+   "dusk_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.3
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.35
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.67
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.08
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.88
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.69
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.68
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.98
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.93
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.65
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.98
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.84
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.36
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.85
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.68
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.54
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.69
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.69
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.27
+   },
+   "energized_tin": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 23.57
+   },
+   "epicpaladins_bloodstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 13.33
+   },
+   "experience": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 10.94
+   },
+   "fire_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "galena": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 28.04
+   },
+   "gleaming": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.63
+   },
+   "gold": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "heliodor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "ice_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 2.47
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 11.63
+   },
+   "inferium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.3
+   },
+   "iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "iridium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.07
+   },
+   "kyber": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.74
+   },
+   "lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.14
+   },
+   "leaf_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "lignite_coal": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 87.38
+   },
+   "lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.41
+   },
+   "manganese": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 4.86
+   },
+   "mi_bauxite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 90.03
+   },
+   "mi_iridium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.26
+   },
+   "mi_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 130.98
+   },
+   "mi_nickel": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 42.98
+   },
+   "mi_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 73.67
+   },
+   "monazite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.19
+   },
+   "moon_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "morkite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 8.91
+   },
+   "mythril": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.41
+   },
+   "natural_quartz": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 2.85
+   },
+   "necoium": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 36.46
+   },
+   "nickel": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.38
+   },
+   "occultism_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.94
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 28.64
+   },
+   "oreganized_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.33
+   },
+   "orichalcum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.46
+   },
+   "osmium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.8
+   },
+   "peridot": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "plasteel": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.67
+   },
+   "platinum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.37
+   },
+   "prometheum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 7.01
+   },
+   "prosperity": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.72
+   },
+   "quadrillum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.78
+   },
+   "runite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.73
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.83
+   },
+   "salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 18.42
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.68
+   },
+   "shiny_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "silents_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.78
+   },
+   "silents_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.06
+   },
+   "silents_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.92
+   },
+   "silents_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.75
+   },
+   "silents_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.78
+   },
+   "silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 8.64
+   },
+   "soulstone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 5.96
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.07
+   },
+   "sun_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.9
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.35
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.85
+   },
+   "techreborn_bauxite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 19.05
+   },
+   "techreborn_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 28.04
+   },
+   "techreborn_ruby": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.14
+   },
+   "techreborn_sapphire": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 4.49
+   },
+   "techreborn_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 26.72
+   },
+   "techreborn_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 21.36
+   },
+   "thorium": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.01
+   },
+   "thunder_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "topaz": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "tungsten": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 15.87
+   },
+   "turquoise": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "unobtainium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.88
+   },
+   "uraninite": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 6.35
+   },
+   "uraninite_dense": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 2.3
+   },
+   "uraninite_poor": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 10.23
+   },
+   "uranium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 21.06
+   },
+   "voidmetal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.36
+   },
+   "water_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "yellorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.32
+   }
+  },
+  "galosphere:rose_pink_salt": {
+   "adamantite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.41
+   },
+   "alexandrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "amethyst": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.85
+   },
+   "anthralite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.29
+   },
+   "antimony": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 51.16
+   },
+   "aquamarine": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "aquarium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 10.73
+   },
+   "arclight": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "banglum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.41
+   },
+   "biggerreactors_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.55
+   },
+   "black_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.59
+   },
+   "bort": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.77
+   },
+   "brilliant": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.46
+   },
+   "carmot": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.12
+   },
+   "citrine": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "cryorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.18
+   },
+   "dawn_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "dense_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.21
+   },
+   "dense_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.78
+   },
+   "dense_osmium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.75
+   },
+   "dense_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.56
+   },
+   "dense_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.34
+   },
+   "denseores_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.33
+   },
+   "denseores_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.05
+   },
+   "denseores_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.66
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.68
+   },
+   "denseores_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.74
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.52
+   },
+   "denseores_redstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.01
+   },
+   "dimensional_shard": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.68
+   },
+   "dusk_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "electrodynamics_aluminum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.3
+   },
+   "electrodynamics_chromium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.35
+   },
+   "electrodynamics_fluorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.67
+   },
+   "electrodynamics_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.08
+   },
+   "electrodynamics_lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.88
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.69
+   },
+   "electrodynamics_monazite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.68
+   },
+   "electrodynamics_niter": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.98
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.93
+   },
+   "electrodynamics_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.65
+   },
+   "electrodynamics_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.98
+   },
+   "electrodynamics_sylvite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.84
+   },
+   "electrodynamics_thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.36
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.85
+   },
+   "electrodynamics_titanium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.68
+   },
+   "electrodynamics_uranium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.54
+   },
+   "electrodynamics_vanadium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.69
+   },
+   "embers_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.69
+   },
+   "embers_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.27
+   },
+   "energized_tin": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 23.57
+   },
+   "epicpaladins_bloodstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "expandeddelight_salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 13.33
+   },
+   "experience": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 10.94
+   },
+   "fire_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "galena": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 28.04
+   },
+   "gleaming": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.63
+   },
+   "gold": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "heliodor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "ice_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 2.47
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 11.63
+   },
+   "inferium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.3
+   },
+   "iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "iridium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.07
+   },
+   "kyber": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.74
+   },
+   "lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.14
+   },
+   "leaf_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "lignite_coal": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 87.38
+   },
+   "lithium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.41
+   },
+   "manganese": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 4.86
+   },
+   "mi_bauxite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 90.03
+   },
+   "mi_iridium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.26
+   },
+   "mi_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 130.98
+   },
+   "mi_nickel": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 42.98
+   },
+   "mi_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 73.67
+   },
+   "monazite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.19
+   },
+   "moon_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "morkite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 8.91
+   },
+   "mythril": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.41
+   },
+   "natural_quartz": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 2.85
+   },
+   "necoium": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 36.46
+   },
+   "nickel": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.38
+   },
+   "occultism_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.94
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 28.64
+   },
+   "oreganized_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.33
+   },
+   "orichalcum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.46
+   },
+   "osmium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.8
+   },
+   "peridot": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "plasteel": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.67
+   },
+   "platinum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.37
+   },
+   "prometheum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 7.01
+   },
+   "prosperity": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.72
+   },
+   "quadrillum": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.78
+   },
+   "runite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.73
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.83
+   },
+   "salt": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 18.42
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.68
+   },
+   "shiny_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "silents_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.78
+   },
+   "silents_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.06
+   },
+   "silents_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.92
+   },
+   "silents_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.75
+   },
+   "silents_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.78
+   },
+   "silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 8.64
+   },
+   "soulstone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 5.96
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.07
+   },
+   "sun_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "superbwarfare_galena": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.9
+   },
+   "superbwarfare_scheelite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.35
+   },
+   "superbwarfare_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.85
+   },
+   "techreborn_bauxite": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 19.05
+   },
+   "techreborn_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 28.04
+   },
+   "techreborn_ruby": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.14
+   },
+   "techreborn_sapphire": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 4.49
+   },
+   "techreborn_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 26.72
+   },
+   "techreborn_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 21.36
+   },
+   "thorium": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.01
+   },
+   "thunder_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "topaz": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 37.51
+   },
+   "tungsten": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 15.87
+   },
+   "turquoise": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.68
+   },
+   "unobtainium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.88
+   },
+   "uraninite": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 6.35
+   },
+   "uraninite_dense": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 2.3
+   },
+   "uraninite_poor": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 10.23
+   },
+   "uranium": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 21.06
+   },
+   "voidmetal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.36
+   },
+   "water_stone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.64
+   },
+   "yellorite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.32
+   }
+  },
   "meadow:limestone": {
    "amethyst": {
     "where": [

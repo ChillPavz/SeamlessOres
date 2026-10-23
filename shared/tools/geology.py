@@ -55,6 +55,9 @@ CLASSES = {
     # red-bed sandstone (owner, 22 Oct 2026): Oh The Biomes We've Gone's red rock. Hematite-cemented continental
     # sandstone: iron, red-bed copper, roll-front uranium and vanadium (Colorado Plateau), lead-zinc, gold, salt.
     "RBED": ["biomeswevegone_red_rock"],
+    # rock salt, an evaporite (owner, 23 Oct 2026): Galosphere's pink, rose and pastel pink salt. STRICT: it keeps
+    # only what a salt bed holds (HOST_KEEPS below), even the ores no other class filters: iron, copper, gold.
+    "EVAP": ["galosphere_pink_salt", "galosphere_rose_pink_salt", "galosphere_pastel_pink_salt"],
 }
 # INVENTED STONES ARE JUDGED TOO (owner, 22 Oct 2026; so-fiction-lore-rule): each is read as the rock its own
 # mod frames it as. Create's scorchia is black-dyed scoria and Twigs' bloodstone lies in the basalt deltas
@@ -83,9 +86,9 @@ FAMILIES = [
     # black shale the seams lie between keep it.
     (["coal", "lignite_coal", "denseores_coal"], _all_but("LIME", "ASPH", "SHAL")),
     # Colombian emerald is in black shale and carbonate; schist emerald is the classic pegmatite contact.
-    (["emerald", "denseores_emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SERP", "CHRT", "RBED")),
+    (["emerald", "denseores_emerald"], _hosts("ASPH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SERP", "CHRT", "RBED", "EVAP")),
     # Lazurite rock is lazurite with calcite: marble and calcite only.
-    (["lapis", "denseores_lapis", "betternether_nether_lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL", "SERP", "CHRT", "RBED")),
+    (["lapis", "denseores_lapis", "betternether_nether_lapis"], _hosts("LIME", "ASPH", "SCH", "PLUT", "VOLC", "FELS", "LATE", "SULF", "SHAL", "SERP", "CHRT", "RBED", "EVAP")),
     # A kimberlite pipe, which none of these is.
     # Born in Chaos' infected diamond is diamond, whatever lives in it.
     (["diamond", "bort", "white_diamond", "black_diamond", "infected_diamond", "denseores_diamond"], _hosts(*ALL)),
@@ -100,15 +103,15 @@ FAMILIES = [
     # Titanium (ilmenite, rutile): mafic intrusions and lava, rutile schist, placer sands in red beds.
     (["tankdefenses_titanium", "electrodynamics_titanium"], _all_but("PLUT", "VOLC", "SCH", "RBED")),
     # Native sulphur: volcanic fumaroles, and the caps of salt domes over carbonate and sulphide (Scorched Guns).
-    (["scguns_sulfur", "scguns_nether_sulfur", "electrodynamics_sulfur"], _all_but("VOLC", "FELS", "LIME", "SULF")),
+    (["scguns_sulfur", "scguns_nether_sulfur", "electrodynamics_sulfur"], _all_but("VOLC", "FELS", "LIME", "SULF", "EVAP")),
     # Sal ammoniac: fumaroles, and burning coal seams in shale and asphalt (Theurgy).
     (["sal_ammoniac"], _all_but("VOLC", "FELS", "ASPH", "SHAL")),
     # Lead, zinc and antimony: carbonate, shale, schist and epithermal veins in volcanics; never in a
     # mafic intrusion, never in a weathering crust. Massive sulphide is their own rock.
     (["zinc", "galena", "techreborn_lead", "lead", "mi_lead", "ie_lead", "mek_lead", "dense_lead",
-      "oreganized_lead", "antimony", "embers_lead", "superbwarfare_galena", "electrodynamics_lead"], _hosts("PLUT", "LATE", "SERP")),
+      "oreganized_lead", "antimony", "embers_lead", "superbwarfare_galena", "electrodynamics_lead"], _hosts("PLUT", "LATE", "SERP", "EVAP")),
     # Manganese also forms in laterite.
-    (["manganese"], _hosts("PLUT", "SERP", "RBED")),
+    (["manganese"], _hosts("PLUT", "SERP", "RBED", "EVAP")),
     # Carbonate replacement tin, and rhyolite-hosted tin (Durango).
     (["tin", "energized_tin", "techreborn_tin", "mi_tin", "mek_tin", "dense_tin", "electrodynamics_tin"],
      _all_but("LIME", "MARB", "FELS")),
@@ -128,17 +131,18 @@ FAMILIES = [
     # not in a laterite, not in a lead-zinc body. Extreme Reactors' yellorite is its uranium ore.
     (["techreborn_uranium", "uranium", "ie_uranium", "mek_uranium", "dense_uranium", "yellorite",
       "uraninite", "uraninite_poor", "uraninite_dense", "biggerreactors_uranium", "electrodynamics_uranium"],
-     _hosts("PLUT", "VOLC", "LATE", "SULF", "SERP", "CHRT")),
+     _hosts("PLUT", "VOLC", "LATE", "SULF", "SERP", "CHRT", "EVAP")),
     # Rock salt is an evaporite, laid down with carbonate and in red beds; sylvite (potash) beside it.
-    (["salt", "expandeddelight_salt", "electrodynamics_salt", "electrodynamics_sylvite"], _all_but("LIME", "RBED")),
+    (["salt", "expandeddelight_salt", "electrodynamics_salt", "electrodynamics_sylvite"], _all_but("LIME", "RBED", "EVAP")),
     # Fluorite: Mississippi Valley carbonate, skarn marble, calcite veins, rhyolite (Mexico), lead-zinc gangue.
-    (["dense_fluorite", "mek_fluorite", "electrodynamics_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL", "SERP", "CHRT", "RBED")),
+    (["dense_fluorite", "mek_fluorite", "electrodynamics_fluorite"], _hosts("ASPH", "SCH", "PLUT", "VOLC", "LATE", "SHAL", "SERP", "CHRT", "RBED", "EVAP")),
     # Scheelite skarn at limestone and marble contacts, and scheelite in schist.
     (["tungsten", "superbwarfare_scheelite"], _all_but("LIME", "MARB", "SCH")),
     # Monazite and thorium: metamorphic monazite in pelitic schist.
     (["monazite", "thorium", "electrodynamics_monazite", "electrodynamics_thorium"], _all_but("SCH")),
     # Lithium: clays from rhyolite (Thacker Pass) and spodumene pegmatite in schist belts.
-    (["lithium", "electrodynamics_lithium"], _all_but("FELS", "SCH")),
+    # Salt-flat brines are the other lithium source (Atacama).
+    (["lithium", "electrodynamics_lithium"], _all_but("FELS", "SCH", "EVAP")),
     # Garnet: schist, skarn marble, rhyolite (spessartine).
     (["garnet", "iter_rpg_sanguarnet"], _all_but("SCH", "MARB", "FELS")),
     # Kyanite, cordierite (iolite), chrysoberyl (alexandrite) and rose quartz pegmatite: pelitic schist.
@@ -162,7 +166,7 @@ FAMILIES = [
     # Vanadium: titanomagnetite in gabbro, red-bed and shale roll fronts, and lava.
     (["electrodynamics_chromium"], _all_but("SERP", "PLUT")),
     (["electrodynamics_molybdenum"], _all_but("PLUT", "FELS", "MARB")),
-    (["electrodynamics_niter"], _all_but("LIME", "SHAL", "RBED")),
+    (["electrodynamics_niter"], _all_but("LIME", "SHAL", "RBED", "EVAP")),
     (["electrodynamics_vanadium"], _all_but("PLUT", "RBED", "SHAL", "VOLC")),
 ]
 
@@ -256,8 +260,8 @@ _DARK = "forbidden_arcanus_darkstone"
 FICTION_LORE = {
     # Mythic Metals, from its advancement lines
     "adamantite": ("PLUT SCH", "G D T", "create_crimsite " + _DARK),  # "the deepest part of the deepslate caves"
-    "aquarium": ("LIME CHRT SHAL VOLC", "A", "create_asurine"),    # under the oceans: sea-floor rock
-    "banglum": ("SULF VOLC LIME ASPH", "A T", ""),                 # "highly volatile", explosive: sulphur, nitre
+    "aquarium": ("LIME CHRT SHAL VOLC EVAP", "A", "create_asurine"),    # under the oceans: sea-floor rock, a dried sea
+    "banglum": ("SULF VOLC LIME ASPH EVAP", "A T", ""),            # "highly volatile", explosive: sulphur, nitre
     "nether_banglum": ("SULF VOLC LIME ASPH", "B Bs", ""),
     "carmot": ("SULF SCH", "G D", "create_crimsite"),              # "Alchemical Miracle", transmutation
     "kyber": ("CALC VOLC FELS", "A Dr", "create_asurine"),         # "hidden inside Amethyst Geodes", calcite
@@ -337,9 +341,25 @@ for _ore, (_classes, _rocks, _stones) in FICTION_LORE.items():
     _LORE_ROCK[_ore] = [r for code, r in _ROCK_CODE.items() if code not in _rocks.split()]
 
 
+# A host that keeps ONLY these ores, whatever FAMILIES say of the rest (owner, 23 Oct 2026): rock salt holds
+# salt and potash, the native sulphur of salt-dome caprock, saltpetre and brine lithium, and the invented ores
+# whose lore is a dried sea or nitre. The families above agree (checked below); this also refuses the ores no
+# family filters (iron, copper, gold, silver, bauxite, citrine).
+_EVAP_KEEPS = set("salt expandeddelight_salt electrodynamics_salt electrodynamics_sylvite scguns_sulfur "
+                  "scguns_nether_sulfur electrodynamics_sulfur electrodynamics_niter lithium electrodynamics_lithium "
+                  "banglum aquarium".split())
+HOST_KEEPS = {host: _EVAP_KEEPS for host in CLASSES["EVAP"]}
+for _host, _keeps in HOST_KEEPS.items():
+    _drift = sorted(o for o, refused in STRICT.items() if (o in _keeps) == (_host in refused))
+    if _drift:
+        raise SystemExit(f"geology.py: HOST_KEEPS for {_host} and FAMILIES disagree on {_drift}")
+
+
 def fixed(host, ore):
     """Whether this ore never forms in this host, for good: no variant, and worldgen makes it stone. The
     stones other mods place, and modded ores in the game's own rock (rock_fixed, below)."""
+    if host in HOST_KEEPS:
+        return ore not in HOST_KEEPS[host]
     if host in GAME_ROCK:
         return rock_fixed(host, ore)
     if host in STRICT.get(ore, ()):
@@ -507,6 +527,7 @@ def java():
                    ",\n".join('            Map.entry("%s", "%s")' % kv for kv in LORE.items()),
                    _set(FICTION), _map_of_sets(ROCK, " " * 12), _set(DRIPSTONE_KEEPS), _set(COBBLEMON_KEEPS),
                    _set(VANILLA_ORES), _set(GAME_ROCK), _set(END_GEM_STONES), _set(GEMS),
+                   _map_of_sets(HOST_KEEPS, " " * 12),
                    ",\n".join('            Map.entry("%s", "%s")' % kv for kv in ROCK_AS.items()))
 
 
@@ -574,6 +595,10 @@ public final class OreGeology {
 
     private static final Set<String> GEMS = Set.of(%s);
 
+    /** A host that keeps only these ores, and refuses every other (rock salt). */
+    private static final Map<String, Set<String>> HOST_KEEPS = Map.ofEntries(
+%s);
+
     /** Stones other mods place that are judged as one of the game's rocks (gneiss as granite). */
     private static final Map<String, String> ROCK_AS = Map.ofEntries(
 %s);
@@ -587,6 +612,10 @@ public final class OreGeology {
 
     /** Whether this ore never forms in this host, for good: no variant, worldgen makes it the stone. */
     public static boolean fixed(String host, String ore) {
+        final Set<String> keeps = HOST_KEEPS.get(host);
+        if (keeps != null) {
+            return !keeps.contains(ore);
+        }
         if (GAME_ROCK.contains(host)) {
             return !VANILLA_ORES.contains(ore) && rockRefuses(host, ore);
         }

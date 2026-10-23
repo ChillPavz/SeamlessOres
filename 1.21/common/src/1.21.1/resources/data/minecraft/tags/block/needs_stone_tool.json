@@ -2486,6 +2486,78 @@
     {
       "id": "seamlessores:biomeswevegone_red_rock_denseores_dense_iron_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_sylvite_ore",
+      "required": false
     }
   ]
 }
