@@ -87,6 +87,7 @@ Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/chaos_overlay.png
   assets/seamlessores/textures/block/garnet_overlay.png
   assets/seamlessores/textures/block/heliodor_overlay.png
+  assets/seamlessores/textures/block/opal_tuff_overlay.png
   assets/seamlessores/textures/block/silents_aquamarine_overlay.png
   assets/seamlessores/textures/block/silents_citrine_overlay.png
   assets/seamlessores/textures/block/silents_peridot_overlay.png

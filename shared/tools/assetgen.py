@@ -149,7 +149,18 @@ def write_art_notice(path, ore_defs, mods):
         mod = ore.get("mod")
         if not mod or mod not in mods:
             continue
-        for key in (ore["overlay"], ore.get("deepslate_overlay")):
+        # A per-host overlay (host_overlays: opal, Cobblemon's stones) is composited from the mod's own art
+        # too. A value is a key, a (side, end) pair, or a dict of those by model suffix.
+        per_host, todo = [], list((ore.get("host_overlays") or {}).values())
+        while todo:
+            value = todo.pop()
+            if isinstance(value, dict):
+                todo += value.values()
+            elif isinstance(value, (tuple, list)):
+                todo += value
+            else:
+                per_host.append(value)
+        for key in (ore["overlay"], ore.get("deepslate_overlay"), *per_host):
             if key and key not in vanilla and key in used:
                 by_mod.setdefault(mod, set()).add(f"assets/{MOD_ID}/textures/block/{key}_overlay.png")
     lines = ["Seamless Ores: third-party art", "",
