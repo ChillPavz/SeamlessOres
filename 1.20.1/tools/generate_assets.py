@@ -426,7 +426,11 @@ MODS = {
     "iter_rpg": {"display": "Iter RPG", "category": "iter_rpg",
                        "licence": "GPL-3.0", "author": "BaronFonShish, RayRindou"},
     "electrodynamics": {"display": "Electrodynamics", "category": "electrodynamics",
-                       "licence": "Aurilisdev licence (credit and link)", "author": "aurilisdev, skip999"},
+                       "licence": "Aurilisdev licence, used with credit to Sebastian Siljuholtet Johansen and a link to its official download page",
+                       "author": "Sebastian Siljuholtet Johansen (aurilisdev), skip999",
+                       "link": "https://www.curseforge.com/minecraft/mc-mods/electrodynamics",
+                       "notice_links": ("https://www.curseforge.com/minecraft/mc-mods/electrodynamics",
+                                        "https://modrinth.com/mod/electrodynamics")},
     "denseores": {"display": "Dense Ores", "category": "dense_ores",
                        "licence": "AGPL-3.0 (art, as its Modrinth page)", "author": "NewJumperr"},
 }

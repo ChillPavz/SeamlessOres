@@ -1531,7 +1531,7 @@ is theirs and is used under the licence shown:
 | [Mekanism](https://modrinth.com/mod/mekanism) | Aidan C. Brady | MIT |
 | Cobblemon | The Cobblemon Team | MPL-2.0 |
 | Create: Propulsion | Sergey Feduk, Tronco_78, Bunting_chj, SSnowly, KyivSec | MIT |
-| Hazen 'N Stuff | Hazen | PolyForm Shield 1.0.0 |
+| Hazen 'N Stuff | Hazen | PolyForm Shield 1.0.0. Required Notice: Copyright Hazen |
 | Actually Additions | Ellpeck | MIT |
 | Superb Warfare | Atsuishio, Roki27, Light_Quanta and other contributors | GPL-3.0 |
 | Epic Paladins | epicpaladinssareus, VeroxUniverse, continued by Bandit-Bytes | LGPL-3.0 |
@@ -1539,7 +1539,7 @@ is theirs and is used under the licence shown:
 | Expanded Delight | ianm1647 | MIT |
 | Theurgy | Kli Kli | CC BY-SA 4.0 (art) |
 | EvilCraft | rubensworks | CC BY 4.0 (art) |
-| Electrodynamics | aurilisdev, skip999 | Aurilisdev licence (credit and link) |
+| [Electrodynamics](https://www.curseforge.com/minecraft/mc-mods/electrodynamics) | Sebastian Siljuholtet Johansen (aurilisdev), skip999 | Aurilisdev licence, used with credit to Sebastian Siljuholtet Johansen and a link to its official download page |
 | BetterNether | quiqueck, paulevs | MIT |
 | Dense Ores | NewJumperr | AGPL-3.0 (art, as its Modrinth page) |
 <!-- END GENERATED credits -->

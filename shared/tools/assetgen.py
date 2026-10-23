@@ -173,6 +173,7 @@ def write_art_notice(path, ore_defs, mods):
         info = mods[mod]
         author = f" by {info['author']}" if info.get("author") and info["author"] != "-" else ""
         lines.append(f"{info['display']}{author}, {info['licence']}:")
+        lines += [f"  {link}" for link in info.get("notice_links", ())]   # a licence that asks for its page
         lines += [f"  {f}" for f in sorted(by_mod[mod])]
         lines.append("")
     assert_no_dashes([("THIRD_PARTY_ART.txt", line) for line in lines], "lines of THIRD_PARTY_ART.txt")

@@ -1541,7 +1541,7 @@ is theirs and is used under the licence shown:
 | Theurgy | Kli Kli | CC BY-SA 4.0 (art) |
 | EvilCraft | rubensworks | CC BY 4.0 (art) |
 | Iter RPG | BaronFonShish, RayRindou | GPL-3.0 |
-| Electrodynamics | aurilisdev, skip999 | Aurilisdev licence (credit and link) |
+| [Electrodynamics](https://www.curseforge.com/minecraft/mc-mods/electrodynamics) | Sebastian Siljuholtet Johansen (aurilisdev), skip999 | Aurilisdev licence, used with credit to Sebastian Siljuholtet Johansen and a link to its official download page |
 | Dense Ores | NewJumperr | AGPL-3.0 (art, as its Modrinth page) |
 <!-- END GENERATED credits -->
 

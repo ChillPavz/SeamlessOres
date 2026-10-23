@@ -226,7 +226,9 @@ Dense Ores by NewJumperr, AGPL-3.0 (art, as its Modrinth page):
   assets/seamlessores/textures/block/denseores_nether_quartz_overlay.png
   assets/seamlessores/textures/block/denseores_redstone_overlay.png
 
-Electrodynamics by aurilisdev, skip999, Aurilisdev licence (credit and link):
+Electrodynamics by Sebastian Siljuholtet Johansen (aurilisdev), skip999, Aurilisdev licence, used with credit to Sebastian Siljuholtet Johansen and a link to its official download page:
+  https://www.curseforge.com/minecraft/mc-mods/electrodynamics
+  https://modrinth.com/mod/electrodynamics
   assets/seamlessores/textures/block/electrodynamics_aluminum_overlay.png
   assets/seamlessores/textures/block/electrodynamics_chromium_overlay.png
   assets/seamlessores/textures/block/electrodynamics_fluorite_overlay.png
@@ -264,7 +266,7 @@ Expanded Delight by ianm1647, MIT:
 Extreme Reactors by ZeroNoRyouki, MIT:
   assets/seamlessores/textures/block/yellorite_overlay.png
 
-Hazen 'N Stuff by Hazen, PolyForm Shield 1.0.0:
+Hazen 'N Stuff by Hazen, PolyForm Shield 1.0.0. Required Notice: Copyright Hazen:
   assets/seamlessores/textures/block/chlorophyte_overlay.png
   assets/seamlessores/textures/block/dreadstone_overlay.png
 
