@@ -1219,6 +1219,18 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_cobblemon_water_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_malum_quartz_ore",
+      "required": false
     }
   ]
 }

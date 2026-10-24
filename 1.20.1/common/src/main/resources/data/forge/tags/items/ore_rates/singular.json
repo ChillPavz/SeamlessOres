@@ -447,6 +447,14 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_mysticalagriculture_inferium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_superbwarfare_silver_ore",
+      "required": false
     }
   ]
 }

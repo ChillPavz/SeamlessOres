@@ -67,6 +67,10 @@
     {
       "id": "seamlessores:spawn_reefstone_bigreactors_yellorite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_bigreactors_yellorite_ore",
+      "required": false
     }
   ]
 }

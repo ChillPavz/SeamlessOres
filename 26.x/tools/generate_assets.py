@@ -296,6 +296,7 @@ HOST_LOOK = {
     "regions_unexplored:argillite": ("mirrored_turned", "regions_unexplored:block/argillite"),
     "regions_unexplored:chalk": ("single", "regions_unexplored:block/chalk"),
     "wilderwild:gabbro": ("mirrored_turned", "wilderwild:block/gabbro"),
+    "yungscavebiomes:ancient_sandstone": ("bottom_top", "yungscavebiomes:block/ancient_sandstone", "yungscavebiomes:block/ancient_sandstone_top", "yungscavebiomes:block/ancient_sandstone_bottom"),
 }
 
 # A host block that only some Minecraft versions have: its loot stays out of the earlier profiles.
@@ -313,6 +314,7 @@ STONE_MODS = {
     "promenade": {"display": "Promenade", "bands": "Fabric on every 26.x version, NeoForge on 26.3"},
     "regions_unexplored": {"display": "Regions Unexplored", "bands": "Fabric and NeoForge, 26.1.x"},
     "wilderwild": {"display": "Wilder Wild", "bands": "Fabric 26.1.x to 26.3, NeoForge 26.2 and 26.3"},
+    "yungscavebiomes": {"display": "YUNG's Cave Biomes", "bands": "Fabric and NeoForge, 26.1.x"},
 }
 
 # The ores that get a cinnabar variant, by OVERLAY key: Nether gold is also named "gold", its overlay
@@ -917,6 +919,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "promenade": ("fabric", "neoforge"),
     "regions_unexplored": ("fabric", "neoforge"),   # Regions Unexplored: Fabric and NeoForge
     "wilderwild": ("fabric", "neoforge"),
+    "yungscavebiomes": ('fabric', 'neoforge'),   # YUNG's Cave Biomes: Fabric and NeoForge
     "create": ("fabric",),
     "mythicupgrades": ("fabric", "neoforge"),
     "mythicmetals": ("fabric",),

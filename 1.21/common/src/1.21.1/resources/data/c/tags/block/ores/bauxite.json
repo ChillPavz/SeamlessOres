@@ -179,6 +179,14 @@
     {
       "id": "seamlessores:wilderwild_gabbro_techreborn_bauxite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_techreborn_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_modern_industrialization_bauxite_ore",
+      "required": false
     }
   ]
 }

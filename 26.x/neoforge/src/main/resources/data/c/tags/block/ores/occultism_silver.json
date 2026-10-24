@@ -51,6 +51,10 @@
     {
       "id": "seamlessores:wilderwild_gabbro_occultism_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_occultism_silver_ore",
+      "required": false
     }
   ]
 }

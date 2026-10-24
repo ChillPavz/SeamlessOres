@@ -443,7 +443,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**1566 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**1608 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric, NeoForge and Forge)
 
@@ -1466,6 +1466,55 @@ Stones: Arid Sandstone `atmospheric_arid_sandstone`, Red Arid Sandstone `atmosph
 | Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Arid Sandstone, Red Arid Sandstone |
 | Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
+
+**YUNG's Cave Biomes, requires `yungscavebiomes`** (Fabric and NeoForge)
+
+Stones: Ancient Sandstone `yungscavebiomes_ancient_sandstone`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Iron | `iron` |  | Ancient Sandstone |
+| Copper | `copper` |  | Ancient Sandstone |
+| Gold | `gold` |  | Ancient Sandstone |
+| Zinc | `zinc` | Create `create` | Ancient Sandstone |
+| Citrine | `citrine` | Mythic Upgrades `mythicupgrades` | Ancient Sandstone |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Ancient Sandstone |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Ancient Sandstone |
+| Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Ancient Sandstone |
+| Dense Uranium | `dense_uranium` | Dense Mekanism `densemekanism` | Ancient Sandstone |
+| Uraninite | `uraninite` | Powah `powah` | Ancient Sandstone |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Ancient Sandstone |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | Ancient Sandstone |
+| Lead | `lead` | Create: TFMG `tfmg` | Ancient Sandstone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Ancient Sandstone |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Ancient Sandstone |
+| Galena | `galena` | Tech Reborn `techreborn` | Ancient Sandstone |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Ancient Sandstone |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Ancient Sandstone |
+| Antimony | `antimony` | Modern Industrialization `modern_industrialization` | Ancient Sandstone |
+| Bauxite | `mi_bauxite` | Modern Industrialization `modern_industrialization` | Ancient Sandstone |
+| Lead | `mi_lead` | Modern Industrialization `modern_industrialization` | Ancient Sandstone |
+| Salt | `salt` | Modern Industrialization `modern_industrialization` | Ancient Sandstone |
+| Uranium | `uranium` | Modern Industrialization `modern_industrialization` | Ancient Sandstone |
+| Silver | `occultism_silver` | Occultism `occultism` | Ancient Sandstone |
+| Yellorite | `yellorite` | Extreme Reactors `bigreactors` | Ancient Sandstone |
+| Lead | `oreganized_lead` | Oreganized `oreganized` | Ancient Sandstone |
+| Silver | `oreganized_silver` | Oreganized `oreganized` | Ancient Sandstone |
+| Natural Quartz | `natural_quartz` | Malum `malum` | Ancient Sandstone |
+| Galena | `superbwarfare_galena` | Superb Warfare `superbwarfare` | Ancient Sandstone |
+| Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Ancient Sandstone |
+| Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Ancient Sandstone |
+| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Electrodynamics Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Ancient Sandstone |
+| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Ancient Sandstone |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -1484,7 +1533,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 1993 blocks takes **364 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 2035 blocks takes **364 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png

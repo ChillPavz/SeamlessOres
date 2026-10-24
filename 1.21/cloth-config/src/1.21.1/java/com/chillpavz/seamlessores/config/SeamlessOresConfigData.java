@@ -366,6 +366,10 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean atmosphericSaffronTravertine = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean yungscavebiomesAncientSandstone = true;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -713,6 +717,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("atmospheric_peach_travertine", atmosphericPeachTravertine);
         values.hosts.put("atmospheric_persimmon_travertine", atmosphericPersimmonTravertine);
         values.hosts.put("atmospheric_saffron_travertine", atmosphericSaffronTravertine);
+        values.hosts.put("yungscavebiomes_ancient_sandstone", yungscavebiomesAncientSandstone);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

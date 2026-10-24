@@ -251,6 +251,7 @@ HOST_LOOK = {
     "atmospheric:peach_travertine": ("column", "atmospheric:block/peach_travertine_side", "atmospheric:block/peach_travertine_top"),
     "atmospheric:persimmon_travertine": ("column", "atmospheric:block/persimmon_travertine_side", "atmospheric:block/persimmon_travertine_top"),
     "atmospheric:saffron_travertine": ("column", "atmospheric:block/saffron_travertine_side", "atmospheric:block/saffron_travertine_top"),
+    "yungscavebiomes:ancient_sandstone": ("bottom_top", "yungscavebiomes:block/ancient_sandstone", "yungscavebiomes:block/ancient_sandstone_top", "yungscavebiomes:block/ancient_sandstone_bottom"),
     "quark:limestone": ("single", "quark:block/limestone"),
     "quark:jasper": ("single", "quark:block/jasper"),
     "quark:shale": ("single", "quark:block/shale"),
@@ -279,6 +280,7 @@ STONE_MODS = {
     "biomeswevegone": {"display": "Oh The Biomes We've Gone", "bands": "Fabric and Forge"},
     "galosphere": {"display": "Galosphere", "bands": "Fabric and Forge"},
     "atmospheric": {"display": "Atmospheric", "bands": "Forge"},
+    "yungscavebiomes": {"display": "YUNG's Cave Biomes", "bands": "Fabric and Forge"},
     "quark": {"display": "Quark", "bands": "Forge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "Forge"},
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and Forge"},
@@ -296,6 +298,7 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "biomeswevegone": jar("Oh-The-Biomes-Weve-Gone-Forge-1.8.2.jar"),
               "galosphere": jar("Galosphere-1.20.1-1.5.2-Forge.jar"),
               "atmospheric": jar("atmospheric-1.20.1-6.1.1.jar"),
+              "yungscavebiomes": jar("YungsCaveBiomes-1.20.1-Forge-2.0.5.jar"),
               "quark": jar("Quark-4.0-462.jar"),
               "forbidden_arcanus": jar("forbidden_arcanus-1.20.1-2.2.6.jar"),
               "meadow": jar("letsdo-meadow-forge-1.3.25.jar"),
@@ -1294,6 +1297,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "biomeswevegone": ("fabric", "forge"),   # Oh The Biomes We've Gone: Fabric and Forge
     "galosphere": ("fabric", "forge"),   # Galosphere: Fabric and Forge
     "atmospheric": ('forge',),   # Atmospheric: Forge
+    "yungscavebiomes": ('fabric', 'forge'),   # YUNG's Cave Biomes: Fabric and Forge
     "quark": ('forge',),   # Quark: Forge only on this band
     "forbidden_arcanus": ('forge',),
     "meadow": ('fabric', 'forge'),

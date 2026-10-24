@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**679 blocks** in the `seamlessores` namespace.
+**697 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -300,7 +300,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**423 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**441 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, every 26.x version, both loaders)
 
@@ -586,6 +586,31 @@ Stones: Gabbro `wilderwild_gabbro`
 | Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Gabbro |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Gabbro |
 | Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Gabbro |
+
+**YUNG's Cave Biomes, requires `yungscavebiomes`** (Fabric and NeoForge, 26.1.x)
+
+Stones: Ancient Sandstone `yungscavebiomes_ancient_sandstone`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Iron | `iron` |  | Ancient Sandstone |
+| Copper | `copper` |  | Ancient Sandstone |
+| Gold | `gold` |  | Ancient Sandstone |
+| Zinc | `zinc` | Create `create` | Ancient Sandstone |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Ancient Sandstone |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Ancient Sandstone |
+| Uraninite | `uraninite` | Powah `powah` | Ancient Sandstone |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Ancient Sandstone |
+| Uraninite Dense | `uraninite_dense` | Powah `powah` | Ancient Sandstone |
+| Bauxite | `techreborn_bauxite` | Tech Reborn `techreborn` | Ancient Sandstone |
+| Galena | `galena` | Tech Reborn `techreborn` | Ancient Sandstone |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Ancient Sandstone |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Ancient Sandstone |
+| Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Ancient Sandstone |
+| Silver | `occultism_silver` | Occultism `occultism` | Ancient Sandstone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Ancient Sandstone |
+| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Ancient Sandstone |
+| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Ancient Sandstone |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -604,7 +629,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 679 blocks takes **103 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 697 blocks takes **103 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png

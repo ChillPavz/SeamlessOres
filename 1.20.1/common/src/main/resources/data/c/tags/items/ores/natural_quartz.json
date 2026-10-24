@@ -107,6 +107,10 @@
     {
       "id": "seamlessores:promenade_blunite_malum_quartz_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_malum_quartz_ore",
+      "required": false
     }
   ]
 }

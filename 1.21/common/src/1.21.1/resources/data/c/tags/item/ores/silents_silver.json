@@ -111,6 +111,10 @@
     {
       "id": "seamlessores:spawn_reefstone_silentgems_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_silentgems_silver_ore",
+      "required": false
     }
   ]
 }

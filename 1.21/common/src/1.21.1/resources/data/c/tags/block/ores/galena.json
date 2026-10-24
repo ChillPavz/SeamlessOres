@@ -55,6 +55,10 @@
     {
       "id": "seamlessores:promenade_asphalt_techreborn_galena_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_techreborn_galena_ore",
+      "required": false
     }
   ]
 }

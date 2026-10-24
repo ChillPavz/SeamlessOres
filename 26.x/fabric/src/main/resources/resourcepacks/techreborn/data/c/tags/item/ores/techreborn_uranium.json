@@ -43,6 +43,10 @@
     {
       "id": "seamlessores:promenade_asphalt_techreborn_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_techreborn_uranium_ore",
+      "required": false
     }
   ]
 }

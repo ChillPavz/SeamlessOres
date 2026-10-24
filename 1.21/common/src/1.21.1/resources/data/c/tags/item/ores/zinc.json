@@ -151,6 +151,10 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_create_zinc_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_create_zinc_ore",
+      "required": false
     }
   ]
 }

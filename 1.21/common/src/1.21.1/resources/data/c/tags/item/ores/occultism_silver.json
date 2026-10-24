@@ -167,6 +167,10 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_occultism_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_occultism_silver_ore",
+      "required": false
     }
   ]
 }

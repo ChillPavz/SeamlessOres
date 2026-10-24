@@ -99,6 +99,10 @@
     {
       "id": "seamlessores:spawn_reefstone_electrodynamics_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_silver_ore",
+      "required": false
     }
   ]
 }

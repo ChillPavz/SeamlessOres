@@ -243,6 +243,14 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_densemekanism_dense_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_densemekanism_dense_uranium_ore",
+      "required": false
     }
   ]
 }

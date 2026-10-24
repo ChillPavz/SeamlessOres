@@ -211,6 +211,10 @@
     {
       "id": "seamlessores:spawn_reefstone_malum_brilliant_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_malum_quartz_ore",
+      "required": false
     }
   ]
 }

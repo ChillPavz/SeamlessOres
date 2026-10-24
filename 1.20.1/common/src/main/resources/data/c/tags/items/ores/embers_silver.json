@@ -67,6 +67,10 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_embers_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_embers_silver_ore",
+      "required": false
     }
   ]
 }

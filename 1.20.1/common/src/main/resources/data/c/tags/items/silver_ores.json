@@ -259,6 +259,18 @@
     {
       "id": "seamlessores:biomeswevegone_red_rock_oreganized_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_oreganized_silver_ore",
+      "required": false
     }
   ]
 }

@@ -247,6 +247,10 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean wilderwildGabbro = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean yungscavebiomesAncientSandstone = true;
     // END GENERATED modded stone switches
 
     // --- Create ---------------------------------------------------------------------------------
@@ -470,6 +474,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("promenade_asphalt", promenadeAsphalt);
         values.hosts.put("promenade_blunite", promenadeBlunite);
         values.hosts.put("wilderwild_gabbro", wilderwildGabbro);
+        values.hosts.put("yungscavebiomes_ancient_sandstone", yungscavebiomesAncientSandstone);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

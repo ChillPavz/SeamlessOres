@@ -147,6 +147,10 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_oreganized_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_oreganized_lead_ore",
+      "required": false
     }
   ]
 }

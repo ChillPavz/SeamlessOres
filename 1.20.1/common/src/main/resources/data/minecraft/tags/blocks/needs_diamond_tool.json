@@ -243,6 +243,14 @@
     {
       "id": "seamlessores:promenade_blunite_techreborn_iridium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_uranium_ore",
+      "required": false
     }
   ]
 }

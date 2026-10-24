@@ -39,6 +39,10 @@
     {
       "id": "seamlessores:twigs_schist_electrodynamics_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_uranium_ore",
+      "required": false
     }
   ]
 }

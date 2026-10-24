@@ -203,6 +203,14 @@
     {
       "id": "seamlessores:promenade_blunite_copper_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_copper_ore",
+      "required": false
     }
   ]
 }

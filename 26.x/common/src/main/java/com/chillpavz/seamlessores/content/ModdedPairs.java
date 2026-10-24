@@ -49,6 +49,7 @@ final class ModdedPairs {
             case "regions_unexplored:chalk" -> keys("osmium", "starrite", "tin", "energized_tin", "techreborn_ruby", "techreborn_sapphire", "techreborn_tin", "occultism_silver", "iceandfire_sapphire", "iceandfire_silver", "sal_ammoniac", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_emerald");
             case "regions_unexplored:mossy_stone" -> keys("aquarium", "banglum", "osmium", "starrite", "tin", "uraninite_poor", "energized_tin", "techreborn_ruby", "techreborn_sapphire", "techreborn_tin", "occultism_silver", "iceandfire_sapphire", "iceandfire_silver", "inferium", "sal_ammoniac", "dark", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_emerald");
             case "wilderwild:gabbro" -> keys("necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium", "occultism_silver", "sal_ammoniac", "dark", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_lapis", "denseores_redstone", "denseores_diamond", "denseores_emerald");
+            case "yungscavebiomes:ancient_sandstone" -> keys("adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "orichalcum", "alexandrite", "chaos", "garnet", "heliodor", "iolite", "silents_ruby", "silents_sapphire", "turquoise", "silents_aquamarine", "silents_peridot", "silents_topaz", "silents_silver", "uraninite", "uraninite_poor", "uraninite_dense", "energized_tin", "bort", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium", "occultism_silver", "iceandfire_sapphire", "iceandfire_silver", "inferium", "prosperity", "opal", "sal_ammoniac", "dark", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_lapis", "denseores_redstone", "denseores_diamond", "denseores_emerald");
             default -> List.of();
         };
     }
@@ -71,6 +72,7 @@ final class ModdedPairs {
             case "regions_unexplored" -> here.equals("fabric") || here.equals("neoforge");
             case "promenade" -> here.equals("fabric") || here.equals("neoforge");
             case "wilderwild" -> here.equals("fabric") || here.equals("neoforge");
+            case "yungscavebiomes" -> here.equals("fabric") || here.equals("neoforge");
             // END GENERATED stone loaders
             default -> false;
         };

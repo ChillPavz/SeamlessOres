@@ -103,6 +103,10 @@
     {
       "id": "seamlessores:spawn_reefstone_electrodynamics_aluminum_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_aluminum_ore",
+      "required": false
     }
   ]
 }

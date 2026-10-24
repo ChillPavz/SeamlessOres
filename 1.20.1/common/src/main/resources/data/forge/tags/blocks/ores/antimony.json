@@ -75,6 +75,10 @@
     {
       "id": "seamlessores:biomeswevegone_white_dacite_modern_industrialization_antimony_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_modern_industrialization_antimony_ore",
+      "required": false
     }
   ]
 }

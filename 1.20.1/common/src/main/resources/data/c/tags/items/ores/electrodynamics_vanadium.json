@@ -27,6 +27,10 @@
     {
       "id": "seamlessores:quark_shale_electrodynamics_vanadium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_vanadium_ore",
+      "required": false
     }
   ]
 }

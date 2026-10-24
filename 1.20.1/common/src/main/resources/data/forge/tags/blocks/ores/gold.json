@@ -196,6 +196,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_gold_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_denseores_dense_gold_ore",
       "required": false
     },

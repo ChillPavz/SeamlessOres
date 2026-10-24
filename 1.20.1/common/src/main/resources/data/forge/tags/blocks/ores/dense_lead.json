@@ -107,6 +107,10 @@
     {
       "id": "seamlessores:atmospheric_red_arid_sandstone_densemekanism_dense_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_densemekanism_dense_lead_ore",
+      "required": false
     }
   ]
 }

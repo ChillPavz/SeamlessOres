@@ -6943,6 +6943,358 @@
     ],
     "rate": 0.3
    }
+  },
+  "yungscavebiomes:ancient_sandstone": {
+   "adamantite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 4.25
+   },
+   "alexandrite": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.09
+   },
+   "aquarium": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 53.34
+   },
+   "banglum": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 15.61
+   },
+   "bort": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 131.42
+   },
+   "carmot": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 5.03
+   },
+   "chaos": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 60.23
+   },
+   "dark": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 49.66
+   },
+   "denseores_coal": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 72.76
+   },
+   "denseores_copper": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 33.65
+   },
+   "denseores_diamond": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 10.62
+   },
+   "denseores_emerald": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 35.43
+   },
+   "denseores_iron": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 31.36
+   },
+   "denseores_lapis": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 14.54
+   },
+   "denseores_redstone": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 4.96
+   },
+   "energized_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 124.02
+   },
+   "galena": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 125.47
+   },
+   "garnet": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 14.79
+   },
+   "heliodor": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.09
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 11.98
+   },
+   "iceandfire_silver": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 56.36
+   },
+   "inferium": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 160.39
+   },
+   "iolite": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.09
+   },
+   "iridium": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 9.89
+   },
+   "kyber": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 3.33
+   },
+   "manganese": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 21.76
+   },
+   "morkite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 39.89
+   },
+   "mythril": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 6.29
+   },
+   "occultism_silver": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 119.56
+   },
+   "opal": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 3.97
+   },
+   "orichalcum": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 4.93
+   },
+   "osmium": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 5.62
+   },
+   "platinum": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 15.1
+   },
+   "prometheum": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 31.37
+   },
+   "prosperity": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 95.94
+   },
+   "quadrillum": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 16.92
+   },
+   "runite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 4.22
+   },
+   "sal_ammoniac": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 100.74
+   },
+   "silents_aquamarine": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 14.79
+   },
+   "silents_peridot": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 32.83
+   },
+   "silents_ruby": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 29.59
+   },
+   "silents_sapphire": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 25.4
+   },
+   "silents_silver": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 126.11
+   },
+   "silents_topaz": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 32.83
+   },
+   "silver": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 38.69
+   },
+   "techreborn_bauxite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 67.53
+   },
+   "techreborn_lead": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 125.47
+   },
+   "techreborn_ruby": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 25.47
+   },
+   "techreborn_sapphire": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 22.28
+   },
+   "techreborn_silver": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 125.47
+   },
+   "techreborn_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 107.54
+   },
+   "techreborn_uranium": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 15.74
+   },
+   "turquoise": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 1.09
+   },
+   "unobtainium": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 3.48
+   },
+   "uraninite": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 22.51
+   },
+   "uraninite_dense": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 7.42
+   },
+   "uraninite_poor": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 40.93
+   }
   }
  }
 }

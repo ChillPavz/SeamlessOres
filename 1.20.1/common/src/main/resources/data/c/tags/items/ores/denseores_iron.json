@@ -127,6 +127,10 @@
     {
       "id": "seamlessores:atmospheric_red_arid_sandstone_denseores_dense_iron_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_denseores_dense_iron_ore",
+      "required": false
     }
   ]
 }

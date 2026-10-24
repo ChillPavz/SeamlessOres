@@ -143,6 +143,10 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_modern_industrialization_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_modern_industrialization_lead_ore",
+      "required": false
     }
   ]
 }

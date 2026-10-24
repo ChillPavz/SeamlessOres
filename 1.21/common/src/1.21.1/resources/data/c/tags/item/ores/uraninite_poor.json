@@ -95,6 +95,10 @@
     {
       "id": "seamlessores:atmospheric_red_arid_sandstone_powah_uraninite_poor_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_powah_uraninite_poor_ore",
+      "required": false
     }
   ]
 }

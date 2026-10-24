@@ -57,6 +57,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_modern_industrialization_uranium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_bigreactors_yellorite_ore",
       "required": false
     },
@@ -262,6 +266,18 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_uranium_ore",
       "required": false
     }
   ]

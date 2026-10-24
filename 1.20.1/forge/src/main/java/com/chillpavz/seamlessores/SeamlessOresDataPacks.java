@@ -365,7 +365,24 @@ public final class SeamlessOresDataPacks {
             "vanillabackport.occultism",
             "vanillabackport.oreganized",
             "vanillabackport.silentgems",
-            "vanillabackport.tfmg");
+            "vanillabackport.tfmg",
+            "yungscavebiomes",
+            "yungscavebiomes.biggerreactors",
+            "yungscavebiomes.bigreactors",
+            "yungscavebiomes.create",
+            "yungscavebiomes.densemekanism",
+            "yungscavebiomes.denseores",
+            "yungscavebiomes.electrodynamics",
+            "yungscavebiomes.embers",
+            "yungscavebiomes.iceandfire",
+            "yungscavebiomes.malum",
+            "yungscavebiomes.mythicupgrades",
+            "yungscavebiomes.occultism",
+            "yungscavebiomes.oreganized",
+            "yungscavebiomes.powah",
+            "yungscavebiomes.silentgems",
+            "yungscavebiomes.superbwarfare",
+            "yungscavebiomes.tfmg");
     // END GENERATED packs
 
     public static void addPackFinders(AddPackFindersEvent event) {

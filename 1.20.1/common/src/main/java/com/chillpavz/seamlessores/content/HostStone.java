@@ -298,6 +298,13 @@ public final class HostStone {
             OreTier.STONE, MapColor.COLOR_RED,
             COAL, IRON, COPPER, GOLD, ZINC);
 
+    // YUNG's Cave Biomes (Fabric and Forge): ancient sandstone as noisy spheres on the Lost Caves' walls at
+    // local_modifications, BEFORE the ores, and in both ore replaceables tags, so the game's stone ore forms in it:
+    // a restyle. The Lost Caves list no emerald. Map colour read from its BlockModule.
+    public static final HostStone YUNGSCAVEBIOMES_ANCIENT_SANDSTONE = placed("yungscavebiomes", "ancient_sandstone",
+            OreTier.STONE, MapColor.SAND,
+            COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -315,7 +322,7 @@ public final class HostStone {
             BIOMESWEVEGONE_DACITE, BIOMESWEVEGONE_WHITE_DACITE, BIOMESWEVEGONE_RED_ROCK,
             GALOSPHERE_PINK_SALT, GALOSPHERE_ROSE_PINK_SALT, GALOSPHERE_PASTEL_PINK_SALT,
             ATMOSPHERIC_ARID_SANDSTONE, ATMOSPHERIC_RED_ARID_SANDSTONE, ATMOSPHERIC_IVORY_TRAVERTINE, ATMOSPHERIC_PEACH_TRAVERTINE,
-            ATMOSPHERIC_PERSIMMON_TRAVERTINE, ATMOSPHERIC_SAFFRON_TRAVERTINE);
+            ATMOSPHERIC_PERSIMMON_TRAVERTINE, ATMOSPHERIC_SAFFRON_TRAVERTINE, YUNGSCAVEBIOMES_ANCIENT_SANDSTONE);
 
     private final String name;
     private final ResourceLocation id;

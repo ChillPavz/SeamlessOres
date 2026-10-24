@@ -141,6 +141,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_immersiveengineering_lead_ore",
       "required": false
     },
@@ -606,6 +610,22 @@
     },
     {
       "id": "seamlessores:atmospheric_saffron_travertine_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_lead_ore",
       "required": false
     }
   ]

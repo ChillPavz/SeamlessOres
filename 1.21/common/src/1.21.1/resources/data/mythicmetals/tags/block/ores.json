@@ -455,6 +455,10 @@
     {
       "id": "seamlessores:galosphere_pastel_pink_salt_mythicmetals_banglum_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_mythicmetals_silver_ore",
+      "required": false
     }
   ]
 }

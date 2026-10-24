@@ -43,6 +43,10 @@
     {
       "id": "seamlessores:atmospheric_red_arid_sandstone_electrodynamics_salt_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_salt_ore",
+      "required": false
     }
   ]
 }

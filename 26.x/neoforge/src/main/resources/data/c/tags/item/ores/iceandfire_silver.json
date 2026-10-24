@@ -31,6 +31,10 @@
     {
       "id": "seamlessores:regions_unexplored_chalk_iceandfire_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_iceandfire_silver_ore",
+      "required": false
     }
   ]
 }

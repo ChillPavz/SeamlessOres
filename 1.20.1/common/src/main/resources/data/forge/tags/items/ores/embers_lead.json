@@ -87,6 +87,10 @@
     {
       "id": "seamlessores:spawn_reefstone_embers_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_embers_lead_ore",
+      "required": false
     }
   ]
 }

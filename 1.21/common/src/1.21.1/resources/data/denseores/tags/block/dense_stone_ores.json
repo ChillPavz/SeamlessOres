@@ -511,6 +511,14 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_denseores_dense_emerald_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_denseores_dense_iron_ore",
+      "required": false
     }
   ]
 }

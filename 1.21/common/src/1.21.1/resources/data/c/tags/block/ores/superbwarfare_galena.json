@@ -99,6 +99,10 @@
     {
       "id": "seamlessores:spawn_reefstone_superbwarfare_galena_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_superbwarfare_galena_ore",
+      "required": false
     }
   ]
 }

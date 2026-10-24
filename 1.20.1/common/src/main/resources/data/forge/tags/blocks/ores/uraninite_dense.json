@@ -59,6 +59,10 @@
     {
       "id": "seamlessores:promenade_asphalt_powah_uraninite_dense_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_powah_uraninite_dense_ore",
+      "required": false
     }
   ]
 }

@@ -55,6 +55,10 @@
     {
       "id": "seamlessores:meadow_limestone_densemekanism_dense_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_densemekanism_dense_uranium_ore",
+      "required": false
     }
   ]
 }

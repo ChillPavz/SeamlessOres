@@ -194,6 +194,13 @@ public final class HostStone {
             MapColor.TERRACOTTA_BROWN,
             COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
 
+    // YUNG's Cave Biomes (Fabric and NeoForge, 26.1.x only): ancient sandstone as noisy spheres on the Lost Caves' walls at
+    // local_modifications, BEFORE the ores, and in both ore replaceables tags, so the game's stone ore forms in it:
+    // a restyle. The Lost Caves list no emerald. Map colour read from its BlockModule.
+    public static final HostStone YUNGSCAVEBIOMES_ANCIENT_SANDSTONE = placed("yungscavebiomes", "ancient_sandstone",
+            OreTier.STONE, MapColor.SAND,
+            COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -208,7 +215,8 @@ public final class HostStone {
             MYTHICUPGRADES_TOPAZ_SCHIST, MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST,
             REGIONS_UNEXPLORED_MOSSY_STONE, REGIONS_UNEXPLORED_ARGILLITE, REGIONS_UNEXPLORED_CHALK,
             PROMENADE_ASPHALT, PROMENADE_BLUNITE,
-            WILDERWILD_GABBRO);
+            WILDERWILD_GABBRO,
+            YUNGSCAVEBIOMES_ANCIENT_SANDSTONE);
 
     private final String name;
     private final Identifier id;

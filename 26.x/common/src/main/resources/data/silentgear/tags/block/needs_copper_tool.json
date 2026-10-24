@@ -149,6 +149,10 @@
     {
       "id": "seamlessores:wilderwild_gabbro_redstone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_gold_ore",
+      "required": false
     }
   ]
 }

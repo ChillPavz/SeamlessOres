@@ -121,6 +121,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_silentgems_citrine_ore",
       "required": false
     },
