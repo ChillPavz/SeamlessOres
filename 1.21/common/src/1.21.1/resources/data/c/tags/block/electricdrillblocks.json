@@ -831,6 +831,34 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_electrodynamics_vanadium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_electrodynamics_salt_ore",
+      "required": false
     }
   ]
 }

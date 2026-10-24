@@ -63,6 +63,22 @@
     {
       "id": "seamlessores:biomeswevegone_white_dacite_techreborn_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_techreborn_tin_ore",
+      "required": false
     }
   ]
 }

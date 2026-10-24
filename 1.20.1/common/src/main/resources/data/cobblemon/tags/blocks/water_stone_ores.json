@@ -59,6 +59,14 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_cobblemon_water_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_cobblemon_water_stone_ore",
+      "required": false
     }
   ]
 }

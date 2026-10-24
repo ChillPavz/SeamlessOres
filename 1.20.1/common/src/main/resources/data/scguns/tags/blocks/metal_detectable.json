@@ -624,6 +624,42 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_gold_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_gold_ore",
+      "required": false
     }
   ]
 }

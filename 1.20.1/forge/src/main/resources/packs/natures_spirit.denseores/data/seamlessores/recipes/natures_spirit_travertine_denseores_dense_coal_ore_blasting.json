@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.4,
+  "group": "coal",
+  "ingredient": {
+    "item": "seamlessores:natures_spirit_travertine_denseores_dense_coal_ore"
+  },
+  "result": "minecraft:coal"
+}

@@ -320,6 +320,24 @@ public final class HostStone {
             OreTier.DEEPSLATE, MapColor.SAND,
             IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
 
+    // Nature's Spirit (Fabric and Forge): every stone is laid at raw_generation, before the ores. Travertine (cliffs)
+    // is in stone_ore_replaceables, so ore lands in it: a restyle. Chert (replace blobs under badlands and arid
+    // surfaces), white chalk and pink sandstone (cliffs) are in no ore tag, so their variants ADD ore (switches
+    // Off by default). Nature's Spirit ships its own chert ores for the game's eight, so chert takes only zinc of
+    // these. Their biomes list no emerald. Map colours read from its NSBlocks.
+    public static final HostStone NATURES_SPIRIT_CHERT = placed("natures_spirit", "chert",
+            OreTier.STONE, MapColor.WOOD,
+            ZINC);
+    public static final HostStone NATURES_SPIRIT_TRAVERTINE = placed("natures_spirit", "travertine",
+            OreTier.STONE, MapColor.COLOR_LIGHT_GRAY,
+            COAL, IRON, COPPER, GOLD, LAPIS, ZINC);
+    public static final HostStone NATURES_SPIRIT_WHITE_CHALK = placed("natures_spirit", "white_chalk",
+            OreTier.STONE, MapColor.TERRACOTTA_WHITE,
+            COAL, IRON, COPPER, GOLD, ZINC);
+    public static final HostStone NATURES_SPIRIT_PINK_SANDSTONE = placed("natures_spirit", "pink_sandstone",
+            OreTier.STONE, MapColor.SAND,
+            COAL, IRON, COPPER, GOLD, ZINC);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -338,7 +356,8 @@ public final class HostStone {
             GALOSPHERE_PINK_SALT, GALOSPHERE_ROSE_PINK_SALT, GALOSPHERE_PASTEL_PINK_SALT,
             ATMOSPHERIC_ARID_SANDSTONE, ATMOSPHERIC_RED_ARID_SANDSTONE, ATMOSPHERIC_IVORY_TRAVERTINE, ATMOSPHERIC_PEACH_TRAVERTINE,
             ATMOSPHERIC_PERSIMMON_TRAVERTINE, ATMOSPHERIC_SAFFRON_TRAVERTINE, YUNGSCAVEBIOMES_ANCIENT_SANDSTONE, DARKERDEPTHS_DARKSLATE,
-            DARKERDEPTHS_GRIMESTONE, DARKERDEPTHS_ARIDROCK);
+            DARKERDEPTHS_GRIMESTONE, DARKERDEPTHS_ARIDROCK, NATURES_SPIRIT_CHERT, NATURES_SPIRIT_TRAVERTINE,
+            NATURES_SPIRIT_WHITE_CHALK, NATURES_SPIRIT_PINK_SANDSTONE);
 
     private final String name;
     private final ResourceLocation id;

@@ -71,6 +71,14 @@
     {
       "id": "seamlessores:darkerdepths_grimestone_cobblemon_leaf_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_cobblemon_leaf_stone_ore",
+      "required": false
     }
   ]
 }

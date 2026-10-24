@@ -147,6 +147,22 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_expandeddelight_salt_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_electrodynamics_salt_ore",
+      "required": false
     }
   ]
 }

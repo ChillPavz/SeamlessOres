@@ -37,6 +37,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_expandeddelight_salt_ore",
       "required": false
     },

@@ -186,6 +186,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_copper_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_denseores_dense_copper_ore",
       "required": false
     },
@@ -343,6 +355,22 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_denseores_dense_copper_ore",
       "required": false
     }
   ]

@@ -71,6 +71,14 @@
     {
       "id": "seamlessores:darkerdepths_grimestone_mysticalagriculture_inferium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mysticalagriculture_inferium_ore",
+      "required": false
     }
   ]
 }

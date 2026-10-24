@@ -26,9 +26,9 @@ CLASSES = {
     # sedimentary carbonate; Spawn's reefstone is reef limestone
     "LIME": ["blockus_limestone", "create_limestone", "meadow_limestone", "spawn_reefstone",
              "regions_unexplored_chalk", "quark_limestone",
-             # hot-spring travertine (Atmospheric's four)
+             # hot-spring travertine (Atmospheric's four and Nature's Spirit's) and Nature's Spirit's white chalk
              "atmospheric_ivory_travertine", "atmospheric_peach_travertine", "atmospheric_persimmon_travertine",
-             "atmospheric_saffron_travertine"],
+             "atmospheric_saffron_travertine", "natures_spirit_travertine", "natures_spirit_white_chalk"],
     "CALC": ["minecraft_calcite"],
     # sedimentary hydrocarbon: asphalt, and TFMG's lignite (brown coal)
     "ASPH": ["promenade_asphalt", "tfmg_lignite"],
@@ -54,13 +54,13 @@ CLASSES = {
     "SERP": ["embellishcraft_jade"],
     # chert and jasper, silica sedimentary (owner, 22 Oct 2026): Quark's jasper. Banded iron formation
     # (jaspilite) and the sea-floor exhalative beds: iron, manganese, copper, lead-zinc, gold, and fiction.
-    "CHRT": ["quark_jasper"],
+    "CHRT": ["quark_jasper", "natures_spirit_chert"],
     # red-bed sandstone (owner, 22 Oct 2026): Oh The Biomes We've Gone's red rock. Hematite-cemented continental
     # sandstone: iron, red-bed copper, roll-front uranium and vanadium (Colorado Plateau), lead-zinc, gold, salt.
     # Desert sandstone joins it (owner, 24 Oct 2026): Atmospheric's arid and red arid sandstone, YUNG's Cave
-    # Biomes' ancient sandstone.
+    # Biomes' ancient sandstone, Nature's Spirit's pink sandstone.
     "RBED": ["biomeswevegone_red_rock", "atmospheric_arid_sandstone", "atmospheric_red_arid_sandstone",
-             "yungscavebiomes_ancient_sandstone"],
+             "yungscavebiomes_ancient_sandstone", "natures_spirit_pink_sandstone"],
     # rock salt, an evaporite (owner, 23 Oct 2026): Galosphere's pink, rose and pastel pink salt. STRICT: it keeps
     # only what a salt bed holds (HOST_KEEPS below), even the ores no other class filters: iron, copper, gold.
     "EVAP": ["galosphere_pink_salt", "galosphere_rose_pink_salt", "galosphere_pastel_pink_salt"],

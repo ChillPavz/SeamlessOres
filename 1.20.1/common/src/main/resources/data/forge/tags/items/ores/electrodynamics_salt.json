@@ -63,6 +63,18 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_salt_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_electrodynamics_salt_ore",
+      "required": false
     }
   ]
 }

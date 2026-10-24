@@ -299,6 +299,54 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_modern_industrialization_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_electrodynamics_tin_ore",
+      "required": false
     }
   ]
 }

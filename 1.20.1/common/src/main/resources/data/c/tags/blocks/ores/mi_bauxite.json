@@ -83,6 +83,10 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_modern_industrialization_bauxite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_modern_industrialization_bauxite_ore",
+      "required": false
     }
   ]
 }

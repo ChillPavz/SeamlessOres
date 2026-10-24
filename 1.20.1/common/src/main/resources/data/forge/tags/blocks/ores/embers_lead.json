@@ -103,6 +103,10 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_embers_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_embers_lead_ore",
+      "required": false
     }
   ]
 }

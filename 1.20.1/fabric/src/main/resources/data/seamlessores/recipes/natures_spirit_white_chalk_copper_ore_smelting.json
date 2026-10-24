@@ -1,0 +1,20 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:natures_spirit_white_chalk_copper_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "copper_ingot",
+  "ingredient": {
+    "item": "seamlessores:natures_spirit_white_chalk_copper_ore"
+  },
+  "result": "minecraft:copper_ingot"
+}

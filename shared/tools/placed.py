@@ -248,10 +248,11 @@ MODEL_SUFFIXES = {"single": ("",), "column": ("",), "bottom_top": ("",), "turned
 # Off by default (owner, 21 Oct 2026; the opt-in rule). Host names, the same on every band.
 ADDS_ORE_HOSTS = {"regions_unexplored_argillite", "regions_unexplored_chalk", "biomeswevegone_dacite",
                   "biomeswevegone_white_dacite", "biomeswevegone_red_rock",
-                  # Atmospheric's sandstones and travertines:
+                  # Atmospheric's sandstones and travertines, Nature's Spirit's chert, chalk and pink sandstone:
                   # surface rules and cliffs laid before the ores, in no ore tag (24 Oct 2026).
                   "atmospheric_arid_sandstone", "atmospheric_red_arid_sandstone", "atmospheric_ivory_travertine",
-                  "atmospheric_peach_travertine", "atmospheric_persimmon_travertine", "atmospheric_saffron_travertine"}
+                  "atmospheric_peach_travertine", "atmospheric_persimmon_travertine", "atmospheric_saffron_travertine",
+                  "natures_spirit_chert", "natures_spirit_white_chalk", "natures_spirit_pink_sandstone"}
 
 
 def gate_of(host_cfg, ore):

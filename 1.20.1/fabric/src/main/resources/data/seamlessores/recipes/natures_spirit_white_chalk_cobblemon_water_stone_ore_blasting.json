@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:natures_spirit_white_chalk_cobblemon_water_stone_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "group": "water_stone",
+  "ingredient": {
+    "item": "seamlessores:natures_spirit_white_chalk_cobblemon_water_stone_ore"
+  },
+  "result": "cobblemon:water_stone",
+  "experience": 0.1,
+  "cookingtime": 100
+}

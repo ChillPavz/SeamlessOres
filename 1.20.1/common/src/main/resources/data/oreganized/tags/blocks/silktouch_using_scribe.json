@@ -295,6 +295,34 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_oreganized_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_oreganized_silver_ore",
+      "required": false
     }
   ]
 }

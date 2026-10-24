@@ -251,6 +251,22 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean yungscavebiomesAncientSandstone = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean naturesSpiritChert = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean naturesSpiritTravertine = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean naturesSpiritWhiteChalk = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean naturesSpiritPinkSandstone = false;
     // END GENERATED modded stone switches
 
     // --- Create ---------------------------------------------------------------------------------
@@ -475,6 +491,10 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("promenade_blunite", promenadeBlunite);
         values.hosts.put("wilderwild_gabbro", wilderwildGabbro);
         values.hosts.put("yungscavebiomes_ancient_sandstone", yungscavebiomesAncientSandstone);
+        values.hosts.put("natures_spirit_chert", naturesSpiritChert);
+        values.hosts.put("natures_spirit_travertine", naturesSpiritTravertine);
+        values.hosts.put("natures_spirit_white_chalk", naturesSpiritWhiteChalk);
+        values.hosts.put("natures_spirit_pink_sandstone", naturesSpiritPinkSandstone);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

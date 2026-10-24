@@ -251,6 +251,18 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_densemekanism_dense_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_densemekanism_dense_tin_ore",
+      "required": false
     }
   ]
 }

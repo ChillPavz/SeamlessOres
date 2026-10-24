@@ -107,6 +107,10 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_superbwarfare_galena_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_superbwarfare_galena_ore",
+      "required": false
     }
   ]
 }

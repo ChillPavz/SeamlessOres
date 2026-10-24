@@ -64,6 +64,14 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_coal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_coal_ore",
+      "required": false
     }
   ]
 }

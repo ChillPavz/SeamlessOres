@@ -483,6 +483,26 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_techreborn_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_techreborn_tin_ore",
+      "required": false
     }
   ]
 }

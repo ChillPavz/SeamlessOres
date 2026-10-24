@@ -268,6 +268,18 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_copper_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_copper_ore",
+      "required": false
     }
   ]
 }

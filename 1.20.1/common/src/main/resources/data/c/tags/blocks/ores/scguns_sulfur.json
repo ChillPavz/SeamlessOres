@@ -67,6 +67,10 @@
     {
       "id": "seamlessores:darkerdepths_darkslate_scguns_sulfur_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_scguns_sulfur_ore",
+      "required": false
     }
   ]
 }

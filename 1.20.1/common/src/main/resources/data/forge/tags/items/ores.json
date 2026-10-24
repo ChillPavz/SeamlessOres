@@ -5656,6 +5656,422 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_chert_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_modern_industrialization_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_modern_industrialization_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_mythicmetals_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_mythicmetals_manganese_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_modern_industrialization_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_expores_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_mythicmetals_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_expores_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_modern_industrialization_antimony_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_modern_industrialization_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_banglum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_tfmg_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_coal_ore",
       "required": false
     },

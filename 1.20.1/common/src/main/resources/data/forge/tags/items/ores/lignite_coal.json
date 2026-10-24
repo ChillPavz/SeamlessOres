@@ -23,6 +23,14 @@
     {
       "id": "seamlessores:spawn_reefstone_modern_industrialization_lignite_coal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_lignite_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_modern_industrialization_lignite_coal_ore",
+      "required": false
     }
   ]
 }

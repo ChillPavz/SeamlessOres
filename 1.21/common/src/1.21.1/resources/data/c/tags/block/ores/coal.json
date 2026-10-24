@@ -132,6 +132,22 @@
     {
       "id": "seamlessores:darkerdepths_grimestone_denseores_dense_coal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_coal_ore",
+      "required": false
     }
   ]
 }

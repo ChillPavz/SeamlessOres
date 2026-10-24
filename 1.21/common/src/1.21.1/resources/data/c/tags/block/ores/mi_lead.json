@@ -159,6 +159,22 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_modern_industrialization_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_modern_industrialization_lead_ore",
+      "required": false
     }
   ]
 }

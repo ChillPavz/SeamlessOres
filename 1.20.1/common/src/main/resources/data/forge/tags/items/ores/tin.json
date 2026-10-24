@@ -33,6 +33,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_energizedpower_tin_ore",
       "required": false
     },
@@ -150,6 +158,22 @@
     },
     {
       "id": "seamlessores:atmospheric_saffron_travertine_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_electrodynamics_tin_ore",
       "required": false
     }
   ]

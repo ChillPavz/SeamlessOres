@@ -283,6 +283,26 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_oreganized_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_oreganized_silver_ore",
+      "required": false
     }
   ]
 }

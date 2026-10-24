@@ -255,6 +255,10 @@ HOST_LOOK = {
     "darkerdepths:darkslate": ("column", "darkerdepths:block/darkslate", "darkerdepths:block/darkslate_top"),
     "darkerdepths:grimestone": ("column", "darkerdepths:block/grimestone", "darkerdepths:block/grimestone_top"),
     "darkerdepths:aridrock": ("column", "darkerdepths:block/aridrock", "darkerdepths:block/aridrock_top"),
+    "natures_spirit:chert": ("column", "natures_spirit:block/chert", "natures_spirit:block/chert_top"),
+    "natures_spirit:travertine": ("single", "natures_spirit:block/travertine"),
+    "natures_spirit:white_chalk": ("single", "natures_spirit:block/white_chalk"),
+    "natures_spirit:pink_sandstone": ("bottom_top", "natures_spirit:block/pink_sandstone", "natures_spirit:block/pink_sandstone_top", "natures_spirit:block/pink_sandstone_bottom"),
     "quark:limestone": ("single", "quark:block/limestone"),
     "quark:jasper": ("single", "quark:block/jasper"),
     "quark:shale": ("single", "quark:block/shale"),
@@ -285,6 +289,7 @@ STONE_MODS = {
     "atmospheric": {"display": "Atmospheric", "bands": "Forge"},
     "yungscavebiomes": {"display": "YUNG's Cave Biomes", "bands": "Fabric and Forge"},
     "darkerdepths": {"display": "Darker Depths", "bands": "Forge"},
+    "natures_spirit": {"display": "Nature's Spirit", "bands": "Fabric and Forge"},
     "quark": {"display": "Quark", "bands": "Forge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "Forge"},
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and Forge"},
@@ -304,6 +309,7 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "atmospheric": jar("atmospheric-1.20.1-6.1.1.jar"),
               "yungscavebiomes": jar("YungsCaveBiomes-1.20.1-Forge-2.0.5.jar"),
               "darkerdepths": jar("Darker Depths-1.20.1-2.1.5.jar"),
+              "natures_spirit": jar("natures_spirit-2.2.5-1.20.1.jar"),
               "quark": jar("Quark-4.0-462.jar"),
               "forbidden_arcanus": jar("forbidden_arcanus-1.20.1-2.2.6.jar"),
               "meadow": jar("letsdo-meadow-forge-1.3.25.jar"),
@@ -1304,6 +1310,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "atmospheric": ('forge',),   # Atmospheric: Forge
     "yungscavebiomes": ('fabric', 'forge'),   # YUNG's Cave Biomes: Fabric and Forge
     "darkerdepths": ('forge',),   # Darker Depths: Forge
+    "natures_spirit": ('fabric', 'forge'),   # Nature's Spirit: Fabric and Forge
     "quark": ('forge',),   # Quark: Forge only on this band
     "forbidden_arcanus": ('forge',),
     "meadow": ('fabric', 'forge'),

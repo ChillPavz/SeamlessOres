@@ -199,6 +199,10 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_modern_industrialization_bauxite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_modern_industrialization_bauxite_ore",
+      "required": false
     }
   ]
 }

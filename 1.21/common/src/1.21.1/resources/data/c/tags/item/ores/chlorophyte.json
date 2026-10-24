@@ -63,6 +63,14 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_hazennstuff_chlorophyte_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_hazennstuff_chlorophyte_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_hazennstuff_chlorophyte_ore",
+      "required": false
     }
   ]
 }

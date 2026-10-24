@@ -208,6 +208,18 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_iron_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_iron_ore",
+      "required": false
     }
   ]
 }

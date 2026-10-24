@@ -155,6 +155,22 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_tfmg_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_tfmg_lead_ore",
+      "required": false
     }
   ]
 }

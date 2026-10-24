@@ -35,6 +35,18 @@
     {
       "id": "seamlessores:galosphere_pastel_pink_salt_mythicmetals_aquarium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_mythicmetals_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_mythicmetals_aquarium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_aquarium_ore",
+      "required": false
     }
   ]
 }

@@ -107,6 +107,10 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_electrodynamics_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_lead_ore",
+      "required": false
     }
   ]
 }

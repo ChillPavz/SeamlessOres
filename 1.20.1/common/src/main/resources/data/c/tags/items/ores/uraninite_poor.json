@@ -111,6 +111,14 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_powah_uraninite_poor_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_powah_uraninite_poor_ore",
+      "required": false
     }
   ]
 }

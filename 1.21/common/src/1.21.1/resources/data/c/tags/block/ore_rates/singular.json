@@ -1299,6 +1299,58 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_malum_quartz_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_oreganized_silver_ore",
+      "required": false
     }
   ]
 }

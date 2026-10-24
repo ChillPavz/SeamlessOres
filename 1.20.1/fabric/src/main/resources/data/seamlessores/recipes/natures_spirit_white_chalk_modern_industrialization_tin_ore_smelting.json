@@ -1,0 +1,18 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:natures_spirit_white_chalk_modern_industrialization_tin_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:natures_spirit_white_chalk_modern_industrialization_tin_ore"
+  },
+  "result": "modern_industrialization:tin_ingot"
+}

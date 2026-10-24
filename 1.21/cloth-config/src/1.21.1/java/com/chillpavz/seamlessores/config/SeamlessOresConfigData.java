@@ -382,6 +382,22 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean darkerdepthsAridrock = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean naturesSpiritChert = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean naturesSpiritTravertine = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean naturesSpiritWhiteChalk = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean naturesSpiritPinkSandstone = false;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -733,6 +749,10 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("darkerdepths_darkslate", darkerdepthsDarkslate);
         values.hosts.put("darkerdepths_grimestone", darkerdepthsGrimestone);
         values.hosts.put("darkerdepths_aridrock", darkerdepthsAridrock);
+        values.hosts.put("natures_spirit_chert", naturesSpiritChert);
+        values.hosts.put("natures_spirit_travertine", naturesSpiritTravertine);
+        values.hosts.put("natures_spirit_white_chalk", naturesSpiritWhiteChalk);
+        values.hosts.put("natures_spirit_pink_sandstone", naturesSpiritPinkSandstone);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

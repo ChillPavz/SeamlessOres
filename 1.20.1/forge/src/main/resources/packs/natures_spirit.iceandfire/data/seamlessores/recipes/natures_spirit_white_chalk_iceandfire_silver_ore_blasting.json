@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "seamlessores:natures_spirit_white_chalk_iceandfire_silver_ore"
+  },
+  "result": "iceandfire:silver_ingot",
+  "experience": 0.35,
+  "cookingtime": 100
+}

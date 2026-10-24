@@ -59,6 +59,10 @@
     {
       "id": "seamlessores:spawn_reefstone_mythicmetals_manganese_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_mythicmetals_manganese_ore",
+      "required": false
     }
   ]
 }

@@ -179,6 +179,10 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_mythicupgrades_citrine_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_mythicupgrades_citrine_ore",
+      "required": false
     }
   ]
 }

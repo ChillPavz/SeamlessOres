@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**697 blocks** in the `seamlessores` namespace.
+**753 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -300,7 +300,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**441 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**497 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, every 26.x version, both loaders)
 
@@ -611,6 +611,37 @@ Stones: Ancient Sandstone `yungscavebiomes_ancient_sandstone`
 | Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Ancient Sandstone |
 | Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Ancient Sandstone |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Ancient Sandstone |
+
+**Nature's Spirit, requires `natures_spirit`** (Fabric and NeoForge, 26.1.x)
+
+Stones: Chert `natures_spirit_chert`, Travertine `natures_spirit_travertine`, White Chalk `natures_spirit_white_chalk`, Pink Sandstone `natures_spirit_pink_sandstone`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Coal | `coal` |  | Travertine, White Chalk |
+| Iron | `iron` |  | Travertine, White Chalk, Pink Sandstone |
+| Copper | `copper` |  | Travertine, White Chalk, Pink Sandstone |
+| Gold | `gold` |  | Travertine, White Chalk, Pink Sandstone |
+| Zinc | `zinc` | Create `create` | every stone |
+| Aquarium | `aquarium` | Mythic Metals `mythicmetals` | Chert, Travertine, White Chalk |
+| Banglum | `banglum` | Mythic Metals `mythicmetals` | Travertine, White Chalk |
+| Manganese | `manganese` | Mythic Metals `mythicmetals` | Chert |
+| Silver | `silver` | Mythic Metals `mythicmetals` | Chert |
+| Tin | `tin` | Mythic Metals `mythicmetals` | Travertine, White Chalk |
+| Silver | `silents_silver` | Silent's Gems `silentgems` | Chert |
+| Uraninite Poor | `uraninite_poor` | Powah `powah` | Travertine, Pink Sandstone |
+| Tin | `energized_tin` | Energized Power `energizedpower` | Travertine, White Chalk |
+| Galena | `galena` | Tech Reborn `techreborn` | Chert |
+| Lead | `techreborn_lead` | Tech Reborn `techreborn` | Chert |
+| Silver | `techreborn_silver` | Tech Reborn `techreborn` | Chert |
+| Tin | `techreborn_tin` | Tech Reborn `techreborn` | Travertine, White Chalk |
+| Silver | `occultism_silver` | Occultism `occultism` | every stone |
+| Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
+| Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Travertine, White Chalk |
+| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Travertine, White Chalk |
+| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Travertine, White Chalk |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -629,7 +660,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 697 blocks takes **103 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 753 blocks takes **103 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png

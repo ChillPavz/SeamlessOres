@@ -97,6 +97,8 @@ Cobblemon by The Cobblemon Team, MPL-2.0:
   assets/seamlessores/textures/block/leaf_stone_darkerdepths_grimestone_end_overlay.png
   assets/seamlessores/textures/block/leaf_stone_darkerdepths_grimestone_overlay.png
   assets/seamlessores/textures/block/leaf_stone_meadow_limestone_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_natures_spirit_travertine_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_natures_spirit_white_chalk_overlay.png
   assets/seamlessores/textures/block/leaf_stone_promenade_asphalt_overlay.png
   assets/seamlessores/textures/block/leaf_stone_quark_limestone_overlay.png
   assets/seamlessores/textures/block/leaf_stone_quark_shale_overlay.png
@@ -179,6 +181,8 @@ Cobblemon by The Cobblemon Team, MPL-2.0:
   assets/seamlessores/textures/block/water_stone_embellishcraft_marble_overlay.png
   assets/seamlessores/textures/block/water_stone_meadow_limestone_overlay.png
   assets/seamlessores/textures/block/water_stone_minecraft_calcite_overlay.png
+  assets/seamlessores/textures/block/water_stone_natures_spirit_travertine_overlay.png
+  assets/seamlessores/textures/block/water_stone_natures_spirit_white_chalk_overlay.png
   assets/seamlessores/textures/block/water_stone_promenade_blunite_overlay.png
   assets/seamlessores/textures/block/water_stone_quark_limestone_overlay.png
   assets/seamlessores/textures/block/water_stone_spawn_reefstone_overlay.png

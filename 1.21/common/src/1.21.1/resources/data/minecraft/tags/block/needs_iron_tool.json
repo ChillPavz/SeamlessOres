@@ -4142,6 +4142,150 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_electrodynamics_vanadium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_oreganized_silver_ore",
+      "required": false
     }
   ]
 }

@@ -51,6 +51,14 @@
     {
       "id": "seamlessores:spawn_reefstone_expores_experience_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_expores_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_expores_experience_ore",
+      "required": false
     }
   ]
 }

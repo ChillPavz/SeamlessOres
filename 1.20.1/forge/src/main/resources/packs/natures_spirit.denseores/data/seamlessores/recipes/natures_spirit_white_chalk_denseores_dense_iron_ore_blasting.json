@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 2.8,
+  "group": "iron_ingot",
+  "ingredient": {
+    "item": "seamlessores:natures_spirit_white_chalk_denseores_dense_iron_ore"
+  },
+  "result": "minecraft:iron_ingot"
+}

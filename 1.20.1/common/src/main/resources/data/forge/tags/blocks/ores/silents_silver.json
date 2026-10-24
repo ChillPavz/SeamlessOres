@@ -115,6 +115,10 @@
     {
       "id": "seamlessores:darkerdepths_aridrock_silentgems_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_silentgems_silver_ore",
+      "required": false
     }
   ]
 }

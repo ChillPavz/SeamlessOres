@@ -75,6 +75,14 @@
     {
       "id": "seamlessores:darkerdepths_grimestone_denseores_dense_emerald_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_emerald_ore",
+      "required": false
     }
   ]
 }
