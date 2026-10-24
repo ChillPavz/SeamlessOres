@@ -3,6 +3,26 @@
     {
       "id": "seamlessores:legendary_monsters_enderstone_hazennstuff_zenalite_end_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_hazennstuff_zenalite_end_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_hazennstuff_zenalite_end_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_hazennstuff_zenalite_end_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_hazennstuff_zenalite_end_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_hazennstuff_zenalite_end_stone_ore",
+      "required": false
     }
   ]
 }

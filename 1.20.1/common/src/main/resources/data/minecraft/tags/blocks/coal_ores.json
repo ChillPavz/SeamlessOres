@@ -148,6 +148,18 @@
     {
       "id": "seamlessores:legendary_monsters_enderstone_beo_end_coal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_beo_end_coal_ore",
+      "required": false
     }
   ]
 }

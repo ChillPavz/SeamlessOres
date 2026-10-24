@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/unusualend_gloopslate_silentgems_end_rose_quartz_ore"
+      },
+      {
+        "model": "seamlessores:block/unusualend_gloopslate_silentgems_end_rose_quartz_ore",
+        "y": 90
+      },
+      {
+        "model": "seamlessores:block/unusualend_gloopslate_silentgems_end_rose_quartz_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/unusualend_gloopslate_silentgems_end_rose_quartz_ore",
+        "y": 270
+      }
+    ]
+  }
+}

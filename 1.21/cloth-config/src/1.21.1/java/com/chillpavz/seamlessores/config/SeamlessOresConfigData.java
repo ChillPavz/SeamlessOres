@@ -434,6 +434,26 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean legendaryMonstersEnderstone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean unusualendGloopstone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean unusualendGloopslate = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean unusualendWarpedStone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean unusualendGneiss = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean unusualendRawPurpurBlock = false;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -804,6 +824,11 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("betterend_sandy_jadestone", betterendSandyJadestone);
         values.hosts.put("betterend_virid_jadestone", betterendViridJadestone);
         values.hosts.put("legendary_monsters_enderstone", legendaryMonstersEnderstone);
+        values.hosts.put("unusualend_gloopstone", unusualendGloopstone);
+        values.hosts.put("unusualend_gloopslate", unusualendGloopslate);
+        values.hosts.put("unusualend_warped_stone", unusualendWarpedStone);
+        values.hosts.put("unusualend_gneiss", unusualendGneiss);
+        values.hosts.put("unusualend_raw_purpur_block", unusualendRawPurpurBlock);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

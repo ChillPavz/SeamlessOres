@@ -45,6 +45,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:unusualend_gloopstone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_sullysmod_jade_ore",
       "required": false
     },
@@ -78,6 +98,26 @@
     },
     {
       "id": "seamlessores:legendary_monsters_enderstone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_epicpaladins_jade_ore",
       "required": false
     }
   ]

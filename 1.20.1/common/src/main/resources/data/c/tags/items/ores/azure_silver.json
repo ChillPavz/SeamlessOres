@@ -23,6 +23,26 @@
     {
       "id": "seamlessores:legendary_monsters_enderstone_silentgear_azure_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgear_azure_silver_ore",
+      "required": false
     }
   ]
 }

@@ -23,6 +23,26 @@
     {
       "id": "seamlessores:legendary_monsters_enderstone_silentgems_ammolite_end_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_ammolite_end_ore",
+      "required": false
     }
   ]
 }

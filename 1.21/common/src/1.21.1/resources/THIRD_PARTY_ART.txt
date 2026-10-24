@@ -421,6 +421,12 @@ Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/opal_tuff_overlay.png
   assets/seamlessores/textures/block/opal_twigs_rhyolite_end_overlay.png
   assets/seamlessores/textures/block/opal_twigs_rhyolite_overlay.png
+  assets/seamlessores/textures/block/opal_unusualend_gloopslate_overlay.png
+  assets/seamlessores/textures/block/opal_unusualend_gloopstone_overlay.png
+  assets/seamlessores/textures/block/opal_unusualend_gneiss_end_overlay.png
+  assets/seamlessores/textures/block/opal_unusualend_gneiss_overlay.png
+  assets/seamlessores/textures/block/opal_unusualend_raw_purpur_block_overlay.png
+  assets/seamlessores/textures/block/opal_unusualend_warped_stone_overlay.png
   assets/seamlessores/textures/block/pearl_overlay.png
   assets/seamlessores/textures/block/rose_quartz_overlay.png
   assets/seamlessores/textures/block/silents_aquamarine_overlay.png

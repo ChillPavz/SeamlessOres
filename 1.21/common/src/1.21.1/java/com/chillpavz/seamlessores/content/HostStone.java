@@ -375,6 +375,15 @@ public final class HostStone {
     // stone, in no ore tag: a variant ADDS ore.
     public static final HostStone LEGENDARY_MONSTERS_ENDERSTONE = placed("legendary_monsters", "enderstone", OreTier.STONE, null);
 
+    // Unusual End (Forge at 1.20.1, NeoForge at 1.21.1): patches, piles and isles in its Gloopstone Highlands and
+    // raw purpur in the End, in no ore tag: a variant ADDS ore. Gloopslate turns a quarter at random, as its own
+    // blockstate.
+    public static final HostStone UNUSUALEND_GLOOPSTONE = placed("unusualend", "gloopstone", OreTier.STONE, null);
+    public static final HostStone UNUSUALEND_GLOOPSLATE = placed("unusualend", "gloopslate", OreTier.STONE, null);
+    public static final HostStone UNUSUALEND_WARPED_STONE = placed("unusualend", "warped_stone", OreTier.STONE, null);
+    public static final HostStone UNUSUALEND_GNEISS = placed("unusualend", "gneiss", OreTier.STONE, null);
+    public static final HostStone UNUSUALEND_RAW_PURPUR_BLOCK = placed("unusualend", "raw_purpur_block", OreTier.STONE, null);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -398,7 +407,9 @@ public final class HostStone {
             NATURES_SPIRIT_WHITE_CHALK, NATURES_SPIRIT_PINK_SANDSTONE,
             BETTEREND_FLAVOLITE, BETTEREND_VIOLECITE, BETTEREND_SULPHURIC_ROCK, BETTEREND_BRIMSTONE,
             BETTEREND_UMBRALITH, BETTEREND_AZURE_JADESTONE, BETTEREND_SANDY_JADESTONE, BETTEREND_VIRID_JADESTONE,
-            LEGENDARY_MONSTERS_ENDERSTONE);
+            LEGENDARY_MONSTERS_ENDERSTONE,
+            UNUSUALEND_GLOOPSTONE, UNUSUALEND_GLOOPSLATE, UNUSUALEND_WARPED_STONE, UNUSUALEND_GNEISS,
+            UNUSUALEND_RAW_PURPUR_BLOCK);
 
     private final String name;
     private final ResourceLocation id;

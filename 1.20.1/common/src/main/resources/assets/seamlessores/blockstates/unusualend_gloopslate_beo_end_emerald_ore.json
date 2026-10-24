@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/unusualend_gloopslate_beo_end_emerald_ore"
+      },
+      {
+        "model": "seamlessores:block/unusualend_gloopslate_beo_end_emerald_ore",
+        "y": 90
+      },
+      {
+        "model": "seamlessores:block/unusualend_gloopslate_beo_end_emerald_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/unusualend_gloopslate_beo_end_emerald_ore",
+        "y": 270
+      }
+    ]
+  }
+}

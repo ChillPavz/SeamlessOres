@@ -9592,6 +9592,526 @@
       "required": false
     },
     {
+      "id": "seamlessores:unusualend_gloopslate_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_alexandrite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_carnelian_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_citrine_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_heliodor_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_iolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_kyanite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_moldavite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_rose_quartz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_ruby_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_sapphire_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_topaz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_turquoise_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_silentgems_white_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_alexandrite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_carnelian_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_citrine_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_heliodor_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_iolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_kyanite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_moldavite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_rose_quartz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_ruby_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_sapphire_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_topaz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_turquoise_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_silentgems_white_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_alexandrite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_carnelian_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_citrine_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_heliodor_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_iolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_kyanite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_moldavite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_rose_quartz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_ruby_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_sapphire_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_topaz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_turquoise_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_silentgems_white_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_alexandrite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_carnelian_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_citrine_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_heliodor_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_iolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_kyanite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_moldavite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_rose_quartz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_ruby_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_sapphire_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_topaz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_turquoise_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_raw_purpur_block_silentgems_white_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_alexandrite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_carnelian_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_citrine_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_heliodor_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_iolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_kyanite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_moldavite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_rose_quartz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_ruby_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_sapphire_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_topaz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_turquoise_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_warped_stone_silentgems_white_diamond_end_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_biggerreactors_uranium_ore",
       "required": false
     },

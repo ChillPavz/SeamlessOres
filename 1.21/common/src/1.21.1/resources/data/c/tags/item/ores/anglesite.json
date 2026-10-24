@@ -3,6 +3,18 @@
     {
       "id": "seamlessores:legendary_monsters_enderstone_bigreactors_anglesite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopstone_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_bigreactors_anglesite_ore",
+      "required": false
     }
   ]
 }

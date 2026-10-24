@@ -252,6 +252,11 @@ HOST_LOOK = {
     "betterend:sandy_jadestone": ("single", "betterend:block/sandy_jadestone"),
     "betterend:virid_jadestone": ("single", "betterend:block/virid_jadestone"),
     "legendary_monsters:enderstone": ("single", "legendary_monsters:block/enderstone"),
+    "unusualend:gloopstone": ("single", "unusualend:block/gloop_stone"),
+    "unusualend:gloopslate": ("turned4", "unusualend:block/gloopslate"),
+    "unusualend:warped_stone": ("single", "unusualend:block/warped_stone"),
+    "unusualend:gneiss": ("column", "unusualend:block/gneiss", "unusualend:block/gneiss_top"),
+    "unusualend:raw_purpur_block": ("single", "unusualend:block/purpur_stone"),
 }
 
 # The mods that PLACE a host stone, for the README and the config screen, and the jar each one's
@@ -282,6 +287,7 @@ STONE_MODS = {
     "wilderwild": {"display": "Wilder Wild", "bands": "Fabric"},
     "betterend": {"display": "BetterEnd", "bands": "Fabric"},
     "legendary_monsters": {"display": "Legendary Monsters", "bands": "NeoForge"},
+    "unusualend": {"display": "Unusual End", "bands": "NeoForge"},
 }
 STONE_JARS = {"minecraft": CLIENT_JAR,
               "blockus": jar("blockus-2.9.18+1.21.1.jar"),
@@ -305,7 +311,8 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "twigs": jar("Twigs-1.21.1-3.1.2.jar"),
               "wilderwild": jar("WilderWild-4.2.1-mc1.21.1.jar"),
               "betterend": jar("better-end-21.0.11.jar"),
-              "legendary_monsters": jar("legendary_monsters-2.2.4 MC 1.21.1.jar")}
+              "legendary_monsters": jar("legendary_monsters-2.2.4 MC 1.21.1.jar"),
+              "unusualend": jar("unusualend-2.3.1b.jar")}
 HOST_TABLE = era_file(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
                                    "common"), BAND, "java/com/chillpavz/seamlessores/content/HostStone.java")
 
@@ -1392,6 +1399,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "bno": ('fabric',),
     "betterend": ('fabric',),   # BetterEnd: Fabric
     "legendary_monsters": ('neoforge',),   # Legendary Monsters: NeoForge
+    "unusualend": ('neoforge',),   # Unusual End: NeoForge
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
