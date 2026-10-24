@@ -72,6 +72,14 @@ Cobblemon by The Cobblemon Team, MPL-2.0:
   assets/seamlessores/textures/block/ice_stone_minecraft_calcite_overlay.png
   assets/seamlessores/textures/block/ice_stone_promenade_blunite_overlay.png
   assets/seamlessores/textures/block/ice_stone_twigs_schist_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_atmospheric_ivory_travertine_end_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_atmospheric_ivory_travertine_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_atmospheric_peach_travertine_end_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_atmospheric_peach_travertine_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_atmospheric_persimmon_travertine_end_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_atmospheric_persimmon_travertine_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_atmospheric_saffron_travertine_end_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_atmospheric_saffron_travertine_overlay.png
   assets/seamlessores/textures/block/leaf_stone_blockus_limestone_overlay.png
   assets/seamlessores/textures/block/leaf_stone_blockus_viridite_overlay.png
   assets/seamlessores/textures/block/leaf_stone_born_in_chaos_v1_black_argillite_overlay.png
@@ -142,6 +150,14 @@ Cobblemon by The Cobblemon Team, MPL-2.0:
   assets/seamlessores/textures/block/thunder_stone_tfmg_galena_2_overlay.png
   assets/seamlessores/textures/block/thunder_stone_tfmg_galena_3_overlay.png
   assets/seamlessores/textures/block/thunder_stone_twigs_schist_overlay.png
+  assets/seamlessores/textures/block/water_stone_atmospheric_ivory_travertine_end_overlay.png
+  assets/seamlessores/textures/block/water_stone_atmospheric_ivory_travertine_overlay.png
+  assets/seamlessores/textures/block/water_stone_atmospheric_peach_travertine_end_overlay.png
+  assets/seamlessores/textures/block/water_stone_atmospheric_peach_travertine_overlay.png
+  assets/seamlessores/textures/block/water_stone_atmospheric_persimmon_travertine_end_overlay.png
+  assets/seamlessores/textures/block/water_stone_atmospheric_persimmon_travertine_overlay.png
+  assets/seamlessores/textures/block/water_stone_atmospheric_saffron_travertine_end_overlay.png
+  assets/seamlessores/textures/block/water_stone_atmospheric_saffron_travertine_overlay.png
   assets/seamlessores/textures/block/water_stone_blockus_limestone_overlay.png
   assets/seamlessores/textures/block/water_stone_blockus_marble_overlay.png
   assets/seamlessores/textures/block/water_stone_create_asurine_0_overlay.png

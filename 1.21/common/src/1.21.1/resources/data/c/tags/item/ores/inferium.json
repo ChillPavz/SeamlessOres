@@ -51,6 +51,22 @@
     {
       "id": "seamlessores:spawn_reefstone_mysticalagriculture_inferium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_mysticalagriculture_inferium_ore",
+      "required": false
     }
   ]
 }

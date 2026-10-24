@@ -294,6 +294,30 @@ public final class HostStone {
             OreTier.STONE, MapColor.NONE,
             COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
 
+    // Atmospheric (NeoForge): its surface rule lays arid and red arid sandstone under Dunes, Spiny Thicket and
+    // Scrubland (the floor's surface depth plus up to 30, the game's desert sandstone rule) and the four travertines
+    // one surface depth deep in Hot Springs below y 93, by noise; before every feature and in no ore tag, so these
+    // variants ADD ore (switches Off by default). Their biomes list no emerald. Map colours read from its
+    // AtmosphericProperties.
+    public static final HostStone ATMOSPHERIC_ARID_SANDSTONE = placed("atmospheric", "arid_sandstone",
+            OreTier.STONE, MapColor.SAND,
+            COAL, IRON, COPPER, GOLD, LAPIS, ZINC);
+    public static final HostStone ATMOSPHERIC_RED_ARID_SANDSTONE = placed("atmospheric", "red_arid_sandstone",
+            OreTier.STONE, MapColor.TERRACOTTA_ORANGE,
+            COAL, IRON, COPPER, GOLD, LAPIS, ZINC);
+    public static final HostStone ATMOSPHERIC_IVORY_TRAVERTINE = placed("atmospheric", "ivory_travertine",
+            OreTier.STONE, MapColor.TERRACOTTA_WHITE,
+            COAL, IRON, COPPER, GOLD, ZINC);
+    public static final HostStone ATMOSPHERIC_PEACH_TRAVERTINE = placed("atmospheric", "peach_travertine",
+            OreTier.STONE, MapColor.TERRACOTTA_PINK,
+            COAL, IRON, COPPER, GOLD, ZINC);
+    public static final HostStone ATMOSPHERIC_PERSIMMON_TRAVERTINE = placed("atmospheric", "persimmon_travertine",
+            OreTier.STONE, MapColor.TERRACOTTA_ORANGE,
+            COAL, IRON, COPPER, GOLD, ZINC);
+    public static final HostStone ATMOSPHERIC_SAFFRON_TRAVERTINE = placed("atmospheric", "saffron_travertine",
+            OreTier.STONE, MapColor.COLOR_RED,
+            COAL, IRON, COPPER, GOLD, ZINC);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -310,7 +334,9 @@ public final class HostStone {
             MYTHICUPGRADES_SAPPHIRE_SCHIST, MYTHICUPGRADES_JADE_SCHIST, REGIONS_UNEXPLORED_MOSSY_STONE, REGIONS_UNEXPLORED_ARGILLITE, REGIONS_UNEXPLORED_CHALK,
             PROMENADE_ASPHALT, PROMENADE_BLUNITE, SPAWN_REEFSTONE, WILDERWILD_GABBRO,
             BIOMESWEVEGONE_DACITE, BIOMESWEVEGONE_WHITE_DACITE, BIOMESWEVEGONE_RED_ROCK,
-            GALOSPHERE_PINK_SALT, GALOSPHERE_ROSE_PINK_SALT, GALOSPHERE_PASTEL_PINK_SALT);
+            GALOSPHERE_PINK_SALT, GALOSPHERE_ROSE_PINK_SALT, GALOSPHERE_PASTEL_PINK_SALT,
+            ATMOSPHERIC_ARID_SANDSTONE, ATMOSPHERIC_RED_ARID_SANDSTONE, ATMOSPHERIC_IVORY_TRAVERTINE, ATMOSPHERIC_PEACH_TRAVERTINE,
+            ATMOSPHERIC_PERSIMMON_TRAVERTINE, ATMOSPHERIC_SAFFRON_TRAVERTINE);
 
     private final String name;
     private final ResourceLocation id;

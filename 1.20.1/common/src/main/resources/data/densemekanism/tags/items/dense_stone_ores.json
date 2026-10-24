@@ -219,6 +219,30 @@
     {
       "id": "seamlessores:biomeswevegone_white_dacite_densemekanism_dense_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_arid_sandstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_densemekanism_dense_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_densemekanism_dense_tin_ore",
+      "required": false
     }
   ]
 }

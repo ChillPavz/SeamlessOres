@@ -1073,7 +1073,8 @@ def generate_json():
         side, end, look = host_cfg["side"], host_cfg["end"], host_cfg["look"]
 
         # Blockstate and models, in the host's look. No render_type from 26.1: the layer is derived.
-        state, block_models = look_models(name, look, side, end, overlay, overlay_end, moss=host_cfg["moss"])
+        state, block_models = look_models(name, look, side, end, overlay, overlay_end, moss=host_cfg["moss"],
+                                          bottom=host_cfg["bottom"])
         for model_name, model in block_models.items():
             write_json(os.path.join(models, f"{model_name}.json"), model)
         write_json(os.path.join(root, "blockstates", f"{name}.json"), state)

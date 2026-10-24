@@ -119,6 +119,38 @@
     {
       "id": "seamlessores:biomeswevegone_white_dacite_electrodynamics_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_electrodynamics_tin_ore",
+      "required": false
     }
   ]
 }

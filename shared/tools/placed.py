@@ -145,6 +145,8 @@ class Hosts(dict):
                           "look": look[0], "side": look[1],
                           "end": look[2] if len(look) > 2 and not look[0].startswith("moss") else look[1],
                           "moss": look[2] if look[0].startswith("moss") else None,
+                          # bottom_top: (look, side, top, bottom), the down face its own texture.
+                          "bottom": look[3] if look[0] == "bottom_top" else None,
                           "adds": host_id.replace(":", "_") in ADDS_ORE_HOSTS,
                           "since": (since or {}).get(host_id)}
         missing = set(self.pairs["hosts"]) - {h["id"] for h in self.values()}
@@ -238,14 +240,18 @@ class Hosts(dict):
 
 
 # The models a look writes, by suffix: what look_models names them.
-MODEL_SUFFIXES = {"single": ("",), "column": ("",), "turned": ("",), "mirrored": ("", "_mirrored"),
+MODEL_SUFFIXES = {"single": ("",), "column": ("",), "bottom_top": ("",), "turned": ("",), "mirrored": ("", "_mirrored"),
                   "mirrored_turned": ("", "_mirrored"), "textures4": ("", "_0", "_1", "_2", "_3"),
                   "moss_mirrored": ("", "_mirrored"), "moss_mirrored_turned": ("", "_mirrored")}
 
 # Stones ore never forms in today (in no ore replaceables tag): a variant there ADDS ore, so its switch is
 # Off by default (owner, 21 Oct 2026; the opt-in rule). Host names, the same on every band.
 ADDS_ORE_HOSTS = {"regions_unexplored_argillite", "regions_unexplored_chalk", "biomeswevegone_dacite",
-                  "biomeswevegone_white_dacite", "biomeswevegone_red_rock"}
+                  "biomeswevegone_white_dacite", "biomeswevegone_red_rock",
+                  # Atmospheric's sandstones and travertines:
+                  # surface rules and cliffs laid before the ores, in no ore tag (24 Oct 2026).
+                  "atmospheric_arid_sandstone", "atmospheric_red_arid_sandstone", "atmospheric_ivory_travertine",
+                  "atmospheric_peach_travertine", "atmospheric_persimmon_travertine", "atmospheric_saffron_travertine"}
 
 
 def gate_of(host_cfg, ore):
@@ -330,6 +336,8 @@ def translucent_overlays(hosts, band_textures, jars):
         overrides = ore.setdefault("host_overlays", {})
         if host in overrides:
             continue
+        if cfg["bottom"]:
+            sys.exit(f"{host}: a translucent ore on a bottom_top stone needs a third overlay for the down face")
         layer = Image.open(layer_path).convert("RGBA")
         chosen = {}
         for suffix in MODEL_SUFFIXES[cfg["look"]]:

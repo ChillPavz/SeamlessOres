@@ -71,6 +71,22 @@
     {
       "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_salt_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_arid_sandstone_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_arid_sandstone_electrodynamics_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_modern_industrialization_salt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_electrodynamics_salt_ore",
+      "required": false
     }
   ]
 }

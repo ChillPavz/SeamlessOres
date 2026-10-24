@@ -245,6 +245,30 @@
     {
       "id": "seamlessores:biomeswevegone_red_rock_gold_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_arid_sandstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_gold_ore",
+      "required": false
     }
   ]
 }

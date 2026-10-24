@@ -139,6 +139,14 @@
     {
       "id": "seamlessores:biomeswevegone_red_rock_denseores_dense_iron_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_arid_sandstone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_denseores_dense_iron_ore",
+      "required": false
     }
   ]
 }

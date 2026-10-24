@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.6,
+  "group": "tin_ingot",
+  "ingredient": {
+    "item": "seamlessores:atmospheric_ivory_travertine_densemekanism_dense_tin_ore"
+  },
+  "result": "mekanism:raw_tin"
+}

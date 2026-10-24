@@ -245,6 +245,12 @@ HOST_LOOK = {
     "galosphere:pink_salt": ("single", "galosphere:block/pink_salt"),
     "galosphere:rose_pink_salt": ("single", "galosphere:block/rose_pink_salt"),
     "galosphere:pastel_pink_salt": ("single", "galosphere:block/pastel_pink_salt"),
+    "atmospheric:arid_sandstone": ("bottom_top", "atmospheric:block/arid_sandstone", "atmospheric:block/arid_sandstone_top", "atmospheric:block/arid_sandstone_bottom"),
+    "atmospheric:red_arid_sandstone": ("bottom_top", "atmospheric:block/red_arid_sandstone", "atmospheric:block/red_arid_sandstone_top", "atmospheric:block/red_arid_sandstone_bottom"),
+    "atmospheric:ivory_travertine": ("column", "atmospheric:block/ivory_travertine_side", "atmospheric:block/ivory_travertine_top"),
+    "atmospheric:peach_travertine": ("column", "atmospheric:block/peach_travertine_side", "atmospheric:block/peach_travertine_top"),
+    "atmospheric:persimmon_travertine": ("column", "atmospheric:block/persimmon_travertine_side", "atmospheric:block/persimmon_travertine_top"),
+    "atmospheric:saffron_travertine": ("column", "atmospheric:block/saffron_travertine_side", "atmospheric:block/saffron_travertine_top"),
     "quark:limestone": ("single", "quark:block/limestone"),
     "quark:jasper": ("single", "quark:block/jasper"),
     "quark:shale": ("single", "quark:block/shale"),
@@ -272,6 +278,7 @@ STONE_MODS = {
     "embellishcraft": {"display": "EmbellishCraft", "bands": "Forge"},
     "biomeswevegone": {"display": "Oh The Biomes We've Gone", "bands": "Fabric and Forge"},
     "galosphere": {"display": "Galosphere", "bands": "Fabric and Forge"},
+    "atmospheric": {"display": "Atmospheric", "bands": "Forge"},
     "quark": {"display": "Quark", "bands": "Forge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "Forge"},
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and Forge"},
@@ -288,6 +295,7 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "embellishcraft": jar("embellishcraft-1.20.1-7.0.0.0.jar"),
               "biomeswevegone": jar("Oh-The-Biomes-Weve-Gone-Forge-1.8.2.jar"),
               "galosphere": jar("Galosphere-1.20.1-1.5.2-Forge.jar"),
+              "atmospheric": jar("atmospheric-1.20.1-6.1.1.jar"),
               "quark": jar("Quark-4.0-462.jar"),
               "forbidden_arcanus": jar("forbidden_arcanus-1.20.1-2.2.6.jar"),
               "meadow": jar("letsdo-meadow-forge-1.3.25.jar"),
@@ -1285,6 +1293,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "embellishcraft": ('forge',),   # EmbellishCraft: Forge only on this band
     "biomeswevegone": ("fabric", "forge"),   # Oh The Biomes We've Gone: Fabric and Forge
     "galosphere": ("fabric", "forge"),   # Galosphere: Fabric and Forge
+    "atmospheric": ('forge',),   # Atmospheric: Forge
     "quark": ('forge',),   # Quark: Forge only on this band
     "forbidden_arcanus": ('forge',),
     "meadow": ('fabric', 'forge'),
@@ -1425,7 +1434,7 @@ def generate_json():
             # SeamlessOresFabricClient calling BlockRenderLayerMap. Both halves are needed.
             state, block_models = look_models(name, host_cfg["look"], host_cfg["side"], host_cfg["end"],
                                               None, None, render_type="minecraft:cutout",
-                                              overlays=HOSTS.overlays_of(ore, host_cfg))
+                                              overlays=HOSTS.overlays_of(ore, host_cfg), bottom=host_cfg["bottom"])
             for model_name, model in block_models.items():
                 write_json(os.path.join(root, "models", "block", f"{model_name}.json"), model)
             write_json(os.path.join(root, "blockstates", f"{name}.json"), state)

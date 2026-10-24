@@ -63,6 +63,22 @@
     {
       "id": "seamlessores:spawn_reefstone_cobblemon_leaf_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_cobblemon_leaf_stone_ore",
+      "required": false
     }
   ]
 }

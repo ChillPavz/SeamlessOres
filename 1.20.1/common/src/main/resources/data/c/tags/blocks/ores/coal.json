@@ -36,6 +36,22 @@
     {
       "id": "seamlessores:spawn_reefstone_coal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_coal_ore",
+      "required": false
     }
   ]
 }

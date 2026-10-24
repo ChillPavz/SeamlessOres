@@ -67,6 +67,22 @@
     {
       "id": "seamlessores:spawn_reefstone_denseores_dense_emerald_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_denseores_dense_emerald_ore",
+      "required": false
     }
   ]
 }

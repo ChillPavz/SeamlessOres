@@ -197,14 +197,18 @@ def stone_name(path):
 FACES = ["down", "up", "north", "south", "west", "east"]
 
 
-def faces(ref, end_ref=None, mirrored=False):
-    """Full-cube faces: ref on the four sides, end_ref (default the same) on up and down."""
-    return {side: {"uv": [16, 0, 0, 16] if mirrored else [0, 0, 16, 16],
-                   "texture": end_ref if end_ref and side in ("up", "down") else ref, "cullface": side}
+def faces(ref, end_ref=None, mirrored=False, bottom_ref=None):
+    """Full-cube faces: ref on the four sides, end_ref (default the same) on up and down, bottom_ref (default
+    end_ref) on down alone."""
+    def texture(side):
+        if side == "down" and bottom_ref:
+            return bottom_ref
+        return end_ref if end_ref and side in ("up", "down") else ref
+    return {side: {"uv": [16, 0, 0, 16] if mirrored else [0, 0, 16, 16], "texture": texture(side), "cullface": side}
             for side in FACES}
 
 
-def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=None, moss=None):
+def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=None, moss=None, bottom=None):
     """Two coincident full cubes, following vanilla's own grass_block pattern: the stone, then the ore.
 
     The base is opaque so it lands on the solid layer; the overlay has alpha and must land on cutout,
@@ -216,6 +220,7 @@ def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=Non
 
     moss: a third cube on top of the ore, mirrored with the stone (Regions Unexplored's mossy stone: the
     game's stone, the ore, then the moss, so the moss hides part of the ore, owner, 21 Oct 2026).
+    bottom: the stone's down face where it differs from its top (a sandstone's cube_bottom_top).
     """
     textures = {"particle": side, "side": side, "end": end, "overlay": f"{MOD_ID}:block/{overlay}_overlay"}
     if overlay_end != overlay:
@@ -224,8 +229,10 @@ def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=Non
     if render_type:
         model["render_type"] = render_type
     model["textures"] = textures
+    if bottom:
+        textures["bottom"] = bottom
     model["elements"] = [
-        {"from": [0, 0, 0], "to": [16, 16, 16], "faces": faces("#side", "#end", mirrored)},
+        {"from": [0, 0, 0], "to": [16, 16, 16], "faces": faces("#side", "#end", mirrored, "#bottom" if bottom else None)},
         {"from": [0, 0, 0], "to": [16, 16, 16],
          "faces": faces("#overlay", "#overlay_end" if "overlay_end" in textures else None)},
     ]
@@ -235,14 +242,15 @@ def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=Non
     return model
 
 
-LOOKS = ("single", "column", "turned", "mirrored", "mirrored_turned", "textures4", "moss_mirrored",
+LOOKS = ("single", "column", "bottom_top", "turned", "mirrored", "mirrored_turned", "textures4", "moss_mirrored",
          "moss_mirrored_turned")
 
 
-def look_models(name, look, side, end, overlay, overlay_end, render_type=None, overlays=None, moss=None):
+def look_models(name, look, side, end, overlay, overlay_end, render_type=None, overlays=None, moss=None, bottom=None):
     """(blockstate, {model file name: model}) for one variant in a host of the given look.
 
     single / column: one model (a column's end faces are just another texture).
+    bottom_top: one model, its top and bottom faces two textures (a sandstone; bottom names the down face).
     turned: the host picks itself as is or turned 180 (Meadow's limestone on 1.20.1); one model, turned
     in the blockstate, which turns the ore with it.
     mirrored_turned: the host picks among itself mirrored and turned (Wilder Wild's gabbro), so ours
@@ -260,9 +268,9 @@ def look_models(name, look, side, end, overlay, overlay_end, render_type=None, o
 
     def model(s, e, mirrored=False, suffix=""):
         o, oe = overlays[suffix] if overlays else (overlay, overlay_end)
-        return block_model(s, e, o, oe, mirrored=mirrored, render_type=render_type, moss=moss)
+        return block_model(s, e, o, oe, mirrored=mirrored, render_type=render_type, moss=moss, bottom=bottom)
 
-    if look in ("single", "column"):
+    if look in ("single", "column", "bottom_top"):
         return {"variants": {"": {"model": base}}}, {name: model(side, end)}
     if look == "turned":
         return {"variants": {"": [{"model": base}, {"model": base, "y": 180}]}}, {name: model(side, end)}

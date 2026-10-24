@@ -342,6 +342,30 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean galospherePastelPinkSalt = true;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean atmosphericAridSandstone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean atmosphericRedAridSandstone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean atmosphericIvoryTravertine = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean atmosphericPeachTravertine = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean atmosphericPersimmonTravertine = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean atmosphericSaffronTravertine = false;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -683,6 +707,12 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("galosphere_pink_salt", galospherePinkSalt);
         values.hosts.put("galosphere_rose_pink_salt", galosphereRosePinkSalt);
         values.hosts.put("galosphere_pastel_pink_salt", galospherePastelPinkSalt);
+        values.hosts.put("atmospheric_arid_sandstone", atmosphericAridSandstone);
+        values.hosts.put("atmospheric_red_arid_sandstone", atmosphericRedAridSandstone);
+        values.hosts.put("atmospheric_ivory_travertine", atmosphericIvoryTravertine);
+        values.hosts.put("atmospheric_peach_travertine", atmosphericPeachTravertine);
+        values.hosts.put("atmospheric_persimmon_travertine", atmosphericPersimmonTravertine);
+        values.hosts.put("atmospheric_saffron_travertine", atmosphericSaffronTravertine);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

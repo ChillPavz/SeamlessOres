@@ -63,6 +63,19 @@ public final class SeamlessOresDataPacks {
      * mounted. A gate listed here with no pack folder in the jar is skipped with a warning.
      */
     private static final List<String> PACKED_MODS = List.of(
+            "atmospheric",
+            "atmospheric.cobblemon",
+            "atmospheric.create",
+            "atmospheric.densemekanism",
+            "atmospheric.denseores",
+            "atmospheric.electrodynamics",
+            "atmospheric.energizedpower",
+            "atmospheric.iceandfire",
+            "atmospheric.mysticalagriculture",
+            "atmospheric.occultism",
+            "atmospheric.oreganized",
+            "atmospheric.powah",
+            "atmospheric.tfmg",
             "biggerreactors",
             "bigreactors",
             "biomeswevegone",

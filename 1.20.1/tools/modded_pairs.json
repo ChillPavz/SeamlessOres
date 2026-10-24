@@ -1053,6 +1053,1074 @@
   }
  },
  "hosts": {
+  "atmospheric:arid_sandstone": {
+   "arcmetal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.15
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.6
+   },
+   "dawn_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "dense_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.57
+   },
+   "dense_osmium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.0
+   },
+   "dense_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.66
+   },
+   "denseores_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.27
+   },
+   "denseores_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.9
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 54.02
+   },
+   "denseores_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.72
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.62
+   },
+   "dusk_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.45
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.73
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 72.84
+   },
+   "energized_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 83.0
+   },
+   "fire_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "ice_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.26
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 38.88
+   },
+   "inferium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.79
+   },
+   "lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.38
+   },
+   "leaf_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "moon_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "occultism_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.1
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 100.65
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 111.56
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.22
+   },
+   "shiny_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "soulstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.65
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.19
+   },
+   "sun_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.6
+   },
+   "thunder_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "uraninite_poor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.65
+   },
+   "water_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   }
+  },
+  "atmospheric:ivory_travertine": {
+   "dawn_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "dense_osmium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.12
+   },
+   "dense_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.31
+   },
+   "denseores_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.35
+   },
+   "denseores_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.24
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.42
+   },
+   "dusk_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.26
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.69
+   },
+   "energized_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "fire_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "ice_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.46
+   },
+   "inferium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.32
+   },
+   "leaf_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "moon_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "occultism_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.14
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.31
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.03
+   },
+   "shiny_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.14
+   },
+   "sun_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "thunder_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "water_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   }
+  },
+  "atmospheric:peach_travertine": {
+   "dawn_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "dense_osmium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.12
+   },
+   "dense_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.31
+   },
+   "denseores_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.35
+   },
+   "denseores_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.24
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.42
+   },
+   "dusk_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.26
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.69
+   },
+   "energized_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "fire_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "ice_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.46
+   },
+   "inferium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.32
+   },
+   "leaf_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "moon_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "occultism_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.14
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.31
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.03
+   },
+   "shiny_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.14
+   },
+   "sun_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "thunder_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "water_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   }
+  },
+  "atmospheric:persimmon_travertine": {
+   "dawn_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "dense_osmium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.12
+   },
+   "dense_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.31
+   },
+   "denseores_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.35
+   },
+   "denseores_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.24
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.42
+   },
+   "dusk_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.26
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.69
+   },
+   "energized_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "fire_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "ice_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.46
+   },
+   "inferium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.32
+   },
+   "leaf_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "moon_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "occultism_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.14
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.31
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.03
+   },
+   "shiny_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.14
+   },
+   "sun_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "thunder_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "water_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   }
+  },
+  "atmospheric:red_arid_sandstone": {
+   "arcmetal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.72
+   },
+   "dark": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.2
+   },
+   "dawn_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   },
+   "dense_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.19
+   },
+   "dense_osmium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.67
+   },
+   "dense_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.89
+   },
+   "denseores_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.09
+   },
+   "denseores_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.3
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.01
+   },
+   "denseores_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.57
+   },
+   "denseores_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.21
+   },
+   "dusk_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   },
+   "electrodynamics_molybdenum": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.82
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.91
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.28
+   },
+   "energized_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.67
+   },
+   "fire_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   },
+   "ice_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   },
+   "iceandfire_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.75
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.96
+   },
+   "inferium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.6
+   },
+   "lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.12
+   },
+   "leaf_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   },
+   "moon_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   },
+   "occultism_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.7
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.55
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 37.19
+   },
+   "scguns_sulfur": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.07
+   },
+   "shiny_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   },
+   "soulstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.88
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.4
+   },
+   "sun_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   },
+   "thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.2
+   },
+   "thunder_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   },
+   "uraninite_poor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.55
+   },
+   "water_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.22
+   }
+  },
+  "atmospheric:saffron_travertine": {
+   "dawn_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "dense_osmium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.12
+   },
+   "dense_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.31
+   },
+   "denseores_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.35
+   },
+   "denseores_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.24
+   },
+   "denseores_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.42
+   },
+   "dusk_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "electrodynamics_salt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.26
+   },
+   "electrodynamics_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.69
+   },
+   "energized_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "fire_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "ice_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "iceandfire_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.46
+   },
+   "inferium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.32
+   },
+   "leaf_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "moon_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "occultism_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.14
+   },
+   "oreganized_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.31
+   },
+   "sal_ammoniac": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.03
+   },
+   "shiny_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "sullysmod_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.14
+   },
+   "sun_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "thorium": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "thunder_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "water_stone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   }
+  },
   "biomeswevegone:dacite": {
    "arcmetal": {
     "where": [
