@@ -282,6 +282,11 @@ HOST_LOOK = {
     "betterend:azure_jadestone": ("single", "betterend:block/azure_jadestone"),
     "betterend:sandy_jadestone": ("single", "betterend:block/sandy_jadestone"),
     "betterend:virid_jadestone": ("single", "betterend:block/virid_jadestone"),
+    "outer_end:violite": ("single", "outer_end:block/violite"),
+    "outer_end:rose_tangled_violite": ("single", "outer_end:block/rose_tangled_violite"),
+    "outer_end:mint_tangled_violite": ("single", "outer_end:block/mint_tangled_violite"),
+    "outer_end:cobalt_tangled_violite": ("single", "outer_end:block/cobalt_tangled_violite"),
+    "outer_end:ancient_stone": ("single", "outer_end:block/ancient_ice_cap_top"),
 }
 
 # The mods that PLACE a host stone, for the README and the config screen, and the jar each one's
@@ -309,6 +314,7 @@ STONE_MODS = {
     "tfmg": {"display": "Create: TFMG", "bands": "Forge"},
     "twigs": {"display": "Twigs", "bands": "Fabric and Forge"},
     "betterend": {"display": "BetterEnd", "bands": "Fabric"},
+    "outer_end": {"display": "The Outer End", "bands": "Forge"},
 }
 STONE_JARS = {"minecraft": CLIENT_JAR,
               "blockus": jar("blockus-2.7.22+1.20.1.jar"),
@@ -329,7 +335,8 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "spawn": jar("spawn-4.0.8-1.20.1.jar"),
               "tfmg": jar("1.20.1-tfmg-1.0.2f.jar"),
               "twigs": jar("Twigs-1.20.1-3.1.1.jar"),
-              "betterend": jar("better-end-4.0.12.jar")}
+              "betterend": jar("better-end-4.0.12.jar"),
+              "outer_end": jar("TheOuterEnd-1.0.13.jar")}
 HOST_TABLE = era_file(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "common"),
                       "1.20.1", "java/com/chillpavz/seamlessores/content/HostStone.java")
 
@@ -1504,6 +1511,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "beo": ('fabric', 'forge'),
     "bno": ('fabric', 'forge'),
     "betterend": ('fabric',),   # BetterEnd: Fabric
+    "outer_end": ('forge',),   # The Outer End: Forge
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.

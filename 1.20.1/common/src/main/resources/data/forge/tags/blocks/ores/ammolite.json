@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_ammolite_ore",
+      "id": "seamlessores:outer_end_violite_silentgems_ammolite_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_ammolite_ore",
+      "id": "seamlessores:outer_end_rose_tangled_violite_silentgems_ammolite_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_ammolite_ore",
+      "id": "seamlessores:outer_end_mint_tangled_violite_silentgems_ammolite_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_ammolite_ore",
+      "id": "seamlessores:outer_end_cobalt_tangled_violite_silentgems_ammolite_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_ammolite_ore",
+      "id": "seamlessores:outer_end_ancient_stone_silentgems_ammolite_end_ore",
       "required": false
     }
   ]

@@ -23,6 +23,26 @@
     {
       "id": "seamlessores:darkerdepths_darkslate_silentgems_peridot_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_violite_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_rose_tangled_violite_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_mint_tangled_violite_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_cobalt_tangled_violite_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_ancient_stone_silentgems_peridot_end_ore",
+      "required": false
     }
   ]
 }

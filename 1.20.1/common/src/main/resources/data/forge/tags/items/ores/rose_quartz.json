@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_rose_quartz_ore",
+      "id": "seamlessores:outer_end_violite_silentgems_rose_quartz_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_rose_quartz_ore",
+      "id": "seamlessores:outer_end_rose_tangled_violite_silentgems_rose_quartz_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_rose_quartz_ore",
+      "id": "seamlessores:outer_end_mint_tangled_violite_silentgems_rose_quartz_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_rose_quartz_ore",
+      "id": "seamlessores:outer_end_cobalt_tangled_violite_silentgems_rose_quartz_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_rose_quartz_ore",
+      "id": "seamlessores:outer_end_ancient_stone_silentgems_rose_quartz_end_ore",
       "required": false
     }
   ]

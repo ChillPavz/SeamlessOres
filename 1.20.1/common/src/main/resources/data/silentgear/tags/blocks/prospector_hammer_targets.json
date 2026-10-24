@@ -3,6 +3,26 @@
     {
       "id": "seamlessores:tuff_silentgear_bort_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_violite_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_rose_tangled_violite_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_mint_tangled_violite_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_cobalt_tangled_violite_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_ancient_stone_silentgear_azure_silver_ore",
+      "required": false
     }
   ]
 }

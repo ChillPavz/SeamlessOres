@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:betterend_umbralith_beo_end_coal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_ancient_stone_beo_end_coal_ore",
+      "required": false
     }
   ]
 }

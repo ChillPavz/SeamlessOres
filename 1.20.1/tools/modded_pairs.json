@@ -28,6 +28,12 @@
     "mythicupgrades:ametrine_ore"
    ]
   },
+  "anglesite": {
+   "mod": "bigreactors",
+   "forms": [
+    "bigreactors:anglesite_ore"
+   ]
+  },
   "anthralite": {
    "mod": "scguns",
    "forms": [
@@ -66,6 +72,12 @@
    "mod": "silentcompat",
    "forms": [
     "silentcompat:arcmetal_ore"
+   ]
+  },
+  "azure_silver": {
+   "mod": "silentgear",
+   "forms": [
+    "silentgear:azure_silver_ore"
    ]
   },
   "banglum": {
@@ -488,16 +500,112 @@
     "embers:deepslate_silver_ore"
    ]
   },
+  "end_alexandrite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:alexandrite_end_ore"
+   ]
+  },
+  "end_ammolite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:ammolite_end_ore"
+   ]
+  },
+  "end_black_diamond": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:black_diamond_end_ore"
+   ]
+  },
+  "end_carnelian": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:carnelian_end_ore"
+   ]
+  },
   "end_experience": {
    "mod": "expores",
    "forms": [
     "expores:end_experience_ore"
    ]
   },
+  "end_heliodor": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:heliodor_end_ore"
+   ]
+  },
+  "end_iolite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:iolite_end_ore"
+   ]
+  },
+  "end_kyanite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:kyanite_end_ore"
+   ]
+  },
+  "end_moldavite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:moldavite_end_ore"
+   ]
+  },
+  "end_rose_quartz": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:rose_quartz_end_ore"
+   ]
+  },
+  "end_silents_citrine": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:citrine_end_ore"
+   ]
+  },
+  "end_silents_peridot": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:peridot_end_ore"
+   ]
+  },
+  "end_silents_ruby": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:ruby_end_ore"
+   ]
+  },
+  "end_silents_sapphire": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:sapphire_end_ore"
+   ]
+  },
+  "end_silents_topaz": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:topaz_end_ore"
+   ]
+  },
   "end_starrite": {
    "mod": "mythicmetals",
    "forms": [
     "mythicmetals:end_stone_starrite_ore"
+   ]
+  },
+  "end_turquoise": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:turquoise_end_ore"
+   ]
+  },
+  "end_white_diamond": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:white_diamond_end_ore"
    ]
   },
   "energized_tin": {
@@ -512,6 +620,12 @@
    "forms": [
     "epicpaladins:bloodstone_ore",
     "epicpaladins:deepslate_bloodstone_ore"
+   ]
+  },
+  "epicpaladins_jade": {
+   "mod": "epicpaladins",
+   "forms": [
+    "epicpaladins:jade_ore"
    ]
   },
   "expandeddelight_salt": {
@@ -23117,6 +23231,856 @@
      "1.20.1 forge"
     ],
     "rate": 1.86
+   }
+  },
+  "outer_end:ancient_stone": {
+   "ametrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.24
+   },
+   "anglesite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.21
+   },
+   "azure_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.51
+   },
+   "beo_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 41.56
+   },
+   "beo_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.59
+   },
+   "beo_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.52
+   },
+   "beo_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.52
+   },
+   "beo_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.56
+   },
+   "beo_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.7
+   },
+   "beo_redstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.04
+   },
+   "end_alexandrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_ammolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.67
+   },
+   "end_black_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_carnelian": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_heliodor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.67
+   },
+   "end_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_kyanite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.67
+   },
+   "end_moldavite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_rose_quartz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.67
+   },
+   "end_silents_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_silents_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_silents_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_silents_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_silents_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.33
+   },
+   "end_turquoise": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.67
+   },
+   "end_white_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.73
+   },
+   "epicpaladins_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.0
+   },
+   "jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.24
+   }
+  },
+  "outer_end:cobalt_tangled_violite": {
+   "ametrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.49
+   },
+   "anglesite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.62
+   },
+   "azure_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.52
+   },
+   "beo_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 124.67
+   },
+   "beo_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.78
+   },
+   "beo_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.56
+   },
+   "beo_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.56
+   },
+   "beo_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.67
+   },
+   "beo_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.11
+   },
+   "beo_redstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.11
+   },
+   "end_alexandrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_ammolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_black_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_carnelian": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_heliodor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_kyanite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_moldavite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_rose_quartz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_silents_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_turquoise": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_white_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 47.2
+   },
+   "epicpaladins_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.0
+   },
+   "jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.49
+   }
+  },
+  "outer_end:mint_tangled_violite": {
+   "ametrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.49
+   },
+   "anglesite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.62
+   },
+   "azure_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.52
+   },
+   "beo_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 124.67
+   },
+   "beo_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.78
+   },
+   "beo_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.56
+   },
+   "beo_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.56
+   },
+   "beo_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.67
+   },
+   "beo_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.11
+   },
+   "beo_redstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.11
+   },
+   "end_alexandrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_ammolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_black_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_carnelian": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_heliodor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_kyanite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_moldavite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_rose_quartz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_silents_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_turquoise": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_white_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 47.2
+   },
+   "epicpaladins_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.0
+   },
+   "jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.49
+   }
+  },
+  "outer_end:rose_tangled_violite": {
+   "ametrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.49
+   },
+   "anglesite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.62
+   },
+   "azure_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.52
+   },
+   "beo_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 124.67
+   },
+   "beo_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.78
+   },
+   "beo_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.56
+   },
+   "beo_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.56
+   },
+   "beo_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.67
+   },
+   "beo_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.11
+   },
+   "beo_redstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.11
+   },
+   "end_alexandrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_ammolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_black_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_carnelian": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_heliodor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_kyanite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_moldavite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_rose_quartz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_silents_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_turquoise": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_white_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 47.2
+   },
+   "epicpaladins_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.0
+   },
+   "jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.49
+   }
+  },
+  "outer_end:violite": {
+   "ametrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.49
+   },
+   "anglesite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.62
+   },
+   "azure_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.52
+   },
+   "beo_coal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 124.67
+   },
+   "beo_copper": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 97.78
+   },
+   "beo_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.56
+   },
+   "beo_emerald": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.56
+   },
+   "beo_iron": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.67
+   },
+   "beo_lapis": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.11
+   },
+   "beo_redstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.11
+   },
+   "end_alexandrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_ammolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_black_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_carnelian": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_heliodor": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_kyanite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_moldavite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_rose_quartz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_silents_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_silents_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.0
+   },
+   "end_turquoise": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.0
+   },
+   "end_white_diamond": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 47.2
+   },
+   "epicpaladins_jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 27.0
+   },
+   "jade": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.49
    }
   },
   "promenade:asphalt": {

@@ -414,6 +414,26 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean betterendViridJadestone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean outerEndViolite = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean outerEndRoseTangledViolite = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean outerEndMintTangledViolite = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean outerEndCobaltTangledViolite = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean outerEndAncientStone = false;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -821,6 +841,11 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("betterend_azure_jadestone", betterendAzureJadestone);
         values.hosts.put("betterend_sandy_jadestone", betterendSandyJadestone);
         values.hosts.put("betterend_virid_jadestone", betterendViridJadestone);
+        values.hosts.put("outer_end_violite", outerEndViolite);
+        values.hosts.put("outer_end_rose_tangled_violite", outerEndRoseTangledViolite);
+        values.hosts.put("outer_end_mint_tangled_violite", outerEndMintTangledViolite);
+        values.hosts.put("outer_end_cobalt_tangled_violite", outerEndCobaltTangledViolite);
+        values.hosts.put("outer_end_ancient_stone", outerEndAncientStone);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

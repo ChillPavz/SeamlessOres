@@ -261,6 +261,7 @@ Epic Paladins by epicpaladinssareus, VeroxUniverse, continued by Bandit-Bytes, L
   assets/seamlessores/textures/block/arclight_overlay.png
   assets/seamlessores/textures/block/cryorium_overlay.png
   assets/seamlessores/textures/block/epicpaladins_bloodstone_overlay.png
+  assets/seamlessores/textures/block/epicpaladins_jade_overlay.png
   assets/seamlessores/textures/block/moonlight_overlay.png
 
 EvilCraft by rubensworks, CC BY 4.0 (art):
@@ -274,6 +275,7 @@ Expanded Delight by ianm1647, MIT:
   assets/seamlessores/textures/block/expandeddelight_salt_overlay.png
 
 Extreme Reactors by ZeroNoRyouki, MIT:
+  assets/seamlessores/textures/block/anglesite_overlay.png
   assets/seamlessores/textures/block/yellorite_overlay.png
 
 Ice and Fire by Alexthe666, the Community Edition by IAFEnvoy, LGPL-3.0:
@@ -386,6 +388,7 @@ Scorched Guns by ribs, GPL-3.0:
   assets/seamlessores/textures/block/vehement_coal_overlay.png
 
 Silent Gear by SilentChaos512, MIT:
+  assets/seamlessores/textures/block/azure_silver_overlay.png
   assets/seamlessores/textures/block/bort_overlay.png
 
 Silent Gear Compat by dragoni7, MIT:
@@ -395,10 +398,14 @@ Silent Gear Compat by dragoni7, MIT:
 
 Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/alexandrite_overlay.png
+  assets/seamlessores/textures/block/ammolite_overlay.png
   assets/seamlessores/textures/block/black_diamond_overlay.png
   assets/seamlessores/textures/block/carnelian_overlay.png
   assets/seamlessores/textures/block/heliodor_overlay.png
   assets/seamlessores/textures/block/iolite_overlay.png
+  assets/seamlessores/textures/block/kyanite_overlay.png
+  assets/seamlessores/textures/block/moldavite_overlay.png
+  assets/seamlessores/textures/block/rose_quartz_overlay.png
   assets/seamlessores/textures/block/silents_citrine_overlay.png
   assets/seamlessores/textures/block/silents_peridot_overlay.png
   assets/seamlessores/textures/block/silents_ruby_overlay.png

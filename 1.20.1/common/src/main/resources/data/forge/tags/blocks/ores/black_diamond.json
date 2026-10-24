@@ -3,6 +3,26 @@
     {
       "id": "seamlessores:tuff_silentgems_black_diamond_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_violite_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_rose_tangled_violite_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_mint_tangled_violite_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_cobalt_tangled_violite_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:outer_end_ancient_stone_silentgems_black_diamond_end_ore",
+      "required": false
     }
   ]
 }

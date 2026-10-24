@@ -1,23 +1,23 @@
 {
   "values": [
     {
-      "id": "seamlessores:granite_kyanite_ore",
+      "id": "seamlessores:outer_end_violite_silentgems_kyanite_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:diorite_kyanite_ore",
+      "id": "seamlessores:outer_end_rose_tangled_violite_silentgems_kyanite_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:andesite_kyanite_ore",
+      "id": "seamlessores:outer_end_mint_tangled_violite_silentgems_kyanite_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:tuff_kyanite_ore",
+      "id": "seamlessores:outer_end_cobalt_tangled_violite_silentgems_kyanite_end_ore",
       "required": false
     },
     {
-      "id": "seamlessores:dripstone_kyanite_ore",
+      "id": "seamlessores:outer_end_ancient_stone_silentgems_kyanite_end_ore",
       "required": false
     }
   ]

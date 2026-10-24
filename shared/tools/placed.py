@@ -271,7 +271,13 @@ ADDS_ORE_HOSTS = {"regions_unexplored_argillite", "regions_unexplored_chalk", "b
                   "betterend_umbralith",
                   "betterend_azure_jadestone",
                   "betterend_sandy_jadestone",
-                  "betterend_virid_jadestone"}
+                  "betterend_virid_jadestone",
+                  # The Outer End (25 Oct 2026): laid before the End's ores, in no ore tag.
+                  "outer_end_violite",
+                  "outer_end_rose_tangled_violite",
+                  "outer_end_mint_tangled_violite",
+                  "outer_end_cobalt_tangled_violite",
+                  "outer_end_ancient_stone"}
 
 
 def gate_of(host_cfg, ore):
