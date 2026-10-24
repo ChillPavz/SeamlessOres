@@ -364,6 +364,10 @@ public final class HostStone {
     // adamantite nodes, in no ore tag: a variant ADDS ore.
     public static final HostStone ENLIGHTENED_END_PALEROCK = placed("enlightened_end", "palerock", OreTier.STONE, null);
 
+    // Legendary Monsters (Forge at 1.20.1, NeoForge at 1.21.1): enderstone deposits are minecraft:ore blobs on end
+    // stone, in no ore tag: a variant ADDS ore.
+    public static final HostStone LEGENDARY_MONSTERS_ENDERSTONE = placed("legendary_monsters", "enderstone", OreTier.STONE, null);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -388,7 +392,8 @@ public final class HostStone {
             BETTEREND_UMBRALITH, BETTEREND_AZURE_JADESTONE, BETTEREND_SANDY_JADESTONE, BETTEREND_VIRID_JADESTONE,
             OUTER_END_VIOLITE, OUTER_END_ROSE_TANGLED_VIOLITE, OUTER_END_MINT_TANGLED_VIOLITE, OUTER_END_COBALT_TANGLED_VIOLITE,
             OUTER_END_ANCIENT_STONE,
-            ENLIGHTENED_END_PALEROCK);
+            ENLIGHTENED_END_PALEROCK,
+            LEGENDARY_MONSTERS_ENDERSTONE);
 
     private final String name;
     private final ResourceLocation id;

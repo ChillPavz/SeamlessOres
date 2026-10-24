@@ -291,6 +291,7 @@ Epic Paladins by epicpaladinssareus, VeroxUniverse, continued by Bandit-Bytes, L
   assets/seamlessores/textures/block/arclight_overlay.png
   assets/seamlessores/textures/block/cryorium_overlay.png
   assets/seamlessores/textures/block/epicpaladins_bloodstone_overlay.png
+  assets/seamlessores/textures/block/epicpaladins_jade_overlay.png
   assets/seamlessores/textures/block/moonlight_overlay.png
 
 EvilCraft by rubensworks, CC BY 4.0 (art):
@@ -300,11 +301,13 @@ Expanded Delight by ianm1647, MIT:
   assets/seamlessores/textures/block/expandeddelight_salt_overlay.png
 
 Extreme Reactors by ZeroNoRyouki, MIT:
+  assets/seamlessores/textures/block/anglesite_overlay.png
   assets/seamlessores/textures/block/yellorite_overlay.png
 
 Hazen 'N Stuff by Hazen, PolyForm Shield 1.0.0. Required Notice: Copyright Hazen:
   assets/seamlessores/textures/block/chlorophyte_overlay.png
   assets/seamlessores/textures/block/dreadstone_overlay.png
+  assets/seamlessores/textures/block/zenalite_overlay.png
 
 Ice and Fire by Alexthe666, the Community Edition by IAFEnvoy, LGPL-3.0:
   assets/seamlessores/textures/block/iceandfire_deepslate_silver_overlay.png
@@ -396,17 +399,21 @@ RFTools Base by McJty, MIT:
   assets/seamlessores/textures/block/dimensional_shard_overlay.png
 
 Silent Gear by SilentChaos512, MIT:
+  assets/seamlessores/textures/block/azure_silver_overlay.png
   assets/seamlessores/textures/block/bort_overlay.png
 
 Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/alexandrite_overlay.png
+  assets/seamlessores/textures/block/ammolite_overlay.png
   assets/seamlessores/textures/block/black_diamond_overlay.png
   assets/seamlessores/textures/block/carnelian_overlay.png
   assets/seamlessores/textures/block/chaos_overlay.png
   assets/seamlessores/textures/block/garnet_overlay.png
   assets/seamlessores/textures/block/heliodor_overlay.png
   assets/seamlessores/textures/block/iolite_overlay.png
+  assets/seamlessores/textures/block/kyanite_overlay.png
   assets/seamlessores/textures/block/moldavite_overlay.png
+  assets/seamlessores/textures/block/opal_legendary_monsters_enderstone_overlay.png
   assets/seamlessores/textures/block/opal_tfmg_bauxite_0_overlay.png
   assets/seamlessores/textures/block/opal_tfmg_bauxite_1_overlay.png
   assets/seamlessores/textures/block/opal_tfmg_bauxite_2_overlay.png
@@ -415,6 +422,7 @@ Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/opal_twigs_rhyolite_end_overlay.png
   assets/seamlessores/textures/block/opal_twigs_rhyolite_overlay.png
   assets/seamlessores/textures/block/pearl_overlay.png
+  assets/seamlessores/textures/block/rose_quartz_overlay.png
   assets/seamlessores/textures/block/silents_aquamarine_overlay.png
   assets/seamlessores/textures/block/silents_citrine_overlay.png
   assets/seamlessores/textures/block/silents_peridot_overlay.png

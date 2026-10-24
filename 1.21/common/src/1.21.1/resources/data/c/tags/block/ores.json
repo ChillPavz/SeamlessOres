@@ -5016,6 +5016,114 @@
       "required": false
     },
     {
+      "id": "seamlessores:legendary_monsters_enderstone_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_hazennstuff_zenalite_end_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_alexandrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_ammolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_black_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_carnelian_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_heliodor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_iolite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_kyanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_moldavite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_pearl_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_rose_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_tanzanite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_turquoise_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_white_diamond_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_bigreactors_yellorite_ore",
       "required": false
     },

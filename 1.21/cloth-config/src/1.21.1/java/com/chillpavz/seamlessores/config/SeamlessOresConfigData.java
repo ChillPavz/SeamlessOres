@@ -430,6 +430,10 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean betterendViridJadestone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean legendaryMonstersEnderstone = false;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -799,6 +803,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("betterend_azure_jadestone", betterendAzureJadestone);
         values.hosts.put("betterend_sandy_jadestone", betterendSandyJadestone);
         values.hosts.put("betterend_virid_jadestone", betterendViridJadestone);
+        values.hosts.put("legendary_monsters_enderstone", legendaryMonstersEnderstone);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

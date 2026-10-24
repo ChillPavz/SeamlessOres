@@ -279,7 +279,9 @@ ADDS_ORE_HOSTS = {"regions_unexplored_argillite", "regions_unexplored_chalk", "b
                   "outer_end_cobalt_tangled_violite",
                   "outer_end_ancient_stone",
                   # Enlightend (25 Oct 2026): laid before the End's ores, in no ore tag.
-                  "enlightened_end_palerock"}
+                  "enlightened_end_palerock",
+                  # Legendary Monsters (25 Oct 2026): laid before the End's ores, in no ore tag.
+                  "legendary_monsters_enderstone"}
 
 
 def gate_of(host_cfg, ore):

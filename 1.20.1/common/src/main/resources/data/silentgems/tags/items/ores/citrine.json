@@ -43,6 +43,10 @@
     {
       "id": "seamlessores:outer_end_ancient_stone_silentgems_citrine_end_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_citrine_end_ore",
+      "required": false
     }
   ]
 }

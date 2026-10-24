@@ -71,6 +71,10 @@
     {
       "id": "seamlessores:natures_spirit_white_chalk_hazennstuff_chlorophyte_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_hazennstuff_zenalite_end_stone_ore",
+      "required": false
     }
   ]
 }

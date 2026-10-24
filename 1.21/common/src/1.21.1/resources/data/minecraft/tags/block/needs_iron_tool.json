@@ -4374,6 +4374,22 @@
     {
       "id": "seamlessores:betterend_virid_jadestone_mythicupgrades_jade_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_mythicupgrades_jade_ore",
+      "required": false
     }
   ]
 }

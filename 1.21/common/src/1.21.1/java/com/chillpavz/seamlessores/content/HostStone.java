@@ -371,6 +371,10 @@ public final class HostStone {
     public static final HostStone BETTEREND_SANDY_JADESTONE = placed("betterend", "sandy_jadestone", OreTier.STONE, null);
     public static final HostStone BETTEREND_VIRID_JADESTONE = placed("betterend", "virid_jadestone", OreTier.STONE, null);
 
+    // Legendary Monsters (Forge at 1.20.1, NeoForge at 1.21.1): enderstone deposits are minecraft:ore blobs on end
+    // stone, in no ore tag: a variant ADDS ore.
+    public static final HostStone LEGENDARY_MONSTERS_ENDERSTONE = placed("legendary_monsters", "enderstone", OreTier.STONE, null);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -393,7 +397,8 @@ public final class HostStone {
             DARKERDEPTHS_GRIMESTONE, DARKERDEPTHS_ARIDROCK, NATURES_SPIRIT_CHERT, NATURES_SPIRIT_TRAVERTINE,
             NATURES_SPIRIT_WHITE_CHALK, NATURES_SPIRIT_PINK_SANDSTONE,
             BETTEREND_FLAVOLITE, BETTEREND_VIOLECITE, BETTEREND_SULPHURIC_ROCK, BETTEREND_BRIMSTONE,
-            BETTEREND_UMBRALITH, BETTEREND_AZURE_JADESTONE, BETTEREND_SANDY_JADESTONE, BETTEREND_VIRID_JADESTONE);
+            BETTEREND_UMBRALITH, BETTEREND_AZURE_JADESTONE, BETTEREND_SANDY_JADESTONE, BETTEREND_VIRID_JADESTONE,
+            LEGENDARY_MONSTERS_ENDERSTONE);
 
     private final String name;
     private final ResourceLocation id;

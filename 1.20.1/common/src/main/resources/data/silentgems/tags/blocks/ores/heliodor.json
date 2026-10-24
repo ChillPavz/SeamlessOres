@@ -27,6 +27,10 @@
     {
       "id": "seamlessores:outer_end_ancient_stone_silentgems_heliodor_end_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_heliodor_end_ore",
+      "required": false
     }
   ]
 }

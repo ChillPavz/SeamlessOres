@@ -84,6 +84,10 @@
     {
       "id": "seamlessores:enlightened_end_palerock_beo_end_coal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_beo_end_coal_ore",
+      "required": false
     }
   ]
 }

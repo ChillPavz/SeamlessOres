@@ -21,6 +21,12 @@
     "mythicupgrades:ametrine_ore"
    ]
   },
+  "anglesite": {
+   "mod": "bigreactors",
+   "forms": [
+    "bigreactors:anglesite_ore"
+   ]
+  },
   "antimony": {
    "mod": "modern_industrialization",
    "forms": [
@@ -46,6 +52,12 @@
    "forms": [
     "epicpaladins:arclight_ore",
     "epicpaladins:deepslate_arclight_ore"
+   ]
+  },
+  "azure_silver": {
+   "mod": "silentgear",
+   "forms": [
+    "silentgear:azure_silver_ore"
    ]
   },
   "banglum": {
@@ -502,10 +514,136 @@
     "electrodynamics:deepslateorevanadium"
    ]
   },
+  "end_alexandrite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_alexandrite_ore"
+   ]
+  },
+  "end_ammolite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_ammolite_ore"
+   ]
+  },
+  "end_black_diamond": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_black_diamond_ore"
+   ]
+  },
+  "end_carnelian": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_carnelian_ore"
+   ]
+  },
+  "end_garnet": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_garnet_ore"
+   ]
+  },
+  "end_heliodor": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_heliodor_ore"
+   ]
+  },
+  "end_iolite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_iolite_ore"
+   ]
+  },
+  "end_kyanite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_kyanite_ore"
+   ]
+  },
+  "end_moldavite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_moldavite_ore"
+   ]
+  },
+  "end_opal": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_opal_ore"
+   ]
+  },
+  "end_pearl": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_pearl_ore"
+   ]
+  },
+  "end_rose_quartz": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_rose_quartz_ore"
+   ]
+  },
+  "end_silents_aquamarine": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_aquamarine_ore"
+   ]
+  },
+  "end_silents_citrine": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_citrine_ore"
+   ]
+  },
+  "end_silents_peridot": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_peridot_ore"
+   ]
+  },
+  "end_silents_ruby": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_ruby_ore"
+   ]
+  },
+  "end_silents_sapphire": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_sapphire_ore"
+   ]
+  },
+  "end_silents_topaz": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_topaz_ore"
+   ]
+  },
   "end_starrite": {
    "mod": "mythicmetals",
    "forms": [
     "mythicmetals:end_stone_starrite_ore"
+   ]
+  },
+  "end_tanzanite": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_tanzanite_ore"
+   ]
+  },
+  "end_turquoise": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_turquoise_ore"
+   ]
+  },
+  "end_white_diamond": {
+   "mod": "silentgems",
+   "forms": [
+    "silentgems:end_white_diamond_ore"
    ]
   },
   "energized_tin": {
@@ -520,6 +658,12 @@
    "forms": [
     "epicpaladins:bloodstone_ore",
     "epicpaladins:deepslate_bloodstone_ore"
+   ]
+  },
+  "epicpaladins_jade": {
+   "mod": "epicpaladins",
+   "forms": [
+    "epicpaladins:jade_ore"
    ]
   },
   "expandeddelight_salt": {
@@ -1188,6 +1332,12 @@
    "forms": [
     "bigreactors:yellorite_ore",
     "bigreactors:deepslate_yellorite_ore"
+   ]
+  },
+  "zenalite": {
+   "mod": "hazennstuff",
+   "forms": [
+    "hazennstuff:zenalite_end_stone_ore"
    ]
   }
  },
@@ -15377,6 +15527,170 @@
      "1.21.1 neoforge"
     ],
     "rate": 17.32
+   }
+  },
+  "legendary_monsters:enderstone": {
+   "ametrine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.21
+   },
+   "anglesite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 93.4
+   },
+   "azure_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 137.57
+   },
+   "end_alexandrite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_ammolite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 122.22
+   },
+   "end_black_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_carnelian": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_garnet": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 84.45
+   },
+   "end_heliodor": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 122.22
+   },
+   "end_iolite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_kyanite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 122.22
+   },
+   "end_moldavite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_opal": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 122.22
+   },
+   "end_pearl": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 122.22
+   },
+   "end_rose_quartz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 122.22
+   },
+   "end_silents_aquamarine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_silents_citrine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_silents_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_silents_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_silents_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_silents_topaz": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_tanzanite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.11
+   },
+   "end_turquoise": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 122.22
+   },
+   "end_white_diamond": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 131.12
+   },
+   "epicpaladins_jade": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 75.0
+   },
+   "jade": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.21
+   },
+   "zenalite": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 91.03
    }
   },
   "meadow:limestone": {

@@ -41,6 +41,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:legendary_monsters_enderstone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_sullysmod_jade_ore",
       "required": false
     },
@@ -70,6 +74,10 @@
     },
     {
       "id": "seamlessores:outer_end_ancient_stone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_epicpaladins_jade_ore",
       "required": false
     }
   ]

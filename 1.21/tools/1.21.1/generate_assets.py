@@ -251,6 +251,7 @@ HOST_LOOK = {
     "betterend:azure_jadestone": ("single", "betterend:block/azure_jadestone"),
     "betterend:sandy_jadestone": ("single", "betterend:block/sandy_jadestone"),
     "betterend:virid_jadestone": ("single", "betterend:block/virid_jadestone"),
+    "legendary_monsters:enderstone": ("single", "legendary_monsters:block/enderstone"),
 }
 
 # The mods that PLACE a host stone, for the README and the config screen, and the jar each one's
@@ -280,6 +281,7 @@ STONE_MODS = {
     "twigs": {"display": "Twigs", "bands": "Fabric and NeoForge"},
     "wilderwild": {"display": "Wilder Wild", "bands": "Fabric"},
     "betterend": {"display": "BetterEnd", "bands": "Fabric"},
+    "legendary_monsters": {"display": "Legendary Monsters", "bands": "NeoForge"},
 }
 STONE_JARS = {"minecraft": CLIENT_JAR,
               "blockus": jar("blockus-2.9.18+1.21.1.jar"),
@@ -302,7 +304,8 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "tfmg": jar("tfmg-1.2.2.jar"),
               "twigs": jar("Twigs-1.21.1-3.1.2.jar"),
               "wilderwild": jar("WilderWild-4.2.1-mc1.21.1.jar"),
-              "betterend": jar("better-end-21.0.11.jar")}
+              "betterend": jar("better-end-21.0.11.jar"),
+              "legendary_monsters": jar("legendary_monsters-2.2.4 MC 1.21.1.jar")}
 HOST_TABLE = era_file(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
                                    "common"), BAND, "java/com/chillpavz/seamlessores/content/HostStone.java")
 
@@ -1388,6 +1391,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "denseores": ('neoforge',),
     "bno": ('fabric',),
     "betterend": ('fabric',),   # BetterEnd: Fabric
+    "legendary_monsters": ('neoforge',),   # Legendary Monsters: NeoForge
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 

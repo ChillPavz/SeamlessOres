@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:twigs_bloodstone_silentgems_nether_tanzanite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_tanzanite_ore",
+      "required": false
     }
   ]
 }

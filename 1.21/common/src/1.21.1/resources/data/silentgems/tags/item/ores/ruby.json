@@ -27,6 +27,10 @@
     {
       "id": "seamlessores:darkerdepths_darkslate_silentgems_ruby_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_silentgems_end_ruby_ore",
+      "required": false
     }
   ]
 }
