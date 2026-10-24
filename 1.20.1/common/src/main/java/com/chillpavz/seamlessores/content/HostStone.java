@@ -338,9 +338,9 @@ public final class HostStone {
             OreTier.STONE, MapColor.SAND,
             COAL, IRON, COPPER, GOLD, ZINC);
 
-    // BetterEnd (Fabric only, every band): its End biomes' surface rules lay these, before every feature, in no 
-    // ore tag, so the End's ores never form in them and a variant ADDS ore (switches Off by default). Brimstone 
-    // takes its inactive look, the one it is laid in. Umbralith picks one of seven textures by weight, as 
+    // BetterEnd (Fabric only, every band): its End biomes' surface rules lay these, before every feature, in no
+    // ore tag, so the End's ores never form in them and a variant ADDS ore (switches Off by default). Brimstone
+    // takes its inactive look, the one it is laid in. Umbralith picks one of seven textures by weight, as
     // BetterEnd's own blockstate; its glowing layers are not drawn.
     public static final HostStone BETTEREND_FLAVOLITE = placed("betterend", "flavolite", OreTier.STONE, null);
     public static final HostStone BETTEREND_VIOLECITE = placed("betterend", "violecite", OreTier.STONE, null);
