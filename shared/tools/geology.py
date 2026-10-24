@@ -583,10 +583,26 @@ def _set(values):
     return ", ".join('"%s"' % v for v in sorted(values))
 
 
+def _chunked_table(rule, indent, size=20000):
+    """A map of sets as string chunks, "key host host;key host", for OreGeology.table: one Map.ofEntries of
+    this size passes the JVM's 64 KB limit on a class initialiser (25 Oct 2026), and one string constant
+    may not pass 65,535 bytes either, so the rows go in chunks of about `size` characters."""
+    rows = [" ".join([key] + sorted(set(values))) for key, values in sorted(rule.items())]
+    chunks, cur = [], ""
+    for row in rows:
+        if cur and len(cur) + len(row) + 1 > size:
+            chunks.append(cur)
+            cur = ""
+        cur = f"{cur};{row}" if cur else row
+    if cur:
+        chunks.append(cur)
+    return ",\n".join(f'{indent}"{c}"' for c in chunks)
+
+
 def java():
     """OreGeology.java: this rule, written as Java. Minecraft-free and the same for every band, so it
     lives once in shared/java; a band asks it by host name and ore key and never lists its own."""
-    return JAVA % (_map_of_sets(STRICT, " " * 12),
+    return JAVA % (_chunked_table(STRICT, " " * 12),
                    ",\n".join('            Map.entry("%s", "%s")' % kv for kv in LORE.items()),
                    _set(FICTION), _map_of_sets(ROCK, " " * 12), _set(DRIPSTONE_KEEPS), _set(COBBLEMON_KEEPS),
                    _set(VANILLA_ORES), _set(GAME_ROCK), _set(END_GEM_STONES), _set(GEMS),
@@ -601,6 +617,8 @@ def write_java(write_text):
 
 JAVA = '''package com.chillpavz.seamlessores.content;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -627,9 +645,21 @@ public final class OreGeology {
 
     private OreGeology() {}
 
-    /** Ore key -> the stones other mods place that it never forms in. */
-    private static final Map<String, Set<String>> STRICT = Map.ofEntries(
-%s);
+    /** Ore key -> the stones other mods place that it never forms in (rows "ore host host", see table). */
+    private static final Map<String, Set<String>> STRICT = table(new String[] {
+%s});
+
+    /** Rows "key value value" joined by ';', in chunks: a table too large for one map initialiser. */
+    private static Map<String, Set<String>> table(String[] chunks) {
+        final Map<String, Set<String>> out = new HashMap<>();
+        for (String chunk : chunks) {
+            for (String row : chunk.split(";")) {
+                final String[] words = row.split(" ");
+                out.put(words[0], Set.copyOf(Arrays.asList(words).subList(1, words.length)));
+            }
+        }
+        return Map.copyOf(out);
+    }
 
     /** Create's invented stones -> the one real ore each keeps. */
     private static final Map<String, String> LORE = Map.ofEntries(
