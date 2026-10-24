@@ -507,6 +507,14 @@ public final class HostStone {
         return swallowedBy != null && Services.PLATFORM.isModLoaded(swallowedBy) ? swallows : List.of();
     }
 
+    /**
+     * Whether this stone adds ore rather than restyling it: see {@link ModdedPairs#addsOre}. The game's own
+     * rock never does here (basalt and blackstone add by their tier).
+     */
+    public boolean addsOre() {
+        return placedBy != null && ModdedPairs.addsOre(id.toString());
+    }
+
     /** The swallowed ores that never form in this rock: worldgen turns them into the stone. */
     public List<OreType> refused() {
         return swallowedBy != null && Services.PLATFORM.isModLoaded(swallowedBy) ? refused : List.of();

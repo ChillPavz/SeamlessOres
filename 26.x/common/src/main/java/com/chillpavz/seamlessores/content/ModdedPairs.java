@@ -95,4 +95,22 @@ final class ModdedPairs {
         }
         return ores;
     }
+
+    /**
+     * Whether this stone ADDS ore: another mod lays it before the ores (a surface rule, an early feature), in
+     * no ore replaceables tag, so no ore feature reaches it. Its variants are added wherever a vein of the ore
+     * reaches it, behind its own switch, which is off by default (the opt-in rule).
+     */
+    static boolean addsOre(String host) {
+        return switch (host) {
+            // BEGIN GENERATED adds-ore stones (tools/generate_assets.py, from placed.ADDS_ORE_HOSTS)
+            case "regions_unexplored:argillite" -> true;
+            case "regions_unexplored:chalk" -> true;
+            case "natures_spirit:chert" -> true;
+            case "natures_spirit:white_chalk" -> true;
+            case "natures_spirit:pink_sandstone" -> true;
+            // END GENERATED adds-ore stones
+            default -> false;
+        };
+    }
 }

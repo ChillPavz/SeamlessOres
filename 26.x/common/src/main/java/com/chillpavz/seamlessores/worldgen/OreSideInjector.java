@@ -127,11 +127,14 @@ public final class OreSideInjector {
                 final boolean byOption = host.placedBy() == null && SeamlessOresConfig.geology
                         && OreGeology.optional(host.name(), ore.key());
                 final Block becomes = host.refused().contains(ore) || byOption ? stone : ours.get(variant);
-                    if (becomes == null || !enabled(host, ore, false)) {
+                    // A stone in no ore tag (ModdedPairs.addsOre) is given a target of its own wherever a vein reaches
+                    // it; an ore it refuses is simply never added.
+                    final boolean adds = host.addsOre();
+                    if (becomes == null || adds && becomes == stone || !enabled(host, ore, false)) {
                         continue;
                     }
                     for (Identifier form : ore.forms()) {
-                        pair(byOre, form, new Pairing(variant, stone, becomes, false, byOption));
+                        pair(byOre, form, new Pairing(variant, stone, becomes, adds, byOption));
                     }
                 }
             }
@@ -155,7 +158,9 @@ public final class OreSideInjector {
                 for (Pairing pairing : byOre.getOrDefault(target.state().getBlock(), List.of())) {
                     if (pairing.adds()) {
                         rules.add(new OreSite.Add(pairing.stone(), pairing.becomes()));
-                        if (netherAdded == null) {
+                        // Only a Nether vein is scaled by the Nether dials; a stone that adds ore elsewhere
+                        // (ModdedPairs.addsOre) keeps the feature's own size.
+                        if (netherAdded == null && pairing.variant().host().tier() == OreTier.NETHER) {
                             netherAdded = pairing.variant();
                         }
                     } else if (era.receives(target.test(), pairing.stone())

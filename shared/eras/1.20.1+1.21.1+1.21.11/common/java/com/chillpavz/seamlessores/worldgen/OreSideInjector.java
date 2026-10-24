@@ -132,13 +132,16 @@ public final class OreSideInjector {
                 final boolean byOption = host.placedBy() == null && SeamlessOresConfig.geology
                         && OreGeology.optional(host.name(), ore.key());
                 final Block becomes = host.refused().contains(ore) || byOption ? stone : ours.get(variant);
-                if (becomes == null || !enabled(host, ore, false)) {
+                // A stone in no ore tag (ModdedPairs.addsOre) is given a target of its own wherever a vein reaches
+                // it; an ore it refuses is simply never added.
+                final boolean adds = host.addsOre();
+                if (becomes == null || adds && becomes == stone || !enabled(host, ore, false)) {
                     continue;
                 }
                 for (var form : ore.forms()) {
                     BuiltInRegistries.BLOCK.getOptional(form).ifPresent(block -> byOre
                             .computeIfAbsent(block, b -> new ArrayList<>())
-                            .add(new Pairing(variant, stone, becomes, false, byOption)));
+                            .add(new Pairing(variant, stone, becomes, adds, byOption)));
                 }
             }
         }

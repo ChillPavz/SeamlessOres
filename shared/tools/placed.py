@@ -458,6 +458,11 @@ def write_java(hosts, content_dir, config_java, stone_loaders):
         ships.append(f'            case "{mod}" -> {test or "false"};')
     text = replace_block(text, "            // BEGIN GENERATED stone loaders (tools/generate_assets.py, from its loot routing)\n",
                          "            // END GENERATED stone loaders", "\n".join(ships) + "\n" if ships else "", path)
+    # The stones that add ore (ADDS_ORE_HOSTS): the injector gives them a target of their own.
+    adds = [c["id"] for c in hosts.placed() if c["adds"]]
+    text = replace_block(text, "            // BEGIN GENERATED adds-ore stones (tools/generate_assets.py, from placed.ADDS_ORE_HOSTS)\n",
+                         "            // END GENERATED adds-ore stones",
+                         "".join(f'            case "{h}" -> true;\n' for h in adds), path)
     write_text(path, text)
 
     geology.write_java(write_text)
