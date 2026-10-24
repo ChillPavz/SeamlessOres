@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:basalt_bno_nether_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_bno_nether_silver_ore",
+      "required": false
+    }
+  ]
+}

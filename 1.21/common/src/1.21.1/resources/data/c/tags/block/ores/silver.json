@@ -169,6 +169,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_bno_nether_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_mythicmetals_silver_ore",
       "required": false
     },
@@ -450,6 +454,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_silver_ore",
       "required": false
     },
     {

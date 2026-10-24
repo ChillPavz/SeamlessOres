@@ -226,6 +226,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_bno_nether_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_bno_nether_iron_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_denseores_dense_iron_ore",
       "required": false
     },
@@ -234,7 +242,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_bno_nether_iron_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_bno_nether_iron_ore",
       "required": false
     },
     {
@@ -243,6 +259,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_bno_nether_iron_ore",
       "required": false
     },
     {
@@ -263,6 +283,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_iron_ore",
       "required": false
     },
     {

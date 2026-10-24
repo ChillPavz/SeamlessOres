@@ -22,11 +22,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_bno_nether_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_redstone_ore",
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_bno_nether_redstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_bno_nether_redstone_ore",
       "required": false
     },
     {
@@ -39,6 +51,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_redstone_ore",
       "required": false
     },
     {

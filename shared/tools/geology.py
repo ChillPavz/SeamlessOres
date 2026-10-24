@@ -18,6 +18,18 @@ one shared/java OreGeology.java from this file (write_java), and reads it for th
 
 import os
 
+# Basic End Ores' and Basic Nether Ores' copies of the game's ores, and their metals, join their base ore
+# everywhere the rule names it (owner, 22 Oct 2026, as Dense Ores' and BetterNether's forms): alias -> base.
+_BASIC = {"coal": "coal", "iron": "iron", "copper": "copper", "gold": "gold", "redstone": "redstone",
+          "lapis": "lapis", "diamond": "diamond", "emerald": "emerald", "lead": "lead", "nickel": "nickel",
+          "osmium": "osmium", "tin": "tin", "uranium": "uranium", "zinc": "zinc",
+          "aluminum": "electrodynamics_aluminum", "silver": "electrodynamics_silver"}
+ALIASES = {f"{mod}_{ore}": base for mod in ("beo", "bno") for ore, base in _BASIC.items()}
+
+
+def _with_aliases(keys):
+    return list(keys) + [a for a, base in ALIASES.items() if base in keys and a not in keys]
+
 # --- FIXED: the stones other mods place ------------------------------------------------------------
 
 # Exempt, never judged for REAL ores: dripstone block (a speleothem; invented ores follow their lore's
@@ -63,7 +75,8 @@ CLASSES = {
              "yungscavebiomes_ancient_sandstone", "natures_spirit_pink_sandstone"],
     # rock salt, an evaporite (owner, 23 Oct 2026): Galosphere's pink, rose and pastel pink salt. STRICT: it keeps
     # only what a salt bed holds (HOST_KEEPS below), even the ores no other class filters: iron, copper, gold.
-    "EVAP": ["galosphere_pink_salt", "galosphere_rose_pink_salt", "galosphere_pastel_pink_salt"],
+    # The Outer End's halite is rock salt too (owner, 25 Oct 2026): no End ore is a salt, so it keeps none.
+    "EVAP": ["galosphere_pink_salt", "galosphere_rose_pink_salt", "galosphere_pastel_pink_salt", "outer_end_halite"],
 }
 # INVENTED STONES ARE JUDGED TOO (owner, 22 Oct 2026; so-fiction-lore-rule): each is read as the rock its own
 # mod frames it as. Create's scorchia is black-dyed scoria and Twigs' bloodstone lies in the basalt deltas
@@ -181,6 +194,8 @@ FAMILIES = [
     (["electrodynamics_vanadium"], _all_but("PLUT", "RBED", "SHAL", "VOLC")),
 ]
 
+FAMILIES = [(_with_aliases(keys), hosts) for keys, hosts in FAMILIES]
+
 # ore -> hosts it is refused in
 STRICT = {key: hosts for keys, hosts in FAMILIES for key in keys}
 if len(STRICT) != sum(len(keys) for keys, _hosts_ in FAMILIES):
@@ -237,6 +252,7 @@ FICTION = set("redstone adamantite aquarium banglum carmot kyber midas_gold mork
               # the ore mods of 22 Oct 2026, second batch; the game's redstone in their forms
               "iter_rpg_magmanum betternether_cincinnasite denseores_ancient_nether "
               "denseores_redstone betternether_nether_redstone".split())
+FICTION |= {a for a, base in ALIASES.items() if base in FICTION}
 
 # Create's four invented stones each keep only the ore Create ties them to (owner), plus the invented ores
 # whose lore matches (FICTION_LORE).
@@ -253,6 +269,7 @@ GEMS = set("ametrine jade aquamarine citrine peridot topaz ruby sapphire diamond
            "rose_quartz tanzanite turquoise white_diamond silents_aquamarine silents_citrine silents_peridot "
            "silents_ruby silents_sapphire silents_topaz techreborn_ruby techreborn_sapphire "
            "iceandfire_sapphire epicpaladins_jade amethyst black_opal".split())
+GEMS |= {a for a, base in ALIASES.items() if base in GEMS}
 
 
 # Stones other mods place that are judged exactly as one of the game's rocks (owner, 21 Oct 2026). A refusal
@@ -338,6 +355,7 @@ FICTION_LORE = {
     "enderite": ("", "", ""),
     "enderium": ("", "", ""),
 }
+FICTION_LORE.update({a: FICTION_LORE[base] for a, base in ALIASES.items() if base in FICTION_LORE})
 if set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS):
     raise SystemExit(f"geology.py: invented ores with no lore: {sorted(set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS))}")
 _LORE_ROCK = {}     # ore -> the game's rocks it refuses, for ROCK below
@@ -360,10 +378,35 @@ _EVAP_KEEPS = set("salt expandeddelight_salt electrodynamics_salt electrodynamic
                   "scguns_nether_sulfur electrodynamics_sulfur electrodynamics_niter lithium electrodynamics_lithium "
                   "banglum aquarium".split())
 HOST_KEEPS = {host: _EVAP_KEEPS for host in CLASSES["EVAP"]}
-for _host, _keeps in HOST_KEEPS.items():
+for _host, _keeps in list(HOST_KEEPS.items()):
     _drift = sorted(o for o, refused in STRICT.items() if (o in _keeps) == (_host in refused))
     if _drift:
         raise SystemExit(f"geology.py: HOST_KEEPS for {_host} and FAMILIES disagree on {_drift}")
+
+# THE END'S STONES (owner, 25 Oct 2026, from the principle of 21 Oct): no CLASSES, a whitelist each. A
+# crystalline stone keeps the gems and the invented ores whose lore is a crystal (starrite, zenalite, Silent
+# Gear's azure silver); a volcanic-looking one keeps the metals (with redstone and coal); plain End rock keeps
+# every End ore end stone takes. Keys are the End-only ore types (OreType's End forms, Basic End Ores).
+_END_SG = ("alexandrite ammolite black_diamond carnelian silents_citrine heliodor iolite kyanite moldavite "
+           "silents_peridot rose_quartz silents_ruby silents_sapphire silents_topaz turquoise white_diamond "
+           "silents_aquamarine garnet opal pearl tanzanite").split()
+END_GEM_ORES = set(["end_" + g for g in _END_SG] + "techreborn_peridot sodalite epicpaladins_jade jade ametrine "
+                   "end_amethyst end_black_opal beo_diamond beo_emerald beo_lapis end_starrite zenalite "
+                   "azure_silver".split())
+END_METAL_ORES = set(["beo_" + m for m in "coal iron copper gold redstone lead nickel osmium tin uranium zinc "
+                      "aluminum silver".split()] + "techreborn_tungsten sheldonite anglesite".split())
+END_ORES = END_GEM_ORES | END_METAL_ORES | {"end_experience"}
+END_CRYSTAL = ["betterend_azure_jadestone", "betterend_sandy_jadestone", "betterend_virid_jadestone",
+               "betterend_violecite", "outer_end_violite", "outer_end_rose_tangled_violite",
+               "outer_end_mint_tangled_violite", "outer_end_cobalt_tangled_violite", "unusualend_raw_purpur_block",
+               "unusualend_warped_stone"]
+END_VOLCANIC = ["betterend_brimstone", "betterend_sulphuric_rock", "betterend_umbralith", "enlightened_end_palerock"]
+END_PLAIN = ["betterend_flavolite", "outer_end_ancient_stone", "legendary_monsters_enderstone",
+             "endlessbiomes_slipstone", "endlessbiomes_arkan", "unusualend_gloopstone", "unusualend_gloopslate",
+             "unusualend_gneiss"]
+for _hosts_, _keeps in ((END_CRYSTAL, END_GEM_ORES), (END_VOLCANIC, END_METAL_ORES), (END_PLAIN, END_ORES)):
+    for _host in _hosts_:
+        HOST_KEEPS[_host] = _keeps
 
 
 def fixed(host, ore):
@@ -440,6 +483,7 @@ _FOUR_ROCK = [
     # Carnelian fills vesicles in lava and ash.
     (["carnelian", "epicpaladins_bloodstone"], [_G, _D]),
 ]
+_FOUR_ROCK = [(_with_aliases(keys), rocks) for keys, rocks in _FOUR_ROCK]
 
 # Dripstone KEEPS only what precipitates in limestone caves or fills karst cavities, and refuses the rest:
 # goethite, malachite and azurite speleothems; Mississippi Valley lead-zinc and fluorite; cave manganese
@@ -452,6 +496,7 @@ DRIPSTONE_KEEPS = set(
     "tankdefenses_aluminum denseores_iron denseores_copper electrodynamics_lead electrodynamics_uranium "
     "electrodynamics_salt electrodynamics_sylvite electrodynamics_fluorite electrodynamics_aluminum "
     "electrodynamics_niter".split())
+DRIPSTONE_KEEPS |= {a for a, base in ALIASES.items() if base in DRIPSTONE_KEEPS}
 
 # Basalt and blackstone: real minerals by the mafic volcanic reading (FAMILIES' VOLC). Every invented
 # Nether ore fits fire, lava or the piglins' gold and keeps both (lore, owner's rule of 20 Oct 2026).
@@ -488,6 +533,11 @@ for _stone in COBBLEMON_KEEPS:
     if _stone in ROCK:
         raise SystemExit(f"geology.py: {_stone} is already in ROCK")
     ROCK[_stone] = [rock for rock, kept in _COBBLEMON_ROCK_KEEPS.items() if _stone not in kept]
+# Basic Nether Ores' copies of the game's ores and its metals in basalt and blackstone: the mafic volcanic
+# reading, VOLC's refusals (coal, the gems, tin, uranium, nickel and osmium never form in lava rock).
+for _alias in ALIASES:
+    if _alias.startswith("bno_") and "minecraft_smooth_basalt" in STRICT.get(_alias, ()):
+        ROCK[_alias] = list(dict.fromkeys(ROCK.get(_alias, []) + NETHER_ROCK))
 
 
 def _rock_refuses(host, ore):

@@ -209,6 +209,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_bno_nether_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -442,6 +446,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_lead_ore",
       "required": false
     },
     {

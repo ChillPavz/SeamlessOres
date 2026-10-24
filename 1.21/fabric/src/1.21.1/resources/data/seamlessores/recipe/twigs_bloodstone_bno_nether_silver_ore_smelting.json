@@ -1,0 +1,35 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:twigs_bloodstone_bno_nether_silver_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twigs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "bno"
+    }
+  ],
+  "forge:condition": {
+    "type": "forge:mod_loaded",
+    "modid": "twigs"
+  },
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:twigs_bloodstone_bno_nether_silver_ore"
+  },
+  "result": {
+    "id": "bno:silver_ingot"
+  }
+}

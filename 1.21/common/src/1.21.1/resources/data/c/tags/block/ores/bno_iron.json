@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:blackstone_bno_nether_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_iron_ore",
+      "required": false
+    }
+  ]
+}

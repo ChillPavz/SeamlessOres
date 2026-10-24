@@ -25,6 +25,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_bno_nether_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_create_zinc_ore",
       "required": false
     },
@@ -62,6 +66,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_zinc_ore",
       "required": false
     },
     {

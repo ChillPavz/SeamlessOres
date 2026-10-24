@@ -656,6 +656,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean denseOres = true;
 
+    // --- Basic Nether Ores ---------------------------------------------------------------------------
+
+    @ConfigEntry.Category("basic_nether_ores")
+    @ConfigEntry.Gui.Tooltip
+    public boolean basicNetherOres = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -813,6 +819,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.electrodynamics = electrodynamics;
         values.betterNether = betterNether;
         values.denseOres = denseOres;
+        values.basicNetherOres = basicNetherOres;
 
         SeamlessOresConfig.apply(values);
     }

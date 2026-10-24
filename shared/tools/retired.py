@@ -24,6 +24,8 @@ def write(list_path, hosts, assets_dir, resources_dir, item_definitions=False):
             model = {"parent": "minecraft:block/cube_column", "textures": {"side": cfg["side"], "end": cfg["end"]}}
         elif cfg["look"] == "textures4":
             model = {"parent": "minecraft:block/cube_all", "textures": {"all": cfg["side"] + "0"}}
+        elif cfg["look"] == "weighted":
+            model = {"parent": "minecraft:block/cube_all", "textures": {"all": cfg["side"][0][0]}}
         else:
             model = {"parent": "minecraft:block/cube_all", "textures": {"all": cfg["side"]}}
         write_json(os.path.join(assets_dir, "models", "block", "retired", f"{name}.json"), model)

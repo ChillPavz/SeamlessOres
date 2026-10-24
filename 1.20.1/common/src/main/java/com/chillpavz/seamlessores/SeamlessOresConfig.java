@@ -267,6 +267,12 @@ public final class SeamlessOresConfig {
     /** Whether Dense Ores variants generate. Pure restyle. */
     public static boolean denseOres = true;
 
+    /** Whether Basic End Ores variants generate. Pure restyle. */
+    public static boolean basicEndOres = true;
+
+    /** Whether Basic Nether Ores variants generate. Pure restyle. */
+    public static boolean basicNetherOres = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -327,6 +333,8 @@ public final class SeamlessOresConfig {
             case "iter_rpg" -> iterRpg;
             case "electrodynamics" -> electrodynamics;
             case "denseores" -> denseOres;
+            case "beo" -> basicEndOres;
+            case "bno" -> basicNetherOres;
             default -> true;
         };
     }
@@ -541,6 +549,8 @@ public final class SeamlessOresConfig {
         public boolean iterRpg = true;
         public boolean electrodynamics = true;
         public boolean denseOres = true;
+        public boolean basicEndOres = true;
+        public boolean basicNetherOres = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -623,6 +633,8 @@ public final class SeamlessOresConfig {
         iterRpg = values.iterRpg;
         electrodynamics = values.electrodynamics;
         denseOres = values.denseOres;
+        basicEndOres = values.basicEndOres;
+        basicNetherOres = values.basicNetherOres;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

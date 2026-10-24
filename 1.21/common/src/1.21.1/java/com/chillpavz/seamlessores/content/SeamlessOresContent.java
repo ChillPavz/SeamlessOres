@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -228,7 +229,14 @@ public final class SeamlessOresContent {
         }
         // Only the map colour (and, in the block, the sound) follows the HOST stone - vanilla varies
         // those by host rock too (deepslate ores use MapColor.DEEPSLATE), and they have no balance effect.
-        properties.mapColor(variant.host().mapColor());
+        // A host whose table gives no colour (the End stones, whose colours their mods set in code) takes
+        // its own block's, asked when the map is drawn: by then every mod's block is registered.
+        final HostStone host = variant.host();
+        if (host.mapColor() != null) {
+            properties.mapColor(host.mapColor());
+        } else {
+            properties.mapColor(state -> host.block() != null ? host.block().defaultMapColor() : MapColor.STONE);
+        }
         // Light follows the ORE. A vanilla ore's copy carries its own; the vanilla block a modded ore
         // copies does not glow, so an ore that does (Cobblemon's shiny stone, among others) sets it here.
         final int light = variant.ore().lightEmission();

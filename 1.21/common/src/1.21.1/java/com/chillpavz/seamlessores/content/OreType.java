@@ -953,6 +953,159 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(2, 3), null, false, Set.of())
             .withStrength(12.0F, 100.0F);
 
+    /**
+     * An End form of an ore: a type of its own, whose one form is the End ore, keyed apart from the ore's
+     * other forms and drawn with the overlay named. A stone another mod places in the End takes it, since a
+     * placed stone takes the first form an ore has (OreVariant.source).
+     */
+    private static OreType endForm(String key, String overlay, String modId, String oreId, IntProvider xp) {
+        return new OreType(key, key, overlay, null, modId, null, null, null, xp, null, false, Set.of(), null,
+                of(modId, oreId));
+    }
+
+    // --- End forms (25 Oct 2026): facts in references/tools/ore-mod-adder/add_end_forms.py ---
+    public static final OreType SG_E_ALEXANDRITE = endForm("end_alexandrite", "alexandrite", "silentgems", "end_alexandrite_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_AMMOLITE = endForm("end_ammolite", "ammolite", "silentgems", "end_ammolite_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_BLACK_DIAMOND = endForm("end_black_diamond", "black_diamond", "silentgems", "end_black_diamond_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_CARNELIAN = endForm("end_carnelian", "carnelian", "silentgems", "end_carnelian_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_CITRINE = endForm("end_silents_citrine", "silents_citrine", "silentgems", "end_citrine_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_HELIODOR = endForm("end_heliodor", "heliodor", "silentgems", "end_heliodor_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_IOLITE = endForm("end_iolite", "iolite", "silentgems", "end_iolite_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_KYANITE = endForm("end_kyanite", "kyanite", "silentgems", "end_kyanite_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_MOLDAVITE = endForm("end_moldavite", "moldavite", "silentgems", "end_moldavite_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_PERIDOT = endForm("end_silents_peridot", "silents_peridot", "silentgems", "end_peridot_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_ROSE_QUARTZ = endForm("end_rose_quartz", "rose_quartz", "silentgems", "end_rose_quartz_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_RUBY = endForm("end_silents_ruby", "silents_ruby", "silentgems", "end_ruby_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_SAPPHIRE = endForm("end_silents_sapphire", "silents_sapphire", "silentgems", "end_sapphire_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_TOPAZ = endForm("end_silents_topaz", "silents_topaz", "silentgems", "end_topaz_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_TURQUOISE = endForm("end_turquoise", "turquoise", "silentgems", "end_turquoise_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_WHITE_DIAMOND = endForm("end_white_diamond", "white_diamond", "silentgems", "end_white_diamond_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_AQUAMARINE = endForm("end_silents_aquamarine", "silents_aquamarine", "silentgems", "end_aquamarine_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_GARNET = endForm("end_garnet", "garnet", "silentgems", "end_garnet_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_OPAL = endForm("end_opal", "opal", "silentgems", "end_opal_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_PEARL = endForm("end_pearl", "pearl", "silentgems", "end_pearl_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType SG_E_TANZANITE = endForm("end_tanzanite", "tanzanite", "silentgems", "end_tanzanite_ore", UniformInt.of(1, 5))
+            .withStrength(6.0F, 3.0F);
+    public static final OreType TR_PERIDOT = endForm("techreborn_peridot", "techreborn_peridot", "techreborn", "peridot_ore", UniformInt.of(2, 6));
+    public static final OreType TR_SHELDONITE = endForm("sheldonite", "sheldonite", "techreborn", "sheldonite_ore", NONE);
+    public static final OreType TR_SODALITE = endForm("sodalite", "sodalite", "techreborn", "sodalite_ore", NONE);
+    public static final OreType TR_TUNGSTEN = endForm("techreborn_tungsten", "techreborn_tungsten", "techreborn", "tungsten_ore", NONE);
+    public static final OreType AZURE_SILVER = endForm("azure_silver", "azure_silver", "silentgear", "azure_silver_ore", UniformInt.of(3, 7))
+            .withStrength(4.0F, 10.0F);
+    public static final OreType ANGLESITE = endForm("anglesite", "anglesite", "bigreactors", "anglesite_ore", NONE);
+    public static final OreType EP_JADE = endForm("epicpaladins_jade", "epicpaladins_jade", "epicpaladins", "jade_ore", UniformInt.of(3, 7))
+            .withStrength(4.0F, 4.0F);
+    public static final OreType MU_JADE = endForm("jade", "jade", "mythicupgrades", "jade_ore", UniformInt.of(6, 14))
+            .withStrength(3.0F, 9.0F);
+    public static final OreType MM_END_STARRITE = endForm("end_starrite", "starrite", "mythicmetals", "end_stone_starrite_ore", NONE)
+            .withStrength(5.0F, 6.0F);
+    public static final OreType HNS_ZENALITE = endForm("zenalite", "zenalite", "hazennstuff", "zenalite_end_stone_ore", UniformInt.of(2, 4))
+            .withStrength(3.0F, 3.0F);
+
+    // --- Basic Nether Ores (mod id bno, MIT, cScotPlay): Nether ores in netherrack, 3.0 hardness and resistance (BNOBlocks); emerald and diamond 3 to 7 experience, lapis 2 to 5, coal 0 to 2, the rest none. The game's ores take our own overlays (owner). Fabric only at 1.21.1 (its NeoForge and Forge builds ask for 1.21 only); it ships its own basalt forms there, so no basalt variant ---
+    public static final OreType BNO_COAL = ore(
+            "bno_coal", "coal", null, "bno",
+            null, null, of("bno", "nether_coal_ore"),
+            UniformInt.of(0, 2), null, false, Set.of("basalt"))
+            .withKey("bno_coal")
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_COPPER = ore(
+            "bno_copper", "copper", null, "bno",
+            null, null, of("bno", "nether_copper_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withKey("bno_copper")
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_DIAMOND = ore(
+            "bno_diamond", "diamond", null, "bno",
+            null, null, of("bno", "nether_diamond_ore"),
+            UniformInt.of(3, 7), null, false, Set.of("basalt"))
+            .withKey("bno_diamond")
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_EMERALD = ore(
+            "bno_emerald", "emerald", null, "bno",
+            null, null, of("bno", "nether_emerald_ore"),
+            UniformInt.of(3, 7), null, false, Set.of("basalt"))
+            .withKey("bno_emerald")
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_IRON = ore(
+            "bno_iron", "iron", null, "bno",
+            null, null, of("bno", "nether_iron_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withKey("bno_iron")
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_LAPIS = ore(
+            "bno_lapis", "lapis", null, "bno",
+            null, null, of("bno", "nether_lapis_ore"),
+            UniformInt.of(2, 5), null, false, Set.of("basalt"))
+            .withKey("bno_lapis")
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_REDSTONE = ore(
+            "bno_redstone", "redstone", null, "bno",
+            null, null, of("bno", "nether_redstone_ore"),
+            NONE, null, true, Set.of("basalt"))
+            .withKey("bno_redstone")
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_ALUMINUM = ore(
+            "bno_aluminum", "bno_aluminum", null, "bno",
+            null, null, of("bno", "nether_aluminum_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_LEAD = ore(
+            "bno_lead", "bno_lead", null, "bno",
+            null, null, of("bno", "nether_lead_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_NICKEL = ore(
+            "bno_nickel", "bno_nickel", null, "bno",
+            null, null, of("bno", "nether_nickel_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_OSMIUM = ore(
+            "bno_osmium", "bno_osmium", null, "bno",
+            null, null, of("bno", "nether_osmium_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_SILVER = ore(
+            "bno_silver", "bno_silver", null, "bno",
+            null, null, of("bno", "nether_silver_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_TIN = ore(
+            "bno_tin", "bno_tin", null, "bno",
+            null, null, of("bno", "nether_tin_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_URANIUM = ore(
+            "bno_uranium", "bno_uranium", null, "bno",
+            null, null, of("bno", "nether_uranium_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withStrength(3.0F, 3.0F);
+    public static final OreType BNO_ZINC = ore(
+            "bno_zinc", "bno_zinc", null, "bno",
+            null, null, of("bno", "nether_zinc_ore"),
+            NONE, null, false, Set.of("basalt"))
+            .withStrength(3.0F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -994,7 +1147,14 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     EC_DARK,
                     EDY_ALUMINUM, EDY_CHROMIUM, EDY_FLUORITE, EDY_LEAD, EDY_LITHIUM, EDY_MOLYBDENUM, EDY_MONAZITE, EDY_NITER, EDY_SALT, EDY_SILVER, EDY_SULFUR, EDY_SYLVITE, EDY_THORIUM, EDY_TIN, EDY_TITANIUM, EDY_URANIUM, EDY_VANADIUM,
                     BN_CINCINNASITE, BN_NETHER_LAPIS, BN_NETHER_REDSTONE, BN_NETHER_RUBY,
-                    DO_COAL, DO_COPPER, DO_IRON, DO_GOLD, DO_LAPIS, DO_REDSTONE, DO_DIAMOND, DO_EMERALD, DO_NETHER_GOLD, DO_NETHER_QUARTZ, DO_ANCIENT_NETHER);
+                    DO_COAL, DO_COPPER, DO_IRON, DO_GOLD, DO_LAPIS, DO_REDSTONE, DO_DIAMOND, DO_EMERALD, DO_NETHER_GOLD, DO_NETHER_QUARTZ, DO_ANCIENT_NETHER,
+                    SG_E_ALEXANDRITE, SG_E_AMMOLITE, SG_E_BLACK_DIAMOND, SG_E_CARNELIAN, SG_E_CITRINE, SG_E_HELIODOR,
+                    SG_E_IOLITE, SG_E_KYANITE, SG_E_MOLDAVITE, SG_E_PERIDOT, SG_E_ROSE_QUARTZ, SG_E_RUBY,
+                    SG_E_SAPPHIRE, SG_E_TOPAZ, SG_E_TURQUOISE, SG_E_WHITE_DIAMOND, SG_E_AQUAMARINE, SG_E_GARNET,
+                    SG_E_OPAL, SG_E_PEARL, SG_E_TANZANITE, TR_PERIDOT, TR_SHELDONITE, TR_SODALITE,
+                    TR_TUNGSTEN, AZURE_SILVER, ANGLESITE, EP_JADE, MU_JADE, MM_END_STARRITE,
+                    HNS_ZENALITE,
+                    BNO_COAL, BNO_COPPER, BNO_DIAMOND, BNO_EMERALD, BNO_IRON, BNO_LAPIS, BNO_REDSTONE, BNO_ALUMINUM, BNO_LEAD, BNO_NICKEL, BNO_OSMIUM, BNO_SILVER, BNO_TIN, BNO_URANIUM, BNO_ZINC);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

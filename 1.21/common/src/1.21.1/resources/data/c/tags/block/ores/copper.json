@@ -26,6 +26,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_bno_nether_copper_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_copper_ore",
       "required": false
     },
@@ -123,6 +127,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_copper_ore",
       "required": false
     },
     {

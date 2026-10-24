@@ -94,6 +94,48 @@
     "malum:blazing_quartz_ore"
    ]
   },
+  "bno_coal": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_coal_ore"
+   ]
+  },
+  "bno_copper": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_copper_ore"
+   ]
+  },
+  "bno_diamond": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_diamond_ore"
+   ]
+  },
+  "bno_emerald": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_emerald_ore"
+   ]
+  },
+  "bno_iron": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_iron_ore"
+   ]
+  },
+  "bno_lapis": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_lapis_ore"
+   ]
+  },
+  "bno_redstone": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_redstone_ore"
+   ]
+  },
   "bort": {
    "mod": "silentgear",
    "forms": [
@@ -8118,6 +8160,55 @@
     ],
     "rate": 1098.29
    },
+   "bno_coal": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 1697.93
+   },
+   "bno_copper": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 269.3
+   },
+   "bno_diamond": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 21.62
+   },
+   "bno_emerald": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 73.59
+   },
+   "bno_iron": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 1922.9
+   },
+   "bno_lapis": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 84.02
+   },
+   "bno_redstone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 174.89
+   },
    "cinnabar": {
     "where": [
      "1.20.1 fabric"
@@ -8316,6 +8407,55 @@
      "1.20.1 forge"
     ],
     "rate": 721.76
+   },
+   "bno_coal": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 1115.82
+   },
+   "bno_copper": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 176.97
+   },
+   "bno_diamond": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 14.21
+   },
+   "bno_emerald": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 48.36
+   },
+   "bno_iron": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 1263.66
+   },
+   "bno_lapis": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 55.22
+   },
+   "bno_redstone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 114.93
    },
    "bort": {
     "where": [
@@ -19649,6 +19789,55 @@
     ],
     "rate": 322.97
    },
+   "bno_coal": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 499.3
+   },
+   "bno_copper": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 79.19
+   },
+   "bno_diamond": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 6.36
+   },
+   "bno_emerald": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 21.64
+   },
+   "bno_iron": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 565.46
+   },
+   "bno_lapis": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 24.71
+   },
+   "bno_redstone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 51.43
+   },
    "bort": {
     "where": [
      "1.20.1 forge"
@@ -26659,6 +26848,55 @@
      "1.20.1 forge"
     ],
     "rate": 60.93
+   },
+   "bno_coal": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 97.95
+   },
+   "bno_copper": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 13.83
+   },
+   "bno_diamond": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 6.91
+   },
+   "bno_emerald": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.61
+   },
+   "bno_iron": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 92.19
+   },
+   "bno_lapis": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.03
+   },
+   "bno_redstone": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 18.44
    },
    "cinnabar": {
     "where": [

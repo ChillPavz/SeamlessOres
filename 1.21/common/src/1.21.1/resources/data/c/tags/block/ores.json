@@ -1051,6 +1051,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_bno_nether_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_bno_nether_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_bno_nether_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_bno_nether_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_bno_nether_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_bno_nether_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_cobblemon_dusk_stone_ore",
       "required": false
     },
@@ -7977,6 +8001,34 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_betternether_nether_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_bno_nether_zinc_ore",
       "required": false
     },
     {

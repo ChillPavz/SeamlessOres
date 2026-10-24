@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:blackstone_bno_nether_aluminum_ore"
+  },
+  "result": "bno:aluminum_ingot"
+}

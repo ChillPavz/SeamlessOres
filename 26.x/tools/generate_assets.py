@@ -857,6 +857,20 @@ ORE_DEFS = [
     {"name": "denseores_ancient_nether", "overlay": "denseores_ancient_nether", "source": "ancient_nether_ore", "base": "netherrack",
      "mod": "denseores",
      "tiers": {"nether": "ancient_nether_ore"}},
+    # End forms of the ores above (25 Oct 2026): End-only types, keyed apart, for the End stones
+    # other mods lay. Facts per form in references/tools/ore-mod-adder/add_end_forms.py.
+    {"name": "techreborn_peridot", "key": "techreborn_peridot", "overlay": "techreborn_peridot", "source": "peridot_ore", "base": "end_stone",
+     "mod": "techreborn", "tiers": {"end": "peridot_ore"}},
+    {"name": "sheldonite", "key": "sheldonite", "overlay": "sheldonite", "source": "sheldonite_ore", "base": "end_stone",
+     "mod": "techreborn", "tiers": {"end": "sheldonite_ore"}},
+    {"name": "sodalite", "key": "sodalite", "overlay": "sodalite", "source": "sodalite_ore", "base": "end_stone",
+     "mod": "techreborn", "tiers": {"end": "sodalite_ore"}},
+    {"name": "techreborn_tungsten", "key": "techreborn_tungsten", "overlay": "techreborn_tungsten", "source": "tungsten_ore", "base": "end_stone",
+     "mod": "techreborn", "tiers": {"end": "tungsten_ore"}},
+    {"name": "jade", "key": "jade", "overlay": "jade", "source": "jade_ore", "base": "end_stone",
+     "mod": "mythicupgrades", "tiers": {"end": "jade_ore"}},
+    {"name": "end_starrite", "key": "end_starrite", "overlay": "starrite", "source": "end_stone_starrite_ore", "base": "end_stone",
+     "mod": "mythicmetals", "tiers": {"end": "end_stone_starrite_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets

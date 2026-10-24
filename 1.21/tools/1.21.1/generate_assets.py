@@ -158,7 +158,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "evilcraft": jar("evilcraft-1.21.1-neoforge-1.2.99.jar"),
             "electrodynamics": jar("electrodynamics-1.21.1-1.1.0.jar"),
             "betternether": jar("better-nether-21.0.11.jar"),
-            "denseores": jar("denseores-1.2.2.jar")}
+            "denseores": jar("denseores-1.2.2.jar"),
+            "bno": jar("BasicNetherOres-fabric-1.21.1-10.1.0.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -323,6 +324,7 @@ ANIMATED_OVERLAYS = {
     # Extreme Reactors' benitoite: 10 frames, same pulse-and-rest shape, from its own mcmeta.
     "benitoite": {"frametime": 2, "frames": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 8, 7, 6, 5, 4, 3, 2, 1,
                                              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]},
+    "anglesite": {"frametime": 2, "frames": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]},  # from its own mcmeta
 }
 
 # Third-party mods whose ores get variants.
@@ -421,6 +423,8 @@ MODS = {
                        "licence": "MIT", "author": "quiqueck, paulevs"},
     "denseores": {"display": "Dense Ores", "category": "dense_ores",
                        "licence": "AGPL-3.0 (art, as its Modrinth page)", "author": "NewJumperr"},
+    "bno": {"display": "Basic Nether Ores", "category": "basic_nether_ores",
+                       "licence": "MIT", "author": "cScotPlay"},
 }
 
 ORE_DEFS = [
@@ -1107,6 +1111,116 @@ ORE_DEFS = [
     {"name": "denseores_ancient_nether", "overlay": "denseores_ancient_nether", "source": "ancient_nether_ore", "base": "netherrack",
      "mod": "denseores",
      "tiers": {"nether": "ancient_nether_ore"}},
+    # End forms of the ores above (25 Oct 2026): End-only types, keyed apart, for the End stones
+    # other mods lay. Facts per form in references/tools/ore-mod-adder/add_end_forms.py.
+    {"name": "end_alexandrite", "key": "end_alexandrite", "overlay": "alexandrite", "source": "end_alexandrite_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_alexandrite_ore"}},
+    {"name": "end_ammolite", "key": "end_ammolite", "overlay": "ammolite", "source": "end_ammolite_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_ammolite_ore"}},
+    {"name": "end_black_diamond", "key": "end_black_diamond", "overlay": "black_diamond", "source": "end_black_diamond_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_black_diamond_ore"}},
+    {"name": "end_carnelian", "key": "end_carnelian", "overlay": "carnelian", "source": "end_carnelian_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_carnelian_ore"}},
+    {"name": "end_silents_citrine", "key": "end_silents_citrine", "overlay": "silents_citrine", "source": "end_citrine_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_citrine_ore"}},
+    {"name": "end_heliodor", "key": "end_heliodor", "overlay": "heliodor", "source": "end_heliodor_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_heliodor_ore"}},
+    {"name": "end_iolite", "key": "end_iolite", "overlay": "iolite", "source": "end_iolite_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_iolite_ore"}},
+    {"name": "end_kyanite", "key": "end_kyanite", "overlay": "kyanite", "source": "end_kyanite_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_kyanite_ore"}},
+    {"name": "end_moldavite", "key": "end_moldavite", "overlay": "moldavite", "source": "end_moldavite_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_moldavite_ore"}},
+    {"name": "end_silents_peridot", "key": "end_silents_peridot", "overlay": "silents_peridot", "source": "end_peridot_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_peridot_ore"}},
+    {"name": "end_rose_quartz", "key": "end_rose_quartz", "overlay": "rose_quartz", "source": "end_rose_quartz_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_rose_quartz_ore"}},
+    {"name": "end_silents_ruby", "key": "end_silents_ruby", "overlay": "silents_ruby", "source": "end_ruby_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_ruby_ore"}},
+    {"name": "end_silents_sapphire", "key": "end_silents_sapphire", "overlay": "silents_sapphire", "source": "end_sapphire_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_sapphire_ore"}},
+    {"name": "end_silents_topaz", "key": "end_silents_topaz", "overlay": "silents_topaz", "source": "end_topaz_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_topaz_ore"}},
+    {"name": "end_turquoise", "key": "end_turquoise", "overlay": "turquoise", "source": "end_turquoise_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_turquoise_ore"}},
+    {"name": "end_white_diamond", "key": "end_white_diamond", "overlay": "white_diamond", "source": "end_white_diamond_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_white_diamond_ore"}},
+    {"name": "end_silents_aquamarine", "key": "end_silents_aquamarine", "overlay": "silents_aquamarine", "source": "end_aquamarine_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_aquamarine_ore"}},
+    {"name": "end_garnet", "key": "end_garnet", "overlay": "garnet", "source": "end_garnet_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_garnet_ore"}},
+    {"name": "end_opal", "key": "end_opal", "overlay": "opal", "source": "end_opal_ore", "base": "end_stone",
+     "mod": "silentgems", "raw_drop": "silentgems:opal", "tiers": {"end": "end_opal_ore"}},
+    {"name": "end_pearl", "key": "end_pearl", "overlay": "pearl", "source": "end_pearl_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_pearl_ore"}},
+    {"name": "end_tanzanite", "key": "end_tanzanite", "overlay": "tanzanite", "source": "end_tanzanite_ore", "base": "end_stone",
+     "mod": "silentgems", "tiers": {"end": "end_tanzanite_ore"}},
+    {"name": "techreborn_peridot", "key": "techreborn_peridot", "overlay": "techreborn_peridot", "source": "peridot_ore", "base": "end_stone",
+     "mod": "techreborn", "tiers": {"end": "peridot_ore"}},
+    {"name": "sheldonite", "key": "sheldonite", "overlay": "sheldonite", "source": "sheldonite_ore", "base": "end_stone",
+     "mod": "techreborn", "tiers": {"end": "sheldonite_ore"}},
+    {"name": "sodalite", "key": "sodalite", "overlay": "sodalite", "source": "sodalite_ore", "base": "end_stone",
+     "mod": "techreborn", "tiers": {"end": "sodalite_ore"}},
+    {"name": "techreborn_tungsten", "key": "techreborn_tungsten", "overlay": "techreborn_tungsten", "source": "tungsten_ore", "base": "end_stone",
+     "mod": "techreborn", "tiers": {"end": "tungsten_ore"}},
+    {"name": "azure_silver", "key": "azure_silver", "overlay": "azure_silver", "source": "azure_silver_ore", "base": "end_stone",
+     "mod": "silentgear", "tiers": {"end": "azure_silver_ore"}},
+    {"name": "anglesite", "key": "anglesite", "overlay": "anglesite", "source": "anglesite_ore", "base": "end_stone",
+     "mod": "bigreactors", "tiers": {"end": "anglesite_ore"}},
+    {"name": "epicpaladins_jade", "key": "epicpaladins_jade", "overlay": "epicpaladins_jade", "source": "jade_ore", "base": "end_stone",
+     "mod": "epicpaladins", "tiers": {"end": "jade_ore"}},
+    {"name": "jade", "key": "jade", "overlay": "jade", "source": "jade_ore", "base": "end_stone",
+     "mod": "mythicupgrades", "tiers": {"end": "jade_ore"}},
+    {"name": "end_starrite", "key": "end_starrite", "overlay": "starrite", "source": "end_stone_starrite_ore", "base": "end_stone",
+     "mod": "mythicmetals", "tiers": {"end": "end_stone_starrite_ore"}},
+    {"name": "zenalite", "key": "zenalite", "overlay": "zenalite", "source": "zenalite_end_stone_ore", "base": "end_stone",
+     "mod": "hazennstuff", "tiers": {"end": "zenalite_end_stone_ore"}},
+    # --- Basic Nether Ores (mod id bno, MIT, cScotPlay): Nether ores in netherrack, 3.0 hardness and resistance (BNOBlocks); emerald and diamond 3 to 7 experience, lapis 2 to 5, coal 0 to 2, the rest none. The game's ores take our own overlays (owner). Fabric only at 1.21.1 (its NeoForge and Forge builds ask for 1.21 only); it ships its own basalt forms there, so no basalt variant ---
+    {"name": "bno_coal", "key": "bno_coal", "overlay": "coal", "skip_hosts": ["basalt"], "source": "nether_coal_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_coal_ore"}},
+    {"name": "bno_copper", "key": "bno_copper", "overlay": "copper", "skip_hosts": ["basalt"], "source": "nether_copper_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_copper_ore"}},
+    {"name": "bno_diamond", "key": "bno_diamond", "overlay": "diamond", "skip_hosts": ["basalt"], "source": "nether_diamond_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_diamond_ore"}},
+    {"name": "bno_emerald", "key": "bno_emerald", "overlay": "emerald", "skip_hosts": ["basalt"], "source": "nether_emerald_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_emerald_ore"}},
+    {"name": "bno_iron", "key": "bno_iron", "overlay": "iron", "skip_hosts": ["basalt"], "source": "nether_iron_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_iron_ore"}},
+    {"name": "bno_lapis", "key": "bno_lapis", "overlay": "lapis", "skip_hosts": ["basalt"], "source": "nether_lapis_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_lapis_ore"}},
+    {"name": "bno_redstone", "key": "bno_redstone", "overlay": "redstone", "skip_hosts": ["basalt"], "source": "nether_redstone_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_redstone_ore"}},
+    {"name": "bno_aluminum", "overlay": "bno_aluminum", "skip_hosts": ["basalt"], "source": "nether_aluminum_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_aluminum_ore"}},
+    {"name": "bno_lead", "overlay": "bno_lead", "skip_hosts": ["basalt"], "source": "nether_lead_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_lead_ore"}},
+    {"name": "bno_nickel", "overlay": "bno_nickel", "skip_hosts": ["basalt"], "source": "nether_nickel_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_nickel_ore"}},
+    {"name": "bno_osmium", "overlay": "bno_osmium", "skip_hosts": ["basalt"], "source": "nether_osmium_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_osmium_ore"}},
+    {"name": "bno_silver", "overlay": "bno_silver", "skip_hosts": ["basalt"], "source": "nether_silver_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_silver_ore"}},
+    {"name": "bno_tin", "overlay": "bno_tin", "skip_hosts": ["basalt"], "source": "nether_tin_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_tin_ore"}},
+    {"name": "bno_uranium", "overlay": "bno_uranium", "skip_hosts": ["basalt"], "source": "nether_uranium_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_uranium_ore"}},
+    {"name": "bno_zinc", "overlay": "bno_zinc", "skip_hosts": ["basalt"], "source": "nether_zinc_ore", "base": "netherrack",
+     "mod": "bno",
+     "tiers": {"nether": "nether_zinc_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1262,6 +1376,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "electrodynamics": ('neoforge',),
     "betternether": ('fabric',),
     "denseores": ('neoforge',),
+    "bno": ('fabric',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1373,6 +1488,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.basic_nether_ores": "Basic Nether Ores",
         f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
         f"text.autoconfig.{MOD_ID}.category.betternether": "BetterNether",
         f"text.autoconfig.{MOD_ID}.category.electrodynamics": "Electrodynamics",
@@ -1412,6 +1528,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.basicNetherOres": "Basic Nether Ores: variants",
+        f"text.autoconfig.{MOD_ID}.option.basicNetherOres.@Tooltip":
+            "Generate host-matched Nether ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.denseOres": "Dense Ores: variants",
         f"text.autoconfig.{MOD_ID}.option.denseOres.@Tooltip":

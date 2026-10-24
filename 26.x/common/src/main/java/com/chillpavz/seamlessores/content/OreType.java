@@ -617,6 +617,26 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(30.0F, 500.0F);
 
+    /**
+     * An End form of an ore: a type of its own, whose one form is the End ore, keyed apart from the ore's
+     * other forms and drawn with the overlay named. A stone another mod places in the End takes it, since a
+     * placed stone takes the first form an ore has (OreVariant.source).
+     */
+    private static OreType endForm(String key, String overlay, String modId, String oreId, IntProvider xp) {
+        return new OreType(key, key, overlay, null, modId, null, null, null, xp, null, false, Set.of(), null,
+                of(modId, oreId));
+    }
+
+    // --- End forms (25 Oct 2026): facts in references/tools/ore-mod-adder/add_end_forms.py ---
+    public static final OreType TR_PERIDOT = endForm("techreborn_peridot", "techreborn_peridot", "techreborn", "peridot_ore", UniformInt.of(2, 6));
+    public static final OreType TR_SHELDONITE = endForm("sheldonite", "sheldonite", "techreborn", "sheldonite_ore", NONE);
+    public static final OreType TR_SODALITE = endForm("sodalite", "sodalite", "techreborn", "sodalite_ore", NONE);
+    public static final OreType TR_TUNGSTEN = endForm("techreborn_tungsten", "techreborn_tungsten", "techreborn", "tungsten_ore", NONE);
+    public static final OreType MU_JADE = endForm("jade", "jade", "mythicupgrades", "jade_ore", UniformInt.of(6, 14))
+            .withStrength(3.0F, 9.0F);
+    public static final OreType MM_END_STARRITE = endForm("end_starrite", "starrite", "mythicmetals", "end_stone_starrite_ore", NONE)
+            .withStrength(5.0F, 6.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -642,7 +662,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TH_SAL_AMMONIAC,
                     EC_DARK,
                     BN_CINCINNASITE, BN_NETHER_LAPIS, BN_NETHER_REDSTONE, BN_NETHER_RUBY,
-                    DO_COAL, DO_COPPER, DO_IRON, DO_GOLD, DO_LAPIS, DO_REDSTONE, DO_DIAMOND, DO_EMERALD, DO_NETHER_GOLD, DO_NETHER_QUARTZ, DO_ANCIENT_NETHER);
+                    DO_COAL, DO_COPPER, DO_IRON, DO_GOLD, DO_LAPIS, DO_REDSTONE, DO_DIAMOND, DO_EMERALD, DO_NETHER_GOLD, DO_NETHER_QUARTZ, DO_ANCIENT_NETHER,
+                    TR_PERIDOT, TR_SHELDONITE, TR_SODALITE, TR_TUNGSTEN, MU_JADE, MM_END_STARRITE);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

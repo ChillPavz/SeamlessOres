@@ -5,6 +5,12 @@ textures listed below are derived from other mods' own ore textures. Each stays 
 licence of the mod it comes from, shown with it; PolyForm Shield does not apply to them.
 The overlays of the game's own ores are derived from Minecraft's textures and remain Mojang's.
 
+Basic Nether Ores by cScotPlay, MIT:
+  assets/seamlessores/textures/block/bno_aluminum_overlay.png
+  assets/seamlessores/textures/block/bno_lead_overlay.png
+  assets/seamlessores/textures/block/bno_silver_overlay.png
+  assets/seamlessores/textures/block/bno_zinc_overlay.png
+
 Bigger Reactors by RogueLogix, gizmocodes, Ridanisaurus, LGPL-2.1:
   assets/seamlessores/textures/block/biggerreactors_uranium_overlay.png
 

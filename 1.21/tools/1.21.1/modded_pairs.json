@@ -90,6 +90,96 @@
     "malum:blazing_quartz_ore"
    ]
   },
+  "bno_aluminum": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_aluminum_ore"
+   ]
+  },
+  "bno_coal": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_coal_ore"
+   ]
+  },
+  "bno_copper": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_copper_ore"
+   ]
+  },
+  "bno_diamond": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_diamond_ore"
+   ]
+  },
+  "bno_emerald": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_emerald_ore"
+   ]
+  },
+  "bno_iron": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_iron_ore"
+   ]
+  },
+  "bno_lapis": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_lapis_ore"
+   ]
+  },
+  "bno_lead": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_lead_ore"
+   ]
+  },
+  "bno_nickel": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_nickel_ore"
+   ]
+  },
+  "bno_osmium": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_osmium_ore"
+   ]
+  },
+  "bno_redstone": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_redstone_ore"
+   ]
+  },
+  "bno_silver": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_silver_ore"
+   ]
+  },
+  "bno_tin": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_tin_ore"
+   ]
+  },
+  "bno_uranium": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_uranium_ore"
+   ]
+  },
+  "bno_zinc": {
+   "mod": "bno",
+   "forms": [
+    "bno:nether_zinc_ore"
+   ]
+  },
   "bort": {
    "mod": "silentgear",
    "forms": [
@@ -26194,6 +26284,96 @@
      "1.21.1 neoforge"
     ],
     "rate": 11.42
+   },
+   "bno_aluminum": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 9.22
+   },
+   "bno_coal": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 97.95
+   },
+   "bno_copper": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 13.83
+   },
+   "bno_diamond": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 6.91
+   },
+   "bno_emerald": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 4.61
+   },
+   "bno_iron": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 92.19
+   },
+   "bno_lapis": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 4.03
+   },
+   "bno_lead": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 9.22
+   },
+   "bno_nickel": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 4.61
+   },
+   "bno_osmium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 9.22
+   },
+   "bno_redstone": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 18.44
+   },
+   "bno_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 10.37
+   },
+   "bno_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 6.91
+   },
+   "bno_uranium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 2.3
+   },
+   "bno_zinc": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 27.66
    },
    "cinnabar": {
     "where": [

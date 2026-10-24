@@ -183,7 +183,10 @@ class Hosts(dict):
                 # earlier release built is retired, retired.py). Mirrors HostStone.ores().
                 if geology.fixed(host, ore["key"]):
                     continue
-                if cfg["tier"] == "cinnabar" and ore["overlay"] not in (cinnabar_family or ()):
+                # The family is named by overlay; an ore drawn with another's overlay (Basic Nether Ores' iron
+                # wears the game's) is not that ore, as OreType's cinnabar family is by type.
+                if cfg["tier"] == "cinnabar" and (ore["overlay"] not in (cinnabar_family or ())
+                                                  or ore["key"] != ore["overlay"]):
                     continue
                 tier = tier_of(cfg, ore)
                 if tier in ore["tiers"]:
@@ -229,7 +232,7 @@ class Hosts(dict):
 
     def overlays_of(self, ore, host_cfg):
         """{model suffix: (side overlay, end overlay)} for assetgen.look_models."""
-        suffixes = MODEL_SUFFIXES[host_cfg["look"]]
+        suffixes = suffixes_of(host_cfg)
         return {s: (self.overlay_for(ore, host_cfg, "side", s), self.overlay_for(ore, host_cfg, "end", s))
                 for s in suffixes}
 
@@ -242,7 +245,14 @@ class Hosts(dict):
 # The models a look writes, by suffix: what look_models names them.
 MODEL_SUFFIXES = {"single": ("",), "column": ("",), "bottom_top": ("",), "turned": ("",), "mirrored": ("", "_mirrored"),
                   "mirrored_turned": ("", "_mirrored"), "textures4": ("", "_0", "_1", "_2", "_3"),
-                  "moss_mirrored": ("", "_mirrored"), "moss_mirrored_turned": ("", "_mirrored")}
+                  "moss_mirrored": ("", "_mirrored"), "moss_mirrored_turned": ("", "_mirrored"), "turned4": ("",)}
+
+
+def suffixes_of(cfg):
+    """The models a host's look writes, by suffix; a weighted look writes one per texture."""
+    if cfg["look"] == "weighted":
+        return ("",) + tuple(f"_{i}" for i in range(len(cfg["side"])))
+    return MODEL_SUFFIXES[cfg["look"]]
 
 # Stones ore never forms in today (in no ore replaceables tag): a variant there ADDS ore, so its switch is
 # Off by default (owner, 21 Oct 2026; the opt-in rule). Host names, the same on every band.
@@ -341,7 +351,9 @@ def translucent_overlays(hosts, band_textures, jars):
             sys.exit(f"{host}: a translucent ore on a bottom_top stone needs a third overlay for the down face")
         layer = Image.open(layer_path).convert("RGBA")
         chosen = {}
-        for suffix in MODEL_SUFFIXES[cfg["look"]]:
+        if cfg["look"] == "weighted":
+            sys.exit(f"{host}: a translucent ore on a weighted stone needs an overlay per texture")
+        for suffix in suffixes_of(cfg):
             index = suffix[1:] if cfg["look"] == "textures4" and suffix else ("0" if cfg["look"] == "textures4" else "")
             pair = []
             for face, ref in (("side", cfg["side"]), ("end", cfg["end"])):

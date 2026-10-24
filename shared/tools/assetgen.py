@@ -124,7 +124,8 @@ def assert_no_dashes(strings, what):
 DISPLAY_NAMES = {"lapis": "Lapis Lazuli"}
 # A block's name never carries a mod's name (owner, 8 Oct 2026): "Granite Aquamarine Ore" whichever
 # mod the aquamarine is from. These prefixes only keep ids apart; tooltips name the mod.
-MOD_PREFIXES = ("silents_", "techreborn_", "energized_", "occultism_", "mi_", "ie_", "mek_", "oreganized_", "iceandfire_",
+# "end_" first: an End form is keyed end_<its stone key> (end_silents_ruby reads "Ruby").
+MOD_PREFIXES = ("end_", "beo_", "bno_", "silents_", "techreborn_", "energized_", "occultism_", "mi_", "ie_", "mek_", "oreganized_", "iceandfire_",
                 "biggerreactors_", "createpropulsion_", "tankdefenses_", "embers_", "epicpaladins_",
                 "expandeddelight_", "scguns_", "sullysmod_", "superbwarfare_")
 # A stone whose display name is not its id path, title-cased.
@@ -242,7 +243,7 @@ def block_model(side, end, overlay, overlay_end, mirrored=False, render_type=Non
     return model
 
 
-LOOKS = ("single", "column", "bottom_top", "turned", "mirrored", "mirrored_turned", "textures4", "moss_mirrored",
+LOOKS = ("single", "column", "bottom_top", "turned", "turned4", "weighted", "mirrored", "mirrored_turned", "textures4", "moss_mirrored",
          "moss_mirrored_turned")
 
 
@@ -251,6 +252,10 @@ def look_models(name, look, side, end, overlay, overlay_end, render_type=None, o
 
     single / column: one model (a column's end faces are just another texture).
     bottom_top: one model, its top and bottom faces two textures (a sandstone; bottom names the down face).
+    turned4: one model, the host turning itself a quarter at random (BetterEnd's sulphuric rock, Unusual End's
+    gloopslate); ours turns the same way.
+    weighted: the host picks one of several textures by weight (BetterEnd's umbralith); side is the list of
+    (texture, weight), and the item points at the first.
     turned: the host picks itself as is or turned 180 (Meadow's limestone on 1.20.1); one model, turned
     in the blockstate, which turns the ore with it.
     mirrored_turned: the host picks among itself mirrored and turned (Wilder Wild's gabbro), so ours
@@ -274,6 +279,14 @@ def look_models(name, look, side, end, overlay, overlay_end, render_type=None, o
         return {"variants": {"": {"model": base}}}, {name: model(side, end)}
     if look == "turned":
         return {"variants": {"": [{"model": base}, {"model": base, "y": 180}]}}, {name: model(side, end)}
+    if look == "turned4":
+        return ({"variants": {"": [{"model": base}] + [{"model": base, "y": y} for y in (90, 180, 270)]}},
+                {name: model(side, end)})
+    if look == "weighted":
+        state = {"variants": {"": [{"model": f"{base}_{i}", "weight": w} for i, (_t, w) in enumerate(side)]}}
+        models = {f"{name}_{i}": model(t, t, suffix=f"_{i}") for i, (t, _w) in enumerate(side)}
+        models[name] = model(side[0][0], side[0][0])
+        return state, models
     if look in ("mirrored", "moss_mirrored"):
         state = {"variants": {"": [{"model": base}, {"model": base + "_mirrored"}]}}
         return state, {name: model(side, end),
