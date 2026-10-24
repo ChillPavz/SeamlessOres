@@ -51,6 +51,14 @@
     {
       "id": "seamlessores:unusualend_raw_purpur_block_silentgems_heliodor_end_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_heliodor_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_heliodor_end_ore",
+      "required": false
     }
   ]
 }

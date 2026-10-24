@@ -462,6 +462,14 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean unusualendRawPurpurBlock = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean endlessbiomesSlipstone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean endlessbiomesArkan = false;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -881,6 +889,8 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("unusualend_warped_stone", unusualendWarpedStone);
         values.hosts.put("unusualend_gneiss", unusualendGneiss);
         values.hosts.put("unusualend_raw_purpur_block", unusualendRawPurpurBlock);
+        values.hosts.put("endlessbiomes_slipstone", endlessbiomesSlipstone);
+        values.hosts.put("endlessbiomes_arkan", endlessbiomesArkan);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

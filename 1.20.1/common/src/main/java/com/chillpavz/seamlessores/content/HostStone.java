@@ -377,6 +377,11 @@ public final class HostStone {
     public static final HostStone UNUSUALEND_GNEISS = placed("unusualend", "gneiss", OreTier.STONE, null);
     public static final HostStone UNUSUALEND_RAW_PURPUR_BLOCK = placed("unusualend", "raw_purpur_block", OreTier.STONE, null);
 
+    // Endless Biomes (Forge at 1.20.1): slipstone and arkan are laid by its own features at local_modifications,
+    // before the End's ores, in no ore tag: a variant ADDS ore.
+    public static final HostStone ENDLESSBIOMES_SLIPSTONE = placed("endlessbiomes", "slipstone", OreTier.STONE, null);
+    public static final HostStone ENDLESSBIOMES_ARKAN = placed("endlessbiomes", "arkan", OreTier.STONE, null);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -404,7 +409,8 @@ public final class HostStone {
             ENLIGHTENED_END_PALEROCK,
             LEGENDARY_MONSTERS_ENDERSTONE,
             UNUSUALEND_GLOOPSTONE, UNUSUALEND_GLOOPSLATE, UNUSUALEND_WARPED_STONE, UNUSUALEND_GNEISS,
-            UNUSUALEND_RAW_PURPUR_BLOCK);
+            UNUSUALEND_RAW_PURPUR_BLOCK,
+            ENDLESSBIOMES_SLIPSTONE, ENDLESSBIOMES_ARKAN);
 
     private final String name;
     private final ResourceLocation id;

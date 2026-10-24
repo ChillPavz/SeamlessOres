@@ -511,7 +511,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**2130 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**2186 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric and Forge)
 
@@ -1781,6 +1781,41 @@ Stones: Gloopstone `unusualend_gloopstone`, Gloopslate `unusualend_gloopslate`, 
 | Iron | `beo_iron` | Basic End Ores `beo` | Gloopstone, Gloopslate, Gneiss |
 | Lapis Lazuli | `beo_lapis` | Basic End Ores `beo` | every stone |
 | Redstone | `beo_redstone` | Basic End Ores `beo` | Gloopstone, Gloopslate, Gneiss |
+
+**Endless Biomes, requires `endlessbiomes`** (Forge)
+
+Stones: Slipstone `endlessbiomes_slipstone`, Arkan `endlessbiomes_arkan`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Ametrine | `ametrine` | Mythic Upgrades `mythicupgrades` | every stone |
+| Alexandrite | `end_alexandrite` | Silent's Gems `silentgems` | every stone |
+| Ammolite | `end_ammolite` | Silent's Gems `silentgems` | every stone |
+| Black Diamond | `end_black_diamond` | Silent's Gems `silentgems` | every stone |
+| Carnelian | `end_carnelian` | Silent's Gems `silentgems` | every stone |
+| Citrine | `end_silents_citrine` | Silent's Gems `silentgems` | every stone |
+| Heliodor | `end_heliodor` | Silent's Gems `silentgems` | every stone |
+| Iolite | `end_iolite` | Silent's Gems `silentgems` | every stone |
+| Kyanite | `end_kyanite` | Silent's Gems `silentgems` | every stone |
+| Moldavite | `end_moldavite` | Silent's Gems `silentgems` | every stone |
+| Peridot | `end_silents_peridot` | Silent's Gems `silentgems` | every stone |
+| Rose Quartz | `end_rose_quartz` | Silent's Gems `silentgems` | every stone |
+| Ruby | `end_silents_ruby` | Silent's Gems `silentgems` | every stone |
+| Sapphire | `end_silents_sapphire` | Silent's Gems `silentgems` | every stone |
+| Topaz | `end_silents_topaz` | Silent's Gems `silentgems` | every stone |
+| Turquoise | `end_turquoise` | Silent's Gems `silentgems` | every stone |
+| White Diamond | `end_white_diamond` | Silent's Gems `silentgems` | every stone |
+| Azure Silver | `azure_silver` | Silent Gear `silentgear` | every stone |
+| Anglesite | `anglesite` | Extreme Reactors `bigreactors` | every stone |
+| Jade | `epicpaladins_jade` | Epic Paladins `epicpaladins` | every stone |
+| Jade | `jade` | Mythic Upgrades `mythicupgrades` | every stone |
+| Coal | `beo_coal` | Basic End Ores `beo` | every stone |
+| Copper | `beo_copper` | Basic End Ores `beo` | every stone |
+| Diamond | `beo_diamond` | Basic End Ores `beo` | every stone |
+| Emerald | `beo_emerald` | Basic End Ores `beo` | every stone |
+| Iron | `beo_iron` | Basic End Ores `beo` | every stone |
+| Lapis Lazuli | `beo_lapis` | Basic End Ores `beo` | every stone |
+| Redstone | `beo_redstone` | Basic End Ores `beo` | every stone |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -1799,7 +1834,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 2606 blocks takes **367 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 2662 blocks takes **367 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png

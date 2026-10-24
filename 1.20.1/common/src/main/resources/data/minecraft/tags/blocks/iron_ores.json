@@ -428,6 +428,14 @@
     {
       "id": "seamlessores:unusualend_gneiss_beo_end_iron_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_iron_ore",
+      "required": false
     }
   ]
 }

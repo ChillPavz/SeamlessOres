@@ -47,6 +47,14 @@
     {
       "id": "seamlessores:unusualend_raw_purpur_block_silentgear_azure_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgear_azure_silver_ore",
+      "required": false
     }
   ]
 }

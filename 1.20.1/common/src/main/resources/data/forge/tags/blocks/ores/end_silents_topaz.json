@@ -43,6 +43,14 @@
     {
       "id": "seamlessores:unusualend_raw_purpur_block_silentgems_topaz_end_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_topaz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_topaz_end_ore",
+      "required": false
     }
   ]
 }

@@ -23,6 +23,14 @@
     {
       "id": "seamlessores:unusualend_gneiss_bigreactors_anglesite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_bigreactors_anglesite_ore",
+      "required": false
     }
   ]
 }

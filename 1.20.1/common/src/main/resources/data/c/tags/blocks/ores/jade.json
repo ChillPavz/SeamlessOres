@@ -63,6 +63,14 @@
     {
       "id": "seamlessores:unusualend_raw_purpur_block_mythicupgrades_jade_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_mythicupgrades_jade_ore",
+      "required": false
     }
   ]
 }

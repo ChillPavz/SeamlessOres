@@ -5036,6 +5036,230 @@
       "required": false
     },
     {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_alexandrite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_carnelian_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_citrine_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_heliodor_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_iolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_kyanite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_moldavite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_rose_quartz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_ruby_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_sapphire_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_topaz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_turquoise_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_white_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgear_azure_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_alexandrite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_ammolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_black_diamond_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_carnelian_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_citrine_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_heliodor_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_iolite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_kyanite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_moldavite_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_peridot_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_rose_quartz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_ruby_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_sapphire_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_topaz_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_turquoise_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_white_diamond_end_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:enlightened_end_palerock_beo_end_coal_ore",
       "required": false
     },

@@ -207,6 +207,14 @@
     {
       "id": "seamlessores:unusualend_raw_purpur_block_silentgems_citrine_end_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_silentgems_citrine_end_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_silentgems_citrine_end_ore",
+      "required": false
     }
   ]
 }

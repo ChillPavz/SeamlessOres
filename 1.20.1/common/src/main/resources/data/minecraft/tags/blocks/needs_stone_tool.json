@@ -3386,6 +3386,30 @@
     {
       "id": "seamlessores:unusualend_raw_purpur_block_beo_end_lapis_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_lapis_ore",
+      "required": false
     }
   ]
 }

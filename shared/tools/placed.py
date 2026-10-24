@@ -287,7 +287,10 @@ ADDS_ORE_HOSTS = {"regions_unexplored_argillite", "regions_unexplored_chalk", "b
                   "unusualend_gloopslate",
                   "unusualend_warped_stone",
                   "unusualend_gneiss",
-                  "unusualend_raw_purpur_block"}
+                  "unusualend_raw_purpur_block",
+                  # Endless Biomes (25 Oct 2026): laid before the End's ores, in no ore tag.
+                  "endlessbiomes_slipstone",
+                  "endlessbiomes_arkan"}
 
 
 def gate_of(host_cfg, ore):

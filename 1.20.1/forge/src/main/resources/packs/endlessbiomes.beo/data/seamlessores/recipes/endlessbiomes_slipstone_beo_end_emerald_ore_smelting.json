@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:endlessbiomes_slipstone_beo_end_emerald_ore"
+  },
+  "result": "minecraft:emerald"
+}

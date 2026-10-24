@@ -72,6 +72,14 @@
     {
       "id": "seamlessores:unusualend_raw_purpur_block_beo_end_diamond_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_diamond_ore",
+      "required": false
     }
   ]
 }

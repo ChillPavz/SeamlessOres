@@ -3942,6 +3942,62 @@
     {
       "id": "seamlessores:unusualend_raw_purpur_block_beo_end_emerald_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_slipstone_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_epicpaladins_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:endlessbiomes_arkan_beo_end_redstone_ore",
+      "required": false
     }
   ]
 }
