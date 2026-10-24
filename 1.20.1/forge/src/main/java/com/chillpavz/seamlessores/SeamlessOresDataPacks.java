@@ -205,6 +205,8 @@ public final class SeamlessOresDataPacks {
             "embellishcraft.theurgy",
             "embers",
             "energizedpower",
+            "enlightened_end.beo",
+            "enlightened_end.bigreactors",
             "epicpaladins",
             "evilcraft",
             "forbidden_arcanus",

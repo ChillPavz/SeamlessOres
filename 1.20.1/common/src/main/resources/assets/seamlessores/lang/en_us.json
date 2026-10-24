@@ -2443,6 +2443,10 @@
   "block.seamlessores.outer_end_ancient_stone_beo_end_iron_ore": "Ancient Stone Iron Ore",
   "block.seamlessores.outer_end_ancient_stone_beo_end_lapis_ore": "Ancient Stone Lapis Lazuli Ore",
   "block.seamlessores.outer_end_ancient_stone_beo_end_redstone_ore": "Ancient Stone Redstone Ore",
+  "block.seamlessores.enlightened_end_palerock_bigreactors_anglesite_ore": "Palerock Anglesite Ore",
+  "block.seamlessores.enlightened_end_palerock_beo_end_coal_ore": "Palerock Coal Ore",
+  "block.seamlessores.enlightened_end_palerock_beo_end_copper_ore": "Palerock Copper Ore",
+  "block.seamlessores.enlightened_end_palerock_beo_end_iron_ore": "Palerock Iron Ore",
   "itemGroup.seamlessores.ores": "Seamless Ores: Vanilla Stones",
   "itemGroup.seamlessores.modded_stones": "Seamless Ores: Modded Stones",
   "text.autoconfig.seamlessores.title": "Seamless Ores",
@@ -2819,5 +2823,7 @@
   "text.autoconfig.seamlessores.option.outerEndCobaltTangledViolite": "Cobalt Tangled Violite",
   "text.autoconfig.seamlessores.option.outerEndCobaltTangledViolite.@Tooltip": "Lets ore form in The Outer End cobalt tangled violite, which ore never reaches otherwise, so this ADDS ore. Off by default. Applies to newly generated chunks, from the next world load.",
   "text.autoconfig.seamlessores.option.outerEndAncientStone": "Ancient Stone",
-  "text.autoconfig.seamlessores.option.outerEndAncientStone.@Tooltip": "Lets ore form in The Outer End ancient stone, which ore never reaches otherwise, so this ADDS ore. Off by default. Applies to newly generated chunks, from the next world load."
+  "text.autoconfig.seamlessores.option.outerEndAncientStone.@Tooltip": "Lets ore form in The Outer End ancient stone, which ore never reaches otherwise, so this ADDS ore. Off by default. Applies to newly generated chunks, from the next world load.",
+  "text.autoconfig.seamlessores.option.enlightenedEndPalerock": "Palerock",
+  "text.autoconfig.seamlessores.option.enlightenedEndPalerock.@Tooltip": "Lets ore form in Enlightend palerock, which ore never reaches otherwise, so this ADDS ore. Off by default. Applies to newly generated chunks, from the next world load."
 }

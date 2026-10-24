@@ -434,6 +434,10 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean outerEndAncientStone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean enlightenedEndPalerock = false;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -846,6 +850,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("outer_end_mint_tangled_violite", outerEndMintTangledViolite);
         values.hosts.put("outer_end_cobalt_tangled_violite", outerEndCobaltTangledViolite);
         values.hosts.put("outer_end_ancient_stone", outerEndAncientStone);
+        values.hosts.put("enlightened_end_palerock", enlightenedEndPalerock);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

@@ -3786,6 +3786,10 @@
     {
       "id": "seamlessores:outer_end_ancient_stone_beo_end_redstone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:enlightened_end_palerock_bigreactors_anglesite_ore",
+      "required": false
     }
   ]
 }

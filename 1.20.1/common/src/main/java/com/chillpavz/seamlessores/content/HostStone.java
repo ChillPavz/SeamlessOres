@@ -360,6 +360,10 @@ public final class HostStone {
     public static final HostStone OUTER_END_COBALT_TANGLED_VIOLITE = placed("outer_end", "cobalt_tangled_violite", OreTier.STONE, null);
     public static final HostStone OUTER_END_ANCIENT_STONE = placed("outer_end", "ancient_stone", OreTier.STONE, null);
 
+    // Enlightend (Forge at 1.20.1): palerock is laid by its own features under the End islands, around the
+    // adamantite nodes, in no ore tag: a variant ADDS ore.
+    public static final HostStone ENLIGHTENED_END_PALEROCK = placed("enlightened_end", "palerock", OreTier.STONE, null);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -383,7 +387,8 @@ public final class HostStone {
             BETTEREND_FLAVOLITE, BETTEREND_VIOLECITE, BETTEREND_SULPHURIC_ROCK, BETTEREND_BRIMSTONE,
             BETTEREND_UMBRALITH, BETTEREND_AZURE_JADESTONE, BETTEREND_SANDY_JADESTONE, BETTEREND_VIRID_JADESTONE,
             OUTER_END_VIOLITE, OUTER_END_ROSE_TANGLED_VIOLITE, OUTER_END_MINT_TANGLED_VIOLITE, OUTER_END_COBALT_TANGLED_VIOLITE,
-            OUTER_END_ANCIENT_STONE);
+            OUTER_END_ANCIENT_STONE,
+            ENLIGHTENED_END_PALEROCK);
 
     private final String name;
     private final ResourceLocation id;

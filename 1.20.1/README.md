@@ -511,7 +511,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**1968 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**1972 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric and Forge)
 
@@ -1700,6 +1700,17 @@ Stones: Violite `outer_end_violite`, Rose Tangled Violite `outer_end_rose_tangle
 | Iron | `beo_iron` | Basic End Ores `beo` | Ancient Stone |
 | Lapis Lazuli | `beo_lapis` | Basic End Ores `beo` | every stone |
 | Redstone | `beo_redstone` | Basic End Ores `beo` | Ancient Stone |
+
+**Enlightend, requires `enlightened_end`** (Forge)
+
+Stones: Palerock `enlightened_end_palerock`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Anglesite | `anglesite` | Extreme Reactors `bigreactors` | Palerock |
+| Coal | `beo_coal` | Basic End Ores `beo` | Palerock |
+| Copper | `beo_copper` | Basic End Ores `beo` | Palerock |
+| Iron | `beo_iron` | Basic End Ores `beo` | Palerock |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -1718,7 +1729,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 2444 blocks takes **367 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 2448 blocks takes **367 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png

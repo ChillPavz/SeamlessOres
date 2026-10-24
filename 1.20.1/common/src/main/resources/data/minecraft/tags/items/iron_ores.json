@@ -248,6 +248,10 @@
     {
       "id": "seamlessores:outer_end_ancient_stone_beo_end_iron_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:enlightened_end_palerock_beo_end_iron_ore",
+      "required": false
     }
   ]
 }

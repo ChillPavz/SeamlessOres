@@ -5036,6 +5036,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:enlightened_end_palerock_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:enlightened_end_palerock_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:enlightened_end_palerock_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:enlightened_end_palerock_bigreactors_anglesite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_dusk_stone_ore",
       "required": false
     },

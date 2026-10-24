@@ -287,6 +287,7 @@ HOST_LOOK = {
     "outer_end:mint_tangled_violite": ("single", "outer_end:block/mint_tangled_violite"),
     "outer_end:cobalt_tangled_violite": ("single", "outer_end:block/cobalt_tangled_violite"),
     "outer_end:ancient_stone": ("single", "outer_end:block/ancient_ice_cap_top"),
+    "enlightened_end:palerock": ("single", "enlightened_end:block/palerock"),
 }
 
 # The mods that PLACE a host stone, for the README and the config screen, and the jar each one's
@@ -315,6 +316,7 @@ STONE_MODS = {
     "twigs": {"display": "Twigs", "bands": "Fabric and Forge"},
     "betterend": {"display": "BetterEnd", "bands": "Fabric"},
     "outer_end": {"display": "The Outer End", "bands": "Forge"},
+    "enlightened_end": {"display": "Enlightend", "bands": "Forge"},
 }
 STONE_JARS = {"minecraft": CLIENT_JAR,
               "blockus": jar("blockus-2.7.22+1.20.1.jar"),
@@ -336,7 +338,8 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "tfmg": jar("1.20.1-tfmg-1.0.2f.jar"),
               "twigs": jar("Twigs-1.20.1-3.1.1.jar"),
               "betterend": jar("better-end-4.0.12.jar"),
-              "outer_end": jar("TheOuterEnd-1.0.13.jar")}
+              "outer_end": jar("TheOuterEnd-1.0.13.jar"),
+              "enlightened_end": jar("enlightend-5.0.14-1.20.1.jar")}
 HOST_TABLE = era_file(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "common"),
                       "1.20.1", "java/com/chillpavz/seamlessores/content/HostStone.java")
 
@@ -1512,6 +1515,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "bno": ('fabric', 'forge'),
     "betterend": ('fabric',),   # BetterEnd: Fabric
     "outer_end": ('forge',),   # The Outer End: Forge
+    "enlightened_end": ('forge',),   # Enlightend: Forge
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.

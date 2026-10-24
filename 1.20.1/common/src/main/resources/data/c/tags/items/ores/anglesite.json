@@ -3,6 +3,10 @@
     {
       "id": "seamlessores:outer_end_ancient_stone_bigreactors_anglesite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:enlightened_end_palerock_bigreactors_anglesite_ore",
+      "required": false
     }
   ]
 }
