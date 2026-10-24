@@ -43,6 +43,10 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_expandeddelight_salt_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_expandeddelight_salt_ore",
+      "required": false
     }
   ]
 }

@@ -145,6 +145,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_tfmg_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_immersiveengineering_lead_ore",
       "required": false
     },
@@ -626,6 +638,54 @@
     },
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_lead_ore",
       "required": false
     }
   ]

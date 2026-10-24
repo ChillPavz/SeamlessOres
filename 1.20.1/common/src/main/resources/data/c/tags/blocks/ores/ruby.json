@@ -51,6 +51,10 @@
     {
       "id": "seamlessores:mythicupgrades_sapphire_schist_mythicupgrades_ruby_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentgems_ruby_ore",
+      "required": false
     }
   ]
 }

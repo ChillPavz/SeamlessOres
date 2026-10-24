@@ -31,6 +31,18 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_vanadium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_vanadium_ore",
+      "required": false
     }
   ]
 }

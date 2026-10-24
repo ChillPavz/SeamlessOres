@@ -167,6 +167,18 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_denseores_dense_copper_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_denseores_dense_copper_ore",
+      "required": false
     }
   ]
 }

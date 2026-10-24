@@ -30,6 +30,10 @@ Cobblemon by The Cobblemon Team, MPL-2.0:
   assets/seamlessores/textures/block/dusk_stone_blockus_viridite_overlay.png
   assets/seamlessores/textures/block/dusk_stone_born_in_chaos_v1_black_argillite_overlay.png
   assets/seamlessores/textures/block/dusk_stone_create_scoria_overlay.png
+  assets/seamlessores/textures/block/dusk_stone_darkerdepths_darkslate_end_overlay.png
+  assets/seamlessores/textures/block/dusk_stone_darkerdepths_darkslate_overlay.png
+  assets/seamlessores/textures/block/dusk_stone_darkerdepths_grimestone_end_overlay.png
+  assets/seamlessores/textures/block/dusk_stone_darkerdepths_grimestone_overlay.png
   assets/seamlessores/textures/block/dusk_stone_embellishcraft_basalt_overlay.png
   assets/seamlessores/textures/block/dusk_stone_forbidden_arcanus_darkstone_overlay.png
   assets/seamlessores/textures/block/dusk_stone_minecraft_blackstone_end_overlay.png
@@ -58,6 +62,8 @@ Cobblemon by The Cobblemon Team, MPL-2.0:
   assets/seamlessores/textures/block/fire_stone_create_crimsite_3_overlay.png
   assets/seamlessores/textures/block/fire_stone_create_scorchia_overlay.png
   assets/seamlessores/textures/block/fire_stone_create_scoria_overlay.png
+  assets/seamlessores/textures/block/fire_stone_darkerdepths_darkslate_end_overlay.png
+  assets/seamlessores/textures/block/fire_stone_darkerdepths_darkslate_overlay.png
   assets/seamlessores/textures/block/fire_stone_embellishcraft_basalt_overlay.png
   assets/seamlessores/textures/block/fire_stone_minecraft_blackstone_end_overlay.png
   assets/seamlessores/textures/block/fire_stone_minecraft_blackstone_overlay.png
@@ -103,6 +109,8 @@ Cobblemon by The Cobblemon Team, MPL-2.0:
   assets/seamlessores/textures/block/leaf_stone_create_veridium_1_overlay.png
   assets/seamlessores/textures/block/leaf_stone_create_veridium_2_overlay.png
   assets/seamlessores/textures/block/leaf_stone_create_veridium_3_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_darkerdepths_grimestone_end_overlay.png
+  assets/seamlessores/textures/block/leaf_stone_darkerdepths_grimestone_overlay.png
   assets/seamlessores/textures/block/leaf_stone_meadow_limestone_overlay.png
   assets/seamlessores/textures/block/leaf_stone_promenade_asphalt_overlay.png
   assets/seamlessores/textures/block/leaf_stone_quark_limestone_overlay.png
@@ -153,6 +161,8 @@ Cobblemon by The Cobblemon Team, MPL-2.0:
   assets/seamlessores/textures/block/sun_stone_create_ochrum_2_overlay.png
   assets/seamlessores/textures/block/sun_stone_create_ochrum_3_overlay.png
   assets/seamlessores/textures/block/sun_stone_create_scoria_overlay.png
+  assets/seamlessores/textures/block/sun_stone_darkerdepths_darkslate_end_overlay.png
+  assets/seamlessores/textures/block/sun_stone_darkerdepths_darkslate_overlay.png
   assets/seamlessores/textures/block/sun_stone_embellishcraft_basalt_overlay.png
   assets/seamlessores/textures/block/sun_stone_minecraft_blackstone_end_overlay.png
   assets/seamlessores/textures/block/sun_stone_minecraft_blackstone_overlay.png

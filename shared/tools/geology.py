@@ -72,7 +72,12 @@ CLASSES = {
 # Upgrades names its Nether rift stones schist. Create's four strata keep their LORE, the End's gem schist its own.
 for _host, _class in {"create_scorchia": "VOLC", "twigs_bloodstone": "VOLC", "forbidden_arcanus_darkstone": "PLUT",
                       "promenade_blunite": "PLUT", "blockus_viridite": "SERP",
-                      "mythicupgrades_ruby_schist": "SCH", "mythicupgrades_sapphire_schist": "SCH"}.items():
+                      "mythicupgrades_ruby_schist": "SCH", "mythicupgrades_sapphire_schist": "SCH",
+                      # Darker Depths (owner, 24 Oct 2026): darkslate fills the Molten Cavern beside magma and lava
+                      # (volcanic); grimestone floors the Glowshroom Forest over tuff, grimy and mossy (mudrock);
+                      # aridrock is the dry floor of the Sandy Catacombs (desert sandstone).
+                      "darkerdepths_darkslate": "VOLC", "darkerdepths_grimestone": "SHAL",
+                      "darkerdepths_aridrock": "RBED"}.items():
     CLASSES[_class].append(_host)
 ALL = list(CLASSES)
 

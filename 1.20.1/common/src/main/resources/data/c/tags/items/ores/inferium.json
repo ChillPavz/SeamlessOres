@@ -55,6 +55,10 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_mysticalagriculture_inferium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_mysticalagriculture_inferium_ore",
+      "required": false
     }
   ]
 }

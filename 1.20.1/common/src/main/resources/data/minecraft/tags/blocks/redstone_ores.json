@@ -124,6 +124,14 @@
     {
       "id": "seamlessores:promenade_blunite_redstone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_denseores_dense_redstone_ore",
+      "required": false
     }
   ]
 }

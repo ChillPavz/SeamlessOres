@@ -291,6 +291,30 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_uranium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_modern_industrialization_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_modern_industrialization_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_uranium_ore",
+      "required": false
     }
   ]
 }

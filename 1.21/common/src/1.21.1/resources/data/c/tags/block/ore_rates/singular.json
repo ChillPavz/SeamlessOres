@@ -1231,6 +1231,74 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_malum_quartz_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_malum_quartz_ore",
+      "required": false
     }
   ]
 }

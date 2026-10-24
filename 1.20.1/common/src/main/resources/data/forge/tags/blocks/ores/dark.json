@@ -39,6 +39,14 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_evilcraft_dark_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_evilcraft_dark_ore",
+      "required": false
     }
   ]
 }

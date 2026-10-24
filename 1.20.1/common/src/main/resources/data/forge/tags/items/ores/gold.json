@@ -200,6 +200,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_gold_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_denseores_dense_gold_ore",
       "required": false
     },

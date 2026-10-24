@@ -103,6 +103,18 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_silentgems_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_silentgems_silver_ore",
+      "required": false
     }
   ]
 }

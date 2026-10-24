@@ -23,6 +23,10 @@
     {
       "id": "seamlessores:embellishcraft_slate_silentgems_ruby_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentgems_ruby_ore",
+      "required": false
     }
   ]
 }

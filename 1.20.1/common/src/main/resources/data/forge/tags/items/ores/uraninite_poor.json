@@ -103,6 +103,14 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_powah_uraninite_poor_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_powah_uraninite_poor_ore",
+      "required": false
     }
   ]
 }

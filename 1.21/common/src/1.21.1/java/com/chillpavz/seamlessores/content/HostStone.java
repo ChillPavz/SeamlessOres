@@ -325,6 +325,21 @@ public final class HostStone {
             OreTier.STONE, MapColor.SAND,
             COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
 
+    // Darker Depths (NeoForge): its surface rules (DDSurfaceRules) fill the Molten Cavern with darkslate, floor
+    // the Glowshroom Forest with grimestone and the Sandy Catacombs with one block of aridrock, before every
+    // feature; all three are in deepslate_ore_replaceables, so the game's deepslate ore forms in them: restyles.
+    // Their biomes list no emerald. Darkslate and grimestone take no map colour, aridrock sand (DDBlocks).
+    // Duskrock is placed by nothing (its features are in no biome modifier) and arid deepslate is in no ore tag.
+    public static final HostStone DARKERDEPTHS_DARKSLATE = placed("darkerdepths", "darkslate",
+            OreTier.DEEPSLATE, MapColor.NONE,
+            COAL, IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+    public static final HostStone DARKERDEPTHS_GRIMESTONE = placed("darkerdepths", "grimestone",
+            OreTier.DEEPSLATE, MapColor.NONE,
+            IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+    public static final HostStone DARKERDEPTHS_ARIDROCK = placed("darkerdepths", "aridrock",
+            OreTier.DEEPSLATE, MapColor.SAND,
+            IRON, COPPER, GOLD, REDSTONE, LAPIS, DIAMOND, ZINC);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -343,7 +358,8 @@ public final class HostStone {
             BIOMESWEVEGONE_DACITE, BIOMESWEVEGONE_WHITE_DACITE, BIOMESWEVEGONE_RED_ROCK,
             GALOSPHERE_PINK_SALT, GALOSPHERE_ROSE_PINK_SALT, GALOSPHERE_PASTEL_PINK_SALT,
             ATMOSPHERIC_ARID_SANDSTONE, ATMOSPHERIC_RED_ARID_SANDSTONE, ATMOSPHERIC_IVORY_TRAVERTINE, ATMOSPHERIC_PEACH_TRAVERTINE,
-            ATMOSPHERIC_PERSIMMON_TRAVERTINE, ATMOSPHERIC_SAFFRON_TRAVERTINE, YUNGSCAVEBIOMES_ANCIENT_SANDSTONE);
+            ATMOSPHERIC_PERSIMMON_TRAVERTINE, ATMOSPHERIC_SAFFRON_TRAVERTINE, YUNGSCAVEBIOMES_ANCIENT_SANDSTONE, DARKERDEPTHS_DARKSLATE,
+            DARKERDEPTHS_GRIMESTONE, DARKERDEPTHS_ARIDROCK);
 
     private final String name;
     private final ResourceLocation id;

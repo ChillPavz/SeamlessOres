@@ -125,6 +125,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_silentgems_citrine_ore",
       "required": false
     },

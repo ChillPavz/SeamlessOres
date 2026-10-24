@@ -159,6 +159,18 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_create_zinc_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_create_zinc_ore",
+      "required": false
     }
   ]
 }

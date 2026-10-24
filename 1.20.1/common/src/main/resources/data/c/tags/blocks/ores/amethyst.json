@@ -47,6 +47,10 @@
     {
       "id": "seamlessores:meadow_limestone_oresabovediamonds_amethyst_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_oresabovediamonds_amethyst_ore",
+      "required": false
     }
   ]
 }

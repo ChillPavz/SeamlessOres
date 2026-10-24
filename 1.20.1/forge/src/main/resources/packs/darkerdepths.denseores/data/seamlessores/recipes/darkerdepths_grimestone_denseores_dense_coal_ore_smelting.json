@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.4,
+  "group": "coal",
+  "ingredient": {
+    "item": "seamlessores:darkerdepths_grimestone_denseores_dense_coal_ore"
+  },
+  "result": "minecraft:coal"
+}

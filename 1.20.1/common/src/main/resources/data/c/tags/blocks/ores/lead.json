@@ -143,6 +143,18 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_tfmg_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_tfmg_lead_ore",
+      "required": false
     }
   ]
 }

@@ -47,6 +47,10 @@
     {
       "id": "seamlessores:biomeswevegone_white_dacite_silentcompat_arcmetal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentcompat_voidmetal_ore",
+      "required": false
     }
   ]
 }

@@ -147,6 +147,18 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_modern_industrialization_lead_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_modern_industrialization_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_modern_industrialization_lead_ore",
+      "required": false
     }
   ]
 }

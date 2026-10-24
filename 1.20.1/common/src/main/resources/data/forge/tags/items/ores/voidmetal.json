@@ -15,6 +15,10 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_silentcompat_voidmetal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentcompat_voidmetal_ore",
+      "required": false
     }
   ]
 }

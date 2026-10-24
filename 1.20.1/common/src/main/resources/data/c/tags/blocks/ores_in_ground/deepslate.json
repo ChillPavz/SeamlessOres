@@ -863,6 +863,450 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_denseores_dense_redstone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_mythicupgrades_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentgems_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentgems_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_cobblemon_sun_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_oresabovediamonds_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_scguns_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentcompat_voidmetal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_epicpaladins_bloodstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_mysticalagriculture_inferium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_malum_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_malum_brilliant_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_scguns_anthralite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_denseores_dense_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_silentgems_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_densemekanism_dense_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_densemekanism_dense_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_occultism_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_malum_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_biggerreactors_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_embers_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_embers_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_denseores_dense_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_denseores_dense_iron_ore",
+      "required": false
     }
   ]
 }

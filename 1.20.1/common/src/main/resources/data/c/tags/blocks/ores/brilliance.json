@@ -39,6 +39,10 @@
     {
       "id": "seamlessores:spawn_reefstone_malum_brilliant_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_malum_brilliant_ore",
+      "required": false
     }
   ]
 }

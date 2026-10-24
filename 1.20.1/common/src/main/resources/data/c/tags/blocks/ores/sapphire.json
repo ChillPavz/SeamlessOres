@@ -47,6 +47,10 @@
     {
       "id": "seamlessores:embellishcraft_slate_silentgems_sapphire_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentgems_sapphire_ore",
+      "required": false
     }
   ]
 }

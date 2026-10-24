@@ -413,6 +413,30 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_copper_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_copper_ore",
+      "required": false
     }
   ]
 }

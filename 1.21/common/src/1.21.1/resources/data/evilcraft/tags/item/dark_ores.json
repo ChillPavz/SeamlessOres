@@ -55,6 +55,14 @@
     {
       "id": "seamlessores:promenade_blunite_evilcraft_dark_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_evilcraft_dark_ore",
+      "required": false
     }
   ]
 }

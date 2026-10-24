@@ -51,6 +51,14 @@
     {
       "id": "seamlessores:promenade_asphalt_cobblemon_dusk_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_cobblemon_dusk_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_cobblemon_dusk_stone_ore",
+      "required": false
     }
   ]
 }

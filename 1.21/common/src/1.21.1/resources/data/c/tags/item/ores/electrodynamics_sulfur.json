@@ -55,6 +55,10 @@
     {
       "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_sulfur_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_sulfur_ore",
+      "required": false
     }
   ]
 }

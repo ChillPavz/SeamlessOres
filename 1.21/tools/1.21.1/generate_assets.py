@@ -218,6 +218,9 @@ HOST_LOOK = {
     "atmospheric:persimmon_travertine": ("column", "atmospheric:block/persimmon_travertine_side", "atmospheric:block/persimmon_travertine_top"),
     "atmospheric:saffron_travertine": ("column", "atmospheric:block/saffron_travertine_side", "atmospheric:block/saffron_travertine_top"),
     "yungscavebiomes:ancient_sandstone": ("bottom_top", "yungscavebiomes:block/ancient_sandstone", "yungscavebiomes:block/ancient_sandstone_top", "yungscavebiomes:block/ancient_sandstone_bottom"),
+    "darkerdepths:darkslate": ("column", "darkerdepths:block/darkslate", "darkerdepths:block/darkslate_top"),
+    "darkerdepths:grimestone": ("column", "darkerdepths:block/grimestone", "darkerdepths:block/grimestone_top"),
+    "darkerdepths:aridrock": ("column", "darkerdepths:block/aridrock", "darkerdepths:block/aridrock_top"),
     "quark:limestone": ("single", "quark:block/limestone"),
     "quark:jasper": ("single", "quark:block/jasper"),
     "quark:shale": ("single", "quark:block/shale"),
@@ -251,6 +254,7 @@ STONE_MODS = {
     "galosphere": {"display": "Galosphere", "bands": "Fabric and NeoForge"},
     "atmospheric": {"display": "Atmospheric", "bands": "NeoForge"},
     "yungscavebiomes": {"display": "YUNG's Cave Biomes", "bands": "Fabric and NeoForge"},
+    "darkerdepths": {"display": "Darker Depths", "bands": "NeoForge"},
     "quark": {"display": "Quark", "bands": "NeoForge"},
     "forbidden_arcanus": {"display": "Forbidden and Arcanus", "bands": "NeoForge"},
     "meadow": {"display": "Let's Do Meadow", "bands": "Fabric and NeoForge"},
@@ -271,6 +275,7 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "galosphere": jar("Galosphere-1.21.1-1.5.5-NeoForge.jar"),
               "atmospheric": jar("atmospheric-1.21.1-7.0.1.jar"),
               "yungscavebiomes": jar("YungsCaveBiomes-1.21.1-NeoForge-3.1.1.jar"),
+              "darkerdepths": jar("darkerdepths-2.1.6.jar"),
               "quark": jar("Quark-4.1-487.jar"),
               "forbidden_arcanus": jar("1.21.1-forbidden_arcanus-2.6.1.jar"),
               "meadow": jar("letsdo-meadow-neoforge-1.4.8.jar"),
@@ -1229,6 +1234,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "galosphere": ("fabric", "neoforge"),   # Galosphere: Fabric and NeoForge (its Forge build is 1.21 only)
     "atmospheric": ('neoforge',),   # Atmospheric: NeoForge
     "yungscavebiomes": ('fabric', 'neoforge'),   # YUNG's Cave Biomes: Fabric and NeoForge
+    "darkerdepths": ('neoforge',),   # Darker Depths: NeoForge
     "quark": ('neoforge',),   # Quark: NeoForge only on this band
     "forbidden_arcanus": ('neoforge',),
     "meadow": ('fabric', 'neoforge'),

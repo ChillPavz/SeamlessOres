@@ -59,6 +59,14 @@
     {
       "id": "seamlessores:biomeswevegone_white_dacite_theurgy_sal_ammoniac_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_theurgy_sal_ammoniac_ore",
+      "required": false
     }
   ]
 }

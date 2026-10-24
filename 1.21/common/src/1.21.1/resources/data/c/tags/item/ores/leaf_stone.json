@@ -79,6 +79,10 @@
     {
       "id": "seamlessores:atmospheric_saffron_travertine_cobblemon_leaf_stone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_cobblemon_leaf_stone_ore",
+      "required": false
     }
   ]
 }

@@ -31,6 +31,10 @@
     {
       "id": "seamlessores:spawn_reefstone_scguns_anthralite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_scguns_anthralite_ore",
+      "required": false
     }
   ]
 }

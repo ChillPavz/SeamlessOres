@@ -767,6 +767,70 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_electrodynamics_vanadium_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_niter_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_electrodynamics_vanadium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_electrodynamics_vanadium_ore",
+      "required": false
     }
   ]
 }

@@ -271,6 +271,18 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_oreganized_silver_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_oreganized_silver_ore",
+      "required": false
     }
   ]
 }

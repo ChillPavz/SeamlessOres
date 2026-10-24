@@ -6542,6 +6542,10 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_denseores_dense_iron_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_iceandfire_sapphire_ore",
+      "required": false
     }
   ]
 }

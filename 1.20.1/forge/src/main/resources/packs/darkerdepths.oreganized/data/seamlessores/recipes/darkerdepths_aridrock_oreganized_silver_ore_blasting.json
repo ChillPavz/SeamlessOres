@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "oreganized:silver_ingot",
+  "ingredient": {
+    "item": "seamlessores:darkerdepths_aridrock_oreganized_silver_ore"
+  },
+  "result": "oreganized:silver_ingot"
+}

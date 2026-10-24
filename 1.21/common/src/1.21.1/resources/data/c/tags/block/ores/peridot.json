@@ -55,6 +55,14 @@
     {
       "id": "seamlessores:promenade_blunite_silentgems_peridot_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_mythicupgrades_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_silentgems_peridot_ore",
+      "required": false
     }
   ]
 }

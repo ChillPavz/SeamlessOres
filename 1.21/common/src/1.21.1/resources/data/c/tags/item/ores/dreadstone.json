@@ -39,6 +39,14 @@
     {
       "id": "seamlessores:promenade_blunite_hazennstuff_dreadstone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_hazennstuff_dreadstone_ore",
+      "required": false
     }
   ]
 }

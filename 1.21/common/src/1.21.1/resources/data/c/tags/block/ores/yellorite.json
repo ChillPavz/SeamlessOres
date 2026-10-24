@@ -79,6 +79,14 @@
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_bigreactors_yellorite_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_bigreactors_yellorite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_bigreactors_yellorite_ore",
+      "required": false
     }
   ]
 }
