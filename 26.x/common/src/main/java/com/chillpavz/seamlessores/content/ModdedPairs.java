@@ -21,6 +21,14 @@ final class ModdedPairs {
     /** The modded ores the stone with this id swallows; none for a stone with no modded pairs. */
     static List<OreType> of(String host) {
         return switch (host) {
+            case "betterend:azure_jadestone" -> keys("ametrine", "starrite", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade");
+            case "betterend:brimstone" -> keys("ametrine", "starrite", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade");
+            case "betterend:flavolite" -> keys("ametrine", "starrite", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade");
+            case "betterend:sandy_jadestone" -> keys("ametrine", "starrite", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade");
+            case "betterend:sulphuric_rock" -> keys("ametrine", "starrite", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade");
+            case "betterend:umbralith" -> keys("ametrine", "starrite", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade");
+            case "betterend:violecite" -> keys("ametrine", "starrite", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade");
+            case "betterend:virid_jadestone" -> keys("ametrine", "starrite", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade");
             case "blockus:bluestone" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "adamantite", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "orichalcum", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_silver", "techreborn_uranium", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_lapis", "denseores_redstone", "denseores_diamond", "denseores_emerald");
             case "blockus:limestone" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "starrite", "tin", "orichalcum", "energized_tin", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_lapis", "denseores_redstone", "denseores_diamond", "denseores_emerald");
             case "blockus:marble" -> keys("aquamarine", "citrine", "peridot", "topaz", "necoium", "carmot", "morkite", "mythril", "prometheum", "runite", "unobtainium", "aquarium", "banglum", "kyber", "manganese", "osmium", "platinum", "quadrillum", "silver", "tin", "orichalcum", "energized_tin", "techreborn_bauxite", "galena", "iridium", "techreborn_lead", "techreborn_ruby", "techreborn_sapphire", "techreborn_silver", "techreborn_tin", "techreborn_uranium", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_lapis", "denseores_redstone", "denseores_diamond", "denseores_emerald");
@@ -78,6 +86,7 @@ final class ModdedPairs {
             case "wilderwild" -> here.equals("fabric") || here.equals("neoforge");
             case "yungscavebiomes" -> here.equals("fabric") || here.equals("neoforge");
             case "natures_spirit" -> here.equals("fabric") || here.equals("neoforge");
+            case "betterend" -> here.equals("fabric");
             // END GENERATED stone loaders
             default -> false;
         };
@@ -109,6 +118,14 @@ final class ModdedPairs {
             case "natures_spirit:chert" -> true;
             case "natures_spirit:white_chalk" -> true;
             case "natures_spirit:pink_sandstone" -> true;
+            case "betterend:flavolite" -> true;
+            case "betterend:violecite" -> true;
+            case "betterend:sulphuric_rock" -> true;
+            case "betterend:brimstone" -> true;
+            case "betterend:umbralith" -> true;
+            case "betterend:azure_jadestone" -> true;
+            case "betterend:sandy_jadestone" -> true;
+            case "betterend:virid_jadestone" -> true;
             // END GENERATED adds-ore stones
             default -> false;
         };

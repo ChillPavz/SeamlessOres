@@ -274,6 +274,14 @@ HOST_LOOK = {
     "promenade:asphalt": ("single", "promenade:block/asphalt/block"),
     "promenade:blunite": ("single", "promenade:block/blunite/block"),
     "spawn:reefstone": ("single", "spawn:block/reefstone"),
+    "betterend:flavolite": ("single", "betterend:block/flavolite"),
+    "betterend:violecite": ("single", "betterend:block/violecite"),
+    "betterend:sulphuric_rock": ("turned4", "betterend:block/sulphuric_rock", "betterend:block/sulphuric_rock_top"),
+    "betterend:brimstone": ("single", "betterend:block/inactive_brimstone"),
+    "betterend:umbralith": ("weighted", [("betterend:block/umbralith", 10), ("betterend:block/umbralith_2", 10), ("betterend:block/umbralith_6", 10), ("betterend:block/umbralith_7", 10), ("betterend:block/umbralith_3", 1), ("betterend:block/umbralith_4", 1), ("betterend:block/umbralith_5", 1)]),
+    "betterend:azure_jadestone": ("single", "betterend:block/azure_jadestone"),
+    "betterend:sandy_jadestone": ("single", "betterend:block/sandy_jadestone"),
+    "betterend:virid_jadestone": ("single", "betterend:block/virid_jadestone"),
 }
 
 # The mods that PLACE a host stone, for the README and the config screen, and the jar each one's
@@ -300,6 +308,7 @@ STONE_MODS = {
     "spawn": {"display": "Spawn", "bands": "Fabric and Forge"},
     "tfmg": {"display": "Create: TFMG", "bands": "Forge"},
     "twigs": {"display": "Twigs", "bands": "Fabric and Forge"},
+    "betterend": {"display": "BetterEnd", "bands": "Fabric"},
 }
 STONE_JARS = {"minecraft": CLIENT_JAR,
               "blockus": jar("blockus-2.7.22+1.20.1.jar"),
@@ -319,7 +328,8 @@ STONE_JARS = {"minecraft": CLIENT_JAR,
               "promenade": jar("1.20.1-promenade-4.1.1.jar"),
               "spawn": jar("spawn-4.0.8-1.20.1.jar"),
               "tfmg": jar("1.20.1-tfmg-1.0.2f.jar"),
-              "twigs": jar("Twigs-1.20.1-3.1.1.jar")}
+              "twigs": jar("Twigs-1.20.1-3.1.1.jar"),
+              "betterend": jar("better-end-4.0.12.jar")}
 HOST_TABLE = era_file(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "common"),
                       "1.20.1", "java/com/chillpavz/seamlessores/content/HostStone.java")
 
@@ -1493,6 +1503,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "denseores": ('forge',),
     "beo": ('fabric', 'forge'),
     "bno": ('fabric', 'forge'),
+    "betterend": ('fabric',),   # BetterEnd: Fabric
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.

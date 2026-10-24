@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:betterend_sulphuric_rock_beo_end_copper_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:betterend_sulphuric_rock_beo_end_copper_ore"
+  },
+  "result": "minecraft:copper_ingot"
+}

@@ -262,7 +262,16 @@ ADDS_ORE_HOSTS = {"regions_unexplored_argillite", "regions_unexplored_chalk", "b
                   # surface rules and cliffs laid before the ores, in no ore tag (24 Oct 2026).
                   "atmospheric_arid_sandstone", "atmospheric_red_arid_sandstone", "atmospheric_ivory_travertine",
                   "atmospheric_peach_travertine", "atmospheric_persimmon_travertine", "atmospheric_saffron_travertine",
-                  "natures_spirit_chert", "natures_spirit_white_chalk", "natures_spirit_pink_sandstone"}
+                  "natures_spirit_chert", "natures_spirit_white_chalk", "natures_spirit_pink_sandstone",
+                  # BetterEnd (25 Oct 2026): laid before the End's ores, in no ore tag.
+                  "betterend_flavolite",
+                  "betterend_violecite",
+                  "betterend_sulphuric_rock",
+                  "betterend_brimstone",
+                  "betterend_umbralith",
+                  "betterend_azure_jadestone",
+                  "betterend_sandy_jadestone",
+                  "betterend_virid_jadestone"}
 
 
 def gate_of(host_cfg, ore):

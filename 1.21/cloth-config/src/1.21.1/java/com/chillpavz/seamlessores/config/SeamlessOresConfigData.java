@@ -398,6 +398,38 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Category("modded_stones")
     @ConfigEntry.Gui.Tooltip
     public boolean naturesSpiritPinkSandstone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean betterendFlavolite = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean betterendViolecite = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean betterendSulphuricRock = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean betterendBrimstone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean betterendUmbralith = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean betterendAzureJadestone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean betterendSandyJadestone = false;
+
+    @ConfigEntry.Category("modded_stones")
+    @ConfigEntry.Gui.Tooltip
+    public boolean betterendViridJadestone = false;
     // END GENERATED modded stone switches
 
     // --- Cobblemon ------------------------------------------------------------------------------
@@ -759,6 +791,14 @@ public class SeamlessOresConfigData implements ConfigData {
         values.hosts.put("natures_spirit_travertine", naturesSpiritTravertine);
         values.hosts.put("natures_spirit_white_chalk", naturesSpiritWhiteChalk);
         values.hosts.put("natures_spirit_pink_sandstone", naturesSpiritPinkSandstone);
+        values.hosts.put("betterend_flavolite", betterendFlavolite);
+        values.hosts.put("betterend_violecite", betterendViolecite);
+        values.hosts.put("betterend_sulphuric_rock", betterendSulphuricRock);
+        values.hosts.put("betterend_brimstone", betterendBrimstone);
+        values.hosts.put("betterend_umbralith", betterendUmbralith);
+        values.hosts.put("betterend_azure_jadestone", betterendAzureJadestone);
+        values.hosts.put("betterend_sandy_jadestone", betterendSandyJadestone);
+        values.hosts.put("betterend_virid_jadestone", betterendViridJadestone);
         // END GENERATED host switches
         values.oreVeins = oreVeins;
         values.geology = geology;

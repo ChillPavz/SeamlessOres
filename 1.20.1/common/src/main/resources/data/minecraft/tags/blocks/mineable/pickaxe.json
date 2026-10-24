@@ -8906,6 +8906,266 @@
     {
       "id": "seamlessores:natures_spirit_pink_sandstone_denseores_dense_iron_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_sodalite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_mythicmetals_end_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_expores_end_experience_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_techreborn_sodalite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_mythicmetals_end_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_beo_end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_techreborn_sodalite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_mythicmetals_end_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_techreborn_sodalite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_mythicmetals_end_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_beo_end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_techreborn_sodalite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_mythicmetals_end_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_beo_end_lapis_ore",
+      "required": false
     }
   ]
 }

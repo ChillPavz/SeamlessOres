@@ -148,6 +148,22 @@
     {
       "id": "seamlessores:darkerdepths_darkslate_denseores_dense_redstone_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_beo_end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_beo_end_redstone_ore",
+      "required": false
     }
   ]
 }

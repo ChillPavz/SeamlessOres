@@ -27,6 +27,14 @@ final class ModdedPairs {
             case "atmospheric:persimmon_travertine" -> keys("dense_osmium", "dense_tin", "lead", "energized_tin", "thorium", "iceandfire_silver", "antimony", "mi_lead", "lignite_coal", "mi_nickel", "mi_tin", "occultism_silver", "inferium", "oreganized_lead", "dawn_stone", "dusk_stone", "fire_stone", "ice_stone", "leaf_stone", "moon_stone", "shiny_stone", "sun_stone", "thunder_stone", "water_stone", "chlorophyte", "sal_ammoniac", "denseores_coal", "denseores_copper", "denseores_emerald");
             case "atmospheric:red_arid_sandstone" -> keys("dense_lead", "dense_osmium", "dense_tin", "uraninite_poor", "lead", "energized_tin", "thorium", "iceandfire_sapphire", "iceandfire_silver", "antimony", "mi_lead", "lignite_coal", "mi_nickel", "salt", "mi_tin", "occultism_silver", "inferium", "oreganized_lead", "soulstone", "dawn_stone", "dusk_stone", "fire_stone", "ice_stone", "leaf_stone", "moon_stone", "shiny_stone", "sun_stone", "thunder_stone", "water_stone", "chlorophyte", "expandeddelight_salt", "sal_ammoniac", "dark", "electrodynamics_molybdenum", "electrodynamics_salt", "electrodynamics_tin", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_lapis", "denseores_emerald");
             case "atmospheric:saffron_travertine" -> keys("dense_osmium", "dense_tin", "lead", "energized_tin", "thorium", "iceandfire_silver", "antimony", "mi_lead", "lignite_coal", "mi_nickel", "mi_tin", "occultism_silver", "inferium", "oreganized_lead", "dawn_stone", "dusk_stone", "fire_stone", "ice_stone", "leaf_stone", "moon_stone", "shiny_stone", "sun_stone", "thunder_stone", "water_stone", "chlorophyte", "sal_ammoniac", "denseores_coal", "denseores_copper", "denseores_emerald");
+            case "betterend:azure_jadestone" -> keys("ametrine", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade", "end_starrite");
+            case "betterend:brimstone" -> keys("ametrine", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade", "end_starrite");
+            case "betterend:flavolite" -> keys("ametrine", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade", "end_starrite");
+            case "betterend:sandy_jadestone" -> keys("ametrine", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade", "end_starrite");
+            case "betterend:sulphuric_rock" -> keys("ametrine", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade", "end_starrite");
+            case "betterend:umbralith" -> keys("ametrine", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade", "end_starrite");
+            case "betterend:violecite" -> keys("ametrine", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade", "end_starrite");
+            case "betterend:virid_jadestone" -> keys("ametrine", "techreborn_peridot", "sheldonite", "sodalite", "techreborn_tungsten", "jade", "end_starrite");
             case "biomeswevegone:dacite" -> keys("osmium", "starrite", "tin", "dense_osmium", "dense_tin", "lead", "energized_tin", "thorium", "iceandfire_sapphire", "iceandfire_silver", "techreborn_ruby", "techreborn_sapphire", "techreborn_tin", "lignite_coal", "occultism_silver", "oreganized_lead", "oreganized_silver", "soulstone", "dawn_stone", "dusk_stone", "fire_stone", "ice_stone", "leaf_stone", "moon_stone", "shiny_stone", "sun_stone", "thunder_stone", "water_stone", "chlorophyte", "sal_ammoniac", "electrodynamics_tin", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_emerald");
             case "biomeswevegone:red_rock" -> keys("aquarium", "banglum", "osmium", "tin", "dense_osmium", "dense_tin", "lead", "energized_tin", "thorium", "iceandfire_sapphire", "iceandfire_silver", "techreborn_ruby", "techreborn_sapphire", "techreborn_tin", "mi_lead", "lignite_coal", "mi_tin", "occultism_silver", "oreganized_lead", "oreganized_silver", "dawn_stone", "dusk_stone", "fire_stone", "ice_stone", "leaf_stone", "moon_stone", "shiny_stone", "sun_stone", "thunder_stone", "water_stone", "chlorophyte", "sal_ammoniac", "electrodynamics_tin", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_emerald");
             case "biomeswevegone:white_dacite" -> keys("aquarium", "banglum", "osmium", "starrite", "tin", "dense_osmium", "dense_tin", "uraninite_poor", "lead", "energized_tin", "thorium", "iceandfire_sapphire", "iceandfire_silver", "techreborn_ruby", "techreborn_sapphire", "techreborn_tin", "antimony", "mi_lead", "lignite_coal", "mi_nickel", "salt", "mi_tin", "occultism_silver", "inferium", "oreganized_lead", "oreganized_silver", "soulstone", "dawn_stone", "dusk_stone", "fire_stone", "ice_stone", "leaf_stone", "moon_stone", "shiny_stone", "sun_stone", "thunder_stone", "water_stone", "chlorophyte", "sal_ammoniac", "dark", "electrodynamics_salt", "electrodynamics_tin", "denseores_coal", "denseores_copper", "denseores_iron", "denseores_emerald");
@@ -122,6 +130,7 @@ final class ModdedPairs {
             case "yungscavebiomes" -> here.equals("fabric") || here.equals("neoforge");
             case "darkerdepths" -> here.equals("neoforge");
             case "natures_spirit" -> here.equals("fabric") || here.equals("neoforge");
+            case "betterend" -> here.equals("fabric");
             // END GENERATED stone loaders
             default -> false;
         };
@@ -162,6 +171,14 @@ final class ModdedPairs {
             case "natures_spirit:chert" -> true;
             case "natures_spirit:white_chalk" -> true;
             case "natures_spirit:pink_sandstone" -> true;
+            case "betterend:flavolite" -> true;
+            case "betterend:violecite" -> true;
+            case "betterend:sulphuric_rock" -> true;
+            case "betterend:brimstone" -> true;
+            case "betterend:umbralith" -> true;
+            case "betterend:azure_jadestone" -> true;
+            case "betterend:sandy_jadestone" -> true;
+            case "betterend:virid_jadestone" -> true;
             // END GENERATED adds-ore stones
             default -> false;
         };

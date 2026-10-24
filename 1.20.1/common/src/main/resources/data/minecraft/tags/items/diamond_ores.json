@@ -4,6 +4,26 @@
     "seamlessores:diorite_diamond_ore",
     "seamlessores:andesite_diamond_ore",
     "seamlessores:tuff_diamond_ore",
-    "seamlessores:dripstone_diamond_ore"
+    "seamlessores:dripstone_diamond_ore",
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_beo_end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_beo_end_diamond_ore",
+      "required": false
+    }
   ]
 }

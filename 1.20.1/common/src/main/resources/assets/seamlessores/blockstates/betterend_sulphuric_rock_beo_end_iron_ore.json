@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/betterend_sulphuric_rock_beo_end_iron_ore"
+      },
+      {
+        "model": "seamlessores:block/betterend_sulphuric_rock_beo_end_iron_ore",
+        "y": 90
+      },
+      {
+        "model": "seamlessores:block/betterend_sulphuric_rock_beo_end_iron_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/betterend_sulphuric_rock_beo_end_iron_ore",
+        "y": 270
+      }
+    ]
+  }
+}

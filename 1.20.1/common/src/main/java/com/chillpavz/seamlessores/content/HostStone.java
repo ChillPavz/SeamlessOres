@@ -338,6 +338,19 @@ public final class HostStone {
             OreTier.STONE, MapColor.SAND,
             COAL, IRON, COPPER, GOLD, ZINC);
 
+    // BetterEnd (Fabric only, every band): its End biomes' surface rules lay these, before every feature, in no 
+    // ore tag, so the End's ores never form in them and a variant ADDS ore (switches Off by default). Brimstone 
+    // takes its inactive look, the one it is laid in. Umbralith picks one of seven textures by weight, as 
+    // BetterEnd's own blockstate; its glowing layers are not drawn.
+    public static final HostStone BETTEREND_FLAVOLITE = placed("betterend", "flavolite", OreTier.STONE, null);
+    public static final HostStone BETTEREND_VIOLECITE = placed("betterend", "violecite", OreTier.STONE, null);
+    public static final HostStone BETTEREND_SULPHURIC_ROCK = placed("betterend", "sulphuric_rock", OreTier.STONE, null);
+    public static final HostStone BETTEREND_BRIMSTONE = placed("betterend", "brimstone", OreTier.STONE, null);
+    public static final HostStone BETTEREND_UMBRALITH = placed("betterend", "umbralith", OreTier.STONE, null);
+    public static final HostStone BETTEREND_AZURE_JADESTONE = placed("betterend", "azure_jadestone", OreTier.STONE, null);
+    public static final HostStone BETTEREND_SANDY_JADESTONE = placed("betterend", "sandy_jadestone", OreTier.STONE, null);
+    public static final HostStone BETTEREND_VIRID_JADESTONE = placed("betterend", "virid_jadestone", OreTier.STONE, null);
+
     /**
      * Registration order: the game's own rock first, then the stones other mods place, by mod, as the
      * config screen lists them.
@@ -357,7 +370,9 @@ public final class HostStone {
             ATMOSPHERIC_ARID_SANDSTONE, ATMOSPHERIC_RED_ARID_SANDSTONE, ATMOSPHERIC_IVORY_TRAVERTINE, ATMOSPHERIC_PEACH_TRAVERTINE,
             ATMOSPHERIC_PERSIMMON_TRAVERTINE, ATMOSPHERIC_SAFFRON_TRAVERTINE, YUNGSCAVEBIOMES_ANCIENT_SANDSTONE, DARKERDEPTHS_DARKSLATE,
             DARKERDEPTHS_GRIMESTONE, DARKERDEPTHS_ARIDROCK, NATURES_SPIRIT_CHERT, NATURES_SPIRIT_TRAVERTINE,
-            NATURES_SPIRIT_WHITE_CHALK, NATURES_SPIRIT_PINK_SANDSTONE);
+            NATURES_SPIRIT_WHITE_CHALK, NATURES_SPIRIT_PINK_SANDSTONE,
+            BETTEREND_FLAVOLITE, BETTEREND_VIOLECITE, BETTEREND_SULPHURIC_ROCK, BETTEREND_BRIMSTONE,
+            BETTEREND_UMBRALITH, BETTEREND_AZURE_JADESTONE, BETTEREND_SANDY_JADESTONE, BETTEREND_VIRID_JADESTONE);
 
     private final String name;
     private final ResourceLocation id;

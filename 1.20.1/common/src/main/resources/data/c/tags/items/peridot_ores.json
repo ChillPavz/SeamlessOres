@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_techreborn_peridot_ore",
+      "required": false
+    }
+  ]
+}

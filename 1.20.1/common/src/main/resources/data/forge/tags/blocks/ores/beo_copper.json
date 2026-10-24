@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_beo_end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_beo_end_copper_ore",
+      "required": false
+    }
+  ]
+}

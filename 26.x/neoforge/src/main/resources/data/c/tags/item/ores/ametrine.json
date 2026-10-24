@@ -3,6 +3,26 @@
     {
       "id": "seamlessores:mythicupgrades_jade_schist_mythicupgrades_ametrine_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_mythicupgrades_ametrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_mythicupgrades_ametrine_ore",
+      "required": false
     }
   ]
 }

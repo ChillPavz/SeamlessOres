@@ -55,6 +55,26 @@
     {
       "id": "seamlessores:spawn_reefstone_emerald_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_beo_end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_beo_end_emerald_ore",
+      "required": false
     }
   ]
 }

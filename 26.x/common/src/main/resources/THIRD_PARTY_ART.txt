@@ -82,6 +82,7 @@ Mythic Upgrades by TriQue, MIT:
   assets/seamlessores/textures/block/ametrine_overlay.png
   assets/seamlessores/textures/block/aquamarine_overlay.png
   assets/seamlessores/textures/block/citrine_overlay.png
+  assets/seamlessores/textures/block/jade_overlay.png
   assets/seamlessores/textures/block/necoium_overlay.png
   assets/seamlessores/textures/block/peridot_overlay.png
   assets/seamlessores/textures/block/ruby_overlay.png
@@ -121,13 +122,17 @@ Tech Reborn by Team Reborn, modmuss50, drcrazy, MIT:
   assets/seamlessores/textures/block/galena_overlay.png
   assets/seamlessores/textures/block/iridium_overlay.png
   assets/seamlessores/textures/block/pyrite_overlay.png
+  assets/seamlessores/textures/block/sheldonite_overlay.png
+  assets/seamlessores/textures/block/sodalite_overlay.png
   assets/seamlessores/textures/block/sphalerite_overlay.png
   assets/seamlessores/textures/block/techreborn_bauxite_overlay.png
   assets/seamlessores/textures/block/techreborn_lead_overlay.png
+  assets/seamlessores/textures/block/techreborn_peridot_overlay.png
   assets/seamlessores/textures/block/techreborn_ruby_overlay.png
   assets/seamlessores/textures/block/techreborn_sapphire_overlay.png
   assets/seamlessores/textures/block/techreborn_silver_overlay.png
   assets/seamlessores/textures/block/techreborn_tin_overlay.png
+  assets/seamlessores/textures/block/techreborn_tungsten_overlay.png
   assets/seamlessores/textures/block/techreborn_uranium_overlay.png
 
 Theurgy by Kli Kli, CC BY-SA 4.0 (art):

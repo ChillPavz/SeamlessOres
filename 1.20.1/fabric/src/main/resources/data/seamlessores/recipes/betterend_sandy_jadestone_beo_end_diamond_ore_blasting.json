@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:betterend_sandy_jadestone_beo_end_diamond_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:betterend_sandy_jadestone_beo_end_diamond_ore"
+  },
+  "result": "minecraft:diamond"
+}

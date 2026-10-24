@@ -850,6 +850,26 @@
    "strength": null,
    "deepslate_overlay": null
   },
+  "jade": {
+   "mod": "mythicupgrades",
+   "seamless_ores_name": "jade",
+   "forms": [
+    "mythicupgrades:jade_ore"
+   ],
+   "nether": false,
+   "xp": [
+    6,
+    14
+   ],
+   "deepslate_xp": null,
+   "strength": [
+    3.0,
+    9.0,
+    3.0,
+    9.0
+   ],
+   "deepslate_overlay": null
+  },
   "necoium": {
    "mod": "mythicupgrades",
    "seamless_ores_name": "necoium",
@@ -1320,6 +1340,21 @@
    "strength": null,
    "deepslate_overlay": null
   },
+  "techreborn_peridot": {
+   "mod": "techreborn",
+   "seamless_ores_name": "techreborn_peridot",
+   "forms": [
+    "techreborn:peridot_ore"
+   ],
+   "nether": false,
+   "xp": [
+    2,
+    6
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
   "pyrite": {
    "mod": "techreborn",
    "seamless_ores_name": "pyrite",
@@ -1367,12 +1402,42 @@
    "strength": null,
    "deepslate_overlay": null
   },
+  "sheldonite": {
+   "mod": "techreborn",
+   "seamless_ores_name": "sheldonite",
+   "forms": [
+    "techreborn:sheldonite_ore"
+   ],
+   "nether": false,
+   "xp": [
+    0,
+    0
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
   "techreborn_silver": {
    "mod": "techreborn",
    "seamless_ores_name": "techreborn_silver",
    "forms": [
     "techreborn:silver_ore",
     "techreborn:deepslate_silver_ore"
+   ],
+   "nether": false,
+   "xp": [
+    0,
+    0
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "sodalite": {
+   "mod": "techreborn",
+   "seamless_ores_name": "sodalite",
+   "forms": [
+    "techreborn:sodalite_ore"
    ],
    "nether": false,
    "xp": [
@@ -1404,6 +1469,21 @@
    "forms": [
     "techreborn:tin_ore",
     "techreborn:deepslate_tin_ore"
+   ],
+   "nether": false,
+   "xp": [
+    0,
+    0
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
+  "techreborn_tungsten": {
+   "mod": "techreborn",
+   "seamless_ores_name": "techreborn_tungsten",
+   "forms": [
+    "techreborn:tungsten_ore"
    ],
    "nether": false,
    "xp": [
@@ -1448,6 +1528,438 @@
   }
  },
  "hosts": {
+  "betterend:azure_jadestone": {
+   "ametrine": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "jade": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "sheldonite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "sodalite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "starrite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 21.64
+   },
+   "techreborn_peridot": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 6.99
+   },
+   "techreborn_tungsten": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.49
+   }
+  },
+  "betterend:brimstone": {
+   "ametrine": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "jade": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "sheldonite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "sodalite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "starrite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 21.64
+   },
+   "techreborn_peridot": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 6.99
+   },
+   "techreborn_tungsten": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.49
+   }
+  },
+  "betterend:flavolite": {
+   "ametrine": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "jade": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "sheldonite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "sodalite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "starrite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 21.64
+   },
+   "techreborn_peridot": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 6.99
+   },
+   "techreborn_tungsten": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.49
+   }
+  },
+  "betterend:sandy_jadestone": {
+   "ametrine": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "jade": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "sheldonite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "sodalite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "starrite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 21.64
+   },
+   "techreborn_peridot": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 6.99
+   },
+   "techreborn_tungsten": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.49
+   }
+  },
+  "betterend:sulphuric_rock": {
+   "ametrine": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "jade": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "sheldonite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "sodalite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "starrite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 21.64
+   },
+   "techreborn_peridot": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 6.99
+   },
+   "techreborn_tungsten": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.49
+   }
+  },
+  "betterend:umbralith": {
+   "ametrine": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "jade": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "sheldonite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "sodalite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "starrite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 21.64
+   },
+   "techreborn_peridot": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 6.99
+   },
+   "techreborn_tungsten": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.49
+   }
+  },
+  "betterend:violecite": {
+   "ametrine": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "jade": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "sheldonite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "sodalite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "starrite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 21.64
+   },
+   "techreborn_peridot": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 6.99
+   },
+   "techreborn_tungsten": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.49
+   }
+  },
+  "betterend:virid_jadestone": {
+   "ametrine": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "jade": {
+    "where": [
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 82.07
+   },
+   "sheldonite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "sodalite": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 4.66
+   },
+   "starrite": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 21.64
+   },
+   "techreborn_peridot": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 6.99
+   },
+   "techreborn_tungsten": {
+    "where": [
+     "26.1.x fabric",
+     "26.2 fabric",
+     "26.3 fabric"
+    ],
+    "rate": 3.49
+   }
+  },
   "blockus:bluestone": {
    "adamantite": {
     "where": [

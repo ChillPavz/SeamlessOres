@@ -623,6 +623,26 @@
     {
       "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_mythicmetals_end_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_mythicmetals_end_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_mythicmetals_end_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_mythicmetals_end_stone_starrite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_mythicmetals_end_stone_starrite_ore",
+      "required": false
     }
   ]
 }

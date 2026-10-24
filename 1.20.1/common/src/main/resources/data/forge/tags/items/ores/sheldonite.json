@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_techreborn_sheldonite_ore",
+      "required": false
+    }
+  ]
+}

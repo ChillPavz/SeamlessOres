@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**753 blocks** in the `seamlessores` namespace.
+**781 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -300,7 +300,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**497 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**525 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, every 26.x version, both loaders)
 
@@ -642,6 +642,19 @@ Stones: Chert `natures_spirit_chert`, Travertine `natures_spirit_travertine`, Wh
 | Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
 | Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Travertine, White Chalk |
+
+**BetterEnd, requires `betterend`** (Fabric, 26.1.x to 26.3)
+
+Stones: Flavolite `betterend_flavolite`, Violecite `betterend_violecite`, Sulphuric Rock `betterend_sulphuric_rock`, Brimstone `betterend_brimstone`, Umbralith `betterend_umbralith`, Azure Jadestone `betterend_azure_jadestone`, Sandy Jadestone `betterend_sandy_jadestone`, Virid Jadestone `betterend_virid_jadestone`
+
+| Ore | `<ore>` | Also requires | In |
+|---|---|---|---|
+| Ametrine | `ametrine` | Mythic Upgrades `mythicupgrades` | Flavolite, Violecite, Azure Jadestone, Sandy Jadestone, Virid Jadestone |
+| Peridot | `techreborn_peridot` | Tech Reborn `techreborn` | Flavolite, Violecite, Azure Jadestone, Sandy Jadestone, Virid Jadestone |
+| Sheldonite | `sheldonite` | Tech Reborn `techreborn` | Flavolite, Sulphuric Rock, Brimstone, Umbralith |
+| Sodalite | `sodalite` | Tech Reborn `techreborn` | Flavolite, Violecite, Azure Jadestone, Sandy Jadestone, Virid Jadestone |
+| Tungsten | `techreborn_tungsten` | Tech Reborn `techreborn` | Flavolite, Sulphuric Rock, Brimstone, Umbralith |
+| Jade | `jade` | Mythic Upgrades `mythicupgrades` | Flavolite, Violecite, Azure Jadestone, Sandy Jadestone, Virid Jadestone |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -660,7 +673,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 753 blocks takes **103 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 781 blocks takes **108 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -668,7 +681,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `ametrine` `aquamarine` `aquarium` `banglum` `betternether_cincinnasite` `betternether_nether_ruby` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iridium` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sal_ammoniac` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `ametrine` `aquamarine` `aquarium` `banglum` `betternether_cincinnasite` `betternether_nether_ruby` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iridium` `iron` `jade` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sal_ammoniac` `sapphire` `sheldonite` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sodalite` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_peridot` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_tungsten` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its

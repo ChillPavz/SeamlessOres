@@ -31,6 +31,22 @@
     {
       "id": "seamlessores:spawn_reefstone_modern_industrialization_tungsten_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_techreborn_tungsten_ore",
+      "required": false
     }
   ]
 }

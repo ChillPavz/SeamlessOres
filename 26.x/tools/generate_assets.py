@@ -301,6 +301,14 @@ HOST_LOOK = {
     "natures_spirit:travertine": ("single", "natures_spirit:block/travertine"),
     "natures_spirit:white_chalk": ("single", "natures_spirit:block/white_chalk"),
     "natures_spirit:pink_sandstone": ("bottom_top", "natures_spirit:block/pink_sandstone", "natures_spirit:block/pink_sandstone_top", "natures_spirit:block/pink_sandstone_bottom"),
+    "betterend:flavolite": ("single", "betterend:block/flavolite"),
+    "betterend:violecite": ("single", "betterend:block/violecite"),
+    "betterend:sulphuric_rock": ("turned4", "betterend:block/sulphuric_rock", "betterend:block/sulphuric_rock_top"),
+    "betterend:brimstone": ("single", "betterend:block/inactive_brimstone"),
+    "betterend:umbralith": ("weighted", [("betterend:block/umbralith", 10), ("betterend:block/umbralith_2", 10), ("betterend:block/umbralith_6", 10), ("betterend:block/umbralith_7", 10), ("betterend:block/umbralith_3", 1), ("betterend:block/umbralith_4", 1), ("betterend:block/umbralith_5", 1)]),
+    "betterend:azure_jadestone": ("single", "betterend:block/azure_jadestone"),
+    "betterend:sandy_jadestone": ("single", "betterend:block/sandy_jadestone"),
+    "betterend:virid_jadestone": ("single", "betterend:block/virid_jadestone"),
 }
 
 # A host block that only some Minecraft versions have: its loot stays out of the earlier profiles.
@@ -320,6 +328,7 @@ STONE_MODS = {
     "wilderwild": {"display": "Wilder Wild", "bands": "Fabric 26.1.x to 26.3, NeoForge 26.2 and 26.3"},
     "yungscavebiomes": {"display": "YUNG's Cave Biomes", "bands": "Fabric and NeoForge, 26.1.x"},
     "natures_spirit": {"display": "Nature's Spirit", "bands": "Fabric and NeoForge, 26.1.x"},
+    "betterend": {"display": "BetterEnd", "bands": "Fabric, 26.1.x to 26.3"},
 }
 
 # The ores that get a cinnabar variant, by OVERLAY key: Nether gold is also named "gold", its overlay
@@ -940,6 +949,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "wilderwild": ("fabric", "neoforge"),
     "yungscavebiomes": ('fabric', 'neoforge'),   # YUNG's Cave Biomes: Fabric and NeoForge
     "natures_spirit": ('fabric', 'neoforge'),   # Nature's Spirit: Fabric and NeoForge
+    "betterend": ('fabric',),   # BetterEnd: Fabric
     "create": ("fabric",),
     "mythicupgrades": ("fabric", "neoforge"),
     "mythicmetals": ("fabric",),

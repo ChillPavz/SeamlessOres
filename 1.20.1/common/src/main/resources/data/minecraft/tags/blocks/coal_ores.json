@@ -120,6 +120,22 @@
     {
       "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_coal_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_beo_end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_beo_end_coal_ore",
+      "required": false
     }
   ]
 }

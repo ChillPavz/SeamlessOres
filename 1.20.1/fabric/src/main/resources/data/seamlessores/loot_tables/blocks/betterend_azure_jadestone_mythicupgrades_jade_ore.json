@@ -1,0 +1,49 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:betterend_azure_jadestone_mythicupgrades_jade_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "seamlessores:betterend_azure_jadestone_mythicupgrades_jade_ore",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "mythicupgrades:blocks/jade_ore"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "mythicupgrades:blocks/jade_ore"
+}

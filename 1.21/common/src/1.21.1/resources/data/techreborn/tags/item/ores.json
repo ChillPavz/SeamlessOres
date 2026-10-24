@@ -407,6 +407,78 @@
     {
       "id": "seamlessores:natures_spirit_white_chalk_techreborn_tin_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_sodalite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_violecite_techreborn_sodalite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_techreborn_sheldonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_azure_jadestone_techreborn_sodalite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sandy_jadestone_techreborn_sodalite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_techreborn_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_virid_jadestone_techreborn_sodalite_ore",
+      "required": false
     }
   ]
 }
