@@ -522,7 +522,9 @@ SHARED_JAVA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 
 
 def _map_of_sets(rule, indent):
-    rows = ['%sMap.entry("%s", Set.of(%s))' % (indent, key, ", ".join('"%s"' % v for v in values))
+    # A Python set has no stable order between runs: written sorted, so the file is the same every time.
+    rows = ['%sMap.entry("%s", Set.of(%s))' % (indent, key, ", ".join(
+        '"%s"' % v for v in (sorted(values) if isinstance(values, (set, frozenset)) else values)))
             for key, values in rule.items()]
     return ",\n".join(rows)
 

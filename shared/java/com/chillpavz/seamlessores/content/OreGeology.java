@@ -401,9 +401,9 @@ public final class OreGeology {
 
     /** A host that keeps only these ores, and refuses every other (rock salt). */
     private static final Map<String, Set<String>> HOST_KEEPS = Map.ofEntries(
-            Map.entry("galosphere_pink_salt", Set.of("banglum", "scguns_sulfur", "electrodynamics_niter", "salt", "electrodynamics_sulfur", "electrodynamics_salt", "electrodynamics_lithium", "expandeddelight_salt", "aquarium", "lithium", "scguns_nether_sulfur", "electrodynamics_sylvite")),
-            Map.entry("galosphere_rose_pink_salt", Set.of("banglum", "scguns_sulfur", "electrodynamics_niter", "salt", "electrodynamics_sulfur", "electrodynamics_salt", "electrodynamics_lithium", "expandeddelight_salt", "aquarium", "lithium", "scguns_nether_sulfur", "electrodynamics_sylvite")),
-            Map.entry("galosphere_pastel_pink_salt", Set.of("banglum", "scguns_sulfur", "electrodynamics_niter", "salt", "electrodynamics_sulfur", "electrodynamics_salt", "electrodynamics_lithium", "expandeddelight_salt", "aquarium", "lithium", "scguns_nether_sulfur", "electrodynamics_sylvite")));
+            Map.entry("galosphere_pink_salt", Set.of("aquarium", "banglum", "electrodynamics_lithium", "electrodynamics_niter", "electrodynamics_salt", "electrodynamics_sulfur", "electrodynamics_sylvite", "expandeddelight_salt", "lithium", "salt", "scguns_nether_sulfur", "scguns_sulfur")),
+            Map.entry("galosphere_rose_pink_salt", Set.of("aquarium", "banglum", "electrodynamics_lithium", "electrodynamics_niter", "electrodynamics_salt", "electrodynamics_sulfur", "electrodynamics_sylvite", "expandeddelight_salt", "lithium", "salt", "scguns_nether_sulfur", "scguns_sulfur")),
+            Map.entry("galosphere_pastel_pink_salt", Set.of("aquarium", "banglum", "electrodynamics_lithium", "electrodynamics_niter", "electrodynamics_salt", "electrodynamics_sulfur", "electrodynamics_sylvite", "expandeddelight_salt", "lithium", "salt", "scguns_nether_sulfur", "scguns_sulfur")));
 
     /** Stones other mods place that are judged as one of the game's rocks (gneiss as granite). */
     private static final Map<String, String> ROCK_AS = Map.ofEntries(
