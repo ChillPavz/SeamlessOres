@@ -1685,6 +1685,10 @@
       "id": "seamlessores:basalt_bno_nether_zinc_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_tconstruct_cobalt_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -1797,6 +1801,10 @@
     },
     {
       "id": "seamlessores:blackstone_bno_nether_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_tconstruct_cobalt_ore",
       "required": false
     },
     {
@@ -2968,6 +2976,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_iron_ore",
       "required": false
     },
@@ -3301,6 +3313,10 @@
     },
     {
       "id": "seamlessores:create_scoria_treasure2_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_tconstruct_cobalt_ore",
       "required": false
     },
     {
@@ -3873,6 +3889,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_treasure2_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_tconstruct_cobalt_ore",
       "required": false
     },
     {
@@ -4917,6 +4937,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_bno_nether_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_tconstruct_cobalt_ore",
       "required": false
     },
     {

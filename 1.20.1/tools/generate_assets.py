@@ -196,7 +196,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "beo": jar("BasicEndOres-forge-1.20.1-4.1.0.jar"),
             "bno": jar("BasicNetherOres-forge-1.20.1-9.1.1.jar"),
             "werewolves": jar("Werewolves-1.20.1-2.0.2.7.jar"),
-            "treasure2": jar("treasure2-1.20.1-4.2.1.jar")}
+            "treasure2": jar("treasure2-1.20.1-4.2.1.jar"),
+            "tconstruct": jar("TConstruct-1.20.1-3.12.1.231.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -507,6 +508,8 @@ MODS = {
                        "licence": "LGPL-3.0", "author": "Cheaterpaul, Maxanier, RebelT"},
     "treasure2": {"display": "Treasure2", "category": "treasure2",
                        "licence": "OSL-3.0", "author": "gottsch"},
+    "tconstruct": {"display": "Tinkers' Construct", "category": "tinkersconstruct",
+                       "licence": "MIT", "author": "Slime Knights"},
 }
 
 ORE_DEFS = [
@@ -1395,6 +1398,10 @@ ORE_DEFS = [
     {"name": "treasure2_topaz", "overlay": "treasure2_topaz", "source": "topaz_ore", "base": "stone",
      "mod": "treasure2",
      "tiers": {"stone": "topaz_ore", "deepslate": "deepslate_topaz_ore"}},
+    # --- Tinkers Construct (mod id tconstruct, MIT): cobalt, netherrack only, strength 10.0. Forge at 1.20.1 ---
+    {"name": "tconstruct_cobalt", "overlay": "tconstruct_cobalt", "source": "cobalt_ore", "base": "netherrack",
+     "mod": "tconstruct",
+     "tiers": {"nether": "cobalt_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1558,6 +1565,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "endlessbiomes": ('forge',),   # Endless Biomes: Forge
     "werewolves": ('forge',),
     "treasure2": ('forge',),
+    "tconstruct": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1704,6 +1712,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.tinkersconstruct": "Tinkers' Construct",
         f"text.autoconfig.{MOD_ID}.category.treasure2": "Treasure2",
         f"text.autoconfig.{MOD_ID}.category.werewolves": "Werewolves: Become a Beast",
         f"text.autoconfig.{MOD_ID}.category.basic_nether_ores": "Basic Nether Ores",
@@ -1753,6 +1762,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.tinkersConstruct": "Tinkers' Construct: variants",
+        f"text.autoconfig.{MOD_ID}.option.tinkersConstruct.@Tooltip":
+            "Generate host-matched cobalt ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.treasure2": "Treasure2: variants",
         f"text.autoconfig.{MOD_ID}.option.treasure2.@Tooltip":

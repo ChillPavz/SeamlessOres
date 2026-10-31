@@ -1136,6 +1136,12 @@
     "superbwarfare:deepslate_silver_ore"
    ]
   },
+  "tconstruct_cobalt": {
+   "mod": "tconstruct",
+   "forms": [
+    "tconstruct:cobalt_ore"
+   ]
+  },
   "techreborn_bauxite": {
    "mod": "techreborn",
    "forms": [
@@ -9408,6 +9414,12 @@
     ],
     "rate": 36.55
    },
+   "tconstruct_cobalt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.03
+   },
    "vehement_coal": {
     "where": [
      "1.20.1 forge"
@@ -10274,6 +10286,12 @@
      "1.20.1 forge"
     ],
     "rate": 27.34
+   },
+   "tconstruct_cobalt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 17.1
    },
    "techreborn_bauxite": {
     "where": [
@@ -22654,6 +22672,12 @@
     ],
     "rate": 21.97
    },
+   "tconstruct_cobalt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.65
+   },
    "techreborn_bauxite": {
     "where": [
      "1.20.1 fabric"
@@ -30088,6 +30112,12 @@
      "1.20.1 fabric"
     ],
     "rate": 5.01
+   },
+   "tconstruct_cobalt": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.98
    },
    "vehement_coal": {
     "where": [

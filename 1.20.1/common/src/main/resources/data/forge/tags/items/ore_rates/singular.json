@@ -205,6 +205,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_superbwarfare_galena_ore",
       "required": false
     },
@@ -233,11 +241,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_superbwarfare_galena_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_scoria_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_tconstruct_cobalt_ore",
       "required": false
     },
     {
@@ -258,6 +274,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_tconstruct_cobalt_ore",
       "required": false
     },
     {
@@ -318,6 +338,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_tconstruct_cobalt_ore",
       "required": false
     },
     {

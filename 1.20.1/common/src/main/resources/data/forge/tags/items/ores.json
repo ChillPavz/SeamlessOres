@@ -787,6 +787,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_techreborn_cinnabar_ore",
       "required": false
     },
@@ -1590,6 +1594,10 @@
     },
     {
       "id": "seamlessores:blackstone_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_tconstruct_cobalt_ore",
       "required": false
     },
     {
@@ -3033,6 +3041,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scorchia_techreborn_cinnabar_ore",
       "required": false
     },
@@ -3322,6 +3334,10 @@
     },
     {
       "id": "seamlessores:create_scoria_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_tconstruct_cobalt_ore",
       "required": false
     },
     {
@@ -8236,6 +8252,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_techreborn_bauxite_ore",
       "required": false
     },
@@ -9341,6 +9361,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_scguns_vehement_coal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_tconstruct_cobalt_ore",
       "required": false
     },
     {

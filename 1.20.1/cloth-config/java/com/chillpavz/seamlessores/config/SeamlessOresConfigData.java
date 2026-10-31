@@ -788,6 +788,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean treasure2 = true;
 
+    // --- Tinkers' Construct --------------------------------------------------------------------------
+
+    @ConfigEntry.Category("tinkersconstruct")
+    @ConfigEntry.Gui.Tooltip
+    public boolean tinkersConstruct = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -973,6 +979,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.basicNetherOres = basicNetherOres;
         values.werewolves = werewolves;
         values.treasure2 = treasure2;
+        values.tinkersConstruct = tinkersConstruct;
 
         SeamlessOresConfig.apply(values);
     }

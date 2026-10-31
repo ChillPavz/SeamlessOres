@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.5,
+  "ingredient": [
+    {
+      "item": "seamlessores:blackstone_tconstruct_cobalt_ore"
+    }
+  ],
+  "result": "tconstruct:cobalt_ingot"
+}

@@ -446,6 +446,9 @@ Theurgy by Kli Kli, CC BY-SA 4.0 (art):
 Things by glisco, MIT:
   assets/seamlessores/textures/block/gleaming_overlay.png
 
+Tinkers' Construct by Slime Knights, MIT:
+  assets/seamlessores/textures/block/tconstruct_cobalt_overlay.png
+
 Treasure2 by gottsch, OSL-3.0:
   assets/seamlessores/textures/block/treasure2_onyx_overlay.png
   assets/seamlessores/textures/block/treasure2_ruby_overlay.png

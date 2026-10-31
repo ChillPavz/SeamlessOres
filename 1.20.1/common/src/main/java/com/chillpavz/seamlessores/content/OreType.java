@@ -1245,6 +1245,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("treasure2", "topaz_ore"), of("treasure2", "deepslate_topaz_ore"), null,
             NONE, null, false, Set.of());
 
+    // --- Tinkers Construct (mod id tconstruct, MIT): cobalt, netherrack only, strength 10.0. Forge at 1.20.1 ---
+    public static final OreType TC_COBALT = ore(
+            "tconstruct_cobalt", "tconstruct_cobalt", null, "tconstruct",
+            null, null, of("tconstruct", "cobalt_ore"),
+            NONE, null, false, Set.of())
+            .withStrength(10.0F, 10.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1299,7 +1306,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     BEO_COAL, BEO_COPPER, BEO_DIAMOND, BEO_EMERALD, BEO_IRON, BEO_LAPIS, BEO_REDSTONE, BEO_ALUMINUM, BEO_LEAD, BEO_NICKEL, BEO_OSMIUM, BEO_SILVER, BEO_TIN, BEO_URANIUM, BEO_ZINC,
                     BNO_COAL, BNO_COPPER, BNO_DIAMOND, BNO_EMERALD, BNO_IRON, BNO_LAPIS, BNO_REDSTONE, BNO_ALUMINUM, BNO_LEAD, BNO_NICKEL, BNO_OSMIUM, BNO_SILVER, BNO_TIN, BNO_URANIUM, BNO_ZINC,
                     WW_SILVER,
-                    T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ);
+                    T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ,
+                    TC_COBALT);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

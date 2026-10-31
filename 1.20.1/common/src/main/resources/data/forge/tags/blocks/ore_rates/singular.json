@@ -205,6 +205,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_oreganized_lead_ore",
       "required": false
     },
@@ -253,11 +261,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_oreganized_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_scoria_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_tconstruct_cobalt_ore",
       "required": false
     },
     {
@@ -278,6 +294,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_tconstruct_cobalt_ore",
       "required": false
     },
     {
@@ -334,6 +354,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_tconstruct_cobalt_ore",
       "required": false
     },
     {
