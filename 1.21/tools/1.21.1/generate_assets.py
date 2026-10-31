@@ -159,7 +159,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "electrodynamics": jar("electrodynamics-1.21.1-1.1.0.jar"),
             "betternether": jar("better-nether-21.0.11.jar"),
             "denseores": jar("denseores-1.2.2.jar"),
-            "bno": jar("BasicNetherOres-fabric-1.21.1-10.1.0.jar")}
+            "bno": jar("BasicNetherOres-fabric-1.21.1-10.1.0.jar"),
+            "werewolves": jar("Werewolves-1.21-2.0.3.4.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -445,6 +446,8 @@ MODS = {
                        "licence": "AGPL-3.0 (art, as its Modrinth page)", "author": "NewJumperr"},
     "bno": {"display": "Basic Nether Ores", "category": "basic_nether_ores",
                        "licence": "MIT", "author": "cScotPlay"},
+    "werewolves": {"display": "Werewolves: Become a Beast", "category": "werewolves",
+                       "licence": "LGPL-3.0", "author": "Cheaterpaul, Maxanier, RebelT"},
 }
 
 ORE_DEFS = [
@@ -1241,6 +1244,10 @@ ORE_DEFS = [
     {"name": "bno_zinc", "overlay": "bno_zinc", "skip_hosts": ["basalt"], "source": "nether_zinc_ore", "base": "netherrack",
      "mod": "bno",
      "tiers": {"nether": "nether_zinc_ore"}},
+    # --- Werewolves (mod id werewolves, LGPL-3.0): silver, strength 3.0/5.0, 4.5/3.0 in deepslate, no XP. Forge at 1.20.1, NeoForge at 1.21.1 ---
+    {"name": "werewolves_silver", "overlay": "werewolves_silver", "deepslate_overlay": "werewolves_silver_deepslate", "source": "silver_ore", "base": "stone",
+     "mod": "werewolves",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1400,6 +1407,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "betterend": ('fabric',),   # BetterEnd: Fabric
     "legendary_monsters": ('neoforge',),   # Legendary Monsters: NeoForge
     "unusualend": ('neoforge',),   # Unusual End: NeoForge
+    "werewolves": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1511,6 +1519,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.werewolves": "Werewolves: Become a Beast",
         f"text.autoconfig.{MOD_ID}.category.basic_nether_ores": "Basic Nether Ores",
         f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
         f"text.autoconfig.{MOD_ID}.category.betternether": "BetterNether",
@@ -1551,6 +1560,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.werewolves": "Werewolves: Become a Beast: variants",
+        f"text.autoconfig.{MOD_ID}.option.werewolves.@Tooltip":
+            "Generate host-matched silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.basicNetherOres": "Basic Nether Ores: variants",
         f"text.autoconfig.{MOD_ID}.option.basicNetherOres.@Tooltip":

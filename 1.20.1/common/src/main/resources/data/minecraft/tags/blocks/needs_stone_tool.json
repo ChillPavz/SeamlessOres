@@ -127,6 +127,10 @@
       "id": "seamlessores:granite_denseores_dense_lapis_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_werewolves_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
@@ -200,6 +204,10 @@
     },
     {
       "id": "seamlessores:diorite_denseores_dense_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_werewolves_silver_ore",
       "required": false
     },
     "seamlessores:andesite_iron_ore",
@@ -283,6 +291,10 @@
     },
     {
       "id": "seamlessores:andesite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_werewolves_silver_ore",
       "required": false
     },
     "seamlessores:tuff_iron_ore",
@@ -374,6 +386,10 @@
     },
     {
       "id": "seamlessores:tuff_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_werewolves_silver_ore",
       "required": false
     },
     "seamlessores:dripstone_iron_ore",

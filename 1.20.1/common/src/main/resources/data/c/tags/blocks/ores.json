@@ -265,6 +265,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_werewolves_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_arid_sandstone_copper_ore",
       "required": false
     },
@@ -4105,6 +4109,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_werewolves_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_biggerreactors_uranium_ore",
       "required": false
     },
@@ -5869,6 +5877,10 @@
     },
     {
       "id": "seamlessores:granite_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_werewolves_silver_ore",
       "required": false
     },
     {
@@ -9145,6 +9157,10 @@
     },
     {
       "id": "seamlessores:tuff_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_werewolves_silver_ore",
       "required": false
     },
     {

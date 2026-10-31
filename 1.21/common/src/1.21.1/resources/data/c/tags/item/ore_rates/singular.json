@@ -69,6 +69,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_werewolves_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_mysticalagriculture_prosperity_ore",
       "required": false
     },
@@ -129,6 +133,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_werewolves_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_immersiveengineering_aluminum_ore",
       "required": false
     },
@@ -178,6 +186,10 @@
     },
     {
       "id": "seamlessores:andesite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_werewolves_silver_ore",
       "required": false
     },
     {
@@ -238,6 +250,10 @@
     },
     {
       "id": "seamlessores:tuff_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_werewolves_silver_ore",
       "required": false
     },
     {

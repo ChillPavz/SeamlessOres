@@ -252,6 +252,9 @@ public final class SeamlessOresConfig {
     /** Whether Basic Nether Ores variants generate. Pure restyle. */
     public static boolean basicNetherOres = true;
 
+    /** Whether Werewolves: Become a Beast variants generate. Pure restyle. */
+    public static boolean werewolves = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -307,6 +310,7 @@ public final class SeamlessOresConfig {
             case "betternether" -> betterNether;
             case "denseores" -> denseOres;
             case "bno" -> basicNetherOres;
+            case "werewolves" -> werewolves;
             default -> true;
         };
     }
@@ -516,6 +520,7 @@ public final class SeamlessOresConfig {
         public boolean betterNether = true;
         public boolean denseOres = true;
         public boolean basicNetherOres = true;
+        public boolean werewolves = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -593,6 +598,7 @@ public final class SeamlessOresConfig {
         betterNether = values.betterNether;
         denseOres = values.denseOres;
         basicNetherOres = values.basicNetherOres;
+        werewolves = values.werewolves;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

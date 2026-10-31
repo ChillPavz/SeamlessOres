@@ -438,6 +438,7 @@ public final class SeamlessOresDataPacks {
             "vanillabackport.oreganized",
             "vanillabackport.silentgems",
             "vanillabackport.tfmg",
+            "werewolves",
             "yungscavebiomes",
             "yungscavebiomes.biggerreactors",
             "yungscavebiomes.bigreactors",

@@ -101,6 +101,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_werewolves_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_silentgems_silver_ore",
       "required": false
     },
@@ -126,6 +130,10 @@
     },
     {
       "id": "seamlessores:diorite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_werewolves_silver_ore",
       "required": false
     },
     {
@@ -157,6 +165,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_werewolves_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_silentgems_silver_ore",
       "required": false
     },
@@ -182,6 +194,10 @@
     },
     {
       "id": "seamlessores:tuff_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_werewolves_silver_ore",
       "required": false
     },
     {

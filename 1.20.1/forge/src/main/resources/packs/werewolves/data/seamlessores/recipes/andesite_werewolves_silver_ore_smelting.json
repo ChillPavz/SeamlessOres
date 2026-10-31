@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "silver_ingot",
+  "ingredient": {
+    "item": "seamlessores:andesite_werewolves_silver_ore"
+  },
+  "result": "werewolves:silver_ingot"
+}

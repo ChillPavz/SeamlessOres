@@ -1106,6 +1106,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of("basalt"))
             .withStrength(3.0F, 3.0F);
 
+    // --- Werewolves (mod id werewolves, LGPL-3.0): silver, strength 3.0/5.0, 4.5/3.0 in deepslate, no XP. Forge at 1.20.1, NeoForge at 1.21.1 ---
+    public static final OreType WW_SILVER = ore(
+            "werewolves_silver", "werewolves_silver", "werewolves_silver_deepslate", "werewolves",
+            of("werewolves", "silver_ore"), of("werewolves", "deepslate_silver_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 5.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1154,7 +1161,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     SG_E_OPAL, SG_E_PEARL, SG_E_TANZANITE, TR_PERIDOT, TR_SHELDONITE, TR_SODALITE,
                     TR_TUNGSTEN, AZURE_SILVER, ANGLESITE, EP_JADE, MU_JADE, MM_END_STARRITE,
                     HNS_ZENALITE,
-                    BNO_COAL, BNO_COPPER, BNO_DIAMOND, BNO_EMERALD, BNO_IRON, BNO_LAPIS, BNO_REDSTONE, BNO_ALUMINUM, BNO_LEAD, BNO_NICKEL, BNO_OSMIUM, BNO_SILVER, BNO_TIN, BNO_URANIUM, BNO_ZINC);
+                    BNO_COAL, BNO_COPPER, BNO_DIAMOND, BNO_EMERALD, BNO_IRON, BNO_LAPIS, BNO_REDSTONE, BNO_ALUMINUM, BNO_LEAD, BNO_NICKEL, BNO_OSMIUM, BNO_SILVER, BNO_TIN, BNO_URANIUM, BNO_ZINC,
+                    WW_SILVER);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

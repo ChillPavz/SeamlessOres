@@ -337,6 +337,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_werewolves_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
