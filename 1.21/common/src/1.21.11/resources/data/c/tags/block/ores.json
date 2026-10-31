@@ -151,6 +151,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_copper_ore",
       "required": false
     },
@@ -216,6 +220,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_red_rock_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -433,6 +441,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_coal_ore",
       "required": false
     },
@@ -486,6 +498,10 @@
     },
     {
       "id": "seamlessores:blockus_limestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -650,6 +666,10 @@
     },
     {
       "id": "seamlessores:create_crimsite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -1005,6 +1025,10 @@
     "seamlessores:dripstone_redstone_ore",
     {
       "id": "seamlessores:dripstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_bronze_tin_block_ore",
       "required": false
     },
     "seamlessores:granite_coal_ore",

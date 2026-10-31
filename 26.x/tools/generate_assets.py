@@ -114,6 +114,7 @@ PROFILES = {
             "betternether": REFS + "better-nether-26.101.2.jar",
             "denseores": REFS + "denseores-neoforge-1.4.1.jar",
             "railcraft": REFS + "railcraft-reborn-26.1.2-1.4.9.jar",
+            "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -138,6 +139,7 @@ PROFILES = {
             "betternether": ("fabric",),
             "denseores": ("fabric", "neoforge"),
             "railcraft": ('neoforge',),
+            "bronze": ('fabric', 'neoforge'),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -162,6 +164,7 @@ PROFILES = {
             "evilcraft": REFS + "evilcraft-26.2-neoforge-1.2.98-1108.jar",
             "betternether": REFS + "better-nether-26.201.4.jar",
             "denseores": REFS + "denseores-neoforge-26.2-1.4.1.jar",
+            "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",   # no 26.2 build: stands in, inert
         },
         "available": {
             "create": ("fabric",),
@@ -206,6 +209,7 @@ PROFILES = {
             "theurgy": REFS + "theurgy-26.3-neoforge-1.120.0.jar",
             "evilcraft": REFS + "evilcraft-26.3-neoforge-1.2.98-1170.jar",
             "betternether": REFS + "better-nether-26.301.2.jar",
+            "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",   # no 26.3 build: stands in, inert
         },
         "available": {
             "mythicupgrades": ("fabric", "neoforge"),
@@ -443,6 +447,8 @@ MODS = {
                        "licence": "AGPL-3.0 (art, as its Modrinth page)", "author": "NewJumperr"},
     "railcraft": {"display": "Railcraft Reborn", "category": "railcraftreborn",
                        "licence": "Railcraft Reborn License", "author": "Sm0keySa1m0n, Edivad99"},
+    "bronze": {"display": "Bronze", "category": "bronze",
+                       "licence": "GPL-3.0", "author": "Khazoda"},
 }
 
 ORE_DEFS = [
@@ -905,6 +911,10 @@ ORE_DEFS = [
     {"name": "railcraft_zinc", "overlay": "railcraft_zinc", "source": "zinc_ore", "base": "stone",
      "mod": "railcraft",
      "tiers": {"stone": "zinc_ore", "deepslate": "deepslate_zinc_ore"}},
+    # --- Bronze (mod id bronze, GPL-3.0): tin. Fabric at 1.20.1; Fabric and NeoForge at 1.21.1, 1.21.11 and 26.1 ---
+    {"name": "bronze_tin", "overlay": "bronze_tin", "deepslate_overlay": "bronze_tin_deepslate", "source": "tin_ore_block", "base": "stone",
+     "mod": "bronze",
+     "tiers": {"stone": "tin_ore_block", "deepslate": "deepslate_tin_ore_block"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -995,6 +1005,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "betternether": ("fabric",),
     "denseores": ("fabric", "neoforge"),
     "railcraft": ('neoforge',),
+    "bronze": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1161,6 +1172,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
         f"text.autoconfig.{MOD_ID}.category.railcraftreborn": "Railcraft Reborn",
         f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
         f"text.autoconfig.{MOD_ID}.category.betternether": "BetterNether",
@@ -1185,6 +1197,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.bronze": "Bronze: variants",
+        f"text.autoconfig.{MOD_ID}.option.bronze.@Tooltip":
+            "Generate host-matched tin ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.railcraftReborn": "Railcraft Reborn: variants",
         f"text.autoconfig.{MOD_ID}.option.railcraftReborn.@Tooltip":

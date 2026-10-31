@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_bronze_tin_block_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_bronze_tin_block_ore_mirrored"
+      }
+    ]
+  }
+}

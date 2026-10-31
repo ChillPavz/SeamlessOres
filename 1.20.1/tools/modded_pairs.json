@@ -204,6 +204,13 @@
     "malum:brilliant_deepslate"
    ]
   },
+  "bronze_tin": {
+   "mod": "bronze",
+   "forms": [
+    "bronze:tin_ore_block",
+    "bronze:deepslate_tin_ore_block"
+   ]
+  },
   "carmot": {
    "mod": "mythicmetals",
    "forms": [
@@ -3536,6 +3543,12 @@
     ],
     "rate": 50.88
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.32
+   },
    "cgs_lead": {
     "where": [
      "1.20.1 forge"
@@ -3818,6 +3831,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.21
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.31
    },
    "cgs_lead": {
     "where": [
@@ -4112,6 +4131,12 @@
      "1.20.1 fabric"
     ],
     "rate": 2.17
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.25
    },
    "cgs_lead": {
     "where": [
@@ -4463,6 +4488,12 @@
     ],
     "rate": 19.69
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 83.47
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -4788,6 +4819,12 @@
      "1.20.1 fabric"
     ],
     "rate": 8.61
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 131.6
    },
    "carmot": {
     "where": [
@@ -5187,6 +5224,12 @@
     ],
     "rate": 8.61
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 129.77
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -5572,6 +5615,12 @@
      "1.20.1 fabric"
     ],
     "rate": 4.48
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 17.3
    },
    "carmot": {
     "where": [
@@ -6545,6 +6594,12 @@
     ],
     "rate": 8.5
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 74.19
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -7474,6 +7529,12 @@
      "1.20.1 forge"
     ],
     "rate": 10.87
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 74.19
    },
    "carmot": {
     "where": [
@@ -8405,6 +8466,12 @@
     ],
     "rate": 11.3
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 98.57
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -9334,6 +9401,12 @@
      "1.20.1 forge"
     ],
     "rate": 7.37
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 64.3
    },
    "carmot": {
     "where": [
@@ -10514,6 +10587,12 @@
     ],
     "rate": 9.76
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 62.23
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -11571,6 +11650,12 @@
      "1.20.1 forge"
     ],
     "rate": 8.04
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 70.15
    },
    "carmot": {
     "where": [
@@ -17820,6 +17905,12 @@
     ],
     "rate": 3.46
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 25.22
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -18750,6 +18841,12 @@
     ],
     "rate": 3.46
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 25.22
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -19679,6 +19776,12 @@
      "1.20.1 forge"
     ],
     "rate": 3.46
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 25.22
    },
    "carmot": {
     "where": [
@@ -20768,6 +20871,12 @@
     ],
     "rate": 2.94
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 61.54
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -21630,6 +21739,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.63
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.87
    },
    "carmot": {
     "where": [
@@ -22542,6 +22657,12 @@
      "1.20.1 forge"
     ],
     "rate": 4.98
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 43.46
    },
    "carmot": {
     "where": [
@@ -23472,6 +23593,12 @@
      "1.20.1 forge"
     ],
     "rate": 8.42
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 27.56
    },
    "carmot": {
     "where": [
@@ -24458,6 +24585,12 @@
      "1.20.1 forge"
     ],
     "rate": 7.85
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 22.55
    },
    "carmot": {
     "where": [
@@ -25561,6 +25694,12 @@
     ],
     "rate": 0.99
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 59.65
+   },
    "cgs_lead": {
     "where": [
      "1.20.1 forge"
@@ -26232,6 +26371,12 @@
     ],
     "rate": 1.81
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 2.72
+   },
    "cgs_lead": {
     "where": [
      "1.20.1 forge"
@@ -26581,6 +26726,12 @@
      "1.20.1 fabric"
     ],
     "rate": 5.78
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 8.66
    },
    "cgs_lead": {
     "where": [
@@ -26949,6 +27100,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.54
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.82
    },
    "cgs_lead": {
     "where": [
@@ -28130,6 +28287,12 @@
     ],
     "rate": 3.57
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 53.73
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -28515,6 +28678,12 @@
      "1.20.1 fabric"
     ],
     "rate": 3.57
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 53.73
    },
    "carmot": {
     "where": [
@@ -30661,6 +30830,12 @@
      "1.20.1 forge"
     ],
     "rate": 3.0
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 61.17
    },
    "carmot": {
     "where": [
@@ -33660,6 +33835,12 @@
     ],
     "rate": 14.05
    },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 73.3
+   },
    "carmot": {
     "where": [
      "1.20.1 fabric"
@@ -34533,6 +34714,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.45
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 10.99
    },
    "carmot": {
     "where": [
@@ -36319,6 +36506,12 @@
      "1.20.1 forge"
     ],
     "rate": 14.01
+   },
+   "bronze_tin": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 109.51
    },
    "carmot": {
     "where": [

@@ -206,6 +206,13 @@
     "malum:brilliant_deepslate"
    ]
   },
+  "bronze_tin": {
+   "mod": "bronze",
+   "forms": [
+    "bronze:tin_ore_block",
+    "bronze:deepslate_tin_ore_block"
+   ]
+  },
   "carmot": {
    "mod": "mythicmetals",
    "forms": [
@@ -1492,6 +1499,12 @@
     ],
     "rate": 23.26
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.88
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -1800,6 +1813,12 @@
     ],
     "rate": 0.19
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.2
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -1999,6 +2018,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.19
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.2
    },
    "cgs_lead": {
     "where": [
@@ -2200,6 +2225,12 @@
     ],
     "rate": 0.19
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.2
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -2399,6 +2430,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 7.75
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.29
    },
    "cgs_lead": {
     "where": [
@@ -2701,6 +2738,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.19
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.2
    },
    "cgs_lead": {
     "where": [
@@ -3248,6 +3291,13 @@
    }
   },
   "biomeswevegone:dacite": {
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.32
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -3512,6 +3562,13 @@
      "1.21.1 fabric"
     ],
     "rate": 0.21
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.31
    },
    "cgs_lead": {
     "where": [
@@ -3783,6 +3840,13 @@
      "1.21.1 fabric"
     ],
     "rate": 2.17
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.25
    },
    "cgs_lead": {
     "where": [
@@ -4097,6 +4161,12 @@
     ],
     "rate": 2.14
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 83.47
+   },
    "carmot": {
     "where": [
      "1.21.1 fabric"
@@ -4284,6 +4354,12 @@
      "1.21.1 fabric"
     ],
     "rate": 37.41
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 131.6
    },
    "carmot": {
     "where": [
@@ -4551,6 +4627,12 @@
     ],
     "rate": 36.34
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 129.77
+   },
    "carmot": {
     "where": [
      "1.21.1 fabric"
@@ -4805,6 +4887,12 @@
     ],
     "rate": 1.96
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 17.3
+   },
    "carmot": {
     "where": [
      "1.21.1 fabric"
@@ -5010,6 +5098,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 16.39
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 105.21
    },
    "cgs_lead": {
     "where": [
@@ -5672,6 +5766,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 8.5
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 74.19
    },
    "cgs_lead": {
     "where": [
@@ -6389,6 +6489,12 @@
     ],
     "rate": 10.87
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 94.86
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -7105,6 +7211,12 @@
     ],
     "rate": 11.3
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 98.57
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -7820,6 +7932,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 7.37
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 64.3
    },
    "cgs_lead": {
     "where": [
@@ -8671,6 +8789,12 @@
     ],
     "rate": 9.76
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 85.19
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -9489,6 +9613,12 @@
     ],
     "rate": 8.04
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 70.15
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -10205,6 +10335,12 @@
     ],
     "rate": 1.14
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.75
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -10860,6 +10996,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 69.75
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 289.9
    },
    "cgs_lead": {
     "where": [
@@ -11547,6 +11689,12 @@
     ],
     "rate": 4.57
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.01
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -12227,6 +12375,12 @@
     ],
     "rate": 9.73
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 44.79
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -12901,6 +13055,12 @@
     ],
     "rate": 1.62
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.74
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -13467,6 +13627,12 @@
    }
   },
   "embellishcraft:jade": {
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.1
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -13672,6 +13838,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.95
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.16
    },
    "cgs_lead": {
     "where": [
@@ -13987,6 +14159,12 @@
    }
   },
   "embellishcraft:marble": {
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.89
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -14198,6 +14376,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.65
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.59
    },
    "cgs_lead": {
     "where": [
@@ -14650,6 +14834,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 21.24
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 151.7
    },
    "cgs_lead": {
     "where": [
@@ -15169,6 +15359,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.46
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 25.22
    },
    "carmot": {
     "where": [
@@ -16064,6 +16261,13 @@
     ],
     "rate": 3.46
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 25.22
+   },
    "carmot": {
     "where": [
      "1.21.1 fabric"
@@ -16957,6 +17161,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.46
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 25.22
    },
    "carmot": {
     "where": [
@@ -17992,6 +18203,13 @@
     ],
     "rate": 0.53
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.34
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -18602,6 +18820,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.63
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.87
    },
    "carmot": {
     "where": [
@@ -19448,6 +19673,12 @@
     ],
     "rate": 4.98
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.46
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -20163,6 +20394,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 8.42
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 73.49
    },
    "cgs_lead": {
     "where": [
@@ -20891,6 +21128,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 7.85
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 68.48
    },
    "cgs_lead": {
     "where": [
@@ -21779,6 +22022,13 @@
     ],
     "rate": 0.99
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 59.65
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -22425,6 +22675,13 @@
     ],
     "rate": 1.81
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.72
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -22743,6 +23000,13 @@
      "1.21.1 fabric"
     ],
     "rate": 5.78
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.66
    },
    "cgs_lead": {
     "where": [
@@ -23081,6 +23345,13 @@
     ],
     "rate": 0.54
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.82
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -23406,6 +23677,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 6.87
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 102.99
    },
    "carmot": {
     "where": [
@@ -24259,6 +24537,13 @@
     ],
     "rate": 6.87
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 103.67
+   },
    "carmot": {
     "where": [
      "1.21.1 fabric"
@@ -25098,6 +25383,12 @@
     ],
     "rate": 22.55
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 469.5
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -25730,6 +26021,12 @@
     ],
     "rate": 65.78
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1369.38
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -26361,6 +26658,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 37.59
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 782.5
    },
    "cgs_lead": {
     "where": [
@@ -27001,6 +27304,13 @@
     ],
     "rate": 0.14
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.92
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -27606,6 +27916,13 @@
    }
   },
   "regions_unexplored:chalk": {
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.5
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -27876,6 +28193,13 @@
      "1.21.1 fabric"
     ],
     "rate": 2.21
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.31
    },
    "cgs_lead": {
     "where": [
@@ -28207,6 +28531,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.0
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.17
    },
    "cgs_lead": {
     "where": [
@@ -28827,6 +29157,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 10.53
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 91.86
    },
    "cgs_lead": {
     "where": [
@@ -29544,6 +29880,12 @@
     ],
     "rate": 10.53
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 91.86
+   },
    "cgs_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -30259,6 +30601,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 10.53
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 91.86
    },
    "cgs_lead": {
     "where": [
@@ -31264,6 +31612,13 @@
     ],
     "rate": 14.05
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 73.3
+   },
    "carmot": {
     "where": [
      "1.21.1 fabric"
@@ -32096,6 +32451,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.45
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.99
    },
    "carmot": {
     "where": [
@@ -33774,6 +34136,12 @@
     ],
     "rate": 1.59
    },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 8.99
+   },
    "carmot": {
     "where": [
      "1.21.1 fabric"
@@ -34058,6 +34426,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.01
+   },
+   "bronze_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 109.51
    },
    "carmot": {
     "where": [

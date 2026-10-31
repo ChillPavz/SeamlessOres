@@ -202,7 +202,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "railcraft": jar("railcraft-reborn-1.20.1-1.1.11.jar"),
             "projectred_exploration": jar("ProjectRed-1.20.1-4.21.0-exploration.jar"),
             "jeg": jar("JustEnoughGuns-0.14.5-1.20.1.jar"),
-            "cgs": jar("create-gunsmithing-1.20.1-1.4.4.jar")}
+            "cgs": jar("create-gunsmithing-1.20.1-1.4.4.jar"),
+            "bronze": jar("bronze-1.0.13+1.20.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -525,6 +526,8 @@ MODS = {
                        "licence": "GPL-3.0", "author": "MigaMi"},
     "cgs": {"display": "Create: Gunsmithing", "category": "creategunsmithing",
                        "licence": "GPL-3.0", "author": "Jetug, Dayton, melox"},
+    "bronze": {"display": "Bronze", "category": "bronze",
+                       "licence": "GPL-3.0", "author": "Khazoda"},
 }
 
 ORE_DEFS = [
@@ -1473,6 +1476,10 @@ ORE_DEFS = [
     {"name": "cgs_sulfur", "overlay": "cgs_sulfur", "source": "sulfur_ore", "base": "netherrack",
      "mod": "cgs",
      "tiers": {"nether": "sulfur_ore"}},
+    # --- Bronze (mod id bronze, GPL-3.0): tin. Fabric at 1.20.1; Fabric and NeoForge at 1.21.1, 1.21.11 and 26.1 ---
+    {"name": "bronze_tin", "overlay": "bronze_tin", "deepslate_overlay": "bronze_tin_deepslate", "source": "tin_ore_block", "base": "stone",
+     "mod": "bronze",
+     "tiers": {"stone": "tin_ore_block", "deepslate": "deepslate_tin_ore_block"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1642,6 +1649,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "projectred_exploration": ('forge',),
     "jeg": ('forge',),
     "cgs": ('forge',),
+    "bronze": ('fabric',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1788,6 +1796,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
         f"text.autoconfig.{MOD_ID}.category.creategunsmithing": "Create: Gunsmithing",
         f"text.autoconfig.{MOD_ID}.category.justenoughguns": "Just Enough Guns",
         f"text.autoconfig.{MOD_ID}.category.projectredexploration": "Project Red Exploration",
@@ -1843,6 +1852,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.bronze": "Bronze: variants",
+        f"text.autoconfig.{MOD_ID}.option.bronze.@Tooltip":
+            "Generate host-matched tin ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.createGunsmithing": "Create: Gunsmithing: variants",
         f"text.autoconfig.{MOD_ID}.option.createGunsmithing.@Tooltip":

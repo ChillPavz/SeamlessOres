@@ -13,11 +13,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_limestone_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -29,11 +37,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_mythicmetals_tin_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_limestone_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -49,6 +65,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_white_dacite_mythicmetals_tin_ore",
       "required": false
     },
@@ -58,6 +78,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_bronze_tin_block_ore",
       "required": false
     }
   ]

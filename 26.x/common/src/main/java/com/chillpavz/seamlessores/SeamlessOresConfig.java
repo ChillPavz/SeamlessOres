@@ -191,6 +191,9 @@ public final class SeamlessOresConfig {
     /** Whether Railcraft Reborn variants generate. Pure restyle. */
     public static boolean railcraftReborn = true;
 
+    /** Whether Bronze variants generate. Pure restyle. */
+    public static boolean bronze = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -229,6 +232,7 @@ public final class SeamlessOresConfig {
             case "betternether" -> betterNether;
             case "denseores" -> denseOres;
             case "railcraft" -> railcraftReborn;
+            case "bronze" -> bronze;
             default -> true;
         };
     }
@@ -421,6 +425,7 @@ public final class SeamlessOresConfig {
         public boolean betterNether = true;
         public boolean denseOres = true;
         public boolean railcraftReborn = true;
+        public boolean bronze = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -481,6 +486,7 @@ public final class SeamlessOresConfig {
         betterNether = values.betterNether;
         denseOres = values.denseOres;
         railcraftReborn = values.railcraftReborn;
+        bronze = values.bronze;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

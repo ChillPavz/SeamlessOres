@@ -160,6 +160,10 @@
       "id": "seamlessores:granite_denseores_dense_emerald_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_bronze_tin_block_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -496,6 +500,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_iron_ore",
       "required": false
     },
@@ -549,6 +557,10 @@
     },
     {
       "id": "seamlessores:blockus_marble_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -689,6 +701,10 @@
     },
     {
       "id": "seamlessores:create_limestone_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -1012,6 +1028,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
       "required": false
     },
@@ -1053,6 +1073,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_bronze_tin_block_ore",
       "required": false
     },
     {

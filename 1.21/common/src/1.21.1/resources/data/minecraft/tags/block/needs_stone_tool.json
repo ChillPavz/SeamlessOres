@@ -143,6 +143,10 @@
       "id": "seamlessores:granite_projectred_exploration_tin_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_bronze_tin_block_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
@@ -652,6 +656,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_iron_ore",
       "required": false
     },
@@ -669,6 +677,10 @@
     },
     {
       "id": "seamlessores:blockus_marble_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -821,6 +833,10 @@
     },
     {
       "id": "seamlessores:create_limestone_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -1348,6 +1364,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_iron_ore",
       "required": false
     },
@@ -1700,6 +1720,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_marble_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_gneiss_iron_ore",
       "required": false
     },
@@ -1813,6 +1837,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_gneiss_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -2025,6 +2053,10 @@
     },
     {
       "id": "seamlessores:quark_limestone_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -2304,6 +2336,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:mythicupgrades_aquamarine_schist_iron_ore",
       "required": false
     },
@@ -2440,6 +2476,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_iron_ore",
       "required": false
     },
@@ -2573,6 +2613,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_chalk_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -2832,6 +2876,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_iron_ore",
       "required": false
     },
@@ -2893,6 +2941,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_dacite_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -2961,6 +3013,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -3252,6 +3308,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_ivory_travertine_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_peach_travertine_iron_ore",
       "required": false
     },
@@ -3309,6 +3369,10 @@
     },
     {
       "id": "seamlessores:atmospheric_peach_travertine_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -3372,6 +3436,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_persimmon_travertine_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_saffron_travertine_iron_ore",
       "required": false
     },
@@ -3429,6 +3497,10 @@
     },
     {
       "id": "seamlessores:atmospheric_saffron_travertine_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -3864,6 +3936,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_white_chalk_iron_ore",
       "required": false
     },
@@ -3933,6 +4009,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_white_chalk_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_bronze_tin_block_ore",
       "required": false
     },
     {

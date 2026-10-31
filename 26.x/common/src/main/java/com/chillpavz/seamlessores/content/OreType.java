@@ -669,6 +669,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
 
+    // --- Bronze (mod id bronze, GPL-3.0): tin. Fabric at 1.20.1; Fabric and NeoForge at 1.21.1, 1.21.11 and 26.1 ---
+    public static final OreType BRZ_TIN = ore(
+            "bronze_tin", "bronze_tin", "bronze_tin_deepslate", "bronze",
+            of("bronze", "tin_ore_block"), of("bronze", "deepslate_tin_ore_block"), null,
+            NONE, null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -696,7 +702,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     BN_CINCINNASITE, BN_NETHER_LAPIS, BN_NETHER_REDSTONE, BN_NETHER_RUBY,
                     DO_COAL, DO_COPPER, DO_IRON, DO_GOLD, DO_LAPIS, DO_REDSTONE, DO_DIAMOND, DO_EMERALD, DO_NETHER_GOLD, DO_NETHER_QUARTZ, DO_ANCIENT_NETHER,
                     TR_PERIDOT, TR_SHELDONITE, TR_SODALITE, TR_TUNGSTEN, MU_JADE, MM_END_STARRITE,
-                    RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC);
+                    RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC,
+                    BRZ_TIN);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

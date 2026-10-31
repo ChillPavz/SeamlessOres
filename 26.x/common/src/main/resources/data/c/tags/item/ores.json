@@ -593,6 +593,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_coal_ore",
       "required": false
     },
@@ -686,6 +690,10 @@
     },
     {
       "id": "seamlessores:blockus_limestone_techreborn_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -990,6 +998,10 @@
     },
     {
       "id": "seamlessores:create_crimsite_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -1608,6 +1620,10 @@
       "id": "seamlessores:forbidden_arcanus_darkstone_silentgems_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_bronze_tin_block_ore",
+      "required": false
+    },
     "seamlessores:granite_coal_ore",
     "seamlessores:granite_copper_ore",
     {
@@ -2017,6 +2033,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_travertine_coal_ore",
       "required": false
     },
@@ -2094,6 +2114,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_travertine_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_bronze_tin_block_ore",
       "required": false
     },
     {
@@ -2457,6 +2481,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_chalk_bronze_tin_block_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_coal_ore",
       "required": false
     },
@@ -2518,6 +2546,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_chalk_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_bronze_tin_block_ore",
       "required": false
     },
     {

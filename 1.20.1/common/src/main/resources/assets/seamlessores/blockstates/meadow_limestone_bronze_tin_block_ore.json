@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/meadow_limestone_bronze_tin_block_ore"
+      },
+      {
+        "model": "seamlessores:block/meadow_limestone_bronze_tin_block_ore",
+        "y": 180
+      }
+    ]
+  }
+}

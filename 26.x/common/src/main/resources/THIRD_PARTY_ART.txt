@@ -9,6 +9,9 @@ BetterNether by quiqueck, paulevs, MIT:
   assets/seamlessores/textures/block/betternether_cincinnasite_overlay.png
   assets/seamlessores/textures/block/betternether_nether_ruby_overlay.png
 
+Bronze by Khazoda, GPL-3.0:
+  assets/seamlessores/textures/block/bronze_tin_overlay.png
+
 Create, MIT:
   assets/seamlessores/textures/block/zinc_overlay.png
 

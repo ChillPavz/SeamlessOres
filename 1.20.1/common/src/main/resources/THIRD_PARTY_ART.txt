@@ -14,6 +14,9 @@ Basic Nether Ores by cScotPlay, MIT:
 Bigger Reactors by RogueLogix, gizmocodes, Ridanisaurus, LGPL-2.1:
   assets/seamlessores/textures/block/biggerreactors_uranium_overlay.png
 
+Bronze by Khazoda, GPL-3.0:
+  assets/seamlessores/textures/block/bronze_tin_overlay.png
+
 Cobblemon by The Cobblemon Team, MPL-2.0:
   assets/seamlessores/textures/block/dawn_stone_biomeswevegone_dacite_overlay.png
   assets/seamlessores/textures/block/dawn_stone_biomeswevegone_white_dacite_overlay.png

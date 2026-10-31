@@ -61,6 +61,22 @@
    ],
    "deepslate_overlay": null
   },
+  "bronze_tin": {
+   "mod": "bronze",
+   "seamless_ores_name": "bronze_tin",
+   "forms": [
+    "bronze:tin_ore_block",
+    "bronze:deepslate_tin_ore_block"
+   ],
+   "nether": false,
+   "xp": [
+    0,
+    0
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": "bronze_tin_deepslate"
+  },
   "denseores_ancient_nether": {
    "mod": "denseores",
    "seamless_ores_name": "denseores_ancient_nether",
@@ -2100,6 +2116,12 @@
     ],
     "rate": 2.14
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 99.47
+   },
    "carmot": {
     "where": [
      "26.1.x fabric"
@@ -2287,6 +2309,12 @@
      "26.1.x fabric"
     ],
     "rate": 37.41
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 162.79
    },
    "carmot": {
     "where": [
@@ -2556,6 +2584,12 @@
     ],
     "rate": 36.34
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 160.95
+   },
    "carmot": {
     "where": [
      "26.1.x fabric"
@@ -2812,6 +2846,12 @@
     ],
     "rate": 1.96
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 19.78
+   },
    "carmot": {
     "where": [
      "26.1.x fabric"
@@ -3004,6 +3044,12 @@
      "26.1.x fabric"
     ],
     "rate": 16.18
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 91.59
    },
    "carmot": {
     "where": [
@@ -3258,6 +3304,12 @@
     ],
     "rate": 16.18
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 91.59
+   },
    "carmot": {
     "where": [
      "26.1.x fabric"
@@ -3511,6 +3563,12 @@
     ],
     "rate": 21.5
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 121.68
+   },
    "carmot": {
     "where": [
      "26.1.x fabric"
@@ -3763,6 +3821,12 @@
      "26.1.x fabric"
     ],
     "rate": 14.03
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 79.38
    },
    "carmot": {
     "where": [
@@ -4146,6 +4210,12 @@
     ],
     "rate": 47.31
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 76.82
+   },
    "carmot": {
     "where": [
      "26.1.x fabric"
@@ -4484,6 +4554,12 @@
     ],
     "rate": 15.3
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 86.59
+   },
    "carmot": {
     "where": [
      "26.1.x fabric"
@@ -4725,6 +4801,12 @@
     ],
     "rate": 245.08
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 151.7
+   },
    "chaos": {
     "where": [
      "26.1.x neoforge"
@@ -4921,6 +5003,13 @@
      "26.1.x neoforge"
     ],
     "rate": 6.38
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 4.75
    },
    "carmot": {
     "where": [
@@ -5370,6 +5459,12 @@
     ],
     "rate": 9.48
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 53.64
+   },
    "carmot": {
     "where": [
      "26.1.x fabric"
@@ -5622,6 +5717,12 @@
      "26.1.x fabric"
     ],
     "rate": 6.01
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 34.02
    },
    "carmot": {
     "where": [
@@ -5896,6 +5997,12 @@
      "26.2 fabric"
     ],
     "rate": 16.4
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 27.83
    },
    "carmot": {
     "where": [
@@ -6307,6 +6414,13 @@
     ],
     "rate": 34.5
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 68.9
+   },
    "dark": {
     "where": [
      "26.1.x neoforge"
@@ -6591,6 +6705,13 @@
     ],
     "rate": 1.81
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 2.72
+   },
    "dark": {
     "where": [
      "26.1.x neoforge"
@@ -6736,6 +6857,13 @@
     ],
     "rate": 5.78
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 8.67
+   },
    "dark": {
     "where": [
      "26.1.x neoforge"
@@ -6880,6 +7008,13 @@
      "26.1.x fabric"
     ],
     "rate": 0.54
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.82
    },
    "dark": {
     "where": [
@@ -7027,6 +7162,12 @@
      "26.1.x fabric"
     ],
     "rate": 23.01
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 127.81
    },
    "carmot": {
     "where": [
@@ -7320,6 +7461,12 @@
     ],
     "rate": 23.41
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 128.49
+   },
    "carmot": {
     "where": [
      "26.1.x fabric"
@@ -7604,6 +7751,13 @@
     ],
     "rate": 1.39
    },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 1.13
+   },
    "chaos": {
     "where": [
      "26.1.x neoforge"
@@ -7884,6 +8038,13 @@
    }
   },
   "regions_unexplored:chalk": {
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 0.5
+   },
    "denseores_coal": {
     "where": [
      "26.1.x fabric",
@@ -8010,6 +8171,13 @@
      "26.1.x fabric"
     ],
     "rate": 2.21
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 3.32
    },
    "dark": {
     "where": [
@@ -8161,6 +8329,12 @@
      "26.1.x fabric"
     ],
     "rate": 1.59
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric"
+    ],
+    "rate": 11.02
    },
    "carmot": {
     "where": [
@@ -8445,6 +8619,13 @@
      "26.1.x neoforge"
     ],
     "rate": 131.42
+   },
+   "bronze_tin": {
+    "where": [
+     "26.1.x fabric",
+     "26.1.x neoforge"
+    ],
+    "rate": 135.48
    },
    "carmot": {
     "where": [

@@ -107,7 +107,8 @@ MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "silentgems": SILENT_GEMS_JAR,
             "mythicmetals": MYTHIC_METALS_JAR,
             "evilcraft": jar("evilcraft-1.21.11-neoforge-1.2.62-828.jar"),
-            "denseores": jar("denseores-1.3.jar")}
+            "denseores": jar("denseores-1.3.jar"),
+            "bronze": jar("bronze-neoforge-2.1.6+1.21.11.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -229,6 +230,8 @@ MODS = {
                        "licence": "CC BY 4.0 (art)", "author": "rubensworks"},
     "denseores": {"display": "Dense Ores", "category": "dense_ores",
                        "licence": "AGPL-3.0 (art, as its Modrinth page)", "author": "NewJumperr"},
+    "bronze": {"display": "Bronze", "category": "bronze",
+                       "licence": "GPL-3.0", "author": "Khazoda"},
 }
 
 ORE_DEFS = [
@@ -570,6 +573,10 @@ ORE_DEFS = [
     {"name": "denseores_ancient_nether", "overlay": "denseores_ancient_nether", "source": "ancient_nether_ore", "base": "netherrack",
      "mod": "denseores",
      "tiers": {"nether": "ancient_nether_ore"}},
+    # --- Bronze (mod id bronze, GPL-3.0): tin. Fabric at 1.20.1; Fabric and NeoForge at 1.21.1, 1.21.11 and 26.1 ---
+    {"name": "bronze_tin", "overlay": "bronze_tin", "deepslate_overlay": "bronze_tin_deepslate", "source": "tin_ore_block", "base": "stone",
+     "mod": "bronze",
+     "tiers": {"stone": "tin_ore_block", "deepslate": "deepslate_tin_ore_block"}},
 ]
 
 # This generator writes ONE band of the 1.21 folder: everything it emits goes to
@@ -653,6 +660,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "biomeswevegone": ("fabric", "neoforge", "forge"),   # Oh The Biomes We've Gone: Fabric, NeoForge and Forge
     "evilcraft": ('neoforge',),
     "denseores": ('neoforge',),
+    "bronze": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -835,6 +843,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
         f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
         f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
         f"text.autoconfig.{MOD_ID}.category.overworld": "Overworld",
@@ -852,6 +861,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.things": "Things",
         f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
+
+        f"text.autoconfig.{MOD_ID}.option.bronze": "Bronze: variants",
+        f"text.autoconfig.{MOD_ID}.option.bronze.@Tooltip":
+            "Generate host-matched tin ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.denseOres": "Dense Ores: variants",
         f"text.autoconfig.{MOD_ID}.option.denseOres.@Tooltip":

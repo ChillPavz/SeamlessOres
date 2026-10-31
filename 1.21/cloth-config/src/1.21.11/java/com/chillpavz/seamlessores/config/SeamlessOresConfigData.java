@@ -313,6 +313,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean denseOres = true;
 
+    // --- Bronze --------------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("bronze")
+    @ConfigEntry.Gui.Tooltip
+    public boolean bronze = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -397,6 +403,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.createNewAge = createNewAge;
         values.evilCraft = evilCraft;
         values.denseOres = denseOres;
+        values.bronze = bronze;
 
         SeamlessOresConfig.apply(values);
     }

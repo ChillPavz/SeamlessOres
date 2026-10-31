@@ -137,6 +137,9 @@ public final class SeamlessOresConfig {
     /** Whether Dense Ores variants generate. Pure restyle. */
     public static boolean denseOres = true;
 
+    /** Whether Bronze variants generate. Pure restyle. */
+    public static boolean bronze = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -168,6 +171,7 @@ public final class SeamlessOresConfig {
             case "create_new_age" -> createNewAge;
             case "evilcraft" -> evilCraft;
             case "denseores" -> denseOres;
+            case "bronze" -> bronze;
             default -> true;
         };
     }
@@ -345,6 +349,7 @@ public final class SeamlessOresConfig {
         public boolean createNewAge = true;
         public boolean evilCraft = true;
         public boolean denseOres = true;
+        public boolean bronze = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -394,6 +399,7 @@ public final class SeamlessOresConfig {
         createNewAge = values.createNewAge;
         evilCraft = values.evilCraft;
         denseOres = values.denseOres;
+        bronze = values.bronze;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

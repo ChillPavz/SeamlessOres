@@ -824,6 +824,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean createGunsmithing = true;
 
+    // --- Bronze --------------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("bronze")
+    @ConfigEntry.Gui.Tooltip
+    public boolean bronze = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -1015,6 +1021,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.projectRedExploration = projectRedExploration;
         values.justEnoughGuns = justEnoughGuns;
         values.createGunsmithing = createGunsmithing;
+        values.bronze = bronze;
 
         SeamlessOresConfig.apply(values);
     }
