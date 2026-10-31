@@ -51,6 +51,10 @@ public final class ForeignOreTargets {
 
     private ForeignOreTargets() {}
 
+    /** Mining Master's configuration: a record of (List of TargetWeightedState, float). */
+    private static final String GEM_CONFIG =
+            "org.infernalstudios.miningmaster.world.features.config.GemOreFeatureConfig";
+
     /**
      * Feature config classes whose target list has been read from the mod's own jar and confirmed to
      * be vanilla's substitution table. Class NAMES, so nothing is loaded when the mod is absent.
@@ -73,10 +77,6 @@ public final class ForeignOreTargets {
             // the position gets and nothing about how many gems exist. Its entries hold a weighted list
             // where vanilla's hold one state, hence readGems and gemsWithTargets.
             GEM_CONFIG);
-
-    /** Mining Master's configuration: a record of (List of TargetWeightedState, float). */
-    private static final String GEM_CONFIG =
-            "org.infernalstudios.miningmaster.world.features.config.GemOreFeatureConfig";
 
     /** Classes that failed once, so the failure is logged once rather than per feature per load. */
     private static final Set<String> FAILED = ConcurrentHashMap.newKeySet();
