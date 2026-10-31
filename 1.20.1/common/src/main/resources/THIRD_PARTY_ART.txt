@@ -446,6 +446,12 @@ Theurgy by Kli Kli, CC BY-SA 4.0 (art):
 Things by glisco, MIT:
   assets/seamlessores/textures/block/gleaming_overlay.png
 
+Treasure2 by gottsch, OSL-3.0:
+  assets/seamlessores/textures/block/treasure2_onyx_overlay.png
+  assets/seamlessores/textures/block/treasure2_ruby_overlay.png
+  assets/seamlessores/textures/block/treasure2_sapphire_overlay.png
+  assets/seamlessores/textures/block/treasure2_topaz_overlay.png
+
 Werewolves: Become a Beast by Cheaterpaul, Maxanier, RebelT, LGPL-3.0:
   assets/seamlessores/textures/block/werewolves_silver_deepslate_overlay.png
   assets/seamlessores/textures/block/werewolves_silver_overlay.png

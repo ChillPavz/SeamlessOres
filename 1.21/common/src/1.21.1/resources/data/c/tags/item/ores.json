@@ -241,6 +241,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_treasure2_onyx_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_werewolves_silver_ore",
       "required": false
     },
@@ -1485,6 +1489,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_treasure2_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_treasure2_sapphire_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_bluestone_cobblemon_dusk_stone_ore",
       "required": false
     },
@@ -2445,6 +2461,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_treasure2_onyx_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_cobblemon_sun_stone_ore",
       "required": false
     },
@@ -2785,6 +2805,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_treasure2_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_treasure2_sapphire_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_cobblemon_leaf_stone_ore",
       "required": false
     },
@@ -3098,6 +3130,18 @@
     },
     {
       "id": "seamlessores:darkerdepths_darkslate_theurgy_sal_ammoniac_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_treasure2_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_treasure2_sapphire_ore",
       "required": false
     },
     {
@@ -3864,6 +3908,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_treasure2_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_treasure2_sapphire_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_gneiss_actuallyadditions_black_quartz_ore",
       "required": false
     },
@@ -4093,6 +4149,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_gneiss_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_treasure2_topaz_ore",
       "required": false
     },
     {
@@ -5021,6 +5081,10 @@
     },
     {
       "id": "seamlessores:granite_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_treasure2_topaz_ore",
       "required": false
     },
     {
@@ -6488,6 +6552,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_treasure2_onyx_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_bigreactors_yellorite_ore",
       "required": false
     },
@@ -7376,6 +7444,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_treasure2_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_treasure2_sapphire_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_bigreactors_yellorite_ore",
       "required": false
     },
@@ -7569,6 +7649,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_treasure2_onyx_ore",
       "required": false
     },
     {
@@ -8640,6 +8724,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_treasure2_topaz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_actuallyadditions_black_quartz_ore",
       "required": false
     },
@@ -8941,6 +9033,14 @@
     },
     {
       "id": "seamlessores:twigs_schist_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_treasure2_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_treasure2_sapphire_ore",
       "required": false
     },
     {

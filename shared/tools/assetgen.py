@@ -456,7 +456,8 @@ def silk_touch_to(table, source, our_id, name, where):
     for pool in table.get("pools", []):
         for entry in pool.get("entries", []):
             visit(entry, is_silk_touch_branch(pool))
-    if swapped != 1 and not (swapped == 0 and f'"name": "{source}"' in json.dumps(table)):
+    # None at all is fine where the source has no silk touch branch (Treasure2's ores always drop the gem).
+    if swapped != 1 and not (swapped == 0 and (f'"name": "{source}"' in json.dumps(table) or "silk_touch" not in json.dumps(table))):
         sys.exit(f"  !! {name} ({where}): expected one silk touch drop of {source}, found {swapped}")
 
 

@@ -1113,6 +1113,24 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(3.0F, 5.0F, 4.5F, 3.0F);
 
+    // --- Treasure2 (mod id treasure2, OSL-3.0): strength not read. Forge at 1.20.1, NeoForge at 1.21.1 ---
+    public static final OreType T2_ONYX = ore(
+            "treasure2_onyx", "treasure2_onyx", null, "treasure2",
+            of("treasure2", "onyx_ore"), of("treasure2", "deepslate_onyx_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType T2_RUBY = ore(
+            "treasure2_ruby", "treasure2_ruby", null, "treasure2",
+            of("treasure2", "ruby_ore"), of("treasure2", "deepslate_ruby_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType T2_SAPPHIRE = ore(
+            "treasure2_sapphire", "treasure2_sapphire", null, "treasure2",
+            of("treasure2", "sapphire_ore"), of("treasure2", "deepslate_sapphire_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType T2_TOPAZ = ore(
+            "treasure2_topaz", "treasure2_topaz", null, "treasure2",
+            of("treasure2", "topaz_ore"), of("treasure2", "deepslate_topaz_ore"), null,
+            NONE, null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1162,7 +1180,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TR_TUNGSTEN, AZURE_SILVER, ANGLESITE, EP_JADE, MU_JADE, MM_END_STARRITE,
                     HNS_ZENALITE,
                     BNO_COAL, BNO_COPPER, BNO_DIAMOND, BNO_EMERALD, BNO_IRON, BNO_LAPIS, BNO_REDSTONE, BNO_ALUMINUM, BNO_LEAD, BNO_NICKEL, BNO_OSMIUM, BNO_SILVER, BNO_TIN, BNO_URANIUM, BNO_ZINC,
-                    WW_SILVER);
+                    WW_SILVER,
+                    T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

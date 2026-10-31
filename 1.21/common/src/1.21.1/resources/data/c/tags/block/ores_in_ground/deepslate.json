@@ -501,6 +501,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_treasure2_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_treasure2_sapphire_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -1042,6 +1054,18 @@
     },
     {
       "id": "seamlessores:darkerdepths_darkslate_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_treasure2_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_treasure2_sapphire_ore",
       "required": false
     },
     {

@@ -1216,6 +1216,34 @@
     "mythicupgrades:deepslate_topaz_ore"
    ]
   },
+  "treasure2_onyx": {
+   "mod": "treasure2",
+   "forms": [
+    "treasure2:onyx_ore",
+    "treasure2:deepslate_onyx_ore"
+   ]
+  },
+  "treasure2_ruby": {
+   "mod": "treasure2",
+   "forms": [
+    "treasure2:ruby_ore",
+    "treasure2:deepslate_ruby_ore"
+   ]
+  },
+  "treasure2_sapphire": {
+   "mod": "treasure2",
+   "forms": [
+    "treasure2:sapphire_ore",
+    "treasure2:deepslate_sapphire_ore"
+   ]
+  },
+  "treasure2_topaz": {
+   "mod": "treasure2",
+   "forms": [
+    "treasure2:topaz_ore",
+    "treasure2:deepslate_topaz_ore"
+   ]
+  },
   "tungsten": {
    "mod": "modern_industrialization",
    "forms": [
@@ -5791,6 +5819,30 @@
     ],
     "rate": 1.38
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.94
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.94
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.94
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.94
+   },
    "uraninite": {
     "where": [
      "1.20.1 forge"
@@ -6578,6 +6630,30 @@
      "1.20.1 forge"
     ],
     "rate": 0.83
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.73
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.97
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.97
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.73
    },
    "tungsten": {
     "where": [
@@ -7395,6 +7471,30 @@
     ],
     "rate": 1.06
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.49
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.51
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.51
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.49
+   },
    "tungsten": {
     "where": [
      "1.20.1 fabric"
@@ -8211,6 +8311,30 @@
     ],
     "rate": 1.1
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.62
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.61
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.61
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.62
+   },
    "tungsten": {
     "where": [
      "1.20.1 fabric"
@@ -9026,6 +9150,30 @@
      "1.20.1 forge"
     ],
     "rate": 0.72
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.36
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.7
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.7
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.36
    },
    "tungsten": {
     "where": [
@@ -10190,6 +10338,30 @@
     ],
     "rate": 0.95
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.13
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.26
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.26
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.13
+   },
    "tungsten": {
     "where": [
      "1.20.1 fabric"
@@ -11012,6 +11184,30 @@
     ],
     "rate": 0.78
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.58
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.86
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.86
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.58
+   },
    "tungsten": {
     "where": [
      "1.20.1 fabric"
@@ -11552,6 +11748,30 @@
     ],
     "rate": 7.94
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.21
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.4
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.4
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.21
+   },
    "turquoise": {
     "where": [
      "1.20.1 forge"
@@ -12081,6 +12301,30 @@
      "1.20.1 forge"
     ],
     "rate": 484.23
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.96
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.13
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.13
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.96
    },
    "turquoise": {
     "where": [
@@ -12612,6 +12856,30 @@
     ],
     "rate": 31.75
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.85
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.85
+   },
    "turquoise": {
     "where": [
      "1.20.1 forge"
@@ -13142,6 +13410,30 @@
     ],
     "rate": 4.78
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.45
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.26
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.26
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.45
+   },
    "turquoise": {
     "where": [
      "1.20.1 forge"
@@ -13599,6 +13891,18 @@
      "1.20.1 forge"
     ],
     "rate": 0.38
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.18
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.18
    },
    "uraninite": {
     "where": [
@@ -15482,6 +15786,18 @@
     ],
     "rate": 9.14
    },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.13
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.13
+   },
    "turquoise": {
     "where": [
      "1.20.1 forge"
@@ -16275,6 +16591,30 @@
      "1.20.1 forge"
     ],
     "rate": 37.51
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
    },
    "tungsten": {
     "where": [
@@ -17092,6 +17432,30 @@
     ],
     "rate": 37.51
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
    "tungsten": {
     "where": [
      "1.20.1 fabric"
@@ -17907,6 +18271,30 @@
      "1.20.1 forge"
     ],
     "rate": 37.51
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
    },
    "tungsten": {
     "where": [
@@ -18851,6 +19239,18 @@
     ],
     "rate": 12.61
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.24
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.24
+   },
    "tungsten": {
     "where": [
      "1.20.1 fabric"
@@ -19624,6 +20024,30 @@
      "1.20.1 forge"
     ],
     "rate": 3.72
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
    },
    "tungsten": {
     "where": [
@@ -20447,6 +20871,30 @@
     ],
     "rate": 0.48
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.6
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.15
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.15
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.6
+   },
    "tungsten": {
     "where": [
      "1.20.1 fabric"
@@ -21262,6 +21710,30 @@
      "1.20.1 forge"
     ],
     "rate": 0.82
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.7
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.95
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.95
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.7
    },
    "tungsten": {
     "where": [
@@ -22244,6 +22716,30 @@
      "1.20.1 forge"
     ],
     "rate": 0.76
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.52
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.81
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.81
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.52
    },
    "tungsten": {
     "where": [
@@ -25980,6 +26476,18 @@
     ],
     "rate": 27.21
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.84
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.84
+   },
    "uraninite": {
     "where": [
      "1.20.1 forge"
@@ -26456,6 +26964,18 @@
     ],
     "rate": 27.21
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.95
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.95
+   },
    "uraninite": {
     "where": [
      "1.20.1 forge"
@@ -26931,6 +27451,18 @@
      "1.20.1 forge"
     ],
     "rate": 27.21
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.84
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.84
    },
    "uraninite": {
     "where": [
@@ -27597,6 +28129,18 @@
     ],
     "rate": 1.34
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.65
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.65
+   },
    "tungsten": {
     "where": [
      "1.20.1 fabric"
@@ -28154,6 +28698,30 @@
     ],
     "rate": 1.02
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.38
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.43
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.43
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.38
+   },
    "turquoise": {
     "where": [
      "1.20.1 forge"
@@ -28708,6 +29276,30 @@
     ],
     "rate": 1.02
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.38
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.43
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.43
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.38
+   },
    "turquoise": {
     "where": [
      "1.20.1 forge"
@@ -29261,6 +29853,30 @@
      "1.20.1 forge"
     ],
     "rate": 1.02
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.38
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.43
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.43
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.38
    },
    "turquoise": {
     "where": [
@@ -30157,6 +30773,30 @@
     ],
     "rate": 1.52
    },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.83
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.94
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.94
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.83
+   },
    "tungsten": {
     "where": [
      "1.20.1 fabric"
@@ -30984,6 +31624,30 @@
      "1.20.1 forge"
     ],
     "rate": 1.67
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
    },
    "tungsten": {
     "where": [
@@ -32650,6 +33314,30 @@
      "1.20.1 forge"
     ],
     "rate": 68.85
+   },
+   "treasure2_onyx": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.92
+   },
+   "treasure2_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.66
+   },
+   "treasure2_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.66
+   },
+   "treasure2_topaz": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.92
    },
    "tungsten": {
     "where": [

@@ -782,6 +782,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean werewolves = true;
 
+    // --- Treasure2 -----------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("treasure2")
+    @ConfigEntry.Gui.Tooltip
+    public boolean treasure2 = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -966,6 +972,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.basicEndOres = basicEndOres;
         values.basicNetherOres = basicNetherOres;
         values.werewolves = werewolves;
+        values.treasure2 = treasure2;
 
         SeamlessOresConfig.apply(values);
     }

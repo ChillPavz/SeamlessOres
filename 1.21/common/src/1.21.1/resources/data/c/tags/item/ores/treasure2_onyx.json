@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:andesite_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_treasure2_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_treasure2_onyx_ore",
+      "required": false
+    }
+  ]
+}
