@@ -17,6 +17,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_cgs_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cgs_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_electrodynamics_sulfur_ore",
       "required": false
     },
@@ -33,6 +41,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_cgs_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_electrodynamics_sulfur_ore",
       "required": false
     },
@@ -41,11 +53,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_cgs_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_electrodynamics_sulfur_ore",
       "required": false
     },
     {
       "id": "seamlessores:smooth_basalt_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cgs_sulfur_ore",
       "required": false
     },
     {
@@ -62,6 +82,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_cgs_sulfur_ore",
       "required": false
     },
     {

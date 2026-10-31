@@ -1,0 +1,188 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_arid_sandstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_cgs_lead_ore",
+      "required": false
+    }
+  ]
+}

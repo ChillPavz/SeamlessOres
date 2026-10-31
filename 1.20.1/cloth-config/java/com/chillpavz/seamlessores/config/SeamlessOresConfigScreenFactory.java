@@ -118,6 +118,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("railcraft", "railcraftreborn");
         MOD_CATEGORIES.put("projectred_exploration", "projectredexploration");
         MOD_CATEGORIES.put("jeg", "justenoughguns");
+        MOD_CATEGORIES.put("cgs", "creategunsmithing");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

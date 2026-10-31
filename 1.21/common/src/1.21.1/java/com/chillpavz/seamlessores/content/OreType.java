@@ -1213,6 +1213,18 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
 
+    // --- Create: Gunsmithing (mod id cgs, GPL-3.0): lead, and sulfur in netherrack at strength 0.4. Forge at 1.20.1, NeoForge at 1.21.1 ---
+    public static final OreType CGS_LEAD = ore(
+            "cgs_lead", "cgs_lead", "cgs_lead_deepslate", "cgs",
+            of("cgs", "lead_ore"), of("cgs", "deepslate_lead_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType CGS_SULFUR = ore(
+            "cgs_sulfur", "cgs_sulfur", null, "cgs",
+            null, null, of("cgs", "sulfur_ore"),
+            NONE, null, false, Set.of())
+            .withStrength(0.4F, 0.4F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1266,7 +1278,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ,
                     SP_POTASSIUM, SP_SULFUR, SP_NETHER_SULFUR,
                     RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC,
-                    PR_ELECTROTINE, PR_PERIDOT, PR_RUBY, PR_SAPPHIRE, PR_SILVER, PR_TIN);
+                    PR_ELECTROTINE, PR_PERIDOT, PR_RUBY, PR_SAPPHIRE, PR_SILVER, PR_TIN,
+                    CGS_LEAD, CGS_SULFUR);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

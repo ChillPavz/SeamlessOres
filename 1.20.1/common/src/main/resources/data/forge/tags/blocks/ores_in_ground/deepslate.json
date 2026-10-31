@@ -369,6 +369,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_cgs_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -621,6 +625,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_cgs_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -866,6 +874,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_jeg_scrap_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_cgs_lead_ore",
       "required": false
     },
     {
@@ -1185,6 +1197,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_cgs_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_grimestone_iron_ore",
       "required": false
     },
@@ -1365,6 +1381,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_cgs_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_iron_ore",
       "required": false
     },
@@ -1506,6 +1526,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_cgs_lead_ore",
       "required": false
     }
   ]

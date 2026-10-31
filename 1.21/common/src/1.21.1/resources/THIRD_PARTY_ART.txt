@@ -230,6 +230,11 @@ Cobblemon by The Cobblemon Team, MPL-2.0:
 Create, MIT:
   assets/seamlessores/textures/block/zinc_overlay.png
 
+Create: Gunsmithing by Jetug, Dayton, melox, GPL-3.0:
+  assets/seamlessores/textures/block/cgs_lead_deepslate_overlay.png
+  assets/seamlessores/textures/block/cgs_lead_overlay.png
+  assets/seamlessores/textures/block/cgs_sulfur_overlay.png
+
 Create: New Age by Antarctic Gardens, BSD-3-Clause:
   assets/seamlessores/textures/block/thorium_overlay.png
 

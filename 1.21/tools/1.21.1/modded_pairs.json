@@ -213,6 +213,19 @@
     "mythicmetals:deepslate_carmot_ore"
    ]
   },
+  "cgs_lead": {
+   "mod": "cgs",
+   "forms": [
+    "cgs:lead_ore",
+    "cgs:deepslate_lead_ore"
+   ]
+  },
+  "cgs_sulfur": {
+   "mod": "cgs",
+   "forms": [
+    "cgs:sulfur_ore"
+   ]
+  },
   "chaos": {
    "mod": "silentgems",
    "forms": [
@@ -1479,6 +1492,12 @@
     ],
     "rate": 23.26
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.05
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -1781,6 +1800,12 @@
     ],
     "rate": 0.19
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.38
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -1974,6 +1999,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.19
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.38
    },
    "chlorophyte": {
     "where": [
@@ -2169,6 +2200,12 @@
     ],
     "rate": 0.19
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.38
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -2362,6 +2399,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 7.75
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.68
    },
    "chlorophyte": {
     "where": [
@@ -2658,6 +2701,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.19
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.38
    },
    "chlorophyte": {
     "where": [
@@ -3199,6 +3248,12 @@
    }
   },
   "biomeswevegone:dacite": {
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.44
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -3457,6 +3512,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.21
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.43
    },
    "chlorophyte": {
     "where": [
@@ -3722,6 +3783,12 @@
      "1.21.1 fabric"
     ],
     "rate": 2.17
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.51
    },
    "chlorophyte": {
     "where": [
@@ -4944,6 +5011,12 @@
     ],
     "rate": 16.39
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 71.29
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -5599,6 +5672,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 8.5
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 68.36
    },
    "chaos": {
     "where": [
@@ -6310,6 +6389,12 @@
     ],
     "rate": 10.87
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 87.41
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -7019,6 +7104,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 11.3
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 90.82
    },
    "chaos": {
     "where": [
@@ -7730,6 +7821,12 @@
     ],
     "rate": 7.37
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 59.25
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -8410,6 +8507,12 @@
     ],
     "rate": 205.93
    },
+   "cgs_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 605.93
+   },
    "denseores_ancient_nether": {
     "where": [
      "1.21.1 neoforge"
@@ -8567,6 +8670,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 9.76
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 78.49
+   },
+   "cgs_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 398.19
    },
    "chaos": {
     "where": [
@@ -9374,6 +9489,12 @@
     ],
     "rate": 8.04
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 64.63
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -10084,6 +10205,12 @@
     ],
     "rate": 1.14
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.14
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -10733,6 +10860,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 69.75
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 374.83
    },
    "chaos": {
     "where": [
@@ -11414,6 +11547,12 @@
     ],
     "rate": 4.57
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.58
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -12088,6 +12227,12 @@
     ],
     "rate": 9.73
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 49.29
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -12756,6 +12901,12 @@
     ],
     "rate": 1.62
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.25
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -13316,6 +13467,12 @@
    }
   },
   "embellishcraft:jade": {
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.41
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -13515,6 +13672,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 14.95
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.56
    },
    "chlorophyte": {
     "where": [
@@ -13824,6 +13987,12 @@
    }
   },
   "embellishcraft:marble": {
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.88
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -14029,6 +14198,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.65
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.0
    },
    "chlorophyte": {
     "where": [
@@ -14475,6 +14650,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 21.24
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 471.74
    },
    "chaos": {
     "where": [
@@ -14994,6 +15175,12 @@
      "1.21.1 fabric"
     ],
     "rate": 1.12
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.58
    },
    "chaos": {
     "where": [
@@ -15883,6 +16070,12 @@
     ],
     "rate": 1.12
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.58
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -16770,6 +16963,12 @@
      "1.21.1 fabric"
     ],
     "rate": 1.12
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.58
    },
    "chaos": {
     "where": [
@@ -17793,6 +17992,12 @@
     ],
     "rate": 0.53
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.5
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -18403,6 +18608,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.2
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.84
    },
    "chaos": {
     "where": [
@@ -19237,6 +19448,12 @@
     ],
     "rate": 4.98
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 40.04
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -19946,6 +20163,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 8.42
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 67.71
    },
    "chaos": {
     "where": [
@@ -20668,6 +20891,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 7.85
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 63.09
+   },
+   "cgs_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 178.18
    },
    "chaos": {
     "where": [
@@ -21544,6 +21779,12 @@
     ],
     "rate": 0.99
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 71.2
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -22184,6 +22425,12 @@
     ],
     "rate": 1.81
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.78
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -22496,6 +22743,12 @@
      "1.21.1 fabric"
     ],
     "rate": 5.78
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.04
    },
    "chlorophyte": {
     "where": [
@@ -22828,6 +23081,12 @@
     ],
     "rate": 0.54
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.13
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -23153,6 +23412,12 @@
      "1.21.1 fabric"
     ],
     "rate": 2.25
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 86.33
    },
    "chaos": {
     "where": [
@@ -24000,6 +24265,12 @@
     ],
     "rate": 2.25
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 87.25
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -24827,6 +25098,12 @@
     ],
     "rate": 22.55
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 468.11
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -25453,6 +25730,12 @@
     ],
     "rate": 65.78
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1365.33
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -26078,6 +26361,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 37.59
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 780.19
    },
    "chaos": {
     "where": [
@@ -26712,6 +27001,12 @@
     ],
     "rate": 0.14
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.82
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -27311,6 +27606,12 @@
    }
   },
   "regions_unexplored:chalk": {
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.52
+   },
    "chlorophyte": {
     "where": [
      "1.21.1 neoforge"
@@ -27575,6 +27876,12 @@
      "1.21.1 fabric"
     ],
     "rate": 2.21
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.61
    },
    "chlorophyte": {
     "where": [
@@ -27900,6 +28207,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.0
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 56.68
    },
    "chaos": {
     "where": [
@@ -28514,6 +28827,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 10.53
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 84.64
    },
    "chaos": {
     "where": [
@@ -29225,6 +29544,12 @@
     ],
     "rate": 10.53
    },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 84.64
+   },
    "chaos": {
     "where": [
      "1.21.1 neoforge"
@@ -29934,6 +30259,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 10.53
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 84.64
    },
    "chaos": {
     "where": [
@@ -30723,6 +31054,12 @@
     ],
     "rate": 27.66
    },
+   "cgs_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.49
+   },
    "cinnabar": {
     "where": [
      "1.21.1 fabric"
@@ -30932,6 +31269,12 @@
      "1.21.1 fabric"
     ],
     "rate": 5.05
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 78.37
    },
    "chaos": {
     "where": [
@@ -31759,6 +32102,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.47
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.39
    },
    "chaos": {
     "where": [
@@ -33715,6 +34064,12 @@
      "1.21.1 fabric"
     ],
     "rate": 5.03
+   },
+   "cgs_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 98.32
    },
    "chaos": {
     "where": [

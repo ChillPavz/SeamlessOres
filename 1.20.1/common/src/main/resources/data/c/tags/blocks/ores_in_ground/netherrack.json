@@ -126,6 +126,10 @@
       "id": "seamlessores:basalt_rubinated_nether_nether_ruby_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_cgs_sulfur_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -249,6 +253,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_cgs_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scorchia_nether_gold_ore",
       "required": false
     },
@@ -346,6 +354,10 @@
     },
     {
       "id": "seamlessores:create_scorchia_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_cgs_sulfur_ore",
       "required": false
     },
     {
@@ -449,6 +461,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_cgs_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_nether_gold_ore",
       "required": false
     },
@@ -546,6 +562,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_cgs_sulfur_ore",
       "required": false
     },
     {
@@ -650,6 +670,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_rubinated_nether_nether_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_cgs_sulfur_ore",
       "required": false
     },
     {

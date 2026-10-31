@@ -164,7 +164,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "treasure2": jar("treasure2-neoforge-1.21.1-5.1.0.jar"),
             "sulfurpotassiummod": jar("sulfurpotassiummod-1.21-2.0.0+Fabric.jar"),
             "railcraft": jar("railcraft-reborn-1.21.1-1.2.16.jar"),
-            "projectred_exploration": jar("ProjectRed-1.21.1-4.23.0-exploration.jar")}
+            "projectred_exploration": jar("ProjectRed-1.21.1-4.23.0-exploration.jar"),
+            "cgs": jar("create-gunsmithing-1.21.1-1.4.9.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -460,6 +461,8 @@ MODS = {
                        "licence": "Railcraft Reborn License", "author": "Sm0keySa1m0n, Edivad99"},
     "projectred_exploration": {"display": "Project Red Exploration", "category": "projectredexploration",
                        "licence": "MIT", "author": "MrTJP, Chicken Bones, covers1624"},
+    "cgs": {"display": "Create: Gunsmithing", "category": "creategunsmithing",
+                       "licence": "GPL-3.0", "author": "Jetug, Dayton, melox"},
 }
 
 ORE_DEFS = [
@@ -1321,6 +1324,13 @@ ORE_DEFS = [
     {"name": "projectred_exploration_tin", "overlay": "projectred_exploration_tin", "source": "tin_ore", "base": "stone",
      "mod": "projectred_exploration",
      "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    # --- Create: Gunsmithing (mod id cgs, GPL-3.0): lead, and sulfur in netherrack at strength 0.4. Forge at 1.20.1, NeoForge at 1.21.1 ---
+    {"name": "cgs_lead", "overlay": "cgs_lead", "deepslate_overlay": "cgs_lead_deepslate", "source": "lead_ore", "base": "stone",
+     "mod": "cgs",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "cgs_sulfur", "overlay": "cgs_sulfur", "source": "sulfur_ore", "base": "netherrack",
+     "mod": "cgs",
+     "tiers": {"nether": "sulfur_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1485,6 +1495,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "sulfurpotassiummod": ('fabric',),
     "railcraft": ('neoforge',),
     "projectred_exploration": ('neoforge',),
+    "cgs": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1596,6 +1607,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.creategunsmithing": "Create: Gunsmithing",
         f"text.autoconfig.{MOD_ID}.category.projectredexploration": "Project Red Exploration",
         f"text.autoconfig.{MOD_ID}.category.railcraftreborn": "Railcraft Reborn",
         f"text.autoconfig.{MOD_ID}.category.sulfurandpotassium": "Sulfur and Potassium",
@@ -1641,6 +1653,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.createGunsmithing": "Create: Gunsmithing: variants",
+        f"text.autoconfig.{MOD_ID}.option.createGunsmithing.@Tooltip":
+            "Generate host-matched lead and sulfur ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.projectRedExploration": "Project Red Exploration: variants",
         f"text.autoconfig.{MOD_ID}.option.projectRedExploration.@Tooltip":

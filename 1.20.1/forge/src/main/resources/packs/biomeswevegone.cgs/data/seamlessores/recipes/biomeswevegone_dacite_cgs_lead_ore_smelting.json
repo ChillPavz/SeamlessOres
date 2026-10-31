@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "lead",
+  "ingredient": {
+    "item": "seamlessores:biomeswevegone_dacite_cgs_lead_ore"
+  },
+  "result": "cgs:lead_ingot"
+}

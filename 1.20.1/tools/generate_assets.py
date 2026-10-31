@@ -201,7 +201,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "rubinated_nether": jar("RubinatedNether-forge-1.3.0.E-1.20.1.jar"),
             "railcraft": jar("railcraft-reborn-1.20.1-1.1.11.jar"),
             "projectred_exploration": jar("ProjectRed-1.20.1-4.21.0-exploration.jar"),
-            "jeg": jar("JustEnoughGuns-0.14.5-1.20.1.jar")}
+            "jeg": jar("JustEnoughGuns-0.14.5-1.20.1.jar"),
+            "cgs": jar("create-gunsmithing-1.20.1-1.4.4.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -522,6 +523,8 @@ MODS = {
                        "licence": "MIT", "author": "MrTJP, Chicken Bones, covers1624"},
     "jeg": {"display": "Just Enough Guns", "category": "justenoughguns",
                        "licence": "GPL-3.0", "author": "MigaMi"},
+    "cgs": {"display": "Create: Gunsmithing", "category": "creategunsmithing",
+                       "licence": "GPL-3.0", "author": "Jetug, Dayton, melox"},
 }
 
 ORE_DEFS = [
@@ -1463,6 +1466,13 @@ ORE_DEFS = [
     {"name": "jeg_scrap", "overlay": "jeg_scrap", "deepslate_overlay": "jeg_scrap_deepslate", "source": "scrap_ore", "base": "stone",
      "mod": "jeg",
      "tiers": {"stone": "scrap_ore", "deepslate": "deepslate_scrap_ore"}},
+    # --- Create: Gunsmithing (mod id cgs, GPL-3.0): lead, and sulfur in netherrack at strength 0.4. Forge at 1.20.1, NeoForge at 1.21.1 ---
+    {"name": "cgs_lead", "overlay": "cgs_lead", "deepslate_overlay": "cgs_lead_deepslate", "source": "lead_ore", "base": "stone",
+     "mod": "cgs",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "cgs_sulfur", "overlay": "cgs_sulfur", "source": "sulfur_ore", "base": "netherrack",
+     "mod": "cgs",
+     "tiers": {"nether": "sulfur_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1631,6 +1641,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "railcraft": ('forge',),
     "projectred_exploration": ('forge',),
     "jeg": ('forge',),
+    "cgs": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1777,6 +1788,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.creategunsmithing": "Create: Gunsmithing",
         f"text.autoconfig.{MOD_ID}.category.justenoughguns": "Just Enough Guns",
         f"text.autoconfig.{MOD_ID}.category.projectredexploration": "Project Red Exploration",
         f"text.autoconfig.{MOD_ID}.category.railcraftreborn": "Railcraft Reborn",
@@ -1831,6 +1843,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.createGunsmithing": "Create: Gunsmithing: variants",
+        f"text.autoconfig.{MOD_ID}.option.createGunsmithing.@Tooltip":
+            "Generate host-matched lead and sulfur ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.justEnoughGuns": "Just Enough Guns: variants",
         f"text.autoconfig.{MOD_ID}.option.justEnoughGuns.@Tooltip":
