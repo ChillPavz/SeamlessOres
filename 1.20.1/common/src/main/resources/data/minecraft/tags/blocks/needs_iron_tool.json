@@ -176,6 +176,18 @@
       "id": "seamlessores:granite_cgs_lead_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_miningmaster_dive_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_miningmaster_spirit_garnet_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -324,6 +336,10 @@
       "id": "seamlessores:diorite_cgs_lead_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     "seamlessores:andesite_diamond_ore",
     "seamlessores:andesite_emerald_ore",
@@ -454,6 +470,10 @@
     },
     {
       "id": "seamlessores:andesite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_miningmaster_lucky_citrine_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
@@ -816,6 +836,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_miningmaster_heart_rhodonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_miningmaster_kinetic_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:basalt_miningmaster_power_pyrite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_mythicupgrades_ruby_ore",
       "required": false
     },
@@ -873,6 +905,18 @@
     },
     {
       "id": "seamlessores:blackstone_cgs_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_miningmaster_heart_rhodonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_miningmaster_kinetic_opal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_miningmaster_power_pyrite_ore",
       "required": false
     },
     {
@@ -1312,6 +1356,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -1373,6 +1421,30 @@
     },
     {
       "id": "seamlessores:create_scorchia_cgs_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_miningmaster_haste_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_miningmaster_ice_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_miningmaster_heart_rhodonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_miningmaster_power_pyrite_ore",
       "required": false
     },
     {
@@ -1556,6 +1628,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_miningmaster_haste_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_miningmaster_ice_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_miningmaster_heart_rhodonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_miningmaster_power_pyrite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_expores_experience_ore",
       "required": false
     },
@@ -1653,6 +1749,10 @@
     },
     {
       "id": "seamlessores:calcite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {
@@ -1836,6 +1936,30 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_miningmaster_haste_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_miningmaster_ice_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_miningmaster_heart_rhodonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_miningmaster_power_pyrite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_gold_ore",
       "required": false
     },
@@ -1869,6 +1993,10 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {
@@ -1948,6 +2076,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_gold_ore",
       "required": false
     },
@@ -2017,6 +2149,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {
@@ -2149,6 +2285,14 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_miningmaster_spirit_garnet_ore",
       "required": false
     },
     {
@@ -2336,6 +2480,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_miningmaster_dive_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_miningmaster_ice_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_miningmaster_spirit_garnet_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_mythicupgrades_ruby_ore",
       "required": false
     },
@@ -2389,6 +2553,14 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_cgs_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_miningmaster_heart_rhodonite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_miningmaster_power_pyrite_ore",
       "required": false
     },
     {
@@ -2581,6 +2753,22 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_miningmaster_haste_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_miningmaster_ice_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {
@@ -2964,6 +3152,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_gold_ore",
       "required": false
     },
@@ -3005,6 +3197,10 @@
     },
     {
       "id": "seamlessores:quark_jasper_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {
@@ -3077,6 +3273,10 @@
     },
     {
       "id": "seamlessores:quark_shale_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {
@@ -3229,6 +3429,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {
@@ -3461,6 +3665,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {
@@ -3741,6 +3949,10 @@
     },
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {

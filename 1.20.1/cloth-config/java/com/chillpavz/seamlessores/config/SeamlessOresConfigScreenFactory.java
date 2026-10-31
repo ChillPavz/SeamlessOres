@@ -120,6 +120,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("jeg", "justenoughguns");
         MOD_CATEGORIES.put("cgs", "creategunsmithing");
         MOD_CATEGORIES.put("bronze", "bronze");
+        MOD_CATEGORIES.put("miningmaster", "miningmaster");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

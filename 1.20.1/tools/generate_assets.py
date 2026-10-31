@@ -203,7 +203,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "projectred_exploration": jar("ProjectRed-1.20.1-4.21.0-exploration.jar"),
             "jeg": jar("JustEnoughGuns-0.14.5-1.20.1.jar"),
             "cgs": jar("create-gunsmithing-1.20.1-1.4.4.jar"),
-            "bronze": jar("bronze-1.0.13+1.20.1.jar")}
+            "bronze": jar("bronze-1.0.13+1.20.1.jar"),
+            "miningmaster": jar("miningmaster-1.20.1-4.1.3.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -528,6 +529,8 @@ MODS = {
                        "licence": "GPL-3.0", "author": "Jetug, Dayton, melox"},
     "bronze": {"display": "Bronze", "category": "bronze",
                        "licence": "GPL-3.0", "author": "Khazoda"},
+    "miningmaster": {"display": "Mining Master", "category": "miningmaster",
+                       "licence": "Apache-2.0", "author": "Infernal Studios"},
 }
 
 ORE_DEFS = [
@@ -1480,6 +1483,43 @@ ORE_DEFS = [
     {"name": "bronze_tin", "overlay": "bronze_tin", "deepslate_overlay": "bronze_tin_deepslate", "source": "tin_ore_block", "base": "stone",
      "mod": "bronze",
      "tiers": {"stone": "tin_ore_block", "deepslate": "deepslate_tin_ore_block"}},
+    # --- Mining Master (mod id miningmaster, Apache-2.0): 5 to 10 XP, placed by its own gem feature (ForeignOreTargets); air malachite falls in meteorites, so no variants. Forge at 1.20.1 ---
+    {"name": "miningmaster_dive_aquamarine", "overlay": "miningmaster_dive_aquamarine", "deepslate_overlay": "miningmaster_dive_aquamarine_deepslate", "source": "dive_aquamarine_ore", "base": "stone",
+     "mod": "miningmaster",
+     "tiers": {"stone": "dive_aquamarine_ore", "deepslate": "deepslate_dive_aquamarine_ore"}},
+    {"name": "miningmaster_divine_beryl", "overlay": "miningmaster_divine_beryl", "source": "divine_beryl_ore", "base": "stone",
+     "mod": "miningmaster",
+     "tiers": {"stone": "divine_beryl_ore", "deepslate": "deepslate_divine_beryl_ore"}},
+    {"name": "miningmaster_fire_ruby", "overlay": "miningmaster_fire_ruby", "deepslate_overlay": "miningmaster_fire_ruby_deepslate", "source": "fire_ruby_ore", "base": "stone",
+     "mod": "miningmaster",
+     "tiers": {"stone": "fire_ruby_ore", "deepslate": "deepslate_fire_ruby_ore"}},
+    {"name": "miningmaster_haste_peridot", "overlay": "miningmaster_haste_peridot", "deepslate_overlay": "miningmaster_haste_peridot_deepslate", "source": "haste_peridot_ore", "base": "stone",
+     "mod": "miningmaster",
+     "tiers": {"stone": "haste_peridot_ore", "deepslate": "deepslate_haste_peridot_ore"}},
+    {"name": "miningmaster_ice_sapphire", "overlay": "miningmaster_ice_sapphire", "deepslate_overlay": "miningmaster_ice_sapphire_deepslate", "source": "ice_sapphire_ore", "base": "stone",
+     "mod": "miningmaster",
+     "tiers": {"stone": "ice_sapphire_ore", "deepslate": "deepslate_ice_sapphire_ore"}},
+    {"name": "miningmaster_lucky_citrine", "overlay": "miningmaster_lucky_citrine", "deepslate_overlay": "miningmaster_lucky_citrine_deepslate", "source": "lucky_citrine_ore", "base": "stone",
+     "mod": "miningmaster",
+     "tiers": {"stone": "lucky_citrine_ore", "deepslate": "deepslate_lucky_citrine_ore"}},
+    {"name": "miningmaster_spider_kunzite", "overlay": "miningmaster_spider_kunzite", "source": "spider_kunzite_ore", "base": "stone",
+     "mod": "miningmaster",
+     "tiers": {"stone": "spider_kunzite_ore", "deepslate": "deepslate_spider_kunzite_ore"}},
+    {"name": "miningmaster_spirit_garnet", "overlay": "miningmaster_spirit_garnet", "deepslate_overlay": "miningmaster_spirit_garnet_deepslate", "source": "spirit_garnet_ore", "base": "stone",
+     "mod": "miningmaster",
+     "tiers": {"stone": "spirit_garnet_ore", "deepslate": "deepslate_spirit_garnet_ore"}},
+    {"name": "miningmaster_unbreaking_iolite", "overlay": "miningmaster_unbreaking_iolite", "deepslate_overlay": "miningmaster_unbreaking_iolite_deepslate", "source": "unbreaking_iolite_ore", "base": "stone",
+     "mod": "miningmaster",
+     "tiers": {"stone": "unbreaking_iolite_ore", "deepslate": "deepslate_unbreaking_iolite_ore"}},
+    {"name": "miningmaster_heart_rhodonite", "overlay": "miningmaster_heart_rhodonite", "source": "heart_rhodonite_ore", "base": "netherrack",
+     "mod": "miningmaster",
+     "tiers": {"nether": "heart_rhodonite_ore"}},
+    {"name": "miningmaster_kinetic_opal", "overlay": "miningmaster_kinetic_opal", "source": "kinetic_opal_ore", "base": "netherrack",
+     "mod": "miningmaster",
+     "tiers": {"nether": "kinetic_opal_ore"}},
+    {"name": "miningmaster_power_pyrite", "overlay": "miningmaster_power_pyrite", "source": "power_pyrite_ore", "base": "netherrack",
+     "mod": "miningmaster",
+     "tiers": {"nether": "power_pyrite_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1650,6 +1690,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "jeg": ('forge',),
     "cgs": ('forge',),
     "bronze": ('fabric',),
+    "miningmaster": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1796,6 +1837,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.miningmaster": "Mining Master",
         f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
         f"text.autoconfig.{MOD_ID}.category.creategunsmithing": "Create: Gunsmithing",
         f"text.autoconfig.{MOD_ID}.category.justenoughguns": "Just Enough Guns",
@@ -1852,6 +1894,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.miningMaster": "Mining Master: variants",
+        f"text.autoconfig.{MOD_ID}.option.miningMaster.@Tooltip":
+            "Generate host-matched gem ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.bronze": "Bronze: variants",
         f"text.autoconfig.{MOD_ID}.option.bronze.@Tooltip":

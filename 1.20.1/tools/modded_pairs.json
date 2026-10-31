@@ -845,6 +845,87 @@
     "mythicmetals:midas_gold_ore"
    ]
   },
+  "miningmaster_dive_aquamarine": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:dive_aquamarine_ore",
+    "miningmaster:deepslate_dive_aquamarine_ore"
+   ]
+  },
+  "miningmaster_divine_beryl": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:divine_beryl_ore",
+    "miningmaster:deepslate_divine_beryl_ore"
+   ]
+  },
+  "miningmaster_fire_ruby": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:fire_ruby_ore",
+    "miningmaster:deepslate_fire_ruby_ore"
+   ]
+  },
+  "miningmaster_haste_peridot": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:haste_peridot_ore",
+    "miningmaster:deepslate_haste_peridot_ore"
+   ]
+  },
+  "miningmaster_heart_rhodonite": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:heart_rhodonite_ore"
+   ]
+  },
+  "miningmaster_ice_sapphire": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:ice_sapphire_ore",
+    "miningmaster:deepslate_ice_sapphire_ore"
+   ]
+  },
+  "miningmaster_kinetic_opal": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:kinetic_opal_ore"
+   ]
+  },
+  "miningmaster_lucky_citrine": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:lucky_citrine_ore",
+    "miningmaster:deepslate_lucky_citrine_ore"
+   ]
+  },
+  "miningmaster_power_pyrite": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:power_pyrite_ore"
+   ]
+  },
+  "miningmaster_spider_kunzite": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:spider_kunzite_ore",
+    "miningmaster:deepslate_spider_kunzite_ore"
+   ]
+  },
+  "miningmaster_spirit_garnet": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:spirit_garnet_ore",
+    "miningmaster:deepslate_spirit_garnet_ore"
+   ]
+  },
+  "miningmaster_unbreaking_iolite": {
+   "mod": "miningmaster",
+   "forms": [
+    "miningmaster:unbreaking_iolite_ore",
+    "miningmaster:deepslate_unbreaking_iolite_ore"
+   ]
+  },
   "monazite": {
    "mod": "modern_industrialization",
    "forms": [
@@ -6236,6 +6317,60 @@
     ],
     "rate": 12.65
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.78
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.78
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.85
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.85
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.78
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.85
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.78
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.78
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.85
+   },
    "moon_stone": {
     "where": [
      "1.20.1 forge"
@@ -7011,6 +7146,60 @@
      "1.20.1 fabric"
     ],
     "rate": 191.26
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.5
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.5
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.67
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.67
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.5
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.67
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.5
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.5
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.67
    },
    "monazite": {
     "where": [
@@ -7948,6 +8137,60 @@
     ],
     "rate": 191.26
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.2
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.2
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.13
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.13
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.2
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.13
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.2
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.2
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.13
+   },
    "monazite": {
     "where": [
      "1.20.1 fabric"
@@ -8883,6 +9126,60 @@
      "1.20.1 fabric"
     ],
     "rate": 254.1
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.32
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.32
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.21
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.21
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.32
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.21
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.32
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.32
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.21
    },
    "monazite": {
     "where": [
@@ -9820,6 +10117,60 @@
     ],
     "rate": 165.76
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.17
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.17
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.44
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.44
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.17
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.44
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.17
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.17
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.44
+   },
    "monazite": {
     "where": [
      "1.20.1 fabric"
@@ -10368,6 +10719,78 @@
      "1.20.1 fabric"
     ],
     "rate": 66.45
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
+   "miningmaster_heart_rhodonite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.67
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
+   "miningmaster_kinetic_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.67
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
+   "miningmaster_power_pyrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.67
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
    },
    "moonlight": {
     "where": [
@@ -11052,6 +11475,78 @@
      "1.20.1 fabric"
     ],
     "rate": 70.6
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.97
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.97
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.01
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.01
+   },
+   "miningmaster_heart_rhodonite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.1
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.97
+   },
+   "miningmaster_kinetic_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.1
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.01
+   },
+   "miningmaster_power_pyrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.1
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.97
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.97
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.01
    },
    "monazite": {
     "where": [
@@ -12069,6 +12564,60 @@
     ],
     "rate": 180.83
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.36
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.36
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.36
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.36
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.36
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
+   },
    "monazite": {
     "where": [
      "1.20.1 fabric"
@@ -12849,6 +13398,60 @@
     ],
     "rate": 2.7
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.32
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.32
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.21
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.21
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.32
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.21
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.32
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.32
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.21
+   },
    "moon_stone": {
     "where": [
      "1.20.1 forge"
@@ -13486,6 +14089,60 @@
      "1.20.1 forge"
     ],
     "rate": 164.44
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.34
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.34
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.89
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.89
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.34
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.89
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.34
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.34
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.89
    },
    "moon_stone": {
     "where": [
@@ -14131,6 +14788,60 @@
     ],
     "rate": 10.78
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.27
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.27
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.85
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.85
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.27
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.85
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.27
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.27
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.85
+   },
    "moon_stone": {
     "where": [
      "1.20.1 forge"
@@ -14774,6 +15485,60 @@
      "1.20.1 forge"
     ],
     "rate": 94.21
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.98
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.98
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.32
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.32
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.98
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.32
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.98
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.98
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.32
    },
    "moon_stone": {
     "where": [
@@ -18323,6 +19088,60 @@
     ],
     "rate": 73.67
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
    "monazite": {
     "where": [
      "1.20.1 fabric"
@@ -19259,6 +20078,60 @@
     ],
     "rate": 73.67
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
    "monazite": {
     "where": [
      "1.20.1 fabric"
@@ -20194,6 +21067,60 @@
      "1.20.1 fabric"
     ],
     "rate": 73.67
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.88
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.58
    },
    "monazite": {
     "where": [
@@ -21246,6 +22173,60 @@
     ],
     "rate": 115.3
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.59
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.59
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.39
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.39
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.59
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.39
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.59
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.59
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.39
+   },
    "monazite": {
     "where": [
      "1.20.1 fabric"
@@ -22145,6 +23126,60 @@
      "1.20.1 fabric"
     ],
     "rate": 11.51
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.11
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.11
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.11
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.11
    },
    "monazite": {
     "where": [
@@ -23075,6 +24110,60 @@
      "1.20.1 fabric"
     ],
     "rate": 112.02
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.46
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.46
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.98
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.98
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.46
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.98
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.46
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.46
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.98
    },
    "monazite": {
     "where": [
@@ -24011,6 +25100,60 @@
      "1.20.1 fabric"
     ],
     "rate": 71.04
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.48
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.48
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.65
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.65
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.48
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.65
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.48
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.48
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.65
    },
    "monazite": {
     "where": [
@@ -25051,6 +26194,78 @@
      "1.20.1 fabric"
     ],
     "rate": 24.47
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.35
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.35
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
+   },
+   "miningmaster_heart_rhodonite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.49
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.35
+   },
+   "miningmaster_kinetic_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.49
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
+   },
+   "miningmaster_power_pyrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.49
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.35
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.35
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.58
    },
    "monazite": {
     "where": [
@@ -29359,6 +30574,60 @@
     ],
     "rate": 177.67
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.09
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.09
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.09
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.09
+   },
    "moon_stone": {
     "where": [
      "1.20.1 forge"
@@ -29937,6 +31206,60 @@
     ],
     "rate": 518.22
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.16
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.16
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.1
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.1
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.16
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.1
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.16
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.16
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.1
+   },
    "moon_stone": {
     "where": [
      "1.20.1 forge"
@@ -30514,6 +31837,60 @@
      "1.20.1 forge"
     ],
     "rate": 177.67
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.09
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.09
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.09
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.14
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.09
    },
    "moon_stone": {
     "where": [
@@ -31187,6 +32564,60 @@
      "1.20.1 fabric"
     ],
     "rate": 168.54
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.3
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.3
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.2
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.2
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.3
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.2
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.3
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.3
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.2
    },
    "monazite": {
     "where": [
@@ -31935,6 +33366,60 @@
     ],
     "rate": 10.42
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
    "moon_stone": {
     "where": [
      "1.20.1 forge"
@@ -32602,6 +34087,60 @@
      "1.20.1 forge"
     ],
     "rate": 10.42
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
    },
    "moon_stone": {
     "where": [
@@ -33271,6 +34810,60 @@
     ],
     "rate": 10.42
    },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.09
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.06
+   },
    "moon_stone": {
     "where": [
      "1.20.1 forge"
@@ -33677,6 +35270,24 @@
      "1.20.1 fabric"
     ],
     "rate": 7.76
+   },
+   "miningmaster_heart_rhodonite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.28
+   },
+   "miningmaster_kinetic_opal": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.28
+   },
+   "miningmaster_power_pyrite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.28
    },
    "moonlight": {
     "where": [
@@ -34227,6 +35838,60 @@
      "1.20.1 fabric"
     ],
     "rate": 234.91
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.89
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.89
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.59
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.59
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.89
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.59
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.89
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.89
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.59
    },
    "monazite": {
     "where": [
@@ -35132,6 +36797,60 @@
      "1.20.1 fabric"
     ],
     "rate": 33.46
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.24
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.24
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.24
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.24
    },
    "monazite": {
     "where": [
@@ -36924,6 +38643,60 @@
      "1.20.1 fabric"
     ],
     "rate": 294.7
+   },
+   "miningmaster_dive_aquamarine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.92
+   },
+   "miningmaster_divine_beryl": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.92
+   },
+   "miningmaster_fire_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.61
+   },
+   "miningmaster_haste_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.61
+   },
+   "miningmaster_ice_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.92
+   },
+   "miningmaster_lucky_citrine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.61
+   },
+   "miningmaster_spider_kunzite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.92
+   },
+   "miningmaster_spirit_garnet": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.92
+   },
+   "miningmaster_unbreaking_iolite": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.61
    },
    "monazite": {
     "where": [

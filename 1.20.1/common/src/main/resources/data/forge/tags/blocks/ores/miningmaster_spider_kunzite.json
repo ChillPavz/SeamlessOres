@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_miningmaster_spider_kunzite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_miningmaster_spider_kunzite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_miningmaster_spider_kunzite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_miningmaster_spider_kunzite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_miningmaster_spider_kunzite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_miningmaster_spider_kunzite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_miningmaster_spider_kunzite_ore",
+      "required": false
+    }
+  ]
+}

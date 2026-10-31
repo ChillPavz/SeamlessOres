@@ -373,6 +373,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_miningmaster_spider_kunzite_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -629,6 +637,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_miningmaster_haste_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_miningmaster_ice_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -878,6 +902,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_miningmaster_lucky_citrine_ore",
       "required": false
     },
     {
@@ -1201,6 +1229,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_miningmaster_haste_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_miningmaster_ice_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_grimestone_iron_ore",
       "required": false
     },
@@ -1385,6 +1429,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_iron_ore",
       "required": false
     },
@@ -1530,6 +1578,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_miningmaster_lucky_citrine_ore",
       "required": false
     }
   ]

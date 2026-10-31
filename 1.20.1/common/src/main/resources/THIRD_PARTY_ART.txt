@@ -317,6 +317,24 @@ Mekanism by Aidan C. Brady, MIT:
   assets/seamlessores/textures/block/mek_tin_overlay.png
   assets/seamlessores/textures/block/mek_uranium_overlay.png
 
+Mining Master by Infernal Studios, Apache-2.0:
+  assets/seamlessores/textures/block/miningmaster_dive_aquamarine_overlay.png
+  assets/seamlessores/textures/block/miningmaster_divine_beryl_overlay.png
+  assets/seamlessores/textures/block/miningmaster_fire_ruby_deepslate_overlay.png
+  assets/seamlessores/textures/block/miningmaster_fire_ruby_overlay.png
+  assets/seamlessores/textures/block/miningmaster_haste_peridot_deepslate_overlay.png
+  assets/seamlessores/textures/block/miningmaster_haste_peridot_overlay.png
+  assets/seamlessores/textures/block/miningmaster_heart_rhodonite_overlay.png
+  assets/seamlessores/textures/block/miningmaster_ice_sapphire_deepslate_overlay.png
+  assets/seamlessores/textures/block/miningmaster_ice_sapphire_overlay.png
+  assets/seamlessores/textures/block/miningmaster_kinetic_opal_overlay.png
+  assets/seamlessores/textures/block/miningmaster_lucky_citrine_deepslate_overlay.png
+  assets/seamlessores/textures/block/miningmaster_lucky_citrine_overlay.png
+  assets/seamlessores/textures/block/miningmaster_power_pyrite_overlay.png
+  assets/seamlessores/textures/block/miningmaster_spider_kunzite_overlay.png
+  assets/seamlessores/textures/block/miningmaster_spirit_garnet_overlay.png
+  assets/seamlessores/textures/block/miningmaster_unbreaking_iolite_overlay.png
+
 Modern Industrialization by Azerococo, Technici4n, MIT:
   assets/seamlessores/textures/block/antimony_overlay.png
   assets/seamlessores/textures/block/lignite_coal_overlay.png

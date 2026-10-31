@@ -1,0 +1,108 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_miningmaster_lucky_citrine_ore",
+      "required": false
+    }
+  ]
+}

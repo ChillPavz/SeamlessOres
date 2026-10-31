@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_miningmaster_dive_aquamarine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_miningmaster_dive_aquamarine_ore",
+      "required": false
+    }
+  ]
+}

@@ -1352,6 +1352,68 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("bronze", "tin_ore_block"), of("bronze", "deepslate_tin_ore_block"), null,
             NONE, null, false, Set.of());
 
+    // --- Mining Master (mod id miningmaster, Apache-2.0): 5 to 10 XP, placed by its own gem feature (ForeignOreTargets); air malachite falls in meteorites, so no variants. Forge at 1.20.1 ---
+    public static final OreType MIM_DIVE_AQUAMARINE = ore(
+            "miningmaster_dive_aquamarine", "miningmaster_dive_aquamarine", "miningmaster_dive_aquamarine_deepslate", "miningmaster",
+            of("miningmaster", "dive_aquamarine_ore"), of("miningmaster", "deepslate_dive_aquamarine_ore"), null,
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType MIM_DIVINE_BERYL = ore(
+            "miningmaster_divine_beryl", "miningmaster_divine_beryl", null, "miningmaster",
+            of("miningmaster", "divine_beryl_ore"), of("miningmaster", "deepslate_divine_beryl_ore"), null,
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType MIM_FIRE_RUBY = ore(
+            "miningmaster_fire_ruby", "miningmaster_fire_ruby", "miningmaster_fire_ruby_deepslate", "miningmaster",
+            of("miningmaster", "fire_ruby_ore"), of("miningmaster", "deepslate_fire_ruby_ore"), null,
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType MIM_HASTE_PERIDOT = ore(
+            "miningmaster_haste_peridot", "miningmaster_haste_peridot", "miningmaster_haste_peridot_deepslate", "miningmaster",
+            of("miningmaster", "haste_peridot_ore"), of("miningmaster", "deepslate_haste_peridot_ore"), null,
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType MIM_ICE_SAPPHIRE = ore(
+            "miningmaster_ice_sapphire", "miningmaster_ice_sapphire", "miningmaster_ice_sapphire_deepslate", "miningmaster",
+            of("miningmaster", "ice_sapphire_ore"), of("miningmaster", "deepslate_ice_sapphire_ore"), null,
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType MIM_LUCKY_CITRINE = ore(
+            "miningmaster_lucky_citrine", "miningmaster_lucky_citrine", "miningmaster_lucky_citrine_deepslate", "miningmaster",
+            of("miningmaster", "lucky_citrine_ore"), of("miningmaster", "deepslate_lucky_citrine_ore"), null,
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType MIM_SPIDER_KUNZITE = ore(
+            "miningmaster_spider_kunzite", "miningmaster_spider_kunzite", null, "miningmaster",
+            of("miningmaster", "spider_kunzite_ore"), of("miningmaster", "deepslate_spider_kunzite_ore"), null,
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType MIM_SPIRIT_GARNET = ore(
+            "miningmaster_spirit_garnet", "miningmaster_spirit_garnet", "miningmaster_spirit_garnet_deepslate", "miningmaster",
+            of("miningmaster", "spirit_garnet_ore"), of("miningmaster", "deepslate_spirit_garnet_ore"), null,
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType MIM_UNBREAKING_IOLITE = ore(
+            "miningmaster_unbreaking_iolite", "miningmaster_unbreaking_iolite", "miningmaster_unbreaking_iolite_deepslate", "miningmaster",
+            of("miningmaster", "unbreaking_iolite_ore"), of("miningmaster", "deepslate_unbreaking_iolite_ore"), null,
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType MIM_HEART_RHODONITE = ore(
+            "miningmaster_heart_rhodonite", "miningmaster_heart_rhodonite", null, "miningmaster",
+            null, null, of("miningmaster", "heart_rhodonite_ore"),
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F);
+    public static final OreType MIM_KINETIC_OPAL = ore(
+            "miningmaster_kinetic_opal", "miningmaster_kinetic_opal", null, "miningmaster",
+            null, null, of("miningmaster", "kinetic_opal_ore"),
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F);
+    public static final OreType MIM_POWER_PYRITE = ore(
+            "miningmaster_power_pyrite", "miningmaster_power_pyrite", null, "miningmaster",
+            null, null, of("miningmaster", "power_pyrite_ore"),
+            UniformInt.of(5, 10), null, false, Set.of())
+            .withStrength(3.0F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1413,7 +1475,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     PR_ELECTROTINE, PR_PERIDOT, PR_RUBY, PR_SAPPHIRE, PR_SILVER, PR_TIN,
                     JEG_BRIMSTONE, JEG_SCRAP,
                     CGS_LEAD, CGS_SULFUR,
-                    BRZ_TIN);
+                    BRZ_TIN,
+                    MIM_DIVE_AQUAMARINE, MIM_DIVINE_BERYL, MIM_FIRE_RUBY, MIM_HASTE_PERIDOT, MIM_ICE_SAPPHIRE, MIM_LUCKY_CITRINE, MIM_SPIDER_KUNZITE, MIM_SPIRIT_GARNET, MIM_UNBREAKING_IOLITE, MIM_HEART_RHODONITE, MIM_KINETIC_OPAL, MIM_POWER_PYRITE);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

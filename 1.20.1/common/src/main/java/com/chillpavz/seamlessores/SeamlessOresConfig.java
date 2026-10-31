@@ -300,6 +300,9 @@ public final class SeamlessOresConfig {
     /** Whether Bronze variants generate. Pure restyle. */
     public static boolean bronze = true;
 
+    /** Whether Mining Master variants generate. Pure restyle. */
+    public static boolean miningMaster = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -371,6 +374,7 @@ public final class SeamlessOresConfig {
             case "jeg" -> justEnoughGuns;
             case "cgs" -> createGunsmithing;
             case "bronze" -> bronze;
+            case "miningmaster" -> miningMaster;
             default -> true;
         };
     }
@@ -596,6 +600,7 @@ public final class SeamlessOresConfig {
         public boolean justEnoughGuns = true;
         public boolean createGunsmithing = true;
         public boolean bronze = true;
+        public boolean miningMaster = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -689,6 +694,7 @@ public final class SeamlessOresConfig {
         justEnoughGuns = values.justEnoughGuns;
         createGunsmithing = values.createGunsmithing;
         bronze = values.bronze;
+        miningMaster = values.miningMaster;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

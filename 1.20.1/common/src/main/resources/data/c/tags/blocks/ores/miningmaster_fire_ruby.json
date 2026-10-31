@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:blackstone_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_miningmaster_fire_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_miningmaster_fire_ruby_ore",
+      "required": false
+    }
+  ]
+}
