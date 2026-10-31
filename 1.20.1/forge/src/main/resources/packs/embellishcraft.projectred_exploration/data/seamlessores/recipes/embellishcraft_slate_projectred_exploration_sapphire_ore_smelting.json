@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "seamlessores:embellishcraft_slate_projectred_exploration_sapphire_ore"
+  },
+  "result": {
+    "item": "projectred_core:sapphire"
+  }
+}

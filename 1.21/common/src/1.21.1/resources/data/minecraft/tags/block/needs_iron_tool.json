@@ -180,6 +180,14 @@
       "id": "seamlessores:granite_denseores_dense_emerald_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_projectred_exploration_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -324,6 +332,14 @@
       "id": "seamlessores:diorite_denseores_dense_emerald_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_projectred_exploration_silver_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     "seamlessores:andesite_diamond_ore",
     "seamlessores:andesite_emerald_ore",
@@ -450,6 +466,14 @@
     },
     {
       "id": "seamlessores:andesite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_projectred_exploration_silver_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
@@ -622,6 +646,14 @@
     },
     {
       "id": "seamlessores:tuff_sulfurpotassiummod_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_projectred_exploration_silver_ore",
       "required": false
     },
     "seamlessores:dripstone_gold_ore",
@@ -968,6 +1000,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_gold_ore",
       "required": false
     },
@@ -1160,6 +1212,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_crimsite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_gold_ore",
       "required": false
     },
@@ -1241,6 +1297,10 @@
     },
     {
       "id": "seamlessores:create_limestone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -1408,6 +1468,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_projectred_exploration_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_cobblemon_leaf_stone_ore",
       "required": false
     },
@@ -1501,6 +1581,10 @@
     },
     {
       "id": "seamlessores:calcite_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -1624,6 +1708,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_projectred_exploration_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_gold_ore",
       "required": false
     },
@@ -1669,6 +1773,10 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -1744,6 +1852,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_gold_ore",
       "required": false
     },
@@ -1813,6 +1929,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -1961,6 +2081,14 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_sulfurpotassiummod_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -2156,6 +2284,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_projectred_exploration_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_mythicupgrades_ruby_ore",
       "required": false
     },
@@ -2304,6 +2448,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_gold_ore",
       "required": false
     },
@@ -2397,6 +2545,26 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_projectred_exploration_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -2505,6 +2673,14 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_projectred_exploration_sapphire_ore",
       "required": false
     },
     {
@@ -2684,6 +2860,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_gold_ore",
       "required": false
     },
@@ -2828,6 +3012,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_gold_ore",
       "required": false
     },
@@ -2869,6 +3057,10 @@
     },
     {
       "id": "seamlessores:quark_jasper_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -2948,6 +3140,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_gold_ore",
       "required": false
     },
@@ -3005,6 +3201,14 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -3085,6 +3289,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -3320,6 +3528,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_gold_ore",
       "required": false
     },
@@ -3444,6 +3656,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_gold_ore",
       "required": false
     },
@@ -3532,6 +3748,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_gold_ore",
       "required": false
     },
@@ -3605,6 +3833,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -4012,6 +4244,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_darkslate_gold_ore",
       "required": false
     },
@@ -4108,6 +4344,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_grimestone_gold_ore",
       "required": false
     },
@@ -4188,6 +4444,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_gold_ore",
       "required": false
     },
@@ -4252,6 +4512,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_aridrock_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_chert_create_zinc_ore",
       "required": false
     },
@@ -4305,6 +4569,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_chert_electrodynamics_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_projectred_exploration_silver_ore",
       "required": false
     },
     {

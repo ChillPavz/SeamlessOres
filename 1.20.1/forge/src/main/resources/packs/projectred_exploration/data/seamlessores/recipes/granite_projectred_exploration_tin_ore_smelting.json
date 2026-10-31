@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:granite_projectred_exploration_tin_ore"
+  },
+  "result": {
+    "item": "projectred_exploration:tin_ingot"
+  }
+}

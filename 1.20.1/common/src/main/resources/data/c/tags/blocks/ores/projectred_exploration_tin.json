@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_projectred_exploration_tin_ore",
+      "required": false
+    }
+  ]
+}

@@ -24,7 +24,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**460 blocks** in the game's own rock, in the `seamlessores` namespace.
+**469 blocks** in the game's own rock, in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -455,6 +455,14 @@ touching ore of the same type across different host stones.
 | Zinc | `granite_railcraft_zinc_ore` | `diorite_railcraft_zinc_ore` | `andesite_railcraft_zinc_ore` | `tuff_railcraft_zinc_ore` | `dripstone_railcraft_zinc_ore` |
 | Sulfur |   |   | `andesite_railcraft_sulfur_ore` | `tuff_railcraft_sulfur_ore` |   |
 
+**Project Red Exploration, Overworld, requires `projectred_exploration`**
+
+| | granite | diorite | andesite | tuff |
+|---|---|---|---|---|
+| Electrotine | `granite_projectred_exploration_electrotine_ore` | `diorite_projectred_exploration_electrotine_ore` | `andesite_projectred_exploration_electrotine_ore` | `tuff_projectred_exploration_electrotine_ore` |
+| Silver | `granite_projectred_exploration_silver_ore` | `diorite_projectred_exploration_silver_ore` | `andesite_projectred_exploration_silver_ore` | `tuff_projectred_exploration_silver_ore` |
+| Tin | `granite_projectred_exploration_tin_ore` |   |   |   |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
 Minecraft version:
@@ -462,7 +470,7 @@ Minecraft version:
 | Loader | Blocks | Supported mods available here |
 |---|---|---|
 | Fabric | 165 | Basic Nether Ores, BetterNether, Cobblemon, Energized Power, Mythic Metals, Mythic Upgrades, Sulfur and Potassium, Tech Reborn, Things |
-| NeoForge | 374 | Actually Additions, Born in Chaos, Cobblemon, Create, Create: New Age, Create: TFMG, Dense Mekanism, Dense Ores, Electrodynamics, Energized Power, Epic Paladins, EvilCraft, Expanded Delight, Extreme Reactors, Hazen 'N Stuff, Ice and Fire, Immersive Engineering, Malum, Mekanism, Modern Industrialization, Mystical Agriculture, Mythic Upgrades, Occultism, Oreganized, Powah, RFTools Base, Railcraft Reborn, Silent Gear, Silent's Gems, Superb Warfare, Theurgy, Treasure2, Werewolves: Become a Beast |
+| NeoForge | 383 | Actually Additions, Born in Chaos, Cobblemon, Create, Create: New Age, Create: TFMG, Dense Mekanism, Dense Ores, Electrodynamics, Energized Power, Epic Paladins, EvilCraft, Expanded Delight, Extreme Reactors, Hazen 'N Stuff, Ice and Fire, Immersive Engineering, Malum, Mekanism, Modern Industrialization, Mystical Agriculture, Mythic Upgrades, Occultism, Oreganized, Powah, Project Red Exploration, RFTools Base, Railcraft Reborn, Silent Gear, Silent's Gems, Superb Warfare, Theurgy, Treasure2, Werewolves: Become a Beast |
 | Forge | 46 | none at this Minecraft version |
 
 The registered block set is derived from which mods are loaded rather than from config, so
@@ -490,7 +498,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**2195 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**2260 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric, NeoForge and Forge)
 
@@ -558,6 +566,11 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Deep Blackstone |
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Deep Blackstone |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Deep Blackstone |
+| Electrotine | `projectred_exploration_electrotine` | Project Red Exploration `projectred_exploration` | Deep Blackstone |
+| Peridot | `projectred_exploration_peridot` | Project Red Exploration `projectred_exploration` | Deep Blackstone |
+| Ruby | `projectred_exploration_ruby` | Project Red Exploration `projectred_exploration` | Deep Blackstone |
+| Sapphire | `projectred_exploration_sapphire` | Project Red Exploration `projectred_exploration` | Deep Blackstone |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Deep Blackstone |
 
 **Blockus, requires `blockus`** (Fabric)
 
@@ -719,6 +732,12 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Limestone, Scoria, Smooth Basalt |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Limestone |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Electrotine | `projectred_exploration_electrotine` | Project Red Exploration `projectred_exploration` | Crimsite, Scoria, Smooth Basalt |
+| Peridot | `projectred_exploration_peridot` | Project Red Exploration `projectred_exploration` | Scoria, Smooth Basalt |
+| Ruby | `projectred_exploration_ruby` | Project Red Exploration `projectred_exploration` | Scoria, Smooth Basalt |
+| Sapphire | `projectred_exploration_sapphire` | Project Red Exploration `projectred_exploration` | Scoria, Smooth Basalt |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Limestone |
 
 **Create: TFMG, requires `tfmg`** (NeoForge)
 
@@ -781,6 +800,8 @@ Stones: Bauxite `tfmg_bauxite`, Galena `tfmg_galena`, Lignite `tfmg_lignite`
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | every stone |
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Galena |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Galena, Lignite |
+| Electrotine | `projectred_exploration_electrotine` | Project Red Exploration `projectred_exploration` | Galena |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | every stone |
 
 **Twigs, requires `twigs`** (Fabric and NeoForge)
 
@@ -927,6 +948,11 @@ Stones: Rhyolite `twigs_rhyolite`, Schist `twigs_schist`, Bloodstone `twigs_bloo
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Rhyolite |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Rhyolite |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Rhyolite, Schist |
+| Electrotine | `projectred_exploration_electrotine` | Project Red Exploration `projectred_exploration` | Rhyolite, Schist |
+| Ruby | `projectred_exploration_ruby` | Project Red Exploration `projectred_exploration` | Schist |
+| Sapphire | `projectred_exploration_sapphire` | Project Red Exploration `projectred_exploration` | Schist |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Rhyolite, Schist |
+| Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Rhyolite |
 
 **Born in Chaos, requires `born_in_chaos_v1`** (NeoForge)
 
@@ -981,6 +1007,7 @@ Stones: Black Argillite `born_in_chaos_v1_black_argillite`
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Black Argillite |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Black Argillite |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Black Argillite |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Black Argillite |
 
 **EmbellishCraft, requires `embellishcraft`** (NeoForge)
 
@@ -1078,6 +1105,12 @@ Stones: Basalt `embellishcraft_basalt`, Slate `embellishcraft_slate`, Marble `em
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Basalt |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Marble, Gneiss |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Basalt, Slate, Gneiss, Larvikite |
+| Electrotine | `projectred_exploration_electrotine` | Project Red Exploration `projectred_exploration` | Basalt, Gneiss |
+| Peridot | `projectred_exploration_peridot` | Project Red Exploration `projectred_exploration` | Basalt |
+| Ruby | `projectred_exploration_ruby` | Project Red Exploration `projectred_exploration` | Basalt, Slate |
+| Sapphire | `projectred_exploration_sapphire` | Project Red Exploration `projectred_exploration` | Basalt, Slate |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Basalt, Gneiss |
+| Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Gneiss |
 
 **Quark, requires `quark`** (NeoForge)
 
@@ -1147,6 +1180,8 @@ Stones: Limestone `quark_limestone`, Jasper `quark_jasper`, Shale `quark_shale`
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Limestone |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Limestone |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | every stone |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | every stone |
+| Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Limestone |
 
 **Forbidden and Arcanus, requires `forbidden_arcanus`** (NeoForge)
 
@@ -1180,6 +1215,8 @@ Stones: Darkstone `forbidden_arcanus_darkstone`
 | Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Darkstone |
 | Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Darkstone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Darkstone |
+| Peridot | `projectred_exploration_peridot` | Project Red Exploration `projectred_exploration` | Darkstone |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Darkstone |
 
 **Let's Do Meadow, requires `meadow`** (Fabric and NeoForge)
 
@@ -1241,6 +1278,8 @@ Stones: Limestone `meadow_limestone`
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Limestone |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Limestone |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Limestone |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Limestone |
+| Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Limestone |
 
 **Mythic Upgrades, requires `mythicupgrades`** (Fabric and NeoForge)
 
@@ -1344,6 +1383,7 @@ Stones: Mossy Stone `regions_unexplored_mossy_stone`, Argillite `regions_unexplo
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Mossy Stone, Chalk |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Mossy Stone, Chalk |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Argillite |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Argillite |
 
 **Promenade, requires `promenade`** (Fabric and NeoForge)
 
@@ -1426,6 +1466,9 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Blunite |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | every stone |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Asphalt |
+| Electrotine | `projectred_exploration_electrotine` | Project Red Exploration `projectred_exploration` | Blunite |
+| Peridot | `projectred_exploration_peridot` | Project Red Exploration `projectred_exploration` | Blunite |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | every stone |
 
 **Spawn, requires `spawn`** (NeoForge)
 
@@ -1488,6 +1531,8 @@ Stones: Reefstone `spawn_reefstone`
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Reefstone |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Reefstone |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Reefstone |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Reefstone |
+| Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Reefstone |
 
 **Wilder Wild, requires `wilderwild`** (Fabric)
 
@@ -1660,6 +1705,7 @@ Stones: Ancient Sandstone `yungscavebiomes_ancient_sandstone`
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Ancient Sandstone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Ancient Sandstone |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Ancient Sandstone |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Ancient Sandstone |
 
 **Darker Depths, requires `darkerdepths`** (NeoForge)
 
@@ -1732,6 +1778,11 @@ Stones: Darkslate `darkerdepths_darkslate`, Grimestone `darkerdepths_grimestone`
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | every stone |
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Darkslate |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | every stone |
+| Electrotine | `projectred_exploration_electrotine` | Project Red Exploration `projectred_exploration` | Darkslate |
+| Peridot | `projectred_exploration_peridot` | Project Red Exploration `projectred_exploration` | Darkslate |
+| Ruby | `projectred_exploration_ruby` | Project Red Exploration `projectred_exploration` | Darkslate |
+| Sapphire | `projectred_exploration_sapphire` | Project Red Exploration `projectred_exploration` | Darkslate |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | every stone |
 
 **Nature's Spirit, requires `natures_spirit`** (Fabric and NeoForge)
 
@@ -1791,6 +1842,7 @@ Stones: Chert `natures_spirit_chert`, Travertine `natures_spirit_travertine`, Wh
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Travertine, White Chalk |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Travertine, White Chalk |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Chert |
+| Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Chert |
 
 **BetterEnd, requires `betterend`** (Fabric)
 
@@ -1891,7 +1943,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 2655 blocks takes **415 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 2729 blocks takes **421 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -1899,7 +1951,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `alexandrite` `ametrine` `ammolite` `anglesite` `antimony` `aquamarine` `aquarium` `arclight` `azure_silver` `banglum` `betternether_cincinnasite` `betternether_nether_ruby` `black_diamond` `black_quartz` `blazing_quartz` `bno_aluminum` `bno_lead` `bno_silver` `bno_zinc` `bort` `brilliant` `carmot` `carnelian` `chaos` `chlorophyte` `cinnabar` `citrine` `coal` `copper` `createpropulsion_platinum` `cryorium` `dark` `dawn_stone_biomeswevegone_dacite` `dawn_stone_biomeswevegone_white_dacite` `dawn_stone_blockus_marble` `dawn_stone_dripstone` `dawn_stone_embellishcraft_gneiss` `dawn_stone_embellishcraft_marble` `dawn_stone_granite` `dawn_stone_minecraft_calcite` `dawn_stone_regions_unexplored_mossy_stone` `dawn_stone_regions_unexplored_mossy_stone_mirrored` `dawn_stone_twigs_rhyolite` `dawn_stone_twigs_rhyolite_end` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `dimensional_shard` `dreadstone` `dusk_stone_andesite` `dusk_stone_blockus_bluestone` `dusk_stone_blockus_viridite` `dusk_stone_born_in_chaos_v1_black_argillite` `dusk_stone_create_scoria` `dusk_stone_darkerdepths_darkslate` `dusk_stone_darkerdepths_darkslate_end` `dusk_stone_darkerdepths_grimestone` `dusk_stone_darkerdepths_grimestone_end` `dusk_stone_embellishcraft_basalt` `dusk_stone_forbidden_arcanus_darkstone` `dusk_stone_minecraft_blackstone` `dusk_stone_minecraft_blackstone_end` `dusk_stone_minecraft_smooth_basalt` `dusk_stone_promenade_asphalt` `dusk_stone_quark_shale` `dusk_stone_regions_unexplored_argillite` `dusk_stone_regions_unexplored_argillite_mirrored` `dusk_stone_regions_unexplored_mossy_stone` `dusk_stone_regions_unexplored_mossy_stone_mirrored` `dusk_stone_tfmg_lignite` `dusk_stone_tuff` `dusk_stone_wilderwild_gabbro` `dusk_stone_wilderwild_gabbro_mirrored` `electrodynamics_aluminum` `electrodynamics_chromium` `electrodynamics_fluorite` `electrodynamics_lead` `electrodynamics_lithium` `electrodynamics_lithium_deepslate` `electrodynamics_molybdenum` `electrodynamics_monazite` `electrodynamics_niter` `electrodynamics_salt` `electrodynamics_silver` `electrodynamics_sulfur` `electrodynamics_sylvite` `electrodynamics_thorium` `electrodynamics_tin` `electrodynamics_titanium` `electrodynamics_uranium` `electrodynamics_vanadium` `emerald` `energized_tin` `epicpaladins_bloodstone` `epicpaladins_jade` `expandeddelight_salt` `fire_stone_andesite` `fire_stone_basalt_side` `fire_stone_basalt_top` `fire_stone_biomeswevegone_dacite` `fire_stone_biomeswevegone_white_dacite` `fire_stone_blackstone` `fire_stone_blackstone_top` `fire_stone_create_crimsite_0` `fire_stone_create_crimsite_1` `fire_stone_create_crimsite_2` `fire_stone_create_crimsite_3` `fire_stone_create_scorchia` `fire_stone_create_scoria` `fire_stone_darkerdepths_darkslate` `fire_stone_darkerdepths_darkslate_end` `fire_stone_embellishcraft_basalt` `fire_stone_minecraft_blackstone` `fire_stone_minecraft_blackstone_end` `fire_stone_minecraft_smooth_basalt` `fire_stone_regions_unexplored_mossy_stone` `fire_stone_regions_unexplored_mossy_stone_mirrored` `fire_stone_tfmg_galena_0` `fire_stone_tfmg_galena_1` `fire_stone_tfmg_galena_2` `fire_stone_tfmg_galena_3` `fire_stone_tuff` `fire_stone_twigs_bloodstone` `fire_stone_twigs_rhyolite` `fire_stone_twigs_rhyolite_end` `galena` `garnet` `gleaming` `gold` `heliodor` `ice_stone_blockus_marble` `ice_stone_create_asurine_0` `ice_stone_create_asurine_1` `ice_stone_create_asurine_2` `ice_stone_create_asurine_3` `ice_stone_diorite` `ice_stone_dripstone` `ice_stone_embellishcraft_larvikite` `ice_stone_embellishcraft_marble` `ice_stone_embellishcraft_slate` `ice_stone_minecraft_calcite` `ice_stone_promenade_blunite` `ice_stone_regions_unexplored_mossy_stone` `ice_stone_regions_unexplored_mossy_stone_mirrored` `ice_stone_twigs_schist` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `ie_aluminum` `ie_lead` `ie_silver` `ie_uranium` `inferium` `iolite` `iridium` `iron` `jade` `kyanite` `kyber` `lapis` `lead` `leaf_stone_atmospheric_ivory_travertine` `leaf_stone_atmospheric_ivory_travertine_end` `leaf_stone_atmospheric_peach_travertine` `leaf_stone_atmospheric_peach_travertine_end` `leaf_stone_atmospheric_persimmon_travertine` `leaf_stone_atmospheric_persimmon_travertine_end` `leaf_stone_atmospheric_saffron_travertine` `leaf_stone_atmospheric_saffron_travertine_end` `leaf_stone_blockus_limestone` `leaf_stone_blockus_viridite` `leaf_stone_born_in_chaos_v1_black_argillite` `leaf_stone_create_limestone` `leaf_stone_create_veridium_0` `leaf_stone_create_veridium_1` `leaf_stone_create_veridium_2` `leaf_stone_create_veridium_3` `leaf_stone_darkerdepths_grimestone` `leaf_stone_darkerdepths_grimestone_end` `leaf_stone_meadow_limestone` `leaf_stone_natures_spirit_travertine` `leaf_stone_natures_spirit_white_chalk` `leaf_stone_promenade_asphalt` `leaf_stone_quark_limestone` `leaf_stone_quark_shale` `leaf_stone_regions_unexplored_argillite` `leaf_stone_regions_unexplored_argillite_mirrored` `leaf_stone_regions_unexplored_chalk` `leaf_stone_regions_unexplored_mossy_stone` `leaf_stone_regions_unexplored_mossy_stone_mirrored` `leaf_stone_spawn_reefstone` `leaf_stone_tfmg_bauxite_0` `leaf_stone_tfmg_bauxite_1` `leaf_stone_tfmg_bauxite_2` `leaf_stone_tfmg_bauxite_3` `leaf_stone_tfmg_lignite` `leaf_stone_tuff` `lignite_coal` `lithium` `manganese` `mek_fluorite` `mek_lead` `mek_tin` `mek_uranium` `mi_bauxite` `mi_lead` `mi_nickel` `mi_tin` `midas_gold` `moldavite` `monazite` `moon_stone_biomeswevegone_dacite` `moon_stone_biomeswevegone_white_dacite` `moon_stone_blockus_bluestone` `moon_stone_diorite` `moon_stone_embellishcraft_gneiss` `moon_stone_embellishcraft_larvikite` `moon_stone_embellishcraft_slate` `moon_stone_forbidden_arcanus_darkstone` `moon_stone_granite` `moon_stone_regions_unexplored_mossy_stone` `moon_stone_regions_unexplored_mossy_stone_mirrored` `moon_stone_twigs_rhyolite` `moon_stone_twigs_rhyolite_end` `moon_stone_twigs_schist` `moon_stone_wilderwild_gabbro` `moon_stone_wilderwild_gabbro_mirrored` `moonlight` `morkite` `mythril` `natural_quartz` `necoium` `nether_banglum` `nether_gold` `nickel` `occultism_silver` `opal_legendary_monsters_enderstone` `opal_tfmg_bauxite_0` `opal_tfmg_bauxite_1` `opal_tfmg_bauxite_2` `opal_tfmg_bauxite_3` `opal_tuff` `opal_twigs_rhyolite` `opal_twigs_rhyolite_end` `opal_unusualend_gloopslate` `opal_unusualend_gloopstone` `opal_unusualend_gneiss` `opal_unusualend_gneiss_end` `opal_unusualend_raw_purpur_block` `opal_unusualend_warped_stone` `oreganized_lead` `oreganized_silver` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `railcraft_lead` `railcraft_nickel` `railcraft_silver` `railcraft_sulfur` `railcraft_tin` `railcraft_zinc` `redstone` `rose_quartz` `ruby` `runite` `sal_ammoniac` `salt` `sapphire` `sheldonite` `shiny_stone_blockus_marble` `shiny_stone_dripstone` `shiny_stone_embellishcraft_gneiss` `shiny_stone_embellishcraft_marble` `shiny_stone_embellishcraft_slate` `shiny_stone_granite` `shiny_stone_minecraft_calcite` `shiny_stone_regions_unexplored_mossy_stone` `shiny_stone_regions_unexplored_mossy_stone_mirrored` `shiny_stone_twigs_schist` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sodalite` `soulstone` `sphalerite` `starrite` `stormyx` `sulfurpotassiummod_potassium` `sulfurpotassiummod_sulfur` `sun_stone_andesite` `sun_stone_biomeswevegone_dacite` `sun_stone_biomeswevegone_white_dacite` `sun_stone_create_ochrum_0` `sun_stone_create_ochrum_1` `sun_stone_create_ochrum_2` `sun_stone_create_ochrum_3` `sun_stone_create_scoria` `sun_stone_darkerdepths_darkslate` `sun_stone_darkerdepths_darkslate_end` `sun_stone_embellishcraft_basalt` `sun_stone_minecraft_blackstone` `sun_stone_minecraft_blackstone_end` `sun_stone_minecraft_smooth_basalt` `sun_stone_regions_unexplored_mossy_stone` `sun_stone_regions_unexplored_mossy_stone_mirrored` `sun_stone_tuff` `sun_stone_twigs_rhyolite` `sun_stone_twigs_rhyolite_end` `superbwarfare_galena` `superbwarfare_scheelite` `superbwarfare_silver` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_peridot` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_tungsten` `thorium` `thunder_stone_blockus_bluestone` `thunder_stone_create_ochrum_0` `thunder_stone_create_ochrum_1` `thunder_stone_create_ochrum_2` `thunder_stone_create_ochrum_3` `thunder_stone_diorite` `thunder_stone_embellishcraft_gneiss` `thunder_stone_embellishcraft_larvikite` `thunder_stone_embellishcraft_slate` `thunder_stone_granite` `thunder_stone_regions_unexplored_mossy_stone` `thunder_stone_regions_unexplored_mossy_stone_mirrored` `thunder_stone_tfmg_galena_0` `thunder_stone_tfmg_galena_1` `thunder_stone_tfmg_galena_2` `thunder_stone_tfmg_galena_3` `thunder_stone_twigs_schist` `thunder_stone_wilderwild_gabbro` `thunder_stone_wilderwild_gabbro_mirrored` `tin` `topaz` `treasure2_onyx` `treasure2_ruby` `treasure2_sapphire` `treasure2_topaz` `tungsten` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `uranium` `water_stone_atmospheric_ivory_travertine` `water_stone_atmospheric_ivory_travertine_end` `water_stone_atmospheric_peach_travertine` `water_stone_atmospheric_peach_travertine_end` `water_stone_atmospheric_persimmon_travertine` `water_stone_atmospheric_persimmon_travertine_end` `water_stone_atmospheric_saffron_travertine` `water_stone_atmospheric_saffron_travertine_end` `water_stone_blockus_limestone` `water_stone_blockus_marble` `water_stone_create_asurine_0` `water_stone_create_asurine_1` `water_stone_create_asurine_2` `water_stone_create_asurine_3` `water_stone_create_limestone` `water_stone_dripstone` `water_stone_embellishcraft_marble` `water_stone_meadow_limestone` `water_stone_minecraft_calcite` `water_stone_natures_spirit_travertine` `water_stone_natures_spirit_white_chalk` `water_stone_promenade_blunite` `water_stone_quark_limestone` `water_stone_regions_unexplored_chalk` `water_stone_regions_unexplored_mossy_stone` `water_stone_regions_unexplored_mossy_stone_mirrored` `water_stone_spawn_reefstone` `werewolves_silver` `werewolves_silver_deepslate` `white_diamond` `yellorite` `zenalite` `zinc`
+`adamantite` `alexandrite` `ametrine` `ammolite` `anglesite` `antimony` `aquamarine` `aquarium` `arclight` `azure_silver` `banglum` `betternether_cincinnasite` `betternether_nether_ruby` `black_diamond` `black_quartz` `blazing_quartz` `bno_aluminum` `bno_lead` `bno_silver` `bno_zinc` `bort` `brilliant` `carmot` `carnelian` `chaos` `chlorophyte` `cinnabar` `citrine` `coal` `copper` `createpropulsion_platinum` `cryorium` `dark` `dawn_stone_biomeswevegone_dacite` `dawn_stone_biomeswevegone_white_dacite` `dawn_stone_blockus_marble` `dawn_stone_dripstone` `dawn_stone_embellishcraft_gneiss` `dawn_stone_embellishcraft_marble` `dawn_stone_granite` `dawn_stone_minecraft_calcite` `dawn_stone_regions_unexplored_mossy_stone` `dawn_stone_regions_unexplored_mossy_stone_mirrored` `dawn_stone_twigs_rhyolite` `dawn_stone_twigs_rhyolite_end` `dense_fluorite` `dense_lead` `dense_osmium` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `dimensional_shard` `dreadstone` `dusk_stone_andesite` `dusk_stone_blockus_bluestone` `dusk_stone_blockus_viridite` `dusk_stone_born_in_chaos_v1_black_argillite` `dusk_stone_create_scoria` `dusk_stone_darkerdepths_darkslate` `dusk_stone_darkerdepths_darkslate_end` `dusk_stone_darkerdepths_grimestone` `dusk_stone_darkerdepths_grimestone_end` `dusk_stone_embellishcraft_basalt` `dusk_stone_forbidden_arcanus_darkstone` `dusk_stone_minecraft_blackstone` `dusk_stone_minecraft_blackstone_end` `dusk_stone_minecraft_smooth_basalt` `dusk_stone_promenade_asphalt` `dusk_stone_quark_shale` `dusk_stone_regions_unexplored_argillite` `dusk_stone_regions_unexplored_argillite_mirrored` `dusk_stone_regions_unexplored_mossy_stone` `dusk_stone_regions_unexplored_mossy_stone_mirrored` `dusk_stone_tfmg_lignite` `dusk_stone_tuff` `dusk_stone_wilderwild_gabbro` `dusk_stone_wilderwild_gabbro_mirrored` `electrodynamics_aluminum` `electrodynamics_chromium` `electrodynamics_fluorite` `electrodynamics_lead` `electrodynamics_lithium` `electrodynamics_lithium_deepslate` `electrodynamics_molybdenum` `electrodynamics_monazite` `electrodynamics_niter` `electrodynamics_salt` `electrodynamics_silver` `electrodynamics_sulfur` `electrodynamics_sylvite` `electrodynamics_thorium` `electrodynamics_tin` `electrodynamics_titanium` `electrodynamics_uranium` `electrodynamics_vanadium` `emerald` `energized_tin` `epicpaladins_bloodstone` `epicpaladins_jade` `expandeddelight_salt` `fire_stone_andesite` `fire_stone_basalt_side` `fire_stone_basalt_top` `fire_stone_biomeswevegone_dacite` `fire_stone_biomeswevegone_white_dacite` `fire_stone_blackstone` `fire_stone_blackstone_top` `fire_stone_create_crimsite_0` `fire_stone_create_crimsite_1` `fire_stone_create_crimsite_2` `fire_stone_create_crimsite_3` `fire_stone_create_scorchia` `fire_stone_create_scoria` `fire_stone_darkerdepths_darkslate` `fire_stone_darkerdepths_darkslate_end` `fire_stone_embellishcraft_basalt` `fire_stone_minecraft_blackstone` `fire_stone_minecraft_blackstone_end` `fire_stone_minecraft_smooth_basalt` `fire_stone_regions_unexplored_mossy_stone` `fire_stone_regions_unexplored_mossy_stone_mirrored` `fire_stone_tfmg_galena_0` `fire_stone_tfmg_galena_1` `fire_stone_tfmg_galena_2` `fire_stone_tfmg_galena_3` `fire_stone_tuff` `fire_stone_twigs_bloodstone` `fire_stone_twigs_rhyolite` `fire_stone_twigs_rhyolite_end` `galena` `garnet` `gleaming` `gold` `heliodor` `ice_stone_blockus_marble` `ice_stone_create_asurine_0` `ice_stone_create_asurine_1` `ice_stone_create_asurine_2` `ice_stone_create_asurine_3` `ice_stone_diorite` `ice_stone_dripstone` `ice_stone_embellishcraft_larvikite` `ice_stone_embellishcraft_marble` `ice_stone_embellishcraft_slate` `ice_stone_minecraft_calcite` `ice_stone_promenade_blunite` `ice_stone_regions_unexplored_mossy_stone` `ice_stone_regions_unexplored_mossy_stone_mirrored` `ice_stone_twigs_schist` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `ie_aluminum` `ie_lead` `ie_silver` `ie_uranium` `inferium` `iolite` `iridium` `iron` `jade` `kyanite` `kyber` `lapis` `lead` `leaf_stone_atmospheric_ivory_travertine` `leaf_stone_atmospheric_ivory_travertine_end` `leaf_stone_atmospheric_peach_travertine` `leaf_stone_atmospheric_peach_travertine_end` `leaf_stone_atmospheric_persimmon_travertine` `leaf_stone_atmospheric_persimmon_travertine_end` `leaf_stone_atmospheric_saffron_travertine` `leaf_stone_atmospheric_saffron_travertine_end` `leaf_stone_blockus_limestone` `leaf_stone_blockus_viridite` `leaf_stone_born_in_chaos_v1_black_argillite` `leaf_stone_create_limestone` `leaf_stone_create_veridium_0` `leaf_stone_create_veridium_1` `leaf_stone_create_veridium_2` `leaf_stone_create_veridium_3` `leaf_stone_darkerdepths_grimestone` `leaf_stone_darkerdepths_grimestone_end` `leaf_stone_meadow_limestone` `leaf_stone_natures_spirit_travertine` `leaf_stone_natures_spirit_white_chalk` `leaf_stone_promenade_asphalt` `leaf_stone_quark_limestone` `leaf_stone_quark_shale` `leaf_stone_regions_unexplored_argillite` `leaf_stone_regions_unexplored_argillite_mirrored` `leaf_stone_regions_unexplored_chalk` `leaf_stone_regions_unexplored_mossy_stone` `leaf_stone_regions_unexplored_mossy_stone_mirrored` `leaf_stone_spawn_reefstone` `leaf_stone_tfmg_bauxite_0` `leaf_stone_tfmg_bauxite_1` `leaf_stone_tfmg_bauxite_2` `leaf_stone_tfmg_bauxite_3` `leaf_stone_tfmg_lignite` `leaf_stone_tuff` `lignite_coal` `lithium` `manganese` `mek_fluorite` `mek_lead` `mek_tin` `mek_uranium` `mi_bauxite` `mi_lead` `mi_nickel` `mi_tin` `midas_gold` `moldavite` `monazite` `moon_stone_biomeswevegone_dacite` `moon_stone_biomeswevegone_white_dacite` `moon_stone_blockus_bluestone` `moon_stone_diorite` `moon_stone_embellishcraft_gneiss` `moon_stone_embellishcraft_larvikite` `moon_stone_embellishcraft_slate` `moon_stone_forbidden_arcanus_darkstone` `moon_stone_granite` `moon_stone_regions_unexplored_mossy_stone` `moon_stone_regions_unexplored_mossy_stone_mirrored` `moon_stone_twigs_rhyolite` `moon_stone_twigs_rhyolite_end` `moon_stone_twigs_schist` `moon_stone_wilderwild_gabbro` `moon_stone_wilderwild_gabbro_mirrored` `moonlight` `morkite` `mythril` `natural_quartz` `necoium` `nether_banglum` `nether_gold` `nickel` `occultism_silver` `opal_legendary_monsters_enderstone` `opal_tfmg_bauxite_0` `opal_tfmg_bauxite_1` `opal_tfmg_bauxite_2` `opal_tfmg_bauxite_3` `opal_tuff` `opal_twigs_rhyolite` `opal_twigs_rhyolite_end` `opal_unusualend_gloopslate` `opal_unusualend_gloopstone` `opal_unusualend_gneiss` `opal_unusualend_gneiss_end` `opal_unusualend_raw_purpur_block` `opal_unusualend_warped_stone` `oreganized_lead` `oreganized_silver` `orichalcum` `osmium` `palladium` `pearl` `peridot` `platinum` `projectred_exploration_electrotine` `projectred_exploration_peridot` `projectred_exploration_ruby` `projectred_exploration_sapphire` `projectred_exploration_silver` `projectred_exploration_tin` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `railcraft_lead` `railcraft_nickel` `railcraft_silver` `railcraft_sulfur` `railcraft_tin` `railcraft_zinc` `redstone` `rose_quartz` `ruby` `runite` `sal_ammoniac` `salt` `sapphire` `sheldonite` `shiny_stone_blockus_marble` `shiny_stone_dripstone` `shiny_stone_embellishcraft_gneiss` `shiny_stone_embellishcraft_marble` `shiny_stone_embellishcraft_slate` `shiny_stone_granite` `shiny_stone_minecraft_calcite` `shiny_stone_regions_unexplored_mossy_stone` `shiny_stone_regions_unexplored_mossy_stone_mirrored` `shiny_stone_twigs_schist` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sodalite` `soulstone` `sphalerite` `starrite` `stormyx` `sulfurpotassiummod_potassium` `sulfurpotassiummod_sulfur` `sun_stone_andesite` `sun_stone_biomeswevegone_dacite` `sun_stone_biomeswevegone_white_dacite` `sun_stone_create_ochrum_0` `sun_stone_create_ochrum_1` `sun_stone_create_ochrum_2` `sun_stone_create_ochrum_3` `sun_stone_create_scoria` `sun_stone_darkerdepths_darkslate` `sun_stone_darkerdepths_darkslate_end` `sun_stone_embellishcraft_basalt` `sun_stone_minecraft_blackstone` `sun_stone_minecraft_blackstone_end` `sun_stone_minecraft_smooth_basalt` `sun_stone_regions_unexplored_mossy_stone` `sun_stone_regions_unexplored_mossy_stone_mirrored` `sun_stone_tuff` `sun_stone_twigs_rhyolite` `sun_stone_twigs_rhyolite_end` `superbwarfare_galena` `superbwarfare_scheelite` `superbwarfare_silver` `tanzanite` `techreborn_bauxite` `techreborn_lead` `techreborn_peridot` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_tungsten` `thorium` `thunder_stone_blockus_bluestone` `thunder_stone_create_ochrum_0` `thunder_stone_create_ochrum_1` `thunder_stone_create_ochrum_2` `thunder_stone_create_ochrum_3` `thunder_stone_diorite` `thunder_stone_embellishcraft_gneiss` `thunder_stone_embellishcraft_larvikite` `thunder_stone_embellishcraft_slate` `thunder_stone_granite` `thunder_stone_regions_unexplored_mossy_stone` `thunder_stone_regions_unexplored_mossy_stone_mirrored` `thunder_stone_tfmg_galena_0` `thunder_stone_tfmg_galena_1` `thunder_stone_tfmg_galena_2` `thunder_stone_tfmg_galena_3` `thunder_stone_twigs_schist` `thunder_stone_wilderwild_gabbro` `thunder_stone_wilderwild_gabbro_mirrored` `tin` `topaz` `treasure2_onyx` `treasure2_ruby` `treasure2_sapphire` `treasure2_topaz` `tungsten` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `uranium` `water_stone_atmospheric_ivory_travertine` `water_stone_atmospheric_ivory_travertine_end` `water_stone_atmospheric_peach_travertine` `water_stone_atmospheric_peach_travertine_end` `water_stone_atmospheric_persimmon_travertine` `water_stone_atmospheric_persimmon_travertine_end` `water_stone_atmospheric_saffron_travertine` `water_stone_atmospheric_saffron_travertine_end` `water_stone_blockus_limestone` `water_stone_blockus_marble` `water_stone_create_asurine_0` `water_stone_create_asurine_1` `water_stone_create_asurine_2` `water_stone_create_asurine_3` `water_stone_create_limestone` `water_stone_dripstone` `water_stone_embellishcraft_marble` `water_stone_meadow_limestone` `water_stone_minecraft_calcite` `water_stone_natures_spirit_travertine` `water_stone_natures_spirit_white_chalk` `water_stone_promenade_blunite` `water_stone_quark_limestone` `water_stone_regions_unexplored_chalk` `water_stone_regions_unexplored_mossy_stone` `water_stone_regions_unexplored_mossy_stone_mirrored` `water_stone_spawn_reefstone` `werewolves_silver` `werewolves_silver_deepslate` `white_diamond` `yellorite` `zenalite` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -2006,6 +2058,7 @@ is theirs and is used under the licence shown:
 | Treasure2 | gottsch | OSL-3.0 |
 | Sulfur and Potassium | Branders | CC0-1.0 |
 | Railcraft Reborn | Sm0keySa1m0n, Edivad99 | Railcraft Reborn License |
+| Project Red Exploration | MrTJP, Chicken Bones, covers1624 | MIT |
 <!-- END GENERATED credits -->
 
 The Immersive Engineering variants (aluminum, lead, nickel, silver and uranium) are derived from

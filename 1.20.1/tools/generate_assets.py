@@ -199,7 +199,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "treasure2": jar("treasure2-1.20.1-4.2.1.jar"),
             "tconstruct": jar("TConstruct-1.20.1-3.12.1.231.jar"),
             "rubinated_nether": jar("RubinatedNether-forge-1.3.0.E-1.20.1.jar"),
-            "railcraft": jar("railcraft-reborn-1.20.1-1.1.11.jar")}
+            "railcraft": jar("railcraft-reborn-1.20.1-1.1.11.jar"),
+            "projectred_exploration": jar("ProjectRed-1.20.1-4.21.0-exploration.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -516,6 +517,8 @@ MODS = {
                        "licence": "CC-BY-SA-4.0", "author": "Artienia, Juniper, Darksonic300, Serine"},
     "railcraft": {"display": "Railcraft Reborn", "category": "railcraftreborn",
                        "licence": "Railcraft Reborn License", "author": "Sm0keySa1m0n, Edivad99"},
+    "projectred_exploration": {"display": "Project Red Exploration", "category": "projectredexploration",
+                       "licence": "MIT", "author": "MrTJP, Chicken Bones, covers1624"},
 }
 
 ORE_DEFS = [
@@ -1431,6 +1434,25 @@ ORE_DEFS = [
     {"name": "railcraft_zinc", "overlay": "railcraft_zinc", "source": "zinc_ore", "base": "stone",
      "mod": "railcraft",
      "tiers": {"stone": "zinc_ore", "deepslate": "deepslate_zinc_ore"}},
+    # --- Project Red Exploration (mod id projectred_exploration, MIT): strength 3.0/3.0, 4.5/3.0 in deepslate. Forge at 1.20.1, NeoForge at 1.21.1 ---
+    {"name": "projectred_exploration_electrotine", "overlay": "projectred_exploration_electrotine", "source": "electrotine_ore", "base": "stone",
+     "mod": "projectred_exploration",
+     "tiers": {"stone": "electrotine_ore", "deepslate": "deepslate_electrotine_ore"}},
+    {"name": "projectred_exploration_peridot", "overlay": "projectred_exploration_peridot", "source": "peridot_ore", "base": "stone",
+     "mod": "projectred_exploration",
+     "tiers": {"stone": "peridot_ore", "deepslate": "deepslate_peridot_ore"}},
+    {"name": "projectred_exploration_ruby", "overlay": "projectred_exploration_ruby", "source": "ruby_ore", "base": "stone",
+     "mod": "projectred_exploration",
+     "tiers": {"stone": "ruby_ore", "deepslate": "deepslate_ruby_ore"}},
+    {"name": "projectred_exploration_sapphire", "overlay": "projectred_exploration_sapphire", "source": "sapphire_ore", "base": "stone",
+     "mod": "projectred_exploration",
+     "tiers": {"stone": "sapphire_ore", "deepslate": "deepslate_sapphire_ore"}},
+    {"name": "projectred_exploration_silver", "overlay": "projectred_exploration_silver", "source": "silver_ore", "base": "stone",
+     "mod": "projectred_exploration",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    {"name": "projectred_exploration_tin", "overlay": "projectred_exploration_tin", "source": "tin_ore", "base": "stone",
+     "mod": "projectred_exploration",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1597,6 +1619,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "tconstruct": ('forge',),
     "rubinated_nether": ('fabric', 'forge'),
     "railcraft": ('forge',),
+    "projectred_exploration": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1743,6 +1766,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.projectredexploration": "Project Red Exploration",
         f"text.autoconfig.{MOD_ID}.category.railcraftreborn": "Railcraft Reborn",
         f"text.autoconfig.{MOD_ID}.category.rubinatednether": "Rubinated Nether",
         f"text.autoconfig.{MOD_ID}.category.tinkersconstruct": "Tinkers' Construct",
@@ -1795,6 +1819,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.projectRedExploration": "Project Red Exploration: variants",
+        f"text.autoconfig.{MOD_ID}.option.projectRedExploration.@Tooltip":
+            "Generate host-matched electrotine, peridot, ruby, sapphire, silver and tin ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.railcraftReborn": "Railcraft Reborn: variants",
         f"text.autoconfig.{MOD_ID}.option.railcraftReborn.@Tooltip":

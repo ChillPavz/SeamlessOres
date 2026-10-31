@@ -944,6 +944,48 @@
     "mythicmetals:platinum_ore"
    ]
   },
+  "projectred_exploration_electrotine": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:electrotine_ore",
+    "projectred_exploration:deepslate_electrotine_ore"
+   ]
+  },
+  "projectred_exploration_peridot": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:peridot_ore",
+    "projectred_exploration:deepslate_peridot_ore"
+   ]
+  },
+  "projectred_exploration_ruby": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:ruby_ore",
+    "projectred_exploration:deepslate_ruby_ore"
+   ]
+  },
+  "projectred_exploration_sapphire": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:sapphire_ore",
+    "projectred_exploration:deepslate_sapphire_ore"
+   ]
+  },
+  "projectred_exploration_silver": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:silver_ore",
+    "projectred_exploration:deepslate_silver_ore"
+   ]
+  },
+  "projectred_exploration_tin": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:tin_ore",
+    "projectred_exploration:deepslate_tin_ore"
+   ]
+  },
   "prometheum": {
    "mod": "mythicmetals",
    "forms": [
@@ -1531,6 +1573,30 @@
      "1.20.1 forge"
     ],
     "rate": 100.65
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.8
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.64
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.64
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.17
    },
    "railcraft_lead": {
     "where": [
@@ -2307,6 +2373,24 @@
      "1.20.1 forge"
     ],
     "rate": 33.55
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.27
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.21
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.21
    },
    "railcraft_lead": {
     "where": [
@@ -5957,6 +6041,42 @@
     ],
     "rate": 17.07
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 68.06
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.53
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.43
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.43
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 70.79
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 90.68
+   },
    "prosperity": {
     "where": [
      "1.20.1 forge"
@@ -6720,6 +6840,42 @@
      "1.20.1 fabric"
     ],
     "rate": 10.51
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.52
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.18
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.75
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.42
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.15
    },
    "prometheum": {
     "where": [
@@ -7597,6 +7753,42 @@
     ],
     "rate": 10.51
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.46
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.18
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.35
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.35
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 46.57
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 74.35
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -8473,6 +8665,42 @@
     ],
     "rate": 13.96
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 37.88
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.54
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.63
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.63
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 48.39
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 77.26
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -9348,6 +9576,42 @@
      "1.20.1 fabric"
     ],
     "rate": 9.11
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 24.71
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.22
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.98
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.98
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.57
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 50.4
    },
    "prometheum": {
     "where": [
@@ -10540,6 +10804,42 @@
     ],
     "rate": 8.81
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.74
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.25
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.6
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.6
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 41.82
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 66.77
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -11466,6 +11766,42 @@
     ],
     "rate": 9.94
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.96
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.79
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.43
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.43
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.44
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 54.98
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -12150,6 +12486,42 @@
     ],
     "rate": 2.16
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.23
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.64
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.51
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.51
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.67
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.67
+   },
    "prosperity": {
     "where": [
      "1.20.1 forge"
@@ -12733,6 +13105,42 @@
      "1.20.1 forge"
     ],
     "rate": 132.0
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 136.0
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 39.12
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.29
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.29
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 345.68
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 102.08
    },
    "prosperity": {
     "where": [
@@ -13324,6 +13732,42 @@
     ],
     "rate": 8.66
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.92
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.57
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.05
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.05
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.67
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.69
+   },
    "prosperity": {
     "where": [
      "1.20.1 forge"
@@ -13914,6 +14358,42 @@
     ],
     "rate": 81.44
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 117.51
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.13
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.51
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 22.51
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 235.64
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 109.36
+   },
    "prosperity": {
     "where": [
      "1.20.1 forge"
@@ -14425,6 +14905,42 @@
      "1.20.1 forge"
     ],
     "rate": 0.38
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.03
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.73
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.78
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.78
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.38
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 50.54
    },
    "prosperity": {
     "where": [
@@ -14970,6 +15486,30 @@
     ],
     "rate": 33.18
    },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.45
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.36
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.04
+   },
    "railcraft_lead": {
     "where": [
      "1.20.1 forge"
@@ -15217,6 +15757,24 @@
      "1.20.1 forge"
     ],
     "rate": 9.72
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.2
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.16
    },
    "railcraft_nickel": {
     "where": [
@@ -15567,6 +16125,42 @@
      "1.20.1 forge"
     ],
     "rate": 140.34
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.2
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.28
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.63
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.63
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.15
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.93
    },
    "railcraft_lead": {
     "where": [
@@ -16470,6 +17064,30 @@
     ],
     "rate": 9.14
    },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 23.02
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.42
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.42
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 111.83
+   },
    "prosperity": {
     "where": [
      "1.20.1 forge"
@@ -17203,6 +17821,42 @@
      "1.20.1 fabric"
     ],
     "rate": 3.37
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.35
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.65
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.53
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.69
    },
    "prometheum": {
     "where": [
@@ -18080,6 +18734,42 @@
     ],
     "rate": 3.37
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.35
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.65
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.53
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.69
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -18955,6 +19645,42 @@
      "1.20.1 fabric"
     ],
     "rate": 3.37
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.35
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.65
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.53
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 18.69
    },
    "prometheum": {
     "where": [
@@ -19947,6 +20673,42 @@
     ],
     "rate": 9.18
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.07
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.02
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.22
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.22
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.11
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 41.62
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -20780,6 +21542,42 @@
      "1.20.1 fabric"
     ],
     "rate": 0.61
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.7
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.43
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.34
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.34
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.87
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.79
    },
    "prometheum": {
     "where": [
@@ -21657,6 +22455,42 @@
     ],
     "rate": 6.15
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 16.7
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.21
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.37
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.37
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 21.33
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.06
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -22532,6 +23366,42 @@
      "1.20.1 fabric"
     ],
     "rate": 3.9
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 28.24
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.69
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.69
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.08
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.6
    },
    "prometheum": {
     "where": [
@@ -23537,6 +24407,42 @@
     ],
     "rate": 3.19
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 26.32
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.63
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.3
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.3
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 33.62
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 53.67
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -24372,6 +25278,42 @@
     ],
     "rate": 4.2
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.81
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.15
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.32
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.32
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.38
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.31
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -25150,6 +26092,24 @@
      "1.20.1 fabric"
     ],
     "rate": 20.36
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.23
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.19
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.19
    },
    "railcraft_nickel": {
     "where": [
@@ -27544,6 +28504,42 @@
     ],
     "rate": 27.21
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 93.08
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.4
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.12
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.12
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 71.24
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 387.95
+   },
    "prosperity": {
     "where": [
      "1.20.1 forge"
@@ -28068,6 +29064,42 @@
     ],
     "rate": 27.21
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 271.48
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 106.17
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 84.93
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 84.93
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 207.78
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1131.53
+   },
    "prosperity": {
     "where": [
      "1.20.1 forge"
@@ -28591,6 +29623,42 @@
      "1.20.1 forge"
     ],
     "rate": 27.21
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 93.08
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.4
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.12
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 29.12
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 71.24
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 387.95
    },
    "prosperity": {
     "where": [
@@ -29226,6 +30294,42 @@
      "1.20.1 fabric"
     ],
     "rate": 15.79
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.51
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.16
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.13
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.13
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.81
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 58.16
    },
    "prometheum": {
     "where": [
@@ -29910,6 +31014,42 @@
     ],
     "rate": 14.72
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.3
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.89
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.09
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 72.0
+   },
    "prosperity": {
     "where": [
      "1.20.1 forge"
@@ -30524,6 +31664,42 @@
     ],
     "rate": 14.72
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.3
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.89
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.09
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 72.0
+   },
    "prosperity": {
     "where": [
      "1.20.1 forge"
@@ -31137,6 +32313,42 @@
      "1.20.1 forge"
     ],
     "rate": 14.72
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 35.3
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.89
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 45.09
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 72.0
    },
    "prosperity": {
     "where": [
@@ -32065,6 +33277,42 @@
     ],
     "rate": 4.22
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 36.69
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.66
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.93
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.93
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 66.78
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 43.0
+   },
    "prometheum": {
     "where": [
      "1.20.1 fabric"
@@ -32915,6 +34163,42 @@
      "1.20.1 fabric"
     ],
     "rate": 1.4
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.87
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.15
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.92
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.92
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.53
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.74
    },
    "prometheum": {
     "where": [
@@ -34647,6 +35931,42 @@
      "1.20.1 fabric"
     ],
     "rate": 15.1
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 41.82
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.02
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.81
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.81
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 61.76
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 83.64
    },
    "prometheum": {
     "where": [

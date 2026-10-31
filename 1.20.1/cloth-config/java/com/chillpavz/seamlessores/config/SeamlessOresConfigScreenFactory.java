@@ -116,6 +116,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("tconstruct", "tinkersconstruct");
         MOD_CATEGORIES.put("rubinated_nether", "rubinatednether");
         MOD_CATEGORIES.put("railcraft", "railcraftreborn");
+        MOD_CATEGORIES.put("projectred_exploration", "projectredexploration");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

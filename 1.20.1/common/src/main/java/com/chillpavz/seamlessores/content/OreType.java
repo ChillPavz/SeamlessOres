@@ -1290,6 +1290,38 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
 
+    // --- Project Red Exploration (mod id projectred_exploration, MIT): strength 3.0/3.0, 4.5/3.0 in deepslate. Forge at 1.20.1, NeoForge at 1.21.1 ---
+    public static final OreType PR_ELECTROTINE = ore(
+            "projectred_exploration_electrotine", "projectred_exploration_electrotine", null, "projectred_exploration",
+            of("projectred_exploration", "electrotine_ore"), of("projectred_exploration", "deepslate_electrotine_ore"), null,
+            UniformInt.of(1, 5), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType PR_PERIDOT = ore(
+            "projectred_exploration_peridot", "projectred_exploration_peridot", null, "projectred_exploration",
+            of("projectred_exploration", "peridot_ore"), of("projectred_exploration", "deepslate_peridot_ore"), null,
+            UniformInt.of(2, 7), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType PR_RUBY = ore(
+            "projectred_exploration_ruby", "projectred_exploration_ruby", null, "projectred_exploration",
+            of("projectred_exploration", "ruby_ore"), of("projectred_exploration", "deepslate_ruby_ore"), null,
+            UniformInt.of(2, 7), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType PR_SAPPHIRE = ore(
+            "projectred_exploration_sapphire", "projectred_exploration_sapphire", null, "projectred_exploration",
+            of("projectred_exploration", "sapphire_ore"), of("projectred_exploration", "deepslate_sapphire_ore"), null,
+            UniformInt.of(2, 7), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType PR_SILVER = ore(
+            "projectred_exploration_silver", "projectred_exploration_silver", null, "projectred_exploration",
+            of("projectred_exploration", "silver_ore"), of("projectred_exploration", "deepslate_silver_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType PR_TIN = ore(
+            "projectred_exploration_tin", "projectred_exploration_tin", null, "projectred_exploration",
+            of("projectred_exploration", "tin_ore"), of("projectred_exploration", "deepslate_tin_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1347,7 +1379,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ,
                     TC_COBALT,
                     RN_NETHER_RUBY,
-                    RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC);
+                    RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC,
+                    PR_ELECTROTINE, PR_PERIDOT, PR_RUBY, PR_SAPPHIRE, PR_SILVER, PR_TIN);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

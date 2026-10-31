@@ -1,0 +1,64 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_electrotine_ore",
+      "required": false
+    }
+  ]
+}

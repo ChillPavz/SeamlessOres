@@ -41,7 +41,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_projectred_exploration_peridot_ore",
       "required": false
     },
     {
@@ -49,7 +57,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_projectred_exploration_peridot_ore",
       "required": false
     },
     {
@@ -57,7 +73,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_darkslate_silentgems_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_peridot_ore",
       "required": false
     },
     {

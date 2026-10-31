@@ -65,7 +65,39 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_rubinated_nether_nether_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_ruby_ore",
       "required": false
     },
     {

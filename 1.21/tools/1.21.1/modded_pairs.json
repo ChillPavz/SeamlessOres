@@ -1012,6 +1012,48 @@
     "mythicmetals:platinum_ore"
    ]
   },
+  "projectred_exploration_electrotine": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:electrotine_ore",
+    "projectred_exploration:deepslate_electrotine_ore"
+   ]
+  },
+  "projectred_exploration_peridot": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:peridot_ore",
+    "projectred_exploration:deepslate_peridot_ore"
+   ]
+  },
+  "projectred_exploration_ruby": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:ruby_ore",
+    "projectred_exploration:deepslate_ruby_ore"
+   ]
+  },
+  "projectred_exploration_sapphire": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:sapphire_ore",
+    "projectred_exploration:deepslate_sapphire_ore"
+   ]
+  },
+  "projectred_exploration_silver": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:silver_ore",
+    "projectred_exploration:deepslate_silver_ore"
+   ]
+  },
+  "projectred_exploration_tin": {
+   "mod": "projectred_exploration",
+   "forms": [
+    "projectred_exploration:tin_ore",
+    "projectred_exploration:deepslate_tin_ore"
+   ]
+  },
   "prometheum": {
    "mod": "mythicmetals",
    "forms": [
@@ -1622,6 +1664,30 @@
      "1.21.1 neoforge"
     ],
     "rate": 100.65
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.8
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.64
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.64
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.17
    },
    "railcraft_lead": {
     "where": [
@@ -2482,6 +2548,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 33.55
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.27
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.21
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.21
    },
    "railcraft_lead": {
     "where": [
@@ -5232,6 +5316,42 @@
     ],
     "rate": 1.38
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 68.06
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.53
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.43
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.43
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 70.79
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 90.68
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -5893,6 +6013,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.83
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.52
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.18
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.75
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.75
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.42
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 58.15
    },
    "prosperity": {
     "where": [
@@ -6568,6 +6724,42 @@
     ],
     "rate": 1.06
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.46
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.18
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.35
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.35
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 46.57
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 74.35
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -7242,6 +7434,42 @@
     ],
     "rate": 1.1
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 37.88
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.54
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.63
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.63
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.39
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 77.26
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -7915,6 +8143,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.72
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.71
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.22
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.98
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.98
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.57
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 50.4
    },
    "prosperity": {
     "where": [
@@ -8802,6 +9066,42 @@
     ],
     "rate": 0.95
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.74
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.25
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.6
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.6
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.82
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 66.77
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -9488,6 +9788,42 @@
     ],
     "rate": 0.78
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 26.96
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.79
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.43
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.43
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.44
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 54.98
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -10113,6 +10449,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 7.94
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.23
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.64
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.51
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.51
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.67
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.67
    },
    "prosperity": {
     "where": [
@@ -10752,6 +11124,42 @@
     ],
     "rate": 484.23
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 136.0
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.12
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.29
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.29
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 345.68
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 102.08
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -11389,6 +11797,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 31.75
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.92
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.57
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.05
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.05
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.67
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.69
    },
    "prosperity": {
     "where": [
@@ -12034,6 +12478,42 @@
     ],
     "rate": 0.96
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.5
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.63
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.5
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.5
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 47.13
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.87
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -12605,6 +13085,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.28
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.32
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.54
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.84
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.84
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.07
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 37.9
    },
    "prosperity": {
     "where": [
@@ -13186,6 +13702,30 @@
     ],
     "rate": 33.18
    },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.45
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.36
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.36
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.04
+   },
    "railcraft_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -13730,6 +14270,30 @@
     ],
     "rate": 4.69
    },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.77
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.62
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.62
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.14
+   },
    "railcraft_lead": {
     "where": [
      "1.21.1 neoforge"
@@ -14163,6 +14727,30 @@
      "1.21.1 neoforge"
     ],
     "rate": 9.14
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.02
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.42
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.42
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 111.83
    },
    "prosperity": {
     "where": [
@@ -14890,6 +15478,42 @@
      "1.21.1 fabric"
     ],
     "rate": 3.37
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.35
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.65
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.53
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.69
    },
    "prometheum": {
     "where": [
@@ -15743,6 +16367,42 @@
     ],
     "rate": 3.37
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.35
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.65
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.53
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.69
+   },
    "prometheum": {
     "where": [
      "1.21.1 fabric"
@@ -16595,6 +17255,42 @@
     ],
     "rate": 3.37
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.35
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.65
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.12
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.53
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.69
+   },
    "prometheum": {
     "where": [
      "1.21.1 fabric"
@@ -17382,6 +18078,30 @@
     ],
     "rate": 0.28
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.14
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.1
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.11
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.01
+   },
    "prometheum": {
     "where": [
      "1.21.1 fabric"
@@ -18137,6 +18857,42 @@
      "1.21.1 fabric"
     ],
     "rate": 0.61
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.7
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.43
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.34
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.34
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.87
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.79
    },
    "prometheum": {
     "where": [
@@ -18895,6 +19651,42 @@
     ],
     "rate": 0.48
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.7
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.21
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.37
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.37
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 21.33
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.06
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -19568,6 +20360,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.82
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.24
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.69
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.69
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.08
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 57.6
    },
    "prosperity": {
     "where": [
@@ -20339,6 +21167,42 @@
     ],
     "rate": 0.76
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 26.32
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.63
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.3
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.3
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 33.62
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 53.67
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -21030,6 +21894,42 @@
      "1.21.1 fabric"
     ],
     "rate": 4.2
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.81
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.15
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.32
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.32
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.38
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.31
    },
    "prometheum": {
     "where": [
@@ -21777,6 +22677,24 @@
      "1.21.1 fabric"
     ],
     "rate": 20.36
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.23
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.19
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.19
    },
    "railcraft_nickel": {
     "where": [
@@ -22684,6 +23602,42 @@
     ],
     "rate": 21.48
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.6
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.84
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.07
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.07
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.6
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 97.54
+   },
    "prometheum": {
     "where": [
      "1.21.1 fabric"
@@ -23494,6 +24448,42 @@
     ],
     "rate": 21.48
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.6
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.86
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.09
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.09
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.6
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 97.54
+   },
    "prometheum": {
     "where": [
      "1.21.1 fabric"
@@ -24197,6 +25187,42 @@
     ],
     "rate": 27.21
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 93.08
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.4
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.12
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.12
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 71.24
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 387.95
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -24786,6 +25812,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 27.21
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 271.48
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 106.17
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 84.93
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 84.93
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 207.78
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1131.53
    },
    "prosperity": {
     "where": [
@@ -25377,6 +26439,42 @@
     ],
     "rate": 27.21
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 155.13
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 60.67
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.53
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.53
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 118.73
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 646.59
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -25947,6 +27045,24 @@
      "1.21.1 fabric"
     ],
     "rate": 0.14
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.39
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.62
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.71
    },
    "prometheum": {
     "where": [
@@ -27127,6 +28243,42 @@
     ],
     "rate": 1.34
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.51
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.16
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.13
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.13
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.81
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 58.16
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -27776,6 +28928,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.02
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.3
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.89
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.09
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 72.0
    },
    "prosperity": {
     "where": [
@@ -28451,6 +29639,42 @@
     ],
     "rate": 1.02
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.3
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.89
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.09
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 72.0
+   },
    "prosperity": {
     "where": [
      "1.21.1 neoforge"
@@ -29124,6 +30348,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.02
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.3
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.89
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.11
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.09
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 72.0
    },
    "prosperity": {
     "where": [
@@ -30126,6 +31386,42 @@
     ],
     "rate": 4.22
    },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.69
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.66
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.93
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.93
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 66.78
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.0
+   },
    "prometheum": {
     "where": [
      "1.21.1 fabric"
@@ -30947,6 +32243,42 @@
      "1.21.1 fabric"
     ],
     "rate": 1.4
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.87
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.15
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.92
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.92
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.53
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.74
    },
    "prometheum": {
     "where": [
@@ -32867,6 +34199,42 @@
      "1.21.1 fabric"
     ],
     "rate": 15.1
+   },
+   "projectred_exploration_electrotine": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.82
+   },
+   "projectred_exploration_peridot": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.02
+   },
+   "projectred_exploration_ruby": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.81
+   },
+   "projectred_exploration_sapphire": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.81
+   },
+   "projectred_exploration_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.76
+   },
+   "projectred_exploration_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 83.64
    },
    "prometheum": {
     "where": [

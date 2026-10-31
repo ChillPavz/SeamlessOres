@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "seamlessores:darkerdepths_darkslate_projectred_exploration_ruby_ore"
+  },
+  "result": {
+    "item": "projectred_core:ruby"
+  }
+}

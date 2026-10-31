@@ -139,6 +139,10 @@
       "id": "seamlessores:granite_railcraft_zinc_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_projectred_exploration_tin_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
@@ -816,6 +820,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_iron_ore",
       "required": false
     },
@@ -1336,6 +1344,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_iron_ore",
       "required": false
     },
@@ -1800,6 +1812,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_projectred_exploration_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_iron_ore",
       "required": false
     },
@@ -2005,6 +2021,10 @@
     },
     {
       "id": "seamlessores:quark_limestone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_projectred_exploration_tin_ore",
       "required": false
     },
     {
@@ -2277,6 +2297,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_projectred_exploration_tin_ore",
       "required": false
     },
     {
@@ -2801,6 +2825,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_projectred_exploration_tin_ore",
       "required": false
     },
     {

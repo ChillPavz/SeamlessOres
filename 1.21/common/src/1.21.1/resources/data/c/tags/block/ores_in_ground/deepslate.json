@@ -329,6 +329,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -550,6 +558,26 @@
     },
     {
       "id": "seamlessores:blackstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -797,6 +825,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_hazennstuff_dreadstone_ore",
       "required": false
     },
@@ -902,6 +934,14 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_projectred_exploration_silver_ore",
       "required": false
     },
     {
@@ -1165,6 +1205,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_electrotine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_grimestone_iron_ore",
       "required": false
     },
@@ -1345,6 +1405,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_iron_ore",
       "required": false
     },
@@ -1490,6 +1554,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_railcraft_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_projectred_exploration_silver_ore",
       "required": false
     }
   ]

@@ -395,6 +395,14 @@ Powah by owmii, Technici4n, shartte, LGPL-3.0:
   assets/seamlessores/textures/block/uraninite_overlay.png
   assets/seamlessores/textures/block/uraninite_poor_overlay.png
 
+Project Red Exploration by MrTJP, Chicken Bones, covers1624, MIT:
+  assets/seamlessores/textures/block/projectred_exploration_electrotine_overlay.png
+  assets/seamlessores/textures/block/projectred_exploration_peridot_overlay.png
+  assets/seamlessores/textures/block/projectred_exploration_ruby_overlay.png
+  assets/seamlessores/textures/block/projectred_exploration_sapphire_overlay.png
+  assets/seamlessores/textures/block/projectred_exploration_silver_overlay.png
+  assets/seamlessores/textures/block/projectred_exploration_tin_overlay.png
+
 Railcraft Reborn by Sm0keySa1m0n, Edivad99, Railcraft Reborn License:
   assets/seamlessores/textures/block/railcraft_lead_overlay.png
   assets/seamlessores/textures/block/railcraft_nickel_overlay.png

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:create_crimsite_projectred_exploration_electrotine_ore"
+  },
+  "result": {
+    "item": "projectred_core:electrotine_dust"
+  }
+}

@@ -264,6 +264,9 @@ public final class SeamlessOresConfig {
     /** Whether Railcraft Reborn variants generate. Pure restyle. */
     public static boolean railcraftReborn = true;
 
+    /** Whether Project Red Exploration variants generate. Pure restyle. */
+    public static boolean projectRedExploration = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -323,6 +326,7 @@ public final class SeamlessOresConfig {
             case "treasure2" -> treasure2;
             case "sulfurpotassiummod" -> sulfurAndPotassium;
             case "railcraft" -> railcraftReborn;
+            case "projectred_exploration" -> projectRedExploration;
             default -> true;
         };
     }
@@ -536,6 +540,7 @@ public final class SeamlessOresConfig {
         public boolean treasure2 = true;
         public boolean sulfurAndPotassium = true;
         public boolean railcraftReborn = true;
+        public boolean projectRedExploration = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -617,6 +622,7 @@ public final class SeamlessOresConfig {
         treasure2 = values.treasure2;
         sulfurAndPotassium = values.sulfurAndPotassium;
         railcraftReborn = values.railcraftReborn;
+        projectRedExploration = values.projectRedExploration;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "
