@@ -1,0 +1,56 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:dripstone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    }
+  ]
+}

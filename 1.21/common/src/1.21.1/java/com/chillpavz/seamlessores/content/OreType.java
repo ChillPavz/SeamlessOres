@@ -1131,6 +1131,24 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("treasure2", "topaz_ore"), of("treasure2", "deepslate_topaz_ore"), null,
             NONE, null, false, Set.of());
 
+    // --- Sulfur and Potassium (mod id sulfurpotassiummod, CC0): sulfur lives in deepslate and in netherrack, potassium in stone. Fabric at 1.21.1 ---
+    public static final OreType SP_POTASSIUM = ore(
+            "sulfurpotassiummod_potassium", "sulfurpotassiummod_potassium", null, "sulfurpotassiummod",
+            of("sulfurpotassiummod", "potassium_ore"), null, null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F);
+    public static final OreType SP_SULFUR = ore(
+            "sulfurpotassiummod_sulfur", "sulfurpotassiummod_sulfur", null, "sulfurpotassiummod",
+            null, of("sulfurpotassiummod", "sulfur_ore"), null,
+            UniformInt.of(2, 4), null, false, Set.of())
+            .withStrength(3.0F, 3.0F);
+    public static final OreType SP_NETHER_SULFUR = ore(
+            "sulfurpotassiummod_nether_sulfur", "sulfurpotassiummod_sulfur", null, "sulfurpotassiummod",
+            null, null, of("sulfurpotassiummod", "sulfur_nether_ore"),
+            UniformInt.of(2, 5), null, false, Set.of())
+            .withKey("sulfurpotassiummod_nether_sulfur")
+            .withStrength(3.0F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1181,7 +1199,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     HNS_ZENALITE,
                     BNO_COAL, BNO_COPPER, BNO_DIAMOND, BNO_EMERALD, BNO_IRON, BNO_LAPIS, BNO_REDSTONE, BNO_ALUMINUM, BNO_LEAD, BNO_NICKEL, BNO_OSMIUM, BNO_SILVER, BNO_TIN, BNO_URANIUM, BNO_ZINC,
                     WW_SILVER,
-                    T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ);
+                    T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ,
+                    SP_POTASSIUM, SP_SULFUR, SP_NETHER_SULFUR);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

@@ -55,7 +55,10 @@
     "forge:fire_element": "Iter RPG: the fire element its spells read",
     "c:electricdrillblocks": "Electrodynamics: what its electric drill can mine",
     "betternether:obsidian_breaker_mineable": "BetterNether: what its obsidian breaker can mine",
-    "wover:ores/nether": "WorldWeaver (BetterNether): its list of Nether ores"
+    "wover:ores/nether": "WorldWeaver (BetterNether): its list of Nether ores",
+    "sulfurpotassiummod:ores/potassium_ore": "",
+    "sulfurpotassiummod:ores/sulfur_nether_ore": "",
+    "sulfurpotassiummod:ores/sulfur_ore": ""
   },
   "skip": {
     "iceandfire:*dragon_cave*": "Ice and Fire PLACES blocks from these lists in dragon caves: our variants would appear there",

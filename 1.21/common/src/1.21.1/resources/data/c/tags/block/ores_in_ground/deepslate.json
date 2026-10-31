@@ -309,6 +309,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_sulfurpotassiummod_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -513,6 +517,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_sulfurpotassiummod_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_sulfurpotassiummod_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -562,6 +574,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_sulfurpotassiummod_sulfur_ore",
       "required": false
     },
     {
@@ -898,6 +914,18 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_sulfurpotassiummod_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_sulfurpotassiummod_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_sulfurpotassiummod_sulfur_ore",
       "required": false
     },
     {

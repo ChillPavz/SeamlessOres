@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_sulfurpotassiummod_potassium_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_sulfurpotassiummod_potassium_ore_mirrored"
+      }
+    ]
+  }
+}

@@ -440,6 +440,10 @@ Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/turquoise_overlay.png
   assets/seamlessores/textures/block/white_diamond_overlay.png
 
+Sulfur and Potassium by Branders, CC0-1.0:
+  assets/seamlessores/textures/block/sulfurpotassiummod_potassium_overlay.png
+  assets/seamlessores/textures/block/sulfurpotassiummod_sulfur_overlay.png
+
 Superb Warfare by Atsuishio, Roki27, Light_Quanta and other contributors, GPL-3.0:
   assets/seamlessores/textures/block/superbwarfare_galena_overlay.png
   assets/seamlessores/textures/block/superbwarfare_scheelite_overlay.png

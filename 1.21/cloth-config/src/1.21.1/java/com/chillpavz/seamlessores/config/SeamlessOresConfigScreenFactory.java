@@ -106,6 +106,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("bno", "basic_nether_ores");
         MOD_CATEGORIES.put("werewolves", "werewolves");
         MOD_CATEGORIES.put("treasure2", "treasure2");
+        MOD_CATEGORIES.put("sulfurpotassiummod", "sulfurandpotassium");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

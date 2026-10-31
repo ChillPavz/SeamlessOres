@@ -161,7 +161,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "denseores": jar("denseores-1.2.2.jar"),
             "bno": jar("BasicNetherOres-fabric-1.21.1-10.1.0.jar"),
             "werewolves": jar("Werewolves-1.21-2.0.3.4.jar"),
-            "treasure2": jar("treasure2-neoforge-1.21.1-5.1.0.jar")}
+            "treasure2": jar("treasure2-neoforge-1.21.1-5.1.0.jar"),
+            "sulfurpotassiummod": jar("sulfurpotassiummod-1.21-2.0.0+Fabric.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -451,6 +452,8 @@ MODS = {
                        "licence": "LGPL-3.0", "author": "Cheaterpaul, Maxanier, RebelT"},
     "treasure2": {"display": "Treasure2", "category": "treasure2",
                        "licence": "OSL-3.0", "author": "gottsch"},
+    "sulfurpotassiummod": {"display": "Sulfur and Potassium", "category": "sulfurandpotassium",
+                       "licence": "CC0-1.0", "author": "Branders"},
 }
 
 ORE_DEFS = [
@@ -1264,6 +1267,16 @@ ORE_DEFS = [
     {"name": "treasure2_topaz", "overlay": "treasure2_topaz", "source": "topaz_ore", "base": "stone",
      "mod": "treasure2",
      "tiers": {"stone": "topaz_ore", "deepslate": "deepslate_topaz_ore"}},
+    # --- Sulfur and Potassium (mod id sulfurpotassiummod, CC0): sulfur lives in deepslate and in netherrack, potassium in stone. Fabric at 1.21.1 ---
+    {"name": "sulfurpotassiummod_potassium", "overlay": "sulfurpotassiummod_potassium", "source": "potassium_ore", "base": "stone",
+     "mod": "sulfurpotassiummod",
+     "tiers": {"stone": "potassium_ore"}},
+    {"name": "sulfurpotassiummod_sulfur", "overlay": "sulfurpotassiummod_sulfur", "source": "sulfur_ore", "base": "deepslate",
+     "mod": "sulfurpotassiummod",
+     "tiers": {"deepslate": "sulfur_ore"}},
+    {"name": "sulfurpotassiummod_nether_sulfur", "key": "sulfurpotassiummod_nether_sulfur", "overlay": "sulfurpotassiummod_sulfur", "source": "sulfur_nether_ore", "base": "netherrack",
+     "mod": "sulfurpotassiummod",
+     "tiers": {"nether": "sulfur_nether_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1425,6 +1438,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "unusualend": ('neoforge',),   # Unusual End: NeoForge
     "werewolves": ('neoforge',),
     "treasure2": ('neoforge',),
+    "sulfurpotassiummod": ('fabric',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1536,6 +1550,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.sulfurandpotassium": "Sulfur and Potassium",
         f"text.autoconfig.{MOD_ID}.category.treasure2": "Treasure2",
         f"text.autoconfig.{MOD_ID}.category.werewolves": "Werewolves: Become a Beast",
         f"text.autoconfig.{MOD_ID}.category.basic_nether_ores": "Basic Nether Ores",
@@ -1578,6 +1593,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.sulfurAndPotassium": "Sulfur and Potassium: variants",
+        f"text.autoconfig.{MOD_ID}.option.sulfurAndPotassium.@Tooltip":
+            "Generate host-matched sulfur and potassium ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.treasure2": "Treasure2: variants",
         f"text.autoconfig.{MOD_ID}.option.treasure2.@Tooltip":

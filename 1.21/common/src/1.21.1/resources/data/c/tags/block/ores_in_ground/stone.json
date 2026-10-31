@@ -1044,6 +1044,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_mythicmetals_aquarium_ore",
       "required": false
     },
@@ -1137,6 +1141,10 @@
     },
     {
       "id": "seamlessores:blockus_limestone_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_sulfurpotassiummod_potassium_ore",
       "required": false
     },
     {
@@ -4484,6 +4492,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:mythicupgrades_aquamarine_schist_iron_ore",
       "required": false
     },
@@ -4780,6 +4792,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_coal_ore",
       "required": false
     },
@@ -5045,6 +5061,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_chalk_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_sulfurpotassiummod_potassium_ore",
       "required": false
     },
     {
@@ -5856,6 +5876,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_red_rock_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:galosphere_pink_salt_mythicmetals_aquarium_ore",
       "required": false
     },
@@ -5893,6 +5917,10 @@
     },
     {
       "id": "seamlessores:galosphere_pink_salt_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_sulfurpotassiummod_potassium_ore",
       "required": false
     },
     {
@@ -5936,6 +5964,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:galosphere_rose_pink_salt_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:galosphere_pastel_pink_salt_mythicmetals_aquarium_ore",
       "required": false
     },
@@ -5973,6 +6005,10 @@
     },
     {
       "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_sylvite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_sulfurpotassiummod_potassium_ore",
       "required": false
     },
     {
@@ -6632,6 +6668,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_darkslate_iceandfire_sapphire_ore",
       "required": false
     },
@@ -6864,6 +6904,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_white_chalk_coal_ore",
       "required": false
     },
@@ -6976,6 +7020,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_white_chalk_sulfurpotassiummod_potassium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_pink_sandstone_iron_ore",
       "required": false
     },
@@ -7037,6 +7085,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_pink_sandstone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_sulfurpotassiummod_potassium_ore",
       "required": false
     }
   ]

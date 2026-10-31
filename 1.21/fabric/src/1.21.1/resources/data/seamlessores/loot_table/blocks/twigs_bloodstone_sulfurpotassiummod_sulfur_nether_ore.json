@@ -1,0 +1,62 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:twigs_bloodstone_sulfurpotassiummod_sulfur_nether_ore"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twigs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sulfurpotassiummod"
+    }
+  ],
+  "forge:condition": {
+    "type": "forge:mod_loaded",
+    "modid": "twigs"
+  },
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "seamlessores:twigs_bloodstone_sulfurpotassiummod_sulfur_nether_ore",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "sulfurpotassiummod:blocks/sulfur_nether_ore"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "seamlessores:blocks/twigs_bloodstone_sulfurpotassiummod_sulfur_nether_ore"
+}

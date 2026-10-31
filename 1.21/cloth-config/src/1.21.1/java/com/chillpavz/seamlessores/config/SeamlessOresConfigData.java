@@ -730,6 +730,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean treasure2 = true;
 
+    // --- Sulfur and Potassium ------------------------------------------------------------------------
+
+    @ConfigEntry.Category("sulfurandpotassium")
+    @ConfigEntry.Gui.Tooltip
+    public boolean sulfurAndPotassium = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -904,6 +910,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.basicNetherOres = basicNetherOres;
         values.werewolves = werewolves;
         values.treasure2 = treasure2;
+        values.sulfurAndPotassium = sulfurAndPotassium;
 
         SeamlessOresConfig.apply(values);
     }

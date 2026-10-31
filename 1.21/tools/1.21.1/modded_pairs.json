@@ -1163,6 +1163,24 @@
     "mythicmetals:stormyx_ore"
    ]
   },
+  "sulfurpotassiummod_nether_sulfur": {
+   "mod": "sulfurpotassiummod",
+   "forms": [
+    "sulfurpotassiummod:sulfur_nether_ore"
+   ]
+  },
+  "sulfurpotassiummod_potassium": {
+   "mod": "sulfurpotassiummod",
+   "forms": [
+    "sulfurpotassiummod:potassium_ore"
+   ]
+  },
+  "sulfurpotassiummod_sulfur": {
+   "mod": "sulfurpotassiummod",
+   "forms": [
+    "sulfurpotassiummod:sulfur_ore"
+   ]
+  },
   "sun_stone": {
    "mod": "cobblemon",
    "forms": [
@@ -3093,6 +3111,12 @@
     ],
     "rate": 1.11
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 41.9
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -3327,6 +3351,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.23
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 3.18
    },
    "sun_stone": {
     "where": [
@@ -3611,6 +3641,12 @@
     ],
     "rate": 0.62
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 23.35
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -3795,6 +3831,12 @@
      "1.21.1 fabric"
     ],
     "rate": 10.81
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 152.31
    },
    "sun_stone": {
     "where": [
@@ -4025,6 +4067,18 @@
      "1.21.1 fabric"
     ],
     "rate": 0.23
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 218.14
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 14.36
    },
    "sun_stone": {
     "where": [
@@ -4274,6 +4328,18 @@
     ],
     "rate": 68.88
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 209.42
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 14.36
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric"
@@ -4473,6 +4539,12 @@
      "1.21.1 fabric"
     ],
     "rate": 2.27
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 42.42
    },
    "sun_stone": {
     "where": [
@@ -14148,6 +14220,18 @@
     ],
     "rate": 5.96
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 26.28
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 18.62
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -14951,6 +15035,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 5.96
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 26.28
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 18.62
    },
    "sun_stone": {
     "where": [
@@ -15756,6 +15852,18 @@
     ],
     "rate": 5.96
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 26.28
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 18.62
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -16489,6 +16597,12 @@
     ],
     "rate": 4.69
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 179.49
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -17208,6 +17322,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.84
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 2.53
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 3.83
    },
    "sun_stone": {
     "where": [
@@ -19946,6 +20072,12 @@
     ],
     "rate": 2.44
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 188.72
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -20278,6 +20410,12 @@
     ],
     "rate": 0.4
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 15.26
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -20567,6 +20705,12 @@
     ],
     "rate": 1.65
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 62.26
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -20837,6 +20981,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.12
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 4.58
    },
    "sun_stone": {
     "where": [
@@ -21490,6 +21640,18 @@
      "1.21.1 fabric"
     ],
     "rate": 0.17
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 173.9
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 11.48
    },
    "sun_stone": {
     "where": [
@@ -22252,6 +22414,18 @@
      "1.21.1 fabric"
     ],
     "rate": 0.26
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 177.17
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 11.48
    },
    "sun_stone": {
     "where": [
@@ -24539,6 +24713,18 @@
     ],
     "rate": 0.21
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 0.75
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 0.7
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -24823,6 +25009,12 @@
     ],
     "rate": 0.17
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 6.29
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric",
@@ -25099,6 +25291,12 @@
      "1.21.1 fabric"
     ],
     "rate": 0.28
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 10.74
    },
    "sun_stone": {
     "where": [
@@ -27875,6 +28073,12 @@
      "1.21.1 fabric"
     ],
     "rate": 5.01
+   },
+   "sulfurpotassiummod_nether_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 84.74
    }
   },
   "twigs:rhyolite": {
@@ -28470,6 +28674,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 15.19
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 25.49
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 93.37
    },
    "sun_stone": {
     "where": [
@@ -29250,6 +29466,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.6
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 11.74
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 8.54
    },
    "sun_stone": {
     "where": [
@@ -30401,6 +30629,18 @@
     ],
     "rate": 3.01
    },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 9.15
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 6.28
+   },
    "sun_stone": {
     "where": [
      "1.21.1 fabric"
@@ -31110,6 +31350,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 26.27
+   },
+   "sulfurpotassiummod_potassium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 117.62
+   },
+   "sulfurpotassiummod_sulfur": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 61.84
    },
    "sun_stone": {
     "where": [
