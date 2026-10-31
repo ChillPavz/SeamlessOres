@@ -1,14 +1,20 @@
 package com.chillpavz.seamlessores.worldgen;
 
 import com.chillpavz.seamlessores.Constants;
+import com.mojang.serialization.JsonOps;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.RecordComponent;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -59,7 +65,18 @@ public final class ForeignOreTargets {
             // prepending our host-matched entries changes which texture a position gets and nothing
             // about how much ore exists. Its size and air-exposure suppliers read Mekanism's server
             // config and are passed through untouched by withTargets.
-            "mekanism.common.world.ResizableOreFeatureConfig");
+            "mekanism.common.world.ResizableOreFeatureConfig",
+            // Mining Master's miningmaster:ore_gem_feature. Read from its jar: GemOreFeature.place walks
+            // targetStates in order, and on the first test that matches the block at the position it
+            // sets one state picked at random from that entry's list, then stops. So it is a
+            // substitution table for a single block, and prepending our entries changes which texture
+            // the position gets and nothing about how many gems exist. Its entries hold a weighted list
+            // where vanilla's hold one state, hence readGems and gemsWithTargets.
+            GEM_CONFIG);
+
+    /** Mining Master's configuration: a record of (List of TargetWeightedState, float). */
+    private static final String GEM_CONFIG =
+            "org.infernalstudios.miningmaster.world.features.config.GemOreFeatureConfig";
 
     /** Classes that failed once, so the failure is logged once rather than per feature per load. */
     private static final Set<String> FAILED = ConcurrentHashMap.newKeySet();
@@ -80,6 +97,9 @@ public final class ForeignOreTargets {
             return null;
         }
         try {
+            if (config.getClass().getName().equals(GEM_CONFIG)) {
+                return readGems(config);
+            }
             final RecordComponent component = targetComponent(config.getClass());
             if (component == null) {
                 return failed(config, "no single List<TargetBlockState> component");
@@ -114,6 +134,9 @@ public final class ForeignOreTargets {
         }
         try {
             final Class<?> type = config.getClass();
+            if (type.getName().equals(GEM_CONFIG)) {
+                return gemsWithTargets(config, targets);
+            }
             final RecordComponent[] components = type.getRecordComponents();
             final RecordComponent target = targetComponent(type);
             if (components == null || target == null) {
@@ -155,6 +178,61 @@ public final class ForeignOreTargets {
         } catch (Throwable t) {
             return failed(config, t.toString());
         }
+    }
+
+    /**
+     * Mining Master's list, flattened: one vanilla target per state of each entry. Its {@code states}
+     * field already repeats a state by its weight, so the flat list keeps the odds.
+     */
+    private static List<OreConfiguration.TargetBlockState> readGems(FeatureConfiguration config)
+            throws ReflectiveOperationException {
+        final List<OreConfiguration.TargetBlockState> flat = new ArrayList<>();
+        for (Object entry : (List<?>) config.getClass().getMethod("targetStates").invoke(config)) {
+            final RuleTest test = (RuleTest) entry.getClass().getField("target").get(entry);
+            for (Object state : (List<?>) entry.getClass().getField("states").get(entry)) {
+                flat.add(OreConfiguration.target(test, (BlockState) state));
+            }
+        }
+        return flat;
+    }
+
+    /**
+     * The flat list back in Mining Master's shape: one entry per test, weight 1 per listed state, so a test
+     * several gems share (its random feature, in a stone our rules added) keeps picking among them. Tests
+     * are compared by their encoded form, since each of our rules builds its own object.
+     */
+    private static FeatureConfiguration gemsWithTargets(FeatureConfiguration config,
+                                                        List<OreConfiguration.TargetBlockState> targets)
+            throws ReflectiveOperationException {
+        final Class<?> type = config.getClass();
+        final Class<?> entryType = Class.forName(GEM_CONFIG + "$TargetWeightedState", false, type.getClassLoader());
+        final Class<?> weightedType = Class.forName(GEM_CONFIG + "$WeightedState", false, type.getClassLoader());
+        final Constructor<?> entry = entryType.getDeclaredConstructor(RuleTest.class, List.class);
+        final Constructor<?> weighted = weightedType.getDeclaredConstructor(BlockState.class, int.class);
+        entry.setAccessible(true);
+        weighted.setAccessible(true);
+        final Map<String, List<Object>> byTest = new LinkedHashMap<>();
+        final Map<String, RuleTest> tests = new LinkedHashMap<>();
+        for (OreConfiguration.TargetBlockState target : targets) {
+            final String key = RuleTest.CODEC.encodeStart(JsonOps.INSTANCE, target.target).result()
+                    .map(Object::toString).orElseGet(() -> "#" + System.identityHashCode(target.target));
+            tests.putIfAbsent(key, target.target);
+            byTest.computeIfAbsent(key, k -> new ArrayList<>()).add(weighted.newInstance(target.state, 1));
+        }
+        final List<Object> entries = new ArrayList<>();
+        for (Map.Entry<String, List<Object>> test : byTest.entrySet()) {
+            entries.add(entry.newInstance(tests.get(test.getKey()), test.getValue()));
+        }
+        final Object discard = type.getMethod("discardChanceOnAirExposure").invoke(config);
+        final Object rebuilt = type.getDeclaredConstructor(List.class, float.class).newInstance(entries, discard);
+        if (!(rebuilt instanceof FeatureConfiguration replacement)) {
+            return failed(config, "the rebuilt instance is not a FeatureConfiguration");
+        }
+        final List<OreConfiguration.TargetBlockState> back = read(replacement);
+        if (back == null || back.size() != targets.size()) {
+            return failed(config, "the rebuilt config did not keep the new target list");
+        }
+        return replacement;
     }
 
     /**

@@ -127,7 +127,9 @@ DISPLAY_NAMES = {"lapis": "Lapis Lazuli"}
 # "end_" first: an End form is keyed end_<its stone key> (end_silents_ruby reads "Ruby").
 MOD_PREFIXES = ("end_", "beo_", "bno_", "silents_", "techreborn_", "energized_", "occultism_", "mi_", "ie_", "mek_", "oreganized_", "iceandfire_",
                 "biggerreactors_", "createpropulsion_", "tankdefenses_", "embers_", "epicpaladins_",
-                "expandeddelight_", "scguns_", "sullysmod_", "superbwarfare_")
+                "expandeddelight_", "scguns_", "sullysmod_", "superbwarfare_",
+                "werewolves_", "treasure2_", "tconstruct_", "sulfurpotassiummod_", "rubinated_nether_", "railcraft_",
+                "projectred_exploration_", "jeg_", "cgs_", "bronze_", "oritech_", "miningmaster_")
 # A stone whose display name is not its id path, title-cased.
 # By block path, or by host name where one block hosts twice (deep blackstone, besides the Nether one).
 STONE_NAMES = {"dripstone_block": "Dripstone", "minecraft_blackstone": "Deep Blackstone"}

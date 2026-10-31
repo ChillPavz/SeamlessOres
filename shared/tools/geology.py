@@ -25,6 +25,27 @@ _BASIC = {"coal": "coal", "iron": "iron", "copper": "copper", "gold": "gold", "r
           "osmium": "osmium", "tin": "tin", "uranium": "uranium", "zinc": "zinc",
           "aluminum": "electrodynamics_aluminum", "silver": "electrodynamics_silver"}
 ALIASES = {f"{mod}_{ore}": base for mod in ("beo", "bno") for ore, base in _BASIC.items()}
+# The ore mods of the owner's last 6.0.0 batch (approved 31 Oct 2026): real minerals join their families, every
+# sulfur and Just Enough Guns' brimstone join sulfur, potassium joins sylvite, electrotine reads as redstone.
+# Mining Master's gems are the real gem each is named for; beryl is aquamarine's mineral, rhodonite a manganese
+# mineral, kunzite a lithium one. Its citrine, pyrite and malachite join no family (none filters them).
+ALIASES.update({
+    "werewolves_silver": "electrodynamics_silver", "treasure2_ruby": "silents_ruby",
+    "treasure2_sapphire": "silents_sapphire", "treasure2_topaz": "silents_topaz",
+    "sulfurpotassiummod_sulfur": "electrodynamics_sulfur", "sulfurpotassiummod_nether_sulfur": "electrodynamics_sulfur",
+    "sulfurpotassiummod_potassium": "electrodynamics_sylvite", "rubinated_nether_nether_ruby": "betternether_nether_ruby",
+    "railcraft_lead": "electrodynamics_lead", "railcraft_nickel": "nickel", "railcraft_silver": "electrodynamics_silver",
+    "railcraft_sulfur": "electrodynamics_sulfur", "railcraft_tin": "electrodynamics_tin", "railcraft_zinc": "zinc",
+    "projectred_exploration_electrotine": "redstone", "projectred_exploration_peridot": "silents_peridot",
+    "projectred_exploration_ruby": "silents_ruby", "projectred_exploration_sapphire": "silents_sapphire",
+    "projectred_exploration_silver": "electrodynamics_silver", "projectred_exploration_tin": "electrodynamics_tin",
+    "jeg_brimstone": "electrodynamics_sulfur", "cgs_lead": "electrodynamics_lead", "cgs_sulfur": "electrodynamics_sulfur",
+    "bronze_tin": "electrodynamics_tin", "oritech_nickel": "nickel", "oritech_platinum": "createpropulsion_platinum",
+    "miningmaster_dive_aquamarine": "silents_aquamarine", "miningmaster_divine_beryl": "silents_aquamarine",
+    "miningmaster_fire_ruby": "silents_ruby", "miningmaster_haste_peridot": "silents_peridot",
+    "miningmaster_heart_rhodonite": "manganese", "miningmaster_ice_sapphire": "silents_sapphire",
+    "miningmaster_kinetic_opal": "opal", "miningmaster_spider_kunzite": "electrodynamics_lithium",
+    "miningmaster_spirit_garnet": "garnet", "miningmaster_unbreaking_iolite": "iolite"})
 
 
 def _with_aliases(keys):
@@ -253,6 +274,7 @@ FICTION = set("redstone adamantite aquarium banglum carmot kyber midas_gold mork
               "iter_rpg_magmanum betternether_cincinnasite denseores_ancient_nether "
               "denseores_redstone betternether_nether_redstone".split())
 FICTION |= {a for a, base in ALIASES.items() if base in FICTION}
+FICTION |= {"tconstruct_cobalt", "treasure2_onyx", "jeg_scrap"}
 
 # Create's four invented stones each keep only the ore Create ties them to (owner), plus the invented ores
 # whose lore matches (FICTION_LORE).
@@ -356,6 +378,11 @@ FICTION_LORE = {
     "enderium": ("", "", ""),
 }
 FICTION_LORE.update({a: FICTION_LORE[base] for a, base in ALIASES.items() if base in FICTION_LORE})
+FICTION_LORE.update({
+    "tconstruct_cobalt": _NETHER_FIRE,                          # Tinkers' Nether ore, approved 31 Oct 2026
+    "treasure2_onyx": ("VOLC FELS LIME", "A", ""),              # chalcedony: lava vesicles, rhyolite, chert in limestone
+    "jeg_scrap": ("SHAL ASPH LIME", "T", ""),                   # buried junk, in sediment
+})
 if set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS):
     raise SystemExit(f"geology.py: invented ores with no lore: {sorted(set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS))}")
 _LORE_ROCK = {}     # ore -> the game's rocks it refuses, for ROCK below
@@ -374,9 +401,9 @@ for _ore, (_classes, _rocks, _stones) in FICTION_LORE.items():
 # salt and potash, the native sulphur of salt-dome caprock, saltpetre and brine lithium, and the invented ores
 # whose lore is a dried sea or nitre. The families above agree (checked below); this also refuses the ores no
 # family filters (iron, copper, gold, silver, bauxite, citrine).
-_EVAP_KEEPS = set("salt expandeddelight_salt electrodynamics_salt electrodynamics_sylvite scguns_sulfur "
+_EVAP_KEEPS = set(_with_aliases("salt expandeddelight_salt electrodynamics_salt electrodynamics_sylvite scguns_sulfur "
                   "scguns_nether_sulfur electrodynamics_sulfur electrodynamics_niter lithium electrodynamics_lithium "
-                  "banglum aquarium".split())
+                  "banglum aquarium".split()))
 HOST_KEEPS = {host: _EVAP_KEEPS for host in CLASSES["EVAP"]}
 for _host, _keeps in list(HOST_KEEPS.items()):
     _drift = sorted(o for o, refused in STRICT.items() if (o in _keeps) == (_host in refused))
@@ -394,7 +421,7 @@ END_GEM_ORES = set(["end_" + g for g in _END_SG] + "techreborn_peridot sodalite 
                    "end_amethyst end_black_opal beo_diamond beo_emerald beo_lapis end_starrite zenalite "
                    "azure_silver".split())
 END_METAL_ORES = set(["beo_" + m for m in "coal iron copper gold redstone lead nickel osmium tin uranium zinc "
-                      "aluminum silver".split()] + "techreborn_tungsten sheldonite anglesite".split())
+                      "aluminum silver".split()] + "techreborn_tungsten sheldonite anglesite oritech_end_platinum".split())
 END_ORES = END_GEM_ORES | END_METAL_ORES | {"end_experience"}
 END_CRYSTAL = ["betterend_azure_jadestone", "betterend_sandy_jadestone", "betterend_virid_jadestone",
                "betterend_violecite", "outer_end_violite", "outer_end_rose_tangled_violite",
