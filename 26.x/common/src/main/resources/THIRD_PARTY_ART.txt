@@ -104,6 +104,7 @@ Powah by owmii, Technici4n, shartte, LGPL-3.0:
   assets/seamlessores/textures/block/uraninite_poor_overlay.png
 
 Railcraft Reborn by Sm0keySa1m0n, Edivad99, Railcraft Reborn License:
+  https://github.com/railcraft-reborn/railcraft
   assets/seamlessores/textures/block/railcraft_lead_overlay.png
   assets/seamlessores/textures/block/railcraft_nickel_overlay.png
   assets/seamlessores/textures/block/railcraft_silver_overlay.png
