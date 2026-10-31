@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**830 blocks** in the `seamlessores` namespace.
+**831 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -316,7 +316,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**556 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**557 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, every 26.x version, both loaders)
 
@@ -485,6 +485,7 @@ Stones: Darkstone `forbidden_arcanus_darkstone`
 | Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Darkstone |
 | Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Darkstone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Darkstone |
+| Nickel | `oritech_nickel` | Oritech `oritech` | Darkstone |
 
 **Mythic Upgrades, requires `mythicupgrades`** (Fabric and NeoForge, 26.2 and 26.3)
 
@@ -713,7 +714,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 830 blocks takes **115 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 831 blocks takes **116 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -721,7 +722,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `ametrine` `aquamarine` `aquarium` `banglum` `betternether_cincinnasite` `betternether_nether_ruby` `black_diamond` `bort` `bronze_tin` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iridium` `iron` `jade` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `railcraft_lead` `railcraft_nickel` `railcraft_silver` `railcraft_sulfur` `railcraft_tin` `railcraft_zinc` `redstone` `ruby` `runite` `sal_ammoniac` `sapphire` `sheldonite` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sodalite` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_peridot` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_tungsten` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `ametrine` `aquamarine` `aquarium` `banglum` `betternether_cincinnasite` `betternether_nether_ruby` `black_diamond` `bort` `bronze_tin` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iridium` `iron` `jade` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_tuff` `orichalcum` `oritech_nickel` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `railcraft_lead` `railcraft_nickel` `railcraft_silver` `railcraft_sulfur` `railcraft_tin` `railcraft_zinc` `redstone` `ruby` `runite` `sal_ammoniac` `sapphire` `sheldonite` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sodalite` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_peridot` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_tungsten` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -827,6 +828,7 @@ is theirs and is used under the licence shown:
 | Dense Ores | NewJumperr | AGPL-3.0 (art, as its Modrinth page) |
 | Railcraft Reborn | Sm0keySa1m0n, Edivad99 | Railcraft Reborn License |
 | Bronze | Khazoda | GPL-3.0 |
+| Oritech | Rearth | CC-BY-4.0 |
 <!-- END GENERATED credits -->
 
 Built on [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template) by jaredlll08.

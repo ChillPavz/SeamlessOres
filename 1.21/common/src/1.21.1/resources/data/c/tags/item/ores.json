@@ -963,6 +963,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:betterend_brimstone_oritech_endstone_platinum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:betterend_brimstone_techreborn_sheldonite_ore",
       "required": false
     },
@@ -980,6 +984,10 @@
     },
     {
       "id": "seamlessores:betterend_flavolite_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_flavolite_oritech_endstone_platinum_ore",
       "required": false
     },
     {
@@ -1019,11 +1027,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:betterend_sulphuric_rock_oritech_endstone_platinum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:betterend_sulphuric_rock_techreborn_sheldonite_ore",
       "required": false
     },
     {
       "id": "seamlessores:betterend_sulphuric_rock_techreborn_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_oritech_endstone_platinum_ore",
       "required": false
     },
     {
@@ -1765,6 +1781,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_bluestone_oritech_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_bluestone_redstone_ore",
       "required": false
     },
@@ -1998,6 +2018,10 @@
     },
     {
       "id": "seamlessores:blockus_viridite_mythicupgrades_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_oritech_nickel_ore",
       "required": false
     },
     {
@@ -5196,6 +5220,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_oritech_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_projectred_exploration_peridot_ore",
       "required": false
     },
@@ -5801,6 +5829,10 @@
     },
     {
       "id": "seamlessores:legendary_monsters_enderstone_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:legendary_monsters_enderstone_oritech_endstone_platinum_ore",
       "required": false
     },
     {
@@ -7041,6 +7073,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oritech_nickel_ore",
       "required": false
     },
     {
@@ -10296,6 +10332,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:unusualend_gloopslate_oritech_endstone_platinum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:unusualend_gloopslate_silentgear_azure_silver_ore",
       "required": false
     },
@@ -10404,6 +10444,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:unusualend_gloopstone_oritech_endstone_platinum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:unusualend_gloopstone_silentgear_azure_silver_ore",
       "required": false
     },
@@ -10509,6 +10553,10 @@
     },
     {
       "id": "seamlessores:unusualend_gneiss_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_oritech_endstone_platinum_ore",
       "required": false
     },
     {
@@ -10861,6 +10909,10 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_mythicmetals_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_oritech_nickel_ore",
       "required": false
     },
     {

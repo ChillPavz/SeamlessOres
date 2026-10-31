@@ -980,6 +980,22 @@
    "strength": null,
    "deepslate_overlay": null
   },
+  "oritech_nickel": {
+   "mod": "oritech",
+   "seamless_ores_name": "oritech_nickel",
+   "forms": [
+    "oritech:nickel_ore",
+    "oritech:deepslate_nickel_ore"
+   ],
+   "nether": false,
+   "xp": [
+    0,
+    0
+   ],
+   "deepslate_xp": null,
+   "strength": null,
+   "deepslate_overlay": null
+  },
   "uraninite": {
    "mod": "powah",
    "seamless_ores_name": "uraninite",
@@ -4885,6 +4901,12 @@
     ],
     "rate": 46.92
    },
+   "oritech_nickel": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 125.35
+   },
    "prosperity": {
     "where": [
      "26.1.x neoforge"
@@ -5212,6 +5234,12 @@
      "26.1.x fabric"
     ],
     "rate": 0.27
+   },
+   "oritech_nickel": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 3.36
    },
    "peridot": {
     "where": [
@@ -6522,6 +6550,12 @@
      "26.1.x neoforge"
     ],
     "rate": 58.62
+   },
+   "oritech_nickel": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 5.19
    },
    "osmium": {
     "where": [
@@ -7874,6 +7908,12 @@
     ],
     "rate": 1.15
    },
+   "oritech_nickel": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 0.74
+   },
    "platinum": {
     "where": [
      "26.1.x fabric"
@@ -8790,6 +8830,12 @@
      "26.1.x fabric"
     ],
     "rate": 4.93
+   },
+   "oritech_nickel": {
+    "where": [
+     "26.1.x neoforge"
+    ],
+    "rate": 74.15
    },
    "osmium": {
     "where": [

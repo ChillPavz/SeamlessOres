@@ -398,6 +398,10 @@ Oreganized by Team Galena, MIT code, assets All Rights Reserved:
   assets/seamlessores/textures/block/oreganized_lead_overlay.png
   assets/seamlessores/textures/block/oreganized_silver_overlay.png
 
+Oritech by Rearth, CC-BY-4.0:
+  assets/seamlessores/textures/block/oritech_end_platinum_overlay.png
+  assets/seamlessores/textures/block/oritech_nickel_overlay.png
+
 Powah by owmii, Technici4n, shartte, LGPL-3.0:
   assets/seamlessores/textures/block/uraninite_dense_overlay.png
   assets/seamlessores/textures/block/uraninite_overlay.png

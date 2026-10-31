@@ -472,6 +472,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean bronze = true;
 
+    // --- Oritech -------------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("oritech")
+    @ConfigEntry.Gui.Tooltip
+    public boolean oritech = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -589,6 +595,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.denseOres = denseOres;
         values.railcraftReborn = railcraftReborn;
         values.bronze = bronze;
+        values.oritech = oritech;
 
         SeamlessOresConfig.apply(values);
     }

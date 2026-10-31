@@ -95,6 +95,9 @@ Mythic Upgrades by TriQue, MIT:
 Occultism by Kli Kli, MIT:
   assets/seamlessores/textures/block/occultism_silver_overlay.png
 
+Oritech by Rearth, CC-BY-4.0:
+  assets/seamlessores/textures/block/oritech_nickel_overlay.png
+
 Powah by owmii, Technici4n, shartte, LGPL-3.0:
   assets/seamlessores/textures/block/uraninite_dense_overlay.png
   assets/seamlessores/textures/block/uraninite_overlay.png

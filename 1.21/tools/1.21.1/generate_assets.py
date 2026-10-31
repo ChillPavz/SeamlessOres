@@ -166,7 +166,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "railcraft": jar("railcraft-reborn-1.21.1-1.2.16.jar"),
             "projectred_exploration": jar("ProjectRed-1.21.1-4.23.0-exploration.jar"),
             "cgs": jar("create-gunsmithing-1.21.1-1.4.9.jar"),
-            "bronze": jar("bronze-neoforge-1.21.1-2.0.6.jar")}
+            "bronze": jar("bronze-neoforge-1.21.1-2.0.6.jar"),
+            "oritech": jar("oritech-neoforge-1.21.1-1.2.13.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -466,6 +467,8 @@ MODS = {
                        "licence": "GPL-3.0", "author": "Jetug, Dayton, melox"},
     "bronze": {"display": "Bronze", "category": "bronze",
                        "licence": "GPL-3.0", "author": "Khazoda"},
+    "oritech": {"display": "Oritech", "category": "oritech",
+                       "licence": "CC-BY-4.0", "author": "Rearth"},
 }
 
 ORE_DEFS = [
@@ -1338,6 +1341,16 @@ ORE_DEFS = [
     {"name": "bronze_tin", "overlay": "bronze_tin", "deepslate_overlay": "bronze_tin_deepslate", "source": "tin_ore_block", "base": "stone",
      "mod": "bronze",
      "tiers": {"stone": "tin_ore_block", "deepslate": "deepslate_tin_ore_block"}},
+    # --- Oritech (mod id oritech, CC BY 4.0): nickel, platinum in deepslate and end stone; its uranium is a patch feature, so no variants. Fabric and NeoForge at 1.21.1, NeoForge at 26.1 ---
+    {"name": "oritech_nickel", "overlay": "oritech_nickel", "source": "nickel_ore", "base": "stone",
+     "mod": "oritech",
+     "tiers": {"stone": "nickel_ore", "deepslate": "deepslate_nickel_ore"}},
+    {"name": "oritech_platinum", "overlay": "oritech_platinum", "source": "deepslate_platinum_ore", "base": "deepslate",
+     "mod": "oritech",
+     "tiers": {"deepslate": "deepslate_platinum_ore"}},
+    {"name": "oritech_end_platinum", "overlay": "oritech_end_platinum", "source": "endstone_platinum_ore", "base": "end_stone",
+     "mod": "oritech",
+     "tiers": {"end": "endstone_platinum_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1504,6 +1517,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "projectred_exploration": ('neoforge',),
     "cgs": ('neoforge',),
     "bronze": ('fabric', 'neoforge'),
+    "oritech": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1615,6 +1629,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.oritech": "Oritech",
         f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
         f"text.autoconfig.{MOD_ID}.category.creategunsmithing": "Create: Gunsmithing",
         f"text.autoconfig.{MOD_ID}.category.projectredexploration": "Project Red Exploration",
@@ -1662,6 +1677,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.oritech": "Oritech: variants",
+        f"text.autoconfig.{MOD_ID}.option.oritech.@Tooltip":
+            "Generate host-matched nickel and platinum ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.bronze": "Bronze: variants",
         f"text.autoconfig.{MOD_ID}.option.bronze.@Tooltip":

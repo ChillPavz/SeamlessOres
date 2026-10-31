@@ -1231,6 +1231,17 @@ public record OreType(String name, String key, String overlay, String deepslateO
             of("bronze", "tin_ore_block"), of("bronze", "deepslate_tin_ore_block"), null,
             NONE, null, false, Set.of());
 
+    // --- Oritech (mod id oritech, CC BY 4.0): nickel, platinum in deepslate and end stone; its uranium is a patch feature, so no variants. Fabric and NeoForge at 1.21.1, NeoForge at 26.1 ---
+    public static final OreType OT_NICKEL = ore(
+            "oritech_nickel", "oritech_nickel", null, "oritech",
+            of("oritech", "nickel_ore"), of("oritech", "deepslate_nickel_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType OT_PLATINUM = ore(
+            "oritech_platinum", "oritech_platinum", null, "oritech",
+            null, of("oritech", "deepslate_platinum_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType OT_END_PLATINUM = endForm("oritech_end_platinum", "oritech_end_platinum", "oritech", "endstone_platinum_ore", NONE);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1286,7 +1297,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC,
                     PR_ELECTROTINE, PR_PERIDOT, PR_RUBY, PR_SAPPHIRE, PR_SILVER, PR_TIN,
                     CGS_LEAD, CGS_SULFUR,
-                    BRZ_TIN);
+                    BRZ_TIN,
+                    OT_NICKEL, OT_PLATINUM, OT_END_PLATINUM);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

@@ -115,6 +115,7 @@ PROFILES = {
             "denseores": REFS + "denseores-neoforge-1.4.1.jar",
             "railcraft": REFS + "railcraft-reborn-26.1.2-1.4.9.jar",
             "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",
+            "oritech": REFS + "oritech-2.0.0-exp12.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -140,6 +141,7 @@ PROFILES = {
             "denseores": ("fabric", "neoforge"),
             "railcraft": ('neoforge',),
             "bronze": ('fabric', 'neoforge'),
+            "oritech": ('neoforge',),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -165,6 +167,7 @@ PROFILES = {
             "betternether": REFS + "better-nether-26.201.4.jar",
             "denseores": REFS + "denseores-neoforge-26.2-1.4.1.jar",
             "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",   # no 26.2 build: stands in, inert
+            "oritech": REFS + "oritech-2.0.0-exp12.jar",   # no 26.2 build: stands in, inert
         },
         "available": {
             "create": ("fabric",),
@@ -210,6 +213,7 @@ PROFILES = {
             "evilcraft": REFS + "evilcraft-26.3-neoforge-1.2.98-1170.jar",
             "betternether": REFS + "better-nether-26.301.2.jar",
             "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",   # no 26.3 build: stands in, inert
+            "oritech": REFS + "oritech-2.0.0-exp12.jar",   # no 26.3 build: stands in, inert
         },
         "available": {
             "mythicupgrades": ("fabric", "neoforge"),
@@ -449,6 +453,8 @@ MODS = {
                        "licence": "Railcraft Reborn License", "author": "Sm0keySa1m0n, Edivad99"},
     "bronze": {"display": "Bronze", "category": "bronze",
                        "licence": "GPL-3.0", "author": "Khazoda"},
+    "oritech": {"display": "Oritech", "category": "oritech",
+                       "licence": "CC-BY-4.0", "author": "Rearth"},
 }
 
 ORE_DEFS = [
@@ -915,6 +921,16 @@ ORE_DEFS = [
     {"name": "bronze_tin", "overlay": "bronze_tin", "deepslate_overlay": "bronze_tin_deepslate", "source": "tin_ore_block", "base": "stone",
      "mod": "bronze",
      "tiers": {"stone": "tin_ore_block", "deepslate": "deepslate_tin_ore_block"}},
+    # --- Oritech (mod id oritech, CC BY 4.0): nickel, platinum in deepslate and end stone; its uranium is a patch feature, so no variants. Fabric and NeoForge at 1.21.1, NeoForge at 26.1 ---
+    {"name": "oritech_nickel", "overlay": "oritech_nickel", "source": "nickel_ore", "base": "stone",
+     "mod": "oritech",
+     "tiers": {"stone": "nickel_ore", "deepslate": "deepslate_nickel_ore"}},
+    {"name": "oritech_platinum", "overlay": "oritech_platinum", "source": "deepslate_platinum_ore", "base": "deepslate",
+     "mod": "oritech",
+     "tiers": {"deepslate": "deepslate_platinum_ore"}},
+    {"name": "oritech_end_platinum", "overlay": "oritech_end_platinum", "source": "endstone_platinum_ore", "base": "end_stone",
+     "mod": "oritech",
+     "tiers": {"end": "endstone_platinum_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -1006,6 +1022,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "denseores": ("fabric", "neoforge"),
     "railcraft": ('neoforge',),
     "bronze": ('fabric', 'neoforge'),
+    "oritech": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1172,6 +1189,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.oritech": "Oritech",
         f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
         f"text.autoconfig.{MOD_ID}.category.railcraftreborn": "Railcraft Reborn",
         f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
@@ -1197,6 +1215,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.oritech": "Oritech: variants",
+        f"text.autoconfig.{MOD_ID}.option.oritech.@Tooltip":
+            "Generate host-matched nickel and platinum ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.bronze": "Bronze: variants",
         f"text.autoconfig.{MOD_ID}.option.bronze.@Tooltip":

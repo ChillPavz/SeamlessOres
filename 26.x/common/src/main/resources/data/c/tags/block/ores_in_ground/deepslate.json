@@ -397,6 +397,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_oritech_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_iron_ore",
       "required": false
     },

@@ -520,6 +520,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_oritech_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:mythicupgrades_aquamarine_schist_iron_ore",
       "required": false
     },

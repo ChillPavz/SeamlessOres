@@ -633,6 +633,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_viridite_oritech_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_crimsite_hazennstuff_dreadstone_ore",
       "required": false
     },
@@ -957,6 +961,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_oritech_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_hazennstuff_dreadstone_ore",
       "required": false
     },
@@ -1018,6 +1026,10 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_oritech_nickel_ore",
       "required": false
     },
     {

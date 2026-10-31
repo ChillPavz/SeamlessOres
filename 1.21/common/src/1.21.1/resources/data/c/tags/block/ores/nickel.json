@@ -1,6 +1,14 @@
 {
   "values": [
     {
+      "id": "seamlessores:blockus_bluestone_oritech_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_oritech_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_railcraft_nickel_ore",
       "required": false
     },
@@ -14,6 +22,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_railcraft_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_oritech_nickel_ore",
       "required": false
     },
     {
@@ -34,6 +46,14 @@
     },
     {
       "id": "seamlessores:promenade_blunite_railcraft_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oritech_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_oritech_nickel_ore",
       "required": false
     }
   ]

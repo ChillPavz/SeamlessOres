@@ -1416,6 +1416,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_bluestone_oritech_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_asurine_create_zinc_ore",
       "required": false
     },
@@ -6133,6 +6137,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_oritech_nickel_ore",
       "required": false
     },
     {

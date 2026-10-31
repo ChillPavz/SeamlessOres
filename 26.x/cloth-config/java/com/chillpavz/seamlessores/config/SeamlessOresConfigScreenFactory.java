@@ -91,6 +91,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("denseores", "dense_ores");
         MOD_CATEGORIES.put("railcraft", "railcraftreborn");
         MOD_CATEGORIES.put("bronze", "bronze");
+        MOD_CATEGORIES.put("oritech", "oritech");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

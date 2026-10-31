@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/betterend_umbralith_oritech_endstone_platinum_ore_0",
+        "weight": 10
+      },
+      {
+        "model": "seamlessores:block/betterend_umbralith_oritech_endstone_platinum_ore_1",
+        "weight": 10
+      },
+      {
+        "model": "seamlessores:block/betterend_umbralith_oritech_endstone_platinum_ore_2",
+        "weight": 10
+      },
+      {
+        "model": "seamlessores:block/betterend_umbralith_oritech_endstone_platinum_ore_3",
+        "weight": 10
+      },
+      {
+        "model": "seamlessores:block/betterend_umbralith_oritech_endstone_platinum_ore_4",
+        "weight": 1
+      },
+      {
+        "model": "seamlessores:block/betterend_umbralith_oritech_endstone_platinum_ore_5",
+        "weight": 1
+      },
+      {
+        "model": "seamlessores:block/betterend_umbralith_oritech_endstone_platinum_ore_6",
+        "weight": 1
+      }
+    ]
+  }
+}

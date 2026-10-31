@@ -4896,6 +4896,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:betterend_flavolite_oritech_endstone_platinum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:betterend_violecite_mythicupgrades_ametrine_ore",
       "required": false
     },
@@ -4905,6 +4909,18 @@
     },
     {
       "id": "seamlessores:betterend_violecite_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_sulphuric_rock_oritech_endstone_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_brimstone_oritech_endstone_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:betterend_umbralith_oritech_endstone_platinum_ore",
       "required": false
     },
     {
@@ -4960,6 +4976,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:legendary_monsters_enderstone_oritech_endstone_platinum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:unusualend_gloopstone_mythicupgrades_ametrine_ore",
       "required": false
     },
@@ -4976,6 +4996,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:unusualend_gloopstone_oritech_endstone_platinum_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:unusualend_gloopslate_mythicupgrades_ametrine_ore",
       "required": false
     },
@@ -4989,6 +5013,10 @@
     },
     {
       "id": "seamlessores:unusualend_gloopslate_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gloopslate_oritech_endstone_platinum_ore",
       "required": false
     },
     {
@@ -5017,6 +5045,10 @@
     },
     {
       "id": "seamlessores:unusualend_gneiss_mythicupgrades_jade_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:unusualend_gneiss_oritech_endstone_platinum_ore",
       "required": false
     },
     {

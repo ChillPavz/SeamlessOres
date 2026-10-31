@@ -273,6 +273,9 @@ public final class SeamlessOresConfig {
     /** Whether Bronze variants generate. Pure restyle. */
     public static boolean bronze = true;
 
+    /** Whether Oritech variants generate. Pure restyle. */
+    public static boolean oritech = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -335,6 +338,7 @@ public final class SeamlessOresConfig {
             case "projectred_exploration" -> projectRedExploration;
             case "cgs" -> createGunsmithing;
             case "bronze" -> bronze;
+            case "oritech" -> oritech;
             default -> true;
         };
     }
@@ -551,6 +555,7 @@ public final class SeamlessOresConfig {
         public boolean projectRedExploration = true;
         public boolean createGunsmithing = true;
         public boolean bronze = true;
+        public boolean oritech = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -635,6 +640,7 @@ public final class SeamlessOresConfig {
         projectRedExploration = values.projectRedExploration;
         createGunsmithing = values.createGunsmithing;
         bronze = values.bronze;
+        oritech = values.oritech;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

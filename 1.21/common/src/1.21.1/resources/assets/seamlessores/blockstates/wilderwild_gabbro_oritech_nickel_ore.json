@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_oritech_nickel_ore"
+      },
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_oritech_nickel_ore_mirrored"
+      },
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_oritech_nickel_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_oritech_nickel_ore_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}
