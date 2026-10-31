@@ -1252,6 +1252,12 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(10.0F, 10.0F);
 
+    // --- Rubinated Nether (mod id rubinated_nether, art CC BY-SA 4.0): nether ruby, 3 to 6 XP, strength not read. Molten ruby lies in magma blocks, which host nothing. 1.21.1 places no nether ruby ---
+    public static final OreType RN_NETHER_RUBY = ore(
+            "rubinated_nether_nether_ruby", "rubinated_nether_nether_ruby", null, "rubinated_nether",
+            null, null, of("rubinated_nether", "nether_ruby_ore"),
+            UniformInt.of(3, 6), null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1307,7 +1313,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     BNO_COAL, BNO_COPPER, BNO_DIAMOND, BNO_EMERALD, BNO_IRON, BNO_LAPIS, BNO_REDSTONE, BNO_ALUMINUM, BNO_LEAD, BNO_NICKEL, BNO_OSMIUM, BNO_SILVER, BNO_TIN, BNO_URANIUM, BNO_ZINC,
                     WW_SILVER,
                     T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ,
-                    TC_COBALT);
+                    TC_COBALT,
+                    RN_NETHER_RUBY);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

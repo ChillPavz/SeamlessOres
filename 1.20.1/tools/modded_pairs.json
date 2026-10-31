@@ -970,6 +970,12 @@
     "mythicmetals:quadrillum_ore"
    ]
   },
+  "rubinated_nether_nether_ruby": {
+   "mod": "rubinated_nether",
+   "forms": [
+    "rubinated_nether:nether_ruby_ore"
+   ]
+  },
   "ruby": {
    "mod": "mythicupgrades",
    "forms": [
@@ -30080,6 +30086,13 @@
      "1.20.1 fabric"
     ],
     "rate": 6.66
+   },
+   "rubinated_nether_nether_ruby": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 0.85
    },
    "ruby": {
     "where": [

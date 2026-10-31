@@ -282,6 +282,9 @@ public final class SeamlessOresConfig {
     /** Whether Tinkers' Construct variants generate. Pure restyle. */
     public static boolean tinkersConstruct = true;
 
+    /** Whether Rubinated Nether variants generate. Pure restyle. */
+    public static boolean rubinatedNether = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -347,6 +350,7 @@ public final class SeamlessOresConfig {
             case "werewolves" -> werewolves;
             case "treasure2" -> treasure2;
             case "tconstruct" -> tinkersConstruct;
+            case "rubinated_nether" -> rubinatedNether;
             default -> true;
         };
     }
@@ -566,6 +570,7 @@ public final class SeamlessOresConfig {
         public boolean werewolves = true;
         public boolean treasure2 = true;
         public boolean tinkersConstruct = true;
+        public boolean rubinatedNether = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -653,6 +658,7 @@ public final class SeamlessOresConfig {
         werewolves = values.werewolves;
         treasure2 = values.treasure2;
         tinkersConstruct = values.tinkersConstruct;
+        rubinatedNether = values.rubinatedNether;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

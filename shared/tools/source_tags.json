@@ -58,7 +58,8 @@
     "wover:ores/nether": "WorldWeaver (BetterNether): its list of Nether ores",
     "sulfurpotassiummod:ores/potassium_ore": "",
     "sulfurpotassiummod:ores/sulfur_nether_ore": "",
-    "sulfurpotassiummod:ores/sulfur_ore": ""
+    "sulfurpotassiummod:ores/sulfur_ore": "",
+    "rubinated_nether:rubies": ""
   },
   "skip": {
     "iceandfire:*dragon_cave*": "Ice and Fire PLACES blocks from these lists in dragon caves: our variants would appear there",

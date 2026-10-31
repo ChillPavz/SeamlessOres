@@ -10,7 +10,15 @@
       "required": false
     },
     "seamlessores:basalt_nether_gold_ore",
+    {
+      "id": "seamlessores:basalt_rubinated_nether_nether_ruby_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
+    {
+      "id": "seamlessores:blackstone_rubinated_nether_nether_ruby_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:minecraft_blackstone_gold_ore",
       "required": false
@@ -85,6 +93,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_rubinated_nether_nether_ruby_ore",
       "required": false
     },
     {

@@ -1689,6 +1689,10 @@
       "id": "seamlessores:basalt_tconstruct_cobalt_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:basalt_rubinated_nether_nether_ruby_ore",
+      "required": false
+    },
     "seamlessores:blackstone_nether_gold_ore",
     "seamlessores:blackstone_nether_quartz_ore",
     {
@@ -1805,6 +1809,10 @@
     },
     {
       "id": "seamlessores:blackstone_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_rubinated_nether_nether_ruby_ore",
       "required": false
     },
     {
@@ -4941,6 +4949,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_tconstruct_cobalt_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_rubinated_nether_nether_ruby_ore",
       "required": false
     },
     {

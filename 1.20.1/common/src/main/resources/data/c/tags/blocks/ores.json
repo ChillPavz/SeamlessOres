@@ -771,6 +771,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_rubinated_nether_nether_ruby_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_scguns_nether_sulfur_ore",
       "required": false
     },
@@ -1546,6 +1550,10 @@
     },
     {
       "id": "seamlessores:blackstone_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_rubinated_nether_nether_ruby_ore",
       "required": false
     },
     {
@@ -9353,6 +9361,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_rftoolsbase_dimensionalshard_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_rubinated_nether_nether_ruby_ore",
       "required": false
     },
     {

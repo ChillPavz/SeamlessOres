@@ -114,6 +114,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("werewolves", "werewolves");
         MOD_CATEGORIES.put("treasure2", "treasure2");
         MOD_CATEGORIES.put("tconstruct", "tinkersconstruct");
+        MOD_CATEGORIES.put("rubinated_nether", "rubinatednether");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

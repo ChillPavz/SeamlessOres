@@ -197,7 +197,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "bno": jar("BasicNetherOres-forge-1.20.1-9.1.1.jar"),
             "werewolves": jar("Werewolves-1.20.1-2.0.2.7.jar"),
             "treasure2": jar("treasure2-1.20.1-4.2.1.jar"),
-            "tconstruct": jar("TConstruct-1.20.1-3.12.1.231.jar")}
+            "tconstruct": jar("TConstruct-1.20.1-3.12.1.231.jar"),
+            "rubinated_nether": jar("RubinatedNether-forge-1.3.0.E-1.20.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -510,6 +511,8 @@ MODS = {
                        "licence": "OSL-3.0", "author": "gottsch"},
     "tconstruct": {"display": "Tinkers' Construct", "category": "tinkersconstruct",
                        "licence": "MIT", "author": "Slime Knights"},
+    "rubinated_nether": {"display": "Rubinated Nether", "category": "rubinatednether",
+                       "licence": "CC-BY-SA-4.0", "author": "Artienia, Juniper, Darksonic300, Serine"},
 }
 
 ORE_DEFS = [
@@ -1402,6 +1405,10 @@ ORE_DEFS = [
     {"name": "tconstruct_cobalt", "overlay": "tconstruct_cobalt", "source": "cobalt_ore", "base": "netherrack",
      "mod": "tconstruct",
      "tiers": {"nether": "cobalt_ore"}},
+    # --- Rubinated Nether (mod id rubinated_nether, art CC BY-SA 4.0): nether ruby, 3 to 6 XP, strength not read. Molten ruby lies in magma blocks, which host nothing. 1.21.1 places no nether ruby ---
+    {"name": "rubinated_nether_nether_ruby", "overlay": "rubinated_nether_nether_ruby", "source": "nether_ruby_ore", "base": "netherrack",
+     "mod": "rubinated_nether",
+     "tiers": {"nether": "nether_ruby_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1566,6 +1573,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "werewolves": ('forge',),
     "treasure2": ('forge',),
     "tconstruct": ('forge',),
+    "rubinated_nether": ('fabric', 'forge'),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1712,6 +1720,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.rubinatednether": "Rubinated Nether",
         f"text.autoconfig.{MOD_ID}.category.tinkersconstruct": "Tinkers' Construct",
         f"text.autoconfig.{MOD_ID}.category.treasure2": "Treasure2",
         f"text.autoconfig.{MOD_ID}.category.werewolves": "Werewolves: Become a Beast",
@@ -1762,6 +1771,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.rubinatedNether": "Rubinated Nether: variants",
+        f"text.autoconfig.{MOD_ID}.option.rubinatedNether.@Tooltip":
+            "Generate host-matched ruby ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.tinkersConstruct": "Tinkers' Construct: variants",
         f"text.autoconfig.{MOD_ID}.option.tinkersConstruct.@Tooltip":

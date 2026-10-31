@@ -794,6 +794,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean tinkersConstruct = true;
 
+    // --- Rubinated Nether ----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("rubinatednether")
+    @ConfigEntry.Gui.Tooltip
+    public boolean rubinatedNether = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -980,6 +986,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.werewolves = werewolves;
         values.treasure2 = treasure2;
         values.tinkersConstruct = tinkersConstruct;
+        values.rubinatedNether = rubinatedNether;
 
         SeamlessOresConfig.apply(values);
     }
