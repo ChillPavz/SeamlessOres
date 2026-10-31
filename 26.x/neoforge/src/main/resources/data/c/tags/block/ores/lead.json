@@ -13,6 +13,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -22,6 +26,10 @@
     },
     {
       "id": "seamlessores:diorite_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_railcraft_lead_ore",
       "required": false
     },
     {
@@ -37,6 +45,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -46,6 +58,10 @@
     },
     {
       "id": "seamlessores:tuff_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_railcraft_lead_ore",
       "required": false
     },
     {
@@ -61,11 +77,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:cinnabar_techreborn_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:blackstone_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_railcraft_lead_ore",
       "required": false
     },
     {
@@ -97,6 +121,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_techreborn_lead_ore",
       "required": false
     },
@@ -105,7 +133,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_chert_techreborn_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_railcraft_lead_ore",
       "required": false
     }
   ]

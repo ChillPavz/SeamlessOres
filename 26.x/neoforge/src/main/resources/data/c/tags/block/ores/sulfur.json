@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:andesite_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_railcraft_sulfur_ore",
+      "required": false
+    }
+  ]
+}

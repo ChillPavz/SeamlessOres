@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "zinc_ingot",
+  "ingredient": {
+    "item": "seamlessores:calcite_railcraft_zinc_ore"
+  },
+  "result": "railcraft:zinc_ingot"
+}

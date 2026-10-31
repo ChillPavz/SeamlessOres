@@ -341,6 +341,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -554,6 +570,22 @@
     },
     {
       "id": "seamlessores:blackstone_treasure2_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -785,6 +817,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_silentcompat_voidmetal_ore",
       "required": false
     },
@@ -878,6 +922,14 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_railcraft_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_railcraft_silver_ore",
       "required": false
     },
     {
@@ -1049,6 +1101,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_grimestone_iron_ore",
       "required": false
     },
@@ -1209,6 +1277,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_iron_ore",
       "required": false
     },
@@ -1334,6 +1414,18 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_railcraft_zinc_ore",
       "required": false
     }
   ]

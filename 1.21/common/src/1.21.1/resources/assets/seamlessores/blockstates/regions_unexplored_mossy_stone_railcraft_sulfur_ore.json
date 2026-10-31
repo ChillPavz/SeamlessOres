@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_railcraft_sulfur_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_railcraft_sulfur_ore_mirrored"
+      }
+    ]
+  }
+}

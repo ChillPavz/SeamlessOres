@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:embellishcraft_jade_railcraft_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_railcraft_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_railcraft_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_railcraft_nickel_ore",
+      "required": false
+    }
+  ]
+}

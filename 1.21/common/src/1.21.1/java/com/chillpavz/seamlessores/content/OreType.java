@@ -1149,6 +1149,38 @@ public record OreType(String name, String key, String overlay, String deepslateO
             .withKey("sulfurpotassiummod_nether_sulfur")
             .withStrength(3.0F, 3.0F);
 
+    // --- Railcraft Reborn (mod id railcraft, its own licence: art may be used alongside it with attribution and a link): firestone and saltpeter are disks, so no variants. Forge at 1.20.1, NeoForge at 1.21.1 and 26.1 ---
+    public static final OreType RC_LEAD = ore(
+            "railcraft_lead", "railcraft_lead", null, "railcraft",
+            of("railcraft", "lead_ore"), of("railcraft", "deepslate_lead_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType RC_NICKEL = ore(
+            "railcraft_nickel", "railcraft_nickel", null, "railcraft",
+            of("railcraft", "nickel_ore"), of("railcraft", "deepslate_nickel_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType RC_SILVER = ore(
+            "railcraft_silver", "railcraft_silver", null, "railcraft",
+            of("railcraft", "silver_ore"), of("railcraft", "deepslate_silver_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType RC_SULFUR = ore(
+            "railcraft_sulfur", "railcraft_sulfur", null, "railcraft",
+            of("railcraft", "sulfur_ore"), of("railcraft", "deepslate_sulfur_ore"), null,
+            UniformInt.of(2, 5), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType RC_TIN = ore(
+            "railcraft_tin", "railcraft_tin", null, "railcraft",
+            of("railcraft", "tin_ore"), of("railcraft", "deepslate_tin_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType RC_ZINC = ore(
+            "railcraft_zinc", "railcraft_zinc", null, "railcraft",
+            of("railcraft", "zinc_ore"), of("railcraft", "deepslate_zinc_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1200,7 +1232,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     BNO_COAL, BNO_COPPER, BNO_DIAMOND, BNO_EMERALD, BNO_IRON, BNO_LAPIS, BNO_REDSTONE, BNO_ALUMINUM, BNO_LEAD, BNO_NICKEL, BNO_OSMIUM, BNO_SILVER, BNO_TIN, BNO_URANIUM, BNO_ZINC,
                     WW_SILVER,
                     T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ,
-                    SP_POTASSIUM, SP_SULFUR, SP_NETHER_SULFUR);
+                    SP_POTASSIUM, SP_SULFUR, SP_NETHER_SULFUR,
+                    RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

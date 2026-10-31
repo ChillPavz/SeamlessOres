@@ -1038,6 +1038,48 @@
     "mythicmetals:quadrillum_ore"
    ]
   },
+  "railcraft_lead": {
+   "mod": "railcraft",
+   "forms": [
+    "railcraft:lead_ore",
+    "railcraft:deepslate_lead_ore"
+   ]
+  },
+  "railcraft_nickel": {
+   "mod": "railcraft",
+   "forms": [
+    "railcraft:nickel_ore",
+    "railcraft:deepslate_nickel_ore"
+   ]
+  },
+  "railcraft_silver": {
+   "mod": "railcraft",
+   "forms": [
+    "railcraft:silver_ore",
+    "railcraft:deepslate_silver_ore"
+   ]
+  },
+  "railcraft_sulfur": {
+   "mod": "railcraft",
+   "forms": [
+    "railcraft:sulfur_ore",
+    "railcraft:deepslate_sulfur_ore"
+   ]
+  },
+  "railcraft_tin": {
+   "mod": "railcraft",
+   "forms": [
+    "railcraft:tin_ore",
+    "railcraft:deepslate_tin_ore"
+   ]
+  },
+  "railcraft_zinc": {
+   "mod": "railcraft",
+   "forms": [
+    "railcraft:zinc_ore",
+    "railcraft:deepslate_zinc_ore"
+   ]
+  },
   "ruby": {
    "mod": "mythicupgrades",
    "forms": [
@@ -1581,6 +1623,36 @@
     ],
     "rate": 100.65
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.93
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.1
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 86.36
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.34
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.71
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -1775,6 +1847,24 @@
     ],
     "rate": 1.31
    },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.15
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.77
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.34
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -1951,6 +2041,24 @@
     ],
     "rate": 1.31
    },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.15
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.77
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.34
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -2126,6 +2234,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.31
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.15
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.77
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.34
    },
    "sal_ammoniac": {
     "where": [
@@ -2357,6 +2483,36 @@
     ],
     "rate": 33.55
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.98
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.7
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.79
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.11
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.57
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -2550,6 +2706,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.31
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.15
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.77
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.34
    },
    "sal_ammoniac": {
     "where": [
@@ -3086,6 +3260,24 @@
     ],
     "rate": 8.37
    },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 65.23
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 57.74
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.37
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -3338,6 +3530,24 @@
      "1.21.1 fabric"
     ],
     "rate": 0.72
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.02
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.57
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.35
    },
    "sal_ammoniac": {
     "where": [
@@ -3609,6 +3819,24 @@
      "1.21.1 fabric"
     ],
     "rate": 7.63
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.39
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.71
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.67
    },
    "sal_ammoniac": {
     "where": [
@@ -5010,6 +5238,42 @@
     ],
     "rate": 108.1
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 85.08
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 127.13
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 66.86
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.07
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 154.9
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 49.63
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -5635,6 +5899,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 56.52
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 65.36
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 89.85
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.4
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 33.01
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 142.7
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 38.13
    },
    "sal_ammoniac": {
     "where": [
@@ -6274,6 +6574,42 @@
     ],
     "rate": 72.26
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 83.57
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 114.89
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.98
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.21
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 182.45
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.75
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -6912,6 +7248,42 @@
     ],
     "rate": 75.08
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 86.84
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 119.38
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 45.7
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.86
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 189.59
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 50.66
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -7549,6 +7921,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 48.98
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 56.65
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 77.87
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.81
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.61
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 123.68
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 33.04
    },
    "sal_ammoniac": {
     "where": [
@@ -8400,6 +8808,42 @@
     ],
     "rate": 64.89
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 75.05
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 103.17
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.5
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 37.9
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 163.86
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.78
+   },
    "ruby": {
     "where": [
      "1.21.1 neoforge"
@@ -9050,6 +9494,42 @@
     ],
     "rate": 53.43
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.8
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 84.95
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.52
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.21
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 134.92
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.05
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -9639,6 +10119,36 @@
      "1.21.1 neoforge"
     ],
     "rate": 9.32
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.56
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.24
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.87
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.44
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.91
    },
    "sal_ammoniac": {
     "where": [
@@ -10248,6 +10758,42 @@
     ],
     "rate": 568.38
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 95.33
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 258.59
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 358.02
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.9
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 209.67
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 55.61
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -10849,6 +11395,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 37.27
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.25
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.96
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.48
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.39
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.75
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.65
    },
    "sal_ammoniac": {
     "where": [
@@ -11458,6 +12040,42 @@
     ],
     "rate": 74.74
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.43
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.24
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 47.2
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.13
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.26
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.92
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -11994,6 +12612,42 @@
     ],
     "rate": 11.77
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 49.36
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 58.01
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.84
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.36
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 113.68
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.8
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -12278,6 +12932,24 @@
     ],
     "rate": 4.35
    },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 51.84
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 49.43
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.39
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -12514,6 +13186,36 @@
     ],
     "rate": 33.18
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.15
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.1
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.91
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.37
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.84
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -12713,6 +13415,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 8.05
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 313.13
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 181.0
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.45
    },
    "sal_ammoniac": {
     "where": [
@@ -13009,6 +13729,36 @@
      "1.21.1 neoforge"
     ],
     "rate": 4.69
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.25
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 65.98
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 63.35
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.22
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.81
    },
    "sal_ammoniac": {
     "where": [
@@ -13419,6 +14169,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 533.82
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 184.92
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 291.9
    },
    "sal_ammoniac": {
     "where": [
@@ -14146,6 +14908,42 @@
      "1.21.1 fabric"
     ],
     "rate": 3.78
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.65
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.08
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.44
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.21
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.76
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.05
    },
    "runite": {
     "where": [
@@ -14963,6 +15761,42 @@
     ],
     "rate": 3.78
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.65
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.08
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.44
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.21
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.76
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.05
+   },
    "runite": {
     "where": [
      "1.21.1 fabric"
@@ -15779,6 +16613,42 @@
     ],
     "rate": 3.78
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.65
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.08
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.44
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.21
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.76
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.05
+   },
    "runite": {
     "where": [
      "1.21.1 fabric"
@@ -16530,6 +17400,42 @@
     ],
     "rate": 0.34
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.32
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 229.87
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.1
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 236.57
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.39
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.77
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -17250,6 +18156,42 @@
     ],
     "rate": 0.5
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.83
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.56
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.98
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.55
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.33
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.65
+   },
    "runite": {
     "where": [
      "1.21.1 fabric"
@@ -17959,6 +18901,42 @@
     ],
     "rate": 33.1
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 38.28
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 52.63
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.15
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.34
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 83.58
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.33
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -18596,6 +19574,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 55.98
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 64.74
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 89.0
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 34.07
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 32.7
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 141.34
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 37.76
    },
    "sal_ammoniac": {
     "where": [
@@ -19331,6 +20345,42 @@
     ],
     "rate": 52.16
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 60.32
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 82.93
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.75
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 30.47
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 131.71
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.19
+   },
    "ruby": {
     "where": [
      "1.21.1 neoforge"
@@ -19993,6 +21043,42 @@
     ],
     "rate": 12.2
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 49.77
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 129.01
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.31
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 155.01
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 143.35
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.03
+   },
    "runite": {
     "where": [
      "1.21.1 fabric"
@@ -20379,6 +21465,24 @@
     ],
     "rate": 6.39
    },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.99
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 19.28
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.08
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -20674,6 +21778,24 @@
     ],
     "rate": 20.36
    },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 65.04
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 87.24
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.79
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -20956,6 +22078,24 @@
      "1.21.1 fabric"
     ],
     "rate": 1.92
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.6
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.78
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.92
    },
    "sal_ammoniac": {
     "where": [
@@ -21561,6 +22701,42 @@
      "1.21.1 fabric"
     ],
     "rate": 24.08
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 112.98
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 143.93
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.29
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 58.53
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 237.53
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 65.9
    },
    "runite": {
     "where": [
@@ -22336,6 +23512,42 @@
     ],
     "rate": 24.08
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 112.99
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 145.99
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 22.29
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 62.58
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 238.27
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 65.91
+   },
    "runite": {
     "where": [
      "1.21.1 fabric"
@@ -22991,6 +24203,42 @@
     ],
     "rate": 179.82
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 464.8
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 609.3
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 67.28
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 486.64
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1086.58
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 271.13
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -23544,6 +24792,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 524.48
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1355.66
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1777.12
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 196.24
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1419.38
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3169.2
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 790.8
    },
    "sal_ammoniac": {
     "where": [
@@ -24099,6 +25383,42 @@
     ],
     "rate": 299.7
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 774.66
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1015.5
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 112.14
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 811.07
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1810.97
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 451.89
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -24646,6 +25966,42 @@
     ],
     "rate": 0.16
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.74
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.1
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.6
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.17
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.44
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.43
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -24984,6 +26340,24 @@
     ],
     "rate": 1.26
    },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.79
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.66
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.36
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -25260,6 +26634,24 @@
      "1.21.1 fabric"
     ],
     "rate": 6.45
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.57
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.2
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.75
    },
    "sal_ammoniac": {
     "where": [
@@ -25740,6 +27132,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 23.87
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 71.41
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 85.83
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.32
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.19
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 156.89
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.65
    },
    "sal_ammoniac": {
     "where": [
@@ -26354,6 +27782,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 69.97
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 80.92
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 111.25
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.59
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 40.87
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 176.68
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 47.21
    },
    "sal_ammoniac": {
     "where": [
@@ -26993,6 +28457,42 @@
     ],
     "rate": 69.97
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 80.92
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 111.25
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.59
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 40.87
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 176.68
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 47.21
+   },
    "sal_ammoniac": {
     "where": [
      "1.21.1 neoforge"
@@ -27630,6 +29130,42 @@
      "1.21.1 neoforge"
     ],
     "rate": 69.97
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 80.92
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 111.25
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 42.59
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 40.87
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 176.68
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 47.21
    },
    "sal_ammoniac": {
     "where": [
@@ -28608,6 +30144,42 @@
     ],
     "rate": 2.93
    },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 40.29
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 77.75
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 69.3
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.41
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 77.35
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.5
+   },
    "runite": {
     "where": [
      "1.21.1 fabric"
@@ -29393,6 +30965,42 @@
      "1.21.1 fabric"
     ],
     "rate": 1.57
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.65
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.39
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.72
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.44
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.45
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.05
    },
    "runite": {
     "where": [
@@ -31277,6 +32885,42 @@
      "1.21.1 fabric"
     ],
     "rate": 16.92
+   },
+   "railcraft_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 93.63
+   },
+   "railcraft_nickel": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 130.03
+   },
+   "railcraft_silver": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 58.33
+   },
+   "railcraft_sulfur": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.21
+   },
+   "railcraft_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 197.47
+   },
+   "railcraft_zinc": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 54.62
    },
    "runite": {
     "where": [

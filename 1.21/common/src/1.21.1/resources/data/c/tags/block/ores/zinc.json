@@ -5,7 +5,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -13,11 +21,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_create_zinc_ore",
       "required": false
     },
     {
+      "id": "seamlessores:tuff_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -33,6 +53,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_asurine_create_zinc_ore",
       "required": false
     },
@@ -41,7 +65,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -49,7 +81,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -57,7 +97,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -65,7 +113,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -77,7 +133,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -85,7 +149,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_gneiss_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -93,7 +165,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_larvikite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -101,11 +181,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_jasper_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_create_zinc_ore",
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -117,11 +209,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_create_zinc_ore",
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -141,7 +245,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_arid_sandstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_red_arid_sandstone_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -165,7 +277,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_darkslate_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -173,11 +293,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_create_zinc_ore",
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_aridrock_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_chert_create_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_railcraft_zinc_ore",
       "required": false
     },
     {

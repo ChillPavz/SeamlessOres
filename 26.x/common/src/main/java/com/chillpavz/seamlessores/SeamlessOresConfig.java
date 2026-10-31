@@ -188,6 +188,9 @@ public final class SeamlessOresConfig {
     /** Whether Dense Ores variants generate. Pure restyle. */
     public static boolean denseOres = true;
 
+    /** Whether Railcraft Reborn variants generate. Pure restyle. */
+    public static boolean railcraftReborn = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -225,6 +228,7 @@ public final class SeamlessOresConfig {
             case "evilcraft" -> evilCraft;
             case "betternether" -> betterNether;
             case "denseores" -> denseOres;
+            case "railcraft" -> railcraftReborn;
             default -> true;
         };
     }
@@ -416,6 +420,7 @@ public final class SeamlessOresConfig {
         public boolean evilCraft = true;
         public boolean betterNether = true;
         public boolean denseOres = true;
+        public boolean railcraftReborn = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -475,6 +480,7 @@ public final class SeamlessOresConfig {
         evilCraft = values.evilCraft;
         betterNether = values.betterNether;
         denseOres = values.denseOres;
+        railcraftReborn = values.railcraftReborn;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

@@ -736,6 +736,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean sulfurAndPotassium = true;
 
+    // --- Railcraft Reborn ----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("railcraftreborn")
+    @ConfigEntry.Gui.Tooltip
+    public boolean railcraftReborn = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -911,6 +917,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.werewolves = werewolves;
         values.treasure2 = treasure2;
         values.sulfurAndPotassium = sulfurAndPotassium;
+        values.railcraftReborn = railcraftReborn;
 
         SeamlessOresConfig.apply(values);
     }

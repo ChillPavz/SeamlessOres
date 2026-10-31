@@ -59,11 +59,13 @@
     "sulfurpotassiummod:ores/potassium_ore": "",
     "sulfurpotassiummod:ores/sulfur_nether_ore": "",
     "sulfurpotassiummod:ores/sulfur_ore": "",
-    "rubinated_nether:rubies": ""
+    "rubinated_nether:rubies": "",
+    "railcraft:tunnel_bore_mineable_blocks": ""
   },
   "skip": {
     "iceandfire:*dragon_cave*": "Ice and Fire PLACES blocks from these lists in dragon caves: our variants would appear there",
     "occultism:drop_from/*": "a mob's drop list: the possessed blaze would drop our variant",
-    "wover:surfaces/nether/*": "WorldWeaver (BetterNether) worldgen treats these as the Nether's surface rock: a placement list"
+    "wover:surfaces/nether/*": "WorldWeaver (BetterNether) worldgen treats these as the Nether's surface rock: a placement list",
+    "railcraft:quarried_replaceable_blocks": "a placement list: what Railcraft's quarried stone may overwrite"
   }
 }

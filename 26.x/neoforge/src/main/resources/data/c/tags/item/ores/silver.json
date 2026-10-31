@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_railcraft_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_mythicmetals_silver_ore",
       "required": false
     },
@@ -38,6 +42,10 @@
     },
     {
       "id": "seamlessores:diorite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_railcraft_silver_ore",
       "required": false
     },
     {
@@ -61,6 +69,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_railcraft_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_silentgems_silver_ore",
       "required": false
     },
@@ -74,6 +86,10 @@
     },
     {
       "id": "seamlessores:tuff_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_railcraft_silver_ore",
       "required": false
     },
     {
@@ -106,6 +122,10 @@
     },
     {
       "id": "seamlessores:blackstone_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_railcraft_silver_ore",
       "required": false
     },
     {
@@ -173,6 +193,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_railcraft_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_mossy_stone_occultism_silver_ore",
       "required": false
     },
@@ -198,6 +222,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_railcraft_silver_ore",
       "required": false
     },
     {
@@ -265,6 +293,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_railcraft_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_chert_mythicmetals_silver_ore",
       "required": false
     },
@@ -282,6 +314,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_chert_iceandfire_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_railcraft_silver_ore",
       "required": false
     },
     {

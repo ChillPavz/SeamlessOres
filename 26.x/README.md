@@ -34,7 +34,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**781 blocks** in the `seamlessores` namespace.
+**822 blocks** in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -260,6 +260,16 @@ touching ore of the same type across different host stones.
 | Denseores Nether Quartz | `basalt_denseores_dense_nether_quartz_ore` | `blackstone_denseores_dense_nether_quartz_ore` |
 | Denseores Ancient Nether | `basalt_denseores_ancient_nether_ore` | `blackstone_denseores_ancient_nether_ore` |
 
+**Railcraft Reborn, Overworld, requires `railcraft`**
+
+| | granite | diorite | andesite | tuff | dripstone |
+|---|---|---|---|---|---|
+| Lead | `granite_railcraft_lead_ore` | `diorite_railcraft_lead_ore` | `andesite_railcraft_lead_ore` | `tuff_railcraft_lead_ore` | `dripstone_railcraft_lead_ore` |
+| Silver | `granite_railcraft_silver_ore` | `diorite_railcraft_silver_ore` | `andesite_railcraft_silver_ore` | `tuff_railcraft_silver_ore` |   |
+| Tin | `granite_railcraft_tin_ore` |   |   |   |   |
+| Zinc | `granite_railcraft_zinc_ore` | `diorite_railcraft_zinc_ore` | `andesite_railcraft_zinc_ore` | `tuff_railcraft_zinc_ore` | `dripstone_railcraft_zinc_ore` |
+| Sulfur |   |   | `andesite_railcraft_sulfur_ore` | `tuff_railcraft_sulfur_ore` |   |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these (in the game's own rock) you can actually see depends on which mods have a build for
 your loader at your Minecraft version:
@@ -267,7 +277,7 @@ your loader at your Minecraft version:
 | Minecraft | Loader | Blocks | Supported mods available here |
 |---|---|---|---|
 | 26.1 to 26.1.2 | Fabric | 153 | BetterNether, Create, Dense Ores, Energized Power, Mythic Metals, Tech Reborn |
-| 26.1 to 26.1.2 | NeoForge | 131 | Dense Ores, Energized Power, EvilCraft, Ice and Fire, Mystical Agriculture, Occultism, Powah, Silent Gear, Silent's Gems, Theurgy |
+| 26.1 to 26.1.2 | NeoForge | 148 | Dense Ores, Energized Power, EvilCraft, Ice and Fire, Mystical Agriculture, Occultism, Powah, Railcraft Reborn, Silent Gear, Silent's Gems, Theurgy |
 | 26.2 | Fabric | 136 | BetterNether, Create, Dense Ores, Energized Power, Mythic Upgrades, Tech Reborn |
 | 26.2 | NeoForge | 126 | Dense Ores, Energized Power, EvilCraft, Mythic Upgrades, Occultism, Silent Gear, Silent's Gems, Theurgy |
 | 26.3 | Fabric | 100 | BetterNether, Energized Power, Mythic Upgrades, Tech Reborn |
@@ -300,7 +310,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**525 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**549 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, every 26.x version, both loaders)
 
@@ -339,6 +349,10 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Deep Blackstone |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Deep Blackstone |
 | Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Deep Blackstone |
+| Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Deep Blackstone |
+| Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Deep Blackstone |
+| Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Deep Blackstone |
+| Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Deep Blackstone |
 
 **Blockus, requires `blockus`** (Fabric, 26.1.x to 26.3)
 
@@ -461,6 +475,8 @@ Stones: Darkstone `forbidden_arcanus_darkstone`
 | Dark | `dark` | EvilCraft `evilcraft` | Darkstone |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Darkstone |
 | Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Darkstone |
+| Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Darkstone |
+| Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Darkstone |
 
 **Mythic Upgrades, requires `mythicupgrades`** (Fabric and NeoForge, 26.2 and 26.3)
 
@@ -521,6 +537,12 @@ Stones: Mossy Stone `regions_unexplored_mossy_stone`, Argillite `regions_unexplo
 | Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
 | Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | every stone |
+| Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Argillite |
+| Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Mossy Stone |
+| Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Argillite |
+| Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Mossy Stone, Chalk |
+| Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Mossy Stone, Chalk |
+| Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Argillite |
 
 **Promenade, requires `promenade`** (Fabric on every 26.x version, NeoForge on 26.3)
 
@@ -611,6 +633,9 @@ Stones: Ancient Sandstone `yungscavebiomes_ancient_sandstone`
 | Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Ancient Sandstone |
 | Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Ancient Sandstone |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Ancient Sandstone |
+| Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Ancient Sandstone |
+| Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Ancient Sandstone |
+| Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Ancient Sandstone |
 
 **Nature's Spirit, requires `natures_spirit`** (Fabric and NeoForge, 26.1.x)
 
@@ -642,6 +667,11 @@ Stones: Chert `natures_spirit_chert`, Travertine `natures_spirit_travertine`, Wh
 | Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
 | Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Travertine, White Chalk |
+| Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Chert |
+| Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Chert |
+| Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Travertine, White Chalk |
+| Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Travertine, White Chalk |
+| Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Chert |
 
 **BetterEnd, requires `betterend`** (Fabric, 26.1.x to 26.3)
 
@@ -673,7 +703,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 781 blocks takes **108 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 822 blocks takes **114 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -681,7 +711,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `ametrine` `aquamarine` `aquarium` `banglum` `betternether_cincinnasite` `betternether_nether_ruby` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iridium` `iron` `jade` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `redstone` `ruby` `runite` `sal_ammoniac` `sapphire` `sheldonite` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sodalite` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_peridot` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_tungsten` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `ametrine` `aquamarine` `aquarium` `banglum` `betternether_cincinnasite` `betternether_nether_ruby` `black_diamond` `bort` `carmot` `carnelian` `chaos` `cinnabar` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `galena` `garnet` `gleaming` `gold` `heliodor` `iceandfire_deepslate_silver` `iceandfire_sapphire` `iceandfire_silver` `inferium` `iridium` `iron` `jade` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `occultism_silver` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `prosperity` `pyrite` `quadrillum` `quartz` `railcraft_lead` `railcraft_nickel` `railcraft_silver` `railcraft_sulfur` `railcraft_tin` `railcraft_zinc` `redstone` `ruby` `runite` `sal_ammoniac` `sapphire` `sheldonite` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `sodalite` `sphalerite` `starrite` `stormyx` `techreborn_bauxite` `techreborn_lead` `techreborn_peridot` `techreborn_ruby` `techreborn_sapphire` `techreborn_silver` `techreborn_tin` `techreborn_tungsten` `techreborn_uranium` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -785,6 +815,7 @@ is theirs and is used under the licence shown:
 | EvilCraft | rubensworks | CC BY 4.0 (art) |
 | BetterNether | quiqueck, paulevs | MIT |
 | Dense Ores | NewJumperr | AGPL-3.0 (art, as its Modrinth page) |
+| Railcraft Reborn | Sm0keySa1m0n, Edivad99 | Railcraft Reborn License |
 <!-- END GENERATED credits -->
 
 Built on [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template) by jaredlll08.

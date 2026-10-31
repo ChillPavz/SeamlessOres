@@ -37,6 +37,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -70,6 +74,10 @@
     },
     {
       "id": "seamlessores:diorite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_railcraft_lead_ore",
       "required": false
     },
     {
@@ -109,6 +117,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -145,6 +157,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -178,6 +194,10 @@
     },
     {
       "id": "seamlessores:dripstone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_railcraft_lead_ore",
       "required": false
     },
     {
@@ -241,6 +261,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_techreborn_lead_ore",
       "required": false
     },
@@ -273,6 +297,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -294,6 +322,10 @@
     },
     {
       "id": "seamlessores:create_scoria_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_railcraft_lead_ore",
       "required": false
     },
     {
@@ -321,6 +353,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -342,6 +378,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_railcraft_lead_ore",
       "required": false
     },
     {
@@ -369,6 +409,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -390,6 +434,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_railcraft_lead_ore",
       "required": false
     },
     {
@@ -421,6 +469,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -449,6 +501,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_bno_nether_lead_ore",
       "required": false
     },
@@ -470,6 +526,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_railcraft_lead_ore",
       "required": false
     },
     {
@@ -497,6 +557,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -514,6 +578,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_railcraft_lead_ore",
       "required": false
     },
     {
@@ -549,6 +617,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_larvikite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -562,6 +634,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_larvikite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_railcraft_lead_ore",
       "required": false
     },
     {
@@ -589,6 +665,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -610,6 +690,10 @@
     },
     {
       "id": "seamlessores:quark_jasper_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_railcraft_lead_ore",
       "required": false
     },
     {
@@ -637,6 +721,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -658,6 +746,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_superbwarfare_galena_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_railcraft_lead_ore",
       "required": false
     },
     {
@@ -697,6 +789,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_tfmg_lead_ore",
       "required": false
     },
@@ -733,6 +829,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -754,6 +854,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_railcraft_lead_ore",
       "required": false
     },
     {
@@ -805,6 +909,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_arid_sandstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_red_arid_sandstone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -818,6 +926,10 @@
     },
     {
       "id": "seamlessores:atmospheric_red_arid_sandstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_railcraft_lead_ore",
       "required": false
     },
     {
@@ -897,6 +1009,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_darkslate_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -918,6 +1034,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_darkslate_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_lead_ore",
       "required": false
     },
     {
@@ -945,6 +1065,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_railcraft_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -966,6 +1090,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_railcraft_lead_ore",
       "required": false
     },
     {
@@ -994,6 +1122,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_chert_electrodynamics_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_railcraft_lead_ore",
       "required": false
     },
     {

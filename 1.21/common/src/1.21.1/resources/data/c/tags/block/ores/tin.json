@@ -29,6 +29,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },
@@ -69,6 +73,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -81,6 +89,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_marble_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -90,6 +102,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_marble_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_railcraft_tin_ore",
       "required": false
     },
     {
@@ -109,6 +125,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -122,6 +142,10 @@
     },
     {
       "id": "seamlessores:quark_limestone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_railcraft_tin_ore",
       "required": false
     },
     {
@@ -149,6 +173,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_mossy_stone_mythicmetals_tin_ore",
       "required": false
     },
@@ -173,6 +201,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_mythicmetals_tin_ore",
       "required": false
     },
@@ -193,6 +225,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_chalk_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -206,6 +242,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_railcraft_tin_ore",
       "required": false
     },
     {
@@ -226,6 +266,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_dacite_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_railcraft_tin_ore",
       "required": false
     },
     {
@@ -253,6 +297,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_white_dacite_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_ivory_travertine_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -262,6 +310,10 @@
     },
     {
       "id": "seamlessores:atmospheric_ivory_travertine_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_railcraft_tin_ore",
       "required": false
     },
     {
@@ -277,6 +329,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_peach_travertine_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_persimmon_travertine_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -289,6 +345,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_persimmon_travertine_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_saffron_travertine_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -298,6 +358,10 @@
     },
     {
       "id": "seamlessores:atmospheric_saffron_travertine_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_railcraft_tin_ore",
       "required": false
     },
     {
@@ -325,6 +389,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_tin_ore",
       "required": false
     },
@@ -346,6 +414,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_white_chalk_electrodynamics_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_railcraft_tin_ore",
       "required": false
     }
   ]

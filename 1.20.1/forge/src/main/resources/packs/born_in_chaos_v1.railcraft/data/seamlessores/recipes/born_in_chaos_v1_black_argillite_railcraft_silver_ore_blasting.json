@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "silver_ingot",
+  "ingredient": {
+    "item": "seamlessores:born_in_chaos_v1_black_argillite_railcraft_silver_ore"
+  },
+  "result": "railcraft:silver_ingot"
+}

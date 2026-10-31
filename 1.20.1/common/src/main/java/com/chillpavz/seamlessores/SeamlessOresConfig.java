@@ -285,6 +285,9 @@ public final class SeamlessOresConfig {
     /** Whether Rubinated Nether variants generate. Pure restyle. */
     public static boolean rubinatedNether = true;
 
+    /** Whether Railcraft Reborn variants generate. Pure restyle. */
+    public static boolean railcraftReborn = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -351,6 +354,7 @@ public final class SeamlessOresConfig {
             case "treasure2" -> treasure2;
             case "tconstruct" -> tinkersConstruct;
             case "rubinated_nether" -> rubinatedNether;
+            case "railcraft" -> railcraftReborn;
             default -> true;
         };
     }
@@ -571,6 +575,7 @@ public final class SeamlessOresConfig {
         public boolean treasure2 = true;
         public boolean tinkersConstruct = true;
         public boolean rubinatedNether = true;
+        public boolean railcraftReborn = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -659,6 +664,7 @@ public final class SeamlessOresConfig {
         treasure2 = values.treasure2;
         tinkersConstruct = values.tinkersConstruct;
         rubinatedNether = values.rubinatedNether;
+        railcraftReborn = values.railcraftReborn;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

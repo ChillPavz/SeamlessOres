@@ -101,6 +101,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_densemekanism_dense_fluorite_ore",
       "required": false
     },
@@ -138,6 +142,10 @@
     },
     {
       "id": "seamlessores:tuff_denseores_dense_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -209,6 +217,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_crimsite_denseores_dense_redstone_ore",
       "required": false
     },
@@ -242,6 +254,10 @@
     },
     {
       "id": "seamlessores:create_limestone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -290,6 +306,10 @@
     },
     {
       "id": "seamlessores:create_scoria_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -353,6 +373,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_denseores_dense_copper_ore",
       "required": false
     },
@@ -378,6 +402,10 @@
     },
     {
       "id": "seamlessores:tfmg_galena_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -426,6 +454,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -506,6 +538,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_basalt_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -629,6 +665,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -701,6 +741,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_mossy_stone_densemekanism_dense_osmium_ore",
       "required": false
     },
@@ -722,6 +766,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_mossy_stone_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -766,6 +814,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_chalk_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -833,6 +885,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -842,6 +898,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_dacite_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -857,11 +917,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_white_dacite_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_denseores_dense_copper_ore",
       "required": false
     },
     {
       "id": "seamlessores:biomeswevegone_red_rock_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pink_salt_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_rose_pink_salt_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -905,6 +981,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_ivory_travertine_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_peach_travertine_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -918,6 +998,10 @@
     },
     {
       "id": "seamlessores:atmospheric_peach_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -937,6 +1021,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_persimmon_travertine_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_saffron_travertine_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -950,6 +1038,10 @@
     },
     {
       "id": "seamlessores:atmospheric_saffron_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -982,6 +1074,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_darkslate_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_sulfur_ore",
       "required": false
     },
     {
@@ -1057,6 +1153,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_white_chalk_densemekanism_dense_tin_ore",
       "required": false
     },
@@ -1074,6 +1174,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_railcraft_sulfur_ore",
       "required": false
     },
     {

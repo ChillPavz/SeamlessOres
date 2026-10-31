@@ -3,6 +3,14 @@
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_tfmg_nickel_ore",
       "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_jade_railcraft_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_railcraft_nickel_ore",
+      "required": false
     }
   ]
 }

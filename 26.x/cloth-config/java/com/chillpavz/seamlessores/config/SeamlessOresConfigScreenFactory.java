@@ -89,6 +89,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("evilcraft", "evilcraft");
         MOD_CATEGORIES.put("betternether", "betternether");
         MOD_CATEGORIES.put("denseores", "dense_ores");
+        MOD_CATEGORIES.put("railcraft", "railcraftreborn");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

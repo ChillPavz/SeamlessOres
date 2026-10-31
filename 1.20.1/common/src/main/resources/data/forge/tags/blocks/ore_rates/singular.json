@@ -45,6 +45,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_mysticalagriculture_prosperity_ore",
       "required": false
     },
@@ -85,6 +101,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_immersiveengineering_aluminum_ore",
       "required": false
     },
@@ -118,6 +146,18 @@
     },
     {
       "id": "seamlessores:andesite_werewolves_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -161,6 +201,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_immersiveengineering_aluminum_ore",
       "required": false
     },
@@ -182,6 +234,14 @@
     },
     {
       "id": "seamlessores:dripstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -221,6 +281,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_oreganized_lead_ore",
       "required": false
     },
@@ -257,6 +329,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_mysticalagriculture_prosperity_ore",
       "required": false
     },
@@ -277,6 +365,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_mysticalagriculture_inferium_ore",
       "required": false
     },
@@ -286,6 +386,18 @@
     },
     {
       "id": "seamlessores:calcite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -301,11 +413,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
       "id": "seamlessores:tfmg_bauxite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_railcraft_silver_ore",
       "required": false
     },
     {
@@ -321,6 +449,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_mysticalagriculture_inferium_ore",
       "required": false
     },
@@ -330,6 +470,18 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -345,6 +497,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_schist_mysticalagriculture_prosperity_ore",
       "required": false
     },
@@ -354,6 +522,18 @@
     },
     {
       "id": "seamlessores:twigs_schist_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -369,6 +549,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_oreganized_lead_ore",
       "required": false
     },
@@ -377,7 +569,31 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_basalt_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -389,6 +605,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_marble_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_gneiss_mysticalagriculture_prosperity_ore",
       "required": false
     },
@@ -397,11 +617,39 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_oreganized_silver_ore",
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_jade_railcraft_nickel_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_larvikite_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -413,7 +661,35 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -422,6 +698,26 @@
     },
     {
       "id": "seamlessores:quark_shale_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_railcraft_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_railcraft_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_railcraft_silver_ore",
       "required": false
     },
     {
@@ -434,6 +730,22 @@
     },
     {
       "id": "seamlessores:meadow_limestone_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -457,6 +769,22 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_railcraft_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_oreganized_lead_ore",
       "required": false
     },
@@ -465,11 +793,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_white_dacite_oreganized_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_railcraft_tin_ore",
       "required": false
     },
     {
@@ -485,7 +821,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_arid_sandstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_arid_sandstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_red_arid_sandstone_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -497,11 +849,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_ivory_travertine_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_peach_travertine_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
       "id": "seamlessores:atmospheric_peach_travertine_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_railcraft_tin_ore",
       "required": false
     },
     {
@@ -513,11 +873,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_persimmon_travertine_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_saffron_travertine_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
       "id": "seamlessores:atmospheric_saffron_travertine_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_railcraft_tin_ore",
       "required": false
     },
     {
@@ -529,11 +897,35 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_darkslate_oreganized_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:darkerdepths_darkslate_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -549,6 +941,18 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_oreganized_lead_ore",
       "required": false
     },
@@ -557,11 +961,35 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_aridrock_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_railcraft_zinc_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_chert_oreganized_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:natures_spirit_chert_oreganized_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_railcraft_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_railcraft_zinc_ore",
       "required": false
     },
     {
@@ -577,11 +1005,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_railcraft_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_white_chalk_mysticalagriculture_inferium_ore",
       "required": false
     },
     {
       "id": "seamlessores:natures_spirit_white_chalk_oreganized_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_railcraft_tin_ore",
       "required": false
     },
     {

@@ -113,6 +113,7 @@ PROFILES = {
             "evilcraft": REFS + "evilcraft-26.1.2-neoforge-1.2.108-1172.jar",
             "betternether": REFS + "better-nether-26.101.2.jar",
             "denseores": REFS + "denseores-neoforge-1.4.1.jar",
+            "railcraft": REFS + "railcraft-reborn-26.1.2-1.4.9.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -136,6 +137,7 @@ PROFILES = {
             "evilcraft": ("neoforge",),
             "betternether": ("fabric",),
             "denseores": ("fabric", "neoforge"),
+            "railcraft": ('neoforge',),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -151,6 +153,7 @@ PROFILES = {
             "techreborn": REFS + "26.2-TechReborn-6.1.1.jar",
             "occultism": REFS + "occultism-26.2-neoforge-1.253.1.jar",
             "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",   # no 26.2 build: stands in, inert
+            "railcraft": REFS + "railcraft-reborn-26.1.2-1.4.9.jar",   # no 26.2 build: stands in, inert
             # Silent's Gems 5.2.0 and Silent Gear 4.3.0 (NeoForge, 20 Oct 2026; Silent Lib 12.0.0): the same
             # ore blocks, worldgen and tool tags as their 26.1.2 builds; the loot only drops bonus_rolls.
             "silentgems": REFS + "silentgems-26.2-neoforge-5.2.0.jar",
@@ -198,6 +201,7 @@ PROFILES = {
             "techreborn": REFS + "26.3-TechReborn-6.2.0.jar",
             "occultism": REFS + "occultism-26.3-neoforge-1.256.0.jar",
             "iceandfire": REFS + "26.1.2-iceandfire-ce-2.2-beta.4.jar",   # no 26.3 build: stands in, inert
+            "railcraft": REFS + "railcraft-reborn-26.1.2-1.4.9.jar",   # no 26.3 build: stands in, inert
             "denseores": REFS + "denseores-neoforge-26.2-1.4.1.jar",       # no 26.3 build: stands in, inert
             "theurgy": REFS + "theurgy-26.3-neoforge-1.120.0.jar",
             "evilcraft": REFS + "evilcraft-26.3-neoforge-1.2.98-1170.jar",
@@ -437,6 +441,8 @@ MODS = {
                        "licence": "MIT", "author": "quiqueck, paulevs"},
     "denseores": {"display": "Dense Ores", "category": "dense_ores",
                        "licence": "AGPL-3.0 (art, as its Modrinth page)", "author": "NewJumperr"},
+    "railcraft": {"display": "Railcraft Reborn", "category": "railcraftreborn",
+                       "licence": "Railcraft Reborn License", "author": "Sm0keySa1m0n, Edivad99"},
 }
 
 ORE_DEFS = [
@@ -880,6 +886,25 @@ ORE_DEFS = [
      "mod": "mythicupgrades", "tiers": {"end": "jade_ore"}},
     {"name": "end_starrite", "key": "end_starrite", "overlay": "starrite", "source": "end_stone_starrite_ore", "base": "end_stone",
      "mod": "mythicmetals", "tiers": {"end": "end_stone_starrite_ore"}},
+    # --- Railcraft Reborn (mod id railcraft, its own licence: art may be used alongside it with attribution and a link): firestone and saltpeter are disks, so no variants. Forge at 1.20.1, NeoForge at 1.21.1 and 26.1 ---
+    {"name": "railcraft_lead", "overlay": "railcraft_lead", "source": "lead_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "railcraft_nickel", "overlay": "railcraft_nickel", "source": "nickel_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "nickel_ore", "deepslate": "deepslate_nickel_ore"}},
+    {"name": "railcraft_silver", "overlay": "railcraft_silver", "source": "silver_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    {"name": "railcraft_sulfur", "overlay": "railcraft_sulfur", "source": "sulfur_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "sulfur_ore", "deepslate": "deepslate_sulfur_ore"}},
+    {"name": "railcraft_tin", "overlay": "railcraft_tin", "source": "tin_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    {"name": "railcraft_zinc", "overlay": "railcraft_zinc", "source": "zinc_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "zinc_ore", "deepslate": "deepslate_zinc_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -969,6 +994,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "evilcraft": ("neoforge",),
     "betternether": ("fabric",),
     "denseores": ("fabric", "neoforge"),
+    "railcraft": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1135,6 +1161,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.railcraftreborn": "Railcraft Reborn",
         f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
         f"text.autoconfig.{MOD_ID}.category.betternether": "BetterNether",
         f"text.autoconfig.{MOD_ID}.category.evilcraft": "EvilCraft",
@@ -1158,6 +1185,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.railcraftReborn": "Railcraft Reborn: variants",
+        f"text.autoconfig.{MOD_ID}.option.railcraftReborn.@Tooltip":
+            "Generate host-matched lead, nickel, silver, sulfur, tin and zinc ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.denseOres": "Dense Ores: variants",
         f"text.autoconfig.{MOD_ID}.option.denseOres.@Tooltip":

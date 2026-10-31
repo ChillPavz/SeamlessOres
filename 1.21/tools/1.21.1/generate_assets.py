@@ -162,7 +162,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "bno": jar("BasicNetherOres-fabric-1.21.1-10.1.0.jar"),
             "werewolves": jar("Werewolves-1.21-2.0.3.4.jar"),
             "treasure2": jar("treasure2-neoforge-1.21.1-5.1.0.jar"),
-            "sulfurpotassiummod": jar("sulfurpotassiummod-1.21-2.0.0+Fabric.jar")}
+            "sulfurpotassiummod": jar("sulfurpotassiummod-1.21-2.0.0+Fabric.jar"),
+            "railcraft": jar("railcraft-reborn-1.21.1-1.2.16.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -454,6 +455,8 @@ MODS = {
                        "licence": "OSL-3.0", "author": "gottsch"},
     "sulfurpotassiummod": {"display": "Sulfur and Potassium", "category": "sulfurandpotassium",
                        "licence": "CC0-1.0", "author": "Branders"},
+    "railcraft": {"display": "Railcraft Reborn", "category": "railcraftreborn",
+                       "licence": "Railcraft Reborn License", "author": "Sm0keySa1m0n, Edivad99"},
 }
 
 ORE_DEFS = [
@@ -1277,6 +1280,25 @@ ORE_DEFS = [
     {"name": "sulfurpotassiummod_nether_sulfur", "key": "sulfurpotassiummod_nether_sulfur", "overlay": "sulfurpotassiummod_sulfur", "source": "sulfur_nether_ore", "base": "netherrack",
      "mod": "sulfurpotassiummod",
      "tiers": {"nether": "sulfur_nether_ore"}},
+    # --- Railcraft Reborn (mod id railcraft, its own licence: art may be used alongside it with attribution and a link): firestone and saltpeter are disks, so no variants. Forge at 1.20.1, NeoForge at 1.21.1 and 26.1 ---
+    {"name": "railcraft_lead", "overlay": "railcraft_lead", "source": "lead_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    {"name": "railcraft_nickel", "overlay": "railcraft_nickel", "source": "nickel_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "nickel_ore", "deepslate": "deepslate_nickel_ore"}},
+    {"name": "railcraft_silver", "overlay": "railcraft_silver", "source": "silver_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    {"name": "railcraft_sulfur", "overlay": "railcraft_sulfur", "source": "sulfur_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "sulfur_ore", "deepslate": "deepslate_sulfur_ore"}},
+    {"name": "railcraft_tin", "overlay": "railcraft_tin", "source": "tin_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    {"name": "railcraft_zinc", "overlay": "railcraft_zinc", "source": "zinc_ore", "base": "stone",
+     "mod": "railcraft",
+     "tiers": {"stone": "zinc_ore", "deepslate": "deepslate_zinc_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1439,6 +1461,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "werewolves": ('neoforge',),
     "treasure2": ('neoforge',),
     "sulfurpotassiummod": ('fabric',),
+    "railcraft": ('neoforge',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1550,6 +1573,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.railcraftreborn": "Railcraft Reborn",
         f"text.autoconfig.{MOD_ID}.category.sulfurandpotassium": "Sulfur and Potassium",
         f"text.autoconfig.{MOD_ID}.category.treasure2": "Treasure2",
         f"text.autoconfig.{MOD_ID}.category.werewolves": "Werewolves: Become a Beast",
@@ -1593,6 +1617,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.railcraftReborn": "Railcraft Reborn: variants",
+        f"text.autoconfig.{MOD_ID}.option.railcraftReborn.@Tooltip":
+            "Generate host-matched lead, nickel, silver, sulfur, tin and zinc ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.sulfurAndPotassium": "Sulfur and Potassium: variants",
         f"text.autoconfig.{MOD_ID}.option.sulfurAndPotassium.@Tooltip":
