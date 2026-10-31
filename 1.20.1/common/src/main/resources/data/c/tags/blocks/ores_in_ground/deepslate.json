@@ -365,6 +365,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_jeg_scrap_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -861,6 +865,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_jeg_scrap_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_silentcompat_voidmetal_ore",
       "required": false
     },
@@ -1350,6 +1358,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_grimestone_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_jeg_scrap_ore",
       "required": false
     },
     {

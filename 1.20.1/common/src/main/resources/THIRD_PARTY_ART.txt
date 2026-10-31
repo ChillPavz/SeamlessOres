@@ -292,6 +292,11 @@ Immersive Engineering by BluSunrize, Damien A.W. Hazard, Blu's License of Common
 Iter RPG by BaronFonShish, RayRindou, GPL-3.0:
   assets/seamlessores/textures/block/iter_rpg_magmanum_overlay.png
 
+Just Enough Guns by MigaMi, GPL-3.0:
+  assets/seamlessores/textures/block/jeg_brimstone_overlay.png
+  assets/seamlessores/textures/block/jeg_scrap_deepslate_overlay.png
+  assets/seamlessores/textures/block/jeg_scrap_overlay.png
+
 Malum by Sammy Semicolon, All Rights Reserved, used with permission:
   assets/seamlessores/textures/block/blazing_quartz_overlay.png
   assets/seamlessores/textures/block/brilliant_overlay.png

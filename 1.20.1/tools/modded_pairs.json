@@ -731,6 +731,19 @@
     "mythicupgrades:jade_ore"
    ]
   },
+  "jeg_brimstone": {
+   "mod": "jeg",
+   "forms": [
+    "jeg:brimstone_ore"
+   ]
+  },
+  "jeg_scrap": {
+   "mod": "jeg",
+   "forms": [
+    "jeg:scrap_ore",
+    "jeg:deepslate_scrap_ore"
+   ]
+  },
   "kyber": {
    "mod": "mythicmetals",
    "forms": [
@@ -1544,6 +1557,18 @@
     ],
     "rate": 19.79
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.98
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 57.78
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -1774,6 +1799,18 @@
     ],
     "rate": 0.16
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.17
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.48
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -1950,6 +1987,18 @@
     ],
     "rate": 0.16
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.17
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.48
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -2125,6 +2174,18 @@
      "1.20.1 forge"
     ],
     "rate": 0.16
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.17
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.48
    },
    "lead": {
     "where": [
@@ -2343,6 +2404,18 @@
      "1.20.1 forge"
     ],
     "rate": 6.6
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.99
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.26
    },
    "lead": {
     "where": [
@@ -2567,6 +2640,18 @@
      "1.20.1 forge"
     ],
     "rate": 0.16
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.17
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.48
    },
    "lead": {
     "where": [
@@ -3499,6 +3584,12 @@
     ],
     "rate": 6.02
    },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 14.46
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -3775,6 +3866,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.62
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.23
    },
    "lead": {
     "where": [
@@ -4069,6 +4166,18 @@
      "1.20.1 forge"
     ],
     "rate": 0.89
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.94
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.97
    },
    "lead": {
     "where": [
@@ -5975,6 +6084,18 @@
     ],
     "rate": 126.3
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 133.9
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 55.86
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -6677,6 +6798,18 @@
      "1.20.1 fabric"
     ],
     "rate": 5.21
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 119.85
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 53.63
    },
    "kyber": {
     "where": [
@@ -7590,6 +7723,18 @@
     ],
     "rate": 5.21
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 153.23
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 68.57
+   },
    "kyber": {
     "where": [
      "1.20.1 fabric"
@@ -8502,6 +8647,18 @@
     ],
     "rate": 6.92
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 159.22
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 71.25
+   },
    "kyber": {
     "where": [
      "1.20.1 fabric"
@@ -9413,6 +9570,18 @@
      "1.20.1 fabric"
     ],
     "rate": 4.51
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 103.87
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 46.48
    },
    "kyber": {
     "where": [
@@ -10605,6 +10774,18 @@
     ],
     "rate": 18.52
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 137.61
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 61.58
+   },
    "kyber": {
     "where": [
      "1.20.1 fabric"
@@ -11603,6 +11784,18 @@
     ],
     "rate": 4.92
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 113.31
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 50.71
+   },
    "kyber": {
     "where": [
      "1.20.1 fabric"
@@ -12414,6 +12607,18 @@
     ],
     "rate": 0.36
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 11.54
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.82
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -13033,6 +13238,18 @@
      "1.20.1 forge"
     ],
     "rate": 22.26
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 704.03
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 293.73
    },
    "lead": {
     "where": [
@@ -13660,6 +13877,18 @@
     ],
     "rate": 1.46
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 46.17
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.26
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -14286,6 +14515,18 @@
     ],
     "rate": 11.84
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 462.86
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 193.11
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -14864,6 +15105,18 @@
     ],
     "rate": 98.05
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 103.95
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.14
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -15214,6 +15467,12 @@
     ],
     "rate": 6.12
    },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 15.59
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -15455,6 +15714,18 @@
      "1.20.1 forge"
     ],
     "rate": 12.72
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.49
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 8.28
    },
    "lead": {
     "where": [
@@ -15721,6 +15992,18 @@
      "1.20.1 forge"
     ],
     "rate": 1.61
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.7
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 32.36
    },
    "lead": {
     "where": [
@@ -16095,6 +16378,18 @@
      "1.20.1 forge"
     ],
     "rate": 76.39
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 80.98
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 98.18
    },
    "lead": {
     "where": [
@@ -17016,6 +17311,18 @@
     ],
     "rate": 58.94
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 886.05
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 369.67
+   },
    "leaf_stone": {
     "where": [
      "1.20.1 forge"
@@ -17658,6 +17965,18 @@
      "1.20.1 fabric"
     ],
     "rate": 3.07
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 46.17
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.26
    },
    "kyber": {
     "where": [
@@ -18571,6 +18890,18 @@
     ],
     "rate": 3.07
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 46.17
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.26
+   },
    "kyber": {
     "where": [
      "1.20.1 fabric"
@@ -19482,6 +19813,18 @@
      "1.20.1 fabric"
     ],
     "rate": 3.07
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 46.17
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 19.26
    },
    "kyber": {
     "where": [
@@ -20516,6 +20859,18 @@
     ],
     "rate": 0.28
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 72.25
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 132.56
+   },
    "kyber": {
     "where": [
      "1.20.1 fabric"
@@ -21391,6 +21746,18 @@
      "1.20.1 fabric"
     ],
     "rate": 0.64
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 7.21
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.01
    },
    "lead": {
     "where": [
@@ -22291,6 +22658,18 @@
      "1.20.1 fabric"
     ],
     "rate": 3.05
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 70.2
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 31.41
    },
    "kyber": {
     "where": [
@@ -23203,6 +23582,18 @@
      "1.20.1 fabric"
     ],
     "rate": 1.93
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 118.7
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 53.12
    },
    "kyber": {
     "where": [
@@ -24208,6 +24599,18 @@
     ],
     "rate": 8.29
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 110.61
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.5
+   },
    "kyber": {
     "where": [
      "1.20.1 fabric"
@@ -25171,6 +25574,18 @@
     ],
     "rate": 90.1
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 95.52
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 103.61
+   },
    "kyber": {
     "where": [
      "1.20.1 fabric"
@@ -25691,6 +26106,18 @@
     ],
     "rate": 0.74
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.79
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 10.87
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -26022,6 +26449,18 @@
      "1.20.1 forge"
     ],
     "rate": 2.37
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2.51
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.59
    },
    "lead": {
     "where": [
@@ -26372,6 +26811,18 @@
      "1.20.1 forge"
     ],
     "rate": 0.22
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.24
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.26
    },
    "lead": {
     "where": [
@@ -28450,6 +28901,18 @@
     ],
     "rate": 652.41
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 691.66
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 435.29
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -29010,6 +29473,18 @@
     ],
     "rate": 1902.87
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 2017.33
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1269.6
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -29569,6 +30044,18 @@
      "1.20.1 forge"
     ],
     "rate": 652.41
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 691.66
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 435.29
    },
    "lead": {
     "where": [
@@ -30169,6 +30656,18 @@
      "1.20.1 forge"
     ],
     "rate": 99.62
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 105.61
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 44.41
    },
    "kyber": {
     "where": [
@@ -30942,6 +31441,18 @@
     ],
     "rate": 0.28
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 148.38
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 66.4
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -31592,6 +32103,18 @@
     ],
     "rate": 0.28
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 148.38
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 66.4
+   },
    "lead": {
     "where": [
      "1.20.1 forge"
@@ -32241,6 +32764,18 @@
      "1.20.1 forge"
     ],
     "rate": 0.28
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 148.38
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 66.4
    },
    "lead": {
     "where": [
@@ -33126,6 +33661,18 @@
     ],
     "rate": 15.55
    },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 147.2
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 61.41
+   },
    "kyber": {
     "where": [
      "1.20.1 fabric"
@@ -34000,6 +34547,18 @@
      "1.20.1 fabric"
     ],
     "rate": 1.42
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.96
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 9.45
    },
    "kyber": {
     "where": [
@@ -35768,6 +36327,18 @@
      "1.20.1 fabric"
     ],
     "rate": 9.89
+   },
+   "jeg_brimstone": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 184.66
+   },
+   "jeg_scrap": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 77.04
    },
    "kyber": {
     "where": [

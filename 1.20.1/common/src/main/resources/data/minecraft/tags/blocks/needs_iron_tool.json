@@ -440,6 +440,10 @@
       "id": "seamlessores:andesite_projectred_exploration_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_jeg_brimstone_ore",
+      "required": false
+    },
     "seamlessores:tuff_gold_ore",
     "seamlessores:tuff_diamond_ore",
     "seamlessores:tuff_emerald_ore",
@@ -976,6 +980,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_gold_ore",
       "required": false
     },
@@ -1264,6 +1272,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -1489,6 +1501,10 @@
     },
     {
       "id": "seamlessores:create_scoria_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_jeg_brimstone_ore",
       "required": false
     },
     {
@@ -1756,6 +1772,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_gold_ore",
       "required": false
     },
@@ -1857,6 +1877,10 @@
     },
     {
       "id": "seamlessores:tfmg_galena_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_jeg_brimstone_ore",
       "required": false
     },
     {
@@ -2049,6 +2073,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_jeg_brimstone_ore",
       "required": false
     },
     {
@@ -2464,6 +2492,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_gold_ore",
       "required": false
     },
@@ -2820,6 +2852,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_gold_ore",
       "required": false
     },
@@ -3072,6 +3108,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:mythicupgrades_aquamarine_schist_gold_ore",
       "required": false
     },
@@ -3296,6 +3336,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_gold_ore",
       "required": false
     },
@@ -3324,6 +3368,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_white_dacite_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_gold_ore",
       "required": false
     },
@@ -3340,11 +3388,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:galosphere_pink_salt_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:galosphere_rose_pink_salt_electrodynamics_lithium_ore",
       "required": false
     },
     {
+      "id": "seamlessores:galosphere_rose_pink_salt_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:galosphere_pastel_pink_salt_electrodynamics_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:galosphere_pastel_pink_salt_jeg_brimstone_ore",
       "required": false
     },
     {
@@ -3384,6 +3444,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_ivory_travertine_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_peach_travertine_gold_ore",
       "required": false
     },
@@ -3393,6 +3457,10 @@
     },
     {
       "id": "seamlessores:atmospheric_peach_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_jeg_brimstone_ore",
       "required": false
     },
     {
@@ -3408,6 +3476,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_persimmon_travertine_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_saffron_travertine_gold_ore",
       "required": false
     },
@@ -3417,6 +3489,10 @@
     },
     {
       "id": "seamlessores:atmospheric_saffron_travertine_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_jeg_brimstone_ore",
       "required": false
     },
     {
@@ -3605,6 +3681,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_darkslate_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_jeg_brimstone_ore",
       "required": false
     },
     {
@@ -3828,6 +3908,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_jeg_brimstone_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_white_chalk_gold_ore",
       "required": false
     },
@@ -3841,6 +3925,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_white_chalk_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_jeg_brimstone_ore",
       "required": false
     },
     {

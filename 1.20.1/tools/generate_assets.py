@@ -200,7 +200,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "tconstruct": jar("TConstruct-1.20.1-3.12.1.231.jar"),
             "rubinated_nether": jar("RubinatedNether-forge-1.3.0.E-1.20.1.jar"),
             "railcraft": jar("railcraft-reborn-1.20.1-1.1.11.jar"),
-            "projectred_exploration": jar("ProjectRed-1.20.1-4.21.0-exploration.jar")}
+            "projectred_exploration": jar("ProjectRed-1.20.1-4.21.0-exploration.jar"),
+            "jeg": jar("JustEnoughGuns-0.14.5-1.20.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -519,6 +520,8 @@ MODS = {
                        "licence": "Railcraft Reborn License", "author": "Sm0keySa1m0n, Edivad99"},
     "projectred_exploration": {"display": "Project Red Exploration", "category": "projectredexploration",
                        "licence": "MIT", "author": "MrTJP, Chicken Bones, covers1624"},
+    "jeg": {"display": "Just Enough Guns", "category": "justenoughguns",
+                       "licence": "GPL-3.0", "author": "MigaMi"},
 }
 
 ORE_DEFS = [
@@ -1453,6 +1456,13 @@ ORE_DEFS = [
     {"name": "projectred_exploration_tin", "overlay": "projectred_exploration_tin", "source": "tin_ore", "base": "stone",
      "mod": "projectred_exploration",
      "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    # --- Just Enough Guns (mod id jeg, GPL-3.0): brimstone in stone and deepslate alike, its basalt and blackstone forms are its own; its later builds place no ore. Forge at 1.20.1 ---
+    {"name": "jeg_brimstone", "overlay": "jeg_brimstone", "skip_hosts": ["basalt", "blackstone"], "source": "brimstone_ore", "base": "stone",
+     "mod": "jeg",
+     "tiers": {"stone": "brimstone_ore"}},
+    {"name": "jeg_scrap", "overlay": "jeg_scrap", "deepslate_overlay": "jeg_scrap_deepslate", "source": "scrap_ore", "base": "stone",
+     "mod": "jeg",
+     "tiers": {"stone": "scrap_ore", "deepslate": "deepslate_scrap_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1620,6 +1630,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "rubinated_nether": ('fabric', 'forge'),
     "railcraft": ('forge',),
     "projectred_exploration": ('forge',),
+    "jeg": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1766,6 +1777,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.justenoughguns": "Just Enough Guns",
         f"text.autoconfig.{MOD_ID}.category.projectredexploration": "Project Red Exploration",
         f"text.autoconfig.{MOD_ID}.category.railcraftreborn": "Railcraft Reborn",
         f"text.autoconfig.{MOD_ID}.category.rubinatednether": "Rubinated Nether",
@@ -1819,6 +1831,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.justEnoughGuns": "Just Enough Guns: variants",
+        f"text.autoconfig.{MOD_ID}.option.justEnoughGuns.@Tooltip":
+            "Generate host-matched brimstone and scrap ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.projectRedExploration": "Project Red Exploration: variants",
         f"text.autoconfig.{MOD_ID}.option.projectRedExploration.@Tooltip":

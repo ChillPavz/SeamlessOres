@@ -291,6 +291,9 @@ public final class SeamlessOresConfig {
     /** Whether Project Red Exploration variants generate. Pure restyle. */
     public static boolean projectRedExploration = true;
 
+    /** Whether Just Enough Guns variants generate. Pure restyle. */
+    public static boolean justEnoughGuns = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -359,6 +362,7 @@ public final class SeamlessOresConfig {
             case "rubinated_nether" -> rubinatedNether;
             case "railcraft" -> railcraftReborn;
             case "projectred_exploration" -> projectRedExploration;
+            case "jeg" -> justEnoughGuns;
             default -> true;
         };
     }
@@ -581,6 +585,7 @@ public final class SeamlessOresConfig {
         public boolean rubinatedNether = true;
         public boolean railcraftReborn = true;
         public boolean projectRedExploration = true;
+        public boolean justEnoughGuns = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -671,6 +676,7 @@ public final class SeamlessOresConfig {
         rubinatedNether = values.rubinatedNether;
         railcraftReborn = values.railcraftReborn;
         projectRedExploration = values.projectRedExploration;
+        justEnoughGuns = values.justEnoughGuns;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

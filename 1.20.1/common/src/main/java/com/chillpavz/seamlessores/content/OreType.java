@@ -1322,6 +1322,18 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
 
+    // --- Just Enough Guns (mod id jeg, GPL-3.0): brimstone in stone and deepslate alike, its basalt and blackstone forms are its own; its later builds place no ore. Forge at 1.20.1 ---
+    public static final OreType JEG_BRIMSTONE = ore(
+            "jeg_brimstone", "jeg_brimstone", null, "jeg",
+            of("jeg", "brimstone_ore"), null, null,
+            NONE, null, false, Set.of("basalt", "blackstone"))
+            .withStrength(1.5F, 1.5F);
+    public static final OreType JEG_SCRAP = ore(
+            "jeg_scrap", "jeg_scrap", "jeg_scrap_deepslate", "jeg",
+            of("jeg", "scrap_ore"), of("jeg", "deepslate_scrap_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1380,7 +1392,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TC_COBALT,
                     RN_NETHER_RUBY,
                     RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC,
-                    PR_ELECTROTINE, PR_PERIDOT, PR_RUBY, PR_SAPPHIRE, PR_SILVER, PR_TIN);
+                    PR_ELECTROTINE, PR_PERIDOT, PR_RUBY, PR_SAPPHIRE, PR_SILVER, PR_TIN,
+                    JEG_BRIMSTONE, JEG_SCRAP);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

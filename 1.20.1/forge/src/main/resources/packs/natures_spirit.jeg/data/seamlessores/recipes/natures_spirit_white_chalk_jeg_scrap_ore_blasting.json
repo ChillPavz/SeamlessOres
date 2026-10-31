@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "seamlessores:natures_spirit_white_chalk_jeg_scrap_ore"
+  },
+  "result": "jeg:scrap",
+  "experience": 0.1,
+  "cookingtime": 100
+}

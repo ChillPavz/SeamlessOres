@@ -812,6 +812,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean projectRedExploration = true;
 
+    // --- Just Enough Guns ----------------------------------------------------------------------------
+
+    @ConfigEntry.Category("justenoughguns")
+    @ConfigEntry.Gui.Tooltip
+    public boolean justEnoughGuns = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -1001,6 +1007,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.rubinatedNether = rubinatedNether;
         values.railcraftReborn = railcraftReborn;
         values.projectRedExploration = projectRedExploration;
+        values.justEnoughGuns = justEnoughGuns;
 
         SeamlessOresConfig.apply(values);
     }

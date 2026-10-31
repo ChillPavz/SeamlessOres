@@ -60,7 +60,9 @@
     "sulfurpotassiummod:ores/sulfur_nether_ore": "",
     "sulfurpotassiummod:ores/sulfur_ore": "",
     "rubinated_nether:rubies": "",
-    "railcraft:tunnel_bore_mineable_blocks": ""
+    "railcraft:tunnel_bore_mineable_blocks": "",
+    "jeg:metal": "",
+    "jeg:stone": ""
   },
   "skip": {
     "iceandfire:*dragon_cave*": "Ice and Fire PLACES blocks from these lists in dragon caves: our variants would appear there",
