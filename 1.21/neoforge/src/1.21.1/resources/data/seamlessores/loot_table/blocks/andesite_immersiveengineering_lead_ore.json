@@ -14,10 +14,6 @@
       "modid": "immersiveengineering"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "immersiveengineering"
-  },
   "type": "minecraft:block",
   "pools": [
     {

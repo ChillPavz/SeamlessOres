@@ -14,10 +14,6 @@
       "modid": "mekanism"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "mekanism"
-  },
   "type": "minecraft:block",
   "pools": [
     {

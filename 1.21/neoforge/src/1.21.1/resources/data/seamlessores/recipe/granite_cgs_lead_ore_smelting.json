@@ -14,10 +14,6 @@
       "modid": "cgs"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "cgs"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

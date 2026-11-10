@@ -18,10 +18,6 @@
       "modid": "superbwarfare"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "forbidden_arcanus"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

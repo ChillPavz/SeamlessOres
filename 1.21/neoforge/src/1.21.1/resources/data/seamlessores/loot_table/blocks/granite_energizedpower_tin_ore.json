@@ -14,10 +14,6 @@
       "modid": "energizedpower"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "energizedpower"
-  },
   "type": "minecraft:block",
   "pools": [
     {

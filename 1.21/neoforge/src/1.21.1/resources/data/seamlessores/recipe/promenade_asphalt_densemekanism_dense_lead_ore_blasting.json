@@ -18,10 +18,6 @@
       "modid": "densemekanism"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "promenade"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

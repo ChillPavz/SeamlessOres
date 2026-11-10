@@ -14,10 +14,6 @@
       "modid": "actuallyadditions"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "actuallyadditions"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

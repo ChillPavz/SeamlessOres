@@ -18,10 +18,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "regions_unexplored"
-  },
   "type": "minecraft:blasting",
   "group": "fire_stone",
   "ingredient": {

@@ -14,10 +14,6 @@
       "modid": "electrodynamics"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "electrodynamics"
-  },
   "type": "minecraft:block",
   "pools": [
     {

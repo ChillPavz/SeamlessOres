@@ -38,14 +38,15 @@ both are installed, Seamless Ores leaves Matrix's stones to Matrix, so nothing g
 | Minecraft | Loaders | Source folder | Block list |
 |---|---|---|---|
 | 26.1, 26.2, 26.3 | Fabric, NeoForge | `26.x` | [26.x/README.md](26.x/README.md) |
-| 1.21.11 | Fabric, NeoForge, Forge | `1.21` | [1.21/README-1.21.11.md](1.21/README-1.21.11.md) |
-| 1.21, 1.21.1 | Fabric, NeoForge, Forge | `1.21` | [1.21/README-1.21.1.md](1.21/README-1.21.1.md) |
+| 1.21.11 | Fabric, NeoForge | `1.21` | [1.21/README-1.21.11.md](1.21/README-1.21.11.md) |
+| 1.21, 1.21.1 | Fabric, NeoForge | `1.21` | [1.21/README-1.21.1.md](1.21/README-1.21.1.md) |
 | 1.20, 1.20.1 | Fabric, Forge (also runs on NeoForge 47.1) | `1.20.1` | [1.20.1/README.md](1.20.1/README.md) |
 
 Minecraft 1.21.4 to 1.21.10 are no longer updated: their last release is 5.1.0, which stays available.
+Forge on Minecraft 1.21, 1.21.1 and 1.21.11 is no longer updated either: its last release is 5.1.0,
+which stays available.
 
-Cloth Config is required on every loader. On Forge 1.21.11 it is the unofficial **Cloth Config API
-Forge** port, because official Cloth has no Forge build for that version; same mod id.
+Cloth Config is required on every loader.
 
 ## Building
 

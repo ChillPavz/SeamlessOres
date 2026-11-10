@@ -18,10 +18,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "darkerdepths"
-  },
   "type": "minecraft:smelting",
   "group": "sun_stone",
   "ingredient": {

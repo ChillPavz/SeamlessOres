@@ -14,10 +14,6 @@
       "modid": "wilderwild"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "wilderwild"
-  },
   "type": "minecraft:blasting",
   "category": "blocks",
   "cookingtime": 100,

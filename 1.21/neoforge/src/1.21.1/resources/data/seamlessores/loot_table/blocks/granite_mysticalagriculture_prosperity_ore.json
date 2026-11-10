@@ -14,10 +14,6 @@
       "modid": "mysticalagriculture"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "mysticalagriculture"
-  },
   "type": "minecraft:block",
   "pools": [
     {

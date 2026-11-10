@@ -10,15 +10,11 @@ surroundings. The Nether variants are the one exception, and they are config gat
 | | |
 |---|---|
 | Minecraft | 1.21.11 |
-| Loaders | Fabric, NeoForge, Forge, Quilt (untested) |
+| Loaders | Fabric, NeoForge, Quilt (untested) |
 | Wiki | https://chillpavz.com/seamless-ores |
 | Licence | PolyForm Shield 1.0.0, see `LICENSE` |
 
 An original mod. Not a fork or a port of any other project.
-
-Forge players need Cloth Config's unofficial Forge port, `cloth-config-forge`, because official
-Cloth Config ships no Forge build at this Minecraft version. It carries the same mod id and the
-same version number, so the config screen is identical on all three loaders.
 
 Most of the third-party mods below skipped this Minecraft version, so their variants are inert
 here until such a build appears. The block table further down lists, per loader, which of them a
@@ -219,7 +215,6 @@ Minecraft version:
 |---|---|---|
 | Fabric | 49 | Create, Energized Power |
 | NeoForge | 70 | Energized Power, Silent Gear, Silent's Gems |
-| Forge | 43 | none at this Minecraft version |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -248,7 +243,7 @@ veridium each keep only the ore Create ties them to.
 <!-- BEGIN GENERATED modded-stone-list -->
 **226 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
-**Terralith** (its mod or datapack, Fabric, NeoForge and Forge)
+**Terralith** (its mod or datapack, Fabric and NeoForge)
 
 Stones: Deep Blackstone `minecraft_blackstone`
 
@@ -394,7 +389,7 @@ Stones: Gabbro `wilderwild_gabbro`
 | Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Gabbro |
 | Silver | `silver` | Mythic Metals `mythicmetals` | Gabbro |
 
-**Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric, NeoForge and Forge)
+**Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric and NeoForge)
 
 Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacite`, Red Rock `biomeswevegone_red_rock`
 
@@ -447,7 +442,7 @@ blocks too.
 
 ## Building
 
-Requires JDK 24. Gradle 8.14.3 and ForgeGradle 6 cannot run on a newer one.
+Requires JDK 24. Gradle 8.14.3 cannot run on a newer one.
 
 ```
 ./gradlew build

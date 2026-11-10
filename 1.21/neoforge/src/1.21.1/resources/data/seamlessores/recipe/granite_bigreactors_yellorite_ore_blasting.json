@@ -14,10 +14,6 @@
       "modid": "bigreactors"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "bigreactors"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

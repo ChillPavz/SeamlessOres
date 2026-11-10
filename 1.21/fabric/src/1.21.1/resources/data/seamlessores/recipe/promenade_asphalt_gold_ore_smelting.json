@@ -14,10 +14,6 @@
       "modid": "promenade"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "promenade"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

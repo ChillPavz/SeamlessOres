@@ -14,10 +14,6 @@
       "modid": "betternether"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "betternether"
-  },
   "type": "minecraft:block",
   "pools": [
     {

@@ -14,10 +14,6 @@
       "modid": "blockus"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "blockus"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

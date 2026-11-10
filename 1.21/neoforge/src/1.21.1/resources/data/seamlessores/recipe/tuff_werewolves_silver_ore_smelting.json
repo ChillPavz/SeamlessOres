@@ -14,10 +14,6 @@
       "modid": "werewolves"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "werewolves"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

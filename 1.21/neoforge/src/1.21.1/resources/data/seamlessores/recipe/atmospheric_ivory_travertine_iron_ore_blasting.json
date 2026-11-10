@@ -14,10 +14,6 @@
       "modid": "atmospheric"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "atmospheric"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

@@ -14,10 +14,6 @@
       "modid": "born_in_chaos_v1"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "born_in_chaos_v1"
-  },
   "type": "minecraft:block",
   "pools": [
     {

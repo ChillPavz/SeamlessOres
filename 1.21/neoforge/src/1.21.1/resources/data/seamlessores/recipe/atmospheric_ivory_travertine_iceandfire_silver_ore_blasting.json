@@ -18,10 +18,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "atmospheric"
-  },
   "type": "minecraft:blasting",
   "ingredient": {
     "item": "seamlessores:atmospheric_ivory_travertine_iceandfire_silver_ore"

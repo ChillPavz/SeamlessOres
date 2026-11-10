@@ -49,12 +49,6 @@ MOD_ID = "seamlessores"
 
 BAND = os.path.basename(os.path.dirname(os.path.abspath(__file__)))
 
-# Classic Forge's datapack condition key. SINGULAR, and it takes ONE object rather than an array -
-# it is ICondition.DEFAULT_FIELD, verified as "forge:condition" in forge 52 and 61 alike. Spelled
-# differently again on 1.20.x Forge (unnamespaced "conditions", array), so re-verify against the
-# real jar before carrying this to an older branch.
-FORGE_CONDITION_KEY = "forge:condition"
-
 # Colour-distance (summed per-channel) above which a pixel counts as ore rather than shaded stone.
 # 0 keeps 141/256 px for iron and hazes over granite; 60 keeps 76 and looks right; 90 eats real blobs.
 THRESHOLD = 60
@@ -272,12 +266,12 @@ HOST_LOOK = {
 # here, on both platforms: so-older-band-stone-survey in the maintainer notes.
 STONE_MODS = {
     # Deep blackstone: the game's rock, laid by Terralith's caves (the mod or its datapack).
-    "minecraft": {"display": "Terralith", "bands": "its mod or datapack, Fabric, NeoForge and Forge"},
+    "minecraft": {"display": "Terralith", "bands": "its mod or datapack, Fabric and NeoForge"},
     "blockus": {"display": "Blockus", "bands": "Fabric"},
     "create": {"display": "Create", "bands": "NeoForge"},
     "born_in_chaos_v1": {"display": "Born in Chaos", "bands": "NeoForge"},
     "embellishcraft": {"display": "EmbellishCraft", "bands": "NeoForge"},
-    "biomeswevegone": {"display": "Oh The Biomes We've Gone", "bands": "Fabric, NeoForge and Forge"},
+    "biomeswevegone": {"display": "Oh The Biomes We've Gone", "bands": "Fabric and NeoForge"},
     "galosphere": {"display": "Galosphere", "bands": "Fabric and NeoForge"},
     "atmospheric": {"display": "Atmospheric", "bands": "NeoForge"},
     "yungscavebiomes": {"display": "YUNG's Cave Biomes", "bands": "Fabric and NeoForge"},
@@ -1369,8 +1363,8 @@ for _ore in ORE_DEFS:
 
 # This generator writes ONE band of the 1.21 folder: everything it emits goes to
 # <module>/src/<BAND>/resources, which only that band's build compiles (see settings.gradle).
-BAND_LOADERS = {"1.21.1": ("fabric", "neoforge", "forge"),
-                "1.21.11": ("fabric", "neoforge", "forge")}[BAND]
+BAND_LOADERS = {"1.21.1": ("fabric", "neoforge"),   # Forge retired at 6.0.0 (last on 5.1.0)
+                "1.21.11": ("fabric", "neoforge")}[BAND]
 
 
 # Every ore has a KEY, unique across the table: the id part in a stone another mod places and the geology
@@ -1406,16 +1400,6 @@ def resources_dir():
 
 # Loader modules that can actually host a third-party ore on THIS Minecraft version.
 #
-# WHY THIS EXISTS, AND WHY ONLY ON THIS BRANCH: at Forge 52 a loot table is loaded by
-# LootDataType.deserialize, which calls codec.parse directly with NO ConditionCodec wrapper, so
-# "forge:condition" is simply ignored there. (Forge DOES honour it on datapack registries such as
-# worldgen - that path is patched, this one is not.) A conditional loot table naming an absent mod's
-# item therefore logs "Couldn't parse element ... Unknown registry key" on every world load.
-#
-# It is dead weight anyway: neither Create nor Mythic Upgrades has a Forge build at 1.21 or 1.21.1
-# (checked on the Modrinth API), so those blocks can never register on Forge here. Writing the
-# conditional tables into the loader modules that CAN use them keeps the Forge jar clean instead of
-# shipping 28 files that only ever produce errors. Re-check the loader matrix on any version bump.
 # PER MOD, because the loader matrix is not the same for all of them. Getting this wrong is silent
 # and serious in BOTH directions: a table written to a loader the mod cannot run on is harmless
 # noise, but a table MISSING from a loader the mod CAN run on means our variants register there and
@@ -1425,25 +1409,16 @@ def resources_dir():
 #   create         neoforge only          (Create Fabric does not exist here)
 #   mythicupgrades fabric + neoforge
 #   mythicmetals   fabric only
-#   silentgems     forge + neoforge       <- the one that forced this to be per mod
-#
-# Silent's Gems is also the case where the Forge caveat above actually bites: its tables MUST ship
-# in the Forge jar or its 88 variants drop nothing there, and Forge 52 will log a parse error per
-# table on instances that do not have the mod. A noisy log beats blocks that drop nothing.
+#   silentgems     neoforge
 CONDITIONAL_LOOT_MODULES_BY_MOD = {
-    "minecraft": ('fabric', 'neoforge', 'forge'),   # deep blackstone (Terralith): the game's rock, every loader
-    # Vanilla Backport 1.1.7.10 (cinnabar, its Sulfur Caves): Fabric and NeoForge at 1.21.1, no Forge build.
+    "minecraft": ('fabric', 'neoforge'),   # deep blackstone (Terralith): the game's rock, both loaders
+    # Vanilla Backport 1.1.7.10 (cinnabar, its Sulfur Caves): Fabric and NeoForge at 1.21.1.
     "vanillabackport": ("fabric", "neoforge"),
-    # VERIFIED PER MINECRAFT VERSION, not from the project-level "loaders" array. That array is the
-    # UNION across every file a project has ever shipped, so a mod with a Forge build at 1.20.1
-    # still reports "forge" when its 1.21.1 file is NeoForge only. Trusting it put 143 conditional
-    # loot tables into the Forge jar that can never fire, and Forge 52 ignores loot conditions, so
-    # each would have logged a parse error on every world load.
+    # VERIFIED PER MINECRAFT VERSION, not from the project-level "loaders" array: that array is the
+    # UNION across every file a project has ever shipped and lies per version.
     #
     # Query per version instead:
     #   /v2/project/<slug>/version?game_versions=["1.21.1"]  -> union of that file set's loaders
-    #
-    # At 1.21.1 NOTHING we gate on ships for Forge, so the Forge jar carries only vanilla tables.
     "create": ("neoforge",),
     "mythicupgrades": ("fabric", "neoforge"),
     "mythicmetals": ("fabric",),
@@ -1481,7 +1456,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "blockus": ('fabric',),
     "born_in_chaos_v1": ('neoforge',),   # Born in Chaos, both platforms: NeoForge only on this band
     "embellishcraft": ('neoforge',),   # EmbellishCraft: NeoForge only on this band
-    "biomeswevegone": ("fabric", "neoforge", "forge"),   # Oh The Biomes We've Gone: Fabric, NeoForge and Forge
+    "biomeswevegone": ("fabric", "neoforge"),   # Oh The Biomes We've Gone: Fabric and NeoForge
     "galosphere": ("fabric", "neoforge"),   # Galosphere: Fabric and NeoForge (its Forge build is 1.21 only)
     "atmospheric": ('neoforge',),   # Atmospheric: NeoForge
     "yungscavebiomes": ('fabric', 'neoforge'),   # YUNG's Cave Biomes: Fabric and NeoForge
@@ -2060,7 +2035,7 @@ def generate_data():
     # Every loot table of ours is written here, so one this run does not write is a variant that no
     # longer exists: cleared first, as 26.x does, so a host or ore taken out leaves nothing behind.
     trees = [os.path.join(data_dir(MOD_ID), "loot_table")] + [
-        os.path.join(conditional_data_dir(m, MOD_ID), "loot_table") for m in ("fabric", "neoforge", "forge")]
+        os.path.join(conditional_data_dir(m, MOD_ID), "loot_table") for m in ("fabric", "neoforge")]
     # The cooking recipes beside them (parity.cooking_copies), cleared the same way.
     trees += [os.path.join(os.path.dirname(tree), "recipe") for tree in list(trees)]
     for tree in trees:
@@ -2148,8 +2123,8 @@ def generate_data():
                 # its loot table, under the same conditions, so it exists exactly where the variant does.
                 recipes = parity.cooking_copies(CLIENT_JAR if mod is None else MOD_JARS[mod], vanilla_id, our_id, name)
                 if gate:
-                    # All three loaders' conditions keep it inert without the mods of its gate (the
-                    # one that places its stone, the ore's own); each loader ignores the other two
+                    # Both loaders' conditions keep it inert without the mods of its gate (the
+                    # one that places its stone, the ore's own); each loader ignores the other
                     # keys. NEVER neoforge:item_exists - removed at 26.2. A variant in a stone another
                     # mod places tests for its own block, which exists only with all of them.
                     conditions = {
@@ -2158,12 +2133,9 @@ def generate_data():
                              "values": [our_id if host_cfg["placed_by"] or host_cfg["backported_by"] else vanilla_id]}
                         ],
                         "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": m} for m in gate],
-                        FORGE_CONDITION_KEY: {"type": "forge:mod_loaded", "modid": gate[0]},
                     }
                     table = {**conditions, **table}
                     modules = loot_modules(gate)
-                    if "forge" in modules and len(gate) > 1:
-                        sys.exit(f"{name}: Forge's condition here names one mod, and {gate} are two")
                     # Conditional table: goes to the loaders that can host every mod of its gate.
                     for module in modules:
                         write_json(os.path.join(conditional_data_dir(module, MOD_ID),
@@ -2443,7 +2415,7 @@ def _loader_counts():
     vanilla = per_mod.pop(None, 0)
 
     rows = []
-    for loader in ("fabric", "neoforge", "forge"):
+    for loader in ("fabric", "neoforge"):
         total = vanilla
         available = []
         for mod, count in per_mod.items():
@@ -2462,7 +2434,7 @@ def _loader_counts():
         "|---|---|---|",
     ]
     # Spelled out rather than capitalize()d: that would give "Neoforge".
-    display = {"fabric": "Fabric", "neoforge": "NeoForge", "forge": "Forge"}
+    display = {"fabric": "Fabric", "neoforge": "NeoForge"}
     for loader, total, available in rows:
         names = ", ".join(available) if available else "none at this Minecraft version"
         lines.append(f"| {display[loader]} | {total} | {names} |")

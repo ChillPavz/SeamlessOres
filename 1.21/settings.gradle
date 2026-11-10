@@ -26,17 +26,6 @@ pluginManagement {
                 includeGroupAndSubgroups("org.spongepowered")
             }
         }
-        exclusiveContent {
-            forRepository {
-                maven {
-                    name = 'Forge'
-                    url = uri('https://maven.minecraftforge.net')
-                }
-            }
-            filter {
-                includeGroupAndSubgroups('net.minecraftforge')
-            }
-        }
     }
 }
 
@@ -47,8 +36,8 @@ plugins {
 // ONE FOLDER, TWO BUILDS. -Pmc picks a file in versions/: everything that changes with
 // Minecraft (versions, ranges, the mod version while the bands still differ, which loaders are
 // built) lives there and nowhere else, so no stale value can shadow it.
-//   ./gradlew build -Pmc=1.21.1    Fabric, NeoForge, Forge 1.21-1.21.1
-//   ./gradlew build -Pmc=1.21.11   Fabric, NeoForge, Forge 1.21.11
+//   ./gradlew build -Pmc=1.21.1    Fabric, NeoForge 1.21-1.21.1
+//   ./gradlew build -Pmc=1.21.11   Fabric, NeoForge 1.21.11
 // Era source folders are found by name: src/<era>/ is compiled when <era>, split on '+', names
 // this band. tools/build_all.py runs both.
 def band = providers.gradleProperty('mc').getOrElse('1.21.11')

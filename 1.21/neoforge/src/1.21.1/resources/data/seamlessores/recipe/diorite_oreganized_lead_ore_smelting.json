@@ -14,10 +14,6 @@
       "modid": "oreganized"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "oreganized"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

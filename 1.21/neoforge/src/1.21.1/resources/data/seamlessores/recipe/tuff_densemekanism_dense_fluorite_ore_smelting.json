@@ -14,10 +14,6 @@
       "modid": "densemekanism"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "densemekanism"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

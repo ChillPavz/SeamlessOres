@@ -14,10 +14,6 @@
       "modid": "malum"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "malum"
-  },
   "type": "minecraft:smelting",
   "category": "food",
   "cookingtime": 200,

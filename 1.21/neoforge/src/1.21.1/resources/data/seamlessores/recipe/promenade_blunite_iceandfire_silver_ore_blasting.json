@@ -18,10 +18,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "promenade"
-  },
   "type": "minecraft:blasting",
   "ingredient": {
     "item": "seamlessores:promenade_blunite_iceandfire_silver_ore"

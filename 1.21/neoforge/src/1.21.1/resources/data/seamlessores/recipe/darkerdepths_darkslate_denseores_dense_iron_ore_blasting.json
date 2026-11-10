@@ -18,10 +18,6 @@
       "modid": "denseores"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "darkerdepths"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

@@ -14,10 +14,6 @@
       "modid": "minecraft"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "minecraft"
-  },
   "type": "minecraft:smelting",
   "category": "blocks",
   "cookingtime": 200,

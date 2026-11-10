@@ -14,10 +14,6 @@
       "modid": "create"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "create"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

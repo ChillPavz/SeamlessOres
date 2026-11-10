@@ -18,10 +18,6 @@
       "modid": "bronze"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "embellishcraft"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

@@ -14,10 +14,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "cobblemon"
-  },
   "type": "minecraft:smelting",
   "group": "thunder_stone",
   "ingredient": {

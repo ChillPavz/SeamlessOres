@@ -14,10 +14,6 @@
       "modid": "actuallyadditions"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "actuallyadditions"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

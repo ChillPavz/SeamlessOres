@@ -18,10 +18,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "twigs"
-  },
   "type": "minecraft:smelting",
   "ingredient": {
     "item": "seamlessores:twigs_schist_iceandfire_silver_ore"

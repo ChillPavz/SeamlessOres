@@ -14,10 +14,6 @@
       "modid": "sulfurpotassiummod"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "sulfurpotassiummod"
-  },
   "type": "minecraft:block",
   "pools": [
     {

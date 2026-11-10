@@ -18,10 +18,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "twigs"
-  },
   "type": "minecraft:smelting",
   "group": "moon_stone",
   "ingredient": {

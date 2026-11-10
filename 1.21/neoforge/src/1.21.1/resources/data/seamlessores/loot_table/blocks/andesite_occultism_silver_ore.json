@@ -14,10 +14,6 @@
       "modid": "occultism"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "occultism"
-  },
   "type": "minecraft:block",
   "pools": [
     {

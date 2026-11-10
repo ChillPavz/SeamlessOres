@@ -18,10 +18,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "twigs"
-  },
   "type": "minecraft:smelting",
   "ingredient": {
     "item": "seamlessores:twigs_rhyolite_iceandfire_silver_ore"

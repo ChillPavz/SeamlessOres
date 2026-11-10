@@ -14,10 +14,6 @@
       "modid": "projectred_exploration"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "projectred_exploration"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

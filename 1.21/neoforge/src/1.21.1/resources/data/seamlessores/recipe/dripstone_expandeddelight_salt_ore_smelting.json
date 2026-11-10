@@ -14,10 +14,6 @@
       "modid": "expandeddelight"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "expandeddelight"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

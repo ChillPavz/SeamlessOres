@@ -18,10 +18,6 @@
       "modid": "railcraft"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "embellishcraft"
-  },
   "type": "minecraft:block",
   "pools": [
     {

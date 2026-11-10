@@ -18,10 +18,6 @@
       "modid": "mythicupgrades"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "betterend"
-  },
   "type": "minecraft:block",
   "pools": [
     {

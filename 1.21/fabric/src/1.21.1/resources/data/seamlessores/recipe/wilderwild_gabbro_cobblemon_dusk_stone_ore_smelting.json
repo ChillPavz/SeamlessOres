@@ -18,10 +18,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "wilderwild"
-  },
   "type": "minecraft:smelting",
   "group": "dusk_stone",
   "ingredient": {

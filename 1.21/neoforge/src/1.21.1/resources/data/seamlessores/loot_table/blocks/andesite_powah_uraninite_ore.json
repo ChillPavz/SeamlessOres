@@ -14,10 +14,6 @@
       "modid": "powah"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "powah"
-  },
   "type": "minecraft:block",
   "pools": [
     {

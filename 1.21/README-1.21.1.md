@@ -10,7 +10,7 @@ surroundings. The Nether variants are the one exception, and they are config gat
 | | |
 |---|---|
 | Minecraft | 1.21 and 1.21.1, one jar per loader |
-| Loaders | Fabric, NeoForge, Forge, Quilt (untested) |
+| Loaders | Fabric, NeoForge, Quilt (untested) |
 | Wiki | https://chillpavz.com/seamless-ores |
 | Licence | PolyForm Shield 1.0.0, see `LICENSE` |
 
@@ -489,7 +489,6 @@ Minecraft version:
 |---|---|---|
 | Fabric | 166 | Basic Nether Ores, BetterNether, Bronze, Cobblemon, Energized Power, Mythic Metals, Mythic Upgrades, Sulfur and Potassium, Tech Reborn, Things |
 | NeoForge | 391 | Actually Additions, Born in Chaos, Bronze, Cobblemon, Create, Create: Gunsmithing, Create: New Age, Create: TFMG, Dense Mekanism, Dense Ores, Electrodynamics, Energized Power, Epic Paladins, EvilCraft, Expanded Delight, Extreme Reactors, Hazen 'N Stuff, Ice and Fire, Immersive Engineering, Malum, Mekanism, Modern Industrialization, Mystical Agriculture, Mythic Upgrades, Occultism, Oreganized, Powah, Project Red Exploration, RFTools Base, Railcraft Reborn, Silent Gear, Silent's Gems, Superb Warfare, Theurgy, Treasure2, Werewolves: Become a Beast |
-| Forge | 46 | none at this Minecraft version |
 
 The registered block set is derived from which mods are loaded rather than from config, so
 a client and a server running the same mods always agree and nobody is kicked on join.
@@ -518,7 +517,7 @@ veridium each keep only the ore Create ties them to.
 <!-- BEGIN GENERATED modded-stone-list -->
 **2337 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
-**Terralith** (its mod or datapack, Fabric, NeoForge and Forge)
+**Terralith** (its mod or datapack, Fabric and NeoForge)
 
 Stones: Deep Blackstone `minecraft_blackstone`
 
@@ -1602,7 +1601,7 @@ Stones: Gabbro `wilderwild_gabbro`
 | Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Gabbro |
 | Nickel | `oritech_nickel` | Oritech `oritech` | Gabbro |
 
-**Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric, NeoForge and Forge)
+**Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric and NeoForge)
 
 Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacite`, Red Rock `biomeswevegone_red_rock`
 
@@ -2014,7 +2013,7 @@ blocks too.
 
 ## Building
 
-Requires JDK 22. Gradle 8.10 and ForgeGradle 6 cannot run on a newer one.
+Requires JDK 22. Gradle 8.10 cannot run on a newer one.
 
 ```
 ./gradlew build

@@ -18,10 +18,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "born_in_chaos_v1"
-  },
   "type": "minecraft:blasting",
   "ingredient": {
     "item": "seamlessores:born_in_chaos_v1_black_argillite_iceandfire_silver_ore"

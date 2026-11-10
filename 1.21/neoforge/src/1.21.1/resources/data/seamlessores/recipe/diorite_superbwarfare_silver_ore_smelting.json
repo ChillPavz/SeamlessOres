@@ -14,10 +14,6 @@
       "modid": "superbwarfare"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "superbwarfare"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

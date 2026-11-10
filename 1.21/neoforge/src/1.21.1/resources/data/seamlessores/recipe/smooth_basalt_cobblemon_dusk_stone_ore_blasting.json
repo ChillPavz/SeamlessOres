@@ -18,10 +18,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "create"
-  },
   "type": "minecraft:blasting",
   "group": "dusk_stone",
   "ingredient": {

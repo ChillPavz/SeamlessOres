@@ -14,10 +14,6 @@
       "modid": "natures_spirit"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "natures_spirit"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

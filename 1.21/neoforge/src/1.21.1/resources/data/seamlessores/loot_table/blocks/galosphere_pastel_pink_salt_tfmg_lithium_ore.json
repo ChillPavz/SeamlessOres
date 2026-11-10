@@ -18,10 +18,6 @@
       "modid": "tfmg"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "galosphere"
-  },
   "type": "minecraft:block",
   "pools": [
     {

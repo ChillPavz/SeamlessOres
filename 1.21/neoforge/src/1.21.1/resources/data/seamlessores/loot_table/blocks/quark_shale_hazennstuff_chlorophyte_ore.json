@@ -18,10 +18,6 @@
       "modid": "hazennstuff"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "quark"
-  },
   "type": "minecraft:block",
   "pools": [
     {

@@ -18,10 +18,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "embellishcraft"
-  },
   "type": "minecraft:smelting",
   "group": "ice_stone",
   "ingredient": {

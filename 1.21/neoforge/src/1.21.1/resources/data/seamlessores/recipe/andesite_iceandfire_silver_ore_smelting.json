@@ -14,10 +14,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "iceandfire"
-  },
   "type": "minecraft:smelting",
   "ingredient": {
     "item": "seamlessores:andesite_iceandfire_silver_ore"

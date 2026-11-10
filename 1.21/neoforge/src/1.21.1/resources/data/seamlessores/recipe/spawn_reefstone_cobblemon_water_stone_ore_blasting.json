@@ -18,10 +18,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "spawn"
-  },
   "type": "minecraft:blasting",
   "group": "water_stone",
   "ingredient": {

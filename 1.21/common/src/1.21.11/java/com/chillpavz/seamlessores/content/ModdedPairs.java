@@ -56,12 +56,12 @@ final class ModdedPairs {
         final String here = Services.PLATFORM.getPlatformName().toLowerCase(Locale.ROOT);
         return switch (mod) {
             // BEGIN GENERATED stone loaders (tools/generate_assets.py, from its loot routing)
-            case "minecraft" -> here.equals("fabric") || here.equals("neoforge") || here.equals("forge");
+            case "minecraft" -> here.equals("fabric") || here.equals("neoforge");
             case "blockus" -> here.equals("fabric");
             case "create" -> here.equals("fabric");
             case "promenade" -> here.equals("fabric");
             case "wilderwild" -> here.equals("fabric");
-            case "biomeswevegone" -> here.equals("fabric") || here.equals("neoforge") || here.equals("forge");
+            case "biomeswevegone" -> here.equals("fabric") || here.equals("neoforge");
             // END GENERATED stone loaders
             default -> false;
         };

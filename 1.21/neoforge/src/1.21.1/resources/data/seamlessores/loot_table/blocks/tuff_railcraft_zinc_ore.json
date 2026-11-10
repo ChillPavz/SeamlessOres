@@ -14,10 +14,6 @@
       "modid": "railcraft"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "railcraft"
-  },
   "type": "minecraft:block",
   "pools": [
     {

@@ -14,10 +14,6 @@
       "modid": "rftoolsbase"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "rftoolsbase"
-  },
   "type": "minecraft:block",
   "pools": [
     {

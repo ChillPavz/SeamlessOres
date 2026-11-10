@@ -18,10 +18,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "biomeswevegone"
-  },
   "type": "minecraft:blasting",
   "ingredient": {
     "item": "seamlessores:biomeswevegone_red_rock_iceandfire_silver_ore"

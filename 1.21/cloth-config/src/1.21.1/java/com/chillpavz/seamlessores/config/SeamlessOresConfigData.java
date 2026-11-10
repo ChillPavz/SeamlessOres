@@ -17,9 +17,7 @@ import net.minecraft.world.InteractionResult;
  * dependency and common compiles against vanilla only. The values are pushed into
  * {@link SeamlessOresConfig}, which is where the worldgen code reads them.
  *
- * <p>All three loaders use cloth here. Only the 1.21.11 branch hand-writes a Forge screen, because
- * that is the one version with no official cloth Forge build — cloth ships one at 1.21.x and 1.20.x
- * alike, so do NOT copy 1.21.11's screen backwards into this branch.
+ * <p>Fabric and NeoForge both use cloth here (1.21.x ships no Forge jar from 6.0.0).
  *
  * <p>Everything here gates <i>generation</i>, never registration — see {@link SeamlessOresConfig}.
  * A disabled mod's blocks still exist, in the creative tab and in every tag; they simply stop being

@@ -18,10 +18,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "natures_spirit"
-  },
   "type": "minecraft:smelting",
   "ingredient": {
     "item": "seamlessores:natures_spirit_pink_sandstone_iceandfire_silver_ore"

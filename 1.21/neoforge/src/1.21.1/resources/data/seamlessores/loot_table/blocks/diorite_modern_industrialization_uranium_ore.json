@@ -14,10 +14,6 @@
       "modid": "modern_industrialization"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "modern_industrialization"
-  },
   "type": "minecraft:block",
   "pools": [
     {

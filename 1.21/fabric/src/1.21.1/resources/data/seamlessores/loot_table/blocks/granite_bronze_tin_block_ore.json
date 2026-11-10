@@ -14,10 +14,6 @@
       "modid": "bronze"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "bronze"
-  },
   "type": "minecraft:block",
   "pools": [
     {

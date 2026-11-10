@@ -18,10 +18,6 @@
       "modid": "createpropulsion"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "promenade"
-  },
   "type": "minecraft:smelting",
   "ingredient": {
     "item": "seamlessores:promenade_blunite_createpropulsion_platinum_ore"

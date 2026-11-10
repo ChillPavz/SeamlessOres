@@ -18,10 +18,6 @@
       "modid": "energizedpower"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "blockus"
-  },
   "type": "minecraft:block",
   "pools": [
     {

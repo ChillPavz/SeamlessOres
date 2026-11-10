@@ -14,10 +14,6 @@
       "modid": "bno"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "bno"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

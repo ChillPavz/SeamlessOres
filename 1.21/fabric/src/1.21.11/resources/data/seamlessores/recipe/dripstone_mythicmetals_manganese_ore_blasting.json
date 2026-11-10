@@ -14,10 +14,6 @@
       "modid": "mythicmetals"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "mythicmetals"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

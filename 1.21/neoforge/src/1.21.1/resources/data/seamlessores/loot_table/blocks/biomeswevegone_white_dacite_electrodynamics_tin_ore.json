@@ -18,10 +18,6 @@
       "modid": "electrodynamics"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "biomeswevegone"
-  },
   "type": "minecraft:block",
   "pools": [
     {

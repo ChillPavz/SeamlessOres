@@ -18,10 +18,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "biomeswevegone"
-  },
   "type": "minecraft:blasting",
   "group": "dawn_stone",
   "ingredient": {

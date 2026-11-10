@@ -18,10 +18,6 @@
       "modid": "cobblemon"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "blockus"
-  },
   "type": "minecraft:blasting",
   "group": "moon_stone",
   "ingredient": {

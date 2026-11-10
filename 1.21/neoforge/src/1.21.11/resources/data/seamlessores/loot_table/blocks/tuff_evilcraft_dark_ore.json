@@ -14,10 +14,6 @@
       "modid": "evilcraft"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "evilcraft"
-  },
   "type": "minecraft:block",
   "pools": [
     {

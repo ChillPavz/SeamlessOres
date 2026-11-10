@@ -18,10 +18,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "meadow"
-  },
   "type": "minecraft:blasting",
   "ingredient": {
     "item": "seamlessores:meadow_limestone_iceandfire_silver_ore"

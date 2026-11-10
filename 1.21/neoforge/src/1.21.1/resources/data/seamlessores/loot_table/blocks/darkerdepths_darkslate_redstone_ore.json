@@ -14,10 +14,6 @@
       "modid": "darkerdepths"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "darkerdepths"
-  },
   "type": "minecraft:block",
   "pools": [
     {

@@ -18,10 +18,6 @@
       "modid": "iceandfire"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "create"
-  },
   "type": "minecraft:smelting",
   "ingredient": {
     "item": "seamlessores:create_scoria_iceandfire_sapphire_ore"

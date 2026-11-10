@@ -14,10 +14,6 @@
       "modid": "spawn"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "spawn"
-  },
   "type": "minecraft:block",
   "pools": [
     {

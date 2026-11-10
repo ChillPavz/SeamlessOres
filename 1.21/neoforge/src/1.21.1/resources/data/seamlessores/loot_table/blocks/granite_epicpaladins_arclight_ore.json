@@ -14,10 +14,6 @@
       "modid": "epicpaladins"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "epicpaladins"
-  },
   "type": "minecraft:block",
   "pools": [
     {

@@ -14,10 +14,6 @@
       "modid": "things"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "things"
-  },
   "type": "minecraft:block",
   "pools": [
     {

@@ -14,10 +14,6 @@
       "modid": "blockus"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "blockus"
-  },
   "type": "minecraft:blasting",
   "category": "blocks",
   "cookingtime": 100,

@@ -14,10 +14,6 @@
       "modid": "twigs"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "twigs"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

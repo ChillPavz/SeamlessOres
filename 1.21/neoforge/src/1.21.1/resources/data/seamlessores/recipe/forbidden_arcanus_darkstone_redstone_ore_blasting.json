@@ -14,10 +14,6 @@
       "modid": "forbidden_arcanus"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "forbidden_arcanus"
-  },
   "type": "minecraft:blasting",
   "category": "blocks",
   "cookingtime": 100,

@@ -4,9 +4,6 @@ import com.chillpavz.seamlessores.Constants;
 import com.chillpavz.seamlessores.SeamlessOresConfig;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
-import net.minecraft.core.Registry;
-import net.minecraft.core.RegistryAccess;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
@@ -193,51 +190,7 @@ public final class CopperDensityInjector {
     }
 
     /**
-     * Thins copper from the server-start hook, which is where CLASSIC FORGE has to do it.
-     *
-     * <p><b>Why this exists beside the mixin.</b> {@code ChunkGeneratorMixin} is registered on
-     * Fabric and NeoForge. It is NOT registered on classic Forge and cannot be: that loader runs on
-     * SRG member names, so a mixin needs a refmap, and this module has never had the Mixin
-     * annotation processor that writes one. Shipping the config without it would fail the injection
-     * at launch, which is exactly what it did on 1.20.1 Fabric. With no thinning at all, the dials
-     * silently did nothing on Forge and {@link #warnIfNeverRan()} was the only sign: measured in a
-     * client run, `the copper dials are set to 75% and 50% but no copper feature was thinned`.
-     *
-     * <p><b>Why server start is safe on Forge when it is not on Fabric.</b> The rebind must happen
-     * before {@code FeatureSorter} indexes the old instance. Forge and NeoForge both fire
-     * {@code ServerAboutToStartEvent} from {@code ServerLifecycleHooks} early in {@code initServer},
-     * before the levels are created and therefore before {@code ChunkGenerator.validate()} forces
-     * the table. Fabric's {@code SERVER_STARTING} lands after it, which is the whole reason the
-     * mixin exists. The evidence is 4.0.0 itself: it thinned at server start on every band and
-     * crashed on Fabric while never once crashing on NeoForge.
-     *
-     * <p>Idempotent with the mixin: whichever pass runs first rebinds, and the other finds the
-     * replacement in {@code ALREADY_THINNED} and does nothing. So a loader where both are active
-     * thins once, not twice.
-     */
-    public static void thinAtServerStart(RegistryAccess registries) {
-
-        final Registry<PlacedFeature> placed = registries.lookupOrThrow(Registries.PLACED_FEATURE);
-        int changed = 0;
-
-        // The registry rather than each biome's list: every biome reads its features through these
-        // same holders, so one pass covers every dimension, and a biome modifier that replaced a
-        // biome's feature list still reads through to the value rebound here.
-        // listElements(), not holders(): renamed at this version, and the wrong one does not compile.
-        for (Holder.Reference<PlacedFeature> holder : placed.listElements().toList()) {
-            if (thin(holder)) {
-                changed++;
-            }
-        }
-
-        if (changed > 0) {
-            ranAtLeastOnce = true;
-            Constants.LOG.info("Worldgen: thinned {} copper feature(s)", changed);
-        }
-    }
-
-    /**
-     * Warns if the thinning never ran, called from the server-start injection.
+     * Warns if the thinning never ran, called at server start.
      *
      * <p>A mixin that fails to apply is silent, and so is a dial that quietly stopped working: the
      * only symptom would be vanilla copper density, which nobody would report as a bug. This is the
@@ -251,8 +204,8 @@ public final class CopperDensityInjector {
             return;                     // both dials off; nothing was supposed to happen
         }
         Constants.LOG.warn("Worldgen: the copper dials are set to {}% and {}% but no copper feature"
-                        + " was thinned, so copper is at vanilla density. Neither ChunkGeneratorMixin"
-                        + " nor the server-start pass reached it. Everything else in the mod is"
+                        + " was thinned, so copper is at vanilla density. ChunkGeneratorMixin"
+                        + " never reached it. Everything else in the mod is"
                         + " unaffected.",
                 SeamlessOresConfig.overworldCopper, SeamlessOresConfig.dripstoneCopper);
     }

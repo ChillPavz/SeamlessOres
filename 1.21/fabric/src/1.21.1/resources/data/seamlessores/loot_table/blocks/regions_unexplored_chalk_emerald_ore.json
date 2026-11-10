@@ -14,10 +14,6 @@
       "modid": "regions_unexplored"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "regions_unexplored"
-  },
   "type": "minecraft:block",
   "pools": [
     {

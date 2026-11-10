@@ -18,10 +18,6 @@
       "modid": "modern_industrialization"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "vanillabackport"
-  },
   "type": "minecraft:block",
   "pools": [
     {

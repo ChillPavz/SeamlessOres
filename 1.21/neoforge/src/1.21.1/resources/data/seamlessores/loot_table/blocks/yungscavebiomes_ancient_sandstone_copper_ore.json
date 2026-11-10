@@ -14,10 +14,6 @@
       "modid": "yungscavebiomes"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "yungscavebiomes"
-  },
   "type": "minecraft:block",
   "pools": [
     {

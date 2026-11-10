@@ -14,10 +14,6 @@
       "modid": "create"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "create"
-  },
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,

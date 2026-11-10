@@ -18,10 +18,6 @@
       "modid": "oritech"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "wilderwild"
-  },
   "type": "minecraft:block",
   "pools": [
     {

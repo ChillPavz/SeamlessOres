@@ -14,10 +14,6 @@
       "modid": "theurgy"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "theurgy"
-  },
   "type": "minecraft:block",
   "pools": [
     {

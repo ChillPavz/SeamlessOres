@@ -18,10 +18,6 @@
       "modid": "theurgy"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "twigs"
-  },
   "type": "minecraft:block",
   "pools": [
     {

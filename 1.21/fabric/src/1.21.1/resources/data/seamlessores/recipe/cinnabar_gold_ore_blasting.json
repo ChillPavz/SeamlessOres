@@ -14,10 +14,6 @@
       "modid": "vanillabackport"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "vanillabackport"
-  },
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 100,

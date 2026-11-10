@@ -18,10 +18,6 @@
       "modid": "mythicupgrades"
     }
   ],
-  "forge:condition": {
-    "type": "forge:mod_loaded",
-    "modid": "forbidden_arcanus"
-  },
   "type": "minecraft:block",
   "pools": [
     {
