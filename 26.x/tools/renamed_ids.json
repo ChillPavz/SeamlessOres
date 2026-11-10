@@ -1,5 +1,5 @@
 {
-  "_comment": "Block ids an earlier Seamless Ores release shipped, mapped to the id the 6.0.0 id rule gives the same block; registered as registry aliases so worlds and inventories convert on load. \"kept\": pairs that keep a shipped id, because the rule would give that id to another block. Seeded from the 5.0.0 jars; a line is never removed.",
+  "_comment": "Block ids an earlier Seamless Ores release shipped, mapped to the id the 6.0.0 id rule gives the same block; registered as registry aliases so worlds and inventories convert on load. \"kept\": pairs that keep a shipped id, because the rule would give that id to another block. Seeded from the 5.0.0 and 5.1.0 jars; a line is never removed.",
   "renamed": {
     "andesite_adamantite_ore": "andesite_mythicmetals_adamantite_ore",
     "andesite_aquarium_ore": "andesite_mythicmetals_aquarium_ore",
@@ -528,7 +528,32 @@
     "wilderwild_gabbro_quadrillum_ore": "wilderwild_gabbro_mythicmetals_quadrillum_ore",
     "wilderwild_gabbro_runite_ore": "wilderwild_gabbro_mythicmetals_runite_ore",
     "wilderwild_gabbro_silver_ore": "wilderwild_gabbro_mythicmetals_silver_ore",
-    "wilderwild_gabbro_unobtainium_ore": "wilderwild_gabbro_mythicmetals_unobtainium_ore"
+    "wilderwild_gabbro_unobtainium_ore": "wilderwild_gabbro_mythicmetals_unobtainium_ore",
+    "minecraft_blackstone_aquarium_ore": "blackstone_mythicmetals_aquarium_ore",
+    "minecraft_blackstone_chaos_ore": "blackstone_silentgems_chaos_ore",
+    "minecraft_blackstone_citrine_ore": "blackstone_mythicupgrades_citrine_ore",
+    "minecraft_blackstone_copper_ore": "blackstone_copper_ore",
+    "minecraft_blackstone_galena_ore": "blackstone_techreborn_galena_ore",
+    "minecraft_blackstone_iceandfire_sapphire_ore": "blackstone_iceandfire_sapphire_ore",
+    "minecraft_blackstone_iceandfire_silver_ore": "blackstone_iceandfire_silver_ore",
+    "minecraft_blackstone_iron_ore": "blackstone_iron_ore",
+    "minecraft_blackstone_manganese_ore": "blackstone_mythicmetals_manganese_ore",
+    "minecraft_blackstone_morkite_ore": "blackstone_mythicmetals_morkite_ore",
+    "minecraft_blackstone_occultism_silver_ore": "blackstone_occultism_silver_ore",
+    "minecraft_blackstone_orichalcum_ore": "blackstone_mythicmetals_orichalcum_ore",
+    "minecraft_blackstone_peridot_ore": "blackstone_mythicupgrades_peridot_ore",
+    "minecraft_blackstone_redstone_ore": "blackstone_redstone_ore",
+    "minecraft_blackstone_silents_peridot_ore": "blackstone_silentgems_peridot_ore",
+    "minecraft_blackstone_silents_ruby_ore": "blackstone_silentgems_ruby_ore",
+    "minecraft_blackstone_silents_sapphire_ore": "blackstone_silentgems_sapphire_ore",
+    "minecraft_blackstone_silents_silver_ore": "blackstone_silentgems_silver_ore",
+    "minecraft_blackstone_silver_ore": "blackstone_mythicmetals_silver_ore",
+    "minecraft_blackstone_techreborn_bauxite_ore": "blackstone_techreborn_bauxite_ore",
+    "minecraft_blackstone_techreborn_lead_ore": "blackstone_techreborn_lead_ore",
+    "minecraft_blackstone_techreborn_ruby_ore": "blackstone_techreborn_ruby_ore",
+    "minecraft_blackstone_techreborn_sapphire_ore": "blackstone_techreborn_sapphire_ore",
+    "minecraft_blackstone_techreborn_silver_ore": "blackstone_techreborn_silver_ore",
+    "minecraft_blackstone_zinc_ore": "blackstone_create_zinc_ore"
   },
   "kept": {
     "minecraft_blackstone|gold": "minecraft_blackstone_gold_ore"

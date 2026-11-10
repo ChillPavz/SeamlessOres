@@ -885,6 +885,24 @@
     "wilderwild_gabbro_quadrillum_ore": "wilderwild_gabbro_mythicmetals_quadrillum_ore",
     "wilderwild_gabbro_runite_ore": "wilderwild_gabbro_mythicmetals_runite_ore",
     "wilderwild_gabbro_silver_ore": "wilderwild_gabbro_mythicmetals_silver_ore",
-    "wilderwild_gabbro_unobtainium_ore": "wilderwild_gabbro_mythicmetals_unobtainium_ore"
+    "wilderwild_gabbro_unobtainium_ore": "wilderwild_gabbro_mythicmetals_unobtainium_ore",
+    "minecraft_blackstone_aquarium_ore": "blackstone_mythicmetals_aquarium_ore",
+    "minecraft_blackstone_chaos_ore": "blackstone_silentgems_chaos_ore",
+    "minecraft_blackstone_citrine_ore": "blackstone_mythicupgrades_citrine_ore",
+    "minecraft_blackstone_copper_ore": "blackstone_copper_ore",
+    "minecraft_blackstone_dense_lead_ore": "blackstone_densemekanism_dense_lead_ore",
+    "minecraft_blackstone_iron_ore": "blackstone_iron_ore",
+    "minecraft_blackstone_lead_ore": "blackstone_tfmg_lead_ore",
+    "minecraft_blackstone_manganese_ore": "blackstone_mythicmetals_manganese_ore",
+    "minecraft_blackstone_morkite_ore": "blackstone_mythicmetals_morkite_ore",
+    "minecraft_blackstone_orichalcum_ore": "blackstone_mythicmetals_orichalcum_ore",
+    "minecraft_blackstone_peridot_ore": "blackstone_mythicupgrades_peridot_ore",
+    "minecraft_blackstone_redstone_ore": "blackstone_redstone_ore",
+    "minecraft_blackstone_silents_peridot_ore": "blackstone_silentgems_peridot_ore",
+    "minecraft_blackstone_silents_ruby_ore": "blackstone_silentgems_ruby_ore",
+    "minecraft_blackstone_silents_sapphire_ore": "blackstone_silentgems_sapphire_ore",
+    "minecraft_blackstone_silents_silver_ore": "blackstone_silentgems_silver_ore",
+    "minecraft_blackstone_silver_ore": "blackstone_mythicmetals_silver_ore",
+    "minecraft_blackstone_zinc_ore": "blackstone_create_zinc_ore"
   }
 }

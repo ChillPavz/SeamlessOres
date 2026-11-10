@@ -2150,6 +2150,56 @@
       "id": "wilderwild_gabbro_unobtainium_ore",
       "host": "wilderwild_gabbro",
       "ore": "unobtainium"
+    },
+    {
+      "id": "minecraft_blackstone_adamantite_ore",
+      "host": "minecraft_blackstone",
+      "ore": "adamantite"
+    },
+    {
+      "id": "minecraft_blackstone_carmot_ore",
+      "host": "minecraft_blackstone",
+      "ore": "carmot"
+    },
+    {
+      "id": "minecraft_blackstone_inferium_ore",
+      "host": "minecraft_blackstone",
+      "ore": "inferium"
+    },
+    {
+      "id": "minecraft_blackstone_mythril_ore",
+      "host": "minecraft_blackstone",
+      "ore": "mythril"
+    },
+    {
+      "id": "minecraft_blackstone_necoium_ore",
+      "host": "minecraft_blackstone",
+      "ore": "necoium"
+    },
+    {
+      "id": "minecraft_blackstone_prometheum_ore",
+      "host": "minecraft_blackstone",
+      "ore": "prometheum"
+    },
+    {
+      "id": "minecraft_blackstone_prosperity_ore",
+      "host": "minecraft_blackstone",
+      "ore": "prosperity"
+    },
+    {
+      "id": "minecraft_blackstone_quadrillum_ore",
+      "host": "minecraft_blackstone",
+      "ore": "quadrillum"
+    },
+    {
+      "id": "minecraft_blackstone_runite_ore",
+      "host": "minecraft_blackstone",
+      "ore": "runite"
+    },
+    {
+      "id": "minecraft_blackstone_unobtainium_ore",
+      "host": "minecraft_blackstone",
+      "ore": "unobtainium"
     }
   ]
 }

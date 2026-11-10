@@ -3345,6 +3345,451 @@
    "id": "wilderwild_gabbro_unobtainium_ore",
    "host": "wilderwild_gabbro",
    "ore": "unobtainium"
+  },
+  {
+   "id": "born_in_chaos_v1_black_argillite_chaos_ore",
+   "host": "born_in_chaos_v1_black_argillite",
+   "ore": "chaos"
+  },
+  {
+   "id": "born_in_chaos_v1_black_argillite_necoium_ore",
+   "host": "born_in_chaos_v1_black_argillite",
+   "ore": "necoium"
+  },
+  {
+   "id": "born_in_chaos_v1_black_argillite_prosperity_ore",
+   "host": "born_in_chaos_v1_black_argillite",
+   "ore": "prosperity"
+  },
+  {
+   "id": "born_in_chaos_v1_black_argillite_redstone_ore",
+   "host": "born_in_chaos_v1_black_argillite",
+   "ore": "redstone"
+  },
+  {
+   "id": "minecraft_blackstone_adamantite_ore",
+   "host": "minecraft_blackstone",
+   "ore": "adamantite"
+  },
+  {
+   "id": "minecraft_blackstone_brilliant_ore",
+   "host": "minecraft_blackstone",
+   "ore": "brilliant"
+  },
+  {
+   "id": "minecraft_blackstone_carmot_ore",
+   "host": "minecraft_blackstone",
+   "ore": "carmot"
+  },
+  {
+   "id": "minecraft_blackstone_gleaming_ore",
+   "host": "minecraft_blackstone",
+   "ore": "gleaming"
+  },
+  {
+   "id": "minecraft_blackstone_inferium_ore",
+   "host": "minecraft_blackstone",
+   "ore": "inferium"
+  },
+  {
+   "id": "minecraft_blackstone_mythril_ore",
+   "host": "minecraft_blackstone",
+   "ore": "mythril"
+  },
+  {
+   "id": "minecraft_blackstone_necoium_ore",
+   "host": "minecraft_blackstone",
+   "ore": "necoium"
+  },
+  {
+   "id": "minecraft_blackstone_prometheum_ore",
+   "host": "minecraft_blackstone",
+   "ore": "prometheum"
+  },
+  {
+   "id": "minecraft_blackstone_prosperity_ore",
+   "host": "minecraft_blackstone",
+   "ore": "prosperity"
+  },
+  {
+   "id": "minecraft_blackstone_quadrillum_ore",
+   "host": "minecraft_blackstone",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "minecraft_blackstone_runite_ore",
+   "host": "minecraft_blackstone",
+   "ore": "runite"
+  },
+  {
+   "id": "minecraft_blackstone_soulstone_ore",
+   "host": "minecraft_blackstone",
+   "ore": "soulstone"
+  },
+  {
+   "id": "minecraft_blackstone_unobtainium_ore",
+   "host": "minecraft_blackstone",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "promenade_asphalt_aquarium_ore",
+   "host": "promenade_asphalt",
+   "ore": "aquarium"
+  },
+  {
+   "id": "promenade_asphalt_brilliant_ore",
+   "host": "promenade_asphalt",
+   "ore": "brilliant"
+  },
+  {
+   "id": "promenade_asphalt_carmot_ore",
+   "host": "promenade_asphalt",
+   "ore": "carmot"
+  },
+  {
+   "id": "promenade_asphalt_chaos_ore",
+   "host": "promenade_asphalt",
+   "ore": "chaos"
+  },
+  {
+   "id": "promenade_asphalt_gleaming_ore",
+   "host": "promenade_asphalt",
+   "ore": "gleaming"
+  },
+  {
+   "id": "promenade_asphalt_kyber_ore",
+   "host": "promenade_asphalt",
+   "ore": "kyber"
+  },
+  {
+   "id": "promenade_asphalt_morkite_ore",
+   "host": "promenade_asphalt",
+   "ore": "morkite"
+  },
+  {
+   "id": "promenade_asphalt_mythril_ore",
+   "host": "promenade_asphalt",
+   "ore": "mythril"
+  },
+  {
+   "id": "promenade_asphalt_necoium_ore",
+   "host": "promenade_asphalt",
+   "ore": "necoium"
+  },
+  {
+   "id": "promenade_asphalt_orichalcum_ore",
+   "host": "promenade_asphalt",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "promenade_asphalt_prosperity_ore",
+   "host": "promenade_asphalt",
+   "ore": "prosperity"
+  },
+  {
+   "id": "promenade_asphalt_quadrillum_ore",
+   "host": "promenade_asphalt",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "promenade_asphalt_redstone_ore",
+   "host": "promenade_asphalt",
+   "ore": "redstone"
+  },
+  {
+   "id": "promenade_asphalt_runite_ore",
+   "host": "promenade_asphalt",
+   "ore": "runite"
+  },
+  {
+   "id": "promenade_asphalt_starrite_ore",
+   "host": "promenade_asphalt",
+   "ore": "starrite"
+  },
+  {
+   "id": "promenade_asphalt_unobtainium_ore",
+   "host": "promenade_asphalt",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "promenade_blunite_antimony_ore",
+   "host": "promenade_blunite",
+   "ore": "antimony"
+  },
+  {
+   "id": "promenade_blunite_aquamarine_ore",
+   "host": "promenade_blunite",
+   "ore": "aquamarine"
+  },
+  {
+   "id": "promenade_blunite_aquarium_ore",
+   "host": "promenade_blunite",
+   "ore": "aquarium"
+  },
+  {
+   "id": "promenade_blunite_banglum_ore",
+   "host": "promenade_blunite",
+   "ore": "banglum"
+  },
+  {
+   "id": "promenade_blunite_bort_ore",
+   "host": "promenade_blunite",
+   "ore": "bort"
+  },
+  {
+   "id": "promenade_blunite_brilliant_ore",
+   "host": "promenade_blunite",
+   "ore": "brilliant"
+  },
+  {
+   "id": "promenade_blunite_carmot_ore",
+   "host": "promenade_blunite",
+   "ore": "carmot"
+  },
+  {
+   "id": "promenade_blunite_chaos_ore",
+   "host": "promenade_blunite",
+   "ore": "chaos"
+  },
+  {
+   "id": "promenade_blunite_coal_ore",
+   "host": "promenade_blunite",
+   "ore": "coal"
+  },
+  {
+   "id": "promenade_blunite_dense_fluorite_ore",
+   "host": "promenade_blunite",
+   "ore": "dense_fluorite"
+  },
+  {
+   "id": "promenade_blunite_dense_lead_ore",
+   "host": "promenade_blunite",
+   "ore": "dense_lead"
+  },
+  {
+   "id": "promenade_blunite_dense_tin_ore",
+   "host": "promenade_blunite",
+   "ore": "dense_tin"
+  },
+  {
+   "id": "promenade_blunite_dense_uranium_ore",
+   "host": "promenade_blunite",
+   "ore": "dense_uranium"
+  },
+  {
+   "id": "promenade_blunite_diamond_ore",
+   "host": "promenade_blunite",
+   "ore": "diamond"
+  },
+  {
+   "id": "promenade_blunite_emerald_ore",
+   "host": "promenade_blunite",
+   "ore": "emerald"
+  },
+  {
+   "id": "promenade_blunite_energized_tin_ore",
+   "host": "promenade_blunite",
+   "ore": "energized_tin"
+  },
+  {
+   "id": "promenade_blunite_galena_ore",
+   "host": "promenade_blunite",
+   "ore": "galena"
+  },
+  {
+   "id": "promenade_blunite_garnet_ore",
+   "host": "promenade_blunite",
+   "ore": "garnet"
+  },
+  {
+   "id": "promenade_blunite_gleaming_ore",
+   "host": "promenade_blunite",
+   "ore": "gleaming"
+  },
+  {
+   "id": "promenade_blunite_iceandfire_sapphire_ore",
+   "host": "promenade_blunite",
+   "ore": "iceandfire_sapphire"
+  },
+  {
+   "id": "promenade_blunite_inferium_ore",
+   "host": "promenade_blunite",
+   "ore": "inferium"
+  },
+  {
+   "id": "promenade_blunite_kyber_ore",
+   "host": "promenade_blunite",
+   "ore": "kyber"
+  },
+  {
+   "id": "promenade_blunite_lapis_ore",
+   "host": "promenade_blunite",
+   "ore": "lapis"
+  },
+  {
+   "id": "promenade_blunite_lead_ore",
+   "host": "promenade_blunite",
+   "ore": "lead"
+  },
+  {
+   "id": "promenade_blunite_lignite_coal_ore",
+   "host": "promenade_blunite",
+   "ore": "lignite_coal"
+  },
+  {
+   "id": "promenade_blunite_manganese_ore",
+   "host": "promenade_blunite",
+   "ore": "manganese"
+  },
+  {
+   "id": "promenade_blunite_mi_lead_ore",
+   "host": "promenade_blunite",
+   "ore": "mi_lead"
+  },
+  {
+   "id": "promenade_blunite_mi_tin_ore",
+   "host": "promenade_blunite",
+   "ore": "mi_tin"
+  },
+  {
+   "id": "promenade_blunite_monazite_ore",
+   "host": "promenade_blunite",
+   "ore": "monazite"
+  },
+  {
+   "id": "promenade_blunite_necoium_ore",
+   "host": "promenade_blunite",
+   "ore": "necoium"
+  },
+  {
+   "id": "promenade_blunite_opal_ore",
+   "host": "promenade_blunite",
+   "ore": "opal"
+  },
+  {
+   "id": "promenade_blunite_oreganized_lead_ore",
+   "host": "promenade_blunite",
+   "ore": "oreganized_lead"
+  },
+  {
+   "id": "promenade_blunite_orichalcum_ore",
+   "host": "promenade_blunite",
+   "ore": "orichalcum"
+  },
+  {
+   "id": "promenade_blunite_prometheum_ore",
+   "host": "promenade_blunite",
+   "ore": "prometheum"
+  },
+  {
+   "id": "promenade_blunite_prosperity_ore",
+   "host": "promenade_blunite",
+   "ore": "prosperity"
+  },
+  {
+   "id": "promenade_blunite_salt_ore",
+   "host": "promenade_blunite",
+   "ore": "salt"
+  },
+  {
+   "id": "promenade_blunite_silents_aquamarine_ore",
+   "host": "promenade_blunite",
+   "ore": "silents_aquamarine"
+  },
+  {
+   "id": "promenade_blunite_silents_ruby_ore",
+   "host": "promenade_blunite",
+   "ore": "silents_ruby"
+  },
+  {
+   "id": "promenade_blunite_silents_sapphire_ore",
+   "host": "promenade_blunite",
+   "ore": "silents_sapphire"
+  },
+  {
+   "id": "promenade_blunite_silents_topaz_ore",
+   "host": "promenade_blunite",
+   "ore": "silents_topaz"
+  },
+  {
+   "id": "promenade_blunite_starrite_ore",
+   "host": "promenade_blunite",
+   "ore": "starrite"
+  },
+  {
+   "id": "promenade_blunite_techreborn_lead_ore",
+   "host": "promenade_blunite",
+   "ore": "techreborn_lead"
+  },
+  {
+   "id": "promenade_blunite_techreborn_ruby_ore",
+   "host": "promenade_blunite",
+   "ore": "techreborn_ruby"
+  },
+  {
+   "id": "promenade_blunite_techreborn_sapphire_ore",
+   "host": "promenade_blunite",
+   "ore": "techreborn_sapphire"
+  },
+  {
+   "id": "promenade_blunite_techreborn_tin_ore",
+   "host": "promenade_blunite",
+   "ore": "techreborn_tin"
+  },
+  {
+   "id": "promenade_blunite_thorium_ore",
+   "host": "promenade_blunite",
+   "ore": "thorium"
+  },
+  {
+   "id": "promenade_blunite_tin_ore",
+   "host": "promenade_blunite",
+   "ore": "tin"
+  },
+  {
+   "id": "promenade_blunite_topaz_ore",
+   "host": "promenade_blunite",
+   "ore": "topaz"
+  },
+  {
+   "id": "promenade_blunite_tungsten_ore",
+   "host": "promenade_blunite",
+   "ore": "tungsten"
+  },
+  {
+   "id": "promenade_blunite_unobtainium_ore",
+   "host": "promenade_blunite",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "promenade_blunite_uraninite_dense_ore",
+   "host": "promenade_blunite",
+   "ore": "uraninite_dense"
+  },
+  {
+   "id": "promenade_blunite_uraninite_ore",
+   "host": "promenade_blunite",
+   "ore": "uraninite"
+  },
+  {
+   "id": "promenade_blunite_uraninite_poor_ore",
+   "host": "promenade_blunite",
+   "ore": "uraninite_poor"
+  },
+  {
+   "id": "promenade_blunite_uranium_ore",
+   "host": "promenade_blunite",
+   "ore": "uranium"
+  },
+  {
+   "id": "promenade_blunite_yellorite_ore",
+   "host": "promenade_blunite",
+   "ore": "yellorite"
+  },
+  {
+   "id": "promenade_blunite_zinc_ore",
+   "host": "promenade_blunite",
+   "ore": "zinc"
   }
  ]
 }

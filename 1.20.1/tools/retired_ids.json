@@ -3975,6 +3975,96 @@
    "id": "twigs_schist_unobtainium_ore",
    "host": "twigs_schist",
    "ore": "unobtainium"
+  },
+  {
+   "id": "born_in_chaos_v1_black_argillite_necoium_ore",
+   "host": "born_in_chaos_v1_black_argillite",
+   "ore": "necoium"
+  },
+  {
+   "id": "born_in_chaos_v1_black_argillite_prosperity_ore",
+   "host": "born_in_chaos_v1_black_argillite",
+   "ore": "prosperity"
+  },
+  {
+   "id": "born_in_chaos_v1_black_argillite_redstone_ore",
+   "host": "born_in_chaos_v1_black_argillite",
+   "ore": "redstone"
+  },
+  {
+   "id": "minecraft_blackstone_adamantite_ore",
+   "host": "minecraft_blackstone",
+   "ore": "adamantite"
+  },
+  {
+   "id": "minecraft_blackstone_brilliant_ore",
+   "host": "minecraft_blackstone",
+   "ore": "brilliant"
+  },
+  {
+   "id": "minecraft_blackstone_carmot_ore",
+   "host": "minecraft_blackstone",
+   "ore": "carmot"
+  },
+  {
+   "id": "minecraft_blackstone_experience_ore",
+   "host": "minecraft_blackstone",
+   "ore": "experience"
+  },
+  {
+   "id": "minecraft_blackstone_gleaming_ore",
+   "host": "minecraft_blackstone",
+   "ore": "gleaming"
+  },
+  {
+   "id": "minecraft_blackstone_inferium_ore",
+   "host": "minecraft_blackstone",
+   "ore": "inferium"
+  },
+  {
+   "id": "minecraft_blackstone_mythril_ore",
+   "host": "minecraft_blackstone",
+   "ore": "mythril"
+  },
+  {
+   "id": "minecraft_blackstone_necoium_ore",
+   "host": "minecraft_blackstone",
+   "ore": "necoium"
+  },
+  {
+   "id": "minecraft_blackstone_prometheum_ore",
+   "host": "minecraft_blackstone",
+   "ore": "prometheum"
+  },
+  {
+   "id": "minecraft_blackstone_prosperity_ore",
+   "host": "minecraft_blackstone",
+   "ore": "prosperity"
+  },
+  {
+   "id": "minecraft_blackstone_quadrillum_ore",
+   "host": "minecraft_blackstone",
+   "ore": "quadrillum"
+  },
+  {
+   "id": "minecraft_blackstone_runite_ore",
+   "host": "minecraft_blackstone",
+   "ore": "runite"
+  },
+  {
+   "id": "minecraft_blackstone_soulstone_ore",
+   "host": "minecraft_blackstone",
+   "ore": "soulstone"
+  },
+  {
+   "id": "minecraft_blackstone_unobtainium_ore",
+   "host": "minecraft_blackstone",
+   "ore": "unobtainium"
+  },
+  {
+   "id": "promenade_blunite_iceandfire_sapphire_ore",
+   "host": "promenade_blunite",
+   "ore": "iceandfire_sapphire"
   }
  ]
 }

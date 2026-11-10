@@ -18,12 +18,62 @@ from assetgen import write_json
 MOD_ID = "seamlessores"
 
 
+def seed(hosts, variants, retired, retired_path, shipped_path):
+    """Add to renamed_ids.json every id a release shipped (shipped_path: a JSON list of the block ids
+    one band of that release registered) whose pair the id rule now names differently. Only adds. Prints
+    the shipped ids that end up neither live, renamed nor retired: those would vanish from old worlds."""
+    with open(hosts.renamed_path, encoding="utf-8") as fh:
+        table = json.load(fh)
+    shipped = set(json.load(open(shipped_path, encoding="utf-8")))
+    renamed = table["renamed"]
+    live = {hosts.name_of(host, ore) for host, _cfg, ore, _form, _tier in variants}
+    added, clash = {}, []
+    for host, _cfg, ore, _form, _tier in variants:
+        old, new = hosts.legacy_name_of(host, ore), hosts.name_of(host, ore)
+        if old == new or old not in shipped or old in renamed or old in retired:
+            continue
+        if old in live:
+            clash.append(f"{host}|{ore['key']}: shipped {old}, which the rule now gives another pair")
+            continue
+        added[old] = new
+    renamed.update(dict(sorted(added.items())))     # appended: the lines already there never move
+    with open(hosts.renamed_path, "w", encoding="utf-8") as fh:
+        json.dump(table, fh, indent=2)
+        fh.write("\n")
+    print(f"  seed {os.path.basename(shipped_path)}: {len(added)} renamed ids added")
+    for line in clash:
+        print(f"  seed CLASH {line}")
+    # A shipped id this release neither builds nor renames is RETIRED: a placeholder that turns into its
+    # host stone, so the block does not vanish from an old world. Its host is the longest host name it
+    # starts with; an id with no known host is only reported.
+    lost = sorted(shipped - live - set(renamed) - retired)
+    with open(retired_path, encoding="utf-8") as fh:
+        rtable = json.load(fh)
+    names = sorted(hosts.keys(), key=len, reverse=True)
+    orphans = []
+    for old in lost:
+        host = next((h for h in names if old.startswith(h + "_") and old.endswith("_ore")), None)
+        if host is None:
+            orphans.append(old)
+            continue
+        rtable["retired"].append({"id": old, "host": host, "ore": old[len(host) + 1:-len("_ore")]})
+    with open(retired_path, "w", encoding="utf-8") as fh:
+        json.dump(rtable, fh, indent=1)
+        fh.write("\n")
+    print(f"  seed: {len(lost) - len(orphans)} shipped ids retired")
+    if orphans:
+        print(f"  seed: {len(orphans)} shipped ids with no known host, NOT handled: {orphans}")
+
+
 def write(hosts, variants, retired_path, resources_dir):
     """hosts: the band's placed.Hosts; variants: its (host, cfg, ore, form, tier) list. Returns the
-    number of renamed ids."""
+    number of renamed ids. With SO_SEED_SHIPPED set to a shipped-id list, seeds renamed_ids.json first."""
+    retired = {row["id"] for row in json.load(open(retired_path, encoding="utf-8"))["retired"]}
+    if os.environ.get("SO_SEED_SHIPPED"):
+        seed(hosts, variants, retired, retired_path, os.environ["SO_SEED_SHIPPED"])
+        retired = {row["id"] for row in json.load(open(retired_path, encoding="utf-8"))["retired"]}
     renamed = (json.load(open(hosts.renamed_path, encoding="utf-8"))["renamed"]
                if os.path.exists(hosts.renamed_path) else {})
-    retired = {row["id"] for row in json.load(open(retired_path, encoding="utf-8"))["retired"]}
     ids = {}
     for host, cfg, ore, form, tier in variants:
         ids[f"{host}|{ore['key']}"] = hosts.name_of(host, ore)

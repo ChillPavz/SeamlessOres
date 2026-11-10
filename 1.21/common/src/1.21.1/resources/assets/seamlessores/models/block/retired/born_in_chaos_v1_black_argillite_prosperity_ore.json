@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "born_in_chaos_v1:block/tiemnyikirpich6"
+  }
+}
