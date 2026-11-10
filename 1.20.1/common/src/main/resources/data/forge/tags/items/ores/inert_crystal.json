@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_elementalcraft_inert_crystal_ore",
+      "required": false
+    }
+  ]
+}

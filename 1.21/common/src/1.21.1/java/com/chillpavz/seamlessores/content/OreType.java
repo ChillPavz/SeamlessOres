@@ -1113,6 +1113,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(3.0F, 5.0F, 4.5F, 3.0F);
 
+    // --- Elemental Craft (mod id elementalcraft, LGPL-2.1): inert crystal, iron ore's strength, 0 to 3 XP ---
+    public static final OreType EC_INERT_CRYSTAL = ore(
+            "elementalcraft_inert_crystal", "elementalcraft_inert_crystal", "elementalcraft_inert_crystal_deepslate", "elementalcraft",
+            of("elementalcraft", "inert_crystal_ore"), of("elementalcraft", "deepslate_inert_crystal_ore"), null,
+            UniformInt.of(0, 3), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     // --- Treasure2 (mod id treasure2, OSL-3.0): strength not read. Forge at 1.20.1, NeoForge at 1.21.1 ---
     public static final OreType T2_ONYX = ore(
             "treasure2_onyx", "treasure2_onyx", null, "treasure2",
@@ -1291,7 +1298,7 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TR_TUNGSTEN, AZURE_SILVER, ANGLESITE, EP_JADE, MU_JADE, MM_END_STARRITE,
                     HNS_ZENALITE,
                     BNO_COAL, BNO_COPPER, BNO_DIAMOND, BNO_EMERALD, BNO_IRON, BNO_LAPIS, BNO_REDSTONE, BNO_ALUMINUM, BNO_LEAD, BNO_NICKEL, BNO_OSMIUM, BNO_SILVER, BNO_TIN, BNO_URANIUM, BNO_ZINC,
-                    WW_SILVER,
+                    WW_SILVER, EC_INERT_CRYSTAL,
                     T2_ONYX, T2_RUBY, T2_SAPPHIRE, T2_TOPAZ,
                     SP_POTASSIUM, SP_SULFUR, SP_NETHER_SULFUR,
                     RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC,

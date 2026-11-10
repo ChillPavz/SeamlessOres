@@ -341,6 +341,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_railcraft_lead_ore",
       "required": false
     },

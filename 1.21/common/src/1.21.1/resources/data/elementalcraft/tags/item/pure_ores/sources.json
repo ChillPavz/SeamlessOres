@@ -1,0 +1,276 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_arid_sandstone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_powah_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_powah_uraninite_poor_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_powah_uraninite_poor_ore",
+      "required": false
+    }
+  ]
+}

@@ -276,6 +276,9 @@ public final class SeamlessOresConfig {
     /** Whether Werewolves: Become a Beast variants generate. Pure restyle. */
     public static boolean werewolves = true;
 
+    /** Whether Elemental Craft variants generate. Pure restyle. */
+    public static boolean elementalcraft = true;
+
     /** Whether Treasure2 variants generate. Pure restyle. */
     public static boolean treasure2 = true;
 
@@ -366,6 +369,7 @@ public final class SeamlessOresConfig {
             case "beo" -> basicEndOres;
             case "bno" -> basicNetherOres;
             case "werewolves" -> werewolves;
+            case "elementalcraft" -> elementalcraft;
             case "treasure2" -> treasure2;
             case "tconstruct" -> tinkersConstruct;
             case "rubinated_nether" -> rubinatedNether;
@@ -592,6 +596,7 @@ public final class SeamlessOresConfig {
         public boolean basicEndOres = true;
         public boolean basicNetherOres = true;
         public boolean werewolves = true;
+        public boolean elementalcraft = true;
         public boolean treasure2 = true;
         public boolean tinkersConstruct = true;
         public boolean rubinatedNether = true;
@@ -686,6 +691,7 @@ public final class SeamlessOresConfig {
         basicEndOres = values.basicEndOres;
         basicNetherOres = values.basicNetherOres;
         werewolves = values.werewolves;
+        elementalcraft = values.elementalcraft;
         treasure2 = values.treasure2;
         tinkersConstruct = values.tinkersConstruct;
         rubinatedNether = values.rubinatedNether;

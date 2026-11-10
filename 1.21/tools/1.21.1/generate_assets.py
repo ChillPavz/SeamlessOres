@@ -155,6 +155,7 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "denseores": jar("denseores-1.2.2.jar"),
             "bno": jar("BasicNetherOres-fabric-1.21.1-10.1.0.jar"),
             "werewolves": jar("Werewolves-1.21-2.0.3.4.jar"),
+            "elementalcraft": jar("1.21.1-elementalcraft-7.1.3-neoforge.jar"),
             "treasure2": jar("treasure2-neoforge-1.21.1-5.1.0.jar"),
             "sulfurpotassiummod": jar("sulfurpotassiummod-1.21-2.0.0+Fabric.jar"),
             "railcraft": jar("railcraft-reborn-1.21.1-1.2.16.jar"),
@@ -449,6 +450,8 @@ MODS = {
                        "licence": "MIT", "author": "cScotPlay"},
     "werewolves": {"display": "Werewolves: Become a Beast", "category": "werewolves",
                        "licence": "LGPL-3.0", "author": "Cheaterpaul, Maxanier, RebelT"},
+    "elementalcraft": {"display": "Elemental Craft", "category": "elementalcraft",
+                       "licence": "LGPL-2.1", "author": "Sirttas"},
     "treasure2": {"display": "Treasure2", "category": "treasure2",
                        "licence": "OSL-3.0", "author": "gottsch"},
     "sulfurpotassiummod": {"display": "Sulfur and Potassium", "category": "sulfurandpotassium",
@@ -1264,6 +1267,10 @@ ORE_DEFS = [
     {"name": "werewolves_silver", "overlay": "werewolves_silver", "deepslate_overlay": "werewolves_silver_deepslate", "source": "silver_ore", "base": "stone",
      "mod": "werewolves",
      "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    # --- Elemental Craft (mod id elementalcraft, LGPL-2.1): inert crystal, a copy of iron ore's strength (3.0/3.0, 4.5/3.0 in deepslate), 0 to 3 XP. Forge at 1.20.1, NeoForge at 1.21.1 ---
+    {"name": "elementalcraft_inert_crystal", "overlay": "elementalcraft_inert_crystal", "deepslate_overlay": "elementalcraft_inert_crystal_deepslate", "source": "inert_crystal_ore", "base": "stone",
+     "mod": "elementalcraft",
+     "tiers": {"stone": "inert_crystal_ore", "deepslate": "deepslate_inert_crystal_ore"}},
     # --- Treasure2 (mod id treasure2, OSL-3.0): strength not read. Forge at 1.20.1, NeoForge at 1.21.1 ---
     {"name": "treasure2_onyx", "overlay": "treasure2_onyx", "source": "onyx_ore", "base": "stone",
      "mod": "treasure2",
@@ -1487,6 +1494,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "legendary_monsters": ('neoforge',),   # Legendary Monsters: NeoForge
     "unusualend": ('neoforge',),   # Unusual End: NeoForge
     "werewolves": ('neoforge',),
+    "elementalcraft": ('neoforge',),
     "treasure2": ('neoforge',),
     "sulfurpotassiummod": ('fabric',),
     "railcraft": ('neoforge',),
@@ -1685,6 +1693,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.option.werewolves": "Werewolves: Become a Beast: variants",
         f"text.autoconfig.{MOD_ID}.option.werewolves.@Tooltip":
             "Generate host-matched silver ore. Does nothing unless the mod is installed.",
+        f"text.autoconfig.{MOD_ID}.category.elementalcraft": "Elemental Craft",
+        f"text.autoconfig.{MOD_ID}.option.elementalcraft": "Elemental Craft: variants",
+        f"text.autoconfig.{MOD_ID}.option.elementalcraft.@Tooltip":
+            "Generate host-matched inert crystal ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.basicNetherOres": "Basic Nether Ores: variants",
         f"text.autoconfig.{MOD_ID}.option.basicNetherOres.@Tooltip":

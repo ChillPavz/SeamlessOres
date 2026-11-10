@@ -1,0 +1,64 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_powah_uraninite_dense_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_powah_uraninite_dense_ore",
+      "required": false
+    }
+  ]
+}

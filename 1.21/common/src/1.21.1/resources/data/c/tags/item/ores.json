@@ -79,6 +79,10 @@
       "id": "seamlessores:andesite_electrodynamics_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
     "seamlessores:andesite_emerald_ore",
     {
       "id": "seamlessores:andesite_epicpaladins_bloodstone_ore",
@@ -3859,6 +3863,10 @@
       "id": "seamlessores:diorite_electrodynamics_vanadium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
     "seamlessores:diorite_emerald_ore",
     {
       "id": "seamlessores:diorite_epicpaladins_arclight_ore",
@@ -5536,6 +5544,10 @@
     },
     {
       "id": "seamlessores:granite_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_elementalcraft_inert_crystal_ore",
       "required": false
     },
     "seamlessores:granite_emerald_ore",
@@ -9272,6 +9284,10 @@
     },
     {
       "id": "seamlessores:tuff_electrodynamics_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_elementalcraft_inert_crystal_ore",
       "required": false
     },
     "seamlessores:tuff_emerald_ore",

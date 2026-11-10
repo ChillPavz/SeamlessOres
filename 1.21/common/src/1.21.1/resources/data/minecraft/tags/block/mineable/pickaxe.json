@@ -357,6 +357,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_treasure2_topaz_ore",
       "required": false
     },
@@ -657,6 +661,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_elementalcraft_inert_crystal_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_railcraft_lead_ore",
       "required": false
     },
@@ -922,6 +930,10 @@
     },
     {
       "id": "seamlessores:andesite_werewolves_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_elementalcraft_inert_crystal_ore",
       "required": false
     },
     {
@@ -1266,6 +1278,10 @@
     },
     {
       "id": "seamlessores:tuff_werewolves_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_elementalcraft_inert_crystal_ore",
       "required": false
     },
     {

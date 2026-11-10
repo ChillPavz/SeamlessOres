@@ -292,6 +292,10 @@ Electrodynamics by Sebastian Siljuholtet Johansen (aurilisdev), skip999, Aurilis
   assets/seamlessores/textures/block/electrodynamics_uranium_overlay.png
   assets/seamlessores/textures/block/electrodynamics_vanadium_overlay.png
 
+Elemental Craft by Sirttas, LGPL-2.1:
+  assets/seamlessores/textures/block/elementalcraft_inert_crystal_deepslate_overlay.png
+  assets/seamlessores/textures/block/elementalcraft_inert_crystal_overlay.png
+
 Energized Power by JDDev0, MIT:
   assets/seamlessores/textures/block/energized_tin_overlay.png
 

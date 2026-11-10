@@ -199,6 +199,7 @@ public final class SeamlessOresDataPacks {
             "densemekanism",
             "denseores",
             "electrodynamics",
+            "elementalcraft",
             "embellishcraft",
             "embellishcraft.biggerreactors",
             "embellishcraft.bigreactors",

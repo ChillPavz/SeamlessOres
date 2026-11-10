@@ -274,7 +274,7 @@ FICTION = set("redstone adamantite aquarium banglum carmot kyber midas_gold mork
               "iter_rpg_magmanum betternether_cincinnasite denseores_ancient_nether "
               "denseores_redstone betternether_nether_redstone".split())
 FICTION |= {a for a, base in ALIASES.items() if base in FICTION}
-FICTION |= {"tconstruct_cobalt", "treasure2_onyx", "jeg_scrap"}
+FICTION |= {"tconstruct_cobalt", "treasure2_onyx", "jeg_scrap", "elementalcraft_inert_crystal"}
 
 # Create's four invented stones each keep only the ore Create ties them to (owner), plus the invented ores
 # whose lore matches (FICTION_LORE).
@@ -382,6 +382,9 @@ FICTION_LORE.update({
     "tconstruct_cobalt": _NETHER_FIRE,                          # Tinkers' Nether ore, approved 31 Oct 2026
     "treasure2_onyx": ("VOLC FELS LIME", "A", ""),              # chalcedony: lava vesicles, rhyolite, chert in limestone
     "jeg_scrap": ("SHAL ASPH LIME", "T", ""),                   # buried junk, in sediment
+    # Elemental Craft (10 Nov 2026, proposed, owner to confirm): the raw crystal that takes up elemental energy,
+    # in every overworld stone in its own mod: crystalline and volcanic rock, the four overworld rocks
+    "elementalcraft_inert_crystal": ("PLUT FELS SCH MARB CALC VOLC", "G D A T", ""),
 })
 if set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS):
     raise SystemExit(f"geology.py: invented ores with no lore: {sorted(set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS))}")

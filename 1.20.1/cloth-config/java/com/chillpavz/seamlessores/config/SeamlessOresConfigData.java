@@ -782,6 +782,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean werewolves = true;
 
+    // --- Elemental Craft ------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("elementalcraft")
+    @ConfigEntry.Gui.Tooltip
+    public boolean elementalcraft = true;
+
     // --- Treasure2 -----------------------------------------------------------------------------------
 
     @ConfigEntry.Category("treasure2")
@@ -1020,6 +1026,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.basicEndOres = basicEndOres;
         values.basicNetherOres = basicNetherOres;
         values.werewolves = werewolves;
+        values.elementalcraft = elementalcraft;
         values.treasure2 = treasure2;
         values.tinkersConstruct = tinkersConstruct;
         values.rubinatedNether = rubinatedNether;
