@@ -465,10 +465,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_elementalcraft_inert_crystal_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:andesite_projectred_exploration_electrotine_ore",
       "required": false
     },
@@ -654,10 +650,6 @@
     },
     {
       "id": "seamlessores:tuff_denseores_dense_diamond_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_elementalcraft_inert_crystal_ore",
       "required": false
     },
     {

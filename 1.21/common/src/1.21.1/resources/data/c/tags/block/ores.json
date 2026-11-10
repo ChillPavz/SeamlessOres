@@ -79,10 +79,6 @@
       "id": "seamlessores:andesite_electrodynamics_uranium_ore",
       "required": false
     },
-    {
-      "id": "seamlessores:andesite_elementalcraft_inert_crystal_ore",
-      "required": false
-    },
     "seamlessores:andesite_emerald_ore",
     {
       "id": "seamlessores:andesite_epicpaladins_bloodstone_ore",
@@ -9284,10 +9280,6 @@
     },
     {
       "id": "seamlessores:tuff_electrodynamics_uranium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_elementalcraft_inert_crystal_ore",
       "required": false
     },
     "seamlessores:tuff_emerald_ore",

@@ -382,9 +382,9 @@ FICTION_LORE.update({
     "tconstruct_cobalt": _NETHER_FIRE,                          # Tinkers' Nether ore, approved 31 Oct 2026
     "treasure2_onyx": ("VOLC FELS LIME", "A", ""),              # chalcedony: lava vesicles, rhyolite, chert in limestone
     "jeg_scrap": ("SHAL ASPH LIME", "T", ""),                   # buried junk, in sediment
-    # Elemental Craft (10 Nov 2026, proposed, owner to confirm): the raw crystal that takes up elemental energy,
-    # in every overworld stone in its own mod: crystalline and volcanic rock, the four overworld rocks
-    "elementalcraft_inert_crystal": ("PLUT FELS SCH MARB CALC VOLC", "G D A T", ""),
+    # Elemental Craft (approved 10 Nov 2026): "Some strange crystals" that later take up elements, grown, not
+    # erupted: coarse crystalline rock only, as dimensional shard and power crystal
+    "elementalcraft_inert_crystal": ("PLUT FELS SCH MARB CALC", "G D", ""),
 })
 if set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS):
     raise SystemExit(f"geology.py: invented ores with no lore: {sorted(set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS))}")

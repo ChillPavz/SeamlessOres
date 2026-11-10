@@ -92,10 +92,6 @@
       "required": false
     },
     {
-      "id": "seamlessores:andesite_elementalcraft_inert_crystal_ore",
-      "required": false
-    },
-    {
       "id": "seamlessores:andesite_embers_lead_ore",
       "required": false
     },
@@ -10364,10 +10360,6 @@
     },
     {
       "id": "seamlessores:tuff_electrodynamics_uranium_ore",
-      "required": false
-    },
-    {
-      "id": "seamlessores:tuff_elementalcraft_inert_crystal_ore",
       "required": false
     },
     {
