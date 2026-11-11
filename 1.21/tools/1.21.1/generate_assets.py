@@ -1001,13 +1001,16 @@ ORE_DEFS = [
     {"name": "createpropulsion_platinum", "overlay": "createpropulsion_platinum", "source": "platinum_ore", "base": "stone",
      "mod": "createpropulsion",
      "tiers": {"stone": "platinum_ore", "deepslate": "deepslate_platinum_ore"}},
-    # --- Hazen 'N Stuff (mod id hazennstuff, PolyForm Shield 1.0.0): strength 3.0, 2 to 4 XP; zenalite generates in the End only; solar core has no overlay yet, so no variant. NeoForge at 1.21.1 ---
+    # --- Hazen 'N Stuff (mod id hazennstuff, PolyForm Shield 1.0.0): strength 3.0, 2 to 4 XP; zenalite generates in the End only; solar core is a Nether ore in netherrack and blackstone (the blackstone form is the mod's own, so no blackstone variant). NeoForge at 1.21.1 ---
     {"name": "chlorophyte", "overlay": "chlorophyte", "source": "chlorophyte_ore", "base": "stone",
      "mod": "hazennstuff",
      "tiers": {"stone": "chlorophyte_ore"}},
     {"name": "dreadstone", "overlay": "dreadstone", "source": "dreadstone_ore", "base": "deepslate",
      "mod": "hazennstuff",
      "tiers": {"deepslate": "dreadstone_ore"}},
+    {"name": "solar_core", "overlay": "solar_core", "source": "solar_core_netherrack_ore", "base": "netherrack",
+     "mod": "hazennstuff", "skip_hosts": ["blackstone"],
+     "tiers": {"nether": "solar_core_netherrack_ore"}},
     # --- Actually Additions (mod id actuallyadditions, MIT): black quartz, stone's properties at 1.5 hardness, 10.0 blast resistance, no XP. NeoForge at 1.21.1 ---
     {"name": "black_quartz", "overlay": "black_quartz", "source": "black_quartz_ore", "base": "stone",
      "mod": "actuallyadditions",

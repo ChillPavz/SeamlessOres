@@ -318,6 +318,7 @@ Extreme Reactors by ZeroNoRyouki, MIT:
 Hazen 'N Stuff by Hazen, PolyForm Shield 1.0.0. Required Notice: Copyright Hazen:
   assets/seamlessores/textures/block/chlorophyte_overlay.png
   assets/seamlessores/textures/block/dreadstone_overlay.png
+  assets/seamlessores/textures/block/solar_core_overlay.png
   assets/seamlessores/textures/block/zenalite_overlay.png
 
 Ice and Fire by Alexthe666, the Community Edition by IAFEnvoy, LGPL-3.0:

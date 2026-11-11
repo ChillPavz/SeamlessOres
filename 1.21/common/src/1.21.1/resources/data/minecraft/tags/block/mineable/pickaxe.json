@@ -1642,6 +1642,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:basalt_hazennstuff_solar_core_netherrack_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:basalt_epicpaladins_moonlight_ore",
       "required": false
     },
@@ -2728,6 +2732,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_hazennstuff_solar_core_netherrack_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scorchia_epicpaladins_moonlight_ore",
       "required": false
     },
@@ -2913,6 +2921,10 @@
     },
     {
       "id": "seamlessores:create_scoria_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_hazennstuff_solar_core_netherrack_ore",
       "required": false
     },
     {
@@ -3413,6 +3425,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_hazennstuff_dreadstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_hazennstuff_solar_core_netherrack_ore",
       "required": false
     },
     {
@@ -4701,6 +4717,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_hazennstuff_solar_core_netherrack_ore",
       "required": false
     },
     {

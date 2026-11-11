@@ -1261,6 +1261,12 @@
     "techreborn:sodalite_ore"
    ]
   },
+  "solar_core": {
+   "mod": "hazennstuff",
+   "forms": [
+    "hazennstuff:solar_core_netherrack_ore"
+   ]
+  },
   "soulstone": {
    "mod": "malum",
    "forms": [
@@ -8901,6 +8907,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 21.14
+   },
+   "solar_core": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 120.59
    }
   },
   "create:scoria": {
@@ -9623,6 +9635,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 23.0
+   },
+   "solar_core": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 79.24
    },
    "soulstone": {
     "where": [
@@ -22077,6 +22095,12 @@
     ],
     "rate": 18.49
    },
+   "solar_core": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.46
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -31900,6 +31924,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.77
+   },
+   "solar_core": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.25
    },
    "sphalerite": {
     "where": [
