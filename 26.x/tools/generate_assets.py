@@ -74,8 +74,8 @@ CLIENT_JARS = {
 }
 
 # Jars that are the same for every version: mods with no 26.x build at all (densemekanism, tfmg, things,
-# create_new_age), and the 26.1.2-only mods (Powah, Mystical Agriculture, Mythic Metals), whose 26.1.2
-# build is the only one there is. Silent's Gems and Silent Gear also have 26.2 builds (the 26.2 profile).
+# create_new_age), and the 26.1.2-only mods (Mystical Agriculture, Mythic Metals), whose 26.1.2
+# build is the only one there is. Powah's 26.1.2 jar is the default; the 26.2 profile names its own. Silent's Gems and Silent Gear also have 26.2 builds (the 26.2 profile).
 #
 # Mythic Metals: THE 26.1.2 BUILD. 0.26.0+26.1.2 (14 Sept 2026) has the same 36 ore blocks, ids,
 # features and loot as 0.24.6+1.21, but NOT the same tool tags: 0.26.0 fills all three vanilla tiers
@@ -168,9 +168,13 @@ PROFILES = {
             "denseores": REFS + "denseores-neoforge-26.2-1.4.1.jar",
             "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",   # no 26.2 build: stands in, inert
             "oritech": REFS + "oritech-2.0.0-exp12.jar",   # no 26.2 build: stands in, inert
+            # Powah 8.0.1-alpha (NeoForge, 10 Nov 2026): the same ore blocks, worldgen and tags as 7.0.4 on
+            # 26.1.2; the loot only drops bonus_rolls and a count of 1.
+            "powah": REFS + "26.2-Powah-8.0.1-alpha.jar",
         },
         "available": {
             "create": ("fabric",),
+            "powah": ("neoforge",),
             "mythicupgrades": ("fabric", "neoforge"),
             "energizedpower": ("fabric", "neoforge"),
             "techreborn": ("fabric",),

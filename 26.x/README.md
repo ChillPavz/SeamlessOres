@@ -285,7 +285,7 @@ your loader at your Minecraft version:
 | 26.1 to 26.1.2 | Fabric | 154 | BetterNether, Bronze, Create, Dense Ores, Energized Power, Mythic Metals, Tech Reborn |
 | 26.1 to 26.1.2 | NeoForge | 149 | Bronze, Dense Ores, Energized Power, EvilCraft, Ice and Fire, Mystical Agriculture, Occultism, Powah, Railcraft Reborn, Silent Gear, Silent's Gems, Theurgy |
 | 26.2 | Fabric | 136 | BetterNether, Create, Dense Ores, Energized Power, Mythic Upgrades, Tech Reborn |
-| 26.2 | NeoForge | 126 | Dense Ores, Energized Power, EvilCraft, Mythic Upgrades, Occultism, Silent Gear, Silent's Gems, Theurgy |
+| 26.2 | NeoForge | 141 | Dense Ores, Energized Power, EvilCraft, Mythic Upgrades, Occultism, Powah, Silent Gear, Silent's Gems, Theurgy |
 | 26.3 | Fabric | 100 | BetterNether, Energized Power, Mythic Upgrades, Tech Reborn |
 | 26.3 | NeoForge | 69 | Energized Power, EvilCraft, Mythic Upgrades, Occultism, Theurgy |
 
