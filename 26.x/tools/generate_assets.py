@@ -218,8 +218,12 @@ PROFILES = {
             "betternether": REFS + "better-nether-26.301.2.jar",
             "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",   # no 26.3 build: stands in, inert
             "oritech": REFS + "oritech-2.0.0-exp12.jar",   # no 26.3 build: stands in, inert
+            # Powah 9.0.0-alpha (NeoForge, 11 Nov 2026): the same ore blocks, tags and features as 7.0.4 (26.3 writes
+            # features flat under worldgen/feature); the loot only drops default fields.
+            "powah": REFS + "26.3-Powah-9.0.0-alpha.jar",
         },
         "available": {
+            "powah": ("neoforge",),
             "mythicupgrades": ("fabric", "neoforge"),
             "energizedpower": ("fabric", "neoforge"),
             "techreborn": ("fabric",),
