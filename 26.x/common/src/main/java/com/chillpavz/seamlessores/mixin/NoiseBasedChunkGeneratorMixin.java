@@ -21,9 +21,16 @@ import org.spongepowered.asm.mixin.injection.At;
  * block with its position, the same on 26.1.x and 26.2. From 26.3 the veins are material rules and
  * the era code wraps them instead; {@link SeamlessOresMixinPlugin} skips this there.
  * {@code require = 0}: a miss leaves the veins as vanilla builds them.
+ *
+ * <p>PRIORITY 1200, above C2ME's OpenCL acceleration (1100), which overwrites {@code doFill} (GitHub issue #5).
+ * Mixin refuses, fatally and whatever {@code require} says, to inject into a method a mixin of HIGHER priority has
+ * overwritten; it allows it from above. From above, the call wrapped here is not in the replacement, the
+ * {@code require = 0} miss applies, and the game starts; {@link com.chillpavz.seamlessores.worldgen.NoiseFillReplacement}
+ * says once, at world start, that the veins are not kept out while the acceleration is on.
  */
-@Mixin(NoiseBasedChunkGenerator.class)
+@Mixin(value = NoiseBasedChunkGenerator.class, priority = 1200)
 public abstract class NoiseBasedChunkGeneratorMixin {
+
 
     @WrapOperation(method = "doFill",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;debugPreliminarySurfaceLevel(Lnet/minecraft/world/level/levelgen/NoiseChunk;IIILnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;"),

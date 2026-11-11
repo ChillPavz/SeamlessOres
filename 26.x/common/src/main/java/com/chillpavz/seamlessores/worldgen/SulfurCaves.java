@@ -156,6 +156,7 @@ public final class SulfurCaves {
             Constants.LOG.info("Worldgen: Sulfur Caves keep ore out of sulfur and cinnabar: {}",
                     active ? "on" : "off (config)");
         }
+        NoiseFillReplacement.note(active);
     }
 
     /** Our variants to their host, and each supported ore's stone and deepslate block to that rock. */

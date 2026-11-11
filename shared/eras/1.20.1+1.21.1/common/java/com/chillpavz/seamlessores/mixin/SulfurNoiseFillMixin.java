@@ -23,8 +23,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
  * bands. A vein block bound for the biome becomes the default block before it is stored, at the last
  * call that sees each block with its position. The chunk is a parameter of {@code doFill}, not of that
  * call, so it is held for the thread while the fill runs. {@code require = 0}: a miss leaves the veins.
+ *
+ * <p>PRIORITY 1200, above C2ME's OpenCL acceleration (1100), which overwrites {@code doFill} (GitHub issue #5).
+ * Mixin refuses, fatally and whatever {@code require} says, to inject into a method a mixin of HIGHER priority has
+ * overwritten; it allows it from above. From above, the call this hooks is not in the replacement, the
+ * {@code require = 0} miss applies, and the game starts; {@link com.chillpavz.seamlessores.worldgen.NoiseFillReplacement}
+ * says once, at world start, that the veins are not kept out while the acceleration is on. A mixin plugin asking for the C2ME config could not do this on NeoForge: that config is registered
+ * after ours is prepared.
  */
-@Mixin(NoiseBasedChunkGenerator.class)
+@Mixin(value = NoiseBasedChunkGenerator.class, priority = 1200)
 public abstract class SulfurNoiseFillMixin {
 
     @Unique
@@ -36,6 +43,7 @@ public abstract class SulfurNoiseFillMixin {
                                         CallbackInfoReturnable<ChunkAccess> cir) {
         seamlessores$filling.set(SulfurCaves.active() ? chunk : null);
     }
+
 
     @ModifyArg(method = "doFill",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;debugPreliminarySurfaceLevel(Lnet/minecraft/world/level/levelgen/NoiseChunk;IIILnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;"),

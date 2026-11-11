@@ -109,6 +109,7 @@ public final class SulfurCaves {
             Constants.LOG.info("Worldgen: Sulfur Caves keep ore out of sulfur and cinnabar: {}",
                     active ? "on" : "off (config)");
         }
+        NoiseFillReplacement.note(active);
     }
 
     /**
