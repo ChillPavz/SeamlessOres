@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "seamlessores:born_in_chaos_v1_black_argillite_theleadage_lead_ore"
+  },
+  "result": "theleadage:lead_ingot"
+}

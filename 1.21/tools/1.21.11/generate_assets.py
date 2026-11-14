@@ -103,7 +103,8 @@ MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "evilcraft": jar("evilcraft-1.21.11-neoforge-1.2.62-828.jar"),
             "denseores": jar("denseores-1.3.jar"),
             "bronze": jar("bronze-neoforge-2.1.6+1.21.11.jar"),
-            "thesilverage": jar("thesilverage-neoforge-1.21.11-1.4.0.jar")}
+            "thesilverage": jar("thesilverage-neoforge-1.21.11-1.4.0.jar"),
+            "theleadage": jar("theleadage-neoforge-1.21.11-1.2.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -228,6 +229,8 @@ MODS = {
     "bronze": {"display": "Bronze", "category": "bronze",
                        "licence": "GPL-3.0", "author": "Khazoda"},
     "thesilverage": {"display": "The Silver Age", "category": "thesilverage",
+                       "licence": "MIT", "author": "PhantomWing"},
+    "theleadage": {"display": "The Lead Age", "category": "theleadage",
                        "licence": "MIT", "author": "PhantomWing"},
 }
 
@@ -578,6 +581,10 @@ ORE_DEFS = [
     {"name": "thesilverage_silver", "overlay": "thesilverage_silver", "deepslate_overlay": "thesilverage_silver_deepslate", "source": "silver_ore", "base": "stone",
      "mod": "thesilverage",
      "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    # --- The Lead Age (mod id theleadage, MIT): lead, a copy of iron ore. Fabric and Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "theleadage_lead", "overlay": "theleadage_lead", "source": "lead_ore", "base": "stone",
+     "mod": "theleadage",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
 ]
 
 # This generator writes ONE band of the 1.21 folder: everything it emits goes to
@@ -659,6 +666,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "denseores": ('neoforge',),
     "bronze": ('fabric', 'neoforge'),
     "thesilverage": ('fabric', 'neoforge'),
+    "theleadage": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -841,6 +849,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
         f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
         f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
         f"text.autoconfig.{MOD_ID}.category.dense_ores": "Dense Ores",
@@ -860,6 +869,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.things": "Things",
         f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
+
+        f"text.autoconfig.{MOD_ID}.option.theLeadAge": "The Lead Age: variants",
+        f"text.autoconfig.{MOD_ID}.option.theLeadAge.@Tooltip":
+            "Generate host-matched lead ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.theSilverAge": "The Silver Age: variants",
         f"text.autoconfig.{MOD_ID}.option.theSilverAge.@Tooltip":

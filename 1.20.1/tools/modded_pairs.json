@@ -1400,6 +1400,13 @@
     "techreborn:tungsten_ore"
    ]
   },
+  "theleadage_lead": {
+   "mod": "theleadage",
+   "forms": [
+    "theleadage:lead_ore",
+    "theleadage:deepslate_lead_ore"
+   ]
+  },
   "thesilverage_silver": {
    "mod": "thesilverage",
    "forms": [
@@ -1803,6 +1810,12 @@
     ],
     "rate": 27.67
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 12.0
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -2003,6 +2016,12 @@
     ],
     "rate": 0.23
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.13
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -2197,6 +2216,12 @@
     ],
     "rate": 0.23
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.13
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -2390,6 +2415,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.23
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.13
    },
    "thorium": {
     "where": [
@@ -2669,6 +2700,12 @@
     ],
     "rate": 9.22
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 4.0
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -2868,6 +2905,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.23
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.13
    },
    "thorium": {
     "where": [
@@ -3873,6 +3916,13 @@
     ],
     "rate": 10.56
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 0.63
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -4166,6 +4216,13 @@
      "1.20.1 fabric"
     ],
     "rate": 1.31
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 0.12
    },
    "thorium": {
     "where": [
@@ -4516,6 +4573,13 @@
     ],
     "rate": 13.85
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 1.31
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -4821,6 +4885,12 @@
      "1.20.1 fabric"
     ],
     "rate": 65.7
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 87.66
    },
    "thesilverage_silver": {
     "where": [
@@ -5219,6 +5289,12 @@
      "1.20.1 fabric"
     ],
     "rate": 220.28
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 150.32
    },
    "thesilverage_silver": {
     "where": [
@@ -5624,6 +5700,12 @@
     ],
     "rate": 212.75
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 149.62
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric"
@@ -5955,6 +6037,12 @@
      "1.20.1 fabric"
     ],
     "rate": 8.71
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 18.31
    },
    "thesilverage_silver": {
     "where": [
@@ -6611,6 +6699,12 @@
      "1.20.1 forge"
     ],
     "rate": 35.98
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 111.4
    },
    "thesilverage_silver": {
     "where": [
@@ -7564,6 +7658,13 @@
      "1.20.1 fabric"
     ],
     "rate": 95.41
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 82.82
    },
    "thesilverage_silver": {
     "where": [
@@ -8562,6 +8663,13 @@
     ],
     "rate": 95.41
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 105.89
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -9559,6 +9667,13 @@
     ],
     "rate": 126.76
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 110.03
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -10555,6 +10670,13 @@
      "1.20.1 fabric"
     ],
     "rate": 82.69
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 71.78
    },
    "thesilverage_silver": {
     "where": [
@@ -12014,6 +12136,13 @@
     ],
     "rate": 80.02
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 95.09
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -13017,6 +13146,13 @@
     ],
     "rate": 90.21
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 78.3
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -13741,6 +13877,12 @@
     ],
     "rate": 4.57
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 5.08
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 forge"
@@ -14444,6 +14586,12 @@
      "1.20.1 forge"
     ],
     "rate": 278.72
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 309.86
    },
    "thesilverage_silver": {
     "where": [
@@ -15149,6 +15297,12 @@
     ],
     "rate": 18.28
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 20.32
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 forge"
@@ -15853,6 +16007,12 @@
     ],
     "rate": 168.33
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 243.99
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 forge"
@@ -16425,6 +16585,12 @@
     ],
     "rate": 9.55
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 66.37
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 forge"
@@ -16672,6 +16838,12 @@
      "1.20.1 forge"
     ],
     "rate": 15.95
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 0.49
    },
    "thorium": {
     "where": [
@@ -16981,6 +17153,12 @@
     ],
     "rate": 0.18
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 6.78
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 forge"
@@ -17246,6 +17424,12 @@
      "1.20.1 forge"
     ],
     "rate": 31.87
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 3.01
    },
    "thorium": {
     "where": [
@@ -17716,6 +17900,12 @@
      "1.20.1 forge"
     ],
     "rate": 5.59
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 49.09
    },
    "thesilverage_silver": {
     "where": [
@@ -19596,6 +19786,13 @@
     ],
     "rate": 21.36
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 28.38
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -20593,6 +20790,13 @@
     ],
     "rate": 21.36
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 28.38
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -21589,6 +21793,13 @@
      "1.20.1 fabric"
     ],
     "rate": 21.36
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 28.38
    },
    "thesilverage_silver": {
     "where": [
@@ -22708,6 +22919,13 @@
     ],
     "rate": 101.7
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 53.64
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -23656,6 +23874,13 @@
      "1.20.1 fabric"
     ],
     "rate": 0.97
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 4.1
    },
    "thesilverage_silver": {
     "where": [
@@ -24654,6 +24879,13 @@
     ],
     "rate": 55.88
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 48.51
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -25650,6 +25882,13 @@
      "1.20.1 fabric"
     ],
     "rate": 35.44
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 82.03
    },
    "thesilverage_silver": {
     "where": [
@@ -26844,6 +27083,13 @@
     ],
     "rate": 28.99
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 76.44
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -27696,6 +27942,13 @@
     ],
     "rate": 218.48
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 61.6
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -28072,6 +28325,13 @@
     ],
     "rate": 11.6
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 1.1
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -28446,6 +28706,13 @@
     ],
     "rate": 36.94
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 3.5
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -28782,6 +29049,13 @@
      "1.20.1 fabric"
     ],
     "rate": 3.48
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 0.33
    },
    "thorium": {
     "where": [
@@ -29992,6 +30266,12 @@
     ],
     "rate": 82.64
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 61.09
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric"
@@ -30389,6 +30669,12 @@
      "1.20.1 fabric"
     ],
     "rate": 82.64
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 61.09
    },
    "thesilverage_silver": {
     "where": [
@@ -31034,6 +31320,12 @@
     ],
     "rate": 67.56
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 504.25
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 forge"
@@ -31672,6 +31964,12 @@
     ],
     "rate": 197.06
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1470.73
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 forge"
@@ -32309,6 +32607,12 @@
      "1.20.1 forge"
     ],
     "rate": 67.56
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 504.25
    },
    "thesilverage_silver": {
     "where": [
@@ -33134,6 +33438,13 @@
     ],
     "rate": 125.62
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 72.12
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -33863,6 +34174,12 @@
     ],
     "rate": 29.48
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 102.54
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 forge"
@@ -34591,6 +34908,12 @@
     ],
     "rate": 29.48
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 102.54
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 forge"
@@ -35318,6 +35641,12 @@
      "1.20.1 forge"
     ],
     "rate": 29.48
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 102.54
    },
    "thesilverage_silver": {
     "where": [
@@ -36435,6 +36764,13 @@
     ],
     "rate": 60.8
    },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 77.64
+   },
    "thesilverage_silver": {
     "where": [
      "1.20.1 fabric",
@@ -37430,6 +37766,13 @@
      "1.20.1 fabric"
     ],
     "rate": 10.71
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 12.06
    },
    "thesilverage_silver": {
     "where": [
@@ -39283,6 +39626,13 @@
      "1.20.1 fabric"
     ],
     "rate": 107.54
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 123.23
    },
    "thesilverage_silver": {
     "where": [

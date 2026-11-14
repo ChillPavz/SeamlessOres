@@ -1261,6 +1261,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
 
+    // --- The Lead Age (mod id theleadage, MIT): lead, a copy of iron ore. Fabric and Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    public static final OreType TLA_LEAD = ore(
+            "theleadage_lead", "theleadage_lead", null, "theleadage",
+            of("theleadage", "lead_ore"), of("theleadage", "deepslate_lead_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1318,7 +1325,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     CGS_LEAD, CGS_SULFUR,
                     BRZ_TIN,
                     OT_NICKEL, OT_PLATINUM, OT_END_PLATINUM,
-                    TSA_SILVER);
+                    TSA_SILVER,
+                    TLA_LEAD);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

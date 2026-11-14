@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
@@ -199,6 +203,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_copper_ore",
       "required": false
     },
@@ -224,6 +232,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_red_rock_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_theleadage_lead_ore",
       "required": false
     },
     {
@@ -272,6 +284,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -405,6 +421,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_thesilverage_silver_ore",
       "required": false
     },
@@ -513,6 +533,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_thesilverage_silver_ore",
       "required": false
     },
@@ -570,6 +594,10 @@
     },
     {
       "id": "seamlessores:blockus_marble_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_theleadage_lead_ore",
       "required": false
     },
     {
@@ -642,6 +670,10 @@
     },
     {
       "id": "seamlessores:calcite_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -754,6 +786,10 @@
     },
     {
       "id": "seamlessores:create_limestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_theleadage_lead_ore",
       "required": false
     },
     {
@@ -885,6 +921,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_thesilverage_silver_ore",
       "required": false
     },
@@ -1005,6 +1045,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_thesilverage_silver_ore",
       "required": false
     },
@@ -1065,6 +1109,10 @@
     "seamlessores:dripstone_redstone_ore",
     {
       "id": "seamlessores:dripstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_theleadage_lead_ore",
       "required": false
     },
     {
@@ -1232,6 +1280,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_thesilverage_silver_ore",
       "required": false
     },
@@ -1277,6 +1329,10 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_theleadage_lead_ore",
       "required": false
     },
     {
@@ -1428,6 +1484,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_thesilverage_silver_ore",
       "required": false
     },
@@ -1565,6 +1625,10 @@
     },
     {
       "id": "seamlessores:tuff_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_theleadage_lead_ore",
       "required": false
     },
     {

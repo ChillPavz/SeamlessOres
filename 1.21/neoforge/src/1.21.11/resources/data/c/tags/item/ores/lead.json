@@ -9,11 +9,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:diorite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -25,11 +33,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
       "required": false
     },
     {
       "id": "seamlessores:tuff_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_theleadage_lead_ore",
       "required": false
     },
     {
@@ -41,6 +57,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -49,7 +69,43 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_theleadage_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_theleadage_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_theleadage_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_theleadage_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_theleadage_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -57,7 +113,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_white_dacite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_theleadage_lead_ore",
       "required": false
     }
   ]

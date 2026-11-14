@@ -323,6 +323,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean theSilverAge = true;
 
+    // --- The Lead Age --------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("theleadage")
+    @ConfigEntry.Gui.Tooltip
+    public boolean theLeadAge = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -409,6 +415,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.denseOres = denseOres;
         values.bronze = bronze;
         values.theSilverAge = theSilverAge;
+        values.theLeadAge = theLeadAge;
 
         SeamlessOresConfig.apply(values);
     }

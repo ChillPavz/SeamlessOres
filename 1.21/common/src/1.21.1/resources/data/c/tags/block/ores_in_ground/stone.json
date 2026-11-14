@@ -404,6 +404,10 @@
       "id": "seamlessores:granite_thesilverage_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -696,6 +700,10 @@
       "id": "seamlessores:diorite_thesilverage_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -976,6 +984,10 @@
       "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -1168,6 +1180,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:dripstone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_mythicmetals_aquarium_ore",
       "required": false
     },
@@ -1276,6 +1292,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_iron_ore",
       "required": false
     },
@@ -1377,6 +1397,10 @@
     },
     {
       "id": "seamlessores:blockus_marble_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_theleadage_lead_ore",
       "required": false
     },
     {
@@ -1748,6 +1772,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -1996,6 +2024,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -2201,6 +2233,10 @@
     },
     {
       "id": "seamlessores:calcite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -2421,6 +2457,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_theleadage_lead_ore",
       "required": false
     },
     {
@@ -2680,6 +2720,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_galena_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_lignite_coal_ore",
       "required": false
     },
@@ -2861,6 +2905,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -3157,6 +3205,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -3508,6 +3560,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
       "required": false
     },
@@ -3732,6 +3788,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_iron_ore",
       "required": false
     },
@@ -3905,6 +3965,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_theleadage_lead_ore",
       "required": false
     },
     {
@@ -4276,6 +4340,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_iron_ore",
       "required": false
     },
@@ -4421,6 +4489,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_larvikite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -4672,6 +4744,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_iron_ore",
       "required": false
     },
@@ -4781,6 +4857,10 @@
     },
     {
       "id": "seamlessores:quark_jasper_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_theleadage_lead_ore",
       "required": false
     },
     {
@@ -4973,6 +5053,10 @@
     },
     {
       "id": "seamlessores:quark_shale_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_theleadage_lead_ore",
       "required": false
     },
     {
@@ -5209,6 +5293,10 @@
     },
     {
       "id": "seamlessores:meadow_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_theleadage_lead_ore",
       "required": false
     },
     {
@@ -5532,6 +5620,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_mossy_stone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_coal_ore",
       "required": false
     },
@@ -5729,6 +5821,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -6053,6 +6149,10 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_theleadage_lead_ore",
       "required": false
     },
     {
@@ -6496,6 +6596,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_mythicmetals_osmium_ore",
       "required": false
     },
@@ -6609,6 +6713,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_dacite_bronze_tin_block_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -6728,6 +6836,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_white_dacite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_iron_ore",
       "required": false
     },
@@ -6781,6 +6893,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_red_rock_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_theleadage_lead_ore",
       "required": false
     },
     {
@@ -7008,6 +7124,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_arid_sandstone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_red_arid_sandstone_iron_ore",
       "required": false
     },
@@ -7085,6 +7205,10 @@
     },
     {
       "id": "seamlessores:atmospheric_red_arid_sandstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_red_arid_sandstone_theleadage_lead_ore",
       "required": false
     },
     {
@@ -7192,6 +7316,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_ivory_travertine_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_peach_travertine_coal_ore",
       "required": false
     },
@@ -7293,6 +7421,10 @@
     },
     {
       "id": "seamlessores:atmospheric_peach_travertine_bronze_tin_block_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_theleadage_lead_ore",
       "required": false
     },
     {
@@ -7400,6 +7532,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:atmospheric_persimmon_travertine_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:atmospheric_saffron_travertine_coal_ore",
       "required": false
     },
@@ -7501,6 +7637,10 @@
     },
     {
       "id": "seamlessores:atmospheric_saffron_travertine_bronze_tin_block_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_theleadage_lead_ore",
       "required": false
     },
     {
@@ -7700,6 +7840,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_darkslate_iceandfire_sapphire_ore",
       "required": false
     },
@@ -7825,6 +7969,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_chert_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_theleadage_lead_ore",
       "required": false
     },
     {
@@ -7976,6 +8124,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_white_chalk_coal_ore",
       "required": false
     },
@@ -8108,6 +8260,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_white_chalk_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_pink_sandstone_iron_ore",
       "required": false
     },
@@ -8177,6 +8333,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_pink_sandstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_theleadage_lead_ore",
       "required": false
     }
   ]

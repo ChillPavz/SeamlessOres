@@ -168,6 +168,10 @@
       "id": "seamlessores:granite_thesilverage_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -280,6 +284,10 @@
       "id": "seamlessores:diorite_thesilverage_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -388,6 +396,10 @@
       "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -441,6 +453,10 @@
     },
     {
       "id": "seamlessores:dripstone_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_theleadage_lead_ore",
       "required": false
     },
     {
@@ -520,6 +536,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_iron_ore",
       "required": false
     },
@@ -581,6 +601,10 @@
     },
     {
       "id": "seamlessores:blockus_marble_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_theleadage_lead_ore",
       "required": false
     },
     {
@@ -736,6 +760,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -800,6 +828,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -857,6 +889,10 @@
     },
     {
       "id": "seamlessores:calcite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -920,6 +956,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_coal_ore",
       "required": false
     },
@@ -961,6 +1001,10 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_theleadage_lead_ore",
       "required": false
     },
     {
@@ -1080,6 +1124,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
       "required": false
     },
@@ -1128,6 +1176,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_white_dacite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_iron_ore",
       "required": false
     },
@@ -1153,6 +1205,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_red_rock_denseores_dense_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_theleadage_lead_ore",
       "required": false
     }
   ]

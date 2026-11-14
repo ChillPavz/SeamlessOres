@@ -117,6 +117,7 @@ PROFILES = {
             "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",
             "oritech": REFS + "oritech-2.0.0-exp12.jar",
             "thesilverage": REFS + "thesilverage-neoforge-26.1.2-1.4.0.jar",
+            "theleadage": REFS + "theleadage-neoforge-26.1.2-1.2.1.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -144,6 +145,7 @@ PROFILES = {
             "bronze": ('fabric', 'neoforge'),
             "oritech": ('neoforge',),
             "thesilverage": ('fabric', 'neoforge'),
+            "theleadage": ('fabric', 'neoforge'),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -174,6 +176,7 @@ PROFILES = {
             # 26.1.2; the loot only drops bonus_rolls and a count of 1.
             "powah": REFS + "26.2-Powah-8.0.1-alpha.jar",
             "thesilverage": REFS + "thesilverage-neoforge-26.2-1.4.0.jar",
+            "theleadage": REFS + "theleadage-neoforge-26.2-1.2.1.jar",
         },
         "available": {
             "create": ("fabric",),
@@ -189,6 +192,7 @@ PROFILES = {
             "betternether": ("fabric",),
             "denseores": ("fabric", "neoforge"),
             "thesilverage": ('fabric', 'neoforge'),
+            "theleadage": ('fabric', 'neoforge'),
         },
     },
     # 26.3 (data formats 121 and up): a new loot format, silk touch as a single "condition" (see
@@ -226,6 +230,7 @@ PROFILES = {
             # features flat under worldgen/feature); the loot only drops default fields.
             "powah": REFS + "26.3-Powah-9.0.0-alpha.jar",
             "thesilverage": REFS + "thesilverage-neoforge-26.3-1.4.0.jar",
+            "theleadage": REFS + "theleadage-neoforge-26.3-1.2.1.jar",
         },
         "available": {
             "powah": ("neoforge",),
@@ -237,6 +242,7 @@ PROFILES = {
             "evilcraft": ("neoforge",),
             "betternether": ("fabric",),
             "thesilverage": ('fabric', 'neoforge'),
+            "theleadage": ('fabric', 'neoforge'),
         },
     },
 }
@@ -471,6 +477,8 @@ MODS = {
     "oritech": {"display": "Oritech", "category": "oritech",
                        "licence": "CC-BY-4.0", "author": "Rearth"},
     "thesilverage": {"display": "The Silver Age", "category": "thesilverage",
+                       "licence": "MIT", "author": "PhantomWing"},
+    "theleadage": {"display": "The Lead Age", "category": "theleadage",
                        "licence": "MIT", "author": "PhantomWing"},
 }
 
@@ -952,6 +960,10 @@ ORE_DEFS = [
     {"name": "thesilverage_silver", "overlay": "thesilverage_silver", "deepslate_overlay": "thesilverage_silver_deepslate", "source": "silver_ore", "base": "stone",
      "mod": "thesilverage",
      "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    # --- The Lead Age (mod id theleadage, MIT): lead, a copy of iron ore. Fabric and Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "theleadage_lead", "overlay": "theleadage_lead", "source": "lead_ore", "base": "stone",
+     "mod": "theleadage",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -1045,6 +1057,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "bronze": ('fabric', 'neoforge'),
     "oritech": ('neoforge',),
     "thesilverage": ('fabric', 'neoforge'),
+    "theleadage": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1211,6 +1224,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
         f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
         f"text.autoconfig.{MOD_ID}.category.oritech": "Oritech",
         f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
@@ -1238,6 +1252,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.theLeadAge": "The Lead Age: variants",
+        f"text.autoconfig.{MOD_ID}.option.theLeadAge.@Tooltip":
+            "Generate host-matched lead ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.theSilverAge": "The Silver Age: variants",
         f"text.autoconfig.{MOD_ID}.option.theSilverAge.@Tooltip":

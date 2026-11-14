@@ -206,7 +206,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "cgs": jar("create-gunsmithing-1.20.1-1.4.4.jar"),
             "bronze": jar("bronze-1.0.13+1.20.1.jar"),
             "miningmaster": jar("miningmaster-1.20.1-4.1.3.jar"),
-            "thesilverage": jar("thesilverage-forge-1.20.1-1.4.0.jar")}
+            "thesilverage": jar("thesilverage-forge-1.20.1-1.4.0.jar"),
+            "theleadage": jar("theleadage-forge-1.20.1-1.3.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -537,6 +538,8 @@ MODS = {
     "miningmaster": {"display": "Mining Master", "category": "miningmaster",
                        "licence": "Apache-2.0", "author": "Infernal Studios"},
     "thesilverage": {"display": "The Silver Age", "category": "thesilverage",
+                       "licence": "MIT", "author": "PhantomWing"},
+    "theleadage": {"display": "The Lead Age", "category": "theleadage",
                        "licence": "MIT", "author": "PhantomWing"},
 }
 
@@ -1535,6 +1538,10 @@ ORE_DEFS = [
     {"name": "thesilverage_silver", "overlay": "thesilverage_silver", "deepslate_overlay": "thesilverage_silver_deepslate", "source": "silver_ore", "base": "stone",
      "mod": "thesilverage",
      "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    # --- The Lead Age (mod id theleadage, MIT): lead, a copy of iron ore. Fabric and Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "theleadage_lead", "overlay": "theleadage_lead", "source": "lead_ore", "base": "stone",
+     "mod": "theleadage",
+     "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1708,6 +1715,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "bronze": ('fabric',),
     "miningmaster": ('forge',),
     "thesilverage": ('fabric', 'forge'),
+    "theleadage": ('fabric', 'forge'),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1854,6 +1862,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
         f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
         f"text.autoconfig.{MOD_ID}.category.miningmaster": "Mining Master",
         f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
@@ -1912,6 +1921,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.theLeadAge": "The Lead Age: variants",
+        f"text.autoconfig.{MOD_ID}.option.theLeadAge.@Tooltip":
+            "Generate host-matched lead ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.theSilverAge": "The Silver Age: variants",
         f"text.autoconfig.{MOD_ID}.option.theSilverAge.@Tooltip":

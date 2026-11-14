@@ -75,6 +75,10 @@
       "id": "seamlessores:granite_bronze_tin_block_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_lapis_ore",
@@ -116,6 +120,10 @@
     },
     {
       "id": "seamlessores:diorite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_theleadage_lead_ore",
       "required": false
     },
     "seamlessores:andesite_iron_ore",
@@ -163,6 +171,10 @@
     },
     {
       "id": "seamlessores:andesite_railcraft_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_theleadage_lead_ore",
       "required": false
     },
     "seamlessores:tuff_iron_ore",
@@ -224,6 +236,10 @@
       "id": "seamlessores:tuff_railcraft_zinc_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
     "seamlessores:dripstone_lapis_ore",
@@ -257,6 +273,10 @@
     },
     {
       "id": "seamlessores:dripstone_railcraft_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_theleadage_lead_ore",
       "required": false
     },
     {

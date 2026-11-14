@@ -392,6 +392,13 @@
     "mythicmetals:stormyx_ore"
    ]
   },
+  "theleadage_lead": {
+   "mod": "theleadage",
+   "forms": [
+    "theleadage:lead_ore",
+    "theleadage:deepslate_lead_ore"
+   ]
+  },
   "thesilverage_silver": {
    "mod": "thesilverage",
    "forms": [
@@ -524,6 +531,13 @@
     ],
     "rate": 1.11
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.63
+   },
    "thorium": {
     "where": [
      "1.21.11 neoforge"
@@ -611,6 +625,13 @@
      "1.21.11 fabric"
     ],
     "rate": 0.72
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 0.12
    },
    "thorium": {
     "where": [
@@ -712,6 +733,13 @@
     ],
     "rate": 0.62
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 1.31
+   },
    "thorium": {
     "where": [
      "1.21.11 neoforge"
@@ -809,6 +837,12 @@
      "1.21.11 fabric"
     ],
     "rate": 15.82
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 87.66
    },
    "thesilverage_silver": {
     "where": [
@@ -962,6 +996,12 @@
     ],
     "rate": 0.23
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 150.32
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.11 fabric"
@@ -1114,6 +1154,12 @@
     ],
     "rate": 68.88
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 149.62
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.11 fabric"
@@ -1217,6 +1263,12 @@
      "1.21.11 fabric"
     ],
     "rate": 5.82
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 18.31
    },
    "thesilverage_silver": {
     "where": [
@@ -1369,6 +1421,12 @@
      "1.21.11 fabric"
     ],
     "rate": 26.93
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 82.82
    },
    "thesilverage_silver": {
     "where": [
@@ -1528,6 +1586,12 @@
     ],
     "rate": 26.93
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 82.82
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.11 fabric"
@@ -1686,6 +1750,12 @@
     ],
     "rate": 35.78
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 110.03
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.11 fabric"
@@ -1843,6 +1913,12 @@
      "1.21.11 fabric"
     ],
     "rate": 23.34
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 71.78
    },
    "thesilverage_silver": {
     "where": [
@@ -2076,6 +2152,12 @@
     ],
     "rate": 38.83
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 69.46
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.11 fabric"
@@ -2233,6 +2315,12 @@
      "1.21.11 fabric"
     ],
     "rate": 25.46
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 78.3
    },
    "thesilverage_silver": {
     "where": [
@@ -2554,6 +2642,13 @@
     ],
     "rate": 0.7
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 4.1
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.11 fabric",
@@ -2738,6 +2833,12 @@
     ],
     "rate": 15.77
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 48.51
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.11 fabric"
@@ -2895,6 +2996,12 @@
      "1.21.11 fabric"
     ],
     "rate": 10.0
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 30.76
    },
    "thesilverage_silver": {
     "where": [
@@ -3090,6 +3197,12 @@
     ],
     "rate": 13.46
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 25.17
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.11 fabric"
@@ -3247,6 +3360,12 @@
      "1.21.11 fabric"
     ],
     "rate": 0.17
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 117.1
    },
    "thesilverage_silver": {
     "where": [
@@ -3406,6 +3525,12 @@
     ],
     "rate": 0.26
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 117.36
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.11 fabric"
@@ -3545,6 +3670,12 @@
      "1.21.11 fabric"
     ],
     "rate": 3.01
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 10.25
    },
    "thesilverage_silver": {
     "where": [

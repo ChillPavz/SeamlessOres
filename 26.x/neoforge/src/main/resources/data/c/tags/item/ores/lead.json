@@ -17,6 +17,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -30,6 +34,10 @@
     },
     {
       "id": "seamlessores:diorite_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -49,6 +57,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tuff_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -65,6 +77,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:dripstone_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -78,6 +94,10 @@
     },
     {
       "id": "seamlessores:dripstone_railcraft_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:dripstone_theleadage_lead_ore",
       "required": false
     },
     {

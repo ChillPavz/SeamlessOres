@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_theleadage_lead_ore"
+      },
+      {
+        "model": "seamlessores:block/regions_unexplored_mossy_stone_theleadage_lead_ore_mirrored"
+      }
+    ]
+  }
+}

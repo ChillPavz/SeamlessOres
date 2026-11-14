@@ -8,12 +8,20 @@
       "id": "seamlessores:granite_thesilverage_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     "seamlessores:diorite_emerald_ore",
     {
       "id": "seamlessores:diorite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_theleadage_lead_ore",
       "required": false
     },
     "seamlessores:andesite_coal_ore",
@@ -24,10 +32,18 @@
       "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_theleadage_lead_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
     "seamlessores:dripstone_emerald_ore",
+    {
+      "id": "seamlessores:dripstone_theleadage_lead_ore",
+      "required": false
+    },
     {
       "id": "seamlessores:cinnabar_iron_ore",
       "required": false

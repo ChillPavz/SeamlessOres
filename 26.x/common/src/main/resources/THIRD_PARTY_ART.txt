@@ -150,6 +150,9 @@ Tech Reborn by Team Reborn, modmuss50, drcrazy, MIT:
   assets/seamlessores/textures/block/techreborn_tungsten_overlay.png
   assets/seamlessores/textures/block/techreborn_uranium_overlay.png
 
+The Lead Age by PhantomWing, MIT:
+  assets/seamlessores/textures/block/theleadage_lead_overlay.png
+
 The Silver Age by PhantomWing, MIT:
   assets/seamlessores/textures/block/thesilverage_silver_deepslate_overlay.png
   assets/seamlessores/textures/block/thesilverage_silver_overlay.png

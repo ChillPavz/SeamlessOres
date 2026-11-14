@@ -385,6 +385,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -661,6 +665,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -922,6 +930,10 @@
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_theleadage_lead_ore",
       "required": false
     },
     {
@@ -1269,6 +1281,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_grimestone_iron_ore",
       "required": false
     },
@@ -1461,6 +1477,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_iron_ore",
       "required": false
     },
@@ -1614,6 +1634,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_theleadage_lead_ore",
       "required": false
     }
   ]

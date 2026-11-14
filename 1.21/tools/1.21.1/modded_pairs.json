@@ -1392,6 +1392,13 @@
     "techreborn:tungsten_ore"
    ]
   },
+  "theleadage_lead": {
+   "mod": "theleadage",
+   "forms": [
+    "theleadage:lead_ore",
+    "theleadage:deepslate_lead_ore"
+   ]
+  },
   "thesilverage_silver": {
    "mod": "thesilverage",
    "forms": [
@@ -1813,6 +1820,12 @@
     ],
     "rate": 27.67
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.0
+   },
    "thorium": {
     "where": [
      "1.21.1 neoforge"
@@ -2025,6 +2038,12 @@
     ],
     "rate": 0.23
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.13
+   },
    "thorium": {
     "where": [
      "1.21.1 neoforge"
@@ -2231,6 +2250,12 @@
     ],
     "rate": 0.23
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.13
+   },
    "thorium": {
     "where": [
      "1.21.1 neoforge"
@@ -2436,6 +2461,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.23
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.13
    },
    "thorium": {
     "where": [
@@ -2739,6 +2770,12 @@
     ],
     "rate": 9.22
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.0
+   },
    "thorium": {
     "where": [
      "1.21.1 neoforge"
@@ -2950,6 +2987,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.23
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.13
    },
    "thorium": {
     "where": [
@@ -3651,6 +3694,13 @@
     ],
     "rate": 10.56
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.63
+   },
    "thorium": {
     "where": [
      "1.21.1 neoforge"
@@ -3922,6 +3972,13 @@
      "1.21.1 fabric"
     ],
     "rate": 1.31
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.12
    },
    "thorium": {
     "where": [
@@ -4243,6 +4300,13 @@
     ],
     "rate": 13.85
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.31
+   },
    "thorium": {
     "where": [
      "1.21.1 neoforge"
@@ -4444,6 +4508,12 @@
      "1.21.1 fabric"
     ],
     "rate": 65.7
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 87.66
    },
    "thesilverage_silver": {
     "where": [
@@ -4723,6 +4793,12 @@
     ],
     "rate": 220.28
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 150.32
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric"
@@ -5001,6 +5077,12 @@
     ],
     "rate": 212.75
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 149.62
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric"
@@ -5206,6 +5288,12 @@
      "1.21.1 fabric"
     ],
     "rate": 8.71
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 18.31
    },
    "thesilverage_silver": {
     "where": [
@@ -5826,6 +5914,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 35.98
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 111.4
    },
    "thesilverage_silver": {
     "where": [
@@ -6548,6 +6642,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 23.81
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 82.82
    },
    "thesilverage_silver": {
     "where": [
@@ -7283,6 +7383,12 @@
     ],
     "rate": 30.44
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 105.89
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -8017,6 +8123,12 @@
     ],
     "rate": 31.63
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 110.03
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -8750,6 +8862,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 20.63
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 71.78
    },
    "thesilverage_silver": {
     "where": [
@@ -9733,6 +9851,12 @@
     ],
     "rate": 27.34
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 95.09
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -10467,6 +10591,12 @@
     ],
     "rate": 22.51
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 78.3
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -11146,6 +11276,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 4.57
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.08
    },
    "thesilverage_silver": {
     "where": [
@@ -11851,6 +11987,12 @@
     ],
     "rate": 278.72
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 309.86
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -12548,6 +12690,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 18.28
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 20.32
    },
    "thesilverage_silver": {
     "where": [
@@ -13253,6 +13401,12 @@
     ],
     "rate": 33.67
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.8
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -13885,6 +14039,12 @@
     ],
     "rate": 7.16
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 49.88
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -14144,6 +14304,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 13.29
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.69
    },
    "thorium": {
     "where": [
@@ -14464,6 +14630,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.18
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.78
    },
    "thesilverage_silver": {
     "where": [
@@ -15110,6 +15282,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.31
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.5
    },
    "thesilverage_silver": {
     "where": [
@@ -16468,6 +16646,13 @@
     ],
     "rate": 21.36
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.38
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric",
@@ -17382,6 +17567,13 @@
      "1.21.1 fabric"
     ],
     "rate": 21.36
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.38
    },
    "thesilverage_silver": {
     "where": [
@@ -18298,6 +18490,13 @@
     ],
     "rate": 21.36
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.38
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric",
@@ -19136,6 +19335,13 @@
     ],
     "rate": 3.95
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.42
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric",
@@ -19967,6 +20173,13 @@
     ],
     "rate": 0.97
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.1
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric",
@@ -20711,6 +20924,12 @@
     ],
     "rate": 13.95
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 48.51
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -21444,6 +21663,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 23.58
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 82.03
    },
    "thesilverage_silver": {
     "where": [
@@ -22299,6 +22524,12 @@
     ],
     "rate": 21.97
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 76.44
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -23103,6 +23334,13 @@
     ],
     "rate": 218.48
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 61.6
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric",
@@ -23449,6 +23687,13 @@
     ],
     "rate": 11.6
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.1
+   },
    "thorium": {
     "where": [
      "1.21.1 neoforge"
@@ -23793,6 +24038,13 @@
     ],
     "rate": 36.94
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.5
+   },
    "thorium": {
     "where": [
      "1.21.1 neoforge"
@@ -24100,6 +24352,13 @@
      "1.21.1 fabric"
     ],
     "rate": 3.48
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.33
    },
    "thorium": {
     "where": [
@@ -24893,6 +25152,13 @@
      "1.21.1 fabric"
     ],
     "rate": 158.67
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 117.1
    },
    "thesilverage_silver": {
     "where": [
@@ -25767,6 +26033,13 @@
     ],
     "rate": 161.5
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 117.36
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric",
@@ -26451,6 +26724,12 @@
     ],
     "rate": 67.56
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 504.25
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -27101,6 +27380,12 @@
     ],
     "rate": 197.06
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1470.73
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -27750,6 +28035,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 112.6
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 840.42
    },
    "thesilverage_silver": {
     "where": [
@@ -28434,6 +28725,13 @@
     ],
     "rate": 0.44
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.03
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric",
@@ -29040,6 +29338,13 @@
     ],
     "rate": 14.14
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.34
+   },
    "thorium": {
     "where": [
      "1.21.1 neoforge"
@@ -29631,6 +29936,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 10.3
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 72.12
    },
    "thesilverage_silver": {
     "where": [
@@ -30341,6 +30652,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 29.48
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 102.54
    },
    "thesilverage_silver": {
     "where": [
@@ -31076,6 +31393,12 @@
     ],
     "rate": 29.48
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 102.54
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 neoforge"
@@ -31809,6 +32132,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 29.48
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 102.54
    },
    "thesilverage_silver": {
     "where": [
@@ -32935,6 +33264,13 @@
     ],
     "rate": 60.8
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 77.64
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric",
@@ -33843,6 +34179,13 @@
      "1.21.1 fabric"
     ],
     "rate": 10.71
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.06
    },
    "thesilverage_silver": {
     "where": [
@@ -35066,6 +35409,12 @@
     ],
     "rate": 9.3
    },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 10.25
+   },
    "thesilverage_silver": {
     "where": [
      "1.21.1 fabric"
@@ -35904,6 +36253,13 @@
      "1.21.1 fabric"
     ],
     "rate": 107.54
+   },
+   "theleadage_lead": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 123.23
    },
    "thesilverage_silver": {
     "where": [

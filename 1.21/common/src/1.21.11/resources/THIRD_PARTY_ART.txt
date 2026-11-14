@@ -101,6 +101,9 @@ Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/turquoise_overlay.png
   assets/seamlessores/textures/block/white_diamond_overlay.png
 
+The Lead Age by PhantomWing, MIT:
+  assets/seamlessores/textures/block/theleadage_lead_overlay.png
+
 The Silver Age by PhantomWing, MIT:
   assets/seamlessores/textures/block/thesilverage_silver_deepslate_overlay.png
   assets/seamlessores/textures/block/thesilverage_silver_overlay.png

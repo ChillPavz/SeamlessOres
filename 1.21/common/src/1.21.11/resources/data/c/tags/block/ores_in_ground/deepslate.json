@@ -145,6 +145,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_theleadage_lead_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -226,6 +230,10 @@
     },
     {
       "id": "seamlessores:blackstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_theleadage_lead_ore",
       "required": false
     },
     {
