@@ -36,6 +36,14 @@
       "id": "seamlessores:andesite_evilcraft_dark_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_gemsandcrystals_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_gemsandcrystals_quartz_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     {
       "id": "seamlessores:andesite_iceandfire_silver_ore",
@@ -1392,6 +1400,10 @@
     },
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
+    {
+      "id": "seamlessores:diorite_gemsandcrystals_quartz_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     {
       "id": "seamlessores:diorite_iceandfire_silver_ore",
@@ -1702,6 +1714,18 @@
     "seamlessores:granite_emerald_ore",
     {
       "id": "seamlessores:granite_energizedpower_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_gemsandcrystals_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_gemsandcrystals_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_gemsandcrystals_topaz_ore",
       "required": false
     },
     "seamlessores:granite_gold_ore",
@@ -2910,6 +2934,14 @@
     "seamlessores:tuff_emerald_ore",
     {
       "id": "seamlessores:tuff_evilcraft_dark_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_gemsandcrystals_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_gemsandcrystals_quartz_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",

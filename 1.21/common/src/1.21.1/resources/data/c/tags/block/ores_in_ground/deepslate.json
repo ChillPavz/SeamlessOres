@@ -349,6 +349,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_gemsandcrystals_amethyst_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_gemsandcrystals_quartz_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },

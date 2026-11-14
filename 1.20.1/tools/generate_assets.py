@@ -207,7 +207,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "bronze": jar("bronze-1.0.13+1.20.1.jar"),
             "miningmaster": jar("miningmaster-1.20.1-4.1.3.jar"),
             "thesilverage": jar("thesilverage-forge-1.20.1-1.4.0.jar"),
-            "theleadage": jar("theleadage-forge-1.20.1-1.3.1.jar")}
+            "theleadage": jar("theleadage-forge-1.20.1-1.3.1.jar"),
+            "gemsandcrystals": jar("gemsandcrystals-1.4.6-forge+1.20.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -541,6 +542,8 @@ MODS = {
                        "licence": "MIT", "author": "PhantomWing"},
     "theleadage": {"display": "The Lead Age", "category": "theleadage",
                        "licence": "MIT", "author": "PhantomWing"},
+    "gemsandcrystals": {"display": "Gems and Crystals", "category": "gemsandcrystals",
+                       "licence": "MIT", "author": "Coliwogg"},
 }
 
 ORE_DEFS = [
@@ -1542,6 +1545,22 @@ ORE_DEFS = [
     {"name": "theleadage_lead", "overlay": "theleadage_lead", "source": "lead_ore", "base": "stone",
      "mod": "theleadage",
      "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    # --- Gems and Crystals (mod id gemsandcrystals, MIT): five gems, 3 to 7 XP. Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "gemsandcrystals_amethyst", "overlay": "gemsandcrystals_amethyst", "source": "amethyst_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "amethyst_ore", "deepslate": "deepslate_amethyst_ore"}},
+    {"name": "gemsandcrystals_quartz", "overlay": "gemsandcrystals_quartz", "source": "quartz_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "quartz_ore", "deepslate": "deepslate_quartz_ore"}},
+    {"name": "gemsandcrystals_ruby", "overlay": "gemsandcrystals_ruby", "source": "ruby_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "ruby_ore", "deepslate": "deepslate_ruby_ore"}},
+    {"name": "gemsandcrystals_sapphire", "overlay": "gemsandcrystals_sapphire", "source": "sapphire_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "sapphire_ore", "deepslate": "deepslate_sapphire_ore"}},
+    {"name": "gemsandcrystals_topaz", "overlay": "gemsandcrystals_topaz", "source": "topaz_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "topaz_ore", "deepslate": "deepslate_topaz_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1716,6 +1735,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "miningmaster": ('forge',),
     "thesilverage": ('fabric', 'forge'),
     "theleadage": ('fabric', 'forge'),
+    "gemsandcrystals": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1862,6 +1882,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.gemsandcrystals": "Gems and Crystals",
         f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
         f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
         f"text.autoconfig.{MOD_ID}.category.miningmaster": "Mining Master",
@@ -1921,6 +1942,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals": "Gems and Crystals: variants",
+        f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals.@Tooltip":
+            "Generate host-matched amethyst, quartz, ruby, sapphire and topaz ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.theLeadAge": "The Lead Age: variants",
         f"text.autoconfig.{MOD_ID}.option.theLeadAge.@Tooltip":

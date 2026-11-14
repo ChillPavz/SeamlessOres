@@ -48,6 +48,11 @@ Energized Power by JDDev0, MIT:
 EvilCraft by rubensworks, CC BY 4.0 (art):
   assets/seamlessores/textures/block/dark_overlay.png
 
+Gems and Crystals by Coliwogg, MIT:
+  assets/seamlessores/textures/block/gemsandcrystals_amethyst_overlay.png
+  assets/seamlessores/textures/block/gemsandcrystals_quartz_overlay.png
+  assets/seamlessores/textures/block/gemsandcrystals_topaz_overlay.png
+
 Ice and Fire by Alexthe666, the Community Edition by IAFEnvoy, LGPL-3.0:
   assets/seamlessores/textures/block/iceandfire_deepslate_silver_overlay.png
   assets/seamlessores/textures/block/iceandfire_sapphire_overlay.png

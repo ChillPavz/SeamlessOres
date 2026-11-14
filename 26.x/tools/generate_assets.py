@@ -118,6 +118,7 @@ PROFILES = {
             "oritech": REFS + "oritech-2.0.0-exp12.jar",
             "thesilverage": REFS + "thesilverage-neoforge-26.1.2-1.4.0.jar",
             "theleadage": REFS + "theleadage-neoforge-26.1.2-1.2.1.jar",
+            "gemsandcrystals": REFS + "gemsandcrystals-1.6.0-neoforge+26.1.2.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -146,6 +147,7 @@ PROFILES = {
             "oritech": ('neoforge',),
             "thesilverage": ('fabric', 'neoforge'),
             "theleadage": ('fabric', 'neoforge'),
+            "gemsandcrystals": ('fabric', 'neoforge'),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -177,6 +179,7 @@ PROFILES = {
             "powah": REFS + "26.2-Powah-8.0.1-alpha.jar",
             "thesilverage": REFS + "thesilverage-neoforge-26.2-1.4.0.jar",
             "theleadage": REFS + "theleadage-neoforge-26.2-1.2.1.jar",
+            "gemsandcrystals": REFS + "gemsandcrystals-1.6.0-neoforge+26.2.jar",
         },
         "available": {
             "create": ("fabric",),
@@ -193,6 +196,7 @@ PROFILES = {
             "denseores": ("fabric", "neoforge"),
             "thesilverage": ('fabric', 'neoforge'),
             "theleadage": ('fabric', 'neoforge'),
+            "gemsandcrystals": ('fabric', 'neoforge'),
         },
     },
     # 26.3 (data formats 121 and up): a new loot format, silk touch as a single "condition" (see
@@ -231,6 +235,7 @@ PROFILES = {
             "powah": REFS + "26.3-Powah-9.0.0-alpha.jar",
             "thesilverage": REFS + "thesilverage-neoforge-26.3-1.4.0.jar",
             "theleadage": REFS + "theleadage-neoforge-26.3-1.2.1.jar",
+            "gemsandcrystals": REFS + "gemsandcrystals-1.6.0-neoforge+26.3.jar",
         },
         "available": {
             "powah": ("neoforge",),
@@ -243,6 +248,7 @@ PROFILES = {
             "betternether": ("fabric",),
             "thesilverage": ('fabric', 'neoforge'),
             "theleadage": ('fabric', 'neoforge'),
+            "gemsandcrystals": ('fabric', 'neoforge'),
         },
     },
 }
@@ -480,6 +486,8 @@ MODS = {
                        "licence": "MIT", "author": "PhantomWing"},
     "theleadage": {"display": "The Lead Age", "category": "theleadage",
                        "licence": "MIT", "author": "PhantomWing"},
+    "gemsandcrystals": {"display": "Gems and Crystals", "category": "gemsandcrystals",
+                       "licence": "MIT", "author": "Coliwogg"},
 }
 
 ORE_DEFS = [
@@ -964,6 +972,22 @@ ORE_DEFS = [
     {"name": "theleadage_lead", "overlay": "theleadage_lead", "source": "lead_ore", "base": "stone",
      "mod": "theleadage",
      "tiers": {"stone": "lead_ore", "deepslate": "deepslate_lead_ore"}},
+    # --- Gems and Crystals (mod id gemsandcrystals, MIT): five gems, 3 to 7 XP. Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "gemsandcrystals_amethyst", "overlay": "gemsandcrystals_amethyst", "source": "amethyst_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "amethyst_ore", "deepslate": "deepslate_amethyst_ore"}},
+    {"name": "gemsandcrystals_quartz", "overlay": "gemsandcrystals_quartz", "source": "quartz_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "quartz_ore", "deepslate": "deepslate_quartz_ore"}},
+    {"name": "gemsandcrystals_ruby", "overlay": "gemsandcrystals_ruby", "source": "ruby_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "ruby_ore", "deepslate": "deepslate_ruby_ore"}},
+    {"name": "gemsandcrystals_sapphire", "overlay": "gemsandcrystals_sapphire", "source": "sapphire_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "sapphire_ore", "deepslate": "deepslate_sapphire_ore"}},
+    {"name": "gemsandcrystals_topaz", "overlay": "gemsandcrystals_topaz", "source": "topaz_ore", "base": "stone",
+     "mod": "gemsandcrystals",
+     "tiers": {"stone": "topaz_ore", "deepslate": "deepslate_topaz_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -1058,6 +1082,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "oritech": ('neoforge',),
     "thesilverage": ('fabric', 'neoforge'),
     "theleadage": ('fabric', 'neoforge'),
+    "gemsandcrystals": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1224,6 +1249,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.gemsandcrystals": "Gems and Crystals",
         f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
         f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
         f"text.autoconfig.{MOD_ID}.category.oritech": "Oritech",
@@ -1252,6 +1278,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals": "Gems and Crystals: variants",
+        f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals.@Tooltip":
+            "Generate host-matched amethyst, quartz, ruby, sapphire and topaz ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.theLeadAge": "The Lead Age: variants",
         f"text.autoconfig.{MOD_ID}.option.theLeadAge.@Tooltip":

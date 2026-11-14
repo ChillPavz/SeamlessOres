@@ -282,6 +282,7 @@ public final class SeamlessOresDataPacks {
             "galosphere.railcraft",
             "galosphere.scguns",
             "galosphere.tfmg",
+            "gemsandcrystals",
             "iceandfire",
             "immersiveengineering",
             "iter_rpg",

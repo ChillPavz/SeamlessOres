@@ -28,7 +28,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**206 blocks** in the game's own rock, in the `seamlessores` namespace.
+**214 blocks** in the game's own rock, in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -218,6 +218,14 @@ touching ore of the same type across different host stones.
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
 | Theleadage Lead | `granite_theleadage_lead_ore` | `diorite_theleadage_lead_ore` | `andesite_theleadage_lead_ore` | `tuff_theleadage_lead_ore` | `dripstone_theleadage_lead_ore` |
+
+**Gems and Crystals, Overworld, requires `gemsandcrystals`**
+
+| | granite | diorite | andesite | tuff |
+|---|---|---|---|---|
+| Gemsandcrystals Amethyst | `granite_gemsandcrystals_amethyst_ore` |   | `andesite_gemsandcrystals_amethyst_ore` | `tuff_gemsandcrystals_amethyst_ore` |
+| Gemsandcrystals Quartz | `granite_gemsandcrystals_quartz_ore` | `diorite_gemsandcrystals_quartz_ore` | `andesite_gemsandcrystals_quartz_ore` | `tuff_gemsandcrystals_quartz_ore` |
+| Gemsandcrystals Topaz | `granite_gemsandcrystals_topaz_ore` |   |   |   |
 
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
@@ -447,7 +455,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 455 blocks takes **84 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 463 blocks takes **87 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -455,7 +463,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `bronze_tin` `carmot` `carnelian` `chaos` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `garnet` `gleaming` `gold` `heliodor` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `theleadage_lead` `thesilverage_silver` `thesilverage_silver_deepslate` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `bronze_tin` `carmot` `carnelian` `chaos` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `garnet` `gemsandcrystals_amethyst` `gemsandcrystals_quartz` `gemsandcrystals_topaz` `gleaming` `gold` `heliodor` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `theleadage_lead` `thesilverage_silver` `thesilverage_silver_deepslate` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -537,6 +545,7 @@ is theirs and is used under the licence shown:
 | Bronze | Khazoda | GPL-3.0 |
 | The Silver Age | PhantomWing | MIT |
 | The Lead Age | PhantomWing | MIT |
+| Gems and Crystals | Coliwogg | MIT |
 <!-- END GENERATED credits -->
 
 Built on [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template) by jaredlll08.

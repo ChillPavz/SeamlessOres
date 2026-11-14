@@ -532,6 +532,33 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
 
+    // --- Gems and Crystals (mod id gemsandcrystals, MIT): five gems, 3 to 7 XP. Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    public static final OreType GAC_AMETHYST = ore(
+            "gemsandcrystals_amethyst", "gemsandcrystals_amethyst", null, "gemsandcrystals",
+            of("gemsandcrystals", "amethyst_ore"), of("gemsandcrystals", "deepslate_amethyst_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType GAC_QUARTZ = ore(
+            "gemsandcrystals_quartz", "gemsandcrystals_quartz", null, "gemsandcrystals",
+            of("gemsandcrystals", "quartz_ore"), of("gemsandcrystals", "deepslate_quartz_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType GAC_RUBY = ore(
+            "gemsandcrystals_ruby", "gemsandcrystals_ruby", null, "gemsandcrystals",
+            of("gemsandcrystals", "ruby_ore"), of("gemsandcrystals", "deepslate_ruby_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType GAC_SAPPHIRE = ore(
+            "gemsandcrystals_sapphire", "gemsandcrystals_sapphire", null, "gemsandcrystals",
+            of("gemsandcrystals", "sapphire_ore"), of("gemsandcrystals", "deepslate_sapphire_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+    public static final OreType GAC_TOPAZ = ore(
+            "gemsandcrystals_topaz", "gemsandcrystals_topaz", null, "gemsandcrystals",
+            of("gemsandcrystals", "topaz_ore"), of("gemsandcrystals", "deepslate_topaz_ore"), null,
+            UniformInt.of(3, 7), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -555,7 +582,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     DO_COAL, DO_COPPER, DO_IRON, DO_GOLD, DO_LAPIS, DO_REDSTONE, DO_DIAMOND, DO_EMERALD, DO_NETHER_GOLD, DO_NETHER_QUARTZ, DO_ANCIENT_NETHER,
                     BRZ_TIN,
                     TSA_SILVER,
-                    TLA_LEAD);
+                    TLA_LEAD,
+                    GAC_AMETHYST, GAC_QUARTZ, GAC_RUBY, GAC_SAPPHIRE, GAC_TOPAZ);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 
