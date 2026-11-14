@@ -24,5 +24,6 @@
   "ingredient": "seamlessores:promenade_blunite_denseores_dense_iron_ore",
   "result": {
     "id": "minecraft:iron_ingot"
-  }
+  },
+  "cookingtime": 100
 }

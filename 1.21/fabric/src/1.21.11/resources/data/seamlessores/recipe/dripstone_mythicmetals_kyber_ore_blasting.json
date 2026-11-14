@@ -19,9 +19,7 @@
   "cookingtime": 100,
   "experience": 0.7,
   "ingredient": [
-    {
-      "item": "seamlessores:dripstone_mythicmetals_kyber_ore"
-    }
+    "seamlessores:dripstone_mythicmetals_kyber_ore"
   ],
   "result": {
     "id": "mythicmetals:kyber_ingot"

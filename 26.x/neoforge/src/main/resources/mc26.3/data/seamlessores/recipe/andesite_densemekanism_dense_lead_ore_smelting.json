@@ -19,9 +19,7 @@
   "cookingtime": 200,
   "experience": 1.6,
   "group": "lead_ingot",
-  "ingredient": {
-    "item": "seamlessores:andesite_densemekanism_dense_lead_ore"
-  },
+  "ingredient": "seamlessores:andesite_densemekanism_dense_lead_ore",
   "result": {
     "count": 1,
     "id": "mekanism:raw_lead"

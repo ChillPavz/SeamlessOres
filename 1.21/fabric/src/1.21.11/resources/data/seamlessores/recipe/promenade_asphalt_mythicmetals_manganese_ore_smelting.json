@@ -22,9 +22,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.2,
-  "ingredient": {
-    "item": "seamlessores:promenade_asphalt_mythicmetals_manganese_ore"
-  },
+  "ingredient": "seamlessores:promenade_asphalt_mythicmetals_manganese_ore",
   "result": {
     "id": "mythicmetals:manganese_ingot"
   }

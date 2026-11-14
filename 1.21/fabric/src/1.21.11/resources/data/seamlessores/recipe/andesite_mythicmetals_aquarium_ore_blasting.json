@@ -18,9 +18,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.7,
-  "ingredient": {
-    "item": "seamlessores:andesite_mythicmetals_aquarium_ore"
-  },
+  "ingredient": "seamlessores:andesite_mythicmetals_aquarium_ore",
   "result": {
     "id": "mythicmetals:aquarium_ingot"
   }

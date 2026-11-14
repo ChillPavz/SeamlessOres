@@ -23,9 +23,7 @@
   "cookingtime": 100,
   "experience": 1.0,
   "ingredient": [
-    {
-      "item": "seamlessores:blockus_bluestone_mythicmetals_runite_ore"
-    }
+    "seamlessores:blockus_bluestone_mythicmetals_runite_ore"
   ],
   "result": {
     "id": "mythicmetals:runite_ingot"

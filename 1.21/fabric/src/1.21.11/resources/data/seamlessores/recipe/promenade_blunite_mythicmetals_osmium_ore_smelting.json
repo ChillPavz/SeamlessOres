@@ -22,9 +22,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.8,
-  "ingredient": {
-    "item": "seamlessores:promenade_blunite_mythicmetals_osmium_ore"
-  },
+  "ingredient": "seamlessores:promenade_blunite_mythicmetals_osmium_ore",
   "result": {
     "id": "mythicmetals:osmium_ingot"
   }

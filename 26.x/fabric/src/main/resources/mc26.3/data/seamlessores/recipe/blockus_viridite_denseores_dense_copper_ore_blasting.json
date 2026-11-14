@@ -24,5 +24,6 @@
   "ingredient": "seamlessores:blockus_viridite_denseores_dense_copper_ore",
   "result": {
     "id": "minecraft:copper_ingot"
-  }
+  },
+  "cookingtime": 100
 }

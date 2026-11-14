@@ -20,5 +20,6 @@
   "ingredient": "seamlessores:andesite_denseores_dense_iron_ore",
   "result": {
     "id": "minecraft:iron_ingot"
-  }
+  },
+  "cookingtime": 100
 }

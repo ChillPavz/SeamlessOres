@@ -23,9 +23,7 @@
   "cookingtime": 100,
   "experience": 1.5,
   "ingredient": [
-    {
-      "item": "seamlessores:create_veridium_mythicmetals_orichalcum_ore"
-    }
+    "seamlessores:create_veridium_mythicmetals_orichalcum_ore"
   ],
   "result": {
     "id": "mythicmetals:orichalcum_ingot"

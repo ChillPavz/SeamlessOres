@@ -1153,7 +1153,8 @@ def generate_data():
                     table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
                 # The source ore's own smelting and blasting recipes, taking the variant: written beside
                 # its loot table, under the same conditions, so it exists exactly where the variant does.
-                recipes = parity.cooking_copies(CLIENT_JAR if mod is None else MOD_JARS[mod], vanilla_id, our_id, name)
+                recipes = parity.cooking_copies(CLIENT_JAR if mod is None else MOD_JARS[mod], vanilla_id, our_id, name,
+                                                  item_strings=True)
                 if gate:
                     # Both loaders' conditions keep it inert without the mods of its gate (the
                     # one that places its stone, the ore's own); each loader ignores the other

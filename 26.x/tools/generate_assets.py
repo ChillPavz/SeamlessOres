@@ -1505,6 +1505,78 @@ def generate_json():
 
 gate_of = placed.gate_of
 
+# The defaults 26.2 filled in for a cooking recipe without "cookingtime"; 26.3 requires the field.
+COOKING_TIME = {"minecraft:smelting": 200, "minecraft:blasting": 100, "minecraft:smoking": 100,
+                "minecraft:campfire_cooking": 600}
+
+
+def in_profile_format(table, recipes, name, jar_path):
+    """Puts a variant's loot table and cooking recipes in the format of the profile being written.
+
+    A mod with no build for a profile is read from an older jar standing in for it (see PROFILES), and
+    that jar speaks its own game's format. 26.3 renamed what we copy: a loot entry's "conditions" list
+    became one "condition", and a cooking recipe's "cookingtime" lost its default. 26.3 SKIPS the old
+    key without a word, so a Silk Touch child without its condition always wins and the variant drops
+    itself; and it REJECTS a recipe without cookingtime, so the variant cannot be smelted. Both shipped
+    in 6.0.1. Our tables only ever carry the Silk Touch condition (every other drop defers to the
+    source's own table), so that is the one spelling converted; anything else stops the run."""
+    if version_key(CURRENT_PROFILE) < (26, 3):
+        return
+
+    def visit(node):
+        if isinstance(node, list):
+            for item in node:
+                visit(item)
+            return
+        if not isinstance(node, dict):
+            return
+        if "functions" in node:
+            sys.exit(f"  !! {name} ({CURRENT_PROFILE}): a loot table copied from {os.path.basename(jar_path)} "
+                     f"carries \"functions\", which 26.3 calls \"modifier\" with a new shape; not converted")
+        if "conditions" in node:
+            conditions = node.pop("conditions")
+            if not (len(conditions) == 1 and conditions[0].get("condition") == "minecraft:match_tool"
+                    and "silk_touch" in json.dumps(conditions[0])):
+                sys.exit(f"  !! {name} ({CURRENT_PROFILE}): loot conditions {conditions} from "
+                         f"{os.path.basename(jar_path)} are not the one Silk Touch test; not converted")
+            node["condition"] = "minecraft:tool/can_silk_touch"
+        for value in node.values():
+            visit(value)
+
+    visit(table.get("pools", []))
+    for recipe in recipes.values():
+        if "cookingtime" not in recipe:
+            recipe["cookingtime"] = COOKING_TIME[recipe["type"]]
+
+
+def check_overlay_formats():
+    """Stops the run if a written loot table or recipe is in a format its Minecraft version ignores or
+    rejects. Every one of these fails in silence or with a log line nobody reads, never at build time."""
+    bad = []
+    for module in ("common", "fabric", "neoforge"):
+        resources = os.path.join(repo_root(), module, "src", "main", "resources")
+        for version, profile in PROFILES.items():
+            root = os.path.join(resources, profile["overlay"], "data", MOD_ID)
+            for dirpath, _dirs, files in os.walk(root):
+                for file in files:
+                    path = os.path.join(dirpath, file)
+                    text = open(path, encoding="utf-8").read()
+                    data = json.loads(text)
+                    where = os.path.relpath(path, repo_root())
+                    if (os.sep + "recipe" + os.sep) in path:
+                        ingredient = data.get("ingredient")
+                        if isinstance(ingredient, dict) or (isinstance(ingredient, list)
+                                                            and any(isinstance(i, dict) for i in ingredient)):
+                            bad.append(f"{where}: ingredient object (1.21.2 on reads only an id, a tag or a list)")
+                        if version_key(version) >= (26, 3) and data.get("type") in COOKING_TIME                                 and "cookingtime" not in data:
+                            bad.append(f"{where}: no cookingtime (required from 26.3)")
+                    elif version_key(version) >= (26, 3) and re.search(r'"(conditions|functions)"', text):
+                        bad.append(f"{where}: \"conditions\" or \"functions\" (26.3 reads \"condition\" and \"modifier\")")
+    if bad:
+        sys.exit(f"  !! {len(bad)} data files in a format their version does not read, first: " + "; ".join(bad[:5]))
+    print("  overlay formats checked: every loot table and recipe in its version's format")
+
+
 def generate_data():
     """Loot tables and tags. Loot is TRANSFORMED from vanilla's own tables, never reconstructed."""
 
@@ -1564,11 +1636,12 @@ def generate_data():
                         raise SystemExit(f"  !! {os.path.basename(jar_path)} has no {loot_path} (needed by {name})")
                 # The source ore's own smelting and blasting recipes, taking the variant: written beside
                 # its loot table, under the same conditions, so it exists exactly where the variant does.
-                recipes = parity.cooking_copies(jar_path, source_id, our_id, name)
+                recipes = parity.cooking_copies(jar_path, source_id, our_id, name, item_strings=True)
                 silk_touch_to(table, source_id, our_id, name, CURRENT_PROFILE)
                 # Non-Silk-Touch drops run the source ore's own table, so pack edits to it carry over.
                 table = defer_to_source(table, source_id, our_id, "value")
                 table["random_sequence"] = f"{MOD_ID}:blocks/{name}"
+                in_profile_format(table, recipes, name, jar_path)
 
                 if not host_exists_in(host_cfg, CURRENT_PROFILE):
                     pass    # no such block on this version: a table naming its item would not load
@@ -2107,6 +2180,7 @@ def generate_versioned_data():
         for path in tables:
             write_json(overlay_path(path, overlay), written[path])
         print(f"  [{version}] {len(tables)} loot tables -> {overlay}/")
+    check_overlay_formats()
 
 
 def generate_java():

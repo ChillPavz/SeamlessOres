@@ -22,9 +22,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 1.0,
-  "ingredient": {
-    "item": "seamlessores:create_scorchia_mythicmetals_midas_gold_ore"
-  },
+  "ingredient": "seamlessores:create_scorchia_mythicmetals_midas_gold_ore",
   "result": {
     "id": "mythicmetals:midas_gold_ingot"
   }

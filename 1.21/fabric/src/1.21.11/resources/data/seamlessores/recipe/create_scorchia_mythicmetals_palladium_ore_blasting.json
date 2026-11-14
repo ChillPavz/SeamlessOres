@@ -22,9 +22,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 1.5,
-  "ingredient": {
-    "item": "seamlessores:create_scorchia_mythicmetals_palladium_ore"
-  },
+  "ingredient": "seamlessores:create_scorchia_mythicmetals_palladium_ore",
   "result": {
     "id": "mythicmetals:palladium_ingot"
   }

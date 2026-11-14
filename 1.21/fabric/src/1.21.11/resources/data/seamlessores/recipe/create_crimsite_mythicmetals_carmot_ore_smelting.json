@@ -23,9 +23,7 @@
   "cookingtime": 200,
   "experience": 1.2,
   "ingredient": [
-    {
-      "item": "seamlessores:create_crimsite_mythicmetals_carmot_ore"
-    }
+    "seamlessores:create_crimsite_mythicmetals_carmot_ore"
   ],
   "result": {
     "id": "mythicmetals:carmot_ingot"

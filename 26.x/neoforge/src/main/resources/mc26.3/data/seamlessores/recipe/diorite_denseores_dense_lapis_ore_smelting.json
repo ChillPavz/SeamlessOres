@@ -20,5 +20,6 @@
   "ingredient": "seamlessores:diorite_denseores_dense_lapis_ore",
   "result": {
     "id": "minecraft:lapis_lazuli"
-  }
+  },
+  "cookingtime": 200
 }

@@ -23,9 +23,7 @@
   "cookingtime": 100,
   "experience": 0.7,
   "ingredient": [
-    {
-      "item": "seamlessores:promenade_asphalt_mythicmetals_banglum_ore"
-    }
+    "seamlessores:promenade_asphalt_mythicmetals_banglum_ore"
   ],
   "result": {
     "id": "mythicmetals:banglum_ingot"

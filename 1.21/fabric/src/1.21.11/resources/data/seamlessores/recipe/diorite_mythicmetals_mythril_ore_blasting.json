@@ -19,9 +19,7 @@
   "cookingtime": 100,
   "experience": 1.5,
   "ingredient": [
-    {
-      "item": "seamlessores:diorite_mythicmetals_mythril_ore"
-    }
+    "seamlessores:diorite_mythicmetals_mythril_ore"
   ],
   "result": {
     "id": "mythicmetals:mythril_ingot"

@@ -19,9 +19,7 @@
   "cookingtime": 100,
   "experience": 1.0,
   "ingredient": [
-    {
-      "item": "seamlessores:basalt_mythicmetals_stormyx_ore"
-    }
+    "seamlessores:basalt_mythicmetals_stormyx_ore"
   ],
   "result": {
     "id": "mythicmetals:stormyx_ingot"

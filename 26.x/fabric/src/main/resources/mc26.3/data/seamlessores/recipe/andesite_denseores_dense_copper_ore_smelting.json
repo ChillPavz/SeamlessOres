@@ -20,5 +20,6 @@
   "ingredient": "seamlessores:andesite_denseores_dense_copper_ore",
   "result": {
     "id": "minecraft:copper_ingot"
-  }
+  },
+  "cookingtime": 200
 }

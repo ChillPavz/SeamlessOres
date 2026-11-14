@@ -23,9 +23,7 @@
   "cookingtime": 100,
   "experience": 0.7,
   "ingredient": [
-    {
-      "item": "seamlessores:create_limestone_mythicmetals_prometheum_ore"
-    }
+    "seamlessores:create_limestone_mythicmetals_prometheum_ore"
   ],
   "result": {
     "id": "mythicmetals:prometheum_ingot"

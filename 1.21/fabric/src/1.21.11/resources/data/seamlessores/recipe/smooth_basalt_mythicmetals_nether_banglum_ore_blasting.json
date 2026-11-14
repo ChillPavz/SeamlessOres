@@ -23,9 +23,7 @@
   "cookingtime": 100,
   "experience": 0.7,
   "ingredient": [
-    {
-      "item": "seamlessores:smooth_basalt_mythicmetals_nether_banglum_ore"
-    }
+    "seamlessores:smooth_basalt_mythicmetals_nether_banglum_ore"
   ],
   "result": {
     "id": "mythicmetals:banglum_ingot"

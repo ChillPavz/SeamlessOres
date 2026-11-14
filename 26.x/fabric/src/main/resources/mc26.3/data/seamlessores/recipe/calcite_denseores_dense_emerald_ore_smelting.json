@@ -24,5 +24,6 @@
   "ingredient": "seamlessores:calcite_denseores_dense_emerald_ore",
   "result": {
     "id": "minecraft:emerald"
-  }
+  },
+  "cookingtime": 200
 }

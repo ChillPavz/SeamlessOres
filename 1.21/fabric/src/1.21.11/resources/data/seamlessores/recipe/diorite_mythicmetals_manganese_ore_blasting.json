@@ -18,9 +18,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.2,
-  "ingredient": {
-    "item": "seamlessores:diorite_mythicmetals_manganese_ore"
-  },
+  "ingredient": "seamlessores:diorite_mythicmetals_manganese_ore",
   "result": {
     "id": "mythicmetals:manganese_ingot"
   }

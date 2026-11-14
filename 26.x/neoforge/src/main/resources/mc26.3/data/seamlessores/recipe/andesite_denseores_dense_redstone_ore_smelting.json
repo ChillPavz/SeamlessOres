@@ -21,5 +21,6 @@
   "ingredient": "seamlessores:andesite_denseores_dense_redstone_ore",
   "result": {
     "id": "minecraft:redstone"
-  }
+  },
+  "cookingtime": 200
 }

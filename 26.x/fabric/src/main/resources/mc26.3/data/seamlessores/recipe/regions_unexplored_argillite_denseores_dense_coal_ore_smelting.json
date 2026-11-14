@@ -24,5 +24,6 @@
   "ingredient": "seamlessores:regions_unexplored_argillite_denseores_dense_coal_ore",
   "result": {
     "id": "minecraft:coal"
-  }
+  },
+  "cookingtime": 200
 }

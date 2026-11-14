@@ -20,5 +20,6 @@
   "ingredient": "seamlessores:tuff_denseores_dense_coal_ore",
   "result": {
     "id": "minecraft:coal"
-  }
+  },
+  "cookingtime": 200
 }

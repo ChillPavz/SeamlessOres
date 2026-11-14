@@ -23,9 +23,7 @@
   "cookingtime": 100,
   "experience": 1.4,
   "group": "peridot",
-  "ingredient": {
-    "item": "seamlessores:promenade_blunite_mythicupgrades_peridot_ore"
-  },
+  "ingredient": "seamlessores:promenade_blunite_mythicupgrades_peridot_ore",
   "result": {
     "count": 1,
     "id": "mythicupgrades:peridot"

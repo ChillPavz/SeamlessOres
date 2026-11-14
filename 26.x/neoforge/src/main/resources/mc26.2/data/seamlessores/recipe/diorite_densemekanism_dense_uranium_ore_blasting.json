@@ -19,9 +19,7 @@
   "cookingtime": 100,
   "experience": 1.6,
   "group": "uranium_ingot",
-  "ingredient": {
-    "item": "seamlessores:diorite_densemekanism_dense_uranium_ore"
-  },
+  "ingredient": "seamlessores:diorite_densemekanism_dense_uranium_ore",
   "result": {
     "count": 1,
     "id": "mekanism:raw_uranium"

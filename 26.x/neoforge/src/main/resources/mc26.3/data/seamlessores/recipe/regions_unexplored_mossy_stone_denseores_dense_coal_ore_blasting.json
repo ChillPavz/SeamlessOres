@@ -24,5 +24,6 @@
   "ingredient": "seamlessores:regions_unexplored_mossy_stone_denseores_dense_coal_ore",
   "result": {
     "id": "minecraft:coal"
-  }
+  },
+  "cookingtime": 100
 }

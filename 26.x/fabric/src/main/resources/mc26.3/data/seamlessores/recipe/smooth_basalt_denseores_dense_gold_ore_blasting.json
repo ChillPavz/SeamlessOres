@@ -24,5 +24,6 @@
   "ingredient": "seamlessores:smooth_basalt_denseores_dense_gold_ore",
   "result": {
     "id": "minecraft:gold_ingot"
-  }
+  },
+  "cookingtime": 100
 }

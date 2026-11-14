@@ -23,9 +23,7 @@
   "cookingtime": 200,
   "experience": 1.4,
   "group": "peridot",
-  "ingredient": {
-    "item": "seamlessores:blockus_viridite_mythicupgrades_peridot_ore"
-  },
+  "ingredient": "seamlessores:blockus_viridite_mythicupgrades_peridot_ore",
   "result": {
     "count": 1,
     "id": "mythicupgrades:peridot"

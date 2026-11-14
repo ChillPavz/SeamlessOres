@@ -22,9 +22,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.8,
-  "ingredient": {
-    "item": "seamlessores:wilderwild_gabbro_mythicmetals_osmium_ore"
-  },
+  "ingredient": "seamlessores:wilderwild_gabbro_mythicmetals_osmium_ore",
   "result": {
     "id": "mythicmetals:osmium_ingot"
   }

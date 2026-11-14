@@ -18,9 +18,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 1.5,
-  "ingredient": {
-    "item": "seamlessores:basalt_mythicmetals_palladium_ore"
-  },
+  "ingredient": "seamlessores:basalt_mythicmetals_palladium_ore",
   "result": {
     "id": "mythicmetals:palladium_ingot"
   }

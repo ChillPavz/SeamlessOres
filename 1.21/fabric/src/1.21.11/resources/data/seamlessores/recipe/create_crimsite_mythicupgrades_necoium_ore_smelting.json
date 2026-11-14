@@ -23,9 +23,7 @@
   "cookingtime": 200,
   "experience": 1.4,
   "group": "necoium",
-  "ingredient": {
-    "item": "seamlessores:create_crimsite_mythicupgrades_necoium_ore"
-  },
+  "ingredient": "seamlessores:create_crimsite_mythicupgrades_necoium_ore",
   "result": {
     "count": 1,
     "id": "mythicupgrades:necoium_ingot"

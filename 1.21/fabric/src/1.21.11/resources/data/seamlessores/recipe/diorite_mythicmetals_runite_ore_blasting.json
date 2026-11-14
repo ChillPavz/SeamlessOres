@@ -19,9 +19,7 @@
   "cookingtime": 100,
   "experience": 1.0,
   "ingredient": [
-    {
-      "item": "seamlessores:diorite_mythicmetals_runite_ore"
-    }
+    "seamlessores:diorite_mythicmetals_runite_ore"
   ],
   "result": {
     "id": "mythicmetals:runite_ingot"

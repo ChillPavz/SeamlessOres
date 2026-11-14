@@ -24,5 +24,6 @@
   "ingredient": "seamlessores:natures_spirit_travertine_denseores_dense_iron_ore",
   "result": {
     "id": "minecraft:iron_ingot"
-  }
+  },
+  "cookingtime": 200
 }

@@ -19,9 +19,7 @@
   "cookingtime": 100,
   "experience": 1.5,
   "ingredient": [
-    {
-      "item": "seamlessores:andesite_mythicmetals_orichalcum_ore"
-    }
+    "seamlessores:andesite_mythicmetals_orichalcum_ore"
   ],
   "result": {
     "id": "mythicmetals:orichalcum_ingot"

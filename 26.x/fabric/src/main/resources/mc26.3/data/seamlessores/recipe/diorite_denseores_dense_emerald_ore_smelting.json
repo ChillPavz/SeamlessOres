@@ -20,5 +20,6 @@
   "ingredient": "seamlessores:diorite_denseores_dense_emerald_ore",
   "result": {
     "id": "minecraft:emerald"
-  }
+  },
+  "cookingtime": 200
 }

@@ -23,9 +23,7 @@
   "cookingtime": 100,
   "experience": 1.5,
   "ingredient": [
-    {
-      "item": "seamlessores:wilderwild_gabbro_mythicmetals_adamantite_ore"
-    }
+    "seamlessores:wilderwild_gabbro_mythicmetals_adamantite_ore"
   ],
   "result": {
     "id": "mythicmetals:adamantite_ingot"

@@ -18,9 +18,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.7,
-  "ingredient": {
-    "item": "seamlessores:granite_mythicmetals_silver_ore"
-  },
+  "ingredient": "seamlessores:granite_mythicmetals_silver_ore",
   "result": {
     "id": "mythicmetals:silver_ingot"
   }

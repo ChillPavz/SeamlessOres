@@ -18,9 +18,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.2,
-  "ingredient": {
-    "item": "seamlessores:granite_mythicmetals_manganese_ore"
-  },
+  "ingredient": "seamlessores:granite_mythicmetals_manganese_ore",
   "result": {
     "id": "mythicmetals:manganese_ingot"
   }

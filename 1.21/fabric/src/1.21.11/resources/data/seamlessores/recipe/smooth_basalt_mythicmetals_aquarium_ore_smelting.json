@@ -22,9 +22,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.7,
-  "ingredient": {
-    "item": "seamlessores:smooth_basalt_mythicmetals_aquarium_ore"
-  },
+  "ingredient": "seamlessores:smooth_basalt_mythicmetals_aquarium_ore",
   "result": {
     "id": "mythicmetals:aquarium_ingot"
   }

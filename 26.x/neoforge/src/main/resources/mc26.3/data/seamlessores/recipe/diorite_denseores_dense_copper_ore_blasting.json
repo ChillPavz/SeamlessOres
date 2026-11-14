@@ -20,5 +20,6 @@
   "ingredient": "seamlessores:diorite_denseores_dense_copper_ore",
   "result": {
     "id": "minecraft:copper_ingot"
-  }
+  },
+  "cookingtime": 100
 }

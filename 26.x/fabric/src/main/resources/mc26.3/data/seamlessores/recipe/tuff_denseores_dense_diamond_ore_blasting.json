@@ -20,5 +20,6 @@
   "ingredient": "seamlessores:tuff_denseores_dense_diamond_ore",
   "result": {
     "id": "minecraft:diamond"
-  }
+  },
+  "cookingtime": 100
 }

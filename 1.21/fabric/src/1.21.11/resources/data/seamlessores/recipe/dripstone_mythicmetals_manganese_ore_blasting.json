@@ -18,9 +18,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.2,
-  "ingredient": {
-    "item": "seamlessores:dripstone_mythicmetals_manganese_ore"
-  },
+  "ingredient": "seamlessores:dripstone_mythicmetals_manganese_ore",
   "result": {
     "id": "mythicmetals:manganese_ingot"
   }

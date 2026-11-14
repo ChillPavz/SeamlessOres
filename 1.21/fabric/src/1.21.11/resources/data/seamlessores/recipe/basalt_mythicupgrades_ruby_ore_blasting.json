@@ -19,9 +19,7 @@
   "cookingtime": 100,
   "experience": 1.4,
   "group": "ruby",
-  "ingredient": {
-    "item": "seamlessores:basalt_mythicupgrades_ruby_ore"
-  },
+  "ingredient": "seamlessores:basalt_mythicupgrades_ruby_ore",
   "result": {
     "count": 1,
     "id": "mythicupgrades:ruby"

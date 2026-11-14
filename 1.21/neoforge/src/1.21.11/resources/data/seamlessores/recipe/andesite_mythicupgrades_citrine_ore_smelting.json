@@ -19,9 +19,7 @@
   "cookingtime": 200,
   "experience": 1.4,
   "group": "citrine",
-  "ingredient": {
-    "item": "seamlessores:andesite_mythicupgrades_citrine_ore"
-  },
+  "ingredient": "seamlessores:andesite_mythicupgrades_citrine_ore",
   "result": {
     "count": 1,
     "id": "mythicupgrades:citrine"

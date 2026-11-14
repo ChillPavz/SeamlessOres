@@ -22,9 +22,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.2,
-  "ingredient": {
-    "item": "seamlessores:blockus_marble_mythicmetals_manganese_ore"
-  },
+  "ingredient": "seamlessores:blockus_marble_mythicmetals_manganese_ore",
   "result": {
     "id": "mythicmetals:manganese_ingot"
   }

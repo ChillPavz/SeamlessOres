@@ -138,11 +138,29 @@ def _swapped(ingredient, item_id, our_id):
     return our_id
 
 
-def cooking_copies(jar_path, source_id, our_id, name):
+def _as_string(ingredient, path, jar_path):
+    """The ingredient in the plain spelling of 1.21.2 on: "id", "#tag", or a list of those."""
+    if isinstance(ingredient, list):
+        return [_as_string(part, path, jar_path) for part in ingredient]
+    if isinstance(ingredient, dict):
+        if set(ingredient) == {"item"}:
+            return ingredient["item"]
+        if set(ingredient) == {"tag"}:
+            return "#" + ingredient["tag"]
+        sys.exit(f"  !! {path} in {os.path.basename(jar_path)}: ingredient {ingredient} has no plain spelling")
+    return ingredient
+
+
+def cooking_copies(jar_path, source_id, our_id, name, item_strings=False):
     """{file stem: recipe} for the variant `name`: each cooking recipe of the source ore's own jar that
     names the ore item, with the variant in its place. Group, category, time, experience and result
     are the source's own, so the recipe book shows the variant beside the ore. A source recipe that
-    carries load conditions of its own stops the run: merging them with ours is unchecked."""
+    carries load conditions of its own stops the run: merging them with ours is unchecked.
+
+    item_strings: the band reads ingredients as a plain id or a list (1.21.2 on). A source jar read
+    as a stand-in (a build made for an older game) may still spell {"item": id}, which those versions
+    reject: the recipe then fails to load and the variant cannot be smelted. Our copy is written as
+    the plain id whatever the source spelled."""
     copies = {}
     for path, recipe in _cooking_recipes(jar_path):
         if not _names(recipe.get("ingredient"), source_id):
@@ -152,6 +170,8 @@ def cooking_copies(jar_path, source_id, our_id, name):
                      f"its copy for {name} would need them merged with ours")
         recipe = copy.deepcopy(recipe)
         recipe["ingredient"] = _swapped(recipe["ingredient"], source_id, our_id)
+        if item_strings:
+            recipe["ingredient"] = _as_string(recipe["ingredient"], path, jar_path)
         stem = f"{name}_{recipe['type'].split(':')[1]}"
         n = 2
         while stem in copies:

@@ -23,9 +23,7 @@
   "cookingtime": 200,
   "experience": 1.4,
   "group": "ruby",
-  "ingredient": {
-    "item": "seamlessores:create_scorchia_mythicupgrades_ruby_ore"
-  },
+  "ingredient": "seamlessores:create_scorchia_mythicupgrades_ruby_ore",
   "result": {
     "count": 1,
     "id": "mythicupgrades:ruby"

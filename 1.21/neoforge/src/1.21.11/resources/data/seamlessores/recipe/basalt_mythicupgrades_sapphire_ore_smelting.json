@@ -19,9 +19,7 @@
   "cookingtime": 200,
   "experience": 1.4,
   "group": "sapphire",
-  "ingredient": {
-    "item": "seamlessores:basalt_mythicupgrades_sapphire_ore"
-  },
+  "ingredient": "seamlessores:basalt_mythicupgrades_sapphire_ore",
   "result": {
     "count": 1,
     "id": "mythicupgrades:sapphire"

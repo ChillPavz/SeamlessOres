@@ -23,9 +23,7 @@
   "cookingtime": 200,
   "experience": 1.6,
   "group": "tin_ingot",
-  "ingredient": {
-    "item": "seamlessores:biomeswevegone_dacite_densemekanism_dense_tin_ore"
-  },
+  "ingredient": "seamlessores:biomeswevegone_dacite_densemekanism_dense_tin_ore",
   "result": {
     "count": 1,
     "id": "mekanism:raw_tin"
