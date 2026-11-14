@@ -67,7 +67,8 @@
     "thesilverage:silver_blocks": "The Silver Age: every silver block, the ores included (its silver behaviour reads it)",
     "stellaris:titanium": "Stellaris: every titanium block, the ores included",
     "clutter:green_fire_base_blocks": "Clutter: fire on these burns green (copper ores among them)",
-    "simpleores:ores": "SimpleOres: its own list of its ores"
+    "simpleores:ores": "SimpleOres: its own list of its ores",
+    "the_deep_void:ores": "The Deep Void: its own list of its ores"
   },
   "skip": {
     "iceandfire:*dragon_cave*": "Ice and Fire PLACES blocks from these lists in dragon caves: our variants would appear there",

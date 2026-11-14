@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:tuff_the_deep_void_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_the_deep_void_lavendite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_the_deep_void_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_the_deep_void_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_the_deep_void_voidrium_ore",
+      "required": false
+    },
+    "seamlessores:basalt_nether_gold_ore",
+    "seamlessores:basalt_nether_quartz_ore",
+    "seamlessores:blackstone_nether_gold_ore",
+    "seamlessores:blackstone_nether_quartz_ore",
+    {
+      "id": "seamlessores:create_scorchia_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scorchia_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_nether_gold_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_nether_quartz_ore",
+      "required": false
+    }
+  ]
+}

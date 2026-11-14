@@ -502,6 +502,7 @@ public final class SeamlessOresDataPacks {
             "tfmg.theleadage",
             "tfmg.thesilverage",
             "tfmg.theurgy",
+            "the_deep_void",
             "theleadage",
             "thesilverage",
             "theurgy",

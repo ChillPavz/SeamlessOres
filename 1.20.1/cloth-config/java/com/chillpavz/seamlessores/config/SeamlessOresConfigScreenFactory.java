@@ -127,6 +127,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("gemsandcrystals", "gemsandcrystals");
         MOD_CATEGORIES.put("clutter", "clutter");
         MOD_CATEGORIES.put("simpleores", "simpleores");
+        MOD_CATEGORIES.put("the_deep_void", "thedeepvoid");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

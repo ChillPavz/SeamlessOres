@@ -210,7 +210,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Forge1.20.1_1.7.5.jar"),
             "theleadage": jar("theleadage-forge-1.20.1-1.3.1.jar"),
             "gemsandcrystals": jar("gemsandcrystals-1.4.6-forge+1.20.1.jar"),
             "clutter": jar("clutter-1.20-0.6.2.jar"),
-            "simpleores": jar("simpleores-2.2.5-1.20.1-fabric.jar")}
+            "simpleores": jar("simpleores-2.2.5-1.20.1-fabric.jar"),
+            "the_deep_void": jar("the_deep_void-1.99.5-forge-1.20.1.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -550,6 +551,8 @@ MODS = {
                        "licence": "MIT", "author": "EmilSG"},
     "simpleores": {"display": "SimpleOres", "category": "simpleores",
                        "licence": "LGPL-3.0", "author": "AleXndrTheGr8st, Sinhika, Paint_Ninja, Paulem"},
+    "the_deep_void": {"display": "The Deep Void", "category": "thedeepvoid",
+                       "licence": "MIT", "author": "Sombrius"},
 }
 
 ORE_DEFS = [
@@ -1584,6 +1587,22 @@ ORE_DEFS = [
     {"name": "simpleores_onyx", "overlay": "simpleores_onyx", "skip_hosts": ["basalt"], "source": "onyx_ore", "base": "netherrack",
      "mod": "simpleores",
      "tiers": {"nether": "onyx_ore"}},
+    # --- The Deep Void (mod id the_deep_void, MIT): its dimension's ores in deepslate, tuff and its ancient deepslate; tuff takes variants. Its game ores, bloodstone and dark steel replace deepslate only: no variants. Voidrium draws umbrium_ore. Forge at 1.20.1 ---
+    {"name": "the_deep_void_bismuth", "overlay": "the_deep_void_bismuth", "source": "bismuth_ore", "base": "deepslate",
+     "mod": "the_deep_void",
+     "tiers": {"deepslate": "bismuth_ore"}},
+    {"name": "the_deep_void_lavendite", "overlay": "the_deep_void_lavendite", "source": "lavendite_ore", "base": "deepslate",
+     "mod": "the_deep_void",
+     "tiers": {"deepslate": "lavendite_ore"}},
+    {"name": "the_deep_void_onyx", "overlay": "the_deep_void_onyx", "source": "onyx_ore", "base": "deepslate",
+     "mod": "the_deep_void",
+     "tiers": {"deepslate": "onyx_ore"}},
+    {"name": "the_deep_void_sulfur", "overlay": "the_deep_void_sulfur", "source": "sulfur_ore", "base": "deepslate",
+     "mod": "the_deep_void",
+     "tiers": {"deepslate": "sulfur_ore"}},
+    {"name": "the_deep_void_voidrium", "overlay": "the_deep_void_voidrium", "source": "voidrium_ore", "base": "deepslate",
+     "mod": "the_deep_void",
+     "tiers": {"deepslate": "voidrium_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1761,6 +1780,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "gemsandcrystals": ('forge',),
     "clutter": ('fabric',),
     "simpleores": ('fabric', 'forge'),
+    "the_deep_void": ('forge',),
 }
 
 # Mods whose Forge-side data ships as a BUILT-IN DATAPACK rather than as ordinary resources.
@@ -1907,6 +1927,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.thedeepvoid": "The Deep Void",
         f"text.autoconfig.{MOD_ID}.category.simpleores": "SimpleOres",
         f"text.autoconfig.{MOD_ID}.category.clutter": "Clutter",
         f"text.autoconfig.{MOD_ID}.category.gemsandcrystals": "Gems and Crystals",
@@ -1969,6 +1990,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.theDeepVoid": "The Deep Void: variants",
+        f"text.autoconfig.{MOD_ID}.option.theDeepVoid.@Tooltip":
+            "Generate host-matched bismuth, lavendite, onyx, sulfur and voidrium ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.simpleOres": "SimpleOres: variants",
         f"text.autoconfig.{MOD_ID}.option.simpleOres.@Tooltip":

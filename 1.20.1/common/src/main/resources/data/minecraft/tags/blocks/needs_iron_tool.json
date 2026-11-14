@@ -752,6 +752,14 @@
       "id": "seamlessores:tuff_simpleores_adamantium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_the_deep_void_lavendite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_the_deep_void_sulfur_ore",
+      "required": false
+    },
     "seamlessores:dripstone_gold_ore",
     "seamlessores:dripstone_diamond_ore",
     "seamlessores:dripstone_redstone_ore",

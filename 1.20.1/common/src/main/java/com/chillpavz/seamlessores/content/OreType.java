@@ -1491,6 +1491,28 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(9, 14), null, false, Set.of("basalt"))
             .withStrength(7.0F, 3.0F);
 
+    // --- The Deep Void (mod id the_deep_void, MIT): its dimension's ores in deepslate, tuff and its ancient deepslate; tuff takes variants. Its game ores, bloodstone and dark steel replace deepslate only: no variants. Voidrium draws umbrium_ore. Forge at 1.20.1 ---
+    public static final OreType TDV_BISMUTH = ore(
+            "the_deep_void_bismuth", "the_deep_void_bismuth", null, "the_deep_void",
+            null, of("the_deep_void", "bismuth_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType TDV_LAVENDITE = ore(
+            "the_deep_void_lavendite", "the_deep_void_lavendite", null, "the_deep_void",
+            null, of("the_deep_void", "lavendite_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType TDV_ONYX = ore(
+            "the_deep_void_onyx", "the_deep_void_onyx", null, "the_deep_void",
+            null, of("the_deep_void", "onyx_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType TDV_SULFUR = ore(
+            "the_deep_void_sulfur", "the_deep_void_sulfur", null, "the_deep_void",
+            null, of("the_deep_void", "sulfur_ore"), null,
+            NONE, null, false, Set.of());
+    public static final OreType TDV_VOIDRIUM = ore(
+            "the_deep_void_voidrium", "the_deep_void_voidrium", null, "the_deep_void",
+            null, of("the_deep_void", "voidrium_ore"), null,
+            NONE, null, false, Set.of());
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1558,7 +1580,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TLA_LEAD,
                     GAC_AMETHYST, GAC_QUARTZ, GAC_RUBY, GAC_SAPPHIRE, GAC_TOPAZ,
                     CLT_SILVER,
-                    SMO_TIN, SMO_MYTHRIL, SMO_ADAMANTIUM, SMO_ONYX);
+                    SMO_TIN, SMO_MYTHRIL, SMO_ADAMANTIUM, SMO_ONYX,
+                    TDV_BISMUTH, TDV_LAVENDITE, TDV_ONYX, TDV_SULFUR, TDV_VOIDRIUM);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

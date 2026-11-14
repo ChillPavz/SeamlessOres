@@ -321,6 +321,9 @@ public final class SeamlessOresConfig {
     /** Whether SimpleOres variants generate. Pure restyle. */
     public static boolean simpleOres = true;
 
+    /** Whether The Deep Void variants generate. Pure restyle. */
+    public static boolean theDeepVoid = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -399,6 +402,7 @@ public final class SeamlessOresConfig {
             case "gemsandcrystals" -> gemsAndCrystals;
             case "clutter" -> clutter;
             case "simpleores" -> simpleOres;
+            case "the_deep_void" -> theDeepVoid;
             default -> true;
         };
     }
@@ -631,6 +635,7 @@ public final class SeamlessOresConfig {
         public boolean gemsAndCrystals = true;
         public boolean clutter = true;
         public boolean simpleOres = true;
+        public boolean theDeepVoid = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -731,6 +736,7 @@ public final class SeamlessOresConfig {
         gemsAndCrystals = values.gemsAndCrystals;
         clutter = values.clutter;
         simpleOres = values.simpleOres;
+        theDeepVoid = values.theDeepVoid;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

@@ -1560,6 +1560,26 @@
       "id": "seamlessores:tuff_simpleores_adamantium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_the_deep_void_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_the_deep_void_lavendite_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_the_deep_void_onyx_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_the_deep_void_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_the_deep_void_voidrium_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
