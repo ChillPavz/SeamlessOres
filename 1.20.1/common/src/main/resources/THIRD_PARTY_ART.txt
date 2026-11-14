@@ -494,6 +494,10 @@ Tech Reborn by Team Reborn, modmuss50, drcrazy, MIT:
   assets/seamlessores/textures/block/techreborn_tin_overlay.png
   assets/seamlessores/textures/block/techreborn_tungsten_overlay.png
 
+The Silver Age by PhantomWing, MIT:
+  assets/seamlessores/textures/block/thesilverage_silver_deepslate_overlay.png
+  assets/seamlessores/textures/block/thesilverage_silver_overlay.png
+
 Theurgy by Kli Kli, CC BY-SA 4.0 (art):
   assets/seamlessores/textures/block/sal_ammoniac_overlay.png
 

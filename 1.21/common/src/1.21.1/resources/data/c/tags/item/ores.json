@@ -265,6 +265,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
       "required": false
     },
@@ -1721,6 +1725,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_theurgy_sal_ammoniac_ore",
       "required": false
     },
@@ -1802,6 +1810,10 @@
     },
     {
       "id": "seamlessores:blockus_bluestone_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -1894,6 +1906,10 @@
     },
     {
       "id": "seamlessores:blockus_limestone_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -1993,6 +2009,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_things_gleaming_ore",
       "required": false
     },
@@ -2038,6 +2058,10 @@
     },
     {
       "id": "seamlessores:blockus_viridite_techreborn_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -2233,6 +2257,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_theurgy_sal_ammoniac_ore",
       "required": false
     },
@@ -2418,6 +2446,10 @@
     },
     {
       "id": "seamlessores:calcite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -2798,6 +2830,10 @@
     },
     {
       "id": "seamlessores:create_limestone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -3197,6 +3233,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_theurgy_sal_ammoniac_ore",
       "required": false
     },
@@ -3386,6 +3426,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -3582,6 +3626,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_darkslate_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -3782,6 +3830,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_grimestone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_grimestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -4066,6 +4118,10 @@
     },
     {
       "id": "seamlessores:diorite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -4464,6 +4520,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
@@ -4748,6 +4808,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_gneiss_treasure2_topaz_ore",
       "required": false
     },
@@ -4893,6 +4957,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_larvikite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -5160,6 +5228,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_slate_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_cobblemon_dusk_stone_ore",
       "required": false
     },
@@ -5273,6 +5345,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_tfmg_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -5824,6 +5900,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:granite_treasure2_topaz_ore",
       "required": false
     },
@@ -6176,6 +6256,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:minecraft_blackstone_gold_ore",
       "required": false
     },
@@ -6393,6 +6477,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_chert_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -6952,6 +7040,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
@@ -7156,6 +7248,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_cgs_lead_ore",
       "required": false
     },
@@ -7261,6 +7357,10 @@
     },
     {
       "id": "seamlessores:quark_jasper_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -7504,6 +7604,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_treasure2_onyx_ore",
       "required": false
     },
@@ -7689,6 +7793,10 @@
     },
     {
       "id": "seamlessores:quark_shale_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -7889,6 +7997,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_argillite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -8524,6 +8636,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_theurgy_sal_ammoniac_ore",
       "required": false
     },
@@ -8772,6 +8888,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_treasure2_onyx_ore",
       "required": false
     },
@@ -8861,6 +8981,10 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_superbwarfare_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -9021,6 +9145,10 @@
     },
     {
       "id": "seamlessores:tfmg_galena_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -9197,6 +9325,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -9529,6 +9661,10 @@
     },
     {
       "id": "seamlessores:tuff_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -9984,6 +10120,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_theurgy_sal_ammoniac_ore",
       "required": false
     },
@@ -10325,6 +10465,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -10960,6 +11104,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:wilderwild_gabbro_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_bigreactors_yellorite_ore",
       "required": false
     },
@@ -11149,6 +11297,10 @@
     },
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_tfmg_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_thesilverage_silver_ore",
       "required": false
     }
   ]

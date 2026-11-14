@@ -116,6 +116,7 @@ PROFILES = {
             "railcraft": REFS + "railcraft-reborn-26.1.2-1.4.9.jar",
             "bronze": REFS + "bronze-neoforge-2.3.0+26.1.jar",
             "oritech": REFS + "oritech-2.0.0-exp12.jar",
+            "thesilverage": REFS + "thesilverage-neoforge-26.1.2-1.4.0.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -142,6 +143,7 @@ PROFILES = {
             "railcraft": ('neoforge',),
             "bronze": ('fabric', 'neoforge'),
             "oritech": ('neoforge',),
+            "thesilverage": ('fabric', 'neoforge'),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -171,6 +173,7 @@ PROFILES = {
             # Powah 8.0.1-alpha (NeoForge, 10 Nov 2026): the same ore blocks, worldgen and tags as 7.0.4 on
             # 26.1.2; the loot only drops bonus_rolls and a count of 1.
             "powah": REFS + "26.2-Powah-8.0.1-alpha.jar",
+            "thesilverage": REFS + "thesilverage-neoforge-26.2-1.4.0.jar",
         },
         "available": {
             "create": ("fabric",),
@@ -185,6 +188,7 @@ PROFILES = {
             "evilcraft": ("neoforge",),
             "betternether": ("fabric",),
             "denseores": ("fabric", "neoforge"),
+            "thesilverage": ('fabric', 'neoforge'),
         },
     },
     # 26.3 (data formats 121 and up): a new loot format, silk touch as a single "condition" (see
@@ -221,6 +225,7 @@ PROFILES = {
             # Powah 9.0.0-alpha (NeoForge, 11 Nov 2026): the same ore blocks, tags and features as 7.0.4 (26.3 writes
             # features flat under worldgen/feature); the loot only drops default fields.
             "powah": REFS + "26.3-Powah-9.0.0-alpha.jar",
+            "thesilverage": REFS + "thesilverage-neoforge-26.3-1.4.0.jar",
         },
         "available": {
             "powah": ("neoforge",),
@@ -231,6 +236,7 @@ PROFILES = {
             "theurgy": ("neoforge",),
             "evilcraft": ("neoforge",),
             "betternether": ("fabric",),
+            "thesilverage": ('fabric', 'neoforge'),
         },
     },
 }
@@ -464,6 +470,8 @@ MODS = {
                        "licence": "GPL-3.0", "author": "Khazoda"},
     "oritech": {"display": "Oritech", "category": "oritech",
                        "licence": "CC-BY-4.0", "author": "Rearth"},
+    "thesilverage": {"display": "The Silver Age", "category": "thesilverage",
+                       "licence": "MIT", "author": "PhantomWing"},
 }
 
 ORE_DEFS = [
@@ -940,6 +948,10 @@ ORE_DEFS = [
     {"name": "oritech_end_platinum", "overlay": "oritech_end_platinum", "source": "endstone_platinum_ore", "base": "end_stone",
      "mod": "oritech",
      "tiers": {"end": "endstone_platinum_ore"}},
+    # --- The Silver Age (mod id thesilverage, MIT): silver, a copy of gold ore, no XP; drawn apart in deepslate. Fabric and Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "thesilverage_silver", "overlay": "thesilverage_silver", "deepslate_overlay": "thesilverage_silver_deepslate", "source": "silver_ore", "base": "stone",
+     "mod": "thesilverage",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -1032,6 +1044,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "railcraft": ('neoforge',),
     "bronze": ('fabric', 'neoforge'),
     "oritech": ('neoforge',),
+    "thesilverage": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1198,6 +1211,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
         f"text.autoconfig.{MOD_ID}.category.oritech": "Oritech",
         f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
         f"text.autoconfig.{MOD_ID}.category.railcraftreborn": "Railcraft Reborn",
@@ -1224,6 +1238,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.theSilverAge": "The Silver Age: variants",
+        f"text.autoconfig.{MOD_ID}.option.theSilverAge.@Tooltip":
+            "Generate host-matched silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.oritech": "Oritech: variants",
         f"text.autoconfig.{MOD_ID}.option.oritech.@Tooltip":

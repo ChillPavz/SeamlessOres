@@ -1400,6 +1400,13 @@
     "techreborn:tungsten_ore"
    ]
   },
+  "thesilverage_silver": {
+   "mod": "thesilverage",
+   "forms": [
+    "thesilverage:silver_ore",
+    "thesilverage:deepslate_silver_ore"
+   ]
+  },
   "thorium": {
    "mod": "create_new_age",
    "forms": [
@@ -4815,6 +4822,12 @@
     ],
     "rate": 65.7
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 243.43
+   },
    "thunder_stone": {
     "where": [
      "1.20.1 fabric"
@@ -5206,6 +5219,12 @@
      "1.20.1 fabric"
     ],
     "rate": 220.28
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 156.62
    },
    "thorium": {
     "where": [
@@ -5605,6 +5624,12 @@
     ],
     "rate": 212.75
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 156.62
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric"
@@ -5930,6 +5955,12 @@
      "1.20.1 fabric"
     ],
     "rate": 8.71
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 65.14
    },
    "thunder_stone": {
     "where": [
@@ -6580,6 +6611,12 @@
      "1.20.1 forge"
     ],
     "rate": 35.98
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 163.93
    },
    "thunder_stone": {
     "where": [
@@ -7527,6 +7564,13 @@
      "1.20.1 fabric"
     ],
     "rate": 95.41
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 109.95
    },
    "thorium": {
     "where": [
@@ -8518,6 +8562,13 @@
     ],
     "rate": 95.41
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 140.58
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -9508,6 +9559,13 @@
     ],
     "rate": 126.76
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 146.08
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -10497,6 +10555,13 @@
      "1.20.1 fabric"
     ],
     "rate": 82.69
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 95.29
    },
    "thorium": {
     "where": [
@@ -11949,6 +12014,13 @@
     ],
     "rate": 80.02
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 126.25
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -12945,6 +13017,13 @@
     ],
     "rate": 90.21
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 103.96
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -13662,6 +13741,12 @@
     ],
     "rate": 4.57
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 13.75
+   },
    "thunder_stone": {
     "where": [
      "1.20.1 forge"
@@ -14359,6 +14444,12 @@
      "1.20.1 forge"
     ],
     "rate": 278.72
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 838.78
    },
    "thunder_stone": {
     "where": [
@@ -15058,6 +15149,12 @@
     ],
     "rate": 18.28
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 55.0
+   },
    "thunder_stone": {
     "where": [
      "1.20.1 forge"
@@ -15756,6 +15853,12 @@
     ],
     "rate": 168.33
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 560.01
+   },
    "thunder_stone": {
     "where": [
      "1.20.1 forge"
@@ -16322,6 +16425,12 @@
     ],
     "rate": 9.55
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 63.98
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -16871,6 +16980,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.18
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1.05
    },
    "thorium": {
     "where": [
@@ -17601,6 +17716,12 @@
      "1.20.1 forge"
     ],
     "rate": 5.59
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 34.27
    },
    "thorium": {
     "where": [
@@ -18521,6 +18642,12 @@
      "1.20.1 forge"
     ],
     "rate": 350.78
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 790.03
    },
    "thunder_stone": {
     "where": [
@@ -19468,6 +19595,13 @@
      "1.20.1 fabric"
     ],
     "rate": 21.36
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 47.41
    },
    "thorium": {
     "where": [
@@ -20459,6 +20593,13 @@
     ],
     "rate": 21.36
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 47.41
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -21448,6 +21589,13 @@
      "1.20.1 fabric"
     ],
     "rate": 21.36
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 47.41
    },
    "thorium": {
     "where": [
@@ -22560,6 +22708,13 @@
     ],
     "rate": 101.7
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 53.47
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -23501,6 +23656,13 @@
      "1.20.1 fabric"
     ],
     "rate": 0.97
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 8.16
    },
    "thorium": {
     "where": [
@@ -24492,6 +24654,13 @@
     ],
     "rate": 55.88
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 64.4
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -25481,6 +25650,13 @@
      "1.20.1 fabric"
     ],
     "rate": 35.44
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 108.91
    },
    "thorium": {
     "where": [
@@ -26668,6 +26844,13 @@
     ],
     "rate": 28.99
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 101.48
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -27512,6 +27695,13 @@
      "1.20.1 fabric"
     ],
     "rate": 218.48
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 48.83
    },
    "thorium": {
     "where": [
@@ -29802,6 +29992,12 @@
     ],
     "rate": 82.64
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 65.13
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric"
@@ -30193,6 +30389,12 @@
      "1.20.1 fabric"
     ],
     "rate": 82.64
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 65.13
    },
    "thorium": {
     "where": [
@@ -30832,6 +31034,12 @@
     ],
     "rate": 67.56
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 478.47
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -31464,6 +31672,12 @@
     ],
     "rate": 197.06
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 1395.54
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -32095,6 +32309,12 @@
      "1.20.1 forge"
     ],
     "rate": 67.56
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 478.47
    },
    "thorium": {
     "where": [
@@ -32914,6 +33134,13 @@
     ],
     "rate": 125.62
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 71.41
+   },
    "thorium": {
     "where": [
      "1.20.1 fabric",
@@ -33635,6 +33862,12 @@
      "1.20.1 forge"
     ],
     "rate": 29.48
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 136.13
    },
    "thorium": {
     "where": [
@@ -34358,6 +34591,12 @@
     ],
     "rate": 29.48
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 136.13
+   },
    "thorium": {
     "where": [
      "1.20.1 forge"
@@ -35079,6 +35318,12 @@
      "1.20.1 forge"
     ],
     "rate": 29.48
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 forge"
+    ],
+    "rate": 136.13
    },
    "thorium": {
     "where": [
@@ -36190,6 +36435,13 @@
     ],
     "rate": 60.8
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 171.75
+   },
    "thunder_stone": {
     "where": [
      "1.20.1 fabric",
@@ -37178,6 +37430,13 @@
      "1.20.1 fabric"
     ],
     "rate": 10.71
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 20.59
    },
    "thorium": {
     "where": [
@@ -39024,6 +39283,13 @@
      "1.20.1 fabric"
     ],
     "rate": 107.54
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.20.1 fabric",
+     "1.20.1 forge"
+    ],
+    "rate": 180.24
    },
    "thorium": {
     "where": [

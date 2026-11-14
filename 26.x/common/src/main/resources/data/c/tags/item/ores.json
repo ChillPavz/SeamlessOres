@@ -149,6 +149,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:andesite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_theurgy_sal_ammoniac_ore",
       "required": false
     },
@@ -1493,6 +1497,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_things_gleaming_ore",
       "required": false
     },
@@ -1838,6 +1846,10 @@
     },
     {
       "id": "seamlessores:granite_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -3018,6 +3030,10 @@
     },
     {
       "id": "seamlessores:tuff_tfmg_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
       "required": false
     },
     {

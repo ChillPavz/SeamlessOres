@@ -124,6 +124,10 @@
       "id": "seamlessores:granite_denseores_dense_emerald_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -212,6 +216,10 @@
       "id": "seamlessores:diorite_denseores_dense_emerald_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     "seamlessores:andesite_diamond_ore",
     "seamlessores:andesite_emerald_ore",
@@ -290,6 +298,10 @@
     },
     {
       "id": "seamlessores:andesite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
@@ -398,6 +410,10 @@
     },
     {
       "id": "seamlessores:tuff_denseores_dense_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
       "required": false
     },
     "seamlessores:dripstone_gold_ore",

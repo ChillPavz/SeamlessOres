@@ -392,6 +392,13 @@
     "mythicmetals:stormyx_ore"
    ]
   },
+  "thesilverage_silver": {
+   "mod": "thesilverage",
+   "forms": [
+    "thesilverage:silver_ore",
+    "thesilverage:deepslate_silver_ore"
+   ]
+  },
   "thorium": {
    "mod": "create_new_age",
    "forms": [
@@ -803,6 +810,12 @@
     ],
     "rate": 15.82
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 243.43
+   },
    "topaz": {
     "where": [
      "1.21.11 fabric"
@@ -948,6 +961,12 @@
      "1.21.11 fabric"
     ],
     "rate": 0.23
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 156.62
    },
    "tin": {
     "where": [
@@ -1095,6 +1114,12 @@
     ],
     "rate": 68.88
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 156.62
+   },
    "tin": {
     "where": [
      "1.21.11 fabric"
@@ -1192,6 +1217,12 @@
      "1.21.11 fabric"
     ],
     "rate": 5.82
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 65.14
    },
    "topaz": {
     "where": [
@@ -1338,6 +1369,12 @@
      "1.21.11 fabric"
     ],
     "rate": 26.93
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 109.95
    },
    "tin": {
     "where": [
@@ -1491,6 +1528,12 @@
     ],
     "rate": 26.93
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 109.95
+   },
    "tin": {
     "where": [
      "1.21.11 fabric"
@@ -1643,6 +1686,12 @@
     ],
     "rate": 35.78
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 146.08
+   },
    "tin": {
     "where": [
      "1.21.11 fabric"
@@ -1794,6 +1843,12 @@
      "1.21.11 fabric"
     ],
     "rate": 23.34
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 95.29
    },
    "tin": {
     "where": [
@@ -2021,6 +2076,12 @@
     ],
     "rate": 38.83
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 92.22
+   },
    "tin": {
     "where": [
      "1.21.11 fabric"
@@ -2172,6 +2233,12 @@
      "1.21.11 fabric"
     ],
     "rate": 25.46
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 103.96
    },
    "tin": {
     "where": [
@@ -2487,6 +2554,13 @@
     ],
     "rate": 0.7
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 8.16
+   },
    "thorium": {
     "where": [
      "1.21.11 neoforge"
@@ -2664,6 +2738,12 @@
     ],
     "rate": 15.77
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 64.4
+   },
    "tin": {
     "where": [
      "1.21.11 fabric"
@@ -2815,6 +2895,12 @@
      "1.21.11 fabric"
     ],
     "rate": 10.0
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 40.84
    },
    "tin": {
     "where": [
@@ -3004,6 +3090,12 @@
     ],
     "rate": 13.46
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 33.41
+   },
    "tin": {
     "where": [
      "1.21.11 fabric"
@@ -3155,6 +3247,12 @@
      "1.21.11 fabric"
     ],
     "rate": 0.17
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 125.12
    },
    "tin": {
     "where": [
@@ -3308,6 +3406,12 @@
     ],
     "rate": 0.26
    },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 125.12
+   },
    "tin": {
     "where": [
      "1.21.11 fabric"
@@ -3441,6 +3545,12 @@
      "1.21.11 fabric"
     ],
     "rate": 3.01
+   },
+   "thesilverage_silver": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 16.24
    },
    "tin": {
     "where": [

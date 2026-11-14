@@ -341,6 +341,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -589,6 +593,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_sulfurpotassiummod_sulfur_ore",
       "required": false
     },
@@ -634,6 +642,10 @@
     },
     {
       "id": "seamlessores:blockus_viridite_oritech_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -845,6 +857,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_hazennstuff_dreadstone_ore",
       "required": false
     },
@@ -965,6 +981,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_hazennstuff_dreadstone_ore",
       "required": false
     },
@@ -1030,6 +1050,10 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_oritech_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -1253,6 +1277,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_grimestone_iron_ore",
       "required": false
     },
@@ -1441,6 +1469,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_iron_ore",
       "required": false
     },
@@ -1594,6 +1626,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_thesilverage_silver_ore",
       "required": false
     }
   ]

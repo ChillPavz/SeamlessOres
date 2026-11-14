@@ -18,6 +18,10 @@
       "id": "seamlessores:granite_mekanism_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
     {
@@ -28,6 +32,10 @@
       "id": "seamlessores:diorite_mekanism_uranium_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
     {
@@ -36,6 +44,10 @@
     },
     {
       "id": "seamlessores:andesite_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
     "seamlessores:tuff_iron_ore",
@@ -50,6 +62,10 @@
     },
     {
       "id": "seamlessores:tuff_mekanism_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
       "required": false
     },
     "seamlessores:dripstone_iron_ore",
@@ -83,11 +99,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -99,6 +123,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_bluestone_iron_ore",
       "required": false
     },
@@ -107,11 +135,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_bluestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:blockus_viridite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -127,11 +163,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:create_scoria_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -147,11 +191,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:calcite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:smooth_basalt_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:smooth_basalt_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -163,11 +215,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_bauxite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_galena_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:tfmg_galena_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -179,11 +239,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:tfmg_lignite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:twigs_rhyolite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -195,11 +263,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:born_in_chaos_v1_black_argillite_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -211,11 +287,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:embellishcraft_slate_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -235,6 +319,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_iron_ore",
       "required": false
     },
@@ -251,11 +339,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_larvikite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_limestone_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:quark_limestone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -267,6 +363,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_jasper_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_shale_iron_ore",
       "required": false
     },
@@ -275,7 +375,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_shale_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:forbidden_arcanus_darkstone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -319,6 +431,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_iron_ore",
       "required": false
     },
@@ -327,11 +443,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:spawn_reefstone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -415,11 +539,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_darkslate_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:darkerdepths_darkslate_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_darkslate_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -431,11 +563,23 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_iron_ore",
       "required": false
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_copper_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_thesilverage_silver_ore",
       "required": false
     },
     {

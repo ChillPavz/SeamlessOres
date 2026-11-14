@@ -197,6 +197,9 @@ public final class SeamlessOresConfig {
     /** Whether Oritech variants generate. Pure restyle. */
     public static boolean oritech = true;
 
+    /** Whether The Silver Age variants generate. Pure restyle. */
+    public static boolean theSilverAge = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -237,6 +240,7 @@ public final class SeamlessOresConfig {
             case "railcraft" -> railcraftReborn;
             case "bronze" -> bronze;
             case "oritech" -> oritech;
+            case "thesilverage" -> theSilverAge;
             default -> true;
         };
     }
@@ -431,6 +435,7 @@ public final class SeamlessOresConfig {
         public boolean railcraftReborn = true;
         public boolean bronze = true;
         public boolean oritech = true;
+        public boolean theSilverAge = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -493,6 +498,7 @@ public final class SeamlessOresConfig {
         railcraftReborn = values.railcraftReborn;
         bronze = values.bronze;
         oritech = values.oritech;
+        theSilverAge = values.theSilverAge;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

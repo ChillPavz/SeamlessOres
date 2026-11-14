@@ -381,6 +381,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -653,6 +657,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -710,6 +718,10 @@
     },
     {
       "id": "seamlessores:blockus_viridite_cobblemon_leaf_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -909,6 +921,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:born_in_chaos_v1_black_argillite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_basalt_silentcompat_voidmetal_ore",
       "required": false
     },
@@ -1018,6 +1034,10 @@
     },
     {
       "id": "seamlessores:forbidden_arcanus_darkstone_projectred_exploration_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -1245,6 +1265,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_darkslate_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_grimestone_iron_ore",
       "required": false
     },
@@ -1433,6 +1457,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:darkerdepths_grimestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_aridrock_iron_ore",
       "required": false
     },
@@ -1582,6 +1610,10 @@
     },
     {
       "id": "seamlessores:darkerdepths_aridrock_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:darkerdepths_aridrock_thesilverage_silver_ore",
       "required": false
     }
   ]

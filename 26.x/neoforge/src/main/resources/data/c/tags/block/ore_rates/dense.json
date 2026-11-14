@@ -41,6 +41,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -73,6 +77,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -98,6 +106,10 @@
     },
     {
       "id": "seamlessores:andesite_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -138,6 +150,10 @@
     },
     {
       "id": "seamlessores:tuff_railcraft_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
       "required": false
     },
     {

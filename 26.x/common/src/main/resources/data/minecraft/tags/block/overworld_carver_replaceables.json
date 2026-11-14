@@ -2,12 +2,28 @@
   "values": [
     "seamlessores:granite_iron_ore",
     "seamlessores:granite_copper_ore",
+    {
+      "id": "seamlessores:granite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
+    {
+      "id": "seamlessores:diorite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
+    {
+      "id": "seamlessores:andesite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:tuff_iron_ore",
     "seamlessores:tuff_copper_ore",
+    {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
     {

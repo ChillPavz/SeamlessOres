@@ -1421,6 +1421,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(5, 10), null, false, Set.of())
             .withStrength(3.0F, 3.0F);
 
+    // --- The Silver Age (mod id thesilverage, MIT): silver, a copy of gold ore, no XP; drawn apart in deepslate. Fabric and Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    public static final OreType TSA_SILVER = ore(
+            "thesilverage_silver", "thesilverage_silver", "thesilverage_silver_deepslate", "thesilverage",
+            of("thesilverage", "silver_ore"), of("thesilverage", "deepslate_silver_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1483,7 +1490,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     JEG_BRIMSTONE, JEG_SCRAP,
                     CGS_LEAD, CGS_SULFUR,
                     BRZ_TIN,
-                    MIM_DIVE_AQUAMARINE, MIM_DIVINE_BERYL, MIM_FIRE_RUBY, MIM_HASTE_PERIDOT, MIM_ICE_SAPPHIRE, MIM_LUCKY_CITRINE, MIM_SPIDER_KUNZITE, MIM_SPIRIT_GARNET, MIM_UNBREAKING_IOLITE, MIM_HEART_RHODONITE, MIM_KINETIC_OPAL, MIM_POWER_PYRITE);
+                    MIM_DIVE_AQUAMARINE, MIM_DIVINE_BERYL, MIM_FIRE_RUBY, MIM_HASTE_PERIDOT, MIM_ICE_SAPPHIRE, MIM_LUCKY_CITRINE, MIM_SPIDER_KUNZITE, MIM_SPIRIT_GARNET, MIM_UNBREAKING_IOLITE, MIM_HEART_RHODONITE, MIM_KINETIC_OPAL, MIM_POWER_PYRITE,
+                    TSA_SILVER);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

@@ -63,7 +63,8 @@
     "railcraft:tunnel_bore_mineable_blocks": "",
     "jeg:metal": "",
     "jeg:stone": "",
-    "elementalcraft:pure_ores/*": "Elemental Craft's ore purifier input lists: the variant is purified like its source ore (owner's source parity, 10 Nov 2026)"
+    "elementalcraft:pure_ores/*": "Elemental Craft's ore purifier input lists: the variant is purified like its source ore (owner's source parity, 10 Nov 2026)",
+    "thesilverage:silver_blocks": "The Silver Age: every silver block, the ores included (its silver behaviour reads it)"
   },
   "skip": {
     "iceandfire:*dragon_cave*": "Ice and Fire PLACES blocks from these lists in dragon caves: our variants would appear there",

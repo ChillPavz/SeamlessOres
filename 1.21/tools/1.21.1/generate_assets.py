@@ -162,7 +162,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "projectred_exploration": jar("ProjectRed-1.21.1-4.23.0-exploration.jar"),
             "cgs": jar("create-gunsmithing-1.21.1-1.4.9.jar"),
             "bronze": jar("bronze-neoforge-1.21.1-2.0.6.jar"),
-            "oritech": jar("oritech-neoforge-1.21.1-1.2.13.jar")}
+            "oritech": jar("oritech-neoforge-1.21.1-1.2.13.jar"),
+            "thesilverage": jar("thesilverage-neoforge-1.21.1-1.4.0.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -467,6 +468,8 @@ MODS = {
                        "licence": "GPL-3.0", "author": "Khazoda"},
     "oritech": {"display": "Oritech", "category": "oritech",
                        "licence": "CC-BY-4.0", "author": "Rearth"},
+    "thesilverage": {"display": "The Silver Age", "category": "thesilverage",
+                       "licence": "MIT", "author": "PhantomWing"},
 }
 
 ORE_DEFS = [
@@ -1356,6 +1359,10 @@ ORE_DEFS = [
     {"name": "oritech_end_platinum", "overlay": "oritech_end_platinum", "source": "endstone_platinum_ore", "base": "end_stone",
      "mod": "oritech",
      "tiers": {"end": "endstone_platinum_ore"}},
+    # --- The Silver Age (mod id thesilverage, MIT): silver, a copy of gold ore, no XP; drawn apart in deepslate. Fabric and Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "thesilverage_silver", "overlay": "thesilverage_silver", "deepslate_overlay": "thesilverage_silver_deepslate", "source": "silver_ore", "base": "stone",
+     "mod": "thesilverage",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1505,6 +1512,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "cgs": ('neoforge',),
     "bronze": ('fabric', 'neoforge'),
     "oritech": ('fabric', 'neoforge'),
+    "thesilverage": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1616,6 +1624,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
         f"text.autoconfig.{MOD_ID}.category.oritech": "Oritech",
         f"text.autoconfig.{MOD_ID}.category.bronze": "Bronze",
         f"text.autoconfig.{MOD_ID}.category.creategunsmithing": "Create: Gunsmithing",
@@ -1664,6 +1673,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.theSilverAge": "The Silver Age: variants",
+        f"text.autoconfig.{MOD_ID}.option.theSilverAge.@Tooltip":
+            "Generate host-matched silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.oritech": "Oritech: variants",
         f"text.autoconfig.{MOD_ID}.option.oritech.@Tooltip":

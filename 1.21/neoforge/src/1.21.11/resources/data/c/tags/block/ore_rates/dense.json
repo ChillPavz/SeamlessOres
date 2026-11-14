@@ -41,6 +41,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -73,6 +77,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:diorite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:andesite_densemekanism_dense_lead_ore",
       "required": false
     },
@@ -94,6 +102,10 @@
     },
     {
       "id": "seamlessores:andesite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -130,6 +142,10 @@
     },
     {
       "id": "seamlessores:tuff_denseores_dense_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -190,6 +206,54 @@
     },
     {
       "id": "seamlessores:blackstone_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_thesilverage_silver_ore",
       "required": false
     },
     {

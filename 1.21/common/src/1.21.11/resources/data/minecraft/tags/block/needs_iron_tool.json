@@ -76,6 +76,10 @@
       "id": "seamlessores:granite_denseores_dense_emerald_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -118,6 +122,10 @@
     },
     {
       "id": "seamlessores:diorite_denseores_dense_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_thesilverage_silver_ore",
       "required": false
     },
     "seamlessores:andesite_gold_ore",
@@ -166,6 +174,10 @@
     },
     {
       "id": "seamlessores:andesite_denseores_dense_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
@@ -238,6 +250,10 @@
     },
     {
       "id": "seamlessores:tuff_denseores_dense_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_thesilverage_silver_ore",
       "required": false
     },
     "seamlessores:dripstone_gold_ore",
@@ -316,6 +332,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_gold_ore",
       "required": false
     },
@@ -329,6 +349,10 @@
     },
     {
       "id": "seamlessores:blockus_limestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -348,6 +372,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_bluestone_gold_ore",
       "required": false
     },
@@ -364,6 +392,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_bluestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_gold_ore",
       "required": false
     },
@@ -373,6 +405,10 @@
     },
     {
       "id": "seamlessores:blockus_viridite_mythicupgrades_peridot_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -401,6 +437,10 @@
     },
     {
       "id": "seamlessores:create_limestone_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -444,6 +484,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:calcite_gold_ore",
       "required": false
     },
@@ -457,6 +501,10 @@
     },
     {
       "id": "seamlessores:calcite_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -488,6 +536,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_asphalt_gold_ore",
       "required": false
     },
@@ -497,6 +549,10 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_mythicupgrades_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -516,11 +572,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_gold_ore",
       "required": false
     },
     {
       "id": "seamlessores:wilderwild_gabbro_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_thesilverage_silver_ore",
       "required": false
     },
     {

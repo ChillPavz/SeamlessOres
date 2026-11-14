@@ -440,6 +440,10 @@
       "id": "seamlessores:granite_miningmaster_spirit_garnet_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -760,6 +764,10 @@
       "id": "seamlessores:diorite_miningmaster_lucky_citrine_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_thesilverage_silver_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -1066,6 +1074,10 @@
     },
     {
       "id": "seamlessores:andesite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_thesilverage_silver_ore",
       "required": false
     },
     "seamlessores:dripstone_coal_ore",
@@ -1456,6 +1468,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_iron_ore",
       "required": false
     },
@@ -1616,6 +1632,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_bluestone_iron_ore",
       "required": false
     },
@@ -1705,6 +1725,10 @@
     },
     {
       "id": "seamlessores:blockus_bluestone_cobblemon_thunder_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -2108,6 +2132,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_ochrum_gold_ore",
       "required": false
     },
@@ -2452,6 +2480,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scoria_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_veridium_copper_ore",
       "required": false
     },
@@ -2709,6 +2741,10 @@
     },
     {
       "id": "seamlessores:calcite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:calcite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -3012,6 +3048,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:smooth_basalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:tfmg_bauxite_iron_ore",
       "required": false
     },
@@ -3097,6 +3137,10 @@
     },
     {
       "id": "seamlessores:tfmg_bauxite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_bauxite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -3261,6 +3305,10 @@
     },
     {
       "id": "seamlessores:tfmg_galena_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_galena_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -3441,6 +3489,10 @@
     },
     {
       "id": "seamlessores:tfmg_lignite_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tfmg_lignite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -3757,6 +3809,10 @@
     },
     {
       "id": "seamlessores:twigs_rhyolite_miningmaster_spirit_garnet_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -4144,6 +4200,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_bloodstone_cobblemon_fire_stone_ore",
       "required": false
     },
@@ -4380,6 +4440,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_basalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_slate_iron_ore",
       "required": false
     },
@@ -4565,6 +4629,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_slate_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -4912,6 +4980,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:embellishcraft_gneiss_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:embellishcraft_jade_iron_ore",
       "required": false
     },
@@ -5053,6 +5125,10 @@
     },
     {
       "id": "seamlessores:embellishcraft_larvikite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_larvikite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -5288,6 +5364,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:quark_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:quark_jasper_iron_ore",
       "required": false
     },
@@ -5389,6 +5469,10 @@
     },
     {
       "id": "seamlessores:quark_jasper_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_jasper_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -5573,6 +5657,10 @@
     },
     {
       "id": "seamlessores:quark_shale_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_shale_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -5884,6 +5972,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:mythicupgrades_aquamarine_schist_iron_ore",
       "required": false
     },
@@ -6088,6 +6180,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_asphalt_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_iron_ore",
       "required": false
     },
@@ -6185,6 +6281,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_cobblemon_water_stone_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -6493,6 +6593,10 @@
     },
     {
       "id": "seamlessores:spawn_reefstone_miningmaster_lucky_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:spawn_reefstone_thesilverage_silver_ore",
       "required": false
     },
     {
@@ -7668,6 +7772,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_thesilverage_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:darkerdepths_darkslate_iceandfire_sapphire_ore",
       "required": false
     },
@@ -7797,6 +7905,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_chert_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_thesilverage_silver_ore",
       "required": false
     },
     {

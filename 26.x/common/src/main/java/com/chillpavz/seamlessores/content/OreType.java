@@ -686,6 +686,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
             NONE, null, false, Set.of());
     public static final OreType OT_END_PLATINUM = endForm("oritech_end_platinum", "oritech_end_platinum", "oritech", "endstone_platinum_ore", NONE);
 
+    // --- The Silver Age (mod id thesilverage, MIT): silver, a copy of gold ore, no XP; drawn apart in deepslate. Fabric and Forge at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    public static final OreType TSA_SILVER = ore(
+            "thesilverage_silver", "thesilverage_silver", "thesilverage_silver_deepslate", "thesilverage",
+            of("thesilverage", "silver_ore"), of("thesilverage", "deepslate_silver_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -715,7 +722,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TR_PERIDOT, TR_SHELDONITE, TR_SODALITE, TR_TUNGSTEN, MU_JADE, MM_END_STARRITE,
                     RC_LEAD, RC_NICKEL, RC_SILVER, RC_SULFUR, RC_TIN, RC_ZINC,
                     BRZ_TIN,
-                    OT_NICKEL, OT_PLATINUM, OT_END_PLATINUM);
+                    OT_NICKEL, OT_PLATINUM, OT_END_PLATINUM,
+                    TSA_SILVER);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 
