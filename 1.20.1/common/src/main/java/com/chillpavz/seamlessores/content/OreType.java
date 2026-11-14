@@ -1492,26 +1492,34 @@ public record OreType(String name, String key, String overlay, String deepslateO
             .withStrength(7.0F, 3.0F);
 
     // --- The Deep Void (mod id the_deep_void, MIT): its dimension's ores in deepslate, tuff and its ancient deepslate; tuff takes variants. Its game ores, bloodstone and dark steel replace deepslate only: no variants. Voidrium draws umbrium_ore. Forge at 1.20.1 ---
+    // The Deep Void spawns its ores' experience from break procedures (6-8, lavendite and sulfur 4-6, voidrium
+    // 8-11, none with Silk Touch), read from its 1.99.5 bytecode; strength likewise. Sulfur and voidrium also
+    // behave as their sources do (DeepVoidOreBlock).
     public static final OreType TDV_BISMUTH = ore(
             "the_deep_void_bismuth", "the_deep_void_bismuth", null, "the_deep_void",
             null, of("the_deep_void", "bismuth_ore"), null,
-            NONE, null, false, Set.of());
+            UniformInt.of(6, 8), null, false, Set.of())
+            .withStrength(4.5F, 6.0F);
     public static final OreType TDV_LAVENDITE = ore(
             "the_deep_void_lavendite", "the_deep_void_lavendite", null, "the_deep_void",
             null, of("the_deep_void", "lavendite_ore"), null,
-            NONE, null, false, Set.of());
+            UniformInt.of(4, 6), null, false, Set.of())
+            .withStrength(4.0F, 4.0F);
     public static final OreType TDV_ONYX = ore(
             "the_deep_void_onyx", "the_deep_void_onyx", null, "the_deep_void",
             null, of("the_deep_void", "onyx_ore"), null,
-            NONE, null, false, Set.of());
+            UniformInt.of(6, 8), null, false, Set.of())
+            .withStrength(4.5F, 6.0F);
     public static final OreType TDV_SULFUR = ore(
             "the_deep_void_sulfur", "the_deep_void_sulfur", null, "the_deep_void",
             null, of("the_deep_void", "sulfur_ore"), null,
-            NONE, null, false, Set.of());
+            UniformInt.of(4, 6), null, false, Set.of())
+            .withStrength(4.5F, 6.0F);
     public static final OreType TDV_VOIDRIUM = ore(
             "the_deep_void_voidrium", "the_deep_void_voidrium", null, "the_deep_void",
             null, of("the_deep_void", "voidrium_ore"), null,
-            NONE, null, false, Set.of());
+            UniformInt.of(8, 11), null, false, Set.of())
+            .withStrength(15.0F, 6.0F);
 
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,

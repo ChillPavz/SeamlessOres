@@ -248,6 +248,8 @@ public final class SeamlessOresContent {
                 ? new HostedRedStoneOreBlock(variant.host(), properties)
                 : TrapOreBlock.handles(variant.ore())
                 ? new TrapOreBlock(variant, variant.ore().xpFor(variant.host()), properties)
+                : DeepVoidOreBlock.handles(variant.ore())
+                ? new DeepVoidOreBlock(variant, variant.ore().xpFor(variant.host()), properties)
                 : new HostedOreBlock(variant, variant.ore().xpFor(variant.host()), properties);
     }
 }
