@@ -46,6 +46,17 @@ ALIASES.update({
     "miningmaster_heart_rhodonite": "manganese", "miningmaster_ice_sapphire": "silents_sapphire",
     "miningmaster_kinetic_opal": "opal", "miningmaster_spider_kunzite": "electrodynamics_lithium",
     "miningmaster_spirit_garnet": "garnet", "miningmaster_unbreaking_iolite": "iolite"})
+# The ore mods of GitHub issue #7's update (14 Nov 2026, decided by me on the same pattern; the owner may
+# overrule): real minerals join their families; SimpleOres' mythril and adamantium are Mythic Metals' lore
+# (the same fantasy metals, the deepest and the dwarven one). Gems and Crystals' quartz and The Deep Void's
+# bismuth join no family (none filters them).
+ALIASES.update({
+    "thesilverage_silver": "electrodynamics_silver", "clutter_silver": "electrodynamics_silver",
+    "theleadage_lead": "electrodynamics_lead", "gemsandcrystals_amethyst": "amethyst",
+    "gemsandcrystals_ruby": "silents_ruby", "gemsandcrystals_sapphire": "silents_sapphire",
+    "gemsandcrystals_topaz": "silents_topaz", "stellaris_titanium": "electrodynamics_titanium",
+    "simpleores_tin": "electrodynamics_tin", "simpleores_mythril": "mythril", "simpleores_adamantium": "adamantite",
+    "the_deep_void_sulfur": "electrodynamics_sulfur"})
 
 
 def _with_aliases(keys):
@@ -274,7 +285,8 @@ FICTION = set("redstone adamantite aquarium banglum carmot kyber midas_gold mork
               "iter_rpg_magmanum betternether_cincinnasite denseores_ancient_nether "
               "denseores_redstone betternether_nether_redstone".split())
 FICTION |= {a for a, base in ALIASES.items() if base in FICTION}
-FICTION |= {"tconstruct_cobalt", "treasure2_onyx", "jeg_scrap", "elementalcraft_inert_crystal"}
+FICTION |= {"tconstruct_cobalt", "treasure2_onyx", "jeg_scrap", "elementalcraft_inert_crystal",
+            "simpleores_onyx", "the_deep_void_onyx", "the_deep_void_lavendite", "the_deep_void_voidrium"}
 
 # Create's four invented stones each keep only the ore Create ties them to (owner), plus the invented ores
 # whose lore matches (FICTION_LORE).
@@ -385,6 +397,13 @@ FICTION_LORE.update({
     # Elemental Craft (approved 10 Nov 2026): "Some strange crystals" that later take up elements, grown, not
     # erupted: coarse crystalline rock only, as dimensional shard and power crystal
     "elementalcraft_inert_crystal": ("PLUT FELS SCH MARB CALC", "G D", ""),
+    # Issue #7's update (14 Nov 2026, decided by me; the owner may overrule). Onyx is chalcedony: SimpleOres'
+    # is a Nether ore, in lava rock; The Deep Void's lies in deepslate and tuff, and chalcedony fills tuff too.
+    "simpleores_onyx": ("VOLC FELS", "B Bs", ""),
+    "the_deep_void_onyx": ("VOLC FELS LIME", "A T", ""),
+    # The Deep Void's own: a lavender crystal of its deep caves, and the void's metal (as voidmetal)
+    "the_deep_void_lavendite": ("PLUT SCH FELS", "T", ""),
+    "the_deep_void_voidrium": ("PLUT VOLC SERP", "T", _DARK),
 })
 if set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS):
     raise SystemExit(f"geology.py: invented ores with no lore: {sorted(set(FICTION) - set(FICTION_LORE) - set(COBBLEMON_KEEPS))}")
