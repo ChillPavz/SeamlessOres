@@ -369,50 +369,50 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Electrodynamics Aluminum | `granite_electrodynamics_aluminum_ore` | `diorite_electrodynamics_aluminum_ore` | `andesite_electrodynamics_aluminum_ore` | `tuff_electrodynamics_aluminum_ore` | `dripstone_electrodynamics_aluminum_ore` |
-| Electrodynamics Fluorite | `granite_electrodynamics_fluorite_ore` |   |   | `tuff_electrodynamics_fluorite_ore` | `dripstone_electrodynamics_fluorite_ore` |
-| Electrodynamics Lead | `granite_electrodynamics_lead_ore` | `diorite_electrodynamics_lead_ore` | `andesite_electrodynamics_lead_ore` | `tuff_electrodynamics_lead_ore` | `dripstone_electrodynamics_lead_ore` |
-| Electrodynamics Lithium | `granite_electrodynamics_lithium_ore` |   |   | `tuff_electrodynamics_lithium_ore` |   |
-| Electrodynamics Molybdenum | `granite_electrodynamics_molybdenum_ore` |   | `andesite_electrodynamics_molybdenum_ore` |   |   |
-| Electrodynamics Monazite | `granite_electrodynamics_monazite_ore` |   |   |   |   |
-| Electrodynamics Silver | `granite_electrodynamics_silver_ore` | `diorite_electrodynamics_silver_ore` | `andesite_electrodynamics_silver_ore` | `tuff_electrodynamics_silver_ore` |   |
-| Electrodynamics Thorium | `granite_electrodynamics_thorium_ore` |   |   |   |   |
-| Electrodynamics Tin | `granite_electrodynamics_tin_ore` |   |   |   |   |
-| Electrodynamics Uranium | `granite_electrodynamics_uranium_ore` | `diorite_electrodynamics_uranium_ore` | `andesite_electrodynamics_uranium_ore` | `tuff_electrodynamics_uranium_ore` | `dripstone_electrodynamics_uranium_ore` |
-| Electrodynamics Titanium |   | `diorite_electrodynamics_titanium_ore` | `andesite_electrodynamics_titanium_ore` |   |   |
-| Electrodynamics Vanadium |   | `diorite_electrodynamics_vanadium_ore` |   |   |   |
-| Electrodynamics Sulfur |   |   | `andesite_electrodynamics_sulfur_ore` | `tuff_electrodynamics_sulfur_ore` |   |
-| Electrodynamics Niter |   |   |   |   | `dripstone_electrodynamics_niter_ore` |
-| Electrodynamics Salt |   |   |   |   | `dripstone_electrodynamics_salt_ore` |
-| Electrodynamics Sylvite |   |   |   |   | `dripstone_electrodynamics_sylvite_ore` |
+| Aluminum | `granite_electrodynamics_aluminum_ore` | `diorite_electrodynamics_aluminum_ore` | `andesite_electrodynamics_aluminum_ore` | `tuff_electrodynamics_aluminum_ore` | `dripstone_electrodynamics_aluminum_ore` |
+| Fluorite | `granite_electrodynamics_fluorite_ore` |   |   | `tuff_electrodynamics_fluorite_ore` | `dripstone_electrodynamics_fluorite_ore` |
+| Lead | `granite_electrodynamics_lead_ore` | `diorite_electrodynamics_lead_ore` | `andesite_electrodynamics_lead_ore` | `tuff_electrodynamics_lead_ore` | `dripstone_electrodynamics_lead_ore` |
+| Lithium | `granite_electrodynamics_lithium_ore` |   |   | `tuff_electrodynamics_lithium_ore` |   |
+| Molybdenum | `granite_electrodynamics_molybdenum_ore` |   | `andesite_electrodynamics_molybdenum_ore` |   |   |
+| Monazite | `granite_electrodynamics_monazite_ore` |   |   |   |   |
+| Silver | `granite_electrodynamics_silver_ore` | `diorite_electrodynamics_silver_ore` | `andesite_electrodynamics_silver_ore` | `tuff_electrodynamics_silver_ore` |   |
+| Thorium | `granite_electrodynamics_thorium_ore` |   |   |   |   |
+| Tin | `granite_electrodynamics_tin_ore` |   |   |   |   |
+| Uranium | `granite_electrodynamics_uranium_ore` | `diorite_electrodynamics_uranium_ore` | `andesite_electrodynamics_uranium_ore` | `tuff_electrodynamics_uranium_ore` | `dripstone_electrodynamics_uranium_ore` |
+| Titanium |   | `diorite_electrodynamics_titanium_ore` | `andesite_electrodynamics_titanium_ore` |   |   |
+| Vanadium |   | `diorite_electrodynamics_vanadium_ore` |   |   |   |
+| Sulfur |   |   | `andesite_electrodynamics_sulfur_ore` | `tuff_electrodynamics_sulfur_ore` |   |
+| Niter |   |   |   |   | `dripstone_electrodynamics_niter_ore` |
+| Salt |   |   |   |   | `dripstone_electrodynamics_salt_ore` |
+| Sylvite |   |   |   |   | `dripstone_electrodynamics_sylvite_ore` |
 
 **BetterNether, Nether, requires `betternether`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Betternether Cincinnasite | `basalt_betternether_cincinnasite_ore` | `blackstone_betternether_cincinnasite_ore` |
-| Betternether Nether Ruby | `basalt_betternether_nether_ruby_ore` | `blackstone_betternether_nether_ruby_ore` |
+| Cincinnasite | `basalt_betternether_cincinnasite_ore` | `blackstone_betternether_cincinnasite_ore` |
+| Nether Ruby | `basalt_betternether_nether_ruby_ore` | `blackstone_betternether_nether_ruby_ore` |
 
 **Dense Ores, Overworld, requires `denseores`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Denseores Copper | `granite_denseores_dense_copper_ore` | `diorite_denseores_dense_copper_ore` | `andesite_denseores_dense_copper_ore` | `tuff_denseores_dense_copper_ore` | `dripstone_denseores_dense_copper_ore` |
-| Denseores Iron | `granite_denseores_dense_iron_ore` | `diorite_denseores_dense_iron_ore` | `andesite_denseores_dense_iron_ore` | `tuff_denseores_dense_iron_ore` | `dripstone_denseores_dense_iron_ore` |
-| Denseores Gold | `granite_denseores_dense_gold_ore` | `diorite_denseores_dense_gold_ore` | `andesite_denseores_dense_gold_ore` | `tuff_denseores_dense_gold_ore` |   |
-| Denseores Lapis Lazuli | `granite_denseores_dense_lapis_ore` | `diorite_denseores_dense_lapis_ore` |   |   |   |
-| Denseores Redstone | `granite_denseores_dense_redstone_ore` | `diorite_denseores_dense_redstone_ore` | `andesite_denseores_dense_redstone_ore` | `tuff_denseores_dense_redstone_ore` |   |
-| Denseores Emerald | `granite_denseores_dense_emerald_ore` | `diorite_denseores_dense_emerald_ore` |   |   |   |
-| Denseores Coal |   |   |   | `tuff_denseores_dense_coal_ore` |   |
-| Denseores Diamond |   |   |   | `tuff_denseores_dense_diamond_ore` |   |
+| Dense Copper | `granite_denseores_dense_copper_ore` | `diorite_denseores_dense_copper_ore` | `andesite_denseores_dense_copper_ore` | `tuff_denseores_dense_copper_ore` | `dripstone_denseores_dense_copper_ore` |
+| Dense Iron | `granite_denseores_dense_iron_ore` | `diorite_denseores_dense_iron_ore` | `andesite_denseores_dense_iron_ore` | `tuff_denseores_dense_iron_ore` | `dripstone_denseores_dense_iron_ore` |
+| Dense Gold | `granite_denseores_dense_gold_ore` | `diorite_denseores_dense_gold_ore` | `andesite_denseores_dense_gold_ore` | `tuff_denseores_dense_gold_ore` |   |
+| Dense Lapis Lazuli | `granite_denseores_dense_lapis_ore` | `diorite_denseores_dense_lapis_ore` |   |   |   |
+| Dense Redstone | `granite_denseores_dense_redstone_ore` | `diorite_denseores_dense_redstone_ore` | `andesite_denseores_dense_redstone_ore` | `tuff_denseores_dense_redstone_ore` |   |
+| Dense Emerald | `granite_denseores_dense_emerald_ore` | `diorite_denseores_dense_emerald_ore` |   |   |   |
+| Dense Coal |   |   |   | `tuff_denseores_dense_coal_ore` |   |
+| Dense Diamond |   |   |   | `tuff_denseores_dense_diamond_ore` |   |
 
 **Dense Ores, Nether, requires `denseores`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Denseores Nether Gold | `basalt_denseores_dense_nether_gold_ore` | `blackstone_denseores_dense_nether_gold_ore` |
-| Denseores Nether Quartz | `basalt_denseores_dense_nether_quartz_ore` | `blackstone_denseores_dense_nether_quartz_ore` |
-| Denseores Ancient Nether | `basalt_denseores_ancient_nether_ore` | `blackstone_denseores_ancient_nether_ore` |
+| Dense Nether Gold | `basalt_denseores_dense_nether_gold_ore` | `blackstone_denseores_dense_nether_gold_ore` |
+| Dense Nether Quartz | `basalt_denseores_dense_nether_quartz_ore` | `blackstone_denseores_dense_nether_quartz_ore` |
+| Ancient Nether | `basalt_denseores_ancient_nether_ore` | `blackstone_denseores_ancient_nether_ore` |
 
 **Basic Nether Ores, Nether, requires `bno`**
 
@@ -497,41 +497,41 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Thesilverage Silver | `granite_thesilverage_silver_ore` | `diorite_thesilverage_silver_ore` | `andesite_thesilverage_silver_ore` | `tuff_thesilverage_silver_ore` |
+| Silver | `granite_thesilverage_silver_ore` | `diorite_thesilverage_silver_ore` | `andesite_thesilverage_silver_ore` | `tuff_thesilverage_silver_ore` |
 
 **The Lead Age, Overworld, requires `theleadage`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Theleadage Lead | `granite_theleadage_lead_ore` | `diorite_theleadage_lead_ore` | `andesite_theleadage_lead_ore` | `tuff_theleadage_lead_ore` | `dripstone_theleadage_lead_ore` |
+| Lead | `granite_theleadage_lead_ore` | `diorite_theleadage_lead_ore` | `andesite_theleadage_lead_ore` | `tuff_theleadage_lead_ore` | `dripstone_theleadage_lead_ore` |
 
 **Gems and Crystals, Overworld, requires `gemsandcrystals`**
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Gemsandcrystals Amethyst | `granite_gemsandcrystals_amethyst_ore` |   | `andesite_gemsandcrystals_amethyst_ore` | `tuff_gemsandcrystals_amethyst_ore` |
-| Gemsandcrystals Quartz | `granite_gemsandcrystals_quartz_ore` | `diorite_gemsandcrystals_quartz_ore` | `andesite_gemsandcrystals_quartz_ore` | `tuff_gemsandcrystals_quartz_ore` |
-| Gemsandcrystals Topaz | `granite_gemsandcrystals_topaz_ore` |   |   |   |
+| Amethyst | `granite_gemsandcrystals_amethyst_ore` |   | `andesite_gemsandcrystals_amethyst_ore` | `tuff_gemsandcrystals_amethyst_ore` |
+| Quartz | `granite_gemsandcrystals_quartz_ore` | `diorite_gemsandcrystals_quartz_ore` | `andesite_gemsandcrystals_quartz_ore` | `tuff_gemsandcrystals_quartz_ore` |
+| Topaz | `granite_gemsandcrystals_topaz_ore` |   |   |   |
 
 **Clutter, Overworld, requires `clutter`**
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Clutter Silver | `granite_clutter_silver_ore` | `diorite_clutter_silver_ore` | `andesite_clutter_silver_ore` | `tuff_clutter_silver_ore` |
+| Silver | `granite_clutter_silver_ore` | `diorite_clutter_silver_ore` | `andesite_clutter_silver_ore` | `tuff_clutter_silver_ore` |
 
 **SimpleOres, Overworld, requires `simpleores`**
 
 | | granite | diorite | tuff |
 |---|---|---|---|
-| Simpleores Tin | `granite_simpleores_tin_ore` |   |   |
-| Simpleores Mythril | `granite_simpleores_mythril_ore` | `diorite_simpleores_mythril_ore` | `tuff_simpleores_mythril_ore` |
-| Simpleores Adamantium | `granite_simpleores_adamantium_ore` | `diorite_simpleores_adamantium_ore` | `tuff_simpleores_adamantium_ore` |
+| Tin | `granite_simpleores_tin_ore` |   |   |
+| Mythril | `granite_simpleores_mythril_ore` | `diorite_simpleores_mythril_ore` | `tuff_simpleores_mythril_ore` |
+| Adamantium | `granite_simpleores_adamantium_ore` | `diorite_simpleores_adamantium_ore` | `tuff_simpleores_adamantium_ore` |
 
 **SimpleOres, Nether, requires `simpleores`**
 
 | | blackstone |
 |---|---|
-| Simpleores Onyx | `blackstone_simpleores_onyx_ore` |
+| Onyx | `blackstone_simpleores_onyx_ore` |
 
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
@@ -618,15 +618,15 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Bloodstone | `epicpaladins_bloodstone` | Epic Paladins `epicpaladins` | Deep Blackstone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Deep Blackstone |
 | Dark | `dark` | EvilCraft `evilcraft` | Deep Blackstone |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Deep Blackstone |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Deep Blackstone |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Deep Blackstone |
-| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Deep Blackstone |
-| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Deep Blackstone |
-| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Deep Blackstone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Deep Blackstone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Deep Blackstone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Deep Blackstone |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Deep Blackstone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Deep Blackstone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Deep Blackstone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Deep Blackstone |
 | Onyx | `treasure2_onyx` | Treasure2 `treasure2` | Deep Blackstone |
 | Ruby | `treasure2_ruby` | Treasure2 `treasure2` | Deep Blackstone |
 | Sapphire | `treasure2_sapphire` | Treasure2 `treasure2` | Deep Blackstone |
@@ -641,9 +641,9 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Sapphire | `projectred_exploration_sapphire` | Project Red Exploration `projectred_exploration` | Deep Blackstone |
 | Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Deep Blackstone |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Deep Blackstone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Deep Blackstone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Deep Blackstone |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | Deep Blackstone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Deep Blackstone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Deep Blackstone |
+| Silver | `clutter_silver` | Clutter `clutter` | Deep Blackstone |
 
 **Blockus, requires `blockus`** (Fabric)
 
@@ -692,12 +692,12 @@ Stones: Limestone `blockus_limestone`, Marble `blockus_marble`, Bluestone `block
 | Sulfur | `sulfurpotassiummod_sulfur` | Sulfur and Potassium `sulfurpotassiummod` | Limestone |
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone, Marble |
 | Nickel | `oritech_nickel` | Oritech `oritech` | Bluestone, Viridite |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Marble |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | every stone |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone, Marble |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Marble, Bluestone |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Bluestone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Marble |
+| Silver | `clutter_silver` | Clutter `clutter` | every stone |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone, Marble |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Marble, Bluestone |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Bluestone |
 
 **Create, requires `create`** (NeoForge)
 
@@ -784,28 +784,28 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Limestone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Scoria, Smooth Basalt |
 | Dark | `dark` | EvilCraft `evilcraft` | Scoria, Smooth Basalt |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Limestone, Calcite |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Limestone, Scoria, Smooth Basalt |
-| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Scoria, Smooth Basalt |
-| Electrodynamics Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Limestone, Calcite |
-| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Scoria, Smooth Basalt |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Limestone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Denseores Gold | `denseores_gold` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
-| Denseores Lapis Lazuli | `denseores_lapis` | Dense Ores `denseores` | Calcite |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Crimsite, Scoria, Smooth Basalt |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone, Calcite |
-| Denseores Nether Gold | `denseores_nether_gold` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
-| Denseores Nether Quartz | `denseores_nether_quartz` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
-| Denseores Ancient Nether | `denseores_ancient_nether` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Limestone, Calcite |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Limestone |
+| Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Limestone |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Limestone, Scoria, Smooth Basalt |
+| Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Limestone |
+| Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Limestone |
+| Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Scoria, Smooth Basalt |
+| Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Limestone, Calcite |
+| Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Scoria, Smooth Basalt |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Limestone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Dense Gold | `denseores_gold` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
+| Dense Lapis Lazuli | `denseores_lapis` | Dense Ores `denseores` | Calcite |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Crimsite, Scoria, Smooth Basalt |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone, Calcite |
+| Dense Nether Gold | `denseores_nether_gold` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
+| Dense Nether Quartz | `denseores_nether_quartz` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
+| Ancient Nether | `denseores_ancient_nether` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
 | Onyx | `treasure2_onyx` | Treasure2 `treasure2` | Limestone, Scoria, Smooth Basalt |
 | Ruby | `treasure2_ruby` | Treasure2 `treasure2` | Scoria, Smooth Basalt |
 | Sapphire | `treasure2_sapphire` | Treasure2 `treasure2` | Scoria, Smooth Basalt |
@@ -823,12 +823,12 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Limestone, Scoria, Calcite, Smooth Basalt |
 | Sulfur | `cgs_sulfur` | Create: Gunsmithing `cgs` | Scorchia, Scoria, Smooth Basalt |
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Asurine |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Crimsite |
-| Simpleores Onyx | `simpleores_onyx` | SimpleOres `simpleores` | Scorchia, Scoria, Smooth Basalt |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Asurine |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Crimsite |
+| Onyx | `simpleores_onyx` | SimpleOres `simpleores` | Scorchia, Scoria, Smooth Basalt |
 
 **Create: TFMG, requires `tfmg`** (NeoForge)
 
@@ -877,16 +877,16 @@ Stones: Bauxite `tfmg_bauxite`, Galena `tfmg_galena`, Lignite `tfmg_lignite`
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | every stone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Lignite |
 | Dark | `dark` | EvilCraft `evilcraft` | Lignite |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Galena |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Galena, Lignite |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Galena |
-| Electrodynamics Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Lignite |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Lignite |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Galena |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | every stone |
+| Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Galena |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Galena, Lignite |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
+| Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Galena |
+| Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Lignite |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Lignite |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Galena |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Galena, Lignite |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | every stone |
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Galena |
@@ -894,8 +894,8 @@ Stones: Bauxite `tfmg_bauxite`, Galena `tfmg_galena`, Lignite `tfmg_lignite`
 | Electrotine | `projectred_exploration_electrotine` | Project Red Exploration `projectred_exploration` | Galena |
 | Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | every stone |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Galena, Lignite |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Galena, Lignite |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Galena, Lignite |
 
 **Twigs, requires `twigs`** (Fabric and NeoForge)
 
@@ -1004,27 +1004,27 @@ Stones: Rhyolite `twigs_rhyolite`, Schist `twigs_schist`, Bloodstone `twigs_bloo
 | Dimensional Shard | `dimensional_shard` | RFTools Base `rftoolsbase` | Rhyolite, Schist |
 | Nether Dimensional Shard | `nether_dimensional_shard` | RFTools Base `rftoolsbase` | Bloodstone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Rhyolite |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
-| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Rhyolite |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
-| Electrodynamics Lithium | `electrodynamics_lithium` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
-| Electrodynamics Monazite | `electrodynamics_monazite` | Electrodynamics `electrodynamics` | Schist |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
-| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Rhyolite |
-| Electrodynamics Thorium | `electrodynamics_thorium` | Electrodynamics `electrodynamics` | Schist |
-| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Rhyolite |
-| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Schist |
-| Electrodynamics Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
-| Betternether Cincinnasite | `betternether_cincinnasite` | BetterNether `betternether` | Bloodstone |
-| Betternether Nether Ruby | `betternether_nether_ruby` | BetterNether `betternether` | Bloodstone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Rhyolite, Schist |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Rhyolite, Schist |
-| Denseores Gold | `denseores_gold` | Dense Ores `denseores` | Bloodstone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Rhyolite, Schist |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Schist |
-| Denseores Nether Gold | `denseores_nether_gold` | Dense Ores `denseores` | Bloodstone |
-| Denseores Nether Quartz | `denseores_nether_quartz` | Dense Ores `denseores` | Bloodstone |
-| Denseores Ancient Nether | `denseores_ancient_nether` | Dense Ores `denseores` | Bloodstone |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
+| Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Rhyolite |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
+| Lithium | `electrodynamics_lithium` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
+| Monazite | `electrodynamics_monazite` | Electrodynamics `electrodynamics` | Schist |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
+| Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Rhyolite |
+| Thorium | `electrodynamics_thorium` | Electrodynamics `electrodynamics` | Schist |
+| Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Rhyolite |
+| Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Schist |
+| Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Rhyolite, Schist |
+| Cincinnasite | `betternether_cincinnasite` | BetterNether `betternether` | Bloodstone |
+| Nether Ruby | `betternether_nether_ruby` | BetterNether `betternether` | Bloodstone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Rhyolite, Schist |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Rhyolite, Schist |
+| Dense Gold | `denseores_gold` | Dense Ores `denseores` | Bloodstone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Rhyolite, Schist |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Schist |
+| Dense Nether Gold | `denseores_nether_gold` | Dense Ores `denseores` | Bloodstone |
+| Dense Nether Quartz | `denseores_nether_quartz` | Dense Ores `denseores` | Bloodstone |
+| Ancient Nether | `denseores_ancient_nether` | Dense Ores `denseores` | Bloodstone |
 | Copper | `bno_copper` | Basic Nether Ores `bno` | Bloodstone |
 | Iron | `bno_iron` | Basic Nether Ores `bno` | Bloodstone |
 | Redstone | `bno_redstone` | Basic Nether Ores `bno` | Bloodstone |
@@ -1051,13 +1051,13 @@ Stones: Rhyolite `twigs_rhyolite`, Schist `twigs_schist`, Bloodstone `twigs_bloo
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Rhyolite, Schist |
 | Sulfur | `cgs_sulfur` | Create: Gunsmithing `cgs` | Bloodstone |
 | Tin | `bronze_tin` | Bronze `bronze` | Rhyolite |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Rhyolite, Schist |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Rhyolite, Schist |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | Rhyolite, Schist |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Rhyolite |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Schist |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Schist |
-| Simpleores Onyx | `simpleores_onyx` | SimpleOres `simpleores` | Bloodstone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Rhyolite, Schist |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Rhyolite, Schist |
+| Silver | `clutter_silver` | Clutter `clutter` | Rhyolite, Schist |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Rhyolite |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Schist |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Schist |
+| Onyx | `simpleores_onyx` | SimpleOres `simpleores` | Bloodstone |
 
 **Born in Chaos, requires `born_in_chaos_v1`** (NeoForge)
 
@@ -1100,22 +1100,22 @@ Stones: Black Argillite `born_in_chaos_v1_black_argillite`
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Black Argillite |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Black Argillite |
 | Dark | `dark` | EvilCraft `evilcraft` | Black Argillite |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Black Argillite |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Black Argillite |
-| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Black Argillite |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Black Argillite |
-| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Black Argillite |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Black Argillite |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Black Argillite |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Black Argillite |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Black Argillite |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Black Argillite |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Black Argillite |
+| Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Black Argillite |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Black Argillite |
+| Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Black Argillite |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Black Argillite |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Black Argillite |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Black Argillite |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Black Argillite |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Black Argillite |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Black Argillite |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Black Argillite |
 | Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Black Argillite |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Black Argillite |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Black Argillite |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Black Argillite |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Black Argillite |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Black Argillite |
 
 **EmbellishCraft, requires `embellishcraft`** (NeoForge)
 
@@ -1186,23 +1186,23 @@ Stones: Basalt `embellishcraft_basalt`, Slate `embellishcraft_slate`, Marble `em
 | Dimensional Shard | `dimensional_shard` | RFTools Base `rftoolsbase` | Slate, Gneiss |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Basalt |
 | Dark | `dark` | EvilCraft `evilcraft` | Basalt |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Slate, Gneiss, Larvikite |
-| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Gneiss |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Basalt, Gneiss |
-| Electrodynamics Lithium | `electrodynamics_lithium` | Electrodynamics `electrodynamics` | Gneiss |
-| Electrodynamics Molybdenum | `electrodynamics_molybdenum` | Electrodynamics `electrodynamics` | Gneiss |
-| Electrodynamics Monazite | `electrodynamics_monazite` | Electrodynamics `electrodynamics` | Slate, Gneiss |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Basalt, Slate, Gneiss |
-| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Basalt |
-| Electrodynamics Thorium | `electrodynamics_thorium` | Electrodynamics `electrodynamics` | Gneiss |
-| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Marble, Gneiss |
-| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Basalt |
-| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Basalt |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Basalt, Slate, Marble, Gneiss, Jade |
-| Denseores Lapis Lazuli | `denseores_lapis` | Dense Ores `denseores` | Gneiss, Larvikite |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Basalt |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Slate, Marble, Gneiss, Larvikite |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Slate, Gneiss, Larvikite |
+| Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Gneiss |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Basalt, Gneiss |
+| Lithium | `electrodynamics_lithium` | Electrodynamics `electrodynamics` | Gneiss |
+| Molybdenum | `electrodynamics_molybdenum` | Electrodynamics `electrodynamics` | Gneiss |
+| Monazite | `electrodynamics_monazite` | Electrodynamics `electrodynamics` | Slate, Gneiss |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Basalt, Slate, Gneiss |
+| Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Basalt |
+| Thorium | `electrodynamics_thorium` | Electrodynamics `electrodynamics` | Gneiss |
+| Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Marble, Gneiss |
+| Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Basalt |
+| Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Basalt |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Basalt, Slate, Marble, Gneiss, Jade |
+| Dense Lapis Lazuli | `denseores_lapis` | Dense Ores `denseores` | Gneiss, Larvikite |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Basalt |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Slate, Marble, Gneiss, Larvikite |
 | Onyx | `treasure2_onyx` | Treasure2 `treasure2` | Basalt |
 | Ruby | `treasure2_ruby` | Treasure2 `treasure2` | Basalt |
 | Sapphire | `treasure2_sapphire` | Treasure2 `treasure2` | Basalt |
@@ -1221,11 +1221,11 @@ Stones: Basalt `embellishcraft_basalt`, Slate `embellishcraft_slate`, Marble `em
 | Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Gneiss |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Basalt, Slate, Marble, Gneiss, Larvikite |
 | Tin | `bronze_tin` | Bronze `bronze` | Marble, Gneiss |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Basalt, Slate, Gneiss, Larvikite |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Basalt, Slate, Gneiss, Larvikite |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Marble, Gneiss |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Slate, Gneiss |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Gneiss |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Basalt, Slate, Gneiss, Larvikite |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Basalt, Slate, Gneiss, Larvikite |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Marble, Gneiss |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Slate, Gneiss |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Gneiss |
 
 **Quark, requires `quark`** (NeoForge)
 
@@ -1275,20 +1275,20 @@ Stones: Limestone `quark_limestone`, Jasper `quark_jasper`, Shale `quark_shale`
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Limestone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Shale |
 | Dark | `dark` | EvilCraft `evilcraft` | Shale |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Limestone, Shale |
-| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Shale |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Limestone, Shale |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone, Shale |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | every stone |
+| Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Limestone |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | every stone |
+| Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Limestone, Shale |
+| Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Limestone |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
+| Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Limestone |
+| Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Limestone |
+| Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Limestone |
+| Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Shale |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Limestone, Shale |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone, Shale |
 | Onyx | `treasure2_onyx` | Treasure2 `treasure2` | Limestone |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | every stone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | every stone |
@@ -1299,9 +1299,9 @@ Stones: Limestone `quark_limestone`, Jasper `quark_jasper`, Shale `quark_shale`
 | Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Limestone |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | every stone |
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone |
 
 **Forbidden and Arcanus, requires `forbidden_arcanus`** (NeoForge)
 
@@ -1330,17 +1330,17 @@ Stones: Darkstone `forbidden_arcanus_darkstone`
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Darkstone |
 | Arclight | `arclight` | Epic Paladins `epicpaladins` | Darkstone |
 | Dark | `dark` | EvilCraft `evilcraft` | Darkstone |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Darkstone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Darkstone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Darkstone |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Darkstone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Darkstone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Darkstone |
 | Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Darkstone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Darkstone |
 | Peridot | `projectred_exploration_peridot` | Project Red Exploration `projectred_exploration` | Darkstone |
 | Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Darkstone |
 | Nickel | `oritech_nickel` | Oritech `oritech` | Darkstone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Darkstone |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Darkstone |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Darkstone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Darkstone |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Darkstone |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Darkstone |
 
 **Let's Do Meadow, requires `meadow`** (Fabric and NeoForge)
 
@@ -1388,14 +1388,14 @@ Stones: Limestone `meadow_limestone`
 | Scheelite | `superbwarfare_scheelite` | Superb Warfare `superbwarfare` | Limestone |
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Limestone |
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Limestone |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Limestone |
-| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Limestone |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Limestone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Limestone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Limestone |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Limestone |
+| Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Limestone |
+| Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Limestone |
+| Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Limestone |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Limestone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Limestone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Limestone |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone |
 | Potassium | `sulfurpotassiummod_potassium` | Sulfur and Potassium `sulfurpotassiummod` | Limestone |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Limestone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Limestone |
@@ -1406,10 +1406,10 @@ Stones: Limestone `meadow_limestone`
 | Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Limestone |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Limestone |
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Limestone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | Limestone |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Limestone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone |
+| Silver | `clutter_silver` | Clutter `clutter` | Limestone |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone |
 
 **Mythic Upgrades, requires `mythicupgrades`** (Fabric and NeoForge)
 
@@ -1499,13 +1499,13 @@ Stones: Mossy Stone `regions_unexplored_mossy_stone`, Argillite `regions_unexplo
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Argillite |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Mossy Stone, Argillite |
 | Dark | `dark` | EvilCraft `evilcraft` | Mossy Stone, Argillite |
-| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Argillite |
-| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Mossy Stone |
-| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Mossy Stone, Chalk |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | every stone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | every stone |
+| Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Argillite |
+| Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Mossy Stone |
+| Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Mossy Stone, Chalk |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | every stone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | every stone |
 | Potassium | `sulfurpotassiummod_potassium` | Sulfur and Potassium `sulfurpotassiummod` | Mossy Stone, Chalk |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Argillite |
 | Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Mossy Stone |
@@ -1516,10 +1516,10 @@ Stones: Mossy Stone `regions_unexplored_mossy_stone`, Argillite `regions_unexplo
 | Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Argillite |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | every stone |
 | Tin | `bronze_tin` | Bronze `bronze` | Mossy Stone, Chalk |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Argillite |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Mossy Stone, Argillite |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | every stone |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Mossy Stone, Chalk |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Argillite |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Mossy Stone, Argillite |
+| Silver | `clutter_silver` | Clutter `clutter` | every stone |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Mossy Stone, Chalk |
 
 **Promenade, requires `promenade`** (Fabric and NeoForge)
 
@@ -1588,16 +1588,16 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Dimensional Shard | `dimensional_shard` | RFTools Base `rftoolsbase` | Blunite |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Asphalt |
 | Dark | `dark` | EvilCraft `evilcraft` | every stone |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Chromium | `electrodynamics_chromium` | Electrodynamics `electrodynamics` | Blunite |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Asphalt |
-| Electrodynamics Molybdenum | `electrodynamics_molybdenum` | Electrodynamics `electrodynamics` | Blunite |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Blunite |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Asphalt |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Blunite |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | every stone |
+| Chromium | `electrodynamics_chromium` | Electrodynamics `electrodynamics` | Blunite |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Asphalt |
+| Molybdenum | `electrodynamics_molybdenum` | Electrodynamics `electrodynamics` | Blunite |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
+| Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Blunite |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Asphalt |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Blunite |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Asphalt |
 | Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Blunite |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | every stone |
@@ -1607,11 +1607,11 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | every stone |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Asphalt |
 | Nickel | `oritech_nickel` | Oritech `oritech` | Blunite |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Asphalt |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | every stone |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Blunite |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Blunite |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Asphalt |
+| Silver | `clutter_silver` | Clutter `clutter` | every stone |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Blunite |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Blunite |
 
 **Spawn, requires `spawn`** (NeoForge)
 
@@ -1655,19 +1655,19 @@ Stones: Reefstone `spawn_reefstone`
 | Scheelite | `superbwarfare_scheelite` | Superb Warfare `superbwarfare` | Reefstone |
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Reefstone |
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Reefstone |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Reefstone |
-| Electrodynamics Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Reefstone |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Reefstone |
-| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Reefstone |
-| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Reefstone |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Reefstone |
-| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Reefstone |
-| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Reefstone |
-| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Reefstone |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Reefstone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Reefstone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Reefstone |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Reefstone |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Reefstone |
+| Fluorite | `electrodynamics_fluorite` | Electrodynamics `electrodynamics` | Reefstone |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Reefstone |
+| Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Reefstone |
+| Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Reefstone |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Reefstone |
+| Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Reefstone |
+| Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Reefstone |
+| Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Reefstone |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Reefstone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Reefstone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Reefstone |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Reefstone |
 | Onyx | `treasure2_onyx` | Treasure2 `treasure2` | Reefstone |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Reefstone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Reefstone |
@@ -1678,9 +1678,9 @@ Stones: Reefstone `spawn_reefstone`
 | Tin | `projectred_exploration_tin` | Project Red Exploration `projectred_exploration` | Reefstone |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Reefstone |
 | Tin | `bronze_tin` | Bronze `bronze` | Reefstone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Reefstone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Reefstone |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Reefstone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Reefstone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Reefstone |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Reefstone |
 
 **Wilder Wild, requires `wilderwild`** (Fabric)
 
@@ -1707,10 +1707,10 @@ Stones: Gabbro `wilderwild_gabbro`
 | Moon Stone | `moon_stone` | Cobblemon `cobblemon` | Gabbro |
 | Thunder Stone | `thunder_stone` | Cobblemon `cobblemon` | Gabbro |
 | Nickel | `oritech_nickel` | Oritech `oritech` | Gabbro |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Gabbro |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | Gabbro |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Gabbro |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Gabbro |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Gabbro |
+| Silver | `clutter_silver` | Clutter `clutter` | Gabbro |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Gabbro |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Gabbro |
 
 **Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric and NeoForge)
 
@@ -1740,17 +1740,17 @@ Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacit
 | Moon Stone | `moon_stone` | Cobblemon `cobblemon` | Dacite, White Dacite |
 | Sun Stone | `sun_stone` | Cobblemon `cobblemon` | Dacite, White Dacite |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Dacite, White Dacite |
-| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Dacite, White Dacite |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Dacite, White Dacite |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
 | Potassium | `sulfurpotassiummod_potassium` | Sulfur and Potassium `sulfurpotassiummod` | Red Rock |
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Dacite, White Dacite |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Dacite, White Dacite |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | every stone |
 | Tin | `bronze_tin` | Bronze `bronze` | Dacite, White Dacite |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | every stone |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Dacite, White Dacite |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
+| Silver | `clutter_silver` | Clutter `clutter` | every stone |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Dacite, White Dacite |
 
 **Galosphere, requires `galosphere`** (Fabric and NeoForge)
 
@@ -1763,11 +1763,11 @@ Stones: Pink Salt `galosphere_pink_salt`, Rose Pink Salt `galosphere_rose_pink_s
 | Lithium | `lithium` | Create: TFMG `tfmg` | every stone |
 | Salt | `salt` | Modern Industrialization `modern_industrialization` | every stone |
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | every stone |
-| Electrodynamics Lithium | `electrodynamics_lithium` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | every stone |
+| Lithium | `electrodynamics_lithium` | Electrodynamics `electrodynamics` | every stone |
+| Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | every stone |
+| Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | every stone |
+| Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | every stone |
+| Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | every stone |
 | Potassium | `sulfurpotassiummod_potassium` | Sulfur and Potassium `sulfurpotassiummod` | every stone |
 | Sulfur | `sulfurpotassiummod_sulfur` | Sulfur and Potassium `sulfurpotassiummod` | every stone |
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | every stone |
@@ -1801,19 +1801,19 @@ Stones: Arid Sandstone `atmospheric_arid_sandstone`, Red Arid Sandstone `atmosph
 | Water Stone | `water_stone` | Cobblemon `cobblemon` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
 | Chlorophyte | `chlorophyte` | Hazen 'N Stuff `hazennstuff` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Arid Sandstone, Red Arid Sandstone |
-| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Arid Sandstone, Red Arid Sandstone |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Arid Sandstone, Red Arid Sandstone |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
+| Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Arid Sandstone, Red Arid Sandstone |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Arid Sandstone, Red Arid Sandstone |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Arid Sandstone, Red Arid Sandstone |
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
 | Tin | `railcraft_tin` | Railcraft Reborn `railcraft` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Arid Sandstone, Red Arid Sandstone |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | every stone |
 | Tin | `bronze_tin` | Bronze `bronze` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Ivory Travertine, Peach Travertine, Persimmon Travertine, Saffron Travertine |
 
 **YUNG's Cave Biomes, requires `yungscavebiomes`** (Fabric and NeoForge)
 
@@ -1852,26 +1852,26 @@ Stones: Ancient Sandstone `yungscavebiomes_ancient_sandstone`
 | Galena | `superbwarfare_galena` | Superb Warfare `superbwarfare` | Ancient Sandstone |
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Ancient Sandstone |
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Ancient Sandstone |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Ancient Sandstone |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Ancient Sandstone |
-| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Ancient Sandstone |
-| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Ancient Sandstone |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Ancient Sandstone |
-| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Ancient Sandstone |
-| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Ancient Sandstone |
-| Electrodynamics Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Ancient Sandstone |
-| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Ancient Sandstone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Ancient Sandstone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Ancient Sandstone |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | Ancient Sandstone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Ancient Sandstone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Ancient Sandstone |
 | Potassium | `sulfurpotassiummod_potassium` | Sulfur and Potassium `sulfurpotassiummod` | Ancient Sandstone |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Ancient Sandstone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Ancient Sandstone |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Ancient Sandstone |
 | Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Ancient Sandstone |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | Ancient Sandstone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Ancient Sandstone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Ancient Sandstone |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | Ancient Sandstone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Ancient Sandstone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Ancient Sandstone |
+| Silver | `clutter_silver` | Clutter `clutter` | Ancient Sandstone |
 
 **Darker Depths, requires `darkerdepths`** (NeoForge)
 
@@ -1924,19 +1924,19 @@ Stones: Darkslate `darkerdepths_darkslate`, Grimestone `darkerdepths_grimestone`
 | Salt | `expandeddelight_salt` | Expanded Delight `expandeddelight` | Aridrock |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Darkslate, Grimestone |
 | Dark | `dark` | EvilCraft `evilcraft` | Darkslate, Grimestone |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Grimestone |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
-| Electrodynamics Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Darkslate |
-| Electrodynamics Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Aridrock |
-| Electrodynamics Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Darkslate, Aridrock |
-| Electrodynamics Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Grimestone, Aridrock |
-| Electrodynamics Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | every stone |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Grimestone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Darkslate |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Grimestone |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | every stone |
+| Niter | `electrodynamics_niter` | Electrodynamics `electrodynamics` | Grimestone |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | every stone |
+| Sulfur | `electrodynamics_sulfur` | Electrodynamics `electrodynamics` | Darkslate |
+| Sylvite | `electrodynamics_sylvite` | Electrodynamics `electrodynamics` | Aridrock |
+| Titanium | `electrodynamics_titanium` | Electrodynamics `electrodynamics` | Darkslate, Aridrock |
+| Uranium | `electrodynamics_uranium` | Electrodynamics `electrodynamics` | Grimestone, Aridrock |
+| Vanadium | `electrodynamics_vanadium` | Electrodynamics `electrodynamics` | every stone |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Grimestone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Darkslate |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Grimestone |
 | Onyx | `treasure2_onyx` | Treasure2 `treasure2` | Darkslate |
 | Ruby | `treasure2_ruby` | Treasure2 `treasure2` | Darkslate |
 | Sapphire | `treasure2_sapphire` | Treasure2 `treasure2` | Darkslate |
@@ -1950,8 +1950,8 @@ Stones: Darkslate `darkerdepths_darkslate`, Grimestone `darkerdepths_grimestone`
 | Sapphire | `projectred_exploration_sapphire` | Project Red Exploration `projectred_exploration` | Darkslate |
 | Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | every stone |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | every stone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
 
 **Nature's Spirit, requires `natures_spirit`** (Fabric and NeoForge)
 
@@ -1996,15 +1996,15 @@ Stones: Chert `natures_spirit_chert`, Travertine `natures_spirit_travertine`, Wh
 | Chlorophyte | `chlorophyte` | Hazen 'N Stuff `hazennstuff` | Travertine, White Chalk |
 | Galena | `superbwarfare_galena` | Superb Warfare `superbwarfare` | Chert |
 | Silver | `superbwarfare_silver` | Superb Warfare `superbwarfare` | Chert |
-| Electrodynamics Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Chert |
-| Electrodynamics Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Chert |
-| Electrodynamics Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Travertine, Pink Sandstone |
-| Electrodynamics Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Chert |
-| Electrodynamics Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Travertine, White Chalk |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Travertine, White Chalk |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Travertine, White Chalk |
+| Aluminum | `electrodynamics_aluminum` | Electrodynamics `electrodynamics` | Chert |
+| Lead | `electrodynamics_lead` | Electrodynamics `electrodynamics` | Chert |
+| Salt | `electrodynamics_salt` | Electrodynamics `electrodynamics` | Travertine, Pink Sandstone |
+| Silver | `electrodynamics_silver` | Electrodynamics `electrodynamics` | Chert |
+| Tin | `electrodynamics_tin` | Electrodynamics `electrodynamics` | Travertine, White Chalk |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Travertine, White Chalk |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Travertine, White Chalk |
 | Potassium | `sulfurpotassiummod_potassium` | Sulfur and Potassium `sulfurpotassiummod` | Travertine, White Chalk, Pink Sandstone |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Chert |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Chert |
@@ -2014,10 +2014,10 @@ Stones: Chert `natures_spirit_chert`, Travertine `natures_spirit_travertine`, Wh
 | Silver | `projectred_exploration_silver` | Project Red Exploration `projectred_exploration` | Chert |
 | Lead | `cgs_lead` | Create: Gunsmithing `cgs` | every stone |
 | Tin | `bronze_tin` | Bronze `bronze` | Travertine, White Chalk |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Chert |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
-| Clutter Silver | `clutter_silver` | Clutter `clutter` | every stone |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Travertine, White Chalk |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Chert |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
+| Silver | `clutter_silver` | Clutter `clutter` | every stone |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Travertine, White Chalk |
 
 **BetterEnd, requires `betterend`** (Fabric)
 

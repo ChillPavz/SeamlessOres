@@ -236,29 +236,29 @@ touching ore of the same type across different host stones.
 
 | | basalt | blackstone |
 |---|---|---|
-| Betternether Cincinnasite | `basalt_betternether_cincinnasite_ore` | `blackstone_betternether_cincinnasite_ore` |
-| Betternether Nether Ruby | `basalt_betternether_nether_ruby_ore` | `blackstone_betternether_nether_ruby_ore` |
+| Cincinnasite | `basalt_betternether_cincinnasite_ore` | `blackstone_betternether_cincinnasite_ore` |
+| Nether Ruby | `basalt_betternether_nether_ruby_ore` | `blackstone_betternether_nether_ruby_ore` |
 
 **Dense Ores, Overworld, requires `denseores`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Denseores Copper | `granite_denseores_dense_copper_ore` | `diorite_denseores_dense_copper_ore` | `andesite_denseores_dense_copper_ore` | `tuff_denseores_dense_copper_ore` | `dripstone_denseores_dense_copper_ore` |
-| Denseores Iron | `granite_denseores_dense_iron_ore` | `diorite_denseores_dense_iron_ore` | `andesite_denseores_dense_iron_ore` | `tuff_denseores_dense_iron_ore` | `dripstone_denseores_dense_iron_ore` |
-| Denseores Gold | `granite_denseores_dense_gold_ore` | `diorite_denseores_dense_gold_ore` | `andesite_denseores_dense_gold_ore` | `tuff_denseores_dense_gold_ore` |   |
-| Denseores Lapis Lazuli | `granite_denseores_dense_lapis_ore` | `diorite_denseores_dense_lapis_ore` |   |   |   |
-| Denseores Redstone | `granite_denseores_dense_redstone_ore` | `diorite_denseores_dense_redstone_ore` | `andesite_denseores_dense_redstone_ore` | `tuff_denseores_dense_redstone_ore` |   |
-| Denseores Emerald | `granite_denseores_dense_emerald_ore` | `diorite_denseores_dense_emerald_ore` |   |   |   |
-| Denseores Coal |   |   |   | `tuff_denseores_dense_coal_ore` |   |
-| Denseores Diamond |   |   |   | `tuff_denseores_dense_diamond_ore` |   |
+| Dense Copper | `granite_denseores_dense_copper_ore` | `diorite_denseores_dense_copper_ore` | `andesite_denseores_dense_copper_ore` | `tuff_denseores_dense_copper_ore` | `dripstone_denseores_dense_copper_ore` |
+| Dense Iron | `granite_denseores_dense_iron_ore` | `diorite_denseores_dense_iron_ore` | `andesite_denseores_dense_iron_ore` | `tuff_denseores_dense_iron_ore` | `dripstone_denseores_dense_iron_ore` |
+| Dense Gold | `granite_denseores_dense_gold_ore` | `diorite_denseores_dense_gold_ore` | `andesite_denseores_dense_gold_ore` | `tuff_denseores_dense_gold_ore` |   |
+| Dense Lapis Lazuli | `granite_denseores_dense_lapis_ore` | `diorite_denseores_dense_lapis_ore` |   |   |   |
+| Dense Redstone | `granite_denseores_dense_redstone_ore` | `diorite_denseores_dense_redstone_ore` | `andesite_denseores_dense_redstone_ore` | `tuff_denseores_dense_redstone_ore` |   |
+| Dense Emerald | `granite_denseores_dense_emerald_ore` | `diorite_denseores_dense_emerald_ore` |   |   |   |
+| Dense Coal |   |   |   | `tuff_denseores_dense_coal_ore` |   |
+| Dense Diamond |   |   |   | `tuff_denseores_dense_diamond_ore` |   |
 
 **Dense Ores, Nether, requires `denseores`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Denseores Nether Gold | `basalt_denseores_dense_nether_gold_ore` | `blackstone_denseores_dense_nether_gold_ore` |
-| Denseores Nether Quartz | `basalt_denseores_dense_nether_quartz_ore` | `blackstone_denseores_dense_nether_quartz_ore` |
-| Denseores Ancient Nether | `basalt_denseores_ancient_nether_ore` | `blackstone_denseores_ancient_nether_ore` |
+| Dense Nether Gold | `basalt_denseores_dense_nether_gold_ore` | `blackstone_denseores_dense_nether_gold_ore` |
+| Dense Nether Quartz | `basalt_denseores_dense_nether_quartz_ore` | `blackstone_denseores_dense_nether_quartz_ore` |
+| Ancient Nether | `basalt_denseores_ancient_nether_ore` | `blackstone_denseores_ancient_nether_ore` |
 
 **Railcraft Reborn, Overworld, requires `railcraft`**
 
@@ -280,41 +280,41 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Thesilverage Silver | `granite_thesilverage_silver_ore` | `diorite_thesilverage_silver_ore` | `andesite_thesilverage_silver_ore` | `tuff_thesilverage_silver_ore` |
+| Silver | `granite_thesilverage_silver_ore` | `diorite_thesilverage_silver_ore` | `andesite_thesilverage_silver_ore` | `tuff_thesilverage_silver_ore` |
 
 **The Lead Age, Overworld, requires `theleadage`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Theleadage Lead | `granite_theleadage_lead_ore` | `diorite_theleadage_lead_ore` | `andesite_theleadage_lead_ore` | `tuff_theleadage_lead_ore` | `dripstone_theleadage_lead_ore` |
+| Lead | `granite_theleadage_lead_ore` | `diorite_theleadage_lead_ore` | `andesite_theleadage_lead_ore` | `tuff_theleadage_lead_ore` | `dripstone_theleadage_lead_ore` |
 
 **Gems and Crystals, Overworld, requires `gemsandcrystals`**
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Gemsandcrystals Amethyst | `granite_gemsandcrystals_amethyst_ore` |   | `andesite_gemsandcrystals_amethyst_ore` | `tuff_gemsandcrystals_amethyst_ore` |
-| Gemsandcrystals Quartz | `granite_gemsandcrystals_quartz_ore` | `diorite_gemsandcrystals_quartz_ore` | `andesite_gemsandcrystals_quartz_ore` | `tuff_gemsandcrystals_quartz_ore` |
-| Gemsandcrystals Topaz | `granite_gemsandcrystals_topaz_ore` |   |   |   |
+| Amethyst | `granite_gemsandcrystals_amethyst_ore` |   | `andesite_gemsandcrystals_amethyst_ore` | `tuff_gemsandcrystals_amethyst_ore` |
+| Quartz | `granite_gemsandcrystals_quartz_ore` | `diorite_gemsandcrystals_quartz_ore` | `andesite_gemsandcrystals_quartz_ore` | `tuff_gemsandcrystals_quartz_ore` |
+| Topaz | `granite_gemsandcrystals_topaz_ore` |   |   |   |
 
 **Stellaris, Overworld, requires `stellaris`**
 
 | | diorite | andesite |
 |---|---|---|
-| Stellaris Titanium | `diorite_stellaris_titanium_ore` | `andesite_stellaris_titanium_ore` |
+| Titanium | `diorite_stellaris_titanium_ore` | `andesite_stellaris_titanium_ore` |
 
 **SimpleOres, Overworld, requires `simpleores`**
 
 | | granite | diorite | tuff |
 |---|---|---|---|
-| Simpleores Tin | `granite_simpleores_tin_ore` |   |   |
-| Simpleores Mythril | `granite_simpleores_mythril_ore` | `diorite_simpleores_mythril_ore` | `tuff_simpleores_mythril_ore` |
-| Simpleores Adamantium | `granite_simpleores_adamantium_ore` | `diorite_simpleores_adamantium_ore` | `tuff_simpleores_adamantium_ore` |
+| Tin | `granite_simpleores_tin_ore` |   |   |
+| Mythril | `granite_simpleores_mythril_ore` | `diorite_simpleores_mythril_ore` | `tuff_simpleores_mythril_ore` |
+| Adamantium | `granite_simpleores_adamantium_ore` | `diorite_simpleores_adamantium_ore` | `tuff_simpleores_adamantium_ore` |
 
 **SimpleOres, Nether, requires `simpleores`**
 
 | | blackstone |
 |---|---|
-| Simpleores Onyx | `blackstone_simpleores_onyx_ore` |
+| Onyx | `blackstone_simpleores_onyx_ore` |
 
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these (in the game's own rock) you can actually see depends on which mods have a build for
@@ -392,9 +392,9 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Deep Blackstone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Deep Blackstone |
 | Dark | `dark` | EvilCraft `evilcraft` | Deep Blackstone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Deep Blackstone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Deep Blackstone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Deep Blackstone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Deep Blackstone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Deep Blackstone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Deep Blackstone |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Deep Blackstone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Deep Blackstone |
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Deep Blackstone |
@@ -436,12 +436,12 @@ Stones: Limestone `blockus_limestone`, Marble `blockus_marble`, Bluestone `block
 | Silver | `techreborn_silver` | Tech Reborn `techreborn` | every stone |
 | Tin | `techreborn_tin` | Tech Reborn `techreborn` | Limestone, Marble |
 | Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Limestone, Marble |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Limestone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Lapis Lazuli | `denseores_lapis` | Dense Ores `denseores` | Marble |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Bluestone |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone, Marble |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Limestone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Lapis Lazuli | `denseores_lapis` | Dense Ores `denseores` | Marble |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Bluestone |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone, Marble |
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone, Marble |
 
 **Create, requires `create`** (Create Fly, Fabric, 26.1.2 and 26.2)
@@ -494,18 +494,18 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Cinnabar | `cinnabar` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
 | Pyrite | `pyrite` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
 | Sphalerite | `sphalerite` | Tech Reborn `techreborn` | Scorchia, Scoria, Smooth Basalt |
-| Betternether Cincinnasite | `betternether_cincinnasite` | BetterNether `betternether` | Scorchia, Scoria, Smooth Basalt |
-| Betternether Nether Ruby | `betternether_nether_ruby` | BetterNether `betternether` | Scorchia, Scoria, Smooth Basalt |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Limestone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Denseores Gold | `denseores_gold` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
-| Denseores Lapis Lazuli | `denseores_lapis` | Dense Ores `denseores` | Calcite |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Crimsite, Scoria, Smooth Basalt |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone, Calcite |
-| Denseores Nether Gold | `denseores_nether_gold` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
-| Denseores Nether Quartz | `denseores_nether_quartz` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
-| Denseores Ancient Nether | `denseores_ancient_nether` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
+| Cincinnasite | `betternether_cincinnasite` | BetterNether `betternether` | Scorchia, Scoria, Smooth Basalt |
+| Nether Ruby | `betternether_nether_ruby` | BetterNether `betternether` | Scorchia, Scoria, Smooth Basalt |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Limestone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Dense Gold | `denseores_gold` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
+| Dense Lapis Lazuli | `denseores_lapis` | Dense Ores `denseores` | Calcite |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Crimsite, Scoria, Smooth Basalt |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Limestone, Calcite |
+| Dense Nether Gold | `denseores_nether_gold` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
+| Dense Nether Quartz | `denseores_nether_quartz` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
+| Ancient Nether | `denseores_ancient_nether` | Dense Ores `denseores` | Scorchia, Scoria, Smooth Basalt |
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone |
 
 **Forbidden and Arcanus, requires `forbidden_arcanus`** (NeoForge, 26.1.2)
@@ -521,8 +521,8 @@ Stones: Darkstone `forbidden_arcanus_darkstone`
 | Silver | `silents_silver` | Silent's Gems `silentgems` | Darkstone |
 | Silver | `occultism_silver` | Occultism `occultism` | Darkstone |
 | Dark | `dark` | EvilCraft `evilcraft` | Darkstone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Darkstone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Darkstone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Darkstone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Darkstone |
 | Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Darkstone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Darkstone |
 | Nickel | `oritech_nickel` | Oritech `oritech` | Darkstone |
@@ -582,10 +582,10 @@ Stones: Mossy Stone `regions_unexplored_mossy_stone`, Argillite `regions_unexplo
 | Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Mossy Stone, Argillite |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Mossy Stone, Argillite |
 | Dark | `dark` | EvilCraft `evilcraft` | Mossy Stone, Argillite |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | every stone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | every stone |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | every stone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | every stone |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Argillite |
 | Nickel | `railcraft_nickel` | Railcraft Reborn `railcraft` | Mossy Stone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Argillite |
@@ -627,10 +627,10 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Silver | `occultism_silver` | Occultism `occultism` | every stone |
 | Sal Ammoniac | `sal_ammoniac` | Theurgy `theurgy` | Asphalt |
 | Dark | `dark` | EvilCraft `evilcraft` | every stone |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Asphalt |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Blunite |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Asphalt |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Blunite |
 
 **Wilder Wild, requires `wilderwild`** (Fabric 26.1.x to 26.3, NeoForge 26.2 and 26.3)
 
@@ -655,9 +655,9 @@ Stones: Gabbro `wilderwild_gabbro`
 | Silver | `techreborn_silver` | Tech Reborn `techreborn` | Gabbro |
 | Silver | `occultism_silver` | Occultism `occultism` | Gabbro |
 | Dark | `dark` | EvilCraft `evilcraft` | Gabbro |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Gabbro |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Gabbro |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Gabbro |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Gabbro |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Gabbro |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Gabbro |
 
 **YUNG's Cave Biomes, requires `yungscavebiomes`** (Fabric and NeoForge, 26.1.x)
 
@@ -681,8 +681,8 @@ Stones: Ancient Sandstone `yungscavebiomes_ancient_sandstone`
 | Uranium | `techreborn_uranium` | Tech Reborn `techreborn` | Ancient Sandstone |
 | Silver | `occultism_silver` | Occultism `occultism` | Ancient Sandstone |
 | Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | Ancient Sandstone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Ancient Sandstone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Ancient Sandstone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Ancient Sandstone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Ancient Sandstone |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Ancient Sandstone |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Ancient Sandstone |
 | Zinc | `railcraft_zinc` | Railcraft Reborn `railcraft` | Ancient Sandstone |
@@ -713,10 +713,10 @@ Stones: Chert `natures_spirit_chert`, Travertine `natures_spirit_travertine`, Wh
 | Silver | `occultism_silver` | Occultism `occultism` | every stone |
 | Silver | `iceandfire_silver` | Ice and Fire `iceandfire` | every stone |
 | Inferium | `inferium` | Mystical Agriculture `mysticalagriculture` | Travertine, White Chalk |
-| Denseores Coal | `denseores_coal` | Dense Ores `denseores` | Travertine, White Chalk |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
-| Denseores Emerald | `denseores_emerald` | Dense Ores `denseores` | Travertine, White Chalk |
+| Dense Coal | `denseores_coal` | Dense Ores `denseores` | Travertine, White Chalk |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Emerald | `denseores_emerald` | Dense Ores `denseores` | Travertine, White Chalk |
 | Lead | `railcraft_lead` | Railcraft Reborn `railcraft` | Chert |
 | Silver | `railcraft_silver` | Railcraft Reborn `railcraft` | Chert |
 | Sulfur | `railcraft_sulfur` | Railcraft Reborn `railcraft` | Travertine, White Chalk |

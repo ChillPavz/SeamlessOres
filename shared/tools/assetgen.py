@@ -130,7 +130,11 @@ MOD_PREFIXES = ("end_", "beo_", "bno_", "silents_", "techreborn_", "energized_",
                 "expandeddelight_", "scguns_", "sullysmod_", "superbwarfare_",
                 "werewolves_", "treasure2_", "tconstruct_", "sulfurpotassiummod_", "rubinated_nether_", "railcraft_",
                 "projectred_exploration_", "jeg_", "cgs_", "bronze_", "oritech_", "miningmaster_",
-                "elementalcraft_")
+                "elementalcraft_", "betternether_", "electrodynamics_", "iter_rpg_", "thesilverage_", "theleadage_",
+                "gemsandcrystals_", "stellaris_", "clutter_", "simpleores_", "the_deep_void_")
+# A prefix that becomes words of the name instead of vanishing, first match only: Dense Ores names its ores
+# "Dense Copper Ore", but its netherite one "Ancient Nether Ore" (its own lang file).
+MOD_RENAMES = (("denseores_ancient_", "ancient_"), ("denseores_", "dense_"))
 # A stone whose display name is not its id path, title-cased.
 # By block path, or by host name where one block hosts twice (deep blackstone, besides the Nether one).
 STONE_NAMES = {"dripstone_block": "Dripstone", "minecraft_blackstone": "Deep Blackstone"}
@@ -186,6 +190,10 @@ def write_art_notice(path, ore_defs, mods):
 
 
 def title(name):
+    for old, new in MOD_RENAMES:
+        if name.startswith(old):
+            name = new + name[len(old):]
+            break
     for prefix in MOD_PREFIXES:
         if name.startswith(prefix):
             name = name[len(prefix):]

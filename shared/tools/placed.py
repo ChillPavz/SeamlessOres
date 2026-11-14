@@ -17,7 +17,7 @@ import sys
 import zipfile
 
 import geology
-from assetgen import (MOD_ID, POOL, STONE_NAMES, camel, replace_block, stone_name, texture_path, title, write_text)
+from assetgen import (MOD_ID, MOD_PREFIXES, MOD_RENAMES, POOL, STONE_NAMES, camel, replace_block, stone_name, texture_path, title, write_text)
 
 
 def index_ores(ore_defs):
@@ -207,7 +207,12 @@ class Hosts(dict):
         mod's), then Ore. `name_style` is a formatting code the source mod puts on its own ore's name
         (Born in Chaos names infected diamond in dark aqua, §3), so the variant reads like the ore."""
         cfg = self[host]
-        return f"{ore.get('name_style', '')}{host_stone_name(cfg)} {title(ore['key'] if cfg['placed_by'] else ore['name'])} Ore"
+        key = ore['key'] if cfg['placed_by'] else ore['name']
+        mod = ore.get("mod")
+        if mod and key.startswith(mod + "_") and not any(key.startswith(p) for p in MOD_PREFIXES)                 and not any(key.startswith(old) for old, _new in MOD_RENAMES):
+            raise SystemExit(f"  !! {key}: its block name would carry its mod's name ({mod}); add '{mod}_' to "
+                             f"MOD_PREFIXES (or MOD_RENAMES) in assetgen.py")
+        return f"{ore.get('name_style', '')}{host_stone_name(cfg)} {title(key)} Ore"
 
     def overlay_for(self, ore, host_cfg, face="side", model=""):
         """Overlay key for this host and face, honouring a per-host or per-tier override. Mirrors

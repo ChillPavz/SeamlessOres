@@ -184,22 +184,22 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Denseores Copper | `granite_denseores_dense_copper_ore` | `diorite_denseores_dense_copper_ore` | `andesite_denseores_dense_copper_ore` | `tuff_denseores_dense_copper_ore` | `dripstone_denseores_dense_copper_ore` |
-| Denseores Iron | `granite_denseores_dense_iron_ore` | `diorite_denseores_dense_iron_ore` | `andesite_denseores_dense_iron_ore` | `tuff_denseores_dense_iron_ore` | `dripstone_denseores_dense_iron_ore` |
-| Denseores Gold | `granite_denseores_dense_gold_ore` | `diorite_denseores_dense_gold_ore` | `andesite_denseores_dense_gold_ore` | `tuff_denseores_dense_gold_ore` |   |
-| Denseores Lapis Lazuli | `granite_denseores_dense_lapis_ore` | `diorite_denseores_dense_lapis_ore` |   |   |   |
-| Denseores Redstone | `granite_denseores_dense_redstone_ore` | `diorite_denseores_dense_redstone_ore` | `andesite_denseores_dense_redstone_ore` | `tuff_denseores_dense_redstone_ore` |   |
-| Denseores Emerald | `granite_denseores_dense_emerald_ore` | `diorite_denseores_dense_emerald_ore` |   |   |   |
-| Denseores Coal |   |   |   | `tuff_denseores_dense_coal_ore` |   |
-| Denseores Diamond |   |   |   | `tuff_denseores_dense_diamond_ore` |   |
+| Dense Copper | `granite_denseores_dense_copper_ore` | `diorite_denseores_dense_copper_ore` | `andesite_denseores_dense_copper_ore` | `tuff_denseores_dense_copper_ore` | `dripstone_denseores_dense_copper_ore` |
+| Dense Iron | `granite_denseores_dense_iron_ore` | `diorite_denseores_dense_iron_ore` | `andesite_denseores_dense_iron_ore` | `tuff_denseores_dense_iron_ore` | `dripstone_denseores_dense_iron_ore` |
+| Dense Gold | `granite_denseores_dense_gold_ore` | `diorite_denseores_dense_gold_ore` | `andesite_denseores_dense_gold_ore` | `tuff_denseores_dense_gold_ore` |   |
+| Dense Lapis Lazuli | `granite_denseores_dense_lapis_ore` | `diorite_denseores_dense_lapis_ore` |   |   |   |
+| Dense Redstone | `granite_denseores_dense_redstone_ore` | `diorite_denseores_dense_redstone_ore` | `andesite_denseores_dense_redstone_ore` | `tuff_denseores_dense_redstone_ore` |   |
+| Dense Emerald | `granite_denseores_dense_emerald_ore` | `diorite_denseores_dense_emerald_ore` |   |   |   |
+| Dense Coal |   |   |   | `tuff_denseores_dense_coal_ore` |   |
+| Dense Diamond |   |   |   | `tuff_denseores_dense_diamond_ore` |   |
 
 **Dense Ores, Nether, requires `denseores`**
 
 | | basalt | blackstone |
 |---|---|---|
-| Denseores Nether Gold | `basalt_denseores_dense_nether_gold_ore` | `blackstone_denseores_dense_nether_gold_ore` |
-| Denseores Nether Quartz | `basalt_denseores_dense_nether_quartz_ore` | `blackstone_denseores_dense_nether_quartz_ore` |
-| Denseores Ancient Nether | `basalt_denseores_ancient_nether_ore` | `blackstone_denseores_ancient_nether_ore` |
+| Dense Nether Gold | `basalt_denseores_dense_nether_gold_ore` | `blackstone_denseores_dense_nether_gold_ore` |
+| Dense Nether Quartz | `basalt_denseores_dense_nether_quartz_ore` | `blackstone_denseores_dense_nether_quartz_ore` |
+| Ancient Nether | `basalt_denseores_ancient_nether_ore` | `blackstone_denseores_ancient_nether_ore` |
 
 **Bronze, Overworld, requires `bronze`**
 
@@ -211,35 +211,35 @@ touching ore of the same type across different host stones.
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Thesilverage Silver | `granite_thesilverage_silver_ore` | `diorite_thesilverage_silver_ore` | `andesite_thesilverage_silver_ore` | `tuff_thesilverage_silver_ore` |
+| Silver | `granite_thesilverage_silver_ore` | `diorite_thesilverage_silver_ore` | `andesite_thesilverage_silver_ore` | `tuff_thesilverage_silver_ore` |
 
 **The Lead Age, Overworld, requires `theleadage`**
 
 | | granite | diorite | andesite | tuff | dripstone |
 |---|---|---|---|---|---|
-| Theleadage Lead | `granite_theleadage_lead_ore` | `diorite_theleadage_lead_ore` | `andesite_theleadage_lead_ore` | `tuff_theleadage_lead_ore` | `dripstone_theleadage_lead_ore` |
+| Lead | `granite_theleadage_lead_ore` | `diorite_theleadage_lead_ore` | `andesite_theleadage_lead_ore` | `tuff_theleadage_lead_ore` | `dripstone_theleadage_lead_ore` |
 
 **Gems and Crystals, Overworld, requires `gemsandcrystals`**
 
 | | granite | diorite | andesite | tuff |
 |---|---|---|---|---|
-| Gemsandcrystals Amethyst | `granite_gemsandcrystals_amethyst_ore` |   | `andesite_gemsandcrystals_amethyst_ore` | `tuff_gemsandcrystals_amethyst_ore` |
-| Gemsandcrystals Quartz | `granite_gemsandcrystals_quartz_ore` | `diorite_gemsandcrystals_quartz_ore` | `andesite_gemsandcrystals_quartz_ore` | `tuff_gemsandcrystals_quartz_ore` |
-| Gemsandcrystals Topaz | `granite_gemsandcrystals_topaz_ore` |   |   |   |
+| Amethyst | `granite_gemsandcrystals_amethyst_ore` |   | `andesite_gemsandcrystals_amethyst_ore` | `tuff_gemsandcrystals_amethyst_ore` |
+| Quartz | `granite_gemsandcrystals_quartz_ore` | `diorite_gemsandcrystals_quartz_ore` | `andesite_gemsandcrystals_quartz_ore` | `tuff_gemsandcrystals_quartz_ore` |
+| Topaz | `granite_gemsandcrystals_topaz_ore` |   |   |   |
 
 **SimpleOres, Overworld, requires `simpleores`**
 
 | | granite | diorite | tuff |
 |---|---|---|---|
-| Simpleores Tin | `granite_simpleores_tin_ore` |   |   |
-| Simpleores Mythril | `granite_simpleores_mythril_ore` | `diorite_simpleores_mythril_ore` | `tuff_simpleores_mythril_ore` |
-| Simpleores Adamantium | `granite_simpleores_adamantium_ore` | `diorite_simpleores_adamantium_ore` | `tuff_simpleores_adamantium_ore` |
+| Tin | `granite_simpleores_tin_ore` |   |   |
+| Mythril | `granite_simpleores_mythril_ore` | `diorite_simpleores_mythril_ore` | `tuff_simpleores_mythril_ore` |
+| Adamantium | `granite_simpleores_adamantium_ore` | `diorite_simpleores_adamantium_ore` | `tuff_simpleores_adamantium_ore` |
 
 **SimpleOres, Nether, requires `simpleores`**
 
 | | blackstone |
 |---|---|
-| Simpleores Onyx | `blackstone_simpleores_onyx_ore` |
+| Onyx | `blackstone_simpleores_onyx_ore` |
 
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
@@ -303,11 +303,11 @@ Stones: Deep Blackstone `minecraft_blackstone`
 | Dense Lead | `dense_lead` | Dense Mekanism `densemekanism` | Deep Blackstone |
 | Lead | `lead` | Create: TFMG `tfmg` | Deep Blackstone |
 | Dark | `dark` | EvilCraft `evilcraft` | Deep Blackstone |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | Deep Blackstone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | Deep Blackstone |
-| Denseores Redstone | `denseores_redstone` | Dense Ores `denseores` | Deep Blackstone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Deep Blackstone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Deep Blackstone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | Deep Blackstone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | Deep Blackstone |
+| Dense Redstone | `denseores_redstone` | Dense Ores `denseores` | Deep Blackstone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Deep Blackstone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Deep Blackstone |
 
 **Blockus, requires `blockus`** (Fabric)
 
@@ -338,11 +338,11 @@ Stones: Limestone `blockus_limestone`, Marble `blockus_marble`, Bluestone `block
 | Tin | `energized_tin` | Energized Power `energizedpower` | Limestone, Marble |
 | Gleaming | `gleaming` | Things `things` | Marble |
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone, Marble |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Marble |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone, Marble |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Marble, Bluestone |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Bluestone |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Marble |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone, Marble |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Marble, Bluestone |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Bluestone |
 
 **Create, requires `create`** (Create Fly, Fabric)
 
@@ -385,12 +385,12 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Tin | `energized_tin` | Energized Power `energizedpower` | Limestone |
 | Gleaming | `gleaming` | Things `things` | Calcite |
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Scoria, Calcite, Smooth Basalt |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Asurine |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Crimsite |
-| Simpleores Onyx | `simpleores_onyx` | SimpleOres `simpleores` | Scorchia, Scoria, Smooth Basalt |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Asurine |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Crimsite |
+| Onyx | `simpleores_onyx` | SimpleOres `simpleores` | Scorchia, Scoria, Smooth Basalt |
 
 **Promenade, requires `promenade`** (Fabric)
 
@@ -416,10 +416,10 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Platinum | `platinum` | Mythic Metals `mythicmetals` | Blunite |
 | Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Blunite |
 | Silver | `silver` | Mythic Metals `mythicmetals` | every stone |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Asphalt |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Blunite |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Blunite |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | Asphalt |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Blunite |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Blunite |
 
 **Wilder Wild, requires `wilderwild`** (Fabric)
 
@@ -439,9 +439,9 @@ Stones: Gabbro `wilderwild_gabbro`
 | Platinum | `platinum` | Mythic Metals `mythicmetals` | Gabbro |
 | Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Gabbro |
 | Silver | `silver` | Mythic Metals `mythicmetals` | Gabbro |
-| Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Gabbro |
-| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Gabbro |
-| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Gabbro |
+| Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Gabbro |
+| Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Gabbro |
+| Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Gabbro |
 
 **Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric and NeoForge)
 
@@ -458,11 +458,11 @@ Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacit
 | Uraninite Poor | `uraninite_poor` | Powah `powah` | White Dacite |
 | Lead | `lead` | Create: TFMG `tfmg` | every stone |
 | Tin | `energized_tin` | Energized Power `energizedpower` | Dacite, White Dacite |
-| Denseores Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
-| Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
+| Dense Copper | `denseores_copper` | Dense Ores `denseores` | every stone |
+| Dense Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
 | Tin | `bronze_tin` | Bronze `bronze` | Dacite, White Dacite |
-| Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
-| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Dacite, White Dacite |
+| Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
+| Tin | `simpleores_tin` | SimpleOres `simpleores` | Dacite, White Dacite |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
