@@ -137,6 +137,9 @@ Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/turquoise_overlay.png
   assets/seamlessores/textures/block/white_diamond_overlay.png
 
+Stellaris by Exodus Studio, MIT:
+  assets/seamlessores/textures/block/stellaris_titanium_overlay.png
+
 Tech Reborn by Team Reborn, modmuss50, drcrazy, MIT:
   assets/seamlessores/textures/block/cinnabar_overlay.png
   assets/seamlessores/textures/block/galena_overlay.png

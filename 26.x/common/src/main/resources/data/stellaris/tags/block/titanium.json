@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:diorite_stellaris_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_stellaris_titanium_ore",
+      "required": false
+    }
+  ]
+}

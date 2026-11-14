@@ -400,6 +400,10 @@
       "id": "seamlessores:diorite_gemsandcrystals_quartz_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_stellaris_titanium_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     "seamlessores:andesite_iron_ore",
     "seamlessores:andesite_copper_ore",
@@ -566,6 +570,10 @@
     },
     {
       "id": "seamlessores:andesite_gemsandcrystals_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_stellaris_titanium_ore",
       "required": false
     },
     "seamlessores:dripstone_coal_ore",

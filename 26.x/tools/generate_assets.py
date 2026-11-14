@@ -119,6 +119,7 @@ PROFILES = {
             "thesilverage": REFS + "thesilverage-neoforge-26.1.2-1.4.0.jar",
             "theleadage": REFS + "theleadage-neoforge-26.1.2-1.2.1.jar",
             "gemsandcrystals": REFS + "gemsandcrystals-1.6.0-neoforge+26.1.2.jar",
+            "stellaris": REFS + "stellaris-26.1.2-neoforge-2.0.10.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -148,6 +149,7 @@ PROFILES = {
             "thesilverage": ('fabric', 'neoforge'),
             "theleadage": ('fabric', 'neoforge'),
             "gemsandcrystals": ('fabric', 'neoforge'),
+            "stellaris": ('fabric', 'neoforge'),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -180,6 +182,7 @@ PROFILES = {
             "thesilverage": REFS + "thesilverage-neoforge-26.2-1.4.0.jar",
             "theleadage": REFS + "theleadage-neoforge-26.2-1.2.1.jar",
             "gemsandcrystals": REFS + "gemsandcrystals-1.6.0-neoforge+26.2.jar",
+            "stellaris": REFS + "stellaris-26.1.2-neoforge-2.0.10.jar",   # no 26.2 build: stands in, inert
         },
         "available": {
             "create": ("fabric",),
@@ -236,6 +239,7 @@ PROFILES = {
             "thesilverage": REFS + "thesilverage-neoforge-26.3-1.4.0.jar",
             "theleadage": REFS + "theleadage-neoforge-26.3-1.2.1.jar",
             "gemsandcrystals": REFS + "gemsandcrystals-1.6.0-neoforge+26.3.jar",
+            "stellaris": REFS + "stellaris-26.1.2-neoforge-2.0.10.jar",   # no 26.3 build: stands in, inert
         },
         "available": {
             "powah": ("neoforge",),
@@ -488,6 +492,8 @@ MODS = {
                        "licence": "MIT", "author": "PhantomWing"},
     "gemsandcrystals": {"display": "Gems and Crystals", "category": "gemsandcrystals",
                        "licence": "MIT", "author": "Coliwogg"},
+    "stellaris": {"display": "Stellaris", "category": "stellaris",
+                       "licence": "MIT", "author": "Exodus Studio"},
 }
 
 ORE_DEFS = [
@@ -988,6 +994,10 @@ ORE_DEFS = [
     {"name": "gemsandcrystals_topaz", "overlay": "gemsandcrystals_topaz", "source": "topaz_ore", "base": "stone",
      "mod": "gemsandcrystals",
      "tiers": {"stone": "topaz_ore", "deepslate": "deepslate_topaz_ore"}},
+    # --- Stellaris (mod id stellaris, MIT from its 26.1.2 line; its 1.21.1 line is CC BY-NC-SA with other ores): overworld titanium, a copy of iron ore, drawn apart in deepslate. Its moon ores lie in moon stone: no variants. Fabric and NeoForge at 26.1; its 26.1.2 jar stands in for 26.2 and 26.3 ---
+    {"name": "stellaris_titanium", "overlay": "stellaris_titanium", "deepslate_overlay": "stellaris_titanium_deepslate", "source": "titanium_ore", "base": "stone",
+     "mod": "stellaris",
+     "tiers": {"stone": "titanium_ore", "deepslate": "deepslate_titanium_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -1083,6 +1093,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "thesilverage": ('fabric', 'neoforge'),
     "theleadage": ('fabric', 'neoforge'),
     "gemsandcrystals": ('fabric', 'neoforge'),
+    "stellaris": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1249,6 +1260,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.stellaris": "Stellaris",
         f"text.autoconfig.{MOD_ID}.category.gemsandcrystals": "Gems and Crystals",
         f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
         f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
@@ -1278,6 +1290,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.stellaris": "Stellaris: variants",
+        f"text.autoconfig.{MOD_ID}.option.stellaris.@Tooltip":
+            "Generate host-matched titanium ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals": "Gems and Crystals: variants",
         f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals.@Tooltip":

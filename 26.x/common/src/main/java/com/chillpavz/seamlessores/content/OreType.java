@@ -727,6 +727,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(3, 7), null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
 
+    // --- Stellaris (mod id stellaris, MIT from its 26.1.2 line; its 1.21.1 line is CC BY-NC-SA with other ores): overworld titanium, a copy of iron ore, drawn apart in deepslate. Its moon ores lie in moon stone: no variants. Fabric and NeoForge at 26.1; its 26.1.2 jar stands in for 26.2 and 26.3 ---
+    public static final OreType STL_TITANIUM = ore(
+            "stellaris_titanium", "stellaris_titanium", "stellaris_titanium_deepslate", "stellaris",
+            of("stellaris", "titanium_ore"), of("stellaris", "deepslate_titanium_ore"), null,
+            NONE, null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -759,7 +766,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     OT_NICKEL, OT_PLATINUM, OT_END_PLATINUM,
                     TSA_SILVER,
                     TLA_LEAD,
-                    GAC_AMETHYST, GAC_QUARTZ, GAC_RUBY, GAC_SAPPHIRE, GAC_TOPAZ);
+                    GAC_AMETHYST, GAC_QUARTZ, GAC_RUBY, GAC_SAPPHIRE, GAC_TOPAZ,
+                    STL_TITANIUM);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

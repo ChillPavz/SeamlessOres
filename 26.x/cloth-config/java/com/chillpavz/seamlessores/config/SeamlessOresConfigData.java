@@ -496,6 +496,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean gemsAndCrystals = true;
 
+    // --- Stellaris -----------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("stellaris")
+    @ConfigEntry.Gui.Tooltip
+    public boolean stellaris = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -617,6 +623,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.theSilverAge = theSilverAge;
         values.theLeadAge = theLeadAge;
         values.gemsAndCrystals = gemsAndCrystals;
+        values.stellaris = stellaris;
 
         SeamlessOresConfig.apply(values);
     }

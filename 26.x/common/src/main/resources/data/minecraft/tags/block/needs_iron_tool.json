@@ -236,6 +236,10 @@
       "id": "seamlessores:diorite_gemsandcrystals_quartz_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_stellaris_titanium_ore",
+      "required": false
+    },
     "seamlessores:andesite_gold_ore",
     "seamlessores:andesite_diamond_ore",
     "seamlessores:andesite_emerald_ore",
@@ -326,6 +330,10 @@
     },
     {
       "id": "seamlessores:andesite_gemsandcrystals_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_stellaris_titanium_ore",
       "required": false
     },
     "seamlessores:tuff_gold_ore",
