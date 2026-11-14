@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_simpleores_adamantium_ore",
+      "required": false
+    }
+  ]
+}

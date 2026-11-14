@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/create_crimsite_simpleores_adamantium_ore_0"
+      },
+      {
+        "model": "seamlessores:block/create_crimsite_simpleores_adamantium_ore_1"
+      },
+      {
+        "model": "seamlessores:block/create_crimsite_simpleores_adamantium_ore_2"
+      },
+      {
+        "model": "seamlessores:block/create_crimsite_simpleores_adamantium_ore_3"
+      }
+    ]
+  }
+}

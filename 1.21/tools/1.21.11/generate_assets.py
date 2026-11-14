@@ -105,7 +105,8 @@ MOD_JARS = {"create_new_age": CREATE_NEW_AGE_JAR,
             "bronze": jar("bronze-neoforge-2.1.6+1.21.11.jar"),
             "thesilverage": jar("thesilverage-neoforge-1.21.11-1.4.0.jar"),
             "theleadage": jar("theleadage-neoforge-1.21.11-1.2.1.jar"),
-            "gemsandcrystals": jar("gemsandcrystals-1.6.0-neoforge+1.21.11-hotfix.1.jar")}
+            "gemsandcrystals": jar("gemsandcrystals-1.6.0-neoforge+1.21.11-hotfix.1.jar"),
+            "simpleores": jar("simpleores-2.2.5-1.21.11-neoforge.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -235,6 +236,8 @@ MODS = {
                        "licence": "MIT", "author": "PhantomWing"},
     "gemsandcrystals": {"display": "Gems and Crystals", "category": "gemsandcrystals",
                        "licence": "MIT", "author": "Coliwogg"},
+    "simpleores": {"display": "SimpleOres", "category": "simpleores",
+                       "licence": "LGPL-3.0", "author": "AleXndrTheGr8st, Sinhika, Paint_Ninja, Paulem"},
 }
 
 ORE_DEFS = [
@@ -604,6 +607,19 @@ ORE_DEFS = [
     {"name": "gemsandcrystals_topaz", "overlay": "gemsandcrystals_topaz", "source": "topaz_ore", "base": "stone",
      "mod": "gemsandcrystals",
      "tiers": {"stone": "topaz_ore", "deepslate": "deepslate_topaz_ore"}},
+    # --- SimpleOres (mod id simpleores; SimpleOres2 is LGPL-3.0, its Recontinued line CC0 with the same block ids, so shipped as LGPL-3.0, the stricter): onyx is a Nether ore, its basalt form its own. Forge (SimpleOres2) and Fabric at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "simpleores_tin", "overlay": "simpleores_tin", "source": "tin_ore", "base": "stone",
+     "mod": "simpleores",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    {"name": "simpleores_mythril", "overlay": "simpleores_mythril", "source": "mythril_ore", "base": "stone",
+     "mod": "simpleores",
+     "tiers": {"stone": "mythril_ore", "deepslate": "deepslate_mythril_ore"}},
+    {"name": "simpleores_adamantium", "overlay": "simpleores_adamantium", "source": "adamantium_ore", "base": "stone",
+     "mod": "simpleores",
+     "tiers": {"stone": "adamantium_ore", "deepslate": "deepslate_adamantium_ore"}},
+    {"name": "simpleores_onyx", "overlay": "simpleores_onyx", "skip_hosts": ["basalt"], "source": "onyx_ore", "base": "netherrack",
+     "mod": "simpleores",
+     "tiers": {"nether": "onyx_ore"}},
 ]
 
 # This generator writes ONE band of the 1.21 folder: everything it emits goes to
@@ -687,6 +703,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "thesilverage": ('fabric', 'neoforge'),
     "theleadage": ('fabric', 'neoforge'),
     "gemsandcrystals": ('fabric', 'neoforge'),
+    "simpleores": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -869,6 +886,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.simpleores": "SimpleOres",
         f"text.autoconfig.{MOD_ID}.category.gemsandcrystals": "Gems and Crystals",
         f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
         f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
@@ -890,6 +908,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.things": "Things",
         f"text.autoconfig.{MOD_ID}.category.silent_gear": "Silent Gear",
         f"text.autoconfig.{MOD_ID}.category.create_new_age": "Create: New Age",
+
+        f"text.autoconfig.{MOD_ID}.option.simpleOres": "SimpleOres: variants",
+        f"text.autoconfig.{MOD_ID}.option.simpleOres.@Tooltip":
+            "Generate host-matched tin, mythril, adamantium and onyx ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals": "Gems and Crystals: variants",
         f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals.@Tooltip":

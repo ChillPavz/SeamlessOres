@@ -1302,6 +1302,28 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(4, 8), null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
 
+    // --- SimpleOres (mod id simpleores; SimpleOres2 is LGPL-3.0, its Recontinued line CC0 with the same block ids, so shipped as LGPL-3.0, the stricter): onyx is a Nether ore, its basalt form its own. Forge (SimpleOres2) and Fabric at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    public static final OreType SMO_TIN = ore(
+            "simpleores_tin", "simpleores_tin", null, "simpleores",
+            of("simpleores", "tin_ore"), of("simpleores", "deepslate_tin_ore"), null,
+            UniformInt.of(2, 5), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 3.0F, 3.0F);
+    public static final OreType SMO_MYTHRIL = ore(
+            "simpleores_mythril", "simpleores_mythril", null, "simpleores",
+            of("simpleores", "mythril_ore"), of("simpleores", "deepslate_mythril_ore"), null,
+            UniformInt.of(2, 5), null, false, Set.of())
+            .withStrength(4.0F, 3.0F, 4.0F, 3.0F);
+    public static final OreType SMO_ADAMANTIUM = ore(
+            "simpleores_adamantium", "simpleores_adamantium", null, "simpleores",
+            of("simpleores", "adamantium_ore"), of("simpleores", "deepslate_adamantium_ore"), null,
+            UniformInt.of(2, 5), null, false, Set.of())
+            .withStrength(5.0F, 3.0F, 5.0F, 3.0F);
+    public static final OreType SMO_ONYX = ore(
+            "simpleores_onyx", "simpleores_onyx", null, "simpleores",
+            null, null, of("simpleores", "onyx_ore"),
+            UniformInt.of(9, 14), null, false, Set.of("basalt"))
+            .withStrength(7.0F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1362,7 +1384,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     TSA_SILVER,
                     TLA_LEAD,
                     GAC_AMETHYST, GAC_QUARTZ, GAC_RUBY, GAC_SAPPHIRE, GAC_TOPAZ,
-                    CLT_SILVER);
+                    CLT_SILVER,
+                    SMO_TIN, SMO_MYTHRIL, SMO_ADAMANTIUM, SMO_ONYX);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

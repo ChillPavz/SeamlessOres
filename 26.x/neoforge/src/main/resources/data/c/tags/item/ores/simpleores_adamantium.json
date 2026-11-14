@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_simpleores_adamantium_ore",
+      "required": false
+    }
+  ]
+}

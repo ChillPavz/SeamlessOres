@@ -166,7 +166,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "thesilverage": jar("thesilverage-neoforge-1.21.1-1.4.0.jar"),
             "theleadage": jar("theleadage-neoforge-1.21.1-1.3.0.jar"),
             "gemsandcrystals": jar("gemsandcrystals-1.4.7-neoforge+1.21.1.jar"),
-            "clutter": jar("clutter-1.21.1-0.6.7.jar")}
+            "clutter": jar("clutter-1.21.1-0.6.7.jar"),
+            "simpleores": jar("simpleores-2.2.5-1.21-neoforge.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -479,6 +480,8 @@ MODS = {
                        "licence": "MIT", "author": "Coliwogg"},
     "clutter": {"display": "Clutter", "category": "clutter",
                        "licence": "MIT", "author": "EmilSG"},
+    "simpleores": {"display": "SimpleOres", "category": "simpleores",
+                       "licence": "LGPL-3.0", "author": "AleXndrTheGr8st, Sinhika, Paint_Ninja, Paulem"},
 }
 
 ORE_DEFS = [
@@ -1396,6 +1399,19 @@ ORE_DEFS = [
     {"name": "clutter_silver", "overlay": "clutter_silver", "source": "silver_ore", "base": "stone",
      "mod": "clutter",
      "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
+    # --- SimpleOres (mod id simpleores; SimpleOres2 is LGPL-3.0, its Recontinued line CC0 with the same block ids, so shipped as LGPL-3.0, the stricter): onyx is a Nether ore, its basalt form its own. Forge (SimpleOres2) and Fabric at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "simpleores_tin", "overlay": "simpleores_tin", "source": "tin_ore", "base": "stone",
+     "mod": "simpleores",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    {"name": "simpleores_mythril", "overlay": "simpleores_mythril", "source": "mythril_ore", "base": "stone",
+     "mod": "simpleores",
+     "tiers": {"stone": "mythril_ore", "deepslate": "deepslate_mythril_ore"}},
+    {"name": "simpleores_adamantium", "overlay": "simpleores_adamantium", "source": "adamantium_ore", "base": "stone",
+     "mod": "simpleores",
+     "tiers": {"stone": "adamantium_ore", "deepslate": "deepslate_adamantium_ore"}},
+    {"name": "simpleores_onyx", "overlay": "simpleores_onyx", "skip_hosts": ["basalt"], "source": "onyx_ore", "base": "netherrack",
+     "mod": "simpleores",
+     "tiers": {"nether": "onyx_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1549,6 +1565,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "theleadage": ('fabric', 'neoforge'),
     "gemsandcrystals": ('fabric', 'neoforge'),
     "clutter": ('fabric',),
+    "simpleores": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1660,6 +1677,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.simpleores": "SimpleOres",
         f"text.autoconfig.{MOD_ID}.category.clutter": "Clutter",
         f"text.autoconfig.{MOD_ID}.category.gemsandcrystals": "Gems and Crystals",
         f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
@@ -1712,6 +1730,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.simpleOres": "SimpleOres: variants",
+        f"text.autoconfig.{MOD_ID}.option.simpleOres.@Tooltip":
+            "Generate host-matched tin, mythril, adamantium and onyx ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.clutter": "Clutter: variants",
         f"text.autoconfig.{MOD_ID}.option.clutter.@Tooltip":

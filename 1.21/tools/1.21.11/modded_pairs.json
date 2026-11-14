@@ -380,6 +380,33 @@
     "mythicmetals:silver_ore"
    ]
   },
+  "simpleores_adamantium": {
+   "mod": "simpleores",
+   "forms": [
+    "simpleores:adamantium_ore",
+    "simpleores:deepslate_adamantium_ore"
+   ]
+  },
+  "simpleores_mythril": {
+   "mod": "simpleores",
+   "forms": [
+    "simpleores:mythril_ore",
+    "simpleores:deepslate_mythril_ore"
+   ]
+  },
+  "simpleores_onyx": {
+   "mod": "simpleores",
+   "forms": [
+    "simpleores:onyx_ore"
+   ]
+  },
+  "simpleores_tin": {
+   "mod": "simpleores",
+   "forms": [
+    "simpleores:tin_ore",
+    "simpleores:deepslate_tin_ore"
+   ]
+  },
   "starrite": {
    "mod": "mythicmetals",
    "forms": [
@@ -525,6 +552,13 @@
     ],
     "rate": 8.37
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 8.56
+   },
    "starrite": {
     "where": [
      "1.21.11 fabric"
@@ -626,6 +660,13 @@
     ],
     "rate": 0.72
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 1.53
+   },
    "theleadage_lead": {
     "where": [
      "1.21.11 fabric",
@@ -726,6 +767,13 @@
      "1.21.11 fabric"
     ],
     "rate": 7.63
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 16.14
    },
    "starrite": {
     "where": [
@@ -837,6 +885,24 @@
      "1.21.11 fabric"
     ],
     "rate": 15.82
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 65.08
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 81.26
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 152.11
    },
    "theleadage_lead": {
     "where": [
@@ -989,6 +1055,24 @@
      "1.21.11 fabric"
     ],
     "rate": 68.88
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 9.31
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 31.46
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 240.49
    },
    "starrite": {
     "where": [
@@ -1154,6 +1238,24 @@
     ],
     "rate": 68.88
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 9.31
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 31.46
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 232.03
+   },
    "theleadage_lead": {
     "where": [
      "1.21.11 fabric"
@@ -1263,6 +1365,24 @@
      "1.21.11 fabric"
     ],
     "rate": 5.82
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 21.42
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 20.28
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 37.67
    },
    "theleadage_lead": {
     "where": [
@@ -1421,6 +1541,24 @@
      "1.21.11 fabric"
     ],
     "rate": 26.93
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 12.37
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 31.55
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 153.85
    },
    "theleadage_lead": {
     "where": [
@@ -1586,6 +1724,24 @@
     ],
     "rate": 26.93
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 12.37
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 31.55
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 153.85
+   },
    "theleadage_lead": {
     "where": [
      "1.21.11 fabric"
@@ -1749,6 +1905,24 @@
      "1.21.11 fabric"
     ],
     "rate": 35.78
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 16.43
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 41.92
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 204.4
    },
    "theleadage_lead": {
     "where": [
@@ -1914,6 +2088,24 @@
     ],
     "rate": 23.34
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 10.72
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 27.35
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 133.34
+   },
    "theleadage_lead": {
     "where": [
      "1.21.11 fabric"
@@ -1975,6 +2167,12 @@
      "1.21.11 fabric"
     ],
     "rate": 13.07
+   },
+   "simpleores_onyx": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 15.44
    },
    "stormyx": {
     "where": [
@@ -2146,6 +2344,30 @@
     ],
     "rate": 22.59
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 10.37
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 26.46
+   },
+   "simpleores_onyx": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 16.41
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 129.04
+   },
    "stormyx": {
     "where": [
      "1.21.11 fabric"
@@ -2315,6 +2537,24 @@
      "1.21.11 fabric"
     ],
     "rate": 25.46
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 11.69
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 29.83
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 145.46
    },
    "theleadage_lead": {
     "where": [
@@ -2642,6 +2882,27 @@
     ],
     "rate": 0.7
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 1.7
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 2.53
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric",
+     "1.21.11 neoforge"
+    ],
+    "rate": 5.08
+   },
    "theleadage_lead": {
     "where": [
      "1.21.11 fabric",
@@ -2833,6 +3094,24 @@
     ],
     "rate": 15.77
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 7.24
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 18.48
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 90.11
+   },
    "theleadage_lead": {
     "where": [
      "1.21.11 fabric"
@@ -2996,6 +3275,24 @@
      "1.21.11 fabric"
     ],
     "rate": 10.0
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 4.59
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 11.72
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 57.14
    },
    "theleadage_lead": {
     "where": [
@@ -3191,6 +3488,30 @@
     ],
     "rate": 8.18
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 3.76
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 9.59
+   },
+   "simpleores_onyx": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 5.69
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 46.75
+   },
    "stormyx": {
     "where": [
      "1.21.11 fabric"
@@ -3354,6 +3675,24 @@
      "1.21.11 fabric"
     ],
     "rate": 55.05
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 7.44
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 25.1
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 162.61
    },
    "starrite": {
     "where": [
@@ -3519,6 +3858,24 @@
     ],
     "rate": 55.05
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 7.44
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 25.1
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 165.78
+   },
    "starrite": {
     "where": [
      "1.21.11 fabric"
@@ -3670,6 +4027,24 @@
      "1.21.11 fabric"
     ],
     "rate": 3.01
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 2.94
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 4.66
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.11 fabric"
+    ],
+    "rate": 16.7
    },
    "theleadage_lead": {
     "where": [

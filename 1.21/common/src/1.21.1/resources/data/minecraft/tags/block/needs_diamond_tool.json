@@ -85,6 +85,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_simpleores_onyx_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_silentgems_chaos_ore",
       "required": false
     },
@@ -149,6 +153,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_scorchia_simpleores_onyx_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scoria_silentgems_chaos_ore",
       "required": false
     },
@@ -194,6 +202,10 @@
     },
     {
       "id": "seamlessores:create_scoria_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_scoria_simpleores_onyx_ore",
       "required": false
     },
     {
@@ -246,6 +258,10 @@
     },
     {
       "id": "seamlessores:smooth_basalt_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:smooth_basalt_simpleores_onyx_ore",
       "required": false
     },
     {
@@ -322,6 +338,10 @@
     },
     {
       "id": "seamlessores:twigs_bloodstone_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_bloodstone_simpleores_onyx_ore",
       "required": false
     },
     {

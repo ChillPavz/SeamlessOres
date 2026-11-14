@@ -13,6 +13,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },
@@ -22,6 +26,10 @@
     },
     {
       "id": "seamlessores:blockus_limestone_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_simpleores_tin_ore",
       "required": false
     },
     {
@@ -37,6 +45,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_limestone_mythicmetals_tin_ore",
       "required": false
     },
@@ -49,7 +61,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:create_limestone_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_marble_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:quark_limestone_simpleores_tin_ore",
       "required": false
     },
     {
@@ -65,6 +97,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:spawn_reefstone_mythicmetals_tin_ore",
       "required": false
     },
@@ -77,11 +113,19 @@
       "required": false
     },
     {
+      "id": "seamlessores:spawn_reefstone_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_mythicmetals_tin_ore",
       "required": false
     },
     {
       "id": "seamlessores:biomeswevegone_dacite_techreborn_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_simpleores_tin_ore",
       "required": false
     },
     {
@@ -97,6 +141,26 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_white_dacite_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_ivory_travertine_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_peach_travertine_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_persimmon_travertine_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:atmospheric_saffron_travertine_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_travertine_mythicmetals_tin_ore",
       "required": false
     },
@@ -109,6 +173,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_travertine_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_white_chalk_mythicmetals_tin_ore",
       "required": false
     },
@@ -118,6 +186,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_white_chalk_modern_industrialization_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_simpleores_tin_ore",
       "required": false
     }
   ]

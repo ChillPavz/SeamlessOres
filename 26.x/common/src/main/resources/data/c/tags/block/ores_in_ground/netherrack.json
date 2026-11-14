@@ -129,6 +129,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_simpleores_onyx_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_scorchia_nether_gold_ore",
       "required": false
     },

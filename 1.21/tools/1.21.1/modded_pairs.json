@@ -1262,6 +1262,33 @@
     "mythicmetals:silver_ore"
    ]
   },
+  "simpleores_adamantium": {
+   "mod": "simpleores",
+   "forms": [
+    "simpleores:adamantium_ore",
+    "simpleores:deepslate_adamantium_ore"
+   ]
+  },
+  "simpleores_mythril": {
+   "mod": "simpleores",
+   "forms": [
+    "simpleores:mythril_ore",
+    "simpleores:deepslate_mythril_ore"
+   ]
+  },
+  "simpleores_onyx": {
+   "mod": "simpleores",
+   "forms": [
+    "simpleores:onyx_ore"
+   ]
+  },
+  "simpleores_tin": {
+   "mod": "simpleores",
+   "forms": [
+    "simpleores:tin_ore",
+    "simpleores:deepslate_tin_ore"
+   ]
+  },
   "sodalite": {
    "mod": "techreborn",
    "forms": [
@@ -1815,6 +1842,12 @@
     ],
     "rate": 27.67
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 114.39
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -2039,6 +2072,12 @@
     ],
     "rate": 0.23
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.45
+   },
    "sun_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -2251,6 +2290,12 @@
     ],
     "rate": 0.23
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.45
+   },
    "sun_stone": {
     "where": [
      "1.21.1 neoforge"
@@ -2462,6 +2507,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.23
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.45
    },
    "sun_stone": {
     "where": [
@@ -2765,6 +2816,12 @@
     ],
     "rate": 9.22
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 38.13
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -2988,6 +3045,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.23
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.45
    },
    "sun_stone": {
     "where": [
@@ -3664,6 +3727,13 @@
     ],
     "rate": 15.43
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.56
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -3960,6 +4030,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.23
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.53
    },
    "sulfurpotassiummod_potassium": {
     "where": [
@@ -4282,6 +4359,13 @@
     ],
     "rate": 9.28
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.14
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -4509,6 +4593,24 @@
      "1.21.1 fabric"
     ],
     "rate": 10.81
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 65.08
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 81.26
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 152.11
    },
    "sulfurpotassiummod_sulfur": {
     "where": [
@@ -4769,6 +4871,24 @@
      "1.21.1 fabric"
     ],
     "rate": 68.88
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 9.31
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 31.46
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 240.49
    },
    "starrite": {
     "where": [
@@ -5066,6 +5186,24 @@
     ],
     "rate": 68.88
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 9.31
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 31.46
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 232.03
+   },
    "sulfurpotassiummod_potassium": {
     "where": [
      "1.21.1 fabric"
@@ -5307,6 +5445,24 @@
      "1.21.1 fabric"
     ],
     "rate": 2.27
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 21.42
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 20.28
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 37.67
    },
    "sulfurpotassiummod_sulfur": {
     "where": [
@@ -5933,6 +6089,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 29.68
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.52
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 58.22
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 115.46
    },
    "soulstone": {
     "where": [
@@ -6661,6 +6835,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 20.03
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.37
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.55
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 153.85
    },
    "soulstone": {
     "where": [
@@ -7402,6 +7594,24 @@
     ],
     "rate": 25.61
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.81
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 40.34
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 196.71
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -8141,6 +8351,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 26.61
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.43
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 41.92
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 204.4
    },
    "soulstone": {
     "where": [
@@ -8882,6 +9110,24 @@
     ],
     "rate": 17.36
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 10.72
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 27.35
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 133.34
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -9135,6 +9381,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 21.14
+   },
+   "simpleores_onyx": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 24.97
    },
    "solar_core": {
     "where": [
@@ -9863,6 +10115,30 @@
      "1.21.1 neoforge"
     ],
     "rate": 23.0
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 14.2
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 36.23
+   },
+   "simpleores_onyx": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.41
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 176.66
    },
    "solar_core": {
     "where": [
@@ -10610,6 +10886,24 @@
     ],
     "rate": 18.94
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.69
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.83
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 145.46
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -11295,6 +11589,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.39
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.71
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.68
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.79
    },
    "soulstone": {
     "where": [
@@ -12006,6 +12318,24 @@
     ],
     "rate": 145.83
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 226.54
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 285.39
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 535.91
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -12709,6 +13039,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 9.56
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 14.85
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.71
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 35.14
    },
    "soulstone": {
     "where": [
@@ -13420,6 +13768,24 @@
     ],
     "rate": 20.17
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 28.04
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 38.64
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 73.94
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -14058,6 +14424,24 @@
     ],
     "rate": 8.97
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.1
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 6.2
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 98.42
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -14341,6 +14725,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 13.29
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 9.15
    },
    "soulstone": {
     "where": [
@@ -14656,6 +15046,12 @@
     ],
     "rate": 3.8
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 44.88
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -14891,6 +15287,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 35.04
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.57
    },
    "soulstone": {
     "where": [
@@ -15301,6 +15703,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.15
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.29
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 44.93
    },
    "soulstone": {
     "where": [
@@ -15777,6 +16191,18 @@
      "1.21.1 neoforge"
     ],
     "rate": 87.94
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 230.94
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 156.81
    },
    "soulstone": {
     "where": [
@@ -16621,6 +17047,27 @@
      "1.21.1 fabric"
     ],
     "rate": 8.64
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.74
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.58
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.08
    },
    "soulstone": {
     "where": [
@@ -17550,6 +17997,27 @@
     ],
     "rate": 8.64
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.74
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.58
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.08
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -18478,6 +18946,27 @@
     ],
     "rate": 8.64
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 8.74
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.58
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.08
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -19329,6 +19818,20 @@
     ],
     "rate": 0.91
    },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.16
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.85
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -20173,6 +20676,27 @@
     ],
     "rate": 0.7
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.7
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.53
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.08
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -20973,6 +21497,24 @@
     ],
     "rate": 11.73
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.24
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.48
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 90.11
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -21712,6 +22254,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 19.84
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 12.25
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 31.25
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 152.39
    },
    "soulstone": {
     "where": [
@@ -22567,6 +23127,30 @@
     ],
     "rate": 18.49
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.41
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 29.12
+   },
+   "simpleores_onyx": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.34
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 142.0
+   },
    "solar_core": {
     "where": [
      "1.21.1 neoforge"
@@ -23346,6 +23930,20 @@
     ],
     "rate": 50.52
    },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.87
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 198.05
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -23735,6 +24333,13 @@
     ],
     "rate": 6.19
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 13.52
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -24092,6 +24697,13 @@
     ],
     "rate": 24.74
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 43.03
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -24412,6 +25024,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.86
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.05
    },
    "soulstone": {
     "where": [
@@ -25176,6 +25795,27 @@
      "1.21.1 fabric"
     ],
     "rate": 55.05
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.44
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 25.1
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 162.61
    },
    "soulstone": {
     "where": [
@@ -26063,6 +26703,27 @@
     ],
     "rate": 55.05
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 7.44
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 25.1
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 165.78
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -26809,6 +27470,24 @@
     ],
     "rate": 90.95
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 23.94
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 83.73
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1124.96
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -27464,6 +28143,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 265.27
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 69.83
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 244.2
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 3281.12
    },
    "soulstone": {
     "where": [
@@ -28121,6 +28818,24 @@
     ],
     "rate": 151.58
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.9
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 139.54
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 1874.93
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -28767,6 +29482,27 @@
     ],
     "rate": 0.32
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.33
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 0.54
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.25
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -29108,6 +29844,13 @@
     ],
     "rate": 2.31
    },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 1.28
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -29427,6 +30170,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 4.64
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 16.47
    },
    "soulstone": {
     "where": [
@@ -30039,6 +30789,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 13.55
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 2.95
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 11.25
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 122.29
    },
    "soulstone": {
     "where": [
@@ -30755,6 +31523,24 @@
      "1.21.1 neoforge"
     ],
     "rate": 24.8
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.31
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.06
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 190.48
    },
    "soulstone": {
     "where": [
@@ -31496,6 +32282,24 @@
     ],
     "rate": 24.8
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.31
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.06
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 190.48
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -32236,6 +33040,24 @@
     ],
     "rate": 24.8
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 15.31
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 39.06
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 neoforge"
+    ],
+    "rate": 190.48
+   },
    "soulstone": {
     "where": [
      "1.21.1 neoforge"
@@ -32630,6 +33452,13 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.77
+   },
+   "simpleores_onyx": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 4.83
    },
    "solar_core": {
     "where": [
@@ -33341,6 +34170,27 @@
      "1.21.1 neoforge"
     ],
     "rate": 29.72
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 40.89
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 56.42
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 105.43
    },
    "soulstone": {
     "where": [
@@ -34245,6 +35095,27 @@
      "1.21.1 fabric"
     ],
     "rate": 3.58
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 3.85
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 5.79
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 18.84
    },
    "soulstone": {
     "where": [
@@ -35506,6 +36377,24 @@
     ],
     "rate": 3.01
    },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 2.94
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 4.66
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 16.7
+   },
    "sulfurpotassiummod_potassium": {
     "where": [
      "1.21.1 fabric"
@@ -36331,6 +37220,27 @@
      "1.21.1 fabric"
     ],
     "rate": 38.69
+   },
+   "simpleores_adamantium": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 26.48
+   },
+   "simpleores_mythril": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 52.97
+   },
+   "simpleores_tin": {
+    "where": [
+     "1.21.1 fabric",
+     "1.21.1 neoforge"
+    ],
+    "rate": 193.42
    },
    "soulstone": {
     "where": [

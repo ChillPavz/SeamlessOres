@@ -361,6 +361,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -1017,6 +1025,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:forbidden_arcanus_darkstone_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_hazennstuff_dreadstone_ore",
       "required": false
     },
@@ -1090,6 +1106,14 @@
     },
     {
       "id": "seamlessores:wilderwild_gabbro_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_simpleores_adamantium_ore",
       "required": false
     },
     {

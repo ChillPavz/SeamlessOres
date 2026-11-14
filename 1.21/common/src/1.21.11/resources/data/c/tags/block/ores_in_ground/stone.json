@@ -184,6 +184,18 @@
       "id": "seamlessores:granite_gemsandcrystals_topaz_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_simpleores_adamantium_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -302,6 +314,14 @@
     },
     {
       "id": "seamlessores:diorite_gemsandcrystals_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_simpleores_adamantium_ore",
       "required": false
     },
     "seamlessores:andesite_coal_ore",
@@ -564,6 +584,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_limestone_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_iron_ore",
       "required": false
     },
@@ -632,6 +656,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_marble_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_simpleores_mythril_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_bluestone_iron_ore",
       "required": false
     },
@@ -676,6 +708,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_bluestone_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_asurine_create_zinc_ore",
       "required": false
     },
@@ -693,6 +733,10 @@
     },
     {
       "id": "seamlessores:create_asurine_mythicmetals_kyber_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_simpleores_mythril_ore",
       "required": false
     },
     {
@@ -717,6 +761,10 @@
     },
     {
       "id": "seamlessores:create_crimsite_mythicmetals_quadrillum_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_crimsite_simpleores_adamantium_ore",
       "required": false
     },
     {
@@ -785,6 +833,10 @@
     },
     {
       "id": "seamlessores:create_limestone_theleadage_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_simpleores_tin_ore",
       "required": false
     },
     {
@@ -1088,6 +1140,14 @@
       "required": false
     },
     {
+      "id": "seamlessores:promenade_blunite_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_simpleores_adamantium_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_mythicmetals_osmium_ore",
       "required": false
     },
@@ -1152,6 +1212,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_white_dacite_iron_ore",
       "required": false
     },
@@ -1201,6 +1265,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_theleadage_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_simpleores_tin_ore",
       "required": false
     },
     {

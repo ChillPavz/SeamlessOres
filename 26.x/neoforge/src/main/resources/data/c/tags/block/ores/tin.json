@@ -25,6 +25,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_simpleores_tin_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_limestone_mythicmetals_tin_ore",
       "required": false
     },

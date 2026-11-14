@@ -866,6 +866,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean clutter = true;
 
+    // --- SimpleOres ----------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("simpleores")
+    @ConfigEntry.Gui.Tooltip
+    public boolean simpleOres = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -1064,6 +1070,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.theLeadAge = theLeadAge;
         values.gemsAndCrystals = gemsAndCrystals;
         values.clutter = clutter;
+        values.simpleOres = simpleOres;
 
         SeamlessOresConfig.apply(values);
     }

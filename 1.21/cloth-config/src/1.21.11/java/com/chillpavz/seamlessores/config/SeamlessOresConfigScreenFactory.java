@@ -86,6 +86,7 @@ public final class SeamlessOresConfigScreenFactory {
         MOD_CATEGORIES.put("thesilverage", "thesilverage");
         MOD_CATEGORIES.put("theleadage", "theleadage");
         MOD_CATEGORIES.put("gemsandcrystals", "gemsandcrystals");
+        MOD_CATEGORIES.put("simpleores", "simpleores");
     }
 
     /** The config screen to open, given whatever screen the player came from. */

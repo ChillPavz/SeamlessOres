@@ -120,6 +120,7 @@ PROFILES = {
             "theleadage": REFS + "theleadage-neoforge-26.1.2-1.2.1.jar",
             "gemsandcrystals": REFS + "gemsandcrystals-1.6.0-neoforge+26.1.2.jar",
             "stellaris": REFS + "stellaris-26.1.2-neoforge-2.0.10.jar",
+            "simpleores": REFS + "simpleores-2.2.5-26.1-neoforge.jar",
         },
         # Which supported mods a player can ACTUALLY get here, and on which loader (Modrinth API, re-
         # queried 1 Oct 2026; never from a project's "loaders" array, which is the union over every
@@ -150,6 +151,7 @@ PROFILES = {
             "theleadage": ('fabric', 'neoforge'),
             "gemsandcrystals": ('fabric', 'neoforge'),
             "stellaris": ('fabric', 'neoforge'),
+            "simpleores": ('fabric', 'neoforge'),
         },
     },
     # 26.2 (data formats 107 to 120). Tech Reborn CHANGED ITS LOOT at 6.1.1: galena and bauxite drop
@@ -183,6 +185,7 @@ PROFILES = {
             "theleadage": REFS + "theleadage-neoforge-26.2-1.2.1.jar",
             "gemsandcrystals": REFS + "gemsandcrystals-1.6.0-neoforge+26.2.jar",
             "stellaris": REFS + "stellaris-26.1.2-neoforge-2.0.10.jar",   # no 26.2 build: stands in, inert
+            "simpleores": REFS + "simpleores-2.2.5-26.2-neoforge.jar",
         },
         "available": {
             "create": ("fabric",),
@@ -200,6 +203,7 @@ PROFILES = {
             "thesilverage": ('fabric', 'neoforge'),
             "theleadage": ('fabric', 'neoforge'),
             "gemsandcrystals": ('fabric', 'neoforge'),
+            "simpleores": ('fabric', 'neoforge'),
         },
     },
     # 26.3 (data formats 121 and up): a new loot format, silk touch as a single "condition" (see
@@ -240,6 +244,7 @@ PROFILES = {
             "theleadage": REFS + "theleadage-neoforge-26.3-1.2.1.jar",
             "gemsandcrystals": REFS + "gemsandcrystals-1.6.0-neoforge+26.3.jar",
             "stellaris": REFS + "stellaris-26.1.2-neoforge-2.0.10.jar",   # no 26.3 build: stands in, inert
+            "simpleores": REFS + "simpleores-2.2.5-26.3-neoforge.jar",
         },
         "available": {
             "powah": ("neoforge",),
@@ -253,6 +258,7 @@ PROFILES = {
             "thesilverage": ('fabric', 'neoforge'),
             "theleadage": ('fabric', 'neoforge'),
             "gemsandcrystals": ('fabric', 'neoforge'),
+            "simpleores": ('fabric', 'neoforge'),
         },
     },
 }
@@ -494,6 +500,8 @@ MODS = {
                        "licence": "MIT", "author": "Coliwogg"},
     "stellaris": {"display": "Stellaris", "category": "stellaris",
                        "licence": "MIT", "author": "Exodus Studio"},
+    "simpleores": {"display": "SimpleOres", "category": "simpleores",
+                       "licence": "LGPL-3.0", "author": "AleXndrTheGr8st, Sinhika, Paint_Ninja, Paulem"},
 }
 
 ORE_DEFS = [
@@ -998,6 +1006,19 @@ ORE_DEFS = [
     {"name": "stellaris_titanium", "overlay": "stellaris_titanium", "deepslate_overlay": "stellaris_titanium_deepslate", "source": "titanium_ore", "base": "stone",
      "mod": "stellaris",
      "tiers": {"stone": "titanium_ore", "deepslate": "deepslate_titanium_ore"}},
+    # --- SimpleOres (mod id simpleores; SimpleOres2 is LGPL-3.0, its Recontinued line CC0 with the same block ids, so shipped as LGPL-3.0, the stricter): onyx is a Nether ore, its basalt form its own. Forge (SimpleOres2) and Fabric at 1.20.1, Fabric and NeoForge from 1.21.1 ---
+    {"name": "simpleores_tin", "overlay": "simpleores_tin", "source": "tin_ore", "base": "stone",
+     "mod": "simpleores",
+     "tiers": {"stone": "tin_ore", "deepslate": "deepslate_tin_ore"}},
+    {"name": "simpleores_mythril", "overlay": "simpleores_mythril", "source": "mythril_ore", "base": "stone",
+     "mod": "simpleores",
+     "tiers": {"stone": "mythril_ore", "deepslate": "deepslate_mythril_ore"}},
+    {"name": "simpleores_adamantium", "overlay": "simpleores_adamantium", "source": "adamantium_ore", "base": "stone",
+     "mod": "simpleores",
+     "tiers": {"stone": "adamantium_ore", "deepslate": "deepslate_adamantium_ore"}},
+    {"name": "simpleores_onyx", "overlay": "simpleores_onyx", "skip_hosts": ["basalt"], "source": "onyx_ore", "base": "netherrack",
+     "mod": "simpleores",
+     "tiers": {"nether": "onyx_ore"}},
 ]
 
 # A translucent ore takes the colour of the rock behind it: a host with no hand-made overlay of its own gets
@@ -1094,6 +1115,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "theleadage": ('fabric', 'neoforge'),
     "gemsandcrystals": ('fabric', 'neoforge'),
     "stellaris": ('fabric', 'neoforge'),
+    "simpleores": ('fabric', 'neoforge'),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1260,6 +1282,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.simpleores": "SimpleOres",
         f"text.autoconfig.{MOD_ID}.category.stellaris": "Stellaris",
         f"text.autoconfig.{MOD_ID}.category.gemsandcrystals": "Gems and Crystals",
         f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
@@ -1290,6 +1313,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.ice_and_fire": "Ice and Fire",
         f"text.autoconfig.{MOD_ID}.category.tech_reborn": "Tech Reborn",
         f"text.autoconfig.{MOD_ID}.category.mystical_agriculture": "Mystical Agriculture",
+
+        f"text.autoconfig.{MOD_ID}.option.simpleOres": "SimpleOres: variants",
+        f"text.autoconfig.{MOD_ID}.option.simpleOres.@Tooltip":
+            "Generate host-matched tin, mythril, adamantium and onyx ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.stellaris": "Stellaris: variants",
         f"text.autoconfig.{MOD_ID}.option.stellaris.@Tooltip":

@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_limestone_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_simpleores_tin_ore",
+      "required": false
+    }
+  ]
+}

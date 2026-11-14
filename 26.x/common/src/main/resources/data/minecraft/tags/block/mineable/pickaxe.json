@@ -236,6 +236,18 @@
       "id": "seamlessores:granite_gemsandcrystals_topaz_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_simpleores_tin_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_simpleores_adamantium_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     "seamlessores:diorite_iron_ore",
     "seamlessores:diorite_copper_ore",
@@ -402,6 +414,14 @@
     },
     {
       "id": "seamlessores:diorite_stellaris_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_simpleores_adamantium_ore",
       "required": false
     },
     "seamlessores:andesite_coal_ore",
@@ -784,6 +804,14 @@
       "id": "seamlessores:tuff_gemsandcrystals_quartz_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_simpleores_adamantium_ore",
+      "required": false
+    },
     "seamlessores:dripstone_coal_ore",
     "seamlessores:dripstone_iron_ore",
     "seamlessores:dripstone_copper_ore",
@@ -1038,6 +1066,10 @@
     },
     {
       "id": "seamlessores:blackstone_denseores_ancient_nether_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_simpleores_onyx_ore",
       "required": false
     },
     {

@@ -5,7 +5,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:granite_simpleores_mythril_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:diorite_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_simpleores_mythril_ore",
       "required": false
     },
     {
@@ -13,7 +21,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_simpleores_mythril_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_marble_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_simpleores_mythril_ore",
       "required": false
     },
     {
@@ -21,7 +37,15 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_bluestone_simpleores_mythril_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:create_asurine_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:create_asurine_simpleores_mythril_ore",
       "required": false
     },
     {
@@ -29,7 +53,27 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_schist_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_slate_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:embellishcraft_gneiss_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:forbidden_arcanus_darkstone_simpleores_mythril_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:promenade_blunite_mythicmetals_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_simpleores_mythril_ore",
       "required": false
     }
   ]

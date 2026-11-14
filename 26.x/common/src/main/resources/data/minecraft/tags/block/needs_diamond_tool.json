@@ -93,6 +93,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_simpleores_onyx_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_mythicmetals_orichalcum_ore",
       "required": false
     },

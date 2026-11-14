@@ -477,6 +477,12 @@ Silent's Gems by SilentChaos512, MIT:
   assets/seamlessores/textures/block/turquoise_overlay.png
   assets/seamlessores/textures/block/white_diamond_overlay.png
 
+SimpleOres by AleXndrTheGr8st, Sinhika, Paint_Ninja, Paulem, LGPL-3.0:
+  assets/seamlessores/textures/block/simpleores_adamantium_overlay.png
+  assets/seamlessores/textures/block/simpleores_mythril_overlay.png
+  assets/seamlessores/textures/block/simpleores_onyx_overlay.png
+  assets/seamlessores/textures/block/simpleores_tin_overlay.png
+
 Sully's Mod by Uraneptus, MiteBeMana, KekeCreations, LGPL-3.0:
   assets/seamlessores/textures/block/sullysmod_jade_overlay.png
 

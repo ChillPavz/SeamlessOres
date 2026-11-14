@@ -140,6 +140,14 @@
       "id": "seamlessores:granite_gemsandcrystals_topaz_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:granite_simpleores_adamantium_ore",
+      "required": false
+    },
     "seamlessores:diorite_gold_ore",
     "seamlessores:diorite_diamond_ore",
     "seamlessores:diorite_emerald_ore",
@@ -238,6 +246,14 @@
     },
     {
       "id": "seamlessores:diorite_stellaris_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_simpleores_adamantium_ore",
       "required": false
     },
     "seamlessores:andesite_gold_ore",
@@ -454,6 +470,14 @@
     },
     {
       "id": "seamlessores:tuff_gemsandcrystals_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_simpleores_mythril_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_simpleores_adamantium_ore",
       "required": false
     },
     "seamlessores:dripstone_gold_ore",

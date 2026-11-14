@@ -28,7 +28,7 @@ touching ore of the same type across different host stones.
 ## Block list
 
 <!-- BEGIN GENERATED block-list -->
-**214 blocks** in the game's own rock, in the `seamlessores` namespace.
+**222 blocks** in the game's own rock, in the `seamlessores` namespace.
 
 **Vanilla, Overworld**
 
@@ -227,6 +227,20 @@ touching ore of the same type across different host stones.
 | Gemsandcrystals Quartz | `granite_gemsandcrystals_quartz_ore` | `diorite_gemsandcrystals_quartz_ore` | `andesite_gemsandcrystals_quartz_ore` | `tuff_gemsandcrystals_quartz_ore` |
 | Gemsandcrystals Topaz | `granite_gemsandcrystals_topaz_ore` |   |   |   |
 
+**SimpleOres, Overworld, requires `simpleores`**
+
+| | granite | diorite | tuff |
+|---|---|---|---|
+| Simpleores Tin | `granite_simpleores_tin_ore` |   |   |
+| Simpleores Mythril | `granite_simpleores_mythril_ore` | `diorite_simpleores_mythril_ore` | `tuff_simpleores_mythril_ore` |
+| Simpleores Adamantium | `granite_simpleores_adamantium_ore` | `diorite_simpleores_adamantium_ore` | `tuff_simpleores_adamantium_ore` |
+
+**SimpleOres, Nether, requires `simpleores`**
+
+| | blackstone |
+|---|---|
+| Simpleores Onyx | `blackstone_simpleores_onyx_ore` |
+
 A variant is registered only when the mod that owns its ore is installed, so how many of
 these you can actually see depends on which mods have a build for your loader at this
 Minecraft version:
@@ -261,7 +275,7 @@ that ore becomes the stone instead, so no seam is left. Create's asurine, crimsi
 veridium each keep only the ore Create ties them to.
 
 <!-- BEGIN GENERATED modded-stone-list -->
-**249 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
+**266 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
 
 **Terralith** (its mod or datapack, Fabric and NeoForge)
 
@@ -326,6 +340,9 @@ Stones: Limestone `blockus_limestone`, Marble `blockus_marble`, Bluestone `block
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone, Marble |
 | Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
 | Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Marble |
+| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone, Marble |
+| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Marble, Bluestone |
+| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Bluestone |
 
 **Create, requires `create`** (Create Fly, Fabric)
 
@@ -370,6 +387,10 @@ Stones: Asurine `create_asurine`, Crimsite `create_crimsite`, Limestone `create_
 | Tin | `bronze_tin` | Bronze `bronze` | Limestone |
 | Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Limestone, Scoria, Calcite, Smooth Basalt |
 | Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Limestone, Scoria, Calcite, Smooth Basalt |
+| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Limestone |
+| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Asurine |
+| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Crimsite |
+| Simpleores Onyx | `simpleores_onyx` | SimpleOres `simpleores` | Scorchia, Scoria, Smooth Basalt |
 
 **Promenade, requires `promenade`** (Fabric)
 
@@ -397,6 +418,8 @@ Stones: Asphalt `promenade_asphalt`, Blunite `promenade_blunite`
 | Silver | `silver` | Mythic Metals `mythicmetals` | every stone |
 | Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | every stone |
 | Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | Asphalt |
+| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Blunite |
+| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Blunite |
 
 **Wilder Wild, requires `wilderwild`** (Fabric)
 
@@ -417,6 +440,8 @@ Stones: Gabbro `wilderwild_gabbro`
 | Quadrillum | `quadrillum` | Mythic Metals `mythicmetals` | Gabbro |
 | Silver | `silver` | Mythic Metals `mythicmetals` | Gabbro |
 | Thesilverage Silver | `thesilverage_silver` | The Silver Age `thesilverage` | Gabbro |
+| Simpleores Mythril | `simpleores_mythril` | SimpleOres `simpleores` | Gabbro |
+| Simpleores Adamantium | `simpleores_adamantium` | SimpleOres `simpleores` | Gabbro |
 
 **Oh The Biomes We've Gone, requires `biomeswevegone`** (Fabric and NeoForge)
 
@@ -437,6 +462,7 @@ Stones: Dacite `biomeswevegone_dacite`, White Dacite `biomeswevegone_white_dacit
 | Denseores Iron | `denseores_iron` | Dense Ores `denseores` | every stone |
 | Tin | `bronze_tin` | Bronze `bronze` | Dacite, White Dacite |
 | Theleadage Lead | `theleadage_lead` | The Lead Age `theleadage` | every stone |
+| Simpleores Tin | `simpleores_tin` | SimpleOres `simpleores` | Dacite, White Dacite |
 <!-- END GENERATED modded-stone-list -->
 
 ## Configuration
@@ -455,7 +481,7 @@ Settings take effect the next time a world is loaded, because the injection runs
 ## For resource pack authors
 
 <!-- BEGIN GENERATED overlay-list -->
-Every variant of one ore shares a single overlay texture, so covering all 463 blocks takes **87 PNG files**:
+Every variant of one ore shares a single overlay texture, so covering all 488 blocks takes **91 PNG files**:
 
 ```
 assets/seamlessores/textures/block/<ore>_overlay.png
@@ -463,7 +489,7 @@ assets/seamlessores/textures/block/<ore>_overlay.png
 
 where `<ore>` is one of:
 
-`adamantite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `bronze_tin` `carmot` `carnelian` `chaos` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `garnet` `gemsandcrystals_amethyst` `gemsandcrystals_quartz` `gemsandcrystals_topaz` `gleaming` `gold` `heliodor` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `starrite` `stormyx` `theleadage_lead` `thesilverage_silver` `thesilverage_silver_deepslate` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
+`adamantite` `aquamarine` `aquarium` `banglum` `black_diamond` `bort` `bronze_tin` `carmot` `carnelian` `chaos` `citrine` `coal` `copper` `dark` `dense_fluorite` `dense_lead` `dense_tin` `dense_uranium` `denseores_ancient_nether` `denseores_coal_deepslate` `denseores_copper` `denseores_diamond` `denseores_emerald` `denseores_gold` `denseores_iron` `denseores_lapis` `denseores_nether_gold` `denseores_nether_quartz` `denseores_redstone` `diamond` `emerald` `energized_tin` `garnet` `gemsandcrystals_amethyst` `gemsandcrystals_quartz` `gemsandcrystals_topaz` `gleaming` `gold` `heliodor` `iron` `kyber` `lapis` `lead` `lithium` `manganese` `midas_gold` `morkite` `mythril` `necoium` `nether_banglum` `nether_gold` `opal_tuff` `orichalcum` `osmium` `palladium` `peridot` `platinum` `prometheum` `quadrillum` `quartz` `redstone` `ruby` `runite` `sapphire` `silents_aquamarine` `silents_citrine` `silents_peridot` `silents_ruby` `silents_sapphire` `silents_silver` `silents_topaz` `silver` `simpleores_adamantium` `simpleores_mythril` `simpleores_onyx` `simpleores_tin` `starrite` `stormyx` `theleadage_lead` `thesilverage_silver` `thesilverage_silver_deepslate` `thorium` `tin` `topaz` `turquoise` `unobtainium_deepslate` `uraninite` `uraninite_dense` `uraninite_poor` `white_diamond` `zinc`
 <!-- END GENERATED overlay-list -->
 
 Each file is the ore layer only, blobs on transparency. The host stone is the vanilla texture at its
@@ -546,6 +572,7 @@ is theirs and is used under the licence shown:
 | The Silver Age | PhantomWing | MIT |
 | The Lead Age | PhantomWing | MIT |
 | Gems and Crystals | Coliwogg | MIT |
+| SimpleOres | AleXndrTheGr8st, Sinhika, Paint_Ninja, Paulem | LGPL-3.0 |
 <!-- END GENERATED credits -->
 
 Built on [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template) by jaredlll08.
