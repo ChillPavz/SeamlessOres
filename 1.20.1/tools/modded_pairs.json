@@ -244,6 +244,13 @@
     "mythicupgrades:deepslate_citrine_ore"
    ]
   },
+  "clutter_silver": {
+   "mod": "clutter",
+   "forms": [
+    "clutter:silver_ore",
+    "clutter:deepslate_silver_ore"
+   ]
+  },
   "cryorium": {
    "mod": "epicpaladins",
    "forms": [
@@ -3686,6 +3693,12 @@
     ],
     "rate": 3.44
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.71
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 fabric",
@@ -3981,6 +3994,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.43
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 0.47
    },
    "dawn_stone": {
     "where": [
@@ -4288,6 +4307,12 @@
      "1.20.1 forge"
     ],
     "rate": 4.51
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 5.0
    },
    "dark": {
     "where": [
@@ -4658,6 +4683,12 @@
     ],
     "rate": 2.14
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 38.27
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 fabric"
@@ -5001,6 +5032,12 @@
      "1.20.1 fabric"
     ],
     "rate": 1.11
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 44.6
    },
    "dawn_stone": {
     "where": [
@@ -5418,6 +5455,12 @@
     ],
     "rate": 1.11
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 41.77
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 fabric"
@@ -5821,6 +5864,12 @@
      "1.20.1 fabric"
     ],
     "rate": 1.96
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 3.9
    },
    "dawn_stone": {
     "where": [
@@ -6885,6 +6934,12 @@
     ],
     "rate": 0.83
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 31.13
+   },
    "cryorium": {
     "where": [
      "1.20.1 forge"
@@ -7888,6 +7943,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.06
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 31.13
    },
    "cryorium": {
     "where": [
@@ -8893,6 +8954,12 @@
     ],
     "rate": 1.1
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 41.36
+   },
    "cryorium": {
     "where": [
      "1.20.1 forge"
@@ -9896,6 +9963,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.72
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 26.98
    },
    "cryorium": {
     "where": [
@@ -11234,6 +11307,12 @@
     ],
     "rate": 0.95
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 26.11
+   },
    "cryorium": {
     "where": [
      "1.20.1 forge"
@@ -12371,6 +12450,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.78
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 29.43
    },
    "cryorium": {
     "where": [
@@ -19012,6 +19097,12 @@
     ],
     "rate": 37.51
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 9.47
+   },
    "cryorium": {
     "where": [
      "1.20.1 forge"
@@ -20016,6 +20107,12 @@
     ],
     "rate": 37.51
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 9.47
+   },
    "cryorium": {
     "where": [
      "1.20.1 forge"
@@ -21019,6 +21116,12 @@
      "1.20.1 forge"
     ],
     "rate": 37.51
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 9.47
    },
    "cryorium": {
     "where": [
@@ -22182,6 +22285,12 @@
     ],
     "rate": 12.61
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 49.6
+   },
    "cryorium": {
     "where": [
      "1.20.1 forge"
@@ -23118,6 +23227,12 @@
      "1.20.1 forge"
     ],
     "rate": 3.72
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.7
    },
    "cryorium": {
     "where": [
@@ -24104,6 +24219,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.48
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 18.23
    },
    "cryorium": {
     "where": [
@@ -25108,6 +25229,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.82
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 11.56
    },
    "cryorium": {
     "where": [
@@ -26180,6 +26307,12 @@
      "1.20.1 forge"
     ],
     "rate": 0.76
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 9.46
    },
    "cryorium": {
     "where": [
@@ -27357,6 +27490,12 @@
     ],
     "rate": 6.57
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 29.12
+   },
    "cryorium": {
     "where": [
      "1.20.1 forge"
@@ -28041,6 +28180,12 @@
     ],
     "rate": 3.78
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 4.19
+   },
    "dark": {
     "where": [
      "1.20.1 forge"
@@ -28403,6 +28548,12 @@
      "1.20.1 forge"
     ],
     "rate": 12.04
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 13.34
    },
    "dark": {
     "where": [
@@ -28784,6 +28935,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.13
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 1.26
    },
    "dark": {
     "where": [
@@ -29984,6 +30141,12 @@
     ],
     "rate": 0.46
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 17.91
+   },
    "dawn_stone": {
     "where": [
      "1.20.1 fabric"
@@ -30387,6 +30550,12 @@
      "1.20.1 fabric"
     ],
     "rate": 0.46
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 17.91
    },
    "dawn_stone": {
     "where": [
@@ -32756,6 +32925,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.34
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 13.36
    },
    "cryorium": {
     "where": [
@@ -36045,6 +36220,12 @@
     ],
     "rate": 1.52
    },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 36.69
+   },
    "cryorium": {
     "where": [
      "1.20.1 forge"
@@ -36992,6 +37173,12 @@
      "1.20.1 forge"
     ],
     "rate": 1.67
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 4.27
    },
    "cryorium": {
     "where": [
@@ -38852,6 +39039,12 @@
      "1.20.1 forge"
     ],
     "rate": 68.85
+   },
+   "clutter_silver": {
+    "where": [
+     "1.20.1 fabric"
+    ],
+    "rate": 42.95
    },
    "cryorium": {
     "where": [

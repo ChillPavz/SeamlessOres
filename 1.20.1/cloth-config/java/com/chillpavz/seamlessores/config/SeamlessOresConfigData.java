@@ -860,6 +860,12 @@ public class SeamlessOresConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean gemsAndCrystals = true;
 
+    // --- Clutter -------------------------------------------------------------------------------------
+
+    @ConfigEntry.Category("clutter")
+    @ConfigEntry.Gui.Tooltip
+    public boolean clutter = true;
+
 
     /** Registers the config and wires it to the common holder. Safe on client and dedicated server. */
     public static void register() {
@@ -1057,6 +1063,7 @@ public class SeamlessOresConfigData implements ConfigData {
         values.theSilverAge = theSilverAge;
         values.theLeadAge = theLeadAge;
         values.gemsAndCrystals = gemsAndCrystals;
+        values.clutter = clutter;
 
         SeamlessOresConfig.apply(values);
     }

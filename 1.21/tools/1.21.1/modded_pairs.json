@@ -259,6 +259,13 @@
     "mythicupgrades:deepslate_citrine_ore"
    ]
   },
+  "clutter_silver": {
+   "mod": "clutter",
+   "forms": [
+    "clutter:silver_ore",
+    "clutter:deepslate_silver_ore"
+   ]
+  },
   "createpropulsion_platinum": {
    "mod": "createpropulsion",
    "forms": [
@@ -3481,6 +3488,12 @@
     ],
     "rate": 8.25
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 5.71
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -3759,6 +3772,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.66
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 0.47
    },
    "dawn_stone": {
     "where": [
@@ -4044,6 +4063,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 4.95
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 5.0
    },
    "dark": {
     "where": [
@@ -4371,6 +4396,12 @@
     ],
     "rate": 2.14
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 38.27
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric"
@@ -4582,6 +4613,12 @@
      "1.21.1 fabric"
     ],
     "rate": 1.11
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 44.6
    },
    "dawn_stone": {
     "where": [
@@ -4873,6 +4910,12 @@
     ],
     "rate": 1.11
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 41.77
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric"
@@ -5150,6 +5193,12 @@
      "1.21.1 fabric"
     ],
     "rate": 1.96
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 3.9
    },
    "dawn_stone": {
     "where": [
@@ -15938,6 +15987,12 @@
     ],
     "rate": 37.51
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 9.47
+   },
    "createpropulsion_platinum": {
     "where": [
      "1.21.1 neoforge"
@@ -16860,6 +16915,12 @@
     ],
     "rate": 37.51
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 9.47
+   },
    "createpropulsion_platinum": {
     "where": [
      "1.21.1 neoforge"
@@ -17781,6 +17842,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 37.51
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 9.47
    },
    "createpropulsion_platinum": {
     "where": [
@@ -18850,6 +18917,12 @@
     ],
     "rate": 0.25
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 24.45
+   },
    "cryorium": {
     "where": [
      "1.21.1 neoforge"
@@ -19494,6 +19567,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 3.72
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 1.7
    },
    "createpropulsion_platinum": {
     "where": [
@@ -22765,6 +22844,12 @@
     ],
     "rate": 6.57
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 29.12
+   },
    "cryorium": {
     "where": [
      "1.21.1 neoforge"
@@ -23432,6 +23517,12 @@
     ],
     "rate": 3.3
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 4.19
+   },
    "dark": {
     "where": [
      "1.21.1 neoforge"
@@ -23764,6 +23855,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 13.2
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 13.34
    },
    "dark": {
     "where": [
@@ -24115,6 +24212,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.99
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 1.26
    },
    "dark": {
     "where": [
@@ -24474,6 +24577,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.89
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 34.4
    },
    "createpropulsion_platinum": {
     "where": [
@@ -25354,6 +25463,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 0.89
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 35.46
    },
    "createpropulsion_platinum": {
     "where": [
@@ -28185,6 +28300,12 @@
     ],
     "rate": 0.72
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 0.39
+   },
    "createpropulsion_platinum": {
     "where": [
      "1.21.1 neoforge"
@@ -28811,6 +28932,12 @@
     ],
     "rate": 1.24
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 0.86
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric",
@@ -29088,6 +29215,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 2.48
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 4.55
    },
    "dark": {
     "where": [
@@ -32611,6 +32744,12 @@
     ],
     "rate": 1.52
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 36.69
+   },
    "createpropulsion_platinum": {
     "where": [
      "1.21.1 neoforge"
@@ -33471,6 +33610,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 1.67
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 4.27
    },
    "createpropulsion_platinum": {
     "where": [
@@ -35211,6 +35356,12 @@
     ],
     "rate": 0.39
    },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 3.41
+   },
    "dawn_stone": {
     "where": [
      "1.21.1 fabric"
@@ -35545,6 +35696,12 @@
      "1.21.1 neoforge"
     ],
     "rate": 68.85
+   },
+   "clutter_silver": {
+    "where": [
+     "1.21.1 fabric"
+    ],
+    "rate": 42.95
    },
    "createpropulsion_platinum": {
     "where": [

@@ -1295,6 +1295,13 @@ public record OreType(String name, String key, String overlay, String deepslateO
             UniformInt.of(3, 7), null, false, Set.of())
             .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
 
+    // --- Clutter (mod id clutter, MIT): silver, 4 to 8 XP; its sulphur only replaces basalt and blackstone, and its onyx lines geodes: no variants. Fabric at 1.20.1 and 1.21.1 ---
+    public static final OreType CLT_SILVER = ore(
+            "clutter_silver", "clutter_silver", null, "clutter",
+            of("clutter", "silver_ore"), of("clutter", "deepslate_silver_ore"), null,
+            UniformInt.of(4, 8), null, false, Set.of())
+            .withStrength(3.0F, 3.0F, 4.5F, 3.0F);
+
     public static final List<OreType> ALL =
             List.of(COAL, IRON, COPPER, GOLD, LAPIS, DIAMOND, EMERALD, REDSTONE, NETHER_GOLD, QUARTZ,
                     ZINC,
@@ -1354,7 +1361,8 @@ public record OreType(String name, String key, String overlay, String deepslateO
                     OT_NICKEL, OT_PLATINUM, OT_END_PLATINUM,
                     TSA_SILVER,
                     TLA_LEAD,
-                    GAC_AMETHYST, GAC_QUARTZ, GAC_RUBY, GAC_SAPPHIRE, GAC_TOPAZ);
+                    GAC_AMETHYST, GAC_QUARTZ, GAC_RUBY, GAC_SAPPHIRE, GAC_TOPAZ,
+                    CLT_SILVER);
 
     private static final Map<String, OreType> BY_KEY = byKey();
 

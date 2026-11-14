@@ -288,6 +288,9 @@ public final class SeamlessOresConfig {
     /** Whether Gems and Crystals variants generate. Pure restyle. */
     public static boolean gemsAndCrystals = true;
 
+    /** Whether Clutter variants generate. Pure restyle. */
+    public static boolean clutter = true;
+
     /**
      * Whether a third-party ore's variants may be injected into worldgen.
      *
@@ -355,6 +358,7 @@ public final class SeamlessOresConfig {
             case "thesilverage" -> theSilverAge;
             case "theleadage" -> theLeadAge;
             case "gemsandcrystals" -> gemsAndCrystals;
+            case "clutter" -> clutter;
             default -> true;
         };
     }
@@ -576,6 +580,7 @@ public final class SeamlessOresConfig {
         public boolean theSilverAge = true;
         public boolean theLeadAge = true;
         public boolean gemsAndCrystals = true;
+        public boolean clutter = true;
     }
 
     /** Called by each loader's config layer whenever the config loads or is saved. */
@@ -665,6 +670,7 @@ public final class SeamlessOresConfig {
         theSilverAge = values.theSilverAge;
         theLeadAge = values.theLeadAge;
         gemsAndCrystals = values.gemsAndCrystals;
+        clutter = values.clutter;
 
         Constants.LOG.debug("Config applied: disabled hosts={}, oreVeins={}, createZinc={}, "
                         + "zincVeinSize={}, bastionSafeNether={}, mythicUpgrades={}, mythicMetals={}, "

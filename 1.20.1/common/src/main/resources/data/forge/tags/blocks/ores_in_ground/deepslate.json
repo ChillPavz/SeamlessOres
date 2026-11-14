@@ -397,6 +397,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:tuff_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blackstone_iron_ore",
       "required": false
     },
@@ -677,6 +681,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blackstone_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_viridite_iron_ore",
       "required": false
     },
@@ -738,6 +746,10 @@
     },
     {
       "id": "seamlessores:blockus_viridite_thesilverage_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_clutter_silver_ore",
       "required": false
     },
     {

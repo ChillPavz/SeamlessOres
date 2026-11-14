@@ -1,0 +1,108 @@
+{
+  "values": [
+    {
+      "id": "seamlessores:granite_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:diorite_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:andesite_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:tuff_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_bluestone_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_rhyolite_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:meadow_limestone_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_argillite_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_chalk_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:wilderwild_gabbro_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_dacite_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_red_rock_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_chert_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_white_chalk_clutter_silver_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_pink_sandstone_clutter_silver_ore",
+      "required": false
+    }
+  ]
+}

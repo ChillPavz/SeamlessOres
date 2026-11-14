@@ -1,0 +1,18 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:registry_contains",
+      "registry": "minecraft:block",
+      "values": [
+        "seamlessores:blockus_limestone_clutter_silver_ore"
+      ]
+    }
+  ],
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "seamlessores:blockus_limestone_clutter_silver_ore"
+  },
+  "result": "clutter:silver_ingot",
+  "experience": 1.0,
+  "cookingtime": 100
+}

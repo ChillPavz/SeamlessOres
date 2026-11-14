@@ -165,7 +165,8 @@ MOD_JARS = {"born_in_chaos_v1": jar("born_in_chaos_Neoforge_1.21.1_1.7.6.jar"),
             "oritech": jar("oritech-neoforge-1.21.1-1.2.13.jar"),
             "thesilverage": jar("thesilverage-neoforge-1.21.1-1.4.0.jar"),
             "theleadage": jar("theleadage-neoforge-1.21.1-1.3.0.jar"),
-            "gemsandcrystals": jar("gemsandcrystals-1.4.7-neoforge+1.21.1.jar")}
+            "gemsandcrystals": jar("gemsandcrystals-1.4.7-neoforge+1.21.1.jar"),
+            "clutter": jar("clutter-1.21.1-0.6.7.jar")}
 
 # How each host stone is drawn, which only this script needs: the host table itself (which stones,
 # which tier, which ores) is READ from HostStone.java (shared/tools/placed.py), so the blocks that
@@ -476,6 +477,8 @@ MODS = {
                        "licence": "MIT", "author": "PhantomWing"},
     "gemsandcrystals": {"display": "Gems and Crystals", "category": "gemsandcrystals",
                        "licence": "MIT", "author": "Coliwogg"},
+    "clutter": {"display": "Clutter", "category": "clutter",
+                       "licence": "MIT", "author": "EmilSG"},
 }
 
 ORE_DEFS = [
@@ -1389,6 +1392,10 @@ ORE_DEFS = [
     {"name": "gemsandcrystals_topaz", "overlay": "gemsandcrystals_topaz", "source": "topaz_ore", "base": "stone",
      "mod": "gemsandcrystals",
      "tiers": {"stone": "topaz_ore", "deepslate": "deepslate_topaz_ore"}},
+    # --- Clutter (mod id clutter, MIT): silver, 4 to 8 XP; its sulphur only replaces basalt and blackstone, and its onyx lines geodes: no variants. Fabric at 1.20.1 and 1.21.1 ---
+    {"name": "clutter_silver", "overlay": "clutter_silver", "source": "silver_ore", "base": "stone",
+     "mod": "clutter",
+     "tiers": {"stone": "silver_ore", "deepslate": "deepslate_silver_ore"}},
 ]
 
 # Cobblemon's per-host overlays, precomposited from the solved edge ring (the pack's
@@ -1541,6 +1548,7 @@ CONDITIONAL_LOOT_MODULES_BY_MOD = {
     "thesilverage": ('fabric', 'neoforge'),
     "theleadage": ('fabric', 'neoforge'),
     "gemsandcrystals": ('fabric', 'neoforge'),
+    "clutter": ('fabric',),
 }
 DEFAULT_CONDITIONAL_LOOT_MODULES = ("fabric", "neoforge")
 
@@ -1652,6 +1660,7 @@ def generate_json():
 
         # Category tabs. Split by dimension first, then by mod, so a Create or Mythic Upgrades
         # player finds everything about that mod in one place.
+        f"text.autoconfig.{MOD_ID}.category.clutter": "Clutter",
         f"text.autoconfig.{MOD_ID}.category.gemsandcrystals": "Gems and Crystals",
         f"text.autoconfig.{MOD_ID}.category.theleadage": "The Lead Age",
         f"text.autoconfig.{MOD_ID}.category.thesilverage": "The Silver Age",
@@ -1703,6 +1712,10 @@ def generate_json():
         f"text.autoconfig.{MOD_ID}.category.malum": "Malum",
         f"text.autoconfig.{MOD_ID}.category.mekanism": "Mekanism",
         f"text.autoconfig.{MOD_ID}.category.cobblemon": "Cobblemon",
+
+        f"text.autoconfig.{MOD_ID}.option.clutter": "Clutter: variants",
+        f"text.autoconfig.{MOD_ID}.option.clutter.@Tooltip":
+            "Generate host-matched silver ore. Does nothing unless the mod is installed.",
 
         f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals": "Gems and Crystals: variants",
         f"text.autoconfig.{MOD_ID}.option.gemsAndCrystals.@Tooltip":

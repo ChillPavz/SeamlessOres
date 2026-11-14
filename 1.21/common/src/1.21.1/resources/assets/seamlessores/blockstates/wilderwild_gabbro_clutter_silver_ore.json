@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_clutter_silver_ore"
+      },
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_clutter_silver_ore_mirrored"
+      },
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_clutter_silver_ore",
+        "y": 180
+      },
+      {
+        "model": "seamlessores:block/wilderwild_gabbro_clutter_silver_ore_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

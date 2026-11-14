@@ -8,6 +8,10 @@
       "id": "seamlessores:andesite_cgs_lead_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:andesite_clutter_silver_ore",
+      "required": false
+    },
     "seamlessores:andesite_coal_ore",
     {
       "id": "seamlessores:andesite_cobblemon_dusk_stone_ore",
@@ -1143,6 +1147,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_dacite_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_dacite_cobblemon_dawn_stone_ore",
       "required": false
     },
@@ -1243,6 +1251,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:biomeswevegone_red_rock_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:biomeswevegone_red_rock_copper_ore",
       "required": false
     },
@@ -1304,6 +1316,10 @@
     },
     {
       "id": "seamlessores:biomeswevegone_white_dacite_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:biomeswevegone_white_dacite_clutter_silver_ore",
       "required": false
     },
     {
@@ -1456,6 +1472,10 @@
     },
     {
       "id": "seamlessores:blackstone_cgs_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blackstone_clutter_silver_ore",
       "required": false
     },
     {
@@ -1797,6 +1817,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:blockus_bluestone_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:blockus_bluestone_cobblemon_dusk_stone_ore",
       "required": false
     },
@@ -1870,6 +1894,10 @@
     },
     {
       "id": "seamlessores:blockus_limestone_bronze_tin_block_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_limestone_clutter_silver_ore",
       "required": false
     },
     {
@@ -1970,6 +1998,10 @@
     },
     {
       "id": "seamlessores:blockus_marble_bronze_tin_block_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_marble_clutter_silver_ore",
       "required": false
     },
     {
@@ -2074,6 +2106,10 @@
     },
     {
       "id": "seamlessores:blockus_marble_things_gleaming_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:blockus_viridite_clutter_silver_ore",
       "required": false
     },
     {
@@ -3936,6 +3972,10 @@
       "id": "seamlessores:diorite_cgs_lead_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:diorite_clutter_silver_ore",
+      "required": false
+    },
     "seamlessores:diorite_coal_ore",
     {
       "id": "seamlessores:diorite_cobblemon_ice_stone_ore",
@@ -5639,6 +5679,10 @@
       "id": "seamlessores:granite_cgs_lead_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:granite_clutter_silver_ore",
+      "required": false
+    },
     "seamlessores:granite_coal_ore",
     {
       "id": "seamlessores:granite_cobblemon_dawn_stone_ore",
@@ -6168,6 +6212,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:meadow_limestone_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:meadow_limestone_cobblemon_leaf_stone_ore",
       "required": false
     },
@@ -6500,6 +6548,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_chert_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_chert_create_zinc_ore",
       "required": false
     },
@@ -6628,6 +6680,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_pink_sandstone_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_pink_sandstone_copper_ore",
       "required": false
     },
@@ -6705,6 +6761,10 @@
     },
     {
       "id": "seamlessores:natures_spirit_travertine_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:natures_spirit_travertine_clutter_silver_ore",
       "required": false
     },
     {
@@ -6860,6 +6920,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:natures_spirit_white_chalk_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:natures_spirit_white_chalk_coal_ore",
       "required": false
     },
@@ -6993,6 +7057,10 @@
     },
     {
       "id": "seamlessores:promenade_asphalt_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_asphalt_clutter_silver_ore",
       "required": false
     },
     {
@@ -7205,6 +7273,10 @@
     },
     {
       "id": "seamlessores:promenade_blunite_actuallyadditions_black_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:promenade_blunite_clutter_silver_ore",
       "required": false
     },
     {
@@ -7980,6 +8052,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_argillite_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_argillite_coal_ore",
       "required": false
     },
@@ -8188,6 +8264,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:regions_unexplored_chalk_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:regions_unexplored_chalk_coal_ore",
       "required": false
     },
@@ -8297,6 +8377,10 @@
     },
     {
       "id": "seamlessores:regions_unexplored_mossy_stone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:regions_unexplored_mossy_stone_clutter_silver_ore",
       "required": false
     },
     {
@@ -9535,6 +9619,10 @@
       "id": "seamlessores:tuff_cgs_lead_ore",
       "required": false
     },
+    {
+      "id": "seamlessores:tuff_clutter_silver_ore",
+      "required": false
+    },
     "seamlessores:tuff_coal_ore",
     {
       "id": "seamlessores:tuff_cobblemon_dusk_stone_ore",
@@ -10056,6 +10144,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:twigs_rhyolite_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:twigs_rhyolite_cobblemon_dawn_stone_ore",
       "required": false
     },
@@ -10353,6 +10445,10 @@
     },
     {
       "id": "seamlessores:twigs_schist_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:twigs_schist_clutter_silver_ore",
       "required": false
     },
     {
@@ -11240,6 +11336,10 @@
       "required": false
     },
     {
+      "id": "seamlessores:wilderwild_gabbro_clutter_silver_ore",
+      "required": false
+    },
+    {
       "id": "seamlessores:wilderwild_gabbro_cobblemon_dusk_stone_ore",
       "required": false
     },
@@ -11325,6 +11425,10 @@
     },
     {
       "id": "seamlessores:yungscavebiomes_ancient_sandstone_cgs_lead_ore",
+      "required": false
+    },
+    {
+      "id": "seamlessores:yungscavebiomes_ancient_sandstone_clutter_silver_ore",
       "required": false
     },
     {
