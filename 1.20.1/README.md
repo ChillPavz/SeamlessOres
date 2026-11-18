@@ -23,6 +23,9 @@ touching ore of the same type across different host stones.
 
 ## Block list
 
+<details>
+<summary>Show the full block list</summary>
+
 <!-- BEGIN GENERATED block-list -->
 **573 blocks** in the game's own rock, in the `seamlessores` namespace.
 
@@ -632,6 +635,8 @@ The registered block set is derived from which mods are loaded rather than from 
 a client and a server running the same mods always agree and nobody is kicked on join.
 <!-- END GENERATED block-list -->
 
+</details>
+
 Some ores are deliberately absent rather than overlooked. Mythic Upgrades' ametrine and jade, and
 Silent's Gems' end gems, are `block_match end_stone`: the End has no second stone type, so there is
 nothing to be seamless with. Only six of Silent's Gems' nether gems generate
@@ -651,6 +656,9 @@ ores and swallow them. These blocks give that ore the look of the stone around i
 An ore that could never form in a stone (coal in marble, diamond in limestone) gets no block there:
 that ore becomes the stone instead, so no seam is left. Create's asurine, crimsite, ochrum and
 veridium each keep only the ore Create ties them to.
+
+<details>
+<summary>Show the blocks in modded stones</summary>
 
 <!-- BEGIN GENERATED modded-stone-list -->
 **2671 blocks**, plus the dripstone ones listed above. Each exists only when the mod that places its stone is installed, and one of another mod's ore only with that mod as well. A block's id is `<stone>_<ore>_ore`, from the two columns below: `blockus_limestone` and `iron` make `blockus_limestone_iron_ore`.
@@ -2230,6 +2238,8 @@ Stones: Slipstone `endlessbiomes_slipstone`, Arkan `endlessbiomes_arkan`
 | Lapis Lazuli | `beo_lapis` | Basic End Ores `beo` | every stone |
 | Redstone | `beo_redstone` | Basic End Ores `beo` | every stone |
 <!-- END GENERATED modded-stone-list -->
+
+</details>
 
 ## Configuration
 
